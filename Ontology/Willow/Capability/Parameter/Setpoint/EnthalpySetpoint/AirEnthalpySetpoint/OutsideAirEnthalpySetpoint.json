@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirEnthalpySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Enthalpy Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirEnthalpySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,104 @@
+{
+  "@id": "dtmi:com:willowinc:TenantUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tenant Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceCollection;1",
+    "dtmi:digitaltwins:rec_3_3:business:TenantUnit;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isLeasedBy",
+      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "leaseID",
+          "displayName": "Lease ID",
+          "writable": true,
+          "schema": "string"
+        },
+        {
+          "@type": "Property",
+          "name": "duration",
+          "displayName": "Duration",
+          "writable": true,
+          "schema": "duration"
+        },
+        {
+          "@type": "Property",
+          "name": "startDate",
+          "displayName": "Start Date",
+          "writable": true,
+          "schema": "date"
+        },
+        {
+          "@type": "Property",
+          "name": "endDate",
+          "displayName": "End Date",
+          "writable": true,
+          "schema": "date"
+        },
+        {
+          "@type": "Property",
+          "name": "active",
+          "displayName": "Active",
+          "writable": true,
+          "schema": "boolean"
+        }
+      ]
+    },
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:willowinc:SpaceArea;1"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "temperatureAverage",
+      "displayName": {
+        "en": "Temperature Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceTemperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "humidityAverage",
+      "displayName": {
+        "en": "Humidity Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "CO2Average",
+      "displayName": {
+        "en": "CO2 Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCO2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancyTotal",
+      "displayName": {
+        "en": "Occupancy Total"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

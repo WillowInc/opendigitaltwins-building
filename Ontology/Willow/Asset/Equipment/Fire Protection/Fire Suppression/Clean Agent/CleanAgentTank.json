@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:CleanAgentTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Clean Agent Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CleanAgentEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:CleanAgentTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

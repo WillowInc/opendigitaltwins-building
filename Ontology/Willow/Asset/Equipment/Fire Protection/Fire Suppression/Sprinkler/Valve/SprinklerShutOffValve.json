@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:SprinklerShutOffValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Shut-off Valve"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SprinklerValve;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SprinklerShutOffValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

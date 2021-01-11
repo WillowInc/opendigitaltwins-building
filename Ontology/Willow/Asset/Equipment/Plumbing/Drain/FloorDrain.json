@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FloorDrain;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Floor Drain"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Drain;1",
+    "dtmi:digitaltwins:rec_3_3:asset:FloorDrain;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

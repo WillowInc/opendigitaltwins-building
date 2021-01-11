@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalBuildingComponent;1",
+  "@type": "Interface",
+  "displayName": "Electrical Building Component",
+  "extends" : [
+    "dtmi:com:willowinc:BuildingComponent;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

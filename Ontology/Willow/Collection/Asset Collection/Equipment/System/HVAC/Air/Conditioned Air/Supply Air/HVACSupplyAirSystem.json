@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACSupplyAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Supply Air System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACConditionedAirSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACSupplyAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

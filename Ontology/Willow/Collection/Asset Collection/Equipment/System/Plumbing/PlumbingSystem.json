@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plumbing System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:System;1",
+    "dtmi:digitaltwins:rec_3_3:asset:PlumbingSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

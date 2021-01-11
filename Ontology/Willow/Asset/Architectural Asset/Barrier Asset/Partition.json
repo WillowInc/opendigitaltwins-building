@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Partition;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Partition"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BarrierAsset;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Partition;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

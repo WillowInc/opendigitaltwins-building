@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:com:willowinc:Warranty;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Warranty"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Document;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": "Type",
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:WarrantyType;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Product",
+            "displayName": "Product",
+            "enumValue": "Product"
+          },  
+          {
+                "name": "Parts",
+                "displayName": "Parts",
+                "enumValue": "Parts"
+            },
+            {
+              "name": "Labor",
+              "displayName": "Labor",
+              "enumValue": "Labor"
+            }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "guarantor",
+      "displayName": "Guarantor",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "duration",
+      "displayName": "Duration",
+      "writable": true,
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "startDate",
+      "displayName": "Start Date",
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "endDate",
+      "displayName": "End Date",
+      "writable": true,
+      "schema": "date"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

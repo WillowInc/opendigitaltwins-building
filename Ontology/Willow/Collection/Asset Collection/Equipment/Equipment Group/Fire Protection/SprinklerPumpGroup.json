@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SprinklerPumpGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Group"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireProtectionEquipmentGroup;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SprinklerPumpGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

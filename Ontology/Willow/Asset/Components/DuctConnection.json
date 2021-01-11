@@ -1,0 +1,85 @@
+{
+  "@id": "dtmi:com:willowinc:DuctConnection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duct Connection"
+  },
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "configuration",
+      "displayName": {
+        "en": "Configuration"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:DuctConnectionConfiguration;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "single",
+            "displayName": {
+              "en": "single"
+            },
+            "enumValue": "single"
+          },  
+          {
+            "name": "dual",
+            "displayName": {
+              "en": "dual"
+            },
+            "enumValue": "dual"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "size",
+      "displayName": {
+        "en": "Size"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "radius or dimensions of duct inlet"
+    },
+    {
+      "@type": "Property",
+      "name": "shape",
+      "displayName": {
+        "en": "Shape"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:DuctConnectionShape;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "round",
+            "displayName": {
+              "en": "round"
+            },
+            "enumValue": "round"
+          },  
+          {
+            "name": "oval",
+            "displayName": {
+              "en": "oval"
+            },
+            "enumValue": "oval"
+          },
+          {
+            "name": "rectangle",
+            "displayName": {
+              "en": "rectangle"
+            },
+            "enumValue": "rectangle"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

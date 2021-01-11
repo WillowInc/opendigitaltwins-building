@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:EthernetRouter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ethernet Router"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DataNetworkEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:EthernetRouter;1"
+  ],
+  "contents": [
+   
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

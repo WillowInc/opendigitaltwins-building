@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Busway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Busway"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Busway;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

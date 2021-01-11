@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VAVBox;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VAV Box"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TerminalUnit;1",
+    "dtmi:digitaltwins:rec_3_3:asset:VAVBox;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

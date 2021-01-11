@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneAirTVOCSensor;1",
+  "@type": "Interface",
+  "displayName": "Zone Air TVOC Sensor",
+  "extends" : [
+    "dtmi:com:willowinc:AirTVOCSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

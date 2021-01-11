@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:TerminalUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Terminal Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:TerminalUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

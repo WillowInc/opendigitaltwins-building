@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:Sink;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sink"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingFixture;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Sink;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

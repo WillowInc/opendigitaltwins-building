@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ElevatorMachine;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator Machine"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ConveyanceEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElevatorMachine;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

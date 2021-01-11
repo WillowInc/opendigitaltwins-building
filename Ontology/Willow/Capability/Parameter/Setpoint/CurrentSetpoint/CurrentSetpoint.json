@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:CurrentSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Current"],
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "has value"
+      },
+      "name": "hasValue",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

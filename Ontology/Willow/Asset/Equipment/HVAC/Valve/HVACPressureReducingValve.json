@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:HVACPressureReducingValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Reducing Valve"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACPressureReducingValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

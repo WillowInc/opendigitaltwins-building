@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:com:willowinc:Portfolio;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Portfolio"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Collection;1",
+    "dtmi:digitaltwins:rec_3_3:core:Portfolio;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "operatedBy",
+      "displayName": {
+        "en": "operated by"
+      },
+      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "ownedBy",
+      "displayName": {
+        "en": "owned by"
+      },
+      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

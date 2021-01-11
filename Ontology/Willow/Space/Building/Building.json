@@ -1,0 +1,192 @@
+{
+  "@id": "dtmi:com:willowinc:Building;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1",
+    "dtmi:digitaltwins:rec_3_3:core:Building;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "coordinates",
+      "displayName": {
+        "en": "Coordinates"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:BuildingCoordinates;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": {
+              "en": "Latitude"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": {
+              "en": "Longitude"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "elevation",
+      "displayName": {
+        "en": "Elevation (Sea Level)"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "address",
+      "displayName": {
+        "en": "Address"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:Address;1",
+        "@type": "Object",
+        "fields" : [
+          {
+            "name": "address1",
+            "displayName": {
+              "en": "Address 1"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "address2",
+            "displayName": {
+              "en": "Address 2"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "city",
+            "displayName": {
+              "en": "City"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "region",
+            "displayName": {
+              "en": "Region (State)"
+            },
+            "schema": "string",
+            "comment": "state"
+          },
+          {
+            "name": "country",
+            "displayName": {
+              "en": "Country"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "postalCode",
+            "displayName": {
+              "en": "Postal Code"
+            },
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "height",
+      "displayName": {
+        "en": "Height"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:willowinc:SpaceArea;1"
+    },
+    {
+      "@type": "Property",
+      "name": "constructionStartDate",
+      "displayName": {
+        "en": "Construction Start Date"
+      },
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "constructionCompletionDate",
+      "displayName": {
+        "en": "Construction Completion Date"
+      },
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "temperatureAverage",
+      "displayName": {
+        "en": "Temperature Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceTemperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "humidityAverage",
+      "displayName": {
+        "en": "Humidity Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "CO2Average",
+      "displayName": {
+        "en": "CO2 Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCO2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancyTotal",
+      "displayName": {
+        "en": "Occupancy Total"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

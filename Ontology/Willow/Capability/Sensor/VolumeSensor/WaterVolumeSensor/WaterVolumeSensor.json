@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:WaterVolumeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Volume Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VolumeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Product_IOM_Manual;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Product IOM Manual"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

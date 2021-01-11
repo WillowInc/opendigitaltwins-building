@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:UPS;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "UPS"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:UPS;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

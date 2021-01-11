@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACChilledWaterSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Chilled Water System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACWaterSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACChilledWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:FlushometerValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Flushometer-Valve"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingFixture;1",
+    "dtmi:digitaltwins:rec_3_3:asset:FlushometerValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

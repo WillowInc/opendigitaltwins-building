@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ThermostatEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermostat"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

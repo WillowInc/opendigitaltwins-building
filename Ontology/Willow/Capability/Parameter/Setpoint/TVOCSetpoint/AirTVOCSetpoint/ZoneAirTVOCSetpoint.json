@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneAirTVOCSetpoint;1",
+  "@type": "Interface",
+  "displayName": "Zone Air TVOC Setpoint",
+  "extends" : [
+    "dtmi:com:willowinc:AirTVOCSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalCircuit1Pole;1",
+  "@type": "Interface",
+  "displayName": "Electrical Circuit 1-Pole",
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalCircuit;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Phase1",
+      "displayName": "Phase 1",
+      "writable": true,
+      "schema":     {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "A",
+            "displayName": "A",
+            "enumValue": "A"
+          },
+          {
+            "name": "B",
+            "displayName": "B",
+            "enumValue": "B"
+          },
+          {
+            "name": "C",
+            "displayName": "C",
+            "enumValue": "C"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

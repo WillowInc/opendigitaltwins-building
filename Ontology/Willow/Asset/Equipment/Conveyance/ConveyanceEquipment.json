@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ConveyanceEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Conveyance Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Equipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ConveyanceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

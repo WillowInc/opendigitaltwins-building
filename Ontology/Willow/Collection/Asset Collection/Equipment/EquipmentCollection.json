@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:EquipmentCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Equipment Collection"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetCollection;1",
+    "dtmi:digitaltwins:rec_3_3:asset:EquipmentCollection;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

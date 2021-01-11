@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SecurityEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Security Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Equipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SecurityEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

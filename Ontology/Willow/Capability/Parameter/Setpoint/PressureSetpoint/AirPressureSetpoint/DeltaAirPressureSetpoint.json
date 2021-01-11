@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaAirPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Air Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirPressureSetpoint;1",
+    "dtmi:com:willowinc:DeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

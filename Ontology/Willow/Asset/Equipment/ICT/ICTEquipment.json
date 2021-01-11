@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ICTEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "ICT Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Equipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ICTEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

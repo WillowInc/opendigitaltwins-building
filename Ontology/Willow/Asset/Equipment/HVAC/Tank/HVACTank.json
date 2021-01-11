@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:HVACTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

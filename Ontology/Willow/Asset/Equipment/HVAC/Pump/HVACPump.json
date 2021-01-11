@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:HVACPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Pump"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACPump;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

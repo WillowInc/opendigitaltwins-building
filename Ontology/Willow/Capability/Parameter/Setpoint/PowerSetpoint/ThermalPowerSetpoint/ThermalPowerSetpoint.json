@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ThermalPowerSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Power Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PowerSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ThermalMeter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Meter"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MeterEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ThermalMeter;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

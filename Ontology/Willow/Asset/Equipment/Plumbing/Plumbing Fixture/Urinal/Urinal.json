@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:Urinal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Urinal"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingFixture;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Urinal;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

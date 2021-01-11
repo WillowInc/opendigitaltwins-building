@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACFan;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ExhaustFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

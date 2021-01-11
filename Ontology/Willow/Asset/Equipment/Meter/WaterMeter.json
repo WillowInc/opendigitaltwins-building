@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:WaterMeter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Meter"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MeterEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:WaterMeter;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

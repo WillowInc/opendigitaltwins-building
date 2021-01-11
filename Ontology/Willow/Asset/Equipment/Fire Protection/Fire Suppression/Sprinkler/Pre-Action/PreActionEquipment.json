@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PreActionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pre-Action Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SprinklerEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:PreActionEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

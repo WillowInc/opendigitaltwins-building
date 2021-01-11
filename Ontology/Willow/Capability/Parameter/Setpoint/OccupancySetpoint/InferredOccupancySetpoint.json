@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:InferredOccupancySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inferred Occupancy Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OccupancySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

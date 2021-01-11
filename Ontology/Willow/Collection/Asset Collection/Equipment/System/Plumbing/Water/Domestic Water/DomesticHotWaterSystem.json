@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DomesticHotWaterSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domcestic Hot Water System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DomesticWaterSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DomesticHotWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

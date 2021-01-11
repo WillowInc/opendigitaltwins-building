@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DamperPositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Position Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

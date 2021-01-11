@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:VolumeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Volume Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

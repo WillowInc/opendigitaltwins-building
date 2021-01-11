@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ICTWiFiNetworkSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "WiFi Network System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

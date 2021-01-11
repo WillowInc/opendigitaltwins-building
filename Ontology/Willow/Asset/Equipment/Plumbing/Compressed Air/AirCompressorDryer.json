@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:com:willowinc:AirCompressorDryer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Compressor Dryer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CompressedAir;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "CFM"
+    },
+    {
+      "@type": "Property",
+      "name": "workingPressure",
+      "displayName": {
+        "en": "Working Pressure"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "PSIG"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

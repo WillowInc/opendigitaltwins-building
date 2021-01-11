@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DomesticWaterSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domcestic Water System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingWaterSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DomesticWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:GasSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Gas System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:GasSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

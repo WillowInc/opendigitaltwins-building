@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": "Return Air Flow Sensor",
+  "extends" : [
+    "dtmi:com:willowinc:AirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

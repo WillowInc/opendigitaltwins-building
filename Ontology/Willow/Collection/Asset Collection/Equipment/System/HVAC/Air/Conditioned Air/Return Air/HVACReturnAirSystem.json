@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACReturnAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Return Air System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACConditionedAirSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACReturnAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

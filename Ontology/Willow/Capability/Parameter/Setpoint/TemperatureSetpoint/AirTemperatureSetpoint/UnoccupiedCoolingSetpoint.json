@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:UnoccupiedCoolingSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Cooling Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

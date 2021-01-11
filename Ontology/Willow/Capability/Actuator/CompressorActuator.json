@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Actuator;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "hasValue",
+      "displayName": {
+        "en": "has value"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACRefrigerantSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Refrigerant System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACRefrigerantSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

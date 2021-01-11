@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:FireExtinguisherRemovedSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Extinguisher Removed Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StatusSensor;1",
+    "dtmi:digitaltwins:rec_3_3:core:FireExtinguisherRemovedSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

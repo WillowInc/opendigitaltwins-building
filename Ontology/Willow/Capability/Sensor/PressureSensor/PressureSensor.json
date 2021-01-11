@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Sensor;1",
+    "dtmi:digitaltwins:rec_3_3:core:PressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

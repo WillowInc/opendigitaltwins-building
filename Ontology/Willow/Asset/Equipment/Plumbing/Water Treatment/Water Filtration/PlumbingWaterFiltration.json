@@ -1,0 +1,58 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingWaterFiltration;1",
+  "@type": "Interface",
+  "displayName": "Water Filtration",
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingWaterTreatment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "flowCapacity",
+      "displayName": {
+        "en": "Flow Capacity"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "GPM"
+    },
+    {
+      "@type": "Property",
+      "name": "tankCapacity",
+      "displayName": "Tank Capacity",
+      "writable": true,
+      "schema": "integer",
+      "comment": "gallon"
+    },
+    {
+      "@type": "Property",
+      "name": "filtrationRating",
+      "displayName": {
+        "en": "Filtration Rating"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "microns"
+    },
+    {
+      "@type": "Property",
+      "name": "workingPressure",
+      "displayName": {
+        "en": "Working Pressure"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "PSI"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AccessControlPanel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Access Control Panel"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AccessControlEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:AccessControlPanel;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

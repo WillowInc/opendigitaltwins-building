@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:MakeupAirUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Makeup Air Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHandlingUnit;1",
+    "dtmi:digitaltwins:rec_3_3:asset:MakeupAirUnit;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

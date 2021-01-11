@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:willowinc:Workstation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Workstation"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Furniture;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "basic, sit/stand"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SprinklerSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sprinkler System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireSuppressionSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SprinklerSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

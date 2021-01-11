@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HeatExchanger;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Exchanger"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HeatExchanger;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalPanelboard;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Panelboard"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElectricalPanelboard;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "inputPhases",
+      "displayName": {
+        "en": "Input Phases"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "displayName": "1",
+            "enumValue": "1"
+          },
+          {
+            "name": "Three",
+            "displayName": "3",
+            "enumValue": "3"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

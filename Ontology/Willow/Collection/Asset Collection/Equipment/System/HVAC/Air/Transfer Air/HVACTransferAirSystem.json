@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACTransferAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Transfer Air System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACAirSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACTransferAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

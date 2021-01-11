@@ -1,0 +1,37 @@
+{
+  "@id": "dtmi:com:willowinc:Stairway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stairway"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuralBuildingComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "stepWidth",
+      "displayName": "Step Width",
+      "writable": true,
+      "schema": "double",
+      "comment": "inch"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancyTotal",
+      "displayName": {
+        "en": "Occupancy Total"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

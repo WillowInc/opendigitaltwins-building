@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Specification;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Specification"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

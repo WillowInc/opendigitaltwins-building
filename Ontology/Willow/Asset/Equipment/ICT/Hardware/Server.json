@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Server;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Server"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTHardware;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Server;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

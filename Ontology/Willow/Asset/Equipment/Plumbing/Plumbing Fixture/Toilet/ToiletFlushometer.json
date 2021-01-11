@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ToiletFlushometer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet with Flushometer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Toilet;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ToiletFlushometer;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

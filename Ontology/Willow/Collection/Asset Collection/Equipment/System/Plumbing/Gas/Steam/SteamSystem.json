@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SteamSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:GasSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SteamSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

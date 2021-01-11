@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:com:willowinc:HydronicSteamTrap;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Trap"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "workingPressure",
+      "displayName": {
+        "en": "Working Pressure"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "PSIG"
+    },
+    {
+      "@type": "Property",
+      "name": "pipeDiameter",
+      "displayName": {
+        "en": "Pipe Diameter"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "inch"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OPCUANetworkSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "OPC UA Network System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ControlsSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:OPCUANetworkSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

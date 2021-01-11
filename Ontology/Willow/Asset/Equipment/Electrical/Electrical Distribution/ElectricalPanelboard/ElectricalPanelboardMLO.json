@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalPanelboardMLO;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Panelboard MLO"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalPanelboard;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElectricalPanelboardMLO;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

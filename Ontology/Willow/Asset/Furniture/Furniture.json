@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:com:willowinc:Furniture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Furniture"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Asset;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Furniture;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "length",
+      "displayName": {
+        "en": "Length"
+      },
+      "writable": true,
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "width",
+      "displayName": {
+        "en": "Width"
+      },
+      "writable": true,
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "height",
+      "displayName": {
+        "en": "Height"
+      },
+      "writable": true,
+      "schema": "float"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

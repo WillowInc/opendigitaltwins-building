@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneCO2Setpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone CO2 Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirCO2Setpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

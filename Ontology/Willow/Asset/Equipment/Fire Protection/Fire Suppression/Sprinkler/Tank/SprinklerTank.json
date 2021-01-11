@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:SprinklerTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sprinkler Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SprinklerEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SprinklerTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingExpansionTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Expansion Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingTank;1",
+    "dtmi:digitaltwins:rec_3_3:asset:PlumbingExpansionTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

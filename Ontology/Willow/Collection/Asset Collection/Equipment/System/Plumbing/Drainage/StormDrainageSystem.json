@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:StormDrainageSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Storm Drainage System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DrainageSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:StormDrainageSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

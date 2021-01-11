@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DomesticNonPotableWaterSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domcestic Non-Potable Water System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DomesticWaterSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DomesticNonPotableWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Generation & Storage Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElectricalGenerationStorageEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

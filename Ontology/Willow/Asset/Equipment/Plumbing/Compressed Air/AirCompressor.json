@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:AirCompressor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Compressor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CompressedAir;1",
+    "dtmi:digitaltwins:rec_3_3:asset:AirCompressor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DrainageSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Drainage System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DrainageSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

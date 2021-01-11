@@ -1,0 +1,32 @@
+{
+  "@id": "dtmi:com:willowinc:WaterHeater;1",
+  "@type": "Interface",
+  "displayName": "Water Heater",
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:WaterHeater;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "firstHourDelivery",
+      "displayName": {
+        "en": "First Hour Delivery"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "gallon"
+    },
+    {
+      "@type": "Property",
+      "name": "recovery100FRise",
+      "displayName": {
+        "en": "Recovery @ 100F Rise"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "GPH"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

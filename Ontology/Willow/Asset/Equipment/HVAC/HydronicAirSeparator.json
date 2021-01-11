@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:com:willowinc:HydronicAirSeparator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hydronic Air Separator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "workingPressure",
+      "displayName": {
+        "en": "Working Pressure"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "PSIG"
+    },
+    {
+      "@type": "Property",
+      "name": "pipeDiameter",
+      "displayName": {
+        "en": "Pipe Diameter"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "inch"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Damper Position Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DamperPositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ControlsSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Controls System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ControlsSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

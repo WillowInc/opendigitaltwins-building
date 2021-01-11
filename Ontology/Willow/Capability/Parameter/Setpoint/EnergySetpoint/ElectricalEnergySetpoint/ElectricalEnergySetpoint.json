@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalEnergySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Energy Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

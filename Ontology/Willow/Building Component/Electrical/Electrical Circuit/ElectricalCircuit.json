@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalCircuit;1",
+  "@type": "Interface",
+  "displayName": "Electrical Circuit",
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalBuildingComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Voltage"],
+      "name": "voltage",
+      "displayName": "Voltage",
+      "writable": true,
+      "schema": "integer",
+      "unit": "volt"
+    },
+    {
+      "@type": "Property",
+      "name": "poles",
+      "displayName": "Poles",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "displayName": "1",
+            "enumValue": "1"
+          },
+          {
+            "name": "Two",
+            "displayName": "2",
+            "enumValue": "2"
+          },
+          {
+            "name": "Three",
+            "displayName": "3",
+            "enumValue": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": ["Property", "Current"],
+      "name": "CBRating",
+      "displayName": "Circuit Breaker Rating",
+      "writable": true,
+      "schema": "integer",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Property",
+      "name": "wireSize",
+      "displayName": "Wire Size",
+      "writable": true,
+      "schema": "string",
+      "comment": "Qty-Size Phase, Qty-Size Neutral, Qty-Size Ground"
+    },
+    {
+      "@type": "Property",
+      "name": "wireType",
+      "displayName": "Wire Type",
+      "writable": true,
+      "schema": "string"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

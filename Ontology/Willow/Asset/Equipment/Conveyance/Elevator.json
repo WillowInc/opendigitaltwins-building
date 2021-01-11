@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:com:willowinc:Elevator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ConveyanceEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Elevator;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "fireServiceAccessElevator",
+      "displayName": {
+        "en": "Fire Service Access Elevator"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "emergencyCommunication",
+      "displayName": {
+        "en": "Emergency Communication"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields" : [
+          {
+            "name": "twoWayVoice",
+            "displayName": {
+              "en": "Two-Way Voice"
+            },
+            "schema": "boolean"
+          },
+          {
+            "name": "twoWayMessageDisplay",
+            "displayName": {
+              "en": "Two-Way Message Display"
+            },
+            "schema": "boolean"
+          },
+          {
+            "name": "oneWayVideo",
+            "displayName": {
+              "en": "One-Way Video"
+            },
+            "schema": "boolean"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

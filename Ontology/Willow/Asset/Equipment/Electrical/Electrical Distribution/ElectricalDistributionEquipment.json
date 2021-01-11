@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Distribution Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

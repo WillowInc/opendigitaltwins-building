@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DaylightSensorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Daylight Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

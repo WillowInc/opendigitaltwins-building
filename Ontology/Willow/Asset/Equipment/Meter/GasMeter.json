@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:GasMeter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Gas Meter"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MeterEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:GasMeter;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

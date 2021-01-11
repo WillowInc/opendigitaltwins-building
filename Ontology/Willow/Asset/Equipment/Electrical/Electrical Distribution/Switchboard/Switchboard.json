@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Switchboard;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Switchboard"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Switchboard;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

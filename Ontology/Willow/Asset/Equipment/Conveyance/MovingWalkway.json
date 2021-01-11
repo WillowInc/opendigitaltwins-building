@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:MovingWalkway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Moving Walkway"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ConveyanceEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:MovingWalkway;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

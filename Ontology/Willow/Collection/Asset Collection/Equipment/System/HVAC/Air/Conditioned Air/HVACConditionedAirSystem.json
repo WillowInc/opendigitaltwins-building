@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACConditionedAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Conditioned Air System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACAirSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACConditionedAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

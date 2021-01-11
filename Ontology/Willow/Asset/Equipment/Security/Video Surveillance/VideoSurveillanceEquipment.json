@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VideoSurveillanceEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Video Surveillance Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SecurityEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:VideoSurveillanceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

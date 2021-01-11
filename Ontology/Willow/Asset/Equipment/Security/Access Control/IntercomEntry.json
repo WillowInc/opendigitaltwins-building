@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:IntercomEntry;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Intercom Entry"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AccessControlEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:IntercomEntry;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

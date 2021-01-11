@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:LightingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lighting System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:System;1",
+    "dtmi:digitaltwins:rec_3_3:asset:LightingSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

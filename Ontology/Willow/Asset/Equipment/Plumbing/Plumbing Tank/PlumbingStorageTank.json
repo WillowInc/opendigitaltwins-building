@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingStorageTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plumbing Storage Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingTank;1",
+    "dtmi:digitaltwins:rec_3_3:asset:PlumbingStorageTank;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "service",
+      "displayName": {
+        "en": "Service"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:PlumbingStorageTankService;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "HotWater",
+            "displayName": "HotWater",
+            "enumValue": "HotWater"
+          },  
+          {
+            "name": "ChilledWater",
+            "displayName": "ChilledWater",
+            "enumValue": "ChilledWater"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

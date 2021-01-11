@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": "Electrical Power Sensor",
+  "extends" : [
+    "dtmi:com:willowinc:PowerSensor;1",
+    "dtmi:digitaltwins:rec_3_3:core:ElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

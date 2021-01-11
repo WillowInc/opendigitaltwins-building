@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Region;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Region"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1",
+    "dtmi:digitaltwins:rec_3_3:core:Region;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

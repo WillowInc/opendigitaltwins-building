@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricTankWaterHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electric Tank Water Heater"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TankWaterHeater;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElectricTankWaterHeater;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

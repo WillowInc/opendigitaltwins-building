@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingShutOffValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Shut-Off Valve"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingValve;1",
+    "dtmi:digitaltwins:rec_3_3:asset:PlumbingShutOffValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

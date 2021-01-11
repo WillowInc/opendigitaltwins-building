@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:FanCoilUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Coil Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TerminalUnit;1",
+    "dtmi:digitaltwins:rec_3_3:asset:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

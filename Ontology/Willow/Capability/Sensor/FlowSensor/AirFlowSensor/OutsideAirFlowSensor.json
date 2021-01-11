@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": "Outside Air Flow Sensor",
+  "extends" : [
+    "dtmi:com:willowinc:AirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

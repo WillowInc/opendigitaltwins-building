@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:Pump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump"
+  },
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

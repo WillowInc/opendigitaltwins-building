@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MinDischargeFanAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Minimum Discharge Fan Air Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

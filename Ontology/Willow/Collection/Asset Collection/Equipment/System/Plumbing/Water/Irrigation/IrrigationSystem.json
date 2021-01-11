@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:IrrigationSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Irrigation System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingWaterSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:IrrigationSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

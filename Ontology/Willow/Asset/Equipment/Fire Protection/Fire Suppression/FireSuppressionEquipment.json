@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FireSuppressionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Suppression Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireProtectionEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:FireSuppressionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:Sensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Capability;1",
+    "dtmi:digitaltwins:rec_3_3:core:Sensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

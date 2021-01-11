@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DomesticWaterPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domestic Water Pump"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingPump;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DomesticWaterPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

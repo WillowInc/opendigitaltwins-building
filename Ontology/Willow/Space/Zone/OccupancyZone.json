@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:com:willowinc:OccupancyZone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupancy Zone"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Zone;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "occupancy",
+      "displayName": {
+        "en": "Occupancy"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

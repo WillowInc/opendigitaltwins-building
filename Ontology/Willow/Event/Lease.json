@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:willowinc:Lease;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lease"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Event;1",
+    "dtmi:digitaltwins:rec_3_3:business:Lease;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "active",
+      "displayName": {
+        "en": "Active"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ProductData;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Product Data"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OccupiedModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Mode Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ModeActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

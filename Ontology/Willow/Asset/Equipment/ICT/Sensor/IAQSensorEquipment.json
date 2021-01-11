@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:IAQSensorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Indoor Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

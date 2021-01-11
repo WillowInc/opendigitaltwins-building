@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:Department;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Department"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Organization;1",
+    "dtmi:digitaltwins:rec_3_3:agents:Department;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

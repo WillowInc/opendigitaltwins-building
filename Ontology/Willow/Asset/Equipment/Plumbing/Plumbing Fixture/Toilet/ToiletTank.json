@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ToiletTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet with Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Toilet;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ToiletTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

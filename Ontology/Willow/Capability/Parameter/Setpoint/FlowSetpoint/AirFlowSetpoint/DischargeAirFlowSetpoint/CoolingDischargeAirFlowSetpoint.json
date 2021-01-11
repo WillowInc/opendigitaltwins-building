@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingDischargeAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Discharge Air Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

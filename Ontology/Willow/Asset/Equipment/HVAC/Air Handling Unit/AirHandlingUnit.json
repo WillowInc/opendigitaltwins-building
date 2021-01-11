@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AirHandlingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Handling Unit"
+  },
+  "extends": [
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:AirHandlingUnit;1"
+  ],
+  "contents": [
+    
+  ],
+  "schemas": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:CompressedAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressed Air System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:GasSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

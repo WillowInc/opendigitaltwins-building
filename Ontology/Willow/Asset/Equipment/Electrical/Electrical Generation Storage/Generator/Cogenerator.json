@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Cogenerator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cogenerator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Generator;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Cogenerator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:StairPressurizationFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stair Pressurization Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACFan;1",
+    "dtmi:digitaltwins:rec_3_3:asset:StairPressurizationFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

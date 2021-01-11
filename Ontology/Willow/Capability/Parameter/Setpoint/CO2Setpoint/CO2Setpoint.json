@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:CO2Setpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "CO2 Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1",
+    "dtmi:digitaltwins:rec_3_3:core:CO2Setpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

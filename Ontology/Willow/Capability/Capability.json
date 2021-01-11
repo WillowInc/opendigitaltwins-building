@@ -1,0 +1,200 @@
+{
+  "@id": "dtmi:com:willowinc:Capability;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Capability"
+  },
+  "extends" : [
+    "dtmi:digitaltwins:rec_3_3:core:Capability;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "hostedBy",
+      "displayName": {
+        "en": "hosted by"
+      },
+      "comment": "Controller (i.e. BACnet Device)"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isControlledBy",
+      "displayName": {
+        "en": "is controlled by"
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "uniqueID",
+      "displayName": {
+        "en": "Globally Unique ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "externalID",
+      "displayName": {
+        "en": "External ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "trendID",
+      "displayName": {
+        "en": "Trend ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Time Series DB"
+    },
+    {
+      "@type": "Property",
+      "name": "siteID",
+      "displayName": {
+        "en": "Site ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "communication",
+      "displayName": {
+        "en": "Communication"
+      },
+      "schema": "dtmi:com:willowinc:CapabilityCommunication;1"
+    },
+    {
+      "@type": "Property",
+      "name": "description",
+      "displayName": {
+        "en": "Description"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "unit",
+      "displayName": {
+        "en": "Unit"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:CapabilityType;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "undefined",
+            "displayName": {
+              "en": "undefined"
+            },
+            "enumValue": "undefined"
+          },  
+          {
+            "name": "analog",
+            "displayName": {
+              "en": "analog"
+            },
+            "enumValue": "analog"
+            },
+            {
+              "name": "binary",
+              "displayName": {
+                "en": "binary"
+              },
+              "enumValue": "binary"
+            },
+            {
+              "name": "multiState",
+              "displayName": {
+                "en": "multiState"
+              },
+              "enumValue": "multiState"
+            }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "tags",
+      "displayName": {
+        "en": "Tags"
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      }
+    },
+    {
+      "@type": ["Property", "TimeSpan"],
+      "name": "trendInterval",
+      "displayName": {
+        "en": "Trend Interval"
+      },
+      "writable": true,
+      "schema": "integer",
+      "unit": "second",
+      "comment": "how often the capability value is read from the controller"
+    },
+    {
+      "@type": "Property",
+      "name": "displayPriority",
+      "displayName": {
+        "en": "Display Priority"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "sort and filter priority to be leveraged by UI"
+    },
+    {
+      "@type": "Property",
+      "name": "enabled",
+      "displayName": {
+        "en": "Is Enabled"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "detected",
+      "displayName": {
+        "en": "Is Detected"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "analyticsEnabled",
+      "displayName": {
+        "en": "Is Enabled for Analytics"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

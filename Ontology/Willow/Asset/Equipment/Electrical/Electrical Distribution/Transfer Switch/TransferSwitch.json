@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:TransferSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Transfer Switch"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:TransferSwitch;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "mainBus",
+      "displayName": {
+        "en": "Main Bus"
+      },
+      "schema": "dtmi:com:willowinc:ElectricalBus;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

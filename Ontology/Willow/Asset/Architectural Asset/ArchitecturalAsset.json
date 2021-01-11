@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ArchitecturalAsset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Architectural Asset"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Asset;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ArchitecturalAsset;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

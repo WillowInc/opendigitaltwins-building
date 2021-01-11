@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:MeterEquipmentGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Meter Equipment Group"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EquipmentGroup;1",
+    "dtmi:digitaltwins:rec_3_3:asset:MeterEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

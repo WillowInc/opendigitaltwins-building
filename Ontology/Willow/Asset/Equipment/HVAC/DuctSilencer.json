@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:com:willowinc:DuctSilencer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duct Silencer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "ductInlet",
+      "displayName": {
+        "en": "Duct Inlet"
+      },
+      "schema": "dtmi:com:willowinc:DuctConnection;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

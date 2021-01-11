@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DedicatedOutdoorAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dedicated Outdoor Air System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHandlingUnit;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DedicatedOutdoorAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

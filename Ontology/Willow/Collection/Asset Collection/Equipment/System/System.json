@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:System;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EquipmentCollection;1",
+    "dtmi:digitaltwins:rec_3_3:asset:System;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

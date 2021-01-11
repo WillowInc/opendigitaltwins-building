@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaAirPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Air Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirPressureSensor;1",
+    "dtmi:com:willowinc:DeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

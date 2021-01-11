@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ICTSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "ICT System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:System;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ITSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

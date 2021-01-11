@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:VAVBoxReheat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VAV Box with Reheat"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VAVBox;1",
+    "dtmi:digitaltwins:rec_3_3:asset:VAVBoxReheat;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

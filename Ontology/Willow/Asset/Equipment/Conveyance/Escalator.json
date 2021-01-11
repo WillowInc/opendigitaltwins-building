@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Escalator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Escalator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ConveyanceEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Escalator;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

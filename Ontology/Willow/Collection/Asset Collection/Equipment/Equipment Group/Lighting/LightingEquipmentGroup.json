@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:LightingEquipmentGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lighting Equipment Group"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EquipmentGroup;1",
+    "dtmi:digitaltwins:rec_3_3:asset:LightingEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

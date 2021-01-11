@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:VoltageSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Sensor;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Voltage"],
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "has value"
+      },
+      "name": "hasValue",
+      "schema": "double",
+      "unit": "volt",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

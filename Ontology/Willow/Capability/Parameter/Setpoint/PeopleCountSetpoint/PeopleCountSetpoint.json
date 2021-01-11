@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleCountSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Count Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "has value"
+      },
+      "name": "hasValue",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

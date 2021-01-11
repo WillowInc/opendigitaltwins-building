@@ -1,0 +1,23 @@
+{
+    "@id": "dtmi:com:willowinc:BACnetController;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "BACnet Controller"
+    },
+    "extends" : [
+      "dtmi:com:willowinc:Controller;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "address",
+        "displayName": {
+          "en": "Address"
+        },
+        "writable": true,
+        "schema": "string",
+        "comment": "JSON encoded string "
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }

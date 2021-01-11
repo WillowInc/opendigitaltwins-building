@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HVACBackflowPreventer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Backflow Preventer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACBackflowPreventer;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

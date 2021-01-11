@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:SprinklerPressureReducingStation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Reducing Station"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SprinklerValve;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SprinklerPressureReducingStation;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

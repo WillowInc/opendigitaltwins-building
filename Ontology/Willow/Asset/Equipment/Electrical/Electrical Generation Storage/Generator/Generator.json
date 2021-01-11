@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Generator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Generator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Generator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

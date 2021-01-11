@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:DataNetworkEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Network Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DataNetworkEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

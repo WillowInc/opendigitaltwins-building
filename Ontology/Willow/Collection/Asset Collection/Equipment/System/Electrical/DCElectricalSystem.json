@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DCElectricalSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "DC Electrical System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:DCElectricalSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,91 @@
+{
+  "@id": "dtmi:com:willowinc:HVACZone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Zone"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Zone;1",
+    "dtmi:digitaltwins:rec_3_3:core:HVACZone;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isFedBy",
+      "displayName": {
+        "en": "is fed by"
+      },
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "substance",
+          "displayName": {
+            "en": "Substance"
+          },
+          "writable": true,
+          "schema": "dtmi:com:willowinc:HVACZoneIsFedBySubstances;1",
+          "comment": "Terminal Unit, Diffuser"
+        }
+      ]
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:HVACZoneIsFedBySubstances;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Air",
+          "displayName": {
+            "en": "Air"
+          },
+          "enumValue": "Air"
+        },
+        {
+          "name": "OutsideAir",
+          "displayName": {
+            "en": "Outside Air"
+          },
+          "enumValue": "OutsideAir"
+        },
+        {
+          "name": "ReturnAir",
+          "displayName": {
+            "en": "Return Air"
+          },
+          "enumValue": "ReturnAir"
+        },
+        {
+          "name": "SupplyAir",
+          "displayName": {
+            "en": "Supply Air"
+          },
+          "enumValue": "SupplyAir"
+        },
+        {
+          "name": "ExhaustAir",
+          "displayName": {
+            "en": "Exhaust Air"
+          },
+          "enumValue": "ExhaustAir"
+        },
+        {
+          "name": "GreaseExhaustAir",
+          "displayName": {
+            "en": "Grease Exhaust Air"
+          },
+          "enumValue": "GreaseExhaustAir"
+        },
+        {
+          "name": "TransferAir",
+          "displayName": {
+            "en": "Transfer Air"
+          },
+          "enumValue": "TransferAir"
+        }
+      ]
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

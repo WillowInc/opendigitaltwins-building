@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Toilet;1",
+  "@type": "Interface",
+  "displayName": "Toilet",
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingFixture;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Toilet;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

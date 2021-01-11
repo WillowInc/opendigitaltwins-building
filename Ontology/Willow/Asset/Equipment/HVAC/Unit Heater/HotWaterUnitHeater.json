@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterUnitHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Unit Heater"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:UnitHeater;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HotWaterUnitHeater;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

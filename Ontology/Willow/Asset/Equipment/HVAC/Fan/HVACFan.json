@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:HVACFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Fan;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

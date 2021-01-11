@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingGlobeValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Globe Valve"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingValve;1",
+    "dtmi:digitaltwins:rec_3_3:asset:PlumbingGlobeValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

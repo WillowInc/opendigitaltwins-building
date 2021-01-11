@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:Tank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tank"
+  },
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

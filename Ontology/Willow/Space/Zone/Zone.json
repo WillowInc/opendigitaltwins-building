@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:Zone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1",
+    "dtmi:digitaltwins:rec_3_3:core:Zone;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:willowinc:SpaceArea;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

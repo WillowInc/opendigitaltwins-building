@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:EjectorPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ejector Pump"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingPump;1",
+    "dtmi:digitaltwins:rec_3_3:asset:EjectorPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

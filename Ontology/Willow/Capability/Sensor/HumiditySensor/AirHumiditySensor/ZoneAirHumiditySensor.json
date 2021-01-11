@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneAirHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air Humidity Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

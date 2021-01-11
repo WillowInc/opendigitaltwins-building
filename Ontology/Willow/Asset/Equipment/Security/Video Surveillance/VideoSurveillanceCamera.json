@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:VideoSurveillanceCamera;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Video Surveillance Camera"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VideoSurveillanceEquipment;1",
+    "dtmi:digitaltwins:rec_3_3:asset:SurveillanceCamera;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

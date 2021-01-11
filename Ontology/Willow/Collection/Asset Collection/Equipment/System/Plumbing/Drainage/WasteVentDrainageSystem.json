@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:WasteVentDrainageSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Waste Vent Drainage System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DrainageSystem;1",
+    "dtmi:digitaltwins:rec_3_3:asset:WasteVentDrainageSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

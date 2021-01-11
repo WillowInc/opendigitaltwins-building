@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:com:willowinc:SubBuilding;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sub-Building"
+  },
+  "extends": [
+    "dtmi:com:willowinc:Space;1",
+    "dtmi:digitaltwins:rec_3_3:core:SubBuilding;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "height",
+      "displayName": {
+        "en": "Height"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:willowinc:SpaceArea;1"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "temperatureAverage",
+      "displayName": {
+        "en": "Temperature Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceTemperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "humidityAverage",
+      "displayName": {
+        "en": "Humidity Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "CO2Average",
+      "displayName": {
+        "en": "CO2 Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCO2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancyTotal",
+      "displayName": {
+        "en": "Occupancy Total"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

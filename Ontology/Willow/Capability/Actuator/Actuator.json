@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Actuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Capability;1",
+    "dtmi:digitaltwins:rec_3_3:device:Actuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
