@@ -8,7 +8,18 @@
     "dtmi:com:willowinc:FlowSensor;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "has value"
+      },
+      "name": "hasValue",
+      "schema": "double",
+      "writable": true
+    }
   ],
   "@context": "dtmi:dtdl:context;2"
 }
