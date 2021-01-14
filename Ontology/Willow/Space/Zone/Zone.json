@@ -9,14 +9,7 @@
     "dtmi:digitaltwins:rec_3_3:core:Zone;1"
   ],
   "contents": [
-    {
-      "@type": "Component",
-      "name": "area",
-      "displayName": {
-        "en": "Area"
-      },
-      "schema": "dtmi:com:willowinc:SpaceArea;1"
-    }
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

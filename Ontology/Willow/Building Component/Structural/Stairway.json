@@ -26,9 +26,9 @@
     },
     {
       "@type": "Component",
-      "name": "occupancyTotal",
+      "name": "occupancy",
       "displayName": {
-        "en": "Occupancy Total"
+        "en": "Occupancy"
       },
       "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
     }

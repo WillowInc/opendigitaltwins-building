@@ -8,14 +8,7 @@
     "dtmi:com:willowinc:Zone;1"
   ],
   "contents": [
-    {
-      "@type": "Component",
-      "name": "occupancy",
-      "displayName": {
-        "en": "Occupancy"
-      },
-      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
-    }
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

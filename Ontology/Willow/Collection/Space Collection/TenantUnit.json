@@ -69,15 +69,15 @@
     },
     {
       "@type": "Component",
-      "name": "temperatureAverage",
+      "name": "temperature",
       "displayName": {
-        "en": "Temperature Average"
+        "en": "Temperature"
       },
       "schema": "dtmi:com:willowinc:SpaceTemperature;1"
     },
     {
       "@type": "Component",
-      "name": "humidityAverage",
+      "name": "humidity",
       "displayName": {
         "en": "Humidity Average"
       },
@@ -85,17 +85,17 @@
     },
     {
       "@type": "Component",
-      "name": "CO2Average",
+      "name": "CO2",
       "displayName": {
-        "en": "CO2 Average"
+        "en": "CO2"
       },
       "schema": "dtmi:com:willowinc:SpaceCO2;1"
     },
     {
       "@type": "Component",
-      "name": "occupancyTotal",
+      "name": "occupancy",
       "displayName": {
-        "en": "Occupancy Total"
+        "en": "Occupancy"
       },
       "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
     }
