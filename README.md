@@ -39,7 +39,7 @@ Before getting started:
 
 ### Ontology Overview
 
-A model which **extends** another model recusively inherits all of the Properties, Relationships, and Components from the referenced model. The following table describes the set of top-level models for this ontology. These form the base from which all other models extend from.
+A model which **extends** another model recusively inherits all of the Properties, Relationships, and Components from the referenced model. The following table describes the set of top-level models for this ontology. These form the base from which all other models extend.
 
 | Model | Description |
 | --------- | ----------- |
@@ -58,12 +58,47 @@ Models define the possible set of Properties, Relationships, and Components that
 
 ### Relationships
 
-```
-Coming Soon
-```
+Relationships between twins are what give the WillowTwin its powerful capabilities to action data. The more relationships that exist in for a given set of twins, also known as a greater graph density, the more opportunity there is for descriptive, presctiptive, predicitive, and real-time analtyics.
+
+We encourage twins to be created and updated with as many relationships as possible; however, it is important that users (and machines) creating twins have a common understanding of the real-world meaning of relationships just as they should have a common understanding of the real-world meaning of models. Having this alignment allows for the highest accuracy of the analytics and thus trust in the outcomes that are actioned and surfaced by the data.
+
+Here are the commmon relationships found in the ontology:
+
+| Relationship | Description |
+| ------------ | ----------- |
+| isPartOf | A simplified set of topological relations to connect sub- and super-entities within the top-level RealEstateCore interface tree. "isPartOf" operates on entities of the same type, for example Spaces have only Spaces as parts, Assets have only Assets as parts, etc. |
+| isCapabilityOf | Indicates that a Space, Asset or LogicalDevice has the ability to produce or ingest data represented by sensors, actuators or parameters. |
+| includedIn | Indicates that an entity is included in some Collection, for example a Building is included in a RealEstate, or an Asset is included in a System. |
+| locatedIn | Indicates that a given Asset is physically located in a Space. |
+| hostedBy | Indicates that a capability or logical device is hosted by another entity such as an asset. |
+| servedBy | The coverage or area impacted by a given Asset or Sensor/Actuator. Note that Assets can also service one another. |
+| isFedBy | Indicates that a given equipment or space is fed "something" by another equipment, like electricity, water or air. |
+| hasDocument | Indicates that an entity has accompanying details or references in a Document such as a Drawing, Product Data, Warranty, or Lease Contract. |
+
+Here are examples of how to use relationships:
+
+| Relationship | Examples |
+| ------------ | ------- |
+| isPartOf | Room-->isPartOf-->Level<br>Room-->isPartof-->HVACZone |
+| isCapabilityOf | ZoneAirTemperatureSetpoint-->isCapabilityOf-->FanPoweredBox<br>PeopleCountSensor-->isCapabilityOf-->OccupancyZone |
+| includedIn | FanPoweredBox-->includedIn-->HVACSupplyAirSystem<br>DomesticWaterPump-->includedIn-->PlumbingPumpGroup<br>Building-->includedIn-->Portfolio |
+| locatedIn | Workstation-->locatedIn-->Room<br>AirHandlingUnit-->locatedIn-->Level |
+| hostedBy | ZoneAirTemperatureSetpoint-->hostedBy-->BACnetController<br>ElectricalEnergySensor-->hostedby-->ModbusController |
+| servedBy | OccupancyZone-->servedBy--PeopleCountSensorEquipment<br>Room-->servedBy-->VideoSurveillanceCamera<br>Level-->servedBy-->Elevator |
+| isFedBy | FireSprinklerHead-->isFedBy-->SprinklerValve<br>Sink-->isFedBy-->ElectricTankWaterHeater<br>Luminaire-->isFedBy-->ElectricalCircuit1Pole |
+| hasDocument | AirHandlingUnit-->hasDocument-->Warranty<br>HVACChilledWaterSystem-->hasDocument-->TestReport<br>Level-->hasDocument-->AsBuiltDrawing |
+
+Relationships can also have properties with all of the same semantics as properties on twins. This is an powerful feature of DTDL which allows for the graph to better model the real world. In this ontology, the **isFedBy** relationship defined on [Equipment](https://github.com/Azure/opendigitaltwins-building/blob/master/Ontology/Asset/Equipment.json), [HVACZone](https://github.com/WillowInc/opendigitaltwins-building/blob/main/Ontology/Willow/Space/Zone/HVACZone.json), and [LightingZone](https://github.com/WillowInc/opendigitaltwins-building/blob/main/Ontology/Willow/Space/Zone/LightingZone.json) has a property **substance** which defines what is being fed such as **SupplyAir**, **HotDomesticWater**, **ACElec**, or **Light**. This property has been defined as an Enum such that the allowed values for substance must come from the list defined in the above models.
+
+NOTE: We recommend that the **substance** proeperty be defined on all **isFedBy** relationships to enable the best WillowTwin user experience. We also recommend using the most descriptive **substance** such as **SupplyAir** instead of **Air** and **SprinklerWater**instead of **Water**.
 
 ## Frequency Asked Questions
 
 **How do I determine which model to use when deciding between a model which extends another?**
 
 It is recommended to be as specific as possible when creating twins to provide the most detailed classification. As such, the "child" model which extends the "parent" should always be used. For example, when creating a twin of a Fan Powered Box that is known to have a heating element, the model `dtmi:com:willowinc:FanPoweredBoxReheat;1` should be used instead of a more generic model from which it extends such as `dtmi:willowinc:TerminalUnit;1`, `dtmi:willowinc:VAVBox;1`, or `dtmi:willowinc:FanPoweredBox;1`.
+
+**How do I determine whether to use a given relationship or its inverse?**
+
+In general, relationships should be defined on the "children" twins with an outgoing relationship to a common "parent". For example, there are typically many rooms on a building level so the relationship would be defined as `Room-->isPartOf-->Level`. Similarly, there are many luminaires fed by an electrical circuit so the relationship would be defined as `Luminaire-->isFedBy-->ElectricalCircuit1Pole`.
+
