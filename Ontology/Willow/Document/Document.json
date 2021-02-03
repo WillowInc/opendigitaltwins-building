@@ -16,6 +16,14 @@
       }
     },
     {
+      "@type": "Relationship",
+      "name": "includedIn",
+      "displayName": {
+        "en": "included in"
+      },
+      "target": "dtmi:com:willowinc:Collection;1"
+    },
+    {
       "@type": "Property",
       "name": "uniqueID",
       "displayName": {
