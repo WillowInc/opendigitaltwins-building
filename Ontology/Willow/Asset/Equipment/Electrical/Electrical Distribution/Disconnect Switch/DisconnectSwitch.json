@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:com:willowinc:DisconnectSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Disconnect Switch"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "mainBus",
+      "displayName": {
+        "en": "Main Bus"
+      },
+      "schema": "dtmi:com:willowinc:ElectricalBus;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
