@@ -135,6 +135,13 @@
                 "en": "multiState"
               },
               "enumValue": "multiState"
+            },
+            {
+              "name": "sum",
+              "displayName": {
+                "en": "sum"
+              },
+              "enumValue": "sum"
             }
         ]
       }
