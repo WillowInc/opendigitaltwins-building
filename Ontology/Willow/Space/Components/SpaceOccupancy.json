@@ -7,9 +7,9 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "occupancy",
+      "name": "isOccupied",
       "displayName": {
-        "en": "Occupancy"
+        "en": "Is Occupied"
       },
       "writable": true,
       "schema": "boolean"
@@ -25,9 +25,9 @@
     },
     {
       "@type": "Property",
-      "name": "inferredOccupancy",
+      "name": "hasInferredOccupancy",
       "displayName": {
-        "en": "Inferred Occupancy"
+        "en": "Has Inferred Occupancy"
       },
       "writable": true,
       "schema": "boolean"
