@@ -89,6 +89,15 @@
     },
     {
       "@type": "Property",
+      "name": "lastReportedTime",
+      "displayName": {
+        "en": "Last Reported Time"
+      },
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
       "name": "unit",
       "displayName": {
         "en": "Unit"

@@ -10,9 +10,9 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "hasValue",
+      "name": "lastReportedValue",
       "displayName": {
-        "en": "has value"
+        "en": "Last Reported Value"
       },
       "writable": true,
       "schema": "double",
