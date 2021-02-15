@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

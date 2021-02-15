@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AirNO2Sensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air NO2 Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:NO2Sensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

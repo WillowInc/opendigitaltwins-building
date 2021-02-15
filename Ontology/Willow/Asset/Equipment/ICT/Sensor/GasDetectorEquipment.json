@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:GasDetectorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Gas Detector"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

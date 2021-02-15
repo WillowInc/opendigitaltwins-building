@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AirCOSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Carbon Monoxide Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:COSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

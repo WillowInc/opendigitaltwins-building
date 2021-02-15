@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneAirNO2Sensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air NO2 Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirNO2Sensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
