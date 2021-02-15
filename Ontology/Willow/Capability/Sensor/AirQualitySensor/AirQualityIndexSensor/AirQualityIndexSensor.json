@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AirQualityIndexSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Quality Index Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

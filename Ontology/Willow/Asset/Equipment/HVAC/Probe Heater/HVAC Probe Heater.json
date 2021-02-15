@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:HVACProbeHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Probe Heater"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": [
+        "Power",
+        "Property"
+      ],
+      "displayName": {
+        "en": "power input"
+      },
+      "name": "powerInput",
+      "schema": "double",
+      "unit": "watt",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
