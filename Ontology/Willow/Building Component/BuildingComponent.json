@@ -44,6 +44,26 @@
     },
     {
       "@type": "Property",
+      "name": "geometrySpatialReference",
+      "displayName": {
+        "en": "Geometry Spatial Reference"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference for displaying in spatial context"
+    },
+    {
+      "@type": "Property",
+      "name": "geometryExternalID",
+      "displayName": {
+        "en": "Geometry External ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference to geometry source (i.e. Revit GUID)"
+    },
+    {
+      "@type": "Property",
       "name": "uniqueID",
       "displayName": {
         "en": "Globally Unique ID"
