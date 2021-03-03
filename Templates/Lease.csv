@@ -1,0 +1,1 @@
+model,id,active,uniqueID,externalID,code,description,hasUpdatedTime,hasTime,hasStopTime,hasStartTime,hasReadTime,hasPointInTime,hasObservationTime,hasDuration,hasDeletedTime,hasCreatedTime,name,leaseStart,leaseEnd,regulatedBy,leasor,leasee,leaseOf

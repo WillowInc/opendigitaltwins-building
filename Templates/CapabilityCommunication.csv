@@ -1,0 +1,1 @@
+model,id,protocol,API.externalID,BACnet.deviceID,BACnet.objectType,BACnet.objectID,Modbus.dataType,Modbus.registerAddress,Modbus.swap,Modbus.slaveID,Modbus.endian,Modbus.registerType,Modbus.scale,OPCDA.nodeID,OPCUA.nodeID,IoTHub.externalID
