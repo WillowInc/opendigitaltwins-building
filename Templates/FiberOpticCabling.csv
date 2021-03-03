@@ -1,0 +1,1 @@
+model,id,hasDocument,includedIn,isFedBy.substance.?,geometrySpatialReference,geometryExternalID,uniqueID,externalID,description,siteID,isPartOf,hasPart,componentOfBuilding,name
