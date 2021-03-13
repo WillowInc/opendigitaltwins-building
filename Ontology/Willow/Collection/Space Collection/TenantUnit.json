@@ -11,45 +11,8 @@
   "contents": [
     {
       "@type": "Relationship",
-      "name": "isLeasedBy",
-      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1",
-      "properties": [
-        {
-          "@type": "Property",
-          "name": "leaseID",
-          "displayName": "Lease ID",
-          "writable": true,
-          "schema": "string"
-        },
-        {
-          "@type": "Property",
-          "name": "duration",
-          "displayName": "Duration",
-          "writable": true,
-          "schema": "duration"
-        },
-        {
-          "@type": "Property",
-          "name": "startDate",
-          "displayName": "Start Date",
-          "writable": true,
-          "schema": "date"
-        },
-        {
-          "@type": "Property",
-          "name": "endDate",
-          "displayName": "End Date",
-          "writable": true,
-          "schema": "date"
-        },
-        {
-          "@type": "Property",
-          "name": "active",
-          "displayName": "Active",
-          "writable": true,
-          "schema": "boolean"
-        }
-      ]
+      "name": "hasLease",
+      "target": "dtmi:digitaltwins:rec_3_3:business:Lease;1"
     },
     {
       "@type": "Component",
