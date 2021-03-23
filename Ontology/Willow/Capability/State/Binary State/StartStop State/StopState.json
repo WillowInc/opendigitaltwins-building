@@ -5,7 +5,8 @@
     "en": "Stop State"
   },
   "extends" : [
-    "dtmi:com:willowinc:StartStopState;1"
+    "dtmi:com:willowinc:StartStopState;1",
+    "dtmi:com:willowinc:RunStopState;1"
   ],
   "contents": [
   ],

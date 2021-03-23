@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SolarIrradianceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Irradiance Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:IrradianceSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

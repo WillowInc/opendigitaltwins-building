@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Open Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

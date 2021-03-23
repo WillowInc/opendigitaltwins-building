@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:VFDActuator;1",
+  "@id": "dtmi:com:willowinc:PercentUnityActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "VFD Actuator"
+    "en": "Percent Unity Actuator"
   },
   "extends" : [
     "dtmi:com:willowinc:Actuator;1"

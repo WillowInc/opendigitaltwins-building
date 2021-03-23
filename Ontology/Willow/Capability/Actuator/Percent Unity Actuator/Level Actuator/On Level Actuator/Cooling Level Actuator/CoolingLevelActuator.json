@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OnLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
