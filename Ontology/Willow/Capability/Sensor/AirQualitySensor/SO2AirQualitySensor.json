@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SO2AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sulfur Dioxide (SO2) Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

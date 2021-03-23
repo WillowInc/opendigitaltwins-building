@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CurrentMagnitudeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Magnitude Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CurrentSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

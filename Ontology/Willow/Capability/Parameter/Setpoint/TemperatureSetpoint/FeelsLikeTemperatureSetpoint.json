@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FeelsLikeTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Feels Like Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TemperatureSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

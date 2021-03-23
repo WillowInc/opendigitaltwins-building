@@ -89,9 +89,9 @@
     },
     {
       "@type": "Property",
-      "name": "lastReportedTime",
+      "name": "lastValueTime",
       "displayName": {
-        "en": "Last Reported Time"
+        "en": "Last Value Time"
       },
       "writable": true,
       "schema": "dateTime"
@@ -154,6 +154,33 @@
             }
         ]
       }
+    },
+    {
+      "@type": "Property",
+      "name": "phenomenon",
+      "displayName": {
+        "en": "Phenomenon"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:CapabilityPhenomenon;1"
+    },
+    {
+      "@type": "Property",
+      "name": "position",
+      "displayName": {
+        "en": "Position"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:CapabilityPosition;1"
+    },
+    {
+      "@type": "Property",
+      "name": "assetComponent",
+      "displayName": {
+        "en": "Asset Component"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:CapabilityAssetComponent;1"
     },
     {
       "@type": "Property",
@@ -220,6 +247,582 @@
       },
       "writable": true,
       "schema": "boolean"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:CapabilityPhenomenon;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Data",
+          "displayName": {
+            "en": "Data"
+          },
+          "enumValue": "Data"
+        },
+        {
+          "name": "EthernetData",
+          "displayName": {
+            "en": "Ethernet Data"
+          },
+          "enumValue": "EthernetData"
+        },
+        {
+          "name": "WiFiData",
+          "displayName": {
+            "en": "Wi-Fi Data"
+          },
+          "enumValue": "WiFiData"
+        },
+        {
+          "name": "Electricity",
+          "displayName": {
+            "en": "Electricity"
+          },
+          "enumValue": "Electricity"
+        },
+        {
+          "name": "ACElectricity",
+          "displayName": {
+            "en": "AC Electricity"
+          },
+          "enumValue": "ACElectricity"
+        },
+        {
+          "name": "DCElectricity",
+          "displayName": {
+            "en": "DC Electricity"
+          },
+          "enumValue": "DCElectricity"
+        },
+        {
+          "name": "DriveElectricity",
+          "displayName": {
+            "en": "Drive Electricity"
+          },
+          "enumValue": "DriveElectricity"
+        },
+        {
+          "name": "Fuel",
+          "displayName": {
+            "en": "Fuel"
+          },
+          "enumValue": "Fuel"
+        },
+        {
+          "name": "Light",
+          "displayName": {
+            "en": "Light"
+          },
+          "enumValue": "Light"
+        },
+        {
+          "name": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "enumValue": "Object"
+        },
+        {
+          "name": "People",
+          "displayName": {
+            "en": "People"
+          },
+          "enumValue": "People"
+        },
+        {
+          "name": "Solar",
+          "displayName": {
+            "en": "Solar"
+          },
+          "enumValue": "Solar"
+        },
+        {
+          "name": "Air",
+          "displayName": {
+            "en": "Air"
+          },
+          "enumValue": "Air"
+        },
+        {
+          "name": "CompressedAir",
+          "displayName": {
+            "en": "Compressed Air"
+          },
+          "enumValue": "Compressed Air"
+        },
+        {
+          "name": "NaturalGasFuel",
+          "displayName": {
+            "en": "Natural Gas"
+          },
+          "enumValue": "NaturalGasFuel"
+        },
+        {
+          "name": "Steam",
+          "displayName": {
+            "en": "Steam"
+          },
+          "enumValue": "Steam"
+        },
+        {
+          "name": "Condensate",
+          "displayName": {
+            "en": "Condensate"
+          },
+          "enumValue": "Condensate"
+        },
+        {
+          "name": "Drainage",
+          "displayName": {
+            "en": "Drainage"
+          },
+          "enumValue": "Drainage"
+        },
+        {
+          "name": "StormDrainage",
+          "displayName": {
+            "en": "Storm Drainage"
+          },
+          "enumValue": "StormDrainage"
+        },
+        {
+          "name": "WasteVentDrainage",
+          "displayName": {
+            "en": "Waste-Vent Drainage"
+          },
+          "enumValue": "WasteVentDrainage"
+        },
+        {
+          "name": "DieselFuel",
+          "displayName": {
+            "en": "Diesel"
+          },
+          "enumValue": "DieselFuel"
+        },
+        {
+          "name": "FuelOilFuel",
+          "displayName": {
+            "en": "Fuel Oil"
+          },
+          "enumValue": "FuelOilFuel"
+        },
+        {
+          "name": "GasolineFuel",
+          "displayName": {
+            "en": "Gasoline"
+          },
+          "enumValue": "GasolineFuel"
+        },
+        {
+          "name": "LiquidPropaneFuel",
+          "displayName": {
+            "en": "Liquid Propane"
+          },
+          "enumValue": "LiquidPropaneFuel"
+        },
+        {
+          "name": "Refrigerant",
+          "displayName": {
+            "en": "Refrigerant"
+          },
+          "enumValue": "Refrigerant"
+        },
+        {
+          "name": "Water",
+          "displayName": {
+            "en": "Water"
+          },
+          "enumValue": "Water"
+        },
+        {
+          "name": "MakeupWater",
+          "displayName": {
+            "en": "Makeup Water"
+          },
+          "enumValue": "MakeupWater"
+        },
+        {
+          "name": "IrrigationWater",
+          "displayName": {
+            "en": "Irrigation Water"
+          },
+          "enumValue": "IrrigationWater"
+        },
+        {
+          "name": "HotWater",
+          "displayName": {
+            "en": "Hot Water"
+          },
+          "enumValue": "HotWater"
+        },
+        {
+          "name": "LowTemperatureHotWater",
+          "displayName": {
+            "en": "Low Temperature Hot Water"
+          },
+          "enumValue": "LowTemperatureHotWater"
+        },
+        {
+          "name": "MediumTemperatureHotWater",
+          "displayName": {
+            "en": "Medium Temperature Hot Water"
+          },
+          "enumValue": "MediumTemperatureHotWater"
+        },
+        {
+          "name": "HighTemperatureHotWater",
+          "displayName": {
+            "en": "High Temperature Hot Water"
+          },
+          "enumValue": "HighTemperatureHotWater"
+        },
+        {
+          "name": "ColdDomesticWater",
+          "displayName": {
+            "en": "Cold Domestic Water"
+          },
+          "enumValue": "ColdDomesticWater"
+        },
+        {
+          "name": "HotDomesticWater",
+          "displayName": {
+            "en": "Hot Domestic Water"
+          },
+          "enumValue": "HotDomesticWater"
+        },
+        {
+          "name": "NonPotableDomesticWater",
+          "displayName": {
+            "en": "Non-Potable Domestic Water"
+          },
+          "enumValue": "NonPotableDomesticWater"
+        },
+        {
+          "name": "ChilledWater",
+          "displayName": {
+            "en": "Chilled Water"
+          },
+          "enumValue": "ChilledWater"
+        },
+        {
+          "name": "CondenserWater",
+          "displayName": {
+            "en": "Condenser Water"
+          },
+          "enumValue": "CondenserWater"
+        },
+        {
+          "name": "BlowdownWater",
+          "displayName": {
+            "en": "Blowdown Water"
+          },
+          "enumValue": "BlowdownWater"
+        },
+        {
+          "name": "DeionizedWater",
+          "displayName": {
+            "en": "Deionized Water"
+          },
+          "enumValue": "DeionizedWater"
+        },
+        {
+          "name": "SprinklerWater",
+          "displayName": {
+            "en": "Sprinkler Water"
+          },
+          "enumValue": "SprinklerWater"
+        },
+        {
+          "name": "Ice",
+          "displayName": {
+            "en": "Ice"
+          },
+          "enumValue": "Ice"
+        },
+        {
+          "name": "FrostIce",
+          "displayName": {
+            "en": "Frost"
+          },
+          "enumValue": "FrostIce"
+        },
+        {
+          "name": "Precipitation",
+          "displayName": {
+            "en": "Precipitation"
+          },
+          "enumValue": "Precipitation"
+        },
+        {
+          "name": "RainPrecipitation",
+          "displayName": {
+            "en": "Rain"
+          },
+          "enumValue": "RainPrecipitation"
+        },
+        {
+          "name": "SnowPrecipitation",
+          "displayName": {
+            "en": "Snow"
+          },
+          "enumValue": "SnowPrecipitation"
+        },
+        {
+          "name": "HailPrecipitation",
+          "displayName": {
+            "en": "Hail"
+          },
+          "enumValue": "HailPrecipitation"
+        },
+        {
+          "name": "SleetPrecipitation",
+          "displayName": {
+            "en": "Sleet"
+          },
+          "enumValue": "SleetPrecipitation"
+        },
+        {
+          "name": "FreezingRainPrecipitation",
+          "displayName": {
+            "en": "Freezing Rain"
+          },
+          "enumValue": "FreezingRainPrecipitation"
+        },
+        {
+          "name": "Cloudage",
+          "displayName": {
+            "en": "Cloudage"
+          },
+          "enumValue": "Cloudage"
+        },
+        {
+          "name": "Wind",
+          "displayName": {
+            "en": "Wind"
+          },
+          "enumValue": "Wind"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:CapabilityPosition;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Exhaust",
+          "displayName": {
+            "en": "Exhaust"
+          },
+          "enumValue": "Exhaust"
+        },
+        {
+          "name": "Outside",
+          "displayName": {
+            "en": "Outside"
+          },
+          "enumValue": "Outside"
+        },
+        {
+          "name": "Return",
+          "displayName": {
+            "en": "Return"
+          },
+          "enumValue": "Return"
+        },
+        {
+          "name": "Discharge",
+          "displayName": {
+            "en": "Discharge"
+          },
+          "enumValue": "Discharge"
+        },
+        {
+          "name": "Zone",
+          "displayName": {
+            "en": "Zone"
+          },
+          "enumValue": "Zone"
+        },
+        {
+          "name": "Underfloor",
+          "displayName": {
+            "en": "Underfloor"
+          },
+          "enumValue": "Underfloor"
+        },
+        {
+          "name": "Economizer",
+          "displayName": {
+            "en": "Economizer"
+          },
+          "enumValue": "Economizer"
+        },
+        {
+          "name": "Mixed",
+          "displayName": {
+            "en": "Mixed"
+          },
+          "enumValue": "Mixed"
+        },
+        {
+          "name": "Entering",
+          "displayName": {
+            "en": "Entering"
+          },
+          "enumValue": "Entering"
+        },
+        {
+          "name": "Leaving",
+          "displayName": {
+            "en": "Leaving"
+          },
+          "enumValue": "Leaving"
+        },
+        {
+          "name": "Header",
+          "displayName": {
+            "en": "Header"
+          },
+          "enumValue": "Header"
+        },
+        {
+          "name": "Bypass",
+          "displayName": {
+            "en": "Bypass"
+          },
+          "enumValue": "Bypass"
+        },
+        {
+          "name": "Circulating",
+          "displayName": {
+            "en": "Circulating"
+          },
+          "enumValue": "Circulating"
+        },
+        {
+          "name": "Delta",
+          "displayName": {
+            "en": "Delta"
+          },
+          "enumValue": "Delta"
+        },
+        {
+          "name": "Upload",
+          "displayName": {
+            "en": "Upload"
+          },
+          "enumValue": "Upload"
+        },
+        {
+          "name": "Download",
+          "displayName": {
+            "en": "Download"
+          },
+          "enumValue": "Download"
+        },
+        {
+          "name": "Import",
+          "displayName": {
+            "en": "Import"
+          },
+          "enumValue": "Import"
+        },
+        {
+          "name": "Export",
+          "displayName": {
+            "en": "Export"
+          },
+          "enumValue": "Export"
+        },
+        {
+          "name": "Net",
+          "displayName": {
+            "en": "Net"
+          },
+          "enumValue": "Net"
+        },
+        {
+          "name": "Input",
+          "displayName": {
+            "en": "Input"
+          },
+          "enumValue": "Input"
+        },
+        {
+          "name": "Output",
+          "displayName": {
+            "en": "Output"
+          },
+          "enumValue": "Output"
+        },
+        {
+          "name": "Azimuth",
+          "displayName": {
+            "en": "Azimuth"
+          },
+          "enumValue": "Azimuth"
+        },
+        {
+          "name": "Zenith",
+          "displayName": {
+            "en": "Zenith"
+          },
+          "enumValue": "Zenith"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:CapabilityAssetComponent;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Damper",
+          "displayName": {
+            "en": "Damper"
+          },
+          "enumValue": "Damper"
+        },
+        {
+          "name": "Fan",
+          "displayName": {
+            "en": "Fan"
+          },
+          "enumValue": "Fan"
+        },
+        {
+          "name": "Filter",
+          "displayName": {
+            "en": "Filter"
+          },
+          "enumValue": "Filter"
+        },
+        {
+          "name": "Motor",
+          "displayName": {
+            "en": "Motor"
+          },
+          "enumValue": "Motor"
+        },
+        {
+          "name": "Compressor",
+          "displayName": {
+            "en": "Compressor"
+          },
+          "enumValue": "Compressor"
+        },
+        {
+          "name": "VFD",
+          "displayName": {
+            "en": "VFD"
+          },
+          "enumValue": "VFD"
+        }
+      ]
     }
   ],
   "@context": "dtmi:dtdl:context;2"

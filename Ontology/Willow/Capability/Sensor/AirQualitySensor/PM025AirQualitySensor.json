@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PM025AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM2.5 Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OpenCloseState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Open/Close State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinaryState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

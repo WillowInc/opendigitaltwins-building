@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DwellTimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dwell Time Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TimeSpanSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:WiFiDataRateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "WiFi Data Rate Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DataRateSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

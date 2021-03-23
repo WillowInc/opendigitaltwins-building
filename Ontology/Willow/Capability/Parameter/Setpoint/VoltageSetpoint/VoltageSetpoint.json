@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:VoltageSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Voltage"],
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "Last Value"
+      },
+      "name": "lastValue",
+      "schema": "double",
+      "unit": "volt",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

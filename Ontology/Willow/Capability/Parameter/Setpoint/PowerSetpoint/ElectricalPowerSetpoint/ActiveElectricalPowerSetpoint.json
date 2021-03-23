@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:ActiveElectricalPowerSetpoint;1",
+  "@type": "Interface",
+  "displayName": "Active Electrical Power Setpoint",
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

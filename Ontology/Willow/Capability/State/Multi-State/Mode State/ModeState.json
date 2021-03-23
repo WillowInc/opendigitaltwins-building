@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mode State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MultiState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

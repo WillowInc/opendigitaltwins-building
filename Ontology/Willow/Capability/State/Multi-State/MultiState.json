@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MultiState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multi-State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:State;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

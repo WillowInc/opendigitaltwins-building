@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LoadLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Load Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LevelState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

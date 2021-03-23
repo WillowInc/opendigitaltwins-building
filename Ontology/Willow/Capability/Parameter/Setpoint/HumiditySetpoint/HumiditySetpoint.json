@@ -9,7 +9,7 @@
     "dtmi:digitaltwins:rec_3_3:core:HumiditySetpoint;1"
   ],
   "contents": [
-
+   
   ],
   "@context": "dtmi:dtdl:context;2"
 }

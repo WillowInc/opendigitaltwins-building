@@ -10,9 +10,9 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "lastReportedValue",
+      "name": "lastValue",
       "displayName": {
-        "en": "Last Reported Value"
+        "en": "Last Value"
       },
       "writable": true,
       "schema": "boolean"

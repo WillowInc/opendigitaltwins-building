@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:State;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Capability;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

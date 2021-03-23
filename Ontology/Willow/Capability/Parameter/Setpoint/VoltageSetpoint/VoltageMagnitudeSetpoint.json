@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VoltageMagnitudeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Magnitude Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VoltageSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

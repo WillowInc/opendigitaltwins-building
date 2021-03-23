@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleMotionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Motion Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MotionSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CH2OAirQualitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Formaldehyde (CH2O) Air Quality Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

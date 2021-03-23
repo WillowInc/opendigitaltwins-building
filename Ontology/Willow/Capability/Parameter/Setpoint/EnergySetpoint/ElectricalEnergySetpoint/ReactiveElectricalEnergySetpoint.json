@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ReactiveElectricalEnergySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reactive Electrical Energy Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

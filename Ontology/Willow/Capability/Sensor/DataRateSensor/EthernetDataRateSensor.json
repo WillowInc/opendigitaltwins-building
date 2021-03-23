@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EthernetDataRateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ethernet Data Rate Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DataRateSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

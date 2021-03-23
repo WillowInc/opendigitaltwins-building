@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Open State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenCloseState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
