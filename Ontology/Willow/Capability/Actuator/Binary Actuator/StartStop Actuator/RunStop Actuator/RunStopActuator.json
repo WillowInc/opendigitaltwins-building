@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:RunStopActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Run/Stop Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StartStopActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

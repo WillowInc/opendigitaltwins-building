@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:EnableActuator;1",
+  "@id": "dtmi:com:willowinc:BinaryActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Enable Actuator"
+    "en": "Binary Actuator"
   },
   "extends" : [
     "dtmi:com:willowinc:Actuator;1"

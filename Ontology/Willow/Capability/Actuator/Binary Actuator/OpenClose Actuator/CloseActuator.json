@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:CloseActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Close Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenCloseActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

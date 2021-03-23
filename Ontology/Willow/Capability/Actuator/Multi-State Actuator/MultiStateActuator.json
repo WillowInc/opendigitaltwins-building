@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:MultiStateActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multi-State Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Actuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

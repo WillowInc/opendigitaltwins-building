@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DisableState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Disable State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnableDisableState;1",
+    "dtmi:com:willowinc:OffState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

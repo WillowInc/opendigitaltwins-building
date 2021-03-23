@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ResetState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reset State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ResetOverrideState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

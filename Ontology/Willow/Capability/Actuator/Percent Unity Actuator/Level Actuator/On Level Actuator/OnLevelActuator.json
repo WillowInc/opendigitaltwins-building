@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OnLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "On Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LevelActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

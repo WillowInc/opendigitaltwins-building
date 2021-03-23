@@ -8,15 +8,6 @@
     "dtmi:com:willowinc:Actuator;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "lastValue",
-      "displayName": {
-        "en": "Last Value"
-      },
-      "writable": true,
-      "schema": "boolean"
-    }
 
   ],
   "@context": "dtmi:dtdl:context;2"

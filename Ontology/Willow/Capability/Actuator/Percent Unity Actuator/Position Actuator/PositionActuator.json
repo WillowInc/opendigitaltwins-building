@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Position Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PercentUnityActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

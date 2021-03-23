@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:EnableActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enable Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnableDisableActuator;1",
+    "dtmi:com:willowinc:OnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
