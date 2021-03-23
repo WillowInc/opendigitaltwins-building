@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PM001AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM0.1 Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

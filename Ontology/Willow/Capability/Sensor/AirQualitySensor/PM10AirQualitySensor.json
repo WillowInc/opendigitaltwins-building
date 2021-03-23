@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PM10AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM10 Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DryBulbTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dry Bulb Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TemperatureSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

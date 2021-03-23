@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SpecificEnthalpySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Specific Enthalpy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnthalpySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

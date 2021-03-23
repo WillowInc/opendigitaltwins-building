@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:BinaryState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Binary State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:State;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

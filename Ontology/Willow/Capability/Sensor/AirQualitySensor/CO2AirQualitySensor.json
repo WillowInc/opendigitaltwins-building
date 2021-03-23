@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CO2AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Carbon Dioxide (CO2) Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

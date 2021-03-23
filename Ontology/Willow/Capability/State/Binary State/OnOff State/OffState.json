@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OffState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Off State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OnOffState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:NO2AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Nitrogen Dioxide (NO2) Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:NOxAirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

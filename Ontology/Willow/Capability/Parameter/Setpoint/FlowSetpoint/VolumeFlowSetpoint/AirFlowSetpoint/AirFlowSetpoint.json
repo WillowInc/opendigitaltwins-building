@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:AirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": "Air Flow Setpoint",
+  "extends" : [
+    "dtmi:com:willowinc:VolumeFlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

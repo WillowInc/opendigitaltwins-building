@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:O3AirQualitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ozone (O3) Air Quality Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -9,6 +9,7 @@
     "dtmi:digitaltwins:rec_3_3:core:FlowSetpoint;1"
   ],
   "contents": [
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

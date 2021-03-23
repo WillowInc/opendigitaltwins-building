@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleInferredOccupancySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Inferred Occupancy Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PeopleOccupancySetpoint;1",
+    "dtmi:com:willowinc:InferredOccupancySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

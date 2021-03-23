@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:StaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Static Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

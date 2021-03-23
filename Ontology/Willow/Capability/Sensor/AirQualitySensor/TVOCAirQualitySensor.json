@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TVOCAirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Volatile Organic Compound (TVOC) Air Quality Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

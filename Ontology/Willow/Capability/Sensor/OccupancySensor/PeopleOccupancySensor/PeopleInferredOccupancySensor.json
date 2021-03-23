@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleInferredOccupancySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Inferred Occupancy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PeopleOccupancySensor;1",
+    "dtmi:com:willowinc:InferredOccupancySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

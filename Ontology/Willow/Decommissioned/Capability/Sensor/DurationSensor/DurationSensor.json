@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:willowinc:DurationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duration Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Sensor;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "Last Value"
+      },
+      "name": "lastValue",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

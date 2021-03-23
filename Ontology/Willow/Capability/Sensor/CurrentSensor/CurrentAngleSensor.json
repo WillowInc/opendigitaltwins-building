@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CurrentAngleSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Angle Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CurrentSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

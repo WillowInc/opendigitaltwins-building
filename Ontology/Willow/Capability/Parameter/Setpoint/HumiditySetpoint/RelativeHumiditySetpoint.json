@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:RelativeHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relative Humidity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HumiditySetpoint;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "RelativeHumidity"],
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "Last Value"
+      },
+      "name": "lastValue",
+      "schema": "double",
+      "unit": "percent",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

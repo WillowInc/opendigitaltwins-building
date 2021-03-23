@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:StartState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Start State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StartStopState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
