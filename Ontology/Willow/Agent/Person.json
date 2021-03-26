@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Person;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Person"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Agent;1",
+    "dtmi:digitaltwins:rec_3_3:agents:Person;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
