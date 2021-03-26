@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ObjectFlowSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

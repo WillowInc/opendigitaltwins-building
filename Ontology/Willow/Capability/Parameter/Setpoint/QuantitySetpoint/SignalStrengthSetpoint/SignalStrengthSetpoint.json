@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SignalStrengthSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Signal Strength Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

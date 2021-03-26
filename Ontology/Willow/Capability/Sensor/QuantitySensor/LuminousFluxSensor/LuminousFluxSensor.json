@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:LuminousFluxSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Luminous Flux Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

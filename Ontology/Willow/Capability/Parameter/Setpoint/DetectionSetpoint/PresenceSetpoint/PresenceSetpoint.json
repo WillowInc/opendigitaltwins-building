@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PresenceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Presence Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DetectionSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

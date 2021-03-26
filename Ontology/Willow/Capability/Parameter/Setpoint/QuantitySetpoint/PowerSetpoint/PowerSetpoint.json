@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PowerSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Power Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

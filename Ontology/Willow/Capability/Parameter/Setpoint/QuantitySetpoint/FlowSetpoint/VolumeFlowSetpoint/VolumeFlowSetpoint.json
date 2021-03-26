@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VolumeFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Volume Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Image;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Image"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TimeSpanSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Time Span Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

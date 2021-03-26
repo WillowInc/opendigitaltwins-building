@@ -821,6 +821,13 @@
             "en": "VFD"
           },
           "enumValue": "VFD"
+        },
+        {
+          "name": "Battery",
+          "displayName": {
+            "en": "Battery"
+          },
+          "enumValue": "Battery"
         }
       ]
     }

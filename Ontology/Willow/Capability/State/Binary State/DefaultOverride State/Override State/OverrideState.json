@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OverrideState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Override State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DefaultOverrideState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

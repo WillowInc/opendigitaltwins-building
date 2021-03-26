@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ObjectFlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DataSizeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Size Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

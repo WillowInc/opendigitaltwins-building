@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:AbsentState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absent State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PresentAbsentState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

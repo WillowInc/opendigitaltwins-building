@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AngularAccelerationSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Acceleration Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AccelerationSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

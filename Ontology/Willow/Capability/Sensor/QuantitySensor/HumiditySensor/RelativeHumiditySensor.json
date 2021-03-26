@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:RelativeHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relative Humidity Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HumiditySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

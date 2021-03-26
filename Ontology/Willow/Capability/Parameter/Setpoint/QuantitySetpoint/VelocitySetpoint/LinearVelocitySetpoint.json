@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:LinearVelocitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Linear Velocity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VelocitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
