@@ -9,15 +9,7 @@
     "dtmi:digitaltwins:rec_3_3:business:Lease;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "active",
-      "displayName": {
-        "en": "Active"
-      },
-      "writable": true,
-      "schema": "boolean"
-    }
+    
   ],
   "@context": "dtmi:dtdl:context;2"
 }

@@ -43,6 +43,15 @@
       },
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "active",
+      "displayName": {
+        "en": "Active"
+      },
+      "writable": true,
+      "schema": "boolean"
     }
   ],
   "@context": "dtmi:dtdl:context;2"
