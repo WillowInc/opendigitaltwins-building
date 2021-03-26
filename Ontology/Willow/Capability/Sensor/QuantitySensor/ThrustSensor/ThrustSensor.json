@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ThrustSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thrust Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

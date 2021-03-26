@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:NormalFaultState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Normal/Fault State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinaryState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

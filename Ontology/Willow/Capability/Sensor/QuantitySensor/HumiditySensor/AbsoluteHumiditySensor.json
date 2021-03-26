@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AbsoluteHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absolute Humidity Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HumiditySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:RelativeHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relative Humidity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HumiditySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

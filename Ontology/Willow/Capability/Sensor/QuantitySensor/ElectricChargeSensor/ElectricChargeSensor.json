@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricChargeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electric Charge Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

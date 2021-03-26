@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AngularVelocitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Velocity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VelocitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

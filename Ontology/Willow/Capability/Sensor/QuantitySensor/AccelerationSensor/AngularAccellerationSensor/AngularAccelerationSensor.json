@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AngularAccelerationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Acceleration Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AccelerationSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

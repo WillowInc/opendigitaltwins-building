@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VolumeFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Volume Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FlowSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

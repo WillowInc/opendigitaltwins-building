@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:NormalFaultActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Normal/Fault Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinaryActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

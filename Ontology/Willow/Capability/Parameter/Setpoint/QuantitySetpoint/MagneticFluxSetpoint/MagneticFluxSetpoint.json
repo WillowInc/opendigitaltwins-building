@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:MagneticFluxSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Magnetic Flux Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

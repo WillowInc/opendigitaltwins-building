@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DensitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Density Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
