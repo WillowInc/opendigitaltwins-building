@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DamperOpenSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Open Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

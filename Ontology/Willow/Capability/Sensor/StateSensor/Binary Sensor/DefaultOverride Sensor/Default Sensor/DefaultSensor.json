@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DefaultSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Default Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DefaultOverrideSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

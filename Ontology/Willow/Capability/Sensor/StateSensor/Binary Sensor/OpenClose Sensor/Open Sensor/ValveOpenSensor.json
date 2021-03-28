@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ValveOpenSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valve Open Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

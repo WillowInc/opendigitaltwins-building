@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:MotionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Motion Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinarySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

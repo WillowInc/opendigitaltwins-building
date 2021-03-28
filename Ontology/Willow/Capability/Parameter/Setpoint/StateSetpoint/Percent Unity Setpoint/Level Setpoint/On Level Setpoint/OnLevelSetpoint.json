@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OnLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "On Level Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LevelSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

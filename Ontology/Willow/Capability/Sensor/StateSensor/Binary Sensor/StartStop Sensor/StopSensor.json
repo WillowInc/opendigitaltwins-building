@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:StopSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stop Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StartStopSensor;1",
+    "dtmi:com:willowinc:RunStopSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

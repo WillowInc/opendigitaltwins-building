@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ValvePositionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valve Position Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PositionSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

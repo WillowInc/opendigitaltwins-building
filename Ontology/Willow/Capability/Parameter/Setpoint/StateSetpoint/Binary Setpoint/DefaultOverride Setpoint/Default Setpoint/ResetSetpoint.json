@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ResetSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reset Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DefaultSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

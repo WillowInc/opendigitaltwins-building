@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:NormalSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Normal Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:NormalFaultSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

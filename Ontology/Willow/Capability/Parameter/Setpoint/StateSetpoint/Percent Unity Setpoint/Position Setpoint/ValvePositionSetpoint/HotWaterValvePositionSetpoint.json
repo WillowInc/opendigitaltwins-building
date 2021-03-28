@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterValvePositionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Valve Position Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ValvePositionSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

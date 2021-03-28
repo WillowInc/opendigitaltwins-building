@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OpenCloseSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Open/Close Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinarySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

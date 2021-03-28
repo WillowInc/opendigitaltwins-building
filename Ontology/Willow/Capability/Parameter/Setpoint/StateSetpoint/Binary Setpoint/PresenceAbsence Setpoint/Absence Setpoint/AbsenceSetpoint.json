@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:AbsenceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absence Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PresenceAbsenceSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

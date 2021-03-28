@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheating Level Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ModeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mode Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Sensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

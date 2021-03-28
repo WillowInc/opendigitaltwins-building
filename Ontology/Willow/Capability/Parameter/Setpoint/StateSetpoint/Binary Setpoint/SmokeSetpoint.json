@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SmokeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinarySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
