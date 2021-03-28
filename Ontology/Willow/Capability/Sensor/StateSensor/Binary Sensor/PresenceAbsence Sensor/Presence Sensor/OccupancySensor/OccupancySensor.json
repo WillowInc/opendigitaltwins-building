@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OccupancySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupancy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PresenceSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

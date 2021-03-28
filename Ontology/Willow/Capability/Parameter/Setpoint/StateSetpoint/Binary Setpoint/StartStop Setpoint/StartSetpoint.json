@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:StartSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Start Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StartStopSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

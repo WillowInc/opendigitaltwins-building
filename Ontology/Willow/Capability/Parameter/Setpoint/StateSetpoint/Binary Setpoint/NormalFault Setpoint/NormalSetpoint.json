@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:NormalSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Normal Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:NormalFaultSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

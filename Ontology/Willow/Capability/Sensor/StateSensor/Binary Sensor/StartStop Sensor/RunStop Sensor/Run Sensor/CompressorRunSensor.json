@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Run Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

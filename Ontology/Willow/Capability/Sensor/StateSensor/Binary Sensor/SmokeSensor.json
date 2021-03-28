@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SmokeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinarySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

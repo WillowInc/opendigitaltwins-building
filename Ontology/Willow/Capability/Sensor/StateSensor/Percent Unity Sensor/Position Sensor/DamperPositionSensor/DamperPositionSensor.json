@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DamperPositionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Position Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PositionSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

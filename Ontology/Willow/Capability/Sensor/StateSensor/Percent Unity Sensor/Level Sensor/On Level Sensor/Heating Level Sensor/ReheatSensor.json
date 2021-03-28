@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatLevelSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheating Level Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingLevelSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

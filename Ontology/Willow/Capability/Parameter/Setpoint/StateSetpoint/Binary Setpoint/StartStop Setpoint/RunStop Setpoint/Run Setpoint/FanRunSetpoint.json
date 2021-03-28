@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FanRunSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Run Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RunSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

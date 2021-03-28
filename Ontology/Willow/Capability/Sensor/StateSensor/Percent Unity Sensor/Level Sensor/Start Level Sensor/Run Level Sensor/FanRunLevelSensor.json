@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FanRunLevelSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Run Level Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RunLevelSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

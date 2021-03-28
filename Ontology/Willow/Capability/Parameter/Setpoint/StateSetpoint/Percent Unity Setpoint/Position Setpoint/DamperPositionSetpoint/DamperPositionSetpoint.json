@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DamperPositionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Position Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PositionSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

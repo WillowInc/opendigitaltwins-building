@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterValvePositionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Valve Position Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ValvePositionSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

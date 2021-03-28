@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:RunLevelSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Run Level Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StartLevelSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ResetSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reset Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DefaultSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ContactSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Contact Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenCloseSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

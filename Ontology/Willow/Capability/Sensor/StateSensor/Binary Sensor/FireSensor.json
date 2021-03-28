@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FireSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinarySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
