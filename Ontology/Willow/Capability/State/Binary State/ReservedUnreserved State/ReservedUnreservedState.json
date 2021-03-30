@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ReservedUnreservedState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reserved/Unreserved State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinaryState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

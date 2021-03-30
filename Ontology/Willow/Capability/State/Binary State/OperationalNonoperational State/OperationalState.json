@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OperationalState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Operational State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperationalNonoperationalState;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

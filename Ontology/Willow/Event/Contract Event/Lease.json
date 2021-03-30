@@ -5,7 +5,7 @@
     "en": "Lease"
   },
   "extends" : [
-    "dtmi:com:willowinc:Event;1",
+    "dtmi:com:willowinc:ContractEvent;1",
     "dtmi:digitaltwins:rec_3_3:business:Lease;1"
   ],
   "contents": [
