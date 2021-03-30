@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:com:willowinc:PersonAccessEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Person Access Event"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Event;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "accessReaderId",
+      "displayName": {
+        "en": "Access Reader Id"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "accessEventType",
+      "displayName": {
+        "en": "Access Event Type"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:AccessEventType;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Granted",
+            "displayName": "Granted",
+            "enumValue": "Granted"
+          },
+          {
+            "name": "Denied",
+            "displayName": "Denied",
+            "enumValue": "Denied"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

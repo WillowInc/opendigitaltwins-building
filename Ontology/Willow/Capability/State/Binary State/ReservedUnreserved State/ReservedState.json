@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:ServiceContract;1",
+  "@id": "dtmi:com:willowinc:ReservedState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Service Contract"
+    "en": "Reserved State"
   },
   "extends" : [
-    "dtmi:com:willowinc:ContractDocument;1"
+    "dtmi:com:willowinc:ReservedUnreservedState;1"
   ],
   "contents": [
   ],

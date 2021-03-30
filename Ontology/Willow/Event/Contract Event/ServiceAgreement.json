@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:com:willowinc:ServiceAgreement;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Service Agreement"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ContractEvent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "An agreement is regulated by some contract document entered into by the service provider and client."
+      },
+      "displayName": {
+        "en": "regulated by"
+      },
+      "name": "regulatedBy",
+      "target": "dtmi:com:willowinc:ContractDocument;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The agent performing the services for the client."
+      },
+      "displayName": {
+        "en": "Service Provider"
+      },
+      "name": "serviceProvider",
+      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The agent purchasing the services of the service provider"
+      },
+      "displayName": {
+        "en": "Client"
+      },
+      "name": "client",
+      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

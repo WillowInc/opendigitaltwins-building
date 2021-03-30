@@ -1,13 +1,14 @@
 {
-  "@id": "dtmi:com:willowinc:Contract;1",
+  "@id": "dtmi:com:willowinc:ContractEvent;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Contract"
+    "en": "Contract Event"
   },
   "extends" : [
-    "dtmi:com:willowinc:Document;1"
+    "dtmi:com:willowinc:Event;1"
   ],
   "contents": [
+    
   ],
   "@context": "dtmi:dtdl:context;2"
 }

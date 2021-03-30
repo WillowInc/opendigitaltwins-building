@@ -9,7 +9,15 @@
     "dtmi:digitaltwins:rec_3_3:agents:Person;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "name": "companyId",
+      "displayName": {
+        "en": "Company Id"
+      },
+      "writable": true,
+      "schema": "string"
+    }
   ],
   "@context": "dtmi:dtdl:context;2"
 }

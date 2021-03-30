@@ -5,7 +5,7 @@
     "en": "Lease Contract"
   },
   "extends" : [
-    "dtmi:com:willowinc:Contract;1",
+    "dtmi:com:willowinc:ContractDocument;1",
     "dtmi:digitaltwins:rec_3_3:business:LeaseContract;1"
   ],
   "contents": [
