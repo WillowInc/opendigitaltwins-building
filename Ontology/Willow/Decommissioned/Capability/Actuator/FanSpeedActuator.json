@@ -1,0 +1,24 @@
+{
+  "@id": "dtmi:com:willowinc:FanSpeedActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Speed Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Actuator;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "%"
+    }
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
