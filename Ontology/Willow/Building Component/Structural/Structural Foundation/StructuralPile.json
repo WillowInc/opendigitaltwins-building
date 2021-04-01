@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:StructuralPile;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Pile"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuralFoundation;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

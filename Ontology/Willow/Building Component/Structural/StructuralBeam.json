@@ -1,13 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:ElevatorShaft;1",
+  "@id": "dtmi:com:willowinc:StructuralBeam;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Elevator Shaft"
+    "en": "Structural Beam"
   },
   "extends" : [
     "dtmi:com:willowinc:StructuralBuildingComponent;1"
-  ],
-  "contents": [
   ],
   "@context": "dtmi:dtdl:context;2"
 }

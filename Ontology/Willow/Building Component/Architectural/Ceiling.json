@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:Ceiling;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ceiling"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ArchitecturalBuildingComponent;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
