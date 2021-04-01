@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:StructuralColumn;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Column"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuralBuildingComponent;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

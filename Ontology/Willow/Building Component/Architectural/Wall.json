@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:Wall;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wall"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ArchitecturalBuildingComponent;1",
+    "dtmi:digitaltwins:rec_3_3:building:Wall;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

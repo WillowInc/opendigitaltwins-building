@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ICTBuildingComponent;1",
   "@type": "Interface",
-  "displayName": "ICT Building Component",
+  "displayName": {
+    "en": "ICT Building Component"
+  },
   "extends" : [
     "dtmi:com:willowinc:BuildingComponent;1"
   ],

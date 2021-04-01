@@ -312,11 +312,32 @@
           "enumValue": "Fuel"
         },
         {
+          "name": "Fire",
+          "displayName": {
+            "en": "Fire"
+          },
+          "enumValue": "Fire"
+        },
+        {
+          "name": "Smoke",
+          "displayName": {
+            "en": "Smoke"
+          },
+          "enumValue": "Smoke"
+        },
+        {
           "name": "Light",
           "displayName": {
             "en": "Light"
           },
           "enumValue": "Light"
+        },
+        {
+          "name": "Sound",
+          "displayName": {
+            "en": "Sound"
+          },
+          "enumValue": "Sound"
         },
         {
           "name": "Object",

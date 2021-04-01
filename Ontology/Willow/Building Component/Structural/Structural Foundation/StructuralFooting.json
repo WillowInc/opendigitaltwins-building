@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:StructuralFooting;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Footing"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuralFoundation;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

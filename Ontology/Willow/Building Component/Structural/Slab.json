@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:Slab;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Slab"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuralBuildingComponent;1",
+    "dtmi:digitaltwins:rec_3_3:building:Slab;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

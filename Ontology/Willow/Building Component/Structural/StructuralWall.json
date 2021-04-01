@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:StructuralWall;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Wall"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuralBuildingComponent;1",
+    "dtmi:com:willowinc:Wall;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
