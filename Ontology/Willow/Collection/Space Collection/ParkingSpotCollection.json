@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ParkingSpotCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Parking Spot Collection"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Collection;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
