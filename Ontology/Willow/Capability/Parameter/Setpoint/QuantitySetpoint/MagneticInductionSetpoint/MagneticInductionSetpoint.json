@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:MagneticDensitySetpoint;1",
+  "@id": "dtmi:com:willowinc:MagneticInductionSetpoint;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Magnetic Density Setpoint"
+    "en": "Magnetic Induction Setpoint"
   },
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"

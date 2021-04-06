@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:MagneticDensitySensor;1",
+  "@id": "dtmi:com:willowinc:MagneticInductionSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Magnetic Density Sensor"
+    "en": "Magnetic Induction Sensor"
   },
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
