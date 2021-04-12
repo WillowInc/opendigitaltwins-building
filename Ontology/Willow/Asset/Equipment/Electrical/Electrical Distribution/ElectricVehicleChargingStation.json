@@ -1,0 +1,49 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricVehicleChargingStation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electric Vehicle Charging Station"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "chargingLevel",
+      "displayName": {
+        "en": "Charging Level"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:EVChargingStationLevel;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Level1",
+            "displayName": {
+              "en": "Level 1"
+            },
+            "enumValue": "Level 1"
+          },  
+          {
+            "name": "Level2",
+            "displayName": {
+              "en": "Level 2"
+            },
+            "enumValue": "Level 2"
+          },
+          {
+            "name": "Level3",
+            "displayName": {
+              "en": "Level 3"
+            },
+            "enumValue": "Level 3"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

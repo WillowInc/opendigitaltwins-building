@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Bathtub;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bathtub"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingFixture;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

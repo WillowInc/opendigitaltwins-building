@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FatsOilsGreaseDisposal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fats, Oils, and Grease Disposal"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
