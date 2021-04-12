@@ -1,0 +1,1 @@
+model,id,startLevelId,endLevelId,currentLevelId,currentTripDirection,producedBy,uniqueID,externalID,code,description,active,hasUpdatedTime,hasTime,hasStopTime,hasStartTime,hasReadTime,hasPointInTime,hasObservationTime,hasDuration,hasDeletedTime,hasCreatedTime,name
