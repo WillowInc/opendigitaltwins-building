@@ -4,6 +4,8 @@ Space is one of the most prevalent entities and thus a fundamental concept to mo
 
 A Space is defined as a contiguous location in the physical world that has a 3D spatial extent and can contain sub-spaces or be apart of super-spaces to define a logical hierarchy. The following describes a common hierarchy amongst spatial twins:
 
+## Spatial Hierarchy
+
 ![Space-Example1](Images/Space-Example1.png)
 
 1. At the core of every spatial hierarchy is a Building. A Building is a type of space which generally has an address and a well-understood boundary based on its construction profile and registration as an entity with a local government.
