@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:com:willowinc:HVACRectangularDuct;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Rectangular Duct"
+  },
+  "extends": "dtmi:com:willowinc:HVACDuct;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "width"
+      },
+      "name": "width",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "height"
+      },
+      "name": "height",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

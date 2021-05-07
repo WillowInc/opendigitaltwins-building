@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:HVACRoundDuct;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Round Duct"
+  },
+  "extends": "dtmi:com:willowinc:HVACDuct;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "diameter"
+      },
+      "name": "diameter",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
