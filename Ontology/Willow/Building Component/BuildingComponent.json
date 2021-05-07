@@ -26,6 +26,15 @@
     },
     {
       "@type": "Relationship",
+      "displayName": {
+        "en": "located in"
+      },
+      "minMultiplicity": 0,
+      "name": "locatedIn",
+      "target": "dtmi:digitaltwins:rec_3_3:core:Space;1"
+    },
+    {
+      "@type": "Relationship",
       "name": "isFedBy",
       "displayName": {
         "en": "is fed by"
