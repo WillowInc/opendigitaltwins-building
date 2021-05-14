@@ -5,7 +5,7 @@
     "en": "Level Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:PercentUnitySensor;1"
+    "dtmi:com:willowinc:PercentSensor;1"
   ],
   "contents": [
   ],

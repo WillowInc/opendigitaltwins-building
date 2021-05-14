@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:PercentUnitySensor;1",
+  "@id": "dtmi:com:willowinc:PercentState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Percent Unity Sensor"
+    "en": "Percent Unity State"
   },
   "extends" : [
-    "dtmi:com:willowinc:Sensor;1"
+    "dtmi:com:willowinc:State;1"
   ],
   "contents": [
     {
@@ -18,7 +18,6 @@
       "schema": "double",
       "comment": "%"
     }
-
   ],
   "@context": "dtmi:dtdl:context;2"
 }

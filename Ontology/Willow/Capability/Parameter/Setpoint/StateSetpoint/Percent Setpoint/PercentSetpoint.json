@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:PercentUnitySetpoint;1",
+  "@id": "dtmi:com:willowinc:PercentSetpoint;1",
   "@type": "Interface",
   "displayName": {
     "en": "Percent Unity Setpoint"

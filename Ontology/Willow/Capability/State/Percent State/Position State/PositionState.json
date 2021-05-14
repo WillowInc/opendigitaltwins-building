@@ -1,14 +1,13 @@
 {
-  "@id": "dtmi:com:willowinc:PositionSetpoint;1",
+  "@id": "dtmi:com:willowinc:PositionState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Position Setpoint"
+    "en": "Position State"
   },
   "extends" : [
-    "dtmi:com:willowinc:PercentUnitySetpoint;1"
+    "dtmi:com:willowinc:PercentState;1"
   ],
   "contents": [
-
   ],
   "@context": "dtmi:dtdl:context;2"
 }
