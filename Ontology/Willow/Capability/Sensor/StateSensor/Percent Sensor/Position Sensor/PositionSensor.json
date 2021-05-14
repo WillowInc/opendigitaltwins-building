@@ -1,13 +1,14 @@
 {
-  "@id": "dtmi:com:willowinc:LevelSetpoint;1",
+  "@id": "dtmi:com:willowinc:PositionSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Level Setpoint"
+    "en": "Position Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:PercentUnitySetpoint;1"
+    "dtmi:com:willowinc:PercentSensor;1"
   ],
   "contents": [
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:PositionSensor;1",
+  "@id": "dtmi:com:willowinc:PositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Position Sensor"
+    "en": "Position Actuator"
   },
   "extends" : [
-    "dtmi:com:willowinc:PercentUnitySensor;1"
+    "dtmi:com:willowinc:PercentActuator;1"
   ],
   "contents": [
 

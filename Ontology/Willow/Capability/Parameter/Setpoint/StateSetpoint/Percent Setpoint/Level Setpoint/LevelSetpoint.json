@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:LevelState;1",
+  "@id": "dtmi:com:willowinc:LevelSetpoint;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Level State"
+    "en": "Level Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:PercentUnityState;1"
+    "dtmi:com:willowinc:PercentSetpoint;1"
   ],
   "contents": [
   ],

@@ -5,7 +5,7 @@
     "en": "Level Actuator"
   },
   "extends" : [
-    "dtmi:com:willowinc:PercentUnityActuator;1"
+    "dtmi:com:willowinc:PercentActuator;1"
   ],
   "contents": [
   ],

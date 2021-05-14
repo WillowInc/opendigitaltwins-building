@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:PercentUnityActuator;1",
+  "@id": "dtmi:com:willowinc:PercentActuator;1",
   "@type": "Interface",
   "displayName": {
     "en": "Percent Unity Actuator"
