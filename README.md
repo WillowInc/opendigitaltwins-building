@@ -88,9 +88,15 @@ Here are examples of how to use relationships:
 | isFedBy | FireSprinklerHead-->isFedBy-->SprinklerValve<br>Sink-->isFedBy-->ElectricTankWaterHeater<br>Luminaire-->isFedBy-->ElectricalCircuit1Pole |
 | hasDocument | AirHandlingUnit-->hasDocument-->Warranty<br>HVACChilledWaterSystem-->hasDocument-->TestReport<br>Level-->hasDocument-->AsBuiltDrawing |
 
-Relationships can also have properties with all of the same semantics as properties on twins. This is an powerful feature of DTDL which allows for the graph to better model the real world. In this ontology, the **isFedBy** relationship defined on [Equipment](https://github.com/Azure/opendigitaltwins-building/blob/master/Ontology/Asset/Equipment.json), [HVACZone](https://github.com/WillowInc/opendigitaltwins-building/blob/main/Ontology/Willow/Space/Zone/HVACZone.json), and [LightingZone](https://github.com/WillowInc/opendigitaltwins-building/blob/main/Ontology/Willow/Space/Zone/LightingZone.json) has a property **substance** which defines what is being fed such as **SupplyAir**, **HotDomesticWater**, **ACElec**, or **Light**. This property has been defined as an Enum such that the allowed values for substance must come from the list defined in the above models.
+Relationships can also have properties with all of the same semantics as properties on twins. This is an powerful feature of DTDL which allows for the graph to better model the real world. In this ontology, the **isFedBy** relationship defined on [Equipment](https://github.com/Azure/opendigitaltwins-building/blob/master/Ontology/Asset/Equipment/Equipment.json), [HVACZone](https://github.com/WillowInc/opendigitaltwins-building/blob/main/Ontology/Willow/Space/Zone/HVACZone.json), and [LightingZone](https://github.com/WillowInc/opendigitaltwins-building/blob/main/Ontology/Willow/Space/Zone/LightingZone.json) has a property **substance** which defines what is being fed such as **SupplyAir**, **HotDomesticWater**, **ACElec**, or **Light**. This property has been defined as an Enum such that the allowed values for substance must come from the list defined in the above models.
 
 NOTE: We recommend that the **substance** proeperty be defined on all **isFedBy** relationships to enable the best WillowTwin user experience. We also recommend using the most descriptive **substance** such as **SupplyAir** instead of **Air** and **SprinklerWater**instead of **Water**.
+
+## Samples
+
+For more in-depth examples of common scenarios, visit the [Samples](Samples).
+
+These include diagrams and accompanying narratives to learn how to organize the data, what models should be used when creating twins, and the types of relationships between the twins.
 
 ## Frequency Asked Questions
 
