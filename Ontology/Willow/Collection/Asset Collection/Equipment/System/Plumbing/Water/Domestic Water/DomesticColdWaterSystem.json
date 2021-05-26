@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:DomesticColdWaterSystem;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Domcestic Cold Water System"
+    "en": "Domestic Cold Water System"
   },
   "extends" : [
     "dtmi:com:willowinc:DomesticWaterSystem;1",
