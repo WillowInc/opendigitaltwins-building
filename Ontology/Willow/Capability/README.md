@@ -58,15 +58,51 @@ Each of the above State Kind classes are further sub-classed to give context to 
 The Capability models maintain several **properties** which allow additional metadata on the twin to provide context to 1) classificaiton 2) values and 3) communication configuration. The properties also maintain the latest value the twin received from the connected entity (`lastValue`) and the time at which it was sampled or reported by the connected entity (`lastValueTime`).
 
 ### Classification Properties
-The Capabiltiy models described above provide a great means of classifying based on **function** and **kind** which brings consistency and inheritence to these two common means by which a Capability is defined and would be queried. However, most impelementations of a digital twin desire additional metadata context to query, analyze, and filter amongs twins of the same model.
+The Capabiltiy models described above provide a great means of classifying based on **function** and **kind** which brings consistency and inheritence to these two common means by which a Capability is defined and would be queried. However, most impelementations of a digital twin desire additional metadata context to query, analyze, and filter amongs twins of the same model. Because there are many ways in which a capability could be classified in the real world, there are too many combinations to pre-define models for every possible real-world scneario. The use of classification properties allows the flexibility to add context to the base set of models which have been defined above.
 
 The following **properties** allow the implementer to define that additional context upon creating a capability twin. These provide similar functionality of tags in that they add meaning to the type of capability; however, they differ in implementation. Because these are defined as Properties in the DTDL Capability model, the twin maintains a *key-value pair* which provides the context in the *key* as to why the *value* of the property has been set. Additionally, the properties have been defined as disjoint enumerations which provides additional structure to the ontology over a taging dictionary.
 
 #### Phenomenon
+A capability's `phenomenon` defines the aspect of scientific interest that it is measuring, actuating, or configuring. This is inspired by Project Haystack. It is the most common classification property that an implementer would define.
 
+The Quantity Kind defines the measurable property of a phenomenon. As such, every twin within a Quantity Kind sub-class should define the phenomenon property. Common phenomenon - quantity kind pairs in the building domain include the following:
+
+| **Phenomenon** | Quantity Kinds |
+| --- | ---|
+| Air | Temperature, Volume Flow, Static Pressure, Air Quality, Humidity, Humidity Ratio, Enthalpy |
+| Water | Temperature, Volume Flow, Mass Flow, Pressure |
+| Chilled Water | Temperature, Volume Flow, Mass Flow, Mass, Pressure |
+| Natural Gas | Mass Flow, Mass |
+| AC Electricity | Voltage, Current, Electrical Power, Electrical Energy, Frequency, Power Factor |
+| Drive Electricity | Frequency, Voltage, Current, Electrical Power |
+| Precipitation | Volume Flow |
+| Wind | Wind Direction, Linear Velocity |
+| Solar | Irradiance, Luminance |
+| Light | Illuminance |
+| Data | Data Rate, Data Size |
+
+```
+Note:
+Because phenomemon is defined as a string enumeration, there is no inheritance as you would have from models that extend one another. For example, `Chilled Water`, `Hot Water`, and `Domestic Cold Water` are all considered types of `Water`. `Water` and `Air` are considered types of **fluids**. Similarly, `Precipitation` and `Wind` are considered types of **Weather**. At this time, it is recommended to query using `ENDSWITH` for the phenomenon which have a common inheritance such as `Hot Water` and `Domestic Cold Water`.
+```
 
 #### Position
+A capability's `position` defines the location or placement relative to its parent entity such as an asset, system, or space. This context is often necessary to define whether the capability is related to an input, output, or net differential to the parent entity.
 
+Different types of entities use established industry terminology to define the same semantic meaning of placement. For example, piping systems use the terms `entering` (input), `leaving` (output), and `delta` (net) whereas electrical energy uses the terms `import` (input), `export` (output), and `net` (net).
+
+In order to encourage consistency across implementations, its extremely important to align on when to use which placement term. At this time, the ontology doesn't restrict usage to specific scenarios. Additionally, DTDL doesn't support a "sameAs" definition as found in OWL which would enable linking different terminology that have the same semantic meaning. This makes it even more critical to have a common understanding of the terminology.
+
+Here is a reference on how to select the proper `placement` value:
+
+| Scenario | **Placement** |
+| --- | ---|
+| Duct (Air) | Exhaust, Outside, Return, Discharge, Zone, Mixed, Underfloor, Economizer |
+| Pipe (Water) | Entering, Leaving, Header, Bypass, Circulating, Delta |
+| Electricity | Input, Output |
+| Energy | Import, Export, Net |
+| Solar | Azimuth, Zenith |
+| Data | Download, Upload |
 
 
 #### Other Classification Properties
@@ -89,3 +125,6 @@ The following **properties** allow the implementer to define that additional con
 
 * Historization Method (Sampled, CoV, Sync/Async, Consumption)
 * Value Reporting Method (Totalized)
+
+## Capability Relationships
+
