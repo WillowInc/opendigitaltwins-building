@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:DomesticHotWaterRecircSystem;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Domcestic Hot Water Recirculation System"
+    "en": "Domestic Hot Water Recirculation System"
   },
   "extends" : [
     "dtmi:com:willowinc:DomesticHotWaterSystem;1",

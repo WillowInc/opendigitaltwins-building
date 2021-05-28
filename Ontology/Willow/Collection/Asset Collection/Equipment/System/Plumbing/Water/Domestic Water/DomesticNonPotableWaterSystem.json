@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:DomesticNonPotableWaterSystem;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Domcestic Non-Potable Water System"
+    "en": "Domestic Non-Potable Water System"
   },
   "extends" : [
     "dtmi:com:willowinc:DomesticWaterSystem;1",
