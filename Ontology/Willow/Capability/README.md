@@ -34,7 +34,7 @@ The second sub-classification of `Capability` is by **kind**. The kind describes
 | Kind | Description |
 | -------- | ----------- |
 | Quantity | A kind of quantity values defined by measurement units. Inspired by QUDT. |
-| State |  | A kind of unitless values such as boolean, percent, and strings. |
+| State | A kind of unitless values such as boolean, percent, and strings. |
 
 If the type of values and units of a Capability are known, the implementer can indentify which **kind** a capability should be classified as.
 
