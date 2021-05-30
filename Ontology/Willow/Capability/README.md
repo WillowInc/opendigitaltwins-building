@@ -8,7 +8,7 @@ When the WillowTwin connects to a system or source of data, a capability twin ma
 
 It's important to understand the difference between a `capability` and other entities such as an `asset`. A `capability` is a virtual concept while an `asset` is a physical object. For example, a physical asset of a `sensor equipment` may have one or more capabilities such as `occupancy sensor`, `temperature sensor`, and `illuminance sensor`.
 
-This guide will provide an understanding of how to become familiar with the capability data model, define capabilty twins, and provide recommendations for how to best use the ontology.
+This guide will provide an understanding of how to become familiar with the capability data model, define capability twins, and provide recommendations for how to best use the ontology.
 
 ## Capability Models
 
