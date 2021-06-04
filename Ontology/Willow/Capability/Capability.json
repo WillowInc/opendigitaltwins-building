@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Capability"
   },
-  "extends" : [
+  "extends": [
     "dtmi:digitaltwins:rec_3_3:core:Capability;1"
   ],
   "contents": [
@@ -107,6 +107,78 @@
     },
     {
       "@type": "Property",
+      "name": "validValues",
+      "displayName": {
+        "en": "Valid Values"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "minimum",
+            "displayName": {
+              "en": "Minimum"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "maximum",
+            "displayName": {
+              "en": "Maximum"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "interpolation",
+      "displayName": {
+        "en": "Interpolation"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:CapabilityInterpolation;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "linear",
+            "displayName": {
+              "en": "linear"
+            },
+            "enumValue": "linear"
+          },
+          {
+            "name": "stepForward",
+            "displayName": {
+              "en": "Step Forward"
+            },
+            "enumValue": "stepForward"
+          },
+          {
+            "name": "stepBackward",
+            "displayName": {
+              "en": "Step Backward"
+            },
+            "enumValue": "stepBackward"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "totalized",
+      "displayName": {
+        "en": "Totalized"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
       "name": "type",
       "displayName": {
         "en": "Type"
@@ -123,35 +195,35 @@
               "en": "undefined"
             },
             "enumValue": "undefined"
-          },  
+          },
           {
             "name": "analog",
             "displayName": {
               "en": "analog"
             },
             "enumValue": "analog"
+          },
+          {
+            "name": "binary",
+            "displayName": {
+              "en": "binary"
             },
-            {
-              "name": "binary",
-              "displayName": {
-                "en": "binary"
-              },
-              "enumValue": "binary"
+            "enumValue": "binary"
+          },
+          {
+            "name": "multiState",
+            "displayName": {
+              "en": "multiState"
             },
-            {
-              "name": "multiState",
-              "displayName": {
-                "en": "multiState"
-              },
-              "enumValue": "multiState"
+            "enumValue": "multiState"
+          },
+          {
+            "name": "sum",
+            "displayName": {
+              "en": "sum"
             },
-            {
-              "name": "sum",
-              "displayName": {
-                "en": "sum"
-              },
-              "enumValue": "sum"
-            }
+            "enumValue": "sum"
+          }
         ]
       }
     },
@@ -228,7 +300,10 @@
       }
     },
     {
-      "@type": ["Property", "TimeSpan"],
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
       "name": "trendInterval",
       "displayName": {
         "en": "Trend Interval"

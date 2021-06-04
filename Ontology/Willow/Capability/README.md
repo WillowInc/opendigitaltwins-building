@@ -93,9 +93,9 @@ Different types of entities use established industry terminology to define the s
 
 In order to encourage consistency across implementations, its extremely important to align on when to use which placement term. At this time, the ontology doesn't restrict usage to specific scenarios. Additionally, DTDL doesn't support a "sameAs" definition as found in OWL which would enable linking different terminology that have the same semantic meaning. This makes it even more critical to have a common understanding of the terminology.
 
-Here is a reference on how to select the proper `placement` value:
+Here is a reference on how to select the proper `position` value:
 
-| Scenario | **Placement** |
+| Scenario | **Position** |
 | --- | ---|
 | Duct (Air) | Exhaust, Outside, Return, Discharge, Zone, Mixed, Underfloor, Economizer |
 | Pipe (Water) | Entering, Leaving, Header, Bypass, Circulating, Delta |
@@ -106,25 +106,57 @@ Here is a reference on how to select the proper `placement` value:
 
 
 #### Other Classification Properties
+The following table includes the other capability classification properties which can be defined in addition to `phenomenon` and `position`:
 
-* Asset Component
-* HVAC Mode
-* Occupancy Mode
-* Electrical Phase
-* Aggregate (TBD)
+| Property | Description | Example |
+| --- | --- | --- |
+| Asset Component | Defines which component of a larger asset the capability is associated with. This is required when the larger asset twin hasn't been created with separate twins for these components using the `isPartOf` relationship. | **Air Handling Unit** has several **fan** components for Discharge, Return, and Exhaust. |
+| HVAC Mode | Defines which HVAC mode the capability is associated with such as **heating**, **cooling**, or **economizing**. | HVAC **Terminal Unit** has a **Heating Temperature Setpoint** and a **Cooling Temperature Setpoint** to define a temperature band to control to. |
+| Occupancy Mode | Defines which occupancy state the capability is associated with such as **occupied**, **unoccupied**, or **standby**. | HVAC **Terminal Unit** has an **Occupied Temperature Setpoint** and an **Unoccupied Temperature Setpoint** to adjust behavior based on occupancy. |
+| Electrical Phase | Defines which phase(s) of a three-phase circuit the capability is associated with. This is required when measuring three-phase power because individual phases do not get their own twin identity. | **Electrical Circuit 3-Pole** has a **Voltage Sensor** measurement for each phase **A**, **B**, **C**, **AB**, **BC**, and **CA**. |
+| Aggregate (Coming Soon) | Defines whether the capability corresponds to an aggregate such as **min**, **max**, **average**, or **sum**. | HVAC **Terminal Unit** has a **Maximum Airflow Setpoint** and **Minimum Airflow Setpoint** to define a band the unit can operate within. |  
 
 ### Value Properties
+The most important aspect of capabilities are the values themselves that are being reported and configured by the physical devices and the digital twin. The following properties provide the latest value and context of how to interpret the meaning of that value either by iteself or in a time series.
 
-* Last Value
-* Last Value Time
+#### Last Value and Last Value Time
+The `lastValue` property maintains the most recent value reported by a device or gateway to the digital twin. This property is also historized in a time series.
 
-* Unit
+Because `lastValue` can have many different data schemas (i.e. boolean, number, string) depending on the capability model, this property is not defined on the root capability DTDL model but rather many of the models which extend from capability.
 
-* Minimum Valid Value
-* Maximum Valid Value
+The `lastValueTime` property accompanies `lastValue` to record the timestamp in which the value is attributed. Because connected systems vary in how they present the timestamp, the meaning of this property can change slightly. For example, this time may represent when a sensor sampled the environment or it may represent when the gateway which the sensor sends data through requested the sampled value.
 
-* Historization Method (Sampled, CoV, Sync/Async, Consumption)
-* Value Reporting Method (Totalized)
+#### Unit
+The `unit` property should be defined for all of the `Quantity Kind` capabilities. At this time, it is a **string** data schema which allows the user to input any text value. However, it is recommended to align on a common dictionary of units such that unit conversations can be performed by client applications, analytics, and reporting.
+
+In the future, the `unit` property may be deprecated to take advantage of [DTDL Semantic Types](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#semantic-types). Because DTDL semantic types require units to be defined in the DTDL models, this requires units to be normalized prior to twin creation and all time series data ingested to be transformed prior to being stored. Therefore, we have chosen not to adopt these in the DTDL ontology at this time in favor of storing the ingested data in the same units as its being produced by the connected system.
+
+#### Valid Values
+The `validValues` property is an object which contains `minimum` and `maximum` properties. These define a valid range for the `lastValue` to be within. The `validValues` property is only applicable for numeric value schemas such as a **double** and not **boolean** or **string**.
+
+These properties are commonly set within the controller of a connected system as dedicated capabilities such as a `Minimum/Maximum Temperature Setpoint`. These properties may also be defined by the user directly in the digital twin.
+
+When defined on a `sensor` or `state`, this range represents the valid values reported in normal operation. If values are outside of the range, the sensor is considered in a fault state. When defined on an `actuator` or `setpoint`, this range represents valid values that a user or application can update or command the capability.
+
+#### Interpolation
+The `interpolation` property defines how the time series data should be filled in between samples. This is required to understand how to interpret time series data that comes in at different intervals and aggregate it for analytics and reporting. Interpolation is a common process for signal reconstruction, time bucketing, and filling in gaps. This property is an enum which can be set to **linear**, **stepForward**, or **stepBackward** described as follows:
+
+| Interpolation | Description | Use Case |
+| --- | --- | --- |
+| **linear** (Most common) | Performs a linear interpolation between the previous and next values found in a time series | Data sampled on a regular interval that can be assumed as continuous. |
+| **stepForward** | Performs a forward fill of the previous value found in a time series | Data known to be reported as it changes value. |
+| **stepBackward** (Least common) | Performs a backward fill of the next value found in a time series | Data sampled that cannot be assumed continuous. |
+
+#### Totalized
+The `totalized` property is a boolean which defines a capability that is continuously counting upward. This is common in **metering**. In order to determine consumption within a desired time interval, the delta between two values must be calculated as an aggregate. This property is only applicable for numeric value schemas such as **double**.
 
 ## Capability Relationships
+The capability models define several **relationships** which capability twins can have with other twins.
 
+Just as the capability models and properties are important to align on their usage in the ontology, relationships should have consistent use by all users which implement and interpret the digital twin. Refer to the [Samples](https://github.com/WillowInc/opendigitaltwins-building/tree/main/Samples) for different scenarios of how to use these relationships.
+
+| Relationship | Description |
+| ------------ | ----------- |
+| isCapabilityOf | Indicates that a Space, Asset or LogicalDevice has the ability to produce or ingest data. |
+| hostedBy | Indicates that a capability is hosted by another entity such as an asset. |
+| isControlledBy | Indicates that a capability's value or output is controlled by another capability. |
