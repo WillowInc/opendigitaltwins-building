@@ -265,6 +265,15 @@
     },
     {
       "@type": "Property",
+      "name": "stage",
+      "displayName": {
+        "en": "stage"
+      },
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
       "name": "occupancyMode",
       "displayName": {
         "en": "Occupancy Mode"
@@ -280,6 +289,33 @@
       },
       "writable": true,
       "schema": "dtmi:com:willowinc:CapabilityElectricalPhase;1"
+    },
+    {
+      "@type": "Property",
+      "name": "limit",
+      "displayName": {
+        "en": "Limit"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:CapabilityLimit;1"
+    },
+    {
+      "@type": "Property",
+      "name": "effective",
+      "displayName": {
+        "en": "Effective"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "demand",
+      "displayName": {
+        "en": "Demand"
+      },
+      "writable": true,
+      "schema": "boolean"
     },
     {
       "@type": "Property",
@@ -1147,6 +1183,27 @@
             "en": "N"
           },
           "enumValue": "N"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:CapabilityLimit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Minimum",
+          "displayName": {
+            "en": "Minimum"
+          },
+          "enumValue": "Minimum"
+        },
+        {
+          "name": "Maximum",
+          "displayName": {
+            "en": "Maximum"
+          },
+          "enumValue": "Maximum"
         }
       ]
     }
