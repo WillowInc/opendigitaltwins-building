@@ -1,0 +1,50 @@
+{
+  "@id": "dtmi:com:willowinc:VentilationHood;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ventilation Hood"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "dtmi:dtdl:property:schema;2": {
+        "@type": "Enum",
+        "dtmi:dtdl:property:enumValues;2": [
+          {
+            "name": "typeI",
+            "displayName": {
+              "en": "Type I"
+            },
+            "enumValue": "Type I"
+          },
+          {
+            "name": "typeII",
+            "displayName": {
+              "en": "Type II"
+            },
+            "enumValue": "Type II"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "maximum airflow rating"
+      },
+      "name": "maxAirflowRating",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
