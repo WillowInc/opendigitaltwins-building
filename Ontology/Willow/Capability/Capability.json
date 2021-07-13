@@ -179,6 +179,16 @@
     },
     {
       "@type": "Property",
+      "name": "scaleFactor",
+      "displayName": {
+        "en": "Scale Factor"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "Raw values from the connected system are multiplied by this scale factor when being stored in the twin"
+    },
+    {
+      "@type": "Property",
       "name": "type",
       "displayName": {
         "en": "Type"
