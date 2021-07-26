@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:RailLoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Rail Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VerticalLoadingDockLeveler;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

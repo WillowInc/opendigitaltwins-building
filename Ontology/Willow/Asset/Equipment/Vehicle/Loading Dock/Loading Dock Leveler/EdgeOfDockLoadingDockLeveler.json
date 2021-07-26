@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EdgeOfDockLoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Edge of Dock Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LoadingDockLeveler;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PitLoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pit Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LoadingDockLeveler;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
