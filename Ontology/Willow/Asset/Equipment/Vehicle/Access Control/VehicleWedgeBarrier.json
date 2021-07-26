@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:VehicleWedgeBarrier;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vehicle Wedge Barrier"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VehicleAccessControlEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

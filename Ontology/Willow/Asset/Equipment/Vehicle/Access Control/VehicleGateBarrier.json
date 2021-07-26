@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:VehicleGateBarrier;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vehicle Gate Barrier"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VehicleAccessControlEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

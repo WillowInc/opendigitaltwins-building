@@ -1,0 +1,49 @@
+{
+  "@id": "dtmi:com:willowinc:LoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LoadingDockEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "liftType",
+      "displayName": "Lift Type",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Mechanical",
+            "displayName": "Mechanical",
+            "enumValue": "Mechanical"
+          },  
+          {
+                "name": "Hydraulic",
+                "displayName": "Hydraulic",
+                "enumValue": "Hydraulic"
+            },
+            {
+              "name": "Pneumatic",
+              "displayName": "Pneumatic",
+              "enumValue": "Pneumatic"
+            }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "loadCapacity",
+      "displayName": {
+        "en": "Load Capacity"
+      },
+      "writable": true,
+      "schema": "double"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
