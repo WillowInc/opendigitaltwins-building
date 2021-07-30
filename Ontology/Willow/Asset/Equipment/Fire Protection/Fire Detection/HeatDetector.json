@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:com:willowinc:HeatDetector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Detector"
+  },
+  "extends": "dtmi:com:willowinc:FireDetectionEquipment;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -329,6 +329,18 @@
     },
     {
       "@type": "Property",
+      "description": {
+        "en": "Notification of a condition which requires attention such as a threshold exceeded (Project Haystack). This differs from a Fault in that a Fault is used to identify a failure."
+      },
+      "displayName": {
+        "en": "alarm"
+      },
+      "name": "alarm",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
       "name": "tags",
       "displayName": {
         "en": "Tags"

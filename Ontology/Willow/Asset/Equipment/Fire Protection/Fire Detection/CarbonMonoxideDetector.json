@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:com:willowinc:CarbonMonoxideDetector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Carbon Monoxide Detector"
+  },
+  "extends": "dtmi:com:willowinc:FireDetectionEquipment;1",
+  "@context": "dtmi:dtdl:context;2"
+}
