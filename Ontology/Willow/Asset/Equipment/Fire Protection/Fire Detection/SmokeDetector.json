@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:com:willowinc:SmokeDetector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke Detector"
+  },
+  "extends": "dtmi:com:willowinc:FireDetectionEquipment;1",
+  "@context": "dtmi:dtdl:context;2"
+}
