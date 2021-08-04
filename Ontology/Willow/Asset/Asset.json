@@ -18,19 +18,57 @@
     },
     {
       "@type": "Relationship",
-      "name": "maintenanceResponsibility",
+      "name": "serviceResponsibility",
       "displayName": {
-        "en": "Maintenance Responsibilitly"
+        "en": "Service Responsibilitly"
       },
       "target": "dtmi:com:willowinc:Agent;1"
     },
     {
-      "@type": "Relationship",
-      "name": "maintenanceContractor",
+      "@type": "Property",
+      "name": "manufacturedByRef",
       "displayName": {
-        "en": "Maintenance Contractor"
+        "en": "Manufacturer"
       },
-      "target": "dtmi:com:willowinc:Agent;1"
+      "writable": true,
+      "schema": "dtmi:com:willowinc:AssetRelationshipRefObject;1"
+    },
+    {
+      "@type": "Property",
+      "name": "installedByRef",
+      "displayName": {
+        "en": "Installer"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:AssetRelationshipRefObject;1"
+    },
+    {
+      "@type": "Property",
+      "name": "commissionedByRef",
+      "displayName": {
+        "en": "Commissioning Agent"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:AssetRelationshipRefObject;1"
+    },
+    {
+      "@type": "Property",
+      "name": "serviceProviderRef",
+      "displayName": {
+        "en": "Service Provider"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:AssetRelationshipRefObject;1",
+      "comment": "This property lifts the REC ontology relationship servicedBy"
+    },
+    {
+      "@type": "Property",
+      "name": "serviceResponsibilityRef",
+      "displayName": {
+        "en": "Service Responsibility"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:AssetRelationshipRefObject;1"
     },
     {
       "@type": "Property",
@@ -133,6 +171,38 @@
           "schema": "boolean"
         }
       }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:AssetRelationshipRefObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "targetId",
+          "displayName": {
+            "en": "Target ID"
+          },
+          "schema": "string",
+          "comment": "$dtId of the target twin"
+        },
+        {
+          "name": "name",
+          "displayName": {
+            "en": "Name"
+          },
+          "schema": "string",
+          "comment": "name of the target twin"
+        },
+        {
+          "name": "targetModelId",
+          "displayName": {
+            "en": "Target Model ID"
+          },
+          "schema": "string",
+          "comment": "$model of the target twin"
+        }
+      ]
     }
   ],
   "@context": "dtmi:dtdl:context;2"
