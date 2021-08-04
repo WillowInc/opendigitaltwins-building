@@ -179,6 +179,16 @@
     },
     {
       "@type": "Property",
+      "name": "valueExpression",
+      "displayName": {
+        "en": "Value Expression"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "The trended values are derived by evaluating this expression"
+    },
+    {
+      "@type": "Property",
       "name": "scaleFactor",
       "displayName": {
         "en": "Scale Factor"
