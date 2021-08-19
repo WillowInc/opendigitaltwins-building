@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:CatchBasin;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Catch Basin"
+  },
+  "extends": "dtmi:com:willowinc:WaterStorageBasin;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:com:willowinc:CableTray;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cable Tray"
+  },
+  "extends": "dtmi:com:willowinc:DistributionRaceway;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "width"
+      },
+      "name": "width",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "height"
+      },
+      "name": "height",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

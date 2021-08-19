@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:com:willowinc:Conduit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Conduit"
+  },
+  "extends": "dtmi:com:willowinc:DistributionRaceway;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "diameter"
+      },
+      "name": "diameter",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:Manhole;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Manhole"
+  },
+  "extends": "dtmi:com:willowinc:DistributionConnector;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DistributionAssetCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distribution Asset Collection"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetCollection;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

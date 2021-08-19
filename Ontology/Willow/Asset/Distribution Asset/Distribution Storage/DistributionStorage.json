@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:DistributionStorage;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distribution Storage"
+  },
+  "extends": "dtmi:com:willowinc:DistributionAsset;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:StormSewerOutlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Storm Sewer Outlet"
+  },
+  "extends": "dtmi:com:willowinc:DistributionConnector;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
