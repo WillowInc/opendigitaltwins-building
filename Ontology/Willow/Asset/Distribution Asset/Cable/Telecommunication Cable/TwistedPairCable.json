@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:TwistedPairCable;1",
+  "@type": "Interface",
+  "displayName": "Twisted Pair Cable",
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationCable;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

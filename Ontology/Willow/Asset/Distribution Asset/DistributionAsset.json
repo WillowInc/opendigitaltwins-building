@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:DistributionAsset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distribution Asset"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Asset;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "length"
+      },
+      "name": "length",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

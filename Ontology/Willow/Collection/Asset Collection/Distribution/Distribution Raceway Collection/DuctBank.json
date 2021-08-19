@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DuctBank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duct Bank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DistributionRacewayCollection;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

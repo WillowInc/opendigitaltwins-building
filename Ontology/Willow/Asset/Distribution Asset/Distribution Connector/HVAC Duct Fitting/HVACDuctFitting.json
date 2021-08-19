@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:HVACDuctFitting;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Duct Fitting"
+  },
+  "extends": "dtmi:com:willowinc:DistributionConnector;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

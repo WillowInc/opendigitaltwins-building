@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:com:willowinc:Cable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cable"
+  },
+  "extends": "dtmi:com:willowinc:DistributionAsset;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "diameter"
+      },
+      "name": "diameter",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

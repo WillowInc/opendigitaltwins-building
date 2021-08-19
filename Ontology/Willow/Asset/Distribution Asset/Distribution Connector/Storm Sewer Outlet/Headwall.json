@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:Headwall;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Headwall"
+  },
+  "extends": "dtmi:com:willowinc:StormSewerOutlet;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:FiberOpticCable;1",
+  "@type": "Interface",
+  "displayName": "Fiber Optic Cable",
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationCable;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

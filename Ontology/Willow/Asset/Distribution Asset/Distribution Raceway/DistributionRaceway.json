@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:DistributionRaceway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distribution Raceway"
+  },
+  "extends": "dtmi:com:willowinc:DistributionAsset;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
