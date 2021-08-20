@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:Bridge;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A structure built to span a physical obstacle (such as a body of water, valley, road, or rail) without blocking the way underneath."
+  },
+  "displayName": {
+    "en": "Bridge"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Structure;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

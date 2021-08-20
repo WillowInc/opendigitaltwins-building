@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:Pavement;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pavement Structure"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Structure;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
