@@ -24,7 +24,7 @@ Before getting started:
     | DTDL-Validator | Tool to parse and validate the DTDL ontology |
     | Ontology\opendigitaltwins-building | DTDL-based RealEstateCore ontology |
 
-* Confirm all of the DTDL files have been downloaded by navigating to the Ontology directory in a command prompt and running `DTDLValidator.exe`. The output should include **Validated all files - Your DTDL is valid**. After making changes to the DTDL files, it is recommended to run this command prior to committing changes.
+* Confirm all of the DTDL files have been pulled to your local machine by running the [DTDL Validator](https://github.com/Azure-Samples/DTDL-Validator) self-contained executable. The output should include **Validated all files - Your DTDL is valid**. After making changes to the DTDL files, it is recommended to run this command prior to committing changes.
 
 * Start browsing the Ontology which has the following top-level directories:
 
