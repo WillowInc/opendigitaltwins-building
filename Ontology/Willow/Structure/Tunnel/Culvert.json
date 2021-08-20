@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:Culvert;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A tunnel structure built to allow water in an open channel to pass under a road, rail, path, or other surface level obstruction."
+  },
+  "displayName": {
+    "en": "Culvert"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Tunnel;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

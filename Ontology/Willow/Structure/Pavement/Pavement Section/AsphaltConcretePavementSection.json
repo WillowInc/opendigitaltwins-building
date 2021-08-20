@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AsphaltConcretePavementSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Asphalt Concrete Pavement Section"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PavementSection;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
