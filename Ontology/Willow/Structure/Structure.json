@@ -120,6 +120,15 @@
     },
     {
       "@type": "Property",
+      "name": "siteID",
+      "displayName": {
+        "en": "Site ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
       "name": "landId",
       "displayName": {
         "en": "Land ID"
@@ -163,6 +172,45 @@
           "schema": "string"
         }
       }
+    },
+    {
+      "@type": "Property",
+      "name": "geometryViewerID",
+      "displayName": {
+        "en": "Geometry Viewer ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)"
+    },
+    {
+      "@type": "Property",
+      "name": "geometrySpatialReference",
+      "displayName": {
+        "en": "Geometry Spatial Reference"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference for displaying in spatial context"
+    },
+    {
+      "@type": "Property",
+      "name": "geometryExternalID",
+      "displayName": {
+        "en": "Geometry External ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference to geometry source (i.e. Revit GUID)"
+    },
+    {
+      "@type": "Property",
+      "name": "uniqueID",
+      "displayName": {
+        "en": "Globally Unique ID"
+      },
+      "writable": true,
+      "schema": "string"
     },
     {
       "@type": "Property",
