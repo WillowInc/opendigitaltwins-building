@@ -1,7 +1,7 @@
 {
   "@id": "dtmi:com:willowinc:VideoSurveillanceNVR;1",
   "@type": "Interface",
-  "description": {
+  "displayName": {
     "en": "Network Video Recorder."
   },
   "extends" : [
