@@ -211,6 +211,61 @@
     },
     {
       "@type": "Property",
+      "name": "alternateClassification",
+      "displayName": {
+        "en": "Alternate Classification"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "masterFormat",
+            "displayName": {
+              "en": "MasterFormat"
+            },
+            "schema": "dtmi:com:willowinc:StructureAlternateClassificationObject;1"
+          },
+          {
+            "name": "omniClass",
+            "displayName": {
+              "en": "OmniClass"
+            },
+            "schema": "dtmi:com:willowinc:StructureAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniFormat",
+            "displayName": {
+              "en": "UniFormat"
+            },
+            "schema": "dtmi:com:willowinc:StructureAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniclass",
+            "displayName": {
+              "en": "Uniclass"
+            },
+            "schema": "dtmi:com:willowinc:StructureAlternateClassificationObject;1"
+          },
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:willowinc:StructureAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:willowinc:StructureAlternateClassificationObject;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
       "name": "geometryViewerID",
       "displayName": {
         "en": "Geometry Viewer ID"
@@ -328,6 +383,28 @@
       "name": "physicalTagNumber",
       "schema": "string",
       "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:StructureAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
     }
   ],
   "@context": "dtmi:dtdl:context;2"
