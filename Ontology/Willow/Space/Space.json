@@ -103,6 +103,61 @@
     },
     {
       "@type": "Property",
+      "name": "alternateClassification",
+      "displayName": {
+        "en": "Alternate Classification"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "masterFormat",
+            "displayName": {
+              "en": "MasterFormat"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "omniClass",
+            "displayName": {
+              "en": "OmniClass"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniFormat",
+            "displayName": {
+              "en": "UniFormat"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniclass",
+            "displayName": {
+              "en": "Uniclass"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
       "name": "customTags",
       "displayName": {
         "en": "Custom Tags"
@@ -184,6 +239,28 @@
         "en": "CO2"
       },
       "schema": "dtmi:com:willowinc:SpaceCO2;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
     }
   ],
   "@context": "dtmi:dtdl:context;2"
