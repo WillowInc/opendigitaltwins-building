@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmPressureSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Pressure Switch"
+  },
+  "extends": "dtmi:com:willowinc:FireAlarmInitiatingDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

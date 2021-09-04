@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalWiringDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Wiring Device"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

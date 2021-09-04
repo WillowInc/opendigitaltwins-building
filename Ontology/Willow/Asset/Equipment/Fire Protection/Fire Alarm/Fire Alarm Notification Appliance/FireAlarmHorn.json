@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmHorn;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Horn"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireAlarmNotificationAppliance;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

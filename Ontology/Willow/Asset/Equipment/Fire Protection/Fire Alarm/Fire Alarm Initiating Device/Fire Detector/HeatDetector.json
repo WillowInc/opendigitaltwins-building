@@ -4,6 +4,6 @@
   "displayName": {
     "en": "Heat Detector"
   },
-  "extends": "dtmi:com:willowinc:FireDetectionEquipment;1",
+  "extends": "dtmi:com:willowinc:FireDetector;1",
   "@context": "dtmi:dtdl:context;2"
 }
