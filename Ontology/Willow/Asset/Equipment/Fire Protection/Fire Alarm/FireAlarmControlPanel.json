@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmControlPanel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Control Panel"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireAlarmEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

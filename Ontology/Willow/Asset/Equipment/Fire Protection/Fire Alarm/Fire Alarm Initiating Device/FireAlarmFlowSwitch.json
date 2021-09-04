@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmFlowSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Flow Switch"
+  },
+  "extends": "dtmi:com:willowinc:FireAlarmInitiatingDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

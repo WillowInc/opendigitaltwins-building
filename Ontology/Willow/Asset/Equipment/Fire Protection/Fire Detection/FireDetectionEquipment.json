@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:com:willowinc:FireDetectionEquipment;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Fire Detection Equipment"
-  },
-  "extends": "dtmi:com:willowinc:FireProtectionEquipment;1",
-  "@context": "dtmi:dtdl:context;2"
-}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmInitiatingDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Initiating Device"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireAlarmEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

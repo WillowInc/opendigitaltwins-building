@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmSpeakerStrobe;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Speaker Strobe"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireAlarmSpeaker;1",
+    "dtmi:com:willowinc:FireAlarmStrobe;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

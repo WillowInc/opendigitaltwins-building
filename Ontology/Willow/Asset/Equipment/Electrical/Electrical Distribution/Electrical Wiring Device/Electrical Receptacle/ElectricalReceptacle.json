@@ -1,0 +1,65 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalReceptacle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Receptacle"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalWiringDevice;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Voltage"],
+      "name": "inputVoltage",
+      "displayName": {
+        "en": "input voltage"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "volt"
+    },
+    {
+      "@type": ["Property", "Current"],
+      "name": "currentRating",
+      "displayName": "Current Rating",
+      "writable": true,
+      "schema": "integer",
+      "unit": "ampere"
+    },
+    {
+      "@type": "Property",
+      "name": "poles",
+      "displayName": "Poles",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "One",
+            "displayName": "1",
+            "enumValue": "1"
+          },
+          {
+            "name": "Two",
+            "displayName": "2",
+            "enumValue": "2"
+          },
+          {
+            "name": "Three",
+            "displayName": "3",
+            "enumValue": "3"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "nemaConfiguration",
+      "displayName": "NEMA Configuration",
+      "writable": true,
+      "schema": "string"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
