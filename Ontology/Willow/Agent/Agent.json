@@ -88,12 +88,22 @@
       "schema": {
         "@type": "Map",
         "mapKey": {
-          "name": "tagName",
+          "name": "sourceName",
           "schema": "string"
         },
         "mapValue": {
-          "name": "tagValue",
-          "schema": "string"
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
         }
       }
     }
