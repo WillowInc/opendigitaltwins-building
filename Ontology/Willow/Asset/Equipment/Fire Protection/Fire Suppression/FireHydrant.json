@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FireHydrant;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Hydrant"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireSuppressionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
