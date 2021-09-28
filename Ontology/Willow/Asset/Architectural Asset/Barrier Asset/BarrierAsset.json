@@ -9,35 +9,7 @@
     "dtmi:digitaltwins:rec_3_3:asset:BarrierAsset;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "service",
-      "displayName": {
-        "en": "Service"
-      },
-      "writable": true,
-      "schema": {
-        "@id": "dtmi:com:willowinc:BarrierAssetService;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Interior",
-            "displayName": {
-              "en": "Interior"
-            },
-            "enumValue": "Interior"
-          },  
-          {
-            "name": "Exterior",
-            "displayName": {
-              "en": "Exterior"
-            },
-            "enumValue": "Exterior"
-            }
-        ]
-      }
-    }
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

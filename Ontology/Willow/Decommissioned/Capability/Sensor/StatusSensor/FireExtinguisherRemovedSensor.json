@@ -5,8 +5,7 @@
     "en": "Fire Extinguisher Removed Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:StatusSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:FireExtinguisherRemovedSensor;1"
+    "dtmi:com:willowinc:StatusSensor;1"
   ],
   "contents": [
 
