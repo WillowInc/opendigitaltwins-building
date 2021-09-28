@@ -5,8 +5,7 @@
     "en": "Air Temperature Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:TemperatureSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:AirTemperatureSensor;1"
+    "dtmi:com:willowinc:TemperatureSensor;1"
   ],
   "contents": [
   ],

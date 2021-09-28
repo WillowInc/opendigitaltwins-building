@@ -5,8 +5,7 @@
     "en": "CO2 Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:Setpoint;1",
-    "dtmi:digitaltwins:rec_3_3:core:CO2Setpoint;1"
+    "dtmi:com:willowinc:Setpoint;1"
   ],
   "contents": [
 

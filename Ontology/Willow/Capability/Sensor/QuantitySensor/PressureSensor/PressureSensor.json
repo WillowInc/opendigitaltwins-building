@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:PressureSensor;1"
+    "dtmi:digitaltwins:rec_3_3:device:PressureSensor;1"
   ],
   "contents": [
 

@@ -89,15 +89,6 @@
     },
     {
       "@type": "Property",
-      "name": "lastValueTime",
-      "displayName": {
-        "en": "Last Value Time"
-      },
-      "writable": true,
-      "schema": "dateTime"
-    },
-    {
-      "@type": "Property",
       "name": "unit",
       "displayName": {
         "en": "Unit"
