@@ -4,7 +4,7 @@
   "displayName": "Electrical Power Sensor",
   "extends" : [
     "dtmi:com:willowinc:PowerSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:ElectricalPowerSensor;1"
+    "dtmi:digitaltwins:rec_3_3:device:ElectricalPowerSensor;1"
   ],
   "contents": [
     

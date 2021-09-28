@@ -5,8 +5,7 @@
     "en": "Water Flow Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:VolumeFlowSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:WaterFlowSensor;1"
+    "dtmi:com:willowinc:VolumeFlowSensor;1"
   ],
   "contents": [
 

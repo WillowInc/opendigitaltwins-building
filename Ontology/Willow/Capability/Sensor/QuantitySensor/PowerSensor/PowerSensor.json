@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:PowerSensor;1"
+    "dtmi:digitaltwins:rec_3_3:device:PowerSensor;1"
   ],
   "contents": [
 

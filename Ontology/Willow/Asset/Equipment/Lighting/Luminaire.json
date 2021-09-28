@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:LightingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Luminaire;1"
+    "dtmi:digitaltwins:rec_3_3:asset:Luminaire;2"
   ],
   "contents": [
 
