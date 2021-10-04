@@ -4,6 +4,10 @@
   "displayName": {
     "en": "Pump"
   },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Pump;1"
+  ],
   "contents": [
 
   ],

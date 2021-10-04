@@ -1,0 +1,8 @@
+{
+  "@id": "dtmi:com:willowinc:Component;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Component"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

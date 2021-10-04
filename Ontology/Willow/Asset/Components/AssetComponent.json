@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AssetComponent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Asset Component"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Component;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

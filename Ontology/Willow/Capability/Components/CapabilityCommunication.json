@@ -1,7 +1,12 @@
 {
     "@id": "dtmi:com:willowinc:CapabilityCommunication;1",
     "@type": "Interface",
-    "displayName": "Capability Communication",
+    "displayName": {
+      "en": "Capability Communication"
+    },
+    "extends" : [
+      "dtmi:com:willowinc:CapabilityComponent;1"
+    ],
     "contents": [
         {
             "@type": "Property",

@@ -4,37 +4,12 @@
   "displayName": {
     "en": "Space Area"
   },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceComponent;1",
+    "dtmi:digitaltwins:rec_3_3:SpaceArea;1"
+  ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "grossArea",
-      "displayName": {
-        "en": "Gross Area"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "squareFoot"
-    },
-    {
-      "@type": "Property",
-      "name": "usableArea",
-      "displayName": {
-        "en": "Usable Area"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "squareFoot"
-    },
-    {
-      "@type": "Property",
-      "name": "rentableArea",
-      "displayName": {
-        "en": "Rentable Area"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "squareFoot"
-    }
+    
   ],
   "@context": "dtmi:dtdl:context;2"
 }
