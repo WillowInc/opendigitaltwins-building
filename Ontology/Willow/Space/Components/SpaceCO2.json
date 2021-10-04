@@ -4,37 +4,12 @@
   "displayName": {
     "en": "Space CO2"
   },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceComponent;1",
+    "dtmi:digitaltwins:rec_3_3:SpaceCO2;1"
+  ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "CO2Sensor",
-      "displayName": {
-        "en": "CO2 Sensor"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "ppm"
-    },
-    {
-      "@type": "Property",
-      "name": "CO2Setpoint",
-      "displayName": {
-        "en": "CO2 Setpoint"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "ppm"
-    },
-    {
-      "@type": "Property",
-      "name": "CO2Delta",
-      "displayName": {
-        "en": "CO2 Delta"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "ppm"
-    }
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

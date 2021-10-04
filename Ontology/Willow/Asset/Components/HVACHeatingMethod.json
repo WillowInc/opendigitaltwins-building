@@ -4,49 +4,11 @@
   "displayName": {
     "en": "Heating Method"
   },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACHeatingMethod;1"
+  ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "type",
-      "displayName": {
-        "en": "Type"
-      },
-      "writable": true,
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Electric",
-            "displayName": {
-              "en": "Electric"
-            },
-            "enumValue": "Electric"
-          },
-          {
-            "name": "Gas",
-            "displayName": {
-              "en": "Gas"
-            },
-            "enumValue": "Gas"
-          },
-          {
-            "name": "HotWater",
-            "displayName": {
-              "en": "Hot Water"
-            },
-            "enumValue": "HotWater"
-          },
-          {
-            "name": "Steam",
-            "displayName": {
-              "en": "Steam"
-            },
-            "enumValue": "Steam"
-          }
-        ]
-      }
-    },
     {
       "@type": "Property",
       "name": "rows",
@@ -66,16 +28,6 @@
       "writable": true,
       "schema": "integer",
       "comment": "Fins per inch"
-    },
-    {
-      "@type": "Property",
-      "name": "outsideDiameter",
-      "displayName": {
-        "en": "Outside Diameter"
-      },
-      "writable": true,
-      "schema": "double",
-      "comment": "inch"
     }
   ],
   "@context": "dtmi:dtdl:context;2"

@@ -4,16 +4,12 @@
   "displayName": {
     "en": "Mixing Box"
   },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:digitaltwins:rec_3_3:asset:HVACMixingBox;1"
+  ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "economizer",
-      "displayName": {
-        "en": "Economizer"
-      },
-      "writable": true,
-      "schema": "boolean"
-    }
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

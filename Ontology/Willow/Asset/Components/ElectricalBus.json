@@ -4,46 +4,12 @@
   "displayName": {
     "en": "Electrical Bus"
   },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ElectricalBus;1"
+  ],
   "contents": [
-    {
-      "@type": ["Property", "Current"],
-      "name": "currentRating",
-      "displayName": {
-        "en": "currentRating"
-      },
-      "writable": true,
-      "schema": "integer",
-      "unit": "ampere"
-    },
-    {
-      "@type": "Property",
-      "name": "material",
-      "displayName": {
-        "en": "Material"
-      },
-      "writable": true,
-      "schema": {
-        "@id": "dtmi:com:willowinc:ElectricalBusMaterial;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Aluminum",
-            "displayName": {
-              "en": "Aluminum"
-            },
-            "enumValue": "Aluminum"
-          },  
-          {
-            "name": "Copper",
-            "displayName": {
-              "en": "Copper"
-            },
-            "enumValue": "Copper"
-          }
-        ]
-      }
-    }
+    
   ],
   "@context": "dtmi:dtdl:context;2"
 }

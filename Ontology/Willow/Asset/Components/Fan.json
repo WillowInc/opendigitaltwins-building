@@ -4,76 +4,12 @@
   "displayName": {
     "en": "Fan"
   },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:digitaltwins:rec_3_3:asset:Fan;1"
+  ],
   "contents": [
-    {
-      "@type": ["Property", "Power"],
-      "name": "motorPower",
-      "displayName": {
-        "en": "Motor Power"
-      },
-      "writable": true,
-      "schema": "integer",
-      "unit": "horsepower"
-    },
-    {
-      "@type": "Property",
-      "name": "nominalAirflowRating",
-      "displayName": {
-        "en": "Nominal Airflow Rating"
-      },
-      "writable": true,
-      "schema": "integer",
-      "comment": "CFM"
-    },
-    {
-      "@type": "Property",
-      "name": "minAirflowRating",
-      "displayName": {
-        "en": "Minimum Airflow Rating"
-      },
-      "writable": true,
-      "schema": "integer",
-      "comment": "CFM"
-    },
-    {
-      "@type": "Property",
-      "name": "maxAirflowRating",
-      "displayName": {
-        "en": "Maximum Airflow Rating"
-      },
-      "writable": true,
-      "schema": "integer",
-      "comment": "CFM"
-    },
-    {
-      "@type": "Property",
-      "name": "driveType",
-      "displayName": {
-        "en": "Drive Type"
-      },
-      "writable": true,
-      "schema": {
-        "@id": "dtmi:com:willowinc:FanDriveType;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Direct",
-            "displayName": {
-              "en": "Direct"
-            },
-            "enumValue": "Direct"
-          },
-          {
-            "name": "Belt",
-            "displayName": {
-              "en": "Belt"
-            },
-            "enumValue": "Belt"
-          }
-        ]
-      }
-    }
+    
   ],
   "@context": "dtmi:dtdl:context;2"
 }
