@@ -5,7 +5,8 @@
     "en": "Exit Sign"
   },
   "extends" : [
-    "dtmi:com:willowinc:SafetyLighting;1"
+    "dtmi:com:willowinc:SafetyLighting;1",
+    "dtmi:digitaltwins:rec_3_3:asset:ExitSign;1"
   ],
   "contents": [
 

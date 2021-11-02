@@ -9,15 +9,7 @@
     "dtmi:digitaltwins:rec_3_3:asset:AirHandlingUnit;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "nominal heating capacity"
-      },
-      "name": "nominalHeatingCapacity",
-      "schema": "double",
-      "writable": true
-    }
+
   ],
   "schemas": [
   ],
