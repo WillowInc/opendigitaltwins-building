@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:AssetComponent;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Valve;1"
+    "dtmi:digitaltwins:rec_3_3:asset:Valve;2"
   ],
   "contents": [
 

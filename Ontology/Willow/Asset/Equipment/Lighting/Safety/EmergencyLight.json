@@ -5,7 +5,8 @@
     "en": "Emergency Light"
   },
   "extends" : [
-    "dtmi:com:willowinc:SafetyLighting;1"
+    "dtmi:com:willowinc:SafetyLighting;1",
+    "dtmi:digitaltwins:rec_3_3:asset:EmergencyLight;1"
   ],
   "contents": [
 
