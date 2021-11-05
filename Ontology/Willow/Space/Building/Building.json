@@ -19,6 +19,14 @@
       "schema": "string"
     },
     {
+      "@type": "Component",
+      "name": "timeZone",
+      "displayName": {
+        "en": "Time Zone"
+      },
+      "schema": "dtmi:com:willowinc:TimeZone;1"
+    },
+    {
       "@type": "Property",
       "name": "coordinates",
       "displayName": {

@@ -1,0 +1,613 @@
+{
+  "@id": "dtmi:com:willowinc:TimeZone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Time Zone"
+  },
+  "extends": [
+    "dtmi:com:willowinc:Component;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "displayName": "Name",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AfricaCairo",
+            "displayName": "Africa/Cairo",
+            "description": "",
+            "enumValue": "Africa/Cairo"
+          },
+          {
+            "name": "AfricaCasablanca",
+            "displayName": "Africa/Casablanca",
+            "description": "",
+            "enumValue": "Africa/Casablanca"
+          },
+          {
+            "name": "AfricaJohannesburg",
+            "displayName": "Africa/Johannesburg",
+            "description": "",
+            "enumValue": "Africa/Johannesburg"
+          },
+          {
+            "name": "AfricaLagos",
+            "displayName": "Africa/Lagos",
+            "description": "West Africa Time",
+            "enumValue": "Africa/Lagos"
+          },
+          {
+            "name": "AfricaMaputo",
+            "displayName": "Africa/Maputo",
+            "description": "Central Africa Time",
+            "enumValue": "Africa/Maputo"
+          },
+          {
+            "name": "AfricaNairobi",
+            "displayName": "Africa/Nairobi",
+            "description": "",
+            "enumValue": "Africa/Nairobi"
+          },
+          {
+            "name": "AmericaAnchorage",
+            "displayName": "America/Anchorage",
+            "description": "Alaska (most areas)",
+            "enumValue": "America/Anchorage"
+          },
+          {
+            "name": "AmericaArgentinaBuenos_Aires",
+            "displayName": "America/Argentina/Buenos_Aires",
+            "description": "Buenos Aires (BA, CF)",
+            "enumValue": "America/Argentina/Buenos_Aires"
+          },
+          {
+            "name": "AmericaBogota",
+            "displayName": "America/Bogota",
+            "description": "",
+            "enumValue": "America/Bogota"
+          },
+          {
+            "name": "AmericaCaracas",
+            "displayName": "America/Caracas",
+            "description": "",
+            "enumValue": "America/Caracas"
+          },
+          {
+            "name": "AmericaChicago",
+            "displayName": "America/Chicago",
+            "description": "Central (most areas)",
+            "enumValue": "America/Chicago"
+          },
+          {
+            "name": "AmericaCosta_Rica",
+            "displayName": "America/Costa_Rica",
+            "description": "",
+            "enumValue": "America/Costa_Rica"
+          },
+          {
+            "name": "AmericaDenver",
+            "displayName": "America/Denver",
+            "description": "Mountain (most areas)",
+            "enumValue": "America/Denver"
+          },
+          {
+            "name": "AmericaEdmonton",
+            "displayName": "America/Edmonton",
+            "description": "Mountain - AB; BC (E); SK (W)",
+            "enumValue": "America/Edmonton"
+          },
+          {
+            "name": "AmericaHalifax",
+            "displayName": "America/Halifax",
+            "description": "Atlantic - NS (most areas); PE",
+            "enumValue": "America/Halifax"
+          },
+          {
+            "name": "AmericaLima",
+            "displayName": "America/Lima",
+            "description": "",
+            "enumValue": "America/Lima"
+          },
+          {
+            "name": "AmericaLos_Angeles",
+            "displayName": "America/Los_Angeles",
+            "description": "Pacific",
+            "enumValue": "America/Los_Angeles"
+          },
+          {
+            "name": "AmericaMexico_City",
+            "displayName": "America/Mexico_City",
+            "description": "Central Time",
+            "enumValue": "America/Mexico_City"
+          },
+          {
+            "name": "AmericaNew_York",
+            "displayName": "America/New_York",
+            "description": "Eastern (most areas)",
+            "enumValue": "America/New_York"
+          },
+          {
+            "name": "AmericaPhoenix",
+            "displayName": "America/Phoenix",
+            "description": "MST - Arizona (except Navajo), Creston BC",
+            "enumValue": "America/Phoenix"
+          },
+          {
+            "name": "AmericaSantiago",
+            "displayName": "America/Santiago",
+            "description": "Chile (most areas)",
+            "enumValue": "America/Santiago"
+          },
+          {
+            "name": "AmericaSao_Paulo",
+            "displayName": "America/Sao_Paulo",
+            "description": "Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)",
+            "enumValue": "America/Sao_Paulo"
+          },
+          {
+            "name": "AmericaWhitehorse",
+            "displayName": "America/Whitehorse",
+            "description": "MST - Yukon (east)",
+            "enumValue": "America/Whitehorse"
+          },
+          {
+            "name": "AsiaBaghdad",
+            "displayName": "Asia/Baghdad",
+            "description": "",
+            "enumValue": "Asia/Baghdad"
+          },
+          {
+            "name": "AsiaBangkok",
+            "displayName": "Asia/Bangkok",
+            "description": "Indochina (most areas)",
+            "enumValue": "Asia/Bangkok"
+          },
+          {
+            "name": "AsiaDubai",
+            "displayName": "Asia/Dubai",
+            "description": "",
+            "enumValue": "Asia/Dubai"
+          },
+          {
+            "name": "AsiaHong_Kong",
+            "displayName": "Asia/Hong_Kong",
+            "description": "",
+            "enumValue": "Asia/Hong_Kong"
+          },
+          {
+            "name": "AsiaJakarta",
+            "displayName": "Asia/Jakarta",
+            "description": "Java, Sumatra",
+            "enumValue": "Asia/Jakarta"
+          },
+          {
+            "name": "AsiaKabul",
+            "displayName": "Asia/Kabul",
+            "description": "",
+            "enumValue": "Asia/Kabul"
+          },
+          {
+            "name": "AsiaKarachi",
+            "displayName": "Asia/Karachi",
+            "description": "",
+            "enumValue": "Asia/Karachi"
+          },
+          {
+            "name": "AsiaKathmandu",
+            "displayName": "Asia/Kathmandu",
+            "description": "",
+            "enumValue": "Asia/Kathmandu"
+          },
+          {
+            "name": "AsiaKolkata",
+            "displayName": "Asia/Kolkata",
+            "description": "",
+            "enumValue": "Asia/Kolkata"
+          },
+          {
+            "name": "AsiaKuala_Lumpur",
+            "displayName": "Asia/Kuala_Lumpur",
+            "description": "Malaysia (peninsula)",
+            "enumValue": "Asia/Kuala_Lumpur"
+          },
+          {
+            "name": "AsiaPyongyang",
+            "displayName": "Asia/Pyongyang",
+            "description": "",
+            "enumValue": "Asia/Pyongyang"
+          },
+          {
+            "name": "AsiaRiyadh",
+            "displayName": "Asia/Riyadh",
+            "description": "Arabia, Syowa",
+            "enumValue": "Asia/Riyadh"
+          },
+          {
+            "name": "AsiaSeoul",
+            "displayName": "Asia/Seoul",
+            "description": "",
+            "enumValue": "Asia/Seoul"
+          },
+          {
+            "name": "AsiaShanghai",
+            "displayName": "Asia/Shanghai",
+            "description": "Beijing Time",
+            "enumValue": "Asia/Shanghai"
+          },
+          {
+            "name": "AsiaSingapore",
+            "displayName": "Asia/Singapore",
+            "description": "Singapore, peninsular Malaysia",
+            "enumValue": "Asia/Singapore"
+          },
+          {
+            "name": "AsiaTaipei",
+            "displayName": "Asia/Taipei",
+            "description": "",
+            "enumValue": "Asia/Taipei"
+          },
+          {
+            "name": "AsiaTokyo",
+            "displayName": "Asia/Tokyo",
+            "description": "",
+            "enumValue": "Asia/Tokyo"
+          },
+          {
+            "name": "AtlanticReykjavik",
+            "displayName": "Atlantic/Reykjavik",
+            "description": "",
+            "enumValue": "Atlantic/Reykjavik"
+          },
+          {
+            "name": "AustraliaAdelaide",
+            "displayName": "Australia/Adelaide",
+            "description": "South Australia",
+            "enumValue": "Australia/Adelaide"
+          },
+          {
+            "name": "AustraliaBrisbane",
+            "displayName": "Australia/Brisbane",
+            "description": "Queensland (most areas)",
+            "enumValue": "Australia/Brisbane"
+          },
+          {
+            "name": "AustraliaDarwin",
+            "displayName": "Australia/Darwin",
+            "description": "Northern Territory",
+            "enumValue": "Australia/Darwin"
+          },
+          {
+            "name": "AustraliaHobart",
+            "displayName": "Australia/Hobart",
+            "description": "Tasmania",
+            "enumValue": "Australia/Hobart"
+          },
+          {
+            "name": "AustraliaMelbourne",
+            "displayName": "Australia/Melbourne",
+            "description": "Victoria",
+            "enumValue": "Australia/Melbourne"
+          },
+          {
+            "name": "AustraliaPerth",
+            "displayName": "Australia/Perth",
+            "description": "Western Australia (most areas)",
+            "enumValue": "Australia/Perth"
+          },
+          {
+            "name": "AustraliaSydney",
+            "displayName": "Australia/Sydney",
+            "description": "New South Wales (most areas)",
+            "enumValue": "Australia/Sydney"
+          },
+          {
+            "name": "EtcGMT",
+            "displayName": "Etc/GMT",
+            "description": "",
+            "enumValue": "Etc/GMT"
+          },
+          {
+            "name": "EtcGMT_1",
+            "displayName": "Etc/GMT+1",
+            "description": "",
+            "enumValue": "Etc/GMT+1"
+          },
+          {
+            "name": "EtcGMT_10",
+            "displayName": "Etc/GMT+10",
+            "description": "",
+            "enumValue": "Etc/GMT+10"
+          },
+          {
+            "name": "EtcGMT_11",
+            "displayName": "Etc/GMT+11",
+            "description": "",
+            "enumValue": "Etc/GMT+11"
+          },
+          {
+            "name": "EtcGMT_12",
+            "displayName": "Etc/GMT+12",
+            "description": "",
+            "enumValue": "Etc/GMT+12"
+          },
+          {
+            "name": "EtcGMT_2",
+            "displayName": "Etc/GMT+2",
+            "description": "",
+            "enumValue": "Etc/GMT+2"
+          },
+          {
+            "name": "EtcGMT_3",
+            "displayName": "Etc/GMT+3",
+            "description": "",
+            "enumValue": "Etc/GMT+3"
+          },
+          {
+            "name": "EtcGMT_4",
+            "displayName": "Etc/GMT+4",
+            "description": "",
+            "enumValue": "Etc/GMT+4"
+          },
+          {
+            "name": "EtcGMT_5",
+            "displayName": "Etc/GMT+5",
+            "description": "",
+            "enumValue": "Etc/GMT+5"
+          },
+          {
+            "name": "EtcGMT_6",
+            "displayName": "Etc/GMT+6",
+            "description": "",
+            "enumValue": "Etc/GMT+6"
+          },
+          {
+            "name": "EtcGMT_7",
+            "displayName": "Etc/GMT+7",
+            "description": "",
+            "enumValue": "Etc/GMT+7"
+          },
+          {
+            "name": "EtcGMT_8",
+            "displayName": "Etc/GMT+8",
+            "description": "",
+            "enumValue": "Etc/GMT+8"
+          },
+          {
+            "name": "EtcGMT_9",
+            "displayName": "Etc/GMT+9",
+            "description": "",
+            "enumValue": "Etc/GMT+9"
+          },
+          {
+            "name": "EtcGMT1",
+            "displayName": "Etc/GMT-1",
+            "description": "",
+            "enumValue": "Etc/GMT-1"
+          },
+          {
+            "name": "EtcGMT10",
+            "displayName": "Etc/GMT-10",
+            "description": "",
+            "enumValue": "Etc/GMT-10"
+          },
+          {
+            "name": "EtcGMT11",
+            "displayName": "Etc/GMT-11",
+            "description": "",
+            "enumValue": "Etc/GMT-11"
+          },
+          {
+            "name": "EtcGMT12",
+            "displayName": "Etc/GMT-12",
+            "description": "",
+            "enumValue": "Etc/GMT-12"
+          },
+          {
+            "name": "EtcGMT13",
+            "displayName": "Etc/GMT-13",
+            "description": "",
+            "enumValue": "Etc/GMT-13"
+          },
+          {
+            "name": "EtcGMT14",
+            "displayName": "Etc/GMT-14",
+            "description": "",
+            "enumValue": "Etc/GMT-14"
+          },
+          {
+            "name": "EtcGMT2",
+            "displayName": "Etc/GMT-2",
+            "description": "",
+            "enumValue": "Etc/GMT-2"
+          },
+          {
+            "name": "EtcGMT3",
+            "displayName": "Etc/GMT-3",
+            "description": "",
+            "enumValue": "Etc/GMT-3"
+          },
+          {
+            "name": "EtcGMT4",
+            "displayName": "Etc/GMT-4",
+            "description": "",
+            "enumValue": "Etc/GMT-4"
+          },
+          {
+            "name": "EtcGMT5",
+            "displayName": "Etc/GMT-5",
+            "description": "",
+            "enumValue": "Etc/GMT-5"
+          },
+          {
+            "name": "EtcGMT6",
+            "displayName": "Etc/GMT-6",
+            "description": "",
+            "enumValue": "Etc/GMT-6"
+          },
+          {
+            "name": "EtcGMT7",
+            "displayName": "Etc/GMT-7",
+            "description": "",
+            "enumValue": "Etc/GMT-7"
+          },
+          {
+            "name": "EtcGMT8",
+            "displayName": "Etc/GMT-8",
+            "description": "",
+            "enumValue": "Etc/GMT-8"
+          },
+          {
+            "name": "EtcGMT9",
+            "displayName": "Etc/GMT-9",
+            "description": "",
+            "enumValue": "Etc/GMT-9"
+          },
+          {
+            "name": "EtcUTC",
+            "displayName": "Etc/UTC",
+            "description": "",
+            "enumValue": "Etc/UTC"
+          },
+          {
+            "name": "EuropeAmsterdam",
+            "displayName": "Europe/Amsterdam",
+            "description": "",
+            "enumValue": "Europe/Amsterdam"
+          },
+          {
+            "name": "EuropeAthens",
+            "displayName": "Europe/Athens",
+            "description": "",
+            "enumValue": "Europe/Athens"
+          },
+          {
+            "name": "EuropeBerlin",
+            "displayName": "Europe/Berlin",
+            "description": "Germany (most areas)",
+            "enumValue": "Europe/Berlin"
+          },
+          {
+            "name": "EuropeBrussels",
+            "displayName": "Europe/Brussels",
+            "description": "",
+            "enumValue": "Europe/Brussels"
+          },
+          {
+            "name": "EuropeBudapest",
+            "displayName": "Europe/Budapest",
+            "description": "",
+            "enumValue": "Europe/Budapest"
+          },
+          {
+            "name": "EuropeCopenhagen",
+            "displayName": "Europe/Copenhagen",
+            "description": "",
+            "enumValue": "Europe/Copenhagen"
+          },
+          {
+            "name": "EuropeDublin",
+            "displayName": "Europe/Dublin",
+            "description": "",
+            "enumValue": "Europe/Dublin"
+          },
+          {
+            "name": "EuropeHelsinki",
+            "displayName": "Europe/Helsinki",
+            "description": "",
+            "enumValue": "Europe/Helsinki"
+          },
+          {
+            "name": "EuropeIstanbul",
+            "displayName": "Europe/Istanbul",
+            "description": "",
+            "enumValue": "Europe/Istanbul"
+          },
+          {
+            "name": "EuropeLisbon",
+            "displayName": "Europe/Lisbon",
+            "description": "Portugal (mainland)",
+            "enumValue": "Europe/Lisbon"
+          },
+          {
+            "name": "EuropeLondon",
+            "displayName": "Europe/London",
+            "description": "",
+            "enumValue": "Europe/London"
+          },
+          {
+            "name": "EuropeMadrid",
+            "displayName": "Europe/Madrid",
+            "description": "Spain (mainland)",
+            "enumValue": "Europe/Madrid"
+          },
+          {
+            "name": "EuropeMinsk",
+            "displayName": "Europe/Minsk",
+            "description": "",
+            "enumValue": "Europe/Minsk"
+          },
+          {
+            "name": "EuropeMoscow",
+            "displayName": "Europe/Moscow",
+            "description": "MSK+00 - Moscow area",
+            "enumValue": "Europe/Moscow"
+          },
+          {
+            "name": "EuropeParis",
+            "displayName": "Europe/Paris",
+            "description": "",
+            "enumValue": "Europe/Paris"
+          },
+          {
+            "name": "EuropePrague",
+            "displayName": "Europe/Prague",
+            "description": "",
+            "enumValue": "Europe/Prague"
+          },
+          {
+            "name": "EuropeRome",
+            "displayName": "Europe/Rome",
+            "description": "",
+            "enumValue": "Europe/Rome"
+          },
+          {
+            "name": "EuropeStockholm",
+            "displayName": "Europe/Stockholm",
+            "description": "",
+            "enumValue": "Europe/Stockholm"
+          },
+          {
+            "name": "EuropeVienna",
+            "displayName": "Europe/Vienna",
+            "description": "",
+            "enumValue": "Europe/Vienna"
+          },
+          {
+            "name": "EuropeZurich",
+            "displayName": "Europe/Zurich",
+            "description": "Swiss time",
+            "enumValue": "Europe/Zurich"
+          },
+          {
+            "name": "PacificAuckland",
+            "displayName": "Pacific/Auckland",
+            "description": "New Zealand time",
+            "enumValue": "Pacific/Auckland"
+          },
+          {
+            "name": "PacificHonolulu",
+            "displayName": "Pacific/Honolulu",
+            "description": "Hawaii",
+            "enumValue": "Pacific/Honolulu"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
