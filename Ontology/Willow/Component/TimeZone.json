@@ -18,24 +18,6 @@
         "valueSchema": "string",
         "enumValues": [
           {
-            "name": "AfricaAbidjan",
-            "displayName": "Africa/Abidjan",
-            "description": "",
-            "enumValue": "Africa/Abidjan"
-          },
-          {
-            "name": "AfricaAlgiers",
-            "displayName": "Africa/Algiers",
-            "description": "",
-            "enumValue": "Africa/Algiers"
-          },
-          {
-            "name": "AfricaBissau",
-            "displayName": "Africa/Bissau",
-            "description": "",
-            "enumValue": "Africa/Bissau"
-          },
-          {
             "name": "AfricaCairo",
             "displayName": "Africa/Cairo",
             "description": "",
@@ -48,34 +30,10 @@
             "enumValue": "Africa/Casablanca"
           },
           {
-            "name": "AfricaCeuta",
-            "displayName": "Africa/Ceuta",
-            "description": "Ceuta, Melilla",
-            "enumValue": "Africa/Ceuta"
-          },
-          {
-            "name": "AfricaEl_Aaiun",
-            "displayName": "Africa/El_Aaiun",
-            "description": "",
-            "enumValue": "Africa/El_Aaiun"
-          },
-          {
             "name": "AfricaJohannesburg",
             "displayName": "Africa/Johannesburg",
             "description": "",
             "enumValue": "Africa/Johannesburg"
-          },
-          {
-            "name": "AfricaJuba",
-            "displayName": "Africa/Juba",
-            "description": "",
-            "enumValue": "Africa/Juba"
-          },
-          {
-            "name": "AfricaKhartoum",
-            "displayName": "Africa/Khartoum",
-            "description": "",
-            "enumValue": "Africa/Khartoum"
           },
           {
             "name": "AfricaLagos",
@@ -90,52 +48,10 @@
             "enumValue": "Africa/Maputo"
           },
           {
-            "name": "AfricaMonrovia",
-            "displayName": "Africa/Monrovia",
-            "description": "",
-            "enumValue": "Africa/Monrovia"
-          },
-          {
             "name": "AfricaNairobi",
             "displayName": "Africa/Nairobi",
             "description": "",
             "enumValue": "Africa/Nairobi"
-          },
-          {
-            "name": "AfricaNdjamena",
-            "displayName": "Africa/Ndjamena",
-            "description": "",
-            "enumValue": "Africa/Ndjamena"
-          },
-          {
-            "name": "AfricaSao_Tome",
-            "displayName": "Africa/Sao_Tome",
-            "description": "",
-            "enumValue": "Africa/Sao_Tome"
-          },
-          {
-            "name": "AfricaTripoli",
-            "displayName": "Africa/Tripoli",
-            "description": "",
-            "enumValue": "Africa/Tripoli"
-          },
-          {
-            "name": "AfricaTunis",
-            "displayName": "Africa/Tunis",
-            "description": "",
-            "enumValue": "Africa/Tunis"
-          },
-          {
-            "name": "AfricaWindhoek",
-            "displayName": "Africa/Windhoek",
-            "description": "",
-            "enumValue": "Africa/Windhoek"
-          },
-          {
-            "name": "AmericaAdak",
-            "displayName": "America/Adak",
-            "description": "Aleutian Islands",
-            "enumValue": "America/Adak"
           },
           {
             "name": "AmericaAnchorage",
@@ -144,124 +60,10 @@
             "enumValue": "America/Anchorage"
           },
           {
-            "name": "AmericaAraguaina",
-            "displayName": "America/Araguaina",
-            "description": "Tocantins",
-            "enumValue": "America/Araguaina"
-          },
-          {
             "name": "AmericaArgentinaBuenos_Aires",
             "displayName": "America/Argentina/Buenos_Aires",
             "description": "Buenos Aires (BA, CF)",
             "enumValue": "America/Argentina/Buenos_Aires"
-          },
-          {
-            "name": "AmericaArgentinaCatamarca",
-            "displayName": "America/Argentina/Catamarca",
-            "description": "Catamarca (CT); Chubut (CH)",
-            "enumValue": "America/Argentina/Catamarca"
-          },
-          {
-            "name": "AmericaArgentinaCordoba",
-            "displayName": "America/Argentina/Cordoba",
-            "description": "Argentina (most areas: CB, CC, CN, ER, FM, MN, SE, SF)",
-            "enumValue": "America/Argentina/Cordoba"
-          },
-          {
-            "name": "AmericaArgentinaJujuy",
-            "displayName": "America/Argentina/Jujuy",
-            "description": "Jujuy (JY)",
-            "enumValue": "America/Argentina/Jujuy"
-          },
-          {
-            "name": "AmericaArgentinaLa_Rioja",
-            "displayName": "America/Argentina/La_Rioja",
-            "description": "La Rioja (LR)",
-            "enumValue": "America/Argentina/La_Rioja"
-          },
-          {
-            "name": "AmericaArgentinaMendoza",
-            "displayName": "America/Argentina/Mendoza",
-            "description": "Mendoza (MZ)",
-            "enumValue": "America/Argentina/Mendoza"
-          },
-          {
-            "name": "AmericaArgentinaRio_Gallegos",
-            "displayName": "America/Argentina/Rio_Gallegos",
-            "description": "Santa Cruz (SC)",
-            "enumValue": "America/Argentina/Rio_Gallegos"
-          },
-          {
-            "name": "AmericaArgentinaSalta",
-            "displayName": "America/Argentina/Salta",
-            "description": "Salta (SA, LP, NQ, RN)",
-            "enumValue": "America/Argentina/Salta"
-          },
-          {
-            "name": "AmericaArgentinaSan_Juan",
-            "displayName": "America/Argentina/San_Juan",
-            "description": "San Juan (SJ)",
-            "enumValue": "America/Argentina/San_Juan"
-          },
-          {
-            "name": "AmericaArgentinaSan_Luis",
-            "displayName": "America/Argentina/San_Luis",
-            "description": "San Luis (SL)",
-            "enumValue": "America/Argentina/San_Luis"
-          },
-          {
-            "name": "AmericaArgentinaTucuman",
-            "displayName": "America/Argentina/Tucuman",
-            "description": "Tucum�n (TM)",
-            "enumValue": "America/Argentina/Tucuman"
-          },
-          {
-            "name": "AmericaArgentinaUshuaia",
-            "displayName": "America/Argentina/Ushuaia",
-            "description": "Tierra del Fuego (TF)",
-            "enumValue": "America/Argentina/Ushuaia"
-          },
-          {
-            "name": "AmericaAsuncion",
-            "displayName": "America/Asuncion",
-            "description": "",
-            "enumValue": "America/Asuncion"
-          },
-          {
-            "name": "AmericaBahia",
-            "displayName": "America/Bahia",
-            "description": "Bahia",
-            "enumValue": "America/Bahia"
-          },
-          {
-            "name": "AmericaBahia_Banderas",
-            "displayName": "America/Bahia_Banderas",
-            "description": "Central Time - Bah�a de Banderas",
-            "enumValue": "America/Bahia_Banderas"
-          },
-          {
-            "name": "AmericaBarbados",
-            "displayName": "America/Barbados",
-            "description": "",
-            "enumValue": "America/Barbados"
-          },
-          {
-            "name": "AmericaBelem",
-            "displayName": "America/Belem",
-            "description": "Par� (east); Amap�",
-            "enumValue": "America/Belem"
-          },
-          {
-            "name": "AmericaBelize",
-            "displayName": "America/Belize",
-            "description": "",
-            "enumValue": "America/Belize"
-          },
-          {
-            "name": "AmericaBoa_Vista",
-            "displayName": "America/Boa_Vista",
-            "description": "Roraima",
-            "enumValue": "America/Boa_Vista"
           },
           {
             "name": "AmericaBogota",
@@ -270,40 +72,10 @@
             "enumValue": "America/Bogota"
           },
           {
-            "name": "AmericaBoise",
-            "displayName": "America/Boise",
-            "description": "Mountain - ID (south); OR (east)",
-            "enumValue": "America/Boise"
-          },
-          {
-            "name": "AmericaCambridge_Bay",
-            "displayName": "America/Cambridge_Bay",
-            "description": "Mountain - NU (west)",
-            "enumValue": "America/Cambridge_Bay"
-          },
-          {
-            "name": "AmericaCampo_Grande",
-            "displayName": "America/Campo_Grande",
-            "description": "Mato Grosso do Sul",
-            "enumValue": "America/Campo_Grande"
-          },
-          {
-            "name": "AmericaCancun",
-            "displayName": "America/Cancun",
-            "description": "Eastern Standard Time - Quintana Roo",
-            "enumValue": "America/Cancun"
-          },
-          {
             "name": "AmericaCaracas",
             "displayName": "America/Caracas",
             "description": "",
             "enumValue": "America/Caracas"
-          },
-          {
-            "name": "AmericaCayenne",
-            "displayName": "America/Cayenne",
-            "description": "",
-            "enumValue": "America/Cayenne"
           },
           {
             "name": "AmericaChicago",
@@ -312,40 +84,10 @@
             "enumValue": "America/Chicago"
           },
           {
-            "name": "AmericaChihuahua",
-            "displayName": "America/Chihuahua",
-            "description": "Mountain Time - Chihuahua (most areas)",
-            "enumValue": "America/Chihuahua"
-          },
-          {
             "name": "AmericaCosta_Rica",
             "displayName": "America/Costa_Rica",
             "description": "",
             "enumValue": "America/Costa_Rica"
-          },
-          {
-            "name": "AmericaCuiaba",
-            "displayName": "America/Cuiaba",
-            "description": "Mato Grosso",
-            "enumValue": "America/Cuiaba"
-          },
-          {
-            "name": "AmericaDanmarkshavn",
-            "displayName": "America/Danmarkshavn",
-            "description": "National Park (east coast)",
-            "enumValue": "America/Danmarkshavn"
-          },
-          {
-            "name": "AmericaDawson",
-            "displayName": "America/Dawson",
-            "description": "MST - Yukon (west)",
-            "enumValue": "America/Dawson"
-          },
-          {
-            "name": "AmericaDawson_Creek",
-            "displayName": "America/Dawson_Creek",
-            "description": "MST - BC (Dawson Cr, Ft St John)",
-            "enumValue": "America/Dawson_Creek"
           },
           {
             "name": "AmericaDenver",
@@ -354,184 +96,16 @@
             "enumValue": "America/Denver"
           },
           {
-            "name": "AmericaDetroit",
-            "displayName": "America/Detroit",
-            "description": "Eastern - MI (most areas)",
-            "enumValue": "America/Detroit"
-          },
-          {
             "name": "AmericaEdmonton",
             "displayName": "America/Edmonton",
             "description": "Mountain - AB; BC (E); SK (W)",
             "enumValue": "America/Edmonton"
           },
           {
-            "name": "AmericaEirunepe",
-            "displayName": "America/Eirunepe",
-            "description": "Amazonas (west)",
-            "enumValue": "America/Eirunepe"
-          },
-          {
-            "name": "AmericaEl_Salvador",
-            "displayName": "America/El_Salvador",
-            "description": "",
-            "enumValue": "America/El_Salvador"
-          },
-          {
-            "name": "AmericaFort_Nelson",
-            "displayName": "America/Fort_Nelson",
-            "description": "MST - BC (Ft Nelson)",
-            "enumValue": "America/Fort_Nelson"
-          },
-          {
-            "name": "AmericaFortaleza",
-            "displayName": "America/Fortaleza",
-            "description": "Brazil (northeast: MA, PI, CE, RN, PB)",
-            "enumValue": "America/Fortaleza"
-          },
-          {
-            "name": "AmericaGlace_Bay",
-            "displayName": "America/Glace_Bay",
-            "description": "Atlantic - NS (Cape Breton)",
-            "enumValue": "America/Glace_Bay"
-          },
-          {
-            "name": "AmericaGoose_Bay",
-            "displayName": "America/Goose_Bay",
-            "description": "Atlantic - Labrador (most areas)",
-            "enumValue": "America/Goose_Bay"
-          },
-          {
-            "name": "AmericaGrand_Turk",
-            "displayName": "America/Grand_Turk",
-            "description": "",
-            "enumValue": "America/Grand_Turk"
-          },
-          {
-            "name": "AmericaGuatemala",
-            "displayName": "America/Guatemala",
-            "description": "",
-            "enumValue": "America/Guatemala"
-          },
-          {
-            "name": "AmericaGuayaquil",
-            "displayName": "America/Guayaquil",
-            "description": "Ecuador (mainland)",
-            "enumValue": "America/Guayaquil"
-          },
-          {
-            "name": "AmericaGuyana",
-            "displayName": "America/Guyana",
-            "description": "",
-            "enumValue": "America/Guyana"
-          },
-          {
             "name": "AmericaHalifax",
             "displayName": "America/Halifax",
             "description": "Atlantic - NS (most areas); PE",
             "enumValue": "America/Halifax"
-          },
-          {
-            "name": "AmericaHavana",
-            "displayName": "America/Havana",
-            "description": "",
-            "enumValue": "America/Havana"
-          },
-          {
-            "name": "AmericaHermosillo",
-            "displayName": "America/Hermosillo",
-            "description": "Mountain Standard Time - Sonora",
-            "enumValue": "America/Hermosillo"
-          },
-          {
-            "name": "AmericaIndianaIndianapolis",
-            "displayName": "America/Indiana/Indianapolis",
-            "description": "Eastern - IN (most areas)",
-            "enumValue": "America/Indiana/Indianapolis"
-          },
-          {
-            "name": "AmericaIndianaKnox",
-            "displayName": "America/Indiana/Knox",
-            "description": "Central - IN (Starke)",
-            "enumValue": "America/Indiana/Knox"
-          },
-          {
-            "name": "AmericaIndianaMarengo",
-            "displayName": "America/Indiana/Marengo",
-            "description": "Eastern - IN (Crawford)",
-            "enumValue": "America/Indiana/Marengo"
-          },
-          {
-            "name": "AmericaIndianaPetersburg",
-            "displayName": "America/Indiana/Petersburg",
-            "description": "Eastern - IN (Pike)",
-            "enumValue": "America/Indiana/Petersburg"
-          },
-          {
-            "name": "AmericaIndianaTell_City",
-            "displayName": "America/Indiana/Tell_City",
-            "description": "Central - IN (Perry)",
-            "enumValue": "America/Indiana/Tell_City"
-          },
-          {
-            "name": "AmericaIndianaVevay",
-            "displayName": "America/Indiana/Vevay",
-            "description": "Eastern - IN (Switzerland)",
-            "enumValue": "America/Indiana/Vevay"
-          },
-          {
-            "name": "AmericaIndianaVincennes",
-            "displayName": "America/Indiana/Vincennes",
-            "description": "Eastern - IN (Da, Du, K, Mn)",
-            "enumValue": "America/Indiana/Vincennes"
-          },
-          {
-            "name": "AmericaIndianaWinamac",
-            "displayName": "America/Indiana/Winamac",
-            "description": "Eastern - IN (Pulaski)",
-            "enumValue": "America/Indiana/Winamac"
-          },
-          {
-            "name": "AmericaInuvik",
-            "displayName": "America/Inuvik",
-            "description": "Mountain - NT (west)",
-            "enumValue": "America/Inuvik"
-          },
-          {
-            "name": "AmericaIqaluit",
-            "displayName": "America/Iqaluit",
-            "description": "Eastern - NU (most east areas)",
-            "enumValue": "America/Iqaluit"
-          },
-          {
-            "name": "AmericaJamaica",
-            "displayName": "America/Jamaica",
-            "description": "",
-            "enumValue": "America/Jamaica"
-          },
-          {
-            "name": "AmericaJuneau",
-            "displayName": "America/Juneau",
-            "description": "Alaska - Juneau area",
-            "enumValue": "America/Juneau"
-          },
-          {
-            "name": "AmericaKentuckyLouisville",
-            "displayName": "America/Kentucky/Louisville",
-            "description": "Eastern - KY (Louisville area)",
-            "enumValue": "America/Kentucky/Louisville"
-          },
-          {
-            "name": "AmericaKentuckyMonticello",
-            "displayName": "America/Kentucky/Monticello",
-            "description": "Eastern - KY (Wayne)",
-            "enumValue": "America/Kentucky/Monticello"
-          },
-          {
-            "name": "AmericaLa_Paz",
-            "displayName": "America/La_Paz",
-            "description": "",
-            "enumValue": "America/La_Paz"
           },
           {
             "name": "AmericaLima",
@@ -546,88 +120,10 @@
             "enumValue": "America/Los_Angeles"
           },
           {
-            "name": "AmericaMaceio",
-            "displayName": "America/Maceio",
-            "description": "Alagoas, Sergipe",
-            "enumValue": "America/Maceio"
-          },
-          {
-            "name": "AmericaManagua",
-            "displayName": "America/Managua",
-            "description": "",
-            "enumValue": "America/Managua"
-          },
-          {
-            "name": "AmericaManaus",
-            "displayName": "America/Manaus",
-            "description": "Amazonas (east)",
-            "enumValue": "America/Manaus"
-          },
-          {
-            "name": "AmericaMartinique",
-            "displayName": "America/Martinique",
-            "description": "",
-            "enumValue": "America/Martinique"
-          },
-          {
-            "name": "AmericaMatamoros",
-            "displayName": "America/Matamoros",
-            "description": "Central Time US - Coahuila, Nuevo Le�n, Tamaulipas (US border)",
-            "enumValue": "America/Matamoros"
-          },
-          {
-            "name": "AmericaMazatlan",
-            "displayName": "America/Mazatlan",
-            "description": "Mountain Time - Baja California Sur, Nayarit, Sinaloa",
-            "enumValue": "America/Mazatlan"
-          },
-          {
-            "name": "AmericaMenominee",
-            "displayName": "America/Menominee",
-            "description": "Central - MI (Wisconsin border)",
-            "enumValue": "America/Menominee"
-          },
-          {
-            "name": "AmericaMerida",
-            "displayName": "America/Merida",
-            "description": "Central Time - Campeche, Yucat�n",
-            "enumValue": "America/Merida"
-          },
-          {
-            "name": "AmericaMetlakatla",
-            "displayName": "America/Metlakatla",
-            "description": "Alaska - Annette Island",
-            "enumValue": "America/Metlakatla"
-          },
-          {
             "name": "AmericaMexico_City",
             "displayName": "America/Mexico_City",
             "description": "Central Time",
             "enumValue": "America/Mexico_City"
-          },
-          {
-            "name": "AmericaMiquelon",
-            "displayName": "America/Miquelon",
-            "description": "",
-            "enumValue": "America/Miquelon"
-          },
-          {
-            "name": "AmericaMoncton",
-            "displayName": "America/Moncton",
-            "description": "Atlantic - New Brunswick",
-            "enumValue": "America/Moncton"
-          },
-          {
-            "name": "AmericaMonterrey",
-            "displayName": "America/Monterrey",
-            "description": "Central Time - Durango; Coahuila, Nuevo Le�n, Tamaulipas (most areas)",
-            "enumValue": "America/Monterrey"
-          },
-          {
-            "name": "AmericaMontevideo",
-            "displayName": "America/Montevideo",
-            "description": "",
-            "enumValue": "America/Montevideo"
           },
           {
             "name": "AmericaNew_York",
@@ -636,142 +132,10 @@
             "enumValue": "America/New_York"
           },
           {
-            "name": "AmericaNipigon",
-            "displayName": "America/Nipigon",
-            "description": "Eastern - ON, QC (no DST 1967-73)",
-            "enumValue": "America/Nipigon"
-          },
-          {
-            "name": "AmericaNome",
-            "displayName": "America/Nome",
-            "description": "Alaska (west)",
-            "enumValue": "America/Nome"
-          },
-          {
-            "name": "AmericaNoronha",
-            "displayName": "America/Noronha",
-            "description": "Atlantic islands",
-            "enumValue": "America/Noronha"
-          },
-          {
-            "name": "AmericaNorth_DakotaBeulah",
-            "displayName": "America/North_Dakota/Beulah",
-            "description": "Central - ND (Mercer)",
-            "enumValue": "America/North_Dakota/Beulah"
-          },
-          {
-            "name": "AmericaNorth_DakotaCenter",
-            "displayName": "America/North_Dakota/Center",
-            "description": "Central - ND (Oliver)",
-            "enumValue": "America/North_Dakota/Center"
-          },
-          {
-            "name": "AmericaNorth_DakotaNew_Salem",
-            "displayName": "America/North_Dakota/New_Salem",
-            "description": "Central - ND (Morton rural)",
-            "enumValue": "America/North_Dakota/New_Salem"
-          },
-          {
-            "name": "AmericaNuuk",
-            "displayName": "America/Nuuk",
-            "description": "Greenland (most areas)",
-            "enumValue": "America/Nuuk"
-          },
-          {
-            "name": "AmericaOjinaga",
-            "displayName": "America/Ojinaga",
-            "description": "Mountain Time US - Chihuahua (US border)",
-            "enumValue": "America/Ojinaga"
-          },
-          {
-            "name": "AmericaPanama",
-            "displayName": "America/Panama",
-            "description": "EST - Panama, Cayman, ON (Atikokan), NU (Coral H)",
-            "enumValue": "America/Panama"
-          },
-          {
-            "name": "AmericaPangnirtung",
-            "displayName": "America/Pangnirtung",
-            "description": "Eastern - NU (Pangnirtung)",
-            "enumValue": "America/Pangnirtung"
-          },
-          {
-            "name": "AmericaParamaribo",
-            "displayName": "America/Paramaribo",
-            "description": "",
-            "enumValue": "America/Paramaribo"
-          },
-          {
             "name": "AmericaPhoenix",
             "displayName": "America/Phoenix",
             "description": "MST - Arizona (except Navajo), Creston BC",
             "enumValue": "America/Phoenix"
-          },
-          {
-            "name": "AmericaPortauPrince",
-            "displayName": "America/Port-au-Prince",
-            "description": "",
-            "enumValue": "America/Port-au-Prince"
-          },
-          {
-            "name": "AmericaPorto_Velho",
-            "displayName": "America/Porto_Velho",
-            "description": "Rond�nia",
-            "enumValue": "America/Porto_Velho"
-          },
-          {
-            "name": "AmericaPuerto_Rico",
-            "displayName": "America/Puerto_Rico",
-            "description": "AST",
-            "enumValue": "America/Puerto_Rico"
-          },
-          {
-            "name": "AmericaPunta_Arenas",
-            "displayName": "America/Punta_Arenas",
-            "description": "Region of Magallanes",
-            "enumValue": "America/Punta_Arenas"
-          },
-          {
-            "name": "AmericaRainy_River",
-            "displayName": "America/Rainy_River",
-            "description": "Central - ON (Rainy R, Ft Frances)",
-            "enumValue": "America/Rainy_River"
-          },
-          {
-            "name": "AmericaRankin_Inlet",
-            "displayName": "America/Rankin_Inlet",
-            "description": "Central - NU (central)",
-            "enumValue": "America/Rankin_Inlet"
-          },
-          {
-            "name": "AmericaRecife",
-            "displayName": "America/Recife",
-            "description": "Pernambuco",
-            "enumValue": "America/Recife"
-          },
-          {
-            "name": "AmericaRegina",
-            "displayName": "America/Regina",
-            "description": "CST - SK (most areas)",
-            "enumValue": "America/Regina"
-          },
-          {
-            "name": "AmericaResolute",
-            "displayName": "America/Resolute",
-            "description": "Central - NU (Resolute)",
-            "enumValue": "America/Resolute"
-          },
-          {
-            "name": "AmericaRio_Branco",
-            "displayName": "America/Rio_Branco",
-            "description": "Acre",
-            "enumValue": "America/Rio_Branco"
-          },
-          {
-            "name": "AmericaSantarem",
-            "displayName": "America/Santarem",
-            "description": "Par� (west)",
-            "enumValue": "America/Santarem"
           },
           {
             "name": "AmericaSantiago",
@@ -780,76 +144,10 @@
             "enumValue": "America/Santiago"
           },
           {
-            "name": "AmericaSanto_Domingo",
-            "displayName": "America/Santo_Domingo",
-            "description": "",
-            "enumValue": "America/Santo_Domingo"
-          },
-          {
             "name": "AmericaSao_Paulo",
             "displayName": "America/Sao_Paulo",
             "description": "Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)",
             "enumValue": "America/Sao_Paulo"
-          },
-          {
-            "name": "AmericaScoresbysund",
-            "displayName": "America/Scoresbysund",
-            "description": "Scoresbysund/Ittoqqortoormiit",
-            "enumValue": "America/Scoresbysund"
-          },
-          {
-            "name": "AmericaSitka",
-            "displayName": "America/Sitka",
-            "description": "Alaska - Sitka area",
-            "enumValue": "America/Sitka"
-          },
-          {
-            "name": "AmericaSt_Johns",
-            "displayName": "America/St_Johns",
-            "description": "Newfoundland; Labrador (southeast)",
-            "enumValue": "America/St_Johns"
-          },
-          {
-            "name": "AmericaSwift_Current",
-            "displayName": "America/Swift_Current",
-            "description": "CST - SK (midwest)",
-            "enumValue": "America/Swift_Current"
-          },
-          {
-            "name": "AmericaTegucigalpa",
-            "displayName": "America/Tegucigalpa",
-            "description": "",
-            "enumValue": "America/Tegucigalpa"
-          },
-          {
-            "name": "AmericaThule",
-            "displayName": "America/Thule",
-            "description": "Thule/Pituffik",
-            "enumValue": "America/Thule"
-          },
-          {
-            "name": "AmericaThunder_Bay",
-            "displayName": "America/Thunder_Bay",
-            "description": "Eastern - ON (Thunder Bay)",
-            "enumValue": "America/Thunder_Bay"
-          },
-          {
-            "name": "AmericaTijuana",
-            "displayName": "America/Tijuana",
-            "description": "Pacific Time US - Baja California",
-            "enumValue": "America/Tijuana"
-          },
-          {
-            "name": "AmericaToronto",
-            "displayName": "America/Toronto",
-            "description": "Eastern - ON, QC (most areas), Bahamas",
-            "enumValue": "America/Toronto"
-          },
-          {
-            "name": "AmericaVancouver",
-            "displayName": "America/Vancouver",
-            "description": "Pacific - BC (most areas)",
-            "enumValue": "America/Vancouver"
           },
           {
             "name": "AmericaWhitehorse",
@@ -858,124 +156,10 @@
             "enumValue": "America/Whitehorse"
           },
           {
-            "name": "AmericaWinnipeg",
-            "displayName": "America/Winnipeg",
-            "description": "Central - ON (west); Manitoba",
-            "enumValue": "America/Winnipeg"
-          },
-          {
-            "name": "AmericaYakutat",
-            "displayName": "America/Yakutat",
-            "description": "Alaska - Yakutat",
-            "enumValue": "America/Yakutat"
-          },
-          {
-            "name": "AmericaYellowknife",
-            "displayName": "America/Yellowknife",
-            "description": "Mountain - NT (central)",
-            "enumValue": "America/Yellowknife"
-          },
-          {
-            "name": "AntarcticaCasey",
-            "displayName": "Antarctica/Casey",
-            "description": "Casey",
-            "enumValue": "Antarctica/Casey"
-          },
-          {
-            "name": "AntarcticaDavis",
-            "displayName": "Antarctica/Davis",
-            "description": "Davis",
-            "enumValue": "Antarctica/Davis"
-          },
-          {
-            "name": "AntarcticaMacquarie",
-            "displayName": "Antarctica/Macquarie",
-            "description": "Macquarie Island",
-            "enumValue": "Antarctica/Macquarie"
-          },
-          {
-            "name": "AntarcticaMawson",
-            "displayName": "Antarctica/Mawson",
-            "description": "Mawson",
-            "enumValue": "Antarctica/Mawson"
-          },
-          {
-            "name": "AntarcticaPalmer",
-            "displayName": "Antarctica/Palmer",
-            "description": "Palmer",
-            "enumValue": "Antarctica/Palmer"
-          },
-          {
-            "name": "AntarcticaRothera",
-            "displayName": "Antarctica/Rothera",
-            "description": "Rothera",
-            "enumValue": "Antarctica/Rothera"
-          },
-          {
-            "name": "AntarcticaTroll",
-            "displayName": "Antarctica/Troll",
-            "description": "Troll",
-            "enumValue": "Antarctica/Troll"
-          },
-          {
-            "name": "AntarcticaVostok",
-            "displayName": "Antarctica/Vostok",
-            "description": "Vostok",
-            "enumValue": "Antarctica/Vostok"
-          },
-          {
-            "name": "AsiaAlmaty",
-            "displayName": "Asia/Almaty",
-            "description": "Kazakhstan (most areas)",
-            "enumValue": "Asia/Almaty"
-          },
-          {
-            "name": "AsiaAmman",
-            "displayName": "Asia/Amman",
-            "description": "",
-            "enumValue": "Asia/Amman"
-          },
-          {
-            "name": "AsiaAnadyr",
-            "displayName": "Asia/Anadyr",
-            "description": "MSK+09 - Bering Sea",
-            "enumValue": "Asia/Anadyr"
-          },
-          {
-            "name": "AsiaAqtau",
-            "displayName": "Asia/Aqtau",
-            "description": "Mangghysta?/Mankistau",
-            "enumValue": "Asia/Aqtau"
-          },
-          {
-            "name": "AsiaAqtobe",
-            "displayName": "Asia/Aqtobe",
-            "description": "Aqt�be/Aktobe",
-            "enumValue": "Asia/Aqtobe"
-          },
-          {
-            "name": "AsiaAshgabat",
-            "displayName": "Asia/Ashgabat",
-            "description": "",
-            "enumValue": "Asia/Ashgabat"
-          },
-          {
-            "name": "AsiaAtyrau",
-            "displayName": "Asia/Atyrau",
-            "description": "Atyra?/Atirau/Gur'yev",
-            "enumValue": "Asia/Atyrau"
-          },
-          {
             "name": "AsiaBaghdad",
             "displayName": "Asia/Baghdad",
             "description": "",
             "enumValue": "Asia/Baghdad"
-          },
-          {
-            "name": "AsiaBaku",
-            "displayName": "Asia/Baku",
-            "description": "",
-            "enumValue": "Asia/Baku"
           },
           {
             "name": "AsiaBangkok",
@@ -984,100 +168,10 @@
             "enumValue": "Asia/Bangkok"
           },
           {
-            "name": "AsiaBarnaul",
-            "displayName": "Asia/Barnaul",
-            "description": "MSK+04 - Altai",
-            "enumValue": "Asia/Barnaul"
-          },
-          {
-            "name": "AsiaBeirut",
-            "displayName": "Asia/Beirut",
-            "description": "",
-            "enumValue": "Asia/Beirut"
-          },
-          {
-            "name": "AsiaBishkek",
-            "displayName": "Asia/Bishkek",
-            "description": "",
-            "enumValue": "Asia/Bishkek"
-          },
-          {
-            "name": "AsiaBrunei",
-            "displayName": "Asia/Brunei",
-            "description": "",
-            "enumValue": "Asia/Brunei"
-          },
-          {
-            "name": "AsiaChita",
-            "displayName": "Asia/Chita",
-            "description": "MSK+06 - Zabaykalsky",
-            "enumValue": "Asia/Chita"
-          },
-          {
-            "name": "AsiaChoibalsan",
-            "displayName": "Asia/Choibalsan",
-            "description": "Dornod, S�khbaatar",
-            "enumValue": "Asia/Choibalsan"
-          },
-          {
-            "name": "AsiaColombo",
-            "displayName": "Asia/Colombo",
-            "description": "",
-            "enumValue": "Asia/Colombo"
-          },
-          {
-            "name": "AsiaDamascus",
-            "displayName": "Asia/Damascus",
-            "description": "",
-            "enumValue": "Asia/Damascus"
-          },
-          {
-            "name": "AsiaDhaka",
-            "displayName": "Asia/Dhaka",
-            "description": "",
-            "enumValue": "Asia/Dhaka"
-          },
-          {
-            "name": "AsiaDili",
-            "displayName": "Asia/Dili",
-            "description": "",
-            "enumValue": "Asia/Dili"
-          },
-          {
             "name": "AsiaDubai",
             "displayName": "Asia/Dubai",
             "description": "",
             "enumValue": "Asia/Dubai"
-          },
-          {
-            "name": "AsiaDushanbe",
-            "displayName": "Asia/Dushanbe",
-            "description": "",
-            "enumValue": "Asia/Dushanbe"
-          },
-          {
-            "name": "AsiaFamagusta",
-            "displayName": "Asia/Famagusta",
-            "description": "Northern Cyprus",
-            "enumValue": "Asia/Famagusta"
-          },
-          {
-            "name": "AsiaGaza",
-            "displayName": "Asia/Gaza",
-            "description": "Gaza Strip",
-            "enumValue": "Asia/Gaza"
-          },
-          {
-            "name": "AsiaHebron",
-            "displayName": "Asia/Hebron",
-            "description": "West Bank",
-            "enumValue": "Asia/Hebron"
-          },
-          {
-            "name": "AsiaHo_Chi_Minh",
-            "displayName": "Asia/Ho_Chi_Minh",
-            "description": "Vietnam (south)",
-            "enumValue": "Asia/Ho_Chi_Minh"
           },
           {
             "name": "AsiaHong_Kong",
@@ -1086,46 +180,16 @@
             "enumValue": "Asia/Hong_Kong"
           },
           {
-            "name": "AsiaHovd",
-            "displayName": "Asia/Hovd",
-            "description": "Bayan-�lgii, Govi-Altai, Hovd, Uvs, Zavkhan",
-            "enumValue": "Asia/Hovd"
-          },
-          {
-            "name": "AsiaIrkutsk",
-            "displayName": "Asia/Irkutsk",
-            "description": "MSK+05 - Irkutsk, Buryatia",
-            "enumValue": "Asia/Irkutsk"
-          },
-          {
             "name": "AsiaJakarta",
             "displayName": "Asia/Jakarta",
             "description": "Java, Sumatra",
             "enumValue": "Asia/Jakarta"
           },
           {
-            "name": "AsiaJayapura",
-            "displayName": "Asia/Jayapura",
-            "description": "New Guinea (West Papua / Irian Jaya); Malukus/Moluccas",
-            "enumValue": "Asia/Jayapura"
-          },
-          {
-            "name": "AsiaJerusalem",
-            "displayName": "Asia/Jerusalem",
-            "description": "",
-            "enumValue": "Asia/Jerusalem"
-          },
-          {
             "name": "AsiaKabul",
             "displayName": "Asia/Kabul",
             "description": "",
             "enumValue": "Asia/Kabul"
-          },
-          {
-            "name": "AsiaKamchatka",
-            "displayName": "Asia/Kamchatka",
-            "description": "MSK+09 - Kamchatka",
-            "enumValue": "Asia/Kamchatka"
           },
           {
             "name": "AsiaKarachi",
@@ -1140,22 +204,10 @@
             "enumValue": "Asia/Kathmandu"
           },
           {
-            "name": "AsiaKhandyga",
-            "displayName": "Asia/Khandyga",
-            "description": "MSK+06 - Tomponsky, Ust-Maysky",
-            "enumValue": "Asia/Khandyga"
-          },
-          {
             "name": "AsiaKolkata",
             "displayName": "Asia/Kolkata",
             "description": "",
             "enumValue": "Asia/Kolkata"
-          },
-          {
-            "name": "AsiaKrasnoyarsk",
-            "displayName": "Asia/Krasnoyarsk",
-            "description": "MSK+04 - Krasnoyarsk area",
-            "enumValue": "Asia/Krasnoyarsk"
           },
           {
             "name": "AsiaKuala_Lumpur",
@@ -1164,112 +216,16 @@
             "enumValue": "Asia/Kuala_Lumpur"
           },
           {
-            "name": "AsiaKuching",
-            "displayName": "Asia/Kuching",
-            "description": "Sabah, Sarawak",
-            "enumValue": "Asia/Kuching"
-          },
-          {
-            "name": "AsiaMacau",
-            "displayName": "Asia/Macau",
-            "description": "",
-            "enumValue": "Asia/Macau"
-          },
-          {
-            "name": "AsiaMagadan",
-            "displayName": "Asia/Magadan",
-            "description": "MSK+08 - Magadan",
-            "enumValue": "Asia/Magadan"
-          },
-          {
-            "name": "AsiaMakassar",
-            "displayName": "Asia/Makassar",
-            "description": "Borneo (east, south); Sulawesi/Celebes, Bali, Nusa Tengarra; Timor (west)",
-            "enumValue": "Asia/Makassar"
-          },
-          {
-            "name": "AsiaManila",
-            "displayName": "Asia/Manila",
-            "description": "",
-            "enumValue": "Asia/Manila"
-          },
-          {
-            "name": "AsiaNicosia",
-            "displayName": "Asia/Nicosia",
-            "description": "Cyprus (most areas)",
-            "enumValue": "Asia/Nicosia"
-          },
-          {
-            "name": "AsiaNovokuznetsk",
-            "displayName": "Asia/Novokuznetsk",
-            "description": "MSK+04 - Kemerovo",
-            "enumValue": "Asia/Novokuznetsk"
-          },
-          {
-            "name": "AsiaNovosibirsk",
-            "displayName": "Asia/Novosibirsk",
-            "description": "MSK+04 - Novosibirsk",
-            "enumValue": "Asia/Novosibirsk"
-          },
-          {
-            "name": "AsiaOmsk",
-            "displayName": "Asia/Omsk",
-            "description": "MSK+03 - Omsk",
-            "enumValue": "Asia/Omsk"
-          },
-          {
-            "name": "AsiaOral",
-            "displayName": "Asia/Oral",
-            "description": "West Kazakhstan",
-            "enumValue": "Asia/Oral"
-          },
-          {
-            "name": "AsiaPontianak",
-            "displayName": "Asia/Pontianak",
-            "description": "Borneo (west, central)",
-            "enumValue": "Asia/Pontianak"
-          },
-          {
             "name": "AsiaPyongyang",
             "displayName": "Asia/Pyongyang",
             "description": "",
             "enumValue": "Asia/Pyongyang"
           },
           {
-            "name": "AsiaQatar",
-            "displayName": "Asia/Qatar",
-            "description": "",
-            "enumValue": "Asia/Qatar"
-          },
-          {
-            "name": "AsiaQostanay",
-            "displayName": "Asia/Qostanay",
-            "description": "Qostanay/Kostanay/Kustanay",
-            "enumValue": "Asia/Qostanay"
-          },
-          {
-            "name": "AsiaQyzylorda",
-            "displayName": "Asia/Qyzylorda",
-            "description": "Qyzylorda/Kyzylorda/Kzyl-Orda",
-            "enumValue": "Asia/Qyzylorda"
-          },
-          {
             "name": "AsiaRiyadh",
             "displayName": "Asia/Riyadh",
             "description": "Arabia, Syowa",
             "enumValue": "Asia/Riyadh"
-          },
-          {
-            "name": "AsiaSakhalin",
-            "displayName": "Asia/Sakhalin",
-            "description": "MSK+08 - Sakhalin Island",
-            "enumValue": "Asia/Sakhalin"
-          },
-          {
-            "name": "AsiaSamarkand",
-            "displayName": "Asia/Samarkand",
-            "description": "Uzbekistan (west)",
-            "enumValue": "Asia/Samarkand"
           },
           {
             "name": "AsiaSeoul",
@@ -1290,40 +246,10 @@
             "enumValue": "Asia/Singapore"
           },
           {
-            "name": "AsiaSrednekolymsk",
-            "displayName": "Asia/Srednekolymsk",
-            "description": "MSK+08 - Sakha (E); North Kuril Is",
-            "enumValue": "Asia/Srednekolymsk"
-          },
-          {
             "name": "AsiaTaipei",
             "displayName": "Asia/Taipei",
             "description": "",
             "enumValue": "Asia/Taipei"
-          },
-          {
-            "name": "AsiaTashkent",
-            "displayName": "Asia/Tashkent",
-            "description": "Uzbekistan (east)",
-            "enumValue": "Asia/Tashkent"
-          },
-          {
-            "name": "AsiaTbilisi",
-            "displayName": "Asia/Tbilisi",
-            "description": "",
-            "enumValue": "Asia/Tbilisi"
-          },
-          {
-            "name": "AsiaTehran",
-            "displayName": "Asia/Tehran",
-            "description": "",
-            "enumValue": "Asia/Tehran"
-          },
-          {
-            "name": "AsiaThimphu",
-            "displayName": "Asia/Thimphu",
-            "description": "",
-            "enumValue": "Asia/Thimphu"
           },
           {
             "name": "AsiaTokyo",
@@ -1332,112 +258,10 @@
             "enumValue": "Asia/Tokyo"
           },
           {
-            "name": "AsiaTomsk",
-            "displayName": "Asia/Tomsk",
-            "description": "MSK+04 - Tomsk",
-            "enumValue": "Asia/Tomsk"
-          },
-          {
-            "name": "AsiaUlaanbaatar",
-            "displayName": "Asia/Ulaanbaatar",
-            "description": "Mongolia (most areas)",
-            "enumValue": "Asia/Ulaanbaatar"
-          },
-          {
-            "name": "AsiaUrumqi",
-            "displayName": "Asia/Urumqi",
-            "description": "Xinjiang Time",
-            "enumValue": "Asia/Urumqi"
-          },
-          {
-            "name": "AsiaUstNera",
-            "displayName": "Asia/Ust-Nera",
-            "description": "MSK+07 - Oymyakonsky",
-            "enumValue": "Asia/Ust-Nera"
-          },
-          {
-            "name": "AsiaVladivostok",
-            "displayName": "Asia/Vladivostok",
-            "description": "MSK+07 - Amur River",
-            "enumValue": "Asia/Vladivostok"
-          },
-          {
-            "name": "AsiaYakutsk",
-            "displayName": "Asia/Yakutsk",
-            "description": "MSK+06 - Lena River",
-            "enumValue": "Asia/Yakutsk"
-          },
-          {
-            "name": "AsiaYangon",
-            "displayName": "Asia/Yangon",
-            "description": "",
-            "enumValue": "Asia/Yangon"
-          },
-          {
-            "name": "AsiaYekaterinburg",
-            "displayName": "Asia/Yekaterinburg",
-            "description": "MSK+02 - Urals",
-            "enumValue": "Asia/Yekaterinburg"
-          },
-          {
-            "name": "AsiaYerevan",
-            "displayName": "Asia/Yerevan",
-            "description": "",
-            "enumValue": "Asia/Yerevan"
-          },
-          {
-            "name": "AtlanticAzores",
-            "displayName": "Atlantic/Azores",
-            "description": "Azores",
-            "enumValue": "Atlantic/Azores"
-          },
-          {
-            "name": "AtlanticBermuda",
-            "displayName": "Atlantic/Bermuda",
-            "description": "",
-            "enumValue": "Atlantic/Bermuda"
-          },
-          {
-            "name": "AtlanticCanary",
-            "displayName": "Atlantic/Canary",
-            "description": "Canary Islands",
-            "enumValue": "Atlantic/Canary"
-          },
-          {
-            "name": "AtlanticCape_Verde",
-            "displayName": "Atlantic/Cape_Verde",
-            "description": "",
-            "enumValue": "Atlantic/Cape_Verde"
-          },
-          {
-            "name": "AtlanticFaroe",
-            "displayName": "Atlantic/Faroe",
-            "description": "",
-            "enumValue": "Atlantic/Faroe"
-          },
-          {
-            "name": "AtlanticMadeira",
-            "displayName": "Atlantic/Madeira",
-            "description": "Madeira Islands",
-            "enumValue": "Atlantic/Madeira"
-          },
-          {
             "name": "AtlanticReykjavik",
             "displayName": "Atlantic/Reykjavik",
             "description": "",
             "enumValue": "Atlantic/Reykjavik"
-          },
-          {
-            "name": "AtlanticSouth_Georgia",
-            "displayName": "Atlantic/South_Georgia",
-            "description": "",
-            "enumValue": "Atlantic/South_Georgia"
-          },
-          {
-            "name": "AtlanticStanley",
-            "displayName": "Atlantic/Stanley",
-            "description": "",
-            "enumValue": "Atlantic/Stanley"
           },
           {
             "name": "AustraliaAdelaide",
@@ -1452,40 +276,16 @@
             "enumValue": "Australia/Brisbane"
           },
           {
-            "name": "AustraliaBroken_Hill",
-            "displayName": "Australia/Broken_Hill",
-            "description": "New South Wales (Yancowinna)",
-            "enumValue": "Australia/Broken_Hill"
-          },
-          {
             "name": "AustraliaDarwin",
             "displayName": "Australia/Darwin",
             "description": "Northern Territory",
             "enumValue": "Australia/Darwin"
           },
           {
-            "name": "AustraliaEucla",
-            "displayName": "Australia/Eucla",
-            "description": "Western Australia (Eucla)",
-            "enumValue": "Australia/Eucla"
-          },
-          {
             "name": "AustraliaHobart",
             "displayName": "Australia/Hobart",
             "description": "Tasmania",
             "enumValue": "Australia/Hobart"
-          },
-          {
-            "name": "AustraliaLindeman",
-            "displayName": "Australia/Lindeman",
-            "description": "Queensland (Whitsunday Islands)",
-            "enumValue": "Australia/Lindeman"
-          },
-          {
-            "name": "AustraliaLord_Howe",
-            "displayName": "Australia/Lord_Howe",
-            "description": "Lord Howe Island",
-            "enumValue": "Australia/Lord_Howe"
           },
           {
             "name": "AustraliaMelbourne",
@@ -1504,36 +304,6 @@
             "displayName": "Australia/Sydney",
             "description": "New South Wales (most areas)",
             "enumValue": "Australia/Sydney"
-          },
-          {
-            "name": "CET",
-            "displayName": "CET",
-            "description": "",
-            "enumValue": "CET"
-          },
-          {
-            "name": "CST6CDT",
-            "displayName": "CST6CDT",
-            "description": "",
-            "enumValue": "CST6CDT"
-          },
-          {
-            "name": "EET",
-            "displayName": "EET",
-            "description": "",
-            "enumValue": "EET"
-          },
-          {
-            "name": "EST",
-            "displayName": "EST",
-            "description": "",
-            "enumValue": "EST"
-          },
-          {
-            "name": "EST5EDT",
-            "displayName": "EST5EDT",
-            "description": "",
-            "enumValue": "EST5EDT"
           },
           {
             "name": "EtcGMT",
@@ -1710,28 +480,10 @@
             "enumValue": "Europe/Amsterdam"
           },
           {
-            "name": "EuropeAndorra",
-            "displayName": "Europe/Andorra",
-            "description": "",
-            "enumValue": "Europe/Andorra"
-          },
-          {
-            "name": "EuropeAstrakhan",
-            "displayName": "Europe/Astrakhan",
-            "description": "MSK+01 - Astrakhan",
-            "enumValue": "Europe/Astrakhan"
-          },
-          {
             "name": "EuropeAthens",
             "displayName": "Europe/Athens",
             "description": "",
             "enumValue": "Europe/Athens"
-          },
-          {
-            "name": "EuropeBelgrade",
-            "displayName": "Europe/Belgrade",
-            "description": "",
-            "enumValue": "Europe/Belgrade"
           },
           {
             "name": "EuropeBerlin",
@@ -1746,22 +498,10 @@
             "enumValue": "Europe/Brussels"
           },
           {
-            "name": "EuropeBucharest",
-            "displayName": "Europe/Bucharest",
-            "description": "",
-            "enumValue": "Europe/Bucharest"
-          },
-          {
             "name": "EuropeBudapest",
             "displayName": "Europe/Budapest",
             "description": "",
             "enumValue": "Europe/Budapest"
-          },
-          {
-            "name": "EuropeChisinau",
-            "displayName": "Europe/Chisinau",
-            "description": "",
-            "enumValue": "Europe/Chisinau"
           },
           {
             "name": "EuropeCopenhagen",
@@ -1776,12 +516,6 @@
             "enumValue": "Europe/Dublin"
           },
           {
-            "name": "EuropeGibraltar",
-            "displayName": "Europe/Gibraltar",
-            "description": "",
-            "enumValue": "Europe/Gibraltar"
-          },
-          {
             "name": "EuropeHelsinki",
             "displayName": "Europe/Helsinki",
             "description": "",
@@ -1792,24 +526,6 @@
             "displayName": "Europe/Istanbul",
             "description": "",
             "enumValue": "Europe/Istanbul"
-          },
-          {
-            "name": "EuropeKaliningrad",
-            "displayName": "Europe/Kaliningrad",
-            "description": "MSK-01 - Kaliningrad",
-            "enumValue": "Europe/Kaliningrad"
-          },
-          {
-            "name": "EuropeKiev",
-            "displayName": "Europe/Kiev",
-            "description": "Ukraine (most areas)",
-            "enumValue": "Europe/Kiev"
-          },
-          {
-            "name": "EuropeKirov",
-            "displayName": "Europe/Kirov",
-            "description": "MSK+00 - Kirov",
-            "enumValue": "Europe/Kirov"
           },
           {
             "name": "EuropeLisbon",
@@ -1824,22 +540,10 @@
             "enumValue": "Europe/London"
           },
           {
-            "name": "EuropeLuxembourg",
-            "displayName": "Europe/Luxembourg",
-            "description": "",
-            "enumValue": "Europe/Luxembourg"
-          },
-          {
             "name": "EuropeMadrid",
             "displayName": "Europe/Madrid",
             "description": "Spain (mainland)",
             "enumValue": "Europe/Madrid"
-          },
-          {
-            "name": "EuropeMalta",
-            "displayName": "Europe/Malta",
-            "description": "",
-            "enumValue": "Europe/Malta"
           },
           {
             "name": "EuropeMinsk",
@@ -1848,22 +552,10 @@
             "enumValue": "Europe/Minsk"
           },
           {
-            "name": "EuropeMonaco",
-            "displayName": "Europe/Monaco",
-            "description": "",
-            "enumValue": "Europe/Monaco"
-          },
-          {
             "name": "EuropeMoscow",
             "displayName": "Europe/Moscow",
             "description": "MSK+00 - Moscow area",
             "enumValue": "Europe/Moscow"
-          },
-          {
-            "name": "EuropeOslo",
-            "displayName": "Europe/Oslo",
-            "description": "",
-            "enumValue": "Europe/Oslo"
           },
           {
             "name": "EuropeParis",
@@ -1878,40 +570,10 @@
             "enumValue": "Europe/Prague"
           },
           {
-            "name": "EuropeRiga",
-            "displayName": "Europe/Riga",
-            "description": "",
-            "enumValue": "Europe/Riga"
-          },
-          {
             "name": "EuropeRome",
             "displayName": "Europe/Rome",
             "description": "",
             "enumValue": "Europe/Rome"
-          },
-          {
-            "name": "EuropeSamara",
-            "displayName": "Europe/Samara",
-            "description": "MSK+01 - Samara, Udmurtia",
-            "enumValue": "Europe/Samara"
-          },
-          {
-            "name": "EuropeSaratov",
-            "displayName": "Europe/Saratov",
-            "description": "MSK+01 - Saratov",
-            "enumValue": "Europe/Saratov"
-          },
-          {
-            "name": "EuropeSimferopol",
-            "displayName": "Europe/Simferopol",
-            "description": "Crimea",
-            "enumValue": "Europe/Simferopol"
-          },
-          {
-            "name": "EuropeSofia",
-            "displayName": "Europe/Sofia",
-            "description": "",
-            "enumValue": "Europe/Sofia"
           },
           {
             "name": "EuropeStockholm",
@@ -1920,58 +582,10 @@
             "enumValue": "Europe/Stockholm"
           },
           {
-            "name": "EuropeTallinn",
-            "displayName": "Europe/Tallinn",
-            "description": "",
-            "enumValue": "Europe/Tallinn"
-          },
-          {
-            "name": "EuropeTirane",
-            "displayName": "Europe/Tirane",
-            "description": "",
-            "enumValue": "Europe/Tirane"
-          },
-          {
-            "name": "EuropeUlyanovsk",
-            "displayName": "Europe/Ulyanovsk",
-            "description": "MSK+01 - Ulyanovsk",
-            "enumValue": "Europe/Ulyanovsk"
-          },
-          {
-            "name": "EuropeUzhgorod",
-            "displayName": "Europe/Uzhgorod",
-            "description": "Transcarpathia",
-            "enumValue": "Europe/Uzhgorod"
-          },
-          {
             "name": "EuropeVienna",
             "displayName": "Europe/Vienna",
             "description": "",
             "enumValue": "Europe/Vienna"
-          },
-          {
-            "name": "EuropeVilnius",
-            "displayName": "Europe/Vilnius",
-            "description": "",
-            "enumValue": "Europe/Vilnius"
-          },
-          {
-            "name": "EuropeVolgograd",
-            "displayName": "Europe/Volgograd",
-            "description": "MSK+00 - Volgograd",
-            "enumValue": "Europe/Volgograd"
-          },
-          {
-            "name": "EuropeWarsaw",
-            "displayName": "Europe/Warsaw",
-            "description": "",
-            "enumValue": "Europe/Warsaw"
-          },
-          {
-            "name": "EuropeZaporozhye",
-            "displayName": "Europe/Zaporozhye",
-            "description": "Zaporozhye and east Lugansk",
-            "enumValue": "Europe/Zaporozhye"
           },
           {
             "name": "EuropeZurich",
@@ -1980,310 +594,16 @@
             "enumValue": "Europe/Zurich"
           },
           {
-            "name": "Factory",
-            "displayName": "Factory",
-            "description": "",
-            "enumValue": "Factory"
-          },
-          {
-            "name": "HST",
-            "displayName": "HST",
-            "description": "",
-            "enumValue": "HST"
-          },
-          {
-            "name": "IndianChagos",
-            "displayName": "Indian/Chagos",
-            "description": "",
-            "enumValue": "Indian/Chagos"
-          },
-          {
-            "name": "IndianChristmas",
-            "displayName": "Indian/Christmas",
-            "description": "",
-            "enumValue": "Indian/Christmas"
-          },
-          {
-            "name": "IndianCocos",
-            "displayName": "Indian/Cocos",
-            "description": "",
-            "enumValue": "Indian/Cocos"
-          },
-          {
-            "name": "IndianKerguelen",
-            "displayName": "Indian/Kerguelen",
-            "description": "Kerguelen, St Paul Island, Amsterdam Island",
-            "enumValue": "Indian/Kerguelen"
-          },
-          {
-            "name": "IndianMahe",
-            "displayName": "Indian/Mahe",
-            "description": "",
-            "enumValue": "Indian/Mahe"
-          },
-          {
-            "name": "IndianMaldives",
-            "displayName": "Indian/Maldives",
-            "description": "",
-            "enumValue": "Indian/Maldives"
-          },
-          {
-            "name": "IndianMauritius",
-            "displayName": "Indian/Mauritius",
-            "description": "",
-            "enumValue": "Indian/Mauritius"
-          },
-          {
-            "name": "IndianReunion",
-            "displayName": "Indian/Reunion",
-            "description": "R�union, Crozet, Scattered Islands",
-            "enumValue": "Indian/Reunion"
-          },
-          {
-            "name": "MET",
-            "displayName": "MET",
-            "description": "",
-            "enumValue": "MET"
-          },
-          {
-            "name": "MST",
-            "displayName": "MST",
-            "description": "",
-            "enumValue": "MST"
-          },
-          {
-            "name": "MST7MDT",
-            "displayName": "MST7MDT",
-            "description": "",
-            "enumValue": "MST7MDT"
-          },
-          {
-            "name": "PacificApia",
-            "displayName": "Pacific/Apia",
-            "description": "",
-            "enumValue": "Pacific/Apia"
-          },
-          {
             "name": "PacificAuckland",
             "displayName": "Pacific/Auckland",
             "description": "New Zealand time",
             "enumValue": "Pacific/Auckland"
           },
           {
-            "name": "PacificBougainville",
-            "displayName": "Pacific/Bougainville",
-            "description": "Bougainville",
-            "enumValue": "Pacific/Bougainville"
-          },
-          {
-            "name": "PacificChatham",
-            "displayName": "Pacific/Chatham",
-            "description": "Chatham Islands",
-            "enumValue": "Pacific/Chatham"
-          },
-          {
-            "name": "PacificChuuk",
-            "displayName": "Pacific/Chuuk",
-            "description": "Chuuk/Truk, Yap",
-            "enumValue": "Pacific/Chuuk"
-          },
-          {
-            "name": "PacificEaster",
-            "displayName": "Pacific/Easter",
-            "description": "Easter Island",
-            "enumValue": "Pacific/Easter"
-          },
-          {
-            "name": "PacificEfate",
-            "displayName": "Pacific/Efate",
-            "description": "",
-            "enumValue": "Pacific/Efate"
-          },
-          {
-            "name": "PacificFakaofo",
-            "displayName": "Pacific/Fakaofo",
-            "description": "",
-            "enumValue": "Pacific/Fakaofo"
-          },
-          {
-            "name": "PacificFiji",
-            "displayName": "Pacific/Fiji",
-            "description": "",
-            "enumValue": "Pacific/Fiji"
-          },
-          {
-            "name": "PacificFunafuti",
-            "displayName": "Pacific/Funafuti",
-            "description": "",
-            "enumValue": "Pacific/Funafuti"
-          },
-          {
-            "name": "PacificGalapagos",
-            "displayName": "Pacific/Galapagos",
-            "description": "Gal�pagos Islands",
-            "enumValue": "Pacific/Galapagos"
-          },
-          {
-            "name": "PacificGambier",
-            "displayName": "Pacific/Gambier",
-            "description": "Gambier Islands",
-            "enumValue": "Pacific/Gambier"
-          },
-          {
-            "name": "PacificGuadalcanal",
-            "displayName": "Pacific/Guadalcanal",
-            "description": "",
-            "enumValue": "Pacific/Guadalcanal"
-          },
-          {
-            "name": "PacificGuam",
-            "displayName": "Pacific/Guam",
-            "description": "",
-            "enumValue": "Pacific/Guam"
-          },
-          {
             "name": "PacificHonolulu",
             "displayName": "Pacific/Honolulu",
             "description": "Hawaii",
             "enumValue": "Pacific/Honolulu"
-          },
-          {
-            "name": "PacificKanton",
-            "displayName": "Pacific/Kanton",
-            "description": "Phoenix Islands",
-            "enumValue": "Pacific/Kanton"
-          },
-          {
-            "name": "PacificKiritimati",
-            "displayName": "Pacific/Kiritimati",
-            "description": "Line Islands",
-            "enumValue": "Pacific/Kiritimati"
-          },
-          {
-            "name": "PacificKosrae",
-            "displayName": "Pacific/Kosrae",
-            "description": "Kosrae",
-            "enumValue": "Pacific/Kosrae"
-          },
-          {
-            "name": "PacificKwajalein",
-            "displayName": "Pacific/Kwajalein",
-            "description": "Kwajalein",
-            "enumValue": "Pacific/Kwajalein"
-          },
-          {
-            "name": "PacificMajuro",
-            "displayName": "Pacific/Majuro",
-            "description": "Marshall Islands (most areas)",
-            "enumValue": "Pacific/Majuro"
-          },
-          {
-            "name": "PacificMarquesas",
-            "displayName": "Pacific/Marquesas",
-            "description": "Marquesas Islands",
-            "enumValue": "Pacific/Marquesas"
-          },
-          {
-            "name": "PacificNauru",
-            "displayName": "Pacific/Nauru",
-            "description": "",
-            "enumValue": "Pacific/Nauru"
-          },
-          {
-            "name": "PacificNiue",
-            "displayName": "Pacific/Niue",
-            "description": "",
-            "enumValue": "Pacific/Niue"
-          },
-          {
-            "name": "PacificNorfolk",
-            "displayName": "Pacific/Norfolk",
-            "description": "",
-            "enumValue": "Pacific/Norfolk"
-          },
-          {
-            "name": "PacificNoumea",
-            "displayName": "Pacific/Noumea",
-            "description": "",
-            "enumValue": "Pacific/Noumea"
-          },
-          {
-            "name": "PacificPago_Pago",
-            "displayName": "Pacific/Pago_Pago",
-            "description": "Samoa, Midway",
-            "enumValue": "Pacific/Pago_Pago"
-          },
-          {
-            "name": "PacificPalau",
-            "displayName": "Pacific/Palau",
-            "description": "",
-            "enumValue": "Pacific/Palau"
-          },
-          {
-            "name": "PacificPitcairn",
-            "displayName": "Pacific/Pitcairn",
-            "description": "",
-            "enumValue": "Pacific/Pitcairn"
-          },
-          {
-            "name": "PacificPohnpei",
-            "displayName": "Pacific/Pohnpei",
-            "description": "Pohnpei/Ponape",
-            "enumValue": "Pacific/Pohnpei"
-          },
-          {
-            "name": "PacificPort_Moresby",
-            "displayName": "Pacific/Port_Moresby",
-            "description": "Papua New Guinea (most areas), Dumont d'Urville",
-            "enumValue": "Pacific/Port_Moresby"
-          },
-          {
-            "name": "PacificRarotonga",
-            "displayName": "Pacific/Rarotonga",
-            "description": "",
-            "enumValue": "Pacific/Rarotonga"
-          },
-          {
-            "name": "PacificTahiti",
-            "displayName": "Pacific/Tahiti",
-            "description": "Society Islands",
-            "enumValue": "Pacific/Tahiti"
-          },
-          {
-            "name": "PacificTarawa",
-            "displayName": "Pacific/Tarawa",
-            "description": "Gilbert Islands",
-            "enumValue": "Pacific/Tarawa"
-          },
-          {
-            "name": "PacificTongatapu",
-            "displayName": "Pacific/Tongatapu",
-            "description": "",
-            "enumValue": "Pacific/Tongatapu"
-          },
-          {
-            "name": "PacificWake",
-            "displayName": "Pacific/Wake",
-            "description": "Wake Island",
-            "enumValue": "Pacific/Wake"
-          },
-          {
-            "name": "PacificWallis",
-            "displayName": "Pacific/Wallis",
-            "description": "",
-            "enumValue": "Pacific/Wallis"
-          },
-          {
-            "name": "PST8PDT",
-            "displayName": "PST8PDT",
-            "description": "",
-            "enumValue": "PST8PDT"
-          },
-          {
-            "name": "WET",
-            "displayName": "WET",
-            "description": "",
-            "enumValue": "WET"
           }
         ]
       }
