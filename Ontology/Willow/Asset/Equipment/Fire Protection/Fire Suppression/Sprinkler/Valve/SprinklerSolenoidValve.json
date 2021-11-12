@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:SprinklerSolenoidValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Solenoid Valve"
+    "en": "Solenoid Valve (Sprinkler)"
   },
   "extends" : [
     "dtmi:com:willowinc:SprinklerValve;1",

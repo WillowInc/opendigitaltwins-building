@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingSolenoidValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Solenoid Valve"
+    "en": "Solenoid Valve (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingValve;1",

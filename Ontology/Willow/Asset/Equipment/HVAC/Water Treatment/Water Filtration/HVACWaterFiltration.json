@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACWaterFiltration;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Water Filtration"
+    "en": "Water Filtration (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACWaterTreatment;1",

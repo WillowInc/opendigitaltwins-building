@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:SprinklerBackflowPreventer;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Backflow Preventer"
+    "en": "Backflow Preventer (Sprinkler)"
   },
   "extends" : [
     "dtmi:com:willowinc:SprinklerValve;1",

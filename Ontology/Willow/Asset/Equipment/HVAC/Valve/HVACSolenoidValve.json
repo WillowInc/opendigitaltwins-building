@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACSolenoidValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Solenoid Valve"
+    "en": "Solenoid Valve (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACValve;1",

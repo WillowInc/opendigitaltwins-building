@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACGlobeValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Globe Valve"
+    "en": "Globe Valve (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACValve;1",

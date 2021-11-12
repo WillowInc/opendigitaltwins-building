@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACShutOffValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Shut-off Valve"
+    "en": "Shut-off Valve (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACValve;1",

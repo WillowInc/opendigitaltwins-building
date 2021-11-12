@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingPumpGroup;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pump Group"
+    "en": "Pump Group (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingEquipmentGroup;1",
