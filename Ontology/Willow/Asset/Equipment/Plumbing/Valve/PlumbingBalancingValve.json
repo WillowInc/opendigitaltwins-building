@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingBalancingValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Balancing Valve"
+    "en": "Balancing Valve (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingValve;1",

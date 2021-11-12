@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingGlobeValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Globe Valve"
+    "en": "Globe Valve (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingValve;1",

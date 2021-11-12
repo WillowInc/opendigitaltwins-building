@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACBackflowPreventer;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Backflow Preventer"
+    "en": "Backflow Preventer (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACValve;1",

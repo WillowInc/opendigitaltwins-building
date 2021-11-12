@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACWaterTreatment;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Water Treatment"
+    "en": "Water Treatment (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",

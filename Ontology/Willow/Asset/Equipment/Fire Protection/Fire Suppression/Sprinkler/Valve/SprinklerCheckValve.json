@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:SprinklerCheckValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Check Valve"
+    "en": "Check Valve (Sprinkler)"
   },
   "extends" : [
     "dtmi:com:willowinc:SprinklerValve;1",

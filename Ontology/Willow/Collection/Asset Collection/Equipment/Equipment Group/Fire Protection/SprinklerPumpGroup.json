@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:SprinklerPumpGroup;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pump Group"
+    "en": "Pump Group (Sprinkler)"
   },
   "extends" : [
     "dtmi:com:willowinc:FireProtectionEquipmentGroup;1",

@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:SprinklerHeatTracing;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Sprinkler Heat Tracing"
+    "en": "Heat Tracing (Sprinkler)"
   },
   "extends" : [
     "dtmi:com:willowinc:SprinklerEquipment;1",

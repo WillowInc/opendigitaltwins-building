@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingPressureReducingStation;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pressure Reducing Station"
+    "en": "Pressure Reducing Station (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingValve;1",

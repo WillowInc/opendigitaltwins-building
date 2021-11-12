@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingHeatTracing;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Plumbing Heat Tracing"
+    "en": "Heat Tracing (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingEquipment;1",

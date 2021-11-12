@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACCheckValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Check Valve"
+    "en": "Check Valve (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACValve;1",

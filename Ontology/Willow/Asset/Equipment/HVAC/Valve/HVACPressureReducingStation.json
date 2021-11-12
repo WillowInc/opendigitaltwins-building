@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACPressureReducingStation;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pressure Reducing Station"
+    "en": "Pressure Reducing Station (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACValve;1",

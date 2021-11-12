@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PlumbingShutOffValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Shut-Off Valve"
+    "en": "Shut-Off Valve (Plumbing)"
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingValve;1",
