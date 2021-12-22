@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VFDRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VFD Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
