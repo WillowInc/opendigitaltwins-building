@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderSteamTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Steam Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

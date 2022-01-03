@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringHotWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

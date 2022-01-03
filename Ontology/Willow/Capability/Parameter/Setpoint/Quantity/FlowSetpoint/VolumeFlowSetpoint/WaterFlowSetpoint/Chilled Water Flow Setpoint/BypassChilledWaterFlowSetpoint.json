@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:BypassChilledWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Chilled Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Condenser Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

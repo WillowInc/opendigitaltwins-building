@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingChilledWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Chilled Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

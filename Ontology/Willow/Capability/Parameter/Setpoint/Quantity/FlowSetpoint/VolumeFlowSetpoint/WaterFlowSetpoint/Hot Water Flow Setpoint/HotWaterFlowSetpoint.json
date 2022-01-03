@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

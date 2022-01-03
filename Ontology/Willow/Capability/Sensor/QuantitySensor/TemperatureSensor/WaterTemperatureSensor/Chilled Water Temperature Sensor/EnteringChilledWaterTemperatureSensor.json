@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringChilledWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Chilled Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

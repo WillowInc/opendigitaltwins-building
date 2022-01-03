@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:BypassSteamTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Steam Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

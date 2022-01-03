@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:BypassCondenserWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Condenser Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Hot Water Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Hot Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

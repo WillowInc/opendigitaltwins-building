@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:MixedAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": "Mixed Air Flow Sensor",
+  "extends" : [
+    "dtmi:com:willowinc:AirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

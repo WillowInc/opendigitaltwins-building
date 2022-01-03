@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
