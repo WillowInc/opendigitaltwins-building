@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingSteamTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Steam Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

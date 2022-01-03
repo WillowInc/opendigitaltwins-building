@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

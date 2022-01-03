@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Condenser Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

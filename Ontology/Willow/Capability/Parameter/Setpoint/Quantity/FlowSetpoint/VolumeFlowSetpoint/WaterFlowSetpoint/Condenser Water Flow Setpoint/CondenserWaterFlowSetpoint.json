@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

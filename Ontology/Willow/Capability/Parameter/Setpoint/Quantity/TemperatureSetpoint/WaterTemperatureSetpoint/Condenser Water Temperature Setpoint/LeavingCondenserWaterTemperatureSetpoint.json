@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Condenser Water Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

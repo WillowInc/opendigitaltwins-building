@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringChilledWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Chilled Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

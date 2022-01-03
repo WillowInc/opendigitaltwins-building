@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustAirTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

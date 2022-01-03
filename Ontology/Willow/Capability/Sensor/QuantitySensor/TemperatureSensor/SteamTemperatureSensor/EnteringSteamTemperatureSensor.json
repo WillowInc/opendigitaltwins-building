@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringSteamTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Steam Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

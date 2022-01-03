@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderCondenserWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Condenser Water Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

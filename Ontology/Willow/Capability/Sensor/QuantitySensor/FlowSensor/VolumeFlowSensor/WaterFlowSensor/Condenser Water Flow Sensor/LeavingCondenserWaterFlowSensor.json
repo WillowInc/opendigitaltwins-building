@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingCondenserWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Condenser Water Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

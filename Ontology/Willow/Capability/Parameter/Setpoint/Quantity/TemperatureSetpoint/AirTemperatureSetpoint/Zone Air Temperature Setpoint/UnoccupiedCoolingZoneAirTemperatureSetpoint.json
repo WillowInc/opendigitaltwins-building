@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:UnoccupiedCoolingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Cooling Zone Air Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:UnoccupiedCoolingSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

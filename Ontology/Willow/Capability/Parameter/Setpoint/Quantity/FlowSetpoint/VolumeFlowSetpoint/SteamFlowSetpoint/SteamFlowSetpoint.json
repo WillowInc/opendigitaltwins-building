@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:WaterFlowSensor;1",
+  "@id": "dtmi:com:willowinc:SteamFlowSetpoint;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Water Flow Sensor"
+    "en": "Steam Flow Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:FlowSensor;1"
+    "dtmi:com:willowinc:WaterFlowSetpoint;1"
   ],
   "contents": [
   ],

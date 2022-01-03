@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingSteamFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Steam Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

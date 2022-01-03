@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:BypassHotWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Hot Water Flow Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

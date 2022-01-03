@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaSteamTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Steam Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
