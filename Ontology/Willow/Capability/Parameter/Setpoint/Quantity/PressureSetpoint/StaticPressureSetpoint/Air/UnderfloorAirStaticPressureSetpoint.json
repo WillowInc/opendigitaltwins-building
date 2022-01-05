@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:UnderfloorAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Underfloor Air Static Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

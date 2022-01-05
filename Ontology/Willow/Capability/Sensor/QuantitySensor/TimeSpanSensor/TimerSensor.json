@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TimerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Timer Sensor"
+  },
+  "description": {
+    "en": "A Timer Sensor is a time span that is decreasing or counting down."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TimeSpanSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

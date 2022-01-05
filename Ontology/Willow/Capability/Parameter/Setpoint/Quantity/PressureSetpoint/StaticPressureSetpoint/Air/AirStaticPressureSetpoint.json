@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:AirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Static Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StaticPressureSetpoint;1",
+    "dtmi:com:willowinc:AirPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

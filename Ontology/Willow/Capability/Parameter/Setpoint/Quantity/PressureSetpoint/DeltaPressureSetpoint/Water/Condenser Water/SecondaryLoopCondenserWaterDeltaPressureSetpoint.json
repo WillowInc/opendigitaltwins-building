@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopCondenserWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Condenser Water Delta Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

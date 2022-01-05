@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopChilledWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Chilled Water Delta Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

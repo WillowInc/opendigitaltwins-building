@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:AirVelocityPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Velocity Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VelocityPressureSensor;1",
+    "dtmi:com:willowinc:AirPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

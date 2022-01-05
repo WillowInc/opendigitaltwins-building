@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:AngularSpeedSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Speed Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SpeedSetpoint;1",
+    "dtmi:digitaltwins:rec_3_3:device:AngularSpeedSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

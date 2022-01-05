@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Delta Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WaterPressureSetpoint;1",
+    "dtmi:com:willowinc:DeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
