@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:SpeedSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Speed Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1",
+    "dtmi:digitaltwins:rec_3_3:device:SpeedSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

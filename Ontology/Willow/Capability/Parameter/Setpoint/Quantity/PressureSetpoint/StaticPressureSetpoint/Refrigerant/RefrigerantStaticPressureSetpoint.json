@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerant Static Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StaticPressureSetpoint;1",
+    "dtmi:com:willowinc:RefrigerantPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

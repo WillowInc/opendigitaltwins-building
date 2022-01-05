@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirVelocityPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Velocity Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

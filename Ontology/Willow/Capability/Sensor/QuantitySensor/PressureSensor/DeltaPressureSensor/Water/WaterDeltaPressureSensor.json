@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:WaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Delta Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WaterPressureSensor;1",
+    "dtmi:com:willowinc:DeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

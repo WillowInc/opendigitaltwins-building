@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopCondenserWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Condenser Water Delta Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

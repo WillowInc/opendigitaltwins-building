@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:SteamDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Delta Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamPressureSensor;1",
+    "dtmi:com:willowinc:DeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

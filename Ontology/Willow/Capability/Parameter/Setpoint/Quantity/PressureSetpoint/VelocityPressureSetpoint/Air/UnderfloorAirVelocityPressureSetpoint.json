@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:UnderfloorAirVelocityPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Underfloor Air Velocity Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

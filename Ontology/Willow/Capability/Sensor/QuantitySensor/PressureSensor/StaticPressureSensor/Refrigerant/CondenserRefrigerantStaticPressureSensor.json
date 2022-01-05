@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserRefrigerantStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Refrigerant Static Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:UnderfloorAirDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Underfloor Air Delta Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
