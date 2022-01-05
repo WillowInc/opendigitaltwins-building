@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseAImportApparentElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Import Apparent Electrical Energy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

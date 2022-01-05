@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:NeutralCurrentMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Neutral Current Magnitude Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

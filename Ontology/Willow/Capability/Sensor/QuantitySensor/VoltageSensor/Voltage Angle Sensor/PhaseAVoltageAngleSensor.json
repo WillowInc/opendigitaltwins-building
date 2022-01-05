@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseAVoltageAngleSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Voltage Angle Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VoltageAngleSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

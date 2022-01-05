@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Humidity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

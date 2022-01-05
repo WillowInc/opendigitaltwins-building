@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Active Electrical Power Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

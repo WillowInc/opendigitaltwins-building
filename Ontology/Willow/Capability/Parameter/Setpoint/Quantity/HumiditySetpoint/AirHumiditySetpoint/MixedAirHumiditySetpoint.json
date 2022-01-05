@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MixedAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Humidity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

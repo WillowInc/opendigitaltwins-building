@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseCActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Active Electrical Power Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

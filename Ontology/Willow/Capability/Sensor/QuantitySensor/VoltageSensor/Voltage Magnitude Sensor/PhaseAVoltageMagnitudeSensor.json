@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseAVoltageMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Voltage Magnitude Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VoltageMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
