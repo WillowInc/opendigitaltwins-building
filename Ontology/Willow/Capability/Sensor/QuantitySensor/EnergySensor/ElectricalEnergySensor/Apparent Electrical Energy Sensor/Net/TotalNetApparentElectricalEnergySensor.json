@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TotalNetApparentElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Net Apparent Electrical Energy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

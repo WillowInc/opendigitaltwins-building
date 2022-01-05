@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseCReactiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Reactive Electrical Power Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ReactiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

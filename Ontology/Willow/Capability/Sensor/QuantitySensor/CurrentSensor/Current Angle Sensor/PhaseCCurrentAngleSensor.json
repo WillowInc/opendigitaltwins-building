@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseCCurrentAngleSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Current Angle Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CurrentAngleSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

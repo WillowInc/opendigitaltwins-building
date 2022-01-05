@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TotalNetReactiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Net Reactive Electrical Energy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

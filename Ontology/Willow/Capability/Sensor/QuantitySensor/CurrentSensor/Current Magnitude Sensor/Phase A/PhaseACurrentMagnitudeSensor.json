@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseACurrentMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Current Magnitude Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

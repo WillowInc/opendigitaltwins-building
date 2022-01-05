@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Humidity Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
