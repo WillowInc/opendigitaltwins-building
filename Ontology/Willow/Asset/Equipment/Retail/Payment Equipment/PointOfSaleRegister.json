@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:PointOfSaleRegister;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Point-Of-Sale Register"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PaymentEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Cooktop;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooktop"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CookingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FoodStorageRack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Storage Rack"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodStorageEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

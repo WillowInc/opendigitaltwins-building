@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:GarbageDisposal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Garbage Disposal"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DishwashingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

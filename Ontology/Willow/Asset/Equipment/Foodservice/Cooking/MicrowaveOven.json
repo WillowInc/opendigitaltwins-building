@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MicrowaveOven;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Microwave Oven"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Oven;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

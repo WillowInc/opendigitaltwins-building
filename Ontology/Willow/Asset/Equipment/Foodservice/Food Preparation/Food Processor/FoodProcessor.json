@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FoodProcessor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Processor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

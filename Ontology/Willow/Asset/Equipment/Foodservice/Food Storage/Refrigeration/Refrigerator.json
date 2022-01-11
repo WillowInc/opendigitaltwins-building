@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:Refrigerator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

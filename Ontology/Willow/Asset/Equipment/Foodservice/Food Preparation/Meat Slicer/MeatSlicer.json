@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MeatSlicer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Meat Slicer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
