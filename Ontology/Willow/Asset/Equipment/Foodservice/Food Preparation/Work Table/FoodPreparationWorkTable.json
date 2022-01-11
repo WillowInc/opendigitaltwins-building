@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FoodPreparationWorkTable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Preparation Work Table"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

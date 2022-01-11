@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:PaymentTerminal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Payment Terminal"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PaymentEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FoodPackagingVacuumSealer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Packaging Vacuum Sealer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPackagingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:RainfallRateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Rainfall Rate Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PrecipitationRateSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

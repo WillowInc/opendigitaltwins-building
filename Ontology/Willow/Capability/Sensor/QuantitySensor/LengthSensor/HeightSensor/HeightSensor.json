@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HeightSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Height Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LengthSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

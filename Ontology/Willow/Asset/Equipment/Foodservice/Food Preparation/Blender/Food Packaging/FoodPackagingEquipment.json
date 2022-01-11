@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:FoodPackagingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Packaging Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:PalletJack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pallet Jack"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TransportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

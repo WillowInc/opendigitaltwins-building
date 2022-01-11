@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:FoodserviceCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Foodservice Cart"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodTransportEquipment;1",
+    "dtmi:com:willowinc:Cart;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

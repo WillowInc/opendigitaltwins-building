@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PrecipitationAccumulationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Precipitation Accumulation Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LengthSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,14 +1,13 @@
 {
-  "@id": "dtmi:com:willowinc:DistanceSensor;1",
+  "@id": "dtmi:com:willowinc:Dolly;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Distance Sensor"
+    "en": "Dolly"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantitySensor;1"
+    "dtmi:com:willowinc:TransportEquipment;1"
   ],
   "contents": [
-
   ],
   "@context": "dtmi:dtdl:context;2"
 }
