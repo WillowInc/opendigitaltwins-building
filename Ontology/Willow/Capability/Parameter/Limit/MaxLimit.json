@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MaxLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Max Limit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Limit;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

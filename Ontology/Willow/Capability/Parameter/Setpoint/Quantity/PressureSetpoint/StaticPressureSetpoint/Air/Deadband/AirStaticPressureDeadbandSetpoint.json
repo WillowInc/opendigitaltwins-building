@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:AirStaticPressureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Static Pressure Deadband Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirStaticPressureSetpoint;1",
+    "dtmi:com:willowinc:DeadbandSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

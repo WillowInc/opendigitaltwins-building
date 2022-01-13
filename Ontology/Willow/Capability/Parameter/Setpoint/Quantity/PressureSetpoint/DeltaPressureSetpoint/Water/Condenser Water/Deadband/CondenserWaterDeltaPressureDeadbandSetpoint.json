@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterDeltaPressureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Delta Pressure Deadband Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterDeltaPressureSetpoint;1",
+    "dtmi:com:willowinc:DeadbandSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

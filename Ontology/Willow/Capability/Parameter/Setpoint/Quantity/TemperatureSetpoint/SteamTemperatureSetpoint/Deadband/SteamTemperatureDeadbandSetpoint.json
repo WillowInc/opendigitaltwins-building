@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:SteamTemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": "Steam Temperature Deadband Setpoint",
+  "extends" : [
+    "dtmi:com:willowinc:SteamTemperatureSetpoint;1",
+    "dtmi:com:willowinc:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
