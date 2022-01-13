@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MinLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Min Limit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Limit;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

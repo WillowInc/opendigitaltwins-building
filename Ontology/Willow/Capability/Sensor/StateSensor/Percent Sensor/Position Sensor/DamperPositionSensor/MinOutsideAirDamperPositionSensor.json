@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Minimum Outside Air Damper Position Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirDamperPositionSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

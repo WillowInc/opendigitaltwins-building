@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterDeltaPressureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Delta Pressure Deadband Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterDeltaPressureSetpoint;1",
+    "dtmi:com:willowinc:DeadbandSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

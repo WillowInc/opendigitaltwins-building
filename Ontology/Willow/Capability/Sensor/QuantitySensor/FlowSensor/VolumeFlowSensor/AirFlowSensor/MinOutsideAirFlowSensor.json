@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:willowinc:MinOutsideAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": "Minimum Outside Air Flow Sensor",
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:AirFlowDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": "Air Flow Deadband Setpoint",
+  "extends" : [
+    "dtmi:com:willowinc:AirFlowSetpoint;1",
+    "dtmi:com:willowinc:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

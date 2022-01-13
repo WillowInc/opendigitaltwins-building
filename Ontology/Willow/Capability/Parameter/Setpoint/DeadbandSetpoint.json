@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Deadband Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
