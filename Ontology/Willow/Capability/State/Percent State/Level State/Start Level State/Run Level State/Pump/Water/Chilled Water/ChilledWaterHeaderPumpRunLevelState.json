@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Header Pump Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SteamLeavingPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Leaving Pump VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

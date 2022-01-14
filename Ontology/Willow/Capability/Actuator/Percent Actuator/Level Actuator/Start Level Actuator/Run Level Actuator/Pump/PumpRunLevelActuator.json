@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

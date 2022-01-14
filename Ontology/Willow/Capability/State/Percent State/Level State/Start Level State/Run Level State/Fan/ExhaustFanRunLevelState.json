@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFanRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

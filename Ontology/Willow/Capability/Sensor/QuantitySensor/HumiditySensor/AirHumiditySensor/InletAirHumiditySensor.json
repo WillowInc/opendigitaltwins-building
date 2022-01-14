@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Humidity Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

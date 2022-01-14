@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:WaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Pump Run State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

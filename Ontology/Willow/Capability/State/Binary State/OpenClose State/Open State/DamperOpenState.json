@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DamperOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Open State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterEnteringPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Entering Pump VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

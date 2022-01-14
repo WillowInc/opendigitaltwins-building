@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Bypass Pump Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

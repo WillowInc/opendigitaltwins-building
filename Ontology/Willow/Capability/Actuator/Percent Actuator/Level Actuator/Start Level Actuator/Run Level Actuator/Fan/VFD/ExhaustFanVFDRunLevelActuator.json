@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFanVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
