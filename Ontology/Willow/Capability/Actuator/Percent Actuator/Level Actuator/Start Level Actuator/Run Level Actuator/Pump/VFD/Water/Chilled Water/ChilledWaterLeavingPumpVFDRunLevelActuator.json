@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Leaving Pump VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SteamBypassPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Bypass Pump Run State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

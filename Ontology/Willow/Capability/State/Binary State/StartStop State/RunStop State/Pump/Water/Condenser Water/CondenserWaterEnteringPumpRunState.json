@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Entering Pump Run State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SteamLeavingPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Leaving Pump Run State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

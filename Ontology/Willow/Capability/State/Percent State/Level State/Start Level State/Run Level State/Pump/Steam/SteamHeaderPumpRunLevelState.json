@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SteamHeaderPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Header Pump Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

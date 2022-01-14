@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PumpRunLevelActuator;1",
+    "dtmi:com:willowinc:VFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

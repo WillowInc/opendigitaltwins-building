@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirVelocityPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Velocity Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirVelocityPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

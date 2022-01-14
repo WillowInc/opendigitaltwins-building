@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Fan Run State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

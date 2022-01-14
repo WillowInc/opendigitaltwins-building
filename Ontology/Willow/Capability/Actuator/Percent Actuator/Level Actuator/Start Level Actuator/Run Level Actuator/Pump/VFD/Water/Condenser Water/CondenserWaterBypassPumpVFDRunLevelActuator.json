@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Bypass Pump VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

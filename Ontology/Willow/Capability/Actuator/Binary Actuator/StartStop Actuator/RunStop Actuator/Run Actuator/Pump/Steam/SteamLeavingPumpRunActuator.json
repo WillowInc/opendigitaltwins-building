@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SteamLeavingPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Leaving Pump Run Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

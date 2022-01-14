@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Leaving Pump Run Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

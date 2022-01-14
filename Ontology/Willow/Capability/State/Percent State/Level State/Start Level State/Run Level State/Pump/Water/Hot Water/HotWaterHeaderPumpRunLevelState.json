@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Header Pump Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

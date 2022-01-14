@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Bypass Pump VFD Run Level Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

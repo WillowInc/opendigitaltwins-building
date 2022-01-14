@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Header Pump Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

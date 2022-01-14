@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeFanRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Fan Run Actuator"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
