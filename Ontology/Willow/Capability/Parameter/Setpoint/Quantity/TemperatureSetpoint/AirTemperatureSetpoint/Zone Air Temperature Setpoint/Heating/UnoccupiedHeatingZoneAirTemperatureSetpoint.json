@@ -5,7 +5,7 @@
     "en": "Unoccupied Heating Zone Air Temperature Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:UnoccupiedHeatingSetpoint;1"
   ],
   "contents": [

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:StandbyHeatingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Standby Heating Zone Air Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:StandbyHeatingSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

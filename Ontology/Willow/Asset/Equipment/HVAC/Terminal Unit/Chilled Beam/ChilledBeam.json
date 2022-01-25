@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledBeam;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Beam"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TerminalUnit;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal cooling capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "net sensible cooling capacity"
+      },
+      "name": "netSensibleCoolingCapacity",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "cooling method"
+      },
+      "name": "coolingMethod",
+      "schema": "dtmi:digitaltwins:rec_3_3:asset:HVACCoolingMethod;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
