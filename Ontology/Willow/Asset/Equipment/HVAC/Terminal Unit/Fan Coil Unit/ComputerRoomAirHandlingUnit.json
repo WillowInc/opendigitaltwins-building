@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ComputerRoomAirHandlingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Computer Room Air Handling (CRAH) Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

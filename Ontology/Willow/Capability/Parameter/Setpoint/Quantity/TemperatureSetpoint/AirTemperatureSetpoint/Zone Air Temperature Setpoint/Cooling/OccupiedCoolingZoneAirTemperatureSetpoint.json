@@ -5,7 +5,7 @@
     "en": "Occupied Cooling Zone Air Temperature Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:OccupiedCoolingSetpoint;1"
   ],
   "contents": [

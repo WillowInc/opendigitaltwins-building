@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ComputerRoomAirConditioningUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Computer Room Air Conditioning (CRAC) Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
