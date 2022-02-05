@@ -1,14 +1,13 @@
 {
-  "@id": "dtmi:com:willowinc:BinarySensor;1",
+  "@id": "dtmi:com:willowinc:LockoutState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Binary Sensor"
+    "en": "Lockout State"
   },
   "extends" : [
-    "dtmi:com:willowinc:StateSensor;1"
+    "dtmi:com:willowinc:OverrideState;1"
   ],
   "contents": [
-
   ],
   "@context": "dtmi:dtdl:context;2"
 }

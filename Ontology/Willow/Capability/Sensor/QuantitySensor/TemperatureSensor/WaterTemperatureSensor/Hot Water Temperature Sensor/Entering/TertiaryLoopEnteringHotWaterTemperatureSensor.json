@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Hot Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:BinarySensor;1",
+  "@id": "dtmi:com:willowinc:AlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Binary Sensor"
+    "en": "Alarm State"
   },
   "extends" : [
-    "dtmi:com:willowinc:StateSensor;1"
+    "dtmi:com:willowinc:BinaryState;1"
   ],
   "contents": [
 

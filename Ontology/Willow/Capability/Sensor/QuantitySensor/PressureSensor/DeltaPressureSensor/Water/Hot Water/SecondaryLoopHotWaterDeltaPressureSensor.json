@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopHotWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Hot Water Delta Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

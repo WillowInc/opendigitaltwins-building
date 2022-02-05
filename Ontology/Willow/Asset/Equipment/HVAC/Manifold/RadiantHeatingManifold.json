@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:RadiantHeatingManifold;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Radiant Heating Manifold"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACManifold;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
