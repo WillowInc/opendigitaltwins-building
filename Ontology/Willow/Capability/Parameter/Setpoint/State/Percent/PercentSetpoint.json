@@ -5,7 +5,7 @@
     "en": "Percent Unity Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:Setpoint;1"
+    "dtmi:com:willowinc:StateSetpoint;1"
   ],
   "contents": [
     {

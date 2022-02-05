@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopChilledWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Chilled Water Delta Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

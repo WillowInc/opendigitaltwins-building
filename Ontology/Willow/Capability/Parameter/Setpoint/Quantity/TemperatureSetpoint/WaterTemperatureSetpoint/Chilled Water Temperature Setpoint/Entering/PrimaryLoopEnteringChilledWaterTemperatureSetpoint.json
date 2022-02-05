@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Chilled Water Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnteringChilledWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

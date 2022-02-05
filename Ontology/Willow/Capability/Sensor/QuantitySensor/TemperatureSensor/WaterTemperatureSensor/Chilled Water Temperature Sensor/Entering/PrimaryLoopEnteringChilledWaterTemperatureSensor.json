@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Chilled Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnteringChilledWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

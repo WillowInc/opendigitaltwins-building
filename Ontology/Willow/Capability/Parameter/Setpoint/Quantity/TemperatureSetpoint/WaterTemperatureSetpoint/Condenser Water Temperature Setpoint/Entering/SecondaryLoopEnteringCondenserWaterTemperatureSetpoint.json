@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Entering Condenser Water Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

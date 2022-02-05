@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Entering Condenser Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

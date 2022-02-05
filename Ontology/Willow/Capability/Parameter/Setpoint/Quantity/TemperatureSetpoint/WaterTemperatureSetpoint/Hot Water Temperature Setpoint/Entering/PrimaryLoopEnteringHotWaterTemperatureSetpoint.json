@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Hot Water Temperature Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnteringHotWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Condenser Water Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

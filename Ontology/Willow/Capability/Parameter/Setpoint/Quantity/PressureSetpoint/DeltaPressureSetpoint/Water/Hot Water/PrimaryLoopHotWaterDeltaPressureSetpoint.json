@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopHotWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Hot Water Delta Pressure Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

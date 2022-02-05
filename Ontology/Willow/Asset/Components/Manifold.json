@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:BinarySensor;1",
+  "@id": "dtmi:com:willowinc:Manifold;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Binary Sensor"
+    "en": "Manifold"
   },
   "extends" : [
-    "dtmi:com:willowinc:StateSensor;1"
+    "dtmi:com:willowinc:AssetComponent;1"
   ],
   "contents": [
 

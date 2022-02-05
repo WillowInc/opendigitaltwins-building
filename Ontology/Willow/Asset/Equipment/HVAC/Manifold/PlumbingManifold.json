@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PlumbingManifold;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plumbing Manifold"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1",
+    "dtmi:com:willowinc:Manifold;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
