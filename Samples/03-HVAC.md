@@ -18,8 +18,6 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 5. Each Capability has a primary relationship to one or more Assets, Spaces, or Equipment Collections. In this example, the Zone Air Temperature Sensors each relate to a Fan Powered Box. We use the isCapabilityOf relationship to define which twin a Capability belongs to. By leveraging both the hostedby and isCapabilityOf relationships, this provides the flexibility to accommodate scenarios where an Asset’s Capabilities are hosted by separate Controllers as well as a Capability belonging to multiple entities.
 
-6. Because a Zone Air Temperature Sensor is measuring the temperature of the HVAC Zone, we use the isCapabilityOf relationship from the Sensor to the Zone to establish the Zones temperature.
-
 ## HVAC Multi-Zone Room
 
 ![HVAC-Example2](Images/HVAC-Example2.png)
