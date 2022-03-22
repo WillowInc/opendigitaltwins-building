@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:MezzanineLevel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mezzanine Level"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Level;1",
+    "dtmi:digitaltwins:rec_3_3:building:MezzanineLevel;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
