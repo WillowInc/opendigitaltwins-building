@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:BuildingPodium;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Podium"
+  },
+  "extends": [
+    "dtmi:com:willowinc:SubBuilding;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
