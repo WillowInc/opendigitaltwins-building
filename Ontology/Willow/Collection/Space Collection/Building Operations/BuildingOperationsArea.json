@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:com:willowinc:BuildingOperationsArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Operations Area"
+  },
+  "description": {
+    "en": "An area within a building designated as having a distinct maintainance and operations function or designated services."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceCollection;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:willowinc:SpaceArea;1"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "schema": "dtmi:com:willowinc:SpaceTemperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "humidity",
+      "displayName": {
+        "en": "Humidity Average"
+      },
+      "schema": "dtmi:com:willowinc:SpaceHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "CO2",
+      "displayName": {
+        "en": "CO2"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCO2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancy",
+      "displayName": {
+        "en": "Occupancy"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
