@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BackOfHouseArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Back of House Area"
+  },
+  "description": {
+    "en": "An area within a building, generally a hotel or restaurant, designated for fundamental operations where the guests or customers do not occupy or have access."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BuildingOperationsArea;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
