@@ -173,6 +173,11 @@
                         "valueSchema": "string",
                         "enumValues": [
                           {
+                            "name": "Accumulator",
+                            "displayName": "Accumulator",
+                            "enumValue": "ACC"
+                          }, 
+                          {
                             "name": "Analog_Input",
                             "displayName": "Analog Input",
                             "enumValue": "AI"
@@ -203,6 +208,11 @@
                             "enumValue": "BV"
                           },
                           {
+                            "name": "Calendar",
+                            "displayName": "Calendar",
+                            "enumValue": "CAL"
+                          },
+                          {
                             "name": "Device",
                             "displayName": "Device",
                             "enumValue": "DEV"
@@ -221,6 +231,11 @@
                             "name": "MultiState_Value",
                             "displayName": "Multi-State Value",
                             "enumValue": "MSV"
+                          },
+                          {
+                            "name": "Schedule",
+                            "displayName": "Schedule",
+                            "enumValue": "SCHED"
                           }
                         ]
                       }
