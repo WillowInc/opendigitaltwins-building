@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringPeopleCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering People Count Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PeopleCountSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

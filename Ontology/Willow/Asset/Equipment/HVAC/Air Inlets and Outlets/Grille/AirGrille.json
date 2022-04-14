@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AirGrille;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Grille"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirInletsOutlets;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

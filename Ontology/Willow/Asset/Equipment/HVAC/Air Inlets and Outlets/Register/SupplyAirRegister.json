@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:SupplyAirRegister;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supply Air Register"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirRegister;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
