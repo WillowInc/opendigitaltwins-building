@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DilutionTrap;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dilution Trap"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChemicalDilutionDrainageEquipment;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

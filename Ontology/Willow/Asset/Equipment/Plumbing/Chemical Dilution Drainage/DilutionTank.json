@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:DilutionTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dilution Tank"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChemicalDilutionDrainageEquipment;1",
+    "dtmi:com:willowinc:PlumbingTank;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
