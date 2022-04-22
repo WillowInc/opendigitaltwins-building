@@ -1,1 +1,1 @@
-model,id,isDocumentOf,includedIn,uniqueID,externalID,code,description,siteID,customTags,customProperties,url,name
+model,id,isDocumentOf,includedIn,uniqueID,externalID,code,description,siteID,customTags,customProperties,url,externalIds,name

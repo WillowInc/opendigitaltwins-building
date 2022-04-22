@@ -1,1 +1,1 @@
-model,id,voltage,poles,CBRating,wireSize,wireType,isFedBy.substance.?,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,name,comment,service,isPartOf
+model,id,voltage,poles,CBRating,wireSize,wireType,isFedBy.substance.?,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,externalIds,name,comment,service,isPartOf

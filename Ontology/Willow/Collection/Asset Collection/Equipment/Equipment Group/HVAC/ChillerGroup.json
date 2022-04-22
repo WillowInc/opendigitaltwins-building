@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:ChillerGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chiller Group"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

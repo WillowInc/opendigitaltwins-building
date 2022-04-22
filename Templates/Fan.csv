@@ -1,1 +1,1 @@
-model,id,motorPower,nominalAirflowRating,minAirflowRating,maxAirflowRating,driveType
+model,id,nominalExternalStaticPressure,nominalAirflow,motorPower,minAirflowRating,maxAirflowRating,driveType,serialNumber,physicalTagNumber,modelNumber,MACAddress,IPAddress,weight,turnoverDate,maintenanceInterval,installationDate,initialCost,expectedReplacementCost,expectedLife,expectedEndOfLife,commissionDate,serves,servedBy,isPartOf,includedIn,hasPart,hasCapability,locatedIn,servicedBy,manufacturedBy,installedBy,commissionedBy,hosts,externalIds,name
