@@ -1,1 +1,1 @@
-model,id,companyId,hasDocument,uniqueID,externalID,code,description,siteID,customTags,customProperties,owns,name,hasRole,lastName,image,givenName,gender,firstName,familyName,isMemberOf
+model,id,companyId,hasDocument,uniqueID,externalID,code,description,siteID,customTags,customProperties,hasRole,owns,externalIds,name,lastName,image,givenName,gender,firstName,familyName,isMemberOf

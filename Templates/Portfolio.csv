@@ -1,1 +1,1 @@
-model,id,operatedBy,ownedBy,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,name,includes
+model,id,operatedBy,ownedBy,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,externalIds,name,includes

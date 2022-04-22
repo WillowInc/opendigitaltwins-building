@@ -1,1 +1,1 @@
-model,id,Phase1,Phase2,Phase3,voltage,poles,CBRating,wireSize,wireType,isFedBy.substance.?,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,name,comment,service,isPartOf
+model,id,Phase1,Phase2,Phase3,voltage,poles,CBRating,wireSize,wireType,isFedBy.substance.?,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,externalIds,name,comment,service,isPartOf

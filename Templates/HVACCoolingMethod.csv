@@ -1,1 +1,1 @@
-model,id,type,rows,finsPerInch,outsideDiameter,refrigerentType
+model,id,rows,finsPerInch,type,refrigerantType,outsideDiameter,serialNumber,physicalTagNumber,modelNumber,MACAddress,IPAddress,weight,turnoverDate,maintenanceInterval,installationDate,initialCost,expectedReplacementCost,expectedLife,expectedEndOfLife,commissionDate,serves,servedBy,isPartOf,includedIn,hasPart,hasCapability,locatedIn,servicedBy,manufacturedBy,installedBy,commissionedBy,hosts,externalIds,name

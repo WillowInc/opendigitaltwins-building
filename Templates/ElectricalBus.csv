@@ -1,1 +1,1 @@
-model,id,currentRating,material
+model,id,material,currentRating,serialNumber,physicalTagNumber,modelNumber,MACAddress,IPAddress,weight,turnoverDate,maintenanceInterval,installationDate,initialCost,expectedReplacementCost,expectedLife,expectedEndOfLife,commissionDate,serves,servedBy,isPartOf,includedIn,hasPart,hasCapability,locatedIn,servicedBy,manufacturedBy,installedBy,commissionedBy,hosts,externalIds,name
