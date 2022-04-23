@@ -150,6 +150,12 @@
             "enumValue": "America/Sao_Paulo"
           },
           {
+            "name": "AmericaToronto",
+            "displayName": "America/Toronto",
+            "description": "Eastern - ON, QC (most areas), Bahamas",
+            "enumValue": "America/Toronto"
+          },
+          {
             "name": "AmericaWhitehorse",
             "displayName": "America/Whitehorse",
             "description": "MST - Yukon (east)",
