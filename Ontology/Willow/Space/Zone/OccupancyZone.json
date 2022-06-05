@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Occupancy Zone"
   },
+  "description": {
+    "en": "A zone which is being monitored for occupancy."
+  },
   "extends" : [
     "dtmi:com:willowinc:Zone;1"
   ],

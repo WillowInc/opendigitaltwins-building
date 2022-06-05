@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Zone"
   },
+  "description": {
+    "en": "An area within a building which has a purpose and extents defined by a system or sensors, e.g., HVAC zone, lighting zone, occupancy zone, security zone, etc."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1",
     "dtmi:digitaltwins:rec_3_3:core:Zone;1"

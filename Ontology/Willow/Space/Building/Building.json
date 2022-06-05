@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Building"
   },
+  "description": {
+    "en": "A confined structure, usually with a roof and walls, built for permanent use."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1",
     "dtmi:digitaltwins:rec_3_3:core:Building;1"

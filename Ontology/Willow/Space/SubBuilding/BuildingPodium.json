@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Building Podium"
   },
+  "description": {
+    "en": "A sub-building which forms the base of a building and may have one or more towers above."
+  },
   "extends": [
     "dtmi:com:willowinc:SubBuilding;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Illuminance Zone"
   },
+  "description": {
+    "en": "A zone which is being monitored for illuminance, e.g. daylight, generally to dynamically control light fixtures."
+  },
   "extends" : [
     "dtmi:com:willowinc:Zone;1"
   ],

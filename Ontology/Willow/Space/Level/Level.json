@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Level"
   },
+  "description": {
+    "en": "The level of a building or other structure, a.k.a. storey, floor, etc."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1",
     "dtmi:digitaltwins:rec_3_3:core:Level;1"

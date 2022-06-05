@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Substructure"
   },
+  "description": {
+    "en": "A structure which is below ground level serving as the foundation for one or more buildings on a land above and has uniquely defined name and levels."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1"
   ],
