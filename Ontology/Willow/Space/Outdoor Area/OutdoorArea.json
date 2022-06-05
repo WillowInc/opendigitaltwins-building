@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Outdoor Area"
   },
+  "description": {
+    "en": "An area on a land that is outside of a building."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1"
   ],

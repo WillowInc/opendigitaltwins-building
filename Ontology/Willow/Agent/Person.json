@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Person"
   },
+  "description": {
+    "en": "A natural person (i.e., an individual human being)."
+  },
   "extends" : [
     "dtmi:com:willowinc:Agent;1",
     "dtmi:digitaltwins:rec_3_3:agents:Person;1"

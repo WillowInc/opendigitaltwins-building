@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Building Component"
   },
+  "description": {
+    "en": "A part that constitutes a piece of a building's structural or architectural makeup that is constructed onsite, e.g., Facade, Wall, Slab, RoofInner, etc."
+  },
   "extends" : [
     "dtmi:digitaltwins:rec_3_3:core:BuildingComponent;1"
   ],

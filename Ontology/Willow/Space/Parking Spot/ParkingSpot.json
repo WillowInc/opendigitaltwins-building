@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Parking Spot"
   },
+  "description": {
+    "en": "A location that is designated for parking a vehicle, a.k.a. parking space."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1"
   ],

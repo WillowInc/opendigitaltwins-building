@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Space"
   },
+  "description": {
+    "en": "A contiguous part of the physical world that has a 3D spatial extent and that contains or can contain sub-spaces. E.g., a Region can contain many pieces of Land, which in turn can contain many Buildings."
+  },
   "extends" : [
     "dtmi:digitaltwins:rec_3_3:core:Space;1"
   ],

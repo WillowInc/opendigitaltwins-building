@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Land"
   },
+  "description": {
+    "en": "A piece of land upon which one or more buildings may be situated, a.ka. site."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1",
     "dtmi:digitaltwins:rec_3_3:core:Land;1"

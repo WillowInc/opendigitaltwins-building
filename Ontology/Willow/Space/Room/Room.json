@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Room"
   },
+  "description": {
+    "en": "A portion of space within a building that's usually enclosed and has its own walls, floor, and ceiling."
+  },
   "extends" : [
     "dtmi:com:willowinc:Space;1",
     "dtmi:digitaltwins:rec_3_3:core:Room;1"

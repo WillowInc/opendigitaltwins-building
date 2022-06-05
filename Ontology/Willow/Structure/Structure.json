@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Structure"
   },
+  "description": {
+    "en": "An entity which is constructed."
+  },
   "extends" : [
 
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Company"
   },
+    "description": {
+    "en": "An organization of persons operating a business."
+  },
   "extends" : [
     "dtmi:com:willowinc:Organization;1",
     "dtmi:digitaltwins:rec_3_3:agents:Company;1"

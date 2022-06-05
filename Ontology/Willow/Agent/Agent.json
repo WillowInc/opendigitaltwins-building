@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Agent"
   },
+  "description": {
+    "en": "The human, group, or machine that consumes or acts upon an object or data. This higher-level grouping allows properties that are shared among its subclasses (Person, Organization, Company, Department...) to be anchored in one joint place, on the Agent class."
+  },
   "extends" : [
     "dtmi:digitaltwins:rec_3_3:core:Agent;1"
   ],

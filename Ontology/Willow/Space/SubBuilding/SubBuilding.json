@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Sub-Building"
   },
+  "description": {
+    "en": "A part of a larger building, e.g., a wing, a tower, or podium, which has a uniquely defined name and levels."
+  },
   "extends": [
     "dtmi:com:willowinc:Space;1",
     "dtmi:digitaltwins:rec_3_3:core:SubBuilding;1"

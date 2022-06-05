@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Document"
   },
+  "description": {
+    "en": "A written, printed, or electronic matter that provides information, e.g. contract, drawing, image, report, etc."
+  },
   "extends" : [
     "dtmi:digitaltwins:rec_3_3:core:Document;1"
   ],

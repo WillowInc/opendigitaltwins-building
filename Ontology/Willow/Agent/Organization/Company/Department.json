@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Department"
   },
+  "description": {
+    "en": "An division or part of a large organization."
+  },
   "extends" : [
     "dtmi:com:willowinc:Organization;1",
     "dtmi:digitaltwins:rec_3_3:agents:Department;1"
