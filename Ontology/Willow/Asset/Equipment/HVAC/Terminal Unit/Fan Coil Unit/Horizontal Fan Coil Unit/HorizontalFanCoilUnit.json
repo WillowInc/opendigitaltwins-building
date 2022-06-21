@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:HorizontalFanCoilUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Horizontal Fan Coil Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

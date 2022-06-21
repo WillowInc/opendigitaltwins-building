@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:VerticalStackFanCoilUnitReheat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vertical Stack Fan Coil Unit with Reheat"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VerticalStackFanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ReplaceFilterState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Filter State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceComponentState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
