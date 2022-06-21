@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ReplaceBatteryState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Battery State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceComponentState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

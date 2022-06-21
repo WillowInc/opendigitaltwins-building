@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:ReplaceComponentState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Component State"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BinaryState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
