@@ -5,7 +5,7 @@
     "en": "Parking Spot Collection"
   },
   "extends" : [
-    "dtmi:com:willowinc:Collection;1"
+    "dtmi:com:willowinc:SpaceCollection;1"
   ],
   "contents": [
 

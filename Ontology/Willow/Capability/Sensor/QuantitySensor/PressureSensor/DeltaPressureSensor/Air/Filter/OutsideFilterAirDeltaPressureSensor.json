@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideFilterAirDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Filter Air Delta Pressure Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
