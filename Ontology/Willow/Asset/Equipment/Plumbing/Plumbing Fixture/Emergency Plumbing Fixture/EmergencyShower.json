@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EmergencyShower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Emergency Shower"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EmergencyPlumbingFixture;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
