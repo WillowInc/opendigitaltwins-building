@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Time Zone"
   },
+  "description": {
+    "en": "As defined in the 'tz database', time zone is a national region where local clocks have all agreed since 1970 and are in the form 'Area/Location' (i.e. America/New_York)."
+  },
   "extends": [
     "dtmi:com:willowinc:Component;1"
   ],

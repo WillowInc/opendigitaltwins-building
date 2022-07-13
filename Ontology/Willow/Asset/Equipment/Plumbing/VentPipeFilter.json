@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:VentPipeFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vent Pipe Filter"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
