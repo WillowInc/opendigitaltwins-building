@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:RJ45Jack;1",
+  "@type": "Interface",
+  "displayName": "RJ45 Jack",
+  "extends" : [
+    "dtmi:com:willowinc:TwistedPairCableConnector;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

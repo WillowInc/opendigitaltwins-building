@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:CoaxialPatchCord;1",
+  "@type": "Interface",
+  "displayName": "Coaxial Patch Cord",
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationPatchCord;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

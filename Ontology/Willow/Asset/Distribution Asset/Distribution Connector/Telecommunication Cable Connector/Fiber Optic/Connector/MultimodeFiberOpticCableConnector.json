@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:MultimodeFiberOpticCableConnector;1",
+  "@type": "Interface",
+  "displayName": "Multimode Fiber Optic Cable Connector",
+  "extends" : [
+    "dtmi:com:willowinc:FiberOpticCableConnector;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

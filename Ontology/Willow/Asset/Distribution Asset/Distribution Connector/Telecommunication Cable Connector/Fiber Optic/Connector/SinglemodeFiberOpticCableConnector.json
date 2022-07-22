@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:SinglemodeFiberOpticCableConnector;1",
+  "@type": "Interface",
+  "displayName": "Singlemode Fiber Optic Cable Connector",
+  "extends" : [
+    "dtmi:com:willowinc:FiberOpticCableConnector;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
