@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:TelecommunicationOutlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Telecommunication Outlet"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:StructuredCablingEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "number of ports"
+      },
+      "name": "numberOfPorts",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
