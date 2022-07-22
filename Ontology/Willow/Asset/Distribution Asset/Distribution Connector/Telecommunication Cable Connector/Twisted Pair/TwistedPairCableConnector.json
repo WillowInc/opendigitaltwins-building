@@ -1,0 +1,67 @@
+{
+  "@id": "dtmi:com:willowinc:TwistedPairCableConnector;1",
+  "@type": "Interface",
+  "displayName": "Twisted Pair Cable Connector",
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationCableConnector;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "categoryRating",
+      "displayName": {
+        "en": "Category Rating"
+      },
+      "dtmi:dtdl:property:schema;2": {
+        "@type": "Enum",
+        "dtmi:dtdl:property:enumValues;2": [
+          {
+            "name": "category3",
+            "displayName": {
+              "en": "Category 3"
+            },
+            "enumValue": "Category 3"
+          },
+          {
+            "name": "category5e",
+            "displayName": {
+              "en": "Category 5e"
+            },
+            "enumValue": "Category 5e"
+          },
+          {
+            "name": "category6",
+            "displayName": {
+              "en": "Category 6"
+            },
+            "enumValue": "Category 6"
+          },
+          {
+            "name": "category6A",
+            "displayName": {
+              "en": "Category 6A"
+            },
+            "enumValue": "Category 6A"
+          },
+          {
+            "name": "category7",
+            "displayName": {
+              "en": "Category 7"
+            },
+            "enumValue": "Category 7"
+          },
+          {
+            "name": "category8",
+            "displayName": {
+              "en": "Category 8"
+            },
+            "enumValue": "Category 8"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
