@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ApparentElectricalPowerSensor;1",
   "@type": "Interface",
-  "displayName": "Apparent Electrical Power Sensor",
+  "displayName": {
+    "en": "Apparent Electrical Power Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:ElectricalPowerSensor;1"
   ],

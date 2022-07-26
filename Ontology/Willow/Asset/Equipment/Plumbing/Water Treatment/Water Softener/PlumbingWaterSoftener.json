@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:WaterSoftener;1",
   "@type": "Interface",
-  "displayName": "Water Softener",
+  "displayName": {
+    "en": "Water Softener"
+  },
   "extends" : [
     "dtmi:com:willowinc:PlumbingWaterTreatment;1"
   ],
@@ -28,7 +30,9 @@
     {
       "@type": "Property",
       "name": "tankCapacity",
-      "displayName": "Tank Capacity",
+      "displayName": {
+        "en": "Tank Capacity"
+      },
       "writable": true,
       "schema": "integer",
       "comment": "gallon"

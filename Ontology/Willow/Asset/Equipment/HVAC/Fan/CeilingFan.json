@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:CeilingFan;1",
   "@type": "Interface",
-  "displayName": "Ceiling Fan",
+  "displayName": {
+    "en": "Ceiling Fan"
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACFan;1",
     "dtmi:digitaltwins:rec_3_3:asset:CeilingFan;1"

@@ -11,42 +11,54 @@
     {
       "@type": "Property",
       "name": "height",
-      "displayName": "Height",
+      "displayName": {
+        "en": "Height"
+      },
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "geoPosition",
-      "displayName": "GeoPosition",
+      "displayName": {
+        "en": "GeoPosition"
+      },
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "connectionStatus",
-      "displayName": "Connection Status",
+      "displayName": {
+        "en": "Connection Status"
+      },
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "attachmentState",
-      "displayName": "Attachment State",
+      "displayName": {
+        "en": "Attachment State"
+      },
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "rotation",
-      "displayName": "Rotation",
+      "displayName": {
+        "en": "Rotation"
+      },
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "metricPosition",
-      "displayName": "Metric Position",
+      "displayName": {
+        "en": "Metric Position"
+      },
       "writable": true,
       "schema": "string"
     }

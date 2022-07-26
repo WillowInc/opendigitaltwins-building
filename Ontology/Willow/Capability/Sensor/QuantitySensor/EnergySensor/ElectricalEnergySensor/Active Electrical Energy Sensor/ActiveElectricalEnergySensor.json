@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ActiveElectricalEnergySensor;1",
   "@type": "Interface",
-  "displayName": "Active Electrical Energy Sensor",
+  "displayName": {
+    "en": "Active Electrical Energy Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:ElectricalEnergySensor;1"
   ],

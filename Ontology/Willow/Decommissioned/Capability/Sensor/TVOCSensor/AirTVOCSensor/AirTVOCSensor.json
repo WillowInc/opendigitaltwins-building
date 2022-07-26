@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:AirTVOCSensor;1",
   "@type": "Interface",
-  "displayName": "Air TVOCS ensor",
+  "displayName": {
+    "en": "Air TVOC Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:TVOCSensor;1"
   ],

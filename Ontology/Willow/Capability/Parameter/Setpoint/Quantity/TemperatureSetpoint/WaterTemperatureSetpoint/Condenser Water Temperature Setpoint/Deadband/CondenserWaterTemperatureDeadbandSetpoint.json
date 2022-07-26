@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:CondenserWaterTemperatureDeadbandSetpoint;1",
   "@type": "Interface",
-  "displayName": "Condenser Water Temperature Deadband Setpoint",
+  "displayName": {
+    "en": "Condenser Water Temperature Deadband Setpoint"
+  },
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

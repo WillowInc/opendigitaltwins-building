@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:CoaxialCableConnector;1",
   "@type": "Interface",
-  "displayName": "Coaxial Cable Connector",
+  "displayName": {
+    "en": "Coaxial Cable Connector"
+  },
   "extends" : [
     "dtmi:com:willowinc:TelecommunicationCableConnector;1"
   ],

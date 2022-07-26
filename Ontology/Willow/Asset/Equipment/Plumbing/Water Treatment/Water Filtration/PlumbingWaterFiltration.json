@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:PlumbingWaterFiltration;1",
   "@type": "Interface",
-  "displayName": "Water Filtration (Plumbing)",
+  "displayName": {
+    "en": "Water Filtration (Plumbing)"
+  },
   "extends" : [
     "dtmi:com:willowinc:PlumbingWaterTreatment;1"
   ],
@@ -28,7 +30,9 @@
     {
       "@type": "Property",
       "name": "tankCapacity",
-      "displayName": "Tank Capacity",
+      "displayName": {
+        "en": "Tank Capacity"
+      },
       "writable": true,
       "schema": "integer",
       "comment": "gallon"

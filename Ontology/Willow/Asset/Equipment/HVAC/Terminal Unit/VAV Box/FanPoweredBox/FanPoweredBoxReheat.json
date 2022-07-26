@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:FanPoweredBoxReheat;1",
   "@type": "Interface",
-  "displayName": "Fan Powered Box with Reheat",
+  "displayName": {
+    "en": "Fan Powered Box with Reheat"
+  },
   "extends" : [
     "dtmi:com:willowinc:FanPoweredBox;1",
     "dtmi:digitaltwins:rec_3_3:asset:FanPoweredBoxReheat;1"

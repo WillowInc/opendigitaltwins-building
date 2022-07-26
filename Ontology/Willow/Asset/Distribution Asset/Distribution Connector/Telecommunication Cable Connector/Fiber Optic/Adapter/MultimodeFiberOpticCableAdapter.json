@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:MultimodeFiberOpticCableAdapter;1",
   "@type": "Interface",
-  "displayName": "Multimode Fiber Optic Cable Adapter",
+  "displayName": {
+    "en": "Multimode Fiber Optic Cable Adapter"
+  },
   "extends" : [
     "dtmi:com:willowinc:FiberOpticCableAdapter;1"
   ],

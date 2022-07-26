@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:AirFlowSensor;1",
   "@type": "Interface",
-  "displayName": "Air Flow Sensor",
+  "displayName": {
+    "en": "Air Flow Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:VolumeFlowSensor;1"
   ],

@@ -23,12 +23,16 @@
         "enumValues": [
           {
             "name": "HotWater",
-            "displayName": "HotWater",
+            "displayName": {
+              "en": "Hot Water"
+            },
             "enumValue": "HotWater"
           },  
           {
             "name": "ChilledWater",
-            "displayName": "ChilledWater",
+            "displayName": {
+              "en": "Chilled Water"
+            },
             "enumValue": "ChilledWater"
           }
         ]

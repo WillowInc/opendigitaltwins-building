@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:AirCurtain;1",
   "@type": "Interface",
-  "displayName": "Air Curtain",
+  "displayName": {
+    "en": "Air Curtain"
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACFan;1"
   ],

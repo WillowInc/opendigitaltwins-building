@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:TwistedPairCableConnector;1",
   "@type": "Interface",
-  "displayName": "Twisted Pair Cable Connector",
+  "displayName": {
+    "en": "Twisted Pair Cable Connector"
+  },
   "extends" : [
     "dtmi:com:willowinc:TelecommunicationCableConnector;1"
   ],

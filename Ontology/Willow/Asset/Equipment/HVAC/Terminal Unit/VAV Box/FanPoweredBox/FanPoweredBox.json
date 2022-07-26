@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:FanPoweredBox;1",
   "@type": "Interface",
-  "displayName": "Fan Powered Box",
+  "displayName": {
+    "en": "Fan Powered Box"
+  },
   "extends" : [
     "dtmi:com:willowinc:VAVBox;1",
     "dtmi:digitaltwins:rec_3_3:asset:FanPoweredBox;1"

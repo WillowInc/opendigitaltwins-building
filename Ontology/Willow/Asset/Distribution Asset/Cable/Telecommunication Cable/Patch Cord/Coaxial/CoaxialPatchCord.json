@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:CoaxialPatchCord;1",
   "@type": "Interface",
-  "displayName": "Coaxial Patch Cord",
+  "displayName": {
+    "en": "Coaxial Patch Cord"
+  },
   "extends" : [
     "dtmi:com:willowinc:TelecommunicationPatchCord;1"
   ],

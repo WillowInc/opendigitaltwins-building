@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:FiberOpticPatchCord;1",
   "@type": "Interface",
-  "displayName": "Fiber Optic Patch Cord",
+  "displayName": {
+    "en": "Fiber Optic Patch Cord"
+  },
   "extends" : [
     "dtmi:com:willowinc:TelecommunicationPatchCord;1"
   ],

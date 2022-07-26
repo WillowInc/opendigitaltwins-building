@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:HVACDamper;1",
   "@type": "Interface",
-  "displayName": "Damper",
+  "displayName": {
+    "en": "Damper"
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",
     "dtmi:digitaltwins:rec_3_3:asset:Damper;1"
