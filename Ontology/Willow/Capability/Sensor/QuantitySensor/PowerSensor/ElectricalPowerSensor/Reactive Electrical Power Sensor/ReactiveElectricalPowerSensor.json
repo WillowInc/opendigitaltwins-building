@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ReactiveElectricalPowerSensor;1",
   "@type": "Interface",
-  "displayName": "Reactive Electrical Power Sensor",
+  "displayName": {
+    "en": "Reactive Electrical Power Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:ElectricalPowerSensor;1"
   ],

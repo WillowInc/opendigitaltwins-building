@@ -31,12 +31,16 @@
         "enumValues": [
           {
             "name": "Granted",
-            "displayName": "Granted",
+            "displayName": {
+              "en": "Granted"
+            },
             "enumValue": "Granted"
           },
           {
             "name": "Denied",
-            "displayName": "Denied",
+            "displayName": {
+              "en": "Denied"
+            },
             "enumValue": "Denied"
           }
         ]

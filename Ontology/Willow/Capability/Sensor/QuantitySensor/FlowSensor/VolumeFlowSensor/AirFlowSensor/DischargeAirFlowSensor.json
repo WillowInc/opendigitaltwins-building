@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:DischargeAirFlowSensor;1",
   "@type": "Interface",
-  "displayName": "Discharge Air Flow Sensor",
+  "displayName": {
+    "en": "Discharge Air Flow Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:AirFlowSensor;1"
   ],

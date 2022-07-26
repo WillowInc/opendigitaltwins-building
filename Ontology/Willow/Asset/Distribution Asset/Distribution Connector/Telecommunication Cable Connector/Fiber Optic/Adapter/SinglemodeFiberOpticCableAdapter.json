@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:SinglemodeFiberOpticCableAdapter;1",
   "@type": "Interface",
-  "displayName": "Singlemode Fiber Optic Cable Adapter",
+  "displayName": {
+    "en": "Singlemode Fiber Optic Cable Adapter"
+  },
   "extends" : [
     "dtmi:com:willowinc:FiberOpticCableAdapter;1"
   ],

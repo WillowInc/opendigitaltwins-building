@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ElectricalCircuit;1",
   "@type": "Interface",
-  "displayName": "Electrical Circuit",
+  "displayName": {
+    "en": "Electrical Circuit"
+  },
   "extends" : [
     "dtmi:com:willowinc:ElectricalSystem;1"
   ],
@@ -9,7 +11,9 @@
     {
       "@type": ["Property", "Voltage"],
       "name": "voltage",
-      "displayName": "Voltage",
+      "displayName": {
+        "en": "Voltage"
+      },
       "writable": true,
       "schema": "integer",
       "unit": "volt"
@@ -17,7 +21,9 @@
     {
       "@type": "Property",
       "name": "poles",
-      "displayName": "Poles",
+      "displayName": {
+        "en": "Poles"
+      },
       "writable": true,
       "schema": {
         "@type": "Enum",
@@ -44,7 +50,9 @@
     {
       "@type": ["Property", "Current"],
       "name": "CBRating",
-      "displayName": "Circuit Breaker Rating",
+      "displayName": {
+        "en": "Circuit Breaker Rating"
+      },
       "writable": true,
       "schema": "integer",
       "unit": "ampere"
@@ -52,7 +60,9 @@
     {
       "@type": "Property",
       "name": "wireSize",
-      "displayName": "Wire Size",
+      "displayName": {
+        "en": "Wire Size"
+      },
       "writable": true,
       "schema": "string",
       "comment": "Qty-Size Phase, Qty-Size Neutral, Qty-Size Ground"
@@ -60,7 +70,9 @@
     {
       "@type": "Property",
       "name": "wireType",
-      "displayName": "Wire Type",
+      "displayName": {
+        "en": "Wire Type"
+      },
       "writable": true,
       "schema": "string"
     },

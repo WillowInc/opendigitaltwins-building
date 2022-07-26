@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ElectricalPowerSetpoint;1",
   "@type": "Interface",
-  "displayName": "Electrical Power Setpoint",
+  "displayName": {
+    "en": "Electrical Power Setpoint"
+  },
   "extends" : [
     "dtmi:com:willowinc:PowerSetpoint;1"
   ],

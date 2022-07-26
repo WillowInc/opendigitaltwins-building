@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:HotWaterTemperatureDeadbandSetpoint;1",
   "@type": "Interface",
-  "displayName": "Hot Water Temperature Deadband Setpoint",
+  "displayName": {
+    "en": "Hot Water Temperature Deadband Setpoint"
+  },
   "extends" : [
     "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

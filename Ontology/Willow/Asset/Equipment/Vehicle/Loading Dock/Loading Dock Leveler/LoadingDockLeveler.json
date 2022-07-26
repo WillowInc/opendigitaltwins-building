@@ -11,7 +11,9 @@
     {
       "@type": "Property",
       "name": "liftType",
-      "displayName": "Lift Type",
+      "displayName": {
+        "en": "Lift Type"
+      },
       "writable": true,
       "schema": {
         "@type": "Enum",
@@ -19,17 +21,23 @@
         "enumValues": [
           {
             "name": "Mechanical",
-            "displayName": "Mechanical",
+            "displayName": {
+              "en": "Mechanical"
+            },
             "enumValue": "Mechanical"
           },  
           {
                 "name": "Hydraulic",
-                "displayName": "Hydraulic",
+                "displayName": {
+                  "en": "Hydraulic"
+                },
                 "enumValue": "Hydraulic"
             },
             {
               "name": "Pneumatic",
-              "displayName": "Pneumatic",
+              "displayName": {
+                "en": "Pneumatic"
+              },
               "enumValue": "Pneumatic"
             }
         ]

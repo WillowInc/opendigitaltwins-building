@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:ElectricalCircuit2Pole;1",
   "@type": "Interface",
-  "displayName": "Electrical Circuit 2-Pole",
+  "displayName": {
+    "en": "Electrical Circuit 2-Pole"
+  },
   "extends" : [
     "dtmi:com:willowinc:ElectricalCircuit;1"
   ],
@@ -9,7 +11,9 @@
     {
       "@type": "Property",
       "name": "Phase1",
-      "displayName": "Phase 1",
+      "displayName": {
+        "en": "Phase 1"
+      },
       "writable": true,
       "schema":     {
         "@type": "Enum",
@@ -36,7 +40,9 @@
     {
       "@type": "Property",
       "name": "Phase2",
-      "displayName": "Phase 2",
+      "displayName": {
+        "en": "Phase 2"
+      },
       "writable": true,
       "schema":     {
         "@type": "Enum",

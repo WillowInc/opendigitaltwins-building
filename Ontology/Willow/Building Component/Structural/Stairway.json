@@ -11,7 +11,9 @@
     {
       "@type": "Property",
       "name": "stepWidth",
-      "displayName": "Step Width",
+      "displayName": {
+        "en": "Step Width"
+      },
       "writable": true,
       "schema": "double",
       "comment": "inch"

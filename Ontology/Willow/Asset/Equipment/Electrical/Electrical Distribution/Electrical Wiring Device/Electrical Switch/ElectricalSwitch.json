@@ -21,7 +21,9 @@
     {
       "@type": ["Property", "Current"],
       "name": "currentRating",
-      "displayName": "Current Rating",
+      "displayName": {
+        "en": "Current Rating"
+      },
       "writable": true,
       "schema": "integer",
       "unit": "ampere"
@@ -29,7 +31,9 @@
     {
       "@type": "Property",
       "name": "poles",
-      "displayName": "Poles",
+      "displayName": {
+        "en": "Poles"
+      },
       "writable": true,
       "schema": {
         "@type": "Enum",
@@ -56,7 +60,9 @@
     {
       "@type": "Property",
       "name": "throws",
-      "displayName": "Throws",
+      "displayName": {
+        "en": "Throws"
+      },
       "writable": true,
       "schema": {
         "@type": "Enum",

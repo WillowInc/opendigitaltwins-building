@@ -1,7 +1,9 @@
 {
   "@id": "dtmi:com:willowinc:TwistedPairPatchCord;1",
   "@type": "Interface",
-  "displayName": "Twisted Pair Patch Cord",
+  "displayName": {
+    "en": "Twisted Pair Patch Cord"
+  },
   "extends" : [
     "dtmi:com:willowinc:TelecommunicationPatchCord;1"
   ],
