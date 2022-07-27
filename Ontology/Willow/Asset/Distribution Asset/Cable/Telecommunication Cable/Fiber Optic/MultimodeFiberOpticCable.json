@@ -14,9 +14,9 @@
       "displayName": {
         "en": "Performance Rating"
       },
-      "dtmi:dtdl:property:schema;2": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;2": [
+        "enumValues": [
           {
             "name": "OM1",
             "displayName": {

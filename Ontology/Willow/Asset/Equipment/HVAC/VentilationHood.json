@@ -14,9 +14,9 @@
       "displayName": {
         "en": "Type"
       },
-      "dtmi:dtdl:property:schema;2": {
+      "schema": {
         "@type": "Enum",
-        "dtmi:dtdl:property:enumValues;2": [
+        "enumValues": [
           {
             "name": "typeI",
             "displayName": {
