@@ -14,7 +14,7 @@
         "en": "mounted in rack"
       },
       "name": "mountedInRack",
-      "dtmi:dtdl:property:properties;2": [
+      "properties": [
         {
           "@type": "Property",
           "displayName": {
