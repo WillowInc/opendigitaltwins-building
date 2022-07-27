@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:BatteryCharger;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Charger"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BatteryEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

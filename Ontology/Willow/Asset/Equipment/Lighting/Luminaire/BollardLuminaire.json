@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:BollardLuminaire;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bollard Luminaire"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Luminaire;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
