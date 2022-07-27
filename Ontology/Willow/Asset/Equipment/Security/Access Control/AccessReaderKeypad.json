@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:AccessReaderKeypad;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Access Reader with Keypad"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AccessReader;1",
+    "dtmi:com:willowinc:AccessKeypad;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:BatteryCabinet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Cabinet"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BatteryEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

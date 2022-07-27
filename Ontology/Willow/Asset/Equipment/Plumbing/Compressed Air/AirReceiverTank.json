@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AirReceiverTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Receiver Tank"
+  },
+  "description": {
+    "en": "A tank that receives air from the air compressor and holds it under pressure for future use"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CompressedAirEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
