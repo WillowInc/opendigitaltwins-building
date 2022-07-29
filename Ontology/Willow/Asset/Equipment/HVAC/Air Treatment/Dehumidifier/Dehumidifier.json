@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:Dehumidifier;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dehumidifier"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACAirTreatment;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

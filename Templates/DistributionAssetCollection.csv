@@ -1,1 +1,1 @@
-model,id,isFedBy.substance.?,hasDocument,includedIn,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,externalIds,name
+model,id,isFedBy.substance.?,hasDocument,includedIn,servedBy,uniqueID,externalID,code,description,siteID,landId,customTags,customProperties,externalIds,name

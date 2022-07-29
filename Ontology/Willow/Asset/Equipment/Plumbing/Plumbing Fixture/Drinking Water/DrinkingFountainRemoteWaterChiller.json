@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:DrinkingFountainRemoteWaterChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Drinking Fountain Remote Water Chiller"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DrinkingWaterFixture;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

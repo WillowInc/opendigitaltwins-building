@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:EmergencyPreparednessEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Emergency Preparedness Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SafetyEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

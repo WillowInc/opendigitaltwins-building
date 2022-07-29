@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:BuildingManagementSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Management System (BMS)"
+  },
+  "description": {
+    "en": "A computer-based platform to automate controls and monitor equipment throughout a building (a.k.a. BAS, Building Automation System)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ControlsSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

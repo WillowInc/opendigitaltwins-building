@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:willowinc:DrinkingWaterFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Drinking Water Fixture"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingFixture;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "chillingCapacity",
+      "displayName": {
+        "en": "Chilling Capacity"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "GPH"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
