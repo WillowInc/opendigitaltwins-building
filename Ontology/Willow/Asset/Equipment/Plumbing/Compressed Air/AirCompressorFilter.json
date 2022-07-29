@@ -1,0 +1,36 @@
+{
+  "@id": "dtmi:com:willowinc:AirCompressorFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Compressor Filter"
+  },
+  "description": {
+    "en": "A filter that removes contaminants from the compressed air line to delivery clean air to the equipment."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CompressedAirEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "displayName": {
+        "en": "Flow Rate"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "CFM"
+    },
+    {
+      "@type": "Property",
+      "name": "workingPressure",
+      "displayName": {
+        "en": "Working Pressure"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "PSIG"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

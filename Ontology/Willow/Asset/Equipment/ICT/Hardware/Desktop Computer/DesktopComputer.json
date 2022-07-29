@@ -1,13 +1,14 @@
 {
-  "@id": "dtmi:com:willowinc:DrinkingFountain;1",
+  "@id": "dtmi:com:willowinc:DesktopComputer;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Drinking Fountain"
+    "en": "Desktop Computer"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingFixture;1"
+    "dtmi:com:willowinc:ICTHardware;1"
   ],
   "contents": [
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

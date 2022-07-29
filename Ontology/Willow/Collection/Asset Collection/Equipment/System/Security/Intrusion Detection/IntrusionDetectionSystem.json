@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:IntrusionDetectionSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Intrusion Detection System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SecuritySystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

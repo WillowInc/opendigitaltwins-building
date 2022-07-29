@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:AllInOneDesktopComputer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "All-In-One Desktop Computer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DesktopComputer;1",
+    "dtmi:com:willowinc:ComputerMonitor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
