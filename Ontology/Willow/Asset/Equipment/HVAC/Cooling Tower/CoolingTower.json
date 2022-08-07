@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Cooling Tower"
   },
+  "description": {
+    "en": "A device that rejects waste heat to the atmosphere through the cooling of a coolant stream, usually a water stream to a lower temperature."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",
     "dtmi:digitaltwins:rec_3_3:asset:CoolingTower;1"

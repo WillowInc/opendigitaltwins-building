@@ -4,9 +4,12 @@
   "displayName": {
     "en": "Rooftop Unit"
   },
+  "description": {
+    "en": "A packaged air conditioner mounted on a roof which contains the condenser, compressor, and evaporator in a single unit."
+  },
   "extends" : [
     "dtmi:com:willowinc:AirHandlingUnit;1",
-    "dtmi:digitaltwins:rec_3_3:asset:RooftopUnit;1"
+    "dtmi:com:willowinc:PackagedAirConditioner;1"
   ],
   "contents": [
   ],

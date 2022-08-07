@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:IndirectEvaporativeCoolingTower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Indirect Evaporative Cooling Tower"
+  },
+  "description": {
+    "en": "An evaporative cooling tower where the process fluid is not in direct contact with the ambient air (a.k.a. Fluid Cooler)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EvaporativeCoolingTower;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
