@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Air Handling Unit"
   },
+  "description": {
+    "en": "An enclosure with a fan or fans and other necessary components that delivers air to a space via ductwork and performs one or more of the functions of cleaning, heating, cooling, humidifying, dehumidifying, ventilating or circulating the air."
+  },
   "extends": [
     "dtmi:com:willowinc:HVACEquipment;1",
     "dtmi:digitaltwins:rec_3_3:asset:AirHandlingUnit;1"

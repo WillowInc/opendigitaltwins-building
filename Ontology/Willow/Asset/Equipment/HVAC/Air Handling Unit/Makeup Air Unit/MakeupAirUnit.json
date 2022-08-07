@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Makeup Air Unit"
   },
+  "description": {
+    "en": "A device designed to condition ventilation air introduced into a space or to replace air exhausted from a process or general area exhaust. The device may be used to prevent negative pressure within buildings or to reduce airborne contaminants in a space."
+  },
   "extends" : [
     "dtmi:com:willowinc:AirHandlingUnit;1",
     "dtmi:digitaltwins:rec_3_3:asset:MakeupAirUnit;1"

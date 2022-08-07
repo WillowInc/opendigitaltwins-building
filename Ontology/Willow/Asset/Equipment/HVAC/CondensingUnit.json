@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Condensing Unit"
   },
+  "description": {
+    "en": "A type of heat exchanger comprised of a compressor, a condenser, and a fan whose function is to remove heat in a split system air conditioner. It is typically located outdoors."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",
     "dtmi:digitaltwins:rec_3_3:asset:CondensingUnit;1"
