@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:willowinc:SurfaceTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Surface Temperature Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
