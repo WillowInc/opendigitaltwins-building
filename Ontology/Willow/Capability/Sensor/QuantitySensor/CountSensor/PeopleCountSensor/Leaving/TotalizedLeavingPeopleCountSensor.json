@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:TotalizedLeavingPeopleCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Totalized Leaving People Count Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LeavingPeopleCountSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
