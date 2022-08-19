@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Unique Entering People Count Sensor"
   },
+  "description": {
+    "en": "A totalized count of the unique number of people entering a space over a defined period of time."
+  },
   "extends" : [
     "dtmi:com:willowinc:EnteringPeopleCountSensor;1"
   ],

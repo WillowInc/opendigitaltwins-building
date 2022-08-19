@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Leaving People Count Sensor"
   },
+  "description": {
+    "en": "A totalized count of the number of people leaving a space over a defined period of time. Assumed to be the total, or nonunique, count of people."
+  },
   "extends" : [
     "dtmi:com:willowinc:PeopleCountSensor;1"
   ],
