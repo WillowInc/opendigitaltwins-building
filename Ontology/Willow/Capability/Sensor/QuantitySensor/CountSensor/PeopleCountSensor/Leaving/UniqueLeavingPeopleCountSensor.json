@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:UniqueLeavingPeopleCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unique Leaving People Count Sensor"
+  },
+  "description": {
+    "en": "A totalized count of the unique number of people leaving a space over a defined period of time."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LeavingPeopleCountSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

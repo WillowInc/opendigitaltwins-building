@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Renewable Import Active Electrical Energy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

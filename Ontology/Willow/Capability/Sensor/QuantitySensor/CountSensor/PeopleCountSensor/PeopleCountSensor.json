@@ -4,6 +4,9 @@
   "displayName": {
     "en": "People Count Sensor"
   },
+  "description": {
+    "en": "A count of the number of people in a space. It is also the net of people entering and leaving a space."
+  },
   "extends" : [
     "dtmi:com:willowinc:CountSensor;1"
   ],
