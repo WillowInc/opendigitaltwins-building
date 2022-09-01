@@ -20,7 +20,9 @@ In this example, we expand upon the Electrical distribution example and introduc
 
 ## Assigning Meters to Buildings
 
-In this example, we depict how metering measurements get assigned to a space such as a Building. 
+### Electrical
+
+In this example, we depict how electrical energy metering measurements get assigned to a space such as a Building. 
 
 ![Metering-Example2](Images/Metering-Example2.png)
 
@@ -33,6 +35,28 @@ In this example, we depict how metering measurements get assigned to a space suc
 4. Because the Building has three service entrances, the WillowTwin will calculate the aggregate energy for the building by summing up the Electrical Energy Sensors of each service entrance and assigning it to the Building in #4.
 
 5. In other scenarios, the Building’s total energy consumption may be ingested directly into the WillowTwin. The same isCapabilityOf relationship is used in #5 as the calculated Electrical Energy Sensor in #4 which allows the WillowTwin to treat them the same regardless of how the calculation was performed by the underlying metering topology.
+
+### Domestic Water
+
+In this example, we depitct how domestic water metering measurements get assigned to a space such as a Building.
+
+![DomesticWater-Metering-Example2](Images/Metering-DomesticWater-Example2.png)
+
+1. In this example, we depict how domestic water metering measurements get assigned to a space such as a Building. This is similar to the electrical metering; however, in the case of domestic water, we often cannot rely upon establishing a twin of an asset such as a valve or a pipe which serves the Building like we have shown in the case of an electrical metering with the electrical distribution equipment such as a Switchgear, Switchboard, or Panelboard. We know there are one or more water meters that measure the flow of water entering the building from the utility. We are showing one of the capabilities of the meter, Water Volume Sensor, which isCapabilityOf the Water Meter. We do not use hostedBy because we are establishing the Water Meter as the primary asset which participates in the service for the Building rather than a pipe or valve.
+
+2. We use the servedBy relationship from the Building to the Water Meter to indicate the service entrance relationship and thus all capabilities related to the Water Meter (i.e. Water Volume Sensor) can be attributed to the Building’s metering aggregate calculations.
+
+3. Many buildings may have multiple service entrances from the utility each with their own meters. In addition to the first service entrance indicated by #1, this building has two additional service entrances indicated by #3 each with their own metering capabilities.
+
+4. Because the Building has three service entrances, the WillowTwin will calculate the aggregate energy for the building by summing up the Water Volume Sensors of each service entrance and assigning it to the Building in #4.
+
+5. In other scenarios, the Building’s total water consumption may be ingested directly into the WillowTwin. The same isCapabilityOf relationship is used in #5 as the calculated Water Volume Sensor in #4 which allows the WillowTwin to treat them the same regardless of how the calculation was performed by the underlying metering topology.
+
+### Natural Gas
+
+In this example, we depitct how natural gas metering measurements get assigned to a space such as a Building. This is similar to the domestic water metering sample but uses a different type of meter and capability which are applicable for natural gas distribution.
+
+![DomesticWater-Metering-Example2](Images/Metering-NaturalGas-Example2.png)
 
 ## Assigning Meters to Tenant Units and Companies
 
