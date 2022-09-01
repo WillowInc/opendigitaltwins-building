@@ -7,5 +7,7 @@
   "extends" : [
     "dtmi:com:willowinc:StructuralFoundation;1"
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

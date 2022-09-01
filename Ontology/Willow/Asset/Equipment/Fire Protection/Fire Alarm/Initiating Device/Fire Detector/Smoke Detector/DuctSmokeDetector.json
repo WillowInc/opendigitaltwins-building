@@ -5,5 +5,7 @@
     "en": "Duct Smoke Detector"
   },
   "extends": "dtmi:com:willowinc:SmokeDetector;1",
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

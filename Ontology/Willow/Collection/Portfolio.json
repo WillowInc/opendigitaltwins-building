@@ -26,5 +26,7 @@
       "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }
