@@ -19,5 +19,7 @@
       "comment": "basic, sit/stand"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

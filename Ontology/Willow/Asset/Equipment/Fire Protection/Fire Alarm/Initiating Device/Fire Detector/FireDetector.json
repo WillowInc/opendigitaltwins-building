@@ -5,5 +5,7 @@
     "en": "Fire Detector"
   },
   "extends": "dtmi:com:willowinc:FireAlarmInitiatingDevice;1",
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

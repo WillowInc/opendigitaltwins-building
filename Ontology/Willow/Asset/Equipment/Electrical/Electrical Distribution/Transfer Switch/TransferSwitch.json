@@ -18,5 +18,7 @@
       "schema": "dtmi:com:willowinc:ElectricalBus;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }
