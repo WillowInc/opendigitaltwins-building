@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:Settings;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Settings"
+  },
+  "description": {
+    "en": "An abstract superclass for settings or properties that extend a twin's base properties."
+  },
+  "extends" : [
+
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
