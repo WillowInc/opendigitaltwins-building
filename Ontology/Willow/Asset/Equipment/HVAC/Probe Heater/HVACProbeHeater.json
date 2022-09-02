@@ -9,10 +9,7 @@
   ],
   "contents": [
     {
-      "@type": [
-        "Power",
-        "Property"
-      ],
+      "@type": ["Property", "Power"],
       "displayName": {
         "en": "power input"
       },
