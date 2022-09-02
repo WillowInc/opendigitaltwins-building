@@ -5,7 +5,7 @@
     "en": "Steam Flow Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:WaterFlowSensor;1"
+    "dtmi:com:willowinc:VolumeFlowSensor;1"
   ],
   "contents": [
   ],
