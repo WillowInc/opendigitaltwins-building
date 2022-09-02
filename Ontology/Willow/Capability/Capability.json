@@ -428,10 +428,7 @@
       }
     },
     {
-      "@type": [
-        "Property",
-        "TimeSpan"
-      ],
+      "@type": ["Property", "TimeSpan"],
       "name": "trendInterval",
       "displayName": {
         "en": "Trend Interval"
@@ -1321,6 +1318,7 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }
