@@ -22,16 +22,29 @@
       "schema": "string"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Volume"],
       "name": "volume",
       "displayName": {
         "en": "Volume"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "cubicMetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "volume unit"
+      },
+      "name": "volumeUnit",
+      "annotates": "volume",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

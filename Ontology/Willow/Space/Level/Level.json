@@ -13,25 +13,50 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "Length"],
       "name": "elevation",
       "displayName": {
         "en": "Elevation (Sea Level)"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "elevation unit"
+      },
+      "name": "elevationUnit",
+      "annotates": "elevation",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
       "name": "siteElevation",
       "displayName": {
         "en": "Elevation (Site)"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "site elevation unit"
+      },
+      "name": "siteElevationUnit",
+      "annotates": "siteElevation",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

@@ -44,16 +44,29 @@
       }
     },
     {
-      "@type": "Property",
+      "@type": ["Mass", "Property"],
       "name": "loadCapacity",
       "displayName": {
         "en": "Load Capacity"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "kilogram"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "load capacity unit"
+      },
+      "name": "loadCapacityUnit",
+      "annotates": "loadCapacity",
+      "overrides": "unit",
+      "schema": "MassUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

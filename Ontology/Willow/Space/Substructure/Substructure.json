@@ -57,22 +57,46 @@
       }
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Length"],
       "name": "depth",
       "displayName": {
         "en": "Depth (Below Sea Level)"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "depth unit"
+      },
+      "name": "depthUnit",
+      "annotates": "depth",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
       "name": "height",
       "displayName": {
         "en": "Height"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "height unit"
+      },
+      "name": "heightUnit",
+      "annotates": "height",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -94,6 +118,7 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

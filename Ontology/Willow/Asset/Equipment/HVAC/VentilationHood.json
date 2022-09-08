@@ -37,16 +37,29 @@
       "writable": true
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
         "en": "maximum airflow rating"
       },
       "name": "maxAirflowRating",
       "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum airflow rating unit"
+      },
+      "name": "maxAirflowRatingUnit",
+      "annotates": "maxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
       "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }
