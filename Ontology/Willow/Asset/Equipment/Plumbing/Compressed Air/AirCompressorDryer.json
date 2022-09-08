@@ -19,17 +19,29 @@
       "comment": "CFM"
     },
     {
-      "@type": "Property",
-      "name": "workingPressure",
+      "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "Working Pressure"
+        "en": "working pressure"
       },
-      "writable": true,
+      "name": "workingPressure",
       "schema": "double",
-      "comment": "PSIG"
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

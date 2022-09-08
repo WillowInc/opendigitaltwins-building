@@ -12,27 +12,51 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "VolumeFlowRate"],
       "name": "flowRate",
       "displayName": {
         "en": "Flow Rate"
       },
       "writable": true,
       "schema": "integer",
+      "unit": "litrePerSecond",
       "comment": "CFM"
     },
     {
-      "@type": "Property",
-      "name": "workingPressure",
+      "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "Working Pressure"
+        "en": "flow rate unit"
       },
-      "writable": true,
+      "name": "flowRateUnit",
+      "annotates": "flowRate",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "working pressure"
+      },
+      "name": "workingPressure",
       "schema": "double",
-      "comment": "PSIG"
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

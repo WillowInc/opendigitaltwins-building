@@ -16,16 +16,29 @@
       "writable": true
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Length"],
       "displayName": {
         "en": "diameter"
       },
       "name": "diameter",
       "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "diameter unit"
+      },
+      "name": "diameterUnit",
+      "annotates": "diameter",
+      "overrides": "unit",
+      "schema": "LengthUnit",
       "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

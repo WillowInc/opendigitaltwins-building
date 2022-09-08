@@ -9,14 +9,25 @@
   ],
   "contents": [
     {
-      "@type": "Property",
-      "name": "stepWidth",
+      "@type": ["Property", "Length"],
       "displayName": {
-        "en": "Step Width"
+        "en": "step width"
       },
-      "writable": true,
+      "name": "stepWidth",
       "schema": "double",
-      "comment": "inch"
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "step width unit"
+      },
+      "name": "stepWidthUnit",
+      "annotates": "stepWidth",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     },
     {
       "@type": "Component",
@@ -36,6 +47,7 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }
