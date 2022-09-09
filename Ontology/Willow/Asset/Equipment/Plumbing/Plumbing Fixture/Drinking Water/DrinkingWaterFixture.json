@@ -9,17 +9,29 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "VolumeFlowRate"],
       "name": "chillingCapacity",
       "displayName": {
         "en": "Chilling Capacity"
       },
       "writable": true,
-      "schema": "integer",
-      "comment": "GPH"
+      "schema": "double",
+      "unit": "litrePerHour"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "chilling capacity unit"
+      },
+      "name": "chillingCapacityUnit",
+      "annotates": "chillingCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

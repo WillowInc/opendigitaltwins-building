@@ -9,14 +9,25 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "VolumeFlowRate"],
       "name": "capacity",
       "displayName": {
         "en": "Capacity"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "CFM"
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "capacity unit"
+      },
+      "name": "capacityUnit",
+      "annotates": "capacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
     },
     {
       "@type": ["Property", "Pressure"],

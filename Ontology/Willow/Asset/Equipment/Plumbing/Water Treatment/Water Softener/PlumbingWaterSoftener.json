@@ -18,37 +18,71 @@
       "schema": "string"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "VolumeFlowRate"],
       "name": "flowCapacity",
       "displayName": {
         "en": "Flow Capacity"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "GPM"
+      "unit": "litrePerSecond"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "flow capacity unit"
+      },
+      "name": "flowCapacityUnit",
+      "annotates": "flowCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Volume"],
       "name": "tankCapacity",
       "displayName": {
         "en": "Tank Capacity"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "gallon"
+      "unit": "litre"
     },
     {
-      "@type": "Property",
-      "name": "workingPressure",
+      "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "Working Pressure"
+        "en": "tank capacity unit"
       },
-      "writable": true,
+      "name": "tankCapacityUnit",
+      "annotates": "tankCapacity",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "working pressure"
+      },
+      "name": "workingPressure",
       "schema": "integer",
-      "comment": "PSI"
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

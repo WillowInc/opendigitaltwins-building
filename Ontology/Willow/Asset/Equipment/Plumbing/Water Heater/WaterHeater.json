@@ -10,27 +10,39 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "Volume"],
       "name": "firstHourDelivery",
       "displayName": {
         "en": "First Hour Delivery"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "gallon"
+      "unit": "litre"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "first hour delivery unit"
+      },
+      "name": "firstHourDeliveryUnit",
+      "annotates": "firstHourDelivery",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
       "name": "recovery100FRise",
       "displayName": {
         "en": "Recovery @ 100F Rise"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "GPH"
+      "unit": "gallonPerHour"
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

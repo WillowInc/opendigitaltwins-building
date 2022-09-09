@@ -9,27 +9,50 @@
   ],
   "contents": [
     {
-      "@type": "Property",
-      "name": "workingPressure",
+      "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "Working Pressure"
+        "en": "working pressure"
       },
-      "writable": true,
+      "name": "workingPressure",
       "schema": "integer",
-      "comment": "PSIG"
+      "unit": "bar",
+      "writable": true
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
       "name": "pipeDiameter",
       "displayName": {
         "en": "Pipe Diameter"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "inch"
+      "unit": "millimetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "pipe diameter unit"
+      },
+      "name": "pipeDiameterUnit",
+      "annotates": "pipeDiameter",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }
