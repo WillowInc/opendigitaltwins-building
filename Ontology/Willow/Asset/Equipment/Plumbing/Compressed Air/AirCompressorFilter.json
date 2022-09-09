@@ -19,8 +19,7 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "litrePerSecond",
-      "comment": "CFM"
+      "unit": "litrePerSecond"
     },
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
