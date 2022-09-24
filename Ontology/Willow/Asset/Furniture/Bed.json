@@ -5,8 +5,7 @@
     "en": "Bed"
   },
   "extends" : [
-    "dtmi:com:willowinc:Furniture;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Bed;1"
+    "dtmi:com:willowinc:Furniture;1"
   ],
   "contents": [
     {

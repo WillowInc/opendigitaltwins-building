@@ -5,8 +5,7 @@
     "en": "Water Heater"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:WaterHeater;1"
+    "dtmi:com:willowinc:PlumbingEquipment;1"
   ],
   "contents": [
     {

@@ -5,8 +5,7 @@
     "en": "Meter Equipment Group"
   },
   "extends" : [
-    "dtmi:com:willowinc:EquipmentGroup;1",
-    "dtmi:digitaltwins:rec_3_3:asset:MeterEquipmentGroup;1"
+    "dtmi:com:willowinc:EquipmentGroup;1"
   ],
   "contents": [
   ],

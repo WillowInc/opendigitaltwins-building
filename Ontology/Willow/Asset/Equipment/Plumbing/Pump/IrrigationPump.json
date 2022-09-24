@@ -5,8 +5,7 @@
     "en": "Irrigation Pump"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingPump;1",
-    "dtmi:digitaltwins:rec_3_3:asset:IrrigationPump;1"
+    "dtmi:com:willowinc:PlumbingPump;1"
   ],
   "contents": [
   ],

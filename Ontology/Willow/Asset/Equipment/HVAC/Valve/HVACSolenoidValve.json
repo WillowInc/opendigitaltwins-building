@@ -5,8 +5,7 @@
     "en": "Solenoid Valve (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACSolenoidValve;1"
+    "dtmi:com:willowinc:HVACValve;1"
   ],
   "contents": [
 

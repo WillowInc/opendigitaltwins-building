@@ -5,8 +5,7 @@
     "en": "Backflow Preventer (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACBackflowPreventer;1"
+    "dtmi:com:willowinc:HVACValve;1"
   ],
   "contents": [
   ],

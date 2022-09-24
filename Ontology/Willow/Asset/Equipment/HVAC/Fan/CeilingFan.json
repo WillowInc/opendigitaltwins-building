@@ -5,13 +5,45 @@
     "en": "Ceiling Fan"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACFan;1",
-    "dtmi:digitaltwins:rec_3_3:asset:CeilingFan;1"
+    "dtmi:com:willowinc:HVACFan;1"
   ],
   "contents": [
-
+    {
+      "@type": ["AngularVelocity", "Property"],
+      "displayName": {
+        "en": "maximum rotation speed"
+      },
+      "name": "maxRotationSpeed",
+      "schema": "double",
+      "unit": "revolutionPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "blade diameter"
+      },
+      "name": "bladeDiameter",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "blade diameter unit"
+      },
+      "name": "bladeDiameterUnit",
+      "annotates": "bladeDiameter",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

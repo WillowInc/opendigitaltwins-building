@@ -5,8 +5,7 @@
     "en": "HVAC Humidification System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACWaterSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACHumidificationSystem;1"
+    "dtmi:com:willowinc:HVACWaterSystem;1"
   ],
   "contents": [
   ],

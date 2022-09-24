@@ -8,9 +8,18 @@
     "en": "A Capability indicates the capacity of an entity, be it a Space, an Asset, or a Device, to produce or ingest data which can be trended as a time series. This is roughly equivalent to the established Brick Schema and generic BMS term \"point\". Specific subclasses specialize this behaviour: Sensor entities harvest data from the real world, Actuator entities accept commands from a digital twin platform, and Parameter entities configure some capability or system."
   },
   "extends": [
-    "dtmi:digitaltwins:rec_3_3:core:Capability;1"
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability. Inverse of: hasCapability"
+      },
+      "displayName": {
+        "en": "is capabilty of"
+      },
+      "name": "isCapabilityOf"
+    },
     {
       "@type": "Relationship",
       "name": "hasSettings",
@@ -36,6 +45,53 @@
       "displayName": {
         "en": "is controlled by"
       }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -155,6 +211,18 @@
           }
         }
       }
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Time when a core:Capability's value was last updated (see core:lastValue)."
+      },
+      "displayName": {
+        "en": "last value time"
+      },
+      "name": "lastValueTime",
+      "schema": "dateTime",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -306,6 +374,14 @@
           }
         ]
       }
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "categorization properties"
+      },
+      "name": "categorizationProperties",
+      "schema": "dtmi:com:willowinc:CapabilityPropertySet;1"
     },
     {
       "@type": "Property",

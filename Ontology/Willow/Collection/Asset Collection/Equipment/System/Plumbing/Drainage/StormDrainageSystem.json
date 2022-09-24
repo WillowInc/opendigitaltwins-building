@@ -5,8 +5,7 @@
     "en": "Storm Drainage System"
   },
   "extends" : [
-    "dtmi:com:willowinc:DrainageSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:StormDrainageSystem;1"
+    "dtmi:com:willowinc:DrainageSystem;1"
   ],
   "contents": [
   ],

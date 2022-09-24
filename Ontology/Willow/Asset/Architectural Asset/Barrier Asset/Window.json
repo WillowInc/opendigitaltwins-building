@@ -5,8 +5,7 @@
     "en": "Window"
   },
   "extends" : [
-    "dtmi:com:willowinc:BarrierAsset;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Window;1"
+    "dtmi:com:willowinc:BarrierAsset;1"
   ],
   "contents": [
     

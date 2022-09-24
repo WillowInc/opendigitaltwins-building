@@ -5,8 +5,7 @@
     "en": "Lighting Controller"
   },
   "extends" : [
-    "dtmi:com:willowinc:LightingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:LightingController;1"
+    "dtmi:com:willowinc:LightingEquipment;1"
   ],
   "contents": [
   ],

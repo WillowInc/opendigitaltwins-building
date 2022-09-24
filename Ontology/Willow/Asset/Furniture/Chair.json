@@ -5,8 +5,7 @@
     "en": "Chair"
   },
   "extends" : [
-    "dtmi:com:willowinc:Furniture;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Chair;1"
+    "dtmi:com:willowinc:Furniture;1"
   ],
   "contents": [
     {

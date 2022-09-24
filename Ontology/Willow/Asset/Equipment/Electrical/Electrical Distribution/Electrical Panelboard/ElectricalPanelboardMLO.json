@@ -5,8 +5,7 @@
     "en": "Electrical Panelboard MLO"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalPanelboard;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ElectricalPanelboardMLO;1"
+    "dtmi:com:willowinc:ElectricalPanelboard;1"
   ],
   "contents": [
     

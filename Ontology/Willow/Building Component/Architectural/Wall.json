@@ -5,8 +5,7 @@
     "en": "Wall"
   },
   "extends" : [
-    "dtmi:com:willowinc:ArchitecturalBuildingComponent;1",
-    "dtmi:digitaltwins:rec_3_3:building:Wall;1"
+    "dtmi:com:willowinc:ArchitecturalBuildingComponent;1"
   ],
   "@context": [
     "dtmi:dtdl:context;3"

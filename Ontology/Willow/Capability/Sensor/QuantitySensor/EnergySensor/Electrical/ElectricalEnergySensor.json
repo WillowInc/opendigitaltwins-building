@@ -5,8 +5,7 @@
     "en": "Electrical Energy Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:EnergySensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:ElectricalEnergySensor;1"
+    "dtmi:com:willowinc:EnergySensor;1"
   ],
   "contents": [
 

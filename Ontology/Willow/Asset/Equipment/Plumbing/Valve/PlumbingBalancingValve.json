@@ -5,8 +5,7 @@
     "en": "Balancing Valve (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingBalancingValve;1"
+    "dtmi:com:willowinc:PlumbingValve;1"
   ],
   "contents": [
 

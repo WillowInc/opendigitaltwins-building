@@ -5,8 +5,7 @@
     "en": "HVAC Supply Air System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACConditionedAirSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACSupplyAirSystem;1"
+    "dtmi:com:willowinc:HVACConditionedAirSystem;1"
   ],
   "contents": [
   ],

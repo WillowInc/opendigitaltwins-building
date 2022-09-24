@@ -5,8 +5,7 @@
     "en": "Intercom Entry"
   },
   "extends" : [
-    "dtmi:com:willowinc:AccessControlEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:IntercomEntry;1"
+    "dtmi:com:willowinc:AccessControlEquipment;1"
   ],
   "contents": [
   ],

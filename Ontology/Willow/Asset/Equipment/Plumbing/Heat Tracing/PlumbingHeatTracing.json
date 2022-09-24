@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:PlumbingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingHeatTracing;1"
+    "dtmi:com:willowinc:HeatTracing;1"
   ],
   "contents": [
 

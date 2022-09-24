@@ -5,8 +5,7 @@
     "en": "DC Electrical System"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:DCElectricalSystem;1"
+    "dtmi:com:willowinc:ElectricalSystem;1"
   ],
   "contents": [
   ],

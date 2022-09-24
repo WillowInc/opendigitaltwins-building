@@ -1,0 +1,145 @@
+{
+  "@id": "dtmi:com:willowinc:Fan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "nominal external static pressure"
+      },
+      "name": "nominalExternalStaticPressure",
+      "schema": "double",
+      "unit": "pascal",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal external static pressure unit"
+      },
+      "name": "nominalExternalStaticPressureUnit",
+      "annotates": "nominalExternalStaticPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "nominal airflow"
+      },
+      "name": "nominalAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal airflow unit"
+      },
+      "name": "nominalAirflowUnit",
+      "annotates": "nominalAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "motor power"
+      },
+      "name": "motorPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "motor power unit"
+      },
+      "name": "motorPowerUnit",
+      "annotates": "motorPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "minimum airflow rating"
+      },
+      "name": "minAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "minimum airflow rating unit"
+      },
+      "name": "minAirflowRatingUnit",
+      "annotates": "minAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "maximum airflow rating"
+      },
+      "name": "maxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum airflow rating unit"
+      },
+      "name": "maxAirflowRatingUnit",
+      "annotates": "maxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "drive type"
+      },
+      "name": "driveType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Direct",
+            "name": "Direct"
+          },
+          {
+            "enumValue": "Belt",
+            "name": "Belt"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

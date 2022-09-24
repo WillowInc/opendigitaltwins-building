@@ -5,11 +5,57 @@
     "en": "Fire Sprinkler Head"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:FireSprinklerHead;1"
+    "dtmi:com:willowinc:SprinklerEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Upright",
+            "name": "Upright"
+          },
+          {
+            "enumValue": "SideWall",
+            "name": "SideWall"
+          },
+          {
+            "enumValue": "Pendant",
+            "name": "Pendant"
+          },
+          {
+            "enumValue": "ConcealedPendant",
+            "name": "ConcealedPendant"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "K-factor (metric)"
+      },
+      "name": "kFactorMetric",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "K-factor (imperial)"
+      },
+      "name": "kFactorImperial",
+      "schema": "integer",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

@@ -8,8 +8,7 @@
     "en": "A level of a building which is wholly or partially below ground level."
   },
   "extends" : [
-    "dtmi:com:willowinc:Level;1",
-    "dtmi:digitaltwins:rec_3_3:building:BasementLevel;1"
+    "dtmi:com:willowinc:Level;1"
   ],
   "contents": [
 

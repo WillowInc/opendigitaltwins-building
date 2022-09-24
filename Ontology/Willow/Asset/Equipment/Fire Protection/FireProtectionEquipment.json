@@ -5,8 +5,7 @@
     "en": "Fire Protection Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:Equipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:FireProtectionEquipment;1"
+    "dtmi:com:willowinc:Equipment;1"
   ],
   "contents": [
   ],

@@ -5,8 +5,7 @@
     "en": "Pre-Action Cabinet"
   },
   "extends" : [
-    "dtmi:com:willowinc:PreActionEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PreActionCabinet;1"
+    "dtmi:com:willowinc:PreActionEquipment;1"
   ],
   "contents": [
 

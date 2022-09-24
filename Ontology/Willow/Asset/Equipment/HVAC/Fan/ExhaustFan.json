@@ -5,8 +5,7 @@
     "en": "Exhaust Fan"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACFan;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ExhaustFan;1"
+    "dtmi:com:willowinc:HVACFan;1"
   ],
   "contents": [
   ],

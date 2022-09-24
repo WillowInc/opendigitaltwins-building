@@ -56,7 +56,7 @@
         "en": "cooling method"
       },
       "name": "coolingMethod",
-      "schema": "dtmi:digitaltwins:rec_3_3:asset:HVACCoolingMethod;1"
+      "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
     }
   ],
   "@context": [

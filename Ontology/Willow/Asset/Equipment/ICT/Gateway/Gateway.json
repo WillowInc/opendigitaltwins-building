@@ -5,8 +5,7 @@
     "en": "Gateway"
   },
   "extends" : [
-    "dtmi:com:willowinc:DataNetworkEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Gateway;1"
+    "dtmi:com:willowinc:DataNetworkEquipment;1"
   ],
   "contents": [
     {

@@ -5,10 +5,18 @@
     "en": "Conveyance Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:Equipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ConveyanceEquipment;1"
+    "dtmi:com:willowinc:Equipment;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": "string",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

@@ -5,13 +5,146 @@
     "en": "Fan Coil Unit"
   },
   "extends" : [
-    "dtmi:com:willowinc:TerminalUnit;1",
-    "dtmi:digitaltwins:rec_3_3:asset:FanCoilUnit;1"
+    "dtmi:com:willowinc:TerminalUnit;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "vertical",
+            "name": "vertical"
+          },
+          {
+            "enumValue": "horizontal",
+            "name": "horizontal"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "refrigerant type"
+      },
+      "name": "refrigerantType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal cooling capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal cooling capacity unit"
+      },
+      "name": "nominalCoolingCapacityUnit",
+      "annotates": "nominalCoolingCapacity",
+      "overrides": "unit",
+      "schema": "EnergyRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "net sensible cooling capacity"
+      },
+      "name": "netSensibleCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "net sensible cooling capacity unit"
+      },
+      "name": "netSensibleCoolingCapacityUnit",
+      "annotates": "netSensibleCoolingCapacity",
+      "overrides": "unit",
+      "schema": "EnergyRateUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "mounting"
+      },
+      "name": "mounting",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "wall",
+            "name": "wall"
+          },
+          {
+            "enumValue": "floor",
+            "name": "floor"
+          },
+          {
+            "enumValue": "ceiling",
+            "name": "ceiling"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "filter type"
+      },
+      "name": "filterType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "secondary cooling method"
+      },
+      "name": "secondaryCoolingMethod",
+      "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "primary cooling method"
+      },
+      "name": "primaryCoolingMethod",
+      "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

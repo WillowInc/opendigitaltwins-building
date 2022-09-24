@@ -5,8 +5,7 @@
     "en": "Furniture Collection"
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetCollection;1",
-    "dtmi:digitaltwins:rec_3_3:asset:FurnitureCollection;1"
+    "dtmi:com:willowinc:AssetCollection;1"
   ],
   "contents": [
   ],

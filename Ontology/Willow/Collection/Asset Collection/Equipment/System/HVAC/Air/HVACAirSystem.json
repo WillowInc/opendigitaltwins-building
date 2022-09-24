@@ -5,8 +5,7 @@
     "en": "HVAC Air System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACAirSystem;1"
+    "dtmi:com:willowinc:HVACSystem;1"
   ],
   "contents": [
   ],

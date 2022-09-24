@@ -5,11 +5,37 @@
     "en": "ICT Hardware"
   },
   "extends" : [
-    "dtmi:com:willowinc:ICTEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ICTHardware;1"
+    "dtmi:com:willowinc:ICTEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "mounted in rack"
+      },
+      "name": "mountedInRack",
+      "properties": [
+        {
+          "@type": "Property",
+          "displayName": {
+            "en": "rack top position (RU)"
+          },
+          "name": "rackTopPosition",
+          "schema": "integer",
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "displayName": {
+            "en": "rack bottom position (RU)"
+          },
+          "name": "rackBottomPosition",
+          "schema": "integer",
+          "writable": true
+        }
+      ],
+      "target": "dtmi:com:willowinc:ITRack;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

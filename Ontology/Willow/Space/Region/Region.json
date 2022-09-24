@@ -8,8 +8,7 @@
     "en": "An administrative geospatial unit larger than the individual real estate. For instance, \"Lombary\", \"North America\", \"The Back Bay\", \"Elnätsområde Syd\", etc."
   },
   "extends" : [
-    "dtmi:com:willowinc:Space;1",
-    "dtmi:digitaltwins:rec_3_3:core:Region;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
 

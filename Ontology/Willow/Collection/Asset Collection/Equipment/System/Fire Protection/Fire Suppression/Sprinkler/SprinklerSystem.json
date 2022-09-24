@@ -5,8 +5,7 @@
     "en": "Sprinkler System"
   },
   "extends" : [
-    "dtmi:com:willowinc:FireSuppressionSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerSystem;1"
+    "dtmi:com:willowinc:FireSuppressionSystem;1"
   ],
   "contents": [
   ],

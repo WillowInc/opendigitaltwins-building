@@ -5,8 +5,7 @@
     "en": "Check Valve (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingCheckValve;1"
+    "dtmi:com:willowinc:PlumbingValve;1"
   ],
   "contents": [
 

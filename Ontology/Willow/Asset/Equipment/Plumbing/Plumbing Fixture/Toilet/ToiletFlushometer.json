@@ -5,8 +5,7 @@
     "en": "Toilet with Flushometer"
   },
   "extends" : [
-    "dtmi:com:willowinc:Toilet;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ToiletFlushometer;1"
+    "dtmi:com:willowinc:Toilet;1"
   ],
   "contents": [
   ],

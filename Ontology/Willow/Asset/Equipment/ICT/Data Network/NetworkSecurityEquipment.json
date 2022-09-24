@@ -5,11 +5,27 @@
     "en": "Network Security Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:DataNetworkEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:NetworkSecurityEquipment;1"
+    "dtmi:com:willowinc:DataNetworkEquipment;1"
   ],
   "contents": [
-  
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "number of ports"
+      },
+      "name": "numberOfPorts",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "height (rack units)"
+      },
+      "name": "heightRUs",
+      "schema": "integer",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

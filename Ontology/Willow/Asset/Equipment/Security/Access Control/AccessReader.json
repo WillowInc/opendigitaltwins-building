@@ -5,8 +5,7 @@
     "en": "Access Reader"
   },
   "extends" : [
-    "dtmi:com:willowinc:AccessControlEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:AccessReader;1"
+    "dtmi:com:willowinc:AccessControlEquipment;1"
   ],
   "contents": [
   ],

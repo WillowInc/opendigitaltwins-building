@@ -5,8 +5,7 @@
     "en": "HVAC Exhaust Air System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACAirSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACExhaustAirSystem;1"
+    "dtmi:com:willowinc:HVACAirSystem;1"
   ],
   "contents": [
   ],

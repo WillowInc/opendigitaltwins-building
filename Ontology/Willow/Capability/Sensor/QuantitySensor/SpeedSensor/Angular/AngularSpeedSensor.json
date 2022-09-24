@@ -5,8 +5,7 @@
     "en": "Angular Speed Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:SpeedSensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:AngularSpeedSensor;1"
+    "dtmi:com:willowinc:SpeedSensor;1"
   ],
   "contents": [
 

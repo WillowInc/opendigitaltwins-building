@@ -5,8 +5,7 @@
     "en": "Architectural Asset"
   },
   "extends" : [
-    "dtmi:com:willowinc:Asset;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ArchitecturalAsset;1"
+    "dtmi:com:willowinc:Asset;1"
   ],
   "contents": [
   ],

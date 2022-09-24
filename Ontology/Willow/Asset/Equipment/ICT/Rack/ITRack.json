@@ -5,11 +5,66 @@
     "en": "IT Rack"
   },
   "extends" : [
-    "dtmi:com:willowinc:ICTEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ITRack;1"
+    "dtmi:com:willowinc:ICTEquipment;1"
   ],
   "contents": [
-  
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "TwoPost",
+            "name": "TwoPost"
+          },
+          {
+            "enumValue": "FourPost",
+            "name": "FourPost"
+          },
+          {
+            "enumValue": "Cabinet",
+            "name": "Cabinet"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "mounting"
+      },
+      "name": "mounting",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Wall",
+            "name": "Wall"
+          },
+          {
+            "enumValue": "Floor",
+            "name": "Floor"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "height (rack units)"
+      },
+      "name": "heightRUs",
+      "schema": "integer",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

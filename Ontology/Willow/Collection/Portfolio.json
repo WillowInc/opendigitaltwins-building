@@ -5,8 +5,7 @@
     "en": "Portfolio"
   },
   "extends" : [
-    "dtmi:com:willowinc:Collection;1",
-    "dtmi:digitaltwins:rec_3_3:core:Portfolio;1"
+    "dtmi:com:willowinc:Collection;1"
   ],
   "contents": [
     {
@@ -15,7 +14,7 @@
       "displayName": {
         "en": "operated by"
       },
-      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+      "target": "dtmi:com:willowinc:Agent;1"
     },
     {
       "@type": "Relationship",
@@ -23,7 +22,7 @@
       "displayName": {
         "en": "owned by"
       },
-      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+      "target": "dtmi:com:willowinc:Agent;1"
     }
   ],
   "@context": [

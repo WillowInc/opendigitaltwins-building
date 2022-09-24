@@ -5,8 +5,7 @@
     "en": "Slab"
   },
   "extends" : [
-    "dtmi:com:willowinc:StructuralBuildingComponent;1",
-    "dtmi:digitaltwins:rec_3_3:building:Slab;1"
+    "dtmi:com:willowinc:StructuralBuildingComponent;1"
   ],
   "contents": [
 

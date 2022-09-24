@@ -5,8 +5,7 @@
     "en": "Access Control Panel"
   },
   "extends" : [
-    "dtmi:com:willowinc:AccessControlEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:AccessControlPanel;1"
+    "dtmi:com:willowinc:AccessControlEquipment;1"
   ],
   "contents": [
   ],

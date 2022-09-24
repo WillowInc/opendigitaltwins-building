@@ -5,8 +5,7 @@
     "en": "Clean Agent Tank"
   },
   "extends" : [
-    "dtmi:com:willowinc:CleanAgentEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:CleanAgentTank;1"
+    "dtmi:com:willowinc:CleanAgentEquipment;1"
   ],
   "contents": [
 

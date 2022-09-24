@@ -5,8 +5,7 @@
     "en": "Water Treatment (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACWaterTreatment;1"
+    "dtmi:com:willowinc:HVACEquipment;1"
   ],
   "contents": [
     

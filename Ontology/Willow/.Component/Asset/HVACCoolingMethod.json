@@ -1,0 +1,90 @@
+{
+  "@id": "dtmi:com:willowinc:HVACCoolingMethod;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Method"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "DX",
+            "name": "DX"
+          },
+          {
+            "enumValue": "ChilledWater",
+            "name": "ChilledWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "refrigerant type"
+      },
+      "name": "refrigerantType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "outside diameter"
+      },
+      "name": "outsideDiameter",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "outside diameter unit"
+      },
+      "name": "outsideDiameterUnit",
+      "annotates": "outsideDiameter",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "rows",
+      "displayName": {
+        "en": "Rows"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "Coil row configuration"
+    },
+    {
+      "@type": "Property",
+      "name": "finsPerInch",
+      "displayName": {
+        "en": "Fins per Inch"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "Fins per inch"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

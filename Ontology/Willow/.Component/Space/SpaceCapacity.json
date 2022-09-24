@@ -1,33 +1,32 @@
 {
-  "@id": "dtmi:com:willowinc:HVACHeatingMethod;1",
+  "@id": "dtmi:com:willowinc:SpaceCapacity;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Heating Method"
+    "en": "Space Capacity"
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACHeatingMethod;1"
+    "dtmi:com:willowinc:SpaceComponent;1"
   ],
   "contents": [
     {
       "@type": "Property",
-      "name": "rows",
+      "name": "maxOccupancy",
       "displayName": {
-        "en": "Rows"
+        "en": "Maximum Occupancy"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "Coil row configuration"
+      "comment": "Building Code Occupancy"
     },
     {
       "@type": "Property",
-      "name": "finsPerInch",
+      "name": "seatingCapacity",
       "displayName": {
-        "en": "Fins per Inch"
+        "en": "Seating Capacity"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "Fins per inch"
+      "comment": "Count of seats"
     }
   ],
   "@context": [

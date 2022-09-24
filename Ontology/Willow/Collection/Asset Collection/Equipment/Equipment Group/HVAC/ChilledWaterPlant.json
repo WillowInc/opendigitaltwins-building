@@ -5,8 +5,7 @@
     "en": "Chilled Water Plant"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipmentGroup;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ChilledWaterPlant;1"
+    "dtmi:com:willowinc:HVACEquipmentGroup;1"
   ],
   "contents": [
   ],

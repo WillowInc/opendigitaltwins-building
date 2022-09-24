@@ -5,8 +5,7 @@
     "en": "Supply Fan"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACFan;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SupplyFan;1"
+    "dtmi:com:willowinc:HVACFan;1"
   ],
   "contents": [
   ],

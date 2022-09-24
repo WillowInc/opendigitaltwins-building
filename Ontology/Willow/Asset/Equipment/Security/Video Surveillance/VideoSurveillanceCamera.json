@@ -5,8 +5,7 @@
     "en": "Video Surveillance Camera"
   },
   "extends" : [
-    "dtmi:com:willowinc:VideoSurveillanceEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SurveillanceCamera;1"
+    "dtmi:com:willowinc:VideoSurveillanceEquipment;1"
   ],
   "contents": [
     

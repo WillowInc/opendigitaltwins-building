@@ -5,8 +5,7 @@
     "en": "Clean Agent Cabinet"
   },
   "extends" : [
-    "dtmi:com:willowinc:CleanAgentEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:CleanAgentCabinet;1"
+    "dtmi:com:willowinc:CleanAgentEquipment;1"
   ],
   "contents": [
 

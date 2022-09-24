@@ -5,11 +5,35 @@
     "en": "Expansion Tank"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingTank;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingExpansionTank;1"
+    "dtmi:com:willowinc:PlumbingTank;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Diaphragm",
+            "name": "Diaphragm"
+          },
+          {
+            "enumValue": "Compression",
+            "name": "Compression"
+          },
+          {
+            "enumValue": "Bladder",
+            "name": "Bladder"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

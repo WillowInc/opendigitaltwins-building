@@ -5,8 +5,7 @@
     "en": "Energy sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:EnergySensor;1"
+    "dtmi:com:willowinc:QuantitySensor;1"
   ],
   "contents": [
 

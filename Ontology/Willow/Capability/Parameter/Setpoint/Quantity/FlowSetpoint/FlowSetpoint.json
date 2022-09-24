@@ -5,8 +5,7 @@
     "en": "Flow Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantitySetpoint;1",
-    "dtmi:digitaltwins:rec_3_3:device:FlowSetpoint;1"
+    "dtmi:com:willowinc:QuantitySetpoint;1"
   ],
   "contents": [
 

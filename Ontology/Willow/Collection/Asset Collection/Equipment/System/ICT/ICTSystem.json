@@ -5,8 +5,7 @@
     "en": "ICT System"
   },
   "extends" : [
-    "dtmi:com:willowinc:System;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ITSystem;1"
+    "dtmi:com:willowinc:System;1"
   ],
   "contents": [
   ],

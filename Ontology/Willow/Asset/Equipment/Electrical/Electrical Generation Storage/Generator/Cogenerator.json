@@ -5,8 +5,7 @@
     "en": "Cogenerator"
   },
   "extends" : [
-    "dtmi:com:willowinc:Generator;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Cogenerator;1"
+    "dtmi:com:willowinc:Generator;1"
   ],
   "contents": [
 

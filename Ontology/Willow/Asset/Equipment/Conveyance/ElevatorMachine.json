@@ -5,13 +5,45 @@
     "en": "Elevator Machine"
   },
   "extends" : [
-    "dtmi:com:willowinc:ConveyanceEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ElevatorMachine;1"
+    "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Mass", "Property"],
+      "displayName": {
+        "en": "weight capacity"
+      },
+      "name": "weightCapacity",
+      "schema": "double",
+      "unit": "kilogram",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "weight capacity unit"
+      },
+      "name": "weightCapacityUnit",
+      "annotates": "weightCapacity",
+      "overrides": "unit",
+      "schema": "MassUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "motor power"
+      },
+      "name": "motorPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

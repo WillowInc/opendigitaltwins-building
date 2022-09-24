@@ -5,8 +5,7 @@
     "en": "Pre-Action Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PreActionEquipment;1"
+    "dtmi:com:willowinc:SprinklerEquipment;1"
   ],
   "contents": [
 

@@ -5,8 +5,7 @@
     "en": "AC Electrical System"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ACElectricalSystem;1"
+    "dtmi:com:willowinc:ElectricalSystem;1"
   ],
   "contents": [
   ],

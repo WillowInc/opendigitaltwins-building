@@ -5,8 +5,7 @@
     "en": "Pressure Reducing Station (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACPressureReducingStation;1"
+    "dtmi:com:willowinc:HVACValve;1"
   ],
   "contents": [
 

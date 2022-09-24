@@ -5,8 +5,7 @@
     "en": "Pump Group (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipmentGroup;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACPumpGroup;1"
+    "dtmi:com:willowinc:HVACEquipmentGroup;1"
   ],
   "contents": [
   ],

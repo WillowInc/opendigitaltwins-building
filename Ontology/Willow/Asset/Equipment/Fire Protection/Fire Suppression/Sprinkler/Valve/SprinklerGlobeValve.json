@@ -5,8 +5,7 @@
     "en": "Globe Valve (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerGlobeValve;1"
+    "dtmi:com:willowinc:SprinklerValve;1"
   ],
   "contents": [
 

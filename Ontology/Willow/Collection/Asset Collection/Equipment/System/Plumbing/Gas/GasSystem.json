@@ -5,8 +5,7 @@
     "en": "Gas System"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:GasSystem;1"
+    "dtmi:com:willowinc:PlumbingSystem;1"
   ],
   "contents": [
   ],

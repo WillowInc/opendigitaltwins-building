@@ -8,8 +8,7 @@
     "en": "An intermediate level of a building between two main levels and typically partially open to the floor below."
   },
   "extends" : [
-    "dtmi:com:willowinc:Level;1",
-    "dtmi:digitaltwins:rec_3_3:building:MezzanineLevel;1"
+    "dtmi:com:willowinc:Level;1"
   ],
   "contents": [
 

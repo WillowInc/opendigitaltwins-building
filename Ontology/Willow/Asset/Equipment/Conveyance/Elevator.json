@@ -5,10 +5,93 @@
     "en": "Elevator"
   },
   "extends" : [
-    "dtmi:com:willowinc:ConveyanceEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Elevator;1"
+    "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The number of people who can fit in a Space."
+      },
+      "displayName": {
+        "en": "person capacity"
+      },
+      "name": "personCapacity",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": ["Mass", "Property"],
+      "displayName": {
+        "en": "weight capacity"
+      },
+      "name": "weightCapacity",
+      "schema": "double",
+      "unit": "kilogram",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "weight capacity unit"
+      },
+      "name": "weightCapacityUnit",
+      "annotates": "weightCapacity",
+      "overrides": "unit",
+      "schema": "MassUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Velocity"],
+      "displayName": {
+        "en": "maximum travel speed"
+      },
+      "name": "maxTravelSpeed",
+      "schema": "double",
+      "unit": "metrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum travel speed unit"
+      },
+      "name": "maxTravelSpeedUnit",
+      "annotates": "maxTravelSpeed",
+      "overrides": "unit",
+      "schema": "VelocityUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "maximum travel distance"
+      },
+      "name": "maxTravelDistance",
+      "schema": "double",
+      "unit": "metre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum travel distance unit"
+      },
+      "name": "maxTravelDistanceUnit",
+      "annotates": "maxTravelDistance",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "maximum landings"
+      },
+      "name": "maxLandings",
+      "schema": "integer",
+      "writable": true
+    },
     {
       "@type": "Property",
       "name": "fireServiceAccessElevator",
@@ -54,6 +137,9 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }
