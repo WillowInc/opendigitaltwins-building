@@ -26,7 +26,7 @@
       "name": "waterPerFlushUnit",
       "annotates": "waterPerFlush",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit",
+      "schema": "VolumeUnit",
       "writable": true
     }
   ],
