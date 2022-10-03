@@ -5,10 +5,63 @@
     "en": "System"
   },
   "extends" : [
-    "dtmi:com:willowinc:EquipmentCollection;1",
-    "dtmi:digitaltwins:rec_3_3:asset:System;1"
+    "dtmi:com:willowinc:EquipmentCollection;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "comment"
+      },
+      "name": "comment",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "service"
+      },
+      "name": "service",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Utility",
+            "name": "Utility"
+          },
+          {
+            "enumValue": "Tenant",
+            "name": "Tenant"
+          },
+          {
+            "enumValue": "Site",
+            "name": "Site"
+          },
+          {
+            "enumValue": "District",
+            "name": "District"
+          },
+          {
+            "enumValue": "Building",
+            "name": "Building"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+      },
+      "displayName": {
+        "en": "is part of"
+      },
+      "name": "isPartOf",
+      "target": "dtmi:com:willowinc:System;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACValve;1"
+    "dtmi:com:willowinc:Valve;1"
   ],
   "contents": [
 

@@ -5,8 +5,7 @@
     "en": "Urinal - Waterless"
   },
   "extends" : [
-    "dtmi:com:willowinc:Urinal;1",
-    "dtmi:digitaltwins:rec_3_3:asset:UrinalWaterless;1"
+    "dtmi:com:willowinc:Urinal;1"
   ],
   "contents": [
   ],

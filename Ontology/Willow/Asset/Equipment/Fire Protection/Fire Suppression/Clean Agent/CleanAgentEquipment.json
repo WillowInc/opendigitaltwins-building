@@ -5,8 +5,7 @@
     "en": "Clean Agent Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:FireSuppressionEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:CleanAgentEquipment;1"
+    "dtmi:com:willowinc:FireSuppressionEquipment;1"
   ],
   "contents": [
   ],

@@ -4,10 +4,84 @@
   "displayName": {
     "en": "Asset"
   },
+  "description": {
+    "en": "A physical entity which has value, a distinct identity, and is typically manufacturered as a product."
+  },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:Asset;1"
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates that a Space or Asset is served by some Sensor/Actuator or other Asset. For example: an entrance room might be served by (e.g., covered by) some camera equipment, or a conference room served by a CO2 sensor. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: serves"
+      },
+      "displayName": {
+        "en": "served by"
+      },
+      "name": "servedBy"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+      },
+      "displayName": {
+        "en": "is part of"
+      },
+      "name": "isPartOf",
+      "target": "dtmi:com:willowinc:Asset;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment. Inverse of: includes"
+      },
+      "displayName": {
+        "en": "included in"
+      },
+      "name": "includedIn",
+      "target": "dtmi:com:willowinc:Collection;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "located in"
+      },
+      "name": "locatedIn",
+      "target": "dtmi:com:willowinc:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "serviced by"
+      },
+      "name": "servicedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "manufactured by"
+      },
+      "name": "manufacturedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "installed by"
+      },
+      "name": "installedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "commissioned by"
+      },
+      "name": "commissionedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
     {
       "@type": "Relationship",
       "name": "hasDocument",
@@ -139,6 +213,53 @@
     },
     {
       "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
       "name": "externalID",
       "displayName": {
         "en": "External ID"
@@ -173,6 +294,144 @@
       "writable": true,
       "schema": "string",
       "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "serial number"
+      },
+      "name": "serialNumber",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "physical tag number"
+      },
+      "name": "physicalTagNumber",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "model number"
+      },
+      "name": "modelNumber",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "MAC address"
+      },
+      "name": "MACAddress",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "IP address"
+      },
+      "name": "IPAddress",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Mass"],
+      "displayName": {
+        "en": "weight"
+      },
+      "name": "weight",
+      "schema": "double",
+      "unit": "kilogram",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "weight unit"
+      },
+      "name": "weightUnit",
+      "annotates": "weight",
+      "overrides": "unit",
+      "schema": "MassUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "turnover date"
+      },
+      "name": "turnoverDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "maintenance interval"
+      },
+      "name": "maintenanceInterval",
+      "schema": "duration",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "installation date"
+      },
+      "name": "installationDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "initial cost"
+      },
+      "name": "initialCost",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "expected replacement cost"
+      },
+      "name": "expectedReplacementCost",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "expected life"
+      },
+      "name": "expectedLife",
+      "schema": "duration",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "expected end-of-life"
+      },
+      "name": "expectedEndOfLife",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "commission date"
+      },
+      "name": "commissionDate",
+      "schema": "date",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -347,6 +606,9 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

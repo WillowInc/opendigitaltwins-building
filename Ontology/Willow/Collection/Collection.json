@@ -8,7 +8,6 @@
     "en": "An administrative grouping of entities that are adressed and treated as a unit for some purpose. These entities may have some spatial arrangement (e.g., an apartment is typically contiguous) but that is not a requirement (see, e.g., a distributed campus consisting of spatially disjoint plots or buildings)."
   },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:Collection;1"
   ],
   "contents": [
     {
@@ -47,6 +46,83 @@
         "en": "served by"
       },
       "name": "servedBy"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "geometryViewerID",
+      "displayName": {
+        "en": "Geometry Viewer ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)"
+    },
+    {
+      "@type": "Property",
+      "name": "geometrySpatialReference",
+      "displayName": {
+        "en": "Geometry Spatial Reference"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference for displaying in spatial context"
+    },
+    {
+      "@type": "Property",
+      "name": "geometryExternalID",
+      "displayName": {
+        "en": "Geometry External ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference to geometry source (i.e. Revit GUID)"
     },
     {
       "@type": "Property",
@@ -130,6 +206,83 @@
           }
         }
       }
+    },
+    {
+      "@type": "Property",
+      "name": "alternateClassification",
+      "displayName": {
+        "en": "Alternate Classification"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "masterFormat",
+            "displayName": {
+              "en": "MasterFormat"
+            },
+            "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
+          },
+          {
+            "name": "omniClass",
+            "displayName": {
+              "en": "OmniClass"
+            },
+            "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniFormat",
+            "displayName": {
+              "en": "UniFormat"
+            },
+            "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniclass",
+            "displayName": {
+              "en": "Uniclass"
+            },
+            "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
+          },
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
     }
   ],
   "@context": [

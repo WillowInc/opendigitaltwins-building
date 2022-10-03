@@ -8,7 +8,6 @@
     "en": "A written, printed, or electronic matter that provides information, e.g. contract, drawing, image, report, etc."
   },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:Document;1"
   ],
   "contents": [
     {
@@ -36,6 +35,62 @@
         "en": "included in"
       },
       "target": "dtmi:com:willowinc:Collection;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "URL"
+      },
+      "name": "url",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Property",

@@ -5,11 +5,17 @@
     "en": "Air Filter"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:AirFilter;1"
+    "dtmi:com:willowinc:HVACEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

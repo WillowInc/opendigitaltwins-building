@@ -8,9 +8,32 @@
     "en": "A part that constitutes a piece of a building's structural or architectural makeup that is constructed onsite, e.g., Facade, Wall, Slab, RoofInner, etc."
   },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:BuildingComponent;1"
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+      },
+      "displayName": {
+        "en": "is part of"
+      },
+      "maxMultiplicity": 1,
+      "name": "isPartOf",
+      "target": "dtmi:com:willowinc:BuildingComponent;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates which Building a certain Building Component is part of. Inverse of: hasBuildingComponent"
+      },
+      "displayName": {
+        "en": "component of building"
+      },
+      "maxMultiplicity": 1,
+      "name": "componentOfBuilding",
+      "target": "dtmi:com:willowinc:Building;1"
+    },
     {
       "@type": "Relationship",
       "name": "hasDocument",
@@ -43,9 +66,8 @@
       "displayName": {
         "en": "located in"
       },
-      "minMultiplicity": 0,
       "name": "locatedIn",
-      "target": "dtmi:digitaltwins:rec_3_3:core:Space;1"
+      "target": "dtmi:com:willowinc:Space;1"
     },
     {
       "@type": "Relationship",
@@ -64,6 +86,53 @@
           "schema": "dtmi:com:willowinc:BuildingComponentIsFedBySubstances;1"
         }
       ]
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Property",

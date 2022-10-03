@@ -5,8 +5,7 @@
     "en": "Irrigation System"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingWaterSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:IrrigationSystem;1"
+    "dtmi:com:willowinc:PlumbingWaterSystem;1"
   ],
   "contents": [
   ],

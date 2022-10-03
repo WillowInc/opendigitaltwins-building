@@ -8,10 +8,21 @@
     "en": "The level of a building or other structure, a.k.a. storey, floor, etc."
   },
   "extends" : [
-    "dtmi:com:willowinc:Space;1",
-    "dtmi:digitaltwins:rec_3_3:core:Level;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A number indicating the ordinal number of this level within the building. Note that the implementation of this numbering scheme and its starting point is implementation-specific; e.g., the fifth floor below ground may be 0 in some systems, and -5 in others."
+      },
+      "displayName": {
+        "en": "level number"
+      },
+      "name": "levelNumber",
+      "schema": "integer",
+      "writable": true
+    },
     {
       "@type": ["Property", "Length"],
       "name": "elevation",

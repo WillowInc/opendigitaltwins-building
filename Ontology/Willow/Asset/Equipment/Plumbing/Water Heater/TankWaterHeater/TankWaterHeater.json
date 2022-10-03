@@ -5,13 +5,35 @@
     "en": "Tank Water Heater"
   },
   "extends" : [
-    "dtmi:com:willowinc:WaterHeater;1",
-    "dtmi:digitaltwins:rec_3_3:asset:TankWaterHeater;1"
+    "dtmi:com:willowinc:WaterHeater;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Property", "Volume"],
+      "displayName": {
+        "en": "tank capacity"
+      },
+      "name": "tankCapacity",
+      "schema": "double",
+      "unit": "litre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "tank capacity unit"
+      },
+      "name": "tankCapacityUnit",
+      "annotates": "tankCapacity",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

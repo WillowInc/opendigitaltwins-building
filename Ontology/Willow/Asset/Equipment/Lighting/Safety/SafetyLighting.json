@@ -5,8 +5,7 @@
     "en": "Safety Lighting"
   },
   "extends" : [
-    "dtmi:com:willowinc:LightingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SafetyLighting;1"
+    "dtmi:com:willowinc:LightingEquipment;1"
   ],
   "contents": [
 

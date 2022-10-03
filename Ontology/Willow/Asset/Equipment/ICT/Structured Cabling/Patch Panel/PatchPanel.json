@@ -34,7 +34,7 @@
           "writable": true
         }
       ],
-      "target": "dtmi:digitaltwins:rec_3_3:asset:ITRack;1"
+      "target": "dtmi:com:willowinc:ITRack;1"
     },
     {
       "@type": "Property",

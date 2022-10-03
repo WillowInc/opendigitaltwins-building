@@ -5,8 +5,7 @@
     "en": "Mass Flow Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:FlowSensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:MassFlowSensor;1"
+    "dtmi:com:willowinc:FlowSensor;1"
   ],
   "contents": [
 

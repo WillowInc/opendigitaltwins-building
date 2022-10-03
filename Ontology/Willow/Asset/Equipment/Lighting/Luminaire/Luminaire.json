@@ -5,13 +5,48 @@
     "en": "Luminaire"
   },
   "extends" : [
-    "dtmi:com:willowinc:LightingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Luminaire;2"
+    "dtmi:com:willowinc:LightingEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "power input"
+      },
+      "name": "powerInput",
+      "schema": "double",
+      "unit": "watt",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "mounting"
+      },
+      "name": "mounting",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "WallMount",
+            "name": "WallMount"
+          },
+          {
+            "enumValue": "Recessed",
+            "name": "Recessed"
+          },
+          {
+            "enumValue": "Pendant",
+            "name": "Pendant"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

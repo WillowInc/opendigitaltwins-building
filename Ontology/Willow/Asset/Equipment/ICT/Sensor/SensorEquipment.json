@@ -5,12 +5,30 @@
     "en": "Sensor Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:ICTEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SensorEquipment;1"
+    "dtmi:com:willowinc:ICTEquipment;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Wi-Fi signal strength"
+      },
+      "name": "wifiSignalStrength",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "battery percentage"
+      },
+      "name": "batteryPercentage",
+      "schema": "double",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

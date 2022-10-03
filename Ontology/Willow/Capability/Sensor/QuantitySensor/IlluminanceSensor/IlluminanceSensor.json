@@ -5,8 +5,7 @@
     "en": "Illuminance Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:IlluminanceSensor;1"
+    "dtmi:com:willowinc:QuantitySensor;1"
   ],
   "contents": [
 

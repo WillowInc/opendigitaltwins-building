@@ -5,8 +5,7 @@
     "en": "BACnet Network System"
   },
   "extends" : [
-    "dtmi:com:willowinc:ControlsSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:BACnetNetworkSystem;1"
+    "dtmi:com:willowinc:ControlsSystem;1"
   ],
   "contents": [
   ],

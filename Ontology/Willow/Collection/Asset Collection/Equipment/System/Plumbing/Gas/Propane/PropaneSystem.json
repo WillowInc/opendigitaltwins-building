@@ -5,8 +5,7 @@
     "en": "Propane System"
   },
   "extends" : [
-    "dtmi:com:willowinc:GasSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PropaneSystem;1"
+    "dtmi:com:willowinc:GasSystem;1"
   ],
   "contents": [
   ],

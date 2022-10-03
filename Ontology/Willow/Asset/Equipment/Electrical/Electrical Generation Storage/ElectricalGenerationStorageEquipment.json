@@ -5,8 +5,7 @@
     "en": "Electrical Generation & Storage Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ElectricalGenerationStorageEquipment;1"
+    "dtmi:com:willowinc:ElectricalEquipment;1"
   ],
   "contents": [
   ],

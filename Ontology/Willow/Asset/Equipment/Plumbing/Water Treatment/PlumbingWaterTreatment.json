@@ -5,8 +5,7 @@
     "en": "Water Treatment (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingWaterTreatment;1"
+    "dtmi:com:willowinc:PlumbingEquipment;1"
   ],
   "contents": [
     

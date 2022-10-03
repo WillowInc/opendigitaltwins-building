@@ -5,8 +5,7 @@
     "en": "Lighting System"
   },
   "extends" : [
-    "dtmi:com:willowinc:System;1",
-    "dtmi:digitaltwins:rec_3_3:asset:LightingSystem;1"
+    "dtmi:com:willowinc:System;1"
   ],
   "contents": [
   ],

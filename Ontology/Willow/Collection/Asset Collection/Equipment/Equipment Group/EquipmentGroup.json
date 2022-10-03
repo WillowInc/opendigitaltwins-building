@@ -5,8 +5,7 @@
     "en": "Equipment Group"
   },
   "extends" : [
-    "dtmi:com:willowinc:EquipmentCollection;1",
-    "dtmi:digitaltwins:rec_3_3:asset:EquipmentGroup;1"
+    "dtmi:com:willowinc:EquipmentCollection;1"
   ],
   "contents": [
   ],

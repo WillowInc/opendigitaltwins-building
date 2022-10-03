@@ -5,8 +5,7 @@
     "en": "Drain"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Drain;1"
+    "dtmi:com:willowinc:PlumbingEquipment;1"
   ],
   "contents": [
   ],

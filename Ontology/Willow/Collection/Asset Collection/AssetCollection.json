@@ -5,8 +5,7 @@
     "en": "Asset Collection"
   },
   "extends" : [
-    "dtmi:com:willowinc:Collection;1",
-    "dtmi:digitaltwins:rec_3_3:core:AssetCollection;1"
+    "dtmi:com:willowinc:Collection;1"
   ],
   "contents": [
     {

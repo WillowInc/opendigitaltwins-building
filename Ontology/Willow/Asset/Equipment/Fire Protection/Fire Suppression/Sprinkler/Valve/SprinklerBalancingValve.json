@@ -5,8 +5,7 @@
     "en": "Balancing Valve (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerBalancingValve;1"
+    "dtmi:com:willowinc:SprinklerValve;1"
   ],
   "contents": [
 

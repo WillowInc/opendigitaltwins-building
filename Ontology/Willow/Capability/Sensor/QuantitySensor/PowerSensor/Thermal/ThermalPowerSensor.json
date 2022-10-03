@@ -5,8 +5,7 @@
     "en": "Thermal Power Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:PowerSensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:ThermalPowerSensor;1"
+    "dtmi:com:willowinc:PowerSensor;1"
   ],
   "contents": [
 

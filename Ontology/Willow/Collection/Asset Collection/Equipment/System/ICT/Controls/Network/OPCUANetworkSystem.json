@@ -5,8 +5,7 @@
     "en": "OPC UA Network System"
   },
   "extends" : [
-    "dtmi:com:willowinc:ControlsSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:OPCUANetworkSystem;1"
+    "dtmi:com:willowinc:ControlsSystem;1"
   ],
   "contents": [
   ],

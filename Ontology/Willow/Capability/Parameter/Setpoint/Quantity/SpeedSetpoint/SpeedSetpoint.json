@@ -5,8 +5,7 @@
     "en": "Speed Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantitySetpoint;1",
-    "dtmi:digitaltwins:rec_3_3:device:SpeedSetpoint;1"
+    "dtmi:com:willowinc:QuantitySetpoint;1"
   ],
   "contents": [
 

@@ -5,11 +5,35 @@
     "en": "Variable Frequency Drive"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:VariableFrequencyDrive;1"
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
   ],
   "contents": [
-    
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "VoltageSourceInverter",
+            "name": "VoltageSourceInverter"
+          },
+          {
+            "enumValue": "PulseWidthModulation",
+            "name": "PulseWidthModulation"
+          },
+          {
+            "enumValue": "CurrentSourceInverter",
+            "name": "CurrentSourceInverter"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

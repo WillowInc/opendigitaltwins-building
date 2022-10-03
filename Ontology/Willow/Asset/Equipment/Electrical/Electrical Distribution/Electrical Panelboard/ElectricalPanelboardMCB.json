@@ -5,13 +5,22 @@
     "en": "Electrical Panelboard MCB"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalPanelboard;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ElectricalPanelboardMCB;1"
+    "dtmi:com:willowinc:ElectricalPanelboard;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "main circuit breaker rating"
+      },
+      "name": "MCBRating",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
   ]
 }

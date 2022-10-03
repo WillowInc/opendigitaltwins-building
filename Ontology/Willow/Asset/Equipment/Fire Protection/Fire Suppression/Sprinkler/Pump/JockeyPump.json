@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:SprinklerEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:JockeyPump;1"
+    "dtmi:com:willowinc:Pump;1"
   ],
   "contents": [
     

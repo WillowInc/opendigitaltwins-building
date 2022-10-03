@@ -5,8 +5,7 @@
     "en": "Pump Group (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:FireProtectionEquipmentGroup;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerPumpGroup;1"
+    "dtmi:com:willowinc:FireProtectionEquipmentGroup;1"
   ],
   "contents": [
   ],

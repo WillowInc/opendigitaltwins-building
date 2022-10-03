@@ -5,8 +5,7 @@
     "en": "Request to Exit Device"
   },
   "extends" : [
-    "dtmi:com:willowinc:AccessControlEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:RequestToExitDevice;1"
+    "dtmi:com:willowinc:AccessControlEquipment;1"
   ],
   "contents": [
   ],

@@ -5,8 +5,7 @@
     "en": "Linear Speed Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:SpeedSensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:LinearSpeedSensor;1"
+    "dtmi:com:willowinc:SpeedSensor;1"
   ],
   "contents": [
 

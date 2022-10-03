@@ -5,8 +5,7 @@
     "en": "Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:Parameter;1",
-    "dtmi:digitaltwins:rec_3_3:core:Setpoint;1"
+    "dtmi:com:willowinc:Parameter;1"
   ],
   "contents": [
   ],

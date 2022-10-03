@@ -5,11 +5,35 @@
     "en": "Shut-off Valve (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerShutOffValve;1"
+    "dtmi:com:willowinc:SprinklerValve;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Gate",
+            "name": "Gate"
+          },
+          {
+            "enumValue": "Butterfly",
+            "name": "Butterfly"
+          },
+          {
+            "enumValue": "Ball",
+            "name": "Ball"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

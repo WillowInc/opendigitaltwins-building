@@ -5,8 +5,7 @@
     "en": "Humidity Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantitySetpoint;1",
-    "dtmi:digitaltwins:rec_3_3:device:HumiditySetpoint;1"
+    "dtmi:com:willowinc:QuantitySetpoint;1"
   ],
   "contents": [
    

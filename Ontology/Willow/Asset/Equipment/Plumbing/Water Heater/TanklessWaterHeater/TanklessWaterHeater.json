@@ -5,8 +5,7 @@
     "en": "Tankless Water Heater"
   },
   "extends" : [
-    "dtmi:com:willowinc:WaterHeater;1",
-    "dtmi:digitaltwins:rec_3_3:asset:TanklessWaterHeater;1"
+    "dtmi:com:willowinc:WaterHeater;1"
   ],
   "contents": [
   ],

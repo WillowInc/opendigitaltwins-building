@@ -5,8 +5,7 @@
     "en": "Roof Drain"
   },
   "extends" : [
-    "dtmi:com:willowinc:Drain;1",
-    "dtmi:digitaltwins:rec_3_3:asset:RoofDrain;1"
+    "dtmi:com:willowinc:Drain;1"
   ],
   "contents": [
   ],

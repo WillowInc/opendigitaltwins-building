@@ -6,7 +6,7 @@
   },
   "extends" : [
     "dtmi:com:willowinc:FireDamper;1",
-    "dtmi:digitaltwins:rec_3_3:asset:FireSmokeDamper;1"
+    "dtmi:com:willowinc:SmokeDamper;1"
   ],
   "contents": [
 

@@ -5,8 +5,7 @@
     "en": "Leak Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:BinarySensor;1",
-    "dtmi:digitaltwins:rec_3_3:device:LeakSensor;1"
+    "dtmi:com:willowinc:BinarySensor;1"
   ],
   "contents": [
 

@@ -5,8 +5,7 @@
     "en": "Intrusion Detection Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:SecurityEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:IntrusionDetectionEquipment;1"
+    "dtmi:com:willowinc:SecurityEquipment;1"
   ],
   "contents": [
   ],

@@ -5,8 +5,7 @@
     "en": "Lighting Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:Equipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:LightingEquipment;1"
+    "dtmi:com:willowinc:Equipment;1"
   ],
   "contents": [
   ],

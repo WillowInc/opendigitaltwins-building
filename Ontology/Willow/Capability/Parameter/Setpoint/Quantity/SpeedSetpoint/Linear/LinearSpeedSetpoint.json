@@ -5,8 +5,7 @@
     "en": "Linear Speed Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:SpeedSetpoint;1",
-    "dtmi:digitaltwins:rec_3_3:device:LinearSpeedSetpoint;1"
+    "dtmi:com:willowinc:SpeedSetpoint;1"
   ],
   "contents": [
 
