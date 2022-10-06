@@ -387,10 +387,6 @@
           "name": "OutsideAir"
         },
         {
-          "enumValue": "People",
-          "name": "People"
-        },
-        {
           "enumValue": "Propane",
           "name": "Propane"
         },

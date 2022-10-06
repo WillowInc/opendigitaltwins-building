@@ -134,10 +134,6 @@
           "name": "People"
         },
         {
-          "enumValue": "Propane",
-          "name": "Propane"
-        },
-        {
           "enumValue": "RecircHotDomesticWater",
           "name": "RecircHotDomesticWater"
         },
