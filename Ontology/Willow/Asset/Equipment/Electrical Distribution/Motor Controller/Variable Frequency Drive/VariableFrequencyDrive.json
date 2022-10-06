@@ -5,7 +5,7 @@
     "en": "Variable Frequency Drive"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+    "dtmi:com:willowinc:MotorController;1"
   ],
   "contents": [
     {
