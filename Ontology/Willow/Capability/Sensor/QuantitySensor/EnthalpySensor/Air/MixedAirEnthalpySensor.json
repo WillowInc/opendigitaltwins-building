@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:MixedAirEnthalpySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Enthalpy Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirEnthalpySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
