@@ -23,6 +23,16 @@
     {
       "@type": "Relationship",
       "description": {
+        "en": "The coverage or impact area of a given Asset or Sensor/Actuator. For example: an air-treatment unit might serve several Rooms or a full Building. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: servedBy"
+      },
+      "displayName": {
+        "en": "serves"
+      },
+      "name": "serves"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
         "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
       },
       "displayName": {
