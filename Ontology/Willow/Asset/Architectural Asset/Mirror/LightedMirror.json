@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:MicrowaveOven;1",
+  "@id": "dtmi:com:willowinc:LightedMirror;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Microwave Oven"
+    "en": "Lighted Mirror"
   },
   "extends" : [
-    "dtmi:com:willowinc:Oven;1"
+    "dtmi:com:willowinc:Mirror;1"
   ],
   "contents": [
   ],

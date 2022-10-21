@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ConvectionMicrowaveOven;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Convection Microwave Oven"
+  },
+  "description": {
+    "en": "A microwave oven applicance which also includes convection oven functionality with a heating element and fan."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MicrowaveOven;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

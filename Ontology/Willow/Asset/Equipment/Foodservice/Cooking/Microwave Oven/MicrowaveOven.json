@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:MicrowaveOven;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Microwave Oven"
+  },
+  "description": {
+    "en": "An electric oven appliance which uses microwaves to heat and cook food."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Oven;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

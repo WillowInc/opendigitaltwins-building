@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:TowelRack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Towel Rack"
+  },
+  "description": {
+    "en": "A device with multiple bars and/or a shelf to hold several bath towels."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TowelStorageAsset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
