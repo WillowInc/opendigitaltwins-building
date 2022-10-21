@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:ToiletSeatCoverDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet Seat Cover Dispenser"
+  },
+  "description": {
+    "en": "An device that dispenses toilet seat covers in a public restroom."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ToiletAccessory;1",
+    "dtmi:com:willowinc:RestroomAccessory;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

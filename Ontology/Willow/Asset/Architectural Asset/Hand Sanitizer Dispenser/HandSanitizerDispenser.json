@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:HandSanitizerDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hand Sanitizer Dispenser"
+  },
+  "description": {
+    "en": "An device that dispenses liquid sanitizer for hand sanitizing."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ArchitecturalAsset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

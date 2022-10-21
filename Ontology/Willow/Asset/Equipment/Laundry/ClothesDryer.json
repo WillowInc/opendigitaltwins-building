@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ClothesDryer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dryer"
+  },
+  "description": {
+    "en": "An applicance used to dry laundry such as clothes or other textiles."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LaundryEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
