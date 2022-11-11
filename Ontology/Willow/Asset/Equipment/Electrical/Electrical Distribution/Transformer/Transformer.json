@@ -43,7 +43,7 @@
         "en": "size (KVA)"
       },
       "name": "sizeKVA",
-      "schema": "integer",
+      "schema": "double",
       "unit": "kilovoltAmpere",
       "writable": true
     },
