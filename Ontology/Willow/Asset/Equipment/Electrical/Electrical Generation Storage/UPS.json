@@ -24,7 +24,7 @@
         "en": "power output (KVA)"
       },
       "name": "powerOutputKVA",
-      "schema": "integer",
+      "schema": "double",
       "unit": "kilovoltAmpere",
       "writable": true
     },

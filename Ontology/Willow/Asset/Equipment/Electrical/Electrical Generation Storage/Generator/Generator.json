@@ -119,7 +119,7 @@
         "en": "standby power rating (KVA)"
       },
       "name": "standbyPowerKVA",
-      "schema": "integer",
+      "schema": "double",
       "unit": "kilovoltAmpere",
       "writable": true
     },
@@ -139,7 +139,7 @@
         "en": "prime power rating (KVA)"
       },
       "name": "primePowerKVA",
-      "schema": "integer",
+      "schema": "double",
       "unit": "kilovoltAmpere",
       "writable": true
     },

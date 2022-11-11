@@ -44,7 +44,7 @@
         "en": "K-factor (metric)"
       },
       "name": "kFactorMetric",
-      "schema": "integer",
+      "schema": "double",
       "writable": true
     },
     {
@@ -53,7 +53,7 @@
         "en": "K-factor (imperial)"
       },
       "name": "kFactorImperial",
-      "schema": "integer",
+      "schema": "double",
       "writable": true
     }
   ],
