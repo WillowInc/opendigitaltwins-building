@@ -23,6 +23,46 @@
     },
     {
       "@type": "Component",
+      "displayName": {
+        "en": "Electricity Price Rate"
+      },
+      "name": "electricityPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Natural Gas Price Rate"
+      },
+      "name": "naturalGasPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Chilled Water Price Rate"
+      },
+      "name": "chilledWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Steam Price Rate"
+      },
+      "name": "steamPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Domestic Water Price Rate"
+      },
+      "name": "domesticWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
       "name": "area",
       "displayName": {
         "en": "Area"

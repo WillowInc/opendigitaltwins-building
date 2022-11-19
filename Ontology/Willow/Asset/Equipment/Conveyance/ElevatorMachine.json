@@ -38,6 +38,38 @@
       "schema": "double",
       "unit": "horsepower",
       "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "motor power unit"
+      },
+      "name": "motorPowerUnit",
+      "annotates": "motorPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "break horsepower"
+      },
+      "name": "breakHorsepower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "break horsepower unit"
+      },
+      "name": "breakHorsepowerUnit",
+      "annotates": "breakHorsepower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
     }
   ],
   "@context": [
