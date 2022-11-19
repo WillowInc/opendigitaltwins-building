@@ -42,44 +42,30 @@
             "@type": "Object",
             "fields": [
               {
-                "name": "startMonth",
-                "description": {
-                  "en": "The month of the date in the calendar at which the rate starts."
-                },
-                "schema": "dtmi:com:willowinc:UtilityRateMonth;1"
-              },
-              {
                 "name": "startMonthDay",
                 "description": {
-                  "en": "The day of the month in the calendar at which the rate starts."
+                  "en": "The month and day of the date in the calendar at which the rate starts in MM-DD format, i.e. 05-01 is May 1st."
                 },
-                "schema": "integer"
-              },
-              {
-                "name": "endMonth",
-                "description": {
-                  "en": "The month of the date in the calendar at which the rate ends."
-                },
-                "schema": "dtmi:com:willowinc:UtilityRateMonth;1"
+                "schema": "string"
               },
               {
                 "name": "endMonthDay",
                 "description": {
-                  "en": "The day of the month in the calendar at which the rate ends."
+                  "en": "The month and day of the date in the calendar at which the rate ends in MM-DD format, i.e. 09-30 is September 30th."
                 },
-                "schema": "integer"
+                "schema": "string"
               },
               {
                 "name": "startTime",
                 "description": {
-                  "en": "The time within a day at which the rate starts."
+                  "en": "The time within a day at which the rate starts in ISO 8601 time format."
                 },
                 "schema": "time"
               },
               {
                 "name": "endTime",
                 "description": {
-                  "en": "The time within a day at which the rate ends."
+                  "en": "The time within a day at which the rate ends in ISO 8601 time format."
                 },
                 "schema": "time"
               },
@@ -105,63 +91,6 @@
           }
         }
       }
-  ],
-  "schemas": [
-    {
-      "@id": "dtmi:com:willowinc:UtilityRateMonth;1",
-      "@type": "Enum",
-      "valueSchema": "string",
-      "enumValues": [
-        {
-          "name": "January",
-          "enumValue": "January"
-        },
-        {
-          "name": "February",
-          "enumValue": "February"
-        },
-        {
-          "name": "March",
-          "enumValue": "March"
-        },
-        {
-          "name": "April",
-          "enumValue": "April"
-        },
-        {
-          "name": "May",
-          "enumValue": "May"
-        },
-        {
-          "name": "June",
-          "enumValue": "June"
-        },
-        {
-          "name": "July",
-          "enumValue": "July"
-        },
-        {
-          "name": "August",
-          "enumValue": "August"
-        },
-        {
-          "name": "September",
-          "enumValue": "September"
-        },
-        {
-          "name": "October",
-          "enumValue": "October"
-        },
-        {
-          "name": "November",
-          "enumValue": "November"
-        },
-        {
-          "name": "December",
-          "enumValue": "December"
-        }
-      ]
-    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",

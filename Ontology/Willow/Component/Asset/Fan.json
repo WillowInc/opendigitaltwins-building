@@ -93,6 +93,27 @@
       "writable": true
     },
     {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "full load current"
+      },
+      "name": "fullLoadCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "full load current unit"
+      },
+      "name": "fullLoadCurrentUnit",
+      "annotates": "fullLoadCurrent",
+      "overrides": "unit",
+      "schema": "CurrentUnit",
+      "writable": true
+    },
+    {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
         "en": "minimum airflow rating"
