@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFanVFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan VFD Frequency Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDFrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
