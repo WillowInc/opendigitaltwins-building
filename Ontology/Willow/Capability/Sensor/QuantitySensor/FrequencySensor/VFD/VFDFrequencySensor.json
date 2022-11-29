@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:VFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VFD Frequency Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
