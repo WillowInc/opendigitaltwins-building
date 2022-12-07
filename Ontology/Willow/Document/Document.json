@@ -164,6 +164,42 @@
           }
         }
       }
+    },
+    {
+      "@type": "Property",
+      "name": "createdDate",
+      "displayName": {
+        "en": "Created Date"
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "createdBy",
+      "displayName": {
+        "en": "Created By"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "login",
+            "displayName": {
+              "en": "Login"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "name",
+            "displayName": {
+              "en": "Name"
+            },
+            "schema": "string"
+          }
+        ]
+      }
     }
   ],
   "@context": [
