@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:TestingAndBalancingReport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Testing and Balancing Report"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CommissioningDocument;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
