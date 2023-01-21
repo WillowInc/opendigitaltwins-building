@@ -63,9 +63,9 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "break horsepower"
+        "en": "brake horsepower"
       },
-      "name": "breakHorsepower",
+      "name": "brakeHorsepower",
       "schema": "double",
       "unit": "horsepower",
       "writable": true
@@ -73,10 +73,10 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "break horsepower unit"
+        "en": "brake horsepower unit"
       },
-      "name": "breakHorsepowerUnit",
-      "annotates": "breakHorsepower",
+      "name": "brakeHorsepowerUnit",
+      "annotates": "brakeHorsepower",
       "overrides": "unit",
       "schema": "PowerUnit",
       "writable": true
