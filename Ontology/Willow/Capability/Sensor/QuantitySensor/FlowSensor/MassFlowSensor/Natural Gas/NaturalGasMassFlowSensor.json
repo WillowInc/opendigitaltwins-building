@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:SteamMassFlowSensor;1",
+  "@id": "dtmi:com:willowinc:NaturalGasMassFlowSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Steam Mass Flow Sensor"
+    "en": "Natural Gas Mass Flow Sensor"
   },
   "extends" : [
     "dtmi:com:willowinc:MassFlowSensor;1"
