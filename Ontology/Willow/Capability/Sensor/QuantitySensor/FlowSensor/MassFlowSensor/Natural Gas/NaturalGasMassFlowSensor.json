@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SteamMassFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Mass Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MassFlowSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
