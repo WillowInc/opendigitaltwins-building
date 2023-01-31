@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:NaturalGasMassFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Natural Gas Mass Flow Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MassFlowSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
