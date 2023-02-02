@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFanRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan Run Sensor"
+  },
+  "description": {"en": "An on/off sensor for the fan associated with exhaust air"},
+  "extends" : [
+    "dtmi:com:willowinc:FanRunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
