@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan Run Actuator"
   },
+  "description": {"en": "An on/off command for the fan"},
   "extends" : [
     "dtmi:com:willowinc:RunActuator;1"
   ],

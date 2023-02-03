@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:ReturnFanRunActuator;1",
+  "@id": "dtmi:com:willowinc:ReliefFanRunActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Return Fan Run Actuator"
+    "en": "Relief Fan Run Actuator"
   },
-  "description": {"en": "An on/off command for the fan associated with return air"},
+  "description": {"en": "An on/off command for the fan associated with relief air"},
   "extends" : [
     "dtmi:com:willowinc:FanRunActuator;1"
   ],
