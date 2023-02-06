@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Pressure Sensor"
+  },
+  "description": {"en": "An air pressure sensor for the fan associated with outside air"},
+  "extends" : [
+    "dtmi:com:willowinc:AirPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

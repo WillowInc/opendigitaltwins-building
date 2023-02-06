@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:MixedAirPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Pressure Sensor"
+  },
+  "description": {"en": "An air pressure sensor for the fan associated with mixed air"},
+  "extends" : [
+    "dtmi:com:willowinc:AirPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
