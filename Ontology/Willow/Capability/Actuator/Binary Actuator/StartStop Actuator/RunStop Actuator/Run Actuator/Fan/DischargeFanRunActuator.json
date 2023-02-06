@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Fan Run Actuator"
   },
+  "description": {"en": "An on/off command for the fan associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:FanRunActuator;1"
   ],

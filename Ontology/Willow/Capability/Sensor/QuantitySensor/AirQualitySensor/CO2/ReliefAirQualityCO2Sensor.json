@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirQualityCO2Sensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Quality CO2 Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CO2AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

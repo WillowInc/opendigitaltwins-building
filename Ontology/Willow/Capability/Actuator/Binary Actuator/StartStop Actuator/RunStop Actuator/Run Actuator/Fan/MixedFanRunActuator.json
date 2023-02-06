@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Fan Run Actuator"
   },
+  "description": {"en": "An on/off command for the fan associated with mixed air"},
   "extends" : [
     "dtmi:com:willowinc:FanRunActuator;1"
   ],

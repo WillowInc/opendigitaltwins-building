@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Outside Fan Run Actuator"
   },
+  "description": {"en": "An on/off command for the fan associated with outside air"},
   "extends" : [
     "dtmi:com:willowinc:FanRunActuator;1"
   ],
