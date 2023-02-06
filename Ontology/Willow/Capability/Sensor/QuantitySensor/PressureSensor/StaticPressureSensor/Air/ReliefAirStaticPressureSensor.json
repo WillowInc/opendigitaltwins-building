@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:ReturnAirStaticPressureSensor;1",
+  "@id": "dtmi:com:willowinc:ReliefAirStaticPressureSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Return Air Static Pressure Sensor"
+    "en": "Relief Air Static Pressure Sensor"
   },
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSensor;1"
