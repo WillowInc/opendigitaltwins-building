@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ValveOpenCloseActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valve Open/Close Actuator"
+  },
+  "description": {"en": "A Boolean command which sets the state of the valve equipment to 'open' when 'true' and 'close' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:OpenCloseActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

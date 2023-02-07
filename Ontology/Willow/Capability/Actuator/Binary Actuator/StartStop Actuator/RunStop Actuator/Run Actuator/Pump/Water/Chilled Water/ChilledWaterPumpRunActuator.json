@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Pump Run Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the chilled water pump to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:WaterPumpRunActuator;1"
   ],

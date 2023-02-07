@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Leaving Pump VFD Run Level Actuator"
   },
+  "description": {"en": "A percent command which sets the run level of the condenser water leaving pump vfd"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1"
   ],

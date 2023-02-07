@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Bypass Pump Run Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the condenser water bypass pump to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reheating Level Actuator"
   },
+  "description": {"en": "A percent command which sets the reheat level of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HeatingLevelActuator;1"
   ],

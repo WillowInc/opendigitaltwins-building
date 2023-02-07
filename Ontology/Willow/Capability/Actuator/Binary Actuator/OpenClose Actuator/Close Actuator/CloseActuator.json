@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Close Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the equipment to 'close' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OpenCloseActuator;1"
   ],

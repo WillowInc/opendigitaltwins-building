@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Damper Position Actuator"
   },
+  "description": {"en": "A percent command which sets the position of the inlet air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionActuator;1"
   ],

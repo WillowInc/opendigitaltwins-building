@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Valve Position Actuator"
   },
+  "description": {"en": "A percent command which sets the position of the chilled water valve"},
   "extends" : [
     "dtmi:com:willowinc:ValvePositionActuator;1"
   ],

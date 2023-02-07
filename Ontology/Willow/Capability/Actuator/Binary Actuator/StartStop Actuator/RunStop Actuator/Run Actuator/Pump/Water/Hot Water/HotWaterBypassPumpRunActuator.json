@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Bypass Pump Run Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the hot water bypass pump to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
   ],

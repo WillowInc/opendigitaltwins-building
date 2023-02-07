@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reset Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the equipment to 'reset' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:DefaultActuator;1"
   ],

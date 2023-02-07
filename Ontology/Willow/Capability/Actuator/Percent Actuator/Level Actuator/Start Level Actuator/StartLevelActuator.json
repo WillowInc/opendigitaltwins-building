@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Start Level Actuator"
   },
+  "description": {"en": "A percent command which sets the start level of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelActuator;1"
   ],

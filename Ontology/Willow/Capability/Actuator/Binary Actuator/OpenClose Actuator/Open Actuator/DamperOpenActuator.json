@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Damper Open Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the damper to 'open' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OpenActuator;1"
   ],

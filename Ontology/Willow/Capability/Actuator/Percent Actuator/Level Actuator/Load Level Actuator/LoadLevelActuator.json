@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Load Level Actuator"
   },
+  "description": {"en": "A percent command which sets the load level of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelActuator;1"
   ],

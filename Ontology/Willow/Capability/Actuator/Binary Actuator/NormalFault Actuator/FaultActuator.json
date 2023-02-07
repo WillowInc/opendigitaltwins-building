@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fault Actuator"
   },
+  "description": {"en": "A Boolean command which sets the state of the equipment to 'fault' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:NormalFaultActuator;1"
   ],

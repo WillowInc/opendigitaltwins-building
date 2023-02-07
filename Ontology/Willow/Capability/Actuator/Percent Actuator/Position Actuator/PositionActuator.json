@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Position Actuator"
   },
+  "description": {"en": "A percent command which sets the position of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PercentActuator;1"
   ],
