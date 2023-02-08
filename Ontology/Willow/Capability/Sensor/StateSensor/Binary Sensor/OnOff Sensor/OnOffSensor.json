@@ -4,6 +4,7 @@
   "displayName": {
     "en": "On/Off Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'on' is 'true' and 'normal' is 'off'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],

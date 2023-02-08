@@ -4,6 +4,7 @@
   "displayName": {
     "en": "People Occupancy Sensor"
   },
+  "description": {"en": "The boolean status from a sensor associated with people where 'occupancy' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OccupancySensor;1"
   ],

@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:ReheatLevelSensor;1",
+  "@id": "dtmi:com:willowinc:PreheatLevelSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Reheating Level Sensor"
+    "en": "Preheating Level Sensor"
   },
-  "description": {"en": "The 'on' level feedback from a sensor associated with reheating"},
+  "description": {"en": "The 'on' level feedback from a sensor associated with preheating"},
   "extends" : [
     "dtmi:com:willowinc:HeatingLevelSensor;1"
   ],

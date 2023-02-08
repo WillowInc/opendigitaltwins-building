@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Damper Position Sensor"
   },
+  "description": {"en": "The damper position percent feedback from a sensor associated with inlet air"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSensor;1"
   ],

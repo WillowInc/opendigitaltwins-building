@@ -4,6 +4,7 @@
   "displayName": {
     "en": "State Sensor"
   },
+  "description": {"en": "The state feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:Sensor;1"
   ],

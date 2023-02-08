@@ -4,6 +4,7 @@
   "displayName": {
     "en": "VFD Run Level Sensor"
   },
+  "description": {"en": "The run level feedback from a sensor associated with a VFD"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelSensor;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Discharge Air Velocity Pressure Sensor"
   },
-  "description": {"en": "The velocity pressure feedback from a sensor associated with discharge air"},
+  "description": {"en": "The velocity pressure feedback from a sensor associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSensor;1"
   ],

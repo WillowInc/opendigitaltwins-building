@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Valve Position Sensor"
   },
+  "description": {"en": "The valve position percent feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PositionSensor;1"
   ],

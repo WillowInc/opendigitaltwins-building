@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Enable Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'enable' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:EnableDisableSensor;1",
     "dtmi:com:willowinc:OnSensor;1"

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Discharge Air Enthalpy Sensor"
   },
-  "description": {"en": "The enthalpy feedback from a sensor associated with discharge air"},
+  "description": {"en": "The enthalpy feedback from a sensor associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:AirEnthalpySensor;1"
   ],

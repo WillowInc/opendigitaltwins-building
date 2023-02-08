@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Run Level Sensor"
   },
+  "description": {"en": "The run level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:StartLevelSensor;1"
   ],

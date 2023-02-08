@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Damper Position Sensor"
   },
+  "description": {"en": "The damper position percent feedback from a sensor associated"},
   "extends" : [
     "dtmi:com:willowinc:PositionSensor;1"
   ],

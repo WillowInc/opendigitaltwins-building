@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Discharge Air Static Pressure Sensor"
   },
-  "description": {"en": "The static pressure feedback from a sensor associated with discharge air"},
+  "description": {"en": "The static pressure feedback from a sensor associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Stop Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'stop' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:StartStopSensor;1",
     "dtmi:com:willowinc:RunStopSensor;1"
