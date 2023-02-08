@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Heating Level Setpoint"
   },
-  "description": {"en": "A percent configuration setting that functions as the desired heating level for control of equipment"},
+  "description": {"en": "A configuration setting that functions as the desired heating level percentage for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:OnLevelSetpoint;1"
   ],

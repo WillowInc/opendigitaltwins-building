@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Percent Unity Setpoint"
   },
-  "description": {"en": "A percent configuration setting that functions as the desired value for control of equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value percentage for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:StateSetpoint;1"
   ],
