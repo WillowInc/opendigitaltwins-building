@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Linear Velocity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a linear velocity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:VelocitySetpoint;1"
   ],

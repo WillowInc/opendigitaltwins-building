@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Leaving Chilled Water Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a primary chilled water loop leaving temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LeavingChilledWaterTemperatureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Refrigerant Static Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a condenser refrigerant static pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
   ],

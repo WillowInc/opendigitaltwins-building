@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mass Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a mass flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Angular Acceleration Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an angular acceleration setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AccelerationSetpoint;1"
   ],

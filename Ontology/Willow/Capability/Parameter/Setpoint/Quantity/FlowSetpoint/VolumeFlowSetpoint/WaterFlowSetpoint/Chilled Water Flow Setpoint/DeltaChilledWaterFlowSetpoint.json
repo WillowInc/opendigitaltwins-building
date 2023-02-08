@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Chilled Water Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a chilled water delta flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
   ],

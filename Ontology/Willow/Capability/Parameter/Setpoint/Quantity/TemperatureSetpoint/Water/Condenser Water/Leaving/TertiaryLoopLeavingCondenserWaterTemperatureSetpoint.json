@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Leaving Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a tertiary condenser water loop leaving temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Magnitude Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a voltage magnitude setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

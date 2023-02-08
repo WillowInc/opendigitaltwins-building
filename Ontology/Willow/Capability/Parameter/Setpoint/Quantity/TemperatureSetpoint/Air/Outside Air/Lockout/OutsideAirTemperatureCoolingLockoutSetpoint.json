@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Outside Air Temperature Cooling Lockout Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an outside air temperature cooling lockout setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
   ],

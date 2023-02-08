@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Return Air Damper Position Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a percent position setpoint on the return air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSetpoint;1"
   ],

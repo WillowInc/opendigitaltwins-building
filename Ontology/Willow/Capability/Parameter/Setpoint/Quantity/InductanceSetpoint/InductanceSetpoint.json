@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inductance Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an inductance setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an air temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

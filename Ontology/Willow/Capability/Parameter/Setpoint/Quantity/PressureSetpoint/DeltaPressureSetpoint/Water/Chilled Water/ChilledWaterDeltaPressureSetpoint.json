@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a chilled water delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
   ],

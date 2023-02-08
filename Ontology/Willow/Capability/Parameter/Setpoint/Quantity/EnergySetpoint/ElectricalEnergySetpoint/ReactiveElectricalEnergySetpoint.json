@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reactive Electrical Energy Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a reactive electrical energy setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
   ],

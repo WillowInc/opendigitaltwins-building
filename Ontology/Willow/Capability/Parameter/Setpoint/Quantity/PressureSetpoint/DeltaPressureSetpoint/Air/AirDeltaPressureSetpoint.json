@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an air delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirPressureSetpoint;1",
     "dtmi:com:willowinc:DeltaPressureSetpoint;1"

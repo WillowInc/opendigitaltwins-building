@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Velocity Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an inlet air velocity pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
   ],

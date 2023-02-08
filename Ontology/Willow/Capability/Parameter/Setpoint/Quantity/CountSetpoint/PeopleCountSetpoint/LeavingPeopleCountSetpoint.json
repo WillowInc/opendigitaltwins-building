@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving People Count Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a leaving people count setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PeopleCountSetpoint;1"
   ],

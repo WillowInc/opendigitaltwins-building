@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a total pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

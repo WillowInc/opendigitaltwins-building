@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mode Setpoint"
   },
+  "description": {"en": "A multi-state configuration setting that sets a mode setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Setpoint;1"
   ],

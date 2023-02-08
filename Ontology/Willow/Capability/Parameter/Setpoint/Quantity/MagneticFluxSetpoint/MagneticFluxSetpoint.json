@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Magnetic Flux Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a magnetic flux setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

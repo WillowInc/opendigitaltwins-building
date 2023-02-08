@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

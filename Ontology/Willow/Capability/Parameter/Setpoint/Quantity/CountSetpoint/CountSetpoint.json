@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Count Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a count setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

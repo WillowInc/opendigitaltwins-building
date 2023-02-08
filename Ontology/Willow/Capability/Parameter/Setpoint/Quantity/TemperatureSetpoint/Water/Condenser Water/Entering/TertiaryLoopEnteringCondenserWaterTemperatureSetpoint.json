@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Entering Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a tertiary condenser water loop entering temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSetpoint;1"
   ],

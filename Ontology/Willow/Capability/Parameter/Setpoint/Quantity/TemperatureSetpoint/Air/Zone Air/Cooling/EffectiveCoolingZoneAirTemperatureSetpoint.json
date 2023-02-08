@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Effective Cooling Zone Air Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an effective cooling zone air temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1"

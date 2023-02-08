@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirVelocityPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Velocity Pressure Setpoint"
+  },
+  "description": {"en": "A configuration setting that sets a relief air velocity pressure setpoint on the equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

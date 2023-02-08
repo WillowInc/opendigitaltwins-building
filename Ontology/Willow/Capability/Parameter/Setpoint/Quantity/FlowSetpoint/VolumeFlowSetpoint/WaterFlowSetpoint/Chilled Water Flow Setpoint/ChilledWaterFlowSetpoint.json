@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a chilled water flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:WaterFlowSetpoint;1"
   ],

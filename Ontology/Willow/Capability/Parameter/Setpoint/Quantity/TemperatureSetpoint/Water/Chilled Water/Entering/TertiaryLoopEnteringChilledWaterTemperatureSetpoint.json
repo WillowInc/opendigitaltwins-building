@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Entering Chilled Water Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a tertiary chilled water loop entering temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:EnteringChilledWaterTemperatureSetpoint;1"
   ],

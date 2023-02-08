@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Bypass Hot Water Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a hot water bypass flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
   ],

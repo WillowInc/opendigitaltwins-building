@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Percent Unity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a percent setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:StateSetpoint;1"
   ],

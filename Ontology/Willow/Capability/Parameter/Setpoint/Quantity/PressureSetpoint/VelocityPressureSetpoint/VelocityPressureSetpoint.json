@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Velocity Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a velocity pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

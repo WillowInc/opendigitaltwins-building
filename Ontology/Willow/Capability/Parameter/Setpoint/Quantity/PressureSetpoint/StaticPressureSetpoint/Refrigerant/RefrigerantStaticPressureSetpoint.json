@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Refrigerant Static Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a refrigerant static pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:StaticPressureSetpoint;1",
     "dtmi:com:willowinc:RefrigerantPressureSetpoint;1"

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Return Air Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a return air delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
   ],

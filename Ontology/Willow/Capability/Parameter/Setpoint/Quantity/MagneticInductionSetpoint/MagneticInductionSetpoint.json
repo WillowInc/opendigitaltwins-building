@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Magnetic Induction Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a magnetic induction setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

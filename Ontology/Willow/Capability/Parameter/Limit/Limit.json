@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Limit"
   },
+  "description": {"en": "A configuration setting that sets a limit on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Parameter;1"
   ],

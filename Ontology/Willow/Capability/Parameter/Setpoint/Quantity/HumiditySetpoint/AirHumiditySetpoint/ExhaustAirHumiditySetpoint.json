@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Exhaust Air Humidity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an exhaust air humidity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

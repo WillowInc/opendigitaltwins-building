@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a condenser water leaving temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
   ],

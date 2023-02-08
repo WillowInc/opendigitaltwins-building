@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Condenser Water Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a tertiary condenser water loop delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterDeltaPressureSetpoint;1"
   ],

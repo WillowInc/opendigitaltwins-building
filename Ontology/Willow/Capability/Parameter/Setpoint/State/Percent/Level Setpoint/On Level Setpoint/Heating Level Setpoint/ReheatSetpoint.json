@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reheating Level Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a percent reheat setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HeatingLevelSetpoint;1"
   ],

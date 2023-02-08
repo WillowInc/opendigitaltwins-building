@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Dwell Time Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a dwell time setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:TimeSpanSetpoint;1"
   ],

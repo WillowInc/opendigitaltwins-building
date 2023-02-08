@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Steam Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a steam header flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSetpoint;1"
   ],

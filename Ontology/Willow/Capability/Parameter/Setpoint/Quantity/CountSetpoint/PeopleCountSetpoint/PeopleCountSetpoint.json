@@ -4,6 +4,7 @@
   "displayName": {
     "en": "People Count Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a people count setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CountSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Angle Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a current angle setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Absolute Humidity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an absolute humidity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySetpoint;1"
   ],

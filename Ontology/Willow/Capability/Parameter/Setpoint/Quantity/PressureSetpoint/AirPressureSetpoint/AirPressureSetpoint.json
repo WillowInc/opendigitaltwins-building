@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an air pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

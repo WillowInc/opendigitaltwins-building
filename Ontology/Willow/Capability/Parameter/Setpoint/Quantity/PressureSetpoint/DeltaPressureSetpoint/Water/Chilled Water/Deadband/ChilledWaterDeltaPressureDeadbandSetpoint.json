@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Delta Pressure Deadband Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a chilled water delta pressure deadband setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterDeltaPressureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

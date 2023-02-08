@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Nitrogen Dioxide (NO2) Air Quality Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a nitrogen dioxide (NO2) air quality setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:NOxAirQualitySetpoint;1"
   ],

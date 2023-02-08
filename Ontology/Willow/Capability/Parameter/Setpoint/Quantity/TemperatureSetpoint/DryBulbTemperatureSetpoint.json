@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Dry Bulb Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a dry bulb temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

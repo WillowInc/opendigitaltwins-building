@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Air Humidity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a mixed air humidity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Electrical Energy Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an electrical energy setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:EnergySetpoint;1"
   ],

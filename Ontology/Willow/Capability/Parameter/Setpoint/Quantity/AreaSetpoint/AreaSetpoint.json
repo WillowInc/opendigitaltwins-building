@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Area Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an area setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

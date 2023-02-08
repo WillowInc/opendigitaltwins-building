@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Humidity Setpoint"
+  },
+  "description": {"en": "A configuration setting that sets a relief air humidity setpoint on the equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

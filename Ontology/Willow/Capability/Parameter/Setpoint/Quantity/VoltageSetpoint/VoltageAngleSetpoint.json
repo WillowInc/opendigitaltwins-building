@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Angle Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a voltage angle setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

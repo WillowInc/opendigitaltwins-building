@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Exhaust Air Velocity Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an exhaust air velocity pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Air Static Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a mixed air static pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
   ],

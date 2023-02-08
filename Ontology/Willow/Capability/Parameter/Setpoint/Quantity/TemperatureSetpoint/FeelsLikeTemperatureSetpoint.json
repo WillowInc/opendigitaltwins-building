@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Feels Like Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a 'feels like' temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

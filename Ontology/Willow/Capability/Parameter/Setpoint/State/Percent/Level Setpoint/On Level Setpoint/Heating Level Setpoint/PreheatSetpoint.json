@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PreheatLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheating Level Setpoint"
+  },
+  "description": {"en": "A configuration setting that sets a percent preheat setpoint on the equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:HeatingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

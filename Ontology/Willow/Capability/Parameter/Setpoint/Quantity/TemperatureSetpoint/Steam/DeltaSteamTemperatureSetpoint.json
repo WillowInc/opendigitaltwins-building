@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Steam Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a steam delta temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

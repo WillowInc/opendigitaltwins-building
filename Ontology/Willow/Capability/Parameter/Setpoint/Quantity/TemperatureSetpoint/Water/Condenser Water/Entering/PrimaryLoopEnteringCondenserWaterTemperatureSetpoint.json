@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Entering Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a primary condenser water loop entering temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an inlet air temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

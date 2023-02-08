@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Chilled Water Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a primary chilled water loop delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterDeltaPressureSetpoint;1"
   ],

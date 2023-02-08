@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Carbon Monoxide (CO) Air Quality Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a carbon monoxide (CO) air quality setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

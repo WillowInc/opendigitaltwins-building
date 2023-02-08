@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Air Humidity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a discharge air humidity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

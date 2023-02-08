@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Unoccupied Heating Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an unoccupied heating temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

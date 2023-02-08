@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Electric Charge Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an electric charge setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

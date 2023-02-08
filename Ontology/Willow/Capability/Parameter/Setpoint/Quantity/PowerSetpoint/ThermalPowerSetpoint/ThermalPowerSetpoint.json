@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thermal Power Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a thermal power setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PowerSetpoint;1"
   ],

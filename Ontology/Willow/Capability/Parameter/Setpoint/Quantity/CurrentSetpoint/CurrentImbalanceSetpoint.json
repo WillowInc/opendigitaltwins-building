@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Imbalance Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a current imbalance setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSetpoint;1"
   ],

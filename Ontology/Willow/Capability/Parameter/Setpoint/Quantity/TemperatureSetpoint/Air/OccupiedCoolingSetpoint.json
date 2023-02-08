@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Occupied Cooling Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an occupied cooling temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Standby Heating Zone Air Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a standby heating zone air temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:StandbyHeatingSetpoint;1"

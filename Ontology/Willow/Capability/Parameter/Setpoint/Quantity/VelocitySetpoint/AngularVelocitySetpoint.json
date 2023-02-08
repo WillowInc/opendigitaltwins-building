@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Angular Velocity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an angular velocity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:VelocitySetpoint;1"
   ],

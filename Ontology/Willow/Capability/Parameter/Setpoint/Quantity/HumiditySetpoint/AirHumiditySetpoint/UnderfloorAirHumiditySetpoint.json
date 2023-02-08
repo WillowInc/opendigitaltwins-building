@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Underfloor Air Humidity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an underfloor air humidity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

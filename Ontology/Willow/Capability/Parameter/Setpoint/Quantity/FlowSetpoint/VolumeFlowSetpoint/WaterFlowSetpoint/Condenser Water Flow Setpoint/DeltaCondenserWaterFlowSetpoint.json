@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Condenser Water Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a condenser water delta flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Exhaust Air Damper Position Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a percent position setpoint on the exhaust air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSetpoint;1"
   ],

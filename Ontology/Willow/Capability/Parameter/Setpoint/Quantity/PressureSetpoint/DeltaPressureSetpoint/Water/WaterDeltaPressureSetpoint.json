@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Water Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a water delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:WaterPressureSetpoint;1",
     "dtmi:com:willowinc:DeltaPressureSetpoint;1"

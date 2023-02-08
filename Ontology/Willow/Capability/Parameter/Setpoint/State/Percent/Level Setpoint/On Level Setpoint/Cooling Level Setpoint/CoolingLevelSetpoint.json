@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Cooling Level Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a percent cooling setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:OnLevelSetpoint;1"
   ],

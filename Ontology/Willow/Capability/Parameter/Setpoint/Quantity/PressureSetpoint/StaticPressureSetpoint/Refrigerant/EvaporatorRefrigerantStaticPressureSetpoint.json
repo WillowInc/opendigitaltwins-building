@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Evaporator Refrigerant Static Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an evaporator refrigerant static pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
   ],

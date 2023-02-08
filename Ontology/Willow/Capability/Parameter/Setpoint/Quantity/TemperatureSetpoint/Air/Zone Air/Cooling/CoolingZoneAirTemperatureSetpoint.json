@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Cooling Zone Air Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a cooling zone air temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
   ],

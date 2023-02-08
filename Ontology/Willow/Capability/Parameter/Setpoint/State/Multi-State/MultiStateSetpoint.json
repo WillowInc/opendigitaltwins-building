@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Multi-State Setpoint"
   },
+  "description": {"en": "A multi-state configuration setting that sets a setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:StateSetpoint;1"
   ],

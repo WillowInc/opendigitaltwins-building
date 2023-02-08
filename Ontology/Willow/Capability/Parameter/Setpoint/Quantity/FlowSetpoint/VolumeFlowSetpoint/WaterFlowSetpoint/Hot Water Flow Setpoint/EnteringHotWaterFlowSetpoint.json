@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering Hot Water Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a hot water entering flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
   ],

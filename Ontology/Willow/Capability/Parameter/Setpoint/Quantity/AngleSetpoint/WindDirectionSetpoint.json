@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Wind Direction Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a wind direction setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AngleSetpoint;1"
   ],

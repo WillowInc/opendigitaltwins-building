@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Visibility Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a visibility setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:DistanceSetpoint;1"
   ],

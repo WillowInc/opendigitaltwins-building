@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Effective Zone Air Temperature Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an effective zone air temperature setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
   ],

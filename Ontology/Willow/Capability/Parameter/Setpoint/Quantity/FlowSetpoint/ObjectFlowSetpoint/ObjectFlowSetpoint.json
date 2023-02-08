@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Object Flow Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an object flow setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

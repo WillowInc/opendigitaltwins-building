@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Outside Air Static Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an outside air static pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
   ],

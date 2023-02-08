@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thermal Energy Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a thermal energy setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:EnergySetpoint;1"
   ],

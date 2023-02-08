@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Water Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a water pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

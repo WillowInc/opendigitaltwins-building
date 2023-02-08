@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Active Electrical Power Setpoint"
   },
+  "description": {"en": "A configuration setting that sets an active electrical power setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
   ],

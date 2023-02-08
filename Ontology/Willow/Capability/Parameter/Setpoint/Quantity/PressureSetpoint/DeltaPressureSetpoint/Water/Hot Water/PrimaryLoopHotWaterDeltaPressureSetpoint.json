@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Hot Water Delta Pressure Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a primary hot water loop delta pressure setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterDeltaPressureSetpoint;1"
   ],

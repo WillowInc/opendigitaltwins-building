@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Luminosity Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a luminosity setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

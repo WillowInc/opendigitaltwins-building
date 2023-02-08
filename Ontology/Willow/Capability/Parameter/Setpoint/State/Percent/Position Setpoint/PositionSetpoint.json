@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Position Setpoint"
   },
+  "description": {"en": "A configuration setting that sets a percent position setpoint on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PercentSetpoint;1"
   ],
