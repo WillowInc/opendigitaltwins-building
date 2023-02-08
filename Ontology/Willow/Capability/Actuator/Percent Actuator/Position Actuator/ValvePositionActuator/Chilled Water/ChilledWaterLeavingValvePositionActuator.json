@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Chilled Water Valve Leaving Position Actuator"
   },
-  "description": {"en": "The percent command which sets the position of the chilled water leaving valve"},
+  "description": {"en": "The percent command which sets the position of the leaving chilled water valve"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
   ],

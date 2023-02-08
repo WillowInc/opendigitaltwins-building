@@ -4,6 +4,7 @@
   "displayName": {
     "en": "WiFi Data Size Sensor"
   },
+  "description": {"en": "The data size feedback from a sensor associated with wifi"},
   "extends" : [
     "dtmi:com:willowinc:DataSizeSensor;1"
   ],

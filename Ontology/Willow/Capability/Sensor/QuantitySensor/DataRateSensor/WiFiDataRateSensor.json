@@ -4,6 +4,7 @@
   "displayName": {
     "en": "WiFi Data Rate Sensor"
   },
+  "description": {"en": "The data rate feedback from a sensor associated with wifi"},
   "extends" : [
     "dtmi:com:willowinc:DataRateSensor;1"
   ],

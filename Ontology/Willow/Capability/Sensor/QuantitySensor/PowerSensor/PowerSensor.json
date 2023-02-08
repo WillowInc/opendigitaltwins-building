@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Power Sensor"
   },
+  "description": {"en": "The power feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

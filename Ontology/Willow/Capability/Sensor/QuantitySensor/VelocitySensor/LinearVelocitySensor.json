@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Linear Velocity Sensor"
   },
+  "description": {"en": "The linear velocity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:VelocitySensor;1"
   ],

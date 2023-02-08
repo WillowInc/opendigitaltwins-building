@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Ethernet Data Size Sensor"
   },
+  "description": {"en": "The data size feedback from a sensor associated with ethernet"},
   "extends" : [
     "dtmi:com:willowinc:DataSizeSensor;1"
   ],

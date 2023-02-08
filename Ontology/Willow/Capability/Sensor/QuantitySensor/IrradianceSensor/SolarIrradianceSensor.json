@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Solar Irradiance Sensor"
   },
+  "description": {"en": "The solar irradiance feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:IrradianceSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Air Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with mixed air"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSensor;1"
   ],

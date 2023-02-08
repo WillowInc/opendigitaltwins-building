@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase C Current Demand Sensor"
   },
+  "description": {"en": "The current demand feedback from a sensor associated with phase c"},
   "extends" : [
     "dtmi:com:willowinc:PhaseCCurrentMagnitudeSensor;1"
   ],

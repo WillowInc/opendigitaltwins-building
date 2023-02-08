@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Dwell Time Sensor"
   },
+  "description": {"en": "The dwell time feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:TimeSpanSensor;1"
   ],

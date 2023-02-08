@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Distance Sensor"
   },
+  "description": {"en": "The distance feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:LengthSensor;1"
   ],

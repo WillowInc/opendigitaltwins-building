@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reactive Electrical Energy Sensor"
   },
+  "description": {"en": "The reactive electrical energy feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalEnergySensor;1"
   ],

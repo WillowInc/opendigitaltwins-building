@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Leaving Hot Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving hot water primary loop"},
   "extends" : [
     "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
   ],

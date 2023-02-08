@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase C Import Reactive Electrical Energy Sensor"
   },
+  "description": {"en": "The reactive electrical energy feedback from a sensor associated with phase c import"},
   "extends" : [
     "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
   ],

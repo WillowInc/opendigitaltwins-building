@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Count Sensor"
   },
+  "description": {"en": "The count feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

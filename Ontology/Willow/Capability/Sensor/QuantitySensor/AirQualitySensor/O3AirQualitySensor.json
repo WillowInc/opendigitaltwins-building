@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Ozone (O3) Air Quality Sensor"
   },
+  "description": {"en": "The ozone (O3) air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySensor;1"
   ],

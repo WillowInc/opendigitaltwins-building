@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Entering Condenser Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with entering condenser water tertiary loop"},
   "extends" : [
     "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSensor;1"
   ],

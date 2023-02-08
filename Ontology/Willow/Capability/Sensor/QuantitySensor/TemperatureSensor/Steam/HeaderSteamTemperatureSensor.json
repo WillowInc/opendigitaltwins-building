@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Steam Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with steam header"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSensor;1"
   ],

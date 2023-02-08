@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Steam Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with steam header"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSensor;1"
   ],

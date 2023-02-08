@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Chilled Water Leaving Pump VFD Run Level Actuator"
   },
-  "description": {"en": "The percent command which sets the run level of the chilled water leaving pump vfd"},
+  "description": {"en": "The percent command which sets the run level of the leaving chilled water pump vfd"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
   ],

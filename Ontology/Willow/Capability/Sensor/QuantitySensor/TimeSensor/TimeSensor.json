@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Time Sensor"
   },
-  "description": {
-    "en": "A Time Sensor is a single point in time as defined by a clock."
-  },
+  "description": {"en": "The time feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

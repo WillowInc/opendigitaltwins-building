@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Velocity Sensor"
   },
+  "description": {"en": "The velocity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

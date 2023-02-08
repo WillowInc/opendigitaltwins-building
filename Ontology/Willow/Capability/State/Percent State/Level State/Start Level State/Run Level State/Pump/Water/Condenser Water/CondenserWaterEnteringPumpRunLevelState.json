@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Entering Pump Run Level State"
   },
-  "description": {"en": "The percent run level state of the condenser water entering pump"},
+  "description": {"en": "The percent run level state of the entering condenser water pump"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
   ],

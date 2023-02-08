@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Magnetic Flux Sensor"
   },
+  "description": {"en": "The magnetic flux feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

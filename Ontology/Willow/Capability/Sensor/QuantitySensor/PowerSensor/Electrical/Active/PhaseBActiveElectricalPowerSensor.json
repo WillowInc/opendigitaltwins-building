@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase B Active Electrical Power Sensor"
   },
+  "description": {"en": "The active electrical power feedback from a sensor associated with phase b"},
   "extends" : [
     "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
   ],

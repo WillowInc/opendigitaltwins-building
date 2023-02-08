@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Entering Chilled Water Flow Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with chilled water entering flow"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with entering chilled water flow"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
   ],

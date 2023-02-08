@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with condenser water"},
   "extends" : [
     "dtmi:com:willowinc:WaterTemperatureSensor;1"
   ],

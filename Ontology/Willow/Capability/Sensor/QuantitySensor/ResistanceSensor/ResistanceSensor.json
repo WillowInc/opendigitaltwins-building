@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Resistance Sensor"
   },
+  "description": {"en": "The resistance pressure feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

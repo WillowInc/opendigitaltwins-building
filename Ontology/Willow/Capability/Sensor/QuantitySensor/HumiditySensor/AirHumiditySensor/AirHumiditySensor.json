@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Humidity Sensor"
   },
+  "description": {"en": "The humidity feedback from a sensor associated with air"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Export Active Electrical Energy Sensor"
   },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with total export"},
   "extends" : [
     "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
   ],

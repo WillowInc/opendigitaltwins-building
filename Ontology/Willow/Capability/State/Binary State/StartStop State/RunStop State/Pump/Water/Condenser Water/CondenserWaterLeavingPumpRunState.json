@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Leaving Pump Run State"
   },
-  "description": {"en": "The Boolean state of the condenser water leaving pump which is 'run' when 'true'"},
+  "description": {"en": "The Boolean state of the leaving condenser water pump which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Static Pressure Sensor"
   },
+  "description": {"en": "The static pressure feedback from a sensor associated with air"},
   "extends" : [
     "dtmi:com:willowinc:StaticPressureSensor;1",
     "dtmi:com:willowinc:AirPressureSensor;1"

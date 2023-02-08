@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Surface Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with surface"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSensor;1"
   ],

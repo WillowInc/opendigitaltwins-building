@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Rainfall Rate Sensor"
   },
+  "description": {"en": "The rate feedback from a sensor associated with rainfall"},
   "extends" : [
     "dtmi:com:willowinc:PrecipitationRateSensor;1"
   ],

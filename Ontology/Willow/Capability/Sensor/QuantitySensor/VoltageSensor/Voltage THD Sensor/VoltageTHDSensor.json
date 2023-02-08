@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Total Harmonic Distortion (THD) Sensor"
   },
+  "description": {"en": "The voltage total harmonic distortion (THD) feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSensor;1"
   ],

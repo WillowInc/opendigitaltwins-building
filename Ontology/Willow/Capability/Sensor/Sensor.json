@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Sensor"
   },
+  "description": {"en": "A status or feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:Capability;1"
   ],

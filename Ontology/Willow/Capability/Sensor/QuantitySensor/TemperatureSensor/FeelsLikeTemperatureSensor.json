@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Feels Like Temperature Sensor"
   },
+  "description": {"en": "The feels like temperature feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSensor;1"
   ],

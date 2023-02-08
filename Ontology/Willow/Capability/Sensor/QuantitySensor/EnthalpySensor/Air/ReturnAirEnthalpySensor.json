@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Return Air Enthalpy Sensor"
   },
+  "description": {"en": "The enthalpy feedback from a sensor associated with return air"},
   "extends" : [
     "dtmi:com:willowinc:AirEnthalpySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase C Current Angle Sensor"
   },
+  "description": {"en": "The current angle feedback from a sensor associated with phase c"},
   "extends" : [
     "dtmi:com:willowinc:CurrentAngleSensor;1"
   ],

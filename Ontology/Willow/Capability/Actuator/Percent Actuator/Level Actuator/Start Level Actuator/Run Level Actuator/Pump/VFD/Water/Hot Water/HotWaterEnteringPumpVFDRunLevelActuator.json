@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Hot Water Entering Pump VFD Run Level Actuator"
   },
-  "description": {"en": "The percent command which sets the run level of the hot water entering pump vfd"},
+  "description": {"en": "The percent command which sets the run level of the entering hot water pump vfd"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
   ],

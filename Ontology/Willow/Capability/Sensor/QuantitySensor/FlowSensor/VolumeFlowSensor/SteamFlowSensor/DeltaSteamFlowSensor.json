@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Steam Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with steam delta"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSensor;1"
   ],

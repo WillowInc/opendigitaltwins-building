@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Magnitude Sensor"
   },
+  "description": {"en": "The voltage magnitude feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSensor;1"
   ],

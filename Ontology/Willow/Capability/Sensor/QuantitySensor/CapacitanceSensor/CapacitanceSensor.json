@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Capacitance Sensor"
   },
+  "description": {"en": "The capacitance feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

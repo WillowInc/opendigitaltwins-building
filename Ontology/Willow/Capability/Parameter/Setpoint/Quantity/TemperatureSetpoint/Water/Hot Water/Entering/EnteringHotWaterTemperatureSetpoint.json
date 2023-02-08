@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Entering Hot Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with hot water entering temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with entering hot water temperature"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
   ],

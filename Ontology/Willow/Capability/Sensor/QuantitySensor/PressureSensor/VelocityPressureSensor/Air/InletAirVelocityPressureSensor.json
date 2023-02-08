@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Velocity Pressure Sensor"
   },
+  "description": {"en": "The velocity pressure feedback from a sensor associated with inlet air"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSensor;1"
   ],

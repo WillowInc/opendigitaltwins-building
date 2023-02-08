@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Pressure Sensor"
   },
+  "description": {"en": "The total pressure feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PressureSensor;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Leaving Chilled Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with chilled water leaving temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with leaving chilled water temperature"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
   ],

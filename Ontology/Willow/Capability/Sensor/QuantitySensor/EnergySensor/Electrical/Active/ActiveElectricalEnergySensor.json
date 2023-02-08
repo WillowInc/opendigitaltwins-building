@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Active Electrical Energy Sensor"
   },
+  "description": {"en": "The active electrical energy feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalEnergySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Luminosity Sensor"
   },
+  "description": {"en": "The luminosity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

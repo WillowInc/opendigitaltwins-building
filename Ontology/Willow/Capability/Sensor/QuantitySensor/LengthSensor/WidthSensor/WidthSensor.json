@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Width Sensor"
   },
+  "description": {"en": "The width feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:LengthSensor;1"
   ],

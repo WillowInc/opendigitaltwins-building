@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Precipitation Accumulation Sensor"
   },
+  "description": {"en": "The accumulation feedback from a sensor associated with precipitation"},
   "extends" : [
     "dtmi:com:willowinc:LengthSensor;1"
   ],

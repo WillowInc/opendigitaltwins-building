@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Wind Speed Sensor"
   },
+  "description": {"en": "The speed feedback from a sensor associated with wind"},
   "extends" : [
     "dtmi:com:willowinc:LinearSpeedSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Leaving Condenser Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving condenser water primary loop"},
   "extends" : [
     "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSensor;1"
   ],

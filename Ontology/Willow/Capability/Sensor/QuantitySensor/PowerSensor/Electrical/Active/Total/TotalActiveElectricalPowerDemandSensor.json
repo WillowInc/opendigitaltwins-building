@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Active Electrical Power Demand Sensor"
   },
+  "description": {"en": "The active electrical power demand feedback from a sensor associated with total"},
   "extends" : [
     "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
   ],

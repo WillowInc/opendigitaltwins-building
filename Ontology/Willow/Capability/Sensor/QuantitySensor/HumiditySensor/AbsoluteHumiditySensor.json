@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Absolute Humidity Sensor"
   },
+  "description": {"en": "The absolute humidity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySensor;1"
   ],

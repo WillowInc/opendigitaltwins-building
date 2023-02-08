@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Steam Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with steam"},
   "extends" : [
     "dtmi:com:willowinc:WaterTemperatureSensor;1"
   ],

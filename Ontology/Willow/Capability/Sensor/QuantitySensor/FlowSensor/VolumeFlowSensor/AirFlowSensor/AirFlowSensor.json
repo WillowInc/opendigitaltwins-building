@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with air"},
   "extends" : [
     "dtmi:com:willowinc:VolumeFlowSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Steam Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with steam"},
   "extends" : [
     "dtmi:com:willowinc:SteamPressureSensor;1",
     "dtmi:com:willowinc:DeltaPressureSensor;1"

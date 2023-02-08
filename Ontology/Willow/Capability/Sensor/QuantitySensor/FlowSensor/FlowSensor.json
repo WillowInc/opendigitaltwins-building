@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Flow Sensor"
   },
+  "description": {"en": "The flow feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

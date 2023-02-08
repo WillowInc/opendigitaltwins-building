@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Condenser Water Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with condenser water delta"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
   ],

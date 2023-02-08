@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with hot water"},
   "extends" : [
     "dtmi:com:willowinc:WaterTemperatureSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Chilled Water Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with leaving chilled water"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSensor;1"
   ],

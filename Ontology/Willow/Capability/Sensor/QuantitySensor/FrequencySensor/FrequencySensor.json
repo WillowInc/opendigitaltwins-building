@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Frequency Sensor"
   },
+  "description": {"en": "The frequency feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

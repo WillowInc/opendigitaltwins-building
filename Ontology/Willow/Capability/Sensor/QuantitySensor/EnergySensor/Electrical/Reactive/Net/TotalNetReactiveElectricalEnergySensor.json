@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Net Reactive Electrical Energy Sensor"
   },
+  "description": {"en": "The reactive electrical energy feedback from a sensor associated with total net"},
   "extends" : [
     "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
   ],

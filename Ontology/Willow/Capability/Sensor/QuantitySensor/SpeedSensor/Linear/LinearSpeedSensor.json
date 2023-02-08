@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Linear Speed Sensor"
   },
+  "description": {"en": "The linear speed feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:SpeedSensor;1"
   ],

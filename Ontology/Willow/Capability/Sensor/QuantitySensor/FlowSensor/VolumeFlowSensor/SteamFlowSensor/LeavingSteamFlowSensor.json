@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Steam Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with steam leaving"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSensor;1"
   ],

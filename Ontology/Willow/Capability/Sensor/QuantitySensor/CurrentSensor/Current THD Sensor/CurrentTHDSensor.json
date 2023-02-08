@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Total Harmonic Distortion (THD) Sensor"
   },
+  "description": {"en": "The current total harmonic distortion (THD) feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSensor;1"
   ],

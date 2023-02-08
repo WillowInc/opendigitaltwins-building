@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with inlet air"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSensor;1"
   ],

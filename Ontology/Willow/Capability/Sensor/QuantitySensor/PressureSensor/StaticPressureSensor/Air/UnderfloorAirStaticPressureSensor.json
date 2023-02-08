@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Underfloor Air Static Pressure Sensor"
   },
+  "description": {"en": "The static pressure feedback from a sensor associated with underfloor air"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSensor;1"
   ],

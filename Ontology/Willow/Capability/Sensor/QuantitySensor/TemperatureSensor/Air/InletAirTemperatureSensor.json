@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with inlet air"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSensor;1"
   ],

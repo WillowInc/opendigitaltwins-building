@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Velocity Pressure Sensor"
   },
+  "description": {"en": "The velocity pressure feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PressureSensor;1"
   ],

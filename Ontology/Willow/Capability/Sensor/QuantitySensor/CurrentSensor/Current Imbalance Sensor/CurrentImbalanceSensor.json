@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Imbalance Sensor"
   },
+  "description": {"en": "The current imbalance feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSensor;1"
   ],

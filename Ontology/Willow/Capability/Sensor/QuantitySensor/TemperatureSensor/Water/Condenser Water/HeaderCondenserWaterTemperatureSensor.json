@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Condenser Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with condenser water header"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
   ],

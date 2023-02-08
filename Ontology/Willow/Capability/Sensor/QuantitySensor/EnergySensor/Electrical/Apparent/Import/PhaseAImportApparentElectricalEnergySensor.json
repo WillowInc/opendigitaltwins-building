@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase A Import Apparent Electrical Energy Sensor"
   },
+  "description": {"en": "The apparent electrical energy feedback from a sensor associated with phase a import"},
   "extends" : [
     "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
   ],

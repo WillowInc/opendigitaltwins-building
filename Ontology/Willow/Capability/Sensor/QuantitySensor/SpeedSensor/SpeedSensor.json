@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Speed Sensor"
   },
+  "description": {"en": "The speed feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

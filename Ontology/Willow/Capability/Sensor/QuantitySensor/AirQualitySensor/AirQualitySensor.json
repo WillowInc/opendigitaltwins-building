@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Quality Sensor"
   },
+  "description": {"en": "The air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Acceleration Sensor"
   },
+  "description": {"en": "The acceleration feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

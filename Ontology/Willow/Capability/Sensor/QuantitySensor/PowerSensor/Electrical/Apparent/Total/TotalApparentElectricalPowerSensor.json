@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Apparent Electrical Power Sensor"
   },
+  "description": {"en": "The apparent electrical power feedback from a sensor associated with total"},
   "extends" : [
     "dtmi:com:willowinc:ApparentElectricalPowerSensor;1"
   ],

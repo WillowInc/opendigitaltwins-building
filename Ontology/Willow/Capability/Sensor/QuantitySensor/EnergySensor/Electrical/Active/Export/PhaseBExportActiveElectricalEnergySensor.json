@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase B Export Active Electrical Energy Sensor"
   },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with phase b export"},
   "extends" : [
     "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Air Humidity Sensor"
   },
+  "description": {"en": "The humidity feedback from a sensor associated with discharge air"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySensor;1"
   ],

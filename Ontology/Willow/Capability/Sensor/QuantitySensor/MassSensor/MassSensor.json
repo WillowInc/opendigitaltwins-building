@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mass Sensor"
   },
+  "description": {"en": "The mass feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

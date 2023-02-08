@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Refrigerant Pressure Sensor"
   },
+  "description": {"en": "The pressure feedback from a sensor associated with refrigerant"},
   "extends" : [
     "dtmi:com:willowinc:PressureSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase A Reactive Electrical Power Sensor"
   },
+  "description": {"en": "The reactive electrical power feedback from a sensor associated with phase a"},
   "extends" : [
     "dtmi:com:willowinc:ReactiveElectricalPowerSensor;1"
   ],

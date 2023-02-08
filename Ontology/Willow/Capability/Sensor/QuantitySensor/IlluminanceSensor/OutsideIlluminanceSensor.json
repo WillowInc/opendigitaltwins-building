@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Outside Illuminance Sensor"
   },
+  "description": {"en": "The illuminance feedback from a sensor associated with outside"},
   "extends" : [
     "dtmi:com:willowinc:IlluminanceSensor;1"
   ],
