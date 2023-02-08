@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Exhaust Air Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that sets an exhaust air flow setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn exhaust air flow"},
   "extends" : [
     "dtmi:com:willowinc:AirFlowSetpoint;1"
   ],

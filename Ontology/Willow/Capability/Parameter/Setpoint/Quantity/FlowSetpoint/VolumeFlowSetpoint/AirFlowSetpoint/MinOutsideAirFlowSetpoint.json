@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Minimum Outside Air Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a minimum outside air flow setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with minimum outside air flow"},
   "extends" : [
     "dtmi:com:willowinc:OutsideAirFlowSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Illuminance Setpoint"
   },
-  "description": {"en": "A configuration setting that sets an illuminance setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn illuminance"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "VFD Run Level Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a percent VFD run level setpoint on the equipment"},
+  "description": {"en": "A percent configuration setting that functions as the desired run level for control of a VFD"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelSetpoint;1"
   ],

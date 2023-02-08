@@ -4,7 +4,7 @@
   "displayName": {
     "en": "State Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a setpoint state on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired state for equipment"},
   "extends" : [
     "dtmi:com:willowinc:Setpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Hot Water Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a hot water flow setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with hot water flow"},
   "extends" : [
     "dtmi:com:willowinc:WaterFlowSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "On Level Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a percent 'on' setpoint on the equipment"},
+  "description": {"en": "A percent configuration setting that functions as the desired 'on' level for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelSetpoint;1"
   ],

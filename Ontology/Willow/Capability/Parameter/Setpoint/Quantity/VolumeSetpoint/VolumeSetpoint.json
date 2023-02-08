@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Volume Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a volume setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with volume"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

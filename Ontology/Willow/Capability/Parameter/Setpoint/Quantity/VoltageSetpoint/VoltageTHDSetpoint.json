@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Voltage Total Harmonic Distortion (THD) Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a voltage THD setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with voltage THD"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

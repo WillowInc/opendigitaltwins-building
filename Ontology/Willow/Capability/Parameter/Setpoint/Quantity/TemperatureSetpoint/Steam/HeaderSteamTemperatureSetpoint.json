@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Header Steam Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a steam header temperature setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with steam header temperature"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

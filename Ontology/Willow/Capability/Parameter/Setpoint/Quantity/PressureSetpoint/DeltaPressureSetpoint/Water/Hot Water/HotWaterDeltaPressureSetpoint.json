@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Hot Water Delta Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a hot water delta pressure setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with hot water delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
   ],

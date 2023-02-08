@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Deadband Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a deadband setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as a deadband around a setpoint"},
   "extends" : [
     "dtmi:com:willowinc:Setpoint;1"
   ],

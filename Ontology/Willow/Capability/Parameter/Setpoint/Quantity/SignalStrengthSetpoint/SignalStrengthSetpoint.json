@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Signal Strength Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a signal strength setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with signal strength"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

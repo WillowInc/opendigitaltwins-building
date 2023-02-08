@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Damper Position Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a percent position setpoint on the damper"},
+  "description": {"en": "A percent configuration setting that functions as the desired position for control of a damper"},
   "extends" : [
     "dtmi:com:willowinc:PositionSetpoint;1"
   ],

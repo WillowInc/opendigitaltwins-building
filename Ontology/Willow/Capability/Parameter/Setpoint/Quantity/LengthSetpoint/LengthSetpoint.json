@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Length Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a lenght setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with lenght"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Primary Loop Condenser Water Delta Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a primary condenser water loop delta pressure setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with primary condenser water loop delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterDeltaPressureSetpoint;1"
   ],

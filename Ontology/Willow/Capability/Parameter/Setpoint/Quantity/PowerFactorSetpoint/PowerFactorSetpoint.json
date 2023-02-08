@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Power Factor Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a power factor setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with power factor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

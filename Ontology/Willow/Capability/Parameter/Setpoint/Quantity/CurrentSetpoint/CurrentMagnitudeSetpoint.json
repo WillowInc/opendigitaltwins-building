@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Current Magnitude Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a current magnitude setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with current magnitude"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSetpoint;1"
   ],

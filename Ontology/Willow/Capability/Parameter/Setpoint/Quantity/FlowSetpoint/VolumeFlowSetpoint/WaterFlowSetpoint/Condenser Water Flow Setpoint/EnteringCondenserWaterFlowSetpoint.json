@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Entering Condenser Water Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a condenser water entering flow setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with condenser water entering flow"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Discharge Air Static Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a discharge air static pressure setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with discharge air static pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
   ],

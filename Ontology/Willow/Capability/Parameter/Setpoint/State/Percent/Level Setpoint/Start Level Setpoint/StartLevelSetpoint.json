@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Start Level Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a start level percent setpoint on the equipment"},
+  "description": {"en": "A percent configuration setting that functions as the desired start level for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelSetpoint;1"
   ],

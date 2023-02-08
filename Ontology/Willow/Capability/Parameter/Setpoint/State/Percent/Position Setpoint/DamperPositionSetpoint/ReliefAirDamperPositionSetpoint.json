@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Relief Air Damper Position Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a percent position setpoint on the relief air damper"},
+  "description": {"en": "A percent configuration setting that functions as the desired position for control of the relief air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSetpoint;1"
   ],

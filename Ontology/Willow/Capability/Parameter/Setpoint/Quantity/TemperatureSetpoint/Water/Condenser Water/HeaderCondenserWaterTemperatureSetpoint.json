@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Header Condenser Water Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a condenser water header temperature setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with condenser water header temperature"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
   ],

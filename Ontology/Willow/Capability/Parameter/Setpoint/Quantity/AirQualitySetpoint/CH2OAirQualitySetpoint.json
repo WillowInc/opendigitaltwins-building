@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Formaldehyde (CH2O) Air Quality Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a formaldehyde (CH2O) air quality setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with formaldehyde (CH2O) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

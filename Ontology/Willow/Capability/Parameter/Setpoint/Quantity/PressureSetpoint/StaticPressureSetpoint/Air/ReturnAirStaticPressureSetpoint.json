@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Return Air Static Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a return air static pressure setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with return air static pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
   ],

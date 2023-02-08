@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Static Pressure Deadband Setpoint"
   },
-  "description": {"en": "A configuration setting that sets an air static pressure deadband setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as a deadband around the air static pressure setpoint"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

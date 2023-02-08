@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Relief Air Delta Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a relief air delta pressure setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with relief air delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
   ],

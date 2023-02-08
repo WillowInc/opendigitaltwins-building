@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Quality Index Setpoint"
   },
-  "description": {"en": "A configuration setting that sets an air quality index setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn air quality index"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

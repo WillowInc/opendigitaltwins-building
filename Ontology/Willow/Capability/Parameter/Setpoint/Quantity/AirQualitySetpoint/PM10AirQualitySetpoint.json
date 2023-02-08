@@ -4,7 +4,7 @@
   "displayName": {
     "en": "PM10 Air Quality Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a PM10 air quality setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with PM10 air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

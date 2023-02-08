@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Steam Temperature Deadband Setpoint"
   },
-  "description": {"en": "A configuration setting that sets a steam temperature deadband setpoint on the equipment"},
+  "description": {"en": "A configuration setting that functions as a deadband around the steam temperature setpoint"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"
