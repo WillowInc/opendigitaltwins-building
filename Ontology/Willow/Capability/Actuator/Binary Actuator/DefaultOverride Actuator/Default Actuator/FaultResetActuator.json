@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Fault Reset Actuator"
   },
-  "description": {"en": "A Boolean command which sets the state of the fault to 'reset' when 'true'"},
+  "description": {"en": "The boolean command which sets the state of the fault to 'reset' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:ResetActuator;1"
   ],

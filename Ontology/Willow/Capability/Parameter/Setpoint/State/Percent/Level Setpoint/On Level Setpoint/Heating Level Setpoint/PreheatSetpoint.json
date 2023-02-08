@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Preheating Level Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired level percentage for control of equipment associated with preheating"},
+  "description": {"en": "The configuration setting that functions as the desired level percentage for control of equipment associated with preheating"},
   "extends" : [
     "dtmi:com:willowinc:HeatingLevelSetpoint;1"
   ],

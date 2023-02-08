@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Valve Position Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired position percentage for control of the valve"},
+  "description": {"en": "The configuration setting that functions as the desired position percentage for control of the valve"},
   "extends" : [
     "dtmi:com:willowinc:PositionSetpoint;1"
   ],

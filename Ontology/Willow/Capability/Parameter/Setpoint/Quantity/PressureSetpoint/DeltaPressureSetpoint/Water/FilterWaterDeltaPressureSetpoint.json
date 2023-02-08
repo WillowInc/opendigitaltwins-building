@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Filter Water Delta Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with filter water delta pressure"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with filter water delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
   ],

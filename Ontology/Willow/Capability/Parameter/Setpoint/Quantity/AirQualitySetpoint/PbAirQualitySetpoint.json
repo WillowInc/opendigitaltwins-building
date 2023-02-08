@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Lead (Pb) Air Quality Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with lead (Pb) air quality"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with lead (Pb) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

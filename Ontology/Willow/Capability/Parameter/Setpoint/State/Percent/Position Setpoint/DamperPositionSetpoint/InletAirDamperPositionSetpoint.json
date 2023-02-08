@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Inlet Air Damper Position Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired position percentage for control of the inlet air damper"},
+  "description": {"en": "The configuration setting that functions as the desired position percentage for control of the inlet air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSetpoint;1"
   ],

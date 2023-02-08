@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Normal State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'normal' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:NormalFaultState;1"
   ],

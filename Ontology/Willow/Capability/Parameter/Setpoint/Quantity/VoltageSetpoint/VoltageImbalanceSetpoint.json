@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Voltage Imbalance Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with voltage imbalance"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with voltage imbalance"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

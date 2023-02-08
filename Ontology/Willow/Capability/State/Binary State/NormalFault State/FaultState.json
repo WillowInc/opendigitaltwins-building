@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fault State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'fault' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:NormalFaultState;1"
   ],

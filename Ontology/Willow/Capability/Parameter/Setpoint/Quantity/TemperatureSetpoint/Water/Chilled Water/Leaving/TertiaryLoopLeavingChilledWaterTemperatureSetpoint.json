@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Leaving Chilled Water Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with tertiary chilled water loop leaving temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with tertiary chilled water loop leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:LeavingChilledWaterTemperatureSetpoint;1"
   ],

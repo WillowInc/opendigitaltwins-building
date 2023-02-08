@@ -4,7 +4,7 @@
   "displayName": {
     "en": "On Level Actuator"
   },
-  "description": {"en": "A percent command which sets the 'on' level of the equipment"},
+  "description": {"en": "The percent command which sets the 'on' level of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelActuator;1"
   ],

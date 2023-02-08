@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Temperature Deadband Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as a deadband around the condenser water temperature setpoint"},
+  "description": {"en": "The configuration setting that functions as a deadband around the condenser water temperature setpoint"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

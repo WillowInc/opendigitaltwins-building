@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Mass Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with mass flow"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with mass flow"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

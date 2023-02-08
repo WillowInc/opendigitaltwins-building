@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Bypass Pump Run Level State"
   },
+  "description": {"en": "The percent run level state of the hot water bypass pump"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Valve Position Actuator"
   },
-  "description": {"en": "A percent command which sets the position of the valve"},
+  "description": {"en": "The percent command which sets the position of the valve"},
   "extends" : [
     "dtmi:com:willowinc:PositionActuator;1"
   ],

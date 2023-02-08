@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Dishwasher Run State"
   },
+  "description": {"en": "The Boolean state of the dishwasher which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Header Chilled Water Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with chilled water header flow"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with chilled water header flow"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
   ],

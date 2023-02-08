@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Irradiance Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn irradiance"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn irradiance"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

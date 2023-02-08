@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Run/Stop State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'run' when 'true' and 'stop' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:StartStopState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Run/Stop Actuator"
   },
-  "description": {"en": "A Boolean command which sets the state of the equipment to 'run' when 'true' and 'stop' when 'false'"},
+  "description": {"en": "The boolean command which sets the state of the equipment to 'run' when 'true' and 'stop' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:StartStopActuator;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "People Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with people flow"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with people flow"},
   "extends" : [
     "dtmi:com:willowinc:ObjectFlowSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Nitrogen Oxide (NOx) Air Quality Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with nitrogen oxide (NOx) air quality"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with nitrogen oxide (NOx) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

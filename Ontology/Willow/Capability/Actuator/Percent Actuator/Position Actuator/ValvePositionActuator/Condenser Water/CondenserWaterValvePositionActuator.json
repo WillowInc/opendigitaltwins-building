@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Valve Position Actuator"
   },
-  "description": {"en": "A percent command which sets the position of the condenser water valve"},
+  "description": {"en": "The percent command which sets the position of the condenser water valve"},
   "extends" : [
     "dtmi:com:willowinc:ValvePositionActuator;1"
   ],

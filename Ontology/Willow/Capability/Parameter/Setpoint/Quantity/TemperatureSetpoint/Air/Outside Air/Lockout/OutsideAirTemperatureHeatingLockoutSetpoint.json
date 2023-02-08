@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Outside Air Temperature Heating Lockout Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn outside air temperature heating lockout"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn outside air temperature heating lockout"},
   "extends" : [
     "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
   ],

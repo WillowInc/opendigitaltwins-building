@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Header Valve Position Actuator"
   },
-  "description": {"en": "A percent command which sets the position of the condenser water header valve"},
+  "description": {"en": "The percent command which sets the position of the condenser water header valve"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
   ],

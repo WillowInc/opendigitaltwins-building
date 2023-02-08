@@ -4,6 +4,7 @@
   "displayName": {
     "en": "State"
   },
+  "description": {"en": "The state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Capability;1"
   ],

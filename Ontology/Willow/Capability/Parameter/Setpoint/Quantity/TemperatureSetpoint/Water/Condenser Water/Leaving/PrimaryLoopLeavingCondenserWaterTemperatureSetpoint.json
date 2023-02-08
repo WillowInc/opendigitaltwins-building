@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Primary Loop Leaving Condenser Water Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with primary condenser water loop leaving temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with primary condenser water loop leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Discharge Fan Run Actuator"
   },
-  "description": {"en": "A Boolean command which sets the state of the discharge (supply) air fan to 'run' when 'true'"},
+  "description": {"en": "The boolean command which sets the state of the discharge (supply) air fan to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:FanRunActuator;1"
   ],

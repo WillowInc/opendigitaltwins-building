@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Run Level State"
   },
+  "description": {"en": "The percent run level state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:StartLevelState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Sound Pressure Level Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with sound pressure level (SPL)"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with sound pressure level (SPL)"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

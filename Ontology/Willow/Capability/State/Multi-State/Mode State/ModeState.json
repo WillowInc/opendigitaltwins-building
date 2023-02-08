@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mode State"
   },
+  "description": {"en": "The multi-state mode of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:MultiState;1"
   ],

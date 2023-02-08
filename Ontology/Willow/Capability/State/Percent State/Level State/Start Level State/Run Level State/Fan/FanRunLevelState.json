@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan Run Level State"
   },
+  "description": {"en": "The percent run level state of the fan"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelState;1"
   ],

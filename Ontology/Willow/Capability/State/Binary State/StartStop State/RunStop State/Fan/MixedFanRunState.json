@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Fan Run State"
   },
+  "description": {"en": "The Boolean state of the mixed air fan which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:FanRunState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Object Flow Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn object flow"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn object flow"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

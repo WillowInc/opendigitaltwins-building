@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Absent Actuator"
   },
-  "description": {"en": "A Boolean command which sets the state of the equipment to 'absent' when 'true'"},
+  "description": {"en": "The boolean command which sets the state of the equipment to 'absent' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:PresentAbsentActuator;1"
   ],

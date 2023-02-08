@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Close Position State"
   },
+  "description": {"en": "The percent close position state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PositionState;1"
   ],

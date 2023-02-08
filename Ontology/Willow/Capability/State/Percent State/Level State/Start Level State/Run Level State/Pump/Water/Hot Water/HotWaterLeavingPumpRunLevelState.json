@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Leaving Pump Run Level State"
   },
+  "description": {"en": "The percent run level state of the hot water leaving pump"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
   ],

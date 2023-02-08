@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Outside Fan VFD Run Level Actuator"
   },
-  "description": {"en": "A percent command which sets the run level of the outside air fan vfd"},
+  "description": {"en": "The percent command which sets the run level of the outside air fan vfd"},
   "extends" : [
     "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
   ],

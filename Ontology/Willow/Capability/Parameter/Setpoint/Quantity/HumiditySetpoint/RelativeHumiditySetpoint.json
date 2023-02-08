@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Relative Humidity Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with relative humidity"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with relative humidity"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySetpoint;1"
   ],

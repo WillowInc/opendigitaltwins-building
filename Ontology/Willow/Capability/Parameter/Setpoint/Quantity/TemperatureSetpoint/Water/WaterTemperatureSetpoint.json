@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Water Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with water temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with water temperature"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

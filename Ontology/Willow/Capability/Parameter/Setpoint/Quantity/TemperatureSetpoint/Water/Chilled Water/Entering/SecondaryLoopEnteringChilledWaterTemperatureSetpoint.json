@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Secondary Loop Entering Chilled Water Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with secondary chilled water loop entering temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with secondary chilled water loop entering temperature"},
   "extends" : [
     "dtmi:com:willowinc:EnteringChilledWaterTemperatureSetpoint;1"
   ],

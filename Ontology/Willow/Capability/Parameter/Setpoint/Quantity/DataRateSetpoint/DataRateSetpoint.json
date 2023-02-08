@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Data Rate Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with data rate"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with data rate"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

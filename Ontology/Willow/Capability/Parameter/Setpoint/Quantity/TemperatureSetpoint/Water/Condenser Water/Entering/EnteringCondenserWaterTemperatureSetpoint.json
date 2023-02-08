@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Entering Condenser Water Temperature Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated with condenser water entering temperature"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with condenser water entering temperature"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
   ],

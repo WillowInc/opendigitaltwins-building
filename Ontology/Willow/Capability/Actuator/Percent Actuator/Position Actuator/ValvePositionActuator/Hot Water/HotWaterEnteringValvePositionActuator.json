@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Hot Water Entering Valve Position Actuator"
   },
-  "description": {"en": "A percent command which sets the position of the hot water entering valve"},
+  "description": {"en": "The percent command which sets the position of the hot water entering valve"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
   ],

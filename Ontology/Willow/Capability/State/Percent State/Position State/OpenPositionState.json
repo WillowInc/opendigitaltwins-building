@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Open Position State"
   },
+  "description": {"en": "The percent open position state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PositionState;1"
   ],

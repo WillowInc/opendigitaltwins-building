@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Max Limit"
   },
-  "description": {"en": "A configuration setting that sets an upper limit on the equipment"},
+  "description": {"en": "The configuration setting that sets an upper limit on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Limit;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Multi-State"
   },
+  "description": {"en": "The multi-state state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:State;1"
   ],

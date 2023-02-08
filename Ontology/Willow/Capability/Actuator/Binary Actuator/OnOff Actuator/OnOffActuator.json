@@ -4,7 +4,7 @@
   "displayName": {
     "en": "On/Off Actuator"
   },
-  "description": {"en": "A Boolean command which sets the state of the equipment to 'on' when 'true' and 'off' when 'false'"},
+  "description": {"en": "The boolean command which sets the state of the equipment to 'on' when 'true' and 'off' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryActuator;1"
   ],

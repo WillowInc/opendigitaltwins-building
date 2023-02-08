@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Operational State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'operational' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OperationalNonoperationalState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Static Pressure Setpoint"
   },
-  "description": {"en": "A configuration setting that functions as the desired value for control of the equipment associated withn air static pressure"},
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn air static pressure"},
   "extends" : [
     "dtmi:com:willowinc:StaticPressureSetpoint;1",
     "dtmi:com:willowinc:AirPressureSetpoint;1"

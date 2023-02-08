@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Entering Pump Run Level State"
   },
+  "description": {"en": "The percent run level state of the chilled water entering pump"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
   ],

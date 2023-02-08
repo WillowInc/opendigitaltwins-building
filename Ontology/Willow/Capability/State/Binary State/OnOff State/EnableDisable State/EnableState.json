@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Enable State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'enable' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:EnableDisableState;1",
     "dtmi:com:willowinc:OnState;1"

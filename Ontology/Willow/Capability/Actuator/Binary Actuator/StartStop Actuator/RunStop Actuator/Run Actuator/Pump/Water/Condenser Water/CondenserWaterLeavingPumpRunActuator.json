@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Leaving Pump Run Actuator"
   },
-  "description": {"en": "A Boolean command which sets the state of the condenser water leaving pump to 'run' when 'true'"},
+  "description": {"en": "The boolean command which sets the state of the condenser water leaving pump to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
   ],
