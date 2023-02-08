@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:QuantityPerformanceIndicator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Quantity Performance Indicator"
+  },
+  "description": {
+    "en": "A performance indicator which has values that are a quantity or ratio of quantities (i.e. Degrees Fahrenheit, Cubic Feet Per Minute Per Person)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
