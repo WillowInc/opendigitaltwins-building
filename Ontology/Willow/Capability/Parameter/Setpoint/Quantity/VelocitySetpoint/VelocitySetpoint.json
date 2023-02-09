@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Velocity Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with velocity"},
+  "description": {"en": "The desired value associated with velocity"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Bypass Condenser Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with condenser water bypass temperature"},
+  "description": {"en": "The desired value associated with condenser water bypass temperature"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
   ],

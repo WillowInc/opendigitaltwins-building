@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Dwell Time Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with dwell time"},
+  "description": {"en": "The desired value associated with dwell time"},
   "extends" : [
     "dtmi:com:willowinc:TimeSpanSetpoint;1"
   ],

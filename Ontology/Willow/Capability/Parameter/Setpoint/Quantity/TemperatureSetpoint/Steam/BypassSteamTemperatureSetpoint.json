@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Bypass Steam Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with steam bypass temperature"},
+  "description": {"en": "The desired value associated with steam bypass temperature"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

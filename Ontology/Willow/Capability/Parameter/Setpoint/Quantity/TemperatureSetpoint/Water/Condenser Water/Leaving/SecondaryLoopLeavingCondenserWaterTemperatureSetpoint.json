@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Secondary Loop Leaving Condenser Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with secondary condenser water loop leaving temperature"},
+  "description": {"en": "The desired value associated with secondary condenser water loop leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1"
   ],

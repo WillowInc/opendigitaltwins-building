@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Delta Pressure Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn air delta pressure"},
+  "description": {"en": "The desired value associated withn air delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirPressureSetpoint;1",
     "dtmi:com:willowinc:DeltaPressureSetpoint;1"

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Leaving Hot Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with tertiary hot water loop leaving temperature"},
+  "description": {"en": "The desired value associated with tertiary hot water loop leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:LeavingHotWaterTemperatureSetpoint;1"
   ],

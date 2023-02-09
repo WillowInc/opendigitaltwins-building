@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Total Volatile Organic Compound (TVOC) Air Quality Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with total volatile organic compound (TVOC) air quality"},
+  "description": {"en": "The desired value associated with total volatile organic compound (TVOC) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

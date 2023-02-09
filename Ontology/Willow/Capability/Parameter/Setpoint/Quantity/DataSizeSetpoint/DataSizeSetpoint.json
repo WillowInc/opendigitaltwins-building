@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Data Size Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with data size"},
+  "description": {"en": "The desired value associated with data size"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

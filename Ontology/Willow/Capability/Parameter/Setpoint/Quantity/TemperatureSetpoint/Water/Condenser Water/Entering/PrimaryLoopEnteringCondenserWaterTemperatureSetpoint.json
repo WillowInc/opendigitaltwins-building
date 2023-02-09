@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Primary Loop Entering Condenser Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with primary condenser water loop entering temperature"},
+  "description": {"en": "The desired value associated with primary condenser water loop entering temperature"},
   "extends" : [
     "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSetpoint;1"
   ],

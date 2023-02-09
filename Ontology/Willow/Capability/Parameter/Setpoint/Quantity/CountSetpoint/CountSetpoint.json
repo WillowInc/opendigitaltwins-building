@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Count Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with count"},
+  "description": {"en": "The desired value associated with count"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

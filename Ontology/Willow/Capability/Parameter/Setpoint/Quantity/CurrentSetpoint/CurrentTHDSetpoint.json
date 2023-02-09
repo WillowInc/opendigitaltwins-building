@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Current Total Harmonic Distortion (THD) Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with current total harmonic distortion (THD)"},
+  "description": {"en": "The desired value associated with current total harmonic distortion (THD)"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSetpoint;1"
   ],

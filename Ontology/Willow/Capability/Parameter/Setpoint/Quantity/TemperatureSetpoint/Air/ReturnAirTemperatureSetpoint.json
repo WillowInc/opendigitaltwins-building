@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Return Air Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with return air temperature"},
+  "description": {"en": "The desired value associated with return air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

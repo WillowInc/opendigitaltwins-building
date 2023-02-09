@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Delta Steam Flow Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with steam delta flow"},
+  "description": {"en": "The desired value associated with steam delta flow"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSetpoint;1"
   ],

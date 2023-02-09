@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Apparent Electrical Energy Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn apparent electrical energy"},
+  "description": {"en": "The desired value associated withn apparent electrical energy"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
   ],

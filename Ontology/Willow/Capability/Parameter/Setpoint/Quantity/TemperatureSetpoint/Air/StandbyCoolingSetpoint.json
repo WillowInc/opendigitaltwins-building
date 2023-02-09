@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Standby Cooling Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with standby cooling temperature"},
+  "description": {"en": "The desired value associated with standby cooling temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

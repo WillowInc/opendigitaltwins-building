@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Header Condenser Water Flow Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with condenser water header flow"},
+  "description": {"en": "The desired value associated with condenser water header flow"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
   ],

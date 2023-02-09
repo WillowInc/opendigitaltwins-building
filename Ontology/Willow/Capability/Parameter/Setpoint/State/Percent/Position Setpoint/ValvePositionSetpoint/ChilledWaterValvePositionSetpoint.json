@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Chilled Water Valve Position Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired position percentage for control of the chilled water valve"},
+  "description": {"en": "The desired position percentage for control of the chilled water valve"},
   "extends" : [
     "dtmi:com:willowinc:ValvePositionSetpoint;1"
   ],

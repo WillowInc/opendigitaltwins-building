@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Entering Chilled Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with entering chilled water temperature"},
+  "description": {"en": "The desired value associated with entering chilled water temperature"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Header Hot Water Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with hot water temperature header"},
+  "description": {"en": "The desired value associated with hot water temperature header"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
   ],

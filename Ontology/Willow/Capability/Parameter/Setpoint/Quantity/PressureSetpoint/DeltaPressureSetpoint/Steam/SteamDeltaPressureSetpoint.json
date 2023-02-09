@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Steam Delta Pressure Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with steam delta pressure"},
+  "description": {"en": "The desired value associated with steam delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:SteamPressureSetpoint;1",
     "dtmi:com:willowinc:DeltaPressureSetpoint;1"

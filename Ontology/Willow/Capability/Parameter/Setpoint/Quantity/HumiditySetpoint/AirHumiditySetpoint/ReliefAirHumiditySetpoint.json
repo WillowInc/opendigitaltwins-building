@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Relief Air Humidity Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with relief air humidity"},
+  "description": {"en": "The desired value associated with relief air humidity"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

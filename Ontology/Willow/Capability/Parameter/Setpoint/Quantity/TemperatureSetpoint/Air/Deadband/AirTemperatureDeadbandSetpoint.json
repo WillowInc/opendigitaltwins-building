@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Temperature Deadband Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as a deadband around the air temperature setpoint"},
+  "description": {"en": "The deadband around the air temperature setpoint"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

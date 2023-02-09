@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Delta Pressure Deadband Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as a deadband around the air delta pressure setpoint"},
+  "description": {"en": "The deadband around the air delta pressure setpoint"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

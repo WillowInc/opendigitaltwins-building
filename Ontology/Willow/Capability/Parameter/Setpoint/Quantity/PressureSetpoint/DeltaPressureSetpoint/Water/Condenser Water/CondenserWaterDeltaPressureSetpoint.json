@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Condenser Water Delta Pressure Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with condenser water delta pressure"},
+  "description": {"en": "The desired value associated with condenser water delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
   ],

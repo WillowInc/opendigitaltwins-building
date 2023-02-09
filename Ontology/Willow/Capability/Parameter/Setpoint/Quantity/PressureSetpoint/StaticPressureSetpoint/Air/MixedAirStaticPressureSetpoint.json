@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Mixed Air Static Pressure Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with mixed air static pressure"},
+  "description": {"en": "The desired value associated with mixed air static pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
   ],

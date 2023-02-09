@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Steam Delta Pressure Deadband Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as a deadband around the steam delta pressure setpoint"},
+  "description": {"en": "The deadband around the steam delta pressure setpoint"},
   "extends" : [
     "dtmi:com:willowinc:SteamDeltaPressureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

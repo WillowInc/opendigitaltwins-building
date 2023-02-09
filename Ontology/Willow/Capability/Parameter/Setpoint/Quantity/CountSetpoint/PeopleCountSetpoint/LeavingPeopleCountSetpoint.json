@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Leaving People Count Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with leaving people count"},
+  "description": {"en": "The desired value associated with leaving people count"},
   "extends" : [
     "dtmi:com:willowinc:PeopleCountSetpoint;1"
   ],

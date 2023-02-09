@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Acceleration Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn acceleration"},
+  "description": {"en": "The desired value associated withn acceleration"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

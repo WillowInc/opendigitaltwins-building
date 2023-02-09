@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Reactive Electrical Power Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with reactive electrical power"},
+  "description": {"en": "The desired value associated with reactive electrical power"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
   ],

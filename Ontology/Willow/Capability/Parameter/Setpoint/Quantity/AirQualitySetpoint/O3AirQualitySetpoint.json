@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Ozone (O3) Air Quality Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn ozone (O3) air quality"},
+  "description": {"en": "The desired value associated withn ozone (O3) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

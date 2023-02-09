@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Return Air Velocity Pressure Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with return air velocity pressure"},
+  "description": {"en": "The desired value associated with return air velocity pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
   ],

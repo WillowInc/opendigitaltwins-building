@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Absolute Humidity Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated withn absolute humidity"},
+  "description": {"en": "The desired value associated withn absolute humidity"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySetpoint;1"
   ],

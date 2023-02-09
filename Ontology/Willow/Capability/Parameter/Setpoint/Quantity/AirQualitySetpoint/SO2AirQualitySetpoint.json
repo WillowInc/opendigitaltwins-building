@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Sulfur Dioxide (SO2) Air Quality Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with sulfue dioxide (SO2) air quality"},
+  "description": {"en": "The desired value associated with sulfue dioxide (SO2) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

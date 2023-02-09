@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Thrust Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with thrust"},
+  "description": {"en": "The desired value associated with thrust"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

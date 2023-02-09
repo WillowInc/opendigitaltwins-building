@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Steam Temperature Setpoint"
   },
-  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment associated with steam temperature"},
+  "description": {"en": "The desired value associated with steam temperature"},
   "extends" : [
     "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
   ],
