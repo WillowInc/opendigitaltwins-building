@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Relative Humidity Sensor"
   },
+  "description": {"en": "The relative humidity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Water Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with water temperature"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

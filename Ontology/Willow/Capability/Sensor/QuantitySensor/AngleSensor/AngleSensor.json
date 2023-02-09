@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Angle Sensor"
   },
+  "description": {"en": "The angle feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

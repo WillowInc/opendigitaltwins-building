@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Minimum Outside Air Damper Position Setpoint"
   },
+  "description": {"en": "The desired position percentage for control of the minimum outside air damper"},
   "extends" : [
     "dtmi:com:willowinc:OutsideAirDamperPositionSetpoint;1"
   ],

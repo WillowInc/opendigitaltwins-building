@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Air Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:AirFlowSensor;1"
   ],

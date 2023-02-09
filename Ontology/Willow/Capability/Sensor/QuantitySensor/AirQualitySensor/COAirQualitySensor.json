@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Carbon Monoxide (CO) Air Quality Sensor"
   },
+  "description": {"en": "The carbon monoxide (CO) air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySensor;1"
   ],

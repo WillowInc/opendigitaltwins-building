@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Data Size Setpoint"
   },
+  "description": {"en": "The desired value associated with data size"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

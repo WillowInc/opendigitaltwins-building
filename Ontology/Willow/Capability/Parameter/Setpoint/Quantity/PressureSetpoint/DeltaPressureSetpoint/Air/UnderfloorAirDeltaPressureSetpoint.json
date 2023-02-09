@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Underfloor Air Delta Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated withn underfloor air delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
   ],

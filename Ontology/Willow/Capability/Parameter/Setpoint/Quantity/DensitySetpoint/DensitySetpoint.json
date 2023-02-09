@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Density Setpoint"
   },
+  "description": {"en": "The desired value associated with density"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

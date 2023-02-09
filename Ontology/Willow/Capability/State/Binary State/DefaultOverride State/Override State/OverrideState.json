@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Override State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'override' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:DefaultOverrideState;1"
   ],

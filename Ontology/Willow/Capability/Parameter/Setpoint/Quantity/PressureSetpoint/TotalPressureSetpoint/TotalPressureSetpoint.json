@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated with total pressure"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

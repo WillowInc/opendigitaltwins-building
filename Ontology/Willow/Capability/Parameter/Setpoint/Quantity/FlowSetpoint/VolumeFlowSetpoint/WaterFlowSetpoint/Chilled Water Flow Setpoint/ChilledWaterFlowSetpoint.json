@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with chilled water flow"},
   "extends" : [
     "dtmi:com:willowinc:WaterFlowSetpoint;1"
   ],

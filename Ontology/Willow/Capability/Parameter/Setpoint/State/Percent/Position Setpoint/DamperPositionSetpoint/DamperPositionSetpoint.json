@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Damper Position Setpoint"
   },
+  "description": {"en": "The desired position percentage for control of a damper"},
   "extends" : [
     "dtmi:com:willowinc:PositionSetpoint;1"
   ],

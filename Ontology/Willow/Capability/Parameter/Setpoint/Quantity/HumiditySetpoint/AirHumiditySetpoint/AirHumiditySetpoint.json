@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated withn air humidity"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySetpoint;1"
   ],

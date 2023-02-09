@@ -4,6 +4,7 @@
   "displayName": {
     "en": "State Setpoint"
   },
+  "description": {"en": "The desired state for equipment"},
   "extends" : [
     "dtmi:com:willowinc:Setpoint;1"
   ],

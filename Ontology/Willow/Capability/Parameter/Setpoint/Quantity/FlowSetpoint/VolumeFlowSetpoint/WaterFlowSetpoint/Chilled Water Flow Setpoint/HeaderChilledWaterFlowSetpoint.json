@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Chilled Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with chilled water header flow"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
   ],

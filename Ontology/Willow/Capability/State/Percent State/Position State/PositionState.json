@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Position State"
   },
+  "description": {"en": "The percent position state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PercentState;1"
   ],

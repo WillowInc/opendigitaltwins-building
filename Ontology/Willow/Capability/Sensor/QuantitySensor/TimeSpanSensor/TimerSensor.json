@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Timer Sensor"
   },
-  "description": {
-    "en": "A Timer Sensor is a time span that is decreasing or counting down."
-  },
+  "description": {"en": "The timer feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:TimeSpanSensor;1"
   ],

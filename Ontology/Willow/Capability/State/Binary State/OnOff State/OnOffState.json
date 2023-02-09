@@ -4,6 +4,7 @@
   "displayName": {
     "en": "On/Off State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'on' when 'true' and 'off' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryState;1"
   ],

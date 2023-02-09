@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Hot Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with hot water header flow"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
   ],

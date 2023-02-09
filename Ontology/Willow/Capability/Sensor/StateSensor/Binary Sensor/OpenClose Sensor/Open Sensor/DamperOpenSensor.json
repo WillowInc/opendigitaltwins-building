@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Damper Open Sensor"
   },
+  "description": {"en": "The boolean damper status from a sensor associated where 'open' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OpenSensor;1"
   ],

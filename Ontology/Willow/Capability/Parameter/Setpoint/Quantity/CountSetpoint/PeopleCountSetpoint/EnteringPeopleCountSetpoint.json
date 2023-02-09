@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering People Count Setpoint"
   },
+  "description": {"en": "The desired value associated withn entering people count"},
   "extends" : [
     "dtmi:com:willowinc:PeopleCountSetpoint;1"
   ],

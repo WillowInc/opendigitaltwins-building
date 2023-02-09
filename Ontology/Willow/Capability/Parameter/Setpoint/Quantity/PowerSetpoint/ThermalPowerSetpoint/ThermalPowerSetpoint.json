@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thermal Power Setpoint"
   },
+  "description": {"en": "The desired value associated with thermal power"},
   "extends" : [
     "dtmi:com:willowinc:PowerSetpoint;1"
   ],

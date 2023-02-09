@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Load Level Sensor"
   },
+  "description": {"en": "The load level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:LevelSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Occupied Cooling Setpoint"
   },
+  "description": {"en": "The desired value associated withn occupied cooling temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering Steam Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with steam entering"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSensor;1"
   ],

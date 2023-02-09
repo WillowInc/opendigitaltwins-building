@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan VFD Frequency Sensor"
   },
+  "description": {"en": "The frequency feedback from a sensor associated with fan VFD"},
   "extends" : [
     "dtmi:com:willowinc:VFDFrequencySensor;1"
   ],

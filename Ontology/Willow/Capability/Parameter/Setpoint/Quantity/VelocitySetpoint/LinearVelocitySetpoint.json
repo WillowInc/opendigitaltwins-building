@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Linear Velocity Setpoint"
   },
+  "description": {"en": "The desired value associated with linear velocity"},
   "extends" : [
     "dtmi:com:willowinc:VelocitySetpoint;1"
   ],

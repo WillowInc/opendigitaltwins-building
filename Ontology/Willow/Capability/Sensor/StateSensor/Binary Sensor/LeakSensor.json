@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leak Sensor"
   },
+  "description": {"en": "The boolean status from a sensor associated with leaks where 'alarm' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],

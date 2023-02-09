@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Normal/Fault State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'fault' when 'true' and 'normal' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryState;1"
   ],

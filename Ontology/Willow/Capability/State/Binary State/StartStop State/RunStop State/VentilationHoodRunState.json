@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Ventilation Hood Run State"
   },
+  "description": {"en": "The Boolean state of the ventilation hood which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunState;1"
   ],

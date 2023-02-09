@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Magnetic Induction Sensor"
   },
+  "description": {"en": "The magnetic induction feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

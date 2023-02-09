@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Damper Position Actuator"
   },
+  "description": {"en": "The percent command which sets the position of the damper"},
   "extends" : [
     "dtmi:com:willowinc:PositionActuator;1"
   ],

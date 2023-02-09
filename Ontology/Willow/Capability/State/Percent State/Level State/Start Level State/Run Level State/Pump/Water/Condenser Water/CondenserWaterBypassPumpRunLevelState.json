@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Bypass Pump Run Level State"
   },
+  "description": {"en": "The percent run level state of the condenser water bypass pump"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
   ],

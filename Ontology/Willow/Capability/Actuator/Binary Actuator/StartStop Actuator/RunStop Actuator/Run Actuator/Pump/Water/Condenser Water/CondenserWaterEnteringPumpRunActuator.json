@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Entering Pump Run Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the entering condenser water pump to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
   ],

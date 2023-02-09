@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Zone Air Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with zone air"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSensor;1"
   ],

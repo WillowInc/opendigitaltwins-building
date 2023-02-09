@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Electric Charge Sensor"
   },
+  "description": {"en": "The electric charge feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

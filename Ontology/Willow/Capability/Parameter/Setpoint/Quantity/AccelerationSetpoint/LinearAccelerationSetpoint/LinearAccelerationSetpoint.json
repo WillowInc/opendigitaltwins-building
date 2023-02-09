@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Linear Acceleration Setpoint"
   },
+  "description": {"en": "The desired value associated with linear acceleration"},
   "extends" : [
     "dtmi:com:willowinc:AccelerationSetpoint;1"
   ],

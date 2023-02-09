@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with relief air static pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thrust Setpoint"
   },
+  "description": {"en": "The desired value associated with thrust"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

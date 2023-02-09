@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Zone Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

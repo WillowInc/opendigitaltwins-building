@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Entering Chilled Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with entering chilled water tertiary loop"},
   "extends" : [
     "dtmi:com:willowinc:EnteringChilledWaterTemperatureSensor;1"
   ],

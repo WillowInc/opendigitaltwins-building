@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Header Pump VFD Run Level Actuator"
   },
+  "description": {"en": "The percent command which sets the run level of the hot water header pump vfd"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "On Level State"
   },
+  "description": {"en": "The percent 'on' level state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelState;1"
   ],

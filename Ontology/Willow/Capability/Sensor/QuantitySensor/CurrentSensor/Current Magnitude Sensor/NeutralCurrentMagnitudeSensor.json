@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Neutral Current Magnitude Sensor"
   },
+  "description": {"en": "The current imbalance feedback from a sensor associated with neutral"},
   "extends" : [
     "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
   ],

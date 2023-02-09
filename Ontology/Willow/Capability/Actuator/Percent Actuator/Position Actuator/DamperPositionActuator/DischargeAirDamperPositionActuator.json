@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Air Damper Position Actuator"
   },
+  "description": {"en": "The percent command which sets the position of the discharge (supply) air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionActuator;1"
   ],

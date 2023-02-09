@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Exhaust Air Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated withn exhaust air humidity"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

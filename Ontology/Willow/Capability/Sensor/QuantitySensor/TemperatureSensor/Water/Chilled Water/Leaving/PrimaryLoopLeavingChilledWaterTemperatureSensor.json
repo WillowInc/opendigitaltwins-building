@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Leaving Chilled Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving chilled water primary loop"},
   "extends" : [
     "dtmi:com:willowinc:LeavingChilledWaterTemperatureSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Occupied State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'occupied' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OccupiedUnoccupiedState;1",
     "dtmi:com:willowinc:PresentState;1"

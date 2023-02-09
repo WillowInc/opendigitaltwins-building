@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Return Air Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with return air"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSensor;1"
   ],

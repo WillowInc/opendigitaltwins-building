@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated with humidity"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

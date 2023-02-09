@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Time Setpoint"
   },
+  "description": {"en": "The desired value associated with time"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Occupied Heating Zone Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated withn occupied heating zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:OccupiedHeatingSetpoint;1"

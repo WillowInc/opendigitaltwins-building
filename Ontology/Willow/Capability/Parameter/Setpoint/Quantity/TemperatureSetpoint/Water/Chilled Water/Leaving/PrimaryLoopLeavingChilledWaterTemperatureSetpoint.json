@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Leaving Chilled Water Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with primary chilled water loop leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:LeavingChilledWaterTemperatureSetpoint;1"
   ],

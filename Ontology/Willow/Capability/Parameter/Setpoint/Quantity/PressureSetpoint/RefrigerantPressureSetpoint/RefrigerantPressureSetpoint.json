@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Refrigerant Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated with refrigerant pressure"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

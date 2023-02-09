@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Temperature Deadband Setpoint"
   },
+  "description": {"en": "The deadband around the hot water temperature setpoint"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

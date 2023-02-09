@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Line C-A Voltage Magnitude Sensor"
   },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with line c-a"},
   "extends" : [
     "dtmi:com:willowinc:VoltageMagnitudeSensor;1"
   ],

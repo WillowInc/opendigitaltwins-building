@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Condenser Water Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with condenser water tertiary loop"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterDeltaPressureSensor;1"
   ],

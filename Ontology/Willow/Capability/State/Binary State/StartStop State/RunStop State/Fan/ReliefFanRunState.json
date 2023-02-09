@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the relief air fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

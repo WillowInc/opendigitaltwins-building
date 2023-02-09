@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Heating Level Sensor"
   },
+  "description": {"en": "The 'on' level feedback from a sensor associated with heating"},
   "extends" : [
     "dtmi:com:willowinc:OnLevelSensor;1"
   ],

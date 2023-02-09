@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Pump Run Level Actuator"
   },
+  "description": {"en": "The percent command which sets the run level of the pump"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelActuator;1"
   ],

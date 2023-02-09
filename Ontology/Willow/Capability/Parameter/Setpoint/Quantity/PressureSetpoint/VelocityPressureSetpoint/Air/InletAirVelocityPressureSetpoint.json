@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Velocity Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated withn inlet air velocity pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
   ],

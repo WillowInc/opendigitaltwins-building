@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Water Volume Sensor"
   },
+  "description": {"en": "The volume feedback from a sensor associated with water"},
   "extends" : [
     "dtmi:com:willowinc:VolumeSensor;1"
   ],

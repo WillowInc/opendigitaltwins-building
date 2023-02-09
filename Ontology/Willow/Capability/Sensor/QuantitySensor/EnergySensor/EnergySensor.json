@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Energy sensor"
   },
+  "description": {"en": "The energy feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

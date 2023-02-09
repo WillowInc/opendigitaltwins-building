@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Magnetic Induction Setpoint"
   },
+  "description": {"en": "The desired value associated with magnetic induction"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

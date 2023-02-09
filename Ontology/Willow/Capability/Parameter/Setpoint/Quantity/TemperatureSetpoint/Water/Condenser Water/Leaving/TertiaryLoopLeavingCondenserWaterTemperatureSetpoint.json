@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Leaving Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with tertiary condenser water loop leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1"
   ],

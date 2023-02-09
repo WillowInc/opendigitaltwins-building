@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Luminous Intensity Sensor"
   },
+  "description": {"en": "The luminous intensity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

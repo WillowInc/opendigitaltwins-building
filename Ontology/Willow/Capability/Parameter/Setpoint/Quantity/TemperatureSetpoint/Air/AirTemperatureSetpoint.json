@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated withn air temperature"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

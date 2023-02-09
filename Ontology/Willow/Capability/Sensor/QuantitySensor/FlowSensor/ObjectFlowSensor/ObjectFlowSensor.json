@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Object Flow Sensor"
   },
+  "description": {"en": "The object flow feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:FlowSensor;1"
   ],

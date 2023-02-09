@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Run Level Setpoint"
   },
+  "description": {"en": "The desired run level percentage for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:StartLevelSetpoint;1"
   ],

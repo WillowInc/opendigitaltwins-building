@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Replace Battery State"
   },
+  "description": {"en": "The Boolean state of the battery which is 'replace' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:ReplaceComponentState;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan Run Level Sensor"
   },
+  "description": {"en": "The run level feedback from a sensor associated with a fan"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Delta Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated with hot water delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
   ],

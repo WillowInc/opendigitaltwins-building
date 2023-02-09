@@ -4,6 +4,7 @@
   "displayName": {
     "en": "PM0.1 Air Quality Setpoint"
   },
+  "description": {"en": "The desired value associated with PM0.1 air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

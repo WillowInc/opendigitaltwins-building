@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Height Sensor"
   },
+  "description": {"en": "The height feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:LengthSensor;1"
   ],

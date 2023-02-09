@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Disable Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the equipment to 'disable' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:EnableDisableActuator;1",
     "dtmi:com:willowinc:OffActuator;1"

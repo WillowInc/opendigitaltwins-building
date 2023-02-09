@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Acceleration Setpoint"
   },
+  "description": {"en": "The desired value associated withn acceleration"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

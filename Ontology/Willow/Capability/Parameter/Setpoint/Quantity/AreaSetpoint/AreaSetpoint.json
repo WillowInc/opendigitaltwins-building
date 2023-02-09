@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Area Setpoint"
   },
+  "description": {"en": "The desired value associated withn area"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

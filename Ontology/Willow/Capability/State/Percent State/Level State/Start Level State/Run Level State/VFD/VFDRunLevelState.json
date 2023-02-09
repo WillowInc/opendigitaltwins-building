@@ -4,6 +4,7 @@
   "displayName": {
     "en": "VFD Run Level State"
   },
+  "description": {"en": "The percent run level state of the VFD"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelState;1"
   ],

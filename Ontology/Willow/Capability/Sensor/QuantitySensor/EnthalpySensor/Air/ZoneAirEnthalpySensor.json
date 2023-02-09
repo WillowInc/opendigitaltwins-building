@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Zone Air Enthalpy Sensor"
   },
+  "description": {"en": "The enthalpy feedback from a sensor associated with zone air"},
   "extends" : [
     "dtmi:com:willowinc:AirEnthalpySensor;1"
   ],

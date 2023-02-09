@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Illuminance Setpoint"
   },
+  "description": {"en": "The desired value associated withn illuminance"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

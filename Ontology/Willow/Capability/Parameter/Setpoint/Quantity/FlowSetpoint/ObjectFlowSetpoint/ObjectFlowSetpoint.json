@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Object Flow Setpoint"
   },
+  "description": {"en": "The desired value associated withn object flow"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

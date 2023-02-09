@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Condenser Water Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with condenser water primary loop"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterDeltaPressureSensor;1"
   ],

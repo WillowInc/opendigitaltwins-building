@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reserved/Unreserved State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'reserved' when 'true' and 'unreserved' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryState;1"
   ],

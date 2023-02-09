@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase C Export Apparent Electrical Energy Sensor"
   },
+  "description": {"en": "The apparent electrical energy feedback from a sensor associated with phase c export"},
   "extends" : [
     "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
   ],

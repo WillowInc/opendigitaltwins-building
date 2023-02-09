@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Static Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated withn inlet air static pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
   ],

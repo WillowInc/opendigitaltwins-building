@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Deionized Water Conductivity Sensor"
   },
+  "description": {"en": "The conductivity feedback from a sensor associated with deionized water"},
   "extends" : [
     "dtmi:com:willowinc:ConductivitySensor;1"
   ],

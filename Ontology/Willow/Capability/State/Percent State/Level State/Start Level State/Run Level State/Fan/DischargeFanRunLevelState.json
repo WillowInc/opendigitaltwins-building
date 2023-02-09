@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Fan Run Level State"
   },
+  "description": {"en": "The percent run level state of the discharge (supply) air fan"},
   "extends" : [
     "dtmi:com:willowinc:FanRunLevelState;1"
   ],

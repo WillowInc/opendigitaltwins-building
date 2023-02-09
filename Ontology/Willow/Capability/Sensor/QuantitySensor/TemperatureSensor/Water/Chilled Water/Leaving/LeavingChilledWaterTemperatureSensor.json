@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Chilled Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving chilled water"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1"
   ],

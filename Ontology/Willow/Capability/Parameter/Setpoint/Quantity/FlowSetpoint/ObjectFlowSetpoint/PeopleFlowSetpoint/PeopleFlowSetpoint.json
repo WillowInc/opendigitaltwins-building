@@ -4,6 +4,7 @@
   "displayName": {
     "en": "People Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with people flow"},
   "extends" : [
     "dtmi:com:willowinc:ObjectFlowSetpoint;1"
   ],

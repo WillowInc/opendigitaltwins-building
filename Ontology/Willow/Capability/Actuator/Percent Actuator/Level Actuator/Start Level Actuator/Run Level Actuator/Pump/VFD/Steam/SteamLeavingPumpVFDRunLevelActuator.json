@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Steam Leaving Pump VFD Run Level Actuator"
   },
+  "description": {"en": "The percent command which sets the run level of the steam leaving pump vfd"},
   "extends" : [
     "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
   ],

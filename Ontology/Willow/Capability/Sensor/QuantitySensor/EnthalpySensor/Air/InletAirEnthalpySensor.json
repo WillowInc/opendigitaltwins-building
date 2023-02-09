@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Enthalpy Sensor"
   },
+  "description": {"en": "The enthalpy feedback from a sensor associated with inlet air"},
   "extends" : [
     "dtmi:com:willowinc:AirEnthalpySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Position Sensor"
   },
+  "description": {"en": "The position percent feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PercentSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with discharge (supply) air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

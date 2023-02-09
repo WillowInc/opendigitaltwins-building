@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mass Setpoint"
   },
+  "description": {"en": "The desired value associated with mass"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

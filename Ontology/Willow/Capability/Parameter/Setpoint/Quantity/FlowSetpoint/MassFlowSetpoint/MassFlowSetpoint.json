@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mass Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with mass flow"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

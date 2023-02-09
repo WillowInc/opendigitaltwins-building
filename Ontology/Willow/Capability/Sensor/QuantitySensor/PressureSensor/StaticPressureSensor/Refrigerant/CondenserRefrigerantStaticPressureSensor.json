@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Refrigerant Static Pressure Sensor"
   },
+  "description": {"en": "The static pressure feedback from a sensor associated with refrigerant condenser"},
   "extends" : [
     "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
   ],

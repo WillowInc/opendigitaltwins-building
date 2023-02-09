@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Bypass Condenser Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with condenser water bypass flow"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Hot Water Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with leaving hot water"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSensor;1"
   ],

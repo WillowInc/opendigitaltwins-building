@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with water flow"},
   "extends" : [
     "dtmi:com:willowinc:FlowSetpoint;1"
   ],

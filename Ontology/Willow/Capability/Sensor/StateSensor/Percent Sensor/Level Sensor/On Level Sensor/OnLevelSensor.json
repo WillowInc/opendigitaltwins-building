@@ -4,6 +4,7 @@
   "displayName": {
     "en": "On Level Sensor"
   },
+  "description": {"en": "The 'on' level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:LevelSensor;1"
   ],

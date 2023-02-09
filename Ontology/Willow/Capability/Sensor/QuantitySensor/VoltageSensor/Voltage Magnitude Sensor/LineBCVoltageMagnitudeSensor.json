@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Line B-C Voltage Magnitude Sensor"
   },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with line b-c"},
   "extends" : [
     "dtmi:com:willowinc:VoltageMagnitudeSensor;1"
   ],

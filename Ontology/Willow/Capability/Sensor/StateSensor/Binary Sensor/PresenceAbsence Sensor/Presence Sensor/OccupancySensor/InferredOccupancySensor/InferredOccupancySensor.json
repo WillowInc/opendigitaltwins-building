@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inferred Occupancy Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'inferred occupancy' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OccupancySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Angle Sensor"
   },
+  "description": {"en": "The current angle feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSensor;1"
   ],

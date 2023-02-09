@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Pump Run Level State"
   },
+  "description": {"en": "The percent run level state of the pump"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelState;1"
   ],

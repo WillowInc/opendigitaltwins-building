@@ -4,6 +4,7 @@
   "displayName": {
     "en": "People Count Setpoint"
   },
+  "description": {"en": "The desired value associated with people count"},
   "extends" : [
     "dtmi:com:willowinc:CountSetpoint;1"
   ],

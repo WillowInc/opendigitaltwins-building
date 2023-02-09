@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Filter Water Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with water filter"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSensor;1"
   ],

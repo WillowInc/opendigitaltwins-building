@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Hot Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with leaving hot water flow"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
   ],

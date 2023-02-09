@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan Run Level Setpoint"
   },
+  "description": {"en": "The desired run level percentage for control of a fan"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelSetpoint;1"
   ],

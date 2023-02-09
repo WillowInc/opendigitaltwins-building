@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Multi-State Sensor"
   },
+  "description": {"en": "The feedback from a multi-state sensor"},
   "extends" : [
     "dtmi:com:willowinc:StateSensor;1"
   ],

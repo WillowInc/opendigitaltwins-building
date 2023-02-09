@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Luminous Intensity Setpoint"
   },
+  "description": {"en": "The desired value associated with luminous intensity"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

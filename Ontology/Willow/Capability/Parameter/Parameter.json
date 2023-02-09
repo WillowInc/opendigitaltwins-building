@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Parameter"
   },
+  "description": {"en": "A configuration setting"},
   "extends" : [
     "dtmi:com:willowinc:Capability;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thermal Power Sensor"
   },
+  "description": {"en": "The thermal power feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PowerSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Present State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'present' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:PresentAbsentState;1"
   ],

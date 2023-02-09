@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated withn inlet air humidity"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

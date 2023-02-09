@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with entering condenser water temperature"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
   ],

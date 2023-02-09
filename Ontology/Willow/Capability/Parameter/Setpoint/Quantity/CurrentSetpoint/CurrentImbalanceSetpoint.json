@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Imbalance Setpoint"
   },
+  "description": {"en": "The desired value associated with current imbalance"},
   "extends" : [
     "dtmi:com:willowinc:CurrentSetpoint;1"
   ],

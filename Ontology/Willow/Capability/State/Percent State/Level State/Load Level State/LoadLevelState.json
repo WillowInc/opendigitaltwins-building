@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Load Level State"
   },
+  "description": {"en": "The percent load level state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelState;1"
   ],

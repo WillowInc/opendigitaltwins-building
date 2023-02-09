@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Current Setpoint"
   },
+  "description": {"en": "The desired value associated with current"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

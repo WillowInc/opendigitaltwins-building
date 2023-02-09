@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Volume Sensor"
   },
+  "description": {"en": "The volume feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

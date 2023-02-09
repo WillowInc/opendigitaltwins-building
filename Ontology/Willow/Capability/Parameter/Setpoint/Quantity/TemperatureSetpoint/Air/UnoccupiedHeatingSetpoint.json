@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Unoccupied Heating Setpoint"
   },
+  "description": {"en": "The desired value associated withn unoccupied heating temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

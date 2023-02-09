@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Feels Like Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with 'feels like' temperature"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

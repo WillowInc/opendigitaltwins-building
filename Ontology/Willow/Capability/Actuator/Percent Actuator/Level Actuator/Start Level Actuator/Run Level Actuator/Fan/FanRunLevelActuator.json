@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan Run Level Actuator"
   },
+  "description": {"en": "The percent command which sets the run level of the fan"},
   "extends" : [
     "dtmi:com:willowinc:RunLevelActuator;1"
   ],

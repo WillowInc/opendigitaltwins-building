@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Angular Velocity Sensor"
   },
+  "description": {"en": "The angular velocity feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:VelocitySensor;1"
   ],

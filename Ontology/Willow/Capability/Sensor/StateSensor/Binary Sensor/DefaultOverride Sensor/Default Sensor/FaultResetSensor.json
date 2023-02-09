@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fault Reset Sensor"
   },
+  "description": {"en": "The boolean status from a sensor associated with fault where 'reset' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:ResetSensor;1"
   ],

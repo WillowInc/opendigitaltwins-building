@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Damper Open State"
   },
+  "description": {"en": "The Boolean state of the damper which is 'open' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OpenState;1"
   ],

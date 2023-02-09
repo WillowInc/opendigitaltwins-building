@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Angle Setpoint"
   },
+  "description": {"en": "The desired value associated with voltage angle"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

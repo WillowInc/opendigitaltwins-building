@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Hot Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with hot water delta flow"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
   ],

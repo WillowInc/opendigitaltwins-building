@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Humidity Ratio Setpoint"
   },
-  "description": {
-    "en": "Humidity Ratio (Air Grains) Setpoint"
-  },
+  "description": {"en": "The desired value associated with humidity ratio (air grains)"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Wet Bulb Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with wet bulb temperature"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSetpoint;1"
   ],

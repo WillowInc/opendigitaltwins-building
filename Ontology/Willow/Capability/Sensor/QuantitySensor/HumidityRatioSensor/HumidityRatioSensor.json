@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Humidity Ratio Sensor"
   },
-  "description": {
-    "en": "Humidity Ratio (Air Grains) Sensor"
-  },
+  "description": {"en": "The humidity ratio (air grains) feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

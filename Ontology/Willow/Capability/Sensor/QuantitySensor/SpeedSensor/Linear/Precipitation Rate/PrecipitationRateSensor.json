@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Precipitation Rate Sensor"
   },
+  "description": {"en": "The rate feedback from a sensor associated with precipitation"},
   "extends" : [
     "dtmi:com:willowinc:LinearSpeedSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Weather Condition State"
   },
+  "description": {"en": "The multi-state condition of the weather"},
   "extends" : [
     "dtmi:com:willowinc:ConditionState;1"
   ],

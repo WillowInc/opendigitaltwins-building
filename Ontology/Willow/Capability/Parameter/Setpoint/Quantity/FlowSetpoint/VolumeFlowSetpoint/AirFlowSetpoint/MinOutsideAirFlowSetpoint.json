@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Minimum Outside Air Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with minimum outside air flow"},
   "extends" : [
     "dtmi:com:willowinc:OutsideAirFlowSetpoint;1"
   ],

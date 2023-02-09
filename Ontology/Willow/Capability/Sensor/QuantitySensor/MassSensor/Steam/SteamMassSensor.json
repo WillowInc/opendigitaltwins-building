@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Steam Mass Sensor"
   },
+  "description": {"en": "The mass feedback from a sensor associated with steam"},
   "extends" : [
     "dtmi:com:willowinc:MassSensor;1"
   ],

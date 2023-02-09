@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering Steam Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with steam entering temperature"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Load Level Setpoint"
   },
+  "description": {"en": "The desired load level percentage for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Water Delta Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated with water delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:WaterPressureSetpoint;1",
     "dtmi:com:willowinc:DeltaPressureSetpoint;1"

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Wind Direction Setpoint"
   },
+  "description": {"en": "The desired value associated with wind direction"},
   "extends" : [
     "dtmi:com:willowinc:AngleSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Compressor Run State"
   },
+  "description": {"en": "The Boolean state of the compressor which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunState;1"
   ],

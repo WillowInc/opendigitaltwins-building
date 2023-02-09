@@ -4,6 +4,7 @@
   "displayName": {
     "en": "PM2.5 Air Quality Sensor"
   },
+  "description": {"en": "The PM2.5 air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySensor;1"
   ],

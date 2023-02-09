@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inductance Sensor"
   },
+  "description": {"en": "The inductance feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

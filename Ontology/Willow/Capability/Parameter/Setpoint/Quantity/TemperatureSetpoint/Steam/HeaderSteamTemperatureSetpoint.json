@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Steam Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with steam header temperature"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

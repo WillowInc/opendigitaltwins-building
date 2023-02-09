@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Sulfur Dioxide (SO2) Air Quality Sensor"
   },
+  "description": {"en": "The sulfur dioxide (SO2) air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySensor;1"
   ],

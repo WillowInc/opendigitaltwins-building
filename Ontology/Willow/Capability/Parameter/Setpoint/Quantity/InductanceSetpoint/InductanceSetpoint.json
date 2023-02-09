@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inductance Setpoint"
   },
+  "description": {"en": "The desired value associated withn inductance"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

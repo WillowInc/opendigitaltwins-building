@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Steam Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with steam leaving temperature"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

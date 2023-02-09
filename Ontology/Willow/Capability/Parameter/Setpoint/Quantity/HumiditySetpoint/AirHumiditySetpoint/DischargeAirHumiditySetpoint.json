@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Discharge Air Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated with discharge (supply) air humidity"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySetpoint;1"
   ],

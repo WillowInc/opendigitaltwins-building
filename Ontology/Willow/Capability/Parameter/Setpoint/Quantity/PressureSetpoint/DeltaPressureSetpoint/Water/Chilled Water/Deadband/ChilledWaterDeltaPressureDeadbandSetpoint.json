@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Delta Pressure Deadband Setpoint"
   },
+  "description": {"en": "The deadband around the chilled water delta pressure setpoint"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterDeltaPressureSetpoint;1",
     "dtmi:com:willowinc:DeadbandSetpoint;1"

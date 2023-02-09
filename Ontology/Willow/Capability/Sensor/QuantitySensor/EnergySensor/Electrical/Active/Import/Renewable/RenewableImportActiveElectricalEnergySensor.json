@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Renewable Import Active Electrical Energy Sensor"
   },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with renewable import"},
   "extends" : [
     "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
   ],

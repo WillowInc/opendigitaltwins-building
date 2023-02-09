@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Suction Line Refrigerant Static Pressure Sensor"
   },
+  "description": {"en": "The static pressure feedback from a sensor associated with refrigerant suction line"},
   "extends" : [
     "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
   ],

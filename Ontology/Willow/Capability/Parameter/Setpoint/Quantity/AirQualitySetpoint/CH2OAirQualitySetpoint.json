@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Formaldehyde (CH2O) Air Quality Setpoint"
   },
+  "description": {"en": "The desired value associated with formaldehyde (CH2O) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

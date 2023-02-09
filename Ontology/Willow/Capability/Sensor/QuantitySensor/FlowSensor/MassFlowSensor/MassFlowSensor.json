@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mass Flow Sensor"
   },
+  "description": {"en": "The mass flow feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:FlowSensor;1"
   ],

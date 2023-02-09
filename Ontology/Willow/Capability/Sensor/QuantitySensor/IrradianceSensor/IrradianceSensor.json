@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Irradiance Sensor"
   },
+  "description": {"en": "The irradiance feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Steam Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with steam delta temperature"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
   ],

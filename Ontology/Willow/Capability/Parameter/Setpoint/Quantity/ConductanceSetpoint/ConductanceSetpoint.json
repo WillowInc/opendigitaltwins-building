@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Conductance Setpoint"
   },
+  "description": {"en": "The desired value associated with conductance"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

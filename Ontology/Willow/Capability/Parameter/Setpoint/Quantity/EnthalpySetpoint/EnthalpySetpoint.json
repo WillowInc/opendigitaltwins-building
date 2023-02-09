@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Enthalpy Setpoint"
   },
+  "description": {"en": "The desired value associated withn enthalpy"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

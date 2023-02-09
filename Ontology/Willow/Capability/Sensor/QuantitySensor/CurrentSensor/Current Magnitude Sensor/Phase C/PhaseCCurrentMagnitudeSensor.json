@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase C Current Magnitude Sensor"
   },
+  "description": {"en": "The current magnitude feedback from a sensor associated with phase c"},
   "extends" : [
     "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
   ],

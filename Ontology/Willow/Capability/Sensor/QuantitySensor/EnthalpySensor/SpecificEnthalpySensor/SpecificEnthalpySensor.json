@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Specific Enthalpy Sensor"
   },
+  "description": {"en": "The specific enthalpy feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:EnthalpySensor;1"
   ],

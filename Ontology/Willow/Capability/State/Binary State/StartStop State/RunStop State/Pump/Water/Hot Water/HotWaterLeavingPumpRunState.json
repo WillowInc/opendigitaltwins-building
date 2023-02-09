@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Leaving Pump Run State"
   },
+  "description": {"en": "The Boolean state of the leaving hot water pump which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterPumpRunState;1"
   ],

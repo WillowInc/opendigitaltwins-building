@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Reactive Electrical Power Setpoint"
   },
+  "description": {"en": "The desired value associated with reactive electrical power"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
   ],

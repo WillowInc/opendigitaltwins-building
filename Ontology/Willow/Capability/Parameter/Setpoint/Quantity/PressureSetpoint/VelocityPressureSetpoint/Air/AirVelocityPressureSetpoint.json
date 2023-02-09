@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Velocity Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated withn air velocity pressure"},
   "extends" : [
     "dtmi:com:willowinc:VelocityPressureSetpoint;1",
     "dtmi:com:willowinc:AirPressureSetpoint;1"

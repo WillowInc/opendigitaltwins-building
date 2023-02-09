@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Secondary Loop Entering Hot Water Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with secondary hot water loop entering temperature"},
   "extends" : [
     "dtmi:com:willowinc:EnteringHotWaterTemperatureSetpoint;1"
   ],

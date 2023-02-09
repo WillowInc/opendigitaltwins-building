@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Percent Unity Sensor"
   },
+  "description": {"en": "The percent feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:StateSensor;1"
   ],

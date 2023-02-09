@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Count Setpoint"
   },
+  "description": {"en": "The desired value associated with count"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

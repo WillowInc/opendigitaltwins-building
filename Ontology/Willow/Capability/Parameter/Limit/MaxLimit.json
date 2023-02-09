@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Max Limit"
   },
+  "description": {"en": "The upper limit on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Limit;1"
   ],

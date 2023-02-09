@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thermal Energy Setpoint"
   },
+  "description": {"en": "The desired value associated with thermal energy"},
   "extends" : [
     "dtmi:com:willowinc:EnergySetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Total Import Apparent Electrical Energy Sensor"
   },
+  "description": {"en": "The apparent electrical energy feedback from a sensor associated with total import"},
   "extends" : [
     "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
   ],

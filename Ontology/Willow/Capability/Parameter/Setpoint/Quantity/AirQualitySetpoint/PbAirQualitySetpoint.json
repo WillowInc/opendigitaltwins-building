@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Lead (Pb) Air Quality Setpoint"
   },
+  "description": {"en": "The desired value associated with lead (Pb) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

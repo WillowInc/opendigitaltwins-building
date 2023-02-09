@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Apparent Electrical Power Sensor"
   },
+  "description": {"en": "The apparent electrical power feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalPowerSensor;1"
   ],

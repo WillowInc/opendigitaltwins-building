@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Cooling Level Actuator"
   },
+  "description": {"en": "The percent command which sets the cooling level of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:OnLevelActuator;1"
   ],

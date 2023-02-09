@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Evaporator Refrigerant Static Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated withn refrigerant evaporator static pressure"},
   "extends" : [
     "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
   ],

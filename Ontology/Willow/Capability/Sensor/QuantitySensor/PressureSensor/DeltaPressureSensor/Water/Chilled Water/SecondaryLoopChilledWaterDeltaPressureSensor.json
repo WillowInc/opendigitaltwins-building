@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Secondary Loop Chilled Water Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with chilled water secondary loop"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterDeltaPressureSensor;1"
   ],

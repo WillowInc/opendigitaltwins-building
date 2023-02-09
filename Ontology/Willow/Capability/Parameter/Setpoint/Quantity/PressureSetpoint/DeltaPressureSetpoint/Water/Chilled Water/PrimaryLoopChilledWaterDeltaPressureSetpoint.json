@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Primary Loop Chilled Water Delta Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated with primary chilled water loop delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterDeltaPressureSetpoint;1"
   ],

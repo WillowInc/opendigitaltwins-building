@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Steam Pump Run State"
   },
+  "description": {"en": "The Boolean state of the steam pump which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:PumpRunState;1"
   ],

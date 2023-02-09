@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Leaving Chilled Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with leaving chilled water flow"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
   ],

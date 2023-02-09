@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Sound Pressure Level Setpoint"
   },
+  "description": {"en": "The desired value associated with sound pressure level (SPL)"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

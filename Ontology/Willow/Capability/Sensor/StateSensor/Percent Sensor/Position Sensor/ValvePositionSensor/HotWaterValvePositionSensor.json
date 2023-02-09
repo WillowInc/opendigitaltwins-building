@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Hot Water Valve Position Sensor"
   },
+  "description": {"en": "The valve position percent feedback from a sensor associated with hot water"},
   "extends" : [
     "dtmi:com:willowinc:ValvePositionSensor;1"
   ],

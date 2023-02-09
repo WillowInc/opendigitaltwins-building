@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Time Span Sensor"
   },
-  "description": {
-    "en": "A Time Span Sensor is a duration that spans two points in time."
-  },
+  "description": {"en": "The time span feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

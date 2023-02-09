@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Deadband Setpoint"
   },
+  "description": {"en": "The deadband around a setpoint"},
   "extends" : [
     "dtmi:com:willowinc:Setpoint;1"
   ],

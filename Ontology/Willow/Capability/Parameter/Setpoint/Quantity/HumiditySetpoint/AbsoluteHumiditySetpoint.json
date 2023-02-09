@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Absolute Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated withn absolute humidity"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySetpoint;1"
   ],

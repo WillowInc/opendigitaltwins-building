@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Active Electrical Energy Setpoint"
   },
+  "description": {"en": "The desired value associated withn active electrical energy"},
   "extends" : [
     "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
   ],

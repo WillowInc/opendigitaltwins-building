@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Inlet Air Delta Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated withn inlet air delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
   ],

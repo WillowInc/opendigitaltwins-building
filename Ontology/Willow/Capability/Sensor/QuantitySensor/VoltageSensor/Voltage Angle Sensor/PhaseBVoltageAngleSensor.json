@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Phase B Voltage Angle Sensor"
   },
+  "description": {"en": "The voltage angle feedback from a sensor associated with phase b"},
   "extends" : [
     "dtmi:com:willowinc:VoltageAngleSensor;1"
   ],

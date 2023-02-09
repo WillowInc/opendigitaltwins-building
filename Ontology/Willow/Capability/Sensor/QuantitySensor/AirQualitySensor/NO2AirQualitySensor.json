@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Nitrogen Dioxide (NO2) Air Quality Sensor"
   },
+  "description": {"en": "The nitrogen dioxide (NO2) air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:NOxAirQualitySensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Return Air Humidity Sensor"
   },
+  "description": {"en": "The humidity feedback from a sensor associated with return air"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySensor;1"
   ],

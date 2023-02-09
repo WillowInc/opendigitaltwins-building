@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Return Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with return air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

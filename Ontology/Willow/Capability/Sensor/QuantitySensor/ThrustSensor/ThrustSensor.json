@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Thrust Sensor"
   },
+  "description": {"en": "The thrust feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

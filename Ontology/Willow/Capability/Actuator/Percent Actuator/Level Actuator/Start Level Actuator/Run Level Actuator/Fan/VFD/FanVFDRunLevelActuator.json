@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Fan VFD Run Level Actuator"
   },
+  "description": {"en": "The percent command which sets the run level of the fan vfd"},
   "extends" : [
     "dtmi:com:willowinc:FanRunLevelActuator;1",
     "dtmi:com:willowinc:VFDRunLevelActuator;1"

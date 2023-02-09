@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Normal/Fault Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'fault' is 'true' and 'normal' is 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],

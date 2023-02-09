@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Air Enthalpy Sensor"
   },
+  "description": {"en": "The enthalpy feedback from a sensor associated with mixed air"},
   "extends" : [
     "dtmi:com:willowinc:AirEnthalpySensor;1"
   ],

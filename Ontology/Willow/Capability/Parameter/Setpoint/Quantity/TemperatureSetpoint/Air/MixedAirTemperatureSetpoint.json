@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Mixed Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with mixed air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

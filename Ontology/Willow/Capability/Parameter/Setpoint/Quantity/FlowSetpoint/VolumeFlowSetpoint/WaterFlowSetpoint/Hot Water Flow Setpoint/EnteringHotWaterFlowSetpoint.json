@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering Hot Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with entering hot water flow"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
   ],

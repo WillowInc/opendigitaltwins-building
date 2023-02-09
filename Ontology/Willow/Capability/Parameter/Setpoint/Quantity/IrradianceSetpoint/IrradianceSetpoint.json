@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Irradiance Setpoint"
   },
+  "description": {"en": "The desired value associated withn irradiance"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

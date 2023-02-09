@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Electric Charge Setpoint"
   },
+  "description": {"en": "The desired value associated withn electric charge"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

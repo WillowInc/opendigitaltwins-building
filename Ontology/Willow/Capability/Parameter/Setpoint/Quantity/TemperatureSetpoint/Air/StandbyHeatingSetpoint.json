@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Standby Heating Setpoint"
   },
+  "description": {"en": "The desired value associated with standby heating temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

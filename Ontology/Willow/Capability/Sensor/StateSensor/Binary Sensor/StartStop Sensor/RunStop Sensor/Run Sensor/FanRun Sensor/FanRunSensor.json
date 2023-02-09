@@ -4,8 +4,7 @@
   "displayName": {
     "en": "Fan Run Sensor"
   },
-  "description": {"en": "An on/off sensor for the fan"
-  },
+  "description": {"en": "The boolean fan status from a sensor where 'run' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunSensor;1"
   ],

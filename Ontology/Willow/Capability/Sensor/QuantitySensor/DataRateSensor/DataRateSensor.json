@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Data Rate Sensor"
   },
+  "description": {"en": "The data rate feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

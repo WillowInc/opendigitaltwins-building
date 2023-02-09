@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Dwell Time Setpoint"
   },
+  "description": {"en": "The desired value associated with dwell time"},
   "extends" : [
     "dtmi:com:willowinc:TimeSpanSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Steam Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with steam delta flow"},
   "extends" : [
     "dtmi:com:willowinc:SteamFlowSetpoint;1"
   ],

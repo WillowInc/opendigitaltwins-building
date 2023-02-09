@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Imbalance Setpoint"
   },
+  "description": {"en": "The desired value associated with voltage imbalance"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

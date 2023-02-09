@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Formaldehyde (CH2O) Air Quality Sensor"
   },
+  "description": {"en": "The formaldehyde (CH2O) air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySensor;1"
   ],

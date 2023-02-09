@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Binary State"
   },
+  "description": {"en": "The Boolean state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:State;1"
   ],

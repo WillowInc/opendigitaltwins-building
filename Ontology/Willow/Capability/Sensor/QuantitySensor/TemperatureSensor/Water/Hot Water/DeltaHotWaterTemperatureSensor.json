@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Hot Water Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with hot water delta"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
   ],

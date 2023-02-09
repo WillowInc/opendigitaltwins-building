@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Steam Temperature Sensor"
   },
+  "description": {"en": "The temperature feedback from a sensor associated with steam delta"},
   "extends" : [
     "dtmi:com:willowinc:SteamTemperatureSensor;1"
   ],

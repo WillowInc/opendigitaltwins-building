@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Underfloor Air Velocity Pressure Sensor"
   },
+  "description": {"en": "The velocity pressure feedback from a sensor associated with underfloor air"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSensor;1"
   ],

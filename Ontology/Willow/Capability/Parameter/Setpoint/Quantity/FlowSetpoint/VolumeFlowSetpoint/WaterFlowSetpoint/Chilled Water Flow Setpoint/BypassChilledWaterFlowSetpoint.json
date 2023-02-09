@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Bypass Chilled Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with chilled water bypass flow"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
   ],

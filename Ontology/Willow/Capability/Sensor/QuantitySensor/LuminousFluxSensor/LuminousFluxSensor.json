@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Luminous Flux Sensor"
   },
+  "description": {"en": "The luminous flux feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

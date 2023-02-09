@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Force Setpoint"
   },
+  "description": {"en": "The desired value associated with force"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

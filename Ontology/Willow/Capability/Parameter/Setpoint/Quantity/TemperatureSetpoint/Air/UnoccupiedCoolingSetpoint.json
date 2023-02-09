@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Unoccupied Cooling Setpoint"
   },
+  "description": {"en": "The desired value associated withn unoccupied cooling temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

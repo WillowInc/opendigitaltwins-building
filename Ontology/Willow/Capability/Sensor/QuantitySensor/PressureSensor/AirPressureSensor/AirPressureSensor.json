@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Air Pressure Sensor"
   },
+  "description": {"en": "The pressure feedback from a sensor associated with air"},
   "extends" : [
     "dtmi:com:willowinc:PressureSensor;1"
   ],

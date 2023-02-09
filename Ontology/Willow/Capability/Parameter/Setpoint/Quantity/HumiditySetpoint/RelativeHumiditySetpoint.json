@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Relative Humidity Setpoint"
   },
+  "description": {"en": "The desired value associated with relative humidity"},
   "extends" : [
     "dtmi:com:willowinc:HumiditySetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Torque Sensor"
   },
+  "description": {"en": "The torque feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

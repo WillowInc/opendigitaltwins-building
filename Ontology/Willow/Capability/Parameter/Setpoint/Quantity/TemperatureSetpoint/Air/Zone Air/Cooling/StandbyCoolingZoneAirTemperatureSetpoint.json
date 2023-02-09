@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Standby Cooling Zone Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with standby cooling zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:StandbyCoolingSetpoint;1"

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Filter Water Delta Pressure Setpoint"
   },
+  "description": {"en": "The desired value associated with filter water delta pressure"},
   "extends" : [
     "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
   ],

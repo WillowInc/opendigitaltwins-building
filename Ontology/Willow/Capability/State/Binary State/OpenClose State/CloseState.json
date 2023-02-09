@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Close State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'close' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OpenCloseState;1"
   ],

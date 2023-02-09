@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Chilled Water Bypass Pump Run State"
   },
+  "description": {"en": "The Boolean state of the chilled water bypass pump which is 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
   ],

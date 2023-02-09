@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Signal Strength Sensor"
   },
+  "description": {"en": "The signal strength feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

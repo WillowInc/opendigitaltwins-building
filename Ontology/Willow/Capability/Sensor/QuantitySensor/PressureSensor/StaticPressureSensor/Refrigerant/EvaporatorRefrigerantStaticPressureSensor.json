@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Evaporator Refrigerant Static Pressure Sensor"
   },
+  "description": {"en": "The static pressure feedback from a sensor associated with refrigerant evaporator"},
   "extends" : [
     "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Header Pump Run Level State"
   },
+  "description": {"en": "The percent run level state of the condenser water header pump"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
   ],

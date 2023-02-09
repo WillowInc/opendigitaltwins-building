@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Carbon Monoxide (CO) Air Quality Setpoint"
   },
+  "description": {"en": "The desired value associated with carbon monoxide (CO) air quality"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySetpoint;1"
   ],

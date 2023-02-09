@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Force Sensor"
   },
+  "description": {"en": "The force feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

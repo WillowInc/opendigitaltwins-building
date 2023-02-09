@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Entering Condenser Water Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with entering condenser water"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
   ],

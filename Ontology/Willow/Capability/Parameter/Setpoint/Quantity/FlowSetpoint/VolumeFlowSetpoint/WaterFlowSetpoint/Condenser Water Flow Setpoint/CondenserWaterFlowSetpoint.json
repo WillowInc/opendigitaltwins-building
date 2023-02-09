@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Condenser Water Flow Setpoint"
   },
+  "description": {"en": "The desired value associated with condenser water flow"},
   "extends" : [
     "dtmi:com:willowinc:WaterFlowSetpoint;1"
   ],

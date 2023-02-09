@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Voltage Magnitude Setpoint"
   },
+  "description": {"en": "The desired value associated with voltage magnitude"},
   "extends" : [
     "dtmi:com:willowinc:VoltageSetpoint;1"
   ],

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Start Level Setpoint"
   },
+  "description": {"en": "The desired start level percentage for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:LevelSetpoint;1"
   ],

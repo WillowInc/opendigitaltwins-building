@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Luminous Flux Setpoint"
   },
+  "description": {"en": "The desired value associated with luminous flux"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

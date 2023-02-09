@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Run Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the equipment to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunStopActuator;1",
     "dtmi:com:willowinc:StartActuator;1"

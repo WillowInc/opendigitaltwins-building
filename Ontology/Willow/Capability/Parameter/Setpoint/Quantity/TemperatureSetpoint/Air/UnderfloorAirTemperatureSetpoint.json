@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Underfloor Air Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated withn underfloor air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

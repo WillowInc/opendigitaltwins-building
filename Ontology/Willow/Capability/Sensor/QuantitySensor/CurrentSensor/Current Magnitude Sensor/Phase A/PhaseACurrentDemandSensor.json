@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseACurrentDemandSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Current Demand Sensor"
+  },
+  "description": {"en": "The current demand feedback from a sensor associated with phase a"},
+  "extends" : [
+    "dtmi:com:willowinc:PhaseACurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

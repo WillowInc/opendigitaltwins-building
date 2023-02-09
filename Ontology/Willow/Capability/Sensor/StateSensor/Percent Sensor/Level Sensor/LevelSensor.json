@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Level Sensor"
   },
+  "description": {"en": "The level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PercentSensor;1"
   ],

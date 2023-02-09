@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Header Hot Water Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with hot water header"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterFlowSensor;1"
   ],

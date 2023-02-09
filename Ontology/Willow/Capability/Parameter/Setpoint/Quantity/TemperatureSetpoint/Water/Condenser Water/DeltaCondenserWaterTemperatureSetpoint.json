@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Delta Condenser Water Temperature Setpoint"
   },
+  "description": {"en": "The desired value associated with condenser water delta temperature"},
   "extends" : [
     "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
   ],

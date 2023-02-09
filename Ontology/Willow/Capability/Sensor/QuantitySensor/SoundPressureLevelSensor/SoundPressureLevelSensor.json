@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Sound Pressure Level Sensor"
   },
+  "description": {"en": "The sound pressure level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySensor;1"
   ],

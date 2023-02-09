@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Outside Air Temperature Lockout Setpoint"
   },
+  "description": {"en": "The desired value associated withn outside air temperature lockout"},
   "extends" : [
     "dtmi:com:willowinc:OutsideAirTemperatureSetpoint;1"
   ],

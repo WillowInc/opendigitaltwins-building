@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Tertiary Loop Hot Water Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor associated with hot water tertiary loop"},
   "extends" : [
     "dtmi:com:willowinc:HotWaterDeltaPressureSensor;1"
   ],
