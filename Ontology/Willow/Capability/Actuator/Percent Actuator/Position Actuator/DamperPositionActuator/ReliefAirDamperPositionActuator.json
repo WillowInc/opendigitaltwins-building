@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:ReturnAirDamperPositionActuator;1",
+  "@id": "dtmi:com:willowinc:ReliefAirDamperPositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Return Air Damper Position Actuator"
+    "en": "Relief Air Damper Position Actuator"
   },
-  "description": {"en": "The percent command which sets the position of the return air damper"},
+  "description": {"en": "The percent command which sets the position of the relief air damper"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionActuator;1"
   ],
