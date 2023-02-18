@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:UtilityAccount;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Account"
+  },
+  "description": {
+    "en": "A customer account in which the service provided is the delivery of a utility such as electricity, natural gas, or water."
+  },
+  "extends" : [
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
