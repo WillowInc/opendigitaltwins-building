@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakWaterVolumeDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Water Volume Demand"
+  },
+  "description": {"en": "The highest off peak rate of consumption for water volume that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledWaterVolumeDemand;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

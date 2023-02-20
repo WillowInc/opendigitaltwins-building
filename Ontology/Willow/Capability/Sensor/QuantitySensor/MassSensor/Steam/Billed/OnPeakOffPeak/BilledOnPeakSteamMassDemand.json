@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOnPeakSteamMassDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed On Peak Steam Mass Demand"
+  },
+  "description": {"en": "The highest on peak rate of consumption for steam mass that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamMassDemand;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

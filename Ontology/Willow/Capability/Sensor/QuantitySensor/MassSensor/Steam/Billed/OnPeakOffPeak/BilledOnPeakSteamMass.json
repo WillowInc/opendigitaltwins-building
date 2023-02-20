@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOnPeakSteamMass;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed On Peak Steam Mass"
+  },
+  "description": {"en": "The consumed on peak mass quantity of steam that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamMass;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

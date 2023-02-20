@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledNaturalGasThermalEnergyDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Natural Gas Thermal Energy Demand"
+  },
+  "description": {"en": "The highest rate of consumption for natural gas thermal energy that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledNaturalGasThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

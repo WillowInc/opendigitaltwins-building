@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Billed Hot Water Thermal Energy"
   },
-  "description": {"en": "The quantity of hot water thermal energy that is billed to a utility account, typically on a monthly basis."},
+  "description": {"en": "The consumed quantity of hot water thermal energy that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Hot Water Thermal Energy Sensor which reports data on a more frequent interval."},
   "extends" : [
     "dtmi:com:willowinc:BilledThermalEnergy;1"
   ],
