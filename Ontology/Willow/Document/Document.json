@@ -176,6 +176,15 @@
     },
     {
       "@type": "Property",
+      "name": "lastUpdatedDate",
+      "displayName": {
+        "en": "Last Updated Date"
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
       "name": "createdBy",
       "displayName": {
         "en": "Created By"
