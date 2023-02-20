@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BilledExportActiveElectricalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Export Active Electrical Energy"
+  },
+  "description": {"en": "The quantity of active electrical energy exported from a building or space to a utility over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Export Active Electrical Energy Sensor which reports data on a more frequent interval."},
+  "extends" : [
+    "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1",
+    "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

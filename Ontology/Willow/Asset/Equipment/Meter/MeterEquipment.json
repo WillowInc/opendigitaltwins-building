@@ -8,6 +8,14 @@
     "dtmi:com:willowinc:Equipment;1"
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is linked to"
+      },
+      "name": "isLinkedTo",
+      "target": "dtmi:com:willowinc:UtilityAccount;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"

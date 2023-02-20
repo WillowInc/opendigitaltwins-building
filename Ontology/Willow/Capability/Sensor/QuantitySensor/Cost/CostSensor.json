@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CostSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cost Sensor"
+  },
+  "description": {"en": "The cost trend associated with a particular service provided by an entity such as utility."},
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
