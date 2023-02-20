@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakUtilityConsumptionCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Utility Consumption Cost"
+  },
+  "description": {"en": "The off peak consumption component of the cost trend associated with utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledUtilityConsumptionCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

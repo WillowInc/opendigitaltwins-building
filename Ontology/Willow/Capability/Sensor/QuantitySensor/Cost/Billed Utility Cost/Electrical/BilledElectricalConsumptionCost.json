@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledElectricalConsumptionCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Electrical Consumption Cost"
+  },
+  "description": {"en": "The consumption component of the cost trend associated with an electrical utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledUtilityConsumptionCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

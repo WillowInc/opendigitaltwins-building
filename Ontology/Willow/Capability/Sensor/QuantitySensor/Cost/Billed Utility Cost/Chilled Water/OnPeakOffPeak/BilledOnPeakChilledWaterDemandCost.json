@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOnPeakChilledWaterDemandCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed On Peak Chilled Water Demand Cost"
+  },
+  "description": {"en": "The on peak demand component of the cost trend associated with a chilled water utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledChilledWaterDemandCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
