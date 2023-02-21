@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Coil Leaving Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with the water leaving the chilled water coil"},
+  "extends" : [
+    "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
