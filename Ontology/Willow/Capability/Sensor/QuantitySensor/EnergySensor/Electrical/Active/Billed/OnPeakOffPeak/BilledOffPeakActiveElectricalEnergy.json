@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakActiveElectricalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Active Electrical Energy"
+  },
+  "description": {"en": "The consumed off peak quantity of active electrical energy that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
