@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Coil Leaving Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with the temperature of air leaving the chilled water coil"},
+  "extends" : [
+    "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
