@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SupplementalHeatingSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supplemental Heating Setpoint"
+  },
+  "description": {"en": "The desired value associated with supplemental heating temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

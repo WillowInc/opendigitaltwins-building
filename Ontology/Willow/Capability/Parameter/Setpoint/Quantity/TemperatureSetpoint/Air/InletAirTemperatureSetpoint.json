@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Inlet Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated withn inlet air temperature"},
+  "description": {"en": "The desired value associated with inlet air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

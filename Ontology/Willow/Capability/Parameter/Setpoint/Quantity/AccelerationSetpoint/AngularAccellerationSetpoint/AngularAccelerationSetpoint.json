@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Angular Acceleration Setpoint"
   },
-  "description": {"en": "The desired value associated withn angular acceleration"},
+  "description": {"en": "The desired value associated with angular acceleration"},
   "extends" : [
     "dtmi:com:willowinc:AccelerationSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Static Pressure Setpoint"
   },
-  "description": {"en": "The desired value associated withn air static pressure"},
+  "description": {"en": "The desired value associated with air static pressure"},
   "extends" : [
     "dtmi:com:willowinc:StaticPressureSetpoint;1",
     "dtmi:com:willowinc:AirPressureSetpoint;1"

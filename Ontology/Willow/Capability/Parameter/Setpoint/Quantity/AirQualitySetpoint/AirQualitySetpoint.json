@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Quality Setpoint"
   },
-  "description": {"en": "The desired value associated withn air quality"},
+  "description": {"en": "The desired value associated with air quality"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

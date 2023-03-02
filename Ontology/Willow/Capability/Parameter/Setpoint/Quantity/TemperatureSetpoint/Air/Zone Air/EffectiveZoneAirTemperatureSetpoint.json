@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Effective Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated withn effective zone air temperature"},
+  "description": {"en": "The desired value associated with effective zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
   ],

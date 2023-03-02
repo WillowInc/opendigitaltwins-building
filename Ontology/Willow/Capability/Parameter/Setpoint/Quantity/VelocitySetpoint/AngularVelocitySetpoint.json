@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Angular Velocity Setpoint"
   },
-  "description": {"en": "The desired value associated withn angular velocity"},
+  "description": {"en": "The desired value associated with angular velocity"},
   "extends" : [
     "dtmi:com:willowinc:VelocitySetpoint;1"
   ],

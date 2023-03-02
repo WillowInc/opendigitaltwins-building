@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Outside Air Velocity Pressure Setpoint"
   },
-  "description": {"en": "The desired value associated withn outside air velocity pressure"},
+  "description": {"en": "The desired value associated with outside air velocity pressure"},
   "extends" : [
     "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
   ],

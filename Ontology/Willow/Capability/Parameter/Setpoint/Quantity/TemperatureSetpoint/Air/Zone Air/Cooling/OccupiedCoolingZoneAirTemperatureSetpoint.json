@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Occupied Cooling Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated withn occupied cooling zone air temperature"},
+  "description": {"en": "The desired value associated with occupied cooling zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:OccupiedCoolingSetpoint;1"

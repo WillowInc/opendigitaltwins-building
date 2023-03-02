@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Energy Setpoint"
   },
-  "description": {"en": "The desired value associated withn energy"},
+  "description": {"en": "The desired value associated with energy"},
   "extends" : [
     "dtmi:com:willowinc:QuantitySetpoint;1"
   ],

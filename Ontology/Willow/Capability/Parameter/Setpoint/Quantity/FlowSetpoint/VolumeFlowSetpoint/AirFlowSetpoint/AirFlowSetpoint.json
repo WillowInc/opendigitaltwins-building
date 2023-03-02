@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Flow Setpoint"
   },
-  "description": {"en": "The desired value associated withn air flow"},
+  "description": {"en": "The desired value associated with air flow"},
   "extends" : [
     "dtmi:com:willowinc:VolumeFlowSetpoint;1"
   ],
