@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TotalElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Electrical Power Sensor"
+  },
+  "description": {"en": "The total electrical power feedback from a sensor associated with a piece of equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
