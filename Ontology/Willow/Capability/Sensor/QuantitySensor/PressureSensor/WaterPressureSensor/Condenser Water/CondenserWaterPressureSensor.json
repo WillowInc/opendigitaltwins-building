@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with condenser water"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderChilledWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with chilled water header"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
