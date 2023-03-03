@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:IntegratedPumpElectricalPowerSensor;1",
+  "@id": "dtmi:com:willowinc:PumpElectricalPowerSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Integrated Pump Electrical Power Sensor"
+    "en": "Pump Electrical Power Sensor"
   },
   "description": {"en": "The electrical power feedback from a sensor associated with an integrated pump"},
   "extends" : [

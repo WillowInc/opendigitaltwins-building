@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:IntegratedCompressorElectricalPowerSensor;1",
+  "@id": "dtmi:com:willowinc:CompressorElectricalPowerSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Integrated Compressor Electrical Power Sensor"
+    "en": "Compressor Electrical Power Sensor"
   },
   "description": {"en": "The electrical power feedback from a sensor associated with an integrated compressor"},
   "extends" : [

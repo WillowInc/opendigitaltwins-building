@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:IntegratedFanElectricalPowerSensor;1",
+  "@id": "dtmi:com:willowinc:FanElectricalPowerSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Integrated Fan Electrical Power Sensor"
+    "en": "Fan Electrical Power Sensor"
   },
   "description": {"en": "The electrical power feedback from a sensor associated with an integrated fan"},
   "extends" : [
