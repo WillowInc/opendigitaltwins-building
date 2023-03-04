@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OvertimeScheduleOccupiedState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Overtime Schedule Occupied State"
+  },
+  "description": {"en": "When 'true', the logic output of the equipment's overtime schedule is indicating that it should operate in an occupied mode. This occurs when the normal schedule is indicating an 'unoccupied mode' but the equipment is desired to be overriden."},
+  "extends" : [
+    "dtmi:com:willowinc:OccupiedState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

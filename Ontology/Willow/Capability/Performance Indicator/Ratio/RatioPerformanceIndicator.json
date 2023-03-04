@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:RatioPerformanceIndicator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ratio Performance Indicator"
+  },
+  "description": {
+    "en": "A performance indicator which has values that are a ratio."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
