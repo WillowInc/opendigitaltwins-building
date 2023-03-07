@@ -32,6 +32,14 @@
     {
       "@type": "Component",
       "displayName": {
+        "en": "Electricity Emission Factor"
+      },
+      "name": "electricityEmissionFactor",
+      "schema": "dtmi:com:willowinc:UtilityEmissionFactor;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
         "en": "Natural Gas Price Rate"
       },
       "name": "naturalGasPriceRate",

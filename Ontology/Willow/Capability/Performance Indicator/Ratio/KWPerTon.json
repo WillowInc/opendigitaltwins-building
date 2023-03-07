@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:KWPerTon;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "KW/Ton"
+  },
+  "description": {
+    "en": "A performance indicator for the thermal efficiency of a chiller or chiller plant which is the ratio of electrical power consumed by the entity (in kW) to its thermal energy output (in Tons)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RatioPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

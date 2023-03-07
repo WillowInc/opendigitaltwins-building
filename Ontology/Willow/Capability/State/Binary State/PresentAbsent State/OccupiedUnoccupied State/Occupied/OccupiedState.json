@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Occupied State"
   },
-  "description": {"en": "The Boolean state of the equipment which is 'occupied' when 'true'"},
+  "description": {"en": "When 'true', equipment is operating in an occupied mode as set by a normal schedule, overtime schedule, or manual override."},
   "extends" : [
     "dtmi:com:willowinc:OccupiedUnoccupiedState;1",
     "dtmi:com:willowinc:PresentState;1"
