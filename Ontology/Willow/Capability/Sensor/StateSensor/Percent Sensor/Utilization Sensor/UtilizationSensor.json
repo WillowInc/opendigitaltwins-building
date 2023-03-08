@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:UtilizationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utilization Sensor"
+  },
+  "description": {"en": "The percent utilization of a device"},
+  "extends" : [
+    "dtmi:com:willowinc:PercentSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
