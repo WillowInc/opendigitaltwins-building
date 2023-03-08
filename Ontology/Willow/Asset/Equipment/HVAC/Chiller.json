@@ -114,6 +114,16 @@
         "valueSchema": "string"
       },
       "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "design delta t"
+      },
+      "name": "designDeltaT",
+      "schema": "double",
+      "unit": "degreeFahrenheit",
+      "writable": true
     }
   ],
   "@context": [

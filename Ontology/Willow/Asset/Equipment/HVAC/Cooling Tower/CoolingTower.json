@@ -60,6 +60,16 @@
       },
       "name": "fan",
       "schema": "dtmi:com:willowinc:Fan;1"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "design delta t"
+      },
+      "name": "designDeltaT",
+      "schema": "double",
+      "unit": "degreeFahrenheit",
+      "writable": true
     }
   ],
   "@context": [
