@@ -118,11 +118,41 @@
     {
       "@type": ["Property", "Temperature"],
       "displayName": {
-        "en": "design delta t"
+        "en": "evaporator design delta t"
       },
-      "name": "designDeltaT",
+      "name": "evaporatorDesignDeltaT",
       "schema": "double",
       "unit": "degreeFahrenheit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "evaporator design flow"
+      },
+      "name": "evaporatorDesignFlow",
+      "schema": "double",
+      "unit": "gallonPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "condenser design delta t"
+      },
+      "name": "condenserDesignDeltaT",
+      "schema": "double",
+      "unit": "degreeFahrenheit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "condenser design flow"
+      },
+      "name": "condenserDesignFlow",
+      "schema": "double",
+      "unit": "gallonPerMinute",
       "writable": true
     }
   ],

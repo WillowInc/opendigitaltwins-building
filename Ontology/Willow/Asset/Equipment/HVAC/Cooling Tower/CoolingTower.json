@@ -70,6 +70,16 @@
       "schema": "double",
       "unit": "degreeFahrenheit",
       "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "design flow"
+      },
+      "name": "designFlow",
+      "schema": "double",
+      "unit": "gallonPerMinute",
+      "writable": true
     }
   ],
   "@context": [
