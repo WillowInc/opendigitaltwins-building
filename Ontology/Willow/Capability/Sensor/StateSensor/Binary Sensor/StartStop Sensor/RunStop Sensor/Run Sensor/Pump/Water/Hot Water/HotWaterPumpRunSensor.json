@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterPumpRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Pump Run Sensor"
+  },
+  "description": {"en": "The boolean status from a sensor associated with the hot water pump where 'run' is 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterPumpRunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Leaving Pump Run Sensor"
+  },
+  "description": {"en": "The boolean status from a sensor associated with the condenser water leaving pump where 'run' is 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

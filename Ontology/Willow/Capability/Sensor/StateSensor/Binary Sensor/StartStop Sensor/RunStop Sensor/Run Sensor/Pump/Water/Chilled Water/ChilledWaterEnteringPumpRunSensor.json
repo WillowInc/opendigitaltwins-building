@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Entering Pump Run Sensor"
+  },
+  "description": {"en": "The boolean status from a sensor associated with the chilled water entering pump where 'run' is 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpRunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

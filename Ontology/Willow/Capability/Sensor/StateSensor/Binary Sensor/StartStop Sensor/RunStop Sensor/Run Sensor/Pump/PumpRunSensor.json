@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PumpRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Run Sensor"
+  },
+  "description": {"en": "The boolean status from a sensor associated with a pump where 'run' is 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:RunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
