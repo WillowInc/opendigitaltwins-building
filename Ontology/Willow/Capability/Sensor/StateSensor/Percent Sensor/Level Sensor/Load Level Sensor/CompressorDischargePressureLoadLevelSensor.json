@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorDischargePressureLoadLevelSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Discharge Pressure Load Level Sensor"
+  },
+  "description": {"en": "The load level feedback from a sensor associated with compressor discharge (head) pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:LoadLevelSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
