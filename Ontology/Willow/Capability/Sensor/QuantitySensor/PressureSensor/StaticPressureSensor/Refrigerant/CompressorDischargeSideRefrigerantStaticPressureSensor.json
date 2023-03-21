@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorDischargeSideRefrigerantStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Discharge Side Refrigerant Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor associated with refrigerant at the discharge side of the compressor"},
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

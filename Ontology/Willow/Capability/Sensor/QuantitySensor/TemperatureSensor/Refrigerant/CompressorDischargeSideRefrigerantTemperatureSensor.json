@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:CompressorDischargeRefrigerantTemperatureSensor;1",
+  "@id": "dtmi:com:willowinc:CompressorDischargeSideRefrigerantTemperatureSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Compressor Discharge Refrigerant Temperature Sensor"
+    "en": "Compressor Discharge Side Refrigerant Temperature Sensor"
   },
   "description": {"en": "The temperature feedback from a sensor associated with refrigerant at the discharge side of the compressor"},
   "extends" : [
