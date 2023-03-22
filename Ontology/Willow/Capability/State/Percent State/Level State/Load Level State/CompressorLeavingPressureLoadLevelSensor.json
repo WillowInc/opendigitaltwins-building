@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorLeavingPressureLoadLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Leaving Pressure Load Level State"
+  },
+  "description": {"en": "The load level state associated with compressor leaving (head or discharge) pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:LoadLevelState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
