@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorEnteringRefrigerantTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Entering Refrigerant Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with refrigerant entering the compressor (suction)"},
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
