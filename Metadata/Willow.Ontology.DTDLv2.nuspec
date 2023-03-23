@@ -16,7 +16,7 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="**/Willow.DTDLv2.jsonld" target="contentFiles\any\any" />
-    <file src="**/Willow.DTDLv2.jsonld" target="content" />
+    <file src="Willow.DTDLv2.jsonld" target="contentFiles\any\any" />
+    <file src="Willow.DTDLv2.jsonld" target="content" />
   </files>
 </package>
