@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighSpeedFanRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Speed Fan Run Actuator"
+  },
+  "description": {"en": "The boolean command which sets the state of the high speed fan command to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:FanRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
