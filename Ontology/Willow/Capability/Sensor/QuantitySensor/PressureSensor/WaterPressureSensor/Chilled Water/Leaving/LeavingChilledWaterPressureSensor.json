@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:LeavingChilledWaterTPressureSensor;1",
+  "@id": "dtmi:com:willowinc:LeavingChilledWaterPressureSensor;1",
   "@type": "Interface",
   "displayName": {
     "en": "Leaving Chilled Water Pressure Sensor"
