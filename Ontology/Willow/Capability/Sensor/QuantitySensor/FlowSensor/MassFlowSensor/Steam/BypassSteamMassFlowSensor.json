@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:BypassSteamMassFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Steam Mass Flow Sensor"
+  },
+  "description": {"en": "The mass flow feedback from a sensor associated with steam bypass"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamMassFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
