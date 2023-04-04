@@ -72,6 +72,16 @@
       "writable": true
     },
     {
+      "@type": ["AngularVelocity", "Property"],
+      "displayName": {
+        "en": "maximum rotation speed"
+      },
+      "name": "maxRotationSpeed",
+      "schema": "double",
+      "unit": "revolutionPerMinute",
+      "writable": true
+    },
+    {
       "@type": ["Power", "Property"],
       "displayName": {
         "en": "brake horsepower"
@@ -153,6 +163,37 @@
       "annotates": "maxAirflowRating",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Airflow"
+      },
+      "name": "designAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Airflow Unit"
+      },
+      "name": "designAirflowUnit",
+      "annotates": "designAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["AngularVelocity", "Property"],
+      "displayName": {
+        "en": "design rotation speed"
+      },
+      "name": "designRotationSpeed",
+      "schema": "double",
+      "unit": "revolutionPerMinute",
       "writable": true
     },
     {

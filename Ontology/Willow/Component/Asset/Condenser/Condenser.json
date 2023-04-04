@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:Condenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser"
+  },
+  "description": {
+    "en": "A heat exhcanging device which rejects heat from a working fluid (i.e. refrigerant) into a secondary fluid or the surrounding air."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
