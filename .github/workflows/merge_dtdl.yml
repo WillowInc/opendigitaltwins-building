@@ -1,0 +1,32 @@
+name: Merge DTDL
+
+on:
+  workflow_dispatch:
+  push:
+    branches: 
+      - "main"
+    paths:
+      - "Ontology/Willow/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        token:  ${{ secrets.CI_PUSH_PAT }}
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Build DTDL Merger
+      run: dotnet build ./Tools/DTDLMerger/
+    - name: Run DTDL Merger on Willow Ontology DTDLv3
+      run: dotnet run --project ./Tools/DTDLMerger/ ./Ontology/Willow/ > ./Metadata/Willow.Ontology.DTDLv3.jsonld
+    - name: Increment .nuspec revision number
+      id: increment
+      uses: vers-one/dotnet-project-version-updater@v1.2
+      with:
+        files: "Metadata/*.nuspec"
+        version: bump-revision
