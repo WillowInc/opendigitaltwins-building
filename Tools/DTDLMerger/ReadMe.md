@@ -5,4 +5,4 @@ This app pulls all the DTDL files from a folder and assembles a single DTDL file
 # Getting Started
 
 1. dotnet run --project .\Tools\DTDLMerger\DtdlMerger.csproj <inputdirectoryroot> > <outputfile>
-i.e. "dotnet run --project .\Tools\DTDLMerger\DtdlMerger.csproj C:\repos\opendigitaltwins-building\Ontology\Willow\ > .\metadata\Willow.DTDLv2.jsonld"
+i.e. "dotnet run --project .\Tools\DTDLMerger\DtdlMerger.csproj C:\repos\opendigitaltwins-building\Ontology\Willow\ > .\metadata\Willow.DTDLv3.jsonld"

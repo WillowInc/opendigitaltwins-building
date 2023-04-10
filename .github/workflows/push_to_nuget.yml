@@ -30,7 +30,7 @@ jobs:
       - name: Configure package generation directory
         run: |
           mkdir build
-          cp Willow*.jsonld build/
+          cp Metadata/Willow*.jsonld build/
           cp Metadata/*.nuspec build/
       - name: 'Run nuget pack'
         run: nuget pack build/*.nuspec -OutputDirectory build

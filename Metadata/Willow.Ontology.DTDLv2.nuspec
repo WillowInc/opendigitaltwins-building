@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>Willow.Ontology.DTDLv2</id>
+    <id>Willow.Ontology.DTDLv3</id>
     <version>1.0.0.0</version>
     <authors>Willow, Inc.</authors>
     <owners>willowinc</owners>
@@ -16,7 +16,7 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="Willow.DTDLv2.jsonld" target="contentFiles\any\any" />
-    <file src="Willow.DTDLv2.jsonld" target="content" />
+    <file src="Willow.Ontology.DTDLv3.jsonld" target="contentFiles\any\any" />
+    <file src="Willow.Ontology.DTDLv3.jsonld" target="content" />
   </files>
 </package>
