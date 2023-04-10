@@ -31,6 +31,22 @@
       "writable": true
     },
     {
+      "@type": "Component",
+      "displayName": {
+        "en": "Evaporator"
+      },
+      "name": "evaporator",
+      "schema": "dtmi:com:willowinc:Evaporator;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Compressor"
+      },
+      "name": "compressor",
+      "schema": "dtmi:com:willowinc:Compressor;1"
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "refrigerant type"

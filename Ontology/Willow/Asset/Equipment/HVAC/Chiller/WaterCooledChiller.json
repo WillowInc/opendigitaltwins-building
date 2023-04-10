@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:WaterCooledChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water-Cooled Chiller"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Chiller;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Condenser"
+      },
+      "name": "condenser",
+      "schema": "dtmi:com:willowinc:WaterCooledCondenser;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
