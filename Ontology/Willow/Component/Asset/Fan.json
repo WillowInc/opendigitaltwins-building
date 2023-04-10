@@ -82,6 +82,27 @@
       "writable": true
     },
     {
+      "@type": ["Property", "Frequency"],
+      "displayName": {
+        "en": "maximum VFD frequency"
+      },
+      "name": "maxVFDFrequency",
+      "schema": "double",
+      "unit": "hertz",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum VFD frequency unit"
+      },
+      "name": "maxVFDFrequencyUnit",
+      "annotates": "maxVFDFrequency",
+      "overrides": "unit",
+      "schema": "FrequencyUnit",
+      "writable": true
+    },
+    {
       "@type": ["Power", "Property"],
       "displayName": {
         "en": "brake horsepower"
@@ -194,6 +215,27 @@
       "name": "designRotationSpeed",
       "schema": "double",
       "unit": "revolutionPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Frequency"],
+      "displayName": {
+        "en": "design VFD frequency"
+      },
+      "name": "designVFDFrequency",
+      "schema": "double",
+      "unit": "hertz",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design VFD frequency unit"
+      },
+      "name": "designVFDFrequencyUnit",
+      "annotates": "designVFDFrequency",
+      "overrides": "unit",
+      "schema": "FrequencyUnit",
       "writable": true
     },
     {
