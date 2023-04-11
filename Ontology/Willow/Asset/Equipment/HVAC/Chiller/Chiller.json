@@ -9,28 +9,6 @@
   ],
   "contents": [
     {
-      "@type": "Property",
-      "displayName": {
-        "en": "type"
-      },
-      "name": "type",
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "enumValue": "WaterCooled",
-            "name": "WaterCooled"
-          },
-          {
-            "enumValue": "AirCooled",
-            "name": "AirCooled"
-          }
-        ],
-        "valueSchema": "string"
-      },
-      "writable": true
-    },
-    {
       "@type": "Component",
       "displayName": {
         "en": "Evaporator"
@@ -95,40 +73,6 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "EnergyRateUnit",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "compressor type"
-      },
-      "name": "compressorType",
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "enumValue": "Scroll",
-            "name": "Scroll"
-          },
-          {
-            "enumValue": "Screw",
-            "name": "Screw"
-          },
-          {
-            "enumValue": "Reciprocol",
-            "name": "Reciprocol"
-          },
-          {
-            "enumValue": "Centrifugal",
-            "name": "Centrifugal"
-          },
-          {
-            "enumValue": "Absorption",
-            "name": "Absorption"
-          }
-        ],
-        "valueSchema": "string"
-      },
       "writable": true
     }
   ],
