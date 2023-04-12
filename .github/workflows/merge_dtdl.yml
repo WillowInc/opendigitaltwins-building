@@ -24,9 +24,20 @@ jobs:
       run: dotnet build ./Tools/DTDLMerger/
     - name: Run DTDL Merger on Willow Ontology DTDLv3
       run: dotnet run --project ./Tools/DTDLMerger/ ./Ontology/Willow/ > ./Metadata/Willow.Ontology.DTDLv3.jsonld
-    - name: Increment .nuspec revision number
-      id: increment
+    - name: Set .nuspec version
+      id: set-version
       uses: vers-one/dotnet-project-version-updater@v1.2
       with:
         files: "Metadata/*.nuspec"
-        version: bump-revision
+        version: ${{ github.event.inputs.version }}
+    - name: 'Commit new .nuspec version'
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}
+        branch: auto/${{ steps.set-version.outputs.newVersion }}
+        create_branch: true
+    - name: 'Create PR'
+      uses: peter-evans/create-pull-request@v5
+      token: ${{ secrets.CI_PUSH_PAT }}
+      branch: auto/${{ steps.set-version.outputs.newVersion }}
+      draft: false

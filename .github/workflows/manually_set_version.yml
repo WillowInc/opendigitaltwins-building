@@ -26,3 +26,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}
+          branch: auto/${{ steps.set-version.outputs.newVersion }}
+          create_branch: true
+      - name: 'Create PR'
+        uses: peter-evans/create-pull-request@v5
+        token: ${{ secrets.CI_PUSH_PAT }}
+        branch: auto/${{ steps.set-version.outputs.newVersion }}
+        draft: false
+
+
