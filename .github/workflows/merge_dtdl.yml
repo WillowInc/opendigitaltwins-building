@@ -32,7 +32,7 @@ jobs:
         version: bump-revision
     - name: 'Commit new .nuspec version'
       run: |
-        git checkout -v auto\/${{ steps.set-version.outputs.newVersion }}
+        git checkout -b auto/${{ steps.set-version.outputs.newVersion }}
         git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
-        git push --set-upstream origin auto\/${{ steps.set-version.outputs.newVersion }}
+        git push --set-upstream origin auto/${{ steps.set-version.outputs.newVersion }}
         gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
