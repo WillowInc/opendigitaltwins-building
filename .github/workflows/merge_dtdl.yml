@@ -35,6 +35,7 @@ jobs:
         git config --global user.email "admin@willowinc.com"
         git config --global user.name "Auto Generated"
         git checkout -b auto/${{ steps.set-version.outputs.newVersion }}
+        git add .
         git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
         git push --set-upstream origin auto/${{ steps.set-version.outputs.newVersion }}
         gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
