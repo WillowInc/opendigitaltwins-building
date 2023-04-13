@@ -32,6 +32,8 @@ jobs:
         version: bump-revision
     - name: 'Commit new .nuspec version'
       run: |
+        git config --global user.email "admin@willowinc.com"
+        git config --global user.name "Auto Generated"
         git checkout -b auto/${{ steps.set-version.outputs.newVersion }}
         git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
         git push --set-upstream origin auto/${{ steps.set-version.outputs.newVersion }}
