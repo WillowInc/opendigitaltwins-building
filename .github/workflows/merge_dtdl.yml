@@ -15,7 +15,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        token:  ${{ secrets.CI_PUSH_PAT }}
+        token:  ${{ secrets.GITHUB_TOKEN }}
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -39,6 +39,6 @@ jobs:
     - name: 'Create PR'
       uses: peter-evans/create-pull-request@v5
       with:
-        token: ${{ secrets.CI_PUSH_PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         branch: auto/${{ steps.set-version.outputs.newVersion }}
         draft: false
