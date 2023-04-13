@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>Willow.Ontology.DTDLv3</id>
+    <id>WillowInc.Ontology.DTDLv3</id>
     <version>1.0.0.0</version>
     <authors>Willow, Inc.</authors>
     <owners>willowinc</owners>
