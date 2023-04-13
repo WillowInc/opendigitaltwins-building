@@ -11,7 +11,7 @@
     <description>Willow is an ontology model and API specification for building and interfacing against Smart Buildings, whether on individual building or portfolio level. The Willow ontology is released in DTDL (Digital Twin Definition Language).</description>
     <copyright>Copyright ©2023 Willow, Inc</copyright>
     <tags>ontology willow</tags>
-    <readme>README.md</readme>
+    <readme>docs\ReadMe.md</readme>
     <contentFiles>
       <files include="**/*.jsonld" buildAction="EmbeddedResource" copyToOutput="true" />
     </contentFiles>
@@ -19,6 +19,6 @@
   <files>
     <file src="Willow.Ontology.DTDLv3.jsonld" target="contentFiles\any\any" />
     <file src="Willow.Ontology.DTDLv3.jsonld" target="content" />
-    <file src="ReadMe.md" target="\" />
+    <file src=".\ReadMe.md" target="docs\" />
   </files>
 </package>
