@@ -40,4 +40,4 @@ jobs:
         git add .
         git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
         git push --set-upstream origin auto/${{ steps.set-version.outputs.newVersion }}
-        gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
+        gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}" --fill
