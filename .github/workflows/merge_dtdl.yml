@@ -31,14 +31,8 @@ jobs:
         files: "Metadata/*.nuspec"
         version: bump-revision
     - name: 'Commit new .nuspec version'
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}
-        branch: auto/${{ steps.set-version.outputs.newVersion }}
-        create_branch: true
-    - name: 'Create PR'
-      uses: peter-evans/create-pull-request@v5
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: auto/${{ steps.set-version.outputs.newVersion }}
-        draft: false
+      run: |
+        git checkout -v auto\/${{ steps.set-version.outputs.newVersion }}
+        git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
+        git push --set-upstream origin auto\/${{ steps.set-version.outputs.newVersion }}
+        gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
