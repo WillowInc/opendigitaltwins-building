@@ -32,6 +32,7 @@ jobs:
           mkdir build
           cp Metadata/Willow*.jsonld build/
           cp Metadata/*.nuspec build/
+          cp Metadata/ReadMe.md build/
       - name: 'Run nuget pack'
         run: nuget pack build/*.nuspec -OutputDirectory build
       - name: 'Publish to nuget.org'
