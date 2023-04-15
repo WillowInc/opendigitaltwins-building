@@ -74,6 +74,81 @@
       "overrides": "unit",
       "schema": "EnergyRateUnit",
       "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "design cooling capacity"
+      },
+      "name": "designCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design cooling capacity unit"
+      },
+      "name": "designCoolingCapacityUnit",
+      "annotates": "designCoolingCapacity",
+      "overrides": "unit",
+      "schema": "EnergyRateUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design KW/Ton"
+      },
+      "name": "designKWPerTon",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design coefficient of performance (COP)"
+      },
+      "name": "designCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design energy efficiency ratio (EER)"
+      },
+      "name": "designEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal KW/Ton"
+      },
+      "name": "nominalKWPerTon",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal coefficient of performance (COP)"
+      },
+      "name": "nominalCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal energy efficiency ratio (EER)"
+      },
+      "name": "nominalEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
     }
   ],
   "@context": [
