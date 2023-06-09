@@ -154,6 +154,18 @@
       "writable": true
     },
     {
+      "@type": "Property",
+      "displayName": {
+        "en": "occupiable"
+      },
+      "name": "occupiable",
+      "description": {
+        "en": "A space designed for human occupancy in which individuals may remain for a period of time for rest, amusement, education, dining, shopping, employment, or other similar purposes."
+      },
+      "schema": "boolean",
+      "writable": true
+    },
+    {
       "@type": "Component",
       "name": "area",
       "displayName": {
