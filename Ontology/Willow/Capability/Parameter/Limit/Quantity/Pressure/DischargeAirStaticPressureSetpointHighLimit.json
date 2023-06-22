@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeAirStaticPressureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Static Pressure Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with discharge (supply) air static pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
