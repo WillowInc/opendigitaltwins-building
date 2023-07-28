@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterThermalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Thermal Energy Sensor"
+  },
+  "description": {"en": "The thermal energy feedback from a sensor measuring condenser water"},
+  "extends" : [
+    "dtmi:com:willowinc:ThermalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
