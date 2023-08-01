@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:GreenhouseGasEmissionsFactor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Greenhouse Gas Emissions Factor"
+  },
+  "description": {
+    "en": "The ratio of greenhouse gas emissions per activity associated with the release of the pollutant such as energy production or transportation."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RatioPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
