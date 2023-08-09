@@ -3798,6 +3798,18 @@
         "writable": true
       },
       {
+        "@type": "Property",
+        "displayName": {
+          "en": "occupiable"
+        },
+        "name": "occupiable",
+        "description": {
+          "en": "A space designed for human occupancy in which individuals may remain for a period of time for rest, amusement, education, dining, shopping, employment, or other similar purposes."
+        },
+        "schema": "boolean",
+        "writable": true
+      },
+      {
         "@type": "Component",
         "name": "area",
         "displayName": {
@@ -6738,7 +6750,20 @@
     "extends": [
       "dtmi:com:willowinc:Collection;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "occupiable"
+        },
+        "name": "occupiable",
+        "description": {
+          "en": "A space designed for human occupancy in which individuals may remain for a period of time for rest, amusement, education, dining, shopping, employment, or other similar purposes."
+        },
+        "schema": "boolean",
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -14803,6 +14828,18 @@
         "writable": true
       },
       {
+        "@type": "Property",
+        "displayName": {
+          "en": "excluded from comfort analytics"
+        },
+        "name": "excludedFromComfortAnalytics",
+        "description": {
+          "en": "When true, the equipment will not be included in comfort KPIs or other comfort analytics."
+        },
+        "schema": "boolean",
+        "writable": true
+      },
+      {
         "@type": "Component",
         "displayName": {
           "en": "supply fan"
@@ -15533,6 +15570,88 @@
         "annotates": "netSensibleCoolingCapacity",
         "overrides": "unit",
         "schema": "EnergyRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "design cooling capacity"
+        },
+        "name": "designCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design cooling capacity unit"
+        },
+        "name": "designCoolingCapacityUnit",
+        "annotates": "designCoolingCapacity",
+        "overrides": "unit",
+        "schema": "EnergyRateUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design KW/Ton"
+        },
+        "name": "designKWPerTon",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design coefficient of performance (COP)"
+        },
+        "name": "designCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design energy efficiency ratio (EER)"
+        },
+        "name": "designEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal KW/Ton"
+        },
+        "name": "nominalKWPerTon",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal coefficient of performance (COP)"
+        },
+        "name": "nominalCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal energy efficiency ratio (EER)"
+        },
+        "name": "nominalEnergyEfficiencyRatio",
+        "schema": "double",
         "writable": true
       }
     ],
@@ -20223,6 +20342,18 @@
         },
         "name": "ductInlet",
         "schema": "dtmi:com:willowinc:DuctConnection;1"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "excluded from comfort analytics"
+        },
+        "name": "excludedFromComfortAnalytics",
+        "description": {
+          "en": "When true, the equipment will not be included in comfort KPIs or other comfort analytics."
+        },
+        "schema": "boolean",
+        "writable": true
       }
     ],
     "@context": [
@@ -31431,6 +31562,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterThermalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Thermal Energy Sensor"
+    },
+    "description": {
+      "en": "The thermal energy feedback from a sensor measuring chilled water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -31775,6 +31923,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterThermalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Thermal Energy Sensor"
+    },
+    "description": {
+      "en": "The thermal energy feedback from a sensor measuring condenser water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -33558,6 +33723,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FireSprinklerRiserManifold;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire Sprinkler Riser Manifold"
+    },
+    "description": {
+      "en": "A fire sprinkler assembly which includes a water flow switch, pressure guage, and drain valve required for a NFPA 13 riser sprinkler system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SprinklerEquipment;1",
+      "dtmi:com:willowinc:Manifold;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FireSuppressionSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -33822,6 +34005,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterThermalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Thermal Energy Sensor"
+    },
+    "description": {
+      "en": "The thermal energy feedback from a sensor measuring hot water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -36644,6 +36844,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamThermalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Thermal Energy Sensor"
+    },
+    "description": {
+      "en": "The thermal energy feedback from a sensor measuring steam"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
