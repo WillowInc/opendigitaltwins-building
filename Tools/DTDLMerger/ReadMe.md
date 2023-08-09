@@ -2,6 +2,8 @@
 
 This app pulls all the DTDL files from a folder and assembles a single DTDL file that can be either embedded in a Nuget, or used directly as part of a load.
 
+It is run automatically by a github action.
+
 # Getting Started
 
 1. dotnet run --project .\Tools\DTDLMerger\DtdlMerger.csproj <inputdirectoryroot> > <outputfile>
