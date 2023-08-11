@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HandOffAutoSwitchState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hand Off Auto Switch State"
+  },
+  "description": {"en": "The state of the hand off auto switch"},
+  "extends" : [
+    "dtmi:com:willowinc:ModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
