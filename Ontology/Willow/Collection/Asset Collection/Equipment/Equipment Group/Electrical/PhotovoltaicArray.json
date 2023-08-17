@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PhotovoltaicArray;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PV Array"
+  },
+  "description": {
+    "en": "A collection of photovoltaic panels that are linked together."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
