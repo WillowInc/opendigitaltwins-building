@@ -17084,6 +17084,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyStarScore;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "ENERGY STAR Score"
+    },
+    "description": {
+      "en": "The 1-100 ENERGY STAR score for a building compares it to other buildings across the United States with similar primary use characteristics. A higher score represents better performance. (energystar.gov)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PercentPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnthalpySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -17634,6 +17651,57 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GreenhouseGasEmissions;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The quantity of greenhouse gas (GHG) emissions attributed (directly or indirectly) to an entity such as an organization or facility, typically measured in metric tons of CO2 equivalent (CO2e)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantityPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "The ratio of greenhouse gas emissions per activity associated with the release of the pollutant such as energy production or transportation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RatioPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GreenhouseGasEmissionsIntensity;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Greenhouse Gas Emissions Intensity"
+    },
+    "description": {
+      "en": "The quantity of greenhouse gas emissions normalized per facility area attributed (directly or indirectly) to an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantityPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -22700,6 +22768,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterMeter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Meter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalMeter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Cistern;1",
     "@type": "Interface",
     "displayName": {
@@ -23417,6 +23499,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChemicalDilutionDrainageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DirectGreenhouseGasEmissions;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Direct Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The direct quantity of greenhouse gas (GHG) emissions that occur from sources controlled by an entity such as an organization or facility, typically measured in metric tons of CO2 equivalent (CO2e)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissions;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DirectGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Direct Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "A greenhouse gas emissions factor used to calculate direct emissions related to burning fuel at a facility."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissionsFactor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DirectGreenhouseGasEmissionsIntensity;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Direct Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The direct quantity of greenhouse gas emissions normalized per facility area that occur from sources controlled by an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissionsIntensity;1"
     ],
     "contents": [],
     "@context": [
@@ -25364,6 +25497,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HandOffAutoSwitchState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hand Off Auto Switch State"
+    },
+    "description": {
+      "en": "The state of the hand off auto switch"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ModeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HandTruck;1",
     "@type": "Interface",
     "displayName": {
@@ -25400,6 +25550,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:LengthSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterMeter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Meter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalMeter;1"
     ],
     "contents": [],
     "@context": [
@@ -25882,6 +26046,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:IndirectGreenhouseGasEmissions;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Indirect Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The indirect quantity of greenhouse gas (GHG) emissions that are associated with the purchase of energy by an entity such as an organization or facility, typically measured in metric tons of CO2 equivalent (CO2e)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissions;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Indirect Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "A greenhouse gas emissions factor used to calculate indirect emissions related to the purchase and consumption of energy."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissionsFactor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsIntensity;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Indirect Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The indirect quantity of greenhouse gas emissions normalized per facility area that are associated with the purchase of energy by an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissionsIntensity;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InductanceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -25906,6 +26121,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AccessControlEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Inverter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inverter"
+    },
+    "description": {
+      "en": "A power electronic device that changes direct current (DC) to alternating current (AC)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -27226,6 +27458,139 @@
     ],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhotovoltaicPanel;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PV Panel"
+    },
+    "description": {
+      "en": "An integrated assembly of interconnected photovoltaic (PV) cells designed to deliver a selected level of working voltage and current at its output terminals packaged for protection against environment degradation and suited for incorporation in photovoltaic power systems. (Brick Schema)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Electrical Properties (STC)"
+        },
+        "description": {
+          "en": "Electrical characteristics under the Standard Test Conditions (STC) as defined in IEC 61215"
+        },
+        "name": "electricalPropertiesSTC",
+        "schema": "dtmi:com:willowinc:PVPanelElectricalProperties;1",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Electrical Properties (NMOT)"
+        },
+        "description": {
+          "en": "Electrical characteristics under the Nominal Module Operating Temperature (NMOT) as defined in IEC 61215"
+        },
+        "name": "electricalPropertiesNMOT",
+        "schema": "dtmi:com:willowinc:PVPanelElectricalProperties;1",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "cell material"
+        },
+        "name": "cellMaterial",
+        "schema": "string",
+        "writable": true
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:PVPanelElectricalProperties;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "@type": [
+              "Field",
+              "Power"
+            ],
+            "name": "maxPowerOutput",
+            "displayName": {
+              "en": "Maximum Power Output"
+            },
+            "schema": "double",
+            "unit": "watt"
+          },
+          {
+            "@type": [
+              "Field",
+              "Voltage"
+            ],
+            "name": "MPPVoltage",
+            "displayName": {
+              "en": "Maximum Power Point Voltage"
+            },
+            "schema": "double",
+            "unit": "volt"
+          },
+          {
+            "@type": [
+              "Field",
+              "Current"
+            ],
+            "name": "MPPCurrent",
+            "displayName": {
+              "en": "Maximum Power Point Current"
+            },
+            "schema": "double",
+            "unit": "ampere"
+          },
+          {
+            "@type": [
+              "Field",
+              "Voltage"
+            ],
+            "name": "openCircuitVoltage",
+            "displayName": {
+              "en": "Open Circuit Voltage"
+            },
+            "schema": "double",
+            "unit": "volt"
+          },
+          {
+            "@type": [
+              "Field",
+              "Current"
+            ],
+            "name": "shortCircuitCurrent",
+            "displayName": {
+              "en": "Short Circuit Current"
+            },
+            "schema": "double",
+            "unit": "ampere"
+          },
+          {
+            "@type": "Field",
+            "name": "efficiency",
+            "displayName": {
+              "en": "Efficiency"
+            },
+            "description": {
+              "en": "The percentage of incident solar energy that is converted to electricity."
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -28714,6 +29079,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamMeter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Meter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalMeter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -29252,6 +29631,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalGreenhouseGasEmissions;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The total quantity of greenhouse gas (GHG) emissions attributed directly and indirectly to an entity such as an organization or facility, typically measured in metric tons of CO2 equivalent (CO2e)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissions;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalGreenhouseGasEmissionsIntensity;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Greenhouse Gas Emissions"
+    },
+    "description": {
+      "en": "The total quantity of greenhouse gas emissions normalized per facility area attributed directly and indirectly to an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:GreenhouseGasEmissionsIntensity;1"
     ],
     "contents": [],
     "@context": [
@@ -31514,6 +31927,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterConsumptionGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Consumption Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of chilled water from a utility."
+    },
+    "extends": [
+      "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterPlant;1",
     "@type": "Interface",
     "displayName": {
@@ -32973,6 +33403,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElectricityConsumptionGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electricity Consumption Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of electricity from a utility."
+    },
+    "extends": [
+      "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricTanklessWaterHeater;1",
     "@type": "Interface",
     "displayName": {
@@ -33971,6 +34418,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Faucet;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterConsumptionGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Consumption Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of hot water from a utility."
+    },
+    "extends": [
+      "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
     ],
     "contents": [],
     "@context": [
@@ -35616,6 +36080,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PhotovoltaicArray;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PV Array"
+    },
+    "description": {
+      "en": "A collection of photovoltaic panels that are linked together."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PitLoadingDockLeveler;1",
     "@type": "Interface",
     "displayName": {
@@ -36593,6 +37074,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SolarInverter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Inverter"
+    },
+    "description": {
+      "en": "A power inverter which has been optimized to convert the DC output of photovoltaic (PV) panels into alternating current (AC) electricity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Inverter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SolarIrradianceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -36758,6 +37256,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondensatePump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamConsumptionGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Consumption Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of steam from a utility."
+    },
+    "extends": [
+      "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
     ],
     "contents": [],
     "@context": [
@@ -38531,6 +39046,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The boolean command which sets the state of the chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterValvePositionSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38872,6 +39404,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The boolean command which sets the state of the condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve Position Sensor"
+    },
+    "description": {
+      "en": "The valve position percent feedback from a sensor associated with condenser water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -44093,6 +44659,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Open Sensor"
+    },
+    "description": {
+      "en": "The boolean chilled water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterValvePositionSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -44189,6 +44772,23 @@
     "extends": [
       "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve Open Sensor"
+    },
+    "description": {
+      "en": "The boolean condenser water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenSensor;1"
     ],
     "contents": [],
     "@context": [
