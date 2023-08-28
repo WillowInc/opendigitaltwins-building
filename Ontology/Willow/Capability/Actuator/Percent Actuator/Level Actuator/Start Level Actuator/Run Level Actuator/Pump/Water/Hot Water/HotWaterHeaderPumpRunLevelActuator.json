@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Header Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the hot water header pump"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

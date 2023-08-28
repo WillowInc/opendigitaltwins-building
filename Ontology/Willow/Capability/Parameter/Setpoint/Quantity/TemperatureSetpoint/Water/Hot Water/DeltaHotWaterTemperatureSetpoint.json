@@ -6,7 +6,8 @@
   },
   "description": {"en": "The desired value associated with hot water delta temperature"},
   "extends" : [
-    "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
+    "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1"
   ],
   "contents": [
   ],

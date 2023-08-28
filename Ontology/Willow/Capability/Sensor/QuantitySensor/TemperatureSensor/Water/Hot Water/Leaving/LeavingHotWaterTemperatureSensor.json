@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with leaving hot water"},
   "extends" : [
-    "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

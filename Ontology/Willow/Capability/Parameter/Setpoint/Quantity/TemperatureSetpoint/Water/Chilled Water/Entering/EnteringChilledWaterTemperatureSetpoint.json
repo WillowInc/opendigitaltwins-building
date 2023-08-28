@@ -6,7 +6,8 @@
   },
   "description": {"en": "The desired value associated with entering chilled water temperature"},
   "extends" : [
-    "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
+    "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:EnteringWaterTemperatureSetpoint;1"
   ],
   "contents": [
   ],

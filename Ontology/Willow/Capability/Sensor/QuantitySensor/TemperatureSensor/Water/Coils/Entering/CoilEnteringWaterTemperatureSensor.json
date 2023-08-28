@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with water entering the coil"},
   "extends" : [
-    "dtmi:com:willowinc:WaterTemperatureSensor;1"
+    "dtmi:com:willowinc:WaterTemperatureSensor;1",
+    "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

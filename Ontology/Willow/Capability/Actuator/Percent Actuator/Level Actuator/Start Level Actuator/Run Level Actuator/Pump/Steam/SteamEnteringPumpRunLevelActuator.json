@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SteamEnteringPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Entering Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the steam entering pump"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

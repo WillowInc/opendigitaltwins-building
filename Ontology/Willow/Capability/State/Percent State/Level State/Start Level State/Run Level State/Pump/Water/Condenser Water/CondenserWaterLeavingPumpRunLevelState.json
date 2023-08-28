@@ -6,7 +6,8 @@
   },
   "description": {"en": "The percent run level state of the leaving condenser water pump"},
   "extends" : [
-    "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+    "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
+    "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
   ],
   "contents": [
 
