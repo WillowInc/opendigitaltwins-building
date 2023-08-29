@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseCImportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Import Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with phase c import"},
+  "extends" : [
+    "dtmi:com:willowinc:PhaseCActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

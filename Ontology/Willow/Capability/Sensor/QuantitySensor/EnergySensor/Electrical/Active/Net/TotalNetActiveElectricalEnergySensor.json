@@ -6,7 +6,7 @@
   },
   "description": {"en": "The active electrical energy feedback from a sensor associated with total net"},
   "extends" : [
-    "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    "dtmi:com:willowinc:TotalActiveElectricalEnergySensor;1"
   ],
   "contents": [
 
