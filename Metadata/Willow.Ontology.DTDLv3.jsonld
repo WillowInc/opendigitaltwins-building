@@ -41981,6 +41981,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PhaseAActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase a"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PhaseAActiveElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41991,6 +42008,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase a"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42032,149 +42066,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PhaseAExportActiveElectricalEnergySensor;1",
+    "@id": "dtmi:com:willowinc:PhaseAReactiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Phase A Export Active Electrical Energy Sensor"
+      "en": "Phase A Reactive Electrical Energy Sensor"
     },
     "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase a export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseAExportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Export Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase a export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseAExportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Export Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase a export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseAImportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Import Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase a import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseAImportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Import Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase a import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseAImportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Import Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase a import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseANetActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Net Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase a net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseANetApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Net Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase a net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseANetReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase A Net Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase a net"
+      "en": "The reactive electrical energy feedback from a sensor associated with phase a"
     },
     "extends": [
       "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
@@ -42202,6 +42100,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PhaseBActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase b"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PhaseBActiveElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42212,6 +42127,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase b"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42253,149 +42185,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PhaseBExportActiveElectricalEnergySensor;1",
+    "@id": "dtmi:com:willowinc:PhaseBReactiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Phase B Export Active Electrical Energy Sensor"
+      "en": "Phase B Reactive Electrical Energy Sensor"
     },
     "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase b export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBExportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Export Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase b export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBExportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Export Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase b export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBImportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Import Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase b import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBImportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Import Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase b import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBImportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Import Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase b import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBNetActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Net Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase b net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBNetApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Net Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase b net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseBNetReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase B Net Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase b net"
+      "en": "The reactive electrical energy feedback from a sensor associated with phase b"
     },
     "extends": [
       "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
@@ -42423,6 +42219,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PhaseCActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase c"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PhaseCActiveElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42433,6 +42246,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase c"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42474,149 +42304,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PhaseCExportActiveElectricalEnergySensor;1",
+    "@id": "dtmi:com:willowinc:PhaseCReactiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Phase C Export Active Electrical Energy Sensor"
+      "en": "Phase C Reactive Electrical Energy Sensor"
     },
     "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase c export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCExportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Export Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase c export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCExportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Export Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase c export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCImportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Import Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase c import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCImportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Import Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase c import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCImportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Import Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase c import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCNetActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Net Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with phase c net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCNetApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Net Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with phase c net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PhaseCNetReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Phase C Net Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with phase c net"
+      "en": "The reactive electrical energy feedback from a sensor associated with phase c"
     },
     "extends": [
       "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
@@ -43677,6 +43371,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TotalActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with total"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43687,6 +43398,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with total"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -43728,108 +43456,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Export Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with total export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalExportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Export Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with total export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalExportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Export Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with total export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Import Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with total import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalImportApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Import Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with total import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalImportReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Import Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with total import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TotalLeavingPeopleCountSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43847,47 +43473,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1",
+    "@id": "dtmi:com:willowinc:TotalReactiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Total Net Active Electrical Energy Sensor"
+      "en": "Total Reactive Electrical Energy Sensor"
     },
     "description": {
-      "en": "The active electrical energy feedback from a sensor associated with total net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalNetApparentElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Net Apparent Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The apparent electrical energy feedback from a sensor associated with total net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TotalNetReactiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Total Net Reactive Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The reactive electrical energy feedback from a sensor associated with total net"
+      "en": "The reactive electrical energy feedback from a sensor associated with total"
     },
     "extends": [
       "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
@@ -44342,60 +43934,6 @@
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BilledExportActiveElectricalEnergy;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Billed Export Active Electrical Energy"
-    },
-    "description": {
-      "en": "The quantity of active electrical energy exported from a building or space to a utility over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Export Active Electrical Energy Sensor which reports data on a more frequent interval."
-    },
-    "extends": [
-      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1",
-      "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BilledImportActiveElectricalEnergy;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Billed Import Active Electrical Energy"
-    },
-    "description": {
-      "en": "The quantity of active electrical energy imported from a utility to a building or space over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Export Active Electrical Energy Sensor which reports data on a more frequent interval."
-    },
-    "extends": [
-      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1",
-      "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BilledNetActiveElectricalEnergy;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Billed Net Active Electrical Energy"
-    },
-    "description": {
-      "en": "The net quantity of import and export active electrical energy consumed by a building or space over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Net Active Electrical Energy Sensor which reports data on a more frequent interval."
-    },
-    "extends": [
-      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1",
-      "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
     ],
     "contents": [],
     "@context": [
@@ -46716,6 +46254,924 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PhaseAExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase a export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase a export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAExportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Export Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase a export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase a export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAExportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Export Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase a export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase a export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase a import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase a import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAImportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Import Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase a import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAImportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Import Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase a import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAImportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Import Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase a import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseAImportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Import Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase a import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseANetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase a net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseANetActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Net Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase a net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseANetApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Net Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase a net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseANetApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Net Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase a net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseANetReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Net Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase a net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseANetReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase A Net Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase a net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseAReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase b export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase b export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBExportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Export Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase b export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase b export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBExportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Export Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase b export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase b export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase b import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase b import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBImportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Import Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase b import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBImportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Import Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase b import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBImportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Import Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase b import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBImportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Import Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase b import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase b net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBNetActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Net Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase b net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBNetApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Net Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase b net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBNetApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Net Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase b net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBNetReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Net Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase b net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseBNetReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase B Net Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase b net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseBReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase c export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase c export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCExportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Export Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase c export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase c export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCExportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Export Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase c export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase c export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase c import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase c import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCImportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Import Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase c import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCImportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Import Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase c import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCImportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Import Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase c import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCImportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Import Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase c import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with phase c net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCNetActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Net Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with phase c net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCNetApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Net Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with phase c net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCNetApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Net Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with phase c net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCNetReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Net Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with phase c net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PhaseCNetReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Phase C Net Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with phase c net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PhaseCReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreActionSprinklerSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -47251,57 +47707,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RenewableExportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Renewable Export Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with renewable export"
-    },
-    "extends": [
-      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Renewable Import Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with renewable import"
-    },
-    "extends": [
-      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RenewableNetActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Renewable Net Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with renewable net"
-    },
-    "extends": [
-      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -48267,6 +48672,312 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with total export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with total export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalExportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Export Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with total export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with total export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalExportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Export Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with total export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with total export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with total import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with total import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalImportApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Import Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with total import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalImportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Import Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with total import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalImportReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Import Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with total import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalImportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Import Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with total import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with total net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalNetActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Net Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with total net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalNetApparentElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Net Apparent Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical energy feedback from a sensor associated with total net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalApparentElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalNetApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Net Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with total net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalNetReactiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Net Reactive Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical energy feedback from a sensor associated with total net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalReactiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TotalNetReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Net Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with total net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TotalReactiveElectricalPowerDemandSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -48455,6 +49166,60 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledExportActiveElectricalEnergy;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Export Active Electrical Energy"
+    },
+    "description": {
+      "en": "The quantity of active electrical energy exported from a building or space to a utility over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Export Active Electrical Energy Sensor which reports data on a more frequent interval."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1",
+      "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledImportActiveElectricalEnergy;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Import Active Electrical Energy"
+    },
+    "description": {
+      "en": "The quantity of active electrical energy imported from a utility to a building or space over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Export Active Electrical Energy Sensor which reports data on a more frequent interval."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1",
+      "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledNetActiveElectricalEnergy;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Net Active Electrical Energy"
+    },
+    "description": {
+      "en": "The net quantity of import and export active electrical energy consumed by a building or space over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Net Active Electrical Energy Sensor which reports data on a more frequent interval."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1",
+      "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
     ],
     "contents": [],
     "@context": [
@@ -49427,6 +50192,108 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with renewable export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with renewable export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with renewable import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with renewable import"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with renewable net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableNetActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Net Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with renewable net"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
