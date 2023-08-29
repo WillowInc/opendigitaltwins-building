@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TotalNetReactiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Net Reactive Electrical Power Sensor"
+  },
+  "description": {"en": "The reactive electrical power feedback from a sensor associated with total net"},
+  "extends" : [
+    "dtmi:com:willowinc:TotalReactiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

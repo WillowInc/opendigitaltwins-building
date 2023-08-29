@@ -6,7 +6,7 @@
   },
   "description": {"en": "The reactive electrical energy feedback from a sensor associated with phase c export"},
   "extends" : [
-    "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
+    "dtmi:com:willowinc:PhaseCReactiveElectricalEnergySensor;1"
   ],
   "contents": [
 
