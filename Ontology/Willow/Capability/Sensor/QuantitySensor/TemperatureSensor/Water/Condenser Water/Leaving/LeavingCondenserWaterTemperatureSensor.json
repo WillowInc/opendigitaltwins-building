@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with leaving condenser water"},
   "extends" : [
-    "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

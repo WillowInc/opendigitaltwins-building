@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with chilled water delta"},
   "extends" : [
-    "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with condenser water delta"},
   "extends" : [
-    "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
   ],
   "contents": [
   ],
