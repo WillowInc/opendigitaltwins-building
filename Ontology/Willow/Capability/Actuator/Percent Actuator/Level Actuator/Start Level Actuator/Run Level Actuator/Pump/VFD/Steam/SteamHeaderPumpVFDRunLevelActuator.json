@@ -6,7 +6,8 @@
   },
   "description": {"en": "The percent command which sets the run level of the steam header pump vfd"},
   "extends" : [
-    "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+    "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+    "dtmi:com:willowinc:SteamHeaderPumpRunLevelActuator;1"
   ],
   "contents": [
 
