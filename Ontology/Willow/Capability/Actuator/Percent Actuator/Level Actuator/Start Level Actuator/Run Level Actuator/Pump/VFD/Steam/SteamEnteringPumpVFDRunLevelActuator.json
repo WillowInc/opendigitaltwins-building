@@ -6,7 +6,8 @@
   },
   "description": {"en": "The percent command which sets the run level of the steam entering pump vfd"},
   "extends" : [
-    "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+    "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+    "dtmi:com:willowinc:SteamEnteringPumpRunLevelActuator;1"
   ],
   "contents": [
 
