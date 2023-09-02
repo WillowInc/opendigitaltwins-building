@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HotFoodDisplayCase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Food Display Case"
+  },
+  "description": {
+    "en": "A food display case used for foods that are desired to be kept warm or hot."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodDisplayCase;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
