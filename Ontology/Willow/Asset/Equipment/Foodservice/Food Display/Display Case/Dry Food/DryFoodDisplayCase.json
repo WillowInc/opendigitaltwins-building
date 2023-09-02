@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Dry Food Display Case"
   },
+  "description": {
+    "en": "A food display case used for foods that can be kept at ambient room temperature and do not require refrigeration or heating."
+  },
   "extends" : [
     "dtmi:com:willowinc:FoodDisplayCase;1"
   ],

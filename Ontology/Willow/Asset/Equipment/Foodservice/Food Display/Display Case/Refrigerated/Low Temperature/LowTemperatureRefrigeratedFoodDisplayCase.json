@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Low-Temperature Refrigerated Food Display Case"
   },
+  "description": {
+    "en": "A food display case used for foods required to be refrigerated to low-temperatures."
+  },
   "extends" : [
     "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Food Display Case"
   },
+  "description": {
+    "en": "A case used to display foods for purchase in a retail space."
+  },
   "extends" : [
     "dtmi:com:willowinc:FoodDisplayEquipment;1"
   ],
