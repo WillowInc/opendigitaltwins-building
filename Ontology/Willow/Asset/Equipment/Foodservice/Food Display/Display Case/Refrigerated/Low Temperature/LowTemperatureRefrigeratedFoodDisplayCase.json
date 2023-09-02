@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:LowTemperatureRefrigeratedFoodDisplayCase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low-Temperature Refrigerated Food Display Case"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

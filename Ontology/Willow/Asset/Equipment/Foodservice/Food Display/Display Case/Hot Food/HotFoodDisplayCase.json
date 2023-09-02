@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:Refrigerator;1",
+  "@id": "dtmi:com:willowinc:HotFoodDisplayCase;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Refrigerator"
+    "en": "Hot Food Display Case"
   },
   "extends" : [
-    "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
+    "dtmi:com:willowinc:FoodDisplayCase;1"
   ],
   "contents": [
   ],

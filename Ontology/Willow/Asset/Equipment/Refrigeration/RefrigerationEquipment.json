@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:Refrigerator;1",
+  "@id": "dtmi:com:willowinc:RefrigerationEquipment;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Refrigerator"
+    "en": "Refrigeration Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
+    "dtmi:com:willowinc:Equipment;1"
   ],
   "contents": [
   ],
