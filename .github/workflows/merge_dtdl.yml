@@ -28,7 +28,7 @@ jobs:
       run: dotnet run --project Tools/DTDLMerger/DTDLMerger.csproj Ontology/Willow/ > Metadata/Willow.Ontology.DTDLv3.jsonld
     - name: Set .nuspec version
       id: set-version
-      uses: vers-one/dotnet-project-version-updater@v1.2
+      uses: vers-one/dotnet-project-version-updater@v1.3
       with:
         files: "Metadata/*.nuspec"
         version: bump-revision
