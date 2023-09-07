@@ -159,6 +159,34 @@
     },
     {
       "@type": "Property",
+      "name": "coordinates",
+      "displayName": {
+        "en": "Coordinates"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:StructureCoordinates;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": {
+              "en": "Latitude"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": {
+              "en": "Longitude"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
       "displayName": {
         "en": "name"
       },
