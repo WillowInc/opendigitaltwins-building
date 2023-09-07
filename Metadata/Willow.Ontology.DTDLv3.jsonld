@@ -12914,6 +12914,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerationEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReheatActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -17968,6 +17982,27 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Compressor"
+    },
+    "description": {
+      "en": "A compressor which is used within an HVAC system for the applicaiton of conditioning a space for comfort."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Compressor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACDamper;1",
     "@type": "Interface",
     "displayName": {
@@ -19857,6 +19892,257 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Compressor"
+    },
+    "description": {
+      "en": "A compressor which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Compressor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationCompressorRack;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Compressor Rack"
+    },
+    "description": {
+      "en": "A compressor rack in which multiple compressors are piped in parallel and share a common refrigerant and oil charge."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationCondenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Condenser"
+    },
+    "description": {
+      "en": "A condenser which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Condenser;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationHeatExchanger;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Heat Exchanger"
+    },
+    "description": {
+      "en": "A heat exchanger which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "secondary maximum temperature"
+        },
+        "name": "secondaryMaxTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "secondary maximum temperature unit"
+        },
+        "name": "secondaryMaxTemperatureUnit",
+        "annotates": "secondaryMaxTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "secondary maximum pressure"
+        },
+        "name": "secondaryMaxPressure",
+        "schema": "double",
+        "unit": "bar",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "secondary maximum pressure unit"
+        },
+        "name": "secondaryMaxPressureUnit",
+        "annotates": "secondaryMaxPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "secondary flow capacity"
+        },
+        "name": "secondaryFlowCapacity",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "secondary flow capacity unit"
+        },
+        "name": "secondaryFlowCapacityUnit",
+        "annotates": "secondaryFlowCapacity",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "primary maximum temperature"
+        },
+        "name": "primaryMaxTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "primary maximum temperature unit"
+        },
+        "name": "primaryMaxTemperatureUnit",
+        "annotates": "primaryMaxTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "primary maximum pressure"
+        },
+        "name": "primaryMaxPressure",
+        "schema": "double",
+        "unit": "bar",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "primary maximum pressure unit"
+        },
+        "name": "primaryMaxPressureUnit",
+        "annotates": "primaryMaxPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "primary flow capacity"
+        },
+        "name": "primaryFlowCapacity",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "primary flow capacity unit"
+        },
+        "name": "primaryFlowCapacityUnit",
+        "annotates": "primaryFlowCapacity",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -21994,6 +22280,27 @@
         "schema": "dtmi:com:willowinc:AirCooledCondenser;1"
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirCooledRefrigerationCondenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air-Cooled Refrigeration Condenser"
+    },
+    "description": {
+      "en": "An air-cooled condenser used in a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCondenser;1",
+      "dtmi:com:willowinc:AirCooledCondenser;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -25069,6 +25376,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FoodDisplayCase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Food Display Case"
+    },
+    "description": {
+      "en": "A case used to display foods for purchase in a retail space."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodDisplayEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FoodPackagingEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -25115,6 +25439,20 @@
     "@type": "Interface",
     "displayName": {
       "en": "Food Storage Rack"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodStorageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Food Storage Refrigeration Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:FoodStorageEquipment;1"
@@ -26449,6 +26787,46 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low-Temperature Refrigeration Compressor"
+    },
+    "description": {
+      "en": "A compressor which is optimized for low-temperature refrigeration applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCompressor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressorRack;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low-Temperature Refrigeration Compressor Rack"
+    },
+    "description": {
+      "en": "A compressor rack which is optimized for low-temperature refrigeration applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCompressorRack;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LuminanceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -26613,6 +26991,46 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MediumTemperatureRefrigerationCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medium-Temperature Refrigeration Compressor"
+    },
+    "description": {
+      "en": "A compressor which is optimized for medium-temperature refrigeration applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCompressor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MediumTemperatureRefrigerationCompressorRack;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medium-Temperature Refrigeration Compressor Rack"
+    },
+    "description": {
+      "en": "A compressor rack which is optimized for medium-temperature refrigeration applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCompressorRack;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -28420,17 +28838,23 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:RefrigerationEquipment;1",
+    "@id": "dtmi:com:willowinc:RefrigerationDesuperheater;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Refrigeration Equipment"
+      "en": "Refrigeration Desuperheater"
+    },
+    "description": {
+      "en": "A desuperheater heat exchanger used in a refrigeration system or circuit dedicated to heat recovery by removing heat from the compressor superheated discharge gas."
     },
     "extends": [
-      "dtmi:com:willowinc:FoodStorageEquipment;1"
+      "dtmi:com:willowinc:RefrigerationHeatExchanger;1"
     ],
     "contents": [],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -30590,6 +31014,27 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterCooledRefrigerationCondenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water-Cooled Refrigeration Condenser"
+    },
+    "description": {
+      "en": "A water-cooled condenser used in a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCondenser;1",
+      "dtmi:com:willowinc:WaterCooledCondenser;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -32147,40 +32592,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Coil Entering Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with water entering the coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Coil Leaving Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with water leaving the coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CombinationGrateCurbInlet;1",
     "@type": "Interface",
     "displayName": {
@@ -32459,6 +32870,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingOnActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling On Actuator"
+    },
+    "description": {
+      "en": "The boolean command which turns on an equipment\u0027s cooling function when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CopperCablingPatchPanel;1",
     "@type": "Interface",
     "displayName": {
@@ -32695,6 +33123,23 @@
     "extends": [
       "dtmi:com:willowinc:WaterPressureSensor;1",
       "dtmi:com:willowinc:DeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water delta"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -32963,6 +33408,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DryFoodDisplayCase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dry Food Display Case"
+    },
+    "description": {
+      "en": "A food display case used for foods that can be kept at ambient room temperature and do not require refrigeration or heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodDisplayCase;1"
     ],
     "contents": [],
     "@context": [
@@ -33603,6 +34065,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PeopleCountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with entering water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -34252,7 +34731,7 @@
       "en": "Freezer"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipment;1"
+      "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -34397,6 +34876,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatingOnActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating On Actuator"
+    },
+    "description": {
+      "en": "The boolean command which turns on an equipment\u0027s heating function when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HorizontalFanCoilUnit;1",
     "@type": "Interface",
     "displayName": {
@@ -34418,6 +34914,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Faucet;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotFoodDisplayCase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Food Display Case"
+    },
+    "description": {
+      "en": "A food display case used for foods that are desired to be kept warm or hot."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodDisplayCase;1"
     ],
     "contents": [],
     "@context": [
@@ -34663,7 +35176,7 @@
       "en": "Ice Machine"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipment;1"
+      "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -34854,6 +35367,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PeopleCountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with leaving water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -36509,13 +37039,30 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerated Food Display Case"
+    },
+    "description": {
+      "en": "A food display case used for foods required to be refrigerated to either low- or medium-temperatures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodDisplayCase;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Refrigerator;1",
     "@type": "Interface",
     "displayName": {
       "en": "Refrigerator"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipment;1"
+      "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -37451,6 +37998,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirRegister;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TemperatureDeadbandSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature Deadband Setpoint"
+    },
+    "description": {
+      "en": "The deadband around the temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpoint;1",
+      "dtmi:com:willowinc:DeadbandSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -38477,7 +39042,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1",
-      "dtmi:com:willowinc:DeadbandSetpoint;1"
+      "dtmi:com:willowinc:TemperatureDeadbandSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -38876,23 +39441,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterCoilEnteringWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Coil Entering Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with the water entering the chilled water coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38903,23 +39451,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Coil Leaving Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with the water leaving the chilled water coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39108,6 +39639,42 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Coil Entering Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water entering the coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Coil Leaving Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water leaving the coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressedAirSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -39241,23 +39808,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterCoilEnteringWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Coil Entering Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with the water entering the condenser water coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39268,23 +39818,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Coil Leaving Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with the water leaving the condenser water coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39596,7 +40129,8 @@
       "en": "The temperature feedback from a sensor associated with chilled water delta"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39613,7 +40147,8 @@
       "en": "The temperature feedback from a sensor associated with condenser water delta"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39630,7 +40165,8 @@
       "en": "The temperature feedback from a sensor associated with hot water delta"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39697,6 +40233,23 @@
     "extends": [
       "dtmi:com:willowinc:WaterPressureSetpoint;1",
       "dtmi:com:willowinc:DeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Water Temperature Setpoint"
+    },
+    "description": {
+      "en": "The temperature feedback from a setpoint associated with water delta"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -40209,7 +40762,8 @@
       "en": "The temperature feedback from a sensor associated with entering chilled water"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40243,7 +40797,8 @@
       "en": "The temperature feedback from a sensor associated with entering condenser water"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40277,7 +40832,8 @@
       "en": "The temperature feedback from a sensor associated with entering hot water"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40346,6 +40902,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringWaterTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Water Temperature Setpoint"
+    },
+    "description": {
+      "en": "The temperature feedback from a setpoint associated with entering water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -41292,7 +41865,8 @@
       "en": "The temperature feedback from a sensor associated with leaving chilled water"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41326,7 +41900,8 @@
       "en": "The temperature feedback from a sensor associated with leaving condenser water"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:CondenserWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41360,7 +41935,8 @@
       "en": "The temperature feedback from a sensor associated with leaving hot water"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+      "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41436,6 +42012,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingWaterTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Water Temperature Setpoint"
+    },
+    "description": {
+      "en": "The temperature feedback from a setpoint associated with leaving water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LoadLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -41446,6 +42039,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LevelSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTemperatureRefrigeratedFoodDisplayCase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low-Temperature Refrigerated Food Display Case"
+    },
+    "description": {
+      "en": "A food display case used for foods required to be refrigerated to low-temperatures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MediumTemperatureRefrigeratedFoodDisplayCase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medium-Temperature Refrigerated Food Display Case"
+    },
+    "description": {
+      "en": "A food display case used for foods required to be refrigerated to medium-temperatures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1"
     ],
     "contents": [],
     "@context": [
@@ -42366,23 +42993,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreheatCoilEnteringWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Preheat Coil Entering Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with water entering the preheat coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PreheatCoilLeavingAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -42393,23 +43003,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PreheatCoilLeavingWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Preheat Coil Leaving Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with water leaving the preheat coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42627,23 +43220,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReheatCoilEnteringWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheat Coil Entering Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with water entering the reheat coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReheatCoilLeavingAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -42654,23 +43230,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReheatCoilLeavingWaterTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheat Coil Leaving Water Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with water leaving the reheat coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -44145,6 +44704,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterCoilEnteringWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Coil Entering Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with the water entering the chilled water coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -44155,6 +44731,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Coil Leaving Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with the water leaving the chilled water coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -44265,6 +44858,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserWaterCoilEnteringWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Coil Entering Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with the water entering the condenser water coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -44275,6 +44885,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Coil Leaving Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with the water leaving the condenser water coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -44425,7 +45052,8 @@
       "en": "The desired value associated with chilled water delta temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44476,7 +45104,8 @@
       "en": "The desired value associated with condenser water delta temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44527,7 +45156,8 @@
       "en": "The desired value associated with hot water delta temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44679,6 +45309,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeFanRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Fan Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the discharge (supply) air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -44865,7 +45512,8 @@
       "en": "The desired value associated with entering chilled water temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44916,7 +45564,8 @@
       "en": "The desired value associated with entering condenser water temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44967,7 +45616,8 @@
       "en": "The desired value associated with entering hot water temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:EnteringWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -45104,6 +45754,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustFanRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Fan Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the exhaust air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -45739,7 +46406,8 @@
       "en": "The desired value associated with leaving chilled water temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -45790,7 +46458,8 @@
       "en": "The desired value associated with leaving condenser water temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -45841,7 +46510,8 @@
       "en": "The desired value associated with leaving hot water temperature"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1"
+      "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
+      "dtmi:com:willowinc:LeavingWaterTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -46019,6 +46689,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MixedFanRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Fan Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the mixed air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedFanRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -46179,6 +46866,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideFanRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Fan Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the outside air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -47186,6 +47890,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatCoilEnteringWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Coil Entering Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water entering the preheat coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreheatCoilLeavingWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Coil Leaving Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water leaving the preheat coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreheatLevelSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47544,6 +48282,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReheatCoilEnteringWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Coil Entering Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water entering the reheat coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatCoilLeavingWaterTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Coil Leaving Water Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with water leaving the reheat coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReheatLevelSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47656,6 +48428,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefFanRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Fan Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the relief air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -47823,6 +48612,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnFanRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Fan Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the return air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -48261,6 +49067,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49108,6 +49931,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -49262,6 +50102,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -49289,23 +50146,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49362,6 +50202,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -49389,23 +50246,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49453,7 +50293,8 @@
       "en": "The percent command which sets the run level of the discharge (supply) air fan vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:DischargeFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49537,7 +50378,8 @@
       "en": "The percent command which sets the run level of the exhaust air fan vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ExhaustFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49639,6 +50481,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -49666,23 +50525,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49820,7 +50662,8 @@
       "en": "The percent command which sets the run level of the mixed air fan vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:MixedFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49924,7 +50767,8 @@
       "en": "The percent command which sets the run level of the outside air fan vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:OutsideFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50191,7 +51035,8 @@
       "en": "The percent command which sets the run level of the relief air fan vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ReliefFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50327,7 +51172,8 @@
       "en": "The percent command which sets the run level of the return air fan vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ReturnFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50541,6 +51387,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamBypassPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Bypass Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamBypassPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -50582,6 +51445,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamEnteringPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Entering Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam entering pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50637,6 +51517,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamHeaderPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Header Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamHeaderPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -50685,6 +51582,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Leaving Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam leaving pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamLeavingPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -50725,7 +51639,8 @@
       "en": "The percent command which sets the run level of the steam pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50939,6 +51854,74 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Entering Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Entering Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the entering water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Leaving Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Leaving Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the leaving water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterPumpVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -50948,7 +51931,8 @@
       "en": "The percent command which sets the run level of the water pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50966,6 +51950,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Bypass Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51007,23 +52008,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Bypass Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water bypass pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51041,6 +52025,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Entering Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -51050,7 +52052,8 @@
       "en": "The percent run level state of the entering chilled water pump"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51075,23 +52078,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering chilled water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51102,6 +52088,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Header Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51143,23 +52146,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water header pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51177,6 +52163,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Leaving Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -51186,7 +52190,8 @@
       "en": "The percent run level state of the leaving chilled water pump"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51211,16 +52216,17 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Chilled Water Leaving Pump VFD Run Level Actuator"
+      "en": "Chilled Water Pump VFD Run Level Actuator"
     },
     "description": {
-      "en": "The percent command which sets the run level of the leaving chilled water pump vfd"
+      "en": "The percent command which sets the run level of the chilled water pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51238,6 +52244,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Bypass Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51279,23 +52302,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Bypass Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water bypass pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51313,6 +52319,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Entering Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -51322,7 +52346,8 @@
       "en": "The percent run level state of the entering condenser water pump"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51347,23 +52372,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering condenser water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51374,6 +52382,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Header Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51415,23 +52440,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water header pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51449,6 +52457,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Leaving Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -51458,7 +52484,8 @@
       "en": "The percent run level state of the leaving condenser water pump"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51483,16 +52510,17 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Condenser Water Leaving Pump VFD Run Level Actuator"
+      "en": "Condenser Water Pump VFD Run Level Actuator"
     },
     "description": {
-      "en": "The percent command which sets the run level of the leaving condenser water pump vfd"
+      "en": "The percent command which sets the run level of the condenser water pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51510,6 +52538,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Bypass Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51551,23 +52596,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterBypassPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water bypass pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51585,6 +52613,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Entering Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -51594,7 +52640,8 @@
       "en": "The percent run level state of the entering hot water pump"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
+      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51619,23 +52666,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering hot water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51646,6 +52676,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Header Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51687,23 +52734,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water header pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51721,6 +52751,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -51730,7 +52778,8 @@
       "en": "The percent run level state of the leaving hot water pump"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
+      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51755,16 +52804,17 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Hot Water Leaving Pump VFD Run Level Actuator"
+      "en": "Hot Water Pump VFD Run Level Actuator"
     },
     "description": {
-      "en": "The percent command which sets the run level of the leaving hot water pump vfd"
+      "en": "The percent command which sets the run level of the hot water pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51796,7 +52846,8 @@
       "en": "The percent command which sets the run level of the steam pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:SteamBypassPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51813,7 +52864,8 @@
       "en": "The percent command which sets the run level of the steam entering pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:SteamEnteringPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51830,7 +52882,8 @@
       "en": "The percent command which sets the run level of the steam header pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:SteamHeaderPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51847,7 +52900,224 @@
       "en": "The percent command which sets the run level of the steam leaving pump vfd"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1"
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Bypass Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water bypass pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ChilledWaterBypassPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Entering Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering chilled water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ChilledWaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Header Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Leaving Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving chilled water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Bypass Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water bypass pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:CondenserWaterBypassPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Entering Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering condenser water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:CondenserWaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Header Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:CondenserWaterHeaderPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Leaving Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving condenser water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:CondenserWaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterBypassPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Bypass Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water bypass pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HotWaterBypassPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Entering Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering hot water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HotWaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Header Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving hot water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
