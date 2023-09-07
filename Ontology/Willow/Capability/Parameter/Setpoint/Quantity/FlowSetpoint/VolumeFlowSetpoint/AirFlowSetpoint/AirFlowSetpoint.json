@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated withn air flow"},
+  "extends" : [
+    "dtmi:com:willowinc:VolumeFlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

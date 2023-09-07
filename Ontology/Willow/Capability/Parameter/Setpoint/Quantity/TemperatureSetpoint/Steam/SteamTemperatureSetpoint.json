@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SteamTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

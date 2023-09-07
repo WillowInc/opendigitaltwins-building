@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Lighting Zone"
   },
+  "description": {
+    "en": "A zone which is being illuminated by one or more light fixtures."
+  },
   "extends" : [
     "dtmi:com:willowinc:Zone;1"
   ],
@@ -44,5 +47,7 @@
       ]
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

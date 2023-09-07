@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EmergencyEyeWashShower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Emergency Eye Wash / Shower"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EmergencyEyeWashStation;1",
+    "dtmi:com:willowinc:EmergencyShower;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

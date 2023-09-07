@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirTemperatureCoolingLockoutSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Temperature Cooling Lockout Setpoint"
+  },
+  "description": {"en": "The desired value associated withn outside air temperature cooling lockout"},
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

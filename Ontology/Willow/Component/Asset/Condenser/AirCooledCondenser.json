@@ -1,0 +1,99 @@
+{
+  "@id": "dtmi:com:willowinc:AirCooledCondenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air-Cooled Condenser"
+  },
+  "description": {
+    "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into the ambient air."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Condenser;1"
+  ],
+  "contents": [
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringAirTemperature",
+      "displayName": {
+        "en": "Design Entering Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Air Temperature Unit"
+      },
+      "name": "designEnteringAirTemperatureUnit",
+      "annotates": "designEnteringAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingAirTemperature",
+      "displayName": {
+        "en": "Design Leaving Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Temperature Unit"
+      },
+      "name": "designLeavingAirTemperatureUnit",
+      "annotates": "designLeavingAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designDeltaAirTemperature",
+      "displayName": {
+        "en": "Design Delta Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Delta Air Temperature Unit"
+      },
+      "name": "designDeltaAirTemperatureUnit",
+      "annotates": "designDeltaAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Airflow"
+      },
+      "name": "designAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Airflow Unit"
+      },
+      "name": "designAirflowUnit",
+      "annotates": "designAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

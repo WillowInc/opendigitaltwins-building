@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseAVoltageMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Voltage Magnitude Sensor"
+  },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with phase a"},
+  "extends" : [
+    "dtmi:com:willowinc:VoltageMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingCondenserWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Condenser Water Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with leaving condenser water flow"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

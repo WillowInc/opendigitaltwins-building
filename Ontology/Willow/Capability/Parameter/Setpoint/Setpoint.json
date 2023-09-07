@@ -4,11 +4,13 @@
   "displayName": {
     "en": "Setpoint"
   },
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment"},
   "extends" : [
-    "dtmi:com:willowinc:Parameter;1",
-    "dtmi:digitaltwins:rec_3_3:core:Setpoint;1"
+    "dtmi:com:willowinc:Parameter;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Load Shed Override State"
   },
+  "description": {"en": "The Boolean state of the load shedding which is 'override' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OverrideState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

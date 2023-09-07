@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SteamMassSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Mass Sensor"
+  },
+  "description": {"en": "The mass feedback from a sensor associated with steam"},
+  "extends" : [
+    "dtmi:com:willowinc:MassSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

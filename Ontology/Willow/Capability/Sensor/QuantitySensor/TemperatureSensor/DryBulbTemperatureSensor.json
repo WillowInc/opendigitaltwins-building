@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Dry Bulb Temperature Sensor"
   },
+  "description": {"en": "The dry bulb temperature feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

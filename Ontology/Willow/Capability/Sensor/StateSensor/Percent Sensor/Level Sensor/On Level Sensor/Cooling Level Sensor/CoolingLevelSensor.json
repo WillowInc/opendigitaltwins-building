@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Cooling Level Sensor"
   },
+  "description": {"en": "The 'on' level feedback from a sensor associated with cooling"},
   "extends" : [
     "dtmi:com:willowinc:OnLevelSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

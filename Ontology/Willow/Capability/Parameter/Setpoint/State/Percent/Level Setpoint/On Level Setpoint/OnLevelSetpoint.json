@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OnLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "On Level Setpoint"
+  },
+  "description": {"en": "The desired 'on' level percentage for control of equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:LevelSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

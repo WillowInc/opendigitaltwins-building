@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopHotWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Hot Water Flow Sensor"
+  },
+  "description": {"en": "The flow feedback from a sensor associated with hot water secondary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

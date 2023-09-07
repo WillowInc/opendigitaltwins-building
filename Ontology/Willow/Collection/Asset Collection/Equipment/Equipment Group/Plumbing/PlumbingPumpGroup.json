@@ -2,13 +2,14 @@
   "@id": "dtmi:com:willowinc:PlumbingPumpGroup;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pump Group"
+    "en": "Pump Group (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingEquipmentGroup;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingPumpGroup;1"
+    "dtmi:com:willowinc:PlumbingEquipmentGroup;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

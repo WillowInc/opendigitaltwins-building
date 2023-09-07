@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterTemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Temperature Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the hot water temperature setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

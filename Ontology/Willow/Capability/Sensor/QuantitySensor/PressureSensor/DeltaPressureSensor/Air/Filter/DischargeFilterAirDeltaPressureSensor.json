@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeFilterAirDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Filter Air Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with discharge (supply) air filter"},
+  "extends" : [
+    "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

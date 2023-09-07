@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Fire Sensor"
   },
+  "description": {"en": "The boolean status from a sensor associated with fire where 'alarm' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

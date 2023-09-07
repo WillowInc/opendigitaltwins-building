@@ -49,17 +49,23 @@
         "enumValues": [
           {
             "name": "Up",
-            "displayName": "Up",
+            "displayName": {
+              "en": "Up"
+            },
             "enumValue": "Up"
           },
           {
             "name": "Down",
-            "displayName": "Down",
+            "displayName": {
+              "en": "Down"
+            },
             "enumValue": "Down"
           }
         ]
       }
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

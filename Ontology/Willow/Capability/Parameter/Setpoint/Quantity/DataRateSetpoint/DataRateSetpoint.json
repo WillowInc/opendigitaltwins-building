@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DataRateSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Rate Setpoint"
+  },
+  "description": {"en": "The desired value associated with data rate"},
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

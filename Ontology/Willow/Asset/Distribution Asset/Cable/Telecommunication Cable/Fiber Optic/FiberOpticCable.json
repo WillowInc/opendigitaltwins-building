@@ -1,0 +1,24 @@
+{
+  "@id": "dtmi:com:willowinc:FiberOpticCable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fiber Optic Cable"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationCable;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Fiber Strand Count"
+      },
+      "name": "fiberStrandCount",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

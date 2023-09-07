@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AverageCurrentAngleSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Average Current Angle Sensor"
+  },
+  "description": {"en": "The average current angle feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:willowinc:CurrentAngleSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

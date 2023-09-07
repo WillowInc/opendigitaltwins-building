@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Wet Bulb Temperature Sensor"
   },
+  "description": {"en": "The wet bulb temperature feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:TemperatureSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

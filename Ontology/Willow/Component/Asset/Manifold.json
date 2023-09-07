@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:Manifold;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Manifold"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

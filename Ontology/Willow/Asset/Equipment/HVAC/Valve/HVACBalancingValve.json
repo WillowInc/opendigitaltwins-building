@@ -2,14 +2,15 @@
   "@id": "dtmi:com:willowinc:HVACBalancingValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Balancing Valve"
+    "en": "Balancing Valve (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACBalancingValve;1"
+    "dtmi:com:willowinc:HVACValve;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

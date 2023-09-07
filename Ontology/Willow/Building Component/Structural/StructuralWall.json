@@ -8,5 +8,7 @@
     "dtmi:com:willowinc:StructuralBuildingComponent;1",
     "dtmi:com:willowinc:Wall;1"
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

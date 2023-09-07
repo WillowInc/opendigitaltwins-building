@@ -1,0 +1,81 @@
+{
+  "@id": "dtmi:com:willowinc:SpaceArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Space Area"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Area"],
+      "name": "grossArea",
+      "displayName": {
+        "en": "gross area"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "squareMetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "gross area unit"
+      },
+      "name": "grossAreaUnit",
+      "annotates": "grossArea",
+      "overrides": "unit",
+      "schema": "AreaUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Area"],
+      "name": "usableArea",
+      "displayName": {
+        "en": "usable area"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "squareMetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "usable area unit"
+      },
+      "name": "usableAreaUnit",
+      "annotates": "usableArea",
+      "overrides": "unit",
+      "schema": "AreaUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Area"],
+      "name": "rentableArea",
+      "displayName": {
+        "en": "Rentable Area"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "squareMetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "rentable area unit"
+      },
+      "name": "rentableAreaUnit",
+      "annotates": "rentableArea",
+      "overrides": "unit",
+      "schema": "AreaUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

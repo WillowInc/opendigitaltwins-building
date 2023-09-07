@@ -5,8 +5,7 @@
     "en": "Furniture"
   },
   "extends" : [
-    "dtmi:com:willowinc:Asset;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Furniture;1"
+    "dtmi:com:willowinc:Asset;1"
   ],
   "contents": [
     {
@@ -37,5 +36,7 @@
       "schema": "float"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

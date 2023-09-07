@@ -4,10 +4,100 @@
   "displayName": {
     "en": "Space"
   },
+  "description": {
+    "en": "A contiguous part of the physical world that has a 3D spatial extent and that contains or can contain sub-spaces. E.g., a Region can contain many pieces of Land, which in turn can contain many Buildings."
+  },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:Space;1"
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates that a Space or Asset is served by some Sensor/Actuator or other Asset. For example: an entrance room might be served by (e.g., covered by) some camera equipment, or a conference room served by a CO2 sensor. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: serves"
+      },
+      "displayName": {
+        "en": "served by"
+      },
+      "name": "servedBy"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The coverage or impact area of a given Asset or Sensor/Actuator. For example: an air-treatment unit might serve several Rooms or a full Building. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: servedBy"
+      },
+      "displayName": {
+        "en": "serves"
+      },
+      "name": "serves"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
+      },
+      "displayName": {
+        "en": "owned by"
+      },
+      "name": "ownedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "operated by"
+      },
+      "name": "operatedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+      },
+      "displayName": {
+        "en": "is part of"
+      },
+      "name": "isPartOf",
+      "target": "dtmi:com:willowinc:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment. Inverse of: includes"
+      },
+      "displayName": {
+        "en": "included in"
+      },
+      "name": "includedIn",
+      "target": "dtmi:com:willowinc:Collection;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "constructed by"
+      },
+      "name": "constructedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "architected by"
+      },
+      "name": "architectedBy",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasSettings",
+      "displayName": {
+        "en": "has settings"
+      },
+      "description": {
+        "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+      },
+      "target": "dtmi:com:willowinc:Settings;1"
+    },
     {
       "@type": "Relationship",
       "name": "hasDocument",
@@ -15,6 +105,113 @@
         "en": "has document"
       },
       "target": "dtmi:com:willowinc:Document;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "occupiable"
+      },
+      "name": "occupiable",
+      "description": {
+        "en": "A space designed for human occupancy in which individuals may remain for a period of time for rest, amusement, education, dining, shopping, employment, or other similar purposes."
+      },
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:willowinc:SpaceArea;1"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancy",
+      "displayName": {
+        "en": "Occupancy"
+      },
+      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
+    },
+    {
+      "@type": "Component",
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "schema": "dtmi:com:willowinc:SpaceTemperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "humidity",
+      "displayName": {
+        "en": "Humidity"
+      },
+      "schema": "dtmi:com:willowinc:SpaceHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "CO2",
+      "displayName": {
+        "en": "CO2"
+      },
+      "schema": "dtmi:com:willowinc:SpaceCO2;1"
     },
     {
       "@type": "Property",
@@ -92,53 +289,122 @@
       "schema": "string"
     },
     {
-      "@type": "Component",
-      "name": "area",
+      "@type": "Property",
+      "name": "landId",
       "displayName": {
-        "en": "Area"
+        "en": "Land ID"
       },
-      "schema": "dtmi:com:willowinc:SpaceArea;1"
+      "writable": true,
+      "schema": "string",
+      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
     },
     {
-      "@type": "Component",
-      "name": "capacity",
+      "@type": "Property",
+      "name": "alternateClassification",
       "displayName": {
-        "en": "Capacity"
+        "en": "Alternate Classification"
       },
-      "schema": "dtmi:com:willowinc:SpaceCapacity;1"
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "masterFormat",
+            "displayName": {
+              "en": "MasterFormat"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "omniClass",
+            "displayName": {
+              "en": "OmniClass"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniFormat",
+            "displayName": {
+              "en": "UniFormat"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniclass",
+            "displayName": {
+              "en": "Uniclass"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1"
+          }
+        ]
+      }
     },
     {
-      "@type": "Component",
-      "name": "occupancy",
+      "@type": "Property",
+      "name": "customProperties",
       "displayName": {
-        "en": "Occupancy"
+        "en": "Custom Properties"
       },
-      "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
-    },
-    {
-      "@type": "Component",
-      "name": "temperature",
-      "displayName": {
-        "en": "Temperature"
-      },
-      "schema": "dtmi:com:willowinc:SpaceTemperature;1"
-    },
-    {
-      "@type": "Component",
-      "name": "humidity",
-      "displayName": {
-        "en": "Humidity"
-      },
-      "schema": "dtmi:com:willowinc:SpaceHumidity;1"
-    },
-    {
-      "@type": "Component",
-      "name": "CO2",
-      "displayName": {
-        "en": "CO2"
-      },
-      "schema": "dtmi:com:willowinc:SpaceCO2;1"
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sourceName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      }
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:SpaceAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatCoilLeavingAirTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheat Coil Leaving Air Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with air leaving the reheat coil"},
+  "extends" : [
+    "dtmi:com:willowinc:AirTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the return air fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

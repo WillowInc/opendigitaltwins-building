@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:WaterTestingAndBalancingReport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Testing and Balancing Report"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TestingAndBalancingReport;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

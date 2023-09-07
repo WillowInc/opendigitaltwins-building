@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustAirDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with exhaust air"},
+  "extends" : [
+    "dtmi:com:willowinc:AirDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

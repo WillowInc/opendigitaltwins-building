@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Present/Absent State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'present' when 'true' and 'absent' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

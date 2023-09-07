@@ -2,14 +2,15 @@
   "@id": "dtmi:com:willowinc:SprinklerCheckValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Check Valve"
+    "en": "Check Valve (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerCheckValve;1"
+    "dtmi:com:willowinc:SprinklerValve;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

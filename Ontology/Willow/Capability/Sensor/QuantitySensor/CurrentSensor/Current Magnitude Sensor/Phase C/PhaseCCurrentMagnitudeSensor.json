@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseCCurrentMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Current Magnitude Sensor"
+  },
+  "description": {"en": "The current magnitude feedback from a sensor associated with phase c"},
+  "extends" : [
+    "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

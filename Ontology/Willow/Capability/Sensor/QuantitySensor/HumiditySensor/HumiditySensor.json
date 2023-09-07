@@ -4,12 +4,14 @@
   "displayName": {
     "en": "Humidity Sensor"
   },
+  "description": {"en": "The humidity feedback from a sensor"},
   "extends" : [
-    "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:HumiditySensor;1"
+    "dtmi:com:willowinc:QuantitySensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

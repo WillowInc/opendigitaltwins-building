@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Disable State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'disable' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:EnableDisableState;1",
     "dtmi:com:willowinc:OffState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

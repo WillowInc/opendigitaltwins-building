@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirDamperPositionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Damper Position Sensor"
+  },
+  "description": {"en": "The damper position percent feedback from a sensor associated with inlet air"},
+  "extends" : [
+    "dtmi:com:willowinc:DamperPositionSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

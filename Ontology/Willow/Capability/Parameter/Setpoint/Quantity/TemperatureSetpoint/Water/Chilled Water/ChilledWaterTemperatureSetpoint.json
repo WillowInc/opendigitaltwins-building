@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with chilled water temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

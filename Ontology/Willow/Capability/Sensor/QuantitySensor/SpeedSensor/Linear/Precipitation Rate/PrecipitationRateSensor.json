@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PrecipitationRateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Precipitation Rate Sensor"
+  },
+  "description": {"en": "The rate feedback from a sensor associated with precipitation"},
+  "extends" : [
+    "dtmi:com:willowinc:LinearSpeedSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

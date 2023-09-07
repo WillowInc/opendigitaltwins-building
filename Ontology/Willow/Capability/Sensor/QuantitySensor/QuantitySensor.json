@@ -4,22 +4,14 @@
   "displayName": {
     "en": "Quantity Sensor"
   },
+  "description": {"en": "The feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:Sensor;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "description": {
-        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-      },
-      "displayName": {
-        "en": "Last Value"
-      },
-      "name": "lastValue",
-      "schema": "double",
-      "writable": true
-    }
+
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

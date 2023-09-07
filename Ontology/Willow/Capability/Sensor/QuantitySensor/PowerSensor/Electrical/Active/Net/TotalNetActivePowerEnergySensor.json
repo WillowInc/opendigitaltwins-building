@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TotalNetActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Net Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with total net"},
+  "extends" : [
+    "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

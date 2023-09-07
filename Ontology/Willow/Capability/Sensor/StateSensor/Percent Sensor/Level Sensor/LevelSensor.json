@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Level Sensor"
   },
+  "description": {"en": "The level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PercentSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

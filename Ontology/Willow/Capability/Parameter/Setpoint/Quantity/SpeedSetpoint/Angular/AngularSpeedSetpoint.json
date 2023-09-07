@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AngularSpeedSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Speed Setpoint"
+  },
+  "description": {"en": "The desired value associated withn angular speed"},
+  "extends" : [
+    "dtmi:com:willowinc:SpeedSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

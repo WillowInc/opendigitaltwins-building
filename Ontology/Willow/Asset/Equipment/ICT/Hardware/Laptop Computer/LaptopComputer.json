@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LaptopComputer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Laptop Computer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTHardware;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -31,17 +31,23 @@
         "enumValues": [
           {
             "name": "Granted",
-            "displayName": "Granted",
+            "displayName": {
+              "en": "Granted"
+            },
             "enumValue": "Granted"
           },
           {
             "name": "Denied",
-            "displayName": "Denied",
+            "displayName": {
+              "en": "Denied"
+            },
             "enumValue": "Denied"
           }
         ]
       }
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

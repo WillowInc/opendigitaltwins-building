@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Mode Actuator"
   },
+  "description": {"en": "A multi-state command which sets the mode of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Actuator;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

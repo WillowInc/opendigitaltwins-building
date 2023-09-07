@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Hot Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving hot water"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

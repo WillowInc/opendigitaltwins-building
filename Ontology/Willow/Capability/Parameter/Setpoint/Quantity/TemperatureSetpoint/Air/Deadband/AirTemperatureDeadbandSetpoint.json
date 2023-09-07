@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:AirTemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Temperature Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the air temperature setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:AirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:TemperatureDeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

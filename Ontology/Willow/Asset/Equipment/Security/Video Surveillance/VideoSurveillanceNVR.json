@@ -1,14 +1,15 @@
 {
   "@id": "dtmi:com:willowinc:VideoSurveillanceNVR;1",
   "@type": "Interface",
-  "description": {
-    "en": "Network Video Recorder."
+  "displayName": {
+    "en": "Network Video Recorder"
   },
   "extends" : [
-    "dtmi:com:willowinc:VideoSurveillanceEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SurveillanceNVR;1"
+    "dtmi:com:willowinc:VideoSurveillanceEquipment;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

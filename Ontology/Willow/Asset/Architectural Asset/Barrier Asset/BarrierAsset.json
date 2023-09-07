@@ -5,39 +5,143 @@
     "en": "Barrier Asset"
   },
   "extends" : [
-    "dtmi:com:willowinc:ArchitecturalAsset;1",
-    "dtmi:digitaltwins:rec_3_3:asset:BarrierAsset;1"
+    "dtmi:com:willowinc:ArchitecturalAsset;1"
   ],
   "contents": [
     {
-      "@type": "Property",
-      "name": "service",
+      "@type": "Relationship",
       "displayName": {
-        "en": "Service"
+        "en": "to space"
       },
-      "writable": true,
+      "name": "toSpace",
+      "target": "dtmi:com:willowinc:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "from space"
+      },
+      "name": "fromSpace",
+      "target": "dtmi:com:willowinc:Space;1"
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "width"
+      },
+      "name": "width",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "width unit"
+      },
+      "name": "widthUnit",
+      "annotates": "width",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "thickness"
+      },
+      "name": "thickness",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "thickness unit"
+      },
+      "name": "thicknessUnit",
+      "annotates": "thickness",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "service"
+      },
+      "name": "service",
       "schema": {
-        "@id": "dtmi:com:willowinc:BarrierAssetService;1",
         "@type": "Enum",
-        "valueSchema": "string",
         "enumValues": [
           {
-            "name": "Interior",
-            "displayName": {
-              "en": "Interior"
-            },
-            "enumValue": "Interior"
-          },  
+            "enumValue": "Interior",
+            "name": "Interior"
+          },
           {
-            "name": "Exterior",
-            "displayName": {
-              "en": "Exterior"
-            },
-            "enumValue": "Exterior"
-            }
-        ]
-      }
+            "enumValue": "Exterior",
+            "name": "Exterior"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "height"
+      },
+      "name": "height",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "height unit"
+      },
+      "name": "heightUnit",
+      "annotates": "height",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "frame material"
+      },
+      "name": "frameMaterial",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["TimeSpan", "Property"],
+      "displayName": {
+        "en": "fire rating"
+      },
+      "name": "fireRating",
+      "schema": "double",
+      "unit": "hour",
+      "writable": true
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

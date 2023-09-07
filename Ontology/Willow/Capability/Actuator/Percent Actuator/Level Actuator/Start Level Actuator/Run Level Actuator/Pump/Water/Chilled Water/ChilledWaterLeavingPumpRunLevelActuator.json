@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Leaving Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the leaving chilled water pump"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
+    "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

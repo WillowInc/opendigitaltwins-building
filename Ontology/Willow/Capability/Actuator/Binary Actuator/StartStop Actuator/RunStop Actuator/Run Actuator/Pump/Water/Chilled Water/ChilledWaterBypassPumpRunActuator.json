@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Bypass Pump Run Actuator"
+  },
+  "description": {"en": "The boolean command which sets the state of the chilled water bypass pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Discharge Air Damper Position Sensor"
   },
+  "description": {"en": "The damper position percent feedback from a sensor associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

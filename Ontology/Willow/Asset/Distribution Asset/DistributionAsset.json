@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:com:willowinc:DistributionAsset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distribution Asset"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Asset;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "length"
+      },
+      "name": "length",
+      "schema": "double",
+      "unit": "metre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "length unit"
+      },
+      "name": "lengthUnit",
+      "annotates": "length",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

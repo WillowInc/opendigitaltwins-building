@@ -4,11 +4,14 @@
   "displayName": {
     "en": "People Motion Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'occupied' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:MotionSensor;1"
   ],
   "contents": [
     
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

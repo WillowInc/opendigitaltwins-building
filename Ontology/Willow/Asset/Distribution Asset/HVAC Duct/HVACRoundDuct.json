@@ -1,0 +1,37 @@
+{
+  "@id": "dtmi:com:willowinc:HVACRoundDuct;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Round Duct"
+  },
+  "extends": "dtmi:com:willowinc:HVACDuct;1",
+  "contents": [
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "diameter"
+      },
+      "name": "diameter",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "diameter unit"
+      },
+      "name": "diameterUnit",
+      "annotates": "diameter",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

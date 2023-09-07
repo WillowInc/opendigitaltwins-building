@@ -4,11 +4,96 @@
   "displayName": {
     "en": "Person"
   },
+  "description": {
+    "en": "A natural person (i.e., an individual human being)."
+  },
   "extends" : [
-    "dtmi:com:willowinc:Agent;1",
-    "dtmi:digitaltwins:rec_3_3:agents:Person;1"
+    "dtmi:com:willowinc:Agent;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A person's last name (if they have one; this varies across cultural contexts)."
+      },
+      "displayName": {
+        "en": "last name"
+      },
+      "name": "lastName",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "URL link to an image that represents the person."
+      },
+      "displayName": {
+        "en": "image"
+      },
+      "name": "image",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A person's personal, individual name."
+      },
+      "displayName": {
+        "en": "given name"
+      },
+      "name": "givenName",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A gender designation for a Person."
+      },
+      "displayName": {
+        "en": "gender"
+      },
+      "name": "gender",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A person's first name (if they have one; this varies across cultural contexts)."
+      },
+      "displayName": {
+        "en": "first name"
+      },
+      "name": "firstName",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A person's family name."
+      },
+      "displayName": {
+        "en": "family name"
+      },
+      "name": "familyName",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates the Organization(s) that this Person is a member of."
+      },
+      "displayName": {
+        "en": "is member of"
+      },
+      "name": "isMemberOf",
+      "target": "dtmi:com:willowinc:Organization;1"
+    },
     {
       "@type": "Property",
       "name": "companyId",
@@ -19,5 +104,7 @@
       "schema": "string"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

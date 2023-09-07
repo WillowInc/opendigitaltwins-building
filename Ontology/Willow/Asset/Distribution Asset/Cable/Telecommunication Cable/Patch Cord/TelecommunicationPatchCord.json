@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TelecommunicationPatchCord;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Telecommunication Patch Cord"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationCable;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

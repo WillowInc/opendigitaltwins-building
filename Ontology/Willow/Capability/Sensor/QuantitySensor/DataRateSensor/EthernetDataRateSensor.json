@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Ethernet Data Rate Sensor"
   },
+  "description": {"en": "The data rate feedback from a sensor associated with ethernet"},
   "extends" : [
     "dtmi:com:willowinc:DataRateSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

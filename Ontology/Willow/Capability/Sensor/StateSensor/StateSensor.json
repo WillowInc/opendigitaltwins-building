@@ -4,11 +4,14 @@
   "displayName": {
     "en": "State Sensor"
   },
+  "description": {"en": "The state feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:Sensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

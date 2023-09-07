@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:MediumVoltageSwitchgear;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medium-voltage Switchgear"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Switchgear;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Reserved State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'reserved' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:ReservedUnreservedState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

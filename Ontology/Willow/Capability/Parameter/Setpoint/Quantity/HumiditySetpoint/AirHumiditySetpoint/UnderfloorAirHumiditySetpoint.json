@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:UnderfloorAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Underfloor Air Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated withn underfloor air humidity"},
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

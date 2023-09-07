@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:com:willowinc:MultimodeFiberOpticPatchCord;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multimode Fiber Optic Patch Cord"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationPatchCord;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "performanceRating",
+      "displayName": {
+        "en": "Performance Rating"
+      },
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "OM1",
+            "displayName": {
+              "en": "OM1"
+            },
+            "enumValue": "OM1"
+          },
+          {
+            "name": "OM2",
+            "displayName": {
+              "en": "OM2"
+            },
+            "enumValue": "OM2"
+          },
+          {
+            "name": "OM3",
+            "displayName": {
+              "en": "OM3"
+            },
+            "enumValue": "OM3"
+          },
+          {
+            "name": "OM4",
+            "displayName": {
+              "en": "OM4"
+            },
+            "enumValue": "OM4"
+          },
+          {
+            "name": "OM5",
+            "displayName": {
+              "en": "OM5"
+            },
+            "enumValue": "OM5"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaSteamFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Steam Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with steam delta"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

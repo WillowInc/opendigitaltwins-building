@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Zone Air Humidity Sensor"
   },
+  "description": {"en": "The humidity feedback from a sensor associated with zone air"},
   "extends" : [
     "dtmi:com:willowinc:AirHumiditySensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

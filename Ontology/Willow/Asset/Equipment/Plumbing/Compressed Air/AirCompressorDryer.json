@@ -5,29 +5,56 @@
     "en": "Air Compressor Dryer"
   },
   "extends" : [
-    "dtmi:com:willowinc:CompressedAir;1"
+    "dtmi:com:willowinc:CompressedAirEquipment;1"
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "VolumeFlowRate"],
       "name": "capacity",
       "displayName": {
         "en": "Capacity"
       },
       "writable": true,
       "schema": "integer",
-      "comment": "CFM"
+      "unit": "litrePerSecond"
     },
     {
-      "@type": "Property",
-      "name": "workingPressure",
+      "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "Working Pressure"
+        "en": "capacity unit"
       },
-      "writable": true,
+      "name": "capacityUnit",
+      "annotates": "capacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "working pressure"
+      },
+      "name": "workingPressure",
       "schema": "double",
-      "comment": "PSIG"
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

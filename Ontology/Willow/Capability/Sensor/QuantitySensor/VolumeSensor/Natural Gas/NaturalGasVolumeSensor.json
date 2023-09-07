@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:NaturalGasVolumeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Natural Gas Volume Sensor"
+  },
+  "description": {"en": "The volume feedback from a sensor associated with natural gas"},
+  "extends" : [
+    "dtmi:com:willowinc:VolumeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

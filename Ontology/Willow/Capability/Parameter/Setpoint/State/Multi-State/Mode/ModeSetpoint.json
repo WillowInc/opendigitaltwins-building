@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ModeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mode Setpoint"
+  },
+  "description": {"en": "A multi-state configuration setting that functions as the desired mode for equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:Setpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

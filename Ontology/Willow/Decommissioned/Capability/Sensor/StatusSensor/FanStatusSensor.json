@@ -5,11 +5,12 @@
     "en": "Fan Status Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:StatusSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:FanStatusSensor;1"
+    "dtmi:com:willowinc:StatusSensor;1"
   ],
   "contents": [
     
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

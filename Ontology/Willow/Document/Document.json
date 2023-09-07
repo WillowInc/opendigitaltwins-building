@@ -4,8 +4,10 @@
   "displayName": {
     "en": "Document"
   },
+  "description": {
+    "en": "A written, printed, or electronic matter that provides information, e.g. contract, drawing, image, report, etc."
+  },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:Document;1"
   ],
   "contents": [
     {
@@ -17,11 +19,78 @@
     },
     {
       "@type": "Relationship",
+      "name": "hasSettings",
+      "displayName": {
+        "en": "has settings"
+      },
+      "description": {
+        "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+      },
+      "target": "dtmi:com:willowinc:Settings;1"
+    },
+    {
+      "@type": "Relationship",
       "name": "includedIn",
       "displayName": {
         "en": "included in"
       },
       "target": "dtmi:com:willowinc:Collection;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "URL"
+      },
+      "name": "url",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -67,7 +136,82 @@
       },
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "customProperties",
+      "displayName": {
+        "en": "Custom Properties"
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sourceName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "createdDate",
+      "displayName": {
+        "en": "Created Date"
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "lastUpdatedDate",
+      "displayName": {
+        "en": "Last Updated Date"
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "createdBy",
+      "displayName": {
+        "en": "Created By"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "login",
+            "displayName": {
+              "en": "Login"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "name",
+            "displayName": {
+              "en": "Name"
+            },
+            "schema": "string"
+          }
+        ]
+      }
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

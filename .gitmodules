@@ -1,6 +1,1 @@
-[submodule "Ontology/opendigitaltwins-building"]
-	path = Ontology/opendigitaltwins-building
-	url = https://github.com/Azure/opendigitaltwins-building.git
-[submodule "DTDL-Validator"]
-	path = DTDL-Validator
-	url = https://github.com/Azure-Samples/DTDL-Validator.git
+

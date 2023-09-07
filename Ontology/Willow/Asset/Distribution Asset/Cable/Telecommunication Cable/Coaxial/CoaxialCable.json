@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CoaxialCable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Coaxial Cable"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TelecommunicationCable;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

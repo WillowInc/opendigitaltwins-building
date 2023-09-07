@@ -2,13 +2,14 @@
   "@id": "dtmi:com:willowinc:PlumbingBackflowPreventer;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Backflow Preventer"
+    "en": "Backflow Preventer (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:PlumbingBackflowPreventer;1"
+    "dtmi:com:willowinc:PlumbingValve;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

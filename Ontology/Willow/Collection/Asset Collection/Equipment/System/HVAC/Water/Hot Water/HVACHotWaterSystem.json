@@ -5,10 +5,11 @@
     "en": "HVAC Hot Water System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACWaterSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACHotWaterSystem;1"
+    "dtmi:com:willowinc:HVACWaterSystem;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

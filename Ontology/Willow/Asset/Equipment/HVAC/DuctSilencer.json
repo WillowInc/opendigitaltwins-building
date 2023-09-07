@@ -17,5 +17,7 @@
       "schema": "dtmi:com:willowinc:DuctConnection;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

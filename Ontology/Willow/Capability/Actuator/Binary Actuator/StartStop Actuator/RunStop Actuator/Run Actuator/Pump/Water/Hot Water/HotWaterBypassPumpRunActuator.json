@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Bypass Pump Run Actuator"
+  },
+  "description": {"en": "The boolean command which sets the state of the hot water bypass pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerant Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor associated with refrigerant"},
+  "extends" : [
+    "dtmi:com:willowinc:StaticPressureSensor;1",
+    "dtmi:com:willowinc:RefrigerantPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

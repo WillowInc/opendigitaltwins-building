@@ -4,12 +4,14 @@
   "displayName": {
     "en": "Mass Flow Sensor"
   },
+  "description": {"en": "The mass flow feedback from a sensor"},
   "extends" : [
-    "dtmi:com:willowinc:FlowSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:MassFlowSensor;1"
+    "dtmi:com:willowinc:FlowSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

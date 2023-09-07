@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Mode Sensor"
   },
+  "description": {"en": "The mode feedback from a multi-state sensor"},
   "extends" : [
     "dtmi:com:willowinc:Sensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

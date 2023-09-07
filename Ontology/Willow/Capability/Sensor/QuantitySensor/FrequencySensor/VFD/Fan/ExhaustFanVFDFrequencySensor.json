@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFanVFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan VFD Frequency Sensor"
+  },
+  "description": {"en": "The frequency feedback from a sensor associated with exhaust air fan VFD"},
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDFrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

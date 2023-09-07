@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringSteamFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Steam Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam entering flow"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

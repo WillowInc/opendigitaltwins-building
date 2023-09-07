@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BuildingAirStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Air Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor associated with building air"},
+  "extends" : [
+    "dtmi:com:willowinc:AirStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Delta Pressure Sensor"
   },
+  "description": {"en": "The delta pressure feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PressureSensor;1"
   ],
   "contents": [
     
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

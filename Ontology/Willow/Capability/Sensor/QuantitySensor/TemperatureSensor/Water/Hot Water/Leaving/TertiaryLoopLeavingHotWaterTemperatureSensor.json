@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Hot Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving hot water tertiary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

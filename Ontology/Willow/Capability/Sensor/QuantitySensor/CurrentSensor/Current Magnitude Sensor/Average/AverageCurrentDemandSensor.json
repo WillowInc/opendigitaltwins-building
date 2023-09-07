@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:AverageCurrentDemandSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Average Current Demand Sensor"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AverageCurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

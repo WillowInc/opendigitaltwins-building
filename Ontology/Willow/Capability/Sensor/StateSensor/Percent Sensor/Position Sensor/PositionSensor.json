@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Position Sensor"
   },
+  "description": {"en": "The position percent feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:PercentSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

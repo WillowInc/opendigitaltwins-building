@@ -4,10 +4,33 @@
   "displayName": {
     "en": "Capability"
   },
-  "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:Capability;1"
+  "description": {
+    "en": "A Capability indicates the capacity of an entity, be it a Space, an Asset, or a Device, to produce or ingest data which can be trended as a time series. This is roughly equivalent to the established Brick Schema and generic BMS term \"point\". Specific subclasses specialize this behaviour: Sensor entities harvest data from the real world, Actuator entities accept commands from a digital twin platform, and Parameter entities configure some capability or system."
+  },
+  "extends": [
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability. Inverse of: hasCapability"
+      },
+      "displayName": {
+        "en": "is capabilty of"
+      },
+      "name": "isCapabilityOf"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasSettings",
+      "displayName": {
+        "en": "has settings"
+      },
+      "description": {
+        "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+      },
+      "target": "dtmi:com:willowinc:Settings;1"
+    },
     {
       "@type": "Relationship",
       "name": "hostedBy",
@@ -22,6 +45,53 @@
       "displayName": {
         "en": "is controlled by"
       }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -89,12 +159,70 @@
     },
     {
       "@type": "Property",
-      "name": "lastValueTime",
+      "name": "alternateClassification",
       "displayName": {
-        "en": "Last Value Time"
+        "en": "Alternate Classification"
       },
       "writable": true,
-      "schema": "dateTime"
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:willowinc:CapabilityAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:willowinc:CapabilityAlternateClassificationObject;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "customProperties",
+      "displayName": {
+        "en": "Custom Properties"
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sourceName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Time when a core:Capability's value was last updated (see core:lastValue)."
+      },
+      "displayName": {
+        "en": "last value time"
+      },
+      "name": "lastValueTime",
+      "schema": "dateTime",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -104,6 +232,98 @@
       },
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "validValues",
+      "displayName": {
+        "en": "Valid Values"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "minimum",
+            "displayName": {
+              "en": "Minimum"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "maximum",
+            "displayName": {
+              "en": "Maximum"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "interpolation",
+      "displayName": {
+        "en": "Interpolation"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:willowinc:CapabilityInterpolation;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "linear",
+            "displayName": {
+              "en": "linear"
+            },
+            "enumValue": "linear"
+          },
+          {
+            "name": "stepForward",
+            "displayName": {
+              "en": "Step Forward"
+            },
+            "enumValue": "stepForward"
+          },
+          {
+            "name": "stepBackward",
+            "displayName": {
+              "en": "Step Backward"
+            },
+            "enumValue": "stepBackward"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "totalized",
+      "displayName": {
+        "en": "Totalized"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "valueExpression",
+      "displayName": {
+        "en": "Value Expression"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "The trended values are derived by evaluating this expression"
+    },
+    {
+      "@type": "Property",
+      "name": "scaleFactor",
+      "displayName": {
+        "en": "Scale Factor"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "Raw values from the connected system are multiplied by this scale factor when being stored in the twin"
     },
     {
       "@type": "Property",
@@ -123,37 +343,45 @@
               "en": "undefined"
             },
             "enumValue": "undefined"
-          },  
+          },
           {
             "name": "analog",
             "displayName": {
               "en": "analog"
             },
             "enumValue": "analog"
+          },
+          {
+            "name": "binary",
+            "displayName": {
+              "en": "binary"
             },
-            {
-              "name": "binary",
-              "displayName": {
-                "en": "binary"
-              },
-              "enumValue": "binary"
+            "enumValue": "binary"
+          },
+          {
+            "name": "multiState",
+            "displayName": {
+              "en": "multiState"
             },
-            {
-              "name": "multiState",
-              "displayName": {
-                "en": "multiState"
-              },
-              "enumValue": "multiState"
+            "enumValue": "multiState"
+          },
+          {
+            "name": "sum",
+            "displayName": {
+              "en": "sum"
             },
-            {
-              "name": "sum",
-              "displayName": {
-                "en": "sum"
-              },
-              "enumValue": "sum"
-            }
+            "enumValue": "sum"
+          }
         ]
       }
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "categorization properties"
+      },
+      "name": "categorizationProperties",
+      "schema": "dtmi:com:willowinc:CapabilityPropertySet;1"
     },
     {
       "@type": "Property",
@@ -193,6 +421,15 @@
     },
     {
       "@type": "Property",
+      "name": "stage",
+      "displayName": {
+        "en": "stage"
+      },
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
       "name": "occupancyMode",
       "displayName": {
         "en": "Occupancy Mode"
@@ -208,6 +445,45 @@
       },
       "writable": true,
       "schema": "dtmi:com:willowinc:CapabilityElectricalPhase;1"
+    },
+    {
+      "@type": "Property",
+      "name": "limit",
+      "displayName": {
+        "en": "Limit"
+      },
+      "writable": true,
+      "schema": "dtmi:com:willowinc:CapabilityLimit;1"
+    },
+    {
+      "@type": "Property",
+      "name": "effective",
+      "displayName": {
+        "en": "Effective"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "demand",
+      "displayName": {
+        "en": "Demand"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Notification of a condition which requires attention such as a threshold exceeded (Project Haystack). This differs from a Fault in that a Fault is used to identify a failure."
+      },
+      "displayName": {
+        "en": "alarm"
+      },
+      "name": "alarm",
+      "schema": "boolean",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -1074,7 +1350,51 @@
           "enumValue": "N"
         }
       ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:CapabilityLimit;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Minimum",
+          "displayName": {
+            "en": "Minimum"
+          },
+          "enumValue": "Minimum"
+        },
+        {
+          "name": "Maximum",
+          "displayName": {
+            "en": "Maximum"
+          },
+          "enumValue": "Maximum"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:CapabilityAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
 }

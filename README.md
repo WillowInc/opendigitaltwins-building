@@ -7,7 +7,7 @@ Before getting started:
 * Install a code editor such as [Visual Studio Code](https://code.visualstudio.com/) to view, manage, and update the files.
 * Install git to allow for cloning and working with this repo and its submodules. For Windows, we recommend [Git for Windows](https://gitforwindows.org/).
 * Learn [basic git techniques](https://docs.github.com/en/github/using-git) such as creating a branching, committing, pulling, and pushing.
-* Learn about the [Digital Twin Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md) which defines the language used to describe models of digital twins.
+* Learn about the [Digital Twin Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL//dtdlv2.md) which defines the language used to describe models of digital twins.
 * Learn about the [DTDL-based RealEstateCore ontology](https://github.com/Azure/opendigitaltwins-building) which forms the base ontology from which this WillowTwin ontology extends.
 * Learn about [Azure Digital Twins](https://docs.microsoft.com/en-us/azure/digital-twins/) which is the service WillowTwin is built upon and this ontology gets loaded into as [Models](https://docs.microsoft.com/en-us/azure/digital-twins/concepts-models).
 
@@ -24,7 +24,7 @@ Before getting started:
     | DTDL-Validator | Tool to parse and validate the DTDL ontology |
     | Ontology\opendigitaltwins-building | DTDL-based RealEstateCore ontology |
 
-* Confirm all of the DTDL files have been downloaded by navigating to the Ontology directory in a command prompt and running `DTDLValidator.exe`. The output should include **Validated all files - Your DTDL is valid**. After making changes to the DTDL files, it is recommended to run this command prior to committing changes.
+* Confirm all of the DTDL files have been pulled to your local machine by running the [DTDL Validator](https://github.com/Azure-Samples/DTDL-Validator) self-contained executable. The output should include **Validated all files - Your DTDL is valid**. After making changes to the DTDL files, it is recommended to run this command prior to committing changes.
 
 * Start browsing the Ontology which has the following top-level directories:
 

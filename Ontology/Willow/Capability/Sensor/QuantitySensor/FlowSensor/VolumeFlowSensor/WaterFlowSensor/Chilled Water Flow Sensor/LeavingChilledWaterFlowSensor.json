@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingChilledWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Chilled Water Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with leaving chilled water"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:MotorController;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Motor Controller"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

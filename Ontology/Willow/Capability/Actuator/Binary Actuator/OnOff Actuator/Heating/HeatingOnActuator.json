@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingOnActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating On Actuator"
+  },
+  "description": {"en": "The boolean command which turns on an equipment's heating function when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

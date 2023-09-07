@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseCReactiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Reactive Electrical Power Sensor"
+  },
+  "description": {"en": "The reactive electrical power feedback from a sensor associated with phase c"},
+  "extends" : [
+    "dtmi:com:willowinc:ReactiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

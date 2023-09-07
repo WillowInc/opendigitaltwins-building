@@ -4,12 +4,14 @@
   "displayName": {
     "en": "People Count Sensor"
   },
+  "description": {"en": "The people count feedback from a sensor"},
   "extends" : [
-    "dtmi:com:willowinc:CountSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:PeopleCountSensor;1"
+    "dtmi:com:willowinc:CountSensor;1"
   ],
   "contents": [
     
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

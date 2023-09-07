@@ -4,11 +4,14 @@
   "displayName": {
     "en": "People Flow Sensor"
   },
+  "description": {"en": "The people flow feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:ObjectFlowSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

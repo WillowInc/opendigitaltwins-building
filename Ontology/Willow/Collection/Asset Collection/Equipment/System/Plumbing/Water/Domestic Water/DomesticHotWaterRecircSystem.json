@@ -5,10 +5,11 @@
     "en": "Domestic Hot Water Recirculation System"
   },
   "extends" : [
-    "dtmi:com:willowinc:DomesticHotWaterSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:DomesticHotWaterRecircSystem;1"
+    "dtmi:com:willowinc:DomesticHotWaterSystem;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

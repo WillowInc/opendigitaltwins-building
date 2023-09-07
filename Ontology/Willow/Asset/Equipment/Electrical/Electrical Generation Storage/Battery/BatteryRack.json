@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:BatteryRack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Rack"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BatteryEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

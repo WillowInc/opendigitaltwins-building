@@ -1,13 +1,45 @@
 {
   "@id": "dtmi:com:willowinc:FanPoweredBox;1",
   "@type": "Interface",
-  "displayName": "Fan Powered Box",
+  "displayName": {
+    "en": "Fan Powered Box"
+  },
   "extends" : [
-    "dtmi:com:willowinc:VAVBox;1",
-    "dtmi:digitaltwins:rec_3_3:asset:FanPoweredBox;1"
+    "dtmi:com:willowinc:VAVBox;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "configuration"
+      },
+      "name": "configuration",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "series",
+            "name": "series"
+          },
+          {
+            "enumValue": "parallel",
+            "name": "parallel"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

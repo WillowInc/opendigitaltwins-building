@@ -5,10 +5,11 @@
     "en": "Urinal"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingFixture;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Urinal;1"
+    "dtmi:com:willowinc:PlumbingFixture;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

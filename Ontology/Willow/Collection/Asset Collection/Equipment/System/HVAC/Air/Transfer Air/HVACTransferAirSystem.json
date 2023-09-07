@@ -5,10 +5,11 @@
     "en": "HVAC Transfer Air System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACAirSystem;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACTransferAirSystem;1"
+    "dtmi:com:willowinc:HVACAirSystem;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

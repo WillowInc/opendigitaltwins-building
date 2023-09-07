@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Operational State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'operational' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OperationalNonoperationalState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

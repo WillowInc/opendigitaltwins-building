@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:VerticalStackFanCoilUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vertical Stack Fan Coil Unit"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VerticalFanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

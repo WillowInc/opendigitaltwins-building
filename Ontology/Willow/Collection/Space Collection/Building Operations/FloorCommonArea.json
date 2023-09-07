@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:FloorCommonArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Floor Common Area"
+  },
+  "description": {
+    "en": "The area within a floor (level) of a building which is shared by all tenants or occupants on that floor such as corridors, lobbies, and restrooms. In multi-tenant buildings, the landlord maintains and operates the area. In some jurisdictions, the tenants are responsible for paying rent on a pro-rata portion of this area which can also include areas that are not accessible to them such as janitor closets, HVAC rooms, and electrical rooms."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BuildingOperationsArea;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

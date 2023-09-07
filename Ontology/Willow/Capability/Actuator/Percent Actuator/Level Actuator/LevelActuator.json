@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Level Actuator"
   },
+  "description": {"en": "The percent command which sets the level of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:PercentActuator;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

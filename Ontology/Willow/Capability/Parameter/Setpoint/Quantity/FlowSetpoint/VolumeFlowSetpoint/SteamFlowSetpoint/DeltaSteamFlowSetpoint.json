@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaSteamFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Steam Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam delta flow"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

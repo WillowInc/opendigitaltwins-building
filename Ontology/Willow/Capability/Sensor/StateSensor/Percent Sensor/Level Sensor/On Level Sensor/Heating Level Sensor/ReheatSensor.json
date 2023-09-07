@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Reheating Level Sensor"
   },
+  "description": {"en": "The 'on' level feedback from a sensor associated with reheating"},
   "extends" : [
     "dtmi:com:willowinc:HeatingLevelSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

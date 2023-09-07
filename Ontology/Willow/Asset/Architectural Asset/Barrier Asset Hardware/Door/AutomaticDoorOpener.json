@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:AutomaticDoorOpener;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Automatic Door Opener"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DoorHardware;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,12 +4,14 @@
   "displayName": {
     "en": "Parameter"
   },
+  "description": {"en": "A configuration setting"},
   "extends" : [
-    "dtmi:com:willowinc:Capability;1",
-    "dtmi:digitaltwins:rec_3_3:core:Parameter;1"
+    "dtmi:com:willowinc:Capability;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

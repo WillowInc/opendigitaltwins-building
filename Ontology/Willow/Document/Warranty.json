@@ -11,7 +11,9 @@
     {
       "@type": "Property",
       "name": "type",
-      "displayName": "Type",
+      "displayName": {
+        "en": "Type"
+      },
       "writable": true,
       "schema": {
         "@id": "dtmi:com:willowinc:WarrantyType;1",
@@ -20,17 +22,23 @@
         "enumValues": [
           {
             "name": "Product",
-            "displayName": "Product",
+            "displayName": {
+              "en": "Product"
+            },
             "enumValue": "Product"
           },  
           {
                 "name": "Parts",
-                "displayName": "Parts",
+                "displayName": {
+                  "en": "Parts"
+                },
                 "enumValue": "Parts"
             },
             {
               "name": "Labor",
-              "displayName": "Labor",
+              "displayName": {
+                "en": "Labor"
+              },
               "enumValue": "Labor"
             }
         ]
@@ -39,31 +47,41 @@
     {
       "@type": "Property",
       "name": "guarantor",
-      "displayName": "Guarantor",
+      "displayName": {
+        "en": "Guarantor"
+      },
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Property",
       "name": "duration",
-      "displayName": "Duration",
+      "displayName": {
+        "en": "Duration"
+      },
       "writable": true,
       "schema": "duration"
     },
     {
       "@type": "Property",
       "name": "startDate",
-      "displayName": "Start Date",
+      "displayName": {
+        "en": "Start Date"
+      },
       "writable": true,
       "schema": "date"
     },
     {
       "@type": "Property",
       "name": "endDate",
-      "displayName": "End Date",
+      "displayName": {
+        "en": "End Date"
+      },
       "writable": true,
       "schema": "date"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

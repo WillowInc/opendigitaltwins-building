@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Chilled Water Valve Position Sensor"
   },
+  "description": {"en": "The valve position percent feedback from a sensor associated with chilled water"},
   "extends" : [
     "dtmi:com:willowinc:ValvePositionSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

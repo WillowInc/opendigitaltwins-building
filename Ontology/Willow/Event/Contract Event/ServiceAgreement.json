@@ -28,7 +28,7 @@
         "en": "Service Provider"
       },
       "name": "serviceProvider",
-      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+      "target": "dtmi:com:willowinc:Agent;1"
     },
     {
       "@type": "Relationship",
@@ -39,8 +39,10 @@
         "en": "Client"
       },
       "name": "client",
-      "target": "dtmi:digitaltwins:rec_3_3:core:Agent;1"
+      "target": "dtmi:com:willowinc:Agent;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ThermalEnergySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Energy Setpoint"
+  },
+  "description": {"en": "The desired value associated with thermal energy"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

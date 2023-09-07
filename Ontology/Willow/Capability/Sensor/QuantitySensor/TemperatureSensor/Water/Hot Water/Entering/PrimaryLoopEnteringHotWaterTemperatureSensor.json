@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Hot Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with entering hot water primary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

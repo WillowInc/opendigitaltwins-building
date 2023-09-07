@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CloseActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Close Actuator"
+  },
+  "description": {"en": "The boolean command which sets the state of the equipment to 'close' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OpenCloseActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

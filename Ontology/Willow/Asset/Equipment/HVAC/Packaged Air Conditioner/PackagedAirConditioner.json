@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PackagedAirConditioner;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Packaged Air Conditioner"
+  },
+  "description": {
+    "en": "A self-contained air conditioner which contains the condenser, compressor, and evaporator in a single unit."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,12 +4,14 @@
   "displayName": {
     "en": "Illuminance Sensor"
   },
+  "description": {"en": "The illuminance feedback from a sensor"},
   "extends" : [
-    "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:IlluminanceSensor;1"
+    "dtmi:com:willowinc:QuantitySensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

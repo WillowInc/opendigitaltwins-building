@@ -4,10 +4,36 @@
   "displayName": {
     "en": "Building Component"
   },
+  "description": {
+    "en": "A part that constitutes a piece of a building's structural or architectural makeup that is constructed onsite, e.g., Facade, Wall, Slab, RoofInner, etc."
+  },
   "extends" : [
-    "dtmi:digitaltwins:rec_3_3:core:BuildingComponent;1"
   ],
   "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+      },
+      "displayName": {
+        "en": "is part of"
+      },
+      "maxMultiplicity": 1,
+      "name": "isPartOf",
+      "target": "dtmi:com:willowinc:BuildingComponent;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates which Building a certain Building Component is part of. Inverse of: hasBuildingComponent"
+      },
+      "displayName": {
+        "en": "component of building"
+      },
+      "maxMultiplicity": 1,
+      "name": "componentOfBuilding",
+      "target": "dtmi:com:willowinc:Building;1"
+    },
     {
       "@type": "Relationship",
       "name": "hasDocument",
@@ -15,6 +41,17 @@
         "en": "has document"
       },
       "target": "dtmi:com:willowinc:Document;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasSettings",
+      "displayName": {
+        "en": "has settings"
+      },
+      "description": {
+        "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+      },
+      "target": "dtmi:com:willowinc:Settings;1"
     },
     {
       "@type": "Relationship",
@@ -29,9 +66,8 @@
       "displayName": {
         "en": "located in"
       },
-      "minMultiplicity": 0,
       "name": "locatedIn",
-      "target": "dtmi:digitaltwins:rec_3_3:core:Space;1"
+      "target": "dtmi:com:willowinc:Space;1"
     },
     {
       "@type": "Relationship",
@@ -50,6 +86,53 @@
           "schema": "dtmi:com:willowinc:BuildingComponentIsFedBySubstances;1"
         }
       ]
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -116,6 +199,89 @@
       },
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "alternateClassification",
+      "displayName": {
+        "en": "Alternate Classification"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "masterFormat",
+            "displayName": {
+              "en": "MasterFormat"
+            },
+            "schema": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1"
+          },
+          {
+            "name": "omniClass",
+            "displayName": {
+              "en": "OmniClass"
+            },
+            "schema": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniFormat",
+            "displayName": {
+              "en": "UniFormat"
+            },
+            "schema": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1"
+          },
+          {
+            "name": "uniclass",
+            "displayName": {
+              "en": "Uniclass"
+            },
+            "schema": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1"
+          },
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "customProperties",
+      "displayName": {
+        "en": "Custom Properties"
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sourceName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      }
     }
   ],
   "schemas": [
@@ -221,10 +387,6 @@
           "name": "OutsideAir"
         },
         {
-          "enumValue": "People",
-          "name": "People"
-        },
-        {
           "enumValue": "Propane",
           "name": "Propane"
         },
@@ -269,7 +431,29 @@
           "name": "Water"
         }
       ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:BuildingComponentAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ActiveElectricalEnergySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Active Electrical Energy Setpoint"
+  },
+  "description": {"en": "The desired value associated withn active electrical energy"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

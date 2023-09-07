@@ -9,12 +9,25 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "step width"
+      },
       "name": "stepWidth",
-      "displayName": "Step Width",
-      "writable": true,
       "schema": "double",
-      "comment": "inch"
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "step width unit"
+      },
+      "name": "stepWidthUnit",
+      "annotates": "stepWidth",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     },
     {
       "@type": "Component",
@@ -33,5 +46,10 @@
       "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

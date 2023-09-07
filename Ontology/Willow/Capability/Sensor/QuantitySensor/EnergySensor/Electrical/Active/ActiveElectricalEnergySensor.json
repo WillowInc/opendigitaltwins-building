@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

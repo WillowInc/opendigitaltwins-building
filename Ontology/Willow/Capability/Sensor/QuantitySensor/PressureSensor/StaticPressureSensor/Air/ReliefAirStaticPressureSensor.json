@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor associated with relief air"},
+  "extends" : [
+    "dtmi:com:willowinc:AirStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

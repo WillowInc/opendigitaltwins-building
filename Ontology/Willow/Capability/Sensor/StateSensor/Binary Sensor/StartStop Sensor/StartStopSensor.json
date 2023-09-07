@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Start/Stop Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'start' is 'true' and 'stop' is 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

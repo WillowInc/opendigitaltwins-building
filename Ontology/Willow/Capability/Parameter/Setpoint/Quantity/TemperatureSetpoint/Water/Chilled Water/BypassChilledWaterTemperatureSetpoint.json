@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:BypassChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Chilled Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with chilled water bypass temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopHotWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Hot Water Flow Sensor"
+  },
+  "description": {"en": "The flow feedback from a sensor associated with hot water primary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

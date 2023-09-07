@@ -4,10 +4,15 @@
   "displayName": {
     "en": "Building Tower"
   },
+  "description": {
+    "en": "A sub-building which extends up from a podium and is generally set back from the podium boundary."
+  },
   "extends": [
     "dtmi:com:willowinc:SubBuilding;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

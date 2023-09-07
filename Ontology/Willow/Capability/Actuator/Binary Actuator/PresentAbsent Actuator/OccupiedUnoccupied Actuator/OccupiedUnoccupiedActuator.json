@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Occupied/Unoccupied Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the equipment to 'occupied' when 'true' and 'unoccupied' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:PresentAbsentActuator;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

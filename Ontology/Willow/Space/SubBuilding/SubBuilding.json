@@ -4,20 +4,47 @@
   "displayName": {
     "en": "Sub-Building"
   },
+  "description": {
+    "en": "A part of a larger building, e.g., a wing, a tower, or podium, which has a uniquely defined name and levels."
+  },
   "extends": [
-    "dtmi:com:willowinc:Space;1",
-    "dtmi:digitaltwins:rec_3_3:core:SubBuilding;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": "Component",
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "schema": "dtmi:com:willowinc:Address;1"
+    },
+    {
+      "@type": ["Property", "Length"],
       "name": "height",
       "displayName": {
         "en": "Height"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "height unit"
+      },
+      "name": "heightUnit",
+      "annotates": "height",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

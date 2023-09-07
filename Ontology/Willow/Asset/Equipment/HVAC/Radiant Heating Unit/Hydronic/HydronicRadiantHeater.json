@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HydronicRadiantHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hydronic Radiant Heater"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RadiantHeater;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

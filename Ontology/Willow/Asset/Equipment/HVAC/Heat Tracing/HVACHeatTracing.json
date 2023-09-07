@@ -2,14 +2,16 @@
   "@id": "dtmi:com:willowinc:HVACHeatTracing;1",
   "@type": "Interface",
   "displayName": {
-    "en": "HVAC Heat Tracing"
+    "en": "Heat Tracing (HVAC)"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACHeatTracing;1"
+    "dtmi:com:willowinc:HeatTracing;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

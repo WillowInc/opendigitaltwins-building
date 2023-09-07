@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Operational/Nonoperational State"
   },
+  "description": {"en": "The Boolean state of the equipment which is 'operational' when 'true' and 'nonoperational' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

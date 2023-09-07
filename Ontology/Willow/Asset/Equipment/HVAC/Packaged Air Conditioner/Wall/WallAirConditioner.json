@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:WallAirConditioner;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wall Air Conditioner"
+  },
+  "description": {
+    "en": "A packaged air conditioner installed in an exterior wall cutout which directly conditions a space without ducts."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PackagedAirConditioner;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

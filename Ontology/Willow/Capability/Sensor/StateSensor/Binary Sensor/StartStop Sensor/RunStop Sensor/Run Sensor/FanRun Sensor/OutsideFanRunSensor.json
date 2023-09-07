@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideFanRunSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Fan Run Sensor"
+  },
+  "description": {"en": "The boolean fan status from a sensor associated with outside air where 'run' is 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:FanRunSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

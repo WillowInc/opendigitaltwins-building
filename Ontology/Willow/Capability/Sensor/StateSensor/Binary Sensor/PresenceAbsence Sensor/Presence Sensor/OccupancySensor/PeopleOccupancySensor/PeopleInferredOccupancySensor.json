@@ -4,6 +4,7 @@
   "displayName": {
     "en": "People Inferred Occupancy Sensor"
   },
+  "description": {"en": "The boolean status from a sensor associated with people where 'inferred occupancy' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:PeopleOccupancySensor;1",
     "dtmi:com:willowinc:InferredOccupancySensor;1"
@@ -11,5 +12,7 @@
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

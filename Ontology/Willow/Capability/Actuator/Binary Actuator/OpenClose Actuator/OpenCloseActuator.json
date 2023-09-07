@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Open/Close Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the equipment to 'open' when 'true' and 'close' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinaryActuator;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

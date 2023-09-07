@@ -4,9 +4,11 @@
   "displayName": {
     "en": "HVAC Zone"
   },
+  "description": {
+    "en": "A zone which is conditioned with air from the HVAC system."
+  },
   "extends" : [
-    "dtmi:com:willowinc:Zone;1",
-    "dtmi:digitaltwins:rec_3_3:core:HVACZone;1"
+    "dtmi:com:willowinc:Zone;1"
   ],
   "contents": [
     {
@@ -87,5 +89,7 @@
       ]
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

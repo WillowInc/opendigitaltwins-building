@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Lead (Pb) Air Quality Sensor"
   },
+  "description": {"en": "The lead (Pb) air quality feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AirQualitySensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

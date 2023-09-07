@@ -4,12 +4,13 @@
   "displayName": {
     "en": "Water Flow Sensor"
   },
+  "description": {"en": "The volume flow feedback from a sensor associated with water"},
   "extends" : [
-    "dtmi:com:willowinc:VolumeFlowSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:WaterFlowSensor;1"
+    "dtmi:com:willowinc:VolumeFlowSensor;1"
   ],
   "contents": [
-
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

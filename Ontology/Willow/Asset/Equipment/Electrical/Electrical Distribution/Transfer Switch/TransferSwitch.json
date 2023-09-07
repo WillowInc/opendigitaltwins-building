@@ -5,10 +5,41 @@
     "en": "Transfer Switch"
   },
   "extends" : [
-    "dtmi:com:willowinc:ElectricalDistributionEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:TransferSwitch;1"
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "poles"
+      },
+      "name": "poles",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Three",
+            "name": "Three"
+          },
+          {
+            "enumValue": "Four",
+            "name": "Four"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "mains rating"
+      },
+      "name": "mainsRating",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
     {
       "@type": "Component",
       "name": "mainBus",
@@ -18,5 +49,8 @@
       "schema": "dtmi:com:willowinc:ElectricalBus;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
 }

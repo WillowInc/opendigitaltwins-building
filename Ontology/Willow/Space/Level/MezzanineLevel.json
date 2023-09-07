@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:MezzanineLevel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mezzanine Level"
+  },
+  "description": {
+    "en": "An intermediate level of a building between two main levels and typically partially open to the floor below."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Level;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

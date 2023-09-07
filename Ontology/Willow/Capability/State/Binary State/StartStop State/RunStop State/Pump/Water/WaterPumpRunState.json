@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:WaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the water pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:PumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

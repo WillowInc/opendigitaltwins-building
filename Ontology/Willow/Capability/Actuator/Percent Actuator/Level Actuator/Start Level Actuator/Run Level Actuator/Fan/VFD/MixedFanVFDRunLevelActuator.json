@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:MixedFanVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Fan VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the mixed air fan vfd"},
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
+    "dtmi:com:willowinc:MixedFanRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

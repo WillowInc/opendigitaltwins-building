@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Occupancy Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'occupancy' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:PresenceSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

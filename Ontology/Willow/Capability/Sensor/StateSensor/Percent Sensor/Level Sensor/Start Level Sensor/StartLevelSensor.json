@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Start Level Sensor"
   },
+  "description": {"en": "The start level feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:LevelSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

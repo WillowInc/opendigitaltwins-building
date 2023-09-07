@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OccupiedCoolingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Cooling Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated withn occupied cooling zone air temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:OccupiedCoolingSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -5,10 +5,11 @@
     "en": "Equipment Collection"
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetCollection;1",
-    "dtmi:digitaltwins:rec_3_3:asset:EquipmentCollection;1"
+    "dtmi:com:willowinc:AssetCollection;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

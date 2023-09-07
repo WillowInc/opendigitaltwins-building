@@ -5,8 +5,7 @@
     "en": "Controller"
   },
   "extends" : [
-    "dtmi:com:willowinc:ICTEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:Controller;1"
+    "dtmi:com:willowinc:ICTEquipment;1"
   ],
   "contents": [
     {
@@ -55,5 +54,7 @@
       "schema": "boolean"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -4,6 +4,7 @@
   "displayName": {
     "en": "Percent Unity Actuator"
   },
+  "description": {"en": "The percent command which sets the state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Actuator;1"
   ],
@@ -20,5 +21,7 @@
     }
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -1,12 +1,16 @@
 {
   "@id": "dtmi:com:willowinc:AirTVOCSetpoint;1",
   "@type": "Interface",
-  "displayName": "Air TVOCS ensor",
+  "displayName": {
+    "en": "Air TVOC Sensor"
+  },
   "extends" : [
     "dtmi:com:willowinc:TVOCSetpoint;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:MinOutsideAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Minimum Outside Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with minimum outside air flow"},
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

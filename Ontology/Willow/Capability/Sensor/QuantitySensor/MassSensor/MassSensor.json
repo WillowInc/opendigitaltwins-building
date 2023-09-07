@@ -4,12 +4,14 @@
   "displayName": {
     "en": "Mass Sensor"
   },
+  "description": {"en": "The mass feedback from a sensor"},
   "extends" : [
-    "dtmi:com:willowinc:QuantitySensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:MassSensor;1"
+    "dtmi:com:willowinc:QuantitySensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

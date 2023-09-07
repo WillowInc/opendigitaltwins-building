@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SteamHeaderPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Header Pump Run Actuator"
+  },
+  "description": {"en": "The boolean command which sets the state of the steam header pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

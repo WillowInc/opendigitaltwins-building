@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TotalReactiveElectricalPowerDemandSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Reactive Electrical Power Demand Sensor"
+  },
+  "description": {"en": "The reactive electrical power demand feedback from a sensor associated with total"},
+  "extends" : [
+    "dtmi:com:willowinc:TotalReactiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,11 +1,16 @@
 {
   "@id": "dtmi:com:willowinc:DischargeAirFlowSensor;1",
   "@type": "Interface",
-  "displayName": "Discharge Air Flow Sensor",
+  "displayName": {
+    "en": "Discharge Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with discharge (supply) air"},
   "extends" : [
     "dtmi:com:willowinc:AirFlowSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

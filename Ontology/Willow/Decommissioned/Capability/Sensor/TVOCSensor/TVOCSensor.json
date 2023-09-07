@@ -5,11 +5,12 @@
     "en": "TVOC Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:Sensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:TVOCSensor;1"
+    "dtmi:com:willowinc:Sensor;1"
   ],
   "contents": [
     
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

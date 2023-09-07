@@ -1,0 +1,504 @@
+{
+  "@id": "dtmi:com:willowinc:Currency;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Currency"
+  },
+  "description": {
+    "en": "The ISO 4217 currency codes and names."
+  },
+  "extends": [
+    "dtmi:com:willowinc:Component;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "code",
+      "displayName": "Code",
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "AED",
+            "displayName": "AED",
+            "description": "United Arab Emirates dirham",
+            "enumValue": "AED"
+          },
+          {
+            "name": "ARS",
+            "displayName": "ARS",
+            "description": "Argentine peso",
+            "enumValue": "ARS"
+          },
+          {
+            "name": "AUD",
+            "displayName": "AUD",
+            "description": "Australian dollar",
+            "enumValue": "AUD"
+          },
+          {
+            "name": "BOB",
+            "displayName": "BOB",
+            "description": "Boliviano",
+            "enumValue": "BOB"
+          },
+          {
+            "name": "BRL",
+            "displayName": "BRL",
+            "description": "Brazilian real",
+            "enumValue": "BRL"
+          },
+          {
+            "name": "BZD",
+            "displayName": "BZD",
+            "description": "Belize dollar",
+            "enumValue": "BZD"
+          },
+          {
+            "name": "CAD",
+            "displayName": "CAD",
+            "description": "Canadian dollar",
+            "enumValue": "CAD"
+          },
+          {
+            "name": "CHF",
+            "displayName": "CHF",
+            "description": "Swiss franc",
+            "enumValue": "CHF"
+          },
+          {
+            "name": "CLP",
+            "displayName": "CLP",
+            "description": "Chilean peso",
+            "enumValue": "CLP"
+          },
+          {
+            "name": "COP",
+            "displayName": "COP",
+            "description": "Colombian peso",
+            "enumValue": "COP"
+          },
+          {
+            "name": "CRC",
+            "displayName": "CRC",
+            "description": "Costa Rican colon",
+            "enumValue": "CRC"
+          },
+          {
+            "name": "CUP",
+            "displayName": "CUP",
+            "description": "Cuban peso",
+            "enumValue": "CUP"
+          },
+          {
+            "name": "CZK",
+            "displayName": "CZK",
+            "description": "Czech koruna",
+            "enumValue": "CZK"
+          },
+          {
+            "name": "DKK",
+            "displayName": "DKK",
+            "description": "Danish krone",
+            "enumValue": "DKK"
+          },
+          {
+            "name": "DOP",
+            "displayName": "DOP",
+            "description": "Dominican peso",
+            "enumValue": "DOP"
+          },
+          {
+            "name": "DZD",
+            "displayName": "DZD",
+            "description": "Algerian dinar",
+            "enumValue": "DZD"
+          },
+          {
+            "name": "EGP",
+            "displayName": "EGP",
+            "description": "Egyptian pound",
+            "enumValue": "EGP"
+          },
+          {
+            "name": "EUR",
+            "displayName": "EUR",
+            "description": "Euro",
+            "enumValue": "EUR"
+          },
+          {
+            "name": "GBP",
+            "displayName": "GBP",
+            "description": "Pound sterling",
+            "enumValue": "GBP"
+          },
+          {
+            "name": "GTQ",
+            "displayName": "GTQ",
+            "description": "Guatemalan quetzal",
+            "enumValue": "GTQ"
+          },
+          {
+            "name": "HKD",
+            "displayName": "HKD",
+            "description": "Hong Kong dollar",
+            "enumValue": "HKD"
+          },
+          {
+            "name": "HNL",
+            "displayName": "HNL",
+            "description": "Honduran lempira",
+            "enumValue": "HNL"
+          },
+          {
+            "name": "HRK",
+            "displayName": "HRK",
+            "description": "Croatian kuna",
+            "enumValue": "HRK"
+          },
+          {
+            "name": "HUF",
+            "displayName": "HUF",
+            "description": "Hungarian forint",
+            "enumValue": "HUF"
+          },
+          {
+            "name": "IDR",
+            "displayName": "IDR",
+            "description": "Indonesian rupiah",
+            "enumValue": "IDR"
+          },
+          {
+            "name": "ILS",
+            "displayName": "ILS",
+            "description": "Israeli new shekel",
+            "enumValue": "ILS"
+          },
+          {
+            "name": "INR",
+            "displayName": "INR",
+            "description": "Indian rupee",
+            "enumValue": "INR"
+          },
+          {
+            "name": "IQD",
+            "displayName": "IQD",
+            "description": "Iraqi dinar",
+            "enumValue": "IQD"
+          },
+          {
+            "name": "IRR",
+            "displayName": "IRR",
+            "description": "Iranian rial",
+            "enumValue": "IRR"
+          },
+          {
+            "name": "ISK",
+            "displayName": "ISK",
+            "description": "Icelandic króna (plural: krónur)",
+            "enumValue": "ISK"
+          },
+          {
+            "name": "JPY",
+            "displayName": "JPY",
+            "description": "Japanese yen",
+            "enumValue": "JPY"
+          },
+          {
+            "name": "KES",
+            "displayName": "KES",
+            "description": "Kenyan shilling",
+            "enumValue": "KES"
+          },
+          {
+            "name": "KHR",
+            "displayName": "KHR",
+            "description": "Cambodian riel",
+            "enumValue": "KHR"
+          },
+          {
+            "name": "KRW",
+            "displayName": "KRW",
+            "description": "South Korean won",
+            "enumValue": "KRW"
+          },
+          {
+            "name": "KWD",
+            "displayName": "KWD",
+            "description": "Kuwaiti dinar",
+            "enumValue": "KWD"
+          },
+          {
+            "name": "LBP",
+            "displayName": "LBP",
+            "description": "Lebanese pound",
+            "enumValue": "LBP"
+          },
+          {
+            "name": "LKR",
+            "displayName": "LKR",
+            "description": "Sri Lankan rupee",
+            "enumValue": "LKR"
+          },
+          {
+            "name": "LRD",
+            "displayName": "LRD",
+            "description": "Liberian dollar",
+            "enumValue": "LRD"
+          },
+          {
+            "name": "LYD",
+            "displayName": "LYD",
+            "description": "Libyan dinar",
+            "enumValue": "LYD"
+          },
+          {
+            "name": "MAD",
+            "displayName": "MAD",
+            "description": "Moroccan dirham",
+            "enumValue": "MAD"
+          },
+          {
+            "name": "MMK",
+            "displayName": "MMK",
+            "description": "Myanmar kyat",
+            "enumValue": "MMK"
+          },
+          {
+            "name": "MNT",
+            "displayName": "MNT",
+            "description": "Mongolian tögrög",
+            "enumValue": "MNT"
+          },
+          {
+            "name": "MXN",
+            "displayName": "MXN",
+            "description": "Mexican peso",
+            "enumValue": "MXN"
+          },
+          {
+            "name": "MYR",
+            "displayName": "MYR",
+            "description": "Malaysian ringgit",
+            "enumValue": "MYR"
+          },
+          {
+            "name": "NGN",
+            "displayName": "NGN",
+            "description": "Nigerian naira",
+            "enumValue": "NGN"
+          },
+          {
+            "name": "NIO",
+            "displayName": "NIO",
+            "description": "Nicaraguan córdoba",
+            "enumValue": "NIO"
+          },
+          {
+            "name": "NOK",
+            "displayName": "NOK",
+            "description": "Norwegian krone",
+            "enumValue": "NOK"
+          },
+          {
+            "name": "NPR",
+            "displayName": "NPR",
+            "description": "Nepalese rupee",
+            "enumValue": "NPR"
+          },
+          {
+            "name": "NZD",
+            "displayName": "NZD",
+            "description": "New Zealand dollar",
+            "enumValue": "NZD"
+          },
+          {
+            "name": "OMR",
+            "displayName": "OMR",
+            "description": "Omani rial",
+            "enumValue": "OMR"
+          },
+          {
+            "name": "PAB",
+            "displayName": "PAB",
+            "description": "Panamanian balboa",
+            "enumValue": "PAB"
+          },
+          {
+            "name": "PEN",
+            "displayName": "PEN",
+            "description": "Peruvian sol",
+            "enumValue": "PEN"
+          },
+          {
+            "name": "PGK",
+            "displayName": "PGK",
+            "description": "Papua New Guinean kina",
+            "enumValue": "PGK"
+          },
+          {
+            "name": "PHP",
+            "displayName": "PHP",
+            "description": "Philippine peso",
+            "enumValue": "PHP"
+          },
+          {
+            "name": "PKR",
+            "displayName": "PKR",
+            "description": "Pakistani rupee",
+            "enumValue": "PKR"
+          },
+          {
+            "name": "PLN",
+            "displayName": "PLN",
+            "description": "Polish złoty",
+            "enumValue": "PLN"
+          },
+          {
+            "name": "PYG",
+            "displayName": "PYG",
+            "description": "Paraguayan guaraní",
+            "enumValue": "PYG"
+          },
+          {
+            "name": "QAR",
+            "displayName": "QAR",
+            "description": "Qatari riyal",
+            "enumValue": "QAR"
+          },
+          {
+            "name": "RON",
+            "displayName": "RON",
+            "description": "Romanian leu",
+            "enumValue": "RON"
+          },
+          {
+            "name": "RSD",
+            "displayName": "RSD",
+            "description": "Serbian dinar",
+            "enumValue": "RSD"
+          },
+          {
+            "name": "CNY",
+            "displayName": "CNY",
+            "description": "Renminbi",
+            "enumValue": "CNY"
+          },
+          {
+            "name": "RUB",
+            "displayName": "RUB",
+            "description": "Russian ruble",
+            "enumValue": "RUB"
+          },
+          {
+            "name": "SAR",
+            "displayName": "SAR",
+            "description": "Saudi riyal",
+            "enumValue": "SAR"
+          },
+          {
+            "name": "SEK",
+            "displayName": "SEK",
+            "description": "Swedish krona (plural: kronor)",
+            "enumValue": "SEK"
+          },
+          {
+            "name": "SGD",
+            "displayName": "SGD",
+            "description": "Singapore dollar",
+            "enumValue": "SGD"
+          },
+          {
+            "name": "SVC",
+            "displayName": "SVC",
+            "description": "Salvadoran colón",
+            "enumValue": "SVC"
+          },
+          {
+            "name": "SYP",
+            "displayName": "SYP",
+            "description": "Syrian pound",
+            "enumValue": "SYP"
+          },
+          {
+            "name": "THB",
+            "displayName": "THB",
+            "description": "Thai baht",
+            "enumValue": "THB"
+          },
+          {
+            "name": "TND",
+            "displayName": "TND",
+            "description": "Tunisian dinar",
+            "enumValue": "TND"
+          },
+          {
+            "name": "TRY",
+            "displayName": "TRY",
+            "description": "Turkish lira",
+            "enumValue": "TRY"
+          },
+          {
+            "name": "TWD",
+            "displayName": "TWD",
+            "description": "New Taiwan dollar",
+            "enumValue": "TWD"
+          },
+          {
+            "name": "UAH",
+            "displayName": "UAH",
+            "description": "Ukrainian hryvnia",
+            "enumValue": "UAH"
+          },
+          {
+            "name": "USD",
+            "displayName": "USD",
+            "description": "United States dollar",
+            "enumValue": "USD"
+          },
+          {
+            "name": "UYU",
+            "displayName": "UYU",
+            "description": "Uruguayan peso",
+            "enumValue": "UYU"
+          },
+          {
+            "name": "VES",
+            "displayName": "VES",
+            "description": "Venezuelan bolívar soberano",
+            "enumValue": "VES"
+          },
+          {
+            "name": "VND",
+            "displayName": "VND",
+            "description": "Vietnamese đồng",
+            "enumValue": "VND"
+          },
+          {
+            "name": "YER",
+            "displayName": "YER",
+            "description": "Yemeni rial",
+            "enumValue": "YER"
+          },
+          {
+            "name": "ZAR",
+            "displayName": "ZAR",
+            "description": "South African rand",
+            "enumValue": "ZAR"
+          },
+          {
+            "name": "ZWL",
+            "displayName": "ZWL",
+            "description": "Zimbabwean dollar",
+            "enumValue": "ZWL"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

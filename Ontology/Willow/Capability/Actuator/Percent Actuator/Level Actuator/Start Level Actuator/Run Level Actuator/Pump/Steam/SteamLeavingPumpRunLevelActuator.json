@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Leaving Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the steam leaving pump"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderChilledWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with chilled water header flow"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

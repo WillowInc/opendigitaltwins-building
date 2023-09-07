@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneAirEnthalpySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air Enthalpy Sensor"
+  },
+  "description": {"en": "The enthalpy feedback from a sensor associated with zone air"},
+  "extends" : [
+    "dtmi:com:willowinc:AirEnthalpySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

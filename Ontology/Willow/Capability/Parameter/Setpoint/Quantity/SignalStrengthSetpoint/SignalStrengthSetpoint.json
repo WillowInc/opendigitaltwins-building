@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SignalStrengthSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Signal Strength Setpoint"
+  },
+  "description": {"en": "The desired value associated with signal strength"},
+  "extends" : [
+    "dtmi:com:willowinc:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

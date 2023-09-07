@@ -2,13 +2,14 @@
   "@id": "dtmi:com:willowinc:SprinklerBackflowPreventer;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Backflow Preventer"
+    "en": "Backflow Preventer (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerBackflowPreventer;1"
+    "dtmi:com:willowinc:SprinklerValve;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

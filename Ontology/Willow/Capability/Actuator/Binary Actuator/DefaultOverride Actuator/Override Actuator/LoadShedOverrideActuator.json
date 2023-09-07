@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Load Shed Override Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the load shedding to 'override' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OverrideActuator;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

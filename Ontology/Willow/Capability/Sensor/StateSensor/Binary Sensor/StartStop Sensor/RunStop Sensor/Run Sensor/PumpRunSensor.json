@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Pump Run Sensor"
   },
+  "description": {"en": "The boolean pump status from a sensor associated where 'run' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

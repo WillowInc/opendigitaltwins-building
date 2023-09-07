@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledGarbageWasteCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Garbage Waste Cost"
+  },
+  "description": {"en": "The cost trend associated with a garbage waste utility service that is billed to a utility account, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledWasteCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaChilledWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Chilled Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with chilled water delta"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

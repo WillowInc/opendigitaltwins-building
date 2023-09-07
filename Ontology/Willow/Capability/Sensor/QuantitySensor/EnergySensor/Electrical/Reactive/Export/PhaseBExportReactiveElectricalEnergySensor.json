@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseBExportReactiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase B Export Reactive Electrical Energy Sensor"
+  },
+  "description": {"en": "The reactive electrical energy feedback from a sensor associated with phase b export"},
+  "extends" : [
+    "dtmi:com:willowinc:PhaseBReactiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

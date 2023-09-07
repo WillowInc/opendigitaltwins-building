@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the exhaust air fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

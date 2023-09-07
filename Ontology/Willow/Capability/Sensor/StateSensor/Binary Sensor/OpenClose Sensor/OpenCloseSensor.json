@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Open/Close Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'open' is 'true' and 'close' is 'off'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

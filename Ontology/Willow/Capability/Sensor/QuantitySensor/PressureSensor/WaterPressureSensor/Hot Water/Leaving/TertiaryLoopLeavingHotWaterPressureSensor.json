@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Hot Water Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with leaving hot water tertiary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingHotWaterPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

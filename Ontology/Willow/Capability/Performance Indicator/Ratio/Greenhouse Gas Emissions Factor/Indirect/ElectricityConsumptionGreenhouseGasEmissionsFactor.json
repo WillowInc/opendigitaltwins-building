@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricityConsumptionGreenhouseGasEmissionsFactor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electricity Consumption Greenhouse Gas Emissions Factor"
+  },
+  "description": {
+    "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of electricity from a utility."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

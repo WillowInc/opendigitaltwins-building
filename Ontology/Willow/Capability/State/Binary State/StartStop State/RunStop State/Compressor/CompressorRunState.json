@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Run State"
+  },
+  "description": {"en": "The Boolean state of the compressor which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:RunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

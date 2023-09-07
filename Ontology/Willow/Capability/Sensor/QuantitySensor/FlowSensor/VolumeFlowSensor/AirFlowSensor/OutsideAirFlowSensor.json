@@ -1,11 +1,16 @@
 {
   "@id": "dtmi:com:willowinc:OutsideAirFlowSensor;1",
   "@type": "Interface",
-  "displayName": "Outside Air Flow Sensor",
+  "displayName": {
+    "en": "Outside Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with outside air"},
   "extends" : [
     "dtmi:com:willowinc:AirFlowSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

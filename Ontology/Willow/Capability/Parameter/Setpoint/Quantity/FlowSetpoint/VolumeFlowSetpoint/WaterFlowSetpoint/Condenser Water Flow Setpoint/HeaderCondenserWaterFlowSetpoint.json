@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderCondenserWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Condenser Water Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with condenser water header flow"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

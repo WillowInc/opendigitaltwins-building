@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with chilled water"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

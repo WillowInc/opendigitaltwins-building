@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Condition State"
   },
+  "description": {"en": "The multi-state condition of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:MultiState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

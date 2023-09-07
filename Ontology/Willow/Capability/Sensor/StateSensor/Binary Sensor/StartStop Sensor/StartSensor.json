@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Start Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'start' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:StartStopSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

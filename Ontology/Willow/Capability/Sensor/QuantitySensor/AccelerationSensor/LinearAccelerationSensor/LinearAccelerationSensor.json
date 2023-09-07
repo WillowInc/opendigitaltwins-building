@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Linear Acceleration Sensor"
   },
+  "description": {"en": "The linear acceleration feedback from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:AccelerationSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

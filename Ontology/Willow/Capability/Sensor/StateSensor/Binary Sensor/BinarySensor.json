@@ -4,8 +4,9 @@
   "displayName": {
     "en": "Binary Sensor"
   },
+  "description": {"en": "The boolean status from a sensor"},
   "extends" : [
-    "dtmi:com:willowinc:Sensor;1"
+    "dtmi:com:willowinc:StateSensor;1"
   ],
   "contents": [
     {
@@ -17,7 +18,8 @@
       "writable": true,
       "schema": "boolean"
     }
-
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

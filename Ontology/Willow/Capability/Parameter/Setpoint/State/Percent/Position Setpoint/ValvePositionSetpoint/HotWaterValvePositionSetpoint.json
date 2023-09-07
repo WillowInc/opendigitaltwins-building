@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterValvePositionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Valve Position Setpoint"
+  },
+  "description": {"en": "The desired position percentage for control of the hot water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:ValvePositionSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

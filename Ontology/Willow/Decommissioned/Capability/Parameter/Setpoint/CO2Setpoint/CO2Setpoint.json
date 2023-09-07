@@ -5,11 +5,23 @@
     "en": "CO2 Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:Setpoint;1",
-    "dtmi:digitaltwins:rec_3_3:core:CO2Setpoint;1"
+    "dtmi:com:willowinc:Setpoint;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "description": {
+        "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
+      },
+      "displayName": {
+        "en": "Last Value"
+      },
+      "name": "lastValue",
+      "schema": "double",
+      "writable": true
+    }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

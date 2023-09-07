@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AirQualityIndexSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Quality Index Setpoint"
+  },
+  "description": {"en": "The desired value associated withn air quality index"},
+  "extends" : [
+    "dtmi:com:willowinc:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ShopDrawing;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Shop Drawing"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Drawing;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

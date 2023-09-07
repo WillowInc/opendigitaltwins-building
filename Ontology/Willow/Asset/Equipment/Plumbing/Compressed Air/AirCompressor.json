@@ -5,11 +5,98 @@
     "en": "Air Compressor"
   },
   "extends" : [
-    "dtmi:com:willowinc:CompressedAir;1",
-    "dtmi:digitaltwins:rec_3_3:asset:AirCompressor;1"
+    "dtmi:com:willowinc:CompressedAirEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "working pressure"
+      },
+      "name": "workingPressure",
+      "schema": "double",
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "motor power"
+      },
+      "name": "motorPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "motor power unit"
+      },
+      "name": "motorPowerUnit",
+      "annotates": "motorPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "brake horsepower"
+      },
+      "name": "brakeHorsepower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "brake horsepower unit"
+      },
+      "name": "brakeHorsepowerUnit",
+      "annotates": "brakeHorsepower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "free air delivery"
+      },
+      "name": "freeAirDelivery",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "free air delivery unit"
+      },
+      "name": "freeAirDeliveryUnit",
+      "annotates": "freeAirDelivery",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

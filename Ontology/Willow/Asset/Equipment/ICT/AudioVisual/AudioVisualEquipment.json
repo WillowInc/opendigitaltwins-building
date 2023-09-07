@@ -5,11 +5,12 @@
     "en": "Audio Visual Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:ICTEquipment;1",
-    "dtmi:digitaltwins:rec_3_3:asset:AudioVisualEquipment;1"
+    "dtmi:com:willowinc:ICTEquipment;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

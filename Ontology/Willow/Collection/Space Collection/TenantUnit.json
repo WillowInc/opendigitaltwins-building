@@ -5,14 +5,69 @@
     "en": "Tenant Unit"
   },
   "extends" : [
-    "dtmi:com:willowinc:SpaceCollection;1",
-    "dtmi:digitaltwins:rec_3_3:business:TenantUnit;1"
+    "dtmi:com:willowinc:SpaceCollection;1"
   ],
   "contents": [
     {
       "@type": "Relationship",
       "name": "hasLease",
-      "target": "dtmi:digitaltwins:rec_3_3:business:Lease;1"
+      "target": "dtmi:com:willowinc:Lease;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "schema": "dtmi:com:willowinc:Address;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Electricity Price Rate"
+      },
+      "name": "electricityPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Electricity Emission Factor"
+      },
+      "name": "electricityEmissionFactor",
+      "schema": "dtmi:com:willowinc:UtilityEmissionFactor;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Natural Gas Price Rate"
+      },
+      "name": "naturalGasPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Chilled Water Price Rate"
+      },
+      "name": "chilledWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Steam Price Rate"
+      },
+      "name": "steamPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Domestic Water Price Rate"
+      },
+      "name": "domesticWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
     },
     {
       "@type": "Component",
@@ -63,5 +118,7 @@
       "schema": "dtmi:com:willowinc:SpaceOccupancy;1"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

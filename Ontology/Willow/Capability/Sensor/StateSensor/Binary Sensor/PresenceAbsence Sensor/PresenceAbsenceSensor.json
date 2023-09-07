@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Presence/Absence Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'presence' is 'true' and 'absence' is 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

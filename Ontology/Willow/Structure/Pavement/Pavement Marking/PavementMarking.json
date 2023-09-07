@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PavementMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pavement Marking"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Pavement;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

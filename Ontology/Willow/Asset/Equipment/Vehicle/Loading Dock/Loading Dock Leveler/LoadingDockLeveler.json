@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:com:willowinc:LoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:LoadingDockEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "liftType",
+      "displayName": {
+        "en": "Lift Type"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Mechanical",
+            "displayName": {
+              "en": "Mechanical"
+            },
+            "enumValue": "Mechanical"
+          },  
+          {
+                "name": "Hydraulic",
+                "displayName": {
+                  "en": "Hydraulic"
+                },
+                "enumValue": "Hydraulic"
+            },
+            {
+              "name": "Pneumatic",
+              "displayName": {
+                "en": "Pneumatic"
+              },
+              "enumValue": "Pneumatic"
+            }
+        ]
+      }
+    },
+    {
+      "@type": ["Mass", "Property"],
+      "name": "loadCapacity",
+      "displayName": {
+        "en": "Load Capacity"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "kilogram"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "load capacity unit"
+      },
+      "name": "loadCapacityUnit",
+      "annotates": "loadCapacity",
+      "overrides": "unit",
+      "schema": "MassUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

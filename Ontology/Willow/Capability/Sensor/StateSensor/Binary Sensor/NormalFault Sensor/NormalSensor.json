@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Normal Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'normal' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:NormalFaultSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

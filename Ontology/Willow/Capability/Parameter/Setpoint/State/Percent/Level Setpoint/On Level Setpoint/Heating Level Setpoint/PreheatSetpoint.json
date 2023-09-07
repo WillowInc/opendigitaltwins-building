@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PreheatLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheating Level Setpoint"
+  },
+  "description": {"en": "The desired level percentage for control of equipment associated with preheating"},
+  "extends" : [
+    "dtmi:com:willowinc:HeatingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

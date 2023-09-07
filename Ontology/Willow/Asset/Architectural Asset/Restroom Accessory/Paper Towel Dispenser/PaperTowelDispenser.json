@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PaperTowelDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Paper Towel Dispenser"
+  },
+  "description": {
+    "en": "An device that dispenses paper towels to dry hands after washing."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RestroomAccessory;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

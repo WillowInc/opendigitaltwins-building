@@ -1,13 +1,17 @@
 {
   "@id": "dtmi:com:willowinc:AirFlowSensor;1",
   "@type": "Interface",
-  "displayName": "Air Flow Sensor",
+  "displayName": {
+    "en": "Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with air"},
   "extends" : [
-    "dtmi:com:willowinc:VolumeFlowSensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:AirFlowSensor;1"
+    "dtmi:com:willowinc:VolumeFlowSensor;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Override Actuator"
   },
+  "description": {"en": "The boolean command which sets the state of the equipment to 'override' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:DefaultOverrideActuator;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

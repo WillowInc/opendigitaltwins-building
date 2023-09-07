@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Weather Condition State"
   },
+  "description": {"en": "The multi-state condition of the weather"},
   "extends" : [
     "dtmi:com:willowinc:ConditionState;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

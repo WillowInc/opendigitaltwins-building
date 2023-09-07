@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:RenewableExportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Renewable Export Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with renewable export"},
+  "extends" : [
+    "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:BatteryEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,10 +4,13 @@
   "displayName": {
     "en": "Exhaust Air Damper Position Sensor"
   },
+  "description": {"en": "The damper position percent feedback from a sensor associated with exhaust air"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

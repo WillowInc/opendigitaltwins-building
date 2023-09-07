@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:DeltaCondenserWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Condenser Water Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with condenser water delta flow"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PassiveChilledBeam;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Passive Chilled Beam"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledBeam;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

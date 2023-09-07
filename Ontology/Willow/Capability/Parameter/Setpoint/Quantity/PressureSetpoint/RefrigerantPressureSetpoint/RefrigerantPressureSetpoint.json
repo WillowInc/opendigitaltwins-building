@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:RefrigerantPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerant Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with refrigerant pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:PressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -5,8 +5,7 @@
     "en": "Status Sensor"
   },
   "extends" : [
-    "dtmi:com:willowinc:Sensor;1",
-    "dtmi:digitaltwins:rec_3_3:core:StatusSensor;1"
+    "dtmi:com:willowinc:Sensor;1"
   ],
   "contents": [
     {
@@ -22,5 +21,7 @@
       "writable": true
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

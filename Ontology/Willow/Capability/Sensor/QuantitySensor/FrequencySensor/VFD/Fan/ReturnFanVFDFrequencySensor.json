@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnFanVFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Fan VFD Frequency Sensor"
+  },
+  "description": {"en": "The frequency feedback from a sensor associated with return air fan VFD"},
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDFrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

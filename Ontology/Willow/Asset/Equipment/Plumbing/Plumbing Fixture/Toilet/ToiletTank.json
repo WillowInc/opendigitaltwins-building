@@ -5,11 +5,33 @@
     "en": "Toilet with Tank"
   },
   "extends" : [
-    "dtmi:com:willowinc:Toilet;1",
-    "dtmi:digitaltwins:rec_3_3:asset:ToiletTank;1"
+    "dtmi:com:willowinc:Toilet;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "flushing type"
+      },
+      "name": "flushingType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "PressureAssisted",
+            "name": "PressureAssisted"
+          },
+          {
+            "enumValue": "Gravity",
+            "name": "Gravity"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

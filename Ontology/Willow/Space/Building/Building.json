@@ -4,11 +4,69 @@
   "displayName": {
     "en": "Building"
   },
+  "description": {
+    "en": "A confined structure, usually with a roof and walls, built for permanent use."
+  },
   "extends" : [
-    "dtmi:com:willowinc:Space;1",
-    "dtmi:digitaltwins:rec_3_3:core:Building;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "schema": "dtmi:com:willowinc:Address;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Electricity Price Rate"
+      },
+      "name": "electricityPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Electricity Emission Factor"
+      },
+      "name": "electricityEmissionFactor",
+      "schema": "dtmi:com:willowinc:UtilityEmissionFactor;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Natural Gas Price Rate"
+      },
+      "name": "naturalGasPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Chilled Water Price Rate"
+      },
+      "name": "chilledWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Steam Price Rate"
+      },
+      "name": "steamPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Domestic Water Price Rate"
+      },
+      "name": "domesticWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
     {
       "@type": "Property",
       "name": "type",
@@ -17,6 +75,14 @@
       },
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Component",
+      "name": "timeZone",
+      "displayName": {
+        "en": "Time Zone"
+      },
+      "schema": "dtmi:com:willowinc:TimeZone;1"
     },
     {
       "@type": "Property",
@@ -47,79 +113,46 @@
       }
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Length"],
       "name": "elevation",
       "displayName": {
         "en": "Elevation (Sea Level)"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
     },
     {
-      "@type": "Property",
-      "name": "address",
+      "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "Address"
+        "en": "elevation unit"
       },
-      "writable": true,
-      "schema": {
-        "@id": "dtmi:com:willowinc:Address;1",
-        "@type": "Object",
-        "fields" : [
-          {
-            "name": "address1",
-            "displayName": {
-              "en": "Address 1"
-            },
-            "schema": "string"
-          },
-          {
-            "name": "address2",
-            "displayName": {
-              "en": "Address 2"
-            },
-            "schema": "string"
-          },
-          {
-            "name": "city",
-            "displayName": {
-              "en": "City"
-            },
-            "schema": "string"
-          },
-          {
-            "name": "region",
-            "displayName": {
-              "en": "Region (State)"
-            },
-            "schema": "string",
-            "comment": "state"
-          },
-          {
-            "name": "country",
-            "displayName": {
-              "en": "Country"
-            },
-            "schema": "string"
-          },
-          {
-            "name": "postalCode",
-            "displayName": {
-              "en": "Postal Code"
-            },
-            "schema": "string"
-          }
-        ]
-      }
+      "name": "elevationUnit",
+      "annotates": "elevation",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Length"],
       "name": "height",
       "displayName": {
         "en": "Height"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "height unit"
+      },
+      "name": "heightUnit",
+      "annotates": "height",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
     },
     {
       "@type": "Property",
@@ -140,5 +173,10 @@
       "schema": "date"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

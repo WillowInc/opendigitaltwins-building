@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Export Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with total export"},
+  "extends" : [
+    "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

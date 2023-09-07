@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Disable Sensor"
   },
+  "description": {"en": "The boolean status from a sensor where 'disable' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:EnableDisableSensor;1",
     "dtmi:com:willowinc:OffSensor;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

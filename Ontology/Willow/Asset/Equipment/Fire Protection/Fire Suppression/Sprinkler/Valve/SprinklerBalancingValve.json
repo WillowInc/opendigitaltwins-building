@@ -2,14 +2,15 @@
   "@id": "dtmi:com:willowinc:SprinklerBalancingValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Balancing Valve"
+    "en": "Balancing Valve (Sprinkler)"
   },
   "extends" : [
-    "dtmi:com:willowinc:SprinklerValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:SprinklerBalancingValve;1"
+    "dtmi:com:willowinc:SprinklerValve;1"
   ],
   "contents": [
 
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

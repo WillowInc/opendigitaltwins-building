@@ -4,9 +4,11 @@
   "displayName": {
     "en": "Room"
   },
+  "description": {
+    "en": "A portion of space within a building that's usually enclosed and has its own walls, floor, and ceiling."
+  },
   "extends" : [
-    "dtmi:com:willowinc:Space;1",
-    "dtmi:digitaltwins:rec_3_3:core:Room;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
     {
@@ -19,14 +21,31 @@
       "schema": "string"
     },
     {
-      "@type": "Property",
+      "@type": ["Property", "Volume"],
       "name": "volume",
       "displayName": {
         "en": "Volume"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "unit": "cubicMetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "volume unit"
+      },
+      "name": "volumeUnit",
+      "annotates": "volume",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

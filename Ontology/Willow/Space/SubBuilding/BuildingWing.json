@@ -4,10 +4,15 @@
   "displayName": {
     "en": "Building Wing"
   },
+  "description": {
+    "en": "A sub-building which is subordinate to the main, central structure."
+  },
   "extends": [
     "dtmi:com:willowinc:SubBuilding;1"
   ],
   "contents": [
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

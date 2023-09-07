@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:MinOutsideAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Minimum Outside Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with minimum outside air"},
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

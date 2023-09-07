@@ -2,14 +2,40 @@
   "@id": "dtmi:com:willowinc:HVACShutOffValve;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Shut-off Valve"
+    "en": "Shut-off Valve (HVAC)"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACValve;1",
-    "dtmi:digitaltwins:rec_3_3:asset:HVACShutOffValve;1"
+    "dtmi:com:willowinc:HVACValve;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Gate",
+            "name": "Gate"
+          },
+          {
+            "enumValue": "Butterfly",
+            "name": "Butterfly"
+          },
+          {
+            "enumValue": "Ball",
+            "name": "Ball"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

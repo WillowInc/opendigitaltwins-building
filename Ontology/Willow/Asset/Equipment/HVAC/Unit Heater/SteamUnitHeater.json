@@ -1,0 +1,24 @@
+{
+  "@id": "dtmi:com:willowinc:SteamUnitHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Unit Heater"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:UnitHeater;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "condensate"
+      },
+      "name": "condensate",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

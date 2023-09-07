@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PackagedTerminalAirConditioner;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Packaged Terminal Air Conditioner (PTAC)"
+  },
+  "description": {
+    "en": "A horozontally oriented wall air conditioner with standard dimensions of 42\" wide by 16\" high."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WallAirConditioner;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

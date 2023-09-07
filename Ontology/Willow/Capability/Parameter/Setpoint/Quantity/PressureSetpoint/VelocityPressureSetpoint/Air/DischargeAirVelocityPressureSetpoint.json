@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeAirVelocityPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Velocity Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air velocity pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
