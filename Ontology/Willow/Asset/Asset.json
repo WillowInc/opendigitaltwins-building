@@ -473,7 +473,7 @@
     },
     {
       "@type": "Property",
-      "name": "Software",
+      "name": "software",
       "displayName": {
         "en": "Software"
       },
