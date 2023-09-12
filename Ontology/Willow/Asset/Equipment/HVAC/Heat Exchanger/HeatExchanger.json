@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Heat Exchanger"
   },
+  "description": {
+    "en": "A device which transfers heat between two fluids without the fluids coming in direct contact or mixing together."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1"
   ],
