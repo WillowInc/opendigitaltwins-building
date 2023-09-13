@@ -4,9 +4,10 @@
   "displayName": {
     "en": "Discharge Air Temperature Setpoint High Limit"
   },
-  "description": {"en": "The high limit associated with discharge (supply) air temperature"},
+  "description": {"en": "The high limit associated with discharge (supply) air temperature setpoint"},
   "extends" : [
-    "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+    "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1",
+    "dtmi:com:willowinc:MaxLimit;1"
   ],
   "contents": [
   ],
