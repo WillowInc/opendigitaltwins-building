@@ -130,6 +130,10 @@
           "name": "HotWater"
         },
         {
+          "enumValue": "HotWaterGlycolMix",
+          "name": "HotWaterGlycolMix"
+        },
+        {
           "enumValue": "HotDomesticWater",
           "name": "HotDomesticWater"
         },
@@ -172,6 +176,10 @@
         {
           "enumValue": "CondenserWater",
           "name": "CondenserWater"
+        },
+        {
+          "enumValue": "CondenserWaterGlycolMix",
+          "name": "CondenserWaterGlycolMix"
         },
         {
           "enumValue": "Condensate",
