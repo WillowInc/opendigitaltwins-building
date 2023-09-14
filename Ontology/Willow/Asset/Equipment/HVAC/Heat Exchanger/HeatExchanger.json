@@ -136,6 +136,162 @@
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
       "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Primary Design Flow"
+      },
+      "name": "primaryDesignFlow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Primary Design Flow Unit"
+      },
+      "name": "primaryDesignFlowUnit",
+      "annotates": "primaryDesignFlow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Secondary Design Flow"
+      },
+      "name": "secondaryDesignFlow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Secondary Design Flow Unit"
+      },
+      "name": "secondaryDesignFlowUnit",
+      "annotates": "secondaryDesignFlow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "primaryDesignEnteringWaterTemperature",
+      "displayName": {
+        "en": "Primary Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Primary Design Entering Water Temperature Unit"
+      },
+      "name": "primaryDesignEnteringWaterTemperatureUnit",
+      "annotates": "primaryDesignEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "primaryDesignLeavingWaterTemperature",
+      "displayName": {
+        "en": "Primary Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Primary Design Leaving Water Temperature Unit"
+      },
+      "name": "primaryDesignLeavingWaterTemperatureUnit",
+      "annotates": "primaryDesignLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "primaryDesignDeltaWaterTemperature",
+      "displayName": {
+        "en": "Primary Design Delta Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Primary Design Delta Water Temperature Unit"
+      },
+      "name": "primaryDesignDeltaWaterTemperatureUnit",
+      "annotates": "primaryDesignDeltaWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "secondaryDesignEnteringWaterTemperature",
+      "displayName": {
+        "en": "Secondary Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Secondary Design Entering Water Temperature Unit"
+      },
+      "name": "secondaryDesignEnteringWaterTemperatureUnit",
+      "annotates": "secondaryDesignEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "secondaryDesignLeavingWaterTemperature",
+      "displayName": {
+        "en": "Secondary Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Secondary Design Leaving Water Temperature Unit"
+      },
+      "name": "secondaryDesignLeavingWaterTemperatureUnit",
+      "annotates": "secondaryDesignLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "secondaryDesignDeltaWaterTemperature",
+      "displayName": {
+        "en": "Secondary Design Delta Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Secondary Design Delta Water Temperature Unit"
+      },
+      "name": "secondaryDesignDeltaWaterTemperatureUnit",
+      "annotates": "secondaryDesignDeltaWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
     }
   ],
   "@context": [
