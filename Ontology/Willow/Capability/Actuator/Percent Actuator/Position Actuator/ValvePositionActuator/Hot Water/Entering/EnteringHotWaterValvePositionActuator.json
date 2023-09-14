@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the entering hot water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

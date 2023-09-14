@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Break Glass Sensor"
   },
-  "description": {"en": "The boolean 'break glass' status from a sensor where 'alarm' is 'true'"},
+  "description": {"en": "The Boolean 'break glass' status from a sensor where 'alarm' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],

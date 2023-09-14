@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Chilled Water Valve Open Sensor"
   },
-  "description": {"en": "The boolean chilled water valve status from a sensor associated where 'open' is 'true'"},
+  "description": {"en": "The Boolean chilled water valve status from a sensor associated where 'open' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:ValveOpenSensor;1"
   ],

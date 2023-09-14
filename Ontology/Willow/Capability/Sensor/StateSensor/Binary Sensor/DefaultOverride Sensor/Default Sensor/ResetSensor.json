@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Reset Sensor"
   },
-  "description": {"en": "The boolean status from a sensor where 'reset' is 'true'"},
+  "description": {"en": "The Boolean status from a sensor where 'reset' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:DefaultSensor;1"
   ],

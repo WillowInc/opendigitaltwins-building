@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Outside Fan Run Sensor"
   },
-  "description": {"en": "The boolean fan status from a sensor associated with outside air where 'run' is 'true'"},
+  "description": {"en": "The Boolean fan status from a sensor associated with outside air where 'run' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:FanRunSensor;1"
   ],
