@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Chilled Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the tertiary loop leaving chilled water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

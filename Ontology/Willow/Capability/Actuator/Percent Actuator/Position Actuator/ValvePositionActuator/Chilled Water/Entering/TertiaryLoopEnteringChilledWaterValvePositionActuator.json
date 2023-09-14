@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Chilled Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the tertiary loop entering chilled water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

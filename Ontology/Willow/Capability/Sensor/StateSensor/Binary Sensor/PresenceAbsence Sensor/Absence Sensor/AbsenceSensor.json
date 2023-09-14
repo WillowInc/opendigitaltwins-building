@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Absence Sensor"
   },
-  "description": {"en": "The boolean status from a sensor where 'absence' is 'true'"},
+  "description": {"en": "The Boolean status from a sensor where 'absence' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:PresenceAbsenceSensor;1"
   ],

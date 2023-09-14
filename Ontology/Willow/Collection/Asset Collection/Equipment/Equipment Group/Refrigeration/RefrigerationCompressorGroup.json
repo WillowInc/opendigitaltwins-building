@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:RefrigerationCompressorGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Compressor Group"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

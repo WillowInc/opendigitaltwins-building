@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Hot Water Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the tertiary loop entering hot water valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

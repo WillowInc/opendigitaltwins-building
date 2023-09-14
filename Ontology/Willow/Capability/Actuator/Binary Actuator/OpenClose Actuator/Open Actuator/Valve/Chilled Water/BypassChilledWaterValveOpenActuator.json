@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BypassChilledWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Chilled Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the bypass chilled water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

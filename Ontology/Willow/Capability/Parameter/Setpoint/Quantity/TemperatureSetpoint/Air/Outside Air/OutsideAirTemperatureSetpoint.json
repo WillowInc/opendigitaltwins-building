@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Outside Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated withn outside air temperature"},
+  "description": {"en": "The desired value associated with outside air temperature"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSetpoint;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Default/Override Sensor"
   },
-  "description": {"en": "The boolean status from a sensor where 'override' is 'true' and 'default' is 'false'"},
+  "description": {"en": "The Boolean status from a sensor where 'override' is 'true' and 'default' is 'false'"},
   "extends" : [
     "dtmi:com:willowinc:BinarySensor;1"
   ],
