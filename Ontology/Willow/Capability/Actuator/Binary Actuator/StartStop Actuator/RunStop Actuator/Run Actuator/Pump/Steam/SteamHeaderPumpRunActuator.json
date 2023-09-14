@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Steam Header Pump Run Actuator"
   },
-  "description": {"en": "The boolean command which sets the state of the steam header pump to 'run' when 'true'"},
+  "description": {"en": "The Boolean command which sets the state of the steam header pump to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:SteamPumpRunActuator;1"
   ],

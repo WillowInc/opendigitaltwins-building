@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Leaving Condenser Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the primary loop leaving condenser water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

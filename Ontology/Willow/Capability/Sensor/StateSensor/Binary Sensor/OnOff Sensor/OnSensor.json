@@ -4,7 +4,7 @@
   "displayName": {
     "en": "On Sensor"
   },
-  "description": {"en": "The boolean status from a sensor where 'on' is 'true'"},
+  "description": {"en": "The Boolean status from a sensor where 'on' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OnOffSensor;1"
   ],

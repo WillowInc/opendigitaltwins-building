@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the chilled water valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

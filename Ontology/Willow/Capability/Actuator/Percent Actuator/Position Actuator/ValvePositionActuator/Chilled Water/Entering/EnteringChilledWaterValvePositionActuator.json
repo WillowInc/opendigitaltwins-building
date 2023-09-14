@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:ChilledWaterEnteringValvePositionActuator;1",
+  "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Chilled Water Entering Valve Position Actuator"
+    "en": "Entering Chilled Water Valve Position Actuator"
   },
   "description": {"en": "The percent command which sets the position of the entering chilled water valve"},
   "extends" : [

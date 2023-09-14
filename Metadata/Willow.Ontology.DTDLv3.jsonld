@@ -8462,7 +8462,7 @@
       "en": "Binary Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment"
+      "en": "The Boolean command which sets the state of the equipment"
     },
     "extends": [
       "dtmi:com:willowinc:Actuator;1"
@@ -15129,7 +15129,7 @@
       "en": "Binary Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor"
+      "en": "The Boolean status from a sensor"
     },
     "extends": [
       "dtmi:com:willowinc:StateSensor;1"
@@ -16370,7 +16370,7 @@
       "en": "Default/Override Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027override\u0027 when \u0027true\u0027 and \u0027default\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027override\u0027 when \u0027true\u0027 and \u0027default\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinaryActuator;1"
@@ -19281,7 +19281,7 @@
       "en": "Normal/Fault Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027fault\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027fault\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinaryActuator;1"
@@ -19329,7 +19329,7 @@
       "en": "On/Off Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinaryActuator;1"
@@ -19363,7 +19363,7 @@
       "en": "Open/Close Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinaryActuator;1"
@@ -19756,7 +19756,7 @@
       "en": "Present/Absent Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027present\u0027 when \u0027true\u0027 and \u0027absent\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027present\u0027 when \u0027true\u0027 and \u0027absent\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinaryActuator;1"
@@ -20034,7 +20034,7 @@
       "en": "Start/Stop Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027start\u0027 when \u0027true\u0027 and \u0027stop\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027start\u0027 when \u0027true\u0027 and \u0027stop\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinaryActuator;1"
@@ -21560,7 +21560,7 @@
       "en": "Absent Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027absent\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027absent\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PresentAbsentActuator;1"
@@ -21611,7 +21611,7 @@
       "en": "Acceleration Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn acceleration"
+      "en": "The desired value associated with acceleration"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -22118,7 +22118,7 @@
       "en": "Air Quality Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air quality"
+      "en": "The desired value associated with air quality"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -22197,7 +22197,7 @@
       "en": "Angle Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn angle"
+      "en": "The desired value associated with angle"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -22265,7 +22265,7 @@
       "en": "Area Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn area"
+      "en": "The desired value associated with area"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -22460,7 +22460,7 @@
       "en": "Break Glass Sensor"
     },
     "description": {
-      "en": "The boolean \u0027break glass\u0027 status from a sensor where \u0027alarm\u0027 is \u0027true\u0027"
+      "en": "The Boolean \u0027break glass\u0027 status from a sensor where \u0027alarm\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -22814,7 +22814,7 @@
       "en": "Close Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027close\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027close\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuator;1"
@@ -23220,7 +23220,7 @@
       "en": "Damper Open/Close Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the damper to \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the damper to \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuator;1"
@@ -23319,7 +23319,7 @@
       "en": "Default Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027default\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027default\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideActuator;1"
@@ -23336,7 +23336,7 @@
       "en": "Default/Override Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027override\u0027 is \u0027true\u0027 and \u0027default\u0027 is \u0027false\u0027"
+      "en": "The Boolean status from a sensor where \u0027override\u0027 is \u0027true\u0027 and \u0027default\u0027 is \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -24019,7 +24019,7 @@
       "en": "Electric Charge Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn electric charge"
+      "en": "The desired value associated with electric charge"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -24172,7 +24172,7 @@
       "en": "Enable/Disable Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027enable\u0027 when \u0027true\u0027 and \u0027disable\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027enable\u0027 when \u0027true\u0027 and \u0027disable\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OnOffActuator;1"
@@ -24206,7 +24206,7 @@
       "en": "Energy Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn energy"
+      "en": "The desired value associated with energy"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -24223,7 +24223,7 @@
       "en": "Enthalpy Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn enthalpy"
+      "en": "The desired value associated with enthalpy"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -24672,7 +24672,7 @@
       "en": "Fault Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027fault\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027fault\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:NormalFaultActuator;1"
@@ -24916,7 +24916,7 @@
       "en": "Fire Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor associated with fire where \u0027alarm\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor associated with fire where \u0027alarm\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -26035,7 +26035,7 @@
       "en": "Illuminance Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn illuminance"
+      "en": "The desired value associated with illuminance"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -26103,7 +26103,7 @@
       "en": "Inductance Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inductance"
+      "en": "The desired value associated with inductance"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -26151,7 +26151,7 @@
       "en": "Irradiance Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn irradiance"
+      "en": "The desired value associated with irradiance"
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
@@ -26210,7 +26210,7 @@
       "en": "Leak Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor associated with leaks where \u0027alarm\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor associated with leaks where \u0027alarm\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -26664,7 +26664,7 @@
       "en": "Motion Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027motion\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027motion\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -26810,7 +26810,7 @@
       "en": "Normal Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027normal\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027normal\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:NormalFaultActuator;1"
@@ -26827,7 +26827,7 @@
       "en": "Normal/Fault Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027fault\u0027 is \u0027true\u0027 and \u0027normal\u0027 is \u0027false\u0027"
+      "en": "The Boolean status from a sensor where \u0027fault\u0027 is \u0027true\u0027 and \u0027normal\u0027 is \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -26943,7 +26943,7 @@
       "en": "Occupied/Unoccupied Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027occupied\u0027 when \u0027true\u0027 and \u0027unoccupied\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027occupied\u0027 when \u0027true\u0027 and \u0027unoccupied\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PresentAbsentActuator;1"
@@ -26977,7 +26977,7 @@
       "en": "Off Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027off\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027off\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OnOffActuator;1"
@@ -27011,7 +27011,7 @@
       "en": "On Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027on\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027on\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OnOffActuator;1"
@@ -27062,7 +27062,7 @@
       "en": "On/Off Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027on\u0027 is \u0027true\u0027 and \u0027normal\u0027 is \u0027off\u0027"
+      "en": "The Boolean status from a sensor where \u0027on\u0027 is \u0027true\u0027 and \u0027normal\u0027 is \u0027off\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -27096,7 +27096,7 @@
       "en": "Open Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuator;1"
@@ -27113,7 +27113,7 @@
       "en": "Open/Close Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027open\u0027 is \u0027true\u0027 and \u0027close\u0027 is \u0027off\u0027"
+      "en": "The Boolean status from a sensor where \u0027open\u0027 is \u0027true\u0027 and \u0027close\u0027 is \u0027off\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -27226,7 +27226,7 @@
       "en": "Override Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027override\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027override\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideActuator;1"
@@ -28310,7 +28310,7 @@
       "en": "Presence/Absence Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027presence\u0027 is \u0027true\u0027 and \u0027absence\u0027 is \u0027false\u0027"
+      "en": "The Boolean status from a sensor where \u0027presence\u0027 is \u0027true\u0027 and \u0027absence\u0027 is \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -28327,7 +28327,7 @@
       "en": "Present Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027present\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027present\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PresentAbsentActuator;1"
@@ -28585,7 +28585,7 @@
       "en": "Run/Stop Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027run\u0027 when \u0027true\u0027 and \u0027stop\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027run\u0027 when \u0027true\u0027 and \u0027stop\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:StartStopActuator;1"
@@ -28770,7 +28770,7 @@
       "en": "Smoke Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor associated with smoke where \u0027alarm\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor associated with smoke where \u0027alarm\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -28952,7 +28952,7 @@
       "en": "Start Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027start\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027start\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:StartStopActuator;1"
@@ -29034,7 +29034,7 @@
       "en": "Start/Stop Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027start\u0027 is \u0027true\u0027 and \u0027stop\u0027 is \u0027false\u0027"
+      "en": "The Boolean status from a sensor where \u0027start\u0027 is \u0027true\u0027 and \u0027stop\u0027 is \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:BinarySensor;1"
@@ -30220,7 +30220,7 @@
       "en": "Valve Open/Close Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the valve equipment to \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
+      "en": "The Boolean command which sets the state of the valve equipment to \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuator;1"
@@ -31028,7 +31028,7 @@
       "en": "Absence Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027absence\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027absence\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PresenceAbsenceSensor;1"
@@ -31045,7 +31045,7 @@
       "en": "Absolute Humidity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn absolute humidity"
+      "en": "The desired value associated with absolute humidity"
     },
     "extends": [
       "dtmi:com:willowinc:HumiditySetpoint;1"
@@ -31242,7 +31242,7 @@
       "en": "Air Humidity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air humidity"
+      "en": "The desired value associated with air humidity"
     },
     "extends": [
       "dtmi:com:willowinc:HumiditySetpoint;1"
@@ -31259,7 +31259,7 @@
       "en": "Air Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air pressure"
+      "en": "The desired value associated with air pressure"
     },
     "extends": [
       "dtmi:com:willowinc:PressureSetpoint;1"
@@ -31276,7 +31276,7 @@
       "en": "Air Quality Index Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air quality index"
+      "en": "The desired value associated with air quality index"
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
@@ -31311,7 +31311,7 @@
       "en": "Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air temperature"
+      "en": "The desired value associated with air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSetpoint;1"
@@ -31361,7 +31361,7 @@
       "en": "Angular Acceleration Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn angular acceleration"
+      "en": "The desired value associated with angular acceleration"
     },
     "extends": [
       "dtmi:com:willowinc:AccelerationSetpoint;1"
@@ -31378,7 +31378,7 @@
       "en": "Angular Speed Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn angular speed"
+      "en": "The desired value associated with angular speed"
     },
     "extends": [
       "dtmi:com:willowinc:SpeedSetpoint;1"
@@ -31395,7 +31395,7 @@
       "en": "Angular Velocity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn angular velocity"
+      "en": "The desired value associated with angular velocity"
     },
     "extends": [
       "dtmi:com:willowinc:VelocitySetpoint;1"
@@ -32074,7 +32074,7 @@
       "en": "Close Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027close\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027close\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseSensor;1"
@@ -32400,7 +32400,7 @@
       "en": "Contact Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027contact\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027contact\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseSensor;1"
@@ -32548,7 +32548,7 @@
       "en": "Damper Close Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the damper to \u0027close\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the damper to \u0027close\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:CloseActuator;1"
@@ -32565,7 +32565,7 @@
       "en": "Damper Open Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the damper to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the damper to \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenActuator;1"
@@ -32644,7 +32644,7 @@
       "en": "Default Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027default\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027default\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideSensor;1"
@@ -32756,7 +32756,7 @@
       "en": "Disable Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027disable\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027disable\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:EnableDisableActuator;1",
@@ -33143,7 +33143,7 @@
       "en": "Electrical Energy Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn electrical energy"
+      "en": "The desired value associated with electrical energy"
     },
     "extends": [
       "dtmi:com:willowinc:EnergySetpoint;1"
@@ -33203,7 +33203,7 @@
       "en": "Electrical Power Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn electrical power"
+      "en": "The desired value associated with electrical power"
     },
     "extends": [
       "dtmi:com:willowinc:PowerSetpoint;1"
@@ -33546,7 +33546,7 @@
       "en": "Enable Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027enable\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027enable\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:EnableDisableActuator;1",
@@ -33564,7 +33564,7 @@
       "en": "Enable/Disable Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027enable\u0027 is \u0027true\u0027 and \u0027disable\u0027 is \u0027off\u0027"
+      "en": "The Boolean status from a sensor where \u0027enable\u0027 is \u0027true\u0027 and \u0027disable\u0027 is \u0027off\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OnOffSensor;1"
@@ -33868,7 +33868,7 @@
       "en": "Fault Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027fault\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027fault\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:NormalFaultSensor;1"
@@ -35003,7 +35003,7 @@
       "en": "Load Shed Override Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the load shedding to \u0027override\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the load shedding to \u0027override\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OverrideActuator;1"
@@ -35464,7 +35464,7 @@
       "en": "Normal Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027normal\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027normal\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:NormalFaultSensor;1"
@@ -35498,7 +35498,7 @@
       "en": "Oxygen (O2) Air Quality Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn oxygen (O2) air quality"
+      "en": "The desired value associated with oxygen (O2) air quality"
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
@@ -35515,7 +35515,7 @@
       "en": "Ozone (O3) Air Quality Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn ozone (O3) air quality"
+      "en": "The desired value associated with ozone (O3) air quality"
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
@@ -35532,7 +35532,7 @@
       "en": "Object Flow Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn object flow"
+      "en": "The desired value associated with object flow"
     },
     "extends": [
       "dtmi:com:willowinc:FlowSetpoint;1"
@@ -35549,7 +35549,7 @@
       "en": "Occupied Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027occupied\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027occupied\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OccupiedUnoccupiedActuator;1",
@@ -35585,7 +35585,7 @@
       "en": "Off Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027off\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027off\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OnOffSensor;1"
@@ -35633,7 +35633,7 @@
       "en": "On Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027on\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027on\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OnOffSensor;1"
@@ -35664,7 +35664,7 @@
       "en": "Open Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027open\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027open\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseSensor;1"
@@ -35766,7 +35766,7 @@
       "en": "Override Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027override\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027override\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideSensor;1"
@@ -35865,7 +35865,7 @@
       "en": "People Motion Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027occupied\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027occupied\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:MotionSensor;1"
@@ -36361,7 +36361,7 @@
       "en": "Presence Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027presence\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027presence\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PresenceAbsenceSensor;1"
@@ -36662,7 +36662,7 @@
       "en": "Reset Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027reset\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027reset\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:DefaultActuator;1"
@@ -36834,7 +36834,7 @@
       "en": "Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunStopActuator;1",
@@ -36904,7 +36904,7 @@
       "en": "Run/Stop Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027run\u0027 is \u0027true\u0027 and \u0027stop\u0027 is \u0027false\u0027"
+      "en": "The Boolean status from a sensor where \u0027run\u0027 is \u0027true\u0027 and \u0027stop\u0027 is \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:StartStopSensor;1"
@@ -37207,7 +37207,7 @@
       "en": "Start Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027start\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027start\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:StartStopSensor;1"
@@ -37389,7 +37389,7 @@
       "en": "Stop Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027stop\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027stop\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:StartStopActuator;1",
@@ -37688,7 +37688,7 @@
       "en": "Unoccupied Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the equipment to \u0027unoccupied\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the equipment to \u0027unoccupied\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OccupiedUnoccupiedActuator;1",
@@ -37784,7 +37784,7 @@
       "en": "Valve Close Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the valve to \u0027close\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the valve to \u0027close\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:CloseActuator;1"
@@ -37801,7 +37801,7 @@
       "en": "Valve Open Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the valve to \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenActuator;1"
@@ -38386,7 +38386,7 @@
       "en": "Active Electrical Energy Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn active electrical energy"
+      "en": "The desired value associated with active electrical energy"
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
@@ -38403,7 +38403,7 @@
       "en": "Active Electrical Power Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn active electrical power"
+      "en": "The desired value associated with active electrical power"
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
@@ -38420,7 +38420,7 @@
       "en": "Air Delta Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air delta pressure"
+      "en": "The desired value associated with air delta pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirPressureSetpoint;1",
@@ -38438,7 +38438,7 @@
       "en": "Air Flow Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air flow"
+      "en": "The desired value associated with air flow"
     },
     "extends": [
       "dtmi:com:willowinc:VolumeFlowSetpoint;1"
@@ -38455,7 +38455,7 @@
       "en": "Air Static Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air static pressure"
+      "en": "The desired value associated with air static pressure"
     },
     "extends": [
       "dtmi:com:willowinc:StaticPressureSetpoint;1",
@@ -38491,7 +38491,7 @@
       "en": "Air Velocity Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn air velocity pressure"
+      "en": "The desired value associated with air velocity pressure"
     },
     "extends": [
       "dtmi:com:willowinc:VelocityPressureSetpoint;1",
@@ -38509,7 +38509,7 @@
       "en": "Apparent Electrical Energy Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn apparent electrical energy"
+      "en": "The desired value associated with apparent electrical energy"
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalEnergySetpoint;1"
@@ -38526,7 +38526,7 @@
       "en": "Apparent Electrical Power Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn apparent electrical power"
+      "en": "The desired value associated with apparent electrical power"
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
@@ -39052,7 +39052,7 @@
       "en": "Chilled Water Valve Open Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the chilled water valve to \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenActuator;1"
@@ -39162,7 +39162,7 @@
       "en": "Compressor Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the compressor to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the compressor to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunActuator;1"
@@ -39417,7 +39417,7 @@
       "en": "Condenser Water Valve Open Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the condenser water valve to \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenActuator;1"
@@ -39530,7 +39530,7 @@
       "en": "Damper Open Sensor"
     },
     "description": {
-      "en": "The boolean damper status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
+      "en": "The Boolean damper status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenSensor;1"
@@ -39710,7 +39710,7 @@
       "en": "Disable Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027disable\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027disable\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:EnableDisableSensor;1",
@@ -40171,7 +40171,7 @@
       "en": "Enable Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027enable\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027enable\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:EnableDisableSensor;1",
@@ -40291,7 +40291,7 @@
       "en": "Entering People Count Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn entering people count"
+      "en": "The desired value associated with entering people count"
     },
     "extends": [
       "dtmi:com:willowinc:PeopleCountSetpoint;1"
@@ -40427,7 +40427,7 @@
       "en": "Exhaust Air Humidity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn exhaust air humidity"
+      "en": "The desired value associated with exhaust air humidity"
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySetpoint;1"
@@ -40461,7 +40461,7 @@
       "en": "Exhaust Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn exhaust air temperature"
+      "en": "The desired value associated with exhaust air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -40566,7 +40566,7 @@
       "en": "Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunActuator;1"
@@ -40634,7 +40634,7 @@
       "en": "Fault Reset Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the fault to \u0027reset\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the fault to \u0027reset\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ResetActuator;1"
@@ -41190,7 +41190,7 @@
       "en": "Inlet Air Humidity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inlet air humidity"
+      "en": "The desired value associated with inlet air humidity"
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySetpoint;1"
@@ -41224,7 +41224,7 @@
       "en": "Inlet Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inlet air temperature"
+      "en": "The desired value associated with inlet air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -41654,7 +41654,7 @@
       "en": "Occupancy Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027occupancy\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027occupancy\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PresenceSensor;1"
@@ -41671,7 +41671,7 @@
       "en": "Occupied Cooling Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn occupied cooling temperature"
+      "en": "The desired value associated with occupied cooling temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -41688,7 +41688,7 @@
       "en": "Occupied Heating Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn occupied heating temperature"
+      "en": "The desired value associated with occupied heating temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -41840,7 +41840,7 @@
       "en": "Outside Air Humidity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air humidity"
+      "en": "The desired value associated with outside air humidity"
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySetpoint;1"
@@ -41874,7 +41874,7 @@
       "en": "Outside Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air temperature"
+      "en": "The desired value associated with outside air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -42468,7 +42468,7 @@
       "en": "Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunActuator;1"
@@ -42820,7 +42820,7 @@
       "en": "Reset Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027reset\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027reset\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:DefaultSensor;1"
@@ -43018,7 +43018,7 @@
       "en": "Run Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunStopSensor;1",
@@ -43345,7 +43345,7 @@
       "en": "Stop Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027stop\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027stop\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:StartStopSensor;1",
@@ -43530,7 +43530,7 @@
       "en": "Underfloor Air Humidity Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn underfloor air humidity"
+      "en": "The desired value associated with underfloor air humidity"
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySetpoint;1"
@@ -43564,7 +43564,7 @@
       "en": "Underfloor Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn underfloor air temperature"
+      "en": "The desired value associated with underfloor air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -43632,7 +43632,7 @@
       "en": "Unoccupied Cooling Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn unoccupied cooling temperature"
+      "en": "The desired value associated with unoccupied cooling temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -43649,7 +43649,7 @@
       "en": "Unoccupied Heating Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn unoccupied heating temperature"
+      "en": "The desired value associated with unoccupied heating temperature"
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
@@ -43666,7 +43666,7 @@
       "en": "Valve Open Sensor"
     },
     "description": {
-      "en": "The boolean valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
+      "en": "The Boolean valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OpenSensor;1"
@@ -44203,7 +44203,7 @@
       "en": "Chilled Water Valve Open Sensor"
     },
     "description": {
-      "en": "The boolean chilled water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
+      "en": "The Boolean chilled water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenSensor;1"
@@ -44254,7 +44254,7 @@
       "en": "Compressor Run Sensor"
     },
     "description": {
-      "en": "The boolean compressor status from a sensor where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean compressor status from a sensor where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunSensor;1"
@@ -44323,7 +44323,7 @@
       "en": "Condenser Water Valve Open Sensor"
     },
     "description": {
-      "en": "The boolean condenser water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
+      "en": "The Boolean condenser water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenSensor;1"
@@ -44675,7 +44675,7 @@
       "en": "Discharge Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the discharge (supply) air fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the discharge (supply) air fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -44796,7 +44796,7 @@
       "en": "Effective Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn effective zone air temperature"
+      "en": "The desired value associated with effective zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
@@ -45032,7 +45032,7 @@
       "en": "Exhaust Air Delta Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn exhaust air delta pressure"
+      "en": "The desired value associated with exhaust air delta pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
@@ -45049,7 +45049,7 @@
       "en": "Exhaust Air Flow Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn exhaust air flow"
+      "en": "The desired value associated with exhaust air flow"
     },
     "extends": [
       "dtmi:com:willowinc:AirFlowSetpoint;1"
@@ -45066,7 +45066,7 @@
       "en": "Exhaust Air Static Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn exhaust air static pressure"
+      "en": "The desired value associated with exhaust air static pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
@@ -45083,7 +45083,7 @@
       "en": "Exhaust Air Velocity Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn exhaust air velocity pressure"
+      "en": "The desired value associated with exhaust air velocity pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
@@ -45100,7 +45100,7 @@
       "en": "Exhaust Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the exhaust air fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the exhaust air fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -45168,7 +45168,7 @@
       "en": "Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunSensor;1"
@@ -45203,7 +45203,7 @@
       "en": "Fault Reset Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor associated with fault where \u0027reset\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor associated with fault where \u0027reset\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ResetSensor;1"
@@ -45475,7 +45475,7 @@
       "en": "High Speed Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the high speed fan command to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the high speed fan command to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -45600,7 +45600,7 @@
       "en": "Inferred Occupancy Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor where \u0027inferred occupancy\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor where \u0027inferred occupancy\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OccupancySensor;1"
@@ -45634,7 +45634,7 @@
       "en": "Inlet Air Delta Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inlet air delta pressure"
+      "en": "The desired value associated with inlet air delta pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
@@ -45651,7 +45651,7 @@
       "en": "Inlet Air Flow Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inlet air flow"
+      "en": "The desired value associated with inlet air flow"
     },
     "extends": [
       "dtmi:com:willowinc:AirFlowSetpoint;1"
@@ -45668,7 +45668,7 @@
       "en": "Inlet Air Static Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inlet air static pressure"
+      "en": "The desired value associated with inlet air static pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
@@ -45685,7 +45685,7 @@
       "en": "Inlet Air Velocity Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn inlet air velocity pressure"
+      "en": "The desired value associated with inlet air velocity pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
@@ -45889,7 +45889,7 @@
       "en": "Low Speed Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the low speed fan command to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the low speed fan command to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -45906,7 +45906,7 @@
       "en": "Medium Speed Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the medium speed fan command to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the medium speed fan command to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -46008,7 +46008,7 @@
       "en": "Mixed Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the mixed air fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the mixed air fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -46107,7 +46107,7 @@
       "en": "Outside Air Static Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air static pressure"
+      "en": "The desired value associated with outside air static pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
@@ -46124,7 +46124,7 @@
       "en": "Outside Air Temperature Economizer Lockout Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air temperature economizer lockout"
+      "en": "The desired value associated with outside air temperature economizer lockout"
     },
     "extends": [
       "dtmi:com:willowinc:OutsideAirTemperatureSetpoint;1"
@@ -46141,7 +46141,7 @@
       "en": "Outside Air Temperature Lockout Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air temperature lockout"
+      "en": "The desired value associated with outside air temperature lockout"
     },
     "extends": [
       "dtmi:com:willowinc:OutsideAirTemperatureSetpoint;1"
@@ -46158,7 +46158,7 @@
       "en": "Outside Air Velocity Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air velocity pressure"
+      "en": "The desired value associated with outside air velocity pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
@@ -46175,7 +46175,7 @@
       "en": "Outside Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the outsie air fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the outsie air fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -46243,7 +46243,7 @@
       "en": "People Occupancy Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor associated with people where \u0027occupancy\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor associated with people where \u0027occupancy\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:OccupancySensor;1"
@@ -47515,7 +47515,7 @@
       "en": "Pump Run Sensor"
     },
     "description": {
-      "en": "The boolean pump status from a sensor associated where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean pump status from a sensor associated where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:RunSensor;1"
@@ -47652,7 +47652,7 @@
       "en": "Relief Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the relief air fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the relief air fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -47819,7 +47819,7 @@
       "en": "Return Fan Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the return air fan to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the return air fan to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuator;1"
@@ -48257,7 +48257,7 @@
       "en": "Steam Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the steam pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the steam pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PumpRunActuator;1"
@@ -49001,7 +49001,7 @@
       "en": "Underfloor Air Delta Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn underfloor air delta pressure"
+      "en": "The desired value associated with underfloor air delta pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
@@ -49018,7 +49018,7 @@
       "en": "Underfloor Air Static Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn underfloor air static pressure"
+      "en": "The desired value associated with underfloor air static pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
@@ -49035,7 +49035,7 @@
       "en": "Underfloor Air Velocity Pressure Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn underfloor air velocity pressure"
+      "en": "The desired value associated with underfloor air velocity pressure"
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
@@ -49097,7 +49097,7 @@
       "en": "Water Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PumpRunActuator;1"
@@ -49251,7 +49251,7 @@
       "en": "Chilled Water Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the chilled water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the chilled water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunActuator;1"
@@ -49351,7 +49351,7 @@
       "en": "Condenser Water Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the condenser water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the condenser water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunActuator;1"
@@ -49433,7 +49433,7 @@
       "en": "Discharge Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor associated with discharge (supply) air where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor associated with discharge (supply) air where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunSensor;1"
@@ -49481,7 +49481,7 @@
       "en": "Effective Cooling Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn effective cooling zone air temperature"
+      "en": "The desired value associated with effective cooling zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
@@ -49499,7 +49499,7 @@
       "en": "Effective Heating Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn effective heating zone air temperature"
+      "en": "The desired value associated with effective heating zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
@@ -49517,7 +49517,7 @@
       "en": "Exhaust Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor associated with exhaust air where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor associated with exhaust air where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunSensor;1"
@@ -49628,7 +49628,7 @@
       "en": "Hot Water Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the hot water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the hot water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunActuator;1"
@@ -49800,7 +49800,7 @@
       "en": "Mixed Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor associated with mixed air where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor associated with mixed air where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunSensor;1"
@@ -49834,7 +49834,7 @@
       "en": "Occupied Cooling Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn occupied cooling zone air temperature"
+      "en": "The desired value associated with occupied cooling zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
@@ -49852,7 +49852,7 @@
       "en": "Occupied Heating Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn occupied heating zone air temperature"
+      "en": "The desired value associated with occupied heating zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
@@ -49870,7 +49870,7 @@
       "en": "Outside Air Temperature Cooling Lockout Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air temperature cooling lockout"
+      "en": "The desired value associated with outside air temperature cooling lockout"
     },
     "extends": [
       "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
@@ -49887,7 +49887,7 @@
       "en": "Outside Air Temperature Heating Lockout Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn outside air temperature heating lockout"
+      "en": "The desired value associated with outside air temperature heating lockout"
     },
     "extends": [
       "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
@@ -49904,7 +49904,7 @@
       "en": "Outside Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor associated with outside air where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor associated with outside air where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunSensor;1"
@@ -49938,7 +49938,7 @@
       "en": "People Inferred Occupancy Sensor"
     },
     "description": {
-      "en": "The boolean status from a sensor associated with people where \u0027inferred occupancy\u0027 is \u0027true\u0027"
+      "en": "The Boolean status from a sensor associated with people where \u0027inferred occupancy\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:PeopleOccupancySensor;1",
@@ -50171,7 +50171,7 @@
       "en": "Relief Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor associated with relief air where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor associated with relief air where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunSensor;1"
@@ -50307,7 +50307,7 @@
       "en": "Return Fan Run Sensor"
     },
     "description": {
-      "en": "The boolean fan status from a sensor associated with return air where \u0027run\u0027 is \u0027true\u0027"
+      "en": "The Boolean fan status from a sensor associated with return air where \u0027run\u0027 is \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:FanRunSensor;1"
@@ -50530,7 +50530,7 @@
       "en": "Steam Bypass Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the steam bypass pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the steam bypass pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunActuator;1"
@@ -50578,7 +50578,7 @@
       "en": "Steam Entering Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the steam entering pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the steam entering pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunActuator;1"
@@ -50626,7 +50626,7 @@
       "en": "Steam Header Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the steam header pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the steam header pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunActuator;1"
@@ -50674,7 +50674,7 @@
       "en": "Steam Leaving Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the steam leaving pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the steam leaving pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunActuator;1"
@@ -50892,7 +50892,7 @@
       "en": "Unoccupied Cooling Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn unoccupied cooling zone air temperature"
+      "en": "The desired value associated with unoccupied cooling zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
@@ -50910,7 +50910,7 @@
       "en": "Unoccupied Heating Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated withn unoccupied heating zone air temperature"
+      "en": "The desired value associated with unoccupied heating zone air temperature"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
@@ -50962,7 +50962,7 @@
       "en": "Chilled Water Bypass Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the chilled water bypass pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the chilled water bypass pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
@@ -51030,7 +51030,7 @@
       "en": "Chilled Water Entering Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the entering chilled water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the entering chilled water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
@@ -51098,7 +51098,7 @@
       "en": "Chilled Water Header Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the chilled water header pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the chilled water header pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
@@ -51166,7 +51166,7 @@
       "en": "Chilled Water Leaving Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the leaving chilled water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the leaving chilled water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
@@ -51234,7 +51234,7 @@
       "en": "Condenser Water Bypass Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the condenser water bypass pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the condenser water bypass pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
@@ -51302,7 +51302,7 @@
       "en": "Condenser Water Entering Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the entering condenser water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the entering condenser water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
@@ -51370,7 +51370,7 @@
       "en": "Condenser Water Header Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the condenser water header pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the condenser water header pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
@@ -51438,7 +51438,7 @@
       "en": "Condenser Water Leaving Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the leaving condenser water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the leaving condenser water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
@@ -51506,7 +51506,7 @@
       "en": "Hot Water Bypass Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the hot water bypass pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the hot water bypass pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
@@ -51574,7 +51574,7 @@
       "en": "Hot Water Entering Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the entering hot water water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the entering hot water water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
@@ -51642,7 +51642,7 @@
       "en": "Hot Water Header Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the hot water header pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the hot water header pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
@@ -51710,7 +51710,7 @@
       "en": "Hot Water Leaving Pump Run Actuator"
     },
     "description": {
-      "en": "The boolean command which sets the state of the leaving hot water pump to \u0027run\u0027 when \u0027true\u0027"
+      "en": "The Boolean command which sets the state of the leaving hot water pump to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunActuator;1"

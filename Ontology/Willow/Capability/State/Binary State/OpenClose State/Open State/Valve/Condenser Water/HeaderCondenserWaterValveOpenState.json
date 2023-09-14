@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderCondenserWaterValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Condenser Water Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the header condenser water valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

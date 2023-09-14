@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Relief Fan Run Actuator"
   },
-  "description": {"en": "The boolean command which sets the state of the relief air fan to 'run' when 'true'"},
+  "description": {"en": "The Boolean command which sets the state of the relief air fan to 'run' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:FanRunActuator;1"
   ],

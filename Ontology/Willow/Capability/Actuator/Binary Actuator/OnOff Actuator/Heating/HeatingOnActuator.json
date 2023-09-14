@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Heating On Actuator"
   },
-  "description": {"en": "The boolean command which turns on an equipment's heating function when 'true'"},
+  "description": {"en": "The Boolean command which turns on an equipment's heating function when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OnActuator;1"
   ],

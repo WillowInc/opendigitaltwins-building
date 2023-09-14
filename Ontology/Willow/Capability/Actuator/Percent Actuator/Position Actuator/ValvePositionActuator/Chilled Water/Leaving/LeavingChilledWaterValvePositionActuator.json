@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:ChilledWaterValveLeavingPositionActuator;1",
+  "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Chilled Water Valve Leaving Position Actuator"
+    "en": "Leaving Chilled Water Valve Position Actuator"
   },
   "description": {"en": "The percent command which sets the position of the leaving chilled water valve"},
   "extends" : [

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Normal Sensor"
   },
-  "description": {"en": "The boolean status from a sensor where 'normal' is 'true'"},
+  "description": {"en": "The Boolean status from a sensor where 'normal' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:NormalFaultSensor;1"
   ],

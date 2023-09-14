@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the relief air damper to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:DamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

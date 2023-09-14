@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:DamperOpenState;1",
+  "@id": "dtmi:com:willowinc:ValveOpenState;1",
   "@type": "Interface",
   "displayName": {
     "en": "Damper Open State"
   },
-  "description": {"en": "The Boolean state of the damper which is 'open' when 'true'"},
+  "description": {"en": "The Boolean state of the valve which is 'open' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OpenState;1"
   ],
