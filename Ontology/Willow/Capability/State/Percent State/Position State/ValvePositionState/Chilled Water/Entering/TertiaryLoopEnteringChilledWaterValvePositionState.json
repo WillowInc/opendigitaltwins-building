@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Chilled Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the tertiary loop entering chilled water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
