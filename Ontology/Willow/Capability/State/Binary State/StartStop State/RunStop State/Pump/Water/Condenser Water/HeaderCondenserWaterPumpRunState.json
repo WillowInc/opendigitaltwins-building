@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HeaderCondenserWaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Condenser Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the condenser water header pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringCondenserWaterPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Condenser Water Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the entering condenser water pump"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
+    "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
