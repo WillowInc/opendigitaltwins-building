@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterLeavingValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Leaving Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the leaving condenser water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
