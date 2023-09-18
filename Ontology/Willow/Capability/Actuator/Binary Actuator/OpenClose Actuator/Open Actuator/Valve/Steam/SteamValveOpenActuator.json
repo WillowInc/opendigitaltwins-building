@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SteamValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the steam valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
