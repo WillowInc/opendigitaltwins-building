@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Leaving Condenser Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the primary loop leaving condenser water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
