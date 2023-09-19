@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringHotWaterPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the entering hot water pump vfd"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:willowinc:EnteringHotWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

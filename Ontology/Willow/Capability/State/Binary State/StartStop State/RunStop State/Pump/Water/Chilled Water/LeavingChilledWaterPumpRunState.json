@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Chilled Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the leaving chilled water pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

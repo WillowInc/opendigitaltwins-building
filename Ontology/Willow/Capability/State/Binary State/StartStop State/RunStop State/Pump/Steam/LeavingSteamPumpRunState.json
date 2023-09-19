@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingSteamPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Steam Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the steam leaving pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

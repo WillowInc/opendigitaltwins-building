@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingCondenserWaterPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Condenser Water Pump Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the leaving condenser water pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

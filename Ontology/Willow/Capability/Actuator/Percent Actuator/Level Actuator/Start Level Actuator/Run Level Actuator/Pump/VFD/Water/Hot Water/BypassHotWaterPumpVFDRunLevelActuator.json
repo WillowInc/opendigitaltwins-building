@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BypassHotWaterPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Hot Water Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the hot water bypass pump vfd"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:willowinc:BypassHotWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

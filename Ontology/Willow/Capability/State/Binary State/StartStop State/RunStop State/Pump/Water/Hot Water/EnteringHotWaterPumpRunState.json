@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringHotWaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the entering hot water pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
