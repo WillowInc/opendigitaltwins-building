@@ -2,9 +2,9 @@
   "@id": "dtmi:com:willowinc:SteamOneThirdValvePositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Steam One Third Valve Position Actuator"
+    "en": "Steam One-Third Valve Position Actuator"
   },
-  "description": {"en": "The percent command which sets the position of the steam one third valve"},
+  "description": {"en": "The percent command which sets the position of the steam one-third valve"},
   "extends" : [
     "dtmi:com:willowinc:SteamValvePositionActuator;1"
   ],

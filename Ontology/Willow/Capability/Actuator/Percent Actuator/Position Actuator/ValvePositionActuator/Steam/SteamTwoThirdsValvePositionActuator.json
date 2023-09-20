@@ -2,9 +2,9 @@
   "@id": "dtmi:com:willowinc:SteamTwoThirdsValvePositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Steam Two Thirds Valve Position Actuator"
+    "en": "Steam Two-Thirds Valve Position Actuator"
   },
-  "description": {"en": "The percent command which sets the position of the steam two thirds valve"},
+  "description": {"en": "The percent command which sets the position of the steam two-thirds valve"},
   "extends" : [
     "dtmi:com:willowinc:SteamValvePositionActuator;1"
   ],
