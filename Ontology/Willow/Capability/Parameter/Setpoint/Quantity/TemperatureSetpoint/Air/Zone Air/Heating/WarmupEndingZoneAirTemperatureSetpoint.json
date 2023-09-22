@@ -2,9 +2,9 @@
   "@id": "dtmi:com:willowinc:WarmupEndingZoneAirTemperatureSetpoint;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Effective Heating Zone Air Temperature Setpoint"
+    "en": "Warmup Ending Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated withn effective heating zone air temperature"},
+  "description": {"en": "The desired value associated with warmup ending zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:UnoccupiedHeatingZoneAirTemperatureSetpoint;1"
   ],

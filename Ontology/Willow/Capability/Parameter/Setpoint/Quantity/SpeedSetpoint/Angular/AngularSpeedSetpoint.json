@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Angular Speed Setpoint"
   },
-  "description": {"en": "The desired value associated withn angular speed"},
+  "description": {"en": "The desired value associated with angular speed"},
   "extends" : [
     "dtmi:com:willowinc:SpeedSetpoint;1"
   ],

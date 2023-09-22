@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:EffectiveCoolingZoneAirTemperatureSetpoint;1",
+  "@id": "dtmi:com:willowinc:CooldownEndingZoneAirTemperatureSetpoint;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Effective Cooling Zone Air Temperature Setpoint"
+    "en": "Cooldown Ending Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated withn effective cooling zone air temperature"},
+  "description": {"en": "The desired value associated with cooldown ending zone air temperature"},
   "extends" : [
     "dtmi:com:willowinc:UnoccupiedCoolingZoneAirTemperatureSetpoint;1"
   ],
