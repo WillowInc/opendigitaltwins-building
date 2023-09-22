@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CO2HighConcentrationAlarm;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "CO2 High Concentration Alarm"
+  },
+  "description": {"en": "The Boolean state of the CO2 high concentration which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:AlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

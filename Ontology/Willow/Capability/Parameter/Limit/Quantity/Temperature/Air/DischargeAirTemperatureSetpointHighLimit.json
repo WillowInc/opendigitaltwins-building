@@ -6,7 +6,7 @@
   },
   "description": {"en": "The high limit associated with discharge (supply) air temperature setpoint"},
   "extends" : [
-    "dtmi:com:willowinc:MaxLimit;1"
+    "dtmi:com:willowinc:AirTemperatureSetpointHighLimit;1"
   ],
   "contents": [
   ],

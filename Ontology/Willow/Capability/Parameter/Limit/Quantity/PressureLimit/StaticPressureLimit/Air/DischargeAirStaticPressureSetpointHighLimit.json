@@ -6,7 +6,7 @@
   },
   "description": {"en": "The high limit associated with discharge (supply) air static pressure setpoint"},
   "extends" : [
-    "dtmi:com:willowinc:MaxLimit;1"
+    "dtmi:com:willowinc:AirStaticPressureSetpointHighLimit;1"
   ],
   "contents": [
     

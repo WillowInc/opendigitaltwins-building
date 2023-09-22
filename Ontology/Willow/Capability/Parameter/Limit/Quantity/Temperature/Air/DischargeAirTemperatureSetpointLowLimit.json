@@ -6,7 +6,7 @@
   },
   "description": {"en": "The low limit associated with discharge (supply) air temperature setpoint"},
   "extends" : [
-    "dtmi:com:willowinc:MinLimit;1"
+    "dtmi:com:willowinc:AirTemperatureSetpointLowLimit;1"
   ],
   "contents": [
   ],

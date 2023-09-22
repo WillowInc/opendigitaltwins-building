@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PressureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with pressure setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:MaxLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

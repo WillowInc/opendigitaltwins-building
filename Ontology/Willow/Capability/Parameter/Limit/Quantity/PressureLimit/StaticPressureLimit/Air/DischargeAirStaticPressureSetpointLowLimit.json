@@ -6,7 +6,7 @@
   },
   "description": {"en": "The low limit associated with discharge (supply) air static pressure setpoint"},
   "extends" : [
-    "dtmi:com:willowinc:MinLimit;1"
+    "dtmi:com:willowinc:AirStaticPressureSetpointLowLimit;1"
   ],
   "contents": [
     
