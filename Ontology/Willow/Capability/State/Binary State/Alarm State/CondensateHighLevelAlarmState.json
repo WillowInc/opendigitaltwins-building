@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:CondensateHighLevelAlarm;1",
+  "@id": "dtmi:com:willowinc:CondensateHighLevelAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Condenste High Level Alarm"
+    "en": "Condenste High Level Alarm State"
   },
   "description": {"en": "The Boolean state of the condensate high level which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

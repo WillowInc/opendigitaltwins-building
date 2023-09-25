@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirCO2AirQualityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air CO2 Air Quality Alarm State"
+  },
+  "description": {"en": "The Boolean state of the CO2 air quality associatd with the inlet air which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air CO2 Air Quality Sensor"
+  },
+  "description": {"en": "The air quality (CO2) feedback from a sensor associated with the return air"},
+  "extends" : [
+    "dtmi:com:willowinc:CO2AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
