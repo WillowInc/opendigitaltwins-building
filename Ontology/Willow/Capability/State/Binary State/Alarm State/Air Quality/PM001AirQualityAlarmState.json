@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PM001AirQualityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM0.1 Air Quality Alarm State"
+  },
+  "description": {"en": "The Boolean state of the PM0.1 air quality alarm which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:AirQualityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

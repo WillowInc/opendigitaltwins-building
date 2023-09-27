@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Setpoint Offset"
+  },
+  "description": {"en": "The desired offset value"},
+  "extends" : [
+    "dtmi:com:willowinc:Parameter;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
