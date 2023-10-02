@@ -39752,6 +39752,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Bypass Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the chilled water bypass valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassCondenserWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39769,6 +39786,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the condenser water bypass valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassHotWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39779,6 +39813,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water bypass valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -39899,6 +39950,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterEnteringValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Entering Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39960,6 +40028,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterValveLeavingPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Leaving Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -40249,6 +40334,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserWaterEnteringValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Entering Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the entering condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40290,6 +40392,23 @@
     },
     "description": {
       "en": "The percent command which sets the position of the condenser water header valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterLeavingValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Leaving Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the leaving condenser water valve"
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
@@ -41837,6 +41956,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the chilled water header valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderCondenserWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41854,6 +41990,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the condenser water header valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderHotWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41864,6 +42017,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water header valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51511,6 +51681,71 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassSteamPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Steam Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the steam bypass pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassSteamPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Steam Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the bypass steam pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassSteamPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Steam Pump Run Level State"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassSteamPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Steam Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the steam bypass pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterDeltaPressureDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -51796,6 +52031,105 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringSteamPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Steam Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the steam entering pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringSteamPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Steam Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering steam pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringSteamPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Steam Pump Run Level State"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringSteamPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Steam Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the steam entering pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the entering water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExhaustFanRunSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -51869,6 +52203,71 @@
     },
     "extends": [
       "dtmi:com:willowinc:ResetSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderSteamPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Steam Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the steam header pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderSteamPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Steam Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the header steam pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderSteamPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Steam Pump Run Level State"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderSteamPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Steam Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the steam header pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunState;1"
     ],
     "contents": [],
     "@context": [
@@ -51983,6 +52382,105 @@
     },
     "extends": [
       "dtmi:com:willowinc:OccupancySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingSteamPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Steam Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the steam leaving pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingSteamPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Steam Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving steam pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingSteamPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Steam Pump Run Level State"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingSteamPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Steam Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the steam leaving pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the leaving water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -53996,6 +54494,228 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the chilled water bypass pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the chilled water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the chilled water bypass pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the condenser water bypass pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the condenser water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the condenser water bypass pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the hot water bypass pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the hot water bypass pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the hot water bypass pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassSteamPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Steam Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:BypassSteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -54584,6 +55304,456 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the entering chilled water pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the entering chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the entering chilled water pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the entering condenser water pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the entering condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the entering condenser water pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the entering hot water water pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the entering hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the entering hot water pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringSteamPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Steam Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam entering pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:EnteringSteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the chilled water header pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the chilled water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the chilled water header pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the condenser water header pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the condenser water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the condenser water header pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the hot water header pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the hot water header pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the hot water header pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderSteamPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Steam Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HeaderSteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -54878,6 +56048,234 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the leaving chilled water pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the leaving chilled water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the leaving chilled water pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the leaving condenser water pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the leaving condenser water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the leaving condenser water pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the leaving hot water pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the leaving hot water pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
+      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the leaving hot water pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingSteamPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Steam Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the steam leaving pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:LeavingSteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PeopleInferredOccupancySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -54958,6 +56356,60 @@
     "extends": [
       "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water bypass pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:BypassChilledWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water bypass pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:BypassCondenserWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water bypass pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:BypassHotWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -55109,6 +56561,114 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering chilled water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:EnteringChilledWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering condenser water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:EnteringCondenserWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the entering hot water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:EnteringHotWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the chilled water header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HeaderChilledWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the condenser water header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HeaderCondenserWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the hot water header pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:HeaderHotWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterBypassPumpVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -55174,6 +56734,60 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving chilled water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:LeavingChilledWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving condenser water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:LeavingCondenserWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterPumpVFDRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Leaving Pump VFD Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the leaving hot water pump vfd"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
+      "dtmi:com:willowinc:LeavingHotWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
