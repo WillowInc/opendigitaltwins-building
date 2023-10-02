@@ -13172,6 +13172,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Parameter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ShopDrawing;1",
     "@type": "Interface",
     "displayName": {
@@ -17479,9 +17496,81 @@
     "extends": [
       "dtmi:com:willowinc:FoodserviceEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "contents"
+        },
+        "description": {
+          "en": "The type of food that is stored within the food display case."
+        },
+        "name": "contents",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Contents Retail Value"
+        },
+        "description": {
+          "en": "The value of the food that is stored within the food display case based on the current retail sales price."
+        },
+        "name": "contentsRetailValue",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "contentsRetailValueUnit",
+        "displayName": {
+          "en": "Contents Retail Value Unit"
+        },
+        "description": {
+          "en": "The currency associated with the contents retail value."
+        },
+        "annotates": "contentsRetailValue",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Contents Replacement Cost"
+        },
+        "description": {
+          "en": "The cost to replace the food that is stored within the food display case."
+        },
+        "name": "contentsReplacementCost",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "contentsReplacementCostUnit",
+        "displayName": {
+          "en": "Contents Replacement Cost Unit"
+        },
+        "description": {
+          "en": "The currency associated with the contents replacement cost."
+        },
+        "annotates": "contentsReplacementCost",
+        "schema": "string",
+        "writable": true
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -20160,6 +20249,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:QuantitySetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Quantity Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value associated with a quantity"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RadiantHeater;1",
     "@type": "Interface",
     "displayName": {
@@ -22681,6 +22787,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirQualityIndexSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -22708,6 +22831,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirQualitySetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Quality Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value associated with air quality"
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantitySetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -23525,6 +23665,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CommonAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Common Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the common alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ComputerMonitor;1",
     "@type": "Interface",
     "displayName": {
@@ -23532,6 +23689,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ICTHardware;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondensateHighLevelAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenste High Level Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the condensate high level which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -23827,6 +24001,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -24136,6 +24327,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:GreenhouseGasEmissionsIntensity;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DirtyFilterAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dirty Filter Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the dirty filter alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -25558,6 +25766,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FlowSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Flow Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between two flows"
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantitySetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FlushometerValve;1",
     "@type": "Interface",
     "displayName": {
@@ -25666,9 +25891,81 @@
     "extends": [
       "dtmi:com:willowinc:FoodDisplayEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "contents"
+        },
+        "description": {
+          "en": "The type of food that is stored within the food display case."
+        },
+        "name": "contents",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Contents Retail Value"
+        },
+        "description": {
+          "en": "The value of the food that is stored within the food display case based on the current retail sales price."
+        },
+        "name": "contentsRetailValue",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "contentsRetailValueUnit",
+        "displayName": {
+          "en": "Contents Retail Value Unit"
+        },
+        "description": {
+          "en": "The currency associated with the contents retail value."
+        },
+        "annotates": "contentsRetailValue",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Contents Replacement Cost"
+        },
+        "description": {
+          "en": "The cost to replace the food that is stored within the food display case."
+        },
+        "name": "contentsReplacementCost",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "contentsReplacementCostUnit",
+        "displayName": {
+          "en": "Contents Replacement Cost Unit"
+        },
+        "description": {
+          "en": "The currency associated with the contents replacement cost."
+        },
+        "annotates": "contentsReplacementCost",
+        "schema": "string",
+        "writable": true
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -26800,6 +27097,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ICTHardware;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeakAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leak Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the leak alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -29089,6 +29403,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PressureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:MaxLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PressureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:MinLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RadiantHeatingManifold;1",
     "@type": "Interface",
     "displayName": {
@@ -30194,6 +30542,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TemperatureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:MaxLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TemperatureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:MinLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ThermalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -30998,6 +31380,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -32048,6 +32447,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirQualityIndexAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Quality Index Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the air quality index alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirQualityIndexSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -32093,6 +32509,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirTemperatureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Temperature Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with air temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirTemperatureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Temperature Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with air temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -32708,6 +33158,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CH2OAirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Formaldehyde (CH2O) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the formaldehyde (CH2O) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CH2OAirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -32824,6 +33291,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChillerGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -32883,6 +33367,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CO2AirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -32893,6 +33394,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CO2AirQualitySetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Carbon Dioxide (CO2) Air Quality Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between outside air carbon dioxide (CO2) air quality and zone/return air carbon dioxide (CO2) air quality"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:COAirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Carbon Monoxide (CO) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the carbon monoxide (CO) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -33151,6 +33686,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -33584,6 +34136,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from an alarm associated with the discharge (supply) air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -33594,6 +34163,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the discharge (supply) air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -34459,6 +35045,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the exhaust air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -34469,6 +35072,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the exhaust air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -34762,6 +35382,23 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FinalFilterDirtyFilterAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Final Filter Dirty Filter Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the dirty filter alarm of the final filter is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DirtyFilterAlarmState;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -35376,6 +36013,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HumidifierLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -35582,6 +36236,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the inlet air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -35592,6 +36263,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the inlet air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -36007,6 +36695,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MixedAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the mixed air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -36017,6 +36722,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the mixed air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -36358,6 +37080,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NOxAirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Nitrogen Oxide (NOx) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the nitrogen oxide (NOx) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:NOxAirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -36375,6 +37114,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:O2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Oxygen (O2) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the oxygen (O2) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:O2AirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -36385,6 +37141,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:O3AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ozone (O3) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the ozone (O3) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -36558,6 +37331,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the outside air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -36568,6 +37358,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the outside air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -36684,6 +37491,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledBeam;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PbAirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Lead (Pb) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the lead (Pb) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -37042,6 +37866,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PM001AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM0.1 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the PM0.1 air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PM001AirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -37052,6 +37893,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PM010AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM1.0 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the PM1.0 air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -37076,6 +37934,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PM025AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM2.5 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the PM2.5 air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PM025AirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -37086,6 +37961,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PM10AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM10 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the PM10 air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -37220,6 +38112,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LinearSpeedSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreFilterDirtyFilterAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pre-Filter Dirty Filter Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the dirty filter alarm for the pre filter is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DirtyFilterAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -37491,6 +38400,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the relief air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -37501,6 +38427,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the relief air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -37607,6 +38550,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the return air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReturnAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -37617,6 +38577,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the return air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -37991,6 +38968,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sulfur Dioxide (SO2) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the sulfur dioxide (SO2) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SO2AirQualitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -38183,6 +39177,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:StaticPressureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Static Pressure Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with static pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressureSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StaticPressureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Static Pressure Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with static pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressureSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamCondensatePump;1",
     "@type": "Interface",
     "displayName": {
@@ -38310,6 +39338,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the steam valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -38505,6 +39550,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TVOCAirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Volatile Organic Compound (TVOC) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the total volatile organic compound (TVOC) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -39071,6 +40133,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VolumeFlowSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Volume Flow Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between two volume flows"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FlowSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39238,6 +40317,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LinearSpeedSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the zone air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39438,6 +40534,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirFlowSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Flow Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between two air flows"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VolumeFlowSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirStaticPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -39449,6 +40562,40 @@
     "extends": [
       "dtmi:com:willowinc:StaticPressureSetpoint;1",
       "dtmi:com:willowinc:AirPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirStaticPressureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Static Pressure Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with air static pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:StaticPressureSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirStaticPressureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Static Pressure Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with air static pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:StaticPressureSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -39769,6 +40916,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the bypass chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassCondenserWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39803,6 +40967,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the bypass condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassHotWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39830,6 +41011,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the bypass hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -40784,6 +41982,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the discharge (supply) air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the discharge (supply) air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -40913,6 +42145,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirTemperatureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Temperature Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with discharge (supply) air temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirTemperatureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Temperature Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with discharge (supply) air temperature setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -41331,6 +42597,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41383,6 +42666,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the entering condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41428,6 +42728,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -41530,6 +42847,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the exhaust air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the exhaust air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -41973,6 +43324,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the header chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderCondenserWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42007,6 +43375,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the header condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderHotWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42034,6 +43419,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the header hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -42419,6 +43821,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the inlet air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the inlet air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -42638,6 +44074,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42690,6 +44143,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the leaving condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42735,6 +44205,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -42895,6 +44382,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Minimum Outside Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the minimum outside air damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirDamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the mixed air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the mixed air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43018,6 +44556,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:GasSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:NO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Nitrogen Dioxide (NO2) Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the nitrogen dioxide (NO2) air quality alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:NOxAirQualityAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -43204,6 +44759,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the outside air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the outside air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44086,6 +45675,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the relief air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the relief air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -44249,6 +45872,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the return air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the return air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -44767,6 +46424,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamOneThirdValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam One-Third Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the steam one-third valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -44791,6 +46465,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamTwoThirdsValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Two-Thirds Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the steam two-thirds valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the steam valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -45271,6 +46979,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:PlumbingWaterSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualityAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Air Quality Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the zone air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the zone air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -45963,6 +47705,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CooldownDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooldown Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air temperature during cooldown"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -46277,6 +48036,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirStaticPressureSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Static Pressure Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with discharge (supply) air static pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirStaticPressureSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirStaticPressureSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Static Pressure Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with discharge (supply) air static pressure setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirStaticPressureSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -46807,6 +48600,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirFlowSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Flow Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between exhaust air flow and outside air flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -49368,6 +51178,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49419,6 +51246,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop entering condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49463,6 +51307,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -49555,6 +51416,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49606,6 +51484,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop leaving condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49650,6 +51545,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -49787,6 +51699,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirFlowSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Flow Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between relief air flow and discharge air flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -49971,6 +51900,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirFlowSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Flow Setpoint Offset"
+    },
+    "description": {
+      "en": "The desired offset value between return air flow and discharge air flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -50248,6 +52194,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50299,6 +52262,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop entering condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50343,6 +52323,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -50435,6 +52432,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50486,6 +52500,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop leaving condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50530,6 +52561,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -50786,6 +52834,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50837,6 +52902,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop entering condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50881,6 +52963,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -50973,6 +53072,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -51024,6 +53140,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop leaving condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -51068,6 +53201,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -51521,6 +53671,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunLevelSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WarmupDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Warmup Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air temperature during warmup"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -55304,6 +57471,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CooldownEndingZoneAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooldown Ending Zone Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with cooldown ending zone air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:UnoccupiedCoolingZoneAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -56356,6 +58540,23 @@
     "extends": [
       "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WarmupEndingZoneAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Warmup Ending Zone Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with warmup ending zone air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:UnoccupiedHeatingZoneAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
