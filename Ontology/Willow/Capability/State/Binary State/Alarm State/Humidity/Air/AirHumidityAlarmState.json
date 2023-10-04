@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AirHumidityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Humidity Alarm State"
+  },
+  "description": {"en": "The Boolean state of the air humidity alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HumidityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

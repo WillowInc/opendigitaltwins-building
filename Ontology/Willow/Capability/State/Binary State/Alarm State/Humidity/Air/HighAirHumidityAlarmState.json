@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighAirHumidityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Air Humidity Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high air humidity alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:AirHumidityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
