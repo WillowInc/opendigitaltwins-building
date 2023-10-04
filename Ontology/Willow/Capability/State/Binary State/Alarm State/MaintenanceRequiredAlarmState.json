@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:MaintenanceRequiredAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Maintenance Required Alarm State"
+  },
+  "description": {"en": "The Boolean state of the maintenance required alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:AlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

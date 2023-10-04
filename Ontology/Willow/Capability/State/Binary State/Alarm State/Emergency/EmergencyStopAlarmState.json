@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EmergencyStopAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Emergency Stop Alarm State"
+  },
+  "description": {"en": "The Boolean state of the emergency stop alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:EmergencyAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

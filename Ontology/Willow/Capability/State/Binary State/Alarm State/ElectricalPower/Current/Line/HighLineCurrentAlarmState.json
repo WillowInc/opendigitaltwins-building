@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighLineCurrentAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Line Current Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high line (input) electrical current alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HighCurrentAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

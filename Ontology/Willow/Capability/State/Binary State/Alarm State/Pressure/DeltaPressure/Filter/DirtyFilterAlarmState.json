@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the dirty filter alarm is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [
-    "dtmi:com:willowinc:AlarmState;1"
+    "dtmi:com:willowinc:DeltaPressureAlarmState;1"
   ],
   "contents": [
 

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CurrentAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Alarm State"
+  },
+  "description": {"en": "The Boolean state of the electrical current alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalPowerAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
