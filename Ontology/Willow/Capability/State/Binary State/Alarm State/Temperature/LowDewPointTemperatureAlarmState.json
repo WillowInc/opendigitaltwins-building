@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowDewPointTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Dew Point Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low dew point temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowTemperatureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

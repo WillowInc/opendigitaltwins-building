@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowReheatCoilLeavingWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Reheat Coil Leaving Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low water leaving the reheat coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowCoilLeavingWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

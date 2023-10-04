@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowPrimaryLoopLeavingCondenserWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Primary Loop Leaving CW Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low leaving condenser water primary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowLeavingCondenserWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

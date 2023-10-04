@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowLeavingHotWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Leaving Hot Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low leaving hot water temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowHotWaterTemperatureAlarmState;1",
+    "dtmi:com:willowinc:LowLeavingWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
