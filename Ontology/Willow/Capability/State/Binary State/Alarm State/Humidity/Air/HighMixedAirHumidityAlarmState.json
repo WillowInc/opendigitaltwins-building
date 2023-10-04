@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:HighInletAirHumidityAlarmState;1",
+  "@id": "dtmi:com:willowinc:HighMixedAirHumidityAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "High Inlet Air Humidity Alarm State"
+    "en": "High Mixed Air Humidity Alarm State"
   },
   "description": {"en": "The Boolean state of the high mixed air humidity alarm is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

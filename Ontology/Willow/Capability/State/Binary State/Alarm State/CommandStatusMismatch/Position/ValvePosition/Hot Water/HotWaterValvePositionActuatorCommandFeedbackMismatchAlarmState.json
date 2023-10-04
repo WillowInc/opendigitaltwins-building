@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Valve Position Actuator Command Feedback Mismatch Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the hot water valve, which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:ValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

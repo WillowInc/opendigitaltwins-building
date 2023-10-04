@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:LowTertiaryLoopLeavingCondenserWaterTemperatureAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Low Tertiary Loop Leaving CW Temperature Alarm State"
+    "en": "Low Tertiary Loop Leaving Condenser Water Temperature Alarm State"
   },
   "description": {"en": "The Boolean state of the alarm associated with low leaving condenser water tertiary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:LowTertiaryLoopEnteringChilledWaterTemperatureAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Low Tertiary Loop Entering CHW Temperature Alarm State"
+    "en": "Low Tertiary Loop Entering Chilled Water Temperature Alarm State"
   },
   "description": {"en": "The Boolean state of the alarm associated with low entering chilled water tertiary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

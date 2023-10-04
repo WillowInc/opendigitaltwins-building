@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:LowSecondaryLoopEnteringCondenserWaterTemperatureAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Low Secondary Loop Entering CW Temperature Alarm State"
+    "en": "Low Secondary Loop Entering Condenser Water Temperature Alarm State"
   },
   "description": {"en": "The Boolean state of the alarm associated with low entering condenser water secondary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

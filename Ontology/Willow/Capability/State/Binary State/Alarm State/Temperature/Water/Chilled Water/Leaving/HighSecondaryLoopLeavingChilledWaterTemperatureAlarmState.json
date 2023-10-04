@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HighSecondaryLoopLeavingChilledWaterTemperatureAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "High Secondary Loop Leaving CHW Temperature Alarm State"
+    "en": "High Secondary Loop Leaving Chilled Water Temperature Alarm State"
   },
   "description": {"en": "The Boolean state of the alarm associated with high leaving chilled water secondary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

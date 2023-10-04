@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HighSecondaryLoopEnteringCondenserWaterTemperatureAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "High Secondary Loop Entering CW Temperature Alarm State"
+    "en": "High Secondary Loop Entering Condenser Water Temperature Alarm State"
   },
   "description": {"en": "The Boolean state of the alarm associated with high entering condenser water secondary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [

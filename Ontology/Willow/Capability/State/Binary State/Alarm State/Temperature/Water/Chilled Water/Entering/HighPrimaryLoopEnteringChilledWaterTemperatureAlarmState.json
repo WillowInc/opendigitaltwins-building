@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HighPrimaryLoopEnteringChilledWaterTemperatureAlarmState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "High Primary Loop Entering CHW Temperature Alarm State"
+    "en": "High Primary Loop Entering Chilled Water Temperature Alarm State"
   },
   "description": {"en": "The Boolean state of the alarm associated with high entering chilled water primary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [
