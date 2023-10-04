@@ -3672,6 +3672,182 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Software;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Software"
+    },
+    "description": {
+      "en": "A set of instructions, data, and programs used to operate a computer or device and execute specific tasks."
+    },
+    "extends": [],
+    "contents": [
+      {
+        "@type": "Relationship",
+        "displayName": {
+          "en": "hardware installed on"
+        },
+        "description": {
+          "en": "The physical hardware or device that the software is installed on."
+        },
+        "name": "hardwareInstalledOn",
+        "target": "dtmi:com:willowinc:Asset;1"
+      },
+      {
+        "@type": "Relationship",
+        "displayName": {
+          "en": "installed by"
+        },
+        "name": "installedBy",
+        "target": "dtmi:com:willowinc:Agent;1"
+      },
+      {
+        "@type": "Relationship",
+        "displayName": {
+          "en": "serviced by"
+        },
+        "name": "servicedBy",
+        "target": "dtmi:com:willowinc:Agent;1"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasDocument",
+        "displayName": {
+          "en": "has document"
+        },
+        "target": "dtmi:com:willowinc:Document;1"
+      },
+      {
+        "@type": "Relationship",
+        "name": "hasSettings",
+        "displayName": {
+          "en": "has settings"
+        },
+        "description": {
+          "en": "Used to extend a twin\u0027s base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+        },
+        "target": "dtmi:com:willowinc:Settings;1"
+      },
+      {
+        "@type": "Relationship",
+        "description": {
+          "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
+        },
+        "displayName": {
+          "en": "owned by"
+        },
+        "name": "ownedBy",
+        "target": "dtmi:com:willowinc:Agent;1"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "name"
+        },
+        "name": "name",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "description",
+        "displayName": {
+          "en": "Description"
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "externalIds",
+        "displayName": {
+          "en": "External IDs"
+        },
+        "schema": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "externalIdName",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "externalIdValue",
+            "schema": "string"
+          }
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "customProperties",
+        "displayName": {
+          "en": "Custom Properties"
+        },
+        "schema": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "sourceName",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "sourceProperties",
+            "schema": {
+              "@type": "Map",
+              "mapKey": {
+                "name": "propertyName",
+                "schema": "string"
+              },
+              "mapValue": {
+                "name": "propertyValue",
+                "schema": "string"
+              }
+            }
+          }
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "version",
+        "displayName": {
+          "en": "Version"
+        },
+        "description": {
+          "en": "Indicates the version number of the software."
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "installation date"
+        },
+        "name": "installationDate",
+        "schema": "dateTime",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "lastUpdatedDate",
+        "displayName": {
+          "en": "Last Updated Date"
+        },
+        "schema": "dateTime",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "enabled",
+        "displayName": {
+          "en": "Is Enabled"
+        },
+        "writable": true,
+        "schema": "boolean"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Space;1",
     "@type": "Interface",
     "displayName": {
@@ -4557,6 +4733,23 @@
         "target": "dtmi:com:willowinc:Sensor;1"
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Application;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Application"
+    },
+    "description": {
+      "en": "A computer programed designed to carry out a specific task other than the operation of the computer itself, a.k.a. software application, application program, or app."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Software;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -7134,6 +7327,23 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SystemSoftware;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "System Software"
+    },
+    "description": {
+      "en": "A type of software responsible for managing the hardware and basic functionality of the computer or device, i.e. operating system, device drivers, or firmware."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Software;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -10115,6 +10325,36 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ConnectorApplication;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Connector Application"
+    },
+    "description": {
+      "en": "An application whose task is to connect to and communicate with other software applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Application;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "direction",
+        "displayName": {
+          "en": "Direction"
+        },
+        "description": {
+          "en": "Indicates whether the connector is Source or Destination. Source indicates data flowing from an external system to the org. Destination indicates data flowing from the org to an external system."
+        },
+        "writable": true,
+        "schema": "string"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
