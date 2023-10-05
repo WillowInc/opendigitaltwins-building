@@ -29,7 +29,7 @@
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {

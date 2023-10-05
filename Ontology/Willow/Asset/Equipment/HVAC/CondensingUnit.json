@@ -60,7 +60,7 @@
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {
@@ -81,7 +81,7 @@
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {
@@ -102,7 +102,7 @@
       "name": "netSensibleHeatingCapacityUnit",
       "annotates": "netSensibleHeatingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {
@@ -123,7 +123,7 @@
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {

@@ -26,7 +26,7 @@
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {
@@ -47,7 +47,7 @@
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
-      "schema": "EnergyRateUnit",
+      "schema": "PowerUnit",
       "writable": true
     },
     {
