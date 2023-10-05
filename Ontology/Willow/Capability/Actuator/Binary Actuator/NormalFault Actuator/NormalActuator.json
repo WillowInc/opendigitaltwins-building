@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Normal Actuator"
   },
-  "description": {"en": "The boolean command which sets the state of the equipment to 'normal' when 'true'"},
+  "description": {"en": "The Boolean command which sets the state of the equipment to 'normal' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:NormalFaultActuator;1"
   ],

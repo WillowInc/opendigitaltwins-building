@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:TotalGreenhouseGasEmissionsIntensity;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Greenhouse Gas Emissions"
+  },
+  "description": {
+    "en": "The total quantity of greenhouse gas emissions normalized per facility area attributed directly and indirectly to an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:GreenhouseGasEmissionsIntensity;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

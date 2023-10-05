@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the entering hot water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

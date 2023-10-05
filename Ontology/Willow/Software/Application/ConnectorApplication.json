@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:com:willowinc:ConnectorApplication;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Connector Application"
+  },
+  "description": {
+    "en": "An application whose task is to connect to and communicate with other software applications."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Application;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "direction",
+      "displayName": {
+        "en": "Direction"
+      },
+      "description": {
+        "en": "Indicates whether the connector is Source or Destination. Source indicates data flowing from an external system to the org. Destination indicates data flowing from the org to an external system."
+      },
+      "writable": true,
+      "schema": "string"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

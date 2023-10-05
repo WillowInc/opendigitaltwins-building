@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Binary Actuator"
   },
-  "description": {"en": "The boolean command which sets the state of the equipment"},
+  "description": {"en": "The Boolean command which sets the state of the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Actuator;1"
   ],

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air CO2 Air Quality Alarm State"
+  },
+  "description": {"en": "The Boolean state of the CO2 air quality associatd with the return air which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

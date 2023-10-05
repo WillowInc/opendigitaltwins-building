@@ -57,6 +57,18 @@
       },
       "name": "ductInlet",
       "schema": "dtmi:com:willowinc:DuctConnection;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "excluded from comfort analytics"
+      },
+      "name": "excludedFromComfortAnalytics",
+      "description": {
+        "en": "When true, the equipment will not be included in comfort KPIs or other comfort analytics."
+      },
+      "schema": "boolean",
+      "writable": true
     }
   ],
   "@context": [

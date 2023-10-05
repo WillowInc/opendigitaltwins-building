@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BypassChilledWaterPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Chilled Water Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the chilled water bypass pump"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

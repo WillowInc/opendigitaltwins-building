@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Hot Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the tertiary loop leaving hot water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

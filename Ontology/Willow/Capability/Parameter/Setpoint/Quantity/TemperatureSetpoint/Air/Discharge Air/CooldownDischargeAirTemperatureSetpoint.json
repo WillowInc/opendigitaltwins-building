@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CooldownDischargeAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooldown Discharge Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air temperature during cooldown"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

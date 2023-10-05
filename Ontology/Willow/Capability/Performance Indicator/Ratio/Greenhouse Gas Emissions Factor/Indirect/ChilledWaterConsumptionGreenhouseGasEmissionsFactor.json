@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterConsumptionGreenhouseGasEmissionsFactor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Consumption Greenhouse Gas Emissions Factor"
+  },
+  "description": {
+    "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of chilled water from a utility."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

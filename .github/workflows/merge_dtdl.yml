@@ -1,0 +1,44 @@
+name: Merge DTDL
+
+on:
+  workflow_dispatch:
+  push:
+    branches: 
+      - "main"
+    paths:
+      - "Ontology/Willow/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token:  ${{ secrets.GITHUB_TOKEN }}
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Build DTDL Merger
+      run: dotnet build Tools/DTDLMerger/DTDLMerger.csproj
+    - name: Run DTDL Merger on Willow Ontology DTDLv3
+      run: dotnet run --project Tools/DTDLMerger/DTDLMerger.csproj Ontology/Willow/ > Metadata/Willow.Ontology.DTDLv3.jsonld
+    - name: Set .nuspec version
+      id: set-version
+      uses: vers-one/dotnet-project-version-updater@v1.3
+      with:
+        files: "Metadata/*.nuspec"
+        version: bump-revision
+    - name: 'Commit new .nuspec version'
+      run: |
+        git config --global user.email "admin@willowinc.com"
+        git config --global user.name "Auto Generated"
+        git checkout -b auto/${{ steps.set-version.outputs.newVersion }}
+        git add .
+        git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
+        git push --set-upstream origin auto/${{ steps.set-version.outputs.newVersion }}
+        gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}" --fill
+        gh pr merge --merge --delete-branch

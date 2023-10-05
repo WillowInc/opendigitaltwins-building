@@ -6,7 +6,7 @@
   },
   "description": {"en": "The reactive electrical energy feedback from a sensor associated with phase a net"},
   "extends" : [
-    "dtmi:com:willowinc:ReactiveElectricalEnergySensor;1"
+    "dtmi:com:willowinc:PhaseAReactiveElectricalEnergySensor;1"
   ],
   "contents": [
 

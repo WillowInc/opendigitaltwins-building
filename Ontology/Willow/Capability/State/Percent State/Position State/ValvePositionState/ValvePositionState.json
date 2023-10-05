@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valve Position State"
+  },
+  "description": {"en": "The percent position state of the valve"},
+  "extends" : [
+    "dtmi:com:willowinc:PositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

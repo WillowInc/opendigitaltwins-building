@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterValvePositionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Valve Position Sensor"
+  },
+  "description": {"en": "The valve position percent feedback from a sensor associated with condenser water"},
+  "extends" : [
+    "dtmi:com:willowinc:ValvePositionSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

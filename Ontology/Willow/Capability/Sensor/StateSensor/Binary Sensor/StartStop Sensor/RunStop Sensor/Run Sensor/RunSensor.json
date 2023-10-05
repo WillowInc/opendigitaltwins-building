@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Run Sensor"
   },
-  "description": {"en": "The boolean status from a sensor where 'run' is 'true'"},
+  "description": {"en": "The Boolean status from a sensor where 'run' is 'true'"},
   "extends" : [
     "dtmi:com:willowinc:RunStopSensor;1",
     "dtmi:com:willowinc:StartSensor;1"

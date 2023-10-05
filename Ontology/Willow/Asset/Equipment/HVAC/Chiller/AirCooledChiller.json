@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:willowinc:AirCooledChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air-Cooled Chiller"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Chiller;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Condenser"
+      },
+      "name": "condenser",
+      "schema": "dtmi:com:willowinc:AirCooledCondenser;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

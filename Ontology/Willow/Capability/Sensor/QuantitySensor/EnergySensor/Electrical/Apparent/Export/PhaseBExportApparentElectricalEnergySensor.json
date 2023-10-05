@@ -6,7 +6,7 @@
   },
   "description": {"en": "The apparent electrical energy feedback from a sensor associated with phase b export"},
   "extends" : [
-    "dtmi:com:willowinc:ApparentElectricalEnergySensor;1"
+    "dtmi:com:willowinc:PhaseBApparentElectricalEnergySensor;1"
   ],
   "contents": [
 

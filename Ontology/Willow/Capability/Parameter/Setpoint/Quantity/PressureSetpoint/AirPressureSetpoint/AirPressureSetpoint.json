@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Air Pressure Setpoint"
   },
-  "description": {"en": "The desired value associated withn air pressure"},
+  "description": {"en": "The desired value associated with air pressure"},
   "extends" : [
     "dtmi:com:willowinc:PressureSetpoint;1"
   ],

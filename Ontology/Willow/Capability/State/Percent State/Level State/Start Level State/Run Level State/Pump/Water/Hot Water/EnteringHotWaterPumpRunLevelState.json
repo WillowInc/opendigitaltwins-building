@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringHotWaterPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the entering hot water pump"},
+  "extends" : [
+    "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
+    "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

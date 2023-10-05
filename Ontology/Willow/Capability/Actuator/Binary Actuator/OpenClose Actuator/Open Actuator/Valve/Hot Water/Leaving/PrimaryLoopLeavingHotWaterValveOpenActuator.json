@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Leaving Hot Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the primary loop leaving hot water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

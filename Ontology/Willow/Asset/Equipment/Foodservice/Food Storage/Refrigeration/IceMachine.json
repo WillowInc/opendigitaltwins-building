@@ -5,7 +5,7 @@
     "en": "Ice Machine"
   },
   "extends" : [
-    "dtmi:com:willowinc:RefrigerationEquipment;1"
+    "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
   ],
   "contents": [
   ],

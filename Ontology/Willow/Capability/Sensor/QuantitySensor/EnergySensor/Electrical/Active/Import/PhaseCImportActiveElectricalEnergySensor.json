@@ -6,7 +6,7 @@
   },
   "description": {"en": "The active electrical energy feedback from a sensor associated with phase c import"},
   "extends" : [
-    "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    "dtmi:com:willowinc:PhaseCActiveElectricalEnergySensor;1"
   ],
   "contents": [
 

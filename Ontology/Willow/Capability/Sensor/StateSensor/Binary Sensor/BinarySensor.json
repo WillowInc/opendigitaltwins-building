@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Binary Sensor"
   },
-  "description": {"en": "The boolean status from a sensor"},
+  "description": {"en": "The Boolean status from a sensor"},
   "extends" : [
     "dtmi:com:willowinc:StateSensor;1"
   ],

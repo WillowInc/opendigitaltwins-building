@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Header Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the chilled water header pump vfd"},
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
