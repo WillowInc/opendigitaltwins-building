@@ -9,26 +9,20 @@
   ],
   "contents": [
     {
-      "@type": "Property",
+      "@type": "Component",
       "displayName": {
-        "en": "type"
+        "en": "Evaporator"
       },
-      "name": "type",
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "enumValue": "WaterCooled",
-            "name": "WaterCooled"
-          },
-          {
-            "enumValue": "AirCooled",
-            "name": "AirCooled"
-          }
-        ],
-        "valueSchema": "string"
+      "name": "evaporator",
+      "schema": "dtmi:com:willowinc:Evaporator;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Compressor"
       },
-      "writable": true
+      "name": "compressor",
+      "schema": "dtmi:com:willowinc:Compressor;1"
     },
     {
       "@type": "Property",
@@ -57,7 +51,7 @@
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
-      "schema": "PowerUnit",
+      "schema": "EnergyRateUnit",
       "writable": true
     },
     {
@@ -78,41 +72,82 @@
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
-      "schema": "PowerUnit",
+      "schema": "EnergyRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "design cooling capacity"
+      },
+      "name": "designCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design cooling capacity unit"
+      },
+      "name": "designCoolingCapacityUnit",
+      "annotates": "designCoolingCapacity",
+      "overrides": "unit",
+      "schema": "EnergyRateUnit",
       "writable": true
     },
     {
       "@type": "Property",
       "displayName": {
-        "en": "compressor type"
+        "en": "design KW/Ton"
       },
-      "name": "compressorType",
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "enumValue": "Scroll",
-            "name": "Scroll"
-          },
-          {
-            "enumValue": "Screw",
-            "name": "Screw"
-          },
-          {
-            "enumValue": "Reciprocol",
-            "name": "Reciprocol"
-          },
-          {
-            "enumValue": "Centrifugal",
-            "name": "Centrifugal"
-          },
-          {
-            "enumValue": "Absorption",
-            "name": "Absorption"
-          }
-        ],
-        "valueSchema": "string"
+      "name": "designKWPerTon",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design coefficient of performance (COP)"
       },
+      "name": "designCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design energy efficiency ratio (EER)"
+      },
+      "name": "designEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal KW/Ton"
+      },
+      "name": "nominalKWPerTon",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal coefficient of performance (COP)"
+      },
+      "name": "nominalCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal energy efficiency ratio (EER)"
+      },
+      "name": "nominalEnergyEfficiencyRatio",
+      "schema": "double",
       "writable": true
     }
   ],
