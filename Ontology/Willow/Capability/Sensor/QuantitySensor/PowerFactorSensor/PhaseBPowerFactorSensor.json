@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PhaseBPowerFactorSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase B Power Factor Sensor"
+  },
+  "description": {"en": "The power factor feedback from a sensor associated with phase b"},
+  "extends" : [
+    "dtmi:com:willowinc:PowerFactorSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

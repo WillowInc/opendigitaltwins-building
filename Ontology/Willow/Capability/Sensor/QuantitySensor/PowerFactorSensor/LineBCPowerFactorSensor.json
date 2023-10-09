@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LineBCPowerFactorSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Line B-C Power Factor Sensor"
+  },
+  "description": {"en": "The power factor feedback from a sensor associated with line b-c"},
+  "extends" : [
+    "dtmi:com:willowinc:PowerFactorSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
