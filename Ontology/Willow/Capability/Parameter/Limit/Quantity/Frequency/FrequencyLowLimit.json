@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:PressureSetpointLowLimit;1",
+  "@id": "dtmi:com:willowinc:FrequencyLowLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pressure Setpoint Low Limit"
+    "en": "Frequency Low Limit"
   },
-  "description": {"en": "The low limit associated with pressure setpoint"},
+  "description": {"en": "The low limit associated with frequency"},
   "extends" : [
     "dtmi:com:willowinc:LowLimit;1"
   ],

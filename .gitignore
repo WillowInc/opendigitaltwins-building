@@ -1,5 +1,7 @@
 Ontology/DTDLValidator.exe
+Metadata/w3.jsonlb
 
+.gitignore
 .DS_Store
 
 ## Ignore Visual Studio temporary files, build results, and
@@ -342,3 +344,4 @@ reports/
 #DocFX artifacts
 documentation/_site/
 documentation/**/_site/
+Metadata/w3.jsonlb

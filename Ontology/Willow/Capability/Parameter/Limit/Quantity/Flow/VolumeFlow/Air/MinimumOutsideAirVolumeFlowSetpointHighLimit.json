@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:MinimumOutsideAirVolumeFlowSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Minimum Outside Air Volume Flow Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with minimum outside air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

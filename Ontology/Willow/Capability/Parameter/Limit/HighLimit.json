@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:MaxLimit;1",
+  "@id": "dtmi:com:willowinc:HighLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Max Limit"
+    "en": "High Limit"
   },
   "description": {"en": "The upper limit on the equipment"},
   "extends" : [

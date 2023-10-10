@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatStageCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheat Stage Count Sensor"
+  },
+  "description": {"en": "The counted number of active stages of reheat"},
+  "extends" : [
+    "dtmi:com:willowinc:StageCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

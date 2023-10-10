@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:PressureSetpointLowLimit;1",
+  "@id": "dtmi:com:willowinc:FlowSetpointLowLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pressure Setpoint Low Limit"
+    "en": "Flow Setpoint Low Limit"
   },
-  "description": {"en": "The low limit associated with pressure setpoint"},
+  "description": {"en": "The low limit associated with flow setpoint"},
   "extends" : [
     "dtmi:com:willowinc:LowLimit;1"
   ],

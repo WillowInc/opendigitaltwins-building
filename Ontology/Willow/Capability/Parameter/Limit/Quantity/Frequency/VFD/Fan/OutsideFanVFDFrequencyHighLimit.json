@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideFanVFDFrequencyHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Fan VFD Frequency High Limit"
+  },
+  "description": {"en": "The high limit associated with outside fan vfd output frequency"},
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDFrequencyHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

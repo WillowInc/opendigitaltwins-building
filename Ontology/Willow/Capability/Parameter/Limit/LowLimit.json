@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:MinLimit;1",
+  "@id": "dtmi:com:willowinc:LowLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Min Limit"
+    "en": "Low Limit"
   },
   "description": {"en": "The lower limit on the equipment"},
   "extends" : [

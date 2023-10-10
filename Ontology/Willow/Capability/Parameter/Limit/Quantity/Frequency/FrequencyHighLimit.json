@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:PressureSetpointHighLimit;1",
+  "@id": "dtmi:com:willowinc:FrequencyHighLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pressure Setpoint High Limit"
+    "en": "Frequency High Limit"
   },
-  "description": {"en": "The high limit associated with pressure setpoint"},
+  "description": {"en": "The high limit associated with frequency"},
   "extends" : [
     "dtmi:com:willowinc:HighLimit;1"
   ],

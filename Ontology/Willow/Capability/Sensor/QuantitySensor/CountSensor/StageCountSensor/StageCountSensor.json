@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:StageCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stage Count Sensor"
+  },
+  "description": {"en": "The counted number of active stages"},
+  "extends" : [
+    "dtmi:com:willowinc:CountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

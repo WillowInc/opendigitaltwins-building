@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AirQualitySetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Quality Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with air quality setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:LowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
