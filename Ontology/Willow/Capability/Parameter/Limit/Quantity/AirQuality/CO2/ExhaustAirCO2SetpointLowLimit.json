@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustAirCO2SetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air CO2 Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with air quality (CO2) setpoint for exhaust) air"},
+  "extends" : [
+    "dtmi:com:willowinc:CO2AirQualitySetpointLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

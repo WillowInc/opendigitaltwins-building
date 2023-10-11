@@ -6,7 +6,7 @@
   },
   "description": {"en": "The low limit associated with pressure setpoint"},
   "extends" : [
-    "dtmi:com:willowinc:MinLimit;1"
+    "dtmi:com:willowinc:LowLimit;1"
   ],
   "contents": [
     

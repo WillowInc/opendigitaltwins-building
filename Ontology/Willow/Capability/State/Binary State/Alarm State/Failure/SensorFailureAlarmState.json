@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SensorFailureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensir Failure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the sensor failure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:FailureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeFanVFDFrequencyLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Fan VFD Frequency Low Limit"
+  },
+  "description": {"en": "The low limit associated with discharge fan vfd output frequency"},
+  "extends" : [
+    "dtmi:com:willowinc:FanVFDFrequencyLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

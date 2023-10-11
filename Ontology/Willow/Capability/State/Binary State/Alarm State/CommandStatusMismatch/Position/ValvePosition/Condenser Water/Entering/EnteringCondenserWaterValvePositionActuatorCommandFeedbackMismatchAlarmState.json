@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Condenser Water Valve Position Actuator Command Feedback Mismatch Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the entering condenser water valve, which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

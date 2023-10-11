@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalPowerLossAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Power Loss Alarm State"
+  },
+  "description": {"en": "The Boolean state of the electrical power loss alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalPowerAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

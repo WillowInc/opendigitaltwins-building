@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HighLeavingHotWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Leaving Hot Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high leaving hot water temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HighHotWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

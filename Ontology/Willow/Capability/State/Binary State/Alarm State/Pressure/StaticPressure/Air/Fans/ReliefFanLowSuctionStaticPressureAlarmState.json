@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefFanLowSuctionStaticPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Fan Low Suction Static Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the relief fan low suction static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

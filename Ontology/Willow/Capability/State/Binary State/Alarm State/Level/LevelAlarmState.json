@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LevelAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Level Alarm State"
+  },
+  "description": {"en": "The Boolean state of the level alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:AlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

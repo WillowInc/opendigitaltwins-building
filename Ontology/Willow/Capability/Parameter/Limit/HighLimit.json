@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Limit"
+  },
+  "description": {"en": "The upper limit on the equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:Limit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

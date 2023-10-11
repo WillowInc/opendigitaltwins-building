@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterTemperatureSetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Temperature Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with condenser water temperature setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterTemperatureSetpointLowLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:FrequencyLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Frequency Low Limit"
+  },
+  "description": {"en": "The low limit associated with frequency"},
+  "extends" : [
+    "dtmi:com:willowinc:LowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

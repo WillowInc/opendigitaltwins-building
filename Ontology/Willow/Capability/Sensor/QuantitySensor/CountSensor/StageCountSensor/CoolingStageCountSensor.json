@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingStageCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Stage Count Sensor"
+  },
+  "description": {"en": "The counted number of active stages of cooling in a system where multiple stages of cooling are enabled and disabled for cooling control"},
+  "extends" : [
+    "dtmi:com:willowinc:StageCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

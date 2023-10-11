@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Cooling Coil Leaving Air Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low air leaving the cooling coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

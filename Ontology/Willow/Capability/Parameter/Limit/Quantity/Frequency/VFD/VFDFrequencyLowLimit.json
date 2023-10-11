@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:VFDFrequencyLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VFD Frequency Low Limit"
+  },
+  "description": {"en": "The low limit associated with vfd output frequency"},
+  "extends" : [
+    "dtmi:com:willowinc:FrequencyLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

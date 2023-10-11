@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Min Limit"
   },
-  "description": {"en": "The lower limit on the equipment"},
+  "description": {"en": "The minimum lower limit on the equipment"},
   "extends" : [
     "dtmi:com:willowinc:Limit;1"
   ],

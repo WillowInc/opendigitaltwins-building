@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowDeltaCondenserWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Delta Condenser Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low condenser water delta temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmState;1",
+    "dtmi:com:willowinc:LowDeltaWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

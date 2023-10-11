@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HighExhaustAirTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Exhaust Air Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high exhaust air temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:AirFlowProvenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Flow Proven State"
+  },
+  "description": {"en": "The Boolean state of the air flow which is 'proven' when 'true' and 'not proven' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:FlowProvenState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

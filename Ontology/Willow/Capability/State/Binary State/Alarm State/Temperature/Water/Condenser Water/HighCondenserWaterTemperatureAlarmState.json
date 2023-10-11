@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Condenser Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high condenser water temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HighWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighCoilEnteringWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Coil Entering Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high water entering the coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HighWaterTemperatureAlarmState;1",
+    "dtmi:com:willowinc:HighEnteringWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

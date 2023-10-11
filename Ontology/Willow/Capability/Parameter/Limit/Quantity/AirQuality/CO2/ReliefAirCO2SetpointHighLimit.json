@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefAirCO2SetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air CO2 Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with air quality (CO2) setpoint for relief air"},
+  "extends" : [
+    "dtmi:com:willowinc:CO2AirQualitySetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

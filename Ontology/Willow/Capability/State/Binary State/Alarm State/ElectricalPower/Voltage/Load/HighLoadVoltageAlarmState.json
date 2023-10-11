@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighLoadVoltageAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Load Voltage Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high load (output) voltage alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:HighVoltageAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

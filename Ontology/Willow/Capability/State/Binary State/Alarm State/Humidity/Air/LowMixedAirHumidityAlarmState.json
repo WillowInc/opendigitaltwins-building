@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowMixedAirHumidityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Mixed Air Humidity Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low mixed air humidity alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:LowAirHumidityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
