@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Stage Count Sensor"
   },
-  "description": {"en": "The counted number of active stages"},
+  "description": {"en": "The counted number of active stages of components to serve a function within a piece of equipment"},
   "extends" : [
     "dtmi:com:willowinc:CountSensor;1"
   ],

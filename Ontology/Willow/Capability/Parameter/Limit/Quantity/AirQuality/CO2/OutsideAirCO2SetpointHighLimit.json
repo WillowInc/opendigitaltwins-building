@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualitySetpointHighLimit;1",
+  "@id": "dtmi:com:willowinc:OutsideAirCO2SetpointHighLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Outside Air CO2 Air Quality Setpoint High Limit"
+    "en": "Outside Air CO2 Setpoint High Limit"
   },
   "description": {"en": "The high limit associated with air quality (CO2) setpoint for outside air"},
   "extends" : [

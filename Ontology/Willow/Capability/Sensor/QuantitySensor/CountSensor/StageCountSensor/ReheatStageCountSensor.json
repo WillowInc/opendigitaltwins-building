@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Reheat Stage Count Sensor"
   },
-  "description": {"en": "The counted number of active stages of reheat"},
+  "description": {"en": "The counted number of active stages of reheat in a system where multiple stages of reheat are enabled and disabled for reheat control"},
   "extends" : [
     "dtmi:com:willowinc:StageCountSensor;1"
   ],

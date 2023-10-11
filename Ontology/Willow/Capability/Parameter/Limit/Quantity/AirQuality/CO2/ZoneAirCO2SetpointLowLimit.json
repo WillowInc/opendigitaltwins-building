@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualitySetpointLowLimit;1",
+  "@id": "dtmi:com:willowinc:ZoneAirCO2SetpointLowLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Zone Air CO2 Air Quality Setpoint Low Limit"
+    "en": "Zone Air CO2 Setpoint Low Limit"
   },
   "description": {"en": "The low limit associated with air quality (CO2) setpoint for zone air"},
   "extends" : [

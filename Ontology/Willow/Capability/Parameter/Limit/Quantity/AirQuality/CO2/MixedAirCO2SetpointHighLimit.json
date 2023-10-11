@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:MixedAirCO2AirQualitySetpointHighLimit;1",
+  "@id": "dtmi:com:willowinc:MixedAirCO2SetpointHighLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Mixed Air CO2 Air Quality Setpoint High Limit"
+    "en": "Mixed Air CO2 Setpoint High Limit"
   },
   "description": {"en": "The high limit associated with air quality (CO2) setpoint for mixed air"},
   "extends" : [

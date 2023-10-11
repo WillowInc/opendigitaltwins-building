@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Cell Stage Count Sensor"
   },
-  "description": {"en": "The counted number of active cells"},
+  "description": {"en": "The counted number of active cells within a cooling tower"},
   "extends" : [
     "dtmi:com:willowinc:StageCountSensor;1"
   ],

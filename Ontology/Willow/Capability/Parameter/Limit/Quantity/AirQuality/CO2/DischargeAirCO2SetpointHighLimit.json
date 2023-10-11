@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualitySetpointHighLimit;1",
+  "@id": "dtmi:com:willowinc:DischargeAirCO2SetpointHighLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Discharge Air CO2 Air Quality Setpoint High Limit"
+    "en": "Discharge Air CO2 Setpoint High Limit"
   },
   "description": {"en": "The high limit associated with air quality (CO2) setpoint for discharge (supply) air"},
   "extends" : [

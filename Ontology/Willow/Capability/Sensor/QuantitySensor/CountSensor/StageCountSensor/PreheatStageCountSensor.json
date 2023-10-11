@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Preheat Stage Count Sensor"
   },
-  "description": {"en": "The counted number of active stages of preheat"},
+  "description": {"en": "The counted number of active stages of preheat in a system where multiple stages of preheat are enabled and disabled for preheat control"},
   "extends" : [
     "dtmi:com:willowinc:StageCountSensor;1"
   ],
