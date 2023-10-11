@@ -7,8 +7,7 @@
   "description": {
     "en": "An account is associated with a contractual relationship between a buyer and seller under which payment may be made at a later time. General ledger accounts are an exception to this, however, and typically do not have account holders, including internal account holders. They may, on the other hand, have responsible parties. (FIBO Ontology)"
   },
-  "extends" : [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -96,6 +95,18 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "Mapped IDs"
+      },
+      "name": "mappedIds",
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:willowinc:AccountMappedIdObject;1"
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "name"
       },
       "name": "name",
@@ -174,6 +185,42 @@
           }
         }
       }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:AccountMappedIdObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "exactType",
+          "displayName": {
+            "en": "Exact Type"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scope",
+          "displayName": {
+            "en": "Scope"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scopeId",
+          "displayName": {
+            "en": "Scope ID"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "value",
+          "displayName": {
+            "en": "Value"
+          },
+          "schema": "string"
+        }
+      ]
     }
   ],
   "@context": [

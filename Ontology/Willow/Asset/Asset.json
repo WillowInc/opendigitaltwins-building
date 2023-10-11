@@ -262,6 +262,18 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "Mapped IDs"
+      },
+      "name": "mappedIds",
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:willowinc:AssetMappedIdObject;1"
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "name"
       },
       "name": "name",
@@ -637,6 +649,40 @@
           "name": "code",
           "displayName": {
             "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:AssetMappedIdObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "exactType",
+          "displayName": {
+            "en": "Exact Type"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scope",
+          "displayName": {
+            "en": "Scope"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scopeId",
+          "displayName": {
+            "en": "Scope ID"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "value",
+          "displayName": {
+            "en": "Value"
           },
           "schema": "string"
         }
