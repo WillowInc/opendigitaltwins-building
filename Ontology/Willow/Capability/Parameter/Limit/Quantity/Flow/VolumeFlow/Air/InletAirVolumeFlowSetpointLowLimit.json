@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirVolumeFlowSetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Volume Flow Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with inlet air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
