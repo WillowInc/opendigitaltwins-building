@@ -8,7 +8,7 @@
     "en": "An accumulation of the heating degree hours, based on the time-based integral of the difference between the outside air temperature and a threshold value"
   },
   "extends" : [
-    "dtmi:com:willowinc:QuantityPerformanceIndicator;1"
+    "dtmi:com:willowinc:DegreeHours;1"
   ],
   "contents": [
 
