@@ -785,6 +785,22 @@
           "en": "initial cost"
         },
         "name": "initialCost",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "initialCostUnit",
+        "displayName": {
+          "en": "Initial Cost Unit"
+        },
+        "description": {
+          "en": "The currency associated with the initial cost."
+        },
+        "annotates": "initialCost",
         "schema": "string",
         "writable": true
       },
@@ -794,6 +810,22 @@
           "en": "expected replacement cost"
         },
         "name": "expectedReplacementCost",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "expectedReplacementCostUnit",
+        "displayName": {
+          "en": "Expected Replacement Cost Unit"
+        },
+        "description": {
+          "en": "The currency associated with the initial cost."
+        },
+        "annotates": "expectedReplacementCost",
         "schema": "string",
         "writable": true
       },
@@ -32944,20 +32976,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ZoneAirCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air CO2 Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirCO2Sensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ZoneAirCOSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -35141,6 +35159,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from an alarm associated with the discharge (supply) air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -36088,6 +36123,23 @@
     "@type": "Interface",
     "displayName": {
       "en": "Exhaust Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the exhaust air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Sensor"
     },
     "description": {
       "en": "The air quality (CO2) feedback from a sensor associated with the exhaust air"
@@ -37343,6 +37395,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the inlet air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -37823,6 +37892,23 @@
     "@type": "Interface",
     "displayName": {
       "en": "Mixed Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the mixed air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Sensor"
     },
     "description": {
       "en": "The air quality (CO2) feedback from a sensor associated with the mixed air"
@@ -38476,6 +38562,23 @@
     "@type": "Interface",
     "displayName": {
       "en": "Outside Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the outside air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Sensor"
     },
     "description": {
       "en": "The air quality (CO2) feedback from a sensor associated with the outside air"
@@ -39626,6 +39729,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the relief air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -39763,6 +39883,23 @@
     "@type": "Interface",
     "displayName": {
       "en": "Return Air CO2 Air Quality Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the return air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Sensor"
     },
     "description": {
       "en": "The air quality (CO2) feedback from a sensor associated with the return air"
@@ -41822,6 +41959,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2Sensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Sensor"
+    },
+    "description": {
+      "en": "The air quality (CO2) feedback from a sensor associated with the zone air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ZoneAirEnthalpySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43701,6 +43855,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the discharge (supply) air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the discharge (supply) air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirCO2SetpointHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -44628,6 +44816,40 @@
     "@type": "Interface",
     "displayName": {
       "en": "Exhaust Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the exhaust air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the exhaust air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Setpoint"
     },
     "description": {
       "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the exhaust air"
@@ -45982,6 +46204,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the inlet air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the inlet air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirCO2SetpointHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -46866,6 +47122,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MixedAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the mixed air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the mixed air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedAirCO2SetpointHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -47305,6 +47595,40 @@
     "@type": "Interface",
     "displayName": {
       "en": "Outside Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the outside air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the outside air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Setpoint"
     },
     "description": {
       "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the outside air"
@@ -48295,6 +48619,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the relief air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the relief air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirCO2SetpointHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -48537,6 +48895,40 @@
     "@type": "Interface",
     "displayName": {
       "en": "Return Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the return air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the return air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Setpoint"
     },
     "description": {
       "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the return air"
@@ -49780,6 +50172,40 @@
     "@type": "Interface",
     "displayName": {
       "en": "Zone Air CO2 Air Quality Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the zone air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2AlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the CO2 air quality associatd with the zone air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2Setpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Setpoint"
     },
     "description": {
       "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the zone air"
