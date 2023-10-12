@@ -432,6 +432,19 @@
         "en": "initial cost"
       },
       "name": "initialCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "initialCostUnit",
+      "displayName": {
+        "en": "Initial Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the initial cost."
+      },
+      "annotates": "initialCost",
       "schema": "string",
       "writable": true
     },
@@ -441,6 +454,19 @@
         "en": "expected replacement cost"
       },
       "name": "expectedReplacementCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "expectedReplacementCostUnit",
+      "displayName": {
+        "en": "Expected Replacement Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the initial cost."
+      },
+      "annotates": "expectedReplacementCost",
       "schema": "string",
       "writable": true
     },
