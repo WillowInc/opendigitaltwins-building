@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingDegreeHours;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Degree Hours"
+  },
+  "description": {
+    "en": "An accumulation of the cooling degree hours, based on the time-based integral of the difference between a threshold value and the outside air temperature"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantityPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

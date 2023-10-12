@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingDegreeHours;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Degree Hours"
+  },
+  "description": {
+    "en": "An accumulation of the heating degree hours, based on the time-based integral of the difference between the outside air temperature and a threshold value"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantityPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
