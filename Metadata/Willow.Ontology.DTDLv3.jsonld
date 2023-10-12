@@ -51514,6 +51514,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with discharge air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with discharge air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeFanRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -52156,6 +52190,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with exhaust air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with exhaust air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -53819,6 +53887,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with inlet air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with inlet air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -55073,6 +55175,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with mixed air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with mixed air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -57285,6 +57421,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with relief air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with relief air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefFanRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -57564,6 +57734,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with return air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with return air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
