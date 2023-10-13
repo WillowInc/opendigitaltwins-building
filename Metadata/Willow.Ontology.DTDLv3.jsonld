@@ -96,6 +96,18 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:AccountMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "name"
         },
         "name": "name",
@@ -174,6 +186,57 @@
             }
           }
         }
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:AccountMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -261,6 +324,18 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:AgentMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "name"
         },
         "name": "name",
@@ -339,6 +414,57 @@
             }
           }
         }
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:AgentMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -604,6 +730,18 @@
           }
         },
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:AssetMappedIdObject;1"
+        }
       },
       {
         "@type": "Property",
@@ -1026,6 +1164,55 @@
             "schema": "string"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:AssetMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -1160,6 +1347,18 @@
           }
         },
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:BuildingComponentMappedIdObject;1"
+        }
       },
       {
         "@type": "Property",
@@ -1487,6 +1686,55 @@
             "schema": "string"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:BuildingComponentMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -1577,6 +1825,18 @@
           }
         },
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:CapabilityMappedIdObject;1"
+        }
       },
       {
         "@type": "Property",
@@ -2888,6 +3148,55 @@
             "schema": "string"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:CapabilityMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -2990,6 +3299,18 @@
           }
         },
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:CollectionMappedIdObject;1"
+        }
       },
       {
         "@type": "Property",
@@ -3189,6 +3510,55 @@
             "schema": "string"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:CollectionMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -3288,6 +3658,18 @@
           }
         },
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:DocumentMappedIdObject;1"
+        }
       },
       {
         "@type": "Property",
@@ -3415,6 +3797,57 @@
             }
           ]
         }
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:DocumentMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -3594,6 +4027,18 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:EventMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "name"
         },
         "name": "name",
@@ -3681,6 +4126,57 @@
         },
         "writable": true,
         "schema": "boolean"
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:EventMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -3809,6 +4305,18 @@
       },
       {
         "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:SoftwareMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
         "name": "customProperties",
         "displayName": {
           "en": "Custom Properties"
@@ -3873,6 +4381,57 @@
         },
         "writable": true,
         "schema": "boolean"
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:SoftwareMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -4023,6 +4582,18 @@
           }
         },
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:SpaceMappedIdObject;1"
+        }
       },
       {
         "@type": "Property",
@@ -4282,6 +4853,55 @@
             "schema": "string"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:SpaceMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          }
+        ]
       }
     ],
     "@context": [
@@ -4512,6 +5132,18 @@
       },
       {
         "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:StructureMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
         "name": "customProperties",
         "displayName": {
           "en": "Custom Properties"
@@ -4730,6 +5362,55 @@
             "name": "code",
             "displayName": {
               "en": "Code"
+            },
+            "schema": "string"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:StructureMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
             },
             "schema": "string"
           }
