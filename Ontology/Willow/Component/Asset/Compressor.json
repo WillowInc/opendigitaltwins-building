@@ -14,6 +14,15 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "refrigerant type"
+      },
+      "name": "refrigerantType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "type"
       },
       "name": "type",
@@ -64,6 +73,99 @@
       "annotates": "designMassFlow",
       "overrides": "unit",
       "schema": "MassFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "motor power"
+      },
+      "name": "motorPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "motor power unit"
+      },
+      "name": "motorPowerUnit",
+      "annotates": "motorPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "rated load current"
+      },
+      "description": {
+        "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
+      },
+      "name": "ratedLoadCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "rated load current unit"
+      },
+      "name": "ratedLoadCurrentUnit",
+      "annotates": "ratedLoadCurrent",
+      "overrides": "unit",
+      "schema": "CurrentUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "maximum continuous current"
+      },
+      "description": {
+        "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
+      },
+      "name": "maximumContinuousCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum continuous current unit"
+      },
+      "name": "maximumContinuousCurrentUnit",
+      "annotates": "maximumContinuousCurrent",
+      "overrides": "unit",
+      "schema": "CurrentUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "locked rotor current"
+      },
+      "description": {
+        "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
+      },
+      "name": "lockedRotorCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "locked rotor current unit"
+      },
+      "name": "lockedRotorCurrentUnit",
+      "annotates": "lockedRotorCurrent",
+      "overrides": "unit",
+      "schema": "CurrentUnit",
       "writable": true
     }
   ],

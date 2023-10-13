@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CompressorRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the compressor"},
+  "extends" : [
+    "dtmi:com:willowinc:RunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

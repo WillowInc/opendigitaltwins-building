@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PumpCurrentSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Current Sensor"
+  },
+  "description": {"en": "The current feedback from a sensor associated with an integrated pump"},
+  "extends" : [
+    "dtmi:com:willowinc:CurrentSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
