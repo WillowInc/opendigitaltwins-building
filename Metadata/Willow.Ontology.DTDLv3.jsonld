@@ -10929,6 +10929,15 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "refrigerant type"
+        },
+        "name": "refrigerantType",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "type"
         },
         "name": "type",
@@ -10986,6 +10995,127 @@
         "annotates": "designMassFlow",
         "overrides": "unit",
         "schema": "MassFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "motor power"
+        },
+        "name": "motorPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "motor power unit"
+        },
+        "name": "motorPowerUnit",
+        "annotates": "motorPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "rated load current"
+        },
+        "description": {
+          "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
+        },
+        "name": "ratedLoadCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "rated load current unit"
+        },
+        "name": "ratedLoadCurrentUnit",
+        "annotates": "ratedLoadCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "maximum continuous current"
+        },
+        "description": {
+          "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
+        },
+        "name": "maximumContinuousCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum continuous current unit"
+        },
+        "name": "maximumContinuousCurrentUnit",
+        "annotates": "maximumContinuousCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "locked rotor current"
+        },
+        "description": {
+          "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
+        },
+        "name": "lockedRotorCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "locked rotor current unit"
+        },
+        "name": "lockedRotorCurrentUnit",
+        "annotates": "lockedRotorCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
         "writable": true
       }
     ],
@@ -15517,6 +15647,71 @@
         "annotates": "designAirflow",
         "overrides": "unit",
         "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Fans"
+        },
+        "name": "numberOfFans",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "total fan power"
+        },
+        "name": "totalFanPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "total fan power unit"
+        },
+        "name": "totalFanPowerUnit",
+        "annotates": "totalFanPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "total fan brake horsepower"
+        },
+        "name": "totalFanbrakeHorsepower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "total fan brake horsepower unit"
+        },
+        "name": "totalFanbrakeHorsepowerUnit",
+        "annotates": "totalFanbrakeHorsepower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
         "writable": true
       }
     ],
@@ -21398,7 +21593,100 @@
       "dtmi:com:willowinc:RefrigerationEquipment;1",
       "dtmi:com:willowinc:Compressor;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal energy efficiency ratio (EER)"
+        },
+        "name": "nominalEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design energy efficiency ratio (EER)"
+        },
+        "name": "designEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal coefficient of performance (COP)"
+        },
+        "name": "nominalCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design coefficient of performance (COP)"
+        },
+        "name": "designCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity"
+        },
+        "name": "nominalCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity unit"
+        },
+        "name": "nominalCoolingCapacityUnit",
+        "annotates": "nominalCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "design cooling capacity"
+        },
+        "name": "designCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design cooling capacity unit"
+        },
+        "name": "designCoolingCapacityUnit",
+        "annotates": "designCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -24924,6 +25212,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CompressorCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated compressor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ComputerMonitor;1",
     "@type": "Interface",
     "displayName": {
@@ -25393,6 +25698,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DefrostHeaterCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Heater Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated defrost heater for an evaporator of a refrigeration equipment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -26669,6 +26991,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FanCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Faucet;1",
     "@type": "Interface",
     "displayName": {
@@ -27377,7 +27716,16 @@
     "extends": [
       "dtmi:com:willowinc:FoodStorageEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Evaporator Fan"
+        },
+        "name": "evaporatorFan",
+        "schema": "dtmi:com:willowinc:Fan;1"
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -31046,6 +31394,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PumpCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -38365,6 +38730,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InteriorAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Interior Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The air temperature feedback from a sensor associated with interior of an equipment such as a refrigerator, oven, or computer."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:IntrusionDetectionSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -40478,7 +40860,16 @@
     "extends": [
       "dtmi:com:willowinc:FoodDisplayCase;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Evaporator Fan"
+        },
+        "name": "evaporatorFan",
+        "schema": "dtmi:com:willowinc:Fan;1"
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -44018,6 +44409,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CompressorRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the compressor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressorRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -44478,6 +44886,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DefrostRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the defrost mode of an equipment which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunState;1"
     ],
     "contents": [],
     "@context": [
