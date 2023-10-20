@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:CardioFitnessEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cardio Fitness Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FitnessEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
