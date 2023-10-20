@@ -12227,6 +12227,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FitnessEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fitness Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Floor;1",
     "@type": "Interface",
     "displayName": {
@@ -16743,6 +16757,20 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CardioFitnessEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cardio Fitness Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FitnessEquipment;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -22200,6 +22228,20 @@
       "en": "Storm Sewer Outlet"
     },
     "extends": "dtmi:com:willowinc:DistributionConnector;1",
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StrengthFitnessEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Strength Fitness Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FitnessEquipment;1"
+    ],
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
@@ -32182,6 +32224,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:StationaryBicycle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Stationary Bicycle"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CardioFitnessEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamMassSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -33067,6 +33123,20 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Treadmill;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Treadmill"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CardioFitnessEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
