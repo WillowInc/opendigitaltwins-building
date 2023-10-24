@@ -13,16 +13,6 @@
   "contents": [
     {
       "@type": "Property",
-      "name": "connectorID",
-      "displayName": {
-        "en": "Connector ID"
-      },
-      "writable": true,
-      "schema": "string",
-      "comment": "Willow Connector identifier which manages the Capabiltiy"
-    },
-    {
-      "@type": "Property",
       "name": "connectorType",
       "displayName": {
         "en": "Connector Type"
