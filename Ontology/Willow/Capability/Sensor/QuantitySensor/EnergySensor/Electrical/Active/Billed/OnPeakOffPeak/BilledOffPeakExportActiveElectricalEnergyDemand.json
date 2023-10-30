@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakExportActiveElectricalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Export Active Electrical Energy"
+  },
+  "description": {"en": "The highest off peak rate of consumption for active electrical energy exported from a building or space to a utility over the course of a billing period."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledExportActiveElectricalEnergyDemand;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

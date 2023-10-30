@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Billed Steam Mass"
   },
-  "description": {"en": "The consumed mass quantity of steam that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Steam Mass Sensor which reports data on a more frequent interval."},
+  "description": {"en": "The highest rate of consumption for steam mass that is billed to a utility account."},
   "extends" : [
     "dtmi:com:willowinc:ThermalEnergySensor;1"
   ],

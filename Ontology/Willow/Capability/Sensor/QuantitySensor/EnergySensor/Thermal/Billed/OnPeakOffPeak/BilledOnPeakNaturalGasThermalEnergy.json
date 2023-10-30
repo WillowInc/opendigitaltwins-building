@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOnPeakNaturalGasThermalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed On Peak Natural Gas Thermal Energy"
+  },
+  "description": {"en": "The consumed on peak quantity of natural gas thermal energy that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledNaturalGasThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

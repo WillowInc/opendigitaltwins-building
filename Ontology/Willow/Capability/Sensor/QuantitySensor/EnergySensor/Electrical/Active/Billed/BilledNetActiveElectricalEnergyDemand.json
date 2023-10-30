@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BilledNetActiveElectricalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Net Active Electrical Energy"
+  },
+  "description": {"en": "The highest rate of consumption for the net of import and export active electrical energy consumed by a building or space over the course of a billing period."},
+  "extends" : [
+    "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1",
+    "dtmi:com:willowinc:BilledActiveElectricalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

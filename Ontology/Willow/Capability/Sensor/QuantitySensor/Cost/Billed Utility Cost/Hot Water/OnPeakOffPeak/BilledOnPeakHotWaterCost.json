@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOnPeakHotWaterCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed On Peak Hot Water Cost"
+  },
+  "description": {"en": "The on peak cost trend associated with a hot water utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledHotWaterCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

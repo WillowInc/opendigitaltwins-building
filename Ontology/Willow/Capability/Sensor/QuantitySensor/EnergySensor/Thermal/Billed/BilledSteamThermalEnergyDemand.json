@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledSteamThermalEnergyDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Steam Thermal Energy Demand"
+  },
+  "description": {"en": "The highest rate of consumption for steam thermal energy that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

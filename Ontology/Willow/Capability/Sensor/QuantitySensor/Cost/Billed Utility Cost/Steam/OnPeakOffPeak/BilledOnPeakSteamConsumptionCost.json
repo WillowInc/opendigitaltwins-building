@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOnPeakSteamConsumptionCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed On Peak Steam Consumption Cost"
+  },
+  "description": {"en": "The on peak consumption component of the cost trend associated with a steam utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamConsumptionCost;1",
+    "dtmi:com:willowinc:BilledOnPeakSteamCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

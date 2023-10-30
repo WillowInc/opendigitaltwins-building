@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakHotWaterThermalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Hot Water Thermal Energy"
+  },
+  "description": {"en": "The consumed off peak quantity of hot water thermal energy that is billed to a utility account"},
+  "extends" : [
+    "dtmi:com:willowinc:BilledHotWaterThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

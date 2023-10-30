@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakWaterVolume;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Water Volume"
+  },
+  "description": {"en": "The consumed off peak volumetric quantity of water that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledWaterVolume;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

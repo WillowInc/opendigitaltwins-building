@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledHotWaterThermalEnergyDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Hot Water Thermal Energy Demand"
+  },
+  "description": {"en": "The highest rate of consumption for hot water thermal energy that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledHotWaterThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

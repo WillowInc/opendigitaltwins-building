@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakChilledWaterThermalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Chilled Water Thermal Energy"
+  },
+  "description": {"en": "The consumed off peak quantity of chilled water thermal energy that is billed to a utility account"},
+  "extends" : [
+    "dtmi:com:willowinc:BilledChilledWaterThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

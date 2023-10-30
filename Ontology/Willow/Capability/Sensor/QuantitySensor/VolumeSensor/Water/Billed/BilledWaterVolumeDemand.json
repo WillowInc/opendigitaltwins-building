@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledWaterDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Water Demand"
+  },
+  "description": {"en": "The highest rate of consumption for water volume that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:WaterVolumeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

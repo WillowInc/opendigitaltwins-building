@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakSteamThermalEnergyDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Steam Thermal Energy Demand"
+  },
+  "description": {"en": "The highest off peak rate of consumption for steam thermal energy that is billed to a utility account."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamThermalEnergyDemand;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

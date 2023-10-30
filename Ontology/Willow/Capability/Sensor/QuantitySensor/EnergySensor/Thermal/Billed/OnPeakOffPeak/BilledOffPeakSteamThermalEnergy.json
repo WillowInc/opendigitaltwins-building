@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakSteamThermalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Steam Thermal Energy"
+  },
+  "description": {"en": "The consumed off peak quantity of steam thermal energy that is billed to a utility account"},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

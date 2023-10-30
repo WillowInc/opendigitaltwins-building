@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakNaturalGasDemandCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Natural Gas Demand Cost"
+  },
+  "description": {"en": "The off peak demand component of the cost trend associated with a natural gas utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledNaturalGasDemandCost;1",
+    "dtmi:com:willowinc:BilledOffPeakNaturalGasCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

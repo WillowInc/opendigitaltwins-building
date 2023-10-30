@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledNaturalGasConsumptionCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Natural Gas Consumption Cost"
+  },
+  "description": {"en": "The consumption component of the cost trend associated with a natural gas utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledSteamCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

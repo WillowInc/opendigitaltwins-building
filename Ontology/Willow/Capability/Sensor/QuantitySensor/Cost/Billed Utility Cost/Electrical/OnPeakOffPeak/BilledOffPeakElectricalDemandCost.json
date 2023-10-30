@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BilledOffPeakElectricalDemandCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Off Peak Electrical Demand Cost"
+  },
+  "description": {"en": "The off peak demand component of the cost trend associated with an electrical utility service that is billed to a utility account, typically on a monthly basis.."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledElectricalDemandCost;1",
+    "dtmi:com:willowinc:BilledOffPeakElectricalCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
