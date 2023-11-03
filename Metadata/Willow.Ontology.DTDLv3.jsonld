@@ -35344,6 +35344,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DefrostTerminationTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Termination Temperature Setpoint"
+    },
+    "description": {
+      "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DeltaAirPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -44071,6 +44088,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DefrostRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Run Actuator"
+    },
+    "description": {
+      "en": "The boolean command of the defrost mode of an equipment which sets the state to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunActuator;1"
     ],
     "contents": [],
     "@context": [
