@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Total Active Electrical Power Demand Sensor"
   },
-  "description": {"en": "The active electrical power demand feedback from a sensor associated with total"},
+  "description": {"en": "The peak quantity of electrical power demand during a set time period, typically monthly."},
   "extends" : [
     "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
   ],

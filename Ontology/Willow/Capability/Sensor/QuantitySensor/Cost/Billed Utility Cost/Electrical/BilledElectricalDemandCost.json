@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledElectricalDemandCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Electrical Demand Cost"
+  },
+  "description": {"en": "The billed electrical cost trend associated with electrical demand, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledElectricalCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
