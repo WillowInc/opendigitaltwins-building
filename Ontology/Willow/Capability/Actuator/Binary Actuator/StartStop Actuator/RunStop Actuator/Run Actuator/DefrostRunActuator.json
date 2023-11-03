@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:DefrostRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Defrost Run Actuator"
+  },
+  "description": {"en": "The boolean command of the defrost mode of an equipment which sets the state to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:RunActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
