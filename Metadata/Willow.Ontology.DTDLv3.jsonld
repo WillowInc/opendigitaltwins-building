@@ -40043,6 +40043,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerationCircuit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Circuit"
+    },
+    "description": {
+      "en": "A group of evaporators that are controlled together."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigerationCompressorGroup;1",
     "@type": "Interface",
     "displayName": {
