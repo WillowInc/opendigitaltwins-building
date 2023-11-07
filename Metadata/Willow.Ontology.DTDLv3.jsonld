@@ -11215,6 +11215,34 @@
         "writable": true
       },
       {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "design external static pressure"
+        },
+        "name": "designExternalStaticPressure",
+        "schema": "double",
+        "unit": "pascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design external static pressure unit"
+        },
+        "name": "designExternalStaticPressureUnit",
+        "annotates": "designExternalStaticPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
         "@type": "Property",
         "displayName": {
           "en": "drive type"
@@ -11234,6 +11262,18 @@
           ],
           "valueSchema": "string"
         },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Fans"
+        },
+        "description": {
+          "en": "The number of fans which make up a fan array"
+        },
+        "name": "numberOfFans",
+        "schema": "integer",
         "writable": true
       }
     ],
@@ -11707,6 +11747,110 @@
         "overrides": "unit",
         "schema": "PressureUnit",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirDryBulbTemperatureUnit",
+        "annotates": "designEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirDryBulbTemperatureUnit",
+        "annotates": "designLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirWetBulbTemperatureUnit",
+        "annotates": "designEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirWetBulbTemperatureUnit",
+        "annotates": "designLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
@@ -15092,6 +15236,34 @@
         "writable": true
       },
       {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Minimum Outside Airflow"
+        },
+        "name": "designMinOutsideAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Minimum Outside Airflow Unit"
+        },
+        "name": "designMinOutsideAirflowUnit",
+        "annotates": "designMinOutsideAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
         "@type": "Property",
         "displayName": {
           "en": "humidification method"
@@ -15691,6 +15863,84 @@
         "schema": "integer",
         "unit": "gallonPerHour",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDeltaWaterTemperature",
+        "displayName": {
+          "en": "Design Delta Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Delta Water Temperature Unit"
+        },
+        "name": "designDeltaWaterTemperatureUnit",
+        "annotates": "designDeltaWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
@@ -16598,6 +16848,122 @@
         },
         "name": "fan",
         "schema": "dtmi:com:willowinc:Fan;1"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Cells"
+        },
+        "name": "numberOfCells",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringWetBulbTemperatureUnit",
+        "annotates": "dedesignEnteringWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "approach",
+        "displayName": {
+          "en": "Approach"
+        },
+        "description": {
+          "en": "The cooling tower approach is the difference between leaving water temperature and ambient wet bulb temperature."
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Approach Unit"
+        },
+        "name": "approachUnit",
+        "annotates": "approach",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
