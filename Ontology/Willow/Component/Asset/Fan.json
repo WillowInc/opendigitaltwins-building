@@ -239,6 +239,27 @@
       "writable": true
     },
     {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "design external static pressure"
+      },
+      "name": "designExternalStaticPressure",
+      "schema": "double",
+      "unit": "pascal",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design external static pressure unit"
+      },
+      "name": "designExternalStaticPressureUnit",
+      "annotates": "designExternalStaticPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "drive type"
@@ -258,6 +279,18 @@
         ],
         "valueSchema": "string"
       },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Number of Fans"
+      },
+      "description": {
+        "en": "The number of fans which make up a fan array"
+      },
+      "name": "numberOfFans",
+      "schema": "integer",
       "writable": true
     }
   ],
