@@ -60,6 +60,94 @@
       },
       "name": "fan",
       "schema": "dtmi:com:willowinc:Fan;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Number of Cells"
+      },
+      "name": "numberOfCells",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWaterTemperature",
+      "displayName": {
+        "en": "Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Water Temperature Unit"
+      },
+      "name": "designEnteringWaterTemperatureUnit",
+      "annotates": "designEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingWaterTemperature",
+      "displayName": {
+        "en": "Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Water Temperature Unit"
+      },
+      "name": "designLeavingWaterTemperatureUnit",
+      "annotates": "designLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWetBulbTemperature",
+      "displayName": {
+        "en": "Design Entering Wet Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Wet Bulb Temperature Unit"
+      },
+      "name": "designEnteringWetBulbTemperatureUnit",
+      "annotates": "dedesignEnteringWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "approach",
+      "displayName": {
+        "en": "Approach"
+      },
+      "description": {
+        "en": "The cooling tower approach is the difference between leaving water temperature and ambient wet bulb temperature."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Approach Unit"
+      },
+      "name": "approachUnit",
+      "annotates": "approach",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
     }
   ],
   "@context": [

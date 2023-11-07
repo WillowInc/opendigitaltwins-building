@@ -191,6 +191,27 @@
       "writable": true
     },
     {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Minimum Outside Airflow"
+      },
+      "name": "designMinOutsideAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Minimum Outside Airflow Unit"
+      },
+      "name": "designMinOutsideAirflowUnit",
+      "annotates": "designMinOutsideAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "humidification method"

@@ -127,6 +127,63 @@
       "schema": "integer",
       "unit": "gallonPerHour",
       "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWaterTemperature",
+      "displayName": {
+        "en": "Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Water Temperature Unit"
+      },
+      "name": "designEnteringWaterTemperatureUnit",
+      "annotates": "designEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingWaterTemperature",
+      "displayName": {
+        "en": "Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Water Temperature Unit"
+      },
+      "name": "designLeavingWaterTemperatureUnit",
+      "annotates": "designLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designDeltaWaterTemperature",
+      "displayName": {
+        "en": "Design Delta Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Delta Water Temperature Unit"
+      },
+      "name": "designDeltaWaterTemperatureUnit",
+      "annotates": "designDeltaWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
     }
   ],
   "@context": [
