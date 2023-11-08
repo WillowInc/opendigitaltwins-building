@@ -123,7 +123,7 @@
         "en": "Design Entering Wet Bulb Temperature Unit"
       },
       "name": "designEnteringWetBulbTemperatureUnit",
-      "annotates": "dedesignEnteringWetBulbTemperature",
+      "annotates": "designEnteringWetBulbTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit"
     },
