@@ -37061,6 +37061,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face and Bypass Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the face and bypass dampers"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face and Bypass Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the face and bypass dampers"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FanCoilUnitReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -45137,6 +45171,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Coil Condenser Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the economizer coil condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Coil Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the economizer coil condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricalCircuit1Pole;1",
     "@type": "Interface",
     "displayName": {
@@ -51991,6 +52059,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with cooling air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoolingAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with cooling air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -53720,6 +53822,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with heating air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with heating air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
