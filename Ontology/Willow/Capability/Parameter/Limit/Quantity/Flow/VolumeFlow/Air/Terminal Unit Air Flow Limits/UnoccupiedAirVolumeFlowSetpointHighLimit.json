@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:UnoccupiedAirVolumeFlowSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Air Volume Flow Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with unoccupied air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

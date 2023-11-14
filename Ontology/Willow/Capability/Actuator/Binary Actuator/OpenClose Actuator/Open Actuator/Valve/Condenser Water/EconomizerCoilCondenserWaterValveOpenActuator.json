@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Economizer Coil Condenser Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the economizer coil condenser water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
