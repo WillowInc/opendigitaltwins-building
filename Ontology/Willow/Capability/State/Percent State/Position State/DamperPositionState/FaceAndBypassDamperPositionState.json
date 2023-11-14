@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Face and Bypass Damper Position State"
+  },
+  "description": {"en": "The percent position state of the face and bypass dampers"},
+  "extends" : [
+    "dtmi:com:willowinc:DamperPositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
