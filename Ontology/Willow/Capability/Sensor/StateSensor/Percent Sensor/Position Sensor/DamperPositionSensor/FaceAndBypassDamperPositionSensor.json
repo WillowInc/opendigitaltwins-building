@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Face and Bypass Damper Position Sensor"
+  },
+  "description": {"en": "The position percent feedback from a sensor associated with face and bypass dampers"},
+  "extends" : [
+    "dtmi:com:willowinc:DamperPositionSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
