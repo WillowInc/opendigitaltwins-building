@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingAirVolumeFlowSetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Air Volume Flow Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with cooling air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
