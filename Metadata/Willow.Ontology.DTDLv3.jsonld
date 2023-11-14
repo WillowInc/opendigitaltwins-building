@@ -16964,6 +16964,62 @@
         "annotates": "approach",
         "overrides": "unit",
         "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Minimum Flow"
+        },
+        "name": "designMinFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Minimum Flow Unit"
+        },
+        "name": "designMinFlowUnit",
+        "annotates": "designMinFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Maximum Flow"
+        },
+        "name": "designMaxFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Maximum Flow Unit"
+        },
+        "name": "designMaxFlowUnit",
+        "annotates": "designMaxFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
       }
     ],
     "@context": [
