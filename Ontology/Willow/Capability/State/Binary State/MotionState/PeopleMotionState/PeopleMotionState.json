@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PeopleMotionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Motion State"
+  },
+  "description": {"en": "The Boolean status from a state where 'occupied' is 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:MotionState;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
