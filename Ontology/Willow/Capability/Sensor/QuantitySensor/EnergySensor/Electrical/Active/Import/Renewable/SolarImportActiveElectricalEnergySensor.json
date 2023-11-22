@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SolarImportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Import Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The cummulative active electrical energy being consumed by solar photovoltaic"},
+  "extends" : [
+    "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

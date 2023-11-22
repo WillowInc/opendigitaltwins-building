@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:UtilityImportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Import Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power being imported from the utility grid. A positive value indicates net site consumption whereas a negative number indicates net site export."},
+  "extends" : [
+    "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

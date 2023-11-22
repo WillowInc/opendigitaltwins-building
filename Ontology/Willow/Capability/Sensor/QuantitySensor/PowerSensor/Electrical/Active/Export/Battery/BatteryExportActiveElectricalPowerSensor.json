@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BatteryExportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Export Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power being discharged by a battery system"},
+  "extends" : [
+    "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

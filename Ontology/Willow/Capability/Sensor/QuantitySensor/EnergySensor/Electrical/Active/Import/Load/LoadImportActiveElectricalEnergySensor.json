@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LoadImportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Load Import Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical Energy being imported and consumed by the load, typically from an inverter."},
+  "extends" : [
+    "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
