@@ -21540,6 +21540,21 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerationTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Tank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReplaceComponentState;1",
     "@type": "Interface",
     "displayName": {
@@ -31122,6 +31137,60 @@
     },
     "extends": [
       "dtmi:com:willowinc:EquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationLiquidRefrigerantReceiver;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Liquid Refrigerant Receiver"
+    },
+    "description": {
+      "en": "A liquid refrigerant receiver tank, or simply receiver, used in a refrigeration system holds excess refrigerant after the condenser to ensure proper liquid refrigerent to the expansion valve inlet of the evaporators."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationTank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationSubcooler;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Subcooler"
+    },
+    "description": {
+      "en": "A refrigeration subcooler used in a refrigeration system or circuit to reduce the temperature of the refrigerant to increase evaporator performance."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationHeatExchanger;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationSuctionLineAccumulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Suction Line Accumulator"
+    },
+    "description": {
+      "en": "A refrigeratino suction line accumulator used in a refrigeration system prevents damaging overflow of liquid refrigerant and oil from going back to the compressor."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationTank;1"
     ],
     "contents": [],
     "@context": [
@@ -49485,6 +49554,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PresenceAbsenceSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PressureReliefValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Relief Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the pressure relief valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenState;1"
     ],
     "contents": [],
     "@context": [
