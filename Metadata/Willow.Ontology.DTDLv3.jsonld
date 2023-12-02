@@ -60850,6 +60850,108 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BatteryExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being discharged from the battery system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being discharged by a battery system"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power being discharged by a battery system"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power being discharged by a battery system"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being charged by the battery system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The net active electrical energy being consumed by the battery system which is the difference between import and export."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BilledExportActiveElectricalEnergy;1",
     "@type": "Interface",
     "displayName": {
@@ -62801,6 +62903,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LoadImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Load Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical Energy being imported and consumed by the load, typically from an inverter."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LoadImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Load Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being imported by the load, typically from an inverter."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowBypassChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -64449,6 +64585,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RenewableExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with renewable export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with renewable export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -65745,6 +65915,74 @@
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
       "dtmi:com:willowinc:UnoccupiedHeatingSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being exported from the site when power is being sent to the utility grid (a negative utility import power)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being consumed by the site when power is being imported from the utility grid."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being imported from the utility grid. A positive value indicates net site consumption whereas a negative number indicates net site export."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The net active electrical energy being consumed by the site which is the difference between the Net and export."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -69090,6 +69328,108 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being generated by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableExportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being generated by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableExportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power being generated by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableExportApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power being generated by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableExportReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being consumed by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The net active electrical energy being consumed by the solar pholtatic which is the difference between the import and export.)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableNetActiveElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
