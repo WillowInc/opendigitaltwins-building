@@ -40557,6 +40557,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerantTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with refrigerant temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1",
     "@type": "Interface",
     "displayName": {
@@ -44236,6 +44253,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Leaving Refrigerant Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of the refrigerant leaving the condenser."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterBypassValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -44748,6 +44782,23 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
       "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaRefrigerantTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Refrigerant Temperature Setpoint"
+    },
+    "description": {
+      "en": "The feedback from a setpoint associated with differential temperature, tyipcally between the entering and leaving."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
