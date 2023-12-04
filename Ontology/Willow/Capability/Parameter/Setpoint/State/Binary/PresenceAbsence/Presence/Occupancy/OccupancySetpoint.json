@@ -1,13 +1,14 @@
 {
-  "@id": "dtmi:com:willowinc:PresentAbsentSetpoint;1",
+  "@id": "dtmi:com:willowinc:OccupancySetpoint;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Present/Absent Setpoint"
+    "en": "Occupancy Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:BinarySetpoint;1"
+    "dtmi:com:willowinc:PresenceSetpoint;1"
   ],
   "contents": [
+
   ],
   "@context": [
     "dtmi:dtdl:context;3"
