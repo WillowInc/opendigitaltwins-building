@@ -5,7 +5,7 @@
     "en": "Occupancy Setpoint"
   },
   "extends" : [
-    "dtmi:com:willowinc:PresentSetpoint;1"
+    "dtmi:com:willowinc:PresenceSetpoint;1"
   ],
   "contents": [
 
