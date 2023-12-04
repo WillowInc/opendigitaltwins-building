@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:PresenceAbsenceState;1",
+  "@id": "dtmi:com:willowinc:PresentAbsentState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Presence/Absence State"
+    "en": "Present/Absent State"
   },
   "description": {"en": "The Boolean state of the equipment which is 'present' when 'true' and 'absent' when 'false'"},
   "extends" : [

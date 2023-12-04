@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:PresenceAbsenceActuator;1",
+  "@id": "dtmi:com:willowinc:PresentAbsentActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Presence/Absence Actuator"
+    "en": "Present/Absent Actuator"
   },
   "description": {"en": "The Boolean command which sets the state of the equipment to 'present' when 'true' and 'absent' when 'false'"},
   "extends" : [

@@ -1,12 +1,12 @@
 {
-  "@id": "dtmi:com:willowinc:AbsenceState;1",
+  "@id": "dtmi:com:willowinc:AbsentState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Absence State"
+    "en": "Absent State"
   },
   "description": {"en": "The Boolean state of the equipment which is 'absent' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:PresenceAbsenceState;1"
+    "dtmi:com:willowinc:PresentAbsentState;1"
   ],
   "contents": [
   ],

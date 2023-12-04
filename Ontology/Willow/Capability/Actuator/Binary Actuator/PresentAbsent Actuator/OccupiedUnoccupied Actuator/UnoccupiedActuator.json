@@ -7,7 +7,7 @@
   "description": {"en": "The Boolean command which sets the state of the equipment to 'unoccupied' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OccupiedUnoccupiedActuator;1",
-    "dtmi:com:willowinc:AbsenceActuator;1"
+    "dtmi:com:willowinc:AbsentActuator;1"
   ],
   "contents": [
   ],
