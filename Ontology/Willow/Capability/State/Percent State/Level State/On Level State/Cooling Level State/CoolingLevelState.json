@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Level State"
+  },
+  "description": {"en": "The 'on' level feedback from a state associated with cooling"},
+  "extends" : [
+    "dtmi:com:willowinc:OnLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
