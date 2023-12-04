@@ -1,12 +1,12 @@
 {
-  "@id": "dtmi:com:willowinc:PresentState;1",
+  "@id": "dtmi:com:willowinc:PresenceState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Present State"
+    "en": "Presence State"
   },
   "description": {"en": "The Boolean state of the equipment which is 'present' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:PresentAbsentState;1"
+    "dtmi:com:willowinc:PresenceAbsenceState;1"
   ],
   "contents": [
   ],

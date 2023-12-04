@@ -7,7 +7,7 @@
   "description": {"en": "The Boolean state of the equipment which is 'unoccupied' when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OccupiedUnoccupiedState;1",
-    "dtmi:com:willowinc:AbsentState;1"
+    "dtmi:com:willowinc:AbsenceState;1"
   ],
   "contents": [
   ],

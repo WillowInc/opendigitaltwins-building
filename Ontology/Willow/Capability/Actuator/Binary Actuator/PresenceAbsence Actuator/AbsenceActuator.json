@@ -1,12 +1,12 @@
 {
-  "@id": "dtmi:com:willowinc:AbsentActuator;1",
+  "@id": "dtmi:com:willowinc:AbsenceActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Absent Actuator"
+    "en": "Absence Actuator"
   },
   "description": {"en": "The Boolean command which sets the state of the equipment to 'absent' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:PresentAbsentActuator;1"
+    "dtmi:com:willowinc:PresenceAbsenceActuator;1"
   ],
   "contents": [
   ],
