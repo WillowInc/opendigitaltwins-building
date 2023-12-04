@@ -24935,6 +24935,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ContactState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Contact State"
+    },
+    "description": {
+      "en": "The Boolean status from a state where \u0027contact\u0027 is \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OpenCloseState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ConveyanceEquipmentGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -35655,6 +35672,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with cooling"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingOnActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -37960,6 +37994,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with heating"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -49547,6 +49598,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheating Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with preheating"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PresenceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -49801,6 +49869,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HeatingLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheating Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with reheating"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingLevelState;1"
     ],
     "contents": [],
     "@context": [
