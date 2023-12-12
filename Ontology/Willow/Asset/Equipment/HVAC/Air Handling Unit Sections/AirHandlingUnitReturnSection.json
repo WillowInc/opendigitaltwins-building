@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:willowinc:AirHandlingUnitReturnSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Handling Unit Return Section"
+  },
+  "description": {
+    "en": "A return section of an air handling unit."
+  },
+  "extends": [
+    "dtmi:com:willowinc:AirHandlingUnitSection;1"
+  ],
+  "contents": [
+  ],
+  "schemas": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
