@@ -11,36 +11,6 @@
     "dtmi:com:willowinc:AirHandlingUnitSection;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "airflow modulation"
-      },
-      "name": "airflowModulation",
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "enumValue": "VariableVolume",
-            "name": "VariableVolume"
-          },
-          {
-            "enumValue": "ConstantVolume",
-            "name": "ConstantVolume"
-          }
-        ],
-        "valueSchema": "string"
-      },
-      "writable": true
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "exhaust fan"
-      },
-      "name": "exhaustFan",
-      "schema": "dtmi:com:willowinc:Fan;1"
-    }
   ],
   "schemas": [
   ],
