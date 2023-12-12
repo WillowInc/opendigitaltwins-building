@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:com:willowinc:AirHandlingUnitSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Handling Unit Section"
+  },
+  "description": {
+    "en": "A primary element of an air handling unit."
+  },
+  "extends": [
+    "dtmi:com:willowinc:AirHandlingUnitSection;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "airflow modulation"
+      },
+      "name": "airflowModulation",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "VariableVolume",
+            "name": "VariableVolume"
+          },
+          {
+            "enumValue": "ConstantVolume",
+            "name": "ConstantVolume"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "supply fan"
+      },
+      "name": "supplyFan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "return fan"
+      },
+      "name": "returnFan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "exhaust fan"
+      },
+      "name": "exhaustFan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    }
+  ],
+  "schemas": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
