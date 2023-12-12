@@ -15558,6 +15558,27 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Section"
+    },
+    "description": {
+      "en": "A primary element of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirInletsOutlets;1",
     "@type": "Interface",
     "displayName": {
@@ -23822,6 +23843,111 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitDischargeSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Discharge Section"
+    },
+    "description": {
+      "en": "A discharge section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitExhaustSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Exhaust Section"
+    },
+    "description": {
+      "en": "An exhaust section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitFanSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Fan Section"
+    },
+    "description": {
+      "en": "A primary element of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitReturnSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Return Section"
+    },
+    "description": {
+      "en": "A return section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitTemperingSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Section"
+    },
+    "description": {
+      "en": "The tempering section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
