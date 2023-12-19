@@ -7,7 +7,7 @@
   "description": {"en": "The percent run level state of the leaving chilled water pump"},
   "extends" : [
     "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
-    "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+    "dtmi:com:willowinc:LeavingWaterPumpRunLevelState;1"
   ],
   "contents": [
 
