@@ -13900,6 +13900,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SwimmingPoolEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Swimming Pool Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Table;1",
     "@type": "Interface",
     "displayName": {
