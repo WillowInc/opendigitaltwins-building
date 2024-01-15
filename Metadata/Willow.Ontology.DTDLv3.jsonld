@@ -41946,13 +41946,30 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BilledActiveElectricalDemand;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Active Electrical Demand"
+    },
+    "description": {
+      "en": "The quantity of electrical demand power that is billed to a utility account, typically on a monthly basis, which is typically measured in kW. "
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BilledActiveElectricalEnergy;1",
     "@type": "Interface",
     "displayName": {
       "en": "Billed Active Electrical Energy"
     },
     "description": {
-      "en": "The quantity of active electrical energy that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Active Electrical Energy Sensor which reports data on a more frequent interval."
+      "en": "The quantity of active electrical energy that is billed to a utility account, typically on a monthly basis, which is typically measured in kWh. This distinguishes from a typical Active Electrical Energy Sensor which reports data on a more frequent interval."
     },
     "extends": [
       "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
@@ -41990,23 +42007,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:BilledElectricalCost;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BilledElectricalDemand;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Billed Electrical Demand"
-    },
-    "description": {
-      "en": "The quantity of electrical demand power that is billed to a utility account, typically on a monthly basis. "
-    },
-    "extends": [
-      "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
