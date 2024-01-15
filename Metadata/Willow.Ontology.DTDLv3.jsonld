@@ -28441,6 +28441,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NaturalGasEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Natural Gas Energy Sensor"
+    },
+    "description": {
+      "en": "The natural gas energy feedback from a sensor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:NaturalGasMassSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -33788,6 +33805,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BilledUtilityCost;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledNaturalGasEnergy;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Natural Gas Energy"
+    },
+    "description": {
+      "en": "The quantity of natural gas energy that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Natural Gas Energy Sensor which reports data on a more frequent interval."
+    },
+    "extends": [
+      "dtmi:com:willowinc:NaturalGasEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41946,6 +41980,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BilledElectricalDeliveryCost;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Delivery Cost"
+    },
+    "description": {
+      "en": "The billed electrical cost trend associated with the delivery of electricity, typically on a monthly basis."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BilledElectricalCost;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledElectricalDemand;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Demand"
+    },
+    "description": {
+      "en": "The quantity of electrical demand power that is billed to a utility account, typically on a monthly basis. "
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BilledElectricalDemandCost;1",
     "@type": "Interface",
     "displayName": {
@@ -41970,6 +42038,23 @@
     },
     "description": {
       "en": "The billed electrical cost trend associated with energy consumption, typically on a monthly basis."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BilledElectricalCost;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledElectricalSupplyCost;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Supply Cost"
+    },
+    "description": {
+      "en": "The billed electrical cost trend associated with the generation (a.k.a. supply) of electricity, typically on a monthly basis."
     },
     "extends": [
       "dtmi:com:willowinc:BilledElectricalCost;1"
