@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledElectricalDemand;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Electrical Demand"
+  },
+  "description": {"en": "The quantity of electrical demand power that is billed to a utility account, typically on a monthly basis. "},
+  "extends" : [
+    "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
