@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BilledElectricalDeliveryCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Electrical Delivery Cost"
+  },
+  "description": {"en": "The billed electrical cost trend associated with the delivery of electricity, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:willowinc:BilledElectricalCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
