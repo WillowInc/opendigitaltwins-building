@@ -135,5 +135,33 @@ Metering load classification enables analytics to make assumptions on what types
 ### Electrical - Building
 ![BilledUtilitly-Example1](Images/BilledUtility-Example1.png)
 
+Billing for electricity consists of one or more meters which serve a Building that may be on the same Utility Account. In this example, we show a Building with two services on the same Utility Account:
+
+1. The first meter is linked to the Utility Account which is provided by the Company which offers the utility service.
+
+2. The charges for the supply of electricity are typically based on energy consumption measured in kWh. Here we show this as the Billed Active Electrical Energy. There may also be charges related to maximum power required during the billing period which is known as the Billed Activity Electrical Demand and is typically measured in kW. The total charges for the bill are shown as the Billed Electrical Cost.
+
+3. The second meter is linked to the same Utility Account.
+
+4. The same metrics of Billed Active Electrical Energy, Billed Active Electrical Demand, and Billed Electrical Cost are included for this meter.
+
+5. To determine the totals for this Building, the sum of each respective metric should be taken.
+
+### Electrical - Supply and Delivery
+![BilledUtilitly-SupplyDelivery](Images/BilledUtility-SupplyDelivery.png)
+
+Billing for electricity consists of both supply and delivery charges. Depending on the location, these may be from the same or different companies, and they may appear on the same or different bills each month. As such, this example shows an example where these are provided by different companies and appear on different bills.
+
+1. There is one utility account for the supply of electricity. This is also referred to as electrical generation. This Electrical Meter is linked to the Utility Account which is provided by this electricity generation Company.
+
+2. The charges for the supply of electricity are typically based on energy consumption measured in kWh. Here we show this as the Billed Active Electrical Energy. The charges associated with supply are shown as the Billed Electrical Cost.
+
+3. There is another utility account for the delivery of electricity. These companies are often referred to as the electric utilities and are responsible for the distribution and transmission to the customer. This Electrical Meter is linked to the Utility Account which is provided by this electricity delivery Company.
+
+4. The charges for the delivery of electricity often include a component based on electrical demand measured in kW. This is the maximum power required during the billing period. Here we show this as the Billed Active Electrical Demand. The charges associated with supply are shown as the Billed Electrical Cost.
+
+5. To determine the total monthly cost for electricity at this Building, the sum of the Billed Electrical Supply Cost and Billed Electrical Delivery Cost would need to be taken.
+
+
 ### Electrical - Tenant Unit & Company
 ![BilledUtilitly-Example1](Images/BilledUtility-Example2.png)
