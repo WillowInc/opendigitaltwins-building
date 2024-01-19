@@ -5,7 +5,7 @@
     "en": "Computer Room Air Conditioning (CRAC) Unit"
   },
   "extends" : [
-    "dtmi:com:willowinc:FanCoilUnit;1"
+    "dtmi:com:willowinc:AirHandlingUnit;1"
   ],
   "contents": [
 
