@@ -6,7 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with high entering condenser water primary loop temperature"},
   "extends" : [
-    "dtmi:com:willowinc:HighEnteringCondenserWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],

@@ -6,7 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with high the water leaving the chilled water coil temperature"},
   "extends" : [
-    "dtmi:com:willowinc:HighCoilLeavingWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],

@@ -6,8 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low water leaving the coil temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1",
-    "dtmi:com:willowinc:LowLeavingWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],

@@ -6,8 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low entering condenser water temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1",
-    "dtmi:com:willowinc:LowEnteringWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],

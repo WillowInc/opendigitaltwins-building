@@ -6,7 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving chilled water secondary loop temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LowLeavingChilledWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],

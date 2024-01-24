@@ -6,7 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with high the water entering the condenser water coil temperature"},
   "extends" : [
-    "dtmi:com:willowinc:HighCoilEnteringWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],

@@ -6,8 +6,7 @@
   },
   "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving hot water temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1",
-    "dtmi:com:willowinc:LowLeavingWaterTemperatureAlarmSetpoint;1"
+    "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
   ],
   "contents": [
   ],
