@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BreakGlassAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Break Glass Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the break glass alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:EmergencyAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

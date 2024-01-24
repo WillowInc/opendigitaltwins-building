@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the condenser water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

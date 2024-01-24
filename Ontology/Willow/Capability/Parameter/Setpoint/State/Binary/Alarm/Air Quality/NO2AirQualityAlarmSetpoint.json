@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:NO2AirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Nitrogen Dioxide (NO2) Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the nitrogen dioxide (NO2) air quality alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:NOxAirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

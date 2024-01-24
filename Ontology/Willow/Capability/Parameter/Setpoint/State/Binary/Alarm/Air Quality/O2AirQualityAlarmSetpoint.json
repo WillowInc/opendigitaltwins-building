@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:O2AirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Oxygen (O2) Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the oxygen (O2) air quality alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

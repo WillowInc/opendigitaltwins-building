@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighPrimaryLoopChilledWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Primary Loop Chilled Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high primary loop chilled water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

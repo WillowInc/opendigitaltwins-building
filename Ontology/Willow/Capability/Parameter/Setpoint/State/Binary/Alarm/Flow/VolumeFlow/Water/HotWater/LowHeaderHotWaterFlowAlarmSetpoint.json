@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowBypassHotWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Bypass Hot Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low bypass hot water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

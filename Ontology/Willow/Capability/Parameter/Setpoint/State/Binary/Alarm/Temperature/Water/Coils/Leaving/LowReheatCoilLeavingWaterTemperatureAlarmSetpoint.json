@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowReheatCoilLeavingWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Reheat Coil Leaving Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low water leaving the reheat coil temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:LowCoilLeavingWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

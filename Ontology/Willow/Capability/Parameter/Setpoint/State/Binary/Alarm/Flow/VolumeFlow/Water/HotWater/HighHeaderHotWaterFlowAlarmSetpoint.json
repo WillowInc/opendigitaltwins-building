@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighHeaderHotWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Header Hot Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high header hot water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

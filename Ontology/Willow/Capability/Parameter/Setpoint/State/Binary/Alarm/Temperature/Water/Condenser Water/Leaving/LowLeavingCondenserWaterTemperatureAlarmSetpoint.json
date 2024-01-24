@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Leaving Condenser Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving condenser water temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1",
+    "dtmi:com:willowinc:LowLeavingWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

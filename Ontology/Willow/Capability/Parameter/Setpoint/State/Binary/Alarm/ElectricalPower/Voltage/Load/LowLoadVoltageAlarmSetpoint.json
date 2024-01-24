@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowLoadVoltageAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Load Voltage Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low load (output) voltage alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowVoltageAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

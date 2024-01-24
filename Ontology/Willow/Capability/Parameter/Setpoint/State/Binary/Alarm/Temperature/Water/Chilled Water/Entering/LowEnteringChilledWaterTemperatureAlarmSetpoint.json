@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowEnteringChilledWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Entering Chilled Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low entering chilled water temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1",
+    "dtmi:com:willowinc:LowEnteringWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

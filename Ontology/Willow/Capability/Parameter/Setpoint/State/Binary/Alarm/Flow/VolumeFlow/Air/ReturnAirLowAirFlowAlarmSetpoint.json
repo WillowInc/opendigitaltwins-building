@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnAirLowAirFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Low Air Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the return air low air flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

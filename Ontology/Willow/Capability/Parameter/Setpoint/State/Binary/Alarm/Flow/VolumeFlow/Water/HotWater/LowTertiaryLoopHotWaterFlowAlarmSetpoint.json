@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowTertiaryLoopHotWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Tertiary Loop Hot Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low tertiary loop hot water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowHeaderCondenserWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Header Condenser Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low header condenser water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
