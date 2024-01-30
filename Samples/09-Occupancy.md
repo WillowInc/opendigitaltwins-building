@@ -54,6 +54,37 @@ Space-based sensors are typically located in the space for which they are determ
 
 Entry and exit-based sensors are counting people crossing a threshold, such as an entryway, door, or turnstile. They differ from space-based people counts in that they can indicate how people are entering and leaving a space if there are multiple entryways, but they are less accurate in determining live counts. Because they are totalizing entries and exits, a missed person count entering or exiting a space propogates for the rest of the time period for which counts are being aggregated. As such, these typically need a daily reset.
 
+### Simple Openings
+
+![Occupancy-Example5](Images/Occupancy-EnteringLeaving-Example5.png)
+
+This example depicts that an Occupancy Zone may be equipped with sensors that measure the flow of people in and out of the zone:
+
+1. As with the previous examples, the Occupancy Zone is part of a Room.
+
+2. The Occupancy Zone in this example contains two Openings, such as a corridor with two ends, which allow the passage of people that are being counted in and out of the zone. These openings could be physical barriers such as doors or access control turnstils or virtual boundaries defined by the sensor equipment. 
+
+3. The Openings can be unidirectional or bidirectional in purpose. Regardless of intent of the opening, an Entering People Count Sensor measures the number of people entering the Occupancy Zone while the Leaving People Count Sensor measures the people leaving the zone.
+
+4. The Occupancy Sensor Equipment can measure the flow of people crossing one or more thresholds (Openings). Many sensor vendors call these openings “lines” with In/Out counts. We use the servedBy relationship to define the lines that are setup in the physical sensor equipment
+
+### Divided Openings
+
+![Occupancy-Example6](Images/Occupancy-EnteringLeaving-Example6.png)
+
+This example depicts that an Occupancy Zone opening may be sub-divided into smaller openings:
+
+1. As with the previous examples, the Occupancy Zone is part of a Room.
+
+2. The Occupancy Zone has a single opening that may be too wide to measure with a single physical sensor.
+
+3. The single opening is sub-divided into two smaller openings that may or may not be physically separated.
+
+4. Each of the smaller openings are served by a separate Occupancy Sensor Equipment.
+
+5. Each of the smaller openings also has its own Entering People Count Sensor and Leaving People Count Sensor.
+
+
 ### Access Control People Counts
 
 In this example, we show how person access events (i.e. access reader granting access) can be used by the WillowTwin to determine occupancy metrics for the Building or a Level.
