@@ -6,7 +6,8 @@
   },
   "description": {"en": "The percent command which sets the position of the secondary loop leaving hot water valve"},
   "extends" : [
-    "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1",
+    "dtmi:com:willowinc:SecondaryLoopLeavingWaterValvePositionActuator;1"
   ],
   "contents": [
   ],

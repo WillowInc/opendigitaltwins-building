@@ -6,7 +6,8 @@
   },
   "description": {"en": "The desired value associated with tertiary hot water loop leaving temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LeavingHotWaterTemperatureSetpoint;1"
+    "dtmi:com:willowinc:LeavingHotWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:TertiaryLoopLeavingWaterTemperatureSetpoint;1"
   ],
   "contents": [
   ],

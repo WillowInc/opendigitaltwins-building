@@ -6,7 +6,8 @@
   },
   "description": {"en": "The flow feedback from a sensor associated with chilled water secondary loop"},
   "extends" : [
-    "dtmi:com:willowinc:ChilledWaterFlowSensor;1"
+    "dtmi:com:willowinc:ChilledWaterFlowSensor;1",
+    "dtmi:com:willowinc:SecondaryLoopWaterFlowSensor;1"
   ],
   "contents": [
   ],

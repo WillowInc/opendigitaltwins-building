@@ -6,7 +6,8 @@
   },
   "description": {"en": "The desired value associated with tertiary condenser water loop leaving temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1"
+    "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:TertiaryLoopLeavingWaterTemperatureSetpoint;1"
   ],
   "contents": [
   ],

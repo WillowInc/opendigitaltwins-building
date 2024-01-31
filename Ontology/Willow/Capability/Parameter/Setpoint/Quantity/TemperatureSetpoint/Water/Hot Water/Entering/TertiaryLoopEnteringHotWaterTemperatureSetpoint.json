@@ -6,7 +6,8 @@
   },
   "description": {"en": "The desired value associated with tertiary hot water loop entering temperature"},
   "extends" : [
-    "dtmi:com:willowinc:EnteringHotWaterTemperatureSetpoint;1"
+    "dtmi:com:willowinc:EnteringHotWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:TertiaryLoopEnteringWaterTemperatureSetpoint;1"
   ],
   "contents": [
   ],

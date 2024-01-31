@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopEnteringWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with primary water loop entering temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:PrimaryLoopWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

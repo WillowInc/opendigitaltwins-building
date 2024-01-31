@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopLeavingWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Leaving Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving water primary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:PrimaryLoopWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

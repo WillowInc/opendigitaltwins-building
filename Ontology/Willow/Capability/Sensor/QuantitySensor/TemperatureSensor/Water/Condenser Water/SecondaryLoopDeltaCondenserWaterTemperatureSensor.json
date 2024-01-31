@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SecondaryLoopDeltaCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Delta Condenser Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with delta condenser water secondary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:DeltaCondenserWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:SecondaryLoopDeltaWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

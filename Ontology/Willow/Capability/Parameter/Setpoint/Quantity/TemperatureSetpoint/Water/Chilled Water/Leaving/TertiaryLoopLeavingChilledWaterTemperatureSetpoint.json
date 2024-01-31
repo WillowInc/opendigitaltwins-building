@@ -6,7 +6,8 @@
   },
   "description": {"en": "The desired value associated with tertiary chilled water loop leaving temperature"},
   "extends" : [
-    "dtmi:com:willowinc:LeavingChilledWaterTemperatureSetpoint;1"
+    "dtmi:com:willowinc:LeavingChilledWaterTemperatureSetpoint;1",
+    "dtmi:com:willowinc:TertiaryLoopLeavingWaterTemperatureSetpoint;1"
   ],
   "contents": [
   ],

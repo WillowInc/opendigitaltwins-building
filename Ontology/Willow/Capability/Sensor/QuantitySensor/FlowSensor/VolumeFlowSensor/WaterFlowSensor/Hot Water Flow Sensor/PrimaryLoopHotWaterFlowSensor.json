@@ -6,7 +6,8 @@
   },
   "description": {"en": "The flow feedback from a sensor associated with hot water primary loop"},
   "extends" : [
-    "dtmi:com:willowinc:HotWaterFlowSensor;1"
+    "dtmi:com:willowinc:HotWaterFlowSensor;1",
+    "dtmi:com:willowinc:PrimaryLoopWaterFlowSensor;1"
   ],
   "contents": [
   ],
