@@ -29,7 +29,7 @@ jobs:
           branch: auto/${{ steps.set-version.outputs.newVersion }}
           create_branch: true
       - name: 'Create PR'
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: auto/${{ steps.set-version.outputs.newVersion }}
         draft: false
