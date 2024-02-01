@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:FinalFilterDirtyFilterAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Final Filter Dirty Filter Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the dirty filter alarm of the final filter"},
+  "extends" : [
+    "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowPrimaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Primary Loop Leaving Hot Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving hot water primary loop temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

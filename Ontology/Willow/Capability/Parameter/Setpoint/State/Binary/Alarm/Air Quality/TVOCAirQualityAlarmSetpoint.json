@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:TVOCAirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Volatile Organic Compound (TVOC) Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the total volatile organic compound (TVOC) air quality alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

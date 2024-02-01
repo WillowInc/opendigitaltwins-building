@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefFanHighSupplyStaticPressureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Fan High Supply Static Pressure Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the relief fan high supply static pressure alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

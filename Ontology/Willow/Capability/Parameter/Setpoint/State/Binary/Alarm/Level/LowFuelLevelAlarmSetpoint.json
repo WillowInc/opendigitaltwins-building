@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowFuelLevelAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Fuel Level Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low fuel level alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowLevelAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

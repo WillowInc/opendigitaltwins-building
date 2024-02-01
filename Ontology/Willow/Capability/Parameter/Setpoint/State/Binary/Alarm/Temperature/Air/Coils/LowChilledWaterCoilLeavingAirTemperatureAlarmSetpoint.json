@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowChilledWaterCoilLeavingAirTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Chilled Water Coil Leaving Air Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the chilled water coil temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

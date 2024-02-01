@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighWaterLevelAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Water Level Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high water level alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:HighLevelAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

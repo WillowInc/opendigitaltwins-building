@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirLowAirFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Low Air Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the outside air low air flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighPrimaryLoopCondenserWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Primary Loop Condenser Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high primary loop condenser water flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

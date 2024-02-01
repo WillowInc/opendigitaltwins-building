@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowSteamFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Steam Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low steam flow alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

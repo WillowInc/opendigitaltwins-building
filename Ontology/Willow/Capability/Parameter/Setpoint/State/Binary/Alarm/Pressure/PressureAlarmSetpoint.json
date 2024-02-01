@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PressureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the pressure alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:AlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

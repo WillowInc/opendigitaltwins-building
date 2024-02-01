@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OverloadAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Overload Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the overload alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:AlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HighReturnAirHumidityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Return Air Humidity Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high return air humidity alarm"},
+  "extends" : [
+    "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
