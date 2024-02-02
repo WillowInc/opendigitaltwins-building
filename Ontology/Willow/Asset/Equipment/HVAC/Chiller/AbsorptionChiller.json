@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:AbsorptionChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absorption Chiller"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Chiller;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
