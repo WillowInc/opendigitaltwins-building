@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ColdDeckDischargeAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Deck Discharge Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air flow to a terminal unit from the cold deck of an air handling unit"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
