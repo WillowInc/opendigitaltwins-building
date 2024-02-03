@@ -19594,6 +19594,14 @@
             {
               "enumValue": "Pendant",
               "name": "Pendant"
+            },
+            {
+              "enumValue": "Track",
+              "name": "Track"
+            },
+            {
+              "enumValue": "Ground",
+              "name": "Ground"
             }
           ],
           "valueSchema": "string"
@@ -23596,20 +23604,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FoodPreparationEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BollardLuminaire;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bollard Luminaire"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Luminaire;1"
     ],
     "contents": [],
     "@context": [
@@ -27723,6 +27717,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:IndoorLuminaire;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Indoor Luminaire"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Luminaire;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InductanceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -28925,6 +28933,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:OperationalNonoperationalState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutdoorLuminaire;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outdoor Luminaire"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Luminaire;1"
     ],
     "contents": [],
     "@context": [
@@ -32334,6 +32356,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VAVAirflowControlValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VAV Airflow Control Valve"
+    },
+    "description": {
+      "en": "A terminal unit which provides precise control of airflow to or from a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TerminalUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VAVBox;1",
     "@type": "Interface",
     "displayName": {
@@ -34062,6 +34101,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BollardLuminaire;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bollard Luminaire"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutdoorLuminaire;1"
     ],
     "contents": [],
     "@context": [
@@ -37533,6 +37586,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:PercentSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LightPole;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Light Pole"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutdoorLuminaire;1"
     ],
     "contents": [],
     "@context": [
