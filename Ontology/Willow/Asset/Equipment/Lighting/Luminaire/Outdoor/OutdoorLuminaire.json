@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:BollardLuminaire;1",
+  "@id": "dtmi:com:willowinc:OutdoorLuminaire;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Bollard Luminaire"
+    "en": "Outdoor Luminaire"
   },
   "extends" : [
     "dtmi:com:willowinc:Luminaire;1"

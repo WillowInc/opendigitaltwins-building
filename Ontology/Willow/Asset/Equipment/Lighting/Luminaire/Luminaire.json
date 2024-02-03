@@ -38,6 +38,14 @@
           {
             "enumValue": "Pendant",
             "name": "Pendant"
+          },
+          {
+            "enumValue": "Track",
+            "name": "Track"
+          },
+          {
+            "enumValue": "Ground",
+            "name": "Ground"
           }
         ],
         "valueSchema": "string"
