@@ -64,7 +64,7 @@ This example depicts that an Occupancy Zone may be equipped with sensors that me
 
 2. The Occupancy Zone in this example contains two Openings, such as a corridor with two ends, which allow the passage of people that are being counted in and out of the zone. These openings could be physical barriers such as doors or access control turnstils or virtual boundaries defined by the sensor equipment. 
 
-3. The Openings can be unidirectional or bidirectional in purpose. Regardless of intent of the opening, an Entering People Count Sensor measures the number of people entering the Occupancy Zone while the Leaving People Count Sensor measures the people leaving the zone.
+3. An Opening always has a direction in which its two capabilities, Entering People Count Sensor and Leaving People Count Sensor, have the proper meaning for the flow of people in and out of the Occupancy Zone. When this is the case, we use the isEntryTo relationship from the Opening to the Occupancy Zone. See the Adjacent Zones, Shared Opening example for more explanation around when to use the other relationship, isExitFrom.
 
 4. The Occupancy Sensor Equipment can measure the flow of people crossing one or more thresholds (Openings). Many sensor vendors call these openings “lines” with In/Out counts. We use the servedBy relationship to define the lines that are setup in the physical sensor equipment
 
@@ -83,6 +83,24 @@ This example depicts that an Occupancy Zone opening may be sub-divided into smal
 4. Each of the smaller openings are served by a separate Occupancy Sensor Equipment.
 
 5. Each of the smaller openings also has its own Entering People Count Sensor and Leaving People Count Sensor.
+
+### Adjacent Zones, Shared Opening
+
+![Occupancy-Example7](Images/Occupancy-EnteringLeaving-Example7.png)
+
+Often when using the entry and exit-based people count sensors, the count of people entering one zone from an opening equates to the same count of people leaving its adjacent zone. This example depicts how to model this scenario:
+
+1. We start with defining an Occupancy Zone as part of a Room. Let’s say this Room #1 is a Lobby.
+
+2. Next, we have another Occupancy Zone that is part of a Room #2 which is adjacent to Room #1.
+
+3. Room #1 and Room #2 share an Opening (i.e. door). This Opening is served by the Occupancy Sensor Equipment which is counting the people coming in and out of the opening.
+
+4. The Opening has two Capabilities, Entering People Count Sensor and Leaving People Count Sensor.
+
+5. Now, we need to define the Entry and Exit relationships for the opening such that its two capabilities can have proper context for Entering and Leaving. The Opening has the relationship isEntryFor to the OccupancyZone for which the Entering People Count defines the people entering that zone. Likewise, the Leaving People Count defines the people leaving from the zone for which the Opening is an entry for. In our example, this means that the Entering People Count and Leaving People Count define the people entering and leaving from Room #1.
+
+6. Next, we define the relationship isExitFor to the OccupancyZone for which the Opening’s two capabilities have the opposite meaning. In other words, we can infer that the numbering of people leaving Room #2 via this Opening is the Entering People Count Sensor. Likewise, the number of people entering Room #2 via this Opening can be inferred from the Leaving People Count Sensor.
 
 
 ### Access Control People Counts
