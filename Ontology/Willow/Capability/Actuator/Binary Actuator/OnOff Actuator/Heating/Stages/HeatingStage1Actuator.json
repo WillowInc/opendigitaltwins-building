@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingStage1Actuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Stage 1 Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's first heating stage when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:HeatingOnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

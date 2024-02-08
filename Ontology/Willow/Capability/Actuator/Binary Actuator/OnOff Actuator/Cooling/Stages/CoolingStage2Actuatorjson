@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingStage2Actuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Stage 2 Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's second cooling stage when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CoolingOnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatStage4Actuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheat Stage 4 Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's fourth reheat stage when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ReheatOnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

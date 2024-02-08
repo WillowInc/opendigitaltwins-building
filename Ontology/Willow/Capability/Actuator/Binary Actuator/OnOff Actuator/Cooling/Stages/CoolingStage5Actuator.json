@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingStage5Actuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Stage 5 Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's fifth cooling stage when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:CoolingOnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PreheatOnActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheat On Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's preheat function when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:HeatingOnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
