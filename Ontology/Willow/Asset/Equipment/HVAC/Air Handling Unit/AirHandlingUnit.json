@@ -191,6 +191,15 @@
       "writable": true
     },
     {
+      "@type": "Property",
+      "displayName": {
+        "en": "design cooling energy efficiency ratio (EER)"
+      },
+      "name": "designCoolingEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
         "en": "Design Minimum Outside Airflow"
@@ -209,6 +218,67 @@
       "annotates": "designMinOutsideAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Maximum Dischage Airflow"
+      },
+      "name": "designMaxDischargeAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Maximum Dischage Airflow Unit"
+      },
+      "name": "designMaxDischargeAirflowUnit",
+      "annotates": "designMaxDischargeAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designMaxEnteringAirTemperature",
+      "displayName": {
+        "en": "Design Maximum Entering Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Maximum Entering Air Temperature Unit"
+      },
+      "name": "designMaxEnteringAirTemperatureUnit",
+      "annotates": "designMaxEnteringAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "design external static pressure"
+      },
+      "name": "designExternalStaticPressure",
+      "schema": "double",
+      "unit": "poundPerSquareInch",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design external static pressure unit"
+      },
+      "name": "designExternalStaticPressureUnit",
+      "annotates": "designExternalStaticPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
       "writable": true
     },
     {

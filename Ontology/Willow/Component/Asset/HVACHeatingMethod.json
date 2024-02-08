@@ -137,6 +137,25 @@
       "schema": "TemperatureUnit"
     },
     {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingAirTemperature",
+      "displayName": {
+        "en": "Design Leaving Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Temperature Unit"
+      },
+      "name": "designLeavingAirTemperatureUnit",
+      "annotates": "designLeavingAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
         "en": "Design Flow"

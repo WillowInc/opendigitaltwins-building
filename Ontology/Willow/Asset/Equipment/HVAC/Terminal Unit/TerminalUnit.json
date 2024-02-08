@@ -51,6 +51,48 @@
       "writable": true
     },
     {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "design cooling zone air temperature"
+      },
+      "name": "designCoolingZoneAirTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design cooling zone air temperature unit"
+      },
+      "name": "designCoolingZoneAirTemperatureUnit",
+      "annotates": "designCoolingZoneAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "design heating zone air temperature"
+      },
+      "name": "designHeatingZoneAirTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design heating zone air temperature unit"
+      },
+      "name": "designHeatingZoneAirTemperatureUnit",
+      "annotates": "designHeatingZoneAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit",
+      "writable": true
+    },
+    {
       "@type": "Component",
       "displayName": {
         "en": "duct inlet"
