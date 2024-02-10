@@ -6,7 +6,7 @@
   },
   "description": {"en": "The volumetric quantity of water that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Water Volume Sensor which reports data on a more frequent interval."},
   "extends" : [
-    "dtmi:com:willowinc:ThermalEnergySensor;1"
+    "dtmi:com:willowinc:WaterVolumeSensor;1"
   ],
   "contents": [
 
