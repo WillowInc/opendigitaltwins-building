@@ -11875,6 +11875,32 @@
       {
         "@type": [
           "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Temperature Unit"
+        },
+        "name": "designLeavingAirTemperatureUnit",
+        "annotates": "designLeavingAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
           "VolumeFlowRate"
         ],
         "displayName": {
@@ -14849,6 +14875,15 @@
         "writable": true
       },
       {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal energy efficiency ratio (EER)"
+        },
+        "name": "nominalEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
         "@type": [
           "Property",
           "VolumeFlowRate"
@@ -14875,6 +14910,32 @@
         "overrides": "unit",
         "schema": "VolumeFlowRateUnit",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designMaxEnteringAirTemperature",
+        "displayName": {
+          "en": "Design Maximum Entering Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Maximum Entering Air Temperature Unit"
+        },
+        "name": "designMaxEnteringAirTemperatureUnit",
+        "annotates": "designMaxEnteringAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       },
       {
         "@type": "Property",
@@ -21362,6 +21423,62 @@
         "annotates": "maxAirflowRating",
         "overrides": "unit",
         "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "design cooling zone air temperature"
+        },
+        "name": "designCoolingZoneAirTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design cooling zone air temperature unit"
+        },
+        "name": "designCoolingZoneAirTemperatureUnit",
+        "annotates": "designCoolingZoneAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "design heating zone air temperature"
+        },
+        "name": "designHeatingZoneAirTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design heating zone air temperature unit"
+        },
+        "name": "designHeatingZoneAirTemperatureUnit",
+        "annotates": "designHeatingZoneAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit",
         "writable": true
       },
       {
