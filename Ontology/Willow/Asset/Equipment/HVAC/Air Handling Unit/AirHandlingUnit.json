@@ -191,6 +191,15 @@
       "writable": true
     },
     {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal energy efficiency ratio (EER)"
+      },
+      "name": "nominalEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
         "en": "Design Minimum Outside Airflow"
@@ -210,6 +219,25 @@
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
       "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designMaxEnteringAirTemperature",
+      "displayName": {
+        "en": "Design Maximum Entering Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Maximum Entering Air Temperature Unit"
+      },
+      "name": "designMaxEnteringAirTemperatureUnit",
+      "annotates": "designMaxEnteringAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
     },
     {
       "@type": "Property",
