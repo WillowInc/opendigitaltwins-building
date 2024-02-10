@@ -43442,6 +43442,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingStageActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Stage Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s cooling stage when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingOnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DamperOpenCloseActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -45401,6 +45418,23 @@
       "en": "Heat Detector"
     },
     "extends": "dtmi:com:willowinc:FireDetector;1",
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingStageActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Stage Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s heating stage when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingOnActuator;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -48015,6 +48049,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatOnActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat On Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s preheat function when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingOnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PresenceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -48303,6 +48354,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HeatingLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatOnActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat On Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s reheat function when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingOnActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -56534,6 +56602,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatStageActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Stage Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s preheat stage when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PreheatOnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopChilledWaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -57123,6 +57208,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatStageActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Stage Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s reheat stage when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReheatOnActuator;1"
     ],
     "contents": [],
     "@context": [
