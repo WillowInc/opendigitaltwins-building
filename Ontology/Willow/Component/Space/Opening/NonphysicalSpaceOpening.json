@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:NonphysicalSpaceOpening;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Nonphysical Space Opening"
+  },
+  "description": {
+    "en": "A nonphysical or logical transition between spaces that is defined by purely by function or virtually rather than a physical barrier."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceOpening;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
