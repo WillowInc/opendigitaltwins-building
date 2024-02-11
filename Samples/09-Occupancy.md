@@ -62,7 +62,7 @@ This example depicts that an Occupancy Zone may be equipped with sensors that me
 
 1. As with the previous examples, the Occupancy Zone is part of a Room.
 
-2. The Occupancy Zone in this example contains two Openings, such as a corridor with two ends, which allow the passage of people that are being counted in and out of the zone. These openings could be physical barriers such as doors or access control turnstils or virtual boundaries defined by the sensor equipment. 
+2. The Occupancy Zone in this example contains two Space Openings, such as a corridor with two ends, which allow the passage of people that are being counted in and out of the zone. These openings could be physical barriers such as doors or access control turnstiles or nonphysical boundaries (Nonphysical Space Opening) defined by the sensor equipment. The specific type of Space Opening shown in this example is a Door which is both a Physical Space Opening and Asset in the ontology. 
 
 3. An Opening always has a direction in which its two capabilities, Entering People Count Sensor and Leaving People Count Sensor, have the proper meaning for the flow of people in and out of the Occupancy Zone. When this is the case, we use the isEntryTo relationship from the Opening to the Occupancy Zone. See the Adjacent Zones, Shared Opening example for more explanation around when to use the other relationship, isExitFrom.
 
@@ -84,6 +84,25 @@ This example depicts that an Occupancy Zone opening may be sub-divided into smal
 
 5. Each of the smaller openings also has its own Entering People Count Sensor and Leaving People Count Sensor.
 
+### Divided Openings (Card Access Readers)
+
+![Occupancy-Example8](Images/Occupancy-EnteringLeaving-Example8.png)
+
+This example depicts a divided opening which has multiple turnstiles each with an entry and exit card access reader (aka badge in, badge out) to access a space such as an elevator lobby:
+
+1. As with the previous examples, the Nonphysical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby. We use Nonphysical Space Opening because the opening itself to the elevator lobby is nonphysical even though the turnstiles individually are physical space openings.
+
+NOTE: Due to how the ontology is configured with Doors and Turnstiles being both Assets and Physical Openings, twins cannot use dtmi:com:willowinc:SpaceOpening;1, dtmi:com:willowinc:PhysicalOpening;1 as the model. These shoudl be considered abstract models and either Door, Turnstile, or Nonphysical Opening should be used.
+
+2. In this example, we have two physical space opening assets which are Turnstiles. Turnstiles are both Assets and Space Openings in the ontology.
+
+3. Each turnstile has an entry card access reader and exit card access reader. As such there are two capabilities, Entering People Count Sensor and Leaving People Count Sensor. These are the total number of person granted access events for entering and leaving through the turnstile.
+
+4. Each Access Reader on the turnstile is designated as the entry (IN) or exit (OUT). Because the isCapabilityOf relationship is already defining the count relative to the parent Turnstile, the hostedBy relationship from the Entering People Count is used to define which reader is used for entry.
+
+5. Similarly, the Access Reader which enables exit is hosting the Leaving People Count Sensor
+
+
 ### Adjacent Zones, Shared Opening
 
 ![Occupancy-Example7](Images/Occupancy-EnteringLeaving-Example7.png)
@@ -98,7 +117,7 @@ Often when using the entry and exit-based people count sensors, the count of peo
 
 4. The Opening has two Capabilities, Entering People Count Sensor and Leaving People Count Sensor.
 
-5. Now, we need to define the Entry and Exit relationships for the opening such that its two capabilities can have proper context for Entering and Leaving. The Opening has the relationship isEntryFor to the OccupancyZone for which the Entering People Count defines the people entering that zone. Likewise, the Leaving People Count defines the people leaving from the zone for which the Opening is an entry for. In our example, this means that the Entering People Count and Leaving People Count define the people entering and leaving from Room #1.
+5. Now, we need to define the Entry and Exit relationships for the opening such that its two capabilities can have proper context for Entering and Leaving. The Opening has the relationship isEntryTo to the OccupancyZone for which the Entering People Count defines the people entering that zone. Likewise, the Leaving People Count defines the people leaving from the zone for which the Opening is an entry for. In our example, this means that the Entering People Count and Leaving People Count define the people entering and leaving from Room #1.
 
 6. Next, we define the relationship isExitFor to the OccupancyZone for which the Opening’s two capabilities have the opposite meaning. In other words, we can infer that the numbering of people leaving Room #2 via this Opening is the Entering People Count Sensor. Likewise, the number of people entering Room #2 via this Opening can be inferred from the Leaving People Count Sensor.
 

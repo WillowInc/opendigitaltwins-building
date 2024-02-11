@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:willowinc:PhysicalSpaceOpening;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Physical Space Opening"
+  },
+  "description": {
+    "en": "A physical barrier which enables (and disables) the passageway of people between spaces, i.e. door or turnstile."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SpaceOpening;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
