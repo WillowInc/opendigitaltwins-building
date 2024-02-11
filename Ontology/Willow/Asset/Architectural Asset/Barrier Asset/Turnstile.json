@@ -5,7 +5,8 @@
     "en": "Turnstile"
   },
   "extends" : [
-    "dtmi:com:willowinc:BarrierAsset;1"
+    "dtmi:com:willowinc:BarrierAsset;1",
+    "dtmi:com:willowinc:PhysicalSpaceOpening;1"
   ],
   "contents": [
     

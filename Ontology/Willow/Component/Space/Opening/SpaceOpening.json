@@ -11,7 +11,22 @@
     "dtmi:com:willowinc:SpaceComponent;1"
   ],
   "contents": [
-
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is entry to"
+      },
+      "name": "isEntryTo",
+      "target": "dtmi:com:willowinc:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is exit from"
+      },
+      "name": "isExitFrom",
+      "target": "dtmi:com:willowinc:Space;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",
