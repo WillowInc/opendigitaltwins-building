@@ -90,7 +90,9 @@ This example depicts that an Occupancy Zone opening may be sub-divided into smal
 
 This example depicts a divided opening which has multiple turnstiles each with an entry and exit card access reader (aka badge in, badge out) to access a space such as an elevator lobby:
 
-1. As with the previous examples, the Nonphysical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby.
+1. As with the previous examples, the Nonphysical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby. We use Nonphysical Space Opening because the opening itself to the elevator lobby is nonphysical even though the turnstiles individually are physical space openings.
+
+NOTE: Due to how the ontology is configured with Doors and Turnstiles being both Assets and Physical Openings, twins cannot use dtmi:com:willowinc:SpaceOpening;1, dtmi:com:willowinc:PhysicalOpening;1 as the model. These shoudl be considered abstract models and either Door, Turnstile, or Nonphysical Opening should be used.
 
 2. In this example, we have two physical space opening assets which are Turnstiles. Turnstiles are both Assets and Space Openings in the ontology.
 
