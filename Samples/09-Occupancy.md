@@ -90,7 +90,7 @@ This example depicts that an Occupancy Zone opening may be sub-divided into smal
 
 This example depicts a divided opening which has multiple turnstiles each with an entry and exit card access reader (aka badge in, badge out) to access a space such as an elevator lobby:
 
-1. As with the previous examples, the Nonphysical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby.
+1. As with the previous examples, the Physical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby.
 
 2. In this example, we have two physical space opening assets which are Turnstiles. Turnstiles are both Assets and Space Openings in the ontology.
 
