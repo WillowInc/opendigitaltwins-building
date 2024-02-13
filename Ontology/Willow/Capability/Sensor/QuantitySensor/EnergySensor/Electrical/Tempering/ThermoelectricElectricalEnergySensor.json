@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ThermoelectricElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermoelectric Electrical Energy Sensor"
+  },
+  "description": {"en": "The electrical energy feedback from a sensor associated with thermoelectric tempering"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

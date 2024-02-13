@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnAirFanElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Fan Electrical Power Sensor"
+  },
+  "description": {"en": "The electrical power feedback from a sensor associated with the return air fan"},
+  "extends" : [
+    "dtmi:com:willowinc:FanElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

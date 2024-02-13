@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Electrical Energy Sensor"
+  },
+  "description": {"en": "The electrical energy feedback from a sensor associated with electric heating"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

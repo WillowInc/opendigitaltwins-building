@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:FanElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Electrical Energy Sensor"
+  },
+  "description": {"en": "The electrical energy feedback from a sensor associated with an integrated fan"},
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:MixedAirFanElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Fan Electrical Energy Sensor"
+  },
+  "description": {"en": "The electrical energy feedback from a sensor associated with the mixed air fan"},
+  "extends" : [
+    "dtmi:com:willowinc:FanElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
