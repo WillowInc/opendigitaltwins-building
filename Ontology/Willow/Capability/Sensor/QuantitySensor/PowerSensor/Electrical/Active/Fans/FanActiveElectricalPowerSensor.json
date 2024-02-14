@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with an integrated fan"},
+  "extends" : [
+    "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

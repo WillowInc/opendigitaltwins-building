@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheat Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with electric reheat"},
+  "extends" : [
+    "dtmi:com:willowinc:HeatingActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

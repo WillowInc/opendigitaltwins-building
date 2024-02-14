@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with electric cooling"},
+  "extends" : [
+    "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
