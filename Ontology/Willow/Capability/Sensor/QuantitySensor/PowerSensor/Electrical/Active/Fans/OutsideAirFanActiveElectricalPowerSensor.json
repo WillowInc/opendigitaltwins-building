@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirFanActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Fan Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with the outside air fan"},
+  "extends" : [
+    "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
