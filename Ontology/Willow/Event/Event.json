@@ -180,6 +180,18 @@
     },
     {
       "@type": "Property",
+      "name": "mappedConnectorId",
+      "displayName": {
+        "en": "Mapped Connector ID"
+      },
+      "description": {
+        "en": "The connector ID as created by Mapped and stored as the $dtid of a Connector Application twin for the connector which has defined and trends this Event."
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
       "displayName": {
         "en": "name"
       },
@@ -231,6 +243,16 @@
       },
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "connectorID",
+      "displayName": {
+        "en": "Connector ID"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "Willow Connector identifier which manages the Capabiltiy"
     },
     {
       "@type": "Property",
