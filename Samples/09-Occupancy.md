@@ -90,18 +90,19 @@ This example depicts that an Occupancy Zone opening may be sub-divided into smal
 
 This example depicts a divided opening which has multiple turnstiles each with an entry and exit card access reader (aka badge in, badge out) to access a space such as an elevator lobby:
 
-1. As with the previous examples, the Nonphysical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby. We use Nonphysical Space Opening because the opening itself to the elevator lobby is nonphysical even though the turnstiles individually are physical space openings.
-
-NOTE: Due to how the ontology is configured with Doors and Turnstiles being both Assets and Physical Openings, twins cannot use dtmi:com:willowinc:SpaceOpening;1, dtmi:com:willowinc:PhysicalOpening;1 as the model. These shoudl be considered abstract models and either Door, Turnstile, or Nonphysical Opening should be used.
+1. As with the previous examples, the Physical Space Opening has an isEntryTo relationship to the Occupancy Zone which represents the elevator lobby.
 
 2. In this example, we have two physical space opening assets which are Turnstiles. Turnstiles are both Assets and Space Openings in the ontology.
 
-3. Each turnstile has an entry card access reader and exit card access reader. As such there are two capabilities, Entering People Count Sensor and Leaving People Count Sensor. These are the total number of person granted access events for entering and leaving through the turnstile.
+3. Each turnstile has an entry card access reader and exit card access reader with a serves relationship to the Turnstile.
 
-4. Each Access Reader on the turnstile is designated as the entry (IN) or exit (OUT). Because the isCapabilityOf relationship is already defining the count relative to the parent Turnstile, the hostedBy relationship from the Entering People Count is used to define which reader is used for entry.
+4. Each Access Reader on the turnstile is designated as enabling entry (IN) or exit (OUT). This is captured by creating an Entering Person Access Event (IN) or Leaving Person Access Event (OUT) with a producedBy relationship to the Access Reader. These Person Access Events are sent to Willow from an Access Control connector and also include additional metadata such as the personnel ID that badged and whether they were granted or denied access.
 
-5. Similarly, the Access Reader which enables exit is hosting the Leaving People Count Sensor
+5. Each Turnstile has a Total Entering People Count Sensor and Total Leaving People Count Sensor. These are calculated values by Willow which query the Entering/Leaving Person Access Events for the day. These are totalized throughout a day and reset at midnight.
 
+6. Each of the perimeter Openings to a Building get a servedBy relationship to the Building which enables the Total Entering People Count and Total Leaving People Count from those Openings to be summed for the Building’s Total Entering People Count and Total Leaving People Count.
+
+7. The Unique Entering People Count Sensor is a calculated value by Willow which queries all granted events across all Access Readers at the Building.
 
 ### Adjacent Zones, Shared Opening
 
