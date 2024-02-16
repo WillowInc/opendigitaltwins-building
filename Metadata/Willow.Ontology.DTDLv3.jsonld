@@ -45466,6 +45466,41 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with an integrated fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with an integrated fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalPowerSensor;1",
+      "dtmi:com:willowinc:FanElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FanPoweredBoxReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -51713,6 +51748,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirFanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Fan Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with the discharge air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirFanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with the discharge air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -52406,6 +52475,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirFanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Fan Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with the exhaust air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirFanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with the exhaust air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -55466,6 +55569,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MixedAirFanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Fan Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with the mixed air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirFanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with the mixed air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -55779,6 +55916,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirFanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Fan Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with the outside air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirFanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with the outside air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -57824,6 +57995,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirFanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Fan ActiveElectrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with the relief air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirFanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with the relief air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -58137,6 +58342,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirFanActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Fan Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical energy feedback from a sensor associated with the return air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirFanActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Fan Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power feedback from a sensor associated with the return air fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
