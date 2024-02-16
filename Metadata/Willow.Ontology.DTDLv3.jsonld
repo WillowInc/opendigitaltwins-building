@@ -3137,6 +3137,18 @@
       },
       {
         "@type": "Property",
+        "name": "mappedConnectorId",
+        "displayName": {
+          "en": "Mapped Connector ID"
+        },
+        "description": {
+          "en": "The connector ID as created by Mapped and stored as the $dtid of a Connector Application twin for the connector which has defined and trends this Event."
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
         "displayName": {
           "en": "name"
         },
@@ -3188,6 +3200,16 @@
         },
         "writable": true,
         "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "connectorID",
+        "displayName": {
+          "en": "Connector ID"
+        },
+        "writable": true,
+        "schema": "string",
+        "comment": "Willow Connector identifier which manages the Capabiltiy"
       },
       {
         "@type": "Property",
@@ -10601,6 +10623,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringPersonAccessEvent;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Person Access Event"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PersonAccessEvent;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EquipmentCollection;1",
     "@type": "Interface",
     "displayName": {
@@ -12245,6 +12281,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:ContractDocument;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingPersonAccessEvent;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Person Access Event"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PersonAccessEvent;1"
     ],
     "contents": [],
     "@context": [
