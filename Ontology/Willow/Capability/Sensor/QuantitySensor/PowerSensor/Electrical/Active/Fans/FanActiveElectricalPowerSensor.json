@@ -6,7 +6,8 @@
   },
   "description": {"en": "The active electrical power feedback from a sensor associated with an integrated fan"},
   "extends" : [
-    "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    "dtmi:com:willowinc:ActiveElectricalPowerSensor;1",
+    "dtmi:com:willowinc:FanElectricalPowerSensor;1"
   ],
   "contents": [
     
