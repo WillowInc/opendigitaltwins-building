@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TertiaryLoopWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with tertiary water loop temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

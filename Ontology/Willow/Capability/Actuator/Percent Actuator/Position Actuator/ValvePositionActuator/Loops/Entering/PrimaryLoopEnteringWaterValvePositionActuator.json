@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopEnteringWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the primary loop entering water valve"},
+  "extends" : [
+    "dtmi:com:willowinc:PrimaryLoopWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

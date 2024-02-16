@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with entering chilled water secondary loop"},
   "extends" : [
-    "dtmi:com:willowinc:EnteringChilledWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:EnteringChilledWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:SecondaryLoopEnteringWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

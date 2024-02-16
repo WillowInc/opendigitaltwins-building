@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with entering condenser water primary loop"},
   "extends" : [
-    "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:EnteringCondenserWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:PrimaryLoopEnteringWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

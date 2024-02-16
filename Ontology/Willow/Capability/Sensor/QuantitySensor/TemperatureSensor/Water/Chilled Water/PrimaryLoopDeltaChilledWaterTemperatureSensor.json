@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PrimaryLoopDeltaChilledWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Delta Chilled Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with delta chilled water primary loop"},
+  "extends" : [
+    "dtmi:com:willowinc:DeltaChilledWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:PrimaryLoopDeltaWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

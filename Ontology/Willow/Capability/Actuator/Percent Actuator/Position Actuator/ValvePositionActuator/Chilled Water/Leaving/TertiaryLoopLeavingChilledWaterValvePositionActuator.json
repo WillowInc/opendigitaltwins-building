@@ -6,7 +6,8 @@
   },
   "description": {"en": "The percent command which sets the position of the tertiary loop leaving chilled water valve"},
   "extends" : [
-    "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
+    "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1",
+    "dtmi:com:willowinc:TertiaryLoopLeavingWaterValvePositionActuator;1"
   ],
   "contents": [
   ],

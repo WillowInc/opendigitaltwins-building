@@ -6,7 +6,8 @@
   },
   "description": {"en": "The percent command which sets the position of the primary loop entering condenser water valve"},
   "extends" : [
-    "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
+    "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1",
+    "dtmi:com:willowinc:PrimaryLoopEnteringWaterValvePositionActuator;1"
   ],
   "contents": [
   ],

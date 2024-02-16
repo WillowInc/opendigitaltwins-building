@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with entering hot water secondary loop"},
   "extends" : [
-    "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:SecondaryLoopEnteringWaterTemperatureSensor;1"
   ],
   "contents": [
   ],

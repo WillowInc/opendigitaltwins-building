@@ -6,7 +6,8 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with leaving hot water tertiary loop"},
   "extends" : [
-    "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
+    "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1",
+    "dtmi:com:willowinc:TertiaryLoopLeavingWaterTemperatureSensor;1"
   ],
   "contents": [
   ],
