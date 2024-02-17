@@ -12,6 +12,62 @@
   ],
   "contents": [
     {
+      "@type": "Property",
+      "displayName": {
+        "en": "primary medium"
+      },
+      "name": "primaryMedium",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Steam",
+            "name": "Steam"
+          },
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          },
+          {
+            "enumValue": "CondenserWater",
+            "name": "CondenserWater"
+          },
+          {
+            "enumValue": "ChilledWater",
+            "name": "ChilledWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "secondary medium"
+      },
+      "name": "secondaryMedium",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          },
+          {
+            "enumValue": "CondenserWater",
+            "name": "CondenserWater"
+          },
+          {
+            "enumValue": "ChilledWater",
+            "name": "ChilledWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
       "@type": ["Property", "Temperature"],
       "displayName": {
         "en": "secondary maximum temperature"
