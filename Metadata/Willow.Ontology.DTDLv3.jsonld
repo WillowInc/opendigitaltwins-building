@@ -21427,6 +21427,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SignalStrengthState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Signal Strength State"
+    },
+    "description": {
+      "en": "The percent signal strength of the equipment\u0027s wireless communication or network transceiver"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PercentState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SoundPressureLevelSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -24050,6 +24067,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalGenerationStorageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Level State"
+    },
+    "description": {
+      "en": "The percent \u0027battery\u0027 level state of the equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LevelState;1"
     ],
     "contents": [],
     "@context": [
