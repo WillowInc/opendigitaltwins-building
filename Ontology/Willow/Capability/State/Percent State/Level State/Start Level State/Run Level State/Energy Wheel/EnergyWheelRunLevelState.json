@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:EnegyWheelRunLevelState;1",
+  "@id": "dtmi:com:willowinc:EnergyWheelRunLevelState;1",
   "@type": "Interface",
   "displayName": {
     "en": "Energy Wheel Run Level State"
