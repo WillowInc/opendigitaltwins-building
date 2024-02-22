@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SensibleEnergyWheelRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensible Energy Wheel Run Level State"
+  },
+  "description": {"en": "The percent run level state of the sensible energy wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

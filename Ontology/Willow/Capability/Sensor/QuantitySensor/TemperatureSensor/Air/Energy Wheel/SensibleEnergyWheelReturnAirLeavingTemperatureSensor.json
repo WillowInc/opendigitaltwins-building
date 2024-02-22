@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SensibleEnergyWheelReturnAirLeavingTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensible Energy Wheel Return Air Leaving Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with air leaving the return air side of the Sensible energy wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelReturnAirLeavingTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

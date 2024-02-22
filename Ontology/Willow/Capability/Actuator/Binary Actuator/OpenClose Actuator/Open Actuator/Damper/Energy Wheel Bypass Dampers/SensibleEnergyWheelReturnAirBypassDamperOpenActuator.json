@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SensibleEnergyWheelReturnAirBypassDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensible Energy Wheel Return Air Bypass Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the sensible energy wheel return air bypass damper to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelReturnAirBypassDamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
