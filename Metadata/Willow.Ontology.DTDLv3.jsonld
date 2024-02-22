@@ -8253,6 +8253,52 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterLeakEvent;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Leak Event"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Event;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "leak rate"
+        },
+        "name": "leakeRate",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "leak rate unit"
+        },
+        "name": "leakRateUnit",
+        "annotates": "leakRate",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Zone;1",
     "@type": "Interface",
     "displayName": {
