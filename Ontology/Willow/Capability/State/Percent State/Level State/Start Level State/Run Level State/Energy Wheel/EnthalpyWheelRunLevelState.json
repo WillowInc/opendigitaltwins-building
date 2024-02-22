@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheelRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel Run Level State"
+  },
+  "description": {"en": "The percent run level state of the enthalpy wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

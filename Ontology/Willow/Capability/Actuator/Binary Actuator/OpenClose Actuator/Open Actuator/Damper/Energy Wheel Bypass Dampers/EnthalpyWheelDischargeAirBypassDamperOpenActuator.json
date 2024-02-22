@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheelDischargeAirBypassDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel Discharge Air Bypass Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the enthalpy wheel discharge air bypass damper to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelDischargeAirBypassDamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheelReturnAirLeavingTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel Return Air Leaving Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with air leaving the return air side of the enthalpy wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelReturnAirLeavingTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

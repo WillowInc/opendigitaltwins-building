@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheelRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel Run State"
+  },
+  "description": {"en": "The Boolean state of the enthalpy wheel which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

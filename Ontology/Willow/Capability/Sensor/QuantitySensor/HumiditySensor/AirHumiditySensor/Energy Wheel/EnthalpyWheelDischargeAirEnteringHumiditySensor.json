@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheelDischargeAirEnteringHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel Discharge Air Entering Humidity Sensor"
+  },
+  "description": {"en": "The humidity feedback from a sensor associated with air entering the discharge air side of the enthalpy wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelDischargeAirEnteringHumiditySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

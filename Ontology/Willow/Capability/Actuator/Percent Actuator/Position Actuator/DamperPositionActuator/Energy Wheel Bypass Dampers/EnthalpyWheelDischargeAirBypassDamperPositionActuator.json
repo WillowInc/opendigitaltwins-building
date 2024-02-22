@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheelDischargeAirBypassDamperPositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel Discharge Air Bypass Damper Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the enthalpy wheel discharge (supply) air bypass damper"},
+  "extends" : [
+    "dtmi:com:willowinc:EnergyWheelDischargeAirBypassDamperPositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
