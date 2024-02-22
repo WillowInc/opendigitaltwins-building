@@ -632,6 +632,18 @@
       "name": "stage",
       "schema": "integer",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Element number of a fan, coil, etc as a part of an array, e.g. fan 2 of the discharge air fan array"
+      },
+      "displayName": {
+        "en": "arrayElement"
+      },
+      "name": "arrayElement",
+      "schema": "integer",
+      "writable": true
     }
   ],
   "description": {
