@@ -326,6 +326,10 @@
             "name": "None"
           },
           {
+            "enumValue": "EnthalpyWheel",
+            "name": "EnthalpyWheel"
+          },
+          {
             "enumValue": "DualWheel",
             "name": "DualWheel"
           },
@@ -336,6 +340,36 @@
           {
             "enumValue": "CoolReheat",
             "name": "CoolReheat"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "energy recovery method"
+      },
+      "name": "energyRecoveryMethod",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "None",
+            "name": "None"
+          },
+          {
+            "enumValue": "SensibleEnergyWheel",
+            "name": "SensibleEnergyWheel"
+          },
+          {
+            "enumValue": "EnthalpyWheel",
+            "name": "EnthalpyWheel"
+          },
+          {
+            "enumValue": "DualWheel",
+            "name": "DualWheel"
           }
         ],
         "valueSchema": "string"

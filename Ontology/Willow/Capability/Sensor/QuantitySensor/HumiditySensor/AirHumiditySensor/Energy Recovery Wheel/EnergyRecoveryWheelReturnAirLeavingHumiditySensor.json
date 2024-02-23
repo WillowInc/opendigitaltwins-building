@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirLeavingHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Wheel Return Air Leaving Humidity Sensor"
+  },
+  "description": {"en": "The humidity feedback from a sensor associated with air leaving the return air side of the energy recovery wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
