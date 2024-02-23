@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Wheel Run Level State"
+  },
+  "description": {"en": "The percent run level state of the energy recovery wheel"},
+  "extends" : [
+    "dtmi:com:willowinc:RunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
