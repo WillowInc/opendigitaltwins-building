@@ -15183,6 +15183,10 @@
               "name": "None"
             },
             {
+              "enumValue": "EnthalpyWheel",
+              "name": "EnthalpyWheel"
+            },
+            {
               "enumValue": "DualWheel",
               "name": "DualWheel"
             },
@@ -15193,6 +15197,36 @@
             {
               "enumValue": "CoolReheat",
               "name": "CoolReheat"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "energy recovery method"
+        },
+        "name": "energyRecoveryMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "None",
+              "name": "None"
+            },
+            {
+              "enumValue": "SensibleEnergyWheel",
+              "name": "SensibleEnergyWheel"
+            },
+            {
+              "enumValue": "EnthalpyWheel",
+              "name": "EnthalpyWheel"
+            },
+            {
+              "enumValue": "DualWheel",
+              "name": "DualWheel"
             }
           ],
           "valueSchema": "string"
@@ -36679,6 +36713,176 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirBypassDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Discharge Air Bypass Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the energy recovery wheel discharge (supply) air bypass damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirEnteringHumiditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Discharge Air Entering Humidity Sensor"
+    },
+    "description": {
+      "en": "The humidity feedback from a sensor associated with air entering the discharge air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirEnteringTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Discharge Air Entering Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with air entering the discharge air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirLeavingHumiditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Discharge Air Leaving Humidity Sensor"
+    },
+    "description": {
+      "en": "The humidity feedback from a sensor associated with air leaving the discharge air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirLeavingTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Discharge Air Leaving Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with air leaving the discharge air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirBypassDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Return Air Bypass Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the energy recovery wheel return air bypass damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirEnteringHumiditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Return Air Entering Humidity Sensor"
+    },
+    "description": {
+      "en": "The humidity feedback from a sensor associated with air entering the return air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirEnteringTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Return Air Entering Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with air entering the return air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirLeavingHumiditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Return Air Leaving Humidity Sensor"
+    },
+    "description": {
+      "en": "The humidity feedback from a sensor associated with air leaving the return air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirLeavingTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Return Air Leaving Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with air leaving the return air side of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringPeopleCountSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -45048,6 +45252,108 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnOffSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirBypassDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Discharge Air Bypass Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the energy recovery wheel discharge air bypass damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirBypassDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Return Air Bypass Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the energy recovery wheel return air bypass damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the energy recovery wheel to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the energy recovery wheel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the energy recovery wheel which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunState;1"
     ],
     "contents": [],
     "@context": [
