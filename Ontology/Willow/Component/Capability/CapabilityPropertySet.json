@@ -636,12 +636,12 @@
     {
       "@type": "Property",
       "description": {
-        "en": "Element number of a fan, coil, etc as a part of an array, e.g. fan 2 of the discharge air fan array"
+        "en": "Index number of a fan, coil, etc as a part of an array, e.g. fan 2 of the discharge air fan array"
       },
       "displayName": {
-        "en": "arrayElement"
+        "en": "arrayIndex"
       },
-      "name": "arrayElement",
+      "name": "arrayIndex",
       "schema": "integer",
       "writable": true
     }
