@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Economizer Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the economizer damper to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:DamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
