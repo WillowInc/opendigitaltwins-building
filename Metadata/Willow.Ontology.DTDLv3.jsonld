@@ -36102,6 +36102,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EconomizerDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the economizer damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Econimizer Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the economizer damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EdgeOfDockLoadingDockLeveler;1",
     "@type": "Interface",
     "displayName": {
@@ -44965,6 +44999,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the economizer damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerDamperOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the economizer damper which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
