@@ -34913,20 +34913,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterPlant;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Plant"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipmentGroup;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38109,6 +38095,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate a substance which contains the thermal energy used for heating or cooling a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACPumpGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -38127,6 +38130,20 @@
     "@type": "Interface",
     "displayName": {
       "en": "HVAC Refrigerant System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACSteamSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Steam System"
     },
     "extends": [
       "dtmi:com:willowinc:HVACSystem;1"
@@ -44369,6 +44386,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate a substance such as chilled water or condenser water which contains the thermal energy used for cooling a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACPlant;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingStageActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -46516,6 +46550,23 @@
       "en": "Heat Detector"
     },
     "extends": "dtmi:com:willowinc:FireDetector;1",
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate a substance such as hot water or steam which contains the thermal energy used for heating a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACPlant;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -51607,6 +51658,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate chilled water which contains the thermal energy used for cooling a building. In a water-cooled chilled water plant, this includes the equipment in the condenser water loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingPlant;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterTemperatureDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -51788,6 +51856,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate condenser water which contains the thermal energy used for cooling a building. A condenser water plant feeds equipment which use a direct expansion (DX) cooling process."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingPlant;1"
     ],
     "contents": [],
     "@context": [
@@ -54596,6 +54681,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate hot water which contains the thermal energy used for heating a building. In some buildings, this plant may also serve a domestic hot water system via a heat exchanger."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingPlant;1"
     ],
     "contents": [],
     "@context": [
@@ -59795,6 +59897,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamPlant;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Plant"
+    },
+    "description": {
+      "en": "A central group of equipment that is used to generate steam which contains the thermal energy used for heating a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingPlant;1"
     ],
     "contents": [],
     "@context": [
