@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:ChilledWaterPlant;1",
+  "@id": "dtmi:com:willowinc:HVACSteamSystem;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Chilled Water Plant"
+    "en": "HVAC Steam System"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    "dtmi:com:willowinc:HVACSystem;1"
   ],
   "contents": [
   ],

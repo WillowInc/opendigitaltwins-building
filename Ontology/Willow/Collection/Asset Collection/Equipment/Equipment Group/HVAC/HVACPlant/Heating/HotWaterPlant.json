@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterPlant;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Plant"
+  },
+  "description": {
+    "en": "A central group of equipment that is used to generate hot water which contains the thermal energy used for heating a building. In some buildings, this plant may also serve a domestic hot water system via a heat exchanger."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingPlant;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

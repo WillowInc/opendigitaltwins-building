@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SteamPlant;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Plant"
+  },
+  "description": {
+    "en": "A central group of equipment that is used to generate steam which contains the thermal energy used for heating a building."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingPlant;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
