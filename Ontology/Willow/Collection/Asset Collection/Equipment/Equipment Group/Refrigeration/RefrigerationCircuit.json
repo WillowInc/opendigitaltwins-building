@@ -12,6 +12,18 @@
   ],
   "contents": [
     {
+      "@type": [ "Property", "Temperature" ],
+      "name": "defrostTerminationTemperature",
+      "displayName": {
+        "en": "Defrost Termination Temperature"
+      },
+      "description": {
+        "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
         "en": "Defrost Termination Temperature Unit"
