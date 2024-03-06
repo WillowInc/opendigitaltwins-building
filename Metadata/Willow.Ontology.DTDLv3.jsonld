@@ -37010,6 +37010,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringWaterPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Water Pressure Sensor"
+    },
+    "description": {
+      "en": "The pressure feedback from a sensor associated with entering water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38489,6 +38506,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PeopleCountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingWaterPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Water Pressure Sensor"
+    },
+    "description": {
+      "en": "The pressure feedback from a sensor associated with leaving water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -45459,7 +45493,8 @@
       "en": "The pressure feedback from a sensor associated with entering chilled water"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterPressureSensor;1"
+      "dtmi:com:willowinc:ChilledWaterPressureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -45494,7 +45529,8 @@
       "en": "The pressure feedback from a sensor associated with entering condenser water"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterPressureSensor;1"
+      "dtmi:com:willowinc:CondenserWaterPressureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -45529,7 +45565,8 @@
       "en": "The pressure feedback from a sensor associated with entering hot water"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterPressureSensor;1"
+      "dtmi:com:willowinc:HotWaterPressureSensor;1",
+      "dtmi:com:willowinc:EnteringWaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -47142,7 +47179,8 @@
       "en": "The pressure feedback from a sensor associated with leaving chilled water"
     },
     "extends": [
-      "dtmi:com:willowinc:ChilledWaterPressureSensor;1"
+      "dtmi:com:willowinc:ChilledWaterPressureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -47177,7 +47215,8 @@
       "en": "The pressure feedback from a sensor associated with leaving condenser water"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterPressureSensor;1"
+      "dtmi:com:willowinc:CondenserWaterPressureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -47212,7 +47251,8 @@
       "en": "The pressure feedback from a sensor associated with leaving hot water"
     },
     "extends": [
-      "dtmi:com:willowinc:HotWaterPressureSensor;1"
+      "dtmi:com:willowinc:HotWaterPressureSensor;1",
+      "dtmi:com:willowinc:LeavingWaterPressureSensor;1"
     ],
     "contents": [],
     "@context": [
