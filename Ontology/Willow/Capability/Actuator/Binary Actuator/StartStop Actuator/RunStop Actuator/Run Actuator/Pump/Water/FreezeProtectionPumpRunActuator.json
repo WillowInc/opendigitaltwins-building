@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:FreezeProtectionPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Freeze Protection Pump Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the freeze protection pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
