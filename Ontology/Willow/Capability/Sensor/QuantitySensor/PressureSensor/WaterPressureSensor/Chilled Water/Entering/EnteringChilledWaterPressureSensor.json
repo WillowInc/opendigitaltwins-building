@@ -6,7 +6,8 @@
   },
   "description": {"en": "The pressure feedback from a sensor associated with entering chilled water"},
   "extends" : [
-    "dtmi:com:willowinc:ChilledWaterPressureSensor;1"
+    "dtmi:com:willowinc:ChilledWaterPressureSensor;1",
+    "dtmi:com:willowinc:EnteringWaterPressureSensor;1"
   ],
   "contents": [
   ],

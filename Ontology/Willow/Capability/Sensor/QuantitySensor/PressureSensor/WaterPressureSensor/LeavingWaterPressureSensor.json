@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingWaterPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Water Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with leaving water"},
+  "extends" : [
+    "dtmi:com:willowinc:WaterPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
