@@ -15239,6 +15239,10 @@
             {
               "enumValue": "DualWheel",
               "name": "DualWheel"
+            },
+            {
+              "enumValue": "DualCoils",
+              "name": "DualCoils"
             }
           ],
           "valueSchema": "string"
@@ -35106,23 +35110,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChillerGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -35490,40 +35477,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -38120,23 +38073,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -42890,6 +42826,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterVolumeSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -43678,23 +43648,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the bypass chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassCondenserWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43712,40 +43665,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the condenser water bypass valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the bypass condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassHotWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43756,23 +43675,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the bypass hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -43978,40 +43880,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -44021,8 +43889,25 @@
       "en": "The percent command which sets the position of the chilled water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:ValvePositionActuator;1",
+      "dtmi:com:willowinc:WaterValvePositionActuator;1",
       "dtmi:com:willowinc:CoolingLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -44397,16 +44282,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Condenser Water Valve Open Actuator"
+      "en": "Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:ValveOpenActuator;1"
+      "dtmi:com:willowinc:WaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -44414,16 +44299,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Condenser Water Valve Open State"
+      "en": "Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:ValveOpenState;1"
+      "dtmi:com:willowinc:WaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -45113,40 +44998,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Coil Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the economizer coil condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Coil Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the economizer coil condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -45480,6 +45331,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the energy recovery valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirBypassDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -45617,23 +45485,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -45669,40 +45520,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -45731,23 +45548,6 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
       "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -46430,23 +46230,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the header chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderCondenserWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -46464,40 +46247,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the condenser water header valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the header condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderHotWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -46508,23 +46257,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the header hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -46999,40 +46731,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -47042,8 +46740,25 @@
       "en": "The percent command which sets the position of the hot water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:ValvePositionActuator;1",
+      "dtmi:com:willowinc:WaterValvePositionActuator;1",
       "dtmi:com:willowinc:HeatingLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -47453,23 +47168,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47505,40 +47203,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47567,23 +47231,6 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
       "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -50981,6 +50628,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ZoneAirCO2AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -51358,40 +51039,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the bypass chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BypassChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the bypass chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51402,6 +51049,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the bypass chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -51460,16 +51124,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Bypass Condenser Water Valve Open Actuator"
+      "en": "Bypass Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the bypass condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the condenser water bypass valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51477,16 +51141,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Bypass Condenser Water Valve Open State"
+      "en": "Bypass Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the bypass condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the bypass condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -51545,40 +51209,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the bypass hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BypassHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the bypass hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -51589,6 +51219,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the bypass hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -51743,6 +51390,40 @@
     "extends": [
       "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -51948,6 +51629,40 @@
     "extends": [
       "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -52771,6 +52486,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Coil Condenser Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the economizer coil condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Coil Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the economizer coil condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -52855,40 +52604,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -52899,6 +52614,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -52958,16 +52690,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Entering Condenser Water Valve Open Actuator"
+      "en": "Entering Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -52975,16 +52707,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Entering Condenser Water Valve Open State"
+      "en": "Entering Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -53044,40 +52776,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -53088,6 +52786,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -53640,40 +53355,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the header chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeaderChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the header chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -53684,6 +53365,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the header chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -53742,16 +53440,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Header Condenser Water Valve Open Actuator"
+      "en": "Header Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the header condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the condenser water header valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -53759,16 +53457,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Header Condenser Water Valve Open State"
+      "en": "Header Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the header condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the header condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -53827,40 +53525,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the header hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeaderHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the header hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -53871,6 +53535,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the header hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -54848,6 +54529,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -55177,40 +54892,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -55221,6 +54902,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -55280,16 +54978,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Leaving Condenser Water Valve Open Actuator"
+      "en": "Leaving Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -55297,16 +54995,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Leaving Condenser Water Valve Open State"
+      "en": "Leaving Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -55366,40 +55064,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -55410,6 +55074,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -58216,23 +57897,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the primary loop entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -58267,40 +57931,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the primary loop entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the primary loop entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -58328,23 +57958,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the primary loop entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -58420,23 +58033,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the primary loop leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -58471,40 +58067,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the primary loop leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the primary loop leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -58532,23 +58094,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the primary loop leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -59487,23 +59032,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the secondary loop entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -59538,40 +59066,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the secondary loop entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the secondary loop entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -59599,23 +59093,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the secondary loop entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -59691,23 +59168,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the secondary loop leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -59742,40 +59202,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the secondary loop leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the secondary loop leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -59803,23 +59229,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the secondary loop leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -60161,23 +59570,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the tertiary loop entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60212,40 +59604,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the tertiary loop entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the tertiary loop entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60273,23 +59631,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the tertiary loop entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -60365,23 +59706,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Chilled Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the tertiary loop leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60416,40 +59740,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Condenser Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the tertiary loop leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Condenser Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the tertiary loop leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60477,23 +59767,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Hot Water Valve Position State"
-    },
-    "description": {
-      "en": "The percent position state of the tertiary loop leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -61346,6 +60619,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the bypass chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the bypass chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61363,6 +60670,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the bypass condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the bypass condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61373,6 +60714,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the bypass hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the bypass hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -61903,6 +61278,108 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the energy recovery pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryPumpRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Pump Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the energy recovery pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryPumpRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Pump Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the energy recovery pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the energy recovery pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61920,6 +61397,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61930,6 +61441,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -62252,6 +61797,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the header chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the header chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62269,6 +61848,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the header condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the header condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62279,6 +61892,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the header hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the header hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -63473,6 +63120,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63490,6 +63171,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63500,6 +63215,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -65081,40 +64830,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the primary loop entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the primary loop entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -65125,6 +64840,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65149,16 +64881,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Primary Loop Entering Condenser Water Valve Open Actuator"
+      "en": "Primary Loop Entering Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the primary loop entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the primary loop entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -65166,16 +64898,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Primary Loop Entering Condenser Water Valve Open State"
+      "en": "Primary Loop Entering Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the primary loop entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the primary loop entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65200,40 +64932,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the primary loop entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the primary loop entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -65244,6 +64942,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65285,40 +65000,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the primary loop leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the primary loop leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -65329,6 +65010,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65353,16 +65051,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Primary Loop Leaving Condenser Water Valve Open Actuator"
+      "en": "Primary Loop Leaving Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the primary loop leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the primary loop leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -65370,16 +65068,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Primary Loop Leaving Condenser Water Valve Open State"
+      "en": "Primary Loop Leaving Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the primary loop leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the primary loop leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65404,40 +65102,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the primary loop leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the primary loop leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -65448,6 +65112,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the primary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65930,40 +65611,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the secondary loop entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the secondary loop entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -65974,6 +65621,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -65998,16 +65662,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Secondary Loop Entering Condenser Water Valve Open Actuator"
+      "en": "Secondary Loop Entering Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the secondary loop entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the secondary loop entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66015,16 +65679,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Secondary Loop Entering Condenser Water Valve Open State"
+      "en": "Secondary Loop Entering Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the secondary loop entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the secondary loop entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66049,40 +65713,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the secondary loop entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the secondary loop entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66093,6 +65723,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66134,40 +65781,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the secondary loop leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the secondary loop leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66178,6 +65791,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66202,16 +65832,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Secondary Loop Leaving Condenser Water Valve Open Actuator"
+      "en": "Secondary Loop Leaving Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the secondary loop leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the secondary loop leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66219,16 +65849,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Secondary Loop Leaving Condenser Water Valve Open State"
+      "en": "Secondary Loop Leaving Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the secondary loop leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the secondary loop leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66253,40 +65883,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the secondary loop leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the secondary loop leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66297,6 +65893,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the secondary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66477,40 +66090,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the tertiary loop entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the tertiary loop entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66521,6 +66100,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66545,16 +66141,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Tertiary Loop Entering Condenser Water Valve Open Actuator"
+      "en": "Tertiary Loop Entering Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the tertiary loop entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the tertiary loop entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66562,16 +66158,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Tertiary Loop Entering Condenser Water Valve Open State"
+      "en": "Tertiary Loop Entering Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the tertiary loop entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the tertiary loop entering condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:EnteringCondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66596,40 +66192,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the tertiary loop entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the tertiary loop entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66640,6 +66202,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66681,40 +66260,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Chilled Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the tertiary loop leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Chilled Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the tertiary loop leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66725,6 +66270,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Chilled Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66749,16 +66311,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValveOpenActuator;1",
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Tertiary Loop Leaving Condenser Water Valve Open Actuator"
+      "en": "Tertiary Loop Leaving Condenser Water Valve Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the tertiary loop leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the tertiary loop leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1"
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66766,16 +66328,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValveOpenState;1",
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Tertiary Loop Leaving Condenser Water Valve Open State"
+      "en": "Tertiary Loop Leaving Condenser Water Valve Position State"
     },
     "description": {
-      "en": "The Boolean state of the tertiary loop leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the tertiary loop leaving condenser water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1"
+      "dtmi:com:willowinc:LeavingCondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -66800,40 +66362,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValveOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Hot Water Valve Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the tertiary loop leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValveOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Hot Water Valve Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the tertiary loop leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66844,6 +66372,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Hot Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the tertiary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -71070,6 +70615,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the primary loop entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the primary loop entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71080,6 +70659,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the primary loop entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the primary loop entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71104,6 +70717,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the primary loop entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the primary loop entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71114,6 +70761,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the primary loop leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the primary loop leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71138,6 +70819,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the primary loop leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the primary loop leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopLeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71148,6 +70863,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the primary loop leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the primary loop leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71240,6 +70989,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the secondary loop entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the secondary loop entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71250,6 +71033,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the secondary loop entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the secondary loop entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71274,6 +71091,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the secondary loop entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the secondary loop entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71284,6 +71135,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the secondary loop leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the secondary loop leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71308,6 +71193,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the secondary loop leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the secondary loop leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopLeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71318,6 +71237,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the secondary loop leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the secondary loop leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71444,6 +71397,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the tertiary loop entering chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the tertiary loop entering chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71454,6 +71441,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the tertiary loop entering condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the tertiary loop entering condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringCondenserWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71478,6 +71499,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the tertiary loop entering hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the tertiary loop entering hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71488,6 +71543,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnteringHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Chilled Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the tertiary loop leaving chilled water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Chilled Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the tertiary loop leaving chilled water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -71512,6 +71601,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Condenser Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the tertiary loop leaving condenser water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Condenser Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the tertiary loop leaving condenser water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingCondenserWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopLeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71522,6 +71645,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingCondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValveOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Hot Water Valve Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the tertiary loop leaving hot water valve to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Hot Water Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the tertiary loop leaving hot water valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
     ],
     "contents": [],
     "@context": [
