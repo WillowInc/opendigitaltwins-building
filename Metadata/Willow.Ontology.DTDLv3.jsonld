@@ -35106,23 +35106,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -38137,23 +38120,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -43712,23 +43678,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Bypass Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the chilled water bypass valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -43807,23 +43756,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the hot water bypass valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -44073,6 +44005,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionActuator;1",
+      "dtmi:com:willowinc:CoolingLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -45667,23 +45617,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -45798,23 +45731,6 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
       "dtmi:com:willowinc:EnteringWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -46514,23 +46430,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the chilled water header valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -46609,23 +46508,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the hot water header valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -47151,6 +47033,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionActuator;1",
+      "dtmi:com:willowinc:HeatingLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HumidityAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -47553,23 +47453,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -47684,23 +47567,6 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
       "dtmi:com:willowinc:LeavingWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51526,6 +51392,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve Bypass Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the chilled water bypass valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassCondenserWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -51689,6 +51572,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water bypass valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -52989,6 +52889,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringCondenserWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -53154,6 +53071,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -53740,6 +53674,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the chilled water header valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderCondenserWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -53903,6 +53854,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water header valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -55243,6 +55211,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingCondenserWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -55408,6 +55393,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -58214,23 +58216,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the primary loop entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -58350,23 +58335,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Entering Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the primary loop entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -58445,23 +58413,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the primary loop leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -58581,23 +58532,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Primary Loop Leaving Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the primary loop leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -59553,23 +59487,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the secondary loop entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -59689,23 +59606,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Entering Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the secondary loop entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -59784,23 +59684,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the secondary loop leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -59920,23 +59803,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Secondary Loop Leaving Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the secondary loop leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -60295,23 +60161,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the tertiary loop entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -60431,23 +60280,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Entering Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the tertiary loop entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -60526,23 +60358,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Chilled Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the tertiary loop leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -60662,23 +60477,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tertiary Loop Leaving Hot Water Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the tertiary loop leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -65283,6 +65081,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the primary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringCondenserWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -65385,6 +65200,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PrimaryLoopEnteringHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Entering Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the primary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopHotWaterDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -65446,6 +65278,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the primary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -65548,6 +65397,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PrimaryLoopLeavingHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Primary Loop Leaving Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the primary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66064,6 +65930,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the secondary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopEnteringCondenserWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66166,6 +66049,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SecondaryLoopEnteringHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Entering Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the secondary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecondaryLoopHotWaterDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66227,6 +66127,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the secondary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66329,6 +66246,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecondaryLoopLeavingHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Secondary Loop Leaving Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the secondary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66543,6 +66477,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the tertiary loop entering chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringChilledWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopEnteringCondenserWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66645,6 +66596,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TertiaryLoopEnteringHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Entering Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the tertiary loop entering hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringHotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopHotWaterDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66706,6 +66674,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingChilledWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingChilledWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Chilled Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the tertiary loop leaving chilled water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -66808,6 +66793,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TertiaryLoopLeavingHotWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tertiary Loop Leaving Hot Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the tertiary loop leaving hot water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingHotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
