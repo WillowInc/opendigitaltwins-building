@@ -6,7 +6,7 @@
   },
   "description": {"en": "The percent command which sets the position of the chilled water valve"},
   "extends" : [
-    "dtmi:com:willowinc:ValvePositionActuator;1"
+    "dtmi:com:willowinc:WaterValvePositionActuator;1"
   ],
   "contents": [
   ],

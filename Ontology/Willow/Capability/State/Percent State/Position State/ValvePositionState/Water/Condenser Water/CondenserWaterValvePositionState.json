@@ -1,12 +1,12 @@
 {
-  "@id": "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1",
+  "@id": "dtmi:com:willowinc:CondenserWaterValvePositionState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Condenser Water Valve Position Actuator"
+    "en": "Condenser Water Valve Position State"
   },
   "description": {"en": "The percent command which sets the position of the condenser water valve"},
   "extends" : [
-    "dtmi:com:willowinc:ValvePositionActuator;1"
+    "dtmi:com:willowinc:WaterValvePositionState;1"
   ],
   "contents": [
   ],

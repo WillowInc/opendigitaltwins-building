@@ -370,6 +370,10 @@
           {
             "enumValue": "DualWheel",
             "name": "DualWheel"
+          },
+          {
+            "enumValue": "DualCoils",
+            "name": "DualCoils"
           }
         ],
         "valueSchema": "string"

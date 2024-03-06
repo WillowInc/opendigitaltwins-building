@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the condenser water valve which is 'open' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:ValveOpenState;1"
+    "dtmi:com:willowinc:WaterValveOpenState;1"
   ],
   "contents": [
 

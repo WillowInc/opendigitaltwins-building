@@ -6,7 +6,7 @@
   },
   "description": {"en": "The percent position state of the hot water valve"},
   "extends" : [
-    "dtmi:com:willowinc:ValvePositionState;1"
+    "dtmi:com:willowinc:WaterValvePositionState;1"
   ],
   "contents": [
   ],
