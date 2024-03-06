@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean command which sets the state of the condenser water valve to 'open' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:ValveOpenActuator;1"
+    "dtmi:com:willowinc:WaterValveOpenActuator;1"
   ],
   "contents": [
 
