@@ -6,7 +6,8 @@
   },
   "description": {"en": "The pressure feedback from a sensor associated with leaving condenser water"},
   "extends" : [
-    "dtmi:com:willowinc:CondenserWaterPressureSensor;1"
+    "dtmi:com:willowinc:CondenserWaterPressureSensor;1",
+    "dtmi:com:willowinc:LeavingWaterPressureSensor;1"
   ],
   "contents": [
   ],
