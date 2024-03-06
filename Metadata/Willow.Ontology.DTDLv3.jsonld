@@ -62218,6 +62218,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FreezeProtectionPumpRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Freeze Protection Pump Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the freeze protection pump to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FreezeProtectionPumpRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Freeze Protection Pump Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the freeze protection pump which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
