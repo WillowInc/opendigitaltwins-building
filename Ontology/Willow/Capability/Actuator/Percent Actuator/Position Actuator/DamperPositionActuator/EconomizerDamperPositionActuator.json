@@ -6,7 +6,7 @@
   },
   "description": {"en": "The percent command which sets the position of the economizer damper"},
   "extends" : [
-    "dtmi:com:willowinc:DamperPositionActuator;1"
+    "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1"
   ],
   "contents": [
   ],

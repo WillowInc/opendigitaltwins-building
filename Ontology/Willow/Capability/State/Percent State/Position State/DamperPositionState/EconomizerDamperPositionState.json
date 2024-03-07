@@ -6,7 +6,7 @@
   },
   "description": {"en": "The percent position state of the economizer damper"},
   "extends" : [
-    "dtmi:com:willowinc:DamperPositionState;1"
+    "dtmi:com:willowinc:OutsideAirDamperPositionState;1"
   ],
   "contents": [
   ],
