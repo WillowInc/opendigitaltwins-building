@@ -36200,40 +36200,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the economizer damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Econimizer Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the economizer damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EdgeOfDockLoadingDockLeveler;1",
     "@type": "Interface",
     "displayName": {
@@ -45066,16 +45032,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
+    "@id": "dtmi:com:willowinc:EconomizerDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Economizer Damper Open Actuator"
+      "en": "Economizer Damper Position Actuator"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the economizer damper to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent command which sets the position of the economizer damper"
     },
     "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
+      "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -45083,16 +45049,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerDamperOpenState;1",
+    "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Economizer Damper Open State"
+      "en": "Econimizer Damper Position State"
     },
     "description": {
-      "en": "The Boolean state of the economizer damper which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The percent position state of the economizer damper"
     },
     "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
+      "dtmi:com:willowinc:OutsideAirDamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -52611,6 +52577,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the economizer damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirDamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerDamperOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the economizer damper which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirDamperOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -56049,6 +56049,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Min Outside Air Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the minimum outside air damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirDamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Min Outside Air Damper Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the minimum outside air damper which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirDamperOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -64453,6 +64487,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Min Outside Air Damper Open Actuator Command Status Mismatch Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the minimum outside air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
     ],
     "contents": [],
     "@context": [
