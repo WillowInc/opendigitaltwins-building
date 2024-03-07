@@ -36823,6 +36823,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Discharge Air Bypass Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the energy recovery device discharge (supply) air bypass damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirEnteringHumiditySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -36891,6 +36908,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Return Air Bypass Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the energy recovery device return air bypass damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirEnteringHumiditySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -36952,40 +36986,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirBypassDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Discharge Air Bypass Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the energy recovery wheel discharge (supply) air bypass damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirBypassDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Return Air Bypass Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the energy recovery wheel return air bypass damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -45365,6 +45365,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Discharge Air Bypass Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the energy recovery device discharge air bypass damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperOpenActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Return Air Bypass Damper Open Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the energy recovery device return air bypass damper to \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -45392,40 +45426,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterValvePositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelDischargeAirBypassDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Discharge Air Bypass Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the energy recovery wheel discharge air bypass damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirBypassDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Return Air Bypass Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the energy recovery wheel return air bypass damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
     ],
     "contents": [],
     "@context": [
