@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Min Outside Air Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the minimum outside air damper to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirDamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
