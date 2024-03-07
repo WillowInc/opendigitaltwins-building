@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:EnergyRecoveryWheelReturnAirEnteringTemperatureSensor;1",
+  "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirEnteringTemperatureSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Energy Recovery Wheel Return Air Entering Temperature Sensor"
+    "en": "Energy Recovery Device Return Air Entering Temperature Sensor"
   },
-  "description": {"en": "The temperature feedback from a sensor associated with air entering the return air side of the energy recovery wheel"},
+  "description": {"en": "The temperature feedback from a sensor associated with air entering the return air side of the energy recovery device"},
   "extends" : [
     "dtmi:com:willowinc:AirTemperatureSensor;1"
   ],
