@@ -437,7 +437,7 @@
       },
       "name": "pipingConfiguration",
       "description": {
-        "en": "When equipped with separate heating and cooling coils, set to FourPipe. When equipped with a single coil, fed by a central plant, that's used for heating or cooling depending on the TwoPipeModeState, set to TwoPipe"
+        "en": "When equipped with a single coil that is dual purpose for both heating and cooling depending upon the mode of the central plant, set to TwoPipe."
       },
       "schema": {
         "@type": "Enum",
