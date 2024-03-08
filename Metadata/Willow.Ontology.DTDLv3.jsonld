@@ -15300,6 +15300,31 @@
         "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
       },
       {
+        "@type": "Property",
+        "displayName": {
+          "en": "piping configuration"
+        },
+        "name": "pipingConfiguration",
+        "description": {
+          "en": "When equipped with a single coil that is dual purpose for both heating and cooling depending upon the mode of the central plant, set to TwoPipe."
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "TwoPipe",
+              "name": "TwoPipe"
+            },
+            {
+              "enumValue": "FourPipe",
+              "name": "FourPipe"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
         "@type": "Component",
         "displayName": {
           "en": "return fan"
@@ -24529,6 +24554,31 @@
         },
         "name": "coolingMethod",
         "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "piping configuration"
+        },
+        "name": "pipingConfiguration",
+        "description": {
+          "en": "When equipped with a single coil that is dual purpose for both heating and cooling depending upon the mode of the central plant, set to TwoPipe."
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "TwoPipe",
+              "name": "TwoPipe"
+            },
+            {
+              "enumValue": "FourPipe",
+              "name": "FourPipe"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
       }
     ],
     "@context": [
@@ -26565,6 +26615,31 @@
         },
         "name": "primaryCoolingMethod",
         "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "piping configuration"
+        },
+        "name": "pipingConfiguration",
+        "description": {
+          "en": "When equipped with a single coil that is dual purpose for both heating and cooling depending upon the mode of the central plant, set to TwoPipe."
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "TwoPipe",
+              "name": "TwoPipe"
+            },
+            {
+              "enumValue": "FourPipe",
+              "name": "FourPipe"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
       },
       {
         "@type": "Component",
@@ -42131,6 +42206,23 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TwoPipeModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Two Pipe Mode State"
+    },
+    "description": {
+      "en": "The state of the two pipe mode of the equipment, operating in either heating or cooling"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeState;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
