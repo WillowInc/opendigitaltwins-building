@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Two Pipe Mode State"
   },
-  "description": {"en": "The state of the two pipe mode of the equipment, supplying either heating or cooling"},
+  "description": {"en": "The state of the two pipe mode of the equipment, operating in either heating or cooling"},
   "extends" : [
     "dtmi:com:willowinc:OperatingModeState;1"
   ],
