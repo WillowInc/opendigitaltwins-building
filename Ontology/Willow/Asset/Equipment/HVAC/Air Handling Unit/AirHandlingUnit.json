@@ -431,6 +431,31 @@
       "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
     },
     {
+      "@type": "Property",
+      "displayName": {
+        "en": "piping configuration"
+      },
+      "name": "pipingConfiguration",
+      "description": {
+        "en": "When equipped with a single coil that is dual purpose for both heating and cooling depending upon the mode of the central plant, set to TwoPipe."
+      },
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "TwoPipe",
+            "name": "TwoPipe"
+          },
+          {
+            "enumValue": "FourPipe",
+            "name": "FourPipe"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
       "@type": "Component",
       "displayName": {
         "en": "return fan"
