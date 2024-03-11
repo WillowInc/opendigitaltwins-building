@@ -35231,6 +35231,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterThermalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Thermal Power Sensor"
+    },
+    "description": {
+      "en": "The thermal power feedback from a sensor measuring chilled water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChillerGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -35598,6 +35615,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterThermalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Thermal Power Sensor"
+    },
+    "description": {
+      "en": "The thermal power feedback from a sensor measuring condenser water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -38177,6 +38211,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterThermalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Thermal Power Sensor"
+    },
+    "description": {
+      "en": "The thermal power feedback from a sensor measuring hot water"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41865,6 +41916,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamThermalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Thermal Power Sensor"
+    },
+    "description": {
+      "en": "The thermal power feedback from a sensor measuring steam"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ThermalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
