@@ -100,7 +100,7 @@ This example depicts a divided opening which has multiple turnstiles each with a
 
 5. Each Turnstile has a Total Entering People Count Sensor and Total Leaving People Count Sensor. These are calculated values by Willow which query the Entering/Leaving Person Access Events for the day. These are totalized throughout a day and reset at midnight.
 
-6. Each of the perimeter Openings to a Building get a servedBy relationship to the Building which enables the Total Entering People Count and Total Leaving People Count from those Openings to be summed for the Building’s Total Entering People Count and Total Leaving People Count.
+6. Each of the perimeter Openings to a Building get an isEntryTo relationship to the Building which enables the Total Entering People Count and Total Leaving People Count from those Openings to be summed for the Building’s Total Entering People Count and Total Leaving People Count.
 
 7. The Unique Entering People Count Sensor is a calculated value by Willow which queries all granted events across all Access Readers at the Building.
 
