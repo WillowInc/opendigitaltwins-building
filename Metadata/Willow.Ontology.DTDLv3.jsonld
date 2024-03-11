@@ -2817,6 +2817,18 @@
       },
       {
         "@type": "Property",
+        "name": "summary",
+        "displayName": {
+          "en": "Summary"
+        },
+        "description": {
+          "en": "An overview of the content written or described in a document which is intended to be one or several paragraphs in length. Use \u0027description\u0027 for a short format summary."
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
         "name": "siteID",
         "displayName": {
           "en": "Site ID"
