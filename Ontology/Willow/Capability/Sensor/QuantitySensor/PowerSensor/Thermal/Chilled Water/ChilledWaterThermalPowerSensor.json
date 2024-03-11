@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterThermalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Thermal Power Sensor"
+  },
+  "description": {"en": "The thermal power feedback from a sensor measuring chilled water"},
+  "extends" : [
+    "dtmi:com:willowinc:ThermalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SteamThermalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Thermal Power Sensor"
+  },
+  "description": {"en": "The thermal power feedback from a sensor measuring steam"},
+  "extends" : [
+    "dtmi:com:willowinc:ThermalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
