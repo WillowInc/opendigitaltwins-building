@@ -22030,6 +22030,32 @@
         "writable": true
       },
       {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirTemperature",
+        "displayName": {
+          "en": "Design Entering Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Temperature Unit"
+        },
+        "name": "designEnteringAirTemperatureUnit",
+        "annotates": "designEnteringAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
         "@type": "Component",
         "displayName": {
           "en": "duct inlet"
