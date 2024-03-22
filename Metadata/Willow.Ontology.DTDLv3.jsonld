@@ -25057,6 +25057,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Limit"
+    },
+    "description": {
+      "en": "The upper limit on the equipment in cooling mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CopperCablingEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -28059,6 +28076,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DegreeHours;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating High Limit"
+    },
+    "description": {
+      "en": "The upper limit on the equipment in heating mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
     ],
     "contents": [],
     "@context": [
