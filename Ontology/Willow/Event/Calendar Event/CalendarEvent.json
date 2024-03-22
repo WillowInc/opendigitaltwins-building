@@ -96,6 +96,15 @@
         "valueSchema": "string"
       },
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Estimated Attendee Count"
+      },
+      "name": "estimatedAttendeeCount",
+      "schema": "integer",
+      "writable": true
     }
   ],
   "schemas": [
