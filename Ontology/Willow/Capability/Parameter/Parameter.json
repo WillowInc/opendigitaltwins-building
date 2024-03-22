@@ -9,7 +9,17 @@
     "dtmi:com:willowinc:Capability;1"
   ],
   "contents": [
-
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The Capability that has this Parameter, i.e. High Limit or Low Limit for a Setpoint"
+      },
+      "displayName": {
+        "en": "is parameter of"
+      },
+      "name": "isParameterOf",
+      "target": "dtmi:com:willowinc:Capability;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"
