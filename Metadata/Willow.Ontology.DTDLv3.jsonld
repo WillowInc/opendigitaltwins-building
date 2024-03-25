@@ -28362,6 +28362,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the high alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterMeter;1",
     "@type": "Interface",
     "displayName": {
@@ -29336,6 +29353,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the low alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressor;1",
     "@type": "Interface",
     "displayName": {
@@ -29607,6 +29641,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MismatchAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mismatch Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the mismatch alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
     ],
     "contents": [],
     "@context": [
