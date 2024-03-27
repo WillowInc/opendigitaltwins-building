@@ -111,6 +111,12 @@
             "enumValue": "America/Halifax"
           },
           {
+            "name": "AmericaIndianaIndianapolis",
+            "displayName": "America/Indiana/Indianapolis",
+            "description": "Eastern - IN (most areas)",
+            "enumValue": "America/Indiana/Indianapolis"
+          },
+          {
             "name": "AmericaLima",
             "displayName": "America/Lima",
             "description": "",
