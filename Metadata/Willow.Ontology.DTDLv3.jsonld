@@ -13078,6 +13078,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Offset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Offset"
+    },
+    "description": {
+      "en": "The desired offset value"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Parameter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ParkingSpotCollection;1",
     "@type": "Interface",
     "displayName": {
