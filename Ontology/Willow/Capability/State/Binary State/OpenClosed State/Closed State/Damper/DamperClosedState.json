@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DamperClosedState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Closed State"
+  },
+  "description": {"en": "The Boolean state of the damper which is 'closed' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ClosedState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
