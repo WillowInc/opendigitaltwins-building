@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Endcap;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Endcap"
+  },
+  "description": {
+    "en": "An aisle section located at the end of an aisle for product display in a store."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AisleSection;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

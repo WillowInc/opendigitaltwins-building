@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:AisleSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Aisle Section"
+  },
+  "description": {
+    "en": "A part of an aisle that identifies a specific linear section where goods are displayed, a.k.a modular, MOD, plan-o-gram, or POG."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
