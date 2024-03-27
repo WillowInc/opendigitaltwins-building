@@ -4734,6 +4734,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Aisle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aisle"
+    },
+    "description": {
+      "en": "A passage that separates rows of assets such as seat sections in a theater or product displays in a store. Aisles are used when Rooms are too large to provide sufficient location context."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AisleSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aisle Section"
+    },
+    "description": {
+      "en": "A part of an aisle that identifies a specific linear section where goods are displayed, a.k.a modular, MOD, plan-o-gram, or POG."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Application;1",
     "@type": "Interface",
     "displayName": {
@@ -11105,6 +11139,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Endcap;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Endcap"
+    },
+    "description": {
+      "en": "An aisle section located at the end of an aisle for product display in a store."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AisleSection;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringPersonAccessEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -13739,6 +13790,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RetailStoreAisle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Retail Store Aisle"
+    },
+    "description": {
+      "en": "An aisle in a retail store that separates product displays such as shelving or cases."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Aisle;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RetailStoreZone;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Retail Store Zone"
+    },
+    "description": {
+      "en": "A zone within a retail store that has a defined purpose such as a department selling a catogory of product, a decompression zone at the entrance, or checkout area."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Zone;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RoofLevel;1",
     "@type": "Interface",
     "displayName": {
@@ -13763,6 +13848,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SeatingAisle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Seating Aisle"
+    },
+    "description": {
+      "en": "An aisle that separates sections of seats such as in a theater or stadium."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Aisle;1"
     ],
     "contents": [],
     "@context": [
