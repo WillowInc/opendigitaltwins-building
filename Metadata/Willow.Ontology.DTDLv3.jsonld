@@ -15999,6 +15999,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BinaryModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Binary Mode State"
+    },
+    "description": {
+      "en": "The Boolean state of the mode which is \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BinarySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -31754,6 +31771,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PurgeModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Purge Mode State"
+    },
+    "description": {
+      "en": "The Boolean state of the purge mode which is \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryModeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RadiantHeatingManifold;1",
     "@type": "Interface",
     "displayName": {
@@ -31761,6 +31795,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACManifold;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerantAirQualitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Air Quality Sensor"
+    },
+    "description": {
+      "en": "The refrigerant (R23, R134a, R410a, etc.) air quality feedback from a sensor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
