@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:RetailStoreAisle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Retail Store Aisle"
+  },
+  "description": {
+    "en": "An aisle in a retail store that separates product displays such as shelving or cases."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Aisle;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
