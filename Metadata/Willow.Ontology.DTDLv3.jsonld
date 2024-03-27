@@ -21012,6 +21012,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OpenClosedState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Open/Closed State"
+    },
+    "description": {
+      "en": "The Boolean state of the equipment which is \u0027open\u0027 when \u0027true\u0027 and \u0027closed\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OpenCloseState;1",
     "@type": "Interface",
     "displayName": {
@@ -25089,6 +25106,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ClosedState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Closed State"
+    },
+    "description": {
+      "en": "The Boolean state of the equipment which is \u0027closed\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OpenCloseState;1"
     ],
     "contents": [],
     "@context": [
@@ -36422,6 +36456,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CloseActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DamperClosedState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Damper Closed State"
+    },
+    "description": {
+      "en": "The Boolean state of the damper which is \u0027closed\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ClosedState;1"
     ],
     "contents": [],
     "@context": [
