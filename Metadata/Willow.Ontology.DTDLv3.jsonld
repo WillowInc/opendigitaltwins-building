@@ -45037,6 +45037,74 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Discharge Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with discharge air to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ColdDeckInletAirDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Inlet Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the inlet air damper to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirDamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ColdDeckInletAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Inlet Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The percent position state of the inlet air damper to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirDamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ColdDeckInletAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Inlet Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with inlet air to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressedAirSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -47666,6 +47734,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:HorizontalFanCoilUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckDischargeAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Discharge Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with discharge air to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckInletAirDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Inlet Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the inlet air damper to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirDamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckInletAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Inlet Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The percent position state of the inlet air damper to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirDamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckInletAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Inlet Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with inlet air to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -52563,6 +52699,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Discharge Air Flow Sensor"
+    },
+    "description": {
+      "en": "The flow feedback from a sensor associated with discharge air to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ColdDeckInletAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Inlet Air Flow Sensor"
+    },
+    "description": {
+      "en": "The flow feedback from a sensor associated with inlet air to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantStaticPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -55568,6 +55738,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckDischargeAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Discharge Air Flow Sensor"
+    },
+    "description": {
+      "en": "The flow feedback from a sensor associated with discharge air to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckInletAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Inlet Air Flow Sensor"
+    },
+    "description": {
+      "en": "The flow feedback from a sensor associated with inlet air to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirFlowSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -62089,6 +62293,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Discharge Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air flow to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ColdDeckInletAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Inlet Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with inlet (supply) air flow to a terminal unit from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressorRunSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -64060,6 +64298,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckDischargeAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Discharge Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air flow to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckInletAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Inlet Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with inlet (supply) air flow to a terminal unit from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
