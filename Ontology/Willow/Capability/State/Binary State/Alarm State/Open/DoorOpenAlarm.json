@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DoorOpenAlarm;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Door Open Alarm"
+  },
+  "description": {"en": "The Boolean state of the door open alarm which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:OpenAlarm;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
