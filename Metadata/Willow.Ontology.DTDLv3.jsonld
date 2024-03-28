@@ -30446,6 +30446,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OpenAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Open Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the open alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OpenPositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -36979,6 +36996,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:DomesticWaterPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DoorOpenAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Door Open Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the door open alarm which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OpenAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DoorOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Door Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the door which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OpenState;1"
     ],
     "contents": [],
     "@context": [
