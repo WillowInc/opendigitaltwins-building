@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ColdDeckDischargeAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Deck Discharge Air Flow Sensor"
+  },
+  "description": {"en": "The flow feedback from a sensor associated with discharge air to a terminal unit from the cold deck of an air handling unit"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
