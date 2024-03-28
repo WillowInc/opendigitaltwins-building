@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ColdDeckInletAirTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Deck Inlet Air Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with inlet air to a terminal unit from the cold deck of an air handling unit"},
+  "extends" : [
+    "dtmi:com:willowinc:InletAirTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
