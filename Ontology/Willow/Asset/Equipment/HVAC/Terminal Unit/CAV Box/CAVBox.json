@@ -4,6 +4,9 @@
   "displayName": {
     "en": "CAV Box"
   },
+  "description": {
+    "en": "A type of terminal unit that modulates damper position to control airflow at a fixed setpoint"
+  },
   "extends" : [
     "dtmi:com:willowinc:TerminalUnit;1"
   ],
