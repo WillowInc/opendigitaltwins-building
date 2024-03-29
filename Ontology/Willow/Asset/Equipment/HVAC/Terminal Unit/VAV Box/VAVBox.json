@@ -4,6 +4,9 @@
   "displayName": {
     "en": "VAV Box"
   },
+  "description": {
+    "en": "A type of terminal unit that modulates damper position to control airflow at a setpoint that resets based on zone conditions"
+  },
   "extends" : [
     "dtmi:com:willowinc:TerminalUnit;1"
   ],

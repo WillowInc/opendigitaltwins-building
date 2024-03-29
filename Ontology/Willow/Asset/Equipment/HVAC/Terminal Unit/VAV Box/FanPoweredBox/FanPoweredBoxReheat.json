@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Fan Powered Box with Reheat"
   },
+  "description": {
+    "en": "A type of terminal unit that modulates primary damper position and the speed of a local fan to control airflow at setpoints that reset based on zone conditions and controls a reheat device to provide supplemental heating when appropriate"
+  },
   "extends" : [
     "dtmi:com:willowinc:FanPoweredBox;1"
   ],
