@@ -13572,7 +13572,7 @@
           "en": "head capacity"
         },
         "name": "headCapacity",
-        "schema": "integer",
+        "schema": "double",
         "unit": "metre",
         "writable": true
       },
