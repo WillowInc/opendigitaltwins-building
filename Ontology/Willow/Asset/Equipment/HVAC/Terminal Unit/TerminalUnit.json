@@ -5,7 +5,7 @@
     "en": "Terminal Unit"
   },
   "description": {
-    "en": "A device that modulates airflow at the terminating end of ductwork fed by an AHU"
+    "en": "A device that modulates airflow and/or the temperature of the controlled medium"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1"

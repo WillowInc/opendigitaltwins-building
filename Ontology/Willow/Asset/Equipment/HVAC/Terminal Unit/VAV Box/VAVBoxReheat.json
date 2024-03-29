@@ -5,7 +5,7 @@
     "en": "VAV Box with Reheat"
   },
   "description": {
-    "en": "A type of terminal unit that modulates damper position to control airflow at a setpoint that resets based on zone conditions and controls a reheat device to provide supplemental heating"
+    "en": "A type of terminal unit that modulates damper position to control airflow at a setpoint that resets based on zone conditions and controls a reheat device to provide supplemental heating when appropriate"
   },
   "extends" : [
     "dtmi:com:willowinc:VAVBox;1"
