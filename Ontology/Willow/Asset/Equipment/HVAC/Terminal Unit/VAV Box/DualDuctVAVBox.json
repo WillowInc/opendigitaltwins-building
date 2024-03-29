@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:DualDuctVAVBox;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dual Duct VAV Box"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VAVBox;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
