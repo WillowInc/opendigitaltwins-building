@@ -22484,6 +22484,9 @@
     "displayName": {
       "en": "Terminal Unit"
     },
+    "description": {
+      "en": "A device that modulates airflow and/or the temperature of the controlled medium"
+    },
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1"
     ],
@@ -25005,6 +25008,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "CAV Box"
+    },
+    "description": {
+      "en": "A type of terminal unit that modulates damper position to control airflow at a fixed setpoint"
     },
     "extends": [
       "dtmi:com:willowinc:TerminalUnit;1"
@@ -34050,6 +34056,9 @@
     "displayName": {
       "en": "VAV Box"
     },
+    "description": {
+      "en": "A type of terminal unit that modulates damper position to control airflow at a setpoint that resets based on zone conditions"
+    },
     "extends": [
       "dtmi:com:willowinc:TerminalUnit;1"
     ],
@@ -37139,6 +37148,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DualDuctVAVBox;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dual Duct VAV Box"
+    },
+    "description": {
+      "en": "A type of terminal unit that modulates the positions of two dampers, one controlling cold air and the other hot air, to control their respective airflow at setpoints that reset based on zone conditions"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VAVBox;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DwellTimeSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -38262,6 +38288,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Fan Powered Box"
+    },
+    "description": {
+      "en": "A type of terminal unit that modulates primary damper position and the speed of a local fan to control airflow at setpoints that reset based on zone conditions"
     },
     "extends": [
       "dtmi:com:willowinc:VAVBox;1"
@@ -43370,6 +43399,9 @@
     "displayName": {
       "en": "VAV Box with Reheat"
     },
+    "description": {
+      "en": "A type of terminal unit that modulates damper position to control airflow at a setpoint that resets based on zone conditions and controls a reheat device to provide supplemental heating when appropriate"
+    },
     "extends": [
       "dtmi:com:willowinc:VAVBox;1"
     ],
@@ -47114,6 +47146,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Fan Powered Box with Reheat"
+    },
+    "description": {
+      "en": "A type of terminal unit that modulates primary damper position and the speed of a local fan to control airflow at setpoints that reset based on zone conditions and controls a reheat device to provide supplemental heating when appropriate"
     },
     "extends": [
       "dtmi:com:willowinc:FanPoweredBox;1"
