@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AircraftParkingSpot;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Aircraft Parking Spot"
+  },
+  "description": {
+    "en": "A space intended for parking an aircraft to enplane/deplane passengers, load or unload cargo. Also referred to as an Aircraft Parking Position (FAA)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ParkingSpot;1",
+    "dtmi:com:willowinc:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

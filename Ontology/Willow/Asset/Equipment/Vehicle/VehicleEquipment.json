@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Vehicle Equipment"
   },
+  "description": {
+    "en": "Equipment used to aid in the movement and operations of vehicles such as access control, parking, and dock loading."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:airport:ApproachLightFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Approach Light Fixture"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:Apron;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Apron"
+  },
+  "description": {
+    "en": "A defined area on an airfield to accommodate aircraft for purposes of loading or unloading passengers, mail or cargo, fueling, parking, or maintenance."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:airport:OmniDirectionalApproachLightingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Omni-Directional Approach Lighting System (ODALS)"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:ApproachLightingSystem;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:airport:PassengerBoardingBridge;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Passenger Boarding Bridge"
+  },
+  "description": {
+    "en": "An enclosed, movable connector which extends from an airport terminal gate to an airplane. Also commonly referred to as a jet bridge."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

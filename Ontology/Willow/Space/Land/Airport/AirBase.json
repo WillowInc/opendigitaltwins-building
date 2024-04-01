@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirBase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Base"
+  },
+  "description": {
+    "en": "An airport used as a military base by a military force for the operation of military aircraft."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:Airport;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
