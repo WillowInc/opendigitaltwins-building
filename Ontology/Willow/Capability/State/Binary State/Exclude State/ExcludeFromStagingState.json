@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExcludeFromStagingState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exclude From Staging State"
+  },
+  "description": {"en": "The Boolean state of exluding the asset from staging, which is 'exclude' when 'true' and 'include' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:ExcludeState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

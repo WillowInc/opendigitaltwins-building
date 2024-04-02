@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ExcludeFromResetCalculationsState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exclude From Reset Calculations State"
+  },
+  "description": {"en": "The Boolean state of excluding the asset from reset calculations, which is 'exclude' when 'true' and 'include' when 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:ExcludeState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
