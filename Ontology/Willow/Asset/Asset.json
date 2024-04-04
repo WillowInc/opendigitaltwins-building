@@ -529,18 +529,6 @@
     },
     {
       "@type": "Property",
-      "name": "priorityLevel",
-      "displayName": {
-        "en": "priority level"
-      },
-      "description": {
-        "en": "The priority level for the equipment, with higher levels having higher priorities"
-      },
-      "schema": "integer",
-      "writable": true
-    },
-    {
-      "@type": "Property",
       "name": "alternateClassification",
       "displayName": {
         "en": "Alternate Classification"
