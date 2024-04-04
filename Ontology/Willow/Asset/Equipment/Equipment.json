@@ -49,6 +49,18 @@
           "schema": "dtmi:com:willowinc:EquipmentIsFedBySubstances;1"
         }
       ]
+    },
+    {
+      "@type": "Property",
+      "name": "standbyEquipment",
+      "displayName": {
+        "en": "Standby Equipment"
+      },
+      "description": {
+        "en": "Indicates that a piece of equipment is designated as standby and will only operate in the event of a failure of duty equipment."
+      },
+      "writable": true,
+      "schema": "boolean"
     }
   ],
   "schemas": [
