@@ -6362,6 +6362,18 @@
             "schema": "dtmi:com:willowinc:EquipmentIsFedBySubstances;1"
           }
         ]
+      },
+      {
+        "@type": "Property",
+        "name": "standbyEquipment",
+        "displayName": {
+          "en": "Standby Equipment"
+        },
+        "description": {
+          "en": "Indicates that a piece of equipment is designated as standby and will only operate in the event of a failure of duty equipment."
+        },
+        "writable": true,
+        "schema": "boolean"
       }
     ],
     "schemas": [
@@ -18440,6 +18452,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExcludeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exclude State"
+    },
+    "description": {
+      "en": "The Boolean state of the mode which is \u0027exclude\u0027 when \u0027true\u0027 and \u0027include\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FatsOilsGreaseDisposal;1",
     "@type": "Interface",
     "displayName": {
@@ -27066,6 +27095,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoolingTower;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExcludeFromResetCalculationsState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exclude From Reset Calculations State"
+    },
+    "description": {
+      "en": "The Boolean state of excluding the asset from reset calculations, which is \u0027exclude\u0027 when \u0027true\u0027 and \u0027include\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExcludeState;1"
     ],
     "contents": [],
     "@context": [
