@@ -11,7 +11,31 @@
     "dtmi:com:willowinc:Account;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "carbon emissions factor"
+      },
+      "description": {
+        "en": "The mass of carbon dioxide emissions per unit of energy for a given energy source."
+      },
+      "name": "carbonEmissionsFactor",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "carbonEmissionsFactorUnit",
+      "displayName": {
+        "en": "carbon emissions factor unit"
+      },
+      "description": {
+        "en": "The units for the carbon emissions factor."
+      },
+      "annotates": "carbonEmissionsFactor",
+      "schema": "string",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"
