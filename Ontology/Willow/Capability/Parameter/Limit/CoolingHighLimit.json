@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:CoolingHighLimit;1",
   "@type": "Interface",
   "displayName": {
-    "en": "High Limit"
+    "en": "Cooling High Limit"
   },
   "description": {"en": "The upper limit on the equipment in cooling mode"},
   "extends" : [
