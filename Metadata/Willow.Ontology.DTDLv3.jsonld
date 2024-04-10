@@ -25661,13 +25661,30 @@
     "@id": "dtmi:com:willowinc:CoolingHighLimit;1",
     "@type": "Interface",
     "displayName": {
-      "en": "High Limit"
+      "en": "Cooling High Limit"
     },
     "description": {
       "en": "The upper limit on the equipment in cooling mode"
     },
     "extends": [
       "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoolingLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Low Limit"
+    },
+    "description": {
+      "en": "The lower limit on the equipment in cooling mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -28711,6 +28728,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Low Limit"
+    },
+    "description": {
+      "en": "The lower limit on the equipment in heating mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLimit;1"
     ],
     "contents": [],
     "@context": [
