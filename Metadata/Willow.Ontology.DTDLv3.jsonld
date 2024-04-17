@@ -8381,7 +8381,16 @@
     "extends": [
       "dtmi:com:willowinc:Account;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Emission Factor"
+        },
+        "name": "emissionFactor",
+        "schema": "dtmi:com:willowinc:UtilityEmissionFactor;1"
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
