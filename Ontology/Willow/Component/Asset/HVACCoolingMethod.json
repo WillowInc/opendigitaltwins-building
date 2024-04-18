@@ -318,7 +318,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "number of stages"
+        "en": "stage quantity"
       },
       "name": "stageQuantity",
       "schema": "integer",
