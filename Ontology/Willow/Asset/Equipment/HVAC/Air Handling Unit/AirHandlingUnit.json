@@ -98,108 +98,6 @@
       "writable": true
     },
     {
-      "@type": "Property",
-      "displayName": {
-        "en": "refrigerant type"
-      },
-      "name": "refrigerantType",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "EnergyRate"],
-      "displayName": {
-        "en": "nominal heating capacity"
-      },
-      "name": "nominalHeatingCapacity",
-      "schema": "double",
-      "unit": "britishThermalUnitPerHour",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "nominal heating capacity unit"
-      },
-      "name": "nominalHeatingCapacityUnit",
-      "annotates": "nominalHeatingCapacity",
-      "overrides": "unit",
-      "schema": "PowerUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "EnergyRate"],
-      "displayName": {
-        "en": "nominal cooling capacity"
-      },
-      "name": "nominalCoolingCapacity",
-      "schema": "double",
-      "unit": "britishThermalUnitPerHour",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "nominal cooling capacity unit"
-      },
-      "name": "nominalCoolingCapacityUnit",
-      "annotates": "nominalCoolingCapacity",
-      "overrides": "unit",
-      "schema": "PowerUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "EnergyRate"],
-      "displayName": {
-        "en": "net sensible heating capacity"
-      },
-      "name": "netSensibleHeatingCapacity",
-      "schema": "double",
-      "unit": "britishThermalUnitPerHour",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "net sensible heating capacity unit"
-      },
-      "name": "netSensibleHeatingCapacityUnit",
-      "annotates": "netSensibleHeatingCapacity",
-      "overrides": "unit",
-      "schema": "PowerUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "EnergyRate"],
-      "displayName": {
-        "en": "net sensible cooling capacity"
-      },
-      "name": "netSensibleCoolingCapacity",
-      "schema": "double",
-      "unit": "britishThermalUnitPerHour",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "net sensible cooling capacity unit"
-      },
-      "name": "netSensibleCoolingCapacityUnit",
-      "annotates": "netSensibleCoolingCapacity",
-      "overrides": "unit",
-      "schema": "PowerUnit",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "nominal energy efficiency ratio (EER)"
-      },
-      "name": "nominalEnergyEfficiencyRatio",
-      "schema": "double",
-      "writable": true
-    },
-    {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
         "en": "Design Minimum Outside Airflow"
@@ -423,14 +321,6 @@
       "schema": "dtmi:com:willowinc:Fan;1"
     },
     {
-      "@type": "Component",
-      "displayName": {
-        "en": "secondary cooling method"
-      },
-      "name": "secondaryCoolingMethod",
-      "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
-    },
-    {
       "@type": "Property",
       "displayName": {
         "en": "piping configuration"
@@ -477,6 +367,14 @@
         "en": "primary cooling method"
       },
       "name": "primaryCoolingMethod",
+      "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "secondary cooling method"
+      },
+      "name": "secondaryCoolingMethod",
       "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
     },
     {
