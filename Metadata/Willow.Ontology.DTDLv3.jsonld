@@ -62704,6 +62704,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The cooling level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingLevelSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -63638,6 +63655,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The heating level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingLevelSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66466,7 +66500,7 @@
       "en": "Preheating Level Setpoint"
     },
     "description": {
-      "en": "The desired level percentage for control of equipment associated with preheating"
+      "en": "The desired preheating level percentage for control of equipment"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingLevelSetpoint;1"
@@ -66871,7 +66905,7 @@
       "en": "Reheating Level Setpoint"
     },
     "description": {
-      "en": "The desired level percentage for control of equipment associated with reheating"
+      "en": "The desired reheating level percentage for control of equipment"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingLevelSetpoint;1"
@@ -72313,6 +72347,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheating Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The preheating level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PreheatLevelSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -72612,6 +72663,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheating Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The reheating level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReheatLevelSetpoint;1"
     ],
     "contents": [],
     "@context": [
