@@ -21,19 +21,31 @@
         "enumValues": [
           {
             "enumValue": "Off Cycle",
-            "name": "OffCycle"
+            "name": "OffCycle",
+            "description": {
+              "en": "Defrost takes place by turning off the compressor and evaporator fan, and waiting a period of time."
+            }
           },
           {
             "enumValue": "Electric",
-            "name": "Electric"
+            "name": "Electric",
+            "description": {
+              "en": "Defrost takes place by turning off the compressor and evaporator fan, and enabling an electric heating element for a period of time."
+            }
           },
           {
             "enumValue": "Hot Gas",
-            "name": "HotGas"
+            "name": "HotGas",
+            "description": {
+              "en": "Defrost takes place by turning off the evaporator fan, operating a reversing valve in the refrigeration circuit, and deliverying hot refrigrant gas to the evaporator coil for a period of time."
+            }
           },
           {
             "enumValue": "Reverse Air",
-            "name": "ReverseAir"
+            "name": "ReverseAir",
+            "description": {
+              "en": "Defrost takes place by turning off the compressor, and running the evaporator fan in reverse for a period of time."
+            }
           }
         ],
         "valueSchema": "string"
