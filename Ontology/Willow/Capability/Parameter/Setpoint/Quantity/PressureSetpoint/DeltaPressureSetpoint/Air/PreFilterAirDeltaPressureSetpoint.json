@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:PreFilterAirDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pre Filter Air Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with pre filter air delta pressure"},
+  "extends" : [
+    "dtmi:com:willowinc:FilterAirDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
