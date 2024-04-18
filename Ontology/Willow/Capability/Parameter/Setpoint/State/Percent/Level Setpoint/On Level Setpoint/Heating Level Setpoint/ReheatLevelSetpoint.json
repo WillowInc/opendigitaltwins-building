@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Reheating Level Setpoint"
   },
-  "description": {"en": "The desired level percentage for control of equipment associated with reheating"},
+  "description": {"en": "The desired reheating level percentage for control of equipment"},
   "extends" : [
     "dtmi:com:willowinc:HeatingLevelSetpoint;1"
   ],
