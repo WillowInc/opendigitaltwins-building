@@ -42047,6 +42047,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReplaceFinalFilterState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Final Filter State"
+    },
+    "description": {
+      "en": "The Boolean state of the final filter which is \u0027replace\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReplaceFilterState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReplacePreFilterState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Pre Filter State"
+    },
+    "description": {
+      "en": "The Boolean state of the pre filter which is \u0027replace\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReplaceFilterState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ResetActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -54713,6 +54747,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FinalFilterAirDeltaPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Final Filter Air Delta Pressure Sensor"
+    },
+    "description": {
+      "en": "The delta pressure feedback from a sensor associated with air final filter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FinalFilterDirtyFilterAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -59238,6 +59289,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreFilterAirDeltaPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pre Filter Air Delta Pressure Sensor"
+    },
+    "description": {
+      "en": "The delta pressure feedback from a sensor associated with air pre filter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreFilterDirtyFilterAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62636,6 +62704,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The cooling level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingLevelSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -63308,6 +63393,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FinalFilterAirDeltaPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Final Filter Air Delta Pressure Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with final filter air delta pressure"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FilterAirDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FreezeProtectionPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -63553,6 +63655,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The heating level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingLevelSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66358,13 +66477,30 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreFilterAirDeltaPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pre Filter Air Delta Pressure Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with pre filter air delta pressure"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FilterAirDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreheatLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
       "en": "Preheating Level Setpoint"
     },
     "description": {
-      "en": "The desired level percentage for control of equipment associated with preheating"
+      "en": "The desired preheating level percentage for control of equipment"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingLevelSetpoint;1"
@@ -66769,7 +66905,7 @@
       "en": "Reheating Level Setpoint"
     },
     "description": {
-      "en": "The desired level percentage for control of equipment associated with reheating"
+      "en": "The desired reheating level percentage for control of equipment"
     },
     "extends": [
       "dtmi:com:willowinc:HeatingLevelSetpoint;1"
@@ -72211,6 +72347,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheating Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The preheating level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PreheatLevelSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -72510,6 +72663,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatLevelStageSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheating Level Stage Setpoint"
+    },
+    "description": {
+      "en": "The reheating level percentage for staging of equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReheatLevelSetpoint;1"
     ],
     "contents": [],
     "@context": [
