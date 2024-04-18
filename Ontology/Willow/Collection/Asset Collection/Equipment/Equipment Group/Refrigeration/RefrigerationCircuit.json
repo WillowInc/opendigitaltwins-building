@@ -8,10 +8,11 @@
     "en": "A group of evaporators that are controlled together."
   },
   "extends" : [
-    "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
+    "dtmi:com:willowinc:RefrigerationEquipmentGroup;1",
+    "dtmi:com:willowinc:DefrostEquipment;1"
   ],
   "contents": [
-    ],
+  ],
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:quantitativeTypes;1",

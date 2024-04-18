@@ -8,7 +8,8 @@
     "en": "A compressor rack in which multiple compressors are piped in parallel and share a common refrigerant and oil charge."
   },
   "extends" : [
-    "dtmi:com:willowinc:RefrigerationEquipment;1"
+    "dtmi:com:willowinc:RefrigerationEquipment;1",
+    "dtmi:com:willowinc:DefrostEquipment;1"
   ],
   "contents": [
 
