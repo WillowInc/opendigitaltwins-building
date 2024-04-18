@@ -8,7 +8,7 @@
     "en": "A group of evaporators that are controlled together."
   },
   "extends" : [
-    "dtmi:com:willowinc:RefrigerationEquipment;1"
+    "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
   ],
   "contents": [
     ],
