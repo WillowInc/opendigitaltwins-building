@@ -5,7 +5,8 @@
     "en": "Food Storage Refrigeration Equipment"
   },
   "extends" : [
-    "dtmi:com:willowinc:FoodStorageEquipment;1"
+    "dtmi:com:willowinc:FoodStorageEquipment;1",
+    "dtmi:com:willowinc:DefrostEquipment;1"
   ],
   "contents": [
     {
