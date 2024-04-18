@@ -314,6 +314,15 @@
       "name": "nominalEnergyEfficiencyRatio",
       "schema": "double",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "number of stages"
+      },
+      "name": "stageQuantity",
+      "schema": "integer",
+      "writable": true
     }
   ],
   "@context": [
