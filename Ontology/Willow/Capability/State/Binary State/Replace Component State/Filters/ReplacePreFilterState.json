@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReplacePreFilterState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Pre Filter State"
+  },
+  "description": {"en": "The Boolean state of the pre filter which is 'replace' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceFilterState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:FinalFilterAirDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Final Filter Air Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with air final filter"},
+  "extends" : [
+    "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
