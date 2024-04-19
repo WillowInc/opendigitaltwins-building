@@ -2675,6 +2675,206 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DefrostEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Equipment"
+    },
+    "description": {
+      "en": "An asset that is designed to remove or prevent a buildup of frost."
+    },
+    "extends": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Method"
+        },
+        "name": "defrostMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Off Cycle",
+              "name": "OffCycle",
+              "description": {
+                "en": "Defrost takes place by turning off the compressor and evaporator fan, and waiting a period of time."
+              }
+            },
+            {
+              "enumValue": "Electric",
+              "name": "Electric",
+              "description": {
+                "en": "Defrost takes place by turning off the compressor and evaporator fan, and enabling an electric heating element for a period of time."
+              }
+            },
+            {
+              "enumValue": "Hot Gas",
+              "name": "HotGas",
+              "description": {
+                "en": "Defrost takes place by turning off the evaporator fan, operating a reversing valve in the refrigeration circuit, and deliverying hot refrigrant gas to the evaporator coil for a period of time."
+              }
+            },
+            {
+              "enumValue": "Reverse Air",
+              "name": "ReverseAir",
+              "description": {
+                "en": "Defrost takes place by turning off the compressor, and running the evaporator fan in reverse for a period of time."
+              }
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "defrostTerminationTemperature",
+        "displayName": {
+          "en": "Defrost Termination Temperature"
+        },
+        "description": {
+          "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Termination Temperature Unit"
+        },
+        "name": "defrostTerminationTemperatureUnit",
+        "annotates": "defrostTerminationTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "defrostStartInterval",
+        "displayName": {
+          "en": "Defrost Start Interval"
+        },
+        "description": {
+          "en": "The time interval between the start of each defrost cycle, typically defined in hours, when the controls are configured to start defrost based on a set time interval."
+        },
+        "schema": "double",
+        "unit": "hour"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Start Interval Unit"
+        },
+        "name": "defrostStartIntervalUnit",
+        "annotates": "defrostStartInterval",
+        "overrides": "unit",
+        "schema": "TimeUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "defrostMaxDuration",
+        "displayName": {
+          "en": "Defrost Max Duration"
+        },
+        "description": {
+          "en": "The duration, typically defined in minutes, from the start to the end of a defrost cycle."
+        },
+        "schema": "double",
+        "unit": "minute"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Max Duration Unit"
+        },
+        "name": "defrostMaxDurationUnit",
+        "annotates": "defrostMaxDuration",
+        "overrides": "unit",
+        "schema": "TimeUnit"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Start Method"
+        },
+        "name": "defrostStartMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Interval Timer",
+              "name": "IntervalTimer"
+            },
+            {
+              "enumValue": "Schedule",
+              "name": "Schedule"
+            },
+            {
+              "enumValue": "Adaptive",
+              "name": "Adaptive"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Stop Method"
+        },
+        "name": "defrostStopMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Time",
+              "name": "Time"
+            },
+            {
+              "enumValue": "Termination Temperature",
+              "name": "TerminationTemperature"
+            },
+            {
+              "enumValue": "Adaptive",
+              "name": "Adaptive"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Document;1",
     "@type": "Interface",
     "displayName": {
@@ -13776,6 +13976,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Refrigeration Equipment"
+    },
+    "description": {
+      "en": "An asset that is designed to contain and use refrigerant gas to establish or maintain colder than ambient temperatures in a confined space."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -28085,7 +28288,8 @@
       "en": "Food Storage Refrigeration Equipment"
     },
     "extends": [
-      "dtmi:com:willowinc:FoodStorageEquipment;1"
+      "dtmi:com:willowinc:FoodStorageEquipment;1",
+      "dtmi:com:willowinc:DefrostEquipment;1"
     ],
     "contents": [
       {
@@ -28095,145 +28299,6 @@
         },
         "name": "evaporatorFan",
         "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "defrostTerminationTemperature",
-        "displayName": {
-          "en": "Defrost Termination Temperature"
-        },
-        "description": {
-          "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Termination Temperature Unit"
-        },
-        "name": "defrostTerminationTemperatureUnit",
-        "annotates": "defrostTerminationTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "TimeSpan"
-        ],
-        "name": "defrostStartInterval",
-        "displayName": {
-          "en": "Defrost Start Interval"
-        },
-        "description": {
-          "en": "The time interval between the start of each defrost cycle, typically defined in hours, when the controls are configured to start defrost based on a set time interval."
-        },
-        "schema": "double",
-        "unit": "hour"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Start Interval Unit"
-        },
-        "name": "defrostStartIntervalUnit",
-        "annotates": "defrostStartInterval",
-        "overrides": "unit",
-        "schema": "TimeUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "TimeSpan"
-        ],
-        "name": "defrostMaxDuration",
-        "displayName": {
-          "en": "Defrost Max Duration"
-        },
-        "description": {
-          "en": "The duration, typically defined in minutes, from the start to the end of a defrost cycle."
-        },
-        "schema": "double",
-        "unit": "minute"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Max Duration Unit"
-        },
-        "name": "defrostMaxDurationUnit",
-        "annotates": "defrostMaxDuration",
-        "overrides": "unit",
-        "schema": "TimeUnit"
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Defrost Start Method"
-        },
-        "name": "defrostStartMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Interval Timer",
-              "name": "IntervalTimer"
-            },
-            {
-              "enumValue": "Schedule",
-              "name": "Schedule"
-            },
-            {
-              "enumValue": "Adaptive",
-              "name": "Adaptive"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Defrost Stop Method"
-        },
-        "name": "defrostStopMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Time",
-              "name": "Time"
-            },
-            {
-              "enumValue": "Termination Temperature",
-              "name": "TerminationTemperature"
-            },
-            {
-              "enumValue": "Adaptive",
-              "name": "Adaptive"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
       }
     ],
     "@context": [
@@ -41533,7 +41598,8 @@
       "en": "A food display case used for foods required to be refrigerated to either low- or medium-temperatures."
     },
     "extends": [
-      "dtmi:com:willowinc:FoodDisplayCase;1"
+      "dtmi:com:willowinc:FoodDisplayCase;1",
+      "dtmi:com:willowinc:DefrostEquipment;1"
     ],
     "contents": [
       {
@@ -41543,145 +41609,6 @@
         },
         "name": "evaporatorFan",
         "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "defrostTerminationTemperature",
-        "displayName": {
-          "en": "Defrost Termination Temperature"
-        },
-        "description": {
-          "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Termination Temperature Unit"
-        },
-        "name": "defrostTerminationTemperatureUnit",
-        "annotates": "defrostTerminationTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "TimeSpan"
-        ],
-        "name": "defrostStartInterval",
-        "displayName": {
-          "en": "Defrost Start Interval"
-        },
-        "description": {
-          "en": "The time interval between the start of each defrost cycle, typically defined in hours, when the controls are configured to start defrost based on a set time interval."
-        },
-        "schema": "double",
-        "unit": "hour"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Start Interval Unit"
-        },
-        "name": "defrostStartIntervalUnit",
-        "annotates": "defrostStartInterval",
-        "overrides": "unit",
-        "schema": "TimeUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "TimeSpan"
-        ],
-        "name": "defrostMaxDuration",
-        "displayName": {
-          "en": "Defrost Max Duration"
-        },
-        "description": {
-          "en": "The duration, typically defined in minutes, from the start to the end of a defrost cycle."
-        },
-        "schema": "double",
-        "unit": "minute"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Max Duration Unit"
-        },
-        "name": "defrostMaxDurationUnit",
-        "annotates": "defrostMaxDuration",
-        "overrides": "unit",
-        "schema": "TimeUnit"
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Defrost Start Method"
-        },
-        "name": "defrostStartMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Interval Timer",
-              "name": "IntervalTimer"
-            },
-            {
-              "enumValue": "Schedule",
-              "name": "Schedule"
-            },
-            {
-              "enumValue": "Adaptive",
-              "name": "Adaptive"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Defrost Stop Method"
-        },
-        "name": "defrostStopMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Time",
-              "name": "Time"
-            },
-            {
-              "enumValue": "Termination Temperature",
-              "name": "TerminationTemperature"
-            },
-            {
-              "enumValue": "Adaptive",
-              "name": "Adaptive"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
       }
     ],
     "@context": [
@@ -41701,149 +41628,10 @@
       "en": "A group of evaporators that are controlled together."
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
+      "dtmi:com:willowinc:RefrigerationEquipmentGroup;1",
+      "dtmi:com:willowinc:DefrostEquipment;1"
     ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "defrostTerminationTemperature",
-        "displayName": {
-          "en": "Defrost Termination Temperature"
-        },
-        "description": {
-          "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Termination Temperature Unit"
-        },
-        "name": "defrostTerminationTemperatureUnit",
-        "annotates": "defrostTerminationTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "TimeSpan"
-        ],
-        "name": "defrostStartInterval",
-        "displayName": {
-          "en": "Defrost Start Interval"
-        },
-        "description": {
-          "en": "The time interval between the start of each defrost cycle, typically defined in hours, when the controls are configured to start defrost based on a set time interval."
-        },
-        "schema": "double",
-        "unit": "hour"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Start Interval Unit"
-        },
-        "name": "defrostStartIntervalUnit",
-        "annotates": "defrostStartInterval",
-        "overrides": "unit",
-        "schema": "TimeUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "TimeSpan"
-        ],
-        "name": "defrostMaxDuration",
-        "displayName": {
-          "en": "Defrost Max Duration"
-        },
-        "description": {
-          "en": "The duration, typically defined in minutes, from the start to the end of a defrost cycle."
-        },
-        "schema": "double",
-        "unit": "minute"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Defrost Max Duration Unit"
-        },
-        "name": "defrostMaxDurationUnit",
-        "annotates": "defrostMaxDuration",
-        "overrides": "unit",
-        "schema": "TimeUnit"
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Defrost Start Method"
-        },
-        "name": "defrostStartMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Interval Timer",
-              "name": "IntervalTimer"
-            },
-            {
-              "enumValue": "Schedule",
-              "name": "Schedule"
-            },
-            {
-              "enumValue": "Adaptive",
-              "name": "Adaptive"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Defrost Stop Method"
-        },
-        "name": "defrostStopMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Time",
-              "name": "Time"
-            },
-            {
-              "enumValue": "Termination Temperature",
-              "name": "TerminationTemperature"
-            },
-            {
-              "enumValue": "Adaptive",
-              "name": "Adaptive"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
