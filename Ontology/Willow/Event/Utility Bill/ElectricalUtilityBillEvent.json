@@ -1,0 +1,43 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalUtilityBillEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Utility Bill"
+  },
+  "description": {
+    "en": "An event that occurs, typically monthly, when an electrical utility company produces a bill."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:UtilityBillEvent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Energy"],
+      "name": "energyConsumption",
+      "displayName": {
+        "en": "Energy Consumption"
+      },
+      "schema": "double",
+      "unit": "kilowattHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "name": "energyConsumptionUnit",
+      "displayName": {
+        "en": "Energy Consumption Unit"
+      },
+      "annotates": "energyConsumption",
+      "overrides": "unit",
+      "schema": "EnergyUnit",
+      "writable": true
+    }
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

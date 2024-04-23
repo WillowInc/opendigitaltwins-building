@@ -1,0 +1,101 @@
+{
+  "@id": "dtmi:com:willowinc:UtilityBillEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Bill"
+  },
+  "description": {
+    "en": "An event that occurs, typically monthly, when a utility company produces a bill for a utility account such as electric, gas, or water."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Event;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The start and end dates for the bill's service period."
+      },
+      "displayName": {
+        "en": "Billing Period"
+      },
+      "name": "billingPeriod",
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "startDate",
+            "displayName": {
+              "en": "Start Date"
+            },
+            "schema": "dateTime"
+          },
+          {
+            "name": "endDate",
+            "displayName": {
+              "en": "End Date"
+            },
+            "schema": "dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Date when the bill was sent to the customer."
+      },
+      "displayName": {
+        "en": "Issued Date"
+      },
+      "name": "issuedDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Date when the bill is due to be paid by the customer."
+      },
+      "displayName": {
+        "en": "Due Date"
+      },
+      "name": "dueDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Total Service Cost"
+      },
+      "description": {
+        "en": "The total cost for the services provided this billing period."
+      },
+      "name": "totalServiceCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "totalServiceCostUnit",
+      "displayName": {
+        "en": "Total Service Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the total service cost."
+      },
+      "annotates": "totalServiceCost",
+      "schema": "string",
+      "writable": true
+    }
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
