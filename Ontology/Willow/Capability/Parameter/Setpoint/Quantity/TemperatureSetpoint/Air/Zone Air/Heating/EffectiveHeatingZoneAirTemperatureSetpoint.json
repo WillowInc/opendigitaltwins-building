@@ -6,8 +6,7 @@
   },
   "description": {"en": "The desired value associated with effective heating zone air temperature"},
   "extends" : [
-    "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
-    "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1"
+    "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1"
   ],
   "contents": [
   ],

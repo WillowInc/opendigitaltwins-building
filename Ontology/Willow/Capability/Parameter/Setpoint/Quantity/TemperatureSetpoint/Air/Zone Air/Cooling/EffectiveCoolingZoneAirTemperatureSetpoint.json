@@ -6,8 +6,7 @@
   },
   "description": {"en": "The desired value associated with effective cooling zone air temperature"},
   "extends" : [
-    "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
-    "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1"
+    "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1"
   ],
   "contents": [
   ],
