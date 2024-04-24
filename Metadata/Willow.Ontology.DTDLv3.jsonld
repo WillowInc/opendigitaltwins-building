@@ -37101,6 +37101,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with discharge (supply) air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirEnthalpySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38258,6 +38275,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with exhaust air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39541,6 +39575,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with inlet air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirEnthalpySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39585,6 +39636,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InteriorAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Interior Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The dew point temperature feedback from a sensor associated with interior of an equipment such as a refrigerator, oven, or computer."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40041,6 +40109,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with mixed air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40592,6 +40677,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with outside air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41770,6 +41872,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with relief air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirEnthalpySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41930,6 +42049,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with return air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -43949,6 +44085,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ZoneAirDewPointTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air Dew Point Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with zone air dew point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ZoneAirEnthalpySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -45889,6 +46042,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -46892,6 +47062,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with exhaust air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -48194,6 +48381,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with inlet air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -48289,6 +48493,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InteriorAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Interior Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with interior air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InteriorAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Interior Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with interior air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -48945,6 +49183,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MixedAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with mixed air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49424,6 +49679,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with outside air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -50734,6 +51006,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReturnAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with return air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReturnAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -51937,6 +52226,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirDewPointTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air Dew Point Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with zone air dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
