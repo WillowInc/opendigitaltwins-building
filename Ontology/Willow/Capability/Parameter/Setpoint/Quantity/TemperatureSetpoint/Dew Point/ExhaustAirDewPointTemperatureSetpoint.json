@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustAirDewPointTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Dew Point Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with exhaust air dew point temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
