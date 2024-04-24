@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirDewPointTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Dew Point Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with inlet air dew point"},
+  "extends" : [
+    "dtmi:com:willowinc:DewPointTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

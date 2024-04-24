@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:InletAirDewPointTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Dew Point Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with inlet air dew point temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:DewPointTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
