@@ -4823,6 +4823,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:airport:AirportSpace;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport Space"
+    },
+    "description": {
+      "en": "A space that has a defined purpose to support the movement, management, and operations of people and vehicles at an airport."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirportGateBlockEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -8817,6 +8834,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Vehicle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vehicle"
+    },
+    "description": {
+      "en": "A mobile asset that is used to transport people and/or goods."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Asset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Warranty;1",
     "@type": "Interface",
     "displayName": {
@@ -9041,6 +9075,203 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AiportGate;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Gate"
+    },
+    "description": {
+      "en": "An area in an airport terminal where passengers board the aircraft. Gates typically have a seated waiting area, counter, and doorway leading to the aircraft."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "coordinates",
+        "displayName": {
+          "en": "Coordinates"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "latitude",
+              "displayName": {
+                "en": "Latitude"
+              },
+              "schema": "double"
+            },
+            {
+              "name": "longitude",
+              "displayName": {
+                "en": "Longitude"
+              },
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftParkingSpot;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Parking Spot"
+    },
+    "description": {
+      "en": "A space intended for parking an aircraft to enplane/deplane passengers, load or unload cargo. Also referred to as an Aircraft Parking Position (FAA)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ParkingSpot;1",
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Airfield;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield"
+    },
+    "description": {
+      "en": "The portion of the airport intended to be used wholly or in part for the arrival, departure, and movement of aircraft."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Airport;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport"
+    },
+    "description": {
+      "en": "A location where aircraft flight operations takes place that usually includes runways and maintenance facilities"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Land;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportTerminal;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport Terminal"
+    },
+    "description": {
+      "en": "A building at an airport where passengers transfer between ground transportation and the facilities that allow them to board and disembark from an aircraft."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Building;1",
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportVehicle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport Vehicle"
+    },
+    "description": {
+      "en": "A vehicle at an aiport."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Vehicle;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Apron;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Apron"
+    },
+    "description": {
+      "en": "A defined area on an airfield to accommodate aircraft for purposes of loading or unloading passengers, mail or cargo, fueling, parking, or maintenance."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Runway;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway"
+    },
+    "description": {
+      "en": "A defined rectangular area on an airfield prepared for the landing and takeoff of aircraft."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Taxiway;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway"
+    },
+    "description": {
+      "en": "A defined path on an airfield established for the taxiing of aircraft and intended to provide a link between one part of the airfield and another."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -15241,6 +15472,9 @@
     "displayName": {
       "en": "Vehicle Equipment"
     },
+    "description": {
+      "en": "Equipment used to aid in the movement and operations of vehicles such as access control, parking, and dock loading."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -16183,6 +16417,486 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirBase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Base"
+    },
+    "description": {
+      "en": "An airport used as a military base by a military force for the operation of military aircraft."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:Airport;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Aircraft;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportVehicle;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Boarding Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftDockState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Dock State"
+    },
+    "description": {
+      "en": "The Boolean state of the aircraft which is \u0027docked\u0027 when \u0027true\u0027 and \u0027not docked\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftElectricalEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Electrical Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1",
+      "dtmi:com:willowinc:ElectricalEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftHVACEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft HVAC Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1",
+      "dtmi:com:willowinc:HVACEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Lighting Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1",
+      "dtmi:com:willowinc:LightingEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "faaIntesityRating",
+        "displayName": {
+          "en": "FAA IntesityRating"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "low",
+              "displayName": "Low",
+              "enumValue": "Low"
+            },
+            {
+              "name": "medium",
+              "displayName": "Medium",
+              "enumValue": "Medium"
+            },
+            {
+              "name": "high",
+              "displayName": "High",
+              "enumValue": "High"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "installation",
+        "displayName": {
+          "en": "Installation"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "type",
+              "displayName": {
+                "en": "Type"
+              },
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "elevated",
+                    "displayName": "Elevated",
+                    "enumValue": "Elevated"
+                  },
+                  {
+                    "name": "inset",
+                    "displayName": "Inset",
+                    "enumValue": "Inset"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "mounting",
+              "displayName": {
+                "en": "Mounting"
+              },
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "name": "base",
+                    "displayName": "Base",
+                    "enumValue": "Base"
+                  },
+                  {
+                    "name": "stake",
+                    "displayName": "Stake",
+                    "enumValue": "Stake"
+                  },
+                  {
+                    "name": "direct",
+                    "displayName": "Direct",
+                    "enumValue": "Direct"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "lightDirection",
+        "displayName": {
+          "en": "Light Direction"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "unidirectional",
+              "displayName": "Unidirectional",
+              "enumValue": "Unidirectional"
+            },
+            {
+              "name": "bidirectional",
+              "displayName": "Bidirectional",
+              "enumValue": "Bidirectional"
+            },
+            {
+              "name": "omnidirectional",
+              "displayName": "Omnidirectional",
+              "enumValue": "Omnidirectional"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "lightColors",
+        "displayName": {
+          "en": "Light Colors"
+        },
+        "writable": true,
+        "schema": "string",
+        "comment": "yellow, white-white, red-green"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldPavementMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Pavement Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PavementMarking;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "message",
+        "displayName": {
+          "en": "Message"
+        },
+        "writable": true,
+        "schema": "string",
+        "comment": "A | 36-18"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Signage Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "message",
+        "displayName": {
+          "en": "Message"
+        },
+        "writable": true,
+        "schema": "string",
+        "comment": "A | 36-18"
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "name": "messageHeight",
+        "displayName": {
+          "en": "Height"
+        },
+        "writable": true,
+        "schema": "double",
+        "unit": "millimetre"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "message height unit"
+        },
+        "name": "messageHeightUnit",
+        "annotates": "messageHeight",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "name": "panelHeight",
+        "displayName": {
+          "en": "Panel Height"
+        },
+        "writable": true,
+        "schema": "double",
+        "unit": "millimetre"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "panel height unit"
+        },
+        "name": "panelHeightUnit",
+        "annotates": "panelHeight",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "name": "panelWidth",
+        "displayName": {
+          "en": "Panel Width"
+        },
+        "writable": true,
+        "schema": "double",
+        "unit": "millimetre"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "panel width unit"
+        },
+        "name": "panelWidthUnit",
+        "annotates": "panelWidth",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "name": "installedHeight",
+        "displayName": {
+          "en": "Installed Height"
+        },
+        "writable": true,
+        "schema": "double",
+        "unit": "millimetre"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "installed height unit"
+        },
+        "name": "installedHeightUnit",
+        "annotates": "installedHeight",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportICTEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport ICT Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1",
+      "dtmi:com:willowinc:ICTEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BaggageHandlingEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baggage Handling Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:Heliport;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heliport"
+    },
+    "description": {
+      "en": "An airport solely serving helicopters."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:Airport;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:SeaplaneBase;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Seaplane Base"
+    },
+    "description": {
+      "en": "An airport that is located in a body of water, usually a river, bay, harbor, or lake, where seaplanes and amphibious aircraft take-off and land."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:Airport;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:WindCone;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Wind Cone"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -24646,6 +25360,460 @@
     },
     "extends": [
       "dtmi:com:willowinc:HumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftBoardingChair;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Boarding Chair"
+    },
+    "description": {
+      "en": "A device used to transfer passengers from their wheelchair or other apparatus to their seat in the aircraft cabin."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftGroundPowerUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Ground Power Unit"
+    },
+    "description": {
+      "en": "A mobile or stationary device which provides electrical power to an aircraft between flights. (a.k.a. Aircraft GPU)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AircraftElectricalEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftPreconditionedAirUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Preconditioned Air Unit"
+    },
+    "description": {
+      "en": "A device which provides fresh, preconditioned air to an aircraft and between flights. (a.k.a PCA Unit)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AircraftHVACEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldBoundaryPavementMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Boundary Pavement Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldInformationPavementMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Information Pavement Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldVehicleRoadwayPavementMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Vehicle Roadway Pavement Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportAudioVisualEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport Audio Visual Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportICTEquipment;1",
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:System;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:ApproachLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Approach Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BaggageConveyor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baggage Conveyor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageHandlingEquipment;1",
+      "dtmi:com:willowinc:ConveyanceEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BaggageScale;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baggage Scale"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageHandlingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BaggageScreeningEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baggage Screening Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageHandlingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BoundarySign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Boundary Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:DestinationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Destination Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:DirectionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Direction Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:InformationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Information Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:LocationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Location Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:MandatoryInstructionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mandatory Instruction Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:ObstructionLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Obstruction Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:PassengerBoardingBridge;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Passenger Boarding Bridge"
+    },
+    "description": {
+      "en": "An enclosed, movable connector which extends from an airport terminal gate to an airplane. Also commonly referred to as a jet bridge."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:PassengerBoardingLift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Passenger Boarding Lift"
+    },
+    "description": {
+      "en": "A device that provides an elevating platform allowing the transfer of a person with disability or mobility impairment from the airport apron up to the aircraft door for boarding."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:PassengerBoardingRamp;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Passenger Boarding Ramp"
+    },
+    "description": {
+      "en": "A portable device used on an airport apron that provides a continous sloped surface from the ground to the aircraft doorsill height for passenger boarding."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RotatingBeacon;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Rotating Beacon"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayDistanceRemainingSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Distance Remaining Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayOneHalfDistanceRemainingSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway One-Half Distance Remaining Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayPavementMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Pavement Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Pavement Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayEndingMarkerSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Ending Marker Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:VehicleRoadwaySign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vehicle Roadway Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldSignageEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -35249,6 +36417,679 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:airport:AirfieldLightingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Lighting System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSystem;1",
+      "dtmi:com:willowinc:LightingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldNonMovementAreaBoundaryMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield Non-Movement Area Boundary Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldBoundaryPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirfieldVORReceiverCheckpointSignMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airfield VOR Receiver Checkpoint Sign Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldInformationPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportDisplay;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airport Display"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportAudioVisualEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BaggageClaimCarousel;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baggage Claim Carousel"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageConveyor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:BaggageHandlingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baggage Handling System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:HoldingPositionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Holding Position Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:MandatoryInstructionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:ILSCriticalAreaPOFZBoundarySign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "ILS Critical Area / POFZ Boundary Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BoundarySign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:InboundDestinationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inbound Destination Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:DestinationSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:NoEntrySign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "No Entry Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:MandatoryInstructionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:OmniDirectionalApproachLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Omni-Directional Approach Light (ODAL) Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:ApproachLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:OutboundDestinationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outbound Destination Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:DestinationSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:PassengerCheckInBaggageConveyor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Passenger Check-In Baggage Conveyor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageConveyor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:PrecisionApproachPathIndicatorLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Precision Approach Path Indicator (PAPI) Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:ApproachLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RSAOFZRunwayApproachDepartureBoundarySign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "RSA/OFZ and Runway Approach/Departure Boundary Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BoundarySign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayAimingPointMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Aiming Point Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayCenterlineLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Centerline Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayCenterlineMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Centerline Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayChevronMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Chevron Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayDemarcationBarMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Demarcation Bar Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayEdgeLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Edge Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayEdgeMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Edge Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayEndIdentifierLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway End Identifier Light (REIL) Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:ApproachLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayExitSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Exit Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:DirectionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayGuardLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Guard Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayLandingDesignatorMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Landing Designator Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayLocationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Location Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:LocationSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayShoulderMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Shoulder Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayStopBarLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Stop Bar Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayThresholdBarMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Threshold Bar Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayThresholdMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Threshold Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayTouchdownLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Touchdown Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayTouchdownZoneMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Touchdown Zone Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayApronControlMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Apron Control Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayApronEntrancePointSignMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Apron Entrance Point Sign Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayCenterlineLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Centerline Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayCenterlineMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Centerline Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayDirectionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Direction Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:DirectionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayDirectionSignMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Direction Sign Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayEdgeLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Edge Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayEdgeMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Edge Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayGateDesignationSignMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Gate Designation Sign Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayGeographicPositionMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Geographic Position Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayHoldingPositionSignMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Holding Position Sign Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayLocationSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Location Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:LocationSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayLocationSignMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Location Sign Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayShoulderMarking;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Shoulder Marking"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:TaxiwayAirfieldPavementMarking;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:VORReceiverCheckpointSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VOR Receiver Checkpoint Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:InformationSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -44301,6 +46142,161 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:airport:ApproachLightingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Approach Lighting System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:ArrivalBaggageHandlingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Arrival Baggage Handling System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageHandlingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:DepartureBaggageHandlingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Departure Baggage Handling System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:BaggageHandlingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:FlightInformationDisplay;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Display"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportDisplay;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:ILSCriticalAreaPOFZHoldingPositionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "ILS Critical Area / POFZ Holding Position Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:HoldingPositionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:LandAndHoldShortLightingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Land and Hold Short Lighting System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:MilitaryLandingZoneHoldingPositionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Military Landing Zone Holding Position Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:HoldingPositionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayApproachDepartureHoldingPositionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Approach/Departure Holding Position Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:HoldingPositionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayIntersectionHoldingPositionSign;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runway Intersection Holding Position Sign"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:HoldingPositionSign;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:RunwayStopBarGuardLightFixture;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Combination Runway Stop Bar - Runway Guard Light Fixture"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:RunwayStopBarLightFixture;1",
+      "dtmi:com:willowinc:airport:RunwayGuardLightFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:TaxiwayClearanceBar;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Taxiway Clearance Bar"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirfieldLightingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirQualityAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -52483,6 +54479,34 @@
     },
     "extends": [
       "dtmi:com:willowinc:HumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:MediumIntensityApproachLightingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medium Intensity Approach Lighting System (MALS)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:ApproachLightingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:OmniDirectionalApproachLightingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Omni-Directional Approach Lighting System (ODALS)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:ApproachLightingSystem;1"
     ],
     "contents": [],
     "@context": [
