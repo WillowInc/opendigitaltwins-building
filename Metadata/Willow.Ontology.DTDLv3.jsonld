@@ -37993,6 +37993,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Discharge Air Bypass Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the energy recovery device discharge (supply) air bypass damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirEnteringHumiditySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38071,6 +38088,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Return Air Bypass Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the energy recovery device return air bypass damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -46621,6 +46655,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Discharge Air Bypass Damper Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the energy recovery device discharge air bypass damper which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -46631,6 +46682,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Return Air Bypass Damper Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the energy recovery device return air bypass damper which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
