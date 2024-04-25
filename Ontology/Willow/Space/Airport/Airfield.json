@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:Airfield;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield"
+  },
+  "description": {
+    "en": "The portion of the airport intended to be used wholly or in part for the arrival, departure, and movement of aircraft."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

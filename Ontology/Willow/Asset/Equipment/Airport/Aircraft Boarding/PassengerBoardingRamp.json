@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:airport:PassengerBoardingRamp;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Passenger Boarding Ramp"
+  },
+  "description": {
+    "en": "A portable device used on an airport apron that provides a continous sloped surface from the ground to the aircraft doorsill height for passenger boarding."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

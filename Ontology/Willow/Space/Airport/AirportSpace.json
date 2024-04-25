@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirportSpace;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Space"
+  },
+  "description": {
+    "en": "A space that has a defined purpose to support the movement, management, and operations of people and vehicles at an airport."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

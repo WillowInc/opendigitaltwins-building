@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AircraftBoardingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Aircraft Boarding Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

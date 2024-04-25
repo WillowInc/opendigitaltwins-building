@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:airport:BaggageHandlingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Baggage Handling System"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportSystem;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

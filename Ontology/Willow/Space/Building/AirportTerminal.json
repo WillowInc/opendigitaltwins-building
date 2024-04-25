@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirportTerminal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Terminal"
+  },
+  "description": {
+    "en": "A building at an airport where passengers transfer between ground transportation and the facilities that allow them to board and disembark from an aircraft."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Building;1",
+    "dtmi:com:willowinc:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

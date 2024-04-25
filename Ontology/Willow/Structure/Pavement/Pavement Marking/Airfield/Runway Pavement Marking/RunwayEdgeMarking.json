@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:airport:RunwayEdgeMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runway Edge Marking"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:RunwayPavementMarking;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

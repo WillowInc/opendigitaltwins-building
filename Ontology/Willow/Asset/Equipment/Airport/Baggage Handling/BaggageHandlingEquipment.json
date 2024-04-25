@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:airport:BaggageHandlingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Baggage Handling Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

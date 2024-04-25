@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:SeaplaneBase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Seaplane Base"
+  },
+  "description": {
+    "en": "An airport that is located in a body of water, usually a river, bay, harbor, or lake, where seaplanes and amphibious aircraft take-off and land."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:Airport;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

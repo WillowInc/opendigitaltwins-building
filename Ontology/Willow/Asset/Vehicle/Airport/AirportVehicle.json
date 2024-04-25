@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirportVehicle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Vehicle"
+  },
+  "description": {
+    "en": "A vehicle at an aiport."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Vehicle;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
