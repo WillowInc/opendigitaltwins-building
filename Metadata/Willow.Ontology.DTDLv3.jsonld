@@ -12448,7 +12448,7 @@
           "en": "Fins per Inch"
         },
         "writable": true,
-        "schema": "integer",
+        "schema": "double",
         "comment": "Fins per inch"
       },
       {
@@ -12818,7 +12818,7 @@
           "en": "Fins per Inch"
         },
         "writable": true,
-        "schema": "integer",
+        "schema": "double",
         "comment": "Fins per inch"
       },
       {
