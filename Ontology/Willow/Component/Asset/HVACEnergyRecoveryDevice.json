@@ -1,0 +1,74 @@
+{
+  "@id": "dtmi:com:willowinc:HVACEnergyRecoveryDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixing Box"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal enthalpy recovery ratio (ERR)"
+      },
+      "name": "nominalEnthalpyRecoveryRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "energy recovery method"
+      },
+      "name": "energyRecoveryMethod",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Sensible Energy Wheel",
+            "name": "SensibleEnergyWheel"
+          },
+          {
+            "enumValue": "Enthalpy Wheel",
+            "name": "EnthalpyWheel"
+          },
+          {
+            "enumValue": "DualWheel",
+            "name": "DualWheel"
+          },
+          {
+            "enumValue": "Sensible Energy Core",
+            "name": "SensibleEnergyCore"
+          },
+          {
+            "enumValue": "Enthalpy Core",
+            "name": "EnthalpyCore"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "supply"
+      },
+      "name": "supply",
+      "schema": "dtmi:com:willowinc:HVACEnergyRecoveryDeviceSide;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "exhaust"
+      },
+      "name": "exhaust",
+      "schema": "dtmi:com:willowinc:HVACEnergyRecoveryDeviceSide;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
