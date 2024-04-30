@@ -502,7 +502,15 @@
       },
       "name": "exhaustFan",
       "schema": "dtmi:com:willowinc:Fan;1"
-    }
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "energy recovery device"
+      },
+      "name": "energyRecoveryDevice",
+      "schema": "dtmi:com:willowinc:EnergyRecoveryDevice;1"
+    } 
   ],
   "schemas": [
   ],

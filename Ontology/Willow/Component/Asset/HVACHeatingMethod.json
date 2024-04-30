@@ -196,6 +196,27 @@
       "writable": true
     },
     {
+      "@type": ["Property", "MassFlowRate"],
+      "displayName": {
+        "en": "Design Mass Flow"
+      },
+      "name": "designMassFlow",
+      "schema": "double",
+      "unit": "massPoundPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Mass Flow Unit"
+      },
+      "name": "designMassFlowUnit",
+      "annotates": "designMassFlow",
+      "overrides": "unit",
+      "schema": "MassFlowRateUnit",
+      "writable": true
+    },
+    {
       "@type": ["Property", "Pressure"],
       "displayName": {
         "en": "Design Pressure Drop"
