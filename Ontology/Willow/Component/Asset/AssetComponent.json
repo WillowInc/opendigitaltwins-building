@@ -4,11 +4,14 @@
   "displayName": {
     "en": "Asset Component"
   },
+  "description": {
+    "en": "A constituent part of a complete asset."
+  },
   "extends" : [
     "dtmi:com:willowinc:Component;1"
   ],
   "contents": [
-    
+
   ],
   "@context": [
     "dtmi:dtdl:context;3"
