@@ -259,6 +259,25 @@
     },
     {
       "@type": "Property",
+      "displayName": {
+        "en": "Value Map"
+      },
+      "name": "valueMap",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "valueMapKey",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "valueMapValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
       "name": "validValues",
       "displayName": {
         "en": "Valid Values"
