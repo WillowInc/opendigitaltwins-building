@@ -20956,6 +20956,10 @@
               "name": "Steam"
             },
             {
+              "enumValue": "SteamCondensate",
+              "name": "SteamCondensate"
+            },
+            {
               "enumValue": "HotWater",
               "name": "HotWater"
             },
@@ -20984,6 +20988,10 @@
             {
               "enumValue": "HotWater",
               "name": "HotWater"
+            },
+            {
+              "enumValue": "SteamCondensate",
+              "name": "SteamCondensate"
             },
             {
               "enumValue": "CondenserWater",
@@ -21220,6 +21228,34 @@
         "annotates": "secondaryDesignFlow",
         "overrides": "unit",
         "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "MassFlowRate"
+        ],
+        "displayName": {
+          "en": "Primary Design Mass Flow"
+        },
+        "name": "primaryDesignMassFlow",
+        "schema": "double",
+        "unit": "massPoundPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Primary Design Mass Flow Unit"
+        },
+        "name": "primaruyDesignMassFlowUnit",
+        "annotates": "primaryDesignMassFlow",
+        "overrides": "unit",
+        "schema": "MassFlowRateUnit",
         "writable": true
       },
       {
