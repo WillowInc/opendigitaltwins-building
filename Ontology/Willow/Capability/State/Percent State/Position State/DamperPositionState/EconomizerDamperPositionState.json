@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Econimizer Damper Position State"
+    "en": "Economizer Damper Position State"
   },
   "description": {"en": "The percent position state of the economizer damper"},
   "extends" : [
