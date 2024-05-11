@@ -62,6 +62,14 @@
     },
     {
       "@type": "Relationship",
+      "displayName": {
+        "en": "located in grid region"
+      },
+      "name": "locatedInGridRegion",
+      "target": "dtmi:com:willowinc:Space;1"
+    },
+    {
+      "@type": "Relationship",
       "description": {
         "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment. Inverse of: includes"
       },
