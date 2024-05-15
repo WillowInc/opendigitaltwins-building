@@ -31,6 +31,27 @@
       "overrides": "unit",
       "schema": "EnergyUnit",
       "writable": true
+    },
+    {
+      "@type": ["Property", "Power"],
+      "name": "peakDemand",
+      "displayName": {
+        "en": "Peak Demand"
+      },
+      "schema": "double",
+      "unit": "kilowatt",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "name": "peakDemandUnit",
+      "displayName": {
+        "en": "Peak Demand Unit"
+      },
+      "annotates": "peakDemand",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
     }
 
   ],
