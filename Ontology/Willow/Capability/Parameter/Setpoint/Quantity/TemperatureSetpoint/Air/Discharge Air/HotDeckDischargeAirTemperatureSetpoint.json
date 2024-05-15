@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HotDeckDischargeAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Deck Discharge Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air temperature from the hot deck of an air handling unit"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
