@@ -56148,6 +56148,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air temperature from the cold deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ColdDeckInletAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -59204,6 +59221,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DischargeAirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air temperature from the hot deck of an air handling unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
