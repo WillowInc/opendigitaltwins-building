@@ -11887,6 +11887,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CleaningEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cleaning Equipment"
+    },
+    "description": {
+      "en": "Equipment used for cleaning a building such as a floor scrubber or vacuum."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CommissioningChecklist;1",
     "@type": "Interface",
     "displayName": {
@@ -14141,6 +14158,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:KeyStorageCabinet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Key Storage Cabinet"
+    },
+    "description": {
+      "en": "A cabinet used to securely store keys."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ArchitecturalAsset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LandscapedArea;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Landscaped Area"
+    },
+    "description": {
+      "en": "An area such as a parkway, planter, or flower bed that require landscape, irrigation, and/or weed control."
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutdoorArea;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LaundryEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -14504,6 +14555,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Actuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MotorizedShoppingCart;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Motorized Shopping Cart"
+    },
+    "description": {
+      "en": "A shopping cart equipped with an electric motor, navigational controls, and a seat."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Vehicle;1"
     ],
     "contents": [],
     "@context": [
@@ -15260,6 +15328,19 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RoofingMembrane;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "RoofingMembrane"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ArchitecturalBuildingComponent;1"
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RoofLevel;1",
     "@type": "Interface",
     "displayName": {
@@ -15315,6 +15396,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SecuritySafe;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Security Safe"
+    },
+    "description": {
+      "en": "A lockable enclosure used to secure valuable objects."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ArchitecturalAsset;1"
     ],
     "contents": [],
     "@context": [
@@ -16467,6 +16565,20 @@
     "extends": [
       "dtmi:com:willowinc:ArchitecturalBuildingComponent;1"
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WasteHandlingEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Waste Handling Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -19868,6 +19980,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElevatingPlatformLift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Elevating Platform Lift"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ConveyanceEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Elevator;1",
     "@type": "Interface",
     "displayName": {
@@ -20438,6 +20564,55 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FishTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fish Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ArchitecturalAsset;1",
+      "dtmi:com:willowinc:Tank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FloorBuffer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Floor Buffer"
+    },
+    "description": {
+      "en": "A machine used to strip, scrub, a polish hard floors to maintain a floor\u0027s appearance."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CleaningEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FloorBurnisher;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Floor Burnisher"
+    },
+    "description": {
+      "en": "A machine used to make hard floors shiny."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CleaningEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FloorCommonArea;1",
     "@type": "Interface",
     "displayName": {
@@ -20448,6 +20623,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BuildingOperationsArea;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FloorScrubber;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Floor Scrubber"
+    },
+    "description": {
+      "en": "A machine used to clean floors by injecting liquid to remove dirt, grime, and stains."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CleaningEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -20627,6 +20819,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Forklift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Forklift"
+    },
+    "description": {
+      "en": "A powered industrial truck used to lift and transport materials, typicall pallets, over short distances."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Vehicle;1",
+      "dtmi:com:willowinc:MaterialHandlingEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -23214,6 +23424,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PackagedRefrigerationUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Packaged Refrigeration Unit"
+    },
+    "description": {
+      "en": "A self-contained refrigeration unit which contains the condenser, compressor, and evaporator in a single unit, often used for walk-in coolers and freezers."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PaintRetailEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Paint Retail Equipment"
+    },
+    "description": {
+      "en": "Retail equipment used to identify, dispense, and shake paint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PaperTowelDispenser;1",
     "@type": "Interface",
     "displayName": {
@@ -23785,6 +24029,100 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerationEvaporatorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Evaporator Unit"
+    },
+    "description": {
+      "en": "An stand-alone evaporator consisting of a fan and coil typically used to cool walk-in coolers or freezers."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "refrigerant type"
+        },
+        "name": "refrigerantType",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "fan"
+        },
+        "name": "fan",
+        "schema": "dtmi:com:willowinc:Fan;1"
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity"
+        },
+        "name": "nominalCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity unit"
+        },
+        "name": "nominalCoolingCapacityUnit",
+        "annotates": "nominalCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "net sensible cooling capacity"
+        },
+        "name": "netSensibleCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "net sensible cooling capacity unit"
+        },
+        "name": "netSensibleCoolingCapacityUnit",
+        "annotates": "netSensibleCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigerationHeatExchanger;1",
     "@type": "Interface",
     "displayName": {
@@ -24040,6 +24378,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RetailScale;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Retail Scale"
+    },
+    "description": {
+      "en": "A scale used for weighing retail items such as food at a grocery"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RetailWrappingMachine;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Retail Scale"
+    },
+    "description": {
+      "en": "A machine used for wrapping retail items such as film wrapping for food"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SafetyLighting;1",
     "@type": "Interface",
     "displayName": {
@@ -24085,6 +24457,24 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ShoppingCartMover;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Shopping Cart Mover"
+    },
+    "description": {
+      "en": "A machine used for pushing or pulling shopping carts to move large quantities in a single trip.(a.k.a. shopping cart mule)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RetailEquipment;1",
+      "dtmi:com:willowinc:MaterialHandlingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -25100,12 +25490,41 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Vacuum;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vacuum"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CleaningEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VehicleAccessControlEquipment;1",
     "@type": "Interface",
     "displayName": {
       "en": "Vehicle Access Control Equipment"
     },
     "extends": [
+      "dtmi:com:willowinc:VehicleEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VehicleServiceLift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vehicle Service Lift"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ConveyanceEquipment;1",
       "dtmi:com:willowinc:VehicleEquipment;1"
     ],
     "contents": [],
@@ -25277,6 +25696,34 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WasteBaler",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Waste Baler"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WasteHandlingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WasteCompactor",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Waste Compactor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WasteHandlingEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -27325,6 +27772,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BreadSlicer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bread Slicer"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodPreparationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BuildingEmergencySupplyKit;1",
     "@type": "Interface",
     "displayName": {
@@ -27838,6 +28299,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CombinationCleanerVacuum;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Combination Cleaner Vacuum"
+    },
+    "description": {
+      "en": "A combination equipment that can clean with the use of water and vacuum."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Vacuum;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -28020,6 +28498,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:EquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ConveyanceSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Conveyance System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:System;1"
     ],
     "contents": [],
     "@context": [
@@ -30597,6 +31089,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Fryer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fryer"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CookingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:GarbageDisposal;1",
     "@type": "Interface",
     "displayName": {
@@ -33006,6 +33512,48 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PaintColorIdentifier;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Paint Color Identifier"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PaintRetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PaintDispenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Paint Dispenser"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PaintRetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PaintShaker;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Paint Shaker"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PaintRetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Pallet;1",
     "@type": "Interface",
     "displayName": {
@@ -33024,6 +33572,26 @@
     "@type": "Interface",
     "displayName": {
       "en": "Pallet Jack"
+    },
+    "description": {
+      "en": "A machine used to lift and move pallets to another location"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TransportEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PalletStacker;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pallet Stacker"
+    },
+    "description": {
+      "en": "A machine used to lift, move, and place pallets on a high rack for storage."
     },
     "extends": [
       "dtmi:com:willowinc:TransportEquipment;1"
@@ -34624,6 +35192,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ScissorLift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Scissor Lift"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElevatingPlatformLift;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SecurityEquipmentGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -35444,6 +36026,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:TelecommunicationCable;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TelescopingPlatformLift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Telescoping Platform Lift"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElevatingPlatformLift;1"
     ],
     "contents": [],
     "@context": [
@@ -38872,6 +39468,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BlastChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "BlastChiller"
+    },
+    "description": {
+      "en": "An food storage refrigeration equipment used to quickly cool or freeze foods."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BollardLuminaire;1",
     "@type": "Interface",
     "displayName": {
@@ -39270,6 +39883,23 @@
     "extends": [
       "dtmi:com:willowinc:GrateInlet;1",
       "dtmi:com:willowinc:CurbInlet;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CombiOven;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Combi Oven"
+    },
+    "description": {
+      "en": "An oven appliance which uses a combination of convection and steam to cook food."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Oven;1"
     ],
     "contents": [],
     "@context": [
@@ -43664,6 +44294,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OverheadDoor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Overhead Door"
+    },
+    "description": {
+      "en": "An upward-operating door that swings or rolls open from the ground level, assuming a horizontal position above the doorway when opened."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Door;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PackagedTerminalAirConditioner;1",
     "@type": "Interface",
     "displayName": {
@@ -44192,6 +44839,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticTubeSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ConveyanceSystem;1"
     ],
     "contents": [],
     "@context": [
@@ -45078,6 +45739,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RevolvingDoor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Revolving Door"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Door;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RJ45Jack;1",
     "@type": "Interface",
     "displayName": {
@@ -45099,6 +45774,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:TwistedPairCableConnector;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RotisserieOven;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Rotisserie Oven"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Oven;1"
     ],
     "contents": [],
     "@context": [
@@ -45316,6 +46005,20 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SlidingDoor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sliding Door"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Door;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -47500,6 +48203,34 @@
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalPowerSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AutomaticRevolvingDoor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Automatic Revolving Door"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RevolvingDoor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AutomaticSlidingDoor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Automatic Sliding Door"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SlidingDoor;1"
     ],
     "contents": [],
     "@context": [
