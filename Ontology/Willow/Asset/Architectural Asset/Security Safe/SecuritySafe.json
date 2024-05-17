@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:SecuritySafe;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Security Safe"
+  },
+  "description": {
+    "en": "A lockable enclosure used to secure valuable objects."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ArchitecturalAsset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

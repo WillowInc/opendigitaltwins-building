@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:RetailScale;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Retail Scale"
+  },
+  "description": {
+    "en": "A scale used for weighing retail items such as food at a grocery"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RetailEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

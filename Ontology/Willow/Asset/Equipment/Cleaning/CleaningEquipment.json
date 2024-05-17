@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:CleaningEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cleaning Equipment"
+  },
+  "description": {
+    "en": "Equipment used for cleaning a building such as a floor scrubber or vacuum."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Equipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

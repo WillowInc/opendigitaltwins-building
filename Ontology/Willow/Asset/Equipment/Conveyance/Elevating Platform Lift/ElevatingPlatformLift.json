@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ElevatingPlatformLift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevating Platform Lift"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ConveyanceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

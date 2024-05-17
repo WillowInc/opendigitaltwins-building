@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:TelescopingPlatformLift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Telescoping Platform Lift"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElevatingPlatformLift;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
