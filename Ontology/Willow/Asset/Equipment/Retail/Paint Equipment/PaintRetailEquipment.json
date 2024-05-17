@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PaintRetailEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Paint Retail Equipment"
+  },
+  "description": {
+    "en": "Retail equipment used to identify, dispense, and shake paint"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RetailEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

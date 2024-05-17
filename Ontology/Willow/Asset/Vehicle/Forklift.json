@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:Forklift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Forklift"
+  },
+  "description": {
+    "en": "A powered industrial truck used to lift and transport materials, typicall pallets, over short distances."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Vehicle;1",
+    "dtmi:com:willowinc:MaterialHandlingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

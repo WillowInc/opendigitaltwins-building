@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:PalletJack;1",
+  "@id": "dtmi:com:willowinc:PalletStacker;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Pallet Jack"
+    "en": "Pallet Stacker"
   },
   "description": {
-    "en": "A machine used to lift and move pallets to another location"
+    "en": "A machine used to lift, move, and place pallets on a high rack for storage."
   },
   "extends" : [
     "dtmi:com:willowinc:TransportEquipment;1"

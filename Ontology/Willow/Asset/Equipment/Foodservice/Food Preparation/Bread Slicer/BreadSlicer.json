@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:BreadSlicer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bread Slicer"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

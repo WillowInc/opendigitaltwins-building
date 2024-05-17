@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PaintColorIdentifier;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Paint Color Identifier"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PaintRetailEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
