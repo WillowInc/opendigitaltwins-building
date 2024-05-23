@@ -6322,6 +6322,30 @@
         "schema": "string"
       },
       {
+        "@type": "Property",
+        "name": "cbecsBuildingType",
+        "displayName": {
+          "en": "CBECS Building Type"
+        },
+        "description": {
+          "en": "The Building Type as defined in the Commercial Buildings Energy Consumption Survey (CBECS) which aligns with the principal building activity"
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:BuildingCBECSBuildingType;1"
+      },
+      {
+        "@type": "Property",
+        "name": "energyStarPropertyType",
+        "displayName": {
+          "en": "ENERGY STAR Property Type"
+        },
+        "description": {
+          "en": "The Property Type as defined by ENERGY STAR Portfolio Manager"
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:BuildingENERGYSTARPropertyType;1"
+      },
+      {
         "@type": "Component",
         "name": "timeZone",
         "displayName": {
@@ -6430,6 +6454,182 @@
         },
         "writable": true,
         "schema": "date"
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:BuildingCBECSBuildingType;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "enumValue": "Education",
+            "name": "Education"
+          },
+          {
+            "enumValue": "Food Sales",
+            "name": "FoodSales"
+          },
+          {
+            "enumValue": "Food Service",
+            "name": "FoodService"
+          },
+          {
+            "enumValue": "Healthcare - Inpatient",
+            "name": "HealthcareInpatient"
+          },
+          {
+            "enumValue": "Healthcare - Outpatient",
+            "name": "HealthcareOutpatient"
+          },
+          {
+            "enumValue": "Lodging",
+            "name": "Lodging"
+          },
+          {
+            "enumValue": "Mercantile - Retail other than mall",
+            "name": "MercantileRetailOtherThanMall"
+          },
+          {
+            "enumValue": "Mercantile - Enclosed and strip malls",
+            "name": "MercantileEnclosed"
+          },
+          {
+            "enumValue": "Office",
+            "name": "Office"
+          },
+          {
+            "enumValue": "Public Assembly",
+            "name": "PublicAssembly"
+          },
+          {
+            "enumValue": "Public Order and Safety",
+            "name": "PublicOrderAndSafety"
+          },
+          {
+            "enumValue": "Religious Worship",
+            "name": "ReligiousWorship"
+          },
+          {
+            "enumValue": "Service",
+            "name": "Service"
+          },
+          {
+            "enumValue": "Warehouse and Storage",
+            "name": "WarehouseAndStorage"
+          },
+          {
+            "enumValue": "Other",
+            "name": "Other"
+          },
+          {
+            "enumValue": "Vacant",
+            "name": "Vacant"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:BuildingENERGYSTARPropertyType;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "enumValue": "Bank Branch",
+            "name": "BankBranch"
+          },
+          {
+            "enumValue": "Barracks",
+            "name": "Barracks"
+          },
+          {
+            "enumValue": "Convenience Store",
+            "name": "ConvenienceStore"
+          },
+          {
+            "enumValue": "Courthouse",
+            "name": "Courthouse"
+          },
+          {
+            "enumValue": "Data Center",
+            "name": "DataCenter"
+          },
+          {
+            "enumValue": "Distribution Center",
+            "name": "DistributionCenter"
+          },
+          {
+            "enumValue": "Financial Office",
+            "name": "FinancialOffice"
+          },
+          {
+            "enumValue": "Hospital (General Medical \u0026 Surgical)",
+            "name": "Hospital"
+          },
+          {
+            "enumValue": "Hotel",
+            "name": "Hotel"
+          },
+          {
+            "enumValue": "K-12 School",
+            "name": "K12Schoold"
+          },
+          {
+            "enumValue": "Medical Office",
+            "name": "MedicalOffice"
+          },
+          {
+            "enumValue": "Multifamily Housing",
+            "name": "MultifamilyHousing"
+          },
+          {
+            "enumValue": "Non-refrigerated Warehouse",
+            "name": "NonRefrigeratedWarehouse"
+          },
+          {
+            "enumValue": "Office",
+            "name": "Office"
+          },
+          {
+            "enumValue": "Refrigerated Warehouse",
+            "name": "RefrigeratedWarehouse"
+          },
+          {
+            "enumValue": "Residence Hall/Dormitory",
+            "name": "ResidenceHallDormitory"
+          },
+          {
+            "enumValue": "Retail Store",
+            "name": "RetailStore"
+          },
+          {
+            "enumValue": "Single Family Home",
+            "name": "SingleFamilyHome"
+          },
+          {
+            "enumValue": "Senior Living Community",
+            "name": "SeniorLivingCommunity"
+          },
+          {
+            "enumValue": "Supermarket/Grocery Store",
+            "name": "SupermarketGroceryStore"
+          },
+          {
+            "enumValue": "Vehicle Dealership",
+            "name": "VehicleDealership"
+          },
+          {
+            "enumValue": "Wastewater Treatment Plant",
+            "name": "WastewaterTreatmentPlant"
+          },
+          {
+            "enumValue": "Wholesale Club/Supercenter",
+            "name": "WholesaleClubSupercenter"
+          },
+          {
+            "enumValue": "Worship Facility",
+            "name": "WorshipFacility"
+          }
+        ]
       }
     ],
     "@context": [
