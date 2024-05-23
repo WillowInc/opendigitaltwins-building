@@ -2112,6 +2112,16 @@
       },
       {
         "@type": "Property",
+        "name": "offsetValue",
+        "displayName": {
+          "en": "Offset Value"
+        },
+        "writable": true,
+        "schema": "double",
+        "comment": "This value is added to the raw values from the connected system, after scaling, when being stored in the twin"
+      },
+      {
+        "@type": "Property",
         "name": "type",
         "displayName": {
           "en": "Type"
