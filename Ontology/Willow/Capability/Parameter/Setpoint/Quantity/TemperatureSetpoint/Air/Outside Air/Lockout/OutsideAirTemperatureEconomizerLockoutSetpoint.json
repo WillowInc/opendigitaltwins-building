@@ -6,7 +6,7 @@
   },
   "description": {"en": "The desired value associated with outside air temperature economizer lockout"},
   "extends" : [
-    "dtmi:com:willowinc:OutsideAirTemperatureSetpoint;1"
+    "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
   ],
   "contents": [
   ],
