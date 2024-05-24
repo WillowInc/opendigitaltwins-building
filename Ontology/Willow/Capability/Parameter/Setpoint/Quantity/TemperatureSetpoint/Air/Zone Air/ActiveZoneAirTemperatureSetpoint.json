@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ActiveZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Active Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with active zone air temperature"},
+  "extends" : [
+    "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
