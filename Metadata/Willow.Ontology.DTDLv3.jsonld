@@ -62249,23 +62249,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirTemperatureEconomizerLockoutSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Temperature Economizer Lockout Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with outside air temperature economizer lockout"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirTemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -70547,6 +70530,23 @@
     },
     "description": {
       "en": "The desired value associated with outside air temperature cooling lockout"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirTemperatureEconomizerLockoutSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Temperature Economizer Lockout Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with outside air temperature economizer lockout"
     },
     "extends": [
       "dtmi:com:willowinc:OutsideAirTemperatureLockoutSetpoint;1"
