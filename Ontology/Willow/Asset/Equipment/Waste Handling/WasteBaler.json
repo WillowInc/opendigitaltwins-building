@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:WasteBaler",
+  "@id": "dtmi:com:willowinc:WasteBaler;1",
   "@type": "Interface",
   "displayName": {
     "en": "Waste Baler"
