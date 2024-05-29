@@ -25913,7 +25913,7 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:WasteBaler",
+    "@id": "dtmi:com:willowinc:WasteBaler;1",
     "@type": "Interface",
     "displayName": {
       "en": "Waste Baler"
@@ -25927,7 +25927,7 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:WasteCompactor",
+    "@id": "dtmi:com:willowinc:WasteCompactor;1",
     "@type": "Interface",
     "displayName": {
       "en": "Waste Compactor"
