@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Target Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated with target zone air temperature"},
+  "description": {"en": "The central setpoint from which the other mode-specific setpoints, thresholds, and boundaries are derived."},
   "extends" : [
     "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
   ],
