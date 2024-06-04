@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Active Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated with active zone air temperature"},
+  "description": {"en": "The current value to which the zone air temperature is currently being controlled, based on operating modes and conditions. It will reflect the value of the mode-specific setpoint, threshold, or boundary in which the device is currently operating."},
   "extends" : [
     "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
   ],
