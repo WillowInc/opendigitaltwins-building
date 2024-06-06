@@ -65228,6 +65228,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TargetZoneAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Target Zone Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The central setpoint from which the other mode-specific setpoints, thresholds, and boundaries are derived."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopChilledWaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
