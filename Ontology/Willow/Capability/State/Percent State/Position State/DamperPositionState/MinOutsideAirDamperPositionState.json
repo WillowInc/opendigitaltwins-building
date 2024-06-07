@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Minimum Outside Air Damper Position State"
   },
-  "description": {"en": "The percent position state of the minimum outside air damper"},
+  "description": {"en": "The percent position state of the minimum outside air damper, as confirmation of a position for allowing or disallowing ventilation air flow"},
   "extends" : [
     "dtmi:com:willowinc:DamperPositionState;1"
   ],

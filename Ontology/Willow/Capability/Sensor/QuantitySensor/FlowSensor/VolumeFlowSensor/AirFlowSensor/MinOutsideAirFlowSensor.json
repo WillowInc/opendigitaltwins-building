@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Minimum Outside Air Flow Sensor"
   },
-  "description": {"en": "The volume flow feedback from a sensor associated with minimum outside air"},
+  "description": {"en": "The volume flow feedback from a sensor associated with minimum outside air, sometimes referred to as ventilation air"},
   "extends" : [
     "dtmi:com:willowinc:AirFlowSensor;1"
   ],
