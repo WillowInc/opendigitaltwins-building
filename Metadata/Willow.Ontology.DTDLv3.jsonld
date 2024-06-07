@@ -41071,6 +41071,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EconomizerDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the economizer damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the economizer damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EdgeOfDockLoadingDockLeveler;1",
     "@type": "Interface",
     "displayName": {
@@ -43810,6 +43844,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:Oven;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Minimum Outside Air Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the minimum outside air damper, to modulate ventilation air flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Minimum Outside Air Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the minimum outside air damper, as confirmation of a position for allowing or disallowing ventilation air flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -50279,16 +50347,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerDamperPositionActuator;1",
+    "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Economizer Damper Position Actuator"
+      "en": "Economizer Damper Open Actuator"
     },
     "description": {
-      "en": "The percent command which sets the position of the economizer damper"
+      "en": "The Boolean command which sets the state of the economizer damper to \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1"
+      "dtmi:com:willowinc:DamperOpenActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -50296,16 +50364,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
+    "@id": "dtmi:com:willowinc:EconomizerDamperOpenState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Economizer Damper Position State"
+      "en": "Economizer Damper Open State"
     },
     "description": {
-      "en": "The percent position state of the economizer damper"
+      "en": "The Boolean state of the economizer damper which is \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionState;1"
+      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -53123,16 +53191,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionActuator;1",
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Minimum Outside Air Damper Position Actuator"
+      "en": "Min Outside Air Damper Open Actuator"
     },
     "description": {
-      "en": "The percent command which sets the position of the minimum outside air damper"
+      "en": "The Boolean command which sets the state of the minimum outside air damper to \u0027open\u0027 when \u0027true\u0027, to allow or disallow ventilation air flow"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1"
+      "dtmi:com:willowinc:DamperOpenActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -53140,16 +53208,33 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionState;1",
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Minimum Outside Air Damper Position State"
+      "en": "Min Outside Air Damper Open State"
     },
     "description": {
-      "en": "The percent position state of the minimum outside air damper"
+      "en": "The Boolean state of the minimum outside air damper which is \u0027open\u0027 when \u0027true\u0027, as confirmation of a position to allow ventilation air flow"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionState;1"
+      "dtmi:com:willowinc:DamperOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Minimum Outside Air Flow Sensor"
+    },
+    "description": {
+      "en": "The volume flow feedback from a sensor associated with minimum outside air, sometimes referred to as ventilation air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -58161,40 +58246,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the economizer damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the economizer damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -61708,16 +61759,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuator;1",
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Min Outside Air Damper Open Actuator"
+      "en": "Minimum Outside Air Damper Position Actuator Command Feedback Mismatch Alarm State"
     },
     "description": {
-      "en": "The Boolean command which sets the state of the minimum outside air damper to \u0027open\u0027 when \u0027true\u0027"
+      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the minimum outside air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperOpenActuator;1"
+      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -61725,16 +61776,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenState;1",
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionSetpoint;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Min Outside Air Damper Open State"
+      "en": "Minimum Outside Air Damper Position Setpoint"
     },
     "description": {
-      "en": "The Boolean state of the minimum outside air damper which is \u0027open\u0027 when \u0027true\u0027"
+      "en": "The desired position percentage for control of the minimum outside air damper"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperOpenState;1"
+      "dtmi:com:willowinc:DamperPositionSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -61742,16 +61793,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirFlowSensor;1",
+    "@id": "dtmi:com:willowinc:MinOutsideAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Minimum Outside Air Flow Sensor"
+      "en": "Minimum Outside Air Flow Setpoint"
     },
     "description": {
-      "en": "The volume flow feedback from a sensor associated with minimum outside air"
+      "en": "The desired value associated with minimum outside air flow, sometimes referred to as ventilation air flow"
     },
     "extends": [
-      "dtmi:com:willowinc:OutsideAirFlowSensor;1"
+      "dtmi:com:willowinc:AirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -70292,57 +70343,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the minimum outside air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the minimum outside air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinOutsideAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with minimum outside air flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
