@@ -43844,6 +43844,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LineACurrentMagnitudeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line A Current Magnitude Sensor"
+    },
+    "description": {
+      "en": "The current magnitude feedback from a sensor associated with line a"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LinearAccelerationSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -43895,6 +43912,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LineBCurrentMagnitudeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line B Current Magnitude Sensor"
+    },
+    "description": {
+      "en": "The current magnitude feedback from a sensor associated with line b"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LineBCVoltageMagnitudeSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43919,6 +43953,40 @@
     },
     "description": {
       "en": "The voltage magnitude feedback from a sensor associated with line c-a"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VoltageMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LineCCurrentMagnitudeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line C Current Magnitude Sensor"
+    },
+    "description": {
+      "en": "The current magnitude feedback from a sensor associated with line c"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LineNGVoltageMagnitudeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line N-G Voltage Magnitude Sensor"
+    },
+    "description": {
+      "en": "The voltage magnitude feedback from a sensor associated with line n-g, neutral to ground"
     },
     "extends": [
       "dtmi:com:willowinc:VoltageMagnitudeSensor;1"
@@ -53117,6 +53185,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LineACurrentDemandSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line A Current Demand Sensor"
+    },
+    "description": {
+      "en": "The current demand feedback from a sensor associated with line a"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LineACurrentMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LineBCurrentDemandSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line B Current Demand Sensor"
+    },
+    "description": {
+      "en": "The current demand feedback from a sensor associated with line b"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LineBCurrentMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LineCCurrentDemandSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line C Current Demand Sensor"
+    },
+    "description": {
+      "en": "The current demand feedback from a sensor associated with line c"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LineCCurrentMagnitudeSensor;1"
     ],
     "contents": [],
     "@context": [
