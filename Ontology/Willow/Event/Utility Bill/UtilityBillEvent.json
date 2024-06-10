@@ -68,29 +68,155 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Total Service Cost"
+        "en": "Total Charge"
       },
       "description": {
         "en": "The total cost for the services provided this billing period."
       },
-      "name": "totalServiceCost",
-      "schema": "double",
-      "writable": true
+      "name": "totalCharge",
+      "writable": true,
+      "schema": "dtmi:com:willowinc:UtilityBillEventChargest;1"
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
-      "name": "totalServiceCostUnit",
+      "@type": "Property",
       "displayName": {
-        "en": "Total Service Cost Unit"
+        "en": "Meter Data"
       },
-      "description": {
-        "en": "The currency associated with the total service cost."
-      },
-      "annotates": "totalServiceCost",
-      "schema": "string",
-      "writable": true
+      "name": "meterData",
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "meterId",
+              "displayName": {
+                "en": "Meter Id."
+              },
+              "description": {
+                "en": "The meter Id as provided by the utility account provider."
+              },
+              "schema": "string"
+            },
+            {
+              "name": "measurementType",
+              "displayName": {
+                "en": "Measurement Type."
+              },
+              "description": {
+                "en": "Defines whether the measurement is total consumption or a peak demand during the billing period."
+              },
+              "schema": {
+                "@type": "Enum",
+                "enumValues": [
+                  {
+                    "enumValue": "TotalConsumption",
+                    "name": "TotalConsumption"
+                  },
+                  {
+                    "enumValue": "PeakDemand",
+                    "name": "PeakDemand"
+                  }
+                ],
+                "valueSchema": "string"
+              }
+            },
+            {
+              "name": "serviceType",
+              "displayName": {
+                "en": "Service Type."
+              },
+              "description": {
+                "en": "Defines the commodity or substance that is being measured by the meter."
+              },
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "enumValue": "Electricity",
+                    "name": "Electricity"
+                  },
+                  {
+                    "enumValue": "PotableWater",
+                    "name": "PotableWater"
+                  },
+                  {
+                    "enumValue": "ReclaimedWater",
+                    "name": "ReclaimedWater"
+                  },
+                  {
+                    "enumValue": "NaturalGas",
+                    "name": "NaturalGas"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "charge",
+              "displayName": {
+                "en": "Charge"
+              },
+              "description": {
+                "en": "The individual charge for the usage as measured by the meter."
+              },
+              "schema": {
+                "@type": "Object",
+                "fields": [
+                  {
+                    "name": "amount",
+                    "displayName": {
+                      "en": "Amount"
+                    },
+                    "schema": "double"
+                  },
+                  {
+                    "name": "currency",
+                    "displayName": {
+                      "en": "Currency"
+                    },
+                    "schema": "string"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "usage",
+              "displayName": {
+                "en": "Usage"
+              },
+              "description": {
+                "en": "The amount of usage as measured by the meter"
+              },
+              "schema": "dtmi:com:willowinc:UtilityBillEventChargest;1"
+            }
+          ]
+        }
+      }
     }
-
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:willowinc:UtilityBillEventChargest;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "amount",
+          "displayName": {
+            "en": "Amount"
+          },
+          "schema": "double"
+        },
+        {
+          "name": "currency",
+          "displayName": {
+            "en": "Currency"
+          },
+          "schema": "string"
+        }
+      ]
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",
