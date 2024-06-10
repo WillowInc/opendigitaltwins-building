@@ -644,7 +644,20 @@
       "name": "arrayIndex",
       "schema": "integer",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A boolean property that, when set to 'true', indicates that an actuator closes either when energized or as percent position increases."
+      },
+      "displayName": {
+        "en": "reverseActingActuator"
+      },
+      "name": "reverseActingActuator",
+      "schema": "boolean",
+      "writable": true
     }
+    
   ],
   "description": {
     "en": "Encapuslates a set of categorization properties that may be applicable to Capability instances."
