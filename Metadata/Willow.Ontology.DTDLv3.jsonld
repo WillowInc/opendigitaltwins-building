@@ -12272,6 +12272,18 @@
         "name": "arrayIndex",
         "schema": "integer",
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "description": {
+          "en": "A boolean property that, when set to \u0027true\u0027, indicates that an actuator closes either when energized or as percent position increases."
+        },
+        "displayName": {
+          "en": "reverseActingActuator"
+        },
+        "name": "reverseActingActuator",
+        "schema": "boolean",
+        "writable": true
       }
     ],
     "description": {
