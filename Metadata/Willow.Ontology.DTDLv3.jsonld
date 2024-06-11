@@ -49460,8 +49460,7 @@
       "en": "The percent command which sets the position of the chilled water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:WaterValvePositionActuator;1",
-      "dtmi:com:willowinc:CoolingLevelActuator;1"
+      "dtmi:com:willowinc:WaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -52538,8 +52537,7 @@
       "en": "The percent command which sets the position of the hot water valve"
     },
     "extends": [
-      "dtmi:com:willowinc:WaterValvePositionActuator;1",
-      "dtmi:com:willowinc:HeatingLevelActuator;1"
+      "dtmi:com:willowinc:WaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -55994,6 +55992,40 @@
     },
     "description": {
       "en": "The percent command which sets the position of the steam one-third valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamPreheatValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Preheat Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the steam preheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamReheatValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Reheat Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the steam reheat valve"
     },
     "extends": [
       "dtmi:com:willowinc:SteamValvePositionActuator;1"
@@ -60656,6 +60688,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:HeatingPlant;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterPreheatValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Preheat Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water preheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterPreheatValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Preheat Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the hot water preheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterReheatValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Reheat Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the hot water reheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterReheatValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Reheat Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the hot water reheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
