@@ -98,6 +98,15 @@
     },
     {
       "@type": "Property",
+      "name": "uniqueID",
+      "displayName": {
+        "en": "Globally Unique ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
       "name": "description",
       "displayName": {
         "en": "Description"
