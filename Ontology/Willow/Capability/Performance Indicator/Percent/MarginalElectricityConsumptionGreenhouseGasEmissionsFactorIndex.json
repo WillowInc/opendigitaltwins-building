@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:MarginalElectricityConsumptionGreenhouseGasEmissionsFactorIndex;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Marginal Electricity Consumption Greenhouse Gas Emissions Factor Index"
+  },
+  "description": {
+    "en": "A 0-100 score which is the statistical percentile of the current Marginal GHG Emissions Factor relative to the upcoming 24 hours of forecast values (0=lowest/cleanest, 100=highest/dirtiest). See WattTime MOER Index."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PercentPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
