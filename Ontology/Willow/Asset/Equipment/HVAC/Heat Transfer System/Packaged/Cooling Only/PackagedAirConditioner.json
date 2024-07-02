@@ -8,7 +8,7 @@
     "en": "A self-contained air conditioner which contains the condenser, compressor, and evaporator in a single unit."
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipment;1"
+    "dtmi:com:willowinc:PackagedHeatTransferSystem;1"
   ],
   "contents": [
 

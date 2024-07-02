@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:com:willowinc:MeteringDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Metering Device"
+  },
+  "description": {
+    "en": "A type of metering device that automatically adjusts refrigerant flow based on temperature changes, using a sensing bulb."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SplitHeatTransferSystem;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "style"
+      },
+      "name": "style",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "CapillaryTube",
+            "name": "CapillaryTube"
+          },
+          {
+            "enumValue": "ElectronicExpansionValve",
+            "name": "ElectronicExpansionValve"
+          },
+          {
+            "enumValue": "ThermalExpansionValve",
+            "name": "ThermalExpansionValve"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

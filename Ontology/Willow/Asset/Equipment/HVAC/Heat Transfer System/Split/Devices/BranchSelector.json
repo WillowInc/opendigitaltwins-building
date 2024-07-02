@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:BranchSelector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Branch Selector"
+  },
+  "description": {
+    "en": "A device in VRF systems that regulates the flow of refrigerant to different indoor units or branches, ensuring optimal distribution of heating or cooling according to the specific requirements of each zone or area in the building."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SplitHeatTransferSystem;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
