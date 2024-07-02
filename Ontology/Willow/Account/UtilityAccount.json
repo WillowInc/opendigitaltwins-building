@@ -12,6 +12,14 @@
   ],
   "contents": [
     {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "has utility bill"
+      },
+      "name": "hasUtilityBill",
+      "target": "dtmi:com:willowinc:UtilityBillEvent;1"
+    },
+    {
       "@type": "Component",
       "displayName": {
         "en": "Emission Factor"
