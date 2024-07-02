@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:SplitHeatTransferSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Split Heat Transfer System"
+  },
+  "description": {
+    "en": "A type of heat exchanger comprised of a compressor, a condenser, and an evaporator, along with a fan for air distribution, whose function is to transfer heat from inside to outside, or vice versa, and which is consolidated into a single package"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatTransferSystem;1"
+  ],
+  "contents": [
+  
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

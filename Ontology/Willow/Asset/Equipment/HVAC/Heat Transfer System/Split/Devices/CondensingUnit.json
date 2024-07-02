@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:com:willowinc:CondensingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condensing Unit"
+  },
+  "description": {
+    "en": "A type of heat exchanger comprised of a compressor, a condenser, and a fan whose function is to remove heat in a split system air conditioner. It is typically located outdoors."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SplitHeatTransferSystem;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "function"
+      },
+      "name": "function",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "CoolingOnly",
+            "name": "CoolingOnly"
+          },
+          {
+            "enumValue": "HeatPump",
+            "name": "HeatPump"
+          },
+          {
+            "enumValue": "HeatRecovery",
+            "name": "HeatRecovery"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
