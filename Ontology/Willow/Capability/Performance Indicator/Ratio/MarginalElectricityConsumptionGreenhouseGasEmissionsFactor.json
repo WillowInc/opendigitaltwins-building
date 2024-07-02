@@ -5,7 +5,7 @@
     "en": "Marginal Emissions Health Impact Cost Factor"
   },
   "description": {
-    "en": "he human life and health impact of using electricity at a particular time and place, based on the air pollution of marginal electricity generation (typically defined in units USD / MWh). Dollars used as a common numerical representation, the value of a statistical life (VSL). (i.e. WattTime Health Damage)"
+    "en": "The human life and health impact of using electricity at a particular time and place, based on the air pollution of marginal electricity generation (typically defined in units USD / MWh). Dollars used as a common numerical representation, the value of a statistical life (VSL). (i.e. WattTime Health Damage)"
   },
   "extends" : [
     "dtmi:com:willowinc:RatioPerformanceIndicator;1"
