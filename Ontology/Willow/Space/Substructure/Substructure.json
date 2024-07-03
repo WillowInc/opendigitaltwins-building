@@ -163,6 +163,15 @@
       },
       "writable": true,
       "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "dateOpened",
+      "displayName": {
+        "en": "Date Opened"
+      },
+      "writable": true,
+      "schema": "date"
     }
   ],
   "@context": [
