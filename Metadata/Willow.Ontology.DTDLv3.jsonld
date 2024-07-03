@@ -6510,6 +6510,15 @@
         },
         "writable": true,
         "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "dateOpened",
+        "displayName": {
+          "en": "Date Opened"
+        },
+        "writable": true,
+        "schema": "date"
       }
     ],
     "schemas": [
@@ -9074,6 +9083,15 @@
         "name": "constructionCompletionDate",
         "displayName": {
           "en": "Construction Completion Date"
+        },
+        "writable": true,
+        "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "dateOpened",
+        "displayName": {
+          "en": "Date Opened"
         },
         "writable": true,
         "schema": "date"
