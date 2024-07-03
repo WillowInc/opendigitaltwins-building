@@ -130,7 +130,10 @@ Metering load classification enables analytics to make assumptions on what types
 
 5. WillowTwin is now able to breakdown how much of the Electrical Energy Sensor’s values can be attributed to each load classification. For this example, the total energy consumed by the Tenant Unit is 500 kWh. By leveraging the load classifications, we see that 20% (100 kWh) is Air Handling Unit, 40% (200 kWh) is Terminal Unit, 10% (50 kWh) is Lighting Equipment, and 30% (150 kWh) is Workstation.
 
-## Billed Utility Metering
+## Billed Utility Metering (Deprecated)
+
+[!WARNING]
+These samples have been replaced by an updated Utility Billing [here](./06-Utilities.md).
 
 ### Electrical - Building
 ![BilledUtilitly-Example1](Images/BilledUtility-Example1.png)
