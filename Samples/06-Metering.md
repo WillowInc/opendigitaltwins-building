@@ -132,8 +132,8 @@ Metering load classification enables analytics to make assumptions on what types
 
 ## Billed Utility Metering (Deprecated)
 
-[!WARNING]
-These samples have been replaced by an updated Utility Billing [here](./06-Utilities.md).
+> [!WARNING]
+> These samples have been replaced by an updated Utility Billing [here](./06-Utilities.md).
 
 ### Electrical - Building
 ![BilledUtilitly-Example1](Images/BilledUtility-Example1.png)
