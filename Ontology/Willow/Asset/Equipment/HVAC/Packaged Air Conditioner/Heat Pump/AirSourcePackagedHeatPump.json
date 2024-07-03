@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:AirSourcePackagedHeatPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air-Source Packaged Heat Pump"
+  },
+  "description": {
+    "en": "A packaged heat pump in which ambient air is used for heat exchange."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PackagedHeatPump;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

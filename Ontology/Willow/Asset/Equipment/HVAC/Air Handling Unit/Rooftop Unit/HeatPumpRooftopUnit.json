@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatPumpRooftopUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Pump Rooftop Unit"
+  },
+  "description": {
+    "en": "A rooftop unit which uses a heat pump to provide cooling and heating."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RooftopUnit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
