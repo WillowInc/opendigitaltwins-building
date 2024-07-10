@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:PackagedHeatPump;1",
+  "@id": "dtmi:com:willowinc:WaterSourcePackagedAirConditioner;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Packaged Heat Pump"
+    "en": "Water-Source Packaged Air Conditioner"
   },
   "description": {
     "en": "A self-contained air conditioner which contains the condenser, compressor, and evaporator in a single unit, which transfers heat to a water loop"
