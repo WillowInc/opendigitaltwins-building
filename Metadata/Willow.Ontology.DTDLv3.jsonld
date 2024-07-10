@@ -4856,6 +4856,14 @@
       },
       {
         "@type": "Relationship",
+        "displayName": {
+          "en": "located in grid region"
+        },
+        "name": "locatedInGridRegion",
+        "target": "dtmi:com:willowinc:Space;1"
+      },
+      {
+        "@type": "Relationship",
         "description": {
           "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment. Inverse of: includes"
         },
@@ -13767,6 +13775,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AssetCollection;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GridRegion;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Grid Region"
+    },
+    "description": {
+      "en": "A region which defines the geographic extents served by an electrical power grid (i.e. CAISO, NYISO, ERCOT). "
+    },
+    "extends": [
+      "dtmi:com:willowinc:Region;1"
     ],
     "contents": [],
     "@context": [
@@ -23365,6 +23390,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MarginalElectricityConsumptionGreenhouseGasEmissionsFactorIndex;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Marginal Electricity Consumption Greenhouse Gas Emissions Factor Index"
+    },
+    "description": {
+      "en": "A 0-100 score which is the statistical percentile of the current Marginal GHG Emissions Factor relative to the upcoming 24 hours of forecast values (0=lowest/cleanest, 100=highest/dirtiest). See WattTime MOER Index."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PercentPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MarginalEmissionsHealthImpactCostFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Marginal Emissions Health Impact Cost Factor"
+    },
+    "description": {
+      "en": "The human life and health impact of using electricity at a particular time and place, based on the air pollution of marginal electricity generation (typically defined in units USD / MWh). Dollars used as a common numerical representation, the value of a statistical life (VSL). (i.e. WattTime Health Damage)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RatioPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MassSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -31957,6 +32016,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:GroundSourceCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ground Source Condensing Unit"
+    },
+    "description": {
+      "en": "A type of heat exchanger comprised of a compressor and a condenser whose function is to transfer heat to the ground in a split system air conditioner"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HandOffAutoSwitchState;1",
     "@type": "Interface",
     "displayName": {
@@ -32061,6 +32137,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatPumpCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Pump Condensing Unit"
+    },
+    "description": {
+      "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Recovery Condensing Unit"
+    },
+    "description": {
+      "en": "A type of condensing unit which provides cooling and also uses heat recovered from the cooling process to provide heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondensingUnit;1"
     ],
     "contents": [],
     "@context": [
@@ -34036,6 +34146,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PackagedHeatPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Packaged Heat Pump"
+    },
+    "description": {
+      "en": "A self-contained heat pump which contains the condenser, compressor, and evaporator in a single unit. A reversing valve changes the direction of refrigerant flow to enable cooling or heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PackagedAirConditioner;1"
     ],
     "contents": [],
     "@context": [
@@ -38096,6 +38223,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterSourceCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Source Condensing Unit"
+    },
+    "description": {
+      "en": "A type of heat exchanger comprised of a compressor and a condenser whose function is to transfer heat to a water loop in a split system air conditioner"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterSourcePackagedAirConditioner;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water-Source Packaged Air Conditioner"
+    },
+    "description": {
+      "en": "A self-contained air conditioner which contains the condenser, compressor, and evaporator in a single unit, which transfers heat to a water loop"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PackagedAirConditioner;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39298,6 +39459,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirSourcePackagedHeatPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air-Source Packaged Heat Pump"
+    },
+    "description": {
+      "en": "A packaged heat pump in which ambient air is used for heat exchange."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PackagedHeatPump;1"
     ],
     "contents": [],
     "@context": [
@@ -41865,7 +42043,7 @@
       "en": "Electricity Consumption Greenhouse Gas Emissions Factor"
     },
     "description": {
-      "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of electricity from a utility."
+      "en": "An greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) related to the purchase and consumption of electricity from a utility. Assumed to be the grid Average Emissions Factor if not specified."
     },
     "extends": [
       "dtmi:com:willowinc:IndirectGreenhouseGasEmissionsFactor;1"
@@ -43179,6 +43357,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:GroundSourceHeatPumpCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ground Source Heat Pump Condensing Unit"
+    },
+    "description": {
+      "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating by transferring heat to or from the ground"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatPumpCondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GroundSourcePackagedHeatPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ground-Source Packaged Heat Pump"
+    },
+    "description": {
+      "en": "A packaged heat pump in which the ground below the surface of the land is used for heat exchange."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PackagedHeatPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatingLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -43223,6 +43435,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatPumpRooftopUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Pump Rooftop Unit"
+    },
+    "description": {
+      "en": "A rooftop unit which uses a heat pump to provide cooling and heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RooftopUnit;1"
     ],
     "contents": [],
     "@context": [
@@ -48177,6 +48406,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterSourceHeatPumpCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Source Heat Pump Condensing Unit"
+    },
+    "description": {
+      "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating by transferring heat to or from a water loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatPumpCondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterSourceHeatRecoveryCondensingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Source Heat Recovery Condensing Unit"
+    },
+    "description": {
+      "en": "A type of condensing unit which provides cooling by transferring heat to a water loop and also uses heat recovered from the cooling process to provide heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterSourcePackagedHeatPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water-Source Packaged Heat Pump"
+    },
+    "description": {
+      "en": "A packaged heat pump in which water is used for heat exchange."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PackagedHeatPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -48912,6 +49192,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AverageCurrentMagnitudeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AverageElectricityConsumptionGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Average Electricity Consumption Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "A greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) which is the ratio of total emissions to the total generation of electricity. (a.k.a. Grid-average emissions factor)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricityConsumptionGreenhouseGasEmissionsFactor;1"
     ],
     "contents": [],
     "@context": [
@@ -53605,6 +53902,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MarginalElectricityConsumptionGreenhouseGasEmissionsFactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Marginal Electricity Consumption Greenhouse Gas Emissions Factor"
+    },
+    "description": {
+      "en": "A greenhouse gas emissions factor used to calculate the change in indirect emissions (in CO2e) that would result from a change in load (increase or decrease)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricityConsumptionGreenhouseGasEmissionsFactor;1"
     ],
     "contents": [],
     "@context": [
