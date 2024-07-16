@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BoxCountSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Box Count Setpoint"
+  },
+  "description": {"en": "The desired value associated with terminal device count"},
+  "extends" : [
+    "dtmi:com:willowinc:CountSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

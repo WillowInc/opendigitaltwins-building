@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ColdBoxCountSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Box Count Setpoint"
+  },
+  "description": {"en": "The desired value associated with cold terminal device count"},
+  "extends" : [
+    "dtmi:com:willowinc:CountSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

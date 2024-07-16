@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:StarvingBoxCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Starving Box Count Sensor"
+  },
+  "description": {"en": "The counted number of starving terminal devices from a sensor"},
+  "extends" : [
+    "dtmi:com:willowinc:BoxCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

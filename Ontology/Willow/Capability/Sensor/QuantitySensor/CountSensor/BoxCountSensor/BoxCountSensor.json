@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BoxCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Box Count Sensor"
+  },
+  "description": {"en": "The counted number of terminal devices from a sensor"},
+  "extends" : [
+    "dtmi:com:willowinc:CountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
