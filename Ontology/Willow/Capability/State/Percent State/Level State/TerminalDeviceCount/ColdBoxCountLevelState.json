@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Cold Box Count Level State"
   },
-  "description": {"en": "The percentage of counted number of cold terminal devices from a sensor relative to total number of terminal devices"},
+  "description": {"en": "The percentage of counted number of cold terminal devices from a sensor relative to total number of available terminal devices"},
   "extends" : [
     "dtmi:com:willowinc:BoxCountLevelState;1"
   ],

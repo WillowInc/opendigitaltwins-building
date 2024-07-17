@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Hot Box Count Level State"
   },
-  "description": {"en": "The percentage of counted number of hot terminal devices from a sensor relative to total number of terminal devices"},
+  "description": {"en": "The percentage of counted number of hot terminal devices from a sensor relative to total number of available terminal devices"},
   "extends" : [
     "dtmi:com:willowinc:BoxCountLevelState;1"
   ],
