@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:ZoneCountSensor;1",
+  "@id": "dtmi:com:willowinc:RequestCountSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Zone Count Sensor"
+    "en": "Request Count Sensor"
   },
-  "description": {"en": "The counted number of zones meeting a criterion"},
+  "description": {"en": "The counted number of assets or locations making a request"},
   "extends" : [
     "dtmi:com:willowinc:CountSensor;1"
   ],

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingRequestCountLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Request Count Level State"
+  },
+  "description": {"en": "The percentage of counted number of assets or locations requesting heating relative to total number of available assets or locations"},
+  "extends" : [
+    "dtmi:com:willowinc:CountLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

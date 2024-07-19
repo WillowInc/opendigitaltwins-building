@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingRequestCountLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Request Count Level State"
+  },
+  "description": {"en": "The percentage of counted number of assets or locations requesting cooling relative to total number of assets or locations"},
+  "extends" : [
+    "dtmi:com:willowinc:CountLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
