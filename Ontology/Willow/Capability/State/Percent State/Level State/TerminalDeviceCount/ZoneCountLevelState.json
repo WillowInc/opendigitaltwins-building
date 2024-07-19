@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ZoneCountLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Count Level State"
+  },
+  "description": {"en": "The percentage of counted number of zones meeting a criterion relative to total number of available zones"},
+  "extends" : [
+    "dtmi:com:willowinc:LevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

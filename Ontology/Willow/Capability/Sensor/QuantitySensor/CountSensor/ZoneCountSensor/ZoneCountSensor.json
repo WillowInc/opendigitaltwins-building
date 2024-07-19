@@ -1,10 +1,10 @@
 {
-  "@id": "dtmi:com:willowinc:BoxCountSensor;1",
+  "@id": "dtmi:com:willowinc:ZoneCountSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Box Count Sensor"
+    "en": "Zone Count Sensor"
   },
-  "description": {"en": "The counted number of terminal devices from a sensor"},
+  "description": {"en": "The counted number of zones meeting a criterion"},
   "extends" : [
     "dtmi:com:willowinc:CountSensor;1"
   ],

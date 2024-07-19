@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingRequestZoneCountLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Request Zone Count Level State"
+  },
+  "description": {"en": "The percentage of counted number of zones requesting heating relative to total number of available zones"},
+  "extends" : [
+    "dtmi:com:willowinc:ZoneCountLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

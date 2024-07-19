@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingRequestZoneCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Request Zone Count Sensor"
+  },
+  "description": {"en": "The counted number of zones requesting heating"},
+  "extends" : [
+    "dtmi:com:willowinc:ZoneCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
