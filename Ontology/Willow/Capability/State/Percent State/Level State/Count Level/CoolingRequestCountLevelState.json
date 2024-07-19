@@ -6,7 +6,7 @@
   },
   "description": {"en": "The percentage of counted number of assets or locations requesting cooling relative to total number of assets or locations"},
   "extends" : [
-    "dtmi:com:willowinc:CountLevelState;1"
+    "dtmi:com:willowinc:RequestCountLevelState;1"
   ],
   "contents": [
 
