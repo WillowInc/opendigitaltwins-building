@@ -26,6 +26,9 @@
           "displayName": {
             "en": "Connector Onboarding Status"
           },
+          "description": {
+            "en": "The status of onboarding the twins and relationships for a connector that has been installed. Used to filter out data quality alerts for connectors that are not Complete."
+          },
           "writable": true,
           "schema": "dtmi:com:willowinc:SpaceServedByConnectorOnboardingStatus;1"
         }
