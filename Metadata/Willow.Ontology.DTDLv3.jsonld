@@ -47520,6 +47520,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the steam valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:StopActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -56539,6 +56556,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamOneThirdValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam One-Third Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the steam one-third valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamPreheatValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -56556,6 +56590,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamPreheatValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Preheat Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the steam preheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamReheatValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -56566,6 +56617,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamReheatValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Reheat Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the steam reheat valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -56621,6 +56689,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SteamTwoThirdsValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Two-Thirds Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the steam two-thirds valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValvePositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SteamValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -56631,6 +56716,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the steam valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenState;1"
     ],
     "contents": [],
     "@context": [
