@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingRequestCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Request Count Sensor"
+  },
+  "description": {"en": "The counted number of assets or locations requesting additional cooling from a primary asset"},
+  "extends" : [
+    "dtmi:com:willowinc:RequestCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

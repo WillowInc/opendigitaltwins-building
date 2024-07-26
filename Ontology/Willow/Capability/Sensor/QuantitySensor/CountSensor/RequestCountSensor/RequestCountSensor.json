@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:RequestCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Request Count Sensor"
+  },
+  "description": {"en": "The counted number of assets or locations making a request"},
+  "extends" : [
+    "dtmi:com:willowinc:CountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
