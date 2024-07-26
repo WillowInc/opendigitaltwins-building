@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Cooling Request State"
   },
-  "description": {"en": "The Boolean state of a cooling request which is 'requested' when 'true' and 'not requested' when 'false'"},
+  "description": {"en": "The Boolean state of a request for additional cooling which is 'requested' when 'true' and 'not requested' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:RequestState;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Flow Request State"
   },
-  "description": {"en": "The Boolean state of a flow request which is 'requested' when 'true' and 'not requested' when 'false'"},
+  "description": {"en": "The Boolean state of a request for additional flow which is 'requested' when 'true' and 'not requested' when 'false'"},
   "extends" : [
     "dtmi:com:willowinc:RequestState;1"
   ],

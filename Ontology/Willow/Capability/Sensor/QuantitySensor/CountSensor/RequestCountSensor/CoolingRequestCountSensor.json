@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Cooling Request Count Sensor"
   },
-  "description": {"en": "The counted number of assets or locations requesting cooling"},
+  "description": {"en": "The counted number of assets or locations requesting additional cooling from a primary asset"},
   "extends" : [
     "dtmi:com:willowinc:RequestCountSensor;1"
   ],
