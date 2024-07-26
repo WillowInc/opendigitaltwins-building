@@ -25075,6 +25075,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RequestState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Request State"
+    },
+    "description": {
+      "en": "The Boolean state of a request which is \u0027requested\u0027 when \u0027true\u0027 and \u0027not requested\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReservedUnreservedState;1",
     "@type": "Interface",
     "displayName": {
@@ -29332,6 +29349,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingRequestState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Request State"
+    },
+    "description": {
+      "en": "The Boolean state of a request for additional cooling which is \u0027requested\u0027 when \u0027true\u0027 and \u0027not requested\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RequestState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CopperCablingEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -31400,6 +31434,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FlowRequestState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Flow Request State"
+    },
+    "description": {
+      "en": "The Boolean state of a request for additional flow which is \u0027requested\u0027 when \u0027true\u0027 and \u0027not requested\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RequestState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -32278,6 +32329,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingRequestState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Request State"
+    },
+    "description": {
+      "en": "The Boolean state of a request for additional heating which is \u0027requested\u0027 when \u0027true\u0027 and \u0027not requested\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RequestState;1"
     ],
     "contents": [],
     "@context": [
@@ -35842,6 +35910,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ReplaceComponentState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RequestCountSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Request Count Sensor"
+    },
+    "description": {
+      "en": "The counted number of assets or locations making a request"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CountSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41026,6 +41111,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingRequestCountSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Request Count Sensor"
+    },
+    "description": {
+      "en": "The counted number of assets or locations requesting additional cooling from a primary asset"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RequestCountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingStageCountSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43320,6 +43422,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FlowRequestCountSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Flow Request Count Sensor"
+    },
+    "description": {
+      "en": "The counted number of assets or locations requesting additional flow from a primary asset"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RequestCountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FoodPackagingVacuumSealer;1",
     "@type": "Interface",
     "displayName": {
@@ -43576,6 +43695,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingRequestCountSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Request Count Sensor"
+    },
+    "description": {
+      "en": "The counted number of assets or locations requesting additional heating from a primary asset"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RequestCountSensor;1"
     ],
     "contents": [],
     "@context": [
