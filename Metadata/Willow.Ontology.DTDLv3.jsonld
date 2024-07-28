@@ -1090,6 +1090,15 @@
       },
       {
         "@type": "Property",
+        "displayName": {
+          "en": "manufactured date"
+        },
+        "name": "manufacturedDate",
+        "schema": "date",
+        "writable": true
+      },
+      {
+        "@type": "Property",
         "name": "software",
         "displayName": {
           "en": "Software"
