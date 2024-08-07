@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: 'Setup Nuget'
-        uses: nuget/setup-nuget@v1
+        uses: nuget/setup-nuget@v2
         with:
           nuget-api-key: ${{ secrets.NUGET_API_KEY }}
           nuget-version: '5.x'
