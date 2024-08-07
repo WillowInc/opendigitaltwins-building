@@ -18,7 +18,21 @@
       "displayName": {
         "en": "served by"
       },
-      "name": "servedBy"
+      "name": "servedBy",
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "connectorOnboardingStatus",
+          "displayName": {
+            "en": "Connector Onboarding Status"
+          },
+          "description": {
+            "en": "The status of onboarding the twins and relationships for a connector that has been installed. Used to filter out data quality alerts for connectors that are not Complete."
+          },
+          "writable": true,
+          "schema": "dtmi:com:willowinc:SpaceServedByConnectorOnboardingStatus;1"
+        }
+      ]
     },
     {
       "@type": "Relationship",
@@ -469,6 +483,34 @@
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
           "schema": "string"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:SpaceServedByConnectorOnboardingStatus;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "enumValue": "InProgress",
+          "name": "InProgress",
+          "displayName": {
+            "en": "In Progress"
+          }
+        },
+        {
+          "enumValue": "Complete",
+          "name": "Complete",
+          "displayName": {
+            "en": "Complete"
+          }
+        },
+        {
+          "enumValue": "Retired",
+          "name": "Retired",
+          "displayName": {
+            "en": "Retired"
+          }
         }
       ]
     }
