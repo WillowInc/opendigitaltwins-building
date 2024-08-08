@@ -912,6 +912,37 @@
         }
       },
       {
+        "@type": [
+          "Property",
+          "Angle"
+        ],
+        "name": "geographicOrientation",
+        "displayName": {
+          "en": "geographic orientation"
+        },
+        "description": {
+          "en": "The horizontal direction the front of the asset is oriented with geographic north as 0 degrees and increasing clockwise (a.ka. azimuth)."
+        },
+        "schema": "double",
+        "unit": "degreeOfArc",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "geographic orientation unit"
+        },
+        "name": "geographicOrientationUnit",
+        "annotates": "geographicOrientation",
+        "overrides": "unit",
+        "schema": "AngleUnit",
+        "writable": true
+      },
+      {
         "@type": "Property",
         "displayName": {
           "en": "serial number"
