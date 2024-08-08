@@ -16008,6 +16008,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RatingPerformanceIndicator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Rating Performance Indicator"
+    },
+    "description": {
+      "en": "A performance indicator which has values that are from a rating system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RatioPerformanceIndicator;1",
     "@type": "Interface",
     "displayName": {
@@ -23844,6 +23861,23 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:NABERSrating;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "NABERS rating"
+    },
+    "description": {
+      "en": "The 1-6 stars rating for a building compares it to other buildings across Australia with similar primary use characteristics. A higher score represents better performance. (nabers.gov.au)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RatingPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
