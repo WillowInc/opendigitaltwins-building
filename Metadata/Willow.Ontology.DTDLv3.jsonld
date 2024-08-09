@@ -5022,6 +5022,17 @@
       {
         "@type": "Relationship",
         "description": {
+          "en": "Indicates that two spaces are adjacent to each other."
+        },
+        "displayName": {
+          "en": "is adjacent to"
+        },
+        "name": "isAdjacentTo",
+        "target": "dtmi:com:willowinc:Space;1"
+      },
+      {
+        "@type": "Relationship",
+        "description": {
           "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
         },
         "displayName": {
@@ -10805,6 +10816,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ParkingSpot;1",
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AircraftStand;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Stand"
+    },
+    "description": {
+      "en": "A designated area intended for parking an aircraft."
+    },
+    "extends": [
       "dtmi:com:willowinc:airport:AirportSpace;1"
     ],
     "contents": [],
@@ -17673,6 +17701,23 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AircraftStandState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Aircraft Stand State"
+    },
+    "description": {
+      "en": "The staus of an aircraft stand such as occupied, free, or prepared."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MultiState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
