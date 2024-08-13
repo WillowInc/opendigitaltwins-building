@@ -266,6 +266,16 @@
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
           "schema": "string"
+        },
+        {
+          "name": "dateCreated",
+          "displayName": {
+            "en": "Date Created"
+          },
+          "description": {
+            "en": "The date the identity was created in Mapped."
+          },
+          "schema": "dateTime"
         }
       ]
     }
