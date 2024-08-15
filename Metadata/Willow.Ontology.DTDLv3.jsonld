@@ -7057,6 +7057,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BuildingOutdoorArea;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Building Outdoor Area"
+    },
+    "description": {
+      "en": "An outdoor area that is located in or adjacent to a building such as a rooftop area, balcony, or terrace."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CalendarEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -11147,6 +11164,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Balcony;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Balcony"
+    },
+    "description": {
+      "en": "An small enclosed area that is affixed to an upper level of building with typically a single access point."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BuildingOutdoorArea;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BarrierAsset;1",
     "@type": "Interface",
     "displayName": {
@@ -11521,6 +11555,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SubBuilding;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BuildingTerrace;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Building Terrace"
+    },
+    "description": {
+      "en": "A designated area for social gathering that is either adjacent to or attached to the main structure of a building, can have multiple access points, and is raised from its surroundings."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BuildingOutdoorArea;1"
     ],
     "contents": [],
     "@context": [
@@ -16255,6 +16306,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Zone;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RoofArea;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Roof Area"
+    },
+    "description": {
+      "en": "An outdoor area that is located on the roof level of a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BuildingOutdoorArea;1"
     ],
     "contents": [],
     "@context": [
@@ -25434,6 +25502,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:RetailEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RoofTerrace;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Roof Terrace"
+    },
+    "description": {
+      "en": "A terrace that is located on the roof level of a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BuildingTerrace;1",
+      "dtmi:com:willowinc:RoofArea;1"
     ],
     "contents": [],
     "@context": [
