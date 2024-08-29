@@ -19128,6 +19128,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AutoLevelDeployedState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Auto-Level Deployed State"
+    },
+    "description": {
+      "en": "The Boolean state of the auto-leveler which is \u0027deployed\u0027 when \u0027true\u0027 and \u0027not deployed\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BackOfHouseArea;1",
     "@type": "Interface",
     "displayName": {
@@ -19538,6 +19555,23 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CanopyDownState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Canopy Down State"
+    },
+    "description": {
+      "en": "The Boolean state of a canopy which is \u0027down\u0027 when \u0027true\u0027 and \u0027up\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -28714,6 +28748,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AutoLevelFaultAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Auto-Level Fault Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the auto-level fault alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AutomaticDoorOpener;1",
     "@type": "Interface",
     "displayName": {
@@ -28994,6 +29045,23 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CableFaultAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cable Fault Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the cable fault alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -29723,6 +29791,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoolingModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Mode State"
+    },
+    "description": {
+      "en": "The Boolean state of the cooling mode which is \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryModeState;1"
     ],
     "contents": [],
     "@context": [
@@ -32710,6 +32795,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Mode State"
+    },
+    "description": {
+      "en": "The Boolean state of the heating mode which is \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryModeState;1"
     ],
     "contents": [],
     "@context": [
@@ -43912,6 +44014,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FrequencyAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Frequency Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the electrical frequency alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalPowerAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FuelOilSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -53296,6 +53415,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighFrequencyAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Frequency Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the high electrical frequency alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FrequencyAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -54458,6 +54594,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowFrequencyAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Frequency Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the low electrical frequency alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FrequencyAlarmState;1"
     ],
     "contents": [],
     "@context": [
