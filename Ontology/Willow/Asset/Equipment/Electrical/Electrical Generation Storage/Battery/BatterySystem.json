@@ -8,9 +8,32 @@
     "dtmi:com:willowinc:BatteryEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Property", "Energy"],
+      "displayName": {
+        "en": "nominal capacity"
+      },
+      "name": "nominalCapacity",
+      "schema": "double",
+      "unit": "kilowattHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal capacity unit"
+      },
+      "name": "nominalCapacityUnit",
+      "annotates": "nominalCapacity",
+      "overrides": "unit",
+      "schema": "EnergyUnit",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }
