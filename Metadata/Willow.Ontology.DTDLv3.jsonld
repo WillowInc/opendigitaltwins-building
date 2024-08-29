@@ -68250,6 +68250,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BatteryImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being charged by a battery system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BatteryNetActiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -74270,6 +74287,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UtilityExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being exported to the utility grid. A positive value indicates net site export whereas a negative number indicates net site consumption."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UtilityImportActiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -79228,6 +79262,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being consumed by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableImportActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
