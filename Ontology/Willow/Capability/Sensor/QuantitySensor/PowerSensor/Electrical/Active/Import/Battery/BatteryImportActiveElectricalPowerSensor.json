@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:BatteryImportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Import Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power being charged by a battery system."},
+  "extends" : [
+    "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
