@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:airport:AiportGate;1",
+  "@id": "dtmi:com:willowinc:airport:AirportGate;1",
   "@type": "Interface",
   "displayName": {
     "en": "Gate"
