@@ -11,7 +11,33 @@
     "dtmi:com:willowinc:airport:AirportSpace;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "name": "coordinates",
+      "displayName": {
+        "en": "Coordinates"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": {
+              "en": "Latitude"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": {
+              "en": "Longitude"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"
