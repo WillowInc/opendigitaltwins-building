@@ -10888,51 +10888,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:airport:AiportGate;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Gate"
-    },
-    "description": {
-      "en": "An area in an airport terminal where passengers board the aircraft. Gates typically have a seated waiting area, counter, and doorway leading to the aircraft."
-    },
-    "extends": [
-      "dtmi:com:willowinc:airport:AirportSpace;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "coordinates",
-        "displayName": {
-          "en": "Coordinates"
-        },
-        "writable": true,
-        "schema": {
-          "@type": "Object",
-          "fields": [
-            {
-              "name": "latitude",
-              "displayName": {
-                "en": "Latitude"
-              },
-              "schema": "double"
-            },
-            {
-              "name": "longitude",
-              "displayName": {
-                "en": "Longitude"
-              },
-              "schema": "double"
-            }
-          ]
-        }
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:airport:AircraftParkingSpot;1",
     "@type": "Interface",
     "displayName": {
@@ -11039,6 +10994,51 @@
       "dtmi:com:willowinc:Equipment;1"
     ],
     "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:airport:AirportGate;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Gate"
+    },
+    "description": {
+      "en": "An area in an airport terminal where passengers board the aircraft. Gates typically have a seated waiting area, counter, and doorway leading to the aircraft."
+    },
+    "extends": [
+      "dtmi:com:willowinc:airport:AirportSpace;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "coordinates",
+        "displayName": {
+          "en": "Coordinates"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "latitude",
+              "displayName": {
+                "en": "Latitude"
+              },
+              "schema": "double"
+            },
+            {
+              "name": "longitude",
+              "displayName": {
+                "en": "Longitude"
+              },
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
