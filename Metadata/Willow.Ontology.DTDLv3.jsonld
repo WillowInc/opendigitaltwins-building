@@ -41220,6 +41220,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41621,6 +41635,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
     ],
     "contents": [],
     "@context": [
@@ -42283,6 +42311,20 @@
     "@type": "Interface",
     "displayName": {
       "en": "Domestic Hot Water Circulating Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DomesticWaterPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DomesticWaterBoosterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Domestic Water Booster Pump"
     },
     "extends": [
       "dtmi:com:willowinc:DomesticWaterPump;1"
@@ -44311,6 +44353,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:PackagedHeatPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingHotWaterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Hot Water Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
     ],
     "contents": [],
     "@context": [
