@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Pump"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HydronicPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
