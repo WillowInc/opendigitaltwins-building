@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ReliefFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

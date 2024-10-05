@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Damper"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
