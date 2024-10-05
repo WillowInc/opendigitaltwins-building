@@ -30702,6 +30702,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EconomizerDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EjectorPump;1",
     "@type": "Interface",
     "displayName": {
@@ -31321,6 +31335,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExhaustDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExhaustFan;1",
     "@type": "Interface",
     "displayName": {
@@ -31342,6 +31370,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:SafetyLighting;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FaceAndBypassDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face and Bypass Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -33537,6 +33579,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:IntercomEntry;1",
     "@type": "Interface",
     "displayName": {
@@ -34218,6 +34274,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MinOutsideDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Min Outside Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -34228,6 +34298,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -34801,6 +34885,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -36484,6 +36582,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReplaceBatteryState;1",
     "@type": "Interface",
     "displayName": {
@@ -36576,6 +36688,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -41474,6 +41600,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckInletDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Inlet Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CombinationGrateCurbInlet;1",
     "@type": "Interface",
     "displayName": {
@@ -44514,6 +44654,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:Faucet;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckInletDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Inlet Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletDamper;1"
     ],
     "contents": [],
     "@context": [
