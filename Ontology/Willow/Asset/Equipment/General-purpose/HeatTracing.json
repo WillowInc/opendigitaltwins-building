@@ -5,7 +5,7 @@
     "en": "Heat Tracing"
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1"
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {

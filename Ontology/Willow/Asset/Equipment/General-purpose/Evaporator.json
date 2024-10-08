@@ -8,7 +8,8 @@
     "en": "A device which converts a liquid substance into its gaseous form, vapor. In HVAC, it is commonly included in equipment such as chillers and air conditioners."
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1"
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {

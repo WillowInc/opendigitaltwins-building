@@ -8,7 +8,8 @@
     "en": "An asset component that transfers energy between two different streams of air."
   },
   "extends" : [
-    
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
