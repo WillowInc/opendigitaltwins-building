@@ -5,7 +5,8 @@
     "en": "Fan"
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1"
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
@@ -291,33 +292,6 @@
       },
       "name": "numberOfFans",
       "schema": "integer",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "serial number"
-      },
-      "name": "serialNumber",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "model number"
-      },
-      "name": "modelNumber",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "maintenance interval"
-      },
-      "name": "maintenanceInterval",
-      "schema": "duration",
       "writable": true
     }
   ],

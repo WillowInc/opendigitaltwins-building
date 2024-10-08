@@ -8,7 +8,8 @@
     "en": "A heat exhcanging device which rejects heat from a working fluid (i.e. refrigerant) into a secondary fluid or the surrounding air."
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1"
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
 

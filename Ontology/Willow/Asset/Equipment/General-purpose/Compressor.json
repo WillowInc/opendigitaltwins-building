@@ -8,7 +8,8 @@
     "en": "A device which converts a gaseous fluid into its liquid form by compressing it. In HVAC, it is commonly included in refrigeration equipment such as chillers and air conditioners."
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1"
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
