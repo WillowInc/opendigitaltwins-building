@@ -3446,904 +3446,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDevice;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device"
-    },
-    "description": {
-      "en": "An asset component that transfers energy between two different streams of air."
-    },
-    "extends": [],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "nominal enthalpy recovery ratio (ERR)"
-        },
-        "name": "nominalEnthalpyRecoveryRatio",
-        "schema": "double",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "energy recovery method"
-        },
-        "name": "energyRecoveryMethod",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Sensible Energy Wheel",
-              "name": "SensibleEnergyWheel"
-            },
-            {
-              "enumValue": "Enthalpy Wheel",
-              "name": "EnthalpyWheel"
-            },
-            {
-              "enumValue": "DualWheel",
-              "name": "DualWheel"
-            },
-            {
-              "enumValue": "Sensible Energy Core",
-              "name": "SensibleEnergyCore"
-            },
-            {
-              "enumValue": "Enthalpy Core",
-              "name": "EnthalpyCore"
-            },
-            {
-              "enumValue": "DualCoils",
-              "name": "DualCoils"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "supply cooling air pressure drop"
-        },
-        "name": "supplyCoolingAirPressureDrop",
-        "schema": "double",
-        "unit": "inchesOfWater"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "supply cooling minimum airflow rating"
-        },
-        "name": "supplyCoolingMinAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "supply cooling maximum airflow rating"
-        },
-        "name": "supplyCoolingMaxAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "supply cooling design eirflow"
-        },
-        "name": "supplyCoolingDesignAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyCoolingDesignEnteringAirDryBulbTemperature",
-        "displayName": {
-          "en": "supply cooling design entering air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyCoolingDesignLeavingAirDryBulbTemperature",
-        "displayName": {
-          "en": "supply cooling design leaving air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyCoolingDesignEnteringAirWetBulbTemperature",
-        "displayName": {
-          "en": "supply cooling design entering air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyCoolingDesignLeavingAirWetBulbTemperature",
-        "displayName": {
-          "en": "supply cooling design leaving air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "supply heating air pressure drop"
-        },
-        "name": "supplyHeatingAirPressureDrop",
-        "schema": "double",
-        "unit": "inchesOfWater"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "supply heating minimum airflow rating"
-        },
-        "name": "supplyHeatingMinAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "supply heating maximum airflow rating"
-        },
-        "name": "supplyHeatingMaxAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "supply heating design eirflow"
-        },
-        "name": "supplyHeatingDesignAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyHeatingDesignEnteringAirDryBulbTemperature",
-        "displayName": {
-          "en": "supply heating design entering air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyHeatingDesignLeavingAirDryBulbTemperature",
-        "displayName": {
-          "en": "supply heating design leaving air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyHeatingDesignEnteringAirWetBulbTemperature",
-        "displayName": {
-          "en": "supply heating design entering air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "supplyHeatingDesignLeavingAirWetBulbTemperature",
-        "displayName": {
-          "en": "supply heating design leaving air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "exhaust cooling air pressure drop"
-        },
-        "name": "exhaustCoolingAirPressureDrop",
-        "schema": "double",
-        "unit": "inchesOfWater"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "exhaust cooling minimum airflow rating"
-        },
-        "name": "exhaustCoolingMinAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "exhaust cooling maximum airflow rating"
-        },
-        "name": "exhaustCoolingMaxAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "exhaust cooling design eirflow"
-        },
-        "name": "exhaustCoolingDesignAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
-        "displayName": {
-          "en": "exhaust cooling design entering air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
-        "displayName": {
-          "en": "exhaust cooling design leaving air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
-        "displayName": {
-          "en": "exhaust cooling design entering air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
-        "displayName": {
-          "en": "exhaust cooling design leaving air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "exhaust heating air pressure drop"
-        },
-        "name": "exhaustHeatingAirPressureDrop",
-        "schema": "double",
-        "unit": "inchesOfWater"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "exhaust heating minimum airflow rating"
-        },
-        "name": "exhaustHeatingMinAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "exhaust heating maximum airflow rating"
-        },
-        "name": "exhaustHeatingMaxAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "exhaust heating design eirflow"
-        },
-        "name": "exhaustHeatingDesignAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
-        "displayName": {
-          "en": "exhaust heating design entering air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
-        "displayName": {
-          "en": "exhaust heating design leaving air dry bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
-        "displayName": {
-          "en": "exhaust heating design entering air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
-        "displayName": {
-          "en": "exhaust heating design leaving air wet bulb temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling air pressure drop unit"
-        },
-        "name": "supplyCoolingAirPressureDropUnit",
-        "annotates": "supplyCoolingAirPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling minimum airflow rating unit"
-        },
-        "name": "supplyCoolingMinAirflowRatingUnit",
-        "annotates": "supplyCoolingMinAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling maximum airflow rating unit"
-        },
-        "name": "supplyCoolingMaxAirflowRatingUnit",
-        "annotates": "supplyCoolingMaxAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling design airflow unit"
-        },
-        "name": "supplyCoolingDesignAirflowUnit",
-        "annotates": "supplyCoolingDesignAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling design entering air dry bulb temperature unit"
-        },
-        "name": "supplyCoolingDesignEnteringAirDryBulbTemperatureUnit",
-        "annotates": "supplyCoolingDesignEnteringAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling design leaving air dry bulb temperature unit"
-        },
-        "name": "supplyCoolingDesignLeavingAirDryBulbTemperatureUnit",
-        "annotates": "supplyCoolingDesignLeavingAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply coolign design entering air wet bulb temperature unit"
-        },
-        "name": "supplyCoolingDesignEnteringAirWetBulbTemperatureUnit",
-        "annotates": "supplyCoolingDesignEnteringAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply cooling design leaving air wet bulb temperature unit"
-        },
-        "name": "supplyCoolingDesignLeavingAirWetBulbTemperatureUnit",
-        "annotates": "supplyCoolingDesignLeavingAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating air pressure drop unit"
-        },
-        "name": "supplyHeatingAirPressureDropUnit",
-        "annotates": "supplyHeatingAirPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating minimum airflow rating unit"
-        },
-        "name": "supplyHeatingMinAirflowRatingUnit",
-        "annotates": "supplyHeatingMinAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating maximum airflow rating unit"
-        },
-        "name": "supplyHeatingMaxAirflowRatingUnit",
-        "annotates": "supplyHeatingMaxAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating design airflow unit"
-        },
-        "name": "supplyHeatingDesignAirflowUnit",
-        "annotates": "supplyHeatingDesignAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating design entering air dry bulb temperature unit"
-        },
-        "name": "supplyHeatingDesignEnteringAirDryBulbTemperatureUnit",
-        "annotates": "supplyHeatingDesignEnteringAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating design leaving air dry bulb temperature unit"
-        },
-        "name": "supplyHeatingDesignLeavingAirDryBulbTemperatureUnit",
-        "annotates": "supplyHeatingDesignLeavingAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply coolign design entering air wet bulb temperature unit"
-        },
-        "name": "supplyHeatingDesignEnteringAirWetBulbTemperatureUnit",
-        "annotates": "supplyHeatingDesignEnteringAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "supply heating design leaving air wet bulb temperature unit"
-        },
-        "name": "supplyHeatingDesignLeavingAirWetBulbTemperatureUnit",
-        "annotates": "supplyHeatingDesignLeavingAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling air pressure drop unit"
-        },
-        "name": "exhaustCoolingAirPressureDropUnit",
-        "annotates": "exhaustCoolingAirPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling minimum airflow rating unit"
-        },
-        "name": "exhaustCoolingMinAirflowRatingUnit",
-        "annotates": "exhaustCoolingMinAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling maximum airflow rating unit"
-        },
-        "name": "exhaustCoolingMaxAirflowRatingUnit",
-        "annotates": "exhaustCoolingMaxAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling design airflow unit"
-        },
-        "name": "exhaustCoolingDesignAirflowUnit",
-        "annotates": "exhaustCoolingDesignAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling design entering air dry bulb temperature unit"
-        },
-        "name": "exhaustCoolingDesignEnteringAirDryBulbTemperatureUnit",
-        "annotates": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling design leaving air dry bulb temperature unit"
-        },
-        "name": "exhaustCoolingDesignLeavingAirDryBulbTemperatureUnit",
-        "annotates": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust coolign design entering air wet bulb temperature unit"
-        },
-        "name": "exhaustCoolingDesignEnteringAirWetBulbTemperatureUnit",
-        "annotates": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust cooling design leaving air wet bulb temperature unit"
-        },
-        "name": "exhaustCoolingDesignLeavingAirWetBulbTemperatureUnit",
-        "annotates": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating air pressure drop unit"
-        },
-        "name": "exhaustHeatingAirPressureDropUnit",
-        "annotates": "exhaustHeatingAirPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating minimum airflow rating unit"
-        },
-        "name": "exhaustHeatingMinAirflowRatingUnit",
-        "annotates": "exhaustHeatingMinAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating maximum airflow rating unit"
-        },
-        "name": "exhaustHeatingMaxAirflowRatingUnit",
-        "annotates": "exhaustHeatingMaxAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating design airflow unit"
-        },
-        "name": "exhaustHeatingDesignAirflowUnit",
-        "annotates": "exhaustHeatingDesignAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating design entering air dry bulb temperature unit"
-        },
-        "name": "exhaustHeatingDesignEnteringAirDryBulbTemperatureUnit",
-        "annotates": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating design leaving air dry bulb temperature unit"
-        },
-        "name": "exhaustHeatingDesignLeavingAirDryBulbTemperatureUnit",
-        "annotates": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust coolign design entering air wet bulb temperature unit"
-        },
-        "name": "exhaustHeatingDesignEnteringAirWetBulbTemperatureUnit",
-        "annotates": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "exhaust heating design leaving air wet bulb temperature unit"
-        },
-        "name": "exhaustHeatingDesignLeavingAirWetBulbTemperatureUnit",
-        "annotates": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Event;1",
     "@type": "Interface",
     "displayName": {
@@ -12928,239 +12030,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Compressor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor"
-    },
-    "description": {
-      "en": "A device which converts a gaseous fluid into its liquid form by compressing it. In HVAC, it is commonly included in refrigeration equipment such as chillers and air conditioners."
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "refrigerant type"
-        },
-        "name": "refrigerantType",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Scroll",
-              "name": "Scroll"
-            },
-            {
-              "enumValue": "Screw",
-              "name": "Screw"
-            },
-            {
-              "enumValue": "Reciprocol",
-              "name": "Reciprocol"
-            },
-            {
-              "enumValue": "Centrifugal",
-              "name": "Centrifugal"
-            },
-            {
-              "enumValue": "Absorption",
-              "name": "Absorption"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "MassFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Mass Flow"
-        },
-        "name": "designMassFlow",
-        "schema": "double",
-        "unit": "kilogramPerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Mass Flow Unit"
-        },
-        "name": "designMassFlowUnit",
-        "annotates": "designMassFlow",
-        "overrides": "unit",
-        "schema": "MassFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "motor power"
-        },
-        "name": "motorPower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "motor power unit"
-        },
-        "name": "motorPowerUnit",
-        "annotates": "motorPower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Current",
-          "Property"
-        ],
-        "displayName": {
-          "en": "rated load current"
-        },
-        "description": {
-          "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
-        },
-        "name": "ratedLoadCurrent",
-        "schema": "double",
-        "unit": "ampere",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "rated load current unit"
-        },
-        "name": "ratedLoadCurrentUnit",
-        "annotates": "ratedLoadCurrent",
-        "overrides": "unit",
-        "schema": "CurrentUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Current",
-          "Property"
-        ],
-        "displayName": {
-          "en": "maximum continuous current"
-        },
-        "description": {
-          "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
-        },
-        "name": "maximumContinuousCurrent",
-        "schema": "double",
-        "unit": "ampere",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "maximum continuous current unit"
-        },
-        "name": "maximumContinuousCurrentUnit",
-        "annotates": "maximumContinuousCurrent",
-        "overrides": "unit",
-        "schema": "CurrentUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Current",
-          "Property"
-        ],
-        "displayName": {
-          "en": "locked rotor current"
-        },
-        "description": {
-          "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
-        },
-        "name": "lockedRotorCurrent",
-        "schema": "double",
-        "unit": "ampere",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "locked rotor current unit"
-        },
-        "name": "lockedRotorCurrentUnit",
-        "annotates": "lockedRotorCurrent",
-        "overrides": "unit",
-        "schema": "CurrentUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Condenser;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser"
-    },
-    "description": {
-      "en": "A heat exhcanging device which rejects heat from a working fluid (i.e. refrigerant) into a secondary fluid or the surrounding air."
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ConnectorApplication;1",
     "@type": "Interface",
     "displayName": {
@@ -13558,161 +12427,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Evaporator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Evaporator"
-    },
-    "description": {
-      "en": "A device which converts a liquid substance into its gaseous form, vapor. In HVAC, it is commonly included in equipment such as chillers and air conditioners."
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringWaterTemperature",
-        "displayName": {
-          "en": "Design Entering Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Water Temperature Unit"
-        },
-        "name": "designEnteringWaterTemperatureUnit",
-        "annotates": "designEnteringWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingWaterTemperature",
-        "displayName": {
-          "en": "Design Leaving Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Water Temperature Unit"
-        },
-        "name": "designLeavingWaterTemperatureUnit",
-        "annotates": "designLeavingWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designDeltaWaterTemperature",
-        "displayName": {
-          "en": "Design Delta Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Delta Water Temperature Unit"
-        },
-        "name": "designDeltaWaterTemperatureUnit",
-        "annotates": "designDeltaWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Flow"
-        },
-        "name": "designFlow",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Flow Unit"
-        },
-        "name": "designFlowUnit",
-        "annotates": "designFlow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "Design Pressure Drop"
-        },
-        "name": "designPressureDrop",
-        "schema": "double",
-        "unit": "kilopascal",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Pressure Drop Unit"
-        },
-        "name": "designPressureDropUnit",
-        "annotates": "designPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Facade;1",
     "@type": "Interface",
     "displayName": {
@@ -13723,419 +12437,6 @@
     ],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Fan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "nominal external static pressure"
-        },
-        "name": "nominalExternalStaticPressure",
-        "schema": "double",
-        "unit": "pascal",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal external static pressure unit"
-        },
-        "name": "nominalExternalStaticPressureUnit",
-        "annotates": "nominalExternalStaticPressure",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "nominal airflow"
-        },
-        "name": "nominalAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal airflow unit"
-        },
-        "name": "nominalAirflowUnit",
-        "annotates": "nominalAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "motor power"
-        },
-        "name": "motorPower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "motor power unit"
-        },
-        "name": "motorPowerUnit",
-        "annotates": "motorPower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "AngularVelocity",
-          "Property"
-        ],
-        "displayName": {
-          "en": "maximum rotation speed"
-        },
-        "name": "maxRotationSpeed",
-        "schema": "double",
-        "unit": "revolutionPerMinute",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Frequency"
-        ],
-        "displayName": {
-          "en": "maximum VFD frequency"
-        },
-        "name": "maxVFDFrequency",
-        "schema": "double",
-        "unit": "hertz",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "maximum VFD frequency unit"
-        },
-        "name": "maxVFDFrequencyUnit",
-        "annotates": "maxVFDFrequency",
-        "overrides": "unit",
-        "schema": "FrequencyUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "brake horsepower"
-        },
-        "name": "brakeHorsepower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "brake horsepower unit"
-        },
-        "name": "brakeHorsepowerUnit",
-        "annotates": "brakeHorsepower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Current",
-          "Property"
-        ],
-        "displayName": {
-          "en": "full load current"
-        },
-        "name": "fullLoadCurrent",
-        "schema": "double",
-        "unit": "ampere",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "full load current unit"
-        },
-        "name": "fullLoadCurrentUnit",
-        "annotates": "fullLoadCurrent",
-        "overrides": "unit",
-        "schema": "CurrentUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "minimum airflow rating"
-        },
-        "name": "minAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "minimum airflow rating unit"
-        },
-        "name": "minAirflowRatingUnit",
-        "annotates": "minAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "maximum airflow rating"
-        },
-        "name": "maxAirflowRating",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "maximum airflow rating unit"
-        },
-        "name": "maxAirflowRatingUnit",
-        "annotates": "maxAirflowRating",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Airflow"
-        },
-        "name": "designAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Airflow Unit"
-        },
-        "name": "designAirflowUnit",
-        "annotates": "designAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "AngularVelocity",
-          "Property"
-        ],
-        "displayName": {
-          "en": "design rotation speed"
-        },
-        "name": "designRotationSpeed",
-        "schema": "double",
-        "unit": "revolutionPerMinute",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Frequency"
-        ],
-        "displayName": {
-          "en": "design VFD frequency"
-        },
-        "name": "designVFDFrequency",
-        "schema": "double",
-        "unit": "hertz",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "design VFD frequency unit"
-        },
-        "name": "designVFDFrequencyUnit",
-        "annotates": "designVFDFrequency",
-        "overrides": "unit",
-        "schema": "FrequencyUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "design external static pressure"
-        },
-        "name": "designExternalStaticPressure",
-        "schema": "double",
-        "unit": "pascal",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "design external static pressure unit"
-        },
-        "name": "designExternalStaticPressureUnit",
-        "annotates": "designExternalStaticPressure",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "drive type"
-        },
-        "name": "driveType",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Direct",
-              "name": "Direct"
-            },
-            {
-              "enumValue": "Belt",
-              "name": "Belt"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Number of Fans"
-        },
-        "description": {
-          "en": "The number of fans which make up a fan array"
-        },
-        "name": "numberOfFans",
-        "schema": "integer",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "serial number"
-        },
-        "name": "serialNumber",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "model number"
-        },
-        "name": "modelNumber",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "maintenance interval"
-        },
-        "name": "maintenanceInterval",
-        "schema": "duration",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -14222,6 +12523,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:GeneralPurposeEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "General-purpose Equipment"
+    },
+    "description": {
+      "en": "A type of equipment that can be used in a variety of applications or systems such as HVAC, refrigeration, or industrial processes. It may be standalone or a component that is part of another equipment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:GridRegion;1",
     "@type": "Interface",
     "displayName": {
@@ -14270,56 +12588,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeatTracing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heat Tracing"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "SelfRegulating",
-              "name": "SelfRegulating"
-            },
-            {
-              "enumValue": "ConstantWattage",
-              "name": "ConstantWattage"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "description": {
-          "en": "Watts/length unit"
-        },
-        "displayName": {
-          "en": "power density"
-        },
-        "name": "powerDensity",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
   },
   {
@@ -15399,20 +13667,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Manifold;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Manifold"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MaterialHandlingEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -15924,270 +14178,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Pump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "vertical",
-              "name": "vertical"
-            },
-            {
-              "enumValue": "inline",
-              "name": "inline"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "pumping media"
-        },
-        "name": "pumpingMedia",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "motor power"
-        },
-        "name": "motorPower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "motor power unit"
-        },
-        "name": "motorPowerUnit",
-        "annotates": "motorPower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "brake horsepower"
-        },
-        "name": "brakeHorsepower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "brake horsepower unit"
-        },
-        "name": "brakeHorsepowerUnit",
-        "annotates": "brakeHorsepower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "pressure capacity"
-        },
-        "name": "pressureCapacity",
-        "schema": "double",
-        "unit": "bar",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "pressure capacity unit"
-        },
-        "name": "pressureCapacityUnit",
-        "annotates": "pressureCapacity",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Length"
-        ],
-        "description": {
-          "en": "rated head"
-        },
-        "displayName": {
-          "en": "head capacity"
-        },
-        "name": "headCapacity",
-        "schema": "double",
-        "unit": "metre",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "head capacity unit"
-        },
-        "name": "headCapacityUnit",
-        "annotates": "headCapacity",
-        "overrides": "unit",
-        "schema": "LengthUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "flow capacity"
-        },
-        "name": "flowCapacity",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "flow capacity unit"
-        },
-        "name": "flowCapacityUnit",
-        "annotates": "flowCapacity",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Frequency"
-        ],
-        "displayName": {
-          "en": "maximum VFD frequency"
-        },
-        "name": "maxVFDFrequency",
-        "schema": "double",
-        "unit": "hertz",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "maximum VFD frequency unit"
-        },
-        "name": "maxVFDFrequencyUnit",
-        "annotates": "maxVFDFrequency",
-        "overrides": "unit",
-        "schema": "FrequencyUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Frequency"
-        ],
-        "displayName": {
-          "en": "design VFD frequency"
-        },
-        "name": "designVFDFrequency",
-        "schema": "double",
-        "unit": "hertz",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "design VFD frequency unit"
-        },
-        "name": "designVFDFrequencyUnit",
-        "annotates": "designVFDFrequency",
-        "overrides": "unit",
-        "schema": "FrequencyUnit",
-        "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "pipe outlet"
-        },
-        "name": "pipeOutlet",
-        "schema": "dtmi:com:willowinc:PipeConnection;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "pipe inlet"
-        },
-        "name": "pipeInlet",
-        "schema": "dtmi:com:willowinc:PipeConnection;1"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -17251,80 +15241,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Tank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Volume"
-        ],
-        "displayName": {
-          "en": "tank capacity"
-        },
-        "name": "tankCapacity",
-        "schema": "double",
-        "unit": "litre",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "tank capacity unit"
-        },
-        "name": "tankCapacityUnit",
-        "annotates": "tankCapacity",
-        "overrides": "unit",
-        "schema": "VolumeUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "system pressure"
-        },
-        "name": "systemPressure",
-        "schema": "double",
-        "unit": "bar",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "system pressure unit"
-        },
-        "name": "systemPressureUnit",
-        "annotates": "systemPressure",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:TenantUnit;1",
     "@type": "Interface",
     "displayName": {
@@ -17477,96 +15393,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Valve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "pressure capacity"
-        },
-        "name": "pressureCapacity",
-        "schema": "double",
-        "unit": "bar",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "pressure capacity unit"
-        },
-        "name": "pressureCapacityUnit",
-        "annotates": "pressureCapacity",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "flow capacity"
-        },
-        "name": "flowCapacity",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "flow capacity unit"
-        },
-        "name": "flowCapacityUnit",
-        "annotates": "flowCapacity",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "pipe outlet"
-        },
-        "name": "pipeOutlet",
-        "schema": "dtmi:com:willowinc:PipeConnection;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "pipe inlet"
-        },
-        "name": "pipeInlet",
-        "schema": "dtmi:com:willowinc:PipeConnection;1"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -17732,198 +15558,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AirCooledCondenser;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air-Cooled Condenser"
-    },
-    "description": {
-      "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into the ambient air."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Condenser;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringAirTemperature",
-        "displayName": {
-          "en": "Design Entering Air Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Air Temperature Unit"
-        },
-        "name": "designEnteringAirTemperatureUnit",
-        "annotates": "designEnteringAirTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingAirTemperature",
-        "displayName": {
-          "en": "Design Leaving Air Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Air Temperature Unit"
-        },
-        "name": "designLeavingAirTemperatureUnit",
-        "annotates": "designLeavingAirTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designDeltaAirTemperature",
-        "displayName": {
-          "en": "Design Delta Air Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Delta Air Temperature Unit"
-        },
-        "name": "designDeltaAirTemperatureUnit",
-        "annotates": "designDeltaAirTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Airflow"
-        },
-        "name": "designAirflow",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Airflow Unit"
-        },
-        "name": "designAirflowUnit",
-        "annotates": "designAirflow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Number of Fans"
-        },
-        "name": "numberOfFans",
-        "schema": "integer",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "total fan power"
-        },
-        "name": "totalFanPower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "total fan power unit"
-        },
-        "name": "totalFanPowerUnit",
-        "annotates": "totalFanPower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Power",
-          "Property"
-        ],
-        "displayName": {
-          "en": "total fan brake horsepower"
-        },
-        "name": "totalFanbrakeHorsepower",
-        "schema": "double",
-        "unit": "horsepower",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "total fan brake horsepower unit"
-        },
-        "name": "totalFanbrakeHorsepowerUnit",
-        "annotates": "totalFanbrakeHorsepower",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -19925,6 +17559,241 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Compressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor"
+    },
+    "description": {
+      "en": "A device which converts a gaseous fluid into its liquid form by compressing it. In HVAC, it is commonly included in refrigeration equipment such as chillers and air conditioners."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1",
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "refrigerant type"
+        },
+        "name": "refrigerantType",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Scroll",
+              "name": "Scroll"
+            },
+            {
+              "enumValue": "Screw",
+              "name": "Screw"
+            },
+            {
+              "enumValue": "Reciprocol",
+              "name": "Reciprocol"
+            },
+            {
+              "enumValue": "Centrifugal",
+              "name": "Centrifugal"
+            },
+            {
+              "enumValue": "Absorption",
+              "name": "Absorption"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "MassFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Mass Flow"
+        },
+        "name": "designMassFlow",
+        "schema": "double",
+        "unit": "kilogramPerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Mass Flow Unit"
+        },
+        "name": "designMassFlowUnit",
+        "annotates": "designMassFlow",
+        "overrides": "unit",
+        "schema": "MassFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "motor power"
+        },
+        "name": "motorPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "motor power unit"
+        },
+        "name": "motorPowerUnit",
+        "annotates": "motorPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "rated load current"
+        },
+        "description": {
+          "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
+        },
+        "name": "ratedLoadCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "rated load current unit"
+        },
+        "name": "ratedLoadCurrentUnit",
+        "annotates": "ratedLoadCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "maximum continuous current"
+        },
+        "description": {
+          "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
+        },
+        "name": "maximumContinuousCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum continuous current unit"
+        },
+        "name": "maximumContinuousCurrentUnit",
+        "annotates": "maximumContinuousCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "locked rotor current"
+        },
+        "description": {
+          "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
+        },
+        "name": "lockedRotorCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "locked rotor current unit"
+        },
+        "name": "lockedRotorCurrentUnit",
+        "annotates": "lockedRotorCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Condenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser"
+    },
+    "description": {
+      "en": "A heat exhcanging device which rejects heat from a working fluid (i.e. refrigerant) into a secondary fluid or the surrounding air."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1",
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondensingUnit;1",
     "@type": "Interface",
     "displayName": {
@@ -21405,21 +19274,904 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryVentilator;1",
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDevice;1",
     "@type": "Interface",
     "displayName": {
-      "en": "EnergyRecoveryVentilator"
+      "en": "Energy Recovery Device"
     },
     "description": {
-      "en": "A standalone asset that transfers energy between two different streams of air, one of which is ventilation air."
+      "en": "An asset component that transfers energy between two different streams of air."
     },
     "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:EnergyRecoveryDevice;1"
+      "dtmi:com:willowinc:AssetComponent;1",
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal enthalpy recovery ratio (ERR)"
+        },
+        "name": "nominalEnthalpyRecoveryRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "energy recovery method"
+        },
+        "name": "energyRecoveryMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Sensible Energy Wheel",
+              "name": "SensibleEnergyWheel"
+            },
+            {
+              "enumValue": "Enthalpy Wheel",
+              "name": "EnthalpyWheel"
+            },
+            {
+              "enumValue": "DualWheel",
+              "name": "DualWheel"
+            },
+            {
+              "enumValue": "Sensible Energy Core",
+              "name": "SensibleEnergyCore"
+            },
+            {
+              "enumValue": "Enthalpy Core",
+              "name": "EnthalpyCore"
+            },
+            {
+              "enumValue": "DualCoils",
+              "name": "DualCoils"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "supply cooling air pressure drop"
+        },
+        "name": "supplyCoolingAirPressureDrop",
+        "schema": "double",
+        "unit": "inchesOfWater"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "supply cooling minimum airflow rating"
+        },
+        "name": "supplyCoolingMinAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "supply cooling maximum airflow rating"
+        },
+        "name": "supplyCoolingMaxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "supply cooling design eirflow"
+        },
+        "name": "supplyCoolingDesignAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyCoolingDesignEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "supply cooling design entering air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyCoolingDesignLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "supply cooling design leaving air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyCoolingDesignEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "supply cooling design entering air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyCoolingDesignLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "supply cooling design leaving air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "supply heating air pressure drop"
+        },
+        "name": "supplyHeatingAirPressureDrop",
+        "schema": "double",
+        "unit": "inchesOfWater"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "supply heating minimum airflow rating"
+        },
+        "name": "supplyHeatingMinAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "supply heating maximum airflow rating"
+        },
+        "name": "supplyHeatingMaxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "supply heating design eirflow"
+        },
+        "name": "supplyHeatingDesignAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyHeatingDesignEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "supply heating design entering air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyHeatingDesignLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "supply heating design leaving air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyHeatingDesignEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "supply heating design entering air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "supplyHeatingDesignLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "supply heating design leaving air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "exhaust cooling air pressure drop"
+        },
+        "name": "exhaustCoolingAirPressureDrop",
+        "schema": "double",
+        "unit": "inchesOfWater"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "exhaust cooling minimum airflow rating"
+        },
+        "name": "exhaustCoolingMinAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "exhaust cooling maximum airflow rating"
+        },
+        "name": "exhaustCoolingMaxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "exhaust cooling design eirflow"
+        },
+        "name": "exhaustCoolingDesignAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "exhaust cooling design entering air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "exhaust cooling design leaving air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "exhaust cooling design entering air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "exhaust cooling design leaving air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "exhaust heating air pressure drop"
+        },
+        "name": "exhaustHeatingAirPressureDrop",
+        "schema": "double",
+        "unit": "inchesOfWater"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "exhaust heating minimum airflow rating"
+        },
+        "name": "exhaustHeatingMinAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "exhaust heating maximum airflow rating"
+        },
+        "name": "exhaustHeatingMaxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "exhaust heating design eirflow"
+        },
+        "name": "exhaustHeatingDesignAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "exhaust heating design entering air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "exhaust heating design leaving air dry bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "exhaust heating design entering air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "exhaust heating design leaving air wet bulb temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling air pressure drop unit"
+        },
+        "name": "supplyCoolingAirPressureDropUnit",
+        "annotates": "supplyCoolingAirPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling minimum airflow rating unit"
+        },
+        "name": "supplyCoolingMinAirflowRatingUnit",
+        "annotates": "supplyCoolingMinAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling maximum airflow rating unit"
+        },
+        "name": "supplyCoolingMaxAirflowRatingUnit",
+        "annotates": "supplyCoolingMaxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling design airflow unit"
+        },
+        "name": "supplyCoolingDesignAirflowUnit",
+        "annotates": "supplyCoolingDesignAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling design entering air dry bulb temperature unit"
+        },
+        "name": "supplyCoolingDesignEnteringAirDryBulbTemperatureUnit",
+        "annotates": "supplyCoolingDesignEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling design leaving air dry bulb temperature unit"
+        },
+        "name": "supplyCoolingDesignLeavingAirDryBulbTemperatureUnit",
+        "annotates": "supplyCoolingDesignLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply coolign design entering air wet bulb temperature unit"
+        },
+        "name": "supplyCoolingDesignEnteringAirWetBulbTemperatureUnit",
+        "annotates": "supplyCoolingDesignEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply cooling design leaving air wet bulb temperature unit"
+        },
+        "name": "supplyCoolingDesignLeavingAirWetBulbTemperatureUnit",
+        "annotates": "supplyCoolingDesignLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating air pressure drop unit"
+        },
+        "name": "supplyHeatingAirPressureDropUnit",
+        "annotates": "supplyHeatingAirPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating minimum airflow rating unit"
+        },
+        "name": "supplyHeatingMinAirflowRatingUnit",
+        "annotates": "supplyHeatingMinAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating maximum airflow rating unit"
+        },
+        "name": "supplyHeatingMaxAirflowRatingUnit",
+        "annotates": "supplyHeatingMaxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating design airflow unit"
+        },
+        "name": "supplyHeatingDesignAirflowUnit",
+        "annotates": "supplyHeatingDesignAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating design entering air dry bulb temperature unit"
+        },
+        "name": "supplyHeatingDesignEnteringAirDryBulbTemperatureUnit",
+        "annotates": "supplyHeatingDesignEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating design leaving air dry bulb temperature unit"
+        },
+        "name": "supplyHeatingDesignLeavingAirDryBulbTemperatureUnit",
+        "annotates": "supplyHeatingDesignLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply coolign design entering air wet bulb temperature unit"
+        },
+        "name": "supplyHeatingDesignEnteringAirWetBulbTemperatureUnit",
+        "annotates": "supplyHeatingDesignEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "supply heating design leaving air wet bulb temperature unit"
+        },
+        "name": "supplyHeatingDesignLeavingAirWetBulbTemperatureUnit",
+        "annotates": "supplyHeatingDesignLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling air pressure drop unit"
+        },
+        "name": "exhaustCoolingAirPressureDropUnit",
+        "annotates": "exhaustCoolingAirPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling minimum airflow rating unit"
+        },
+        "name": "exhaustCoolingMinAirflowRatingUnit",
+        "annotates": "exhaustCoolingMinAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling maximum airflow rating unit"
+        },
+        "name": "exhaustCoolingMaxAirflowRatingUnit",
+        "annotates": "exhaustCoolingMaxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling design airflow unit"
+        },
+        "name": "exhaustCoolingDesignAirflowUnit",
+        "annotates": "exhaustCoolingDesignAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling design entering air dry bulb temperature unit"
+        },
+        "name": "exhaustCoolingDesignEnteringAirDryBulbTemperatureUnit",
+        "annotates": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling design leaving air dry bulb temperature unit"
+        },
+        "name": "exhaustCoolingDesignLeavingAirDryBulbTemperatureUnit",
+        "annotates": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust coolign design entering air wet bulb temperature unit"
+        },
+        "name": "exhaustCoolingDesignEnteringAirWetBulbTemperatureUnit",
+        "annotates": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust cooling design leaving air wet bulb temperature unit"
+        },
+        "name": "exhaustCoolingDesignLeavingAirWetBulbTemperatureUnit",
+        "annotates": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating air pressure drop unit"
+        },
+        "name": "exhaustHeatingAirPressureDropUnit",
+        "annotates": "exhaustHeatingAirPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating minimum airflow rating unit"
+        },
+        "name": "exhaustHeatingMinAirflowRatingUnit",
+        "annotates": "exhaustHeatingMinAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating maximum airflow rating unit"
+        },
+        "name": "exhaustHeatingMaxAirflowRatingUnit",
+        "annotates": "exhaustHeatingMaxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating design airflow unit"
+        },
+        "name": "exhaustHeatingDesignAirflowUnit",
+        "annotates": "exhaustHeatingDesignAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating design entering air dry bulb temperature unit"
+        },
+        "name": "exhaustHeatingDesignEnteringAirDryBulbTemperatureUnit",
+        "annotates": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating design leaving air dry bulb temperature unit"
+        },
+        "name": "exhaustHeatingDesignLeavingAirDryBulbTemperatureUnit",
+        "annotates": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust coolign design entering air wet bulb temperature unit"
+        },
+        "name": "exhaustHeatingDesignEnteringAirWetBulbTemperatureUnit",
+        "annotates": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "exhaust heating design leaving air wet bulb temperature unit"
+        },
+        "name": "exhaustHeatingDesignLeavingAirWetBulbTemperatureUnit",
+        "annotates": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -21603,6 +20355,162 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Evaporator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Evaporator"
+    },
+    "description": {
+      "en": "A device which converts a liquid substance into its gaseous form, vapor. In HVAC, it is commonly included in equipment such as chillers and air conditioners."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1",
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDeltaWaterTemperature",
+        "displayName": {
+          "en": "Design Delta Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Delta Water Temperature Unit"
+        },
+        "name": "designDeltaWaterTemperatureUnit",
+        "annotates": "designDeltaWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Flow"
+        },
+        "name": "designFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Flow Unit"
+        },
+        "name": "designFlowUnit",
+        "annotates": "designFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Design Pressure Drop"
+        },
+        "name": "designPressureDrop",
+        "schema": "double",
+        "unit": "kilopascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Pressure Drop Unit"
+        },
+        "name": "designPressureDropUnit",
+        "annotates": "designPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExcludeState;1",
     "@type": "Interface",
     "displayName": {
@@ -21617,6 +20525,393 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Fan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1",
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "nominal external static pressure"
+        },
+        "name": "nominalExternalStaticPressure",
+        "schema": "double",
+        "unit": "pascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal external static pressure unit"
+        },
+        "name": "nominalExternalStaticPressureUnit",
+        "annotates": "nominalExternalStaticPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "nominal airflow"
+        },
+        "name": "nominalAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal airflow unit"
+        },
+        "name": "nominalAirflowUnit",
+        "annotates": "nominalAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "motor power"
+        },
+        "name": "motorPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "motor power unit"
+        },
+        "name": "motorPowerUnit",
+        "annotates": "motorPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "AngularVelocity",
+          "Property"
+        ],
+        "displayName": {
+          "en": "maximum rotation speed"
+        },
+        "name": "maxRotationSpeed",
+        "schema": "double",
+        "unit": "revolutionPerMinute",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Frequency"
+        ],
+        "displayName": {
+          "en": "maximum VFD frequency"
+        },
+        "name": "maxVFDFrequency",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum VFD frequency unit"
+        },
+        "name": "maxVFDFrequencyUnit",
+        "annotates": "maxVFDFrequency",
+        "overrides": "unit",
+        "schema": "FrequencyUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "brake horsepower"
+        },
+        "name": "brakeHorsepower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "brake horsepower unit"
+        },
+        "name": "brakeHorsepowerUnit",
+        "annotates": "brakeHorsepower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "full load current"
+        },
+        "name": "fullLoadCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "full load current unit"
+        },
+        "name": "fullLoadCurrentUnit",
+        "annotates": "fullLoadCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "minimum airflow rating"
+        },
+        "name": "minAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "minimum airflow rating unit"
+        },
+        "name": "minAirflowRatingUnit",
+        "annotates": "minAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "maximum airflow rating"
+        },
+        "name": "maxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum airflow rating unit"
+        },
+        "name": "maxAirflowRatingUnit",
+        "annotates": "maxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Airflow"
+        },
+        "name": "designAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Airflow Unit"
+        },
+        "name": "designAirflowUnit",
+        "annotates": "designAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "AngularVelocity",
+          "Property"
+        ],
+        "displayName": {
+          "en": "design rotation speed"
+        },
+        "name": "designRotationSpeed",
+        "schema": "double",
+        "unit": "revolutionPerMinute",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Frequency"
+        ],
+        "displayName": {
+          "en": "design VFD frequency"
+        },
+        "name": "designVFDFrequency",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design VFD frequency unit"
+        },
+        "name": "designVFDFrequencyUnit",
+        "annotates": "designVFDFrequency",
+        "overrides": "unit",
+        "schema": "FrequencyUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "design external static pressure"
+        },
+        "name": "designExternalStaticPressure",
+        "schema": "double",
+        "unit": "pascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design external static pressure unit"
+        },
+        "name": "designExternalStaticPressureUnit",
+        "annotates": "designExternalStaticPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "drive type"
+        },
+        "name": "driveType",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Direct",
+              "name": "Direct"
+            },
+            {
+              "enumValue": "Belt",
+              "name": "Belt"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Fans"
+        },
+        "description": {
+          "en": "The number of fans which make up a fan array"
+        },
+        "name": "numberOfFans",
+        "schema": "integer",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -21655,21 +20950,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FireProtectionEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FishTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fish Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ArchitecturalAsset;1",
-      "dtmi:com:willowinc:Tank;1"
     ],
     "contents": [],
     "@context": [
@@ -22731,6 +22011,56 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatTracing;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Tracing"
+    },
+    "extends": [
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "SelfRegulating",
+              "name": "SelfRegulating"
+            },
+            {
+              "enumValue": "ConstantWattage",
+              "name": "ConstantWattage"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "description": {
+          "en": "Watts/length unit"
+        },
+        "displayName": {
+          "en": "power density"
+        },
+        "name": "powerDensity",
+        "schema": "double",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -22793,27 +22123,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACCompressor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "HVAC Compressor"
-    },
-    "description": {
-      "en": "A compressor which is used within an HVAC system for the applicaiton of conditioning a space for comfort."
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:Compressor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -22980,36 +22289,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACHeatTracing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heat Tracing (HVAC)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:HeatTracing;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACManifold;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "HVAC Manifold"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:Manifold;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HVACOvalDuct;1",
     "@type": "Interface",
     "displayName": {
@@ -23128,21 +22407,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "HVAC Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:Pump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HVACRectangularDuct;1",
     "@type": "Interface",
     "displayName": {
@@ -23256,36 +22520,6 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "HVAC Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:Tank;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "HVAC Valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:Valve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -23926,6 +23160,20 @@
       "en": "Manhole"
     },
     "extends": "dtmi:com:willowinc:DistributionConnector;1",
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Manifold;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Manifold"
+    },
+    "extends": [
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
@@ -24749,81 +23997,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PlumbingHeatTracing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heat Tracing (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipment;1",
-      "dtmi:com:willowinc:HeatTracing;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingManifold;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Plumbing Manifold"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipment;1",
-      "dtmi:com:willowinc:Manifold;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Plumbing Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipment;1",
-      "dtmi:com:willowinc:Pump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Plumbing Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipment;1",
-      "dtmi:com:willowinc:Tank;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Plumbing Valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipment;1",
-      "dtmi:com:willowinc:Valve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PlumbingWaterTreatment;1",
     "@type": "Interface",
     "displayName": {
@@ -24971,6 +24144,270 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Pump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "vertical",
+              "name": "vertical"
+            },
+            {
+              "enumValue": "inline",
+              "name": "inline"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "pumping media"
+        },
+        "name": "pumpingMedia",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "motor power"
+        },
+        "name": "motorPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "motor power unit"
+        },
+        "name": "motorPowerUnit",
+        "annotates": "motorPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "brake horsepower"
+        },
+        "name": "brakeHorsepower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "brake horsepower unit"
+        },
+        "name": "brakeHorsepowerUnit",
+        "annotates": "brakeHorsepower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "pressure capacity"
+        },
+        "name": "pressureCapacity",
+        "schema": "double",
+        "unit": "bar",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "pressure capacity unit"
+        },
+        "name": "pressureCapacityUnit",
+        "annotates": "pressureCapacity",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "description": {
+          "en": "rated head"
+        },
+        "displayName": {
+          "en": "head capacity"
+        },
+        "name": "headCapacity",
+        "schema": "double",
+        "unit": "metre",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "head capacity unit"
+        },
+        "name": "headCapacityUnit",
+        "annotates": "headCapacity",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "flow capacity"
+        },
+        "name": "flowCapacity",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "flow capacity unit"
+        },
+        "name": "flowCapacityUnit",
+        "annotates": "flowCapacity",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Frequency"
+        ],
+        "displayName": {
+          "en": "maximum VFD frequency"
+        },
+        "name": "maxVFDFrequency",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum VFD frequency unit"
+        },
+        "name": "maxVFDFrequencyUnit",
+        "annotates": "maxVFDFrequency",
+        "overrides": "unit",
+        "schema": "FrequencyUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Frequency"
+        ],
+        "displayName": {
+          "en": "design VFD frequency"
+        },
+        "name": "designVFDFrequency",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design VFD frequency unit"
+        },
+        "name": "designVFDFrequencyUnit",
+        "annotates": "designVFDFrequency",
+        "overrides": "unit",
+        "schema": "FrequencyUnit",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe outlet"
+        },
+        "name": "pipeOutlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe inlet"
+        },
+        "name": "pipeInlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:QualitySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -25033,120 +24470,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:RefrigerationCompressor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Refrigeration Compressor"
-    },
-    "description": {
-      "en": "A compressor which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipment;1",
-      "dtmi:com:willowinc:Compressor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "nominal energy efficiency ratio (EER)"
-        },
-        "name": "nominalEnergyEfficiencyRatio",
-        "schema": "double",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "design energy efficiency ratio (EER)"
-        },
-        "name": "designEnergyEfficiencyRatio",
-        "schema": "double",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "nominal coefficient of performance (COP)"
-        },
-        "name": "nominalCoefficientOfPerformance",
-        "schema": "double",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "design coefficient of performance (COP)"
-        },
-        "name": "designCoefficientOfPerformance",
-        "schema": "double",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "nominal cooling capacity"
-        },
-        "name": "nominalCoolingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal cooling capacity unit"
-        },
-        "name": "nominalCoolingCapacityUnit",
-        "annotates": "nominalCoolingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "design cooling capacity"
-        },
-        "name": "designCoolingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "design cooling capacity unit"
-        },
-        "name": "designCoolingCapacityUnit",
-        "annotates": "designCoolingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:RefrigerationCompressorRack;1",
     "@type": "Interface",
     "displayName": {
@@ -25157,27 +24480,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:RefrigerationEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RefrigerationCondenser;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Refrigeration Condenser"
-    },
-    "description": {
-      "en": "A condenser which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipment;1",
-      "dtmi:com:willowinc:Condenser;1"
     ],
     "contents": [],
     "@context": [
@@ -25468,21 +24770,6 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RefrigerationTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Refrigeration Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerationEquipment;1",
-      "dtmi:com:willowinc:Tank;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -25992,6 +25279,80 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Tank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Volume"
+        ],
+        "displayName": {
+          "en": "tank capacity"
+        },
+        "name": "tankCapacity",
+        "schema": "double",
+        "unit": "litre",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "tank capacity unit"
+        },
+        "name": "tankCapacityUnit",
+        "annotates": "tankCapacity",
+        "overrides": "unit",
+        "schema": "VolumeUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "system pressure"
+        },
+        "name": "systemPressure",
+        "schema": "double",
+        "unit": "bar",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "system pressure unit"
+        },
+        "name": "systemPressureUnit",
+        "annotates": "systemPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -26712,6 +26073,96 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Valve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "pressure capacity"
+        },
+        "name": "pressureCapacity",
+        "schema": "double",
+        "unit": "bar",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "pressure capacity unit"
+        },
+        "name": "pressureCapacityUnit",
+        "annotates": "pressureCapacity",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "flow capacity"
+        },
+        "name": "flowCapacity",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "flow capacity unit"
+        },
+        "name": "flowCapacityUnit",
+        "annotates": "flowCapacity",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe outlet"
+        },
+        "name": "pipeOutlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe inlet"
+        },
+        "name": "pipeInlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VehicleAccessControlEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -26936,161 +26387,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterCooledCondenser;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water-Cooled Condenser"
-    },
-    "description": {
-      "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into a secondary water fluid."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Condenser;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringWaterTemperature",
-        "displayName": {
-          "en": "Design Entering Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Water Temperature Unit"
-        },
-        "name": "designEnteringWaterTemperatureUnit",
-        "annotates": "designEnteringWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingWaterTemperature",
-        "displayName": {
-          "en": "Design Leaving Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Water Temperature Unit"
-        },
-        "name": "designLeavingWaterTemperatureUnit",
-        "annotates": "designLeavingWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designDeltaWaterTemperature",
-        "displayName": {
-          "en": "Design Delta Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Delta Water Temperature Unit"
-        },
-        "name": "designDeltaWaterTemperatureUnit",
-        "annotates": "designDeltaWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Flow"
-        },
-        "name": "designFlow",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Flow Unit"
-        },
-        "name": "designFlowUnit",
-        "annotates": "designFlow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "Design Pressure Drop"
-        },
-        "name": "designPressureDrop",
-        "schema": "double",
-        "unit": "kilopascal",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Pressure Drop Unit"
-        },
-        "name": "designPressureDropUnit",
-        "annotates": "designPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -27840,19 +27136,190 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AirCooledRefrigerationCondenser;1",
+    "@id": "dtmi:com:willowinc:AirCooledCondenser;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Air-Cooled Refrigeration Condenser"
+      "en": "Air-Cooled Condenser"
     },
     "description": {
-      "en": "An air-cooled condenser used in a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+      "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into the ambient air."
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationCondenser;1",
-      "dtmi:com:willowinc:AirCooledCondenser;1"
+      "dtmi:com:willowinc:Condenser;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirTemperature",
+        "displayName": {
+          "en": "Design Entering Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Temperature Unit"
+        },
+        "name": "designEnteringAirTemperatureUnit",
+        "annotates": "designEnteringAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Temperature Unit"
+        },
+        "name": "designLeavingAirTemperatureUnit",
+        "annotates": "designLeavingAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDeltaAirTemperature",
+        "displayName": {
+          "en": "Design Delta Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Delta Air Temperature Unit"
+        },
+        "name": "designDeltaAirTemperatureUnit",
+        "annotates": "designDeltaAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Airflow"
+        },
+        "name": "designAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Airflow Unit"
+        },
+        "name": "designAirflowUnit",
+        "annotates": "designAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Fans"
+        },
+        "name": "numberOfFans",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "total fan power"
+        },
+        "name": "totalFanPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "total fan power unit"
+        },
+        "name": "totalFanPowerUnit",
+        "annotates": "totalFanPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "total fan brake horsepower"
+        },
+        "name": "totalFanbrakeHorsepower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "total fan brake horsepower unit"
+        },
+        "name": "totalFanbrakeHorsepowerUnit",
+        "annotates": "totalFanbrakeHorsepower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -29668,20 +29135,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondensatePump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condensate Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACPump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ConductanceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -30342,21 +29795,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DilutionTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Dilution Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChemicalDilutionDrainageEquipment;1",
-      "dtmi:com:willowinc:PlumbingTank;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DilutionTrap;1",
     "@type": "Interface",
     "displayName": {
@@ -30517,20 +29955,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:TransportEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DomesticWaterPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Domestic Water Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -30709,20 +30133,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EjectorPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Ejector Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -31121,6 +30531,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnOffState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryVentilator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "EnergyRecoveryVentilator"
+    },
+    "description": {
+      "en": "A standalone asset that transfers energy between two different streams of air, one of which is ventilation air."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:EnergyRecoveryDevice;1"
     ],
     "contents": [],
     "@context": [
@@ -31949,6 +31377,21 @@
     },
     "extends": [
       "dtmi:com:willowinc:FireSuppressionEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FishTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fish Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ArchitecturalAsset;1",
+      "dtmi:com:willowinc:Tank;1"
     ],
     "contents": [],
     "@context": [
@@ -33116,45 +32559,24 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACBackflowPreventer;1",
+    "@id": "dtmi:com:willowinc:HVACCompressor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Backflow Preventer (HVAC)"
+      "en": "HVAC Compressor"
+    },
+    "description": {
+      "en": "A compressor which is used within an HVAC system for the applicaiton of conditioning a space for comfort."
     },
     "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Compressor;1"
     ],
     "contents": [],
     "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACBalancingValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Balancing Valve (HVAC)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACCheckValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Check Valve (HVAC)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -33172,13 +32594,14 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACGlobeValve;1",
+    "@id": "dtmi:com:willowinc:HVACHeatTracing;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Globe Valve (HVAC)"
+      "en": "Heat Tracing (HVAC)"
     },
     "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:HeatTracing;1"
     ],
     "contents": [],
     "@context": [
@@ -33186,13 +32609,14 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACPressureReducingStation;1",
+    "@id": "dtmi:com:willowinc:HVACManifold;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Pressure Reducing Station (HVAC)"
+      "en": "HVAC Manifold"
     },
     "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Manifold;1"
     ],
     "contents": [],
     "@context": [
@@ -33200,68 +32624,14 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACPressureReducingValve;1",
+    "@id": "dtmi:com:willowinc:HVACPump;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Pressure Reducing Valve (HVAC)"
+      "en": "HVAC Pump"
     },
     "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACShutOffValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Shut-off Valve (HVAC)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Gate",
-              "name": "Gate"
-            },
-            {
-              "enumValue": "Butterfly",
-              "name": "Butterfly"
-            },
-            {
-              "enumValue": "Ball",
-              "name": "Ball"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HVACSolenoidValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Solenoid Valve (HVAC)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACValve;1"
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Pump;1"
     ],
     "contents": [],
     "@context": [
@@ -33276,6 +32646,36 @@
     },
     "extends": [
       "dtmi:com:willowinc:System;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Tank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Valve;1"
     ],
     "contents": [],
     "@context": [
@@ -33407,20 +32807,6 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HydronicPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hydronic Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACPump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -33634,20 +33020,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:IrrigationPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Irrigation Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -33996,26 +33368,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low-Temperature Refrigeration Compressor"
-    },
-    "description": {
-      "en": "A compressor which is optimized for low-temperature refrigeration applications."
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerationCompressor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressorRack;1",
     "@type": "Interface",
     "displayName": {
@@ -34217,26 +33569,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MediumTemperatureRefrigerationCompressor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Medium-Temperature Refrigeration Compressor"
-    },
-    "description": {
-      "en": "A compressor which is optimized for medium-temperature refrigeration applications."
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerationCompressor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -35686,48 +35018,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PlumbingBackflowPreventer;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Backflow Preventer (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingBalancingValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Balancing Valve (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingCheckValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Check Valve (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PlumbingEquipmentGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -35742,54 +35032,14 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PlumbingExpansionTank;1",
+    "@id": "dtmi:com:willowinc:PlumbingHeatTracing;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Expansion Tank"
+      "en": "Heat Tracing (Plumbing)"
     },
     "extends": [
-      "dtmi:com:willowinc:PlumbingTank;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Diaphragm",
-              "name": "Diaphragm"
-            },
-            {
-              "enumValue": "Compression",
-              "name": "Compression"
-            },
-            {
-              "enumValue": "Bladder",
-              "name": "Bladder"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingGlobeValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Globe Valve (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
+      "dtmi:com:willowinc:PlumbingEquipment;1",
+      "dtmi:com:willowinc:HeatTracing;1"
     ],
     "contents": [],
     "@context": [
@@ -35797,13 +35047,14 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PlumbingPressureReducingStation;1",
+    "@id": "dtmi:com:willowinc:PlumbingManifold;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Pressure Reducing Station (Plumbing)"
+      "en": "Plumbing Manifold"
     },
     "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
+      "dtmi:com:willowinc:PlumbingEquipment;1",
+      "dtmi:com:willowinc:Manifold;1"
     ],
     "contents": [],
     "@context": [
@@ -35811,158 +35062,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PlumbingPressureReducingValve;1",
+    "@id": "dtmi:com:willowinc:PlumbingPump;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Pressure Reducing Valve (Plumbing)"
+      "en": "Plumbing Pump"
     },
     "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
+      "dtmi:com:willowinc:PlumbingEquipment;1",
+      "dtmi:com:willowinc:Pump;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingShutOffValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Shut-Off Valve (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Gate",
-              "name": "Gate"
-            },
-            {
-              "enumValue": "Butterfly",
-              "name": "Butterfly"
-            },
-            {
-              "enumValue": "Ball",
-              "name": "Ball"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingSolenoidValve;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Solenoid Valve (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PlumbingStorageTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Plumbing Storage Tank"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingTank;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "HotWater",
-              "name": "HotWater"
-            },
-            {
-              "enumValue": "ChilledWater",
-              "name": "ChilledWater"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "arrangement"
-        },
-        "name": "arrangement",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Vertical",
-              "name": "Vertical"
-            },
-            {
-              "enumValue": "Horizontal",
-              "name": "Horizontal"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "name": "service",
-        "displayName": {
-          "en": "Service"
-        },
-        "writable": true,
-        "schema": {
-          "@id": "dtmi:com:willowinc:PlumbingStorageTankService;1",
-          "@type": "Enum",
-          "valueSchema": "string",
-          "enumValues": [
-            {
-              "name": "HotWater",
-              "displayName": {
-                "en": "Hot Water"
-              },
-              "enumValue": "HotWater"
-            },
-            {
-              "name": "ChilledWater",
-              "displayName": {
-                "en": "Chilled Water"
-              },
-              "enumValue": "ChilledWater"
-            }
-          ]
-        }
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -35975,6 +35084,36 @@
     },
     "extends": [
       "dtmi:com:willowinc:System;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Plumbing Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipment;1",
+      "dtmi:com:willowinc:Tank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Plumbing Valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipment;1",
+      "dtmi:com:willowinc:Valve;1"
     ],
     "contents": [],
     "@context": [
@@ -36412,20 +35551,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:RadiantHeatingManifold;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Radiant Heating Manifold"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACManifold;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:RefrigerantAirQualitySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -36477,6 +35602,141 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerationCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Compressor"
+    },
+    "description": {
+      "en": "A compressor which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Compressor;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal energy efficiency ratio (EER)"
+        },
+        "name": "nominalEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design energy efficiency ratio (EER)"
+        },
+        "name": "designEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal coefficient of performance (COP)"
+        },
+        "name": "nominalCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design coefficient of performance (COP)"
+        },
+        "name": "designCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity"
+        },
+        "name": "nominalCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity unit"
+        },
+        "name": "nominalCoolingCapacityUnit",
+        "annotates": "nominalCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "design cooling capacity"
+        },
+        "name": "designCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design cooling capacity unit"
+        },
+        "name": "designCoolingCapacityUnit",
+        "annotates": "designCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationCondenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Condenser"
+    },
+    "description": {
+      "en": "A condenser which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Condenser;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigerationDesuperheater;1",
     "@type": "Interface",
     "displayName": {
@@ -36511,23 +35771,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:RefrigerationLiquidRefrigerantReceiver;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Refrigeration Liquid Refrigerant Receiver"
-    },
-    "description": {
-      "en": "A liquid refrigerant receiver tank, or simply receiver, used in a refrigeration system holds excess refrigerant after the condenser to ensure proper liquid refrigerent to the expansion valve inlet of the evaporators."
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerationTank;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:RefrigerationSubcooler;1",
     "@type": "Interface",
     "displayName": {
@@ -36548,16 +35791,14 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:RefrigerationSuctionLineAccumulator;1",
+    "@id": "dtmi:com:willowinc:RefrigerationTank;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Refrigeration Suction Line Accumulator"
-    },
-    "description": {
-      "en": "A refrigeratino suction line accumulator used in a refrigeration system prevents damaging overflow of liquid refrigerant and oil from going back to the compressor."
+      "en": "Refrigeration Tank"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationTank;1"
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Tank;1"
     ],
     "contents": [],
     "@context": [
@@ -37384,20 +36625,6 @@
         "writable": true
       }
     ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SumpPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Sump Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingPump;1"
-    ],
-    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -39013,19 +38240,153 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:WaterCooledRefrigerationCondenser;1",
+    "@id": "dtmi:com:willowinc:WaterCooledCondenser;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Water-Cooled Refrigeration Condenser"
+      "en": "Water-Cooled Condenser"
     },
     "description": {
-      "en": "A water-cooled condenser used in a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+      "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into a secondary water fluid."
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerationCondenser;1",
-      "dtmi:com:willowinc:WaterCooledCondenser;1"
+      "dtmi:com:willowinc:Condenser;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDeltaWaterTemperature",
+        "displayName": {
+          "en": "Design Delta Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Delta Water Temperature Unit"
+        },
+        "name": "designDeltaWaterTemperatureUnit",
+        "annotates": "designDeltaWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Flow"
+        },
+        "name": "designFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Flow Unit"
+        },
+        "name": "designFlowUnit",
+        "annotates": "designFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Design Pressure Drop"
+        },
+        "name": "designPressureDrop",
+        "schema": "double",
+        "unit": "kilopascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Pressure Drop Unit"
+        },
+        "name": "designPressureDropUnit",
+        "annotates": "designPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -39623,6 +38984,27 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirCooledRefrigerationCondenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air-Cooled Refrigeration Condenser"
+    },
+    "description": {
+      "en": "An air-cooled condenser used in a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCondenser;1",
+      "dtmi:com:willowinc:AirCooledCondenser;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -41346,20 +40728,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HydronicPump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41748,6 +41116,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondensatePump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condensate Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41775,20 +41157,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HydronicPump;1"
     ],
     "contents": [],
     "@context": [
@@ -42275,6 +41643,21 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DilutionTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dilution Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChemicalDilutionDrainageEquipment;1",
+      "dtmi:com:willowinc:PlumbingTank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DirectEvaporativeCoolingTower;1",
     "@type": "Interface",
     "displayName": {
@@ -42447,27 +41830,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DomesticHotWaterCirculatingPump;1",
+    "@id": "dtmi:com:willowinc:DomesticWaterPump;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Domestic Hot Water Circulating Pump"
+      "en": "Domestic Water Pump"
     },
     "extends": [
-      "dtmi:com:willowinc:DomesticWaterPump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DomesticWaterBoosterPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Domestic Water Booster Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DomesticWaterPump;1"
+      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -42686,6 +42055,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:LoadingDockLeveler;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EjectorPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ejector Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -44500,20 +43883,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeatingHotWaterPump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heating Hot Water Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HydronicPump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeatingLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -44808,6 +44177,48 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACBackflowPreventer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Backflow Preventer (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACBalancingValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Balancing Valve (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACCheckValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Check Valve (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACCoolingTowerGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -44815,6 +44226,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACGlobeValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Globe Valve (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
     ],
     "contents": [],
     "@context": [
@@ -44853,6 +44278,34 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACPressureReducingStation;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Reducing Station (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACPressureReducingValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Reducing Valve (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACPumpGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -44874,6 +44327,61 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACShutOffValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Shut-off Valve (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Gate",
+              "name": "Gate"
+            },
+            {
+              "enumValue": "Butterfly",
+              "name": "Butterfly"
+            },
+            {
+              "enumValue": "Ball",
+              "name": "Ball"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACSolenoidValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solenoid Valve (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
     ],
     "contents": [],
     "@context": [
@@ -44941,13 +44449,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HydronicCirculatingPump;1",
+    "@id": "dtmi:com:willowinc:HydronicPump;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Hydronic Circulating Pump"
+      "en": "Hydronic Pump"
     },
     "extends": [
-      "dtmi:com:willowinc:HydronicPump;1"
+      "dtmi:com:willowinc:HVACPump;1"
     ],
     "contents": [],
     "@context": [
@@ -45174,6 +44682,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:SecuritySystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:IrrigationPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Irrigation Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -45547,6 +45069,26 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low-Temperature Refrigeration Compressor"
+    },
+    "description": {
+      "en": "A compressor which is optimized for low-temperature refrigeration applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCompressor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowVoltageSwitchgear;1",
     "@type": "Interface",
     "displayName": {
@@ -45589,6 +45131,26 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MediumTemperatureRefrigerationCompressor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medium-Temperature Refrigeration Compressor"
+    },
+    "description": {
+      "en": "A compressor which is optimized for medium-temperature refrigeration applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCompressor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -46732,6 +46294,131 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PlumbingBackflowPreventer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Backflow Preventer (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingBalancingValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Balancing Valve (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingCheckValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Check Valve (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingExpansionTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Expansion Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingTank;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Diaphragm",
+              "name": "Diaphragm"
+            },
+            {
+              "enumValue": "Compression",
+              "name": "Compression"
+            },
+            {
+              "enumValue": "Bladder",
+              "name": "Bladder"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingGlobeValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Globe Valve (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingPressureReducingStation;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Reducing Station (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingPressureReducingValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Reducing Valve (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PlumbingPumpGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -46741,6 +46428,149 @@
       "dtmi:com:willowinc:PlumbingEquipmentGroup;1"
     ],
     "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingShutOffValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Shut-Off Valve (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Gate",
+              "name": "Gate"
+            },
+            {
+              "enumValue": "Butterfly",
+              "name": "Butterfly"
+            },
+            {
+              "enumValue": "Ball",
+              "name": "Ball"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingSolenoidValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solenoid Valve (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlumbingStorageTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Plumbing Storage Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingTank;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "HotWater",
+              "name": "HotWater"
+            },
+            {
+              "enumValue": "ChilledWater",
+              "name": "ChilledWater"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "arrangement"
+        },
+        "name": "arrangement",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Vertical",
+              "name": "Vertical"
+            },
+            {
+              "enumValue": "Horizontal",
+              "name": "Horizontal"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "service",
+        "displayName": {
+          "en": "Service"
+        },
+        "writable": true,
+        "schema": {
+          "@id": "dtmi:com:willowinc:PlumbingStorageTankService;1",
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "name": "HotWater",
+              "displayName": {
+                "en": "Hot Water"
+              },
+              "enumValue": "HotWater"
+            },
+            {
+              "name": "ChilledWater",
+              "displayName": {
+                "en": "Chilled Water"
+              },
+              "enumValue": "ChilledWater"
+            }
+          ]
+        }
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -47177,6 +47007,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RadiantHeatingManifold;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Radiant Heating Manifold"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACManifold;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RainfallAccumulationSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47372,6 +47216,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationLiquidRefrigerantReceiver;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Liquid Refrigerant Receiver"
+    },
+    "description": {
+      "en": "A liquid refrigerant receiver tank, or simply receiver, used in a refrigeration system holds excess refrigerant after the condenser to ensure proper liquid refrigerent to the expansion valve inlet of the evaporators."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationTank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationSuctionLineAccumulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Suction Line Accumulator"
+    },
+    "description": {
+      "en": "A refrigeratino suction line accumulator used in a refrigeration system prevents damaging overflow of liquid refrigerant and oil from going back to the compressor."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationTank;1"
     ],
     "contents": [],
     "@context": [
@@ -48348,20 +48226,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SteamCondensatePump;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Condensate Pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondensatePump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SteamConsumptionGreenhouseGasEmissionsFactor;1",
     "@type": "Interface",
     "displayName": {
@@ -48593,6 +48457,20 @@
     "extends": [
       "dtmi:com:willowinc:StartStopState;1",
       "dtmi:com:willowinc:RunStopState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SumpPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sump Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingPump;1"
     ],
     "contents": [],
     "@context": [
@@ -49471,6 +49349,27 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterCooledRefrigerationCondenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water-Cooled Refrigeration Condenser"
+    },
+    "description": {
+      "en": "A water-cooled condenser used in a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationCondenser;1",
+      "dtmi:com:willowinc:WaterCooledCondenser;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -50950,6 +50849,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -51412,6 +51325,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
     ],
     "contents": [],
     "@context": [
@@ -52182,6 +52109,34 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DomesticHotWaterCirculatingPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Domestic Hot Water Circulating Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DomesticWaterPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DomesticWaterBoosterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Domestic Water Booster Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DomesticWaterPump;1"
     ],
     "contents": [],
     "@context": [
@@ -53605,6 +53560,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatingHotWaterPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Hot Water Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatingPlant;1",
     "@type": "Interface",
     "displayName": {
@@ -54237,6 +54206,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACAirSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HydronicCirculatingPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hydronic Circulating Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HydronicPump;1"
     ],
     "contents": [],
     "@context": [
@@ -57544,6 +57527,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:StartStopSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamCondensatePump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Condensate Pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondensatePump;1"
     ],
     "contents": [],
     "@context": [
