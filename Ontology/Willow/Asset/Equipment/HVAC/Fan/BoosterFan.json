@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:MinOutsideDamper;1",
+  "@id": "dtmi:com:willowinc:BoosterFan;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Min Outside Damper"
+    "en": "Booster Fan"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACDamper;1"
+    "dtmi:com:willowinc:HVACFan;1"
   ],
   "contents": [
   ],

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:ElevatorPressurizationFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator Pressurization Fan"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PressurizationFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
