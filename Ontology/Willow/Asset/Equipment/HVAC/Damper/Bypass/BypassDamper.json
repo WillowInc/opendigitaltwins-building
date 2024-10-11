@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:StairPressurizationFan;1",
+  "@id": "dtmi:com:willowinc:BypassDamper;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Stair Pressurization Fan"
+    "en": "Bypass Damper"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACFan;1"
+    "dtmi:com:willowinc:HVACDamper;1"
   ],
   "contents": [
   ],
