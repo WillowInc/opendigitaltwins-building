@@ -28464,6 +28464,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BoosterFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Booster Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BreadSlicer;1",
     "@type": "Interface",
     "displayName": {
@@ -28557,6 +28571,20 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -33606,10 +33634,10 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideDamper;1",
+    "@id": "dtmi:com:willowinc:MinOutsideAirDamper;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Min Outside Damper"
+      "en": "Min Outside Air Damper"
     },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
@@ -34210,13 +34238,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirFan;1",
+    "@id": "dtmi:com:willowinc:OutsideAirDamper;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Outside Air Fan"
+      "en": "Outside Air Damper"
     },
     "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
+      "dtmi:com:willowinc:HVACDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -34224,13 +34252,13 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideDamper;1",
+    "@id": "dtmi:com:willowinc:OutsideAirFan;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Outside Damper"
+      "en": "Outside Air Fan"
     },
     "extends": [
-      "dtmi:com:willowinc:HVACDamper;1"
+      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -35517,6 +35545,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PressurizationFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressurization Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PumpCurrentSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -36410,20 +36452,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CountSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:StairPressurizationFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Stair Pressurization Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -38817,6 +38845,20 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -42601,6 +42643,20 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElevatorPressurizationFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Elevator Pressurization Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressurizationFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -48120,6 +48176,20 @@
     "extends": [
       "dtmi:com:willowinc:SprinklerEquipment;1",
       "dtmi:com:willowinc:Valve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StairPressurizationFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Stair Pressurization Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressurizationFan;1"
     ],
     "contents": [],
     "@context": [
