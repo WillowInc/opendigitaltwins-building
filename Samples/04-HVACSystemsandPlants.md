@@ -12,9 +12,13 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 3. Simple Leaving "system" water temperature and Leaving "system water temperature setpoint models should be used on systems rather than specifying between primary/secondary/tertiary. Primary/secondary/tertiary are communicated in the twin "NAME" only.
 
-4. There should be a Serves/Served By relationship between systems to show how they are related. Ex: Primary System > Serves > Secondary System
+4. There should be a Serves/Served By relationship from systems to the secondary equipment in the hydronic loop to represent the flow of load within the system. In the example of a primary chilled water system that represents the fluid loop from chillers, primary pumps to heat exchangers that separate the primary and secondary systems, the heat exchangers should be modeled as follows Ex: Primary System > Serves > PrimarySecondaryHeatExchanger. 
 
 5. If there is a bypass/ balancing line. A new system must be created since the bypass/ balancing line will be controlling to a separate flow/ temperature/ pressure setpoint than the cooling equipment.
+
+![HydronicSystem-Example1](Images/HydronicSystems1.jpg)
+
+![HydronicSystem-Example1](Images/HydronicSystems2.jpg)
 
 
 # HVAC Plants
