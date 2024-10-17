@@ -16,6 +16,8 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 5. If there is a bypass/ balancing line. A new system must be created since the bypass/ balancing line will be controlling to a separate flow/ temperature/ pressure setpoint than the cooling equipment.
 
+6. Capabilities of thermal meters that meter either the primary equipment as a whole or the whole system should have IsCapabilityOf relationships to the HVAC system not the primary equipment group.
+
 ![HydronicSystem-Example1](Images/HydronicSystems1.jpg)
 
 ![HydronicSystem-Example1](Images/HydronicSystems2.jpg)
