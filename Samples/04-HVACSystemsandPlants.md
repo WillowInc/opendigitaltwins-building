@@ -20,7 +20,7 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 ![HydronicSystem-Example1](Images/HydronicSystems1.jpg)
 
-![HydronicSystem-Example1](Images/HydronicSystems2.jpg)
+![HydronicSystem-Example1](Images/HydronicSystems2.png)
 
 
 # HVAC Plants
