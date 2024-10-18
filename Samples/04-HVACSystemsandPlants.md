@@ -18,6 +18,10 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 6. Capabilities of thermal meters that meter either the primary equipment as a whole or the whole system should have IsCapabilityOf relationships to the HVAC system not the primary equipment group.
 
+7. The "highest level" system in a building should have a Serves relationship to the Building. The "highest level" system is defined as the system that is not served by but only serves other systems within a building and contains equipment that is located in the building.
+
+8. Since these relationships are based on piping configurations and sensor locations, BMS graphics or design drawings will need to be referenced in creation of these systems.
+   
 ![HydronicSystem-Example1](Images/HydronicSystems1.jpg)
 
 ![HydronicSystem-Example1](Images/HydronicSystems2.png)
