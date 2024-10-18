@@ -2,7 +2,7 @@
 
 ## HVAC Systems
 
-An HVAC water system is a single closed loop hydronic (or single-pressure steam distribution) including all equipment within the distribution. This is similar to the Loop concept in both Haystack and Brick for how a system with a single loop might be modeled. A chilled water system might include chillers, pumps, and AHUs and terminal equipment with hydronic cooling coils served by the system.
+An HVAC Water System is a single closed loop hydronic (or single-pressure steam distribution) including all equipment within the distribution. This is similar to the Loop concept in both Haystack and Brick for how a system with a single loop might be modeled. A chilled water system might include chillers, pumps, and AHUs and terminal equipment with hydronic cooling coils served by the system.
 
 HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, and SteamSystem.
 
@@ -25,12 +25,12 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 # HVAC Plants
 
-An HVAC Plant is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but part of the ChilledWaterPlant, however an AHU with a DX cooling coil will be part of the CondenserWaterPlant). 
+An HVAC Plant is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but not part of the ChilledWaterPlant, however an AHU with a DX cooling coil will be part of the CondenserWaterPlant). 
 
 HVAC Plants include CoolingPlant (child models include ChilledWaterPlant, CondenserWaterPlant, and VRFCoolingPlant for desired specificity) and HeatingPlant (child models include HotWaterPlant, SteamPlant, and VRFHeatingPlant for desired specificity)
 
 A practical use for a plant will be to aggregate the total energy consumption of all equipment within the plant that produces and distributes heating/cooling (e.g. power consumption of all pumps, chillers, cooling towers, DX compressors), and the power output of the plant in tons of cooling or MBH of heating. Ideally, both should be inferred from the content of the plant alone, but in some cases we would have to rely on end-use equipment at the system-level, instead (e.g. the heat output of a steam coil at an AHU can only be inferred by the heat pickup of air across the coil).
 
-1. A PLANT is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but part of the ChilledWaterPlant).
+1. A PLANT is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but not part of the ChilledWaterPlant).
 
 2. The equipment contained within the group should be modeled as follows: Asset -> isPartOf -> AssetGroup -> isIncludedIn -> HVACPlant
