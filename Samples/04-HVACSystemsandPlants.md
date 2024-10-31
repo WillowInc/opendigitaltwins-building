@@ -32,7 +32,7 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 # HVAC Plants
 
-An HVAC Plant is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but not part of the ChilledWaterPlant, however an AHU with a DX cooling coil will be part of the CondenserWaterPlant). 
+An HVAC Plant is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but not part of the CoolingPlant, however an AHU with a DX cooling coil will be part of the CoolingPlant). 
 
 HVAC Plants include CoolingPlant (child models include ChilledWaterPlant, CondenserWaterPlant, and VRFCoolingPlant for desired specificity) and HeatingPlant (child models include HotWaterPlant, SteamPlant, and VRFHeatingPlant for desired specificity)
 
