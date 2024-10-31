@@ -10,7 +10,7 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 2. There should be one Leaving Supply Temperature/Pressure/Flow and one Leaving Supply/Temperature/Pressure/Flow Setpoint per system. There can be all three pairs (temperature/pressure/flow), but there should not be more than one input and one setpoint for system, unless the duplicate setpoints are for a high limit and low limit. This definition can help distinguish system lines when they may be ambiguous (bypass, three way valve, etc.).These points should be modeled as IsCapabilityOf the system and the primary equipment group.
 
-3. Simple Leaving "system" water temperature and Leaving "system water temperature setpoint models should be used on systems rather than specifying between primary/secondary/tertiary. Primary/secondary/tertiary are communicated in the twin "NAME" only.
+3. Simple Leaving "system" water temperature and Leaving "system water temperature setpoint models should be used on systems rather than specifying between primary/secondary/tertiary. Primary/secondary/tertiary are communicated in the twin "NAME" only. For Heat Exchangers, a primary or secondary designation is needed as well as adding the medium to the static properties.
 
 4. There should be a Serves/Served By relationship from systems to the secondary equipment in the hydronic loop to represent the flow of load within the system. In the example of a primary chilled water system that represents the fluid loop from chillers, primary pumps to heat exchangers that separate the primary and secondary systems, the heat exchangers should be modeled as follows Ex: Primary System > Serves > PrimarySecondaryHeatExchanger. 
 
