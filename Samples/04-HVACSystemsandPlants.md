@@ -6,7 +6,7 @@ An HVAC Water System is a single closed loop hydronic (or single-pressure steam 
 
 HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, and SteamSystem.
 
-1. The equipment contained within the system should be modeled as follows: Asset -> isPartOf -> AssetGroup -> isIncludedIn -> HVACSystem.
+1. The equipment contained within the system should be modeled as follows: Asset -> IsIncludedIn -> AssetGroup -> IsIncludedIn -> HVACSystem.
 
 2. There should be one Leaving Supply Temperature/Pressure/Flow and one Leaving Supply/Temperature/Pressure/Flow Setpoint per system. There can be all three pairs (temperature/pressure/flow), but there should not be more than one input and one setpoint for system, unless the duplicate setpoints are for a high limit and low limit. This definition can help distinguish system lines when they may be ambiguous (bypass, three way valve, etc.).These points should be modeled as IsCapabilityOf the system not the primary equipment group.
 
