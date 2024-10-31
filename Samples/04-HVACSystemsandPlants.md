@@ -8,7 +8,7 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 
 1. The equipment contained within the system should be modeled as follows: Asset -> IsIncludedIn -> AssetGroup -> IsIncludedIn -> HVACSystem.
 
-2. There should be one Leaving Supply Temperature/Pressure/Flow and one Leaving Supply/Temperature/Pressure/Flow Setpoint per system. There can be all three pairs (temperature/pressure/flow), but there should not be more than one input and one setpoint for system, unless the duplicate setpoints are for a high limit and low limit. This definition can help distinguish system lines when they may be ambiguous (bypass, three way valve, etc.).These points should be modeled as IsCapabilityOf the system not the primary equipment group.
+2. There should be one Leaving Supply Temperature/Pressure/Flow and one Leaving Supply/Temperature/Pressure/Flow Setpoint per system. There can be all three pairs (temperature/pressure/flow), but there should not be more than one input and one setpoint for system, unless the duplicate setpoints are for a high limit and low limit. This definition can help distinguish system lines when they may be ambiguous (bypass, three way valve, etc.).These points should be modeled as IsCapabilityOf the system and the primary equipment group.
 
 3. Simple Leaving "system" water temperature and Leaving "system water temperature setpoint models should be used on systems rather than specifying between primary/secondary/tertiary. Primary/secondary/tertiary are communicated in the twin "NAME" only.
 
