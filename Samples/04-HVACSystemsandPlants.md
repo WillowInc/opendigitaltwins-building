@@ -38,6 +38,6 @@ HVAC Plants include CoolingPlant (child models include ChilledWaterPlant, Conden
 
 A practical use for a plant will be to aggregate the total energy consumption of all equipment within the plant that produces and distributes heating/cooling (e.g. power consumption of all pumps, chillers, cooling towers, DX compressors), and the power output of the plant in tons of cooling or MBH of heating. Ideally, both should be inferred from the content of the plant alone, but in some cases we would have to rely on end-use equipment at the system-level, instead (e.g. the heat output of a steam coil at an AHU can only be inferred by the heat pickup of air across the coil).
 
-1. A PLANT is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but not part of the ChilledWaterPlant).
+1. A PLANT is the the collection of equipment responsible for the production of COOLING or HEATING that are connected together. A plant should not include any equipment that is part of the system that only has hydronic coils (e.g. an AHU with hydronic cooling coil will be part of the ChilledWaterSystem but not part of the CoolingPlant).
 
 2. The equipment contained within the group should be modeled as follows: Asset -> isPartOf -> AssetGroup -> isIncludedIn -> HVACPlant
