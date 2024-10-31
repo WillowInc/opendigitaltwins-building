@@ -21,7 +21,7 @@ HVAC Systems include ChilledWaterSystem, HotWaterSystem, CondenserWaterSystem, a
 7. The "highest level" system in a building should have a Serves relationship to the Building. The "highest level" system is defined as the system that is not served by but only serves other systems within a building and contains equipment that is located in the building.
 
 8. Since these relationships are based on piping configurations and sensor locations, BMS graphics or design drawings will need to be referenced in creation of these systems.
-   
+   9. IsFed by relationship is opposite of actual water flow. This is to be consistent with the AHU to terminal unit modeling. A Chiller and heat exchanger will have two IsFedBy relationships to represent the supply and return sides. The end of the line equipment with coils will also have two IsFedBy relationships to represent the supply and return side.
 ![HydronicSystem-Example1](Images/HydronicSystems1.jpg)
 
 ![HydronicSystem-Example2](Images/HydronicSystems2.jpg)
