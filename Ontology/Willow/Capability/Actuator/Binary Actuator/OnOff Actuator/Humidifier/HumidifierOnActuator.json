@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HumidifierOnActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Humidifier On Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's humidifier function when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
