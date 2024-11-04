@@ -41339,6 +41339,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingOnState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling On State"
+    },
+    "description": {
+      "en": "The Boolean state of an equipment\u0027s cooling function which is \u0027on\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingRequestCountSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43990,6 +44007,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatingOnState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating On State"
+    },
+    "description": {
+      "en": "The Boolean state of an equipment\u0027s heating function which is \u0027on\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatingRequestCountSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -44212,6 +44246,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HumidifierOnActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Humidifier On Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which turns on an equipment\u0027s humidifier function when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HumidifierOnState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Humidifier On State"
+    },
+    "description": {
+      "en": "The Boolean state of an equipment\u0027s humidifier function which is \u0027on\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnState;1"
     ],
     "contents": [],
     "@context": [
