@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingOnState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling On State"
+  },
+  "description": {"en": "The Boolean state of an equipment's cooling function which is 'on' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OnState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
