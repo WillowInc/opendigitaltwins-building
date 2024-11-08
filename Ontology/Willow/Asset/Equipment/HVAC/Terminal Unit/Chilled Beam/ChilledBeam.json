@@ -65,9 +65,9 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "primary air cfm"
+        "en": "primary airflow"
       },
-      "name": "primaryAirCFM",
+      "name": "primaryAirflow",
       "schema": "double",
       "unit": "cubicfeetperminute",
       "writable": true
@@ -75,75 +75,12 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "primary air cfm unit"
+        "en": "primary airflow unit"
       },
-      "name": "primaryAirCFMUnit",
-      "annotates": "primaryAirCFM",
+      "name": "primaryAirflowUnit",
+      "annotates": "primaryAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "Temperature"],
-      "displayName": {
-        "en": "cooling supply air temperature"
-      },
-      "name": "coolingSupplyAirTemperature",
-      "schema": "double",
-      "unit": "degreesFahrenheit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "cooling supply air temperature unit"
-      },
-      "name": "coolingSupplyAirTemperatureUnit",
-      "annotates": "coolingSupplyAirTemperature",
-      "overrides": "unit",
-      "schema": "TemperatureUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "VolumeFlowRate"],
-      "displayName": {
-        "en": "chilled water flow rate"
-      },
-      "name": "chilledWaterFlowRate",
-      "schema": "double",
-      "unit": "gallonsPerMinute",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "chilled water flow rate unit"
-      },
-      "name": "chilledWaterFlowRateUnit",
-      "annotates": "chilledWaterFlowRate",
-      "overrides": "unit",
-      "schema": "VolumeFlowRateUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "Pressure"],
-      "displayName": {
-        "en": "chilled water pressure drop"
-      },
-      "name": "chilledWaterPressureDrop",
-      "schema": "double",
-      "unit": "feet",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "chilled water pressure drop unit"
-      },
-      "name": "chilledWaterPressureDropUnit",
-      "annotates": "chilledWaterPressureDrop",
-      "overrides": "unit",
-      "schema": "PressureUnit",
       "writable": true
     }
   ],

@@ -34,7 +34,7 @@
       "displayName": {
         "en": "primary sensible cooling capacity"
       },
-      "name": "primarySensibleCapacity",
+      "name": "primarySensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
       "writable": true
@@ -55,7 +55,7 @@
       "displayName": {
         "en": "secondary sensible cooling capacity"
       },
-      "name": "secondarySensibleCapacity",
+      "name": "secondarySensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
       "writable": true
@@ -66,7 +66,7 @@
         "en": "secondary sensible cooling capacity unit"
       },
       "name": "secondarySensibleCoolingCapacityUnit",
-      "annotates": "primarySensibleCoolingCapacity",
+      "annotates": "secondarySensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
       "writable": true
@@ -74,9 +74,9 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "secondary air cfm"
+        "en": "secondary airflow"
       },
-      "name": "secondaryAirCFM",
+      "name": "secondaryAirflow",
       "schema": "double",
       "unit": "cubicfeetperminute",
       "writable": true
@@ -84,75 +84,12 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "secondary primary air cfm unit"
+        "en": "secondary airflow unit"
       },
-      "name": "secondaryAirCFMUnit",
-      "annotates": "secondaryAirCFM",
+      "name": "secondaryAirflowUnit",
+      "annotates": "secondaryAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "Temperature"],
-      "displayName": {
-        "en": "heating supply air temperature"
-      },
-      "name": "heatingSupplyAirTemperature",
-      "schema": "double",
-      "unit": "degreesFahrenheit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "heating supply air temperature unit"
-      },
-      "name": "heatingSupplyAirTemperatureUnit",
-      "annotates": "heatingSupplyAirTemperature",
-      "overrides": "unit",
-      "schema": "TemperatureUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "VolumeFlowRate"],
-      "displayName": {
-        "en": "hot water flow rate"
-      },
-      "name": "hotWaterFlowRate",
-      "schema": "double",
-      "unit": "gallonsPerMinute",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "hot water flow rate unit"
-      },
-      "name": "hotWaterFlowRateUnit",
-      "annotates": "hotWaterFlowRate",
-      "overrides": "unit",
-      "schema": "VolumeFlowRateUnit",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "Pressure"],
-      "displayName": {
-        "en": "hot water pressure drop"
-      },
-      "name": "hotWaterPressureDrop",
-      "schema": "double",
-      "unit": "feet",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "hot water pressure drop unit"
-      },
-      "name": "hotWaterPressureDropUnit",
-      "annotates": "hotWaterPressureDrop",
-      "overrides": "unit",
-      "schema": "PressureUnit",
       "writable": true
     },
     {
