@@ -30,27 +30,6 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
-      "displayName": {
-        "en": "net sensible cooling capacity"
-      },
-      "name": "netSensibleCoolingCapacity",
-      "schema": "double",
-      "unit": "britishThermalUnitPerHour",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "net sensible cooling capacity unit"
-      },
-      "name": "netSensibleCoolingCapacityUnit",
-      "annotates": "netSensibleCoolingCapacity",
-      "overrides": "unit",
-      "schema": "PowerUnit",
-      "writable": true
-    },
-    {
       "@type": "Component",
       "displayName": {
         "en": "cooling method"
@@ -81,6 +60,90 @@
         ],
         "valueSchema": "string"
       },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "primary air cfm"
+      },
+      "name": "primaryAirCFM",
+      "schema": "double",
+      "unit": "cubicfeetperminute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "primary air cfm unit"
+      },
+      "name": "primaryAirCFMUnit",
+      "annotates": "primaryAirCFM",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "cooling supply air temperature"
+      },
+      "name": "coolingSupplyAirTemperature",
+      "schema": "double",
+      "unit": "degreesFahrenheit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "cooling supply air temperature unit"
+      },
+      "name": "coolingSupplyAirTemperatureUnit",
+      "annotates": "coolingSupplyAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "chilled water flow rate"
+      },
+      "name": "chilledWaterFlowRate",
+      "schema": "double",
+      "unit": "gallonsPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "chilled water flow rate unit"
+      },
+      "name": "chilledWaterFlowRateUnit",
+      "annotates": "chilledWaterFlowRate",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "chilled water pressure drop"
+      },
+      "name": "chilledWaterPressureDrop",
+      "schema": "double",
+      "unit": "feet",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "chilled water pressure drop unit"
+      },
+      "name": "chilledWaterPressureDropUnit",
+      "annotates": "chilledWaterPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit",
       "writable": true
     }
   ],
