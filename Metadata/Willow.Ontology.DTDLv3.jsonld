@@ -39033,6 +39033,62 @@
         "writable": true
       },
       {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "primary sensible cooling capacity"
+        },
+        "name": "primarySensibleCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "primary sensible cooling capacity unit"
+        },
+        "name": "primarySensibleCoolingCapacityUnit",
+        "annotates": "primarySensibleCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "secondary sensible cooling capacity"
+        },
+        "name": "secondarySensibleCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "secondary sensible cooling capacity unit"
+        },
+        "name": "secondarySensibleCoolingCapacityUnit",
+        "annotates": "secondarySensibleCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
         "@type": "Component",
         "displayName": {
           "en": "heating method"
