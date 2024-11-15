@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:FanLoadLevel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Load Level"
+  },
+  "description": {
+    "en": "A performance indicator for a fan which is the ratio of its electrical power input (kW) to its nameplate motor power rating (HP) converted to a percent."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PercentPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
