@@ -72,27 +72,6 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
-      "displayName": {
-        "en": "secondary airflow"
-      },
-      "name": "secondaryAirflow",
-      "schema": "double",
-      "unit": "cubicfeetperminute",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "secondary airflow unit"
-      },
-      "name": "secondaryAirflowUnit",
-      "annotates": "secondaryAirflow",
-      "overrides": "unit",
-      "schema": "VolumeFlowRateUnit",
-      "writable": true
-    },
-    {
       "@type": "Component",
       "displayName": {
         "en": "heating method"
