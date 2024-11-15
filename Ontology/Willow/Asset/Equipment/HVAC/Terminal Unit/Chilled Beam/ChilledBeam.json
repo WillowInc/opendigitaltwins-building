@@ -82,27 +82,6 @@
         "valueSchema": "string"
       },
       "writable": true
-    },
-    {
-      "@type": ["Property", "VolumeFlowRate"],
-      "displayName": {
-        "en": "primary airflow"
-      },
-      "name": "primaryAirflow",
-      "schema": "double",
-      "unit": "cubicfeetperminute",
-      "writable": true
-    },
-    {
-      "@type": ["Property", "ValueAnnotation", "Override"],
-      "displayName": {
-        "en": "primary airflow unit"
-      },
-      "name": "primaryAirflowUnit",
-      "annotates": "primaryAirflow",
-      "overrides": "unit",
-      "schema": "VolumeFlowRateUnit",
-      "writable": true
     }
   ],
   "@context": [
