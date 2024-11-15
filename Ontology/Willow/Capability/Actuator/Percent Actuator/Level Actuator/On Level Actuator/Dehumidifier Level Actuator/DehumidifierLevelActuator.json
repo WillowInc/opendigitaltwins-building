@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DehumidifierLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dehumidifier Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the dehumidifier level of the equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:OnLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
