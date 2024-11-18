@@ -9894,6 +9894,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Workspace;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Workspace"
+    },
+    "description": {
+      "en": "A space which is being used for work and typically contains an asset such as a workstation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Zone;1",
     "@type": "Interface",
     "displayName": {
@@ -15433,23 +15450,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Workspace;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Workspace"
-    },
-    "description": {
-      "en": "A space which is being used for work and typically contains an asset such as a workstation."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Zone;1"
     ],
     "contents": [],
     "@context": [
