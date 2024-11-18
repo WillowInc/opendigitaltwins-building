@@ -8,7 +8,7 @@
     "en": "A space which is being used for work and typically contains an asset such as a workstation."
   },
   "extends" : [
-    "dtmi:com:willowinc:Zone;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
 
