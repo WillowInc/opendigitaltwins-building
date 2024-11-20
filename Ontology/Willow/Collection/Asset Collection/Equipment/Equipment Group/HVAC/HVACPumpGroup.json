@@ -8,6 +8,49 @@
     "dtmi:com:willowinc:HVACEquipmentGroup;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "control strategy"
+      },
+      "name": "controlStrategy",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "DutyStandby",
+            "name": "DutyStandby"
+          },
+          {
+            "enumValue": "LeadLag",
+            "name": "LeadLag"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Flow Rate"
+      },
+      "name": "designFlowRate",
+      "schema": "double",
+      "unit": "gallonsPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Flow Rate Unit"
+      },
+      "name": "designFlowRateUnit",
+      "annotates": "designFlowRate",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"
