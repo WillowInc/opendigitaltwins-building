@@ -5973,6 +5973,18 @@
         },
         "writable": true,
         "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "lifecyclePhase",
+        "displayName": {
+          "en": "Lifecycle Phase"
+        },
+        "description": {
+          "en": "The stage in the life of the building or structure such as design, construction, or operational."
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:BuildingLifecyclePhase;1"
       }
     ],
     "schemas": [
@@ -6147,6 +6159,25 @@
           {
             "enumValue": "Worship Facility",
             "name": "WorshipFacility"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:BuildingLifecyclePhase;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "enumValue": "Design",
+            "name": "Design"
+          },
+          {
+            "enumValue": "Construction",
+            "name": "Construction"
+          },
+          {
+            "enumValue": "Operational",
+            "name": "Operational"
           }
         ]
       }
@@ -7840,6 +7871,39 @@
         },
         "writable": true,
         "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "lifecyclePhase",
+        "displayName": {
+          "en": "Lifecycle Phase"
+        },
+        "description": {
+          "en": "The stage in the life of the building or structure such as design, construction, or operational."
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:OutdoorAreaLifecyclePhase;1"
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:OutdoorAreaLifecyclePhase;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "enumValue": "Design",
+            "name": "Design"
+          },
+          {
+            "enumValue": "Construction",
+            "name": "Construction"
+          },
+          {
+            "enumValue": "Operational",
+            "name": "Operational"
+          }
+        ]
       }
     ],
     "@context": [
@@ -8645,6 +8709,39 @@
         },
         "writable": true,
         "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "lifecyclePhase",
+        "displayName": {
+          "en": "Lifecycle Phase"
+        },
+        "description": {
+          "en": "The stage in the life of the building or structure such as design, construction, or operational."
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:SubstructureLifecyclePhase;1"
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:SubstructureLifecyclePhase;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "enumValue": "Design",
+            "name": "Design"
+          },
+          {
+            "enumValue": "Construction",
+            "name": "Construction"
+          },
+          {
+            "enumValue": "Operational",
+            "name": "Operational"
+          }
+        ]
       }
     ],
     "@context": [
