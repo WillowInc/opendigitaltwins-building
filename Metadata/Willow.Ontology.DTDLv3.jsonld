@@ -7762,6 +7762,14 @@
     ],
     "contents": [
       {
+        "@type": "Component",
+        "displayName": {
+          "en": "address"
+        },
+        "name": "address",
+        "schema": "dtmi:com:willowinc:Address;1"
+      },
+      {
         "@type": "Property",
         "name": "type",
         "displayName": {
@@ -7769,6 +7777,69 @@
         },
         "writable": true,
         "schema": "string"
+      },
+      {
+        "@type": "Component",
+        "name": "timeZone",
+        "displayName": {
+          "en": "Time Zone"
+        },
+        "schema": "dtmi:com:willowinc:TimeZone;1"
+      },
+      {
+        "@type": "Property",
+        "name": "coordinates",
+        "displayName": {
+          "en": "Coordinates"
+        },
+        "writable": true,
+        "schema": {
+          "@id": "dtmi:com:willowinc:OutdoorAreaCoordinates;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "latitude",
+              "displayName": {
+                "en": "Latitude"
+              },
+              "schema": "double"
+            },
+            {
+              "name": "longitude",
+              "displayName": {
+                "en": "Longitude"
+              },
+              "schema": "double"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "constructionStartDate",
+        "displayName": {
+          "en": "Construction Start Date"
+        },
+        "writable": true,
+        "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "constructionCompletionDate",
+        "displayName": {
+          "en": "Construction Completion Date"
+        },
+        "writable": true,
+        "schema": "date"
+      },
+      {
+        "@type": "Property",
+        "name": "dateOpened",
+        "displayName": {
+          "en": "Date Opened"
+        },
+        "writable": true,
+        "schema": "date"
       }
     ],
     "@context": [
@@ -8391,6 +8462,14 @@
       "dtmi:com:willowinc:Space;1"
     ],
     "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "address"
+        },
+        "name": "address",
+        "schema": "dtmi:com:willowinc:Address;1"
+      },
       {
         "@type": "Property",
         "name": "type",
