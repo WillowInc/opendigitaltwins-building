@@ -12,6 +12,14 @@
   ],
   "contents": [
     {
+      "@type": "Component",
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "schema": "dtmi:com:willowinc:Address;1"
+    },
+    {
       "@type": "Property",
       "name": "type",
       "displayName": {
