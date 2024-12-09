@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:com:willowinc:FumeHood;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fume Hood"
+  },
+  "description": {
+    "en": "A type of local exhaust ventilation device designed to protect users from exposure to hazardous fumes, vapors, and dust. It is typically mounted over a workspace, table, or shelf to capture and conduct unwanted gases away from the enclosed area."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VentilationHood;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
