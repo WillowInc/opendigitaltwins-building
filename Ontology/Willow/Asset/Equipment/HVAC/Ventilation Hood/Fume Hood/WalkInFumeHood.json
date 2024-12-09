@@ -5,7 +5,7 @@
     "en": "Walk-In Fume Hood"
   },
   "extends" : [
-    "dtmi:com:willowinc:VentilationHood;1"
+    "dtmi:com:willowinc:FumeHood;1"
   ],
   "contents": [
   ],

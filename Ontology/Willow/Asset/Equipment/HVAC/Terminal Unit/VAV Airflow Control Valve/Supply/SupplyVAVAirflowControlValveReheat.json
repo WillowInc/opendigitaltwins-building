@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SupplyVAVAirflowControlValveReheat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supply VAV Airflow Control Valve with Reheat"
+  },
+  "description": {
+    "en": "A Supply VAV airflow control vavle which includes reheat to a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
