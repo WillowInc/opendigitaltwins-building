@@ -25794,6 +25794,118 @@
         "schema": "TemperatureUnit"
       },
       {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Occupied Minimum Airflow"
+        },
+        "name": "designOccupiedMinAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Occupied Minimum Airflow Unit"
+        },
+        "name": "designOccupiedMinAirflowUnit",
+        "annotates": "designOccupiedMinAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Occupied Maximum Airflow"
+        },
+        "name": "designOccupiedMaxAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Occupied Maximum Airflow Unit"
+        },
+        "name": "designOccupiedMaxAirflowUnit",
+        "annotates": "designOccupiedMaxAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Unoccupied Minimum Airflow"
+        },
+        "name": "designUnoccupiedMinAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Unoccupied Minimum Airflow Unit"
+        },
+        "name": "designUnoccupiedMinAirflowUnit",
+        "annotates": "designUnoccupiedMinAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Unoccupied Maximum Airflow"
+        },
+        "name": "designUnoccupiedMaxAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Unoccupied Maximum Airflow Unit"
+        },
+        "name": "designUnoccupiedMaxAirflowUnit",
+        "annotates": "designUnoccupiedMaxAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
         "@type": "Component",
         "displayName": {
           "en": "duct inlet"
@@ -26497,6 +26609,34 @@
         },
         "name": "maxAirflowRatingUnit",
         "annotates": "maxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Maximum Airflow"
+        },
+        "name": "designMaxAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Maximum Airflow Unit"
+        },
+        "name": "designMaxAirflowUnit",
+        "annotates": "designMaxAirflow",
         "overrides": "unit",
         "schema": "VolumeFlowRateUnit",
         "writable": true
@@ -32136,6 +32276,99 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FumeHood;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fume Hood"
+    },
+    "description": {
+      "en": "A type of local exhaust ventilation device designed to protect users from exposure to hazardous fumes, vapors, and dust. It is typically mounted over a workspace, table, or shelf to capture and conduct unwanted gases away from the enclosed area."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VentilationHood;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property"
+        ],
+        "displayName": {
+          "en": "Design Face Velocity @ 18 in. Sash Height"
+        },
+        "name": "designFaceVelocity18inSashHeight",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "displayName": {
+          "en": "Design Face Velocity @ 18 in. Sash Height Unit"
+        },
+        "name": "designFaceVelocity18inSashHeightUnit",
+        "annotates": "designFaceVelocity18inSashHeight",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Sash Type"
+        },
+        "name": "sashType",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Horizontal",
+              "name": "Horizontal"
+            },
+            {
+              "enumValue": "Vertical",
+              "name": "Vertical"
+            },
+            {
+              "enumValue": "Combination",
+              "name": "Combination"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Bypass Type"
+        },
+        "name": "bypassType",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Open",
+              "name": "Open"
+            },
+            {
+              "enumValue": "Restricted",
+              "name": "Restricted"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:GarbageDisposal;1",
     "@type": "Interface",
     "displayName": {
@@ -36501,23 +36734,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SnorkelExhaustFumeHood;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Snorkel Exhaust Fume Hood"
-    },
-    "extends": [
-      "dtmi:com:willowinc:VentilationHood;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SO2AirQualitySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38415,23 +38631,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WalkInFumeHood;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Walk-In Fume Hood"
-    },
-    "extends": [
-      "dtmi:com:willowinc:VentilationHood;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -40587,6 +40786,111 @@
         "overrides": "unit",
         "schema": "EnergyUnit",
         "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BenchtopFumeHood;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Benchtop Fume Hood"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FumeHood;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "sash",
+        "displayName": {
+          "en": "Sash"
+        },
+        "description": {
+          "en": "The front opening or door of the fume hood allowing access to the workspace."
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "@type": [
+                "Field",
+                "Power"
+              ],
+              "name": "maxPowerOutput",
+              "displayName": {
+                "en": "Maximum Power Output"
+              },
+              "schema": "double",
+              "unit": "watt"
+            },
+            {
+              "@type": [
+                "Field",
+                "Voltage"
+              ],
+              "name": "MPPVoltage",
+              "displayName": {
+                "en": "Maximum Power Point Voltage"
+              },
+              "schema": "double",
+              "unit": "volt"
+            },
+            {
+              "@type": [
+                "Field",
+                "Current"
+              ],
+              "name": "MPPCurrent",
+              "displayName": {
+                "en": "Maximum Power Point Current"
+              },
+              "schema": "double",
+              "unit": "ampere"
+            },
+            {
+              "@type": [
+                "Field",
+                "Voltage"
+              ],
+              "name": "openCircuitVoltage",
+              "displayName": {
+                "en": "Open Circuit Voltage"
+              },
+              "schema": "double",
+              "unit": "volt"
+            },
+            {
+              "@type": [
+                "Field",
+                "Current"
+              ],
+              "name": "shortCircuitCurrent",
+              "displayName": {
+                "en": "Short Circuit Current"
+              },
+              "schema": "double",
+              "unit": "ampere"
+            },
+            {
+              "@type": "Field",
+              "name": "efficiency",
+              "displayName": {
+                "en": "Efficiency"
+              },
+              "description": {
+                "en": "The percentage of incident solar energy that is converted to electricity."
+              },
+              "schema": "double"
+            }
+          ]
+        }
       }
     ],
     "@context": [
@@ -43500,6 +43804,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExhaustVAVAirflowControlValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust VAV Airflow Control Valve"
+    },
+    "description": {
+      "en": "An VAV airflow control vavle which provides precise control of exhaust airflow from a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VAVAirflowControlValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -44681,6 +45002,20 @@
     "@type": "Interface",
     "displayName": {
       "en": "Cooling Tower Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACFanGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Group (HVAC)"
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipmentGroup;1"
@@ -48441,6 +48776,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SnorkelExhaustFumeHood;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Snorkel Exhaust Fume Hood"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FumeHood;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SO2AirQualityAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -48985,6 +49337,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirRegister;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supply VAV Airflow Control Valve"
+    },
+    "description": {
+      "en": "A VAV airflow control vavle which provides precise control of supply airflow to a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VAVAirflowControlValve;1"
     ],
     "contents": [],
     "@context": [
@@ -49807,6 +50176,23 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WalkInFumeHood;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Walk-In Fume Hood"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FumeHood;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -53912,6 +54298,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FumeExhaustVAVAirflowControlValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fume Exhaust VAV Airflow Control Valve"
+    },
+    "description": {
+      "en": "An VAV airflow control vavle used to exhaust fumes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustVAVAirflowControlValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GeneralExhaustVAVAirflowControlValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "General Exhaust VAV Airflow Control Valve"
+    },
+    "description": {
+      "en": "An VAV airflow control vavle used for general exhaust and specifically not fumes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustVAVAirflowControlValve;1"
     ],
     "contents": [],
     "@context": [
@@ -58263,6 +58683,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DrainageSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SupplyVAVAirflowControlValveReheat;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supply VAV Airflow Control Valve with Reheat"
+    },
+    "description": {
+      "en": "A Supply VAV airflow control vavle which includes reheat to a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1"
     ],
     "contents": [],
     "@context": [
