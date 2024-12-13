@@ -60,6 +60,27 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
+        "en": "Design Minimum Airflow"
+      },
+      "name": "designMinAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Minimum Airflow Unit"
+      },
+      "name": "designMinAirflowUnit",
+      "annotates": "designMinAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
         "en": "Design Maximum Airflow"
       },
       "name": "designMaxAirflow",
