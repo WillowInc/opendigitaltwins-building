@@ -115,6 +115,90 @@
       "schema": "TemperatureUnit"
     },
     {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Occupied Minimum Airflow"
+      },
+      "name": "designOccupiedMinAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Occupied Minimum Airflow Unit"
+      },
+      "name": "designOccupiedMinAirflowUnit",
+      "annotates": "designOccupiedMinAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Occupied Maximum Airflow"
+      },
+      "name": "designOccupiedMaxAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Occupied Maximum Airflow Unit"
+      },
+      "name": "designOccupiedMaxAirflowUnit",
+      "annotates": "designOccupiedMaxAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Unoccupied Minimum Airflow"
+      },
+      "name": "designUnoccupiedMinAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Unoccupied Minimum Airflow Unit"
+      },
+      "name": "designUnoccupiedMinAirflowUnit",
+      "annotates": "designUnoccupiedMinAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Unoccupied Maximum Airflow"
+      },
+      "name": "designUnoccupiedMaxAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Unoccupied Maximum Airflow Unit"
+      },
+      "name": "designUnoccupiedMaxAirflowUnit",
+      "annotates": "designUnoccupiedMaxAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
       "@type": "Component",
       "displayName": {
         "en": "duct inlet"

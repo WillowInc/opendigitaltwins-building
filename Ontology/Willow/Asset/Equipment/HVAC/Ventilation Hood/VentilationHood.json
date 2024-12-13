@@ -56,6 +56,27 @@
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
       "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Maximum Airflow"
+      },
+      "name": "designMaxAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Maximum Airflow Unit"
+      },
+      "name": "designMaxAirflowUnit",
+      "annotates": "designMaxAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
     }
   ],
   "@context": [
