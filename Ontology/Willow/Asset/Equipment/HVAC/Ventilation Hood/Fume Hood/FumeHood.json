@@ -11,6 +11,73 @@
     "dtmi:com:willowinc:VentilationHood;1"
   ],
   "contents": [
+    {
+      "@type": ["Property"],
+      "displayName": {
+        "en": "Design Face Velocity @ 18 in. Sash Height"
+      },
+      "name": "designFaceVelocity18inSashHeight",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "displayName": {
+        "en": "Design Face Velocity @ 18 in. Sash Height Unit"
+      },
+      "name": "designFaceVelocity18inSashHeightUnit",
+      "annotates": "designFaceVelocity18inSashHeight",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Sash Type"
+      },
+      "name": "sashType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Horizontal",
+            "name": "Horizontal"
+          },
+          {
+            "enumValue": "Vertical",
+            "name": "Vertical"
+          },
+          {
+            "enumValue": "Combination",
+            "name": "Combination"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Bypass Type"
+      },
+      "name": "bypassType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Open",
+            "name": "Open"
+          },
+          {
+            "enumValue": "Restricted",
+            "name": "Restricted"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",

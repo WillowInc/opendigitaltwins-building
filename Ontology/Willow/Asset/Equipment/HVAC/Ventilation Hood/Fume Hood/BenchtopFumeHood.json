@@ -4,10 +4,97 @@
   "displayName": {
     "en": "Benchtop Fume Hood"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:willowinc:FumeHood;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "name": "sash",
+      "displayName": {
+        "en": "Sash"
+      },
+      "description": {
+        "en": "The front opening or door of the fume hood allowing access to the workspace."
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "@type": [
+              "Field",
+              "Power"
+            ],
+            "name": "maxPowerOutput",
+            "displayName": {
+              "en": "Maximum Power Output"
+            },
+            "schema": "double",
+            "unit": "watt"
+          },
+          {
+            "@type": [
+              "Field",
+              "Voltage"
+            ],
+            "name": "MPPVoltage",
+            "displayName": {
+              "en": "Maximum Power Point Voltage"
+            },
+            "schema": "double",
+            "unit": "volt"
+          },
+          {
+            "@type": [
+              "Field",
+              "Current"
+            ],
+            "name": "MPPCurrent",
+            "displayName": {
+              "en": "Maximum Power Point Current"
+            },
+            "schema": "double",
+            "unit": "ampere"
+          },
+          {
+            "@type": [
+              "Field",
+              "Voltage"
+            ],
+            "name": "openCircuitVoltage",
+            "displayName": {
+              "en": "Open Circuit Voltage"
+            },
+            "schema": "double",
+            "unit": "volt"
+          },
+          {
+            "@type": [
+              "Field",
+              "Current"
+            ],
+            "name": "shortCircuitCurrent",
+            "displayName": {
+              "en": "Short Circuit Current"
+            },
+            "schema": "double",
+            "unit": "ampere"
+          },
+          {
+            "@type": "Field",
+            "name": "efficiency",
+            "displayName": {
+              "en": "Efficiency"
+            },
+            "description": {
+              "en": "The percentage of incident solar energy that is converted to electricity."
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",
