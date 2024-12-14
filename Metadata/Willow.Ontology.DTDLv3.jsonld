@@ -26619,6 +26619,34 @@
           "VolumeFlowRate"
         ],
         "displayName": {
+          "en": "Design Minimum Airflow"
+        },
+        "name": "designMinAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Minimum Airflow Unit"
+        },
+        "name": "designMinAirflowUnit",
+        "annotates": "designMinAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
           "en": "Design Maximum Airflow"
         },
         "name": "designMaxAirflow",
@@ -43855,6 +43883,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FaceVelocitySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face Velocity Sensor"
+    },
+    "description": {
+      "en": "The velocity at which air is pulled through the opening (face) of a ventilation or fume hood."
+    },
+    "extends": [
+      "dtmi:com:willowinc:LinearVelocitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FanCoilUnitReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -53977,6 +54022,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanVFDFrequencySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FaceVelocitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face Velocity Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the velocity at which air is pulled through the opening (face) of a ventilation or fume hood."
+    },
+    "extends": [
+      "dtmi:com:willowinc:LinearVelocitySetpoint;1"
     ],
     "contents": [],
     "@context": [
