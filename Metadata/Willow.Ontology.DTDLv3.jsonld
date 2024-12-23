@@ -22571,6 +22571,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACPressurizationZone;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Pressurization Zone"
+    },
+    "description": {
+      "en": "An HVAC zone which controls to maintain either positive or negative pressure in the space."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACZone;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACProbeHeater;1",
     "@type": "Interface",
     "displayName": {
@@ -33133,6 +33150,40 @@
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1",
       "dtmi:com:willowinc:Manifold;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACNegativePressurizationZone;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Negative Pressurization Zone"
+    },
+    "description": {
+      "en": "An HVAC pressurization zone which controls to maintain negative pressure in the space in order to prevent contaminents from leaving the space."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACPressurizationZone;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HVACPositivePressurizationZone;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Positive Pressurization Zone"
+    },
+    "description": {
+      "en": "An HVAC pressurization zone which controls to maintain positive pressure in the space in order to prevent contaminents from entering the space."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACPressurizationZone;1"
     ],
     "contents": [],
     "@context": [
