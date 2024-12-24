@@ -4,55 +4,67 @@ Occupancy include scenarios where people (and objects) are tracked within a spac
 
 There are many different types of sensor technology and sources of data which can be deployed to achieve a desired outcome for a use case. Occupancy, presence, and motion sensors emit a Boolean true/false value to define the corresponding state of the space. People count sensors emit a number value to define the quantity of people either in a space or entering/leaving a space. Other sources of data which may not rely on dedicated sensors include access control system reader events, video analytics, Bluetooth/WiFi systems, and space reservation solutions.
 
-## Space-based Occupancy and People Counts
+## Space Occupancy and People Counts
 
 Space-based sensors are typically located in the space for which they are determining the occupancy or people count. They directly report occupancy or people count values for a Space, such as a Room, of its current condition.
 
-### Occupancy Multi-Zone Room
+There are two styles of reporting space occupancy that a sensor solution may offer: device-based and zone-based. Let's take a look at how to configure each:
 
-![Occupancy-Example1](Images/Occupancy-Example1.png)
+### Device-based Space Occupancy
 
-1. At the core of every Occupancy use case is the Occupancy Zone. An Occupancy Zone is a type of Space which has a boundary, generally aligns 1:1 with a Room, but can also be more granular or broader. In this example, there are multiple Occupancy Zones within one Room. Because both Zones and Rooms are Spaces, we use the relationship isPartof.
+The device-based space occupancy configuration is when the telemetry being sent from the sensor vendor is related to a sensor device (People Count Sensor Equipment or Occupancy Sensor Equipment). In this scenario, we configure the following sets of twins and relationships:
 
-2. Each Occupancy Zone has one or more Capabilities which are a unique trend for that space based on the type of data that the sensors or systems are providing. In this example, each Occupancy Zone has a People Count Sensor, but other common Capabilities are Occupancy Sensor, Motion Sensor, or Inferred Occupancy Sensor. Sometimes the telemetry for these Occupancy Zone Capabilities is sent by the connected system if they have a corresponding concept to the Occupancy Zone and have already aggregated or calculated the value based on the underlying sensor technology. Other times the Occupancy Zone Capabilities will need to be calculated by the WillowTwin because the connected sensors only expose their individual Capabilities (#4).
+![SpaceOccupancy-Device-based-Example1](Images/SpaceOccupancy-Device-based-Example1.png)
 
-3. The People Count Sensor Equipment is the physical asset which is counting people. Generally, each equipment is aligned 1:1 with an Occupancy Zone, but there can also be multiple People Count Sensors serving a single zone as depicted in this example. Alternatively, there could be multiple Occupancy Zones served by a single People Count Sensor Equipment. The relationship servedBy is used between the People Count Sensor Equipment (Asset) and the Zone (Space).
+1. Each device is either a People Count Sensor Equipment or Occupancy Sensor Equipment depending on whether it is measuring the count of people in the space (People Count Sensor) or boolean occupancy (Occupancy Sensor). In this example we show a People Count Sensor Equipment each with its associated People Count Sensor capability.
 
-4. Each People Count Sensor Equipment has one or more Capabilities which are emitted. In this example, the People Count Sensor Capability is defined but a single equipment may also emit other Capabilities such as Occupancy Sensor, Motion Sensor, or Inferred Occupancy Sensor.
+2. Typically each Sensor Equipment will define the occupancy for a single space so there is a 1:1 relationship between an Occupancy Zone and a Sensor Equipment using the servedBy relationship. In some cases, multiple devices are deployed in a single space which need to be summed to determine the space's total people count at a given point in time. These Occupancy Zones would then have a servedBy relationship to each Sensor Equipment. When these are Occupancy Sensors, a logical OR expression can be used to determine overall space occupancy as a boolean.
 
-5. When there are multiple People Count Sensors (#4) serving a single Occupancy Zone and the connection solution doesn’t calculate and emit the aggregate for the Zone, the Zone’s People Count Sensor Capability (#5) will need to be calculated by the WillowTwin by summing the values from the individual People Count Sensors (#4).
+3. Each Occupancy Zone has an isPartOf relationship to the Room in which it is associated. The Room comes from another system such as a Space Management solution. It is important to note that the occupancy solution does not define Room twins even when their APIs or terminology refers to Rooms. Instead, they form relationships to these as defined in the other solution. The occupancy solution always contributes Sensor capabilties, Sensor Equipment, and Occupancy Zones.
+
+### Space-based Space Occupancy
+
+The space-based space occupancy configuration is when the telemetry (People Count Sensor or Occupancy Sensor) being sent from the sensor vendor is related to a space. Many sensor vendors may offer both device-based an space-based in their reporting. In this case, the space-based telemetry is always preferred as the vendor has already performed the aggregation and in many cases has unique functionality in doing so to assure better accuracy.
+
+![SpaceOccupancy-Space-based-Example1](Images/SpaceOccupancy-Device-based-Example1.png)
+
+1. Each Occupancy Zone has either a People Count Sensor or Occupancy Sensor depending on whether it is measuring the count of people in the space (People Count Sensor) or boolean occupancy (Occupancy Sensor). In this example we show a People Count Sensor Equipment each with its associated People Count Sensor capability.
+
+2. Similar to the device-based example above, each Occupancy Zone has an isPartOf relationship to the Room in which it is associated. The Room comes from another system such as a Space Management solution. It is important to note that the occupancy solution does not define Room twins even when their APIs or terminology refers to Rooms. Instead, they form relationships to these as defined in the other solution. The occupancy solution always contributes Sensor capabilties, Sensor Equipment, and Occupancy Zones.
+
+3. Optionally, the space-based solutions may still provide details about which physical sensor devices are serving the spaces. In this scnario, we include the Occupancy Zone servedby Sensor Equipment relationship just as the device-based example above. These may still have other capabilities such as the Battery Level State or be used in an asset management solution.
+
+### Workspace Occupancy 
+
+When individual workspaces or workstations are being sensed for occupancy rather than rooms, we include those in the Space Occupancy dashboard but use a slightly different set of models. In this scenario, we use the boolean Occupancy Sensor capability to create a count of 1 person occupying the workspace. 
+
+![Occupancy-Example3](Images/SpaceOccupancy-Device-based-Workspace.png)
+
+1. Similar to the standard device-based example above, an Occupancy Sensor Equipment has an Occupancy Sensor capability which determines whether someone is currently occupying the workspace.
+
+2. Again, each Occupancy Zone will have a 1:1 servedBy relationship to an Occupancy Sensor Equipment.
+
+3. The Occupancy Zone has an isPartOf relationship to a Workspace in this example which in turn isPartOf a Room or Level depending on the configuration in the Space Management system. Again, this will typically be 1:1 when the Workspace is aligned to an individual's workstation but there could be scenarios where a multi-person Workspace in the space management solution has individual seats being measured in which case there would be multiple Occupancy Zones for a single Workspace.
 
 ### Occupancy Multi-Room Zone
 
 ![Occupancy-Example2](Images/Occupancy-Example2.png)
 
-1. In this example, we show the flexibility in a zone where there are multiple Rooms within one Occupancy Zone. Because both Zones and Rooms are Spaces, we use the relationship isPartof.
+1. In each of the above examples, the Occupancy Zone had either a 1:1 or Many:1 relationship to a Room. In this example, we show the flexibility in a zone where there are multiple Rooms within one Occupancy Zone. This may be the case where the Space Management solution has defined separate "rooms" for an open office area or a large gathering area yet the occupancy solution has defined it as a single large entity.
 
-2. The Occupancy Zone has an Occupancy Sensor Capability. Sometimes the telemetry for these Occupancy Zone Capabilities is sent by the connected system if they have a corresponding concept to the Occupancy Zone and have already aggregated or calculated the value based on the underlying sensor technology. Other times the Occupancy Zone Capabilities will need to be calculated by the WillowTwin because the connected sensors only expose their individual Capabilities (#4).
+2. The Occupancy Zone has an Occupancy Sensor capability just as the space-based example above. This could also be a People Count Sensor. This could also be a device-based setup where the Occupancy Sensor capability would exist on the Occupancy Sensor Equipment rather than the zone.
 
-3. The Occupancy Sensor Equipment is the physical asset which is installed in the space. Generally, each equipment is aligned 1:1 with an Occupancy Zone, but there can also be multiple Occupancy Sensors serving a single zone as depicted in this example. The relationship servedBy is used between the Occupancy Sensor Equipment (Asset) and the Zone (Space).
+3. The Occupancy Sensor Equipment (or People Count Sensor Equipment) has the servedBy relationship from the Occupancy Zone.
 
-4. In this example, each Occupancy Sensor Equipment has an Occupancy Sensor Capability.
+### Assigning Occupancy Zones to Rooms or Levels
 
-5. When there are multiple Occupancy Sensors (#4) serving a single Occupancy Zone and the connection solution doesn’t calculate and emit the aggregate for the Zone, the Zone’s Occupancy Sensor Capability (#5) will need to be calculated by the WillowTwin by taking the logical OR of the values from the individual Occupancy Sensors (#4).
+While the above examples all showed the Occupancy Zones as a part of a Room (or Workspace), it is also possible that level of detail isn't available in the occupancy solution and the Occupancy Zones are just known to be on a specific level of a building. In these scenarios, we directly associate the Occupancy Zone to a Level as shown here:
 
-### Workstation Occupancy 
+![OccupancyZone-Level](Images/OccupancyZone-Level.png)
 
-![Occupancy-Example3](Images/Occupancy-Example3.png)
+## Entry and Exit-based People Counts (Footfall)
 
-1. In this example, we again show the scenario where there are multiple Occupancy Zones within one Room. Because both Zones and Rooms are Spaces, we use the relationship isPartof.
-
-2. Each Occupancy Zone is defined to align 1:1 with a Workstation. Therefore, we additionally establish the locatedIn relationship between the Workstation (Asset) and the Occupancy Zone (Space). While this is not explicitly required, it is recommended to enabled related scenarios where the Workstation is given an identity and assigned to or reserved by a Person.
-
-3. Each Asset must have a locatedIn relationship to a Space to associate with the larger site such as the Building or Land (See Assets Example). In this example, the Workstation (Asset) is locatedIn a Room (Space).
-
-4. In this example, we show the scenario where a multiple Occupancy Zones are served by a single Occupancy Sensor Equipment. This is common in camera-based solutions where a single equipment can be configured to track multiple logical zones.
-
-5. When a single Occupancy Sensor Equipment is configured to track multiple logical zones, it has a unique Occupancy Sensor Capability twin (#5s) for each corresponding zone.
-
-## Entry and Exit-based People Counts
-
-Entry and exit-based sensors are counting people crossing a threshold, such as an entryway, door, or turnstile. They differ from space-based people counts in that they can indicate how people are entering and leaving a space if there are multiple entryways, but they are less accurate in determining live counts. Because they are totalizing entries and exits, a missed person count entering or exiting a space propogates for the rest of the time period for which counts are being aggregated. As such, these typically need a daily reset.
+Entry and exit-based sensors are counting people crossing a threshold, such as an entryway, door, or turnstile. This is also referred to as footfall. They differ from space-based people counts in that they can indicate how people are entering and leaving a space if there are multiple entryways, but they are less accurate in determining live counts. Because they are totalizing entries and exits, a missed person count entering or exiting a space propogates for the rest of the time period for which counts are being aggregated. As such, these typically need a daily reset.
 
 ### Simple Openings
 
@@ -122,17 +134,34 @@ Often when using the entry and exit-based people count sensors, the count of peo
 
 6. Next, we define the relationship isExitFor to the OccupancyZone for which the Opening’s two capabilities have the opposite meaning. In other words, we can infer that the numbering of people leaving Room #2 via this Opening is the Entering People Count Sensor. Likewise, the number of people entering Room #2 via this Opening can be inferred from the Leaving People Count Sensor.
 
+### Building Footfall
 
-### Access Control People Counts
+Building Footfall differs from Space Footfall in that the footfall is related to entire building occupancy as determined by measuring the people entering and leaving the entrances to the building. This is a more accurant means of determining the building occupancy because space occupancy rarely has the ability to provide pervasive enough sensors throughout the building.
 
-In this example, we show how person access events (i.e. access reader granting access) can be used by the WillowTwin to determine occupancy metrics for the Building or a Level.
+This building footfall data could be sourced from either an IoT sensor device which measures the quantitiy and direction of people crossing a line or an access control system where badge swipe events provide the quantity and direction of people entering and leaving the building. Here are examples showing these two scenarios:
 
-![AccessControl-Example1](Images/AccessControl-Example1.png)
+#### People Count Sensor-based Footfall (Simple Openings)
 
-1. We establish the Building servedBy relationship with the Turnstile to specify which person access granted events should be summed to calculate the Building’s Total and Unique Entering People Counts.
+![Occupancy-Example7](Images/Occupancy-BuildingFootfall-SimpleOpening.png)
 
-2. The Total Entering People Count Sensor and Unique Entering People Count Sensor are calculated by the WillowTwin based on the Person Access Events associated with the Building. The Total Entering People Count is defined as the sum of all access reader granted events for the defined period regardless of whether the same person has entered multiple times whereas the Unique Entering People Count is defined as the unique individuals who have entered for the defined period which will not increment if the same person enters multiple times.
+1. The modeling of an Opening (i.e. Door) and its Entering/Leaving People Count Sensors is the same as shown above for individual space footfall.
 
-3. While the Person Access Event is shown as if it were a twin in this image, it is NOT required to be created as an actual twin in the WillowTwin at this time. This Person Access Event is showing a record in the time series database and how it relates to the Turnstile which is required for the WillowTwin to calculate the Total and Unique Entering People Counts.
+2. Similarly, the Door is servedBy the People Count Sensor Equipment.
 
-4.  If we want to determine another space’s entering people count, we use the same servedBy relationship from the space. In this example we show a Level which has two Doors as its entry points. Note that in a multi-tenant building, it is common to have doors at the ends of the elevator lobby, but these are often access controlled by the tenant’s access control system rather than the building’s access control system. As such, it may not be possible to determine floor level occupancy purely from a connection to the building’s access control system.
+3. For Building Footfall, the Openings (i.e. Doors) which need to be summed to determine the total have an isEntryTo relationship to the Building.
+
+4. A pair of calculated capabilities, Total Entering/Leaving People Count Sensors, are added to the Building. While these are not often determined or provided by the sensor vendor, Willow sets these up to use in analytics.
+
+#### Access Control-based Footfall (Simple Openings)
+
+![Occupancy-Example7](Images/Occupancy-BuildingFootfall-AccessControl-SimpleOpening.png)
+
+1. Each Access Reader has a producedby relationship to either an Entering or Leaving Person Access Event based on whether the reader is providing entry or exit to the building.
+
+2. When there is both an entry and exit access reader on the same Door, they each have a serves relationship to the Door.
+
+3. Each Opening (i.e. Door or Turnstile) which needs to be summed to determine the total has an isEntryTo relationship to the Building.
+
+4. The Door gets a pair of calculated capabilities, Total Entering/Leaving People Count Sensors, which are used to provide a breakdown of which Openings are used most and least. While these are not often determined or provided by the sensor vendor, Willow sets these up to use in analytics.
+
+5. Similar to the above People Count Sensor example, a pair of calculated capabilities, Total Entering/Leaving People Count Sensors, are added to the Building. While these are not often determined or provided by the sensor vendor, Willow sets these up to use in analytics. For Access Control-based Footfall, a third calculated capability which is the Unique Entering People Count Sensor is added because Access Control Systems provide in the metadata of their Person Access Event payloads the details about which person has swiped the badge and thus daily unique counts are offered.
