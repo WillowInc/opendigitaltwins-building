@@ -41351,6 +41351,63 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CAVBoxReheat;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "CAV Box with Reheat"
+    },
+    "description": {
+      "en": "A type of terminal unit that modulates damper position to control airflow at a fixed setpoint and controls a reheat device to provide supplemental heating when appropriate"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CAVBox;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity"
+        },
+        "name": "nominalHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity unit"
+        },
+        "name": "nominalHeatingCapacityUnit",
+        "annotates": "nominalHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "re-heating method"
+        },
+        "name": "reHeatingMethod",
+        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CellStageCountSensor;1",
     "@type": "Interface",
     "displayName": {
