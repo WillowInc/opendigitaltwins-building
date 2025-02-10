@@ -7452,6 +7452,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Forecast;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Forecast"
+    },
+    "description": {
+      "en": "A predicted series of values in the future. A forecast includes a timestep which is the interval for each prediction (i.e. hourly) and a horizon which is the length of time into the future the forecast is generated (i.e. 7-day)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Capability;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Furniture;1",
     "@type": "Interface",
     "displayName": {
@@ -13853,6 +13870,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:Parameter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MarginalElectricityConsumptionGreenhouseGasEmissionsFactorForecast;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Marginal Electricity Consumption Greenhouse Gas Emissions Factor Forecast"
+    },
+    "description": {
+      "en": "A forecasted greenhouse gas emissions factor used to calculate the change in indirect emissions (in CO2e) that would result from a change in load (increase or decrease)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Forecast;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MarginalEmissionsHealthImpactCostFactorForecast;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Marginal Emissions Health Impact Cost Factor Forecast"
+    },
+    "description": {
+      "en": "The forecasted human life and health impact of using electricity at a particular time and place, based on the air pollution of marginal electricity generation (typically defined in units USD / MWh). Dollars used as a common numerical representation, the value of a statistical life (VSL). (i.e. WattTime Health Damage Forecast)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Forecast;1"
     ],
     "contents": [],
     "@context": [
