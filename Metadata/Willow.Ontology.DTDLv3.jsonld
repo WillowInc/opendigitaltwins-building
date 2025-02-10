@@ -58922,9 +58922,49 @@
     "extends": [
       "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity"
+        },
+        "name": "nominalHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity unit"
+        },
+        "name": "nominalHeatingCapacityUnit",
+        "annotates": "nominalHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "re-heating method"
+        },
+        "name": "reHeatingMethod",
+        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
