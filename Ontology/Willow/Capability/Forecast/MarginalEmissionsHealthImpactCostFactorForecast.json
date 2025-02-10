@@ -8,7 +8,7 @@
     "en": "The forecasted human life and health impact of using electricity at a particular time and place, based on the air pollution of marginal electricity generation (typically defined in units USD / MWh). Dollars used as a common numerical representation, the value of a statistical life (VSL). (i.e. WattTime Health Damage Forecast)"
   },
   "extends" : [
-    "dtmi:com:willowinc:RatioPerformanceIndicator;1"
+    "dtmi:com:willowinc:Forecast;1"
   ],
   "contents": [
 
