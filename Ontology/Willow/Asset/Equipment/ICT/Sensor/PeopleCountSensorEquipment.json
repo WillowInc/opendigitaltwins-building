@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:PeopleCountSensorEquipment;1",
   "@type": "Interface",
   "displayName": {
-    "en": "People Count Sensor"
+    "en": "People Count Sensor Equipment"
   },
   "extends" : [
     "dtmi:com:willowinc:SensorEquipment;1"
