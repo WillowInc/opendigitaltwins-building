@@ -30094,7 +30094,7 @@
     "@id": "dtmi:com:willowinc:DaylightSensorEquipment;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Daylight Sensor"
+      "en": "Daylight Sensor Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:SensorEquipment;1"
@@ -33445,7 +33445,7 @@
     "@id": "dtmi:com:willowinc:IAQSensorEquipment;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Indoor Air Quality Sensor"
+      "en": "Indoor Air Quality Sensor Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:SensorEquipment;1"
@@ -34565,7 +34565,7 @@
     "@id": "dtmi:com:willowinc:OccupancySensorEquipment;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Occupancy Sensor"
+      "en": "Occupancy Sensor Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:SensorEquipment;1"
@@ -35217,7 +35217,7 @@
     "@id": "dtmi:com:willowinc:PeopleCountSensorEquipment;1",
     "@type": "Interface",
     "displayName": {
-      "en": "People Count Sensor"
+      "en": "People Count Sensor Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:SensorEquipment;1"
@@ -38592,7 +38592,7 @@
     "@id": "dtmi:com:willowinc:VibrationSensorEquipment;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Vibration Sensor"
+      "en": "Vibration Sensor Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:SensorEquipment;1"
@@ -47732,75 +47732,6 @@
       "dtmi:com:willowinc:ConveyanceSystem;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PointGrabCogniPointSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "PointGrab CogniPoint Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PeopleCountSensorEquipment;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "height",
-        "displayName": {
-          "en": "Height"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "geoPosition",
-        "displayName": {
-          "en": "GeoPosition"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "connectionStatus",
-        "displayName": {
-          "en": "Connection Status"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "attachmentState",
-        "displayName": {
-          "en": "Attachment State"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "rotation",
-        "displayName": {
-          "en": "Rotation"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "metricPosition",
-        "displayName": {
-          "en": "Metric Position"
-        },
-        "writable": true,
-        "schema": "string"
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
