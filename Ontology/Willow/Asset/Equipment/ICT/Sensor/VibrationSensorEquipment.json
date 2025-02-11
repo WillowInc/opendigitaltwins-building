@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:VibrationSensorEquipment;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Vibration Sensor"
+    "en": "Vibration Sensor Equipment"
   },
   "extends" : [
     "dtmi:com:willowinc:SensorEquipment;1"
