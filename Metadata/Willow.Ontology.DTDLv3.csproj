@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <NoBuild>true</NoBuild>
+        <NuspecFile>Willow.Ontology.DTDLv3.nuspec</NuspecFile>
+    </PropertyGroup>
+</Project>

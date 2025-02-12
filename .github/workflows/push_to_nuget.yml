@@ -25,10 +25,11 @@ jobs:
       - name: Configure package generation directory
         run: |
           mkdir build
+          cp Metadata/Willow*.csproj build/
           cp Metadata/Willow*.jsonld build/
           cp Metadata/*.nuspec build/
           cp Metadata/ReadMe.md build/
       - name: 'Run nuget pack'
-        run: dotnet pack build/*.nuspec -o build
+        run: dotnet pack build/Willow.Ontology.DTDLv3.csproj -o build
       - name: 'Publish to nuget.org'
         run: dotnet nuget push build/*.nupkg -s "${{ env.NUGET_FEED_URL }}" --skip-duplicate -k ${{ secrets.NUGET_API_KEY }} 
