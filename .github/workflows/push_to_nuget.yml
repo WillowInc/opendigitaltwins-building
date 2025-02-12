@@ -13,16 +13,11 @@ env:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: 'Setup Nuget'
-        uses: nuget/setup-nuget@v2
-        with:
-          nuget-api-key: ${{ secrets.NUGET_API_KEY }}
-          nuget-version: '5.x'
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -34,6 +29,6 @@ jobs:
           cp Metadata/*.nuspec build/
           cp Metadata/ReadMe.md build/
       - name: 'Run nuget pack'
-        run: nuget pack build/*.nuspec -OutputDirectory build
+        run: dotnet pack build/*.nuspec -OutputDirectory build
       - name: 'Publish to nuget.org'
-        run: nuget push build/*.nupkg -Source "${{ env.NUGET_FEED_URL }}" -SkipDuplicate
+        run: dotnet nuget push build/*.nupkg -Source "${{ env.NUGET_FEED_URL }}" -SkipDuplicate -k ${{ secrets.NUGET_API_KEY }} 
