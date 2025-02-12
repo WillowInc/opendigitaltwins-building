@@ -29,6 +29,6 @@ jobs:
           cp Metadata/*.nuspec build/
           cp Metadata/ReadMe.md build/
       - name: 'Run nuget pack'
-        run: dotnet pack build/*.nuspec -OutputDirectory build
+        run: dotnet pack build/*.nuspec -o build
       - name: 'Publish to nuget.org'
-        run: dotnet nuget push build/*.nupkg -Source "${{ env.NUGET_FEED_URL }}" -SkipDuplicate -k ${{ secrets.NUGET_API_KEY }} 
+        run: dotnet nuget push build/*.nupkg -s "${{ env.NUGET_FEED_URL }}" --skip-duplicate -k ${{ secrets.NUGET_API_KEY }} 
