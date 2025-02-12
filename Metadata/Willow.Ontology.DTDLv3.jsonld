@@ -3146,6 +3146,52 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "Filename"
+        },
+        "name": "filename",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Hash MD5"
+        },
+        "name": "hashMD5",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "DataSize"
+        ],
+        "displayName": {
+          "en": "File Size"
+        },
+        "name": "fileSize",
+        "schema": "double",
+        "unit": "byte",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "file size unit"
+        },
+        "name": "fileSizeUnit",
+        "annotates": "fileSize",
+        "overrides": "unit",
+        "schema": "DataSizeUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "Custom Tags"
         },
         "name": "customTags",
@@ -3442,7 +3488,10 @@
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
