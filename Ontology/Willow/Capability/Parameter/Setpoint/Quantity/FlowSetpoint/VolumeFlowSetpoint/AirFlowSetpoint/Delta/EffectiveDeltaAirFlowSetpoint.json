@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EffectiveDeltaAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Delta Air Flow Setpoint"
+  },
+  "description": {"en": "The current value to which the differential airflow is being controlled based on current operating mode (i.e. occupied vs unoccupied)"},
+  "extends" : [
+    "dtmi:com:willowinc:DeltaAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

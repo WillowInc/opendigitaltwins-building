@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:TemperatureControlZoneSupplyAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Temperature-Control Zone Supply Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value of the supply air flow to a zone when performing temperature control"},
+  "extends" : [
+    "dtmi:com:willowinc:ZoneSupplyAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

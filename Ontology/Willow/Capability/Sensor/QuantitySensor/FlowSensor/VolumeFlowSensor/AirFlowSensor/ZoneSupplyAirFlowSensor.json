@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:TotalZoneAirFlowSupply;1",
+  "@id": "dtmi:com:willowinc:ZoneSupplyAirFlowSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Total Zone Air Flow Supply"
+    "en": "Zone Supply Air Flow Sensor"
   },
   "description": {"en": "The total volume flow of supply air to a zone calculated from one or more sensors"},
   "extends" : [
