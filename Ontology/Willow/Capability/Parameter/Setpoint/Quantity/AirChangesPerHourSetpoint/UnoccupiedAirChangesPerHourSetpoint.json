@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:UnoccupiedAirChangesPerHourSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Air Changes Per Hour Setpoint"
+  },
+  "description": {
+    "en": "The desired air changes per hour while the space is unoccupied, a.k.a. Unoccupied Air Change Rate Setpoint."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirChangesPerHourSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

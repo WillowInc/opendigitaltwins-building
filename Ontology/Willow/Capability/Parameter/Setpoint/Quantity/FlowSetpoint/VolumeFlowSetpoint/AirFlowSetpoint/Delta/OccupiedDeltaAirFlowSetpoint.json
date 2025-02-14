@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OccupiedDeltaAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Delta Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value for the differential airflow while the space is occupied, typically between the supply and exhaust airflow setpoints"},
+  "extends" : [
+    "dtmi:com:willowinc:DeltaAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

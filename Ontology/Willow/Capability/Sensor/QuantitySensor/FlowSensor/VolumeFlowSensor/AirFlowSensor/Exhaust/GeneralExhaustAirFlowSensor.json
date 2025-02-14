@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:GeneralExhaustAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "General Exhaust Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow of general exhaust air calculated from one or more sensors. General exhaust air removes contaminants from the entire space."},
+  "extends" : [
+    "dtmi:com:willowinc:ExhaustAirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
