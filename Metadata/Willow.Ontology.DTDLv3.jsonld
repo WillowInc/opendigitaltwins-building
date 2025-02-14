@@ -27341,6 +27341,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirChangesPerHourSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Changes Per Hour Setpoint"
+    },
+    "description": {
+      "en": "The desired number of times that the total air volume of a space is removed and replaced with ventilation air in an hour, a.k.a. Air Change Rate Setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirCompressor;1",
     "@type": "Interface",
     "displayName": {
@@ -34625,6 +34642,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupiedHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied High Limit"
+    },
+    "description": {
+      "en": "The upper limit on the equipment in occupied mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OccupiedLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Low Limit"
+    },
+    "description": {
+      "en": "The lower limit on the equipment in occupied mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupiedUnoccupiedActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -38282,6 +38333,40 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UnoccupiedHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied High Limit"
+    },
+    "description": {
+      "en": "The upper limit on the equipment in unooccupied mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UnoccupiedLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Low Limit"
+    },
+    "description": {
+      "en": "The lower limit on the equipment in unoccupied mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -42995,6 +43080,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EffectiveAirChangesPerHourSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Effective Air Changes Per Hour Setpoint"
+    },
+    "description": {
+      "en": "The current value to which the air changes per hour is being controlled based on current operating mode (i.e. occupied vs unoccupied), a.k.a. Effective Air Change Rate Setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirChangesPerHourSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EjectorPump;1",
     "@type": "Interface",
     "displayName": {
@@ -46770,6 +46872,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupiedAirChangesPerHourSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Air Changes Per Hour Setpoint"
+    },
+    "description": {
+      "en": "The desired air changes per hour while the space is occupied, a.k.a. Occupied Air Change Rate Setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirChangesPerHourSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupiedState;1",
     "@type": "Interface",
     "displayName": {
@@ -49856,6 +49975,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UnoccupiedAirChangesPerHourSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Air Changes Per Hour Setpoint"
+    },
+    "description": {
+      "en": "The desired air changes per hour while the space is unoccupied, a.k.a. Unoccupied Air Change Rate Setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirChangesPerHourSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UnoccupiedState;1",
     "@type": "Interface",
     "displayName": {
@@ -52668,6 +52804,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DeltaAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Air Flow Sensor"
+    },
+    "description": {
+      "en": "The volume flow feedback from a sensor associated with the differential airflow, typically between the supply and exhaust airflow."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DeltaChilledWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -54144,6 +54297,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustFanGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Fan Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFanGroup;1"
     ],
     "contents": [],
     "@context": [
@@ -58891,6 +59058,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SupplyFanGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supply Fan Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFanGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SupplyVAVAirflowControlValveReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -59695,6 +59876,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneSupplyAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Supply Air Flow Sensor"
+    },
+    "description": {
+      "en": "The total volume flow of supply air to a zone calculated from one or more sensors"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -60796,6 +60994,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OpenSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value for the differential airflow, typically between the supply and exhaust airflow setpoints"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -62263,6 +62478,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:EmergencyAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FumeHoodExhaustAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fume Hood Exhaust Air Flow Sensor"
+    },
+    "description": {
+      "en": "The volume flow of fume hood exhaust air calculated from one or more sensors. Fume hood exhaust air removes contaminants from a fume hood workspace."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustAirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GeneralExhaustAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "General Exhaust Air Flow Sensor"
+    },
+    "description": {
+      "en": "The volume flow of general exhaust air calculated from one or more sensors. General exhaust air removes contaminants from the entire space."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustAirFlowSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -68961,6 +69210,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TotalExhaustAirFlowSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Exhaust Air Flow Sensor"
+    },
+    "description": {
+      "en": "The total volume flow of exhaust air calculated from one or more sensors. For pressurization zones, this is typically the sum of general and fume exhaust."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustAirFlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -69592,6 +69858,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneSupplyAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Supply Air Flow Supply Setpoint"
+    },
+    "description": {
+      "en": "The desired value of the total volume flow of supply air to a zone"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -70464,6 +70747,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EffectiveDeltaAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Delta Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The current value to which the differential airflow is being controlled based on current operating mode (i.e. occupied vs unoccupied)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DeltaAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EffectiveHeatingZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -70475,6 +70775,23 @@
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
       "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EffectiveZoneSupplyAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Effective Zone Supply Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The current value to which the zone supply air flow is being controlled based on current operating mode"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ZoneSupplyAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -71011,6 +71328,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterPumpRunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FumeHoodExhaustAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fume Hood Exhaust Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value for the volume flow of fume hood exhaust air. Fume hood exhaust air removes contaminants from a fume hood workspace."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:GeneralExhaustAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "General Exhaust Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value for the volume flow of general exhaust air. General exhaust air removes contaminants from the entire space."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -73796,6 +74147,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupiedDeltaAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Delta Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value for the differential airflow while the space is occupied, typically between the supply and exhaust airflow setpoints"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DeltaAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupiedHeatingZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75311,6 +75679,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TemperatureControlZoneSupplyAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature-Control Zone Supply Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value of the supply air flow to a zone when performing temperature control"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ZoneSupplyAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TertiaryLoopChilledWaterDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75668,6 +76053,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TotalExhaustAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Exhaust Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value for the total volume flow of exhaust air. For pressurization zones, this is typically the sum of general and fume exhaust."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ExhaustAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UnoccupiedCoolingZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75679,6 +76081,23 @@
     "extends": [
       "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
       "dtmi:com:willowinc:UnoccupiedCoolingSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UnoccupiedDeltaAirFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Delta Air Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value for the differential airflow while the space is unoccupied, typically between the supply and exhaust airflow setpoints"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DeltaAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
