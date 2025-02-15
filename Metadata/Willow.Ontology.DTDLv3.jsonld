@@ -18989,9 +18989,49 @@
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity"
+        },
+        "name": "nominalHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity unit"
+        },
+        "name": "nominalHeatingCapacityUnit",
+        "annotates": "nominalHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "heating method"
+        },
+        "name": "heatingMethod",
+        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -30908,6 +30948,35 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElectricDuctHeater;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electric Duct Heater"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DuctHeater;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "power input"
+        },
+        "name": "powerInput",
+        "schema": "double",
+        "unit": "watt",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricRadiantHeater;1",
     "@type": "Interface",
     "displayName": {
@@ -33081,6 +33150,52 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterDuctHeater;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Duct Heater"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DuctHeater;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "flow capacity"
+        },
+        "name": "flowCapacity",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "flow capacity unit"
+        },
+        "name": "flowCapacityUnit",
+        "annotates": "flowCapacity",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -37240,6 +37355,30 @@
       "dtmi:com:willowinc:CardioFitnessEquipment;1"
     ],
     "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamDuctHeater;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Duct Heater"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DuctHeater;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "condensate"
+        },
+        "name": "condensate",
+        "schema": "integer",
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
