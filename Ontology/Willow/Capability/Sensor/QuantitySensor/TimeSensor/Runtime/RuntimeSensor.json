@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:RuntimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runtime Sensor"
+  },
+  "description": {"en": "Measures the duration for which a device was in an active or “on” state"},
+  "extends" : [
+    "dtmi:com:willowinc:TimeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
