@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReplaceFilterRuntimeSensorSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Filter Runtime Sensor Setpoint"
+  },
+  "description": {"en": "Time limit for the accumulated duration for which a filter was in an active or “on” state"},
+  "extends" : [
+    "dtmi:com:willowinc:RuntimeSensorSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

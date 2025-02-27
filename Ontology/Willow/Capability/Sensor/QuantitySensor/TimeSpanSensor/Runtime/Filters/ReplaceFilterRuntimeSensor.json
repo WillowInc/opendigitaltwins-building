@@ -2,9 +2,9 @@
   "@id": "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Replace Air Filter Runtime Sensor"
+    "en": "Replace Filter Runtime Sensor"
   },
-  "description": {"en": "Measures how many hours since the last time the air filter was replaced"},
+  "description": {"en": "Measures how many hours since the last time the filter was replaced"},
   "extends" : [
     "dtmi:com:willowinc:RuntimeSensor;1"
   ],

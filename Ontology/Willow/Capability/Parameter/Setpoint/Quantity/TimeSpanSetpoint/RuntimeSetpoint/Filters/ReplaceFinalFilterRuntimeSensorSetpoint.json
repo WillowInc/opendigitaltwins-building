@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Final Filter Runtime Sensor"
+  },
+  "description": {"en": "Time limit for the accumulated duration for which a final filter was in an active or “on” state"},
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceFilterRuntimeSensorSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
