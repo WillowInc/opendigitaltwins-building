@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:com:willowinc:ReplaceAirPreFilterRuntimeSensor;1",
+  "@id": "dtmi:com:willowinc:ReplaceAirPreFilterRuntimeSensorSetpoint;1",
   "@type": "Interface",
   "displayName": {
     "en": "Replace Air Pre-Filter Runtime Sensor"
