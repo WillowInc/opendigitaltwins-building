@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Filter Runtime Sensor"
+  },
+  "description": {"en": "Measures how many hours since the last time the final filter was replaced"},
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
