@@ -36877,6 +36877,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RuntimeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runtime Sensor"
+    },
+    "description": {
+      "en": "Measures the duration for which a device was in an active or \u201Con\u201D state"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TimeSpanSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SaladDryer;1",
     "@type": "Interface",
     "displayName": {
@@ -48690,6 +48707,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Filter Runtime Sensor"
+    },
+    "description": {
+      "en": "Measures how many hours since the last time the filter was replaced"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RuntimeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReplaceFinalFilterState;1",
     "@type": "Interface",
     "displayName": {
@@ -58346,6 +58380,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanVFDFrequencySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Filter Runtime Sensor"
+    },
+    "description": {
+      "en": "Measures how many hours since the last time the final filter was replaced"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Filter Runtime Sensor"
+    },
+    "description": {
+      "en": "Measures how many hours since the last time the pre filter was replaced"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1"
     ],
     "contents": [],
     "@context": [
