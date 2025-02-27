@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Air Pre-Filter Runtime Sensor"
+  },
+  "description": {"en": "Measures how many hours since the last time the air pre-filter was replaced"},
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceAirFilterRuntimeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
