@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Pre-Filter Runtime Setpoint"
+  },
+  "description": {"en": "Time limit for the accumulated duration for which a pre-filter was in an active or “on” state"},
+  "extends" : [
+    "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
