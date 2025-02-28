@@ -49062,6 +49062,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RuntimeSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Runtime Setpoint"
+    },
+    "description": {
+      "en": "Time limit for the accumulated duration for which a device was in an active or \u201Con\u201D state"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TimeSpanSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SensorFailureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -58387,10 +58404,27 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Filter Runtime Setpoint"
+    },
+    "description": {
+      "en": "Time limit for the accumulated duration for which a filter was in an active or \u201Con\u201D state"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RuntimeSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Replace Filter Runtime Sensor"
+      "en": "Replace Final Filter Runtime Sensor"
     },
     "description": {
       "en": "Measures how many hours since the last time the final filter was replaced"
@@ -58407,10 +58441,10 @@
     "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Replace Filter Runtime Sensor"
+      "en": "Replace Pre-Filter Runtime Sensor"
     },
     "description": {
-      "en": "Measures how many hours since the last time the pre filter was replaced"
+      "en": "Measures how many hours since the last time the pre-filter was replaced"
     },
     "extends": [
       "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1"
@@ -68112,6 +68146,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Final Filter Runtime Setpoint"
+    },
+    "description": {
+      "en": "Time limit for the accumulated duration for which a final filter was in an active or \u201Con\u201D state"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Replace Pre-Filter Runtime Setpoint"
+    },
+    "description": {
+      "en": "Time limit for the accumulated duration for which a pre-filter was in an active or \u201Con\u201D state"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1"
     ],
     "contents": [],
     "@context": [
