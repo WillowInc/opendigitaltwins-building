@@ -9,16 +9,6 @@
   ],
   "contents": [
     {
-      "@type": ["AngularVelocity", "Property"],
-      "displayName": {
-        "en": "maximum rotation speed"
-      },
-      "name": "maxRotationSpeed",
-      "schema": "double",
-      "unit": "revolutionPerMinute",
-      "writable": true
-    },
-    {
       "@type": ["Property", "Length"],
       "displayName": {
         "en": "blade diameter"
