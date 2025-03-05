@@ -22599,46 +22599,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "duct inlet"
-        },
-        "name": "ductInlet",
-        "schema": "dtmi:com:willowinc:DuctConnection;1"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HVACOvalDuct;1",
     "@type": "Interface",
     "displayName": {
@@ -27897,20 +27857,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AirCurtain;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air Curtain"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:AirDiffuser;1",
     "@type": "Interface",
     "displayName": {
@@ -29033,20 +28979,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BoosterFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Booster Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BreadSlicer;1",
     "@type": "Interface",
     "displayName": {
@@ -29231,65 +29163,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CeilingFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Ceiling Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "AngularVelocity",
-          "Property"
-        ],
-        "displayName": {
-          "en": "maximum rotation speed"
-        },
-        "name": "maxRotationSpeed",
-        "schema": "double",
-        "unit": "revolutionPerMinute",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Length"
-        ],
-        "displayName": {
-          "en": "blade diameter"
-        },
-        "name": "bladeDiameter",
-        "schema": "double",
-        "unit": "millimetre",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "blade diameter unit"
-        },
-        "name": "bladeDiameterUnit",
-        "annotates": "bladeDiameter",
-        "overrides": "unit",
-        "schema": "LengthUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -31403,20 +31276,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExitSign;1",
     "@type": "Interface",
     "displayName": {
@@ -33359,6 +33218,47 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1",
+      "dtmi:com:willowinc:Fan;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "fan"
+        },
+        "name": "fan",
+        "schema": "dtmi:com:willowinc:Fan;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "duct inlet"
+        },
+        "name": "ductInlet",
+        "schema": "dtmi:com:willowinc:DuctConnection;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACHeatTracing;1",
     "@type": "Interface",
     "displayName": {
@@ -35057,20 +34957,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OutsideIlluminanceSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -36350,20 +36236,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PressurizationFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pressurization Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PumpCurrentSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -36670,20 +36542,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReplaceBatteryState;1",
     "@type": "Interface",
     "displayName": {
@@ -36790,20 +36648,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -37487,20 +37331,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SupplyFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Supply Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SurfaceTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38140,20 +37970,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:TrafficEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TransferFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Transfer Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -39952,6 +39768,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirCurtain;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Curtain"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41641,6 +41471,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BoosterFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Booster Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BrazedPlateHeatExchanger;1",
     "@type": "Interface",
     "displayName": {
@@ -41739,6 +41583,52 @@
         },
         "name": "reHeatingMethod",
         "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CeilingFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ceiling Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "displayName": {
+          "en": "blade diameter"
+        },
+        "name": "bladeDiameter",
+        "schema": "double",
+        "unit": "millimetre",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "blade diameter unit"
+        },
+        "name": "bladeDiameterUnit",
+        "annotates": "bladeDiameter",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
       }
     ],
     "@context": [
@@ -42081,20 +41971,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:InletDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckSupplyFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Supply Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SupplyFan;1"
     ],
     "contents": [],
     "@context": [
@@ -43809,20 +43685,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ElevatorPressurizationFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Elevator Pressurization Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PressurizationFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EmergencyEquipmentStopAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -44305,6 +44167,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -45307,20 +45183,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:InletDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckSupplyFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Supply Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SupplyFan;1"
     ],
     "contents": [],
     "@context": [
@@ -47221,6 +47083,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OutsideAirFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OutsideAirHumiditySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -48219,6 +48095,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PressurizationFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressurization Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PumpElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -48735,6 +48625,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -48957,6 +48861,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -49458,20 +49376,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:StairPressurizationFan;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Stair Pressurization Fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PressurizationFan;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:StartActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -49865,6 +49769,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SupplyFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supply Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1",
     "@type": "Interface",
     "displayName": {
@@ -50012,6 +49930,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:PressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TransferFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Transfer Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFan;1"
     ],
     "contents": [],
     "@context": [
@@ -52493,6 +52425,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckSupplyFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Supply Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupplyFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressedAirSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -53834,6 +53780,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElevatorPressurizationFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Elevator Pressurization Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressurizationFan;1"
     ],
     "contents": [],
     "@context": [
@@ -55416,6 +55376,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:InletAirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckSupplyFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Supply Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupplyFan;1"
     ],
     "contents": [],
     "@context": [
@@ -58991,6 +58965,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:FireSuppressionSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StairPressurizationFan;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Stair Pressurization Fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressurizationFan;1"
     ],
     "contents": [],
     "@context": [
