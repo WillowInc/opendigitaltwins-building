@@ -5,7 +5,8 @@
     "en": "Fan"
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipment;1"
+    "dtmi:com:willowinc:HVACEquipment;1",
+    "dtmi:com:willowinc:Fan;1"
   ],
   "contents": [
     {
