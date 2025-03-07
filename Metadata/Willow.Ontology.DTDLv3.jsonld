@@ -58729,6 +58729,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReturnFanGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Fan Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACFanGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReturnFanVFDFrequencySensor;1",
     "@type": "Interface",
     "displayName": {
