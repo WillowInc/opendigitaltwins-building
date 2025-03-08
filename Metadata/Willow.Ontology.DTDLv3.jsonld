@@ -16470,12 +16470,8 @@
       "dtmi:com:willowinc:HVACEquipment;1"
     ],
     "contents": [],
-    "schemas": [],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -27931,12 +27927,8 @@
       "dtmi:com:willowinc:AirHandlingUnitSection;1"
     ],
     "contents": [],
-    "schemas": [],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -27952,12 +27944,8 @@
       "dtmi:com:willowinc:AirHandlingUnitSection;1"
     ],
     "contents": [],
-    "schemas": [],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -27973,12 +27961,8 @@
       "dtmi:com:willowinc:AirHandlingUnitSection;1"
     ],
     "contents": [],
-    "schemas": [],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -27994,12 +27978,8 @@
       "dtmi:com:willowinc:AirHandlingUnitSection;1"
     ],
     "contents": [],
-    "schemas": [],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -28015,12 +27995,8 @@
       "dtmi:com:willowinc:AirHandlingUnitSection;1"
     ],
     "contents": [],
-    "schemas": [],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -41964,6 +41940,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdDeckAirHandlingUnitDischargeSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Deck Air Handling Unit Discharge Section"
+    },
+    "description": {
+      "en": "A cold deck discharge section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitDischargeSection;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ColdDeckInletDamper;1",
     "@type": "Interface",
     "displayName": {
@@ -45169,6 +45162,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:Faucet;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotDeckAirHandlingUnitDischargeSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Deck Air Handling Unit Discharge Section"
+    },
+    "description": {
+      "en": "A hot deck discharge section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitDischargeSection;1"
     ],
     "contents": [],
     "@context": [
