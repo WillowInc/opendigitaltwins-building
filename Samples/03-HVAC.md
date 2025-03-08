@@ -55,3 +55,31 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 5. There are many capabilities which are associated with the overall room. These are modeled as capabilities of the HVAC Pressurization Zone. A few of these are indicated in this example such as the Discharge Airflow Setpoint and Air Changes Per Hour but this is not an exhaustive list.
 
 6. Similarly, each of the assets and asset groups shown in this example have capabilities associated with them. For simplicity on a few of these capabilities are shown such as the Face Velocity Setpoint on the Fume Hood or the Damper Position Actuator on the Supply VAV Airflow Control Valve.
+
+## Dual Duct System
+
+### Single Supply Fan AHU
+
+![HVACDualDuctAHU-Example1](Images/HVACDualDuctAHU-Example1.png)
+
+1. In this example, we show how to configure a Dual Duct Air Handling Unit which has a single Supply Fan with two Air Handling Discharge Sections - one for heated air (Hot Deck) and one for cooled air (Cold Deck).
+
+2. The Supply Fan has its own capabilities such as the Fan Run Level Actuator and Fan VFD Frequency Sensor.
+
+3. Each of the Hot and Cold Deck AHU Discharge Sections has their own capabilities such as a Discharge Air Temperature Sensor.
+
+### Dual Supply Fan AHU
+
+![HVACDualDuctAHU-Example2](Images/HVACDualDuctAHU-Example2.png)
+
+1. In this example, we show how to configure a Dual Duct Air Handling Unit which has two Supply Fans, one for each discharge section. In this case, we have a Cold Deck Supply Fan and a Hot Deck Supply Fan in addition to the Hot and Cold Deck AHU Discharge Sections.
+
+### Dual Duct VAV Box
+
+![HVACDualDuctVAV-Example1](Images/HVACDualDuctVAV-Example1.png)
+
+1. In this example, we show how to configure a Dual Duct VAV Box which has a Hot Deck Inlet Damper and Cold Deck Inlet Damper.
+
+2. Each Damper has their own capabilities such as the Damper Position Actuator.
+
+3. Just like single duct systems, there is an isFedBy relationship from the VAV Box to the Air Handling Unit

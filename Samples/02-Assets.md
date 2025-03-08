@@ -43,3 +43,13 @@ Systems are another means of giving identity to a collection of assets which are
 3. The water heater feeds water to a Plumbing Valve which can be used to shut-off or isolate water downstream in case maintenance needs to be performed on the Faucet. In normal operations, the valve is open and sends water to the Faucet.
 
 4. The Plumbing Valve #3 also sends the water to the Domestic Water Pump which is performing the work of circulating the water back to the water heater via another Plumbing Valve.
+
+## Asset Components
+
+Asset components are parts of an asset that have their own identity. This is a flexible way to model assets that can have a variety of configurations and quantities of types of components.
+
+![AssetComponent-Example1](Images/AssetComponents-Example1.png)
+
+1. The `isPartOf` relationship is used between two assets to define the Asset-Component hierarchy. In this example, there is a Supply Fan and Exhaust Fan that are part of (components of) the Air Handling Unit. The ontology does not put any constraints on which types of assets can be components of an asset. In other words, the defintion of "asset component" is defined purely by the isPartOf relationship.
+
+2. When capabilities are associated with a component, they are directly related to the component twin.
