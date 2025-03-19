@@ -45353,6 +45353,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACAirHandlingUnitGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACAirSystem;1",
     "@type": "Interface",
     "displayName": {
