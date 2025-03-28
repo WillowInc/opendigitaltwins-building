@@ -37096,6 +37096,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:StandbyModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Standby Mode State"
+    },
+    "description": {
+      "en": "When \u0027true\u0027, equipment is operating in a standby mode as set by a normal schedule, overtime schedule, or manual override."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryModeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:StartActuator;1",
     "@type": "Interface",
     "displayName": {
