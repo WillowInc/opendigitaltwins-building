@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Workspace;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Workspace"
+  },
+  "description": {
+    "en": "A space which is being used for work and typically contains an asset such as a workstation. Usually part of a room."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:InteriorSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
