@@ -41462,6 +41462,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BoilerGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Boiler Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BollardLuminaire;1",
     "@type": "Interface",
     "displayName": {
