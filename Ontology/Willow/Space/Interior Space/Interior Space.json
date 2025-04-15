@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:InteriorSpace;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Interior space"
+  },
+  "description": {
+    "en": "A space within an architectural structure."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
