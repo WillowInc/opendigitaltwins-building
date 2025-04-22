@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:BlastChiller;1",
   "@type": "Interface",
   "displayName": {
-    "en": "BlastChiller"
+    "en": "Blast Chiller"
   },
   "description": {
     "en": "An food storage refrigeration equipment used to quickly cool or freeze foods."
