@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:HVACFan;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Fan"
+    "en": "HVAC Fan"
   },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipment;1",
