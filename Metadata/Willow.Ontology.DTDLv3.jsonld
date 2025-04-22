@@ -22487,7 +22487,7 @@
     "@id": "dtmi:com:willowinc:HVACDamper;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Damper"
+      "en": "HVAC Damper"
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1"
@@ -33209,7 +33209,7 @@
     "@id": "dtmi:com:willowinc:HVACFan;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Fan"
+      "en": "HVAC Fan"
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1",
@@ -41448,7 +41448,7 @@
     "@id": "dtmi:com:willowinc:BlastChiller;1",
     "@type": "Interface",
     "displayName": {
-      "en": "BlastChiller"
+      "en": "Blast Chiller"
     },
     "description": {
       "en": "An food storage refrigeration equipment used to quickly cool or freeze foods."
