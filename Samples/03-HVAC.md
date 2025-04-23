@@ -86,7 +86,7 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 ## Chilled Beam
 
-Chilled Beams are a type of terminal unit located in a ceiling that receive chilled water too cool a space. Passive chilled beams use natural convection to provide conditioning to the space whereas active chilled beams have a primary air supply which forces the air into the space.
+Chilled Beams are a type of terminal unit located in a ceiling that receive chilled water to cool a space. Passive chilled beams use natural convection to provide conditioning to the space whereas active chilled beams have a primary air supply which forces the air into the space. Active chilled beams may also receive hot water to enable heating a space.
 
 ### Active Chilled Beam
 
