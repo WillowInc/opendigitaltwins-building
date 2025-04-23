@@ -83,3 +83,17 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 2. Each Damper has their own capabilities such as the Damper Position Actuator.
 
 3. Just like single duct systems, there is an isFedBy relationship from the VAV Box to the Air Handling Unit
+
+## Chilled Beam
+
+Chilled Beams are a type of terminal unit located in a ceiling that receive chilled water to cool a space. Passive chilled beams use natural convection to provide conditioning to the space whereas active chilled beams have a primary air supply which forces the air into the space. Active chilled beams may also receive hot water to enable heating a space.
+
+### Active Chilled Beam
+
+![HVACChilledBeam-Example1](Images/HVACChilledBeam-Example1.png)
+
+1. Each Active Chilled Beam is fed by Supply Air from an upstream unit. In this example, we show that being a Constant Air Volume Box (CAV Box).
+
+2. Each chilled beam has a chilled water valve so points associated with the individual chilled beam's valve are directly associated with the chilled beam.
+
+3. Points that are associated with the room/zone or the primary supply air control are associated with the upstream unit which is controlling the airflow such as the CAV Box.
