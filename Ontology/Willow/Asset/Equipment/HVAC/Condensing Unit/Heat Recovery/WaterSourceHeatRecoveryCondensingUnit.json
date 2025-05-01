@@ -8,7 +8,8 @@
     "en": "A type of condensing unit which provides cooling by transferring heat to a water loop and also uses heat recovered from the cooling process to provide heating."
   },
   "extends" : [
-    "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1"
+    "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1",
+    "dtmi:com:willowinc:WaterSourceCondensingUnit;1"
   ],
   "contents": [
 
