@@ -38875,6 +38875,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VRFOutdoorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF Outdoor Unit"
+    },
+    "description": {
+      "en": "A variable refrigerant flow type of condensing unit which uses an inverter adjust its output and vary the amount of refrigerant to each VRF indoor unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WallAirConditioner;1",
     "@type": "Interface",
     "displayName": {
@@ -45023,7 +45040,8 @@
       "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating by transferring heat to or from the ground"
     },
     "extends": [
-      "dtmi:com:willowinc:HeatPumpCondensingUnit;1"
+      "dtmi:com:willowinc:HeatPumpCondensingUnit;1",
+      "dtmi:com:willowinc:GroundSourceCondensingUnit;1"
     ],
     "contents": [],
     "@context": [
@@ -50716,6 +50734,59 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VRFHeatPumpOutdoorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF Heat Pump Outdoor Unit"
+    },
+    "description": {
+      "en": "A VRF outdoor unit which includes a heat pump which enables the unit to provide cooling and heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VRFOutdoorUnit;1",
+      "dtmi:com:willowinc:HeatPumpCondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VRFHeatRecoveryOutdoorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF Heat Recovery Outdoor Unit"
+    },
+    "description": {
+      "en": "A VRF outdoor unit which provides cooling and also uses heat recovered from the cooling process to provide heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VRFOutdoorUnit;1",
+      "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VRFIndoorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF Indoor Unit"
+    },
+    "description": {
+      "en": "A variable refrigerant flow type of fan coil unit which receives a varying amount of refrigerant from its connected VRF outdoor unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanCoilUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WalkInFumeHood;1",
     "@type": "Interface",
     "displayName": {
@@ -50880,7 +50951,8 @@
       "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating by transferring heat to or from a water loop."
     },
     "extends": [
-      "dtmi:com:willowinc:HeatPumpCondensingUnit;1"
+      "dtmi:com:willowinc:HeatPumpCondensingUnit;1",
+      "dtmi:com:willowinc:WaterSourceCondensingUnit;1"
     ],
     "contents": [],
     "@context": [
@@ -50897,7 +50969,8 @@
       "en": "A type of condensing unit which provides cooling by transferring heat to a water loop and also uses heat recovered from the cooling process to provide heating."
     },
     "extends": [
-      "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1"
+      "dtmi:com:willowinc:HeatRecoveryCondensingUnit;1",
+      "dtmi:com:willowinc:WaterSourceCondensingUnit;1"
     ],
     "contents": [],
     "@context": [
@@ -59896,6 +59969,42 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VRFWaterSourceHeatPumpOutdoorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF Water Source Heat Pump Outdoor Unit"
+    },
+    "description": {
+      "en": "A VRF outdoor unit which includes a heat pump which enables the unit to provide cooling and heating by transferring heat to or from a water loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VRFHeatPumpOutdoorUnit;1",
+      "dtmi:com:willowinc:WaterSourceCondensingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VRFWaterSourceHeatRecoveryOutdoorUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF Water Source Heat Recovery Outdoor Unit"
+    },
+    "description": {
+      "en": "A VRF outdoor unit which provides cooling by transferring heat to a water loop and also uses heat recovered from the cooling process to provide heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VRFHeatRecoveryOutdoorUnit;1",
+      "dtmi:com:willowinc:WaterSourceCondensingUnit;1"
     ],
     "contents": [],
     "@context": [
