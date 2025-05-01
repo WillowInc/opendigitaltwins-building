@@ -59976,6 +59976,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VRFSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "VRF System"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACRefrigerantSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VRFWaterSourceHeatPumpOutdoorUnit;1",
     "@type": "Interface",
     "displayName": {
