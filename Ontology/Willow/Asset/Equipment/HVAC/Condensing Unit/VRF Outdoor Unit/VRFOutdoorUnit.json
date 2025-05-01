@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:VRFOutdoorUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VRF Outdoor Unit"
+  },
+  "description": {
+    "en": "A variable refrigerant flow type of condensing unit which uses an inverter adjust its output and vary the amount of refrigerant to each VRF indoor unit."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CondensingUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:VRFHeatPumpOutdoorUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VRF Heat Pump Outdoor Unit"
+  },
+  "description": {
+    "en": "A VRF outdoor unit which includes a heat pump which enables the unit to provide cooling and heating."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VRFOutdoorUnit;1",
+    "dtmi:com:willowinc:HeatPumpCondensingUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
