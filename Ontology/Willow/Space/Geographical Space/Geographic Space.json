@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:GeographicSpace;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Geographic space"
+  },
+  "description": {
+    "en": "A planar space usually defined by a surveyed boundary."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

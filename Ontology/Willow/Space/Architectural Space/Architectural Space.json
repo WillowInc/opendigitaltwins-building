@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:ArchitecturalSpace;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Architectural space"
+  },
+  "description": {
+    "en": "A physical structure located in a geographic area, or part of another physical structure. Typically a building or part of a building like a tower."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

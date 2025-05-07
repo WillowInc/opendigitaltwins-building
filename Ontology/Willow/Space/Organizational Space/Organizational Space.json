@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:OrganizationalSpace;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Organizational space"
+  },
+  "description": {
+    "en": "A space that is defined by an arbitrary and possibly invisible boundary within an interior or exterior space."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
