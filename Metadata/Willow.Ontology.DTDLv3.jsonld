@@ -5914,6 +5914,18 @@
       },
       {
         "@type": "Property",
+        "name": "ieccClimateZone",
+        "displayName": {
+          "en": "IECC Climate Zone"
+        },
+        "description": {
+          "en": "The Climate Zone as defined by IECC which is based on the location of the building."
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:BuildingIECCClimateZone;1"
+      },
+      {
+        "@type": "Property",
         "name": "coordinates",
         "displayName": {
           "en": "Coordinates"
@@ -6208,6 +6220,93 @@
           {
             "enumValue": "Worship Facility",
             "name": "WorshipFacility"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:BuildingIECCClimateZone;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "oneA",
+            "displayName": "1A - Very Hot Humid",
+            "enumValue": "1A"
+          },
+          {
+            "name": "twoA",
+            "displayName": "2A Hot Humid",
+            "enumValue": "2A"
+          },
+          {
+            "name": "twoB",
+            "displayName": "2B Hot Dry",
+            "enumValue": "2B"
+          },
+          {
+            "name": "threeA",
+            "displayName": "3A Warm Humid",
+            "enumValue": "3A"
+          },
+          {
+            "name": "threeB",
+            "displayName": "3B Warm Dry",
+            "enumValue": "3B"
+          },
+          {
+            "name": "threeC",
+            "displayName": "3C Warm Marine",
+            "enumValue": "3C"
+          },
+          {
+            "name": "fourA",
+            "displayName": "4A Mixed Humid",
+            "enumValue": "4A"
+          },
+          {
+            "name": "fourB",
+            "displayName": "4B Mixed Dry",
+            "enumValue": "4B"
+          },
+          {
+            "name": "fourC",
+            "displayName": "4C Mixed Marine",
+            "enumValue": "4C"
+          },
+          {
+            "name": "fiveA",
+            "displayName": "5A Cool Humid",
+            "enumValue": "5A"
+          },
+          {
+            "name": "fiveB",
+            "displayName": "5B Cool Dry",
+            "enumValue": "5B"
+          },
+          {
+            "name": "fiveC",
+            "displayName": "5C Cool Marine",
+            "enumValue": "5C"
+          },
+          {
+            "name": "sixA",
+            "displayName": "6A Cold Humid",
+            "enumValue": "6A"
+          },
+          {
+            "name": "sixB",
+            "displayName": "6B Cold Dry",
+            "enumValue": "6B"
+          },
+          {
+            "name": "seven",
+            "displayName": "7 Very Cold",
+            "enumValue": "7"
+          },
+          {
+            "name": "eight",
+            "displayName": "8 Subarctic/Arctic",
+            "enumValue": "8"
           }
         ]
       },
@@ -8667,6 +8766,18 @@
       },
       {
         "@type": "Property",
+        "name": "ieccClimateZone",
+        "displayName": {
+          "en": "IECC Climate Zone"
+        },
+        "description": {
+          "en": "The Climate Zone as defined by IECC which is based on the location of the building."
+        },
+        "writable": true,
+        "schema": "dtmi:com:willowinc:SubstructureIECCClimateZone;1"
+      },
+      {
+        "@type": "Property",
         "name": "coordinates",
         "displayName": {
           "en": "Coordinates"
@@ -8790,6 +8901,93 @@
       }
     ],
     "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:SubstructureIECCClimateZone;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "oneA",
+            "displayName": "1A - Very Hot Humid",
+            "enumValue": "1A"
+          },
+          {
+            "name": "twoA",
+            "displayName": "2A Hot Humid",
+            "enumValue": "2A"
+          },
+          {
+            "name": "twoB",
+            "displayName": "2B Hot Dry",
+            "enumValue": "2B"
+          },
+          {
+            "name": "threeA",
+            "displayName": "3A Warm Humid",
+            "enumValue": "3A"
+          },
+          {
+            "name": "threeB",
+            "displayName": "3B Warm Dry",
+            "enumValue": "3B"
+          },
+          {
+            "name": "threeC",
+            "displayName": "3C Warm Marine",
+            "enumValue": "3C"
+          },
+          {
+            "name": "fourA",
+            "displayName": "4A Mixed Humid",
+            "enumValue": "4A"
+          },
+          {
+            "name": "fourB",
+            "displayName": "4B Mixed Dry",
+            "enumValue": "4B"
+          },
+          {
+            "name": "fourC",
+            "displayName": "4C Mixed Marine",
+            "enumValue": "4C"
+          },
+          {
+            "name": "fiveA",
+            "displayName": "5A Cool Humid",
+            "enumValue": "5A"
+          },
+          {
+            "name": "fiveB",
+            "displayName": "5B Cool Dry",
+            "enumValue": "5B"
+          },
+          {
+            "name": "fiveC",
+            "displayName": "5C Cool Marine",
+            "enumValue": "5C"
+          },
+          {
+            "name": "sixA",
+            "displayName": "6A Cold Humid",
+            "enumValue": "6A"
+          },
+          {
+            "name": "sixB",
+            "displayName": "6B Cold Dry",
+            "enumValue": "6B"
+          },
+          {
+            "name": "seven",
+            "displayName": "7 Very Cold",
+            "enumValue": "7"
+          },
+          {
+            "name": "eight",
+            "displayName": "8 Subarctic/Arctic",
+            "enumValue": "8"
+          }
+        ]
+      },
       {
         "@id": "dtmi:com:willowinc:SubstructureLifecyclePhase;1",
         "@type": "Enum",
