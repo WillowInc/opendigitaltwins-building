@@ -84,6 +84,18 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 3. Just like single duct systems, there is an isFedBy relationship from the VAV Box to the Air Handling Unit
 
+## AHU Fan Arrays
+
+![HVACAHUFanArray-Example1](Images/HVACAHUFanArray-Example1.png)
+
+1. In this example, we show how to configure an Air Handling Unit which has multiple fans in the same section. This may be two fans as indicated here or a fan array with more individual fans. The Supply Fan Group has an isPartof relationship to the parent AHU.
+
+2. Each Supply Fan is includedIn the Supply Fan Group. Note that the includedIn relationship is used because Fan Groups are asset collections and the Asset->Collection relationship uses includedIn rather than isPartOf.
+
+3. Each Supply Fan has their own capabilities such as their Fan Run State.
+
+4. Often the fans in the group will have common control points such as a single run level command. Here we show that the Supply Fan Group has a Fan Run Level Actuator and a Fan VFD Frequency Sensor.
+
 ## Chilled Beam
 
 Chilled Beams are a type of terminal unit located in a ceiling that receive chilled water to cool a space. Passive chilled beams use natural convection to provide conditioning to the space whereas active chilled beams have a primary air supply which forces the air into the space. Active chilled beams may also receive hot water to enable heating a space.
