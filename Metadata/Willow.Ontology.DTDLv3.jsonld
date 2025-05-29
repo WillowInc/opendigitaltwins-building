@@ -16001,6 +16001,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AciditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Acidity Sensor"
+    },
+    "description": {
+      "en": "The acidity feedback from a sensor, generally in pH units"
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirAdmittanceValve;1",
     "@type": "Interface",
     "displayName": {
@@ -24347,6 +24364,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OxidationReductionPotentialSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Oxidation-Reduction Potential Sensor"
+    },
+    "description": {
+      "en": "The oxidation-reduction potential feedback from a water quality sensor, generally in millivolts (mV)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PackagedAirConditioner;1",
     "@type": "Interface",
     "displayName": {
@@ -25303,6 +25337,23 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RelativeHydrogenScore;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relative Hydrogen (rH) Score"
+    },
+    "description": {
+      "en": "A score typically ranging from 0-42 which is the oxidation-reduction potential state as calculated from the pH and ORP measurements using the Nernst equation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RatingPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
