@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Economizer Damper"
   },
+  "description": {
+    "en": "A damper that that provides maximum outside air flow during periods where the economizer control mode is active."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACDamper;1"
   ],
