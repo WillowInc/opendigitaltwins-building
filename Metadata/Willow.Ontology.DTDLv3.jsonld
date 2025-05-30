@@ -30838,6 +30838,9 @@
     "displayName": {
       "en": "Economizer Damper"
     },
+    "description": {
+      "en": "A damper that that provides maximum outside air flow during periods where the economizer control mode is active."
+    },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
     ],
@@ -34547,6 +34550,9 @@
     "displayName": {
       "en": "Min Outside Air Damper"
     },
+    "description": {
+      "en": "A damper that only opens to allow minimum outside air flow per ventilation requirements."
+    },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
     ],
@@ -35184,6 +35190,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Outside Air Damper"
+    },
+    "description": {
+      "en": "A damper which has a minimum position setting for minimum outside air and modulates open above minimum position for economizing."
     },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
@@ -48286,6 +48295,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:LinearSpeedSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreconditionedEconomizerDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preconditioned Economizer Damper"
+    },
+    "description": {
+      "en": "An economizer damper that is used to control the flow of outside air that has been preconditioned, typically by a DOAS, prior to entering the inlet of an air handling unit or HVAC system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EconomizerDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreconditionedMinOutsideAirDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preconditioned Min Outside Air Damper"
+    },
+    "description": {
+      "en": "A minimum OA damper that is used to control the flow of outside air that has been preconditioned, typically by a DOAS, prior to entering the inlet of an air handling unit or HVAC system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MinOutsideAirDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreconditionedOutsideAirDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preconditioned Outside Air Damper"
+    },
+    "description": {
+      "en": "A damper that is used to control the flow of outside air that has been preconditioned, typically by a DOAS, prior to entering the inlet of an air handling unit or HVAC system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:OutsideAirDamper;1"
     ],
     "contents": [],
     "@context": [
