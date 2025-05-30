@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Preconditioned Outside Air Damper"
   },
+  "description": {
+    "en": "A damper that is used to control the flow of outside air that has been preconditioned, typically by a DOAS, prior to entering the inlet of an air handling unit or HVAC system."
+  },
   "extends" : [
     "dtmi:com:willowinc:OutsideAirDamper;1"
   ],
