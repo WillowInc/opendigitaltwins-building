@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PreconditionedOutsideAirDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preconditioned Outside Air Damper"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OutsideAirDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

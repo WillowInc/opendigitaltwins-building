@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Min Outside Air Damper"
   },
+  "description": {
+    "en": "A damper that only opens to allow minimum outside air flow per ventilation requirements."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACDamper;1"
   ],
