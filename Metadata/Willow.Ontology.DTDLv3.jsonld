@@ -16085,6 +16085,50 @@
         },
         "name": "fan",
         "schema": "dtmi:com:willowinc:Fan;1"
+      },
+      {
+        "@type": "Property",
+        "name": "efficiencyRatingType",
+        "displayName": {
+          "en": "Efficiency Rating Type"
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "MERV",
+              "name": "MERV"
+            },
+            {
+              "enumValue": "HEPA",
+              "name": "HEPA"
+            },
+            {
+              "enumValue": "ULPA",
+              "name": "ULPA"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "MERVRating",
+        "displayName": {
+          "en": "MERV Rating"
+        },
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "efficiencyAt03Microns",
+        "displayName": {
+          "en": "Efficiency at 0.3 Microns"
+        },
+        "schema": "double",
+        "writable": true
       }
     ],
     "@context": [
@@ -31968,6 +32012,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FinalFilter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Final Filter"
+    },
+    "description": {
+      "en": "A filter that is the last stage of filtration in an air handling system, designed to capture fine particles and improve air quality."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFilter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FireAlarmControlPanel;1",
     "@type": "Interface",
     "displayName": {
@@ -36356,6 +36417,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LengthSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreFilter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pre-Filter"
+    },
+    "description": {
+      "en": "A filter that is the first stage of filtration in an air handling system, designed to capture larger particles and extend the life of subsequent filters."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFilter;1"
     ],
     "contents": [],
     "@context": [

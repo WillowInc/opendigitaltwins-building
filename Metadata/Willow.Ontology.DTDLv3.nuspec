@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>WillowInc.Ontology.DTDLv3</id>
-    <version>1.0.1.173</version>
+    <version>1.0.1.174</version>
     <authors>Willow, Inc.</authors>
     <owners>willowinc</owners>
     <projectUrl>https://github.com/WillowInc/opendigitaltwins-building</projectUrl>
