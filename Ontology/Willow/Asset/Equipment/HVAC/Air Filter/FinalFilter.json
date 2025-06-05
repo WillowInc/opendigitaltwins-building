@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FinalFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Final Filter"
+  },
+  "description": {
+    "en": "A filter that is the last stage of filtration in an air handling system, designed to capture fine particles and improve air quality."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirFilter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
