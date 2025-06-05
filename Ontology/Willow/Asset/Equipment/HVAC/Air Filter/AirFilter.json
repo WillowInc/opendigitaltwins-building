@@ -1,0 +1,67 @@
+{
+  "@id": "dtmi:com:willowinc:AirFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Filter"
+  },
+  "extends": [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:willowinc:Fan;1"
+    },
+    {
+      "@type": "Property",
+      "name": "efficiencyRatingType",
+      "displayName": {
+        "en": "Efficiency Rating Type"
+      },
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "MERV",
+            "name": "MERV"
+          },
+          {
+            "enumValue": "HEPA",
+            "name": "HEPA"
+          },
+          {
+            "enumValue": "ULPA",
+            "name": "ULPA"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "MERVRating",
+      "displayName": {
+        "en": "MERV Rating"
+      },
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "efficiencyAt03Microns",
+      "displayName": {
+        "en": "Efficiency at 0.3 Microns"
+      },
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
