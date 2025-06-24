@@ -1,0 +1,102 @@
+{
+  "@id": "dtmi:com:willowinc:HeatPumpChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Pump Chiller"
+  },
+    "description": {
+    "en": "A heat pump chiller is a type of HVAC equipment that can provide both heating and cooling by transferring heat from one location to another, using a refrigerant cycle. It can operate in both cooling and heating modes, making it versatile for various applications."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Chiller;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal heating capacity"
+      },
+      "name": "nominalHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal heating capacity unit"
+      },
+      "name": "nominalHeatingCapacityUnit",
+      "annotates": "nominalHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "net sensible heating capacity"
+      },
+      "name": "netSensibleHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "net sensible heating capacity unit"
+      },
+      "name": "netSensibleHeatingCapacityUnit",
+      "annotates": "netSensibleHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "design heating capacity"
+      },
+      "name": "designHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design heating capacity unit"
+      },
+      "name": "designHeatingCapacityUnit",
+      "annotates": "designHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design heating coefficient of performance (COP)"
+      },
+      "name": "designHeatingCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal heating coefficient of performance (COP)"
+      },
+      "name": "nominalHeatingCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:AirCooledHeatPumpChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air-Cooled Heat Pump Chiller"
+  },
+    "description": {
+    "en": "An air-cooled heat pump chiller is a type of HVAC equipment that uses air as the heat exchange medium to provide both heating and cooling. It operates by transferring heat from the air to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatPumpChiller;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

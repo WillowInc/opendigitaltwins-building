@@ -4,7 +4,10 @@
   "displayName": {
     "en": "Water-Cooled Chiller"
   },
-  "extends" : [
+  "description": {
+    "en": "A water-cooled chiller is a type of HVAC equipment that uses water as the heat exchange medium to provide cooling. It operates by transferring heat from the refrigerant to the water, which is then circulated to remove heat from a building or process. This type of chiller is typically more efficient than air-cooled chillers, especially in larger applications."
+  },
+  "extends": [
     "dtmi:com:willowinc:Chiller;1"
   ],
   "contents": [
