@@ -27945,6 +27945,9 @@
     "displayName": {
       "en": "Air-Cooled Chiller"
     },
+    "description": {
+      "en": "An air-cooled chiller is a type of HVAC equipment that uses air as the heat exchange medium to provide cooling. It operates by transferring heat from the refrigerant to the air, which is then expelled outside. This type of chiller is typically used in smaller applications or where water is not available."
+    },
     "extends": [
       "dtmi:com:willowinc:Chiller;1"
     ],
@@ -33242,6 +33245,129 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatPumpChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Pump Chiller"
+    },
+    "description": {
+      "en": "A heat pump chiller is a type of HVAC equipment that can provide both heating and cooling by transferring heat from one location to another, using a refrigerant cycle. It can operate in both cooling and heating modes, making it versatile for various applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Chiller;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity"
+        },
+        "name": "nominalHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity unit"
+        },
+        "name": "nominalHeatingCapacityUnit",
+        "annotates": "nominalHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "net sensible heating capacity"
+        },
+        "name": "netSensibleHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "net sensible heating capacity unit"
+        },
+        "name": "netSensibleHeatingCapacityUnit",
+        "annotates": "netSensibleHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "design heating capacity"
+        },
+        "name": "designHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design heating capacity unit"
+        },
+        "name": "designHeatingCapacityUnit",
+        "annotates": "designHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design heating coefficient of performance (COP)"
+        },
+        "name": "designHeatingCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal heating coefficient of performance (COP)"
+        },
+        "name": "nominalHeatingCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -39284,6 +39410,9 @@
     "displayName": {
       "en": "Water-Cooled Chiller"
     },
+    "description": {
+      "en": "A water-cooled chiller is a type of HVAC equipment that uses water as the heat exchange medium to provide cooling. It operates by transferring heat from the refrigerant to the water, which is then circulated to remove heat from a building or process. This type of chiller is typically more efficient than air-cooled chillers, especially in larger applications."
+    },
     "extends": [
       "dtmi:com:willowinc:Chiller;1"
     ],
@@ -40115,6 +40244,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirCooledHeatPumpChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air-Cooled Heat Pump Chiller"
+    },
+    "description": {
+      "en": "An air-cooled heat pump chiller is a type of HVAC equipment that uses air as the heat exchange medium to provide both heating and cooling. It operates by transferring heat from the air to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatPumpChiller;1"
     ],
     "contents": [],
     "@context": [
@@ -51127,6 +51273,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterCooledHeatPumpChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water-Cooled Heat Pump Chiller"
+    },
+    "description": {
+      "en": "A water-cooled heat pump chiller is a type of HVAC equipment that uses water as the heat exchange medium to provide both heating and cooling. It operates by transferring heat from the water to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatPumpChiller;1"
     ],
     "contents": [],
     "@context": [
