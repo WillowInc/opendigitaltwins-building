@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PumpElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Electrical Power Sensor"
+  },
+  "description": {"en": "The electrical power feedback from a sensor associated with an integrated pump"},
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:AverageElectricityConsumptionGreenhouseGasEmissionsFactor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Average Electricity Consumption Greenhouse Gas Emissions Factor"
+  },
+  "description": {
+    "en": "A greenhouse gas emissions factor used to calculate indirect emissions (in CO2e) which is the ratio of total emissions to the total generation of electricity. (a.k.a. Grid-average emissions factor)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ElectricityConsumptionGreenhouseGasEmissionsFactor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

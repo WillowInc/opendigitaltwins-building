@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseANetApparentElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Net Apparent Electrical Energy Sensor"
+  },
+  "description": {"en": "The apparent electrical energy feedback from a sensor associated with phase a net"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseAApparentElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

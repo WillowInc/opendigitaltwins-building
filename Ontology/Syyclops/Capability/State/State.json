@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:State;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "State"
+  },
+  "description": {"en": "The state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:Capability;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseBVoltageMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase B Voltage Magnitude Sensor"
+  },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with phase b"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

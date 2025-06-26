@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ChilledWaterThermalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Thermal Energy Sensor"
+  },
+  "description": {"en": "The thermal energy feedback from a sensor measuring chilled water"},
+  "extends" : [
+    "dtmi:com:syyclops:ThermalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the outside air fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

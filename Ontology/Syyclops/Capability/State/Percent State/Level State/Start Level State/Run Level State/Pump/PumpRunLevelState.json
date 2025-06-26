@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the pump"},
+  "extends" : [
+    "dtmi:com:syyclops:RunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

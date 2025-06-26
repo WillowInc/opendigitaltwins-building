@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCExportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Export Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with phase c export"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseCActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:WindDirectionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wind Direction Sensor"
+  },
+  "description": {"en": "The wind direction feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:AngleSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

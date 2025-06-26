@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ReversingMotorStarter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reversing Motor Starter"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:MotorStarter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

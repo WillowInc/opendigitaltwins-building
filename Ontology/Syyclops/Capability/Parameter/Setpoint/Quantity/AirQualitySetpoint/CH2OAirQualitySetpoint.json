@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CH2OAirQualitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Formaldehyde (CH2O) Air Quality Setpoint"
+  },
+  "description": {"en": "The desired value associated with formaldehyde (CH2O) air quality"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

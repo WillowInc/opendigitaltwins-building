@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:AccessControlSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Access Control System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SecuritySystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

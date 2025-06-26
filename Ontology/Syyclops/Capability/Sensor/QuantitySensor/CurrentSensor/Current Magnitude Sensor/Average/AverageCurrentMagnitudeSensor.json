@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:AverageCurrentMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Average Current Magnitude Sensor"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

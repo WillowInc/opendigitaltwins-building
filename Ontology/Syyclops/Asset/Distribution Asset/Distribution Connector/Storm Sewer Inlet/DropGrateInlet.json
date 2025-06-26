@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:syyclops:DropGrateInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Drop Grate Inlet"
+  },
+  "extends": "dtmi:com:syyclops:StormSewerInlet;1",
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:LevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Level State"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PercentState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

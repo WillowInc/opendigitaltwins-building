@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LoadLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Load Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the load level of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:LevelActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

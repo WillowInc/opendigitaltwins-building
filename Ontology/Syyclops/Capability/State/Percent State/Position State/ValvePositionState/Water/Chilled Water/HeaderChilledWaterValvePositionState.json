@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderChilledWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the header chilled water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

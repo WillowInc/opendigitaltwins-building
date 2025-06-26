@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BypassCondenserWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Condenser Water Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with condenser water bypass"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledElectricalSupplyCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Electrical Supply Cost"
+  },
+  "description": {"en": "The billed electrical cost trend associated with the generation (a.k.a. supply) of electricity, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:syyclops:BilledElectricalCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

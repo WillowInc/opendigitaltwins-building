@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:WasteMassSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Waste Mass Sensor"
+  },
+  "description": {"en": "The mass feedback from a sensor associated with waste"},
+  "extends" : [
+    "dtmi:com:syyclops:MassSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

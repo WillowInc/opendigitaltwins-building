@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighDewPointTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Dew Point Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with high dew point temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HighTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

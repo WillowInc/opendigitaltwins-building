@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:Inverter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inverter"
+  },
+  "description": {
+    "en": "A power electronic device that changes direct current (DC) to alternating current (AC)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalGenerationStorageEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:CondimentCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condiment Cart"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceCart;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

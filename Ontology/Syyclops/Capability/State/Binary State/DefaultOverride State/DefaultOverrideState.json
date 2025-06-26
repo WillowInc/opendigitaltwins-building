@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DefaultOverrideState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Default/Override State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'override' when 'true' and 'default' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

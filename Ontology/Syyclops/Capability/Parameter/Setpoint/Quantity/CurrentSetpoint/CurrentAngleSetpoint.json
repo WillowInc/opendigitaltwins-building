@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CurrentAngleSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Angle Setpoint"
+  },
+  "description": {"en": "The desired value associated with current angle"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

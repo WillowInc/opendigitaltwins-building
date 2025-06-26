@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideAirCO2SetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air CO2 Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with air quality (CO2) setpoint for outside air"},
+  "extends" : [
+    "dtmi:com:syyclops:CO2AirQualitySetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

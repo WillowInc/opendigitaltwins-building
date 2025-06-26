@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopHotWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Hot Water Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with hot water tertiary loop"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

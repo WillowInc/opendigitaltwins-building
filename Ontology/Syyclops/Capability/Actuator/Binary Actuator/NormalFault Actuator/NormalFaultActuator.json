@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:NormalFaultActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Normal/Fault Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the equipment to 'fault' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

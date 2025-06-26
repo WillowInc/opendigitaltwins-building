@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DamperClosedState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Closed State"
+  },
+  "description": {"en": "The Boolean state of the damper which is 'closed' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ClosedState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

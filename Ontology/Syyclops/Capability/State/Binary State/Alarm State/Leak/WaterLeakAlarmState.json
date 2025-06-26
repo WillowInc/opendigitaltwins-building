@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:WaterLeakAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Leak Alarm State"
+  },
+  "description": {"en": "The Boolean state of the water leak alarm which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LeakAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plumbing Fixture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

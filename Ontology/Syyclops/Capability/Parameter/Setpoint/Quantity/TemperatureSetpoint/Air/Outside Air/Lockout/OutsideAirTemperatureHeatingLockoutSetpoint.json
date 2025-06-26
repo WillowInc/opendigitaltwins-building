@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideAirTemperatureHeatingLockoutSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Temperature Heating Lockout Setpoint"
+  },
+  "description": {"en": "The desired value associated with outside air temperature heating lockout"},
+  "extends" : [
+    "dtmi:com:syyclops:OutsideAirTemperatureLockoutSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

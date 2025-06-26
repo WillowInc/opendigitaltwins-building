@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SpecificEnthalpySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Specific Enthalpy Setpoint"
+  },
+  "description": {"en": "The desired value associated with specific enthalpy"},
+  "extends" : [
+    "dtmi:com:syyclops:EnthalpySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

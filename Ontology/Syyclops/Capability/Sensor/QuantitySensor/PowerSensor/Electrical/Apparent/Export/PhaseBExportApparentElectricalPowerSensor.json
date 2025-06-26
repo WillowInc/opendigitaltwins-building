@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseBExportApparentElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase B Export Apparent Electrical Power Sensor"
+  },
+  "description": {"en": "The apparent electrical power feedback from a sensor associated with phase b export"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseBApparentElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:Application;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Application"
+  },
+  "description": {
+    "en": "A computer programed designed to carry out a specific task other than the operation of the computer itself, a.k.a. software application, application program, or app."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Software;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowHeaderHotWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Header Hot Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low header hot water flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowHotWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

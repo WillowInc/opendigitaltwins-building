@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowPrimaryLoopHotWaterFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Primary Loop Hot Water Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low primary loop hot water flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowHotWaterFlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

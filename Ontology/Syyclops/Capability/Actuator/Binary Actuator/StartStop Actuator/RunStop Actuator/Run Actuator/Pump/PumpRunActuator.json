@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:RunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

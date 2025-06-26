@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RainfallAccumulationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Rainfall Accumulation Sensor"
+  },
+  "description": {"en": "The accumulation feedback from a sensor associated with rainfall"},
+  "extends" : [
+    "dtmi:com:syyclops:PrecipitationAccumulationSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VoltageAngleSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Angle Setpoint"
+  },
+  "description": {"en": "The desired value associated with voltage angle"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

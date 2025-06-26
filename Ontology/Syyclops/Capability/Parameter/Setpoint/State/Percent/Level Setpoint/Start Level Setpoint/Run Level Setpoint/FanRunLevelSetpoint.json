@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FanRunLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Run Level Setpoint"
+  },
+  "description": {"en": "The desired run level percentage for control of a fan"},
+  "extends" : [
+    "dtmi:com:syyclops:RunLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

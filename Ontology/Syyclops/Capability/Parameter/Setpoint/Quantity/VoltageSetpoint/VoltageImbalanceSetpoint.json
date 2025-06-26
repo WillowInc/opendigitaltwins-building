@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VoltageImbalanceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Imbalance Setpoint"
+  },
+  "description": {"en": "The desired value associated with voltage imbalance"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

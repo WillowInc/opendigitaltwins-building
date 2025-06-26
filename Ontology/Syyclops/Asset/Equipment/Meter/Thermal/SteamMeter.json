@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SteamMeter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Meter"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ThermalMeter;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

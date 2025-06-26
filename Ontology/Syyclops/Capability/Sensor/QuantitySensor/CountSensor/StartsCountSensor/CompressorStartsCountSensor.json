@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CompressorStartsCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Starts Count Sensor"
+  },
+  "description": {"en": "The counted number of starts of a compressor from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:StartsCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

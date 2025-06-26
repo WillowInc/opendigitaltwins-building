@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SmokeDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke Damper"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

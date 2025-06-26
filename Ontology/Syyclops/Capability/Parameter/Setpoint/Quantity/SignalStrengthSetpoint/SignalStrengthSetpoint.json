@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SignalStrengthSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Signal Strength Setpoint"
+  },
+  "description": {"en": "The desired value associated with signal strength"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

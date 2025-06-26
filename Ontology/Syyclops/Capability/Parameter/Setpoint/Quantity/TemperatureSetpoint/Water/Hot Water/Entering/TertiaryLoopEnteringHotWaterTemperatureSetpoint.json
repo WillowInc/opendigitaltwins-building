@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopEnteringHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Hot Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with tertiary hot water loop entering temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringHotWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

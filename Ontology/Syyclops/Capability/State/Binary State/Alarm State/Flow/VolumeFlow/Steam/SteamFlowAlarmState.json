@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SteamFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the steam flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:FlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

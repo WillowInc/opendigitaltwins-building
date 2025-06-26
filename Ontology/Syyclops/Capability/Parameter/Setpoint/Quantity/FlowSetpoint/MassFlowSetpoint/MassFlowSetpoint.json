@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MassFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mass Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with mass flow"},
+  "extends" : [
+    "dtmi:com:syyclops:FlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

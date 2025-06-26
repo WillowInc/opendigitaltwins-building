@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AngularSpeedSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Speed Setpoint"
+  },
+  "description": {"en": "The desired value associated with angular speed"},
+  "extends" : [
+    "dtmi:com:syyclops:SpeedSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MixedAirCO2SetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air CO2 Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with air quality (CO2) setpoint for mixed air"},
+  "extends" : [
+    "dtmi:com:syyclops:CO2AirQualitySetpointLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

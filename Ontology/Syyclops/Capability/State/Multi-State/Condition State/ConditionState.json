@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ConditionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condition State"
+  },
+  "description": {"en": "The multi-state condition of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:MultiState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

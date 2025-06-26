@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigeratedFoodDisplayCase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerated Food Display Case"
+  },
+  "description": {
+    "en": "A food display case used for foods required to be refrigerated to either low- or medium-temperatures."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodDisplayCase;1",
+    "dtmi:com:syyclops:DefrostEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Evaporator Fan"
+      },
+      "name": "evaporatorFan",
+      "schema": "dtmi:com:syyclops:Fan;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

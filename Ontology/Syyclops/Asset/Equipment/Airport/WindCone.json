@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:WindCone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wind Cone"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

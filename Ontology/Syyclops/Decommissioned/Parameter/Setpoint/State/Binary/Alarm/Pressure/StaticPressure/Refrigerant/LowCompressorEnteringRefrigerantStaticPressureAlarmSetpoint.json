@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowCompressorEnteringRefrigerantStaticPressureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Compressor Entering Refrigerant Static Pressure Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low compressor entering refrigerant static pressure alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerantStaticPressureAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

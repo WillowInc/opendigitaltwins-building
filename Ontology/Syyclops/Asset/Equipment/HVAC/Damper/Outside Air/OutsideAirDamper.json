@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideAirDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Damper"
+  },
+  "description": {
+    "en": "A damper which has a minimum position setting for minimum outside air and modulates open above minimum position for economizing."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

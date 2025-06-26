@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:PeopleInferredOccupancySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Inferred Occupancy Sensor"
+  },
+  "description": {"en": "The Boolean status from a sensor associated with people where 'inferred occupancy' is 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:PeopleOccupancySensor;1",
+    "dtmi:com:syyclops:InferredOccupancySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

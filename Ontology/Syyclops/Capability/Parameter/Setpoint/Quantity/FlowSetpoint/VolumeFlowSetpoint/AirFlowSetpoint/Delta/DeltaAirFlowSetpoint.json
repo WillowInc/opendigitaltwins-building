@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value for the differential airflow, typically between the supply and exhaust airflow setpoints"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

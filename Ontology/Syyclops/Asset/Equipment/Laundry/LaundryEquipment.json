@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:LaundryEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Laundry Equipment"
+  },
+  "description": {
+    "en": "An applicance used to wash, dry, or organize laundry such as clothes or other textiles."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Equipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

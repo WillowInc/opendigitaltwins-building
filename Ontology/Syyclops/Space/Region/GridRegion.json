@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:GridRegion;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Grid Region"
+  },
+  "description": {
+    "en": "A region which defines the geographic extents served by an electrical power grid (i.e. CAISO, NYISO, ERCOT). "
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Region;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

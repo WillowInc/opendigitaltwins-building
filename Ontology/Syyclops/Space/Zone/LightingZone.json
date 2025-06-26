@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:com:syyclops:LightingZone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lighting Zone"
+  },
+  "description": {
+    "en": "A zone which is being illuminated by one or more light fixtures."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Zone;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isFedBy",
+      "displayName": {
+        "en": "is fed by"
+      },
+      "properties": [
+        {
+          "@type": "Property",
+          "name": "substance",
+          "displayName": {
+            "en": "Substance"
+          },
+          "writable": true,
+          "schema": "dtmi:com:syyclops:LightingZoneIsFedBySubstances;1",
+          "comment": "Luminaire"
+        }
+      ]
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:syyclops:LightingZoneIsFedBySubstances;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Light",
+          "displayName": {
+            "en": "Light"
+          },
+          "enumValue": "Light"
+        }
+      ]
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

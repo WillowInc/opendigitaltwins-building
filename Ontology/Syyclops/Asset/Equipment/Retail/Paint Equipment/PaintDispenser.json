@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PaintDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Paint Dispenser"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PaintRetailEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

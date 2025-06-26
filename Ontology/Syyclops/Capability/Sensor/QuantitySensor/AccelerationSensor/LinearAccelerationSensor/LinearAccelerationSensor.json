@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LinearAccelerationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Linear Acceleration Sensor"
+  },
+  "description": {"en": "The linear acceleration feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:AccelerationSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

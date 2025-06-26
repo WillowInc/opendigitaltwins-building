@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowCoilEnteringWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Coil Entering Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low water entering the coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowWaterTemperatureAlarmState;1",
+    "dtmi:com:syyclops:LowEnteringWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

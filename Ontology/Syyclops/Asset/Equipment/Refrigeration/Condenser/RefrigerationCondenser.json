@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerationCondenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Condenser"
+  },
+  "description": {
+    "en": "A condenser which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerationEquipment;1",
+    "dtmi:com:syyclops:Condenser;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

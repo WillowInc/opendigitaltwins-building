@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ElevatorShaft;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator Shaft"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralShaft;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+    "@id": "dtmi:com:syyclops:PipeConnection;1",
+    "@type": "Interface",
+    "displayName": {
+        "en": "Pipe connection"
+      },
+    "extends": [
+        "dtmi:com:syyclops:AssetComponent;1"
+    ],
+    "contents": [
+      {
+        "@type": ["Property", "Length"],
+        "displayName": {
+          "en": "outside diameter"
+        },
+        "name": "outsideDiameter",
+        "schema": "double",
+        "unit": "millimetre",
+        "writable": true
+      },
+      {
+        "@type": ["Property", "ValueAnnotation", "Override"],
+        "displayName": {
+          "en": "outside diameter unit"
+        },
+        "name": "outsideDiameterUnit",
+        "annotates": "outsideDiameter",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": ["Property", "Length"],
+        "displayName": {
+          "en": "nominal diameter"
+        },
+        "name": "nominalDiameter",
+        "schema": "double",
+        "unit": "millimetre",
+        "writable": true
+      },
+      {
+        "@type": ["Property", "ValueAnnotation", "Override"],
+        "displayName": {
+          "en": "nominal diameter unit"
+        },
+        "name": "nominalDiameterUnit",
+        "annotates": "nominalDiameter",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": ["Property", "Length"],
+        "displayName": {
+          "en": "inside diameter"
+        },
+        "name": "insideDiameter",
+        "schema": "double",
+        "unit": "millimetre",
+        "writable": true
+      },
+      {
+        "@type": ["Property", "ValueAnnotation", "Override"],
+        "displayName": {
+          "en": "inside diameter unit"
+        },
+        "name": "insideDiameterUnit",
+        "annotates": "insideDiameter",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ApparentElectricalEnergySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Apparent Electrical Energy Setpoint"
+  },
+  "description": {"en": "The desired value associated with apparent electrical energy"},
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalEnergySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

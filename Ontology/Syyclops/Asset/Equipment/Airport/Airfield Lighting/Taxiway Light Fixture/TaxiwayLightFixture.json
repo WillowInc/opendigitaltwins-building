@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:TaxiwayLightFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Taxiway Light Fixture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirfieldLightingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

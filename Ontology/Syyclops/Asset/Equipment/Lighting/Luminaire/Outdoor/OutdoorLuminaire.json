@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:OutdoorLuminaire;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outdoor Luminaire"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Luminaire;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

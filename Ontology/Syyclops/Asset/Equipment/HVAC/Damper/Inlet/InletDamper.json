@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:InletDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Damper"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

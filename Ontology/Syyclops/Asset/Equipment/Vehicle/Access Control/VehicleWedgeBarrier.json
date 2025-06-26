@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:VehicleWedgeBarrier;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vehicle Wedge Barrier"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:VehicleAccessControlEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

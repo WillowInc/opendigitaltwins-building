@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the condenser water valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

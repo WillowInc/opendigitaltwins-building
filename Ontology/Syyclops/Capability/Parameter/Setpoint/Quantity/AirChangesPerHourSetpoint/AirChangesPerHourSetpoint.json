@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:AirChangesPerHourSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Changes Per Hour Setpoint"
+  },
+  "description": {
+    "en": "The desired number of times that the total air volume of a space is removed and replaced with ventilation air in an hour, a.k.a. Air Change Rate Setpoint."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

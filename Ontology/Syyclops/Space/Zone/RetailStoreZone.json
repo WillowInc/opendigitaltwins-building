@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:RetailStoreZone;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Retail Store Zone"
+  },
+  "description": {
+    "en": "A zone within a retail store that has a defined purpose such as a department selling a catogory of product, a decompression zone at the entrance, or checkout area."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Zone;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

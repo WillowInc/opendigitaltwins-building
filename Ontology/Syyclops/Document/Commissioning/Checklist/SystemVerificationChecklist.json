@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SystemVerificationChecklist;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "System Verification Checklist"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CommissioningChecklist;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

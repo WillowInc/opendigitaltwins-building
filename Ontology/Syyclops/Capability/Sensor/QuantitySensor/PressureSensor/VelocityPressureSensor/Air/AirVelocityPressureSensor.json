@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:AirVelocityPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Velocity Pressure Sensor"
+  },
+  "description": {"en": "The velocity pressure feedback from a sensor associated with air"},
+  "extends" : [
+    "dtmi:com:syyclops:VelocityPressureSensor;1",
+    "dtmi:com:syyclops:AirPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

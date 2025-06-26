@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LoadShedOverrideActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Load Shed Override Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the load shedding to 'override' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OverrideActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

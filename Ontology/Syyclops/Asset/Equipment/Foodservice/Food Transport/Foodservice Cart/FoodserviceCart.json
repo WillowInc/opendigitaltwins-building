@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:FoodserviceCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Foodservice Cart"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodTransportEquipment;1",
+    "dtmi:com:syyclops:Cart;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

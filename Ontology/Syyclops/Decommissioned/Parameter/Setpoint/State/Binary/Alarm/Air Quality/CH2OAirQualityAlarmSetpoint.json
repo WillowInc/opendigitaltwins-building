@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CH2OAirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Formaldehyde (CH2O) Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the formaldehyde (CH2O) air quality alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

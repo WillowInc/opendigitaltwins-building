@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TwoPipeModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Two Pipe Mode State"
+  },
+  "description": {"en": "The state of the two pipe mode of the equipment, operating in either heating or cooling"},
+  "extends" : [
+    "dtmi:com:syyclops:OperatingModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

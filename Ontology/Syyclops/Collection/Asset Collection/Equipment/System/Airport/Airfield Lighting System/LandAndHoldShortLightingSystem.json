@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:LandAndHoldShortLightingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Land and Hold Short Lighting System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirfieldLightingSystem;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

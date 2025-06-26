@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PbAirQualitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lead (Pb) Air Quality Setpoint"
+  },
+  "description": {"en": "The desired value associated with lead (Pb) air quality"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

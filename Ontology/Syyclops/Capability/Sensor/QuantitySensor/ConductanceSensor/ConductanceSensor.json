@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ConductanceSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Conductance Sensor"
+  },
+  "description": {"en": "The conductance feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

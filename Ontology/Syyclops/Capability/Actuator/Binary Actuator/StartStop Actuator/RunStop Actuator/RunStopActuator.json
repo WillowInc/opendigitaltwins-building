@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:RunStopActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Run/Stop Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the equipment to 'run' when 'true' and 'stop' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:StartStopActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

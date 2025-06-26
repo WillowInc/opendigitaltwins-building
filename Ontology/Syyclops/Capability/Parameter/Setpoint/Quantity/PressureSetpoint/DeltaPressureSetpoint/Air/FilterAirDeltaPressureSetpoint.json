@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FilterAirDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Filter Air Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with filter air delta pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:AirDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

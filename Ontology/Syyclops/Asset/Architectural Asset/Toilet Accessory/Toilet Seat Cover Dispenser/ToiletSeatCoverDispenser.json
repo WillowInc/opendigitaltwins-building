@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:syyclops:ToiletSeatCoverDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet Seat Cover Dispenser"
+  },
+  "description": {
+    "en": "An device that dispenses toilet seat covers in a public restroom."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ToiletAccessory;1",
+    "dtmi:com:syyclops:RestroomAccessory;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

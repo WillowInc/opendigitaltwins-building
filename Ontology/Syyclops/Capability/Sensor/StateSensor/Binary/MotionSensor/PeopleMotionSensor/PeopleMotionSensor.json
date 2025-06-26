@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PeopleMotionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Motion Sensor"
+  },
+  "description": {"en": "The Boolean status from a sensor where 'occupied' is 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:MotionSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

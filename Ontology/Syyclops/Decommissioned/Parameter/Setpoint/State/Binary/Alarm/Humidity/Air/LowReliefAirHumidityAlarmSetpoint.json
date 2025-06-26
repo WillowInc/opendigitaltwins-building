@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowReliefAirHumidityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Relief Air Humidity Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low relief air humidity alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirHumidityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

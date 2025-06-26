@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:BuildingOutdoorArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Outdoor Area"
+  },
+  "description": {
+    "en": "An outdoor area that is located in or adjacent to a building such as a rooftop area, balcony, or terrace."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Space;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

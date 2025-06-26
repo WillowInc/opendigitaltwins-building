@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ReturnAirTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with return air"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustAirDamperPositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Damper Position State"
+  },
+  "description": {"en": "The percent position state of the exhaust air damper"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperPositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

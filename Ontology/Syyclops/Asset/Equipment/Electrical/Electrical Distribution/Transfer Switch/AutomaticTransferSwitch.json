@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:com:syyclops:AutomaticTransferSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Automatic Transfer Switch"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TransferSwitch;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "transition type"
+      },
+      "name": "transitionType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Open",
+            "name": "Open"
+          },
+          {
+            "enumValue": "Closed",
+            "name": "Closed"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "switching mechanism"
+      },
+      "name": "switchingMechanism",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Contactor",
+            "name": "Contactor"
+          },
+          {
+            "enumValue": "CircuitBreakerPowerCase",
+            "name": "CircuitBreakerPowerCase"
+          },
+          {
+            "enumValue": "CircuitBreakerMoldedCase",
+            "name": "CircuitBreakerMoldedCase"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirFanActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Fan ActiveElectrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with the relief air fan"},
+  "extends" : [
+    "dtmi:com:syyclops:FanActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

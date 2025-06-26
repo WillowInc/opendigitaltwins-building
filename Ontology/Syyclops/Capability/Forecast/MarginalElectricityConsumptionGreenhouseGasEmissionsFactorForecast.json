@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:MarginalElectricityConsumptionGreenhouseGasEmissionsFactorForecast;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Marginal Electricity Consumption Greenhouse Gas Emissions Factor Forecast"
+  },
+  "description": {
+    "en": "A forecasted greenhouse gas emissions factor used to calculate the change in indirect emissions (in CO2e) that would result from a change in load (increase or decrease)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Forecast;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

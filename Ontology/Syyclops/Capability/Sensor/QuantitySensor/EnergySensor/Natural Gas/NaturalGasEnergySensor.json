@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:NaturalGasEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Natural Gas Energy Sensor"
+  },
+  "description": {"en": "The natural gas energy feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:EnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

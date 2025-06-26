@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:VentilationRate;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ventilation Rate"
+  },
+  "description": {
+    "en": "A performance indicator used for ventilation which is the ratio of outside air flow into a space with the number of people in the space (i.e. CFM/person, LPS/person, CMH/person)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowPerPerson;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

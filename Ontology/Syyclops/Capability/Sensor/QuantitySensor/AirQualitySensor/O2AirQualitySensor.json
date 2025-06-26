@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:O2AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Oxygen (O2) Air Quality Sensor"
+  },
+  "description": {"en": "The oxygen (O2) air quality feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneSupplyAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Supply Air Flow Supply Setpoint"
+  },
+  "description": {"en": "The desired value of the total volume flow of supply air to a zone"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:AirHandlingUnitReturnSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Handling Unit Return Section"
+  },
+  "description": {
+    "en": "A return section of an air handling unit."
+  },
+  "extends": [
+    "dtmi:com:syyclops:AirHandlingUnitSection;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaHotWaterFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Hot Water Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with hot water delta flow"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RelativeHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relative Humidity Sensor"
+  },
+  "description": {"en": "The relative humidity feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:HumiditySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

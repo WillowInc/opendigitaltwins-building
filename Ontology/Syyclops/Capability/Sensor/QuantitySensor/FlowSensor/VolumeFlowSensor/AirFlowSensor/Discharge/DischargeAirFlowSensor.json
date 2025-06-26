@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with discharge (supply) air"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

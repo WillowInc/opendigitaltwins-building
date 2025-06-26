@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:Turnstile;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Turnstile"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BarrierAsset;1",
+    "dtmi:com:syyclops:PhysicalSpaceOpening;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

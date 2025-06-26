@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:UnoccupiedActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the equipment to 'unoccupied' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OccupiedUnoccupiedActuator;1",
+    "dtmi:com:syyclops:AbsentActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

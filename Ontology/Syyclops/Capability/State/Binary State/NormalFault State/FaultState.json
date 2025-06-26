@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:FaultState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fault State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'fault' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:NormalFaultState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

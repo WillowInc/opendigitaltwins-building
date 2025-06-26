@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Frequency Sensor"
+  },
+  "description": {"en": "The frequency feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Power Sensor"
+  },
+  "description": {"en": "The power feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

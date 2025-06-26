@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HumidityRatioSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Humidity Ratio Sensor"
+  },
+  "description": {"en": "The humidity ratio (air grains) feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

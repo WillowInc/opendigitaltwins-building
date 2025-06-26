@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SO2AirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sulfur Dioxide (SO2) Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the sulfur dioxide (SO2) air quality alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

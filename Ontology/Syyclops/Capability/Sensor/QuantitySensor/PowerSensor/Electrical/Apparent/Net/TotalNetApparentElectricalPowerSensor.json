@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TotalNetApparentElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Net Apparent Electrical Power Sensor"
+  },
+  "description": {"en": "The apparent electrical power feedback from a sensor associated with total net"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalApparentElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

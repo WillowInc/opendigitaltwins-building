@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowReturnAirHumidityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Return Air Humidity Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low return air humidity alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirHumidityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

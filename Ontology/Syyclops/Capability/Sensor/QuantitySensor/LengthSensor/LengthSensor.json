@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LengthSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Length Sensor"
+  },
+  "description": {"en": "The length feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

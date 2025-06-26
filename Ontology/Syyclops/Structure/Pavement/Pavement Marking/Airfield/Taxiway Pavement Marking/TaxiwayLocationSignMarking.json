@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:TaxiwayLocationSignMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Taxiway Location Sign Marking"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:TaxiwayAirfieldPavementMarking;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

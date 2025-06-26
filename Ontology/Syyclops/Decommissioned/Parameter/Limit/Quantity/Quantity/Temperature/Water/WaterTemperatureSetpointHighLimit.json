@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:WaterTemperatureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Temperature Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with water temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSetpointHighLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

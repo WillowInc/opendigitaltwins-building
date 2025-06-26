@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HotWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with hot water delta pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

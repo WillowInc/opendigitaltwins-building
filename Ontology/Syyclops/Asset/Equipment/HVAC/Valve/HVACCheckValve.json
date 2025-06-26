@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HVACCheckValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Check Valve (HVAC)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ArchitecturalAsset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Architectural Asset"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Asset;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

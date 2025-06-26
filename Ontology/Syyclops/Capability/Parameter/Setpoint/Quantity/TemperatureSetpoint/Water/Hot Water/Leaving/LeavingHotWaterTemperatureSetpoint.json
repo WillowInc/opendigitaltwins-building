@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Hot Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with leaving hot water temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterTemperatureSetpoint;1",
+    "dtmi:com:syyclops:LeavingWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:OverloadAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Overload Alarm State"
+  },
+  "description": {"en": "The Boolean state of the overload alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

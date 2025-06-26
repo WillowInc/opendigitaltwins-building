@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FinalFilterDirtyFilterAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Final Filter Dirty Filter Alarm State"
+  },
+  "description": {"en": "The Boolean state of the dirty filter alarm of the final filter is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:DirtyFilterAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

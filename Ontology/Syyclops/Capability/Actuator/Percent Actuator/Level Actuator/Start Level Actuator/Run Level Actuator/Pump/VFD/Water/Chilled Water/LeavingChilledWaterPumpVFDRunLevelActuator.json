@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingChilledWaterPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Chilled Water Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the leaving chilled water pump vfd"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:syyclops:LeavingChilledWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:OpenCloseState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Open/Close State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'open' when 'true' and 'close' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

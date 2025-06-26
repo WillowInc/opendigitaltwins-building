@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AirQualitySetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Quality Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with air quality setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:HighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

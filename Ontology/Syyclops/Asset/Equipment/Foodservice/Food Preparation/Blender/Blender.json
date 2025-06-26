@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Blender;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Blender"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

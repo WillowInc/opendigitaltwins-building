@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:MediumTemperatureRefrigeratedFoodDisplayCase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medium-Temperature Refrigerated Food Display Case"
+  },
+  "description": {
+    "en": "A food display case used for foods required to be refrigerated to medium-temperatures."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigeratedFoodDisplayCase;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

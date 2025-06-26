@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:AirTemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Temperature Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the air temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSetpoint;1",
+    "dtmi:com:syyclops:TemperatureDeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

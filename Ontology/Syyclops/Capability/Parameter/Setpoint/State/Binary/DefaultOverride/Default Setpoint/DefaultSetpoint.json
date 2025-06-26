@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DefaultSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Default Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DefaultOverrideSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

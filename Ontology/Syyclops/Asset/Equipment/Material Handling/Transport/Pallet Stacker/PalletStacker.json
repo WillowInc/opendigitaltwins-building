@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:PalletStacker;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pallet Stacker"
+  },
+  "description": {
+    "en": "A machine used to lift, move, and place pallets on a high rack for storage."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TransportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

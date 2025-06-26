@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowDeltaChilledWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Delta Chilled Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low chilled water delta temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowChilledWaterTemperatureAlarmSetpoint;1",
+    "dtmi:com:syyclops:LowDeltaWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

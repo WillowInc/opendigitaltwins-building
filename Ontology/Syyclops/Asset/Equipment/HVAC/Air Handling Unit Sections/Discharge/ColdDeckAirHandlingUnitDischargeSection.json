@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:ColdDeckAirHandlingUnitDischargeSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Deck Air Handling Unit Discharge Section"
+  },
+  "description": {
+    "en": "A cold deck discharge section of an air handling unit."
+  },
+  "extends": [
+    "dtmi:com:syyclops:AirHandlingUnitDischargeSection;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

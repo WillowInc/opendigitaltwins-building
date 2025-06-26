@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LuminousIntensitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Luminous Intensity Sensor"
+  },
+  "description": {"en": "The luminous intensity feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

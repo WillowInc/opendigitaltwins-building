@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HeatingLevelStageSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Level Stage Setpoint"
+  },
+  "description": {"en": "The heating level percentage for staging of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:HeatingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

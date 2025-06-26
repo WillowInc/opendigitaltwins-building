@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:PreconditionedEconomizerDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preconditioned Economizer Damper"
+  },
+    "description": {
+    "en": "An economizer damper that is used to control the flow of outside air that has been preconditioned, typically by a DOAS, prior to entering the inlet of an air handling unit or HVAC system."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:EconomizerDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "@id": "dtmi:com:syyclops:FireSprinklerHead;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Sprinkler Head"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Upright",
+            "name": "Upright"
+          },
+          {
+            "enumValue": "SideWall",
+            "name": "SideWall"
+          },
+          {
+            "enumValue": "Pendant",
+            "name": "Pendant"
+          },
+          {
+            "enumValue": "ConcealedPendant",
+            "name": "ConcealedPendant"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "K-factor (metric)"
+      },
+      "name": "kFactorMetric",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "K-factor (imperial)"
+      },
+      "name": "kFactorImperial",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

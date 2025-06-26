@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:StaticPressureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Static Pressure Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with static pressure setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:PressureSetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

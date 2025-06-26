@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BinaryModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Binary Mode State"
+  },
+  "description": {"en": "The Boolean state of the mode which is 'on' when 'true' and 'off' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

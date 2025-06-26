@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:com:syyclops:Parameter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Parameter"
+  },
+  "description": {"en": "A configuration setting"},
+  "extends" : [
+    "dtmi:com:syyclops:Capability;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The Capability that has this Parameter, i.e. High Limit or Low Limit for a Setpoint"
+      },
+      "displayName": {
+        "en": "is parameter of"
+      },
+      "name": "isParameterOf",
+      "target": "dtmi:com:syyclops:Capability;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReplaceFinalFilterState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Final Filter State"
+  },
+  "description": {"en": "The Boolean state of the final filter which is 'replace' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ReplaceFilterState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

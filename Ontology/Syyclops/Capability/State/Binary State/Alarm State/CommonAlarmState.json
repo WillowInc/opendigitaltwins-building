@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CommonAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Common Alarm State"
+  },
+  "description": {"en": "The Boolean state of the common alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

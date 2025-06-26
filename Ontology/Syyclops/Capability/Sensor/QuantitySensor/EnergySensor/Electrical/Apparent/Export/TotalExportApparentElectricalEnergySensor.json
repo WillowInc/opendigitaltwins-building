@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TotalExportApparentElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Export Apparent Electrical Energy Sensor"
+  },
+  "description": {"en": "The apparent electrical energy feedback from a sensor associated with total export"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalApparentElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

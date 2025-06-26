@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:StationaryBicycle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stationary Bicycle"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CardioFitnessEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

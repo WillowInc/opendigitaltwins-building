@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledReclaimedWaterVolume;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Reclaimed Water Volume"
+  },
+  "description": {"en": "The volumetric quantity of reclaimed water that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Reclaimed Water Volume Sensor which reports data on a more frequent interval."},
+  "extends" : [
+    "dtmi:com:syyclops:BilledWaterVolume;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

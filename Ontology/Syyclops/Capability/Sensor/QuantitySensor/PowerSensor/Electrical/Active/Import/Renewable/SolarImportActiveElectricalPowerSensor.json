@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SolarImportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Import Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power being consumed by solar photovoltaic"},
+  "extends" : [
+    "dtmi:com:syyclops:RenewableImportActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

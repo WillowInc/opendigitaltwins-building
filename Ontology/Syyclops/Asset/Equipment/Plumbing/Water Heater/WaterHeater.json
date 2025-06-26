@@ -1,0 +1,49 @@
+{
+  "@id": "dtmi:com:syyclops:WaterHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Heater"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Volume"],
+      "name": "firstHourDelivery",
+      "displayName": {
+        "en": "First Hour Delivery"
+      },
+      "writable": true,
+      "schema": "integer",
+      "unit": "litre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "first hour delivery unit"
+      },
+      "name": "firstHourDeliveryUnit",
+      "annotates": "firstHourDelivery",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "name": "recovery100FRise",
+      "displayName": {
+        "en": "Recovery @ 100F Rise"
+      },
+      "writable": true,
+      "schema": "integer",
+      "unit": "gallonPerHour"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

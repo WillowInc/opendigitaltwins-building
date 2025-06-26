@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AirfieldVORReceiverCheckpointSignMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield VOR Receiver Checkpoint Sign Marking"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirfieldInformationPavementMarking;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

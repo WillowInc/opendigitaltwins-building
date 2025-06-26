@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ElevatingPlatformLift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevating Platform Lift"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ConveyanceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

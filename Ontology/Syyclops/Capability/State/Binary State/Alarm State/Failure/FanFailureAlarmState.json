@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FanFailureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Failure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the fan failure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:FailureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

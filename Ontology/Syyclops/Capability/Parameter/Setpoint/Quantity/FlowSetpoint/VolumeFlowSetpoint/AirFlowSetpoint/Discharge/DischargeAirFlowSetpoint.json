@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

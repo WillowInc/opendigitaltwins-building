@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:FoodWarmingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Warming Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

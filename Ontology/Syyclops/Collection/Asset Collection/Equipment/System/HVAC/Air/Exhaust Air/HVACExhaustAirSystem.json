@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HVACExhaustAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Exhaust Air System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

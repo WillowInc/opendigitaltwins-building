@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:com:syyclops:Cable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cable"
+  },
+  "extends": "dtmi:com:syyclops:DistributionAsset;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "diameter"
+      },
+      "name": "diameter",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "diameter unit"
+      },
+      "name": "diameterUnit",
+      "annotates": "diameter",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

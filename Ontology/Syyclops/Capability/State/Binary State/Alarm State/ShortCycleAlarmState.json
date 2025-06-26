@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ShortCycleAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Short Cycle Alarm State"
+  },
+  "description": {"en": "The Boolean state of the short cycle alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

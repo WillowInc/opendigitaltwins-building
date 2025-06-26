@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledNaturalGasMass;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Natural Gas Mass"
+  },
+  "description": {"en": "The mass quantity of natural gas that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Natural Gas Mass Sensor which reports data on a more frequent interval."},
+  "extends" : [
+    "dtmi:com:syyclops:NaturalGasMassSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:AutomaticSlidingDoor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Automatic Sliding Door"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SlidingDoor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

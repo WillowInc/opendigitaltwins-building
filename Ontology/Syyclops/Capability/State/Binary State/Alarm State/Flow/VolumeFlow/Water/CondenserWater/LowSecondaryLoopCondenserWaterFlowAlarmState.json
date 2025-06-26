@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowSecondaryLoopCondenserWaterFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Secondary Loop Condenser Water Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low secondary loop condenser water flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowCondenserWaterFlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

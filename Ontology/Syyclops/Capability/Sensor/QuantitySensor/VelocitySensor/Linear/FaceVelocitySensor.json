@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FaceVelocitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Face Velocity Sensor"
+  },
+  "description": {"en": "The velocity at which air is pulled through the opening (face) of a ventilation or fume hood."},
+  "extends" : [
+    "dtmi:com:syyclops:LinearVelocitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

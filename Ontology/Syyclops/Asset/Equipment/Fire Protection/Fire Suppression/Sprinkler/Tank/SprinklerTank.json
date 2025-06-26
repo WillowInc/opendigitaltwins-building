@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sprinkler Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerEquipment;1",
+    "dtmi:com:syyclops:Tank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

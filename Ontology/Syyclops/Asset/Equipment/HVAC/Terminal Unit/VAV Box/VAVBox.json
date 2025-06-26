@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:VAVBox;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VAV Box"
+  },
+  "description": {
+    "en": "A type of terminal unit that modulates damper position to control airflow at a setpoint that resets based on zone conditions"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TerminalUnit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

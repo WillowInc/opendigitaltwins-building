@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneAirTemperatureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air Temperature Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with zone air temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSetpointHighLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

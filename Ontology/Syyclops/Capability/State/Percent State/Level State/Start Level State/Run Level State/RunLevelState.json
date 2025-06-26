@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:RunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Run Level State"
+  },
+  "description": {"en": "The percent run level state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:StartLevelState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:StateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "State Sensor"
+  },
+  "description": {"en": "The state feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:Sensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

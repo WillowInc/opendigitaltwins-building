@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AngularAccelerationSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Angular Acceleration Setpoint"
+  },
+  "description": {"en": "The desired value associated with angular acceleration"},
+  "extends" : [
+    "dtmi:com:syyclops:AccelerationSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

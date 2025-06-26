@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:UnoccupiedCoolingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Cooling Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with unoccupied cooling zone air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:CoolingZoneAirTemperatureSetpoint;1",
+    "dtmi:com:syyclops:UnoccupiedCoolingSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

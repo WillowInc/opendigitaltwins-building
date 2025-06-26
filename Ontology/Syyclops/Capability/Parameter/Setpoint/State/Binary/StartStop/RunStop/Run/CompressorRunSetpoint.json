@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CompressorRunSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Run Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RunSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

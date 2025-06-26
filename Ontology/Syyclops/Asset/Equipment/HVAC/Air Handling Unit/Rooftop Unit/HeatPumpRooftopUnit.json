@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:HeatPumpRooftopUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Pump Rooftop Unit"
+  },
+  "description": {
+    "en": "A rooftop unit which uses a heat pump to provide cooling and heating."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RooftopUnit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

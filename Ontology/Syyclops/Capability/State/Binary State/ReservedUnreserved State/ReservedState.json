@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ReservedState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reserved State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'reserved' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ReservedUnreservedState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

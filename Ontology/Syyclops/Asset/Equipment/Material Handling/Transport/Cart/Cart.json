@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Cart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cart"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TransportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

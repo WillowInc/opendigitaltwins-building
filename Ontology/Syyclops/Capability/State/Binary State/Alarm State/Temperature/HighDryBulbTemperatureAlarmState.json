@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighDryBulbTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Dry Bulb Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high dry bulb temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighTemperatureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

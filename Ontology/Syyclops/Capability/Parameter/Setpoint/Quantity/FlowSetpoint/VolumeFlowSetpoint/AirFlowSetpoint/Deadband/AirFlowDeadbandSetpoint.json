@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:AirFlowDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Flow Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the air flow setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1",
+    "dtmi:com:syyclops:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

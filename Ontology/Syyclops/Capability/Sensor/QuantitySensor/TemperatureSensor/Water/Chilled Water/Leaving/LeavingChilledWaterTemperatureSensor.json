@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingChilledWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Chilled Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving chilled water"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterTemperatureSensor;1",
+    "dtmi:com:syyclops:LeavingWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

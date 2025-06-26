@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DoorHardware;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Door Hardware"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BarrierAssetHardware;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

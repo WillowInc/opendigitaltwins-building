@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowLevelAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Level Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low level alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LevelAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

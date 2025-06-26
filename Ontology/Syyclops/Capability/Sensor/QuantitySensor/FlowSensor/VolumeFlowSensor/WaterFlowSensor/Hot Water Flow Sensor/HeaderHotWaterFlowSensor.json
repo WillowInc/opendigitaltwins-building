@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderHotWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Hot Water Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with hot water header"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

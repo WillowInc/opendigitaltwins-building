@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopChilledWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Chilled Water Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with tertiary chilled water loop delta pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

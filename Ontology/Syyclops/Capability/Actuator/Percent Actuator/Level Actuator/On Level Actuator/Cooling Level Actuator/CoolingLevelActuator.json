@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CoolingLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the cooling level of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:OnLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

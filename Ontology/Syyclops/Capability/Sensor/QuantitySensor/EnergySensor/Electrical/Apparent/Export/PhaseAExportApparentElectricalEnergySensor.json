@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseAExportApparentElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Export Apparent Electrical Energy Sensor"
+  },
+  "description": {"en": "The apparent electrical energy feedback from a sensor associated with phase a export"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseAApparentElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

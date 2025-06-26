@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:FunctionalPerformanceTestReport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Functional Performance Test Report"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CommissioningDocument;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

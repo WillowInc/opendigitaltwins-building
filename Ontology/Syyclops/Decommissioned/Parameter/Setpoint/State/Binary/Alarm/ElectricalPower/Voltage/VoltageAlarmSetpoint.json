@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VoltageAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the voltage alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalPowerAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

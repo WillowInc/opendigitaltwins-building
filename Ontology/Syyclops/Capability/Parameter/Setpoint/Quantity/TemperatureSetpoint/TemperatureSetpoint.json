@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

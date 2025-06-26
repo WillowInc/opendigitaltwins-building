@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PreheatLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheating Level Setpoint"
+  },
+  "description": {"en": "The desired preheating level percentage for control of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:HeatingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

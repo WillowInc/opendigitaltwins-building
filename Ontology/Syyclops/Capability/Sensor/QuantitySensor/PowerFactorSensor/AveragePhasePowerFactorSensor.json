@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AveragePhasePowerFactorSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Average Phase Power Factor (L-N) Sensor"
+  },
+  "description": {"en": "The average power factor for all three L-N phase measurements"},
+  "extends" : [
+    "dtmi:com:syyclops:PowerFactorSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

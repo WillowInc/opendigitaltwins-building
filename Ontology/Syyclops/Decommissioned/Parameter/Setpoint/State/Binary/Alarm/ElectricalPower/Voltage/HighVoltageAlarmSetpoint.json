@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighVoltageAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Voltage Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high voltage alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

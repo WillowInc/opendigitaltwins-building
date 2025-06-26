@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCApparentElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Apparent Electrical Power Sensor"
+  },
+  "description": {"en": "The apparent electrical power feedback from a sensor associated with phase c"},
+  "extends" : [
+    "dtmi:com:syyclops:ApparentElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

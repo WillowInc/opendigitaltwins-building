@@ -1,0 +1,150 @@
+{
+  "@id": "dtmi:com:syyclops:AirCooledCondenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air-Cooled Condenser"
+  },
+  "description": {
+    "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into the ambient air."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Condenser;1"
+  ],
+  "contents": [
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringAirTemperature",
+      "displayName": {
+        "en": "Design Entering Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Air Temperature Unit"
+      },
+      "name": "designEnteringAirTemperatureUnit",
+      "annotates": "designEnteringAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingAirTemperature",
+      "displayName": {
+        "en": "Design Leaving Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Temperature Unit"
+      },
+      "name": "designLeavingAirTemperatureUnit",
+      "annotates": "designLeavingAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designDeltaAirTemperature",
+      "displayName": {
+        "en": "Design Delta Air Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Delta Air Temperature Unit"
+      },
+      "name": "designDeltaAirTemperatureUnit",
+      "annotates": "designDeltaAirTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Airflow"
+      },
+      "name": "designAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Airflow Unit"
+      },
+      "name": "designAirflowUnit",
+      "annotates": "designAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Number of Fans"
+      },
+      "name": "numberOfFans",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "total fan power"
+      },
+      "name": "totalFanPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "total fan power unit"
+      },
+      "name": "totalFanPowerUnit",
+      "annotates": "totalFanPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "total fan brake horsepower"
+      },
+      "name": "totalFanbrakeHorsepower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "total fan brake horsepower unit"
+      },
+      "name": "totalFanbrakeHorsepowerUnit",
+      "annotates": "totalFanbrakeHorsepower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

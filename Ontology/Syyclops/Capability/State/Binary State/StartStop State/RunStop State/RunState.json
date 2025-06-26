@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Run State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:RunStopState;1",
+    "dtmi:com:syyclops:StartState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

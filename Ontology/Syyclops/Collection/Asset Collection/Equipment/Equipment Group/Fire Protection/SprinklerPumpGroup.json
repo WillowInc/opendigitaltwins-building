@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerPumpGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Group (Sprinkler)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FireProtectionEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VolumeFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Volume Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with volume flow"},
+  "extends" : [
+    "dtmi:com:syyclops:FlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

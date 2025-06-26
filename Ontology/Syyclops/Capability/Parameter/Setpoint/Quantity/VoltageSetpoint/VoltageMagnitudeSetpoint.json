@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VoltageMagnitudeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Magnitude Setpoint"
+  },
+  "description": {"en": "The desired value associated with voltage magnitude"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

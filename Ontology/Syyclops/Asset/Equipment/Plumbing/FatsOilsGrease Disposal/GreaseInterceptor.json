@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:GreaseInterceptor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Grease Interceptor"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FatsOilsGreaseDisposal;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

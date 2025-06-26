@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DistanceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distance Setpoint"
+  },
+  "description": {"en": "The desired value associated with distance"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

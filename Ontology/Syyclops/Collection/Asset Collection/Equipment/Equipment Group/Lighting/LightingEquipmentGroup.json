@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:LightingEquipmentGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lighting Equipment Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:EquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

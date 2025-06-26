@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringSteamPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Steam Pump Run Level State"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SteamPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

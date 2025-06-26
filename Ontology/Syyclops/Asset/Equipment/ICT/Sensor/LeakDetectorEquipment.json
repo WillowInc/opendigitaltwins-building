@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:LeakDetectorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leak Detector"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

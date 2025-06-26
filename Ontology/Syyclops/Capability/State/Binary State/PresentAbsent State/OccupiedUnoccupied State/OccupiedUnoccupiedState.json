@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:OccupiedUnoccupiedState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied/Unoccupied State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'occupied' when 'true' and 'unoccupied' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:PresentAbsentState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReturnAirCO2Setpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air CO2 Setpoint"
+  },
+  "description": {"en": "The desired value associated with carbon dioxide (CO2) air quality associated with the return air"},
+  "extends" : [
+    "dtmi:com:syyclops:CO2AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

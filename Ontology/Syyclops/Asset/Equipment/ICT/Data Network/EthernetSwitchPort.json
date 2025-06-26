@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:com:syyclops:EthernetSwitchPort;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ethernet Switch Port"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DataNetworkEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "10/100/1000MB, 10GB"
+      },
+      "displayName": {
+        "en": "port speed"
+      },
+      "name": "portSpeed",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "1,2,3,4"
+      },
+      "displayName": {
+        "en": "PoE type"
+      },
+      "name": "poeType",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

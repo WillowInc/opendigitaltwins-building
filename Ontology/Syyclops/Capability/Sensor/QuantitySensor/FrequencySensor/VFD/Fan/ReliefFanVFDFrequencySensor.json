@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefFanVFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Fan VFD Frequency Sensor"
+  },
+  "description": {"en": "The frequency feedback from a sensor associated with relief air fan VFD"},
+  "extends" : [
+    "dtmi:com:syyclops:FanVFDFrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustAirVolumeFlowSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Volume Flow Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with exhaust air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirVolumeFlowSetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

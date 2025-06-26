@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:IntercomEntry;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Intercom Entry"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AccessControlEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerantStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerant Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with refrigerant static pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:StaticPressureSetpoint;1",
+    "dtmi:com:syyclops:RefrigerantPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

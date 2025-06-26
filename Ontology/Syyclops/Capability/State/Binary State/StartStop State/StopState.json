@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:StopState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stop State"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StartStopState;1",
+    "dtmi:com:syyclops:RunStopState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

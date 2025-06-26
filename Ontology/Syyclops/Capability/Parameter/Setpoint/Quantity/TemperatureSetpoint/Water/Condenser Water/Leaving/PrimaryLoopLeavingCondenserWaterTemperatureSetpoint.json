@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PrimaryLoopLeavingCondenserWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Leaving Condenser Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with primary condenser water loop leaving temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingCondenserWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

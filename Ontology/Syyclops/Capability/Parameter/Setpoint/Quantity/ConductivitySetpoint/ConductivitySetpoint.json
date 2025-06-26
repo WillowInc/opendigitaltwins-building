@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ConductivitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Conductivity Setpoint"
+  },
+  "description": {"en": "The desired value associated with conductivity"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "@id": "dtmi:com:syyclops:UnitHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unit Heater"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "vertical",
+            "name": "vertical"
+          },
+          {
+            "enumValue": "horizontal",
+            "name": "horizontal"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal heating capacity"
+      },
+      "name": "nominalHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal heating capacity unit"
+      },
+      "name": "nominalHeatingCapacityUnit",
+      "annotates": "nominalHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "heating method"
+      },
+      "name": "heatingMethod",
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:syyclops:Fan;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

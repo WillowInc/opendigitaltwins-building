@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:airport:BaggageHandlingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Baggage Handling Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:syyclops:RoofingMembrane;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "RoofingMembrane"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ArchitecturalBuildingComponent;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

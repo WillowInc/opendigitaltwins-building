@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:FoodPackagingVacuumSealer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Packaging Vacuum Sealer"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodPackagingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

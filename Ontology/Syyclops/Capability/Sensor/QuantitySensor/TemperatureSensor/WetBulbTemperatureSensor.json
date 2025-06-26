@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:WetBulbTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wet Bulb Temperature Sensor"
+  },
+  "description": {"en": "The wet bulb temperature feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

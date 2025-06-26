@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustFanHighSupplyStaticPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan High Supply Static Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the exhaust fan high supply static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:FanHighSupplyStaticPressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

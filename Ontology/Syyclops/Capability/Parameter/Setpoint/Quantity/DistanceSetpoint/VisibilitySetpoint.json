@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VisibilitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Visibility Setpoint"
+  },
+  "description": {"en": "The desired value associated with visibility"},
+  "extends" : [
+    "dtmi:com:syyclops:DistanceSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

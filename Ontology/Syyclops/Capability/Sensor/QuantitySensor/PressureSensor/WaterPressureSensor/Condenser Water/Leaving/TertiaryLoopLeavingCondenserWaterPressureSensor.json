@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopLeavingCondenserWaterPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Condenser Water Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with leaving condenser water tertiary loop"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingCondenserWaterPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

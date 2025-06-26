@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:LowTemperatureRefrigeratedFoodDisplayCase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low-Temperature Refrigerated Food Display Case"
+  },
+  "description": {
+    "en": "A food display case used for foods required to be refrigerated to low-temperatures."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigeratedFoodDisplayCase;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

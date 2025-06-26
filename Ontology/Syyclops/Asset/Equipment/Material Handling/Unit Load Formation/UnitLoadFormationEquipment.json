@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:UnitLoadFormationEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unit Load Formation Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:MaterialHandlingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

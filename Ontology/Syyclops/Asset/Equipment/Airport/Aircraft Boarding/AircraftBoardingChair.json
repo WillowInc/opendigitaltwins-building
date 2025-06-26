@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AircraftBoardingChair;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Aircraft Boarding Chair"
+  },
+  "description": {
+    "en": "A device used to transfer passengers from their wheelchair or other apparatus to their seat in the aircraft cabin."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AircraftBoardingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

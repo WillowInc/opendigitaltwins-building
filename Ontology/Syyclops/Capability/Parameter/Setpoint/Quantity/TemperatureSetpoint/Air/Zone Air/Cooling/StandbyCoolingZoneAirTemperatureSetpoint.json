@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:StandbyCoolingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Standby Cooling Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with standby cooling zone air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:CoolingZoneAirTemperatureSetpoint;1",
+    "dtmi:com:syyclops:StandbyCoolingSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

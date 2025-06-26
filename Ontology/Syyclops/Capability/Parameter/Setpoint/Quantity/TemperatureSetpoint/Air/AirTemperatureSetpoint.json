@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:AirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

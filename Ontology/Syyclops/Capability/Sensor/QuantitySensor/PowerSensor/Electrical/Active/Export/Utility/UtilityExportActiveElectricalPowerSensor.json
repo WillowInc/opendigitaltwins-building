@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:UtilityExportActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Export Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power being exported to the utility grid. A positive value indicates net site export whereas a negative number indicates net site consumption."},
+  "extends" : [
+    "dtmi:com:syyclops:TotalExportActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

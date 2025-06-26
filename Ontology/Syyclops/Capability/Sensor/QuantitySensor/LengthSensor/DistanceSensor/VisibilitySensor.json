@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VisibilitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Visibility Sensor"
+  },
+  "description": {"en": "The visibility feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:DistanceSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

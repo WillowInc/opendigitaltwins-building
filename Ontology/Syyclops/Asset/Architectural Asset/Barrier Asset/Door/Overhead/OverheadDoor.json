@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:OverheadDoor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Overhead Door"
+  },
+  "description": {
+    "en": "An upward-operating door that swings or rolls open from the ground level, assuming a horizontal position above the doorway when opened."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Door;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

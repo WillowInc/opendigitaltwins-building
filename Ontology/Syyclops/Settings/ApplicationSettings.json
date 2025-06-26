@@ -1,0 +1,57 @@
+{
+  "@id": "dtmi:com:syyclops:ApplicationSettings;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Application Settings"
+  },
+  "description": {
+    "en": "Settings or properties used by an application for its functionality."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Settings;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "applicationName",
+      "displayName": {
+        "en": "Application Name"
+      },
+      "description": {
+        "en": "The name of the application which is storing and retreiving the settings for its functionality. This is used to filter all the collection of all application settings."
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "uiSettings",
+      "displayName": {
+        "en": "UI Settings"
+      },
+      "description": {
+        "en": "A collection of settings related to a twin for user interface components to leverage for functionality such as sorting, coloring, and placement."
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "uiComponentName",
+          "description": {
+            "en": "The name of a user interface component for which properties are desired to be set (i.e. ArcGISWebMap, TimeSeriesViewer)."
+          },
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "uiComponentSettings",
+          "description": {
+            "en": "The settings or properties stored as a JSON string for the user interface to deserialize (i.e. {\"zoom\": 90, \"center\": [10, 40]})."
+          },
+          "schema": "string"
+        }
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

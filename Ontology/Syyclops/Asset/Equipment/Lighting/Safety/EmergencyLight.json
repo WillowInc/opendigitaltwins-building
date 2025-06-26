@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EmergencyLight;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Emergency Light"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SafetyLighting;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

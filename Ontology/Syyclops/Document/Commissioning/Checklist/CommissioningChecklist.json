@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:CommissioningChecklist;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Commissioning Checklist"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CommissioningDocument;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

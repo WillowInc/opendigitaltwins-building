@@ -1,0 +1,37 @@
+{
+  "@id": "dtmi:com:syyclops:ToiletTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet with Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Toilet;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "flushing type"
+      },
+      "name": "flushingType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "PressureAssisted",
+            "name": "PressureAssisted"
+          },
+          {
+            "enumValue": "Gravity",
+            "name": "Gravity"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

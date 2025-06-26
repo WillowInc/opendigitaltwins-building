@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnergyRecoveryDeviceDischargeAirBypassDamperOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device Discharge Air Bypass Damper Open State"
+  },
+  "description": {"en": "The Boolean state of the energy recovery device discharge air bypass damper which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

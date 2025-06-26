@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FanStartsCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Starts Count Sensor"
+  },
+  "description": {"en": "The counted number of starts of a fan from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:StartsCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

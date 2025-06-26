@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:AirHandlingUnitSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Handling Unit Section"
+  },
+  "description": {
+    "en": "A primary element of an air handling unit."
+  },
+  "extends": [
+    "dtmi:com:syyclops:HVACEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

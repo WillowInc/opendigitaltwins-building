@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ChillerGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chiller Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReturnAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with return air static pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:AirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

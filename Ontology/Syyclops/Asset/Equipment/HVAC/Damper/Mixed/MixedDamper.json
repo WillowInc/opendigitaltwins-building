@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:MixedDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Damper"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

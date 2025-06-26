@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AirfieldPavementMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield Pavement Marking"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PavementMarking;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "message",
+      "displayName": {
+        "en": "Message"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "A | 36-18"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

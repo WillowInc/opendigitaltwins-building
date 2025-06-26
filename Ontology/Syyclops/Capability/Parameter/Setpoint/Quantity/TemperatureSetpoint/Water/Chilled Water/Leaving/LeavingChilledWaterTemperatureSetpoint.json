@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Chilled Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with leaving chilled water temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterTemperatureSetpoint;1",
+    "dtmi:com:syyclops:LeavingWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

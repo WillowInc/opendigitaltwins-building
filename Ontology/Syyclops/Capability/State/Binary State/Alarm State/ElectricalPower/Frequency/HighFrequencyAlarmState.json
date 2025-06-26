@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighFrequencyAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Frequency Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high electrical frequency alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:FrequencyAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

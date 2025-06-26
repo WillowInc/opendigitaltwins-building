@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:NABERSrating;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "NABERS rating"
+  },
+  "description": {
+    "en": "The 1-6 stars rating for a building compares it to other buildings across Australia with similar primary use characteristics. A higher score represents better performance. (nabers.gov.au)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RatingPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

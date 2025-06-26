@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EffectiveHeatingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Effective Heating Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with effective heating zone air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HeatingZoneAirTemperatureSetpoint;1",
+    "dtmi:com:syyclops:EffectiveZoneAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

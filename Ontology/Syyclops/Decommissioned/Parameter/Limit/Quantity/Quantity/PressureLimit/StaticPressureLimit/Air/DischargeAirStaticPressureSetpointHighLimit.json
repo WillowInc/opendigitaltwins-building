@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirStaticPressureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Static Pressure Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with discharge (supply) air static pressure setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirStaticPressureSetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

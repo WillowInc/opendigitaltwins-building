@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Damper"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BackdraftDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

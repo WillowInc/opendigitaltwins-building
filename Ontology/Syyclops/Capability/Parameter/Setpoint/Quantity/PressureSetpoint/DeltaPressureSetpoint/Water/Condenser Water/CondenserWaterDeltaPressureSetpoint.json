@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with condenser water delta pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

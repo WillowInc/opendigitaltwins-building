@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringWaterPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Water Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the entering water pump"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

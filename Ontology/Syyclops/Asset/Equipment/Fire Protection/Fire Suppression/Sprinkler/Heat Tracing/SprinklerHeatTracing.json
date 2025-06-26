@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerHeatTracing;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Tracing (Sprinkler)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerEquipment;1",
+    "dtmi:com:syyclops:HeatTracing;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

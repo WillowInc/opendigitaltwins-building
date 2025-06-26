@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnergyRecoveryWheelRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Wheel Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the energy recovery wheel"},
+  "extends" : [
+    "dtmi:com:syyclops:RunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

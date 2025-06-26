@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PointOfSaleRegister;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Point-Of-Sale Register"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PaymentEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ContactState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Contact State"
+  },
+  "description": {"en": "The Boolean status from a state where 'contact' is 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OpenCloseState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

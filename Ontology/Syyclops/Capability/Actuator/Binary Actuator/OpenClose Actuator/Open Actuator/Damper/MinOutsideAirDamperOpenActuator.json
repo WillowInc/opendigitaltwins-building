@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MinOutsideAirDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Min Outside Air Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the minimum outside air damper to 'open' when 'true', to allow or disallow ventilation air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

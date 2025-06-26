@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:QuantitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Quantity Setpoint"
+  },
+  "description": {"en": "The desired value associated with"},
+  "extends" : [
+    "dtmi:com:syyclops:Setpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

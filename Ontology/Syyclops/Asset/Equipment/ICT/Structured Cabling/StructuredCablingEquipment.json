@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:StructuredCablingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structured Cabling Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ICTEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

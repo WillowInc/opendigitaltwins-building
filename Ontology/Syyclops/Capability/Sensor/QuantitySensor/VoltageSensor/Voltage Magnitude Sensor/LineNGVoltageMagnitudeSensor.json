@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LineNGVoltageMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Line N-G Voltage Magnitude Sensor"
+  },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with line n-g, neutral to ground"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

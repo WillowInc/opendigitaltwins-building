@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCNetReactiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Net Reactive Electrical Power Sensor"
+  },
+  "description": {"en": "The reactive electrical power feedback from a sensor associated with phase c net"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseCReactiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

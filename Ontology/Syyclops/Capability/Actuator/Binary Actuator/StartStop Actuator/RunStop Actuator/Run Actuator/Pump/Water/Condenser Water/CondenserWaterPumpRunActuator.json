@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Pump Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the condenser water pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerPressureReducingStation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Reducing Station (Sprinkler)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PneumaticTubeSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ConveyanceSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

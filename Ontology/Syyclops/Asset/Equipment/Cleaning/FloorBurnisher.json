@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:FloorBurnisher;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Floor Burnisher"
+  },
+  "description": {
+    "en": "A machine used to make hard floors shiny."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CleaningEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

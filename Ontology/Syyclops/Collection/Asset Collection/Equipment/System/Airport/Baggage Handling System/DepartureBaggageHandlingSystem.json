@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:DepartureBaggageHandlingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Departure Baggage Handling System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:BaggageHandlingSystem;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

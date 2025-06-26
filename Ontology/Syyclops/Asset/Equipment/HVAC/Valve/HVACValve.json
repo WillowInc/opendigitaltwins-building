@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HVACValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Valve"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1",
+    "dtmi:com:syyclops:Valve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

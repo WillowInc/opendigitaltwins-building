@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowDeltaHotWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Delta Hot Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low hot water delta temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowHotWaterTemperatureAlarmState;1",
+    "dtmi:com:syyclops:LowDeltaWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

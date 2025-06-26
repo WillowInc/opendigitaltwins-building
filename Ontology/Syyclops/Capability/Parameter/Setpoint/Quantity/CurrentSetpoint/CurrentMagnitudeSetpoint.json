@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CurrentMagnitudeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Magnitude Setpoint"
+  },
+  "description": {"en": "The desired value associated with current magnitude"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

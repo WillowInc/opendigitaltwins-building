@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringSteamTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Steam Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam entering temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

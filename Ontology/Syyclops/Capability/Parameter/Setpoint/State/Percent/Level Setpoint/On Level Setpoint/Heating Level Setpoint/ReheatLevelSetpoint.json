@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReheatLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheating Level Setpoint"
+  },
+  "description": {"en": "The desired reheating level percentage for control of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:HeatingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

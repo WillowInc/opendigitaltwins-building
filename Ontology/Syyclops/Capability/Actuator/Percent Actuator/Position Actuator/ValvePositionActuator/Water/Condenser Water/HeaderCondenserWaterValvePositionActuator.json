@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderCondenserWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Condenser Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the condenser water header valve"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

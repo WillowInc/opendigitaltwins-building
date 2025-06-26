@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustFanRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan Run Level State"
+  },
+  "description": {"en": "The percent run level state of the exhaust air fan"},
+  "extends" : [
+    "dtmi:com:syyclops:FanRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PresentState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Present State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'present' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:PresentAbsentState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

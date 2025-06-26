@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighSupplyStaticPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Supply Static Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high supply static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:StaticPressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

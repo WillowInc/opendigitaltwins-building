@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerBalancingValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Balancing Valve (Sprinkler)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

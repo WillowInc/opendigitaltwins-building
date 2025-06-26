@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:syyclops:SmokeDetector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke Detector"
+  },
+  "extends": "dtmi:com:syyclops:FireDetector;1",
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:UtilityExportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Export Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The cummulative active electrical energy being exported from the site when power is being sent to the utility grid (a negative utility import power)."},
+  "extends" : [
+    "dtmi:com:syyclops:TotalExportActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FanLowSuctionStaticPressureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Low Suction Static Pressure Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the fan low suction static pressure alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowSuctionStaticPressureAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighMixedAirHumidityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Mixed Air Humidity Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high mixed air humidity alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighAirHumidityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

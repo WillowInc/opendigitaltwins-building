@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MixedFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the mixed air fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

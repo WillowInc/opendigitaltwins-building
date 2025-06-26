@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DamperCloseActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Damper Close Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the damper to 'close' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:CloseActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

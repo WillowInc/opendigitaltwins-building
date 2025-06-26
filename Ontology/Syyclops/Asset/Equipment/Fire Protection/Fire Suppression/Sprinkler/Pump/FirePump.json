@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FirePump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerEquipment;1",
+    "dtmi:com:syyclops:Pump;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LineCCurrentDemandSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Line C Current Demand Sensor"
+  },
+  "description": {"en": "The current demand feedback from a sensor associated with line c"},
+  "extends" : [
+    "dtmi:com:syyclops:LineCCurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

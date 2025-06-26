@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LinearAccelerationSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Linear Acceleration Setpoint"
+  },
+  "description": {"en": "The desired value associated with linear acceleration"},
+  "extends" : [
+    "dtmi:com:syyclops:AccelerationSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

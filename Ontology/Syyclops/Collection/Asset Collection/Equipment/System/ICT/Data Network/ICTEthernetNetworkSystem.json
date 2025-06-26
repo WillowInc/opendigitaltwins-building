@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ICTEthernetNetworkSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ethernet Network System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ICTSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

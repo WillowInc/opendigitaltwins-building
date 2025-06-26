@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DishwashingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dishwashing Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

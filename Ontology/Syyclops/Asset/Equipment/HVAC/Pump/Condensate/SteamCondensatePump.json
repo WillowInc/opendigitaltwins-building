@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SteamCondensatePump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Condensate Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CondensatePump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

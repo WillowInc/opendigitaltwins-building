@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseANetActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase A Net Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with phase a net"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseAActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

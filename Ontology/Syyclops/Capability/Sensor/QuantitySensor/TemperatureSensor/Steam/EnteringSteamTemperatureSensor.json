@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringSteamTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Steam Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with steam entering"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

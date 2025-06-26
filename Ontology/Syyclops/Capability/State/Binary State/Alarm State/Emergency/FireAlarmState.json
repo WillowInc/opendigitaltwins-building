@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FireAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm State"
+  },
+  "description": {"en": "The Boolean state of the fire alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:EmergencyAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

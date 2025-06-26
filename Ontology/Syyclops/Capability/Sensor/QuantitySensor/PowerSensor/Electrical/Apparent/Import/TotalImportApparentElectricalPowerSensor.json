@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TotalImportApparentElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Import Apparent Electrical Power Sensor"
+  },
+  "description": {"en": "The apparent electrical power feedback from a sensor associated with total import"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalApparentElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

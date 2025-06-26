@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:MotorStarter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Motor Starter"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:MotorController;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

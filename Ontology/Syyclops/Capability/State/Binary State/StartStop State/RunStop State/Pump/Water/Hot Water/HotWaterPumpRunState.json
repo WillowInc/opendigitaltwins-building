@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HotWaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the hot water pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

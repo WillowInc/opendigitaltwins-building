@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:FumeExhaustVAVAirflowControlValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fume Exhaust VAV Airflow Control Valve"
+  },
+  "description": {
+    "en": "An VAV airflow control vavle used to exhaust fumes."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ExhaustVAVAirflowControlValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

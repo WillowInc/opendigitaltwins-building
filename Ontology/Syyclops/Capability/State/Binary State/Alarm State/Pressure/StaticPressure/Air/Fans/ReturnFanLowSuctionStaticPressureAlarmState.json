@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReturnFanLowSuctionStaticPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Fan Low Suction Static Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the return fan low suction static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:FanLowSuctionStaticPressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

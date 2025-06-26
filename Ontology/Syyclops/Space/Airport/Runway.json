@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:airport:Runway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runway"
+  },
+  "description": {
+    "en": "A defined rectangular area on an airfield prepared for the landing and takeoff of aircraft."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

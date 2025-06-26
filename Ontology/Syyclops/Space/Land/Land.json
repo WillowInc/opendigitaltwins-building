@@ -1,0 +1,135 @@
+{
+  "@id": "dtmi:com:syyclops:Land;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Land"
+  },
+  "description": {
+    "en": "A piece of land upon which one or more buildings may be situated, a.ka. site."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Space;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "schema": "dtmi:com:syyclops:Address;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Electricity Price Rate"
+      },
+      "name": "electricityPriceRate",
+      "schema": "dtmi:com:syyclops:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Electricity Emission Factor"
+      },
+      "name": "electricityEmissionFactor",
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Natural Gas Price Rate"
+      },
+      "name": "naturalGasPriceRate",
+      "schema": "dtmi:com:syyclops:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Chilled Water Price Rate"
+      },
+      "name": "chilledWaterPriceRate",
+      "schema": "dtmi:com:syyclops:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Steam Price Rate"
+      },
+      "name": "steamPriceRate",
+      "schema": "dtmi:com:syyclops:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Domestic Water Price Rate"
+      },
+      "name": "domesticWaterPriceRate",
+      "schema": "dtmi:com:syyclops:UtilityRate;1"
+    },
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "coordinates",
+      "displayName": {
+        "en": "Coordinates"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:syyclops:LandCoordinates;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": {
+              "en": "Latitude"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": {
+              "en": "Longitude"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "elevation",
+      "displayName": {
+        "en": "Elevation (Sea Level)"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "elevation unit"
+      },
+      "name": "elevationUnit",
+      "annotates": "elevation",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:HandSoapDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hand Soap Dispenser"
+  },
+  "description": {
+    "en": "An device that dispenses liquid soap for hand washing."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ArchitecturalAsset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

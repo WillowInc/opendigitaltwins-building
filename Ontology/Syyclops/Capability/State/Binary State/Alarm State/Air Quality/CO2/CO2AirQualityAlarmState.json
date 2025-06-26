@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CO2AirQualityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "CO2 Air Quality Alarm State"
+  },
+  "description": {"en": "The Boolean state of the CO2 air quality which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualityAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

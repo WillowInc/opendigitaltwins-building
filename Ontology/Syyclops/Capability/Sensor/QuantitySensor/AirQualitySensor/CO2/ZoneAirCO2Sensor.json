@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneAirCO2Sensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air CO2 Sensor"
+  },
+  "description": {"en": "The air quality (CO2) feedback from a sensor associated with the zone air"},
+  "extends" : [
+    "dtmi:com:syyclops:CO2AirQualitySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

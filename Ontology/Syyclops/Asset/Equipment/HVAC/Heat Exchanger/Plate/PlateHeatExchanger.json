@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:syyclops:PlateHeatExchanger;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plate Heat Exchanger"
+  },
+  "description": {
+    "en": "A type of heat exchanger which uses a series of thin plates to transfer heat between two fluids."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HeatExchanger;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

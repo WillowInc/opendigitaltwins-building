@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopEnteringHotWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Hot Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the tertiary loop entering hot water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringHotWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

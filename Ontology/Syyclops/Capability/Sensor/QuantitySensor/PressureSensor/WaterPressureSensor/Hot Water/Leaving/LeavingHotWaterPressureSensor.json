@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingHotWaterPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Hot Water Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with leaving hot water"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterPressureSensor;1",
+    "dtmi:com:syyclops:LeavingWaterPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

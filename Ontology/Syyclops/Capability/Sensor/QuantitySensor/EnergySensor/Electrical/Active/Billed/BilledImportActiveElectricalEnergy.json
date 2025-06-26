@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:BilledImportActiveElectricalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Import Active Electrical Energy"
+  },
+  "description": {"en": "The quantity of active electrical energy imported from a utility to a building or space over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Export Active Electrical Energy Sensor which reports data on a more frequent interval."},
+  "extends" : [
+    "dtmi:com:syyclops:TotalImportActiveElectricalEnergySensor;1",
+    "dtmi:com:syyclops:BilledActiveElectricalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

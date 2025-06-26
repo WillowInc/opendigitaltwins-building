@@ -1,0 +1,66 @@
+{
+  "@id": "dtmi:com:syyclops:BuildingOperationsArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Operations Area"
+  },
+  "description": {
+    "en": "An area within a building designated as having a distinct maintainance and operations function or designated services."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SpaceCollection;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "area",
+      "displayName": {
+        "en": "Area"
+      },
+      "schema": "dtmi:com:syyclops:SpaceArea;1"
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:syyclops:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "schema": "dtmi:com:syyclops:SpaceTemperature;1"
+    },
+    {
+      "@type": "Component",
+      "name": "humidity",
+      "displayName": {
+        "en": "Humidity Average"
+      },
+      "schema": "dtmi:com:syyclops:SpaceHumidity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "CO2",
+      "displayName": {
+        "en": "CO2"
+      },
+      "schema": "dtmi:com:syyclops:SpaceCO2;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancy",
+      "displayName": {
+        "en": "Occupancy"
+      },
+      "schema": "dtmi:com:syyclops:SpaceOccupancy;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

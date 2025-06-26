@@ -1,0 +1,201 @@
+{
+  "@id": "dtmi:com:syyclops:CoolingTower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Tower"
+  },
+  "description": {
+    "en": "A device that rejects waste heat to the atmosphere through the cooling of a coolant stream, usually a water stream to a lower temperature."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal cooling capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal cooling capacity unit"
+      },
+      "name": "nominalCoolingCapacityUnit",
+      "annotates": "nominalCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "flow capacity"
+      },
+      "name": "flowCapacity",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "flow capacity unit"
+      },
+      "name": "flowCapacityUnit",
+      "annotates": "flowCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:syyclops:Fan;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Number of Cells"
+      },
+      "name": "numberOfCells",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWaterTemperature",
+      "displayName": {
+        "en": "Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Water Temperature Unit"
+      },
+      "name": "designEnteringWaterTemperatureUnit",
+      "annotates": "designEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingWaterTemperature",
+      "displayName": {
+        "en": "Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Water Temperature Unit"
+      },
+      "name": "designLeavingWaterTemperatureUnit",
+      "annotates": "designLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWetBulbTemperature",
+      "displayName": {
+        "en": "Design Entering Wet Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Wet Bulb Temperature Unit"
+      },
+      "name": "designEnteringWetBulbTemperatureUnit",
+      "annotates": "designEnteringWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "approach",
+      "displayName": {
+        "en": "Approach"
+      },
+      "description": {
+        "en": "The cooling tower approach is the difference between leaving water temperature and ambient wet bulb temperature."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Approach Unit"
+      },
+      "name": "approachUnit",
+      "annotates": "approach",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Minimum Flow"
+      },
+      "name": "designMinFlow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Minimum Flow Unit"
+      },
+      "name": "designMinFlowUnit",
+      "annotates": "designMinFlow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Maximum Flow"
+      },
+      "name": "designMaxFlow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Maximum Flow Unit"
+      },
+      "name": "designMaxFlowUnit",
+      "annotates": "designMaxFlow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

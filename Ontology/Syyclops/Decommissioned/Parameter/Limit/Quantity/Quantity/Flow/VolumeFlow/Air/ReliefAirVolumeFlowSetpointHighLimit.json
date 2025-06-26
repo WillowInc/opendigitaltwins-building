@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirVolumeFlowSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Volume Flow Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with relief air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirVolumeFlowSetpointHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

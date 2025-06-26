@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:VRFIndoorUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VRF Indoor Unit"
+  },
+  "description": {
+    "en": "A variable refrigerant flow type of fan coil unit which receives a varying amount of refrigerant from its connected VRF outdoor unit."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

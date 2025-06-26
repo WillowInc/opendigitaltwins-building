@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BypassChilledWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Chilled Water Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with chilled water bypass"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "@id": "dtmi:com:syyclops:EnergyRecoveryDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device"
+  },
+  "description": {
+    "en": "An asset component that transfers energy between two different streams of air."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AssetComponent;1",
+    "dtmi:com:syyclops:GeneralPurposeEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal enthalpy recovery ratio (ERR)"
+      },
+      "name": "nominalEnthalpyRecoveryRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "energy recovery method"
+      },
+      "name": "energyRecoveryMethod",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Sensible Energy Wheel",
+            "name": "SensibleEnergyWheel"
+          },
+          {
+            "enumValue": "Enthalpy Wheel",
+            "name": "EnthalpyWheel"
+          },
+          {
+            "enumValue": "DualWheel",
+            "name": "DualWheel"
+          },
+          {
+            "enumValue": "Sensible Energy Core",
+            "name": "SensibleEnergyCore"
+          },
+          {
+            "enumValue": "Enthalpy Core",
+            "name": "EnthalpyCore"
+          },
+          {
+            "enumValue": "DualCoils",
+            "name": "DualCoils"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "supply cooling air pressure drop"
+      },
+      "name": "supplyCoolingAirPressureDrop",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "supply cooling minimum airflow rating"
+      },
+      "name": "supplyCoolingMinAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "supply cooling maximum airflow rating"
+      },
+      "name": "supplyCoolingMaxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "supply cooling design eirflow"
+      },
+      "name": "supplyCoolingDesignAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyCoolingDesignEnteringAirDryBulbTemperature",
+      "displayName": {
+        "en": "supply cooling design entering air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyCoolingDesignLeavingAirDryBulbTemperature",
+      "displayName": {
+        "en": "supply cooling design leaving air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyCoolingDesignEnteringAirWetBulbTemperature",
+      "displayName": {
+        "en": "supply cooling design entering air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyCoolingDesignLeavingAirWetBulbTemperature",
+      "displayName": {
+        "en": "supply cooling design leaving air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "supply heating air pressure drop"
+      },
+      "name": "supplyHeatingAirPressureDrop",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "supply heating minimum airflow rating"
+      },
+      "name": "supplyHeatingMinAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "supply heating maximum airflow rating"
+      },
+      "name": "supplyHeatingMaxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "supply heating design eirflow"
+      },
+      "name": "supplyHeatingDesignAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyHeatingDesignEnteringAirDryBulbTemperature",
+      "displayName": {
+        "en": "supply heating design entering air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyHeatingDesignLeavingAirDryBulbTemperature",
+      "displayName": {
+        "en": "supply heating design leaving air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyHeatingDesignEnteringAirWetBulbTemperature",
+      "displayName": {
+        "en": "supply heating design entering air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "supplyHeatingDesignLeavingAirWetBulbTemperature",
+      "displayName": {
+        "en": "supply heating design leaving air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "exhaust cooling air pressure drop"
+      },
+      "name": "exhaustCoolingAirPressureDrop",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "exhaust cooling minimum airflow rating"
+      },
+      "name": "exhaustCoolingMinAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "exhaust cooling maximum airflow rating"
+      },
+      "name": "exhaustCoolingMaxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "exhaust cooling design eirflow"
+      },
+      "name": "exhaustCoolingDesignAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
+      "displayName": {
+        "en": "exhaust cooling design entering air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
+      "displayName": {
+        "en": "exhaust cooling design leaving air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
+      "displayName": {
+        "en": "exhaust cooling design entering air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
+      "displayName": {
+        "en": "exhaust cooling design leaving air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "exhaust heating air pressure drop"
+      },
+      "name": "exhaustHeatingAirPressureDrop",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "exhaust heating minimum airflow rating"
+      },
+      "name": "exhaustHeatingMinAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "exhaust heating maximum airflow rating"
+      },
+      "name": "exhaustHeatingMaxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "exhaust heating design eirflow"
+      },
+      "name": "exhaustHeatingDesignAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
+      "displayName": {
+        "en": "exhaust heating design entering air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
+      "displayName": {
+        "en": "exhaust heating design leaving air dry bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
+      "displayName": {
+        "en": "exhaust heating design entering air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
+      "displayName": {
+        "en": "exhaust heating design leaving air wet bulb temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling air pressure drop unit"
+      },
+      "name": "supplyCoolingAirPressureDropUnit",
+      "annotates": "supplyCoolingAirPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling minimum airflow rating unit"
+      },
+      "name": "supplyCoolingMinAirflowRatingUnit",
+      "annotates": "supplyCoolingMinAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling maximum airflow rating unit"
+      },
+      "name": "supplyCoolingMaxAirflowRatingUnit",
+      "annotates": "supplyCoolingMaxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling design airflow unit"
+      },
+      "name": "supplyCoolingDesignAirflowUnit",
+      "annotates": "supplyCoolingDesignAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling design entering air dry bulb temperature unit"
+      },
+      "name": "supplyCoolingDesignEnteringAirDryBulbTemperatureUnit",
+      "annotates": "supplyCoolingDesignEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling design leaving air dry bulb temperature unit"
+      },
+      "name": "supplyCoolingDesignLeavingAirDryBulbTemperatureUnit",
+      "annotates": "supplyCoolingDesignLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply coolign design entering air wet bulb temperature unit"
+      },
+      "name": "supplyCoolingDesignEnteringAirWetBulbTemperatureUnit",
+      "annotates": "supplyCoolingDesignEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply cooling design leaving air wet bulb temperature unit"
+      },
+      "name": "supplyCoolingDesignLeavingAirWetBulbTemperatureUnit",
+      "annotates": "supplyCoolingDesignLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating air pressure drop unit"
+      },
+      "name": "supplyHeatingAirPressureDropUnit",
+      "annotates": "supplyHeatingAirPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating minimum airflow rating unit"
+      },
+      "name": "supplyHeatingMinAirflowRatingUnit",
+      "annotates": "supplyHeatingMinAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating maximum airflow rating unit"
+      },
+      "name": "supplyHeatingMaxAirflowRatingUnit",
+      "annotates": "supplyHeatingMaxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating design airflow unit"
+      },
+      "name": "supplyHeatingDesignAirflowUnit",
+      "annotates": "supplyHeatingDesignAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating design entering air dry bulb temperature unit"
+      },
+      "name": "supplyHeatingDesignEnteringAirDryBulbTemperatureUnit",
+      "annotates": "supplyHeatingDesignEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating design leaving air dry bulb temperature unit"
+      },
+      "name": "supplyHeatingDesignLeavingAirDryBulbTemperatureUnit",
+      "annotates": "supplyHeatingDesignLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply coolign design entering air wet bulb temperature unit"
+      },
+      "name": "supplyHeatingDesignEnteringAirWetBulbTemperatureUnit",
+      "annotates": "supplyHeatingDesignEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "supply heating design leaving air wet bulb temperature unit"
+      },
+      "name": "supplyHeatingDesignLeavingAirWetBulbTemperatureUnit",
+      "annotates": "supplyHeatingDesignLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling air pressure drop unit"
+      },
+      "name": "exhaustCoolingAirPressureDropUnit",
+      "annotates": "exhaustCoolingAirPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling minimum airflow rating unit"
+      },
+      "name": "exhaustCoolingMinAirflowRatingUnit",
+      "annotates": "exhaustCoolingMinAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling maximum airflow rating unit"
+      },
+      "name": "exhaustCoolingMaxAirflowRatingUnit",
+      "annotates": "exhaustCoolingMaxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling design airflow unit"
+      },
+      "name": "exhaustCoolingDesignAirflowUnit",
+      "annotates": "exhaustCoolingDesignAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling design entering air dry bulb temperature unit"
+      },
+      "name": "exhaustCoolingDesignEnteringAirDryBulbTemperatureUnit",
+      "annotates": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling design leaving air dry bulb temperature unit"
+      },
+      "name": "exhaustCoolingDesignLeavingAirDryBulbTemperatureUnit",
+      "annotates": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust coolign design entering air wet bulb temperature unit"
+      },
+      "name": "exhaustCoolingDesignEnteringAirWetBulbTemperatureUnit",
+      "annotates": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust cooling design leaving air wet bulb temperature unit"
+      },
+      "name": "exhaustCoolingDesignLeavingAirWetBulbTemperatureUnit",
+      "annotates": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating air pressure drop unit"
+      },
+      "name": "exhaustHeatingAirPressureDropUnit",
+      "annotates": "exhaustHeatingAirPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating minimum airflow rating unit"
+      },
+      "name": "exhaustHeatingMinAirflowRatingUnit",
+      "annotates": "exhaustHeatingMinAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating maximum airflow rating unit"
+      },
+      "name": "exhaustHeatingMaxAirflowRatingUnit",
+      "annotates": "exhaustHeatingMaxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating design airflow unit"
+      },
+      "name": "exhaustHeatingDesignAirflowUnit",
+      "annotates": "exhaustHeatingDesignAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating design entering air dry bulb temperature unit"
+      },
+      "name": "exhaustHeatingDesignEnteringAirDryBulbTemperatureUnit",
+      "annotates": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating design leaving air dry bulb temperature unit"
+      },
+      "name": "exhaustHeatingDesignLeavingAirDryBulbTemperatureUnit",
+      "annotates": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust coolign design entering air wet bulb temperature unit"
+      },
+      "name": "exhaustHeatingDesignEnteringAirWetBulbTemperatureUnit",
+      "annotates": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "exhaust heating design leaving air wet bulb temperature unit"
+      },
+      "name": "exhaustHeatingDesignLeavingAirWetBulbTemperatureUnit",
+      "annotates": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

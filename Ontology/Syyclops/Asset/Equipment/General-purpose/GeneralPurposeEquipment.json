@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:GeneralPurposeEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "General-purpose Equipment"
+  },
+  "description": {
+    "en": "A type of equipment that can be used in a variety of applications or systems such as HVAC, refrigeration, or industrial processes. It may be standalone or a component that is part of another equipment."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Equipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

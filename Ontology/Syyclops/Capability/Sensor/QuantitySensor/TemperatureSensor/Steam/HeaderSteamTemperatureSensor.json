@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderSteamTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Steam Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with steam header"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

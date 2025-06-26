@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SecondaryLoopEnteringChilledWaterValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Entering Chilled Water Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the secondary loop entering chilled water valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringChilledWaterValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

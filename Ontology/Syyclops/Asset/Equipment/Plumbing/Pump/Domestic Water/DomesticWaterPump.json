@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DomesticWaterPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domestic Water Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HotDeckInletAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Deck Inlet Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with inlet (supply) air flow to a terminal unit from the hot deck of an air handling unit"},
+  "extends" : [
+    "dtmi:com:syyclops:InletAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

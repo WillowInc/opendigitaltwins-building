@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:AudioAmplifier;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Audio Amplifier"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

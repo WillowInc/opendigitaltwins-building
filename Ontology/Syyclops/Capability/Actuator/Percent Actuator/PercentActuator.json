@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:com:syyclops:PercentActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Percent Unity Actuator"
+  },
+  "description": {"en": "The percent command which sets the state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:Actuator;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "%"
+    }
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:WaterSourcePackagedAirConditioner;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water-Source Packaged Air Conditioner"
+  },
+  "description": {
+    "en": "A self-contained air conditioner which contains the condenser, compressor, and evaporator in a single unit, which transfers heat to a water loop"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PackagedAirConditioner;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

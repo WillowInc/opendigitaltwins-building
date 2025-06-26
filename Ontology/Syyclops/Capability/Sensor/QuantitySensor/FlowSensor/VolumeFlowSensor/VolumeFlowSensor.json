@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VolumeFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Volume Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:FlowSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

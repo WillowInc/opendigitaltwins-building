@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirTemperatureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Temperature Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with discharge (supply) air temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSetpointHighLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

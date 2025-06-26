@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:syyclops:EquipmentGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Equipment Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:EquipmentCollection;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a super-entity of an Asset where the Asset Collection is a component such as a Fan Array within an AHU."
+      },
+      "displayName": {
+        "en": "is part of"
+      },
+      "name": "isPartOf",
+      "target": "dtmi:com:syyclops:Asset;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

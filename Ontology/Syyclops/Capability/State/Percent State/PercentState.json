@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:syyclops:PercentState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Percent Unity State"
+  },
+  "description": {"en": "The percent state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:State;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "double",
+      "comment": "%"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

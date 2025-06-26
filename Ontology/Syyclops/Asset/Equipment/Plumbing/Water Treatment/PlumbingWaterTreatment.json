@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingWaterTreatment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Treatment (Plumbing)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipment;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

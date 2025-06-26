@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:TaxiwayClearanceBar;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Taxiway Clearance Bar"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirfieldLightingSystem;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

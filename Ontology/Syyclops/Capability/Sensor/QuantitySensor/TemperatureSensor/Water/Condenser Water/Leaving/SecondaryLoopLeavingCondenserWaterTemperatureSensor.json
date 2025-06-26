@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SecondaryLoopLeavingCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Leaving Condenser Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with leaving condenser water secondary loop"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingCondenserWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

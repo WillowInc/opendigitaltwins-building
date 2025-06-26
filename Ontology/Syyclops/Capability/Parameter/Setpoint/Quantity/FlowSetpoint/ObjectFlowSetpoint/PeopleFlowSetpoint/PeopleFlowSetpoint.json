@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PeopleFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with people flow"},
+  "extends" : [
+    "dtmi:com:syyclops:ObjectFlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

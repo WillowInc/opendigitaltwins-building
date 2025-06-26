@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:DryFoodDisplayCase;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dry Food Display Case"
+  },
+  "description": {
+    "en": "A food display case used for foods that can be kept at ambient room temperature and do not require refrigeration or heating."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodDisplayCase;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

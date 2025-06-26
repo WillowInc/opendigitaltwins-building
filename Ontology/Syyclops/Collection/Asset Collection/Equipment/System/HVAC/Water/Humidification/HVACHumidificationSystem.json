@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HVACHumidificationSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Humidification System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

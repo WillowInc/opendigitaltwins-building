@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:TanklessWaterHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tankless Water Heater"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:WaterHeater;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

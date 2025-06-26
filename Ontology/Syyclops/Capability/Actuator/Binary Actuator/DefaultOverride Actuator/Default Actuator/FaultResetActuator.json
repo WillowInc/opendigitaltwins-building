@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FaultResetActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fault Reset Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the fault to 'reset' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ResetActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

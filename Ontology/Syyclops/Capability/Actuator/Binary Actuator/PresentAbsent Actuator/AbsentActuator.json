@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:AbsentActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absent Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the equipment to 'absent' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:PresentAbsentActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

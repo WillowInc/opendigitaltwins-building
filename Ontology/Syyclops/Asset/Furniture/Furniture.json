@@ -1,0 +1,42 @@
+{
+  "@id": "dtmi:com:syyclops:Furniture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Furniture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Asset;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "length",
+      "displayName": {
+        "en": "Length"
+      },
+      "writable": true,
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "width",
+      "displayName": {
+        "en": "Width"
+      },
+      "writable": true,
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "height",
+      "displayName": {
+        "en": "Height"
+      },
+      "writable": true,
+      "schema": "float"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

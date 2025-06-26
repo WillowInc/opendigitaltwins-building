@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LuminanceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Luminance Setpoint"
+  },
+  "description": {"en": "The desired value associated with luminance"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

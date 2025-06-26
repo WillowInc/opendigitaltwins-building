@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:syyclops:BinaryState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Binary State"
+  },
+  "description": {"en": "The Boolean state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:State;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

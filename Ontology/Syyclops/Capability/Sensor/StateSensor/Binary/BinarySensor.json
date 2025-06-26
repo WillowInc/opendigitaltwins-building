@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:syyclops:BinarySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Binary Sensor"
+  },
+  "description": {"en": "The Boolean status from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:StateSensor;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

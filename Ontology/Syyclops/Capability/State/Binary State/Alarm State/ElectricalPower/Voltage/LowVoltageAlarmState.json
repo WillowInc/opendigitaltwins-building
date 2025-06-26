@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowVoltageAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Voltage Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low voltage alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

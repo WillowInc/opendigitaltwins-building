@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:syyclops:StructuralBeam;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Beam"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralBuildingComponent;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

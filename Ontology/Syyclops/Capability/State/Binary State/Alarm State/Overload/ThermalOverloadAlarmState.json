@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ThermalOverloadAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Overload Alarm State"
+  },
+  "description": {"en": "The Boolean state of the thermal overload alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:OverloadAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

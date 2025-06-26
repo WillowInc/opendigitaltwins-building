@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sprinkler Valve"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerEquipment;1",
+    "dtmi:com:syyclops:Valve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LinearSpeedSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Linear Speed Sensor"
+  },
+  "description": {"en": "The linear speed feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:SpeedSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

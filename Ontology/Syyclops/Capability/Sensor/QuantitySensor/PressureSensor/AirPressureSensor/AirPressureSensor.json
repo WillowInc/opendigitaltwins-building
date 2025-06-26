@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AirPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with air"},
+  "extends" : [
+    "dtmi:com:syyclops:PressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

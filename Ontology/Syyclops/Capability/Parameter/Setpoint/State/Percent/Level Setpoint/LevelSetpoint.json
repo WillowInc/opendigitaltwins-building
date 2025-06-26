@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Level Setpoint"
+  },
+  "description": {"en": "The desired level percentage for control of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:PercentSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

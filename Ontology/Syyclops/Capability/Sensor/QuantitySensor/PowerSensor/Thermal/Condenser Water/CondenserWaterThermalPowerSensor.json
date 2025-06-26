@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterThermalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Thermal Power Sensor"
+  },
+  "description": {"en": "The thermal power feedback from a sensor measuring condenser water"},
+  "extends" : [
+    "dtmi:com:syyclops:ThermalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

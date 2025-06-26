@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:StopSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stop Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StartStopSetpoint;1",
+    "dtmi:com:syyclops:RunStopSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

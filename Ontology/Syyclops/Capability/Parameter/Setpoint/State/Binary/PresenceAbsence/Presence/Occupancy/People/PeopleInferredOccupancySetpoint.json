@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PeopleInferredOccupancySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Inferred Occupancy Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PeopleOccupancySetpoint;1",
+    "dtmi:com:syyclops:InferredOccupancySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

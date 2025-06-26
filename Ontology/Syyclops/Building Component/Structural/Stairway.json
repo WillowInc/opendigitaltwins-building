@@ -1,0 +1,55 @@
+{
+  "@id": "dtmi:com:syyclops:Stairway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stairway"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralBuildingComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "step width"
+      },
+      "name": "stepWidth",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "step width unit"
+      },
+      "name": "stepWidthUnit",
+      "annotates": "stepWidth",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "name": "capacity",
+      "displayName": {
+        "en": "Capacity"
+      },
+      "schema": "dtmi:com:syyclops:SpaceCapacity;1"
+    },
+    {
+      "@type": "Component",
+      "name": "occupancy",
+      "displayName": {
+        "en": "Occupancy"
+      },
+      "schema": "dtmi:com:syyclops:SpaceOccupancy;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

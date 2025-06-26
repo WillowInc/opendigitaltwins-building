@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PaymentTerminal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Payment Terminal"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PaymentEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

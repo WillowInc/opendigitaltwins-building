@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FaceVelocitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Face Velocity Setpoint"
+  },
+  "description": {"en": "The desired value associated with the velocity at which air is pulled through the opening (face) of a ventilation or fume hood."},
+  "extends" : [
+    "dtmi:com:syyclops:LinearVelocitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

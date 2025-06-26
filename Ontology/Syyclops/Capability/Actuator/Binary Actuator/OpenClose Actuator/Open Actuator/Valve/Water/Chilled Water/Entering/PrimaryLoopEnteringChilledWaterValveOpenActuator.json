@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PrimaryLoopEnteringChilledWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Chilled Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the primary loop entering chilled water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringChilledWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

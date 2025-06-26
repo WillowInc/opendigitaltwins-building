@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:TemperatureSetpointDeviation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Temperature Setpoint Deviation"
+  },
+  "description": {
+    "en": "The difference between the temperature sensor and setpoint of a space or entity."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TemperaturePerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

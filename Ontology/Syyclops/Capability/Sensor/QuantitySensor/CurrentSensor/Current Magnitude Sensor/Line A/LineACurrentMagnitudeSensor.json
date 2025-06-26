@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LineACurrentMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Line A Current Magnitude Sensor"
+  },
+  "description": {"en": "The current magnitude feedback from a sensor associated with line a"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

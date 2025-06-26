@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FishTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fish Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ArchitecturalAsset;1",
+    "dtmi:com:syyclops:Tank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

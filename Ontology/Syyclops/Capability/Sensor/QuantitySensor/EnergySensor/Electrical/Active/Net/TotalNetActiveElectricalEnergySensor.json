@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TotalNetActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Net Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with total net"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:com:syyclops:ElectricUnitHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electric Unit Heater"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:UnitHeater;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "power input"
+      },
+      "name": "powerInput",
+      "schema": "double",
+      "unit": "watt",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}

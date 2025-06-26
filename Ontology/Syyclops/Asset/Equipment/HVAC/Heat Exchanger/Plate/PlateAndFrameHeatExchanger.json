@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:syyclops:PlateAndFrameHeatExchanger;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plate-and-frame Heat Exchanger"
+  },
+  "description": {
+    "en": "A type of plate heat exchanger whose plates are sealed around the edges with gaskets held together in a frame. Also known as a gasketed-plate heat exchanger."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlateHeatExchanger;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

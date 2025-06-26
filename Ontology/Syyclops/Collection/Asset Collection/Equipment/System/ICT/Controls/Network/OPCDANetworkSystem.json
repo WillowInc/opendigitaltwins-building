@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:OPCDANetworkSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "OPC DA Network System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ControlsSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

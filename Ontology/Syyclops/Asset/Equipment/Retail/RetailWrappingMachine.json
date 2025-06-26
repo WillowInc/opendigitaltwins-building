@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:RetailWrappingMachine;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Retail Scale"
+  },
+  "description": {
+    "en": "A machine used for wrapping retail items such as film wrapping for food"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RetailEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

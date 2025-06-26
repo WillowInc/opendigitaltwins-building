@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AircraftPreconditionedAirUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Aircraft Preconditioned Air Unit"
+  },
+  "description": {
+    "en": "A device which provides fresh, preconditioned air to an aircraft and between flights. (a.k.a PCA Unit)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AircraftHVACEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

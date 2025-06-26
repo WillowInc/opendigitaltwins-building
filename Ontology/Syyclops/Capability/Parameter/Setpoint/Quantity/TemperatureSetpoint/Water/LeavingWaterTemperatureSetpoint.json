@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Water Temperature Setpoint"
+  },
+  "description": {"en": "The temperature feedback from a setpoint associated with leaving water"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

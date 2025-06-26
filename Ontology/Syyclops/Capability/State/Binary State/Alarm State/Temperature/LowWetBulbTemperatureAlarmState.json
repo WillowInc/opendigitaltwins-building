@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowWetBulbTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Wet Bulb Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low wet bulb temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowTemperatureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

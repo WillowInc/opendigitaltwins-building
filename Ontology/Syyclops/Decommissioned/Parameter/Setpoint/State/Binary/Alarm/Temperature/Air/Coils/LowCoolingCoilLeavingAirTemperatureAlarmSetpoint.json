@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowCoolingCoilLeavingAirTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Cooling Coil Leaving Air Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the cooling coil temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

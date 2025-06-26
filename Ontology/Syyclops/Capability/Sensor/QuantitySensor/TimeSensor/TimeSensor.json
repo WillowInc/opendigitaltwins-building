@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Time Sensor"
+  },
+  "description": {"en": "The time feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DishwasherRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dishwasher Run State"
+  },
+  "description": {"en": "The Boolean state of the dishwasher which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:RunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

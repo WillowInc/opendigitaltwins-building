@@ -1,0 +1,87 @@
+{
+  "@id": "dtmi:com:syyclops:DuctConnection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duct Connection"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "size"
+      },
+      "name": "size",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "size unit"
+      },
+      "name": "sizeUnit",
+      "annotates": "size",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "shape"
+      },
+      "name": "shape",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "round",
+            "name": "round"
+          },
+          {
+            "enumValue": "rectangle",
+            "name": "rectangle"
+          },
+          {
+            "enumValue": "oval",
+            "name": "oval"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "configuration"
+      },
+      "name": "configuration",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "single",
+            "name": "single"
+          },
+          {
+            "enumValue": "dual",
+            "name": "dual"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

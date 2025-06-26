@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ContractDocument;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Contract Document"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

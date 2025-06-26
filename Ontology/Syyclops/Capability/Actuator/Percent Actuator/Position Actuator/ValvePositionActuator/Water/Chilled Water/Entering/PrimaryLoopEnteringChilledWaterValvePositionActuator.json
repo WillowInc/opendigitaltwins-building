@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PrimaryLoopEnteringChilledWaterValvePositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Chilled Water Valve Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the primary loop entering chilled water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringChilledWaterValvePositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

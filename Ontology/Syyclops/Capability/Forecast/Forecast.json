@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:Forecast;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Forecast"
+  },
+  "description": {
+    "en": "A predicted series of values in the future. A forecast includes a timestep which is the interval for each prediction (i.e. hourly) and a horizon which is the length of time into the future the forecast is generated (i.e. 7-day)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Capability;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

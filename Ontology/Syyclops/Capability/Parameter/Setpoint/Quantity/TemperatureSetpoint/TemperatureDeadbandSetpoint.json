@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:TemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Temperature Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSetpoint;1",
+    "dtmi:com:syyclops:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerationCompressor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Compressor"
+  },
+  "description": {
+    "en": "A compressor which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerationEquipment;1",
+    "dtmi:com:syyclops:Compressor;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal energy efficiency ratio (EER)"
+      },
+      "name": "nominalEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design energy efficiency ratio (EER)"
+      },
+      "name": "designEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal coefficient of performance (COP)"
+      },
+      "name": "nominalCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design coefficient of performance (COP)"
+      },
+      "name": "designCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal cooling capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal cooling capacity unit"
+      },
+      "name": "nominalCoolingCapacityUnit",
+      "annotates": "nominalCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "design cooling capacity"
+      },
+      "name": "designCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design cooling capacity unit"
+      },
+      "name": "designCoolingCapacityUnit",
+      "annotates": "designCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

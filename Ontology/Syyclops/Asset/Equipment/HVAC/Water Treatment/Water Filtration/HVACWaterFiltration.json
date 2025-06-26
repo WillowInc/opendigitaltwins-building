@@ -1,0 +1,103 @@
+{
+  "@id": "dtmi:com:syyclops:HVACWaterFiltration;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Filtration (HVAC)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACWaterTreatment;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "working pressure"
+      },
+      "name": "workingPressure",
+      "schema": "double",
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "working pressure unit"
+      },
+      "name": "workingPressureUnit",
+      "annotates": "workingPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Volume"],
+      "displayName": {
+        "en": "tank capacity"
+      },
+      "name": "tankCapacity",
+      "schema": "double",
+      "unit": "litre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "tank capacity unit"
+      },
+      "name": "tankCapacityUnit",
+      "annotates": "tankCapacity",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "flow capacity"
+      },
+      "name": "flowCapacity",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "flow capacity unit"
+      },
+      "name": "flowCapacityUnit",
+      "annotates": "flowCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "description": {
+        "en": "microns"
+      },
+      "displayName": {
+        "en": "filtration rating"
+      },
+      "name": "filtrationRating",
+      "unit": "micrometre",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

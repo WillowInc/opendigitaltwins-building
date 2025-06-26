@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledElectricalCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Electrical Cost"
+  },
+  "description": {"en": "The cost trend associated with an electrical utility service that is billed to a utility account, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:syyclops:BilledUtilityCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

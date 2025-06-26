@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:syyclops:DuctSilencer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duct Silencer"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "ductInlet",
+      "displayName": {
+        "en": "Duct Inlet"
+      },
+      "schema": "dtmi:com:syyclops:DuctConnection;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

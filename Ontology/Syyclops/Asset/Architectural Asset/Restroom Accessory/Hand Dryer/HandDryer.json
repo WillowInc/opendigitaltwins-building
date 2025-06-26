@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:HandDryer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hand Dryer"
+  },
+  "description": {
+    "en": "An electric device used to dry hands after washing."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RestroomAccessory;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

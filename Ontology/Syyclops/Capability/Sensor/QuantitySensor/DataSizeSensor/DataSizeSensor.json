@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DataSizeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Size Sensor"
+  },
+  "description": {"en": "The data size feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

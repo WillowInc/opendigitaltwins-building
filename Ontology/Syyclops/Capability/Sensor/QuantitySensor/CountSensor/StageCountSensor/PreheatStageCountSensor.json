@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PreheatStageCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheat Stage Count Sensor"
+  },
+  "description": {"en": "The counted number of active stages of preheat in a system where multiple stages of preheat are enabled and disabled for preheat control"},
+  "extends" : [
+    "dtmi:com:syyclops:StageCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

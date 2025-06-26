@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with outside air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

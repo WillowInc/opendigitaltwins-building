@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:com:syyclops:FireAlarmPressureSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Pressure Switch"
+  },
+  "extends": "dtmi:com:syyclops:FireAlarmInitiatingDevice;1",
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "@id": "dtmi:com:syyclops:Chiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chiller"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Evaporator"
+      },
+      "name": "evaporator",
+      "schema": "dtmi:com:syyclops:Evaporator;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Compressor"
+      },
+      "name": "compressor",
+      "schema": "dtmi:com:syyclops:Compressor;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "refrigerant type"
+      },
+      "name": "refrigerantType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal cooling capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal cooling capacity unit"
+      },
+      "name": "nominalCoolingCapacityUnit",
+      "annotates": "nominalCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "net sensible cooling capacity"
+      },
+      "name": "netSensibleCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "net sensible cooling capacity unit"
+      },
+      "name": "netSensibleCoolingCapacityUnit",
+      "annotates": "netSensibleCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "design cooling capacity"
+      },
+      "name": "designCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "design cooling capacity unit"
+      },
+      "name": "designCoolingCapacityUnit",
+      "annotates": "designCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design KW/Ton"
+      },
+      "name": "designKWPerTon",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design coefficient of performance (COP)"
+      },
+      "name": "designCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "design energy efficiency ratio (EER)"
+      },
+      "name": "designEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal KW/Ton"
+      },
+      "name": "nominalKWPerTon",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal coefficient of performance (COP)"
+      },
+      "name": "nominalCoefficientOfPerformance",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "nominal energy efficiency ratio (EER)"
+      },
+      "name": "nominalEnergyEfficiencyRatio",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

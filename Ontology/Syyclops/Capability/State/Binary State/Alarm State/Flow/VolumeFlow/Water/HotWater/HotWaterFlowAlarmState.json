@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HotWaterFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the hot water flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterFlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

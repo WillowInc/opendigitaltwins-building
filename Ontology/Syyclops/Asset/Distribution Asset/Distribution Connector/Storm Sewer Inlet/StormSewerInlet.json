@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:syyclops:StormSewerInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Storm Sewer Inlet"
+  },
+  "extends": "dtmi:com:syyclops:DistributionConnector;1",
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

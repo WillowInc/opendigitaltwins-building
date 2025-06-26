@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringCondenserWaterPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Condenser Water Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with entering condenser water"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterPressureSensor;1",
+    "dtmi:com:syyclops:EnteringWaterPressureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

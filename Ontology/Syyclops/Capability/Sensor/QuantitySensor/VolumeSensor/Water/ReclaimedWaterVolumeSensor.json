@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReclaimedWaterVolumeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reclaimed Water Volume Sensor"
+  },
+  "description": {"en": "The volume feedback from a sensor associated with reclaimed water"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterVolumeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

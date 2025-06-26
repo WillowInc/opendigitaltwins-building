@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AirportICTEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport ICT Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportEquipment;1",
+    "dtmi:com:syyclops:ICTEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

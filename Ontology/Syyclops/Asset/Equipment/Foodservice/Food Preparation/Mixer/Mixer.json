@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Mixer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixer"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledRecyclingWasteMass;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Recycling Waste Mass"
+  },
+  "description": {"en": "The mass quantity of recycling waste that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Waste Mass Sensor which reports data on a more frequent interval."},
+  "extends" : [
+    "dtmi:com:syyclops:BilledWasteMass;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

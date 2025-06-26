@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DomesticHotWaterRecircSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domestic Hot Water Recirculation System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DomesticHotWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

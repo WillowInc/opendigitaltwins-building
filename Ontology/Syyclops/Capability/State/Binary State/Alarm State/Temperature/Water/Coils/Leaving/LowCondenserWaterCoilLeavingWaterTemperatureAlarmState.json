@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowCondenserWaterCoilLeavingWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Condenser Water Coil Leaving Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low the water leaving the condenser water coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowCoilLeavingWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

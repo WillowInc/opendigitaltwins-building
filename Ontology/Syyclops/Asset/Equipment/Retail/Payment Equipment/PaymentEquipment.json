@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PaymentEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Payment Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RetailEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

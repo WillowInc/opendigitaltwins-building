@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:WaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the water flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:FlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

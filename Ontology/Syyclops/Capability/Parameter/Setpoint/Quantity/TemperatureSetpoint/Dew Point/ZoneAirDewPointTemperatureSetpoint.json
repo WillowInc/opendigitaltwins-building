@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneAirDewPointTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air Dew Point Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with zone air dew point temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:DewPointTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

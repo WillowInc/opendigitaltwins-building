@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FrequencySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Frequency Setpoint"
+  },
+  "description": {"en": "The desired value associated with frequency flow"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

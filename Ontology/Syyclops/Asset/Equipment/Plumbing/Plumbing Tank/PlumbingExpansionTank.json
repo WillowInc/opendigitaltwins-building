@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingExpansionTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Expansion Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingTank;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Diaphragm",
+            "name": "Diaphragm"
+          },
+          {
+            "enumValue": "Compression",
+            "name": "Compression"
+          },
+          {
+            "enumValue": "Bladder",
+            "name": "Bladder"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

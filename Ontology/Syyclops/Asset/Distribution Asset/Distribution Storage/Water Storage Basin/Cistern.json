@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:syyclops:Cistern;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cistern"
+  },
+  "extends": "dtmi:com:syyclops:WaterStorageBasin;1",
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

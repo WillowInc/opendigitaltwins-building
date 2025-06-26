@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Treadmill;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Treadmill"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CardioFitnessEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

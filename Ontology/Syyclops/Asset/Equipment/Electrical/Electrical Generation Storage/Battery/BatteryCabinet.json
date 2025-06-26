@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BatteryCabinet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Battery Cabinet"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BatteryEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

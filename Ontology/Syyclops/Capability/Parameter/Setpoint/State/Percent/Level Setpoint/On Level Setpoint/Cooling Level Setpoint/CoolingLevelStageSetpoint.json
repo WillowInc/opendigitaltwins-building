@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CoolingLevelStageSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Level Stage Setpoint"
+  },
+  "description": {"en": "The cooling level percentage for staging of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:CoolingLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

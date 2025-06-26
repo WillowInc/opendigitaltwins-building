@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AreaSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Area Setpoint"
+  },
+  "description": {"en": "The desired value associated with area"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

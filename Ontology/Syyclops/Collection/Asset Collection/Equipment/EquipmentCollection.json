@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:EquipmentCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Equipment Collection"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AssetCollection;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:FumeHoodExhaustAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fume Hood Exhaust Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value for the volume flow of fume hood exhaust air. Fume hood exhaust air removes contaminants from a fume hood workspace."},
+  "extends" : [
+    "dtmi:com:syyclops:ExhaustAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowSecondaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Secondary Loop Entering Chilled Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low entering chilled water secondary loop temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowChilledWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

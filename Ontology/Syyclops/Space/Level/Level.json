@@ -1,0 +1,75 @@
+{
+  "@id": "dtmi:com:syyclops:Level;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Level"
+  },
+  "description": {
+    "en": "The level of a building or other structure, a.k.a. storey, floor, etc."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Space;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A number indicating the ordinal number of this level within the building. Note that the implementation of this numbering scheme and its starting point is implementation-specific; e.g., the fifth floor below ground may be 0 in some systems, and -5 in others."
+      },
+      "displayName": {
+        "en": "level number"
+      },
+      "name": "levelNumber",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "elevation",
+      "displayName": {
+        "en": "Elevation (Sea Level)"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "elevation unit"
+      },
+      "name": "elevationUnit",
+      "annotates": "elevation",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "siteElevation",
+      "displayName": {
+        "en": "Elevation (Site)"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "metre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "site elevation unit"
+      },
+      "name": "siteElevationUnit",
+      "annotates": "siteElevation",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

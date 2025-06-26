@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HVACSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:System;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

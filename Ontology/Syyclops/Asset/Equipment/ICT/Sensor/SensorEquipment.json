@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:com:syyclops:SensorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensor Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ICTEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Wi-Fi signal strength"
+      },
+      "name": "wifiSignalStrength",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "battery percentage"
+      },
+      "name": "batteryPercentage",
+      "schema": "double",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}

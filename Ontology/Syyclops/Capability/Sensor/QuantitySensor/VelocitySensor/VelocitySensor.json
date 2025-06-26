@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VelocitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Velocity Sensor"
+  },
+  "description": {"en": "The velocity feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

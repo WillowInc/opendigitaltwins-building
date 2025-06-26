@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SecondaryLoopLeavingCondenserWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Leaving Condenser Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the secondary loop leaving condenser water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingCondenserWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

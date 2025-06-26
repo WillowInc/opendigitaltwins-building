@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:syyclops:PipeFittingFlange;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pipe Fitting Flange"
+  },
+  "extends": "dtmi:com:syyclops:PipeFitting;1",
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

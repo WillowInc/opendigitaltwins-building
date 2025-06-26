@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:com:syyclops:HVACFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Fan"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1",
+    "dtmi:com:syyclops:Fan;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "fan"
+      },
+      "name": "fan",
+      "schema": "dtmi:com:syyclops:Fan;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "duct inlet"
+      },
+      "name": "ductInlet",
+      "schema": "dtmi:com:syyclops:DuctConnection;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

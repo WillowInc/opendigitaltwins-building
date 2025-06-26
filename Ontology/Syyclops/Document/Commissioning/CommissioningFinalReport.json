@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:CommissioningFinalReport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Commissioning Final Report"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CommissioningDocument;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

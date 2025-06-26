@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:syyclops:StructuralColumn;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Column"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralBuildingComponent;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

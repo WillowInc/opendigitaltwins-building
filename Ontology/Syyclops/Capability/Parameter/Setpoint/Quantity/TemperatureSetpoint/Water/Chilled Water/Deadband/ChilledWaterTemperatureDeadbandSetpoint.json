@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:ChilledWaterTemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Temperature Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the chilled water temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterTemperatureSetpoint;1",
+    "dtmi:com:syyclops:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

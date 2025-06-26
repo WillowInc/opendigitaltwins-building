@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderHotWaterPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Hot Water Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the hot water header pump"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with flow"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

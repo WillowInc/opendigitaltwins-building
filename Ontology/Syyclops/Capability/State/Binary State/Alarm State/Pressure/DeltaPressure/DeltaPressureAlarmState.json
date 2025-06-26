@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the delta pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:PressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BypassHotWaterPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Hot Water Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the hot water bypass pump"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

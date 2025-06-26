@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ProductData;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Product Data"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

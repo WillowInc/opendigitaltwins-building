@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:Company;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Company"
+  },
+    "description": {
+    "en": "An organization of persons operating a business."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Organization;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

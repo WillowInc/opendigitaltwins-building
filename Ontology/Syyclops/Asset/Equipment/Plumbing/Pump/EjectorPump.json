@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:EjectorPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ejector Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

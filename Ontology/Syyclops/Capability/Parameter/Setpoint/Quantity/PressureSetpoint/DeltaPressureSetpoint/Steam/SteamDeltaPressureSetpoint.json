@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:SteamDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam delta pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamPressureSetpoint;1",
+    "dtmi:com:syyclops:DeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

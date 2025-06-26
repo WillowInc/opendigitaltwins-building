@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:O3AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ozone (O3) Air Quality Sensor"
+  },
+  "description": {"en": "The ozone (O3) air quality feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated with air humidity"},
+  "extends" : [
+    "dtmi:com:syyclops:HumiditySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

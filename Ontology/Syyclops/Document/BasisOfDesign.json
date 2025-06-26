@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:BasisOfDesign;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Basis of Design"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Document;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

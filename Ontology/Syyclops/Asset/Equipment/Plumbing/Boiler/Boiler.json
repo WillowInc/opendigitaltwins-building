@@ -1,0 +1,195 @@
+{
+  "@id": "dtmi:com:syyclops:Boiler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Boiler"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "WaterTube",
+            "name": "WaterTube"
+          },
+          {
+            "enumValue": "FireTube",
+            "name": "FireTube"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Volume"],
+      "displayName": {
+        "en": "tank capacity"
+      },
+      "name": "tankCapacity",
+      "schema": "double",
+      "unit": "litre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "tank capacity unit"
+      },
+      "name": "tankCapacityUnit",
+      "annotates": "tankCapacity",
+      "overrides": "unit",
+      "schema": "VolumeUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "power output"
+      },
+      "name": "powerOutput",
+      "schema": "double",
+      "unit": "watt",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "power output unit"
+      },
+      "name": "powerOutputUnit",
+      "annotates": "powerOutput",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "power input"
+      },
+      "name": "powerInput",
+      "schema": "double",
+      "unit": "watt",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "power input unit"
+      },
+      "name": "powerInputUnit",
+      "annotates": "powerInput",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "medium"
+      },
+      "name": "medium",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Steam",
+            "name": "Steam"
+          },
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "description": {
+        "en": "Imperial measure for the recovery rate of a boiler (gallons per hour)."
+      },
+      "displayName": {
+        "en": "recovery @ 100F rise"
+      },
+      "name": "recovery100FRise",
+      "schema": "integer",
+      "unit": "gallonPerHour",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWaterTemperature",
+      "displayName": {
+        "en": "Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Water Temperature Unit"
+      },
+      "name": "designEnteringWaterTemperatureUnit",
+      "annotates": "designEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingWaterTemperature",
+      "displayName": {
+        "en": "Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Water Temperature Unit"
+      },
+      "name": "designLeavingWaterTemperatureUnit",
+      "annotates": "designLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designDeltaWaterTemperature",
+      "displayName": {
+        "en": "Design Delta Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Delta Water Temperature Unit"
+      },
+      "name": "designDeltaWaterTemperatureUnit",
+      "annotates": "designDeltaWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

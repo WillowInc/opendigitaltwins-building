@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingSteamFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Steam Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam leaving flow"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

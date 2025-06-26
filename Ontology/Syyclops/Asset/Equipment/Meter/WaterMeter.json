@@ -1,0 +1,147 @@
+{
+  "@id": "dtmi:com:syyclops:WaterMeter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Meter"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:MeterEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "minimum volume flow rating"
+      },
+      "name": "minVolumeFlowRating",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "minimum volume flow rating unit"
+      },
+      "name": "minVolumeFlowRatingUnit",
+      "annotates": "minVolumeFlowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "minimum temperature rating"
+      },
+      "name": "minTemperatureRating",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "minimum temperature rating unit"
+      },
+      "name": "minTemperatureRatingUnit",
+      "annotates": "minTemperatureRating",
+      "overrides": "unit",
+      "schema": "TemperatureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "maximum volume flow rating"
+      },
+      "name": "maxVolumeFlowRating",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum volume flow rating unit"
+      },
+      "name": "maxVolumeFlowRatingUnit",
+      "annotates": "maxVolumeFlowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "maximum temperature rating"
+      },
+      "name": "maxTemperatureRating",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum temperature rating unit"
+      },
+      "name": "maxTemperatureRatingUnit",
+      "annotates": "maxTemperatureRating",
+      "overrides": "unit",
+      "schema": "TemperatureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "maximum pressure rating"
+      },
+      "name": "maxPressureRating",
+      "schema": "double",
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "maximum pressure rating unit"
+      },
+      "name": "maxPressureRatingUnit",
+      "annotates": "maxPressureRating",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "sub-meter of"
+      },
+      "name": "subMeterOf",
+      "target": "dtmi:com:syyclops:WaterMeter;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "measures"
+      },
+      "name": "measures"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

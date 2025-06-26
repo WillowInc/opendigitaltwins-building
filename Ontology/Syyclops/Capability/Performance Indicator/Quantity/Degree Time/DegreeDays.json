@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:DegreeDays;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Degree Days"
+  },
+  "description": {
+    "en": "An accumulation of the degree days, based on the time-based integral of the difference between a threshold value and the outside air temperature"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:QuantityPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

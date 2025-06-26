@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:RoofArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Roof Area"
+  },
+  "description": {
+    "en": "An outdoor area that is located on the roof level of a building."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BuildingOutdoorArea;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

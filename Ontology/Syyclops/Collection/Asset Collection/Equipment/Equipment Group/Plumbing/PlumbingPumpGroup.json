@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingPumpGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Group (Plumbing)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:com:syyclops:UtilityAccount;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Account"
+  },
+  "description": {
+    "en": "A customer account in which the service provided is the delivery of a utility such as electricity, natural gas, or water."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Account;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "has utility bill"
+      },
+      "name": "hasUtilityBill",
+      "target": "dtmi:com:syyclops:UtilityBillEvent;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Emission Factor"
+      },
+      "name": "emissionFactor",
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

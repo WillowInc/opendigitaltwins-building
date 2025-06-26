@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:BuildingTower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Tower"
+  },
+  "description": {
+    "en": "A sub-building which extends up from a podium and is generally set back from the podium boundary."
+  },
+  "extends": [
+    "dtmi:com:syyclops:SubBuilding;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

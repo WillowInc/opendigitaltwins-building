@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ParkingPaymentEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Parking Payment Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ParkingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

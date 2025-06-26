@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowDeltaCondenserWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Delta Condenser Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low condenser water delta temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowCondenserWaterTemperatureAlarmSetpoint;1",
+    "dtmi:com:syyclops:LowDeltaWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "@id": "dtmi:com:syyclops:CalendarEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Calendar Event"
+  },
+  "description": {
+    "en": "An event that is scheduled on a calendar of a person, a space, or both. This data model closely adheres to an Event in the Microsoft Graph."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Event;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "hasAttendee",
+      "displayName": {
+        "en": "has attendee"
+      },
+      "description": {
+        "en": "A person or organization which has been invited to or planning to attend a calendar event."
+      },
+      "target": "dtmi:com:syyclops:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasOrganizer",
+      "displayName": {
+        "en": "has organizer"
+      },
+      "description": {
+        "en": "A person or organization which has organized a calendar event."
+      },
+      "target": "dtmi:com:syyclops:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasLocation",
+      "displayName": {
+        "en": "has location"
+      },
+      "description": {
+        "en": "A space where a calendar event is taking place."
+      },
+      "target": "dtmi:com:syyclops:Space;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Is All Day"
+      },
+      "name": "isAllDay",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "recurrence",
+      "displayName": {
+        "en": "Recurrence"
+      },
+      "writable": true,
+      "schema": "dtmi:com:syyclops:PatternedRecurrence;1"
+  },
+    {
+      "@type": "Property",
+      "name": "iCalUID",
+      "displayName": {
+        "en": "iCal UID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Importance"
+      },
+      "name": "importance",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "low",
+            "name": "low"
+          },
+          {
+            "enumValue": "normal",
+            "name": "normal"
+          },
+          {
+            "enumValue": "high",
+            "name": "high"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Estimated Attendee Count"
+      },
+      "name": "estimatedAttendeeCount",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:syyclops:PatternedRecurrence;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "pattern",
+          "displayName": {
+            "en": "Pattern"
+          },
+          "schema": {
+            "@id": "dtmi:com:syyclops:RecurrencePattern;1",
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "type",
+                "displayName": {
+                  "en": "Type"
+                },
+                "schema": {
+                  "@type": "Enum",
+                  "enumValues": [
+                    {
+                      "enumValue": "daily",
+                      "name": "daily"
+                    },
+                    {
+                      "enumValue": "weekly",
+                      "name": "weekly"
+                    },
+                    {
+                      "enumValue": "absoluteMonthly",
+                      "name": "absoluteMonthly"
+                    },
+                    {
+                      "enumValue": "relativeMonthly",
+                      "name": "relativeMonthly"
+                    },
+                    {
+                      "enumValue": "absoluteYearly",
+                      "name": "absoluteYearly"
+                    },
+                    {
+                      "enumValue": "relativeYearly",
+                      "name": "relativeYearly"
+                    }
+                  ],
+                  "valueSchema": "string"
+                }
+              },
+              {
+                "name": "dayOfMonth",
+                "displayName": {
+                  "en": "Day of Month"
+                },
+                "schema": "integer"
+              },
+              {
+                "name": "monthOfYear",
+                "displayName": {
+                  "en": "Month of Year"
+                },
+                "schema": "integer"
+              },
+              {
+                "name": "daysOfWeek",
+                "displayName": {
+                  "en": "Days of Week"
+                },
+                "schema": {
+                  "@type": "Array",
+                  "elementSchema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1"
+                }
+              },
+              {
+                "name": "firstDayOfWeek",
+                "displayName": {
+                  "en": "First Day of Week"
+                },
+                "schema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1"
+              },
+              {
+                "name": "interval",
+                "displayName": {
+                  "en": "Interval"
+                },
+                "schema": "integer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "range",
+          "displayName": {
+            "en": "Range"
+          },
+          "schema": {
+            "@id": "dtmi:com:syyclops:RecurrenceRange;1",
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "type",
+                "displayName": {
+                  "en": "Type"
+                },
+                "schema": {
+                  "@type": "Enum",
+                  "enumValues": [
+                    {
+                      "enumValue": "endDate",
+                      "name": "endDate"
+                    },
+                    {
+                      "enumValue": "noEnd",
+                      "name": "noEnd"
+                    },
+                    {
+                      "enumValue": "numbered",
+                      "name": "numbered"
+                    }
+                  ],
+                  "valueSchema": "string"
+                }
+              },
+              {
+                "name": "startDate",
+                "displayName": {
+                  "en": "Start Date"
+                },
+                "schema": "date"
+              },
+              {
+                "name": "endDate",
+                "displayName": {
+                  "en": "End Date"
+                },
+                "schema": "date"
+              },
+              {
+                "name": "numberOfOccurrences",
+                "displayName": {
+                  "en": "Number of Occurrences"
+                },
+                "schema": "integer"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:syyclops:CalendarEventDayOfWeek;1",
+      "@type": "Enum",
+      "enumValues": [
+        {
+          "enumValue": "sunday",
+          "name": "sunday"
+        },
+        {
+          "enumValue": "monday",
+          "name": "monday"
+        },
+        {
+          "enumValue": "tuesday",
+          "name": "tuesday"
+        },
+        {
+          "enumValue": "wednesday",
+          "name": "wednesday"
+        },
+        {
+          "enumValue": "thursday",
+          "name": "thursday"
+        },
+        {
+          "enumValue": "friday",
+          "name": "friday"
+        },
+        {
+          "enumValue": "saturday",
+          "name": "saturday"
+        }
+      ],
+      "valueSchema": "string"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}

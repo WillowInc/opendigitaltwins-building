@@ -1,0 +1,81 @@
+{
+  "@id": "dtmi:com:syyclops:ElevatorMachine;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator Machine"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ConveyanceEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Mass", "Property"],
+      "displayName": {
+        "en": "weight capacity"
+      },
+      "name": "weightCapacity",
+      "schema": "double",
+      "unit": "kilogram",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "weight capacity unit"
+      },
+      "name": "weightCapacityUnit",
+      "annotates": "weightCapacity",
+      "overrides": "unit",
+      "schema": "MassUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "motor power"
+      },
+      "name": "motorPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "motor power unit"
+      },
+      "name": "motorPowerUnit",
+      "annotates": "motorPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "brake horsepower"
+      },
+      "name": "brakeHorsepower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "brake horsepower unit"
+      },
+      "name": "brakeHorsepowerUnit",
+      "annotates": "brakeHorsepower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

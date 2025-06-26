@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SupplyAirDiffuser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supply Air Diffuser"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AirDiffuser;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

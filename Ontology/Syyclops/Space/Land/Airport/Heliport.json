@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:airport:Heliport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heliport"
+  },
+  "description": {
+    "en": "An airport solely serving helicopters."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:Airport;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

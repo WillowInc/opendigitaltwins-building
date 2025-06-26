@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringChilledWaterPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Chilled Water Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the entering chilled water pump vfd"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:syyclops:EnteringChilledWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

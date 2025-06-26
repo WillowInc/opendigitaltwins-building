@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:WeatherConditionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Weather Condition State"
+  },
+  "description": {"en": "The multi-state condition of the weather"},
+  "extends" : [
+    "dtmi:com:syyclops:ConditionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

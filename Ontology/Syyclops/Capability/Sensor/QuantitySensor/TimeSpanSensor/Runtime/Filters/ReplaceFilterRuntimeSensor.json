@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReplaceFilterRuntimeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Filter Runtime Sensor"
+  },
+  "description": {"en": "Measures how many hours since the last time the filter was replaced"},
+  "extends" : [
+    "dtmi:com:syyclops:RuntimeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

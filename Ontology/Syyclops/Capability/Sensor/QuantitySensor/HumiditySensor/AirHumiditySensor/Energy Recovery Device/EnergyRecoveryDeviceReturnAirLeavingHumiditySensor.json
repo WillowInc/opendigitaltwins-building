@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EnergyRecoveryDeviceReturnAirLeavingHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device Return Air Leaving Humidity Sensor"
+  },
+  "description": {"en": "The humidity feedback from a sensor associated with air leaving the return air side of the energy recovery device"},
+  "extends" : [
+    "dtmi:com:syyclops:AirHumiditySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

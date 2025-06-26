@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:syyclops:ToiletPartition;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet Partition"
+  },
+  "description": {
+    "en": "A structure which separates toilets to provide privacy in a public restroom."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ToiletAccessory;1",
+    "dtmi:com:syyclops:RestroomAccessory;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

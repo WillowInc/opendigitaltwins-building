@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:WaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:ValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

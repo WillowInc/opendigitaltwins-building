@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Alarm State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

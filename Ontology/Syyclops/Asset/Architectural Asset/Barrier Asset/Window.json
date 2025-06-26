@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:Window;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Window"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BarrierAsset;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DataSizeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Size Setpoint"
+  },
+  "description": {"en": "The desired value associated with data size"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

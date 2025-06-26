@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AirfieldNonMovementAreaBoundaryMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield Non-Movement Area Boundary Marking"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirfieldBoundaryPavementMarking;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustAirFlowSetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Flow Setpoint Offset"
+  },
+  "description": {"en": "The desired offset value between exhaust air flow and outside air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpointOffset;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

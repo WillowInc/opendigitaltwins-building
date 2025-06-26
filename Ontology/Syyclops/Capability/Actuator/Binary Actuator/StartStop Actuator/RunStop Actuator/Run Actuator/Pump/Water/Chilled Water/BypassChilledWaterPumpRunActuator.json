@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BypassChilledWaterPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Chilled Water Pump Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the chilled water bypass pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

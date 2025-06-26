@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PM025AirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM2.5 Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the PM2.5 air quality alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

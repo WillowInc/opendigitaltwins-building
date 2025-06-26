@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingCondenserWaterPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Condenser Water Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the leaving condenser water pump"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterPumpRunLevelActuator;1",
+    "dtmi:com:syyclops:LeavingWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

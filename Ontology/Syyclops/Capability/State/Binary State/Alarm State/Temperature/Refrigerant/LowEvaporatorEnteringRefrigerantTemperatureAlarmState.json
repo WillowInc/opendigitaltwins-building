@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowEvaporatorEnteringRefrigerantTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low EvaporatorEnteringRefrigerant Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low refrigerant entering the evaporator temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowRefrigerantTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

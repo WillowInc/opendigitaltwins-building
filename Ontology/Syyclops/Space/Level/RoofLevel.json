@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:RoofLevel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Roof Level"
+  },
+  "description": {
+    "en": "A level of a building which covers the interior space below."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Level;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

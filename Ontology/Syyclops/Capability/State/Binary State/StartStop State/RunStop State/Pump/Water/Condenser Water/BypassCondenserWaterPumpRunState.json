@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BypassCondenserWaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Condenser Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the condenser water bypass pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

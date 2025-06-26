@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HVACHeatExchangerGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Exchanger Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

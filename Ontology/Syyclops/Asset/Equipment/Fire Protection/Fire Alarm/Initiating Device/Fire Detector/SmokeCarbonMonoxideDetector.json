@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:syyclops:SmokeCarbonMonoxideDetector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke and Carbon Monoxide Detector"
+  },
+  "extends": [
+    "dtmi:com:syyclops:SmokeDetector;1",
+    "dtmi:com:syyclops:CarbonMonoxideDetector;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

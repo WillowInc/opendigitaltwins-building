@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:syyclops:DropCurbInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Drop Curb Inlet"
+  },
+  "extends": "dtmi:com:syyclops:StormSewerInlet;1",
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

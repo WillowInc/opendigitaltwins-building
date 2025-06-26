@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AciditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Acidity Sensor"
+  },
+  "description": {"en": "The acidity feedback from a sensor, generally in pH units"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

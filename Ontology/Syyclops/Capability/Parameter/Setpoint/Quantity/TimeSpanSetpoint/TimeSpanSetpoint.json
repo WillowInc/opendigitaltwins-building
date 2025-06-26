@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TimeSpanSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Time Span Setpoint"
+  },
+  "description": {"en": "The desired value associated with time span"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

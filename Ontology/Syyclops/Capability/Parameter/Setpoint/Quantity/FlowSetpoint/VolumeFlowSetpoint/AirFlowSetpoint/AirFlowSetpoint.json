@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:VolumeFlowSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

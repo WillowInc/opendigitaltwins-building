@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:AirVelocityPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Velocity Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with air velocity pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:VelocityPressureSetpoint;1",
+    "dtmi:com:syyclops:AirPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

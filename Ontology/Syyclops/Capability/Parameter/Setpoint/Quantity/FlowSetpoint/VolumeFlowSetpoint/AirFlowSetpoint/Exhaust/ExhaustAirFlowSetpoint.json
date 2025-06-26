@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with exhaust air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

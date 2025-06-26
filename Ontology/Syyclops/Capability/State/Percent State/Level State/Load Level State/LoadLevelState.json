@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LoadLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Load Level State"
+  },
+  "description": {"en": "The percent load level state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:LevelState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

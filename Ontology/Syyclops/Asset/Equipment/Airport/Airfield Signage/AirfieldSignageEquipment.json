@@ -1,0 +1,112 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield Signage Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "message",
+      "displayName": {
+        "en": "Message"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "A | 36-18"
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "messageHeight",
+      "displayName": {
+        "en": "Height"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "message height unit"
+      },
+      "name": "messageHeightUnit",
+      "annotates": "messageHeight",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "panelHeight",
+      "displayName": {
+        "en": "Panel Height"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "panel height unit"
+      },
+      "name": "panelHeightUnit",
+      "annotates": "panelHeight",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "panelWidth",
+      "displayName": {
+        "en": "Panel Width"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "panel width unit"
+      },
+      "name": "panelWidthUnit",
+      "annotates": "panelWidth",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "name": "installedHeight",
+      "displayName": {
+        "en": "Installed Height"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "millimetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "installed height unit"
+      },
+      "name": "installedHeightUnit",
+      "annotates": "installedHeight",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

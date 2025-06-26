@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:Vehicle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vehicle"
+  },
+  "description": {
+    "en": "A mobile asset that is used to transport people and/or goods."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Asset;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

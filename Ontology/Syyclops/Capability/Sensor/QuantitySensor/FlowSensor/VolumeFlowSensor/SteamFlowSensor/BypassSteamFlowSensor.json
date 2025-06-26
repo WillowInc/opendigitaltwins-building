@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BypassSteamFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Steam Flow Sensor"
+  },
+  "description": {"en": "The volume flow feedback from a sensor associated with steam bypass"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

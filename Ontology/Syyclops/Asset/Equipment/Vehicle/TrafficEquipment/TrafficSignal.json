@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:TrafficSignal;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Traffic Signal"
+  },
+  "description": {
+    "en": "A signaling device at a road intersection to control the flow of traffic (a.k.a. Traffic Light or Stoplight) "
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TrafficEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

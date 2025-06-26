@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Hot Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with hot water temperature header"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

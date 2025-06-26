@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighFeelsLikeTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Feels Like Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high feels like temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighTemperatureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

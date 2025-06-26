@@ -1,0 +1,44 @@
+{
+  "@id": "dtmi:com:syyclops:ElectricalCircuit1Pole;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Circuit 1-Pole"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalCircuit;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Phase1",
+      "displayName": {
+        "en": "Phase 1"
+      },
+      "writable": true,
+      "schema":     {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "A",
+            "displayName": "A",
+            "enumValue": "A"
+          },
+          {
+            "name": "B",
+            "displayName": "B",
+            "enumValue": "B"
+          },
+          {
+            "name": "C",
+            "displayName": "C",
+            "enumValue": "C"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

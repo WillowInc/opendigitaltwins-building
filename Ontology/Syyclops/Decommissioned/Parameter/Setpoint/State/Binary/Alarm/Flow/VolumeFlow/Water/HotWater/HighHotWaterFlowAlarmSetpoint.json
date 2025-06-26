@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighHotWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Hot Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high hot water flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

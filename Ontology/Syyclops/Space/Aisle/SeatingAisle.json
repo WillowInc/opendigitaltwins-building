@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:SeatingAisle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Seating Aisle"
+  },
+  "description": {
+    "en": "An aisle that separates sections of seats such as in a theater or stadium."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Aisle;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PM025AirQualityAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM2.5 Air Quality Alarm State"
+  },
+  "description": {"en": "The Boolean state of the PM2.5 air quality alarm which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualityAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

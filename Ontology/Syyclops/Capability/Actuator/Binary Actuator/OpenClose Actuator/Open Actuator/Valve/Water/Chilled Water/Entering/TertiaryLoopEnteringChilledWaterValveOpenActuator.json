@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopEnteringChilledWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Entering Chilled Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the tertiary loop entering chilled water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringChilledWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

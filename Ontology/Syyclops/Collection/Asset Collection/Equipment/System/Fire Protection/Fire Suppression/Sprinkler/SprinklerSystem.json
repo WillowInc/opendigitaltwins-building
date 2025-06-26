@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sprinkler System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FireSuppressionSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

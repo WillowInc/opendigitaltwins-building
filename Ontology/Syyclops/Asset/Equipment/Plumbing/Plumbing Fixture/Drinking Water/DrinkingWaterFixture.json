@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:com:syyclops:DrinkingWaterFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Drinking Water Fixture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingFixture;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "name": "chillingCapacity",
+      "displayName": {
+        "en": "Chilling Capacity"
+      },
+      "writable": true,
+      "schema": "double",
+      "unit": "litrePerHour"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "chilling capacity unit"
+      },
+      "name": "chillingCapacityUnit",
+      "annotates": "chillingCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

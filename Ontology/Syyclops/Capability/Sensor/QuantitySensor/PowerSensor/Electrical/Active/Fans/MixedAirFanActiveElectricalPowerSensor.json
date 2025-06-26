@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MixedAirFanActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Fan Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with the mixed air fan"},
+  "extends" : [
+    "dtmi:com:syyclops:FanActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

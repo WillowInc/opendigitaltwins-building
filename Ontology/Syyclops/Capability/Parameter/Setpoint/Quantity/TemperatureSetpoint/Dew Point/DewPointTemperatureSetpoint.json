@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DewPointTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dew Point Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with dew point temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

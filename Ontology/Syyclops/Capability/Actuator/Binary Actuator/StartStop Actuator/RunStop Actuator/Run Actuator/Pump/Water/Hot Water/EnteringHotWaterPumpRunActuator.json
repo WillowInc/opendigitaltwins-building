@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringHotWaterPumpRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Hot Water Pump Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the entering hot water water pump to 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterPumpRunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

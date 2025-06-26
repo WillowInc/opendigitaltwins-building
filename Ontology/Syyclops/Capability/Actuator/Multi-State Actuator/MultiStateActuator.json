@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MultiStateActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multi-State Actuator"
+  },
+  "description": {"en": "A multi-state command which sets the state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:Actuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

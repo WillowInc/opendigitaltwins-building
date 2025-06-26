@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowSecondaryLoopChilledWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Secondary Loop Chilled Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low secondary loop chilled water flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowChilledWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

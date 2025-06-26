@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:Setpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Setpoint"
+  },
+  "description": {"en": "The configuration setting that functions as the desired value for control of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:Parameter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:RunwayLightFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runway Light Fixture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirfieldLightingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopLeavingChilledWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Chilled Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the tertiary loop leaving chilled water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingChilledWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledInternetCost;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Internet Cost"
+  },
+  "description": {"en": "The cost trend associated with a Internet utility service that is billed to a utility account, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:syyclops:BilledUtilityCost;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

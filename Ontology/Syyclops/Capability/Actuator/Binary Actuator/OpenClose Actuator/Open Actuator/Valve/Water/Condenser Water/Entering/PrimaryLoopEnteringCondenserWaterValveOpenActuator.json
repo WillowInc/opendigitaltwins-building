@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PrimaryLoopEnteringCondenserWaterValveOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Entering Condenser Water Valve Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the primary loop entering condenser water valve to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringCondenserWaterValveOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

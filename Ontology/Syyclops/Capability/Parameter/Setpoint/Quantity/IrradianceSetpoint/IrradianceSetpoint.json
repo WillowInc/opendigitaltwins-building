@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:IrradianceSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Irradiance Setpoint"
+  },
+  "description": {"en": "The desired value associated with irradiance"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

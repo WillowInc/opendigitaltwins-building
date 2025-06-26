@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RenewableExportApparentElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Renewable Export Apparent Electrical Power Sensor"
+  },
+  "description": {"en": "The apparent electrical power feedback from a sensor associated with renewable export"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalExportApparentElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

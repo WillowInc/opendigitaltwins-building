@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingBackflowPreventer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Backflow Preventer (Plumbing)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

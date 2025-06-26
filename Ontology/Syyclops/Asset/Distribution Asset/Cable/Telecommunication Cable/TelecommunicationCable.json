@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TelecommunicationCable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Telecommunication Cable"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Cable;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

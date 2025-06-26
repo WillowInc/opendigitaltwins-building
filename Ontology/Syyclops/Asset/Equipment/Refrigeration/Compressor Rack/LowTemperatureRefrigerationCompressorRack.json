@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:com:syyclops:LowTemperatureRefrigerationCompressorRack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low-Temperature Refrigeration Compressor Rack"
+  },
+  "description": {
+    "en": "A compressor rack which is optimized for low-temperature refrigeration applications."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerationCompressorRack;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

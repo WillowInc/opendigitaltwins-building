@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PM001AirQualitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "PM0.1 Air Quality Setpoint"
+  },
+  "description": {"en": "The desired value associated with PM0.1 air quality"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

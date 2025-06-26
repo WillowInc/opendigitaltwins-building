@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighLineVoltageAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Line Voltage Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high line (input) voltage alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighVoltageAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

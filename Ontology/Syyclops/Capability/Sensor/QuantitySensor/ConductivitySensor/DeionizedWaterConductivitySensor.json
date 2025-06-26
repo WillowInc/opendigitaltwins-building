@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeionizedWaterConductivitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Deionized Water Conductivity Sensor"
+  },
+  "description": {"en": "The conductivity feedback from a sensor associated with deionized water"},
+  "extends" : [
+    "dtmi:com:syyclops:ConductivitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:com:syyclops:FoodStorageRefrigerationEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Storage Refrigeration Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodStorageEquipment;1",
+    "dtmi:com:syyclops:DefrostEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Evaporator Fan"
+      },
+      "name": "evaporatorFan",
+      "schema": "dtmi:com:syyclops:Fan;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

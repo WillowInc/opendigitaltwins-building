@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:airport:AirfieldLightingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield Lighting System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportSystem;1",
+    "dtmi:com:syyclops:LightingSystem;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

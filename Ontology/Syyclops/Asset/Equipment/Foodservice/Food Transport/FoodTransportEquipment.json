@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:FoodTransportEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Transport Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceEquipment;1",
+    "dtmi:com:syyclops:TransportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

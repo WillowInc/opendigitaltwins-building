@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FilterAirDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Filter Air Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with air filter"},
+  "extends" : [
+    "dtmi:com:syyclops:AirDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

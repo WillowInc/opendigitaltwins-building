@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderChilledWaterPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the chilled water header pump"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

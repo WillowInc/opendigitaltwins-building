@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:GreenhouseGasEmissionsIntensity;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Greenhouse Gas Emissions Intensity"
+  },
+  "description": {
+    "en": "The quantity of greenhouse gas emissions normalized per facility area attributed (directly or indirectly) to an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:QuantityPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseBCurrentMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase B Current Magnitude Sensor"
+  },
+  "description": {"en": "The current magnitude feedback from a sensor associated with phase b"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

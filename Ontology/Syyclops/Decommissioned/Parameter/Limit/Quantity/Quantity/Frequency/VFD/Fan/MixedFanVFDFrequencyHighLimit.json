@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MixedFanVFDFrequencyHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Fan VFD Frequency High Limit"
+  },
+  "description": {"en": "The high limit associated with mixed fan vfd output frequency"},
+  "extends" : [
+    "dtmi:com:syyclops:FanVFDFrequencyHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Limit"
+  },
+  "description": {"en": "The lower limit on the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:Limit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

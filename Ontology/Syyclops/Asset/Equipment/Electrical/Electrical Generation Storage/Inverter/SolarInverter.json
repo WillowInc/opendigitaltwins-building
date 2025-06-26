@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:SolarInverter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Inverter"
+  },
+  "description": {
+    "en": "A power inverter which has been optimized to convert the DC output of photovoltaic (PV) panels into alternating current (AC) electricity."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Inverter;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

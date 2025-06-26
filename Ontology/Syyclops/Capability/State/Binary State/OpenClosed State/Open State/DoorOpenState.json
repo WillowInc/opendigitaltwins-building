@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DoorOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Door Open State"
+  },
+  "description": {"en": "The Boolean state of the door which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

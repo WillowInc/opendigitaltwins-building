@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ReturnAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Damper Position Actuator Command Feedback Mismatch Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the return air damper, which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

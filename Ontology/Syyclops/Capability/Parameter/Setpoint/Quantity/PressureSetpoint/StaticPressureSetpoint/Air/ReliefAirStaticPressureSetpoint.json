@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with relief air static pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:AirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

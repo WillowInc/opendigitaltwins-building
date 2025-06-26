@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:MixedAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated with mixed air humidity"},
+  "extends" : [
+    "dtmi:com:syyclops:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

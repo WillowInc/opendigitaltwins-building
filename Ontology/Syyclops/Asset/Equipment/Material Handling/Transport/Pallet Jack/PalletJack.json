@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:PalletJack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pallet Jack"
+  },
+  "description": {
+    "en": "A machine used to lift and move pallets to another location"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TransportEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

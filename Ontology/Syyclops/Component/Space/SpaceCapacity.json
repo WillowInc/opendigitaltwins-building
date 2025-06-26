@@ -1,0 +1,35 @@
+{
+  "@id": "dtmi:com:syyclops:SpaceCapacity;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Space Capacity"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SpaceComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "maxOccupancy",
+      "displayName": {
+        "en": "Maximum Occupancy"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "Building Code Occupancy"
+    },
+    {
+      "@type": "Property",
+      "name": "seatingCapacity",
+      "displayName": {
+        "en": "Seating Capacity"
+      },
+      "writable": true,
+      "schema": "integer",
+      "comment": "Count of seats"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

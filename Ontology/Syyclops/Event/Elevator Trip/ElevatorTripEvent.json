@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:com:syyclops:ElevatorTripEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator Trip Event"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Event;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "startLevelId",
+      "displayName": {
+        "en": "Start Level Id"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "endLevelId",
+      "displayName": {
+        "en": "End Level Id"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "currentLevelId",
+      "displayName": {
+        "en": "Current Level Id"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "currentTripDirection",
+      "displayName": {
+        "en": "Current Trip Direction"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:syyclops:ElevatorTripDirection;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Up",
+            "displayName": {
+              "en": "Up"
+            },
+            "enumValue": "Up"
+          },
+          {
+            "name": "Down",
+            "displayName": {
+              "en": "Down"
+            },
+            "enumValue": "Down"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

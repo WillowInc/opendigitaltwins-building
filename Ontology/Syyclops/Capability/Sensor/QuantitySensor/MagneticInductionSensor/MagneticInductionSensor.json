@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MagneticInductionSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Magnetic Induction Sensor"
+  },
+  "description": {"en": "The magnetic induction feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

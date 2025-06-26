@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:GreaseTrap;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Grease Trap"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FatsOilsGreaseDisposal;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

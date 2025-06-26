@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:syyclops:StructuralPile;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Pile"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralFoundation;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

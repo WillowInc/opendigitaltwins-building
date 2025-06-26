@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:GeneralExhaustAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "General Exhaust Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value for the volume flow of general exhaust air. General exhaust air removes contaminants from the entire space."},
+  "extends" : [
+    "dtmi:com:syyclops:ExhaustAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

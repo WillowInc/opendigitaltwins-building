@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PresenceSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Presence Sensor"
+  },
+  "description": {"en": "The Boolean status from a sensor where 'presence' is 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:PresenceAbsenceSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

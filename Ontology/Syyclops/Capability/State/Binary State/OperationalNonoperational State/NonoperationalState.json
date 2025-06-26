@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:NonoperationalState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Nonoperational State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'nonoperational' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OperationalNonoperationalState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

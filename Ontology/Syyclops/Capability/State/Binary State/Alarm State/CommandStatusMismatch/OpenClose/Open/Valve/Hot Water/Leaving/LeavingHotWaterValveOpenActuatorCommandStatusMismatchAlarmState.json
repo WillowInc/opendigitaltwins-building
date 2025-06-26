@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingHotWaterValveOpenActuatorCommandStatusMismatchAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Hot Water Valve Open Actuator Command Status Mismatch Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm for the mismatch between command and status when commanding the leaving hot water valve to 'open', which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterValveOpenActuatorCommandStatusMismatchAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LinearVelocitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Linear Velocity Setpoint"
+  },
+  "description": {"en": "The desired value associated with linear velocity"},
+  "extends" : [
+    "dtmi:com:syyclops:VelocitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

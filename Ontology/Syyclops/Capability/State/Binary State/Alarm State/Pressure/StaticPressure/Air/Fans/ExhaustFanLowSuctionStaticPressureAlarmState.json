@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustFanLowSuctionStaticPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Fan Low Suction Static Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the exhaust fan low suction static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:FanLowSuctionStaticPressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

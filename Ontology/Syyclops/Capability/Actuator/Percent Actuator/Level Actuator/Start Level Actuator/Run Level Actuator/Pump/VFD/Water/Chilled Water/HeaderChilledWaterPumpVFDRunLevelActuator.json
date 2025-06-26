@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderChilledWaterPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the chilled water header pump vfd"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:syyclops:HeaderChilledWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

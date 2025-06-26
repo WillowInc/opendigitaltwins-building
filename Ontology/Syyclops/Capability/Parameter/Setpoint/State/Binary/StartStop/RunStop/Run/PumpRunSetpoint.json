@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PumpRunSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Run Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RunSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

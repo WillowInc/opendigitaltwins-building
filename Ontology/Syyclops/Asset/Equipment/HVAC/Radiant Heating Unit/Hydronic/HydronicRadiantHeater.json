@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HydronicRadiantHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hydronic Radiant Heater"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RadiantHeater;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

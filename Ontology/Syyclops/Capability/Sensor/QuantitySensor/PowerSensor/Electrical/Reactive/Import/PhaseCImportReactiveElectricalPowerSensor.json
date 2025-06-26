@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCImportReactiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Import Reactive Electrical Power Sensor"
+  },
+  "description": {"en": "The reactive electrical power feedback from a sensor associated with phase c import"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseCReactiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

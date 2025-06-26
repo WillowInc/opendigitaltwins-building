@@ -1,0 +1,71 @@
+{
+  "@id": "dtmi:com:syyclops:ConnectorApplication;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Connector Application"
+  },
+  "description": {
+    "en": "An application whose task is to connect to and communicate with other software applications."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Application;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "connectorType",
+      "displayName": {
+        "en": "Connector Type"
+      },
+      "description": {
+        "en": "The type of connector application. There may be many instances (aka twins) of the same Connector Type installed for an organization."
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "id",
+            "displayName": {
+              "en": "ID"
+            },
+            "description": {
+              "en": "The unique identier for the connector type"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "name",
+            "displayName": {
+              "en": "Name"
+            },
+            "description": {
+              "en": "The display name for the connector type."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "direction",
+            "displayName": {
+              "en": "Direction"
+            },
+            "description": {
+              "en": "Indicates whether the connector type is Source or Destination. Source indicates data flowing from an external system to the org. Destination indicates data flowing from the org to an external system."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "version",
+            "displayName": {
+              "en": "Version"
+            },
+            "schema": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowMakeupWaterTankLevelAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Makeup Water Tank Level Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low makeup water tank level alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowWaterLevelAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

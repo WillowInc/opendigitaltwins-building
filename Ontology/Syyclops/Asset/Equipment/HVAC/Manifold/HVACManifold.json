@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HVACManifold;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Manifold"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1",
+    "dtmi:com:syyclops:Manifold;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

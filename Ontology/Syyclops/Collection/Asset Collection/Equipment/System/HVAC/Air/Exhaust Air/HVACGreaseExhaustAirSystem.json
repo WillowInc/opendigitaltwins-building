@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HVACGreaseExhaustAirSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Grease Exhaust Air System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACExhaustAirSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

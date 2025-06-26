@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:SteamTemperatureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Temperature Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around the steam temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamTemperatureSetpoint;1",
+    "dtmi:com:syyclops:DeadbandSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

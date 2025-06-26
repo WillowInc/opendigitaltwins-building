@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CompressorRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressor Run Level State"
+  },
+  "description": {"en": "The run level state associated with a compressor"},
+  "extends" : [
+    "dtmi:com:syyclops:RunLevelState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

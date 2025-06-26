@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Vacuum;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vacuum"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CleaningEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

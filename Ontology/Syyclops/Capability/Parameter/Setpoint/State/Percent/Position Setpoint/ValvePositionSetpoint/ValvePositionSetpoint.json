@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ValvePositionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valve Position Setpoint"
+  },
+  "description": {"en": "The desired position percentage for control of the valve"},
+  "extends" : [
+    "dtmi:com:syyclops:PositionSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

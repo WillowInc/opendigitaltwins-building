@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowCompressorEnteringRefrigerantStaticPressureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Compressor Entering Refrigerant Static Pressure Alarm State"
+  },
+  "description": {"en": "The Boolean state of the low compressor entering refrigerant static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerantStaticPressureAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

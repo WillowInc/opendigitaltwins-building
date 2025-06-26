@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:airport:Airport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport"
+  },
+  "description": {
+    "en": "A location where aircraft flight operations takes place that usually includes runways and maintenance facilities"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Land;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

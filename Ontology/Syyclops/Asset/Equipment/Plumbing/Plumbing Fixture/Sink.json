@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Sink;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sink"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingFixture;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

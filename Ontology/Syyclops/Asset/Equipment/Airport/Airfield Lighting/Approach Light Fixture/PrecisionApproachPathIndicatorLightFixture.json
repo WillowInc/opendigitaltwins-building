@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:PrecisionApproachPathIndicatorLightFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Precision Approach Path Indicator (PAPI) Light Fixture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:ApproachLightFixture;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

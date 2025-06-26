@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ColdDeckSupplyFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Deck Supply Fan"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SupplyFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

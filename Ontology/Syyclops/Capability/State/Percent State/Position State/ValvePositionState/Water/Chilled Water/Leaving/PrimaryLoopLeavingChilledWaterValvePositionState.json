@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PrimaryLoopLeavingChilledWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Leaving Chilled Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the primary loop leaving chilled water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingChilledWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

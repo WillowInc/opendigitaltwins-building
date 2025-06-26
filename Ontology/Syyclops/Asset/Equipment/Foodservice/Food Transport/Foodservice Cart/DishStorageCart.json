@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DishStorageCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dish Storage Cart"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceCart;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

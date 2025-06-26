@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DistributionRacewayCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Distribution Raceway Collection"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DistributionAssetCollection;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

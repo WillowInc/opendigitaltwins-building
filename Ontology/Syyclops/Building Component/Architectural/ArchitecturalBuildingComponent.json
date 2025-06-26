@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ArchitecturalBuildingComponent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Architectural Building Component"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BuildingComponent;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

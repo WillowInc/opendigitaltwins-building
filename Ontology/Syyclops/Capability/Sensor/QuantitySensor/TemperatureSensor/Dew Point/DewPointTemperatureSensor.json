@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DewPointTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dew Point Temperature Sensor"
+  },
+  "description": {"en": "The dew point temperature feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

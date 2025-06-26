@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SignalStrengthState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Signal Strength State"
+  },
+  "description": {"en": "The percent signal strength of the equipment's wireless communication or network transceiver"},
+  "extends" : [
+    "dtmi:com:syyclops:PercentState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

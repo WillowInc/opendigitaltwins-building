@@ -1,0 +1,56 @@
+{
+  "@id": "dtmi:com:syyclops:TransferSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Transfer Switch"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "poles"
+      },
+      "name": "poles",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Three",
+            "name": "Three"
+          },
+          {
+            "enumValue": "Four",
+            "name": "Four"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "mains rating"
+      },
+      "name": "mainsRating",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "name": "mainBus",
+      "displayName": {
+        "en": "Main Bus"
+      },
+      "schema": "dtmi:com:syyclops:ElectricalBus;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}

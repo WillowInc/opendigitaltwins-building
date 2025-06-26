@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HorizontalFanCoilUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Horizontal Fan Coil Unit"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

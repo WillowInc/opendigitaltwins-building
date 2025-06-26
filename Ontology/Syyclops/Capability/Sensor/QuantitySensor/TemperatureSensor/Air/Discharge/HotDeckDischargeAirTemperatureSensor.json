@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HotDeckDischargeAirTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Deck Discharge Air Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with discharge air to a terminal unit from the hot deck of an air handling unit"},
+  "extends" : [
+    "dtmi:com:syyclops:DischargeAirTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

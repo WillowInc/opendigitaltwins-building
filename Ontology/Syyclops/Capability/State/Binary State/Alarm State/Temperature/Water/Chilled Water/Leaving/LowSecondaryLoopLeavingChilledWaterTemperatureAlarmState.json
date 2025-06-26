@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowSecondaryLoopLeavingChilledWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Secondary Loop Leaving Chilled Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low leaving chilled water secondary loop temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowLeavingChilledWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

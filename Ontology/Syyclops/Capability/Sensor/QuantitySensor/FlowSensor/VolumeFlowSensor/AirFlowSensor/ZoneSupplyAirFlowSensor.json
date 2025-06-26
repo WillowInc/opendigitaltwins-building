@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneSupplyAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Supply Air Flow Sensor"
+  },
+  "description": {"en": "The total volume flow of supply air to a zone calculated from one or more sensors"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

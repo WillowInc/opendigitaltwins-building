@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PreheatStageActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheat Stage Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's preheat stage when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:PreheatOnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

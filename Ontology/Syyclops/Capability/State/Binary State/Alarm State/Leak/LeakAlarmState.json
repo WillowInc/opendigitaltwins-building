@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeakAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leak Alarm State"
+  },
+  "description": {"en": "The Boolean state of the leak alarm which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

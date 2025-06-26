@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnergySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Setpoint"
+  },
+  "description": {"en": "The desired value associated with energy"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

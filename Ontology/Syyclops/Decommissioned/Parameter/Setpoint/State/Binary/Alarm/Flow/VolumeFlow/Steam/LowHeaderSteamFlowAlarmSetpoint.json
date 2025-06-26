@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowHeaderSteamFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Header Steam Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low header steam flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowSteamFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:RunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

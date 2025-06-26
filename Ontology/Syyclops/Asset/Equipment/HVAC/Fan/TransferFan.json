@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:TransferFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Transfer Fan"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

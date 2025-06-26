@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HVACHeatTracing;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Tracing (HVAC)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1",
+    "dtmi:com:syyclops:HeatTracing;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

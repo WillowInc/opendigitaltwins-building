@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:BaggageConveyor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Baggage Conveyor"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:BaggageHandlingEquipment;1",    
+    "dtmi:com:syyclops:ConveyanceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

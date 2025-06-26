@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:InletAirHighAirFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air High Air Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the inlet air high air flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:HighAirFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

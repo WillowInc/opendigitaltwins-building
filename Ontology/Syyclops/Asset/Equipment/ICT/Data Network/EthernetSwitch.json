@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:com:syyclops:EthernetSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ethernet Switch"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DataNetworkEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "number of ports"
+      },
+      "name": "numberOfPorts",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "height (rack units)"
+      },
+      "name": "heightRUs",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowDryBulbTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Dry Bulb Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low dry bulb temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

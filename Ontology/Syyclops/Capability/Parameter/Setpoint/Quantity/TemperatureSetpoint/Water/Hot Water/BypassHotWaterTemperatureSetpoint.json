@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BypassHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Hot Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with hot water bypass temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

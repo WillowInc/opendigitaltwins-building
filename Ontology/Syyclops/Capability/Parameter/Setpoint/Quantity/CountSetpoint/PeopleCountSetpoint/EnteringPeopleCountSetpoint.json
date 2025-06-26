@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringPeopleCountSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering People Count Setpoint"
+  },
+  "description": {"en": "The desired value associated with entering people count"},
+  "extends" : [
+    "dtmi:com:syyclops:PeopleCountSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

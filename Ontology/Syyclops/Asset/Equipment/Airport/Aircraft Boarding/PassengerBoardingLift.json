@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:airport:PassengerBoardingLift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Passenger Boarding Lift"
+  },
+  "description": {
+    "en": "A device that provides an elevating platform allowing the transfer of a person with disability or mobility impairment from the airport apron up to the aircraft door for boarding."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AircraftBoardingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

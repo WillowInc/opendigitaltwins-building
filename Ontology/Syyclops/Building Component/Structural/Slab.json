@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:Slab;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Slab"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralBuildingComponent;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ContactSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Contact Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:OpenCloseSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

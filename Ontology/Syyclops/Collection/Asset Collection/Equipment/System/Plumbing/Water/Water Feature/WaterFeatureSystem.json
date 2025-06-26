@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:WaterFeatureSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Feature System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighLevelAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Level Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high level alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LevelAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

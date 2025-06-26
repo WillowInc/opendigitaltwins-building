@@ -1,0 +1,391 @@
+{
+  "@id": "dtmi:com:syyclops:Document;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Document"
+  },
+  "description": {
+    "en": "A written, printed, or electronic matter that provides information, e.g. contract, drawing, image, report, etc."
+  },
+  "extends" : [
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isDocumentOf",
+      "displayName": {
+        "en": "is document of"
+      }
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasSettings",
+      "displayName": {
+        "en": "has settings"
+      },
+      "description": {
+        "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+      },
+      "target": "dtmi:com:syyclops:Settings;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "includedIn",
+      "displayName": {
+        "en": "included in"
+      },
+      "target": "dtmi:com:syyclops:Collection;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "URL"
+      },
+      "name": "url",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Filename"
+      },
+      "name": "filename",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Hash MD5"
+      },
+      "name": "hashMD5",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "DataSize"],
+      "displayName": {
+        "en": "File Size"
+      },
+      "name": "fileSize",
+      "schema": "double",
+      "unit": "byte",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "file size unit"
+      },
+      "name": "fileSizeUnit",
+      "annotates": "fileSize",
+      "overrides": "unit",
+      "schema": "DataSizeUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Mapped IDs"
+      },
+      "name": "mappedIds",
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:syyclops:DocumentMappedIdObject;1"
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "uniqueID",
+      "displayName": {
+        "en": "Globally Unique ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "externalID",
+      "displayName": {
+        "en": "External ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "code",
+      "displayName": {
+        "en": "Code"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "description",
+      "displayName": {
+        "en": "Description"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "summary",
+      "displayName": {
+        "en": "Summary"
+      },
+      "description": {
+        "en": "An overview of the content written or described in a document which is intended to be one or several paragraphs in length. Use 'description' for a short format summary."
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "siteID",
+      "displayName": {
+        "en": "Site ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "alternateClassification",
+      "displayName": {
+        "en": "Alternate Classification"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "customProperties",
+      "displayName": {
+        "en": "Custom Properties"
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sourceName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "createdDate",
+      "displayName": {
+        "en": "Created Date"
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "lastUpdatedDate",
+      "displayName": {
+        "en": "Last Updated Date"
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "createdBy",
+      "displayName": {
+        "en": "Created By"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "login",
+            "displayName": {
+              "en": "Login"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "name",
+            "displayName": {
+              "en": "Name"
+            },
+            "schema": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:syyclops:DocumentMappedIdObject;1",
+      "@type": "Object",
+      "description": {
+        "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+      },
+      "fields": [
+        {
+          "name": "exactType",
+          "displayName": {
+            "en": "Exact Type"
+          },
+          "description": {
+            "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scope",
+          "displayName": {
+            "en": "Scope"
+          },
+          "description": {
+            "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scopeId",
+          "displayName": {
+            "en": "Scope ID"
+          },
+          "description": {
+            "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "value",
+          "displayName": {
+            "en": "Value"
+          },
+          "description": {
+            "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "dateCreated",
+          "displayName": {
+            "en": "Date Created"
+          },
+          "description": {
+            "en": "The date the identity was created in Mapped."
+          },
+          "schema": "dateTime"
+        }
+      ]
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

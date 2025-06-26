@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingManifold;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plumbing Manifold"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipment;1",
+    "dtmi:com:syyclops:Manifold;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

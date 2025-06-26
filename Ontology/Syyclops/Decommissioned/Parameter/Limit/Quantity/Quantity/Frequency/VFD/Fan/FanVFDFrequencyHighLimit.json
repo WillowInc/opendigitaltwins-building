@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FanVFDFrequencyHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan VFD Frequency High Limit"
+  },
+  "description": {"en": "The high limit associated with fan vfd output frequency"},
+  "extends" : [
+    "dtmi:com:syyclops:VFDFrequencyHighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowCompressorLeavingRefrigerantTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Compressor Leaving Refrigerant Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant leaving the compressor (discharge) temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowRefrigerantTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:LandscapedArea;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Landscaped Area"
+  },
+  "description": {
+    "en": "An area such as a parkway, planter, or flower bed that require landscape, irrigation, and/or weed control."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:OutdoorArea;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

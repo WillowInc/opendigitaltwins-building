@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:MultiState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multi-State"
+  },
+  "description": {"en": "The multi-state state of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:State;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

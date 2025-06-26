@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RenewableNetActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Renewable Net Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with renewable net"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalNetActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

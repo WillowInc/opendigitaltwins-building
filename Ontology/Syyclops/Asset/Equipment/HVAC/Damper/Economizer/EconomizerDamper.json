@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:EconomizerDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Economizer Damper"
+  },
+  "description": {
+    "en": "A damper that that provides maximum outside air flow during periods where the economizer control mode is active."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

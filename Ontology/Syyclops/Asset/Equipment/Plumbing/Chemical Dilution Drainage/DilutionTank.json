@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DilutionTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dilution Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ChemicalDilutionDrainageEquipment;1",
+    "dtmi:com:syyclops:PlumbingTank;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopHotWaterDeltaPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Hot Water Delta Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with tertiary hot water loop delta pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterDeltaPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

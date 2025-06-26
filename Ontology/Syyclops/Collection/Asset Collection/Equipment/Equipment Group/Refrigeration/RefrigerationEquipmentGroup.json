@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerationEquipmentGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Equipment Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:EquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:WeatherStationEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Weather Station"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

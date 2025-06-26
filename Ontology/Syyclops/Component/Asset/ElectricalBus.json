@@ -1,0 +1,48 @@
+{
+  "@id": "dtmi:com:syyclops:ElectricalBus;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Bus"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Copper",
+            "name": "Copper"
+          },
+          {
+            "enumValue": "Aluminium",
+            "name": "Aluminium"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "current rating"
+      },
+      "name": "currentRating",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}

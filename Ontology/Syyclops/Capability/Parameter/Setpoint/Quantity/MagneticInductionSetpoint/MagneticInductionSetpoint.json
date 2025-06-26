@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MagneticInductionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Magnetic Induction Setpoint"
+  },
+  "description": {"en": "The desired value associated with magnetic induction"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

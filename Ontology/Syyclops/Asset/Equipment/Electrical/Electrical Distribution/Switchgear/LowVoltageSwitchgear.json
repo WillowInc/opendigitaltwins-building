@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowVoltageSwitchgear;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low-voltage Switchgear"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Switchgear;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

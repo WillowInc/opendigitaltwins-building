@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerationLiquidRefrigerantReceiver;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Liquid Refrigerant Receiver"
+  },
+  "description": {
+    "en": "A liquid refrigerant receiver tank, or simply receiver, used in a refrigeration system holds excess refrigerant after the condenser to ensure proper liquid refrigerent to the expansion valve inlet of the evaporators."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerationTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

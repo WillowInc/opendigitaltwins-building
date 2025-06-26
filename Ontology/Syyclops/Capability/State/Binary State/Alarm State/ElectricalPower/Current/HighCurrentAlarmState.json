@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighCurrentAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Current Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high electrical current alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

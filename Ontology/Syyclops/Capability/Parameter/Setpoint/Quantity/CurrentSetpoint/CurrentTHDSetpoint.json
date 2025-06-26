@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CurrentTHDSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Total Harmonic Distortion (THD) Setpoint"
+  },
+  "description": {"en": "The desired value associated with current total harmonic distortion (THD)"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

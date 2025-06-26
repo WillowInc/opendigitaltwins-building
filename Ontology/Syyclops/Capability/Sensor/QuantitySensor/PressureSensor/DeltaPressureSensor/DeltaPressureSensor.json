@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:PressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

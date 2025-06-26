@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReheatLevelStageSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheating Level Stage Setpoint"
+  },
+  "description": {"en": "The reheating level percentage for staging of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:ReheatLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

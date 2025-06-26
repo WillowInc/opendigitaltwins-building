@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BypassSteamFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Steam Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam bypass flow"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

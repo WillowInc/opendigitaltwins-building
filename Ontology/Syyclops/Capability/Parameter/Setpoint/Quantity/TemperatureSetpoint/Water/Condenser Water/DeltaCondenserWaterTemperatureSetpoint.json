@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaCondenserWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Condenser Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with condenser water delta temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterTemperatureSetpoint;1",
+    "dtmi:com:syyclops:DeltaWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

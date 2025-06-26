@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:ClothesCombinationWasherDryer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Combination Washer Dryer"
+  },
+  "description": {
+    "en": "A compact laundry applicance which uses a single drum for washing and drying."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ClothesWasher;1",
+    "dtmi:com:syyclops:ClothesDryer;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

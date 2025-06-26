@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VFDRunLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VFD Run Level Setpoint"
+  },
+  "description": {"en": "The desired run level percentage for control of a VFD"},
+  "extends" : [
+    "dtmi:com:syyclops:RunLevelSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:BeverageEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Beverage Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

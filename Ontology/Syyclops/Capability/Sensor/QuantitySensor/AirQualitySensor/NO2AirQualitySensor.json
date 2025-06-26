@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:NO2AirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Nitrogen Dioxide (NO2) Air Quality Sensor"
+  },
+  "description": {"en": "The nitrogen dioxide (NO2) air quality feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:NOxAirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

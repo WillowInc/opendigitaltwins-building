@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with relief air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

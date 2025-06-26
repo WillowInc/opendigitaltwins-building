@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BilledSteamThermalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Steam Thermal Energy"
+  },
+  "description": {"en": "The quantity of steam thermal energy that is billed to a utility account, typically on a monthly basis."},
+  "extends" : [
+    "dtmi:com:syyclops:BilledThermalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

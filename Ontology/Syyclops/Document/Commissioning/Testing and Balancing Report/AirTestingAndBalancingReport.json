@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:AirTestingAndBalancingReport;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Testing and Balancing Report"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TestingAndBalancingReport;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

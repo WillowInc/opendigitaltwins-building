@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air static pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:AirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

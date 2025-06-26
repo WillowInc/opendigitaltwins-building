@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DehumidifierOnActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dehumidifier On Actuator"
+  },
+  "description": {"en": "The Boolean command which turns on an equipment's dehumidifier function when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ContractEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Contract Event"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Event;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

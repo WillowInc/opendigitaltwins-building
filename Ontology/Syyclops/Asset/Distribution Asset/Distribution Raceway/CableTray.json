@@ -1,0 +1,67 @@
+{
+  "@id": "dtmi:com:syyclops:CableTray;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cable Tray"
+  },
+  "extends": "dtmi:com:syyclops:DistributionRaceway;1",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "material"
+      },
+      "name": "material",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "width"
+      },
+      "name": "width",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "width unit"
+      },
+      "name": "widthUnit",
+      "annotates": "width",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Length"],
+      "displayName": {
+        "en": "height"
+      },
+      "name": "height",
+      "schema": "double",
+      "unit": "millimetre",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "height unit"
+      },
+      "name": "heightUnit",
+      "annotates": "height",
+      "overrides": "unit",
+      "schema": "LengthUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

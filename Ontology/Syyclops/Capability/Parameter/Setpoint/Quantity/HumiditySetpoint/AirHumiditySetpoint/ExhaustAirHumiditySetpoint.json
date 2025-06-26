@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ExhaustAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated with exhaust air humidity"},
+  "extends" : [
+    "dtmi:com:syyclops:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

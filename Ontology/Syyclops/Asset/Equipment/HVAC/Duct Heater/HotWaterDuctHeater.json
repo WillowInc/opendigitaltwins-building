@@ -1,0 +1,39 @@
+{
+  "@id": "dtmi:com:syyclops:HotWaterDuctHeater;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Duct Heater"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DuctHeater;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "flow capacity"
+      },
+      "name": "flowCapacity",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "flow capacity unit"
+      },
+      "name": "flowCapacityUnit",
+      "annotates": "flowCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SteamPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the steam pump"},
+  "extends" : [
+    "dtmi:com:syyclops:PumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

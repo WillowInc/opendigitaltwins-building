@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:Shower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Shower"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingFixture;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

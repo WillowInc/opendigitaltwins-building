@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingPeopleCountSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving People Count Setpoint"
+  },
+  "description": {"en": "The desired value associated with leaving people count"},
+  "extends" : [
+    "dtmi:com:syyclops:PeopleCountSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

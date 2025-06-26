@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighPrimaryLoopChilledWaterFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Primary Loop Chilled Water Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high primary loop chilled water flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighChilledWaterFlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

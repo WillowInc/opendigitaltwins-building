@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:MinOutsideAirDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Min Outside Air Damper"
+  },
+  "description": {
+    "en": "A damper that only opens to allow minimum outside air flow per ventilation requirements."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

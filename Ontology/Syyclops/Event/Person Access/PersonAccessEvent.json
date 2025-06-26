@@ -1,0 +1,53 @@
+{
+  "@id": "dtmi:com:syyclops:PersonAccessEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Person Access Event"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Event;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "accessReaderId",
+      "displayName": {
+        "en": "Access Reader Id"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "accessEventType",
+      "displayName": {
+        "en": "Access Event Type"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:syyclops:AccessEventType;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "Granted",
+            "displayName": {
+              "en": "Granted"
+            },
+            "enumValue": "Granted"
+          },
+          {
+            "name": "Denied",
+            "displayName": {
+              "en": "Denied"
+            },
+            "enumValue": "Denied"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

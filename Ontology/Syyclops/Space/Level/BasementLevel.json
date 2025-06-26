@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:BasementLevel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Basement Level"
+  },
+  "description": {
+    "en": "A level of a building which is wholly or partially below ground level."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Level;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

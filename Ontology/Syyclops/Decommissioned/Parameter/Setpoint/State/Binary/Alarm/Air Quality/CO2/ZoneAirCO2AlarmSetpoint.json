@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneAirCO2AlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air CO2 Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the zone air"},
+  "extends" : [
+    "dtmi:com:syyclops:CO2AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

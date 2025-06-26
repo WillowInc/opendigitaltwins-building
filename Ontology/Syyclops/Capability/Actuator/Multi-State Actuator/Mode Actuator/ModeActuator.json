@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mode Actuator"
+  },
+  "description": {"en": "A multi-state command which sets the mode of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:Actuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

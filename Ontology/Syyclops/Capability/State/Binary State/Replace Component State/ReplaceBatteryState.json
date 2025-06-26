@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReplaceBatteryState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Replace Battery State"
+  },
+  "description": {"en": "The Boolean state of the battery which is 'replace' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ReplaceComponentState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

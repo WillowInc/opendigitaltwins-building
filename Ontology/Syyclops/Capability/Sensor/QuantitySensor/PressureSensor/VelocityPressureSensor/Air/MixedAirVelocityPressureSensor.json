@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MixedAirVelocityPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Velocity Pressure Sensor"
+  },
+  "description": {"en": "The velocity pressure feedback from a sensor associated with mixed air"},
+  "extends" : [
+    "dtmi:com:syyclops:AirVelocityPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

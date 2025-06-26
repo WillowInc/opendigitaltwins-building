@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ReturnAirTemperatureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Temperature Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with return air temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSetpointHighLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

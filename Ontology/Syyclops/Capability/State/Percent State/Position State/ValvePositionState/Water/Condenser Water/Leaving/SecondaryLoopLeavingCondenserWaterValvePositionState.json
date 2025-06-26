@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SecondaryLoopLeavingCondenserWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Leaving Condenser Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the secondary loop leaving condenser water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingCondenserWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

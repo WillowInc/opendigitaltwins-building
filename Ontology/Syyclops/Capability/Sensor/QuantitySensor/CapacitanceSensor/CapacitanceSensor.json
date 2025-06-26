@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CapacitanceSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Capacitance Sensor"
+  },
+  "description": {"en": "The capacitance feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EmergencyEyeWashShower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Emergency Eye Wash / Shower"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:EmergencyEyeWashStation;1",
+    "dtmi:com:syyclops:EmergencyShower;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

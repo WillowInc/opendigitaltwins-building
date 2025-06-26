@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:ToiletPaperDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toilet Paper Dispenser"
+  },
+  "description": {
+    "en": "An device that holds toilet paper."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ToiletAccessory;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

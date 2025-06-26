@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirDamperPositionSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Damper Position Setpoint"
+  },
+  "description": {"en": "The desired position percentage for control of the discharge (supply) air damper"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperPositionSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

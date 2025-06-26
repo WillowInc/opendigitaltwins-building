@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ResistanceSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Resistance Sensor"
+  },
+  "description": {"en": "The resistance pressure feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

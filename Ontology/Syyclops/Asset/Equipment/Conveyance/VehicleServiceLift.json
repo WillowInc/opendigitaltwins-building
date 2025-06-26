@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:VehicleServiceLift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vehicle Service Lift"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ConveyanceEquipment;1",
+    "dtmi:com:syyclops:VehicleEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

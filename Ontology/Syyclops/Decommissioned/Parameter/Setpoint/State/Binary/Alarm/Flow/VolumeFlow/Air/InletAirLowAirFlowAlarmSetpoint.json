@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:InletAirLowAirFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Low Air Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the inlet air low air flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighAirHumidityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Air Humidity Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high air humidity alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:AirHumidityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirCO2Setpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air CO2 Setpoint"
+  },
+  "description": {"en": "The desired value associated with carbon dioxide (CO2) air quality associated with the relief air"},
+  "extends" : [
+    "dtmi:com:syyclops:CO2AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

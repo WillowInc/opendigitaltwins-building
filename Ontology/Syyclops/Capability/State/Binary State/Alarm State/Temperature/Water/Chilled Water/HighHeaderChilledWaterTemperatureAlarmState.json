@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HighHeaderChilledWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Header Chilled Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high chilled water header temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighChilledWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

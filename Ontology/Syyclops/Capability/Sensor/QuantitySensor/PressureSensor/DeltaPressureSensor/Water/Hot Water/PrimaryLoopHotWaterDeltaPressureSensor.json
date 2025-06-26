@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PrimaryLoopHotWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Primary Loop Hot Water Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with hot water primary loop"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

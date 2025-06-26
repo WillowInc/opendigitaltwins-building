@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ApparentElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Apparent Electrical Power Sensor"
+  },
+  "description": {"en": "The apparent electrical power feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

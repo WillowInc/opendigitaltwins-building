@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideAirFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Fan"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

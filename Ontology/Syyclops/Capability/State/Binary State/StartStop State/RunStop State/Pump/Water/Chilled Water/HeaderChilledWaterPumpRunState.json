@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderChilledWaterPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Chilled Water Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the chilled water header pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

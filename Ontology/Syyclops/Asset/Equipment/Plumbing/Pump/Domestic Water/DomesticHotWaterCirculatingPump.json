@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DomesticHotWaterCirculatingPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domestic Hot Water Circulating Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DomesticWaterPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

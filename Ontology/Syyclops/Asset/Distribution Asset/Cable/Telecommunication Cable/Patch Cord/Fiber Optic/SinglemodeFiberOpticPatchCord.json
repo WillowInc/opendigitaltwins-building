@@ -1,0 +1,43 @@
+{
+  "@id": "dtmi:com:syyclops:SinglemodeFiberOpticPatchCord;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Singlemode Fiber Optic Patch Cord"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:TelecommunicationPatchCord;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "performanceRating",
+      "displayName": {
+        "en": "Performance Rating"
+      },
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "OS1",
+            "displayName": {
+              "en": "OS1"
+            },
+            "enumValue": "OS1"
+          },
+          {
+            "name": "OS2",
+            "displayName": {
+              "en": "OS2"
+            },
+            "enumValue": "OS2"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

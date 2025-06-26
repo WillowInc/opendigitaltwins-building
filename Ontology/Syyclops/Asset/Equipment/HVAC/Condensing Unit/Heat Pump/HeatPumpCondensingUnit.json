@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:HeatPumpCondensingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Pump Condensing Unit"
+  },
+  "description": {
+    "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CondensingUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

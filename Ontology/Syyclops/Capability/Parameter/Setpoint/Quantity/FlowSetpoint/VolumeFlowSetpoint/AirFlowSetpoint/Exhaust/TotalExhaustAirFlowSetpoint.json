@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TotalExhaustAirFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Exhaust Air Flow Setpoint"
+  },
+  "description": {"en": "The desired value for the total volume flow of exhaust air. For pressurization zones, this is typically the sum of general and fume exhaust."},
+  "extends" : [
+    "dtmi:com:syyclops:ExhaustAirFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

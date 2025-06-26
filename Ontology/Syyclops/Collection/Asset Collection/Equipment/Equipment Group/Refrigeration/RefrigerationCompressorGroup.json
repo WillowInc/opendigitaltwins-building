@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerationCompressorGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Compressor Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RefrigerationEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

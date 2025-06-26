@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:Cogenerator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cogenerator"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Generator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

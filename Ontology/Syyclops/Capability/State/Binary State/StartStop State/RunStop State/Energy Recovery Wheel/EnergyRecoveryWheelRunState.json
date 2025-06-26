@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnergyRecoveryWheelRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Wheel Run State"
+  },
+  "description": {"en": "The Boolean state of the energy recovery wheel which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:RunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

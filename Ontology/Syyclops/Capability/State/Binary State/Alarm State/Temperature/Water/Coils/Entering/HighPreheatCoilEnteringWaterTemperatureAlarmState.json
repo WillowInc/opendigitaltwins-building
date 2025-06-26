@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HighPreheatCoilEnteringWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Preheat Coil Entering Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with high water entering the preheat coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighCoilEnteringWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

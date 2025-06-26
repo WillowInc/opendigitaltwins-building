@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterDeltaPressureDeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Delta Pressure Deadband Setpoint"
+  },  
+  "description": {"en": "The deadband around the condenser water delta pressure setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterDeltaPressureSetpoint;1",
+    "dtmi:com:syyclops:DeadbandSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

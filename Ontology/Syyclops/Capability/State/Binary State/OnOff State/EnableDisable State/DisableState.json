@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DisableState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Disable State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'disable' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:EnableDisableState;1",
+    "dtmi:com:syyclops:OffState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

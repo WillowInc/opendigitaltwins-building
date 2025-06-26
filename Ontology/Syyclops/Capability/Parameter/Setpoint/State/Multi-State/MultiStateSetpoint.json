@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MultiStateSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multi-State Setpoint"
+  },
+  "description": {"en": "A multi-state configuration setting that functions as the desired value for control of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:StateSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

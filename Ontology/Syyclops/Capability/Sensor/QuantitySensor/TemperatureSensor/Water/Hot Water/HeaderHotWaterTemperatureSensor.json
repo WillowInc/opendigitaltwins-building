@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Hot Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with hot water header"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

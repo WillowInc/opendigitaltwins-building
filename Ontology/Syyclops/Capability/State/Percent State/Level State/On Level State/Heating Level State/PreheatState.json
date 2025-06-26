@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PreheatLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheating Level State"
+  },
+  "description": {"en": "The 'on' level feedback from a state associated with preheating"},
+  "extends" : [
+    "dtmi:com:syyclops:HeatingLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

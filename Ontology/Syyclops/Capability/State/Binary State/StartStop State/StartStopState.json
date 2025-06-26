@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:StartStopState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Start/Stop State"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:BinaryState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeFanRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Fan Run State"
+  },
+  "description": {"en": "The Boolean state of the discharge (supply) air fan which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:FanRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

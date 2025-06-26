@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EconomizerDamperOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Economizer Damper Open State"
+  },
+  "description": {"en": "The Boolean state of the economizer damper which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

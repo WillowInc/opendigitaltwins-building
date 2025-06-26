@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LineABVoltageMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Line A-B Voltage Magnitude Sensor"
+  },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with line a-b"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HumidityRatioSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Humidity Ratio Setpoint"
+  },
+  "description": {"en": "The desired value associated with humidity ratio (air grains)"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

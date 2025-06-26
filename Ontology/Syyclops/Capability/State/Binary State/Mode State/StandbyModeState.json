@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:StandbyModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Standby Mode State"
+  },
+  "description": {"en": "When 'true', equipment is operating in a standby mode as set by a normal schedule, overtime schedule, or manual override."},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

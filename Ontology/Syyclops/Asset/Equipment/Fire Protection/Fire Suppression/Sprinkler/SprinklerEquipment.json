@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SprinklerEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sprinkler Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FireSuppressionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

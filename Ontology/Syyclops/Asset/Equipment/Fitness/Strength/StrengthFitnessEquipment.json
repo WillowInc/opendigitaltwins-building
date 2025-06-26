@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:StrengthFitnessEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Strength Fitness Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FitnessEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

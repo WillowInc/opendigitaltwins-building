@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:com:syyclops:FanCoilUnitReheat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Coil Unit with Reheat"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FanCoilUnit;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal heating capacity"
+      },
+      "name": "nominalHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal heating capacity unit"
+      },
+      "name": "nominalHeatingCapacityUnit",
+      "annotates": "nominalHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "re-heating method"
+      },
+      "name": "reHeatingMethod",
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

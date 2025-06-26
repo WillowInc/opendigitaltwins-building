@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopLeavingChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Chilled Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with tertiary chilled water loop leaving temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingChilledWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

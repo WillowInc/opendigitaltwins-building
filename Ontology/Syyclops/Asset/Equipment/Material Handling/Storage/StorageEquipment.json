@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:StorageEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Storage Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:MaterialHandlingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

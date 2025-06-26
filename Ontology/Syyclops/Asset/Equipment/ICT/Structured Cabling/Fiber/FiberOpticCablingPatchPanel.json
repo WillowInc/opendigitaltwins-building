@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FiberOpticCablingPatchPanel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fiber Optic Cabling Patch Panel"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FiberOpticCablingEquipment;1",
+    "dtmi:com:syyclops:PatchPanel;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

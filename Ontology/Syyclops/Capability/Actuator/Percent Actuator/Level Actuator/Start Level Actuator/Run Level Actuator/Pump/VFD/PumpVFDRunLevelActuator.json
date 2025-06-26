@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:PumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the pump vfd"},
+  "extends" : [
+    "dtmi:com:syyclops:PumpRunLevelActuator;1",
+    "dtmi:com:syyclops:VFDRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

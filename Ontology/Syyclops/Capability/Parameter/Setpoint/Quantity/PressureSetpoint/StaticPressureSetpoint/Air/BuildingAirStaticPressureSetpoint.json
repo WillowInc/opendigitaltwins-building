@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BuildingAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with building air static pressure"},
+  "extends" : [
+    "dtmi:com:syyclops:AirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

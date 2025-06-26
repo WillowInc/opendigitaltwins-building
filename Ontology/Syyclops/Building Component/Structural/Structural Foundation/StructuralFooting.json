@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:syyclops:StructuralFooting;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Footing"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralFoundation;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

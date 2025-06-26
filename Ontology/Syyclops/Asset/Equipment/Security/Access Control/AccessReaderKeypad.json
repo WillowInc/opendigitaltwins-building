@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:AccessReaderKeypad;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Access Reader with Keypad"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AccessReader;1",
+    "dtmi:com:syyclops:AccessKeypad;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

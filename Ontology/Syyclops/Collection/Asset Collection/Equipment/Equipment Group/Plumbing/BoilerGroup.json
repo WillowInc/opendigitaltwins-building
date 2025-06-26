@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:BoilerGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Boiler Group"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

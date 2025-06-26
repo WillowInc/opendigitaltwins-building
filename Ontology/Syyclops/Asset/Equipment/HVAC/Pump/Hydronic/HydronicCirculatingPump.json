@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HydronicCirculatingPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hydronic Circulating Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HydronicPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

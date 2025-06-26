@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VoltageAngleSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Voltage Angle Sensor"
+  },
+  "description": {"en": "The voltage angle feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

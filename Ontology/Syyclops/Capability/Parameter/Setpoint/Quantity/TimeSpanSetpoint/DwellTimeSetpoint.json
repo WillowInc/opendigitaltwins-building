@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DwellTimeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dwell Time Setpoint"
+  },
+  "description": {"en": "The desired value associated with dwell time"},
+  "extends" : [
+    "dtmi:com:syyclops:TimeSpanSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

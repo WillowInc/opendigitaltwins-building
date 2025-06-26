@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCCurrentDemandSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Current Demand Sensor"
+  },
+  "description": {"en": "The current demand feedback from a sensor associated with phase c"},
+  "extends" : [
+    "dtmi:com:syyclops:PhaseCCurrentMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

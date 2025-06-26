@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderSteamFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Steam Flow Setpoint"
+  },
+  "description": {"en": "The desired value associated with steam header flow"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CoolingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with cooling zone air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:ZoneAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

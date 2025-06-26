@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighSteamFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Steam Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the high steam flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

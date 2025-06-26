@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CleanAgentCabinet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Clean Agent Cabinet"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CleanAgentEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

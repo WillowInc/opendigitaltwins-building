@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:DomesticNonPotableWaterSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Domestic Non-Potable Water System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DomesticWaterSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

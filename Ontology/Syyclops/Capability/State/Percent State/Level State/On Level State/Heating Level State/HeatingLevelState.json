@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HeatingLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Level State"
+  },
+  "description": {"en": "The 'on' level feedback from a state associated with heating"},
+  "extends" : [
+    "dtmi:com:syyclops:OnLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

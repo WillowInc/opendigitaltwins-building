@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowPreheatCoilLeavingAirTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Preheat Coil Leaving Air Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low air leaving the preheat coil temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

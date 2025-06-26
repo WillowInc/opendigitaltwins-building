@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingSteamPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Steam Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the steam leaving pump vfd"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamPumpVFDRunLevelActuator;1",
+    "dtmi:com:syyclops:LeavingSteamPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

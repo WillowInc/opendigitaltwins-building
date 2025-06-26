@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:OccupiedAirChangesPerHourSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Air Changes Per Hour Setpoint"
+  },
+  "description": {
+    "en": "The desired air changes per hour while the space is occupied, a.k.a. Occupied Air Change Rate Setpoint."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AirChangesPerHourSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

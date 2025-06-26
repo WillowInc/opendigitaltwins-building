@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowRefrigerantTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Refrigerant Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

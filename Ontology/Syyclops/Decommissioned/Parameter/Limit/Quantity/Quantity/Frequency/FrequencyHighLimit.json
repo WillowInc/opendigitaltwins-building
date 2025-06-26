@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FrequencyHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Frequency High Limit"
+  },
+  "description": {"en": "The high limit associated with frequency"},
+  "extends" : [
+    "dtmi:com:syyclops:HighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

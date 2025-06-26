@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:VFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VFD Frequency Sensor"
+  },
+  "description": {"en": "The frequency feedback from a sensor associated with VFD"},
+  "extends" : [
+    "dtmi:com:syyclops:FrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

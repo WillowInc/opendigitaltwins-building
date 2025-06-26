@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterDeltaPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Delta Pressure Sensor"
+  },
+  "description": {"en": "The delta pressure feedback from a sensor associated with condenser water"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterDeltaPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

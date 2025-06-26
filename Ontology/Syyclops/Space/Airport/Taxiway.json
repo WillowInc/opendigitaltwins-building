@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:airport:Taxiway;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Taxiway"
+  },
+  "description": {
+    "en": "A defined path on an airfield established for the taxiing of aircraft and intended to provide a link between one part of the airfield and another."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

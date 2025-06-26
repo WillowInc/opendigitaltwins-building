@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideIlluminanceSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Illuminance Sensor"
+  },
+  "description": {"en": "The illuminance feedback from a sensor associated with outside"},
+  "extends" : [
+    "dtmi:com:syyclops:IlluminanceSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

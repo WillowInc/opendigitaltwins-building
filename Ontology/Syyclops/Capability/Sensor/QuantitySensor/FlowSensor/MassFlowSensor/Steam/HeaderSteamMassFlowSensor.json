@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeaderSteamMassFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Header Steam Mass Flow Sensor"
+  },
+  "description": {"en": "The mass flow feedback from a sensor associated with steam header"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamMassFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

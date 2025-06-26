@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SlidingDoor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sliding Door"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Door;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:WalkInCooler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Walk-In Cooler"
+  },
+  "description": {
+    "en": "A walk-in refrigeration unit used for foods or other products required to be refrigerated to medium-temperatures."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:WalkInRefrigerationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:ClothesWasher;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Washer"
+  },
+  "description": {
+    "en": "An applicance used to wash laundry such as clothes or other textiles."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:LaundryEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

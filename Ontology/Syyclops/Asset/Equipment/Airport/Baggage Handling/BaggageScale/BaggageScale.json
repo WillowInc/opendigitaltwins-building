@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:BaggageScale;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Baggage Scale"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:BaggageHandlingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

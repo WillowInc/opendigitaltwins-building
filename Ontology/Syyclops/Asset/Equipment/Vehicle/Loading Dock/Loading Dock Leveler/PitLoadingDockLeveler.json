@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PitLoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pit Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:LoadingDockLeveler;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

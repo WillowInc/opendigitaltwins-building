@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighAirFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Air Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high air flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:AirFlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AbsoluteHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absolute Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated with absolute humidity"},
+  "extends" : [
+    "dtmi:com:syyclops:HumiditySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:syyclops:MeterEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Meter Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Equipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is linked to"
+      },
+      "name": "isLinkedTo",
+      "target": "dtmi:com:syyclops:UtilityAccount;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

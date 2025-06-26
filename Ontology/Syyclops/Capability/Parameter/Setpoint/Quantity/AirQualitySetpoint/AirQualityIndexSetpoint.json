@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AirQualityIndexSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Air Quality Index Setpoint"
+  },
+  "description": {"en": "The desired value associated with air quality index"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

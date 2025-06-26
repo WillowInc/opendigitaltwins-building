@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CoolingCoilLeavingAirTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Coil Leaving Air Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with air leaving the cooling coil"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

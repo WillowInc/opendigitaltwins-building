@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DuctBank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Duct Bank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:DistributionRacewayCollection;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ThrustSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thrust Setpoint"
+  },
+  "description": {"en": "The desired value associated with thrust"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

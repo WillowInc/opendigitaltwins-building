@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:O3AirQualityAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ozone (O3) Air Quality Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the ozone (O3) air quality alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualityAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

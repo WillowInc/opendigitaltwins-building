@@ -1,0 +1,301 @@
+{
+  "@id": "dtmi:com:syyclops:Account;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Account"
+  },
+  "description": {
+    "en": "An account is associated with a contractual relationship between a buyer and seller under which payment may be made at a later time. General ledger accounts are an exception to this, however, and typically do not have account holders, including internal account holders. They may, on the other hand, have responsible parties. (FIBO Ontology)"
+  },
+  "extends": [],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isHeldBy",
+      "displayName": {
+        "en": "is held by"
+      },
+      "target": "dtmi:com:syyclops:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isProvidedBy",
+      "displayName": {
+        "en": "is provided by"
+      },
+      "target": "dtmi:com:syyclops:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasDocument",
+      "displayName": {
+        "en": "has document"
+      },
+      "target": "dtmi:com:syyclops:Document;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasSettings",
+      "displayName": {
+        "en": "has settings"
+      },
+      "description": {
+        "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
+      },
+      "target": "dtmi:com:syyclops:Settings;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates that an agent is the legal owner of a given entity, e.g., a Company owns some Real Estate. Inverse of: ownedBy"
+      },
+      "displayName": {
+        "en": "owns"
+      },
+      "name": "owns"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Custom Tags"
+      },
+      "name": "customTags",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "tagName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "tagValue",
+          "schema": "boolean"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "External IDs"
+      },
+      "name": "externalIds",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "externalIdName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "externalIdValue",
+          "schema": "string"
+        }
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Mapped IDs"
+      },
+      "name": "mappedIds",
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:syyclops:AccountMappedIdObject;1"
+      }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "uniqueID",
+      "displayName": {
+        "en": "Globally Unique ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "externalID",
+      "displayName": {
+        "en": "External ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "code",
+      "displayName": {
+        "en": "Code"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "description",
+      "displayName": {
+        "en": "Description"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "siteID",
+      "displayName": {
+        "en": "Site ID"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "alternateClassification",
+      "displayName": {
+        "en": "Alternate Classification"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "projectHaystack",
+            "displayName": {
+              "en": "Project Haystack"
+            },
+            "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1"
+          },
+          {
+            "name": "brickSchema",
+            "displayName": {
+              "en": "Brick Schema"
+            },
+            "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "customProperties",
+      "displayName": {
+        "en": "Custom Properties"
+      },
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "sourceName",
+          "schema": "string"
+        },
+        "mapValue": {
+          "name": "sourceProperties",
+          "schema": {
+            "@type": "Map",
+            "mapKey": {
+              "name": "propertyName",
+              "schema": "string"
+            },
+            "mapValue": {
+              "name": "propertyValue",
+              "schema": "string"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:syyclops:AccountAlternateClassificationObject;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "version",
+          "displayName": {
+            "en": "Version"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "code",
+          "displayName": {
+            "en": "Code"
+          },
+          "schema": "string"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:syyclops:AccountMappedIdObject;1",
+      "@type": "Object",
+      "description": {
+        "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+      },
+      "fields": [
+        {
+          "name": "exactType",
+          "displayName": {
+            "en": "Exact Type"
+          },
+          "description": {
+            "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scope",
+          "displayName": {
+            "en": "Scope"
+          },
+          "description": {
+            "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "scopeId",
+          "displayName": {
+            "en": "Scope ID"
+          },
+          "description": {
+            "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "value",
+          "displayName": {
+            "en": "Value"
+          },
+          "description": {
+            "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "dateCreated",
+          "displayName": {
+            "en": "Date Created"
+          },
+          "description": {
+            "en": "The date the identity was created in Mapped."
+          },
+          "schema": "dateTime"
+        }
+      ]
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

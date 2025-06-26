@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BypassCondenserWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Condenser Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with condenser water bypass"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

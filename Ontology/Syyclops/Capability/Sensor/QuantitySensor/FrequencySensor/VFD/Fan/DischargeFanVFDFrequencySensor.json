@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeFanVFDFrequencySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Fan VFD Frequency Sensor"
+  },
+  "description": {"en": "The frequency feedback from a sensor associated with discharge (supply) air fan VFD"},
+  "extends" : [
+    "dtmi:com:syyclops:FanVFDFrequencySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

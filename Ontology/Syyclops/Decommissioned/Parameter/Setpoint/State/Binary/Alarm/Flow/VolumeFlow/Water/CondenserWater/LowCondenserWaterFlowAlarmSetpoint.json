@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowCondenserWaterFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Condenser Water Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the low condenser water flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

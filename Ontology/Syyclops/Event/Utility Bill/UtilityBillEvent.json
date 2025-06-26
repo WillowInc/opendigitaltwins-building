@@ -1,0 +1,227 @@
+{
+  "@id": "dtmi:com:syyclops:UtilityBillEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Bill"
+  },
+  "description": {
+    "en": "An event that occurs, typically monthly, when a utility company produces a bill for a utility account such as electric, gas, or water."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Event;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The start and end dates for the bill's service period."
+      },
+      "displayName": {
+        "en": "Billing Period"
+      },
+      "name": "billingPeriod",
+      "writable": true,
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "startDate",
+            "displayName": {
+              "en": "Start Date"
+            },
+            "schema": "dateTime"
+          },
+          {
+            "name": "endDate",
+            "displayName": {
+              "en": "End Date"
+            },
+            "schema": "dateTime"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Date when the bill was sent to the customer."
+      },
+      "displayName": {
+        "en": "Issued Date"
+      },
+      "name": "issuedDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Date when the bill is due to be paid by the customer."
+      },
+      "displayName": {
+        "en": "Due Date"
+      },
+      "name": "dueDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Total Charge"
+      },
+      "description": {
+        "en": "The total cost for the services provided this billing period."
+      },
+      "name": "totalCharge",
+      "writable": true,
+      "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Meter Data"
+      },
+      "name": "meterData",
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "meterId",
+              "displayName": {
+                "en": "Meter Id."
+              },
+              "description": {
+                "en": "The meter Id as provided by the utility account provider."
+              },
+              "schema": "string"
+            },
+            {
+              "name": "measurementType",
+              "displayName": {
+                "en": "Measurement Type."
+              },
+              "description": {
+                "en": "Defines whether the measurement is total consumption or a peak demand during the billing period."
+              },
+              "schema": {
+                "@type": "Enum",
+                "enumValues": [
+                  {
+                    "enumValue": "TotalConsumption",
+                    "name": "TotalConsumption"
+                  },
+                  {
+                    "enumValue": "PeakDemand",
+                    "name": "PeakDemand"
+                  }
+                ],
+                "valueSchema": "string"
+              }
+            },
+            {
+              "name": "serviceType",
+              "displayName": {
+                "en": "Service Type."
+              },
+              "description": {
+                "en": "Defines the commodity or substance that is being measured by the meter."
+              },
+              "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                  {
+                    "enumValue": "Electricity",
+                    "name": "Electricity"
+                  },
+                  {
+                    "enumValue": "PotableWater",
+                    "name": "PotableWater"
+                  },
+                  {
+                    "enumValue": "ReclaimedWater",
+                    "name": "ReclaimedWater"
+                  },
+                  {
+                    "enumValue": "NaturalGas",
+                    "name": "NaturalGas"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "charge",
+              "displayName": {
+                "en": "Charge"
+              },
+              "description": {
+                "en": "The individual charge for the usage as measured by the meter."
+              },
+              "schema": {
+                "@type": "Object",
+                "fields": [
+                  {
+                    "name": "amount",
+                    "displayName": {
+                      "en": "Amount"
+                    },
+                    "schema": "double"
+                  },
+                  {
+                    "name": "currency",
+                    "displayName": {
+                      "en": "Currency"
+                    },
+                    "schema": "string"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "usage",
+              "displayName": {
+                "en": "Usage"
+              },
+              "description": {
+                "en": "The amount of usage as measured by the meter"
+              },
+              "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:syyclops:UtilityBillEventChargest;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "amount",
+          "displayName": {
+            "en": "Amount"
+          },
+          "schema": "double"
+        },
+        {
+          "name": "currency",
+          "displayName": {
+            "en": "Currency"
+          },
+          "schema": "string"
+        }
+      ]
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

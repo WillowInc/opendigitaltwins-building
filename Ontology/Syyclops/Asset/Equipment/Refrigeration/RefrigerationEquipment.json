@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:RefrigerationEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigeration Equipment"
+  },
+  "description": {
+    "en": "An asset that is designed to contain and use refrigerant gas to establish or maintain colder than ambient temperatures in a confined space."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Equipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

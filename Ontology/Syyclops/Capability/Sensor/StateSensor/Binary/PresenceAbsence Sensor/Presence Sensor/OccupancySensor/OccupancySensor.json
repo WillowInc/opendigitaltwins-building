@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:OccupancySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupancy Sensor"
+  },
+  "description": {"en": "The Boolean status from a sensor where 'occupancy' is 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:PresenceSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

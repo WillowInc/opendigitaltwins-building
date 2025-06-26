@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:OutsideAirDamperPositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Damper Position State"
+  },
+  "description": {"en": "The percent position state of the outside air damper"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperPositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

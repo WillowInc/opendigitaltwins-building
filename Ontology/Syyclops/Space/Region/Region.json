@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:Region;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Region"
+  },
+  "description": {
+    "en": "An administrative geospatial unit larger than the individual real estate. For instance, \"Lombary\", \"North America\", \"The Back Bay\", \"Elnätsområde Syd\", etc."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

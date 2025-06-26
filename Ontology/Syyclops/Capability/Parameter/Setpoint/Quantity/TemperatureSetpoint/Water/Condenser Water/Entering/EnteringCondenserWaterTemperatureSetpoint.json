@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringCondenserWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Condenser Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with entering condenser water temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterTemperatureSetpoint;1",
+    "dtmi:com:syyclops:EnteringWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

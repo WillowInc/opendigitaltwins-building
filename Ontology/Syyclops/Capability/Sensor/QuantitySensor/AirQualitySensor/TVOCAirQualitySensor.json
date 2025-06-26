@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TVOCAirQualitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Total Volatile Organic Compound (TVOC) Air Quality Sensor"
+  },
+  "description": {"en": "The total volatile organic compound (TVOC) air quality feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:AirQualitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

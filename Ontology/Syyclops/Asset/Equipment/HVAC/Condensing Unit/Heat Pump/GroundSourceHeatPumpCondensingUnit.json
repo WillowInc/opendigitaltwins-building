@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:syyclops:GroundSourceHeatPumpCondensingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ground Source Heat Pump Condensing Unit"
+  },
+  "description": {
+    "en": "A type of condensing unit which includes a heat pump which enables the unit to provide cooling and heating by transferring heat to or from the ground"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HeatPumpCondensingUnit;1",
+    "dtmi:com:syyclops:GroundSourceCondensingUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

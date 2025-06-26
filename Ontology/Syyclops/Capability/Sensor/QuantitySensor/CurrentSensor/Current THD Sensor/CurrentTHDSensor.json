@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CurrentTHDSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Current Total Harmonic Distortion (THD) Sensor"
+  },
+  "description": {"en": "The current total harmonic distortion (THD) feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:CurrentSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

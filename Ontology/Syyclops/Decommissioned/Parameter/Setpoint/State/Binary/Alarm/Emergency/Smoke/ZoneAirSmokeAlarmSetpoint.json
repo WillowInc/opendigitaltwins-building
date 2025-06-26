@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ZoneAirSmokeAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Zone Air Smoke Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the zone air smoke alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:SmokeAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

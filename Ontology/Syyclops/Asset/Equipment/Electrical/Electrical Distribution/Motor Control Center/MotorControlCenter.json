@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:MotorControlCenter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Motor Control Center"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

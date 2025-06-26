@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HVACPressureReducingValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Reducing Valve (HVAC)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

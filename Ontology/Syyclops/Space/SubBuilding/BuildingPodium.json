@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:BuildingPodium;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Building Podium"
+  },
+  "description": {
+    "en": "A sub-building which forms the base of a building and may have one or more towers above."
+  },
+  "extends": [
+    "dtmi:com:syyclops:SubBuilding;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

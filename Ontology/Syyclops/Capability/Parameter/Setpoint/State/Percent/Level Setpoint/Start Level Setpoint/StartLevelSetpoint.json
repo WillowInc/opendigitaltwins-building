@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:StartLevelSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Start Level Setpoint"
+  },
+  "description": {"en": "The desired start level percentage for control of equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:LevelSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopHotWaterFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Hot Water Flow Sensor"
+  },
+  "description": {"en": "The flow feedback from a sensor associated with hot water tertiary loop"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

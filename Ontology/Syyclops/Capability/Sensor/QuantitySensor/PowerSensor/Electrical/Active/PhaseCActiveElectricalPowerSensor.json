@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCActiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Active Electrical Power Sensor"
+  },
+  "description": {"en": "The active electrical power feedback from a sensor associated with phase c"},
+  "extends" : [
+    "dtmi:com:syyclops:ActiveElectricalPowerSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

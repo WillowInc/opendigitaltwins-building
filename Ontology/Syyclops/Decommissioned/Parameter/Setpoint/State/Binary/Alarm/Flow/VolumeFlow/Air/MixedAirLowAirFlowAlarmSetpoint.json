@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MixedAirLowAirFlowAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Low Air Flow Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the mixed air low air flow alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirFlowAlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

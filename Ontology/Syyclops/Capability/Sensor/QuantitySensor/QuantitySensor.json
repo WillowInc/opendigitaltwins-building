@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:QuantitySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Quantity Sensor"
+  },
+  "description": {"en": "The feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:Sensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

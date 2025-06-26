@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:TemperaturePerformanceIndicator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Temperature Performance Indicator"
+  },
+  "description": {
+    "en": "A performance indicator which has values that are a temperature quantity (i.e. Degrees Fahrenheit, Degrees Celsius)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:QuantityPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

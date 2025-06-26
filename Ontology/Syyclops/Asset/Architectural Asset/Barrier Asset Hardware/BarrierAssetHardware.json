@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:BarrierAssetHardware;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Barrier Asset Hardware"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ArchitecturalAsset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

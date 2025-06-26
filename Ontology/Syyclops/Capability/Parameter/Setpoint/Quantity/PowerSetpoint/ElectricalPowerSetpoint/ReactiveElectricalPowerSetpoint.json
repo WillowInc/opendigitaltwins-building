@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReactiveElectricalPowerSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reactive Electrical Power Setpoint"
+  },
+  "description": {"en": "The desired value associated with reactive electrical power"},
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalPowerSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

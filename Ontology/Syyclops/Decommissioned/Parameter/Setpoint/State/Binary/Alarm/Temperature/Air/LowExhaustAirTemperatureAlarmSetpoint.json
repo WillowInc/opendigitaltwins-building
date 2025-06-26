@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:LowExhaustAirTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Exhaust Air Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with low exhaust air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:LowAirTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

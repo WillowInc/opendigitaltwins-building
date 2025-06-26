@@ -1,0 +1,13 @@
+{
+  "@id": "dtmi:com:syyclops:Ceiling;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ceiling"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ArchitecturalBuildingComponent;1"
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

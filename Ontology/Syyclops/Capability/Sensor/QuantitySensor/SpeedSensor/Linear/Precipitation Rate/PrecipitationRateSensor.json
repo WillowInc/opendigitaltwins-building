@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PrecipitationRateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Precipitation Rate Sensor"
+  },
+  "description": {"en": "The rate feedback from a sensor associated with precipitation"},
+  "extends" : [
+    "dtmi:com:syyclops:LinearSpeedSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

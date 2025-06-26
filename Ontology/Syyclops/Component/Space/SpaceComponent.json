@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SpaceComponent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Space Component"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Component;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

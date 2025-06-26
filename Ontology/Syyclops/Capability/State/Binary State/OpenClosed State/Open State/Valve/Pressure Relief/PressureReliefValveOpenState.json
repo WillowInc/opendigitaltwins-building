@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PressureReliefValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Relief Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the pressure relief valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:ValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

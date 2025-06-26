@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EnteringChilledWaterValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Chilled Water Valve Position State"
+  },
+  "description": {"en": "The percent position state of the entering chilled water valve"},
+  "extends" : [
+    "dtmi:com:syyclops:ChilledWaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:ComputerRoomAirConditioningUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Computer Room Air Conditioning (CRAC) Unit"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AirHandlingUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

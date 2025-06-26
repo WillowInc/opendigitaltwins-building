@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReactiveElectricalPowerSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reactive Electrical Power Sensor"
+  },
+  "description": {"en": "The reactive electrical power feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:ElectricalPowerSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

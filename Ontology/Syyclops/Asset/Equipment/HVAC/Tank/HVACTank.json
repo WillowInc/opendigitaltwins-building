@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HVACTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "HVAC Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipment;1",
+    "dtmi:com:syyclops:Tank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

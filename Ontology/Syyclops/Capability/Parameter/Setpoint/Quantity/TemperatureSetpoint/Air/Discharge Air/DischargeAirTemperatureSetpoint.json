@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:AirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

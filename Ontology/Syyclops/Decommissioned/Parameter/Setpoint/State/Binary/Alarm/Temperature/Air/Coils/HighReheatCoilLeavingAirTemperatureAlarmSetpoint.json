@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HighReheatCoilLeavingAirTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Reheat Coil Leaving Air Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with high air leaving the reheat coil temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HighAirTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

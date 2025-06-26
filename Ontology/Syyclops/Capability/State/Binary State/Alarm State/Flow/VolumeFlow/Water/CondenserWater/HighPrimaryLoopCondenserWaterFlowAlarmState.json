@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HighPrimaryLoopCondenserWaterFlowAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Primary Loop Condenser Water Flow Alarm State"
+  },
+  "description": {"en": "The Boolean state of the high primary loop condenser water flow alarm is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:HighCondenserWaterFlowAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

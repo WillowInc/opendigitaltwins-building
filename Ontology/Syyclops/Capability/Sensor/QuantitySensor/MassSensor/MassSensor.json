@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MassSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mass Sensor"
+  },
+  "description": {"en": "The mass feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HeatingOnState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating On State"
+  },
+  "description": {"en": "The Boolean state of an equipment's heating function which is 'on' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OnState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

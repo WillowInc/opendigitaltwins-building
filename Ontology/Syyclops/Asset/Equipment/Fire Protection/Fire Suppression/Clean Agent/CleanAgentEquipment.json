@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:CleanAgentEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Clean Agent Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FireSuppressionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

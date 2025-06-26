@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:FoodStorageRack;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Storage Rack"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodStorageEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

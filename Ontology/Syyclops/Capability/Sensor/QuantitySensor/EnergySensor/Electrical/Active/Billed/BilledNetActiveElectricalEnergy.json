@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:BilledNetActiveElectricalEnergy;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Billed Net Active Electrical Energy"
+  },
+  "description": {"en": "The net quantity of import and export active electrical energy consumed by a building or space over the course of a billing period, typically on a monthly basis. This distinguishes from a typical Net Active Electrical Energy Sensor which reports data on a more frequent interval."},
+  "extends" : [
+    "dtmi:com:syyclops:TotalNetActiveElectricalEnergySensor;1",
+    "dtmi:com:syyclops:BilledActiveElectricalEnergy;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

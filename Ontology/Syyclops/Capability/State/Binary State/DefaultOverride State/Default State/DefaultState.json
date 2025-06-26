@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DefaultState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Default State"
+  },
+  "description": {"en": "The Boolean state of the equipment which is 'default' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:DefaultOverrideState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

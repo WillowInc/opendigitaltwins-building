@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:FumeHoodExhaustAirFlowSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fume Hood Exhaust Air Flow Sensor"
+  },
+  "description": {"en": "The volume flow of fume hood exhaust air calculated from one or more sensors. Fume hood exhaust air removes contaminants from a fume hood workspace."},
+  "extends" : [
+    "dtmi:com:syyclops:ExhaustAirFlowSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

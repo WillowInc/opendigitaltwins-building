@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:AirportGateOffBlockEvent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Gate Off-Block Event"
+  },
+  "description": {
+    "en": "An event at an airport gate related to a flight departing at the gate. (ICAO)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:AirportGateBlockEvent;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FlowRequestState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Flow Request State"
+  },
+  "description": {"en": "The Boolean state of a request for additional flow which is 'requested' when 'true' and 'not requested' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:RequestState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

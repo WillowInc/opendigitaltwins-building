@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SolarAzimuthAngleSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Azimuth Angle Sensor"
+  },
+  "description": {"en": "The solar azimuth angle feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:AngleSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

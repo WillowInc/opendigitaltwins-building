@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CombinationGrateCurbInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Combination Grate-Curb Inlet"
+  },
+  "extends": [
+    "dtmi:com:syyclops:GrateInlet;1",
+    "dtmi:com:syyclops:CurbInlet;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

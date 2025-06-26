@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:InboundDestinationSign;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inbound Destination Sign"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:DestinationSign;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:StartsCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Starts Count Sensor"
+  },
+  "description": {"en": "The counted number of starts from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:CountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

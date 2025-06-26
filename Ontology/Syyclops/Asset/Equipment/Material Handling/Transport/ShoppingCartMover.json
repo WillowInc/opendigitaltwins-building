@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:ShoppingCartMover;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Shopping Cart Mover"
+  },
+  "description": {
+    "en": "A machine used for pushing or pulling shopping carts to move large quantities in a single trip.(a.k.a. shopping cart mule)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RetailEquipment;1",
+    "dtmi:com:syyclops:MaterialHandlingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

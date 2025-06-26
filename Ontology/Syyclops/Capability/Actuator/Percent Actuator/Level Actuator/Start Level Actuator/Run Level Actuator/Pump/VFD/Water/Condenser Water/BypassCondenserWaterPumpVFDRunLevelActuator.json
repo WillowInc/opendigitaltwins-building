@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:BypassCondenserWaterPumpVFDRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Condenser Water Pump VFD Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the condenser water bypass pump vfd"},
+  "extends" : [
+    "dtmi:com:syyclops:CondenserWaterPumpVFDRunLevelActuator;1",
+    "dtmi:com:syyclops:BypassCondenserWaterPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

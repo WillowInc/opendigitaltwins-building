@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:StructuralFoundation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Structural Foundation"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:StructuralBuildingComponent;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

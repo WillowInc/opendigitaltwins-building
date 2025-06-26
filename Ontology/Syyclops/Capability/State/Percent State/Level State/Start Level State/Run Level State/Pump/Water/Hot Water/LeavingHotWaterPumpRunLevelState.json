@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:syyclops:LeavingHotWaterPumpRunLevelState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Leaving Pump Run Level State"
+  },
+  "description": {"en": "The percent run level state of the leaving hot water pump"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterPumpRunLevelState;1",
+    "dtmi:com:syyclops:LeavingWaterPumpRunLevelState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

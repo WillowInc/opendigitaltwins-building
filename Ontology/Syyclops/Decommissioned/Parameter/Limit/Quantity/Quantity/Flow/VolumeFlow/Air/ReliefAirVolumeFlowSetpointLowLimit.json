@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirVolumeFlowSetpointLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Volume Flow Setpoint Low Limit"
+  },
+  "description": {"en": "The low limit associated with relief air volume flow setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:AirVolumeFlowSetpointLowLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

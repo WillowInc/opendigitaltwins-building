@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:HighCondenserWaterCoilEnteringWaterTemperatureAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "High Condenser Water Coil Entering Water Temperature Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the alarm associated with high the water entering the condenser water coil temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HighCondenserWaterTemperatureAlarmSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

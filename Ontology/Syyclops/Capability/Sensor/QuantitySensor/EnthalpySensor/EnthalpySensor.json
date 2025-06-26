@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnthalpySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Sensor"
+  },
+  "description": {"en": "The enthalpy feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

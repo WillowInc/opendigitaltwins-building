@@ -1,0 +1,43 @@
+{
+  "@id": "dtmi:com:syyclops:DataNetworkEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Network Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:ICTEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "mounted in rack"
+      },
+      "name": "mountedInRack",
+      "properties": [
+        {
+          "@type": "Property",
+          "displayName": {
+            "en": "rack top position (RU)"
+          },
+          "name": "rackTopPosition",
+          "schema": "integer",
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "displayName": {
+            "en": "rack bottom position (RU)"
+          },
+          "name": "rackBottomPosition",
+          "schema": "integer",
+          "writable": true
+        }
+      ],
+      "target": "dtmi:com:syyclops:ITRack;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LeakAlarmSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leak Alarm Setpoint"
+  },
+  "description": {"en": "The setpoint that must be exceeded to trigger the leak alarm"},
+  "extends" : [
+    "dtmi:com:syyclops:AlarmSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

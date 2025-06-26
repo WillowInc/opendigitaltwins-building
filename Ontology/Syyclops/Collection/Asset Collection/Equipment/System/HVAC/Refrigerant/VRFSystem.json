@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:VRFSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "VRF System"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACRefrigerantSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

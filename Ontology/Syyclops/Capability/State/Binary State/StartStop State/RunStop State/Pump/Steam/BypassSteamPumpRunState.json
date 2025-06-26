@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BypassSteamPumpRunState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Steam Pump Run State"
+  },
+  "description": {"en": "The Boolean state of the steam bypass pump which is 'run' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamPumpRunState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

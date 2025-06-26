@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingPressureReducingStation;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Reducing Station (Plumbing)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

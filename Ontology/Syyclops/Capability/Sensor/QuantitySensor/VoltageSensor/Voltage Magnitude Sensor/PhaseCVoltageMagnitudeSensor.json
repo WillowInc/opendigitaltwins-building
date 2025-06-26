@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PhaseCVoltageMagnitudeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Phase C Voltage Magnitude Sensor"
+  },
+  "description": {"en": "The voltage magnitude feedback from a sensor associated with phase c"},
+  "extends" : [
+    "dtmi:com:syyclops:VoltageMagnitudeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AbsoluteHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Absolute Humidity Sensor"
+  },
+  "description": {"en": "The absolute humidity feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:HumiditySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

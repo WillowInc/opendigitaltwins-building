@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:EnergyRecoveryValvePositionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Reocovery Valve Position State"
+  },
+  "description": {"en": "The percent position state of the hot energy recovery valve"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterValvePositionState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

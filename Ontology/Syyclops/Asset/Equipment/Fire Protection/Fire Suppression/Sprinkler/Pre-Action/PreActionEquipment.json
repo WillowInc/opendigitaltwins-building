@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:PreActionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pre-Action Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:SprinklerEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

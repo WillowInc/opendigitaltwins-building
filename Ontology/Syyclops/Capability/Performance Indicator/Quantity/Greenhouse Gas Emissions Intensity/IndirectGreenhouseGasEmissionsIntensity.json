@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:IndirectGreenhouseGasEmissionsIntensity;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Indirect Greenhouse Gas Emissions"
+  },
+  "description": {
+    "en": "The indirect quantity of greenhouse gas emissions normalized per facility area that are associated with the purchase of energy by an entity, typically measured in kilograms of CO2 equivalent (CO2e) per square foot or square meter (kgCO2e / sq ft or kgCO2e / sq m)."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:GreenhouseGasEmissionsIntensity;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

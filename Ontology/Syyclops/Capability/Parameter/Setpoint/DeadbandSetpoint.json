@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeadbandSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Deadband Setpoint"
+  },
+  "description": {"en": "The deadband around a setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:Setpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

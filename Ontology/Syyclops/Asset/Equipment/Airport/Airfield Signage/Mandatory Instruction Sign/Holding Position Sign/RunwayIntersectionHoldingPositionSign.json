@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:RunwayIntersectionHoldingPositionSign;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runway Intersection Holding Position Sign"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:HoldingPositionSign;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

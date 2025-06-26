@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:HVACFanGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Group (HVAC)"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaHotWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Hot Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with hot water delta temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterTemperatureSetpoint;1",
+    "dtmi:com:syyclops:DeltaWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

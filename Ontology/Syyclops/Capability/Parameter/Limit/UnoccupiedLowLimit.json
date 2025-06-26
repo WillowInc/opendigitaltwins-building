@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:UnoccupiedLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Low Limit"
+  },
+  "description": {"en": "The lower limit on the equipment in unoccupied mode"},
+  "extends" : [
+    "dtmi:com:syyclops:LowLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

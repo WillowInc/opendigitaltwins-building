@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:RotisserieOven;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Rotisserie Oven"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Oven;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

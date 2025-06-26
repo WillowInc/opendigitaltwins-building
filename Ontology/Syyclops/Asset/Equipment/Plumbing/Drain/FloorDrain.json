@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:FloorDrain;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Floor Drain"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Drain;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

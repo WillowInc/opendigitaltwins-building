@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DischargeAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Air Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air humidity"},
+  "extends" : [
+    "dtmi:com:syyclops:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

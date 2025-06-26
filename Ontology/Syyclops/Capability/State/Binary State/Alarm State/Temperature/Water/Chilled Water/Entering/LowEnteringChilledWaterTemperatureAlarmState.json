@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:LowEnteringChilledWaterTemperatureAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Entering Chilled Water Temperature Alarm State"
+  },
+  "description": {"en": "The Boolean state of the alarm associated with low entering chilled water temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:LowChilledWaterTemperatureAlarmState;1",
+    "dtmi:com:syyclops:LowEnteringWaterTemperatureAlarmState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:DegreeTimeThreshold;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Degree Time Threshold"
+  },
+  "description": {
+    "en": "The threshold value upon which degree time calculations are made"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:QuantityPerformanceIndicator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

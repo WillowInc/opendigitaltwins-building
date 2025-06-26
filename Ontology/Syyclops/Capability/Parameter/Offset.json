@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:Offset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Offset"
+  },
+  "description": {"en": "The desired offset value"},
+  "extends" : [
+    "dtmi:com:syyclops:Parameter;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

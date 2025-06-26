@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ReliefAirSmokeAlarmState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Relief Air Smoke Alarm State"
+  },
+  "description": {"en": "The Boolean state of the relief air smoke alarm which is 'alarm' when 'true' and 'normal' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:SmokeAlarmState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

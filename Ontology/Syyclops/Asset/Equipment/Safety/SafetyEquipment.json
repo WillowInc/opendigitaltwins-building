@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:SafetyEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Safety Equipment"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Equipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

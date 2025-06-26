@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:airport:RunwayStopBarGuardLightFixture;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Combination Runway Stop Bar - Runway Guard Light Fixture"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:RunwayStopBarLightFixture;1",
+    "dtmi:com:syyclops:airport:RunwayGuardLightFixture;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

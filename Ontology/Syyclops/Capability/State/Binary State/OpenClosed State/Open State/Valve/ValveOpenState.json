@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:ValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

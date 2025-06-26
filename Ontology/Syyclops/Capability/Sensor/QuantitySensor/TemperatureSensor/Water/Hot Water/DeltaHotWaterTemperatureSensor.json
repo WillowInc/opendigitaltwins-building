@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DeltaHotWaterTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Delta Hot Water Temperature Sensor"
+  },
+  "description": {"en": "The temperature feedback from a sensor associated with hot water delta"},
+  "extends" : [
+    "dtmi:com:syyclops:HotWaterTemperatureSensor;1",
+    "dtmi:com:syyclops:DeltaWaterTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

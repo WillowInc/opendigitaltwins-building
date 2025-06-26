@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:ElevatorPressurizationFan;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Elevator Pressurization Fan"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PressurizationFan;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

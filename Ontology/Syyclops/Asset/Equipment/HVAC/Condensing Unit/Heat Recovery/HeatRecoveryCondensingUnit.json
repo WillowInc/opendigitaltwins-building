@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:syyclops:HeatRecoveryCondensingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Recovery Condensing Unit"
+  },
+  "description": {
+    "en": "A type of condensing unit which provides cooling and also uses heat recovered from the cooling process to provide heating."
+  },
+  "extends" : [
+    "dtmi:com:syyclops:CondensingUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

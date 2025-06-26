@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:BeverageServiceCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Beverage Service Cart"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FoodserviceCart;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

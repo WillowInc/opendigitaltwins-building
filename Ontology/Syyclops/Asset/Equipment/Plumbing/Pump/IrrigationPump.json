@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:IrrigationPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Irrigation Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

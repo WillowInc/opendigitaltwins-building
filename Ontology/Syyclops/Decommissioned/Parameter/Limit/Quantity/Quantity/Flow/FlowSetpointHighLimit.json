@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FlowSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Flow Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with flow setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:HighLimit;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:FanRunSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Run Setpoint"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:RunSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

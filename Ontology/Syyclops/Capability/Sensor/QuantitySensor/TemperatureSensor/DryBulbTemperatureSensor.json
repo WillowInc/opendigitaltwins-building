@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:DryBulbTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dry Bulb Temperature Sensor"
+  },
+  "description": {"en": "The dry bulb temperature feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SewageVolumeSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sewage Volume Sensor"
+  },
+  "description": {"en": "The volume feedback from a sensor associated with sewage"},
+  "extends" : [
+    "dtmi:com:syyclops:VolumeSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EnableActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enable Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the equipment to 'enable' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:EnableDisableActuator;1",
+    "dtmi:com:syyclops:OnActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

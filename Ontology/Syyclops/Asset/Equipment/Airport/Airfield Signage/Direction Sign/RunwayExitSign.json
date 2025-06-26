@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:airport:RunwayExitSign;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runway Exit Sign"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:airport:DirectionSign;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

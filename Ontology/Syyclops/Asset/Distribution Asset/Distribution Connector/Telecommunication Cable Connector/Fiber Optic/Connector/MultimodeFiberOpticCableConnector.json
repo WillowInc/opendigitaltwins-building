@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:MultimodeFiberOpticCableConnector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Multimode Fiber Optic Cable Connector"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:FiberOpticCableConnector;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

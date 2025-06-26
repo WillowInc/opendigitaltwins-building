@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:RevolvingDoor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Revolving Door"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Door;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

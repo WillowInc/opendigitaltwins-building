@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:TertiaryLoopLeavingHotWaterValveOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Tertiary Loop Leaving Hot Water Valve Open State"
+  },
+  "description": {"en": "The Boolean state of the tertiary loop leaving hot water valve which is 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:LeavingHotWaterValveOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

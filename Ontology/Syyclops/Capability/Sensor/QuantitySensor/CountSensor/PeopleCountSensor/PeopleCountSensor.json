@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:PeopleCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "People Count Sensor"
+  },
+  "description": {"en": "The people count feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:CountSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

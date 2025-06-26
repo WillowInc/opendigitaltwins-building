@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:CellStageCountSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cell Stage Count Sensor"
+  },
+  "description": {"en": "The counted number of active cells within a cooling tower"},
+  "extends" : [
+    "dtmi:com:syyclops:StageCountSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CondenserWaterTemperatureSetpointHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Temperature Setpoint High Limit"
+  },
+  "description": {"en": "The high limit associated with condenser water temperature setpoint"},
+  "extends" : [
+    "dtmi:com:syyclops:WaterTemperatureSetpointHighLimit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:InletAirDamperOpenActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Inlet Air Damper Open Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the inlet air damper to 'open' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperOpenActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

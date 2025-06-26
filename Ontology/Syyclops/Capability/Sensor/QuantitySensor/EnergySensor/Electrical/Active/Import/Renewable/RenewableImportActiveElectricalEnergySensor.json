@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RenewableImportActiveElectricalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Renewable Import Active Electrical Energy Sensor"
+  },
+  "description": {"en": "The active electrical energy feedback from a sensor associated with renewable import"},
+  "extends" : [
+    "dtmi:com:syyclops:TotalImportActiveElectricalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

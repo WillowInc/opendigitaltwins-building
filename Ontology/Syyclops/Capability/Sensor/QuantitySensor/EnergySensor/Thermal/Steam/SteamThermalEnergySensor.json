@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:SteamThermalEnergySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Thermal Energy Sensor"
+  },
+  "description": {"en": "The thermal energy feedback from a sensor measuring steam"},
+  "extends" : [
+    "dtmi:com:syyclops:ThermalEnergySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

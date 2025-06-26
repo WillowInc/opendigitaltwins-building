@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:DehumidifierOnState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dehumidifier On State"
+  },
+  "description": {"en": "The Boolean state of an equipment's dehumidifier function which is 'on' when 'true'"},
+  "extends" : [
+    "dtmi:com:syyclops:OnState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

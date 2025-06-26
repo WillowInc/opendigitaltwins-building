@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:BypassSteamPumpRunLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bypass Steam Pump Run Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the run level of the bypass steam pump"},
+  "extends" : [
+    "dtmi:com:syyclops:SteamPumpRunLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

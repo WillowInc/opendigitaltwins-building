@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:FlowSetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Flow Setpoint Offset"
+  },
+  "description": {"en": "The desired offset value between two flows"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySetpointOffset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

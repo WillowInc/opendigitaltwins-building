@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HumidifierLevelActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Humidifier Level Actuator"
+  },
+  "description": {"en": "The percent command which sets the humidifier level of the equipment"},
+  "extends" : [
+    "dtmi:com:syyclops:OnLevelActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

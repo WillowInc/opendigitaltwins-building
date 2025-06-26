@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:RuntimeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runtime Setpoint"
+  },
+  "description": {"en": "Time limit for the accumulated duration for which a device was in an active or “on” state"},
+  "extends" : [
+    "dtmi:com:syyclops:TimeSpanSetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

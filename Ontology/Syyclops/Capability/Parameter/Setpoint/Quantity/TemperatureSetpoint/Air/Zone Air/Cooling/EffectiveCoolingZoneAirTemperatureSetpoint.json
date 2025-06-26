@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EffectiveCoolingZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Effective Cooling Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with effective cooling zone air temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:CoolingZoneAirTemperatureSetpoint;1",
+    "dtmi:com:syyclops:EffectiveZoneAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "@id": "dtmi:com:syyclops:PlumbingStorageTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plumbing Storage Tank"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:PlumbingTank;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          },
+          {
+            "enumValue": "ChilledWater",
+            "name": "ChilledWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "arrangement"
+      },
+      "name": "arrangement",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Vertical",
+            "name": "Vertical"
+          },
+          {
+            "enumValue": "Horizontal",
+            "name": "Horizontal"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "service",
+      "displayName": {
+        "en": "Service"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:syyclops:PlumbingStorageTankService;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "HotWater",
+            "displayName": {
+              "en": "Hot Water"
+            },
+            "enumValue": "HotWater"
+          },  
+          {
+            "name": "ChilledWater",
+            "displayName": {
+              "en": "Chilled Water"
+            },
+            "enumValue": "ChilledWater"
+          }
+        ]
+      }
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

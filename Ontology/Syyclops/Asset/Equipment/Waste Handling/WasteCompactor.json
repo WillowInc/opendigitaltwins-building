@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:WasteCompactor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Waste Compactor"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:WasteHandlingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

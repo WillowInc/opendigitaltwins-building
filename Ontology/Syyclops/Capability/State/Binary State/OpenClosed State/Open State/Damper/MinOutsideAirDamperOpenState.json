@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:MinOutsideAirDamperOpenState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Min Outside Air Damper Open State"
+  },
+  "description": {"en": "The Boolean state of the minimum outside air damper which is 'open' when 'true', as confirmation of a position to allow ventilation air flow"},
+  "extends" : [
+    "dtmi:com:syyclops:DamperOpenState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

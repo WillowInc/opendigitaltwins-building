@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:HeatingModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Mode State"
+  },
+  "description": {"en": "The Boolean state of the heating mode which is 'on' when 'true' and 'off' when 'false'"},
+  "extends" : [
+    "dtmi:com:syyclops:BinaryModeState;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

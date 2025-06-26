@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:WaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with water temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:TemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

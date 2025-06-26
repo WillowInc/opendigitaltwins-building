@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:CapabilityComponent;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Capability Component"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:Component;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

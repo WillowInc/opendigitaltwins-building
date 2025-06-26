@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:AreaSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Area Sensor"
+  },
+  "description": {"en": "The area feedback from a sensor"},
+  "extends" : [
+    "dtmi:com:syyclops:QuantitySensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

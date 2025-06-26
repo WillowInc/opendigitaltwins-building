@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:CondensatePump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condensate Pump"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:HVACPump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

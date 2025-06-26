@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:syyclops:RailLoadingDockLeveler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Rail Loading Dock Leveler"
+  },
+  "extends" : [
+    "dtmi:com:syyclops:VerticalLoadingDockLeveler;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

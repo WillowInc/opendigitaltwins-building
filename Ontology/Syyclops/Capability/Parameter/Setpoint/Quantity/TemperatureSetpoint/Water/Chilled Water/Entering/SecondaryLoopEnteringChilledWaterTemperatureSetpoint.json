@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:syyclops:SecondaryLoopEnteringChilledWaterTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Secondary Loop Entering Chilled Water Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with secondary chilled water loop entering temperature"},
+  "extends" : [
+    "dtmi:com:syyclops:EnteringChilledWaterTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
