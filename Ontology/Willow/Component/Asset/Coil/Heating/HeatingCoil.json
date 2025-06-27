@@ -1,0 +1,72 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingCoil;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Coil"
+  },
+  "description": {
+    "en": "A heating coil is a device that transfers heat to air or water, typically used in heating, ventilation, and air conditioning (HVAC) systems."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Coil;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Steam",
+            "name": "Steam"
+          },
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          },
+          {
+            "enumValue": "Gas",
+            "name": "Gas"
+          },
+          {
+            "enumValue": "Electric",
+            "name": "Electric"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "MassFlowRate"],
+      "displayName": {
+        "en": "Design Mass Flow"
+      },
+      "name": "designMassFlow",
+      "schema": "double",
+      "unit": "massPoundPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Mass Flow Unit"
+      },
+      "name": "designMassFlowUnit",
+      "annotates": "designMassFlow",
+      "overrides": "unit",
+      "schema": "MassFlowRateUnit",
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PreheatCoil;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheat Coil"
+  },
+  "description": {
+    "en": "A preheat coil is a type of heating coil that is used to raise the temperature of air or water before it enters another component, such as a main heating coil or an air handling unit."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Coil;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
