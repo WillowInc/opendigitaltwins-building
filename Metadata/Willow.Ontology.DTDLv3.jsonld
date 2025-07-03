@@ -12442,313 +12442,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Coil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Coil"
-    },
-    "description": {
-      "en": "A coil is a device that transfers heat between a fluid and air or another fluid, typically used in heating, ventilation, and air conditioning (HVAC) systems."
-    },
-    "extends": [
-      "dtmi:com:willowinc:AssetComponent;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "Property",
-          "Length"
-        ],
-        "displayName": {
-          "en": "outside diameter"
-        },
-        "name": "outsideDiameter",
-        "schema": "double",
-        "unit": "millimetre",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "outside diameter unit"
-        },
-        "name": "outsideDiameterUnit",
-        "annotates": "outsideDiameter",
-        "overrides": "unit",
-        "schema": "LengthUnit",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "name": "rows",
-        "displayName": {
-          "en": "Rows"
-        },
-        "writable": true,
-        "schema": "integer",
-        "comment": "Coil row configuration"
-      },
-      {
-        "@type": "Property",
-        "name": "finsPerInch",
-        "displayName": {
-          "en": "Fins per Inch"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "Fins per inch"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringWaterTemperature",
-        "displayName": {
-          "en": "Design Entering Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Water Temperature Unit"
-        },
-        "name": "designEnteringWaterTemperatureUnit",
-        "annotates": "designEnteringWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingWaterTemperature",
-        "displayName": {
-          "en": "Design Leaving Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Water Temperature Unit"
-        },
-        "name": "designLeavingWaterTemperatureUnit",
-        "annotates": "designLeavingWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designDeltaWaterTemperature",
-        "displayName": {
-          "en": "Design Delta Water Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Delta Water Temperature Unit"
-        },
-        "name": "designDeltaWaterTemperatureUnit",
-        "annotates": "designDeltaWaterTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "VolumeFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Flow"
-        },
-        "name": "designFlow",
-        "schema": "double",
-        "unit": "litrePerSecond",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Flow Unit"
-        },
-        "name": "designFlowUnit",
-        "annotates": "designFlow",
-        "overrides": "unit",
-        "schema": "VolumeFlowRateUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Pressure"
-        ],
-        "displayName": {
-          "en": "Design Pressure Drop"
-        },
-        "name": "designPressureDrop",
-        "schema": "double",
-        "unit": "kilopascal",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Pressure Drop Unit"
-        },
-        "name": "designPressureDropUnit",
-        "annotates": "designPressureDrop",
-        "overrides": "unit",
-        "schema": "PressureUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringAirDryBulbTemperature",
-        "displayName": {
-          "en": "Design Entering Air Dry Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Air Dry Bulb Temperature Unit"
-        },
-        "name": "designEnteringAirDryBulbTemperatureUnit",
-        "annotates": "designEnteringAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingAirDryBulbTemperature",
-        "displayName": {
-          "en": "Design Leaving Air Dry Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Air Dry Bulb Temperature Unit"
-        },
-        "name": "designLeavingAirDryBulbTemperatureUnit",
-        "annotates": "designLeavingAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringAirWetBulbTemperature",
-        "displayName": {
-          "en": "Design Entering Air Wet Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Air Wet Bulb Temperature Unit"
-        },
-        "name": "designEnteringAirWetBulbTemperatureUnit",
-        "annotates": "designEnteringAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingAirWetBulbTemperature",
-        "displayName": {
-          "en": "Design Leaving Air Wet Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Air Wet Bulb Temperature Unit"
-        },
-        "name": "designLeavingAirWetBulbTemperatureUnit",
-        "annotates": "designLeavingAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CommissioningChecklist;1",
     "@type": "Interface",
     "displayName": {
@@ -18383,6 +18076,314 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Coil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Coil"
+    },
+    "description": {
+      "en": "A coil is a device that transfers heat between a fluid and air or another fluid, typically used in heating, ventilation, and air conditioning (HVAC) systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1",
+      "dtmi:com:willowinc:GeneralPurposeEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "displayName": {
+          "en": "outside diameter"
+        },
+        "name": "outsideDiameter",
+        "schema": "double",
+        "unit": "millimetre",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "outside diameter unit"
+        },
+        "name": "outsideDiameterUnit",
+        "annotates": "outsideDiameter",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "rows",
+        "displayName": {
+          "en": "Rows"
+        },
+        "writable": true,
+        "schema": "integer",
+        "comment": "Coil row configuration"
+      },
+      {
+        "@type": "Property",
+        "name": "finsPerInch",
+        "displayName": {
+          "en": "Fins per Inch"
+        },
+        "writable": true,
+        "schema": "double",
+        "comment": "Fins per inch"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDeltaWaterTemperature",
+        "displayName": {
+          "en": "Design Delta Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Delta Water Temperature Unit"
+        },
+        "name": "designDeltaWaterTemperatureUnit",
+        "annotates": "designDeltaWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Flow"
+        },
+        "name": "designFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Flow Unit"
+        },
+        "name": "designFlowUnit",
+        "annotates": "designFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Design Pressure Drop"
+        },
+        "name": "designPressureDrop",
+        "schema": "double",
+        "unit": "kilopascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Pressure Drop Unit"
+        },
+        "name": "designPressureDropUnit",
+        "annotates": "designPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirDryBulbTemperatureUnit",
+        "annotates": "designEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirDryBulbTemperatureUnit",
+        "annotates": "designLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirWetBulbTemperatureUnit",
+        "annotates": "designEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirWetBulbTemperatureUnit",
+        "annotates": "designLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressedAirEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -18980,58 +18981,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CoolingCoil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cooling Coil"
-    },
-    "description": {
-      "en": "A cooling coil is a device that cools air or water by passing it over a coil containing a refrigerant or chilled water."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Coil;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "DX",
-              "name": "DX"
-            },
-            {
-              "enumValue": "ChilledWater",
-              "name": "ChilledWater"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "refrigerant type"
-        },
-        "name": "refrigerantType",
-        "schema": "string",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -22987,85 +22936,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeatingCoil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heating Coil"
-    },
-    "description": {
-      "en": "A heating coil is a device that transfers heat to air or water, typically used in heating, ventilation, and air conditioning (HVAC) systems."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Coil;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "type"
-        },
-        "name": "type",
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "enumValue": "Steam",
-              "name": "Steam"
-            },
-            {
-              "enumValue": "HotWater",
-              "name": "HotWater"
-            },
-            {
-              "enumValue": "Gas",
-              "name": "Gas"
-            },
-            {
-              "enumValue": "Electric",
-              "name": "Electric"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "MassFlowRate"
-        ],
-        "displayName": {
-          "en": "Design Mass Flow"
-        },
-        "name": "designMassFlow",
-        "schema": "double",
-        "unit": "massPoundPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Mass Flow Unit"
-        },
-        "name": "designMassFlowUnit",
-        "annotates": "designMassFlow",
-        "overrides": "unit",
-        "schema": "MassFlowRateUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeatTracing;1",
     "@type": "Interface",
     "displayName": {
@@ -25142,23 +25012,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreheatCoil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Preheat Coil"
-    },
-    "description": {
-      "en": "A preheat coil is a type of heating coil that is used to raise the temperature of air or water before it enters another component, such as a main heating coil or an air handling unit."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Coil;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PresentAbsentActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -25836,23 +25689,6 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReheatCoil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheat Coil"
-    },
-    "description": {
-      "en": "A reheat coil is a type of heating coil that is used to raise the temperature of air after it has been cooled, typically in air handling units or terminal units in HVAC systems."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Coil;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -30454,6 +30290,58 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Coil"
+    },
+    "description": {
+      "en": "A cooling coil is a device that cools air or water by passing it over a coil containing a refrigerant or chilled water."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Coil;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "DX",
+              "name": "DX"
+            },
+            {
+              "enumValue": "ChilledWater",
+              "name": "ChilledWater"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "refrigerant type"
+        },
+        "name": "refrigerantType",
+        "schema": "string",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingDegreeDays;1",
     "@type": "Interface",
     "displayName": {
@@ -33615,6 +33503,85 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Coil"
+    },
+    "description": {
+      "en": "A heating coil is a device that transfers heat to air or water, typically used in heating, ventilation, and air conditioning (HVAC) systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Coil;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Steam",
+              "name": "Steam"
+            },
+            {
+              "enumValue": "HotWater",
+              "name": "HotWater"
+            },
+            {
+              "enumValue": "Gas",
+              "name": "Gas"
+            },
+            {
+              "enumValue": "Electric",
+              "name": "Electric"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "MassFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Mass Flow"
+        },
+        "name": "designMassFlow",
+        "schema": "double",
+        "unit": "massPoundPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Mass Flow Unit"
+        },
+        "name": "designMassFlowUnit",
+        "annotates": "designMassFlow",
+        "overrides": "unit",
+        "schema": "MassFlowRateUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -37039,6 +37006,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Coil"
+    },
+    "description": {
+      "en": "A preheat coil is a type of heating coil that is used to raise the temperature of air or water before it enters another component, such as a main heating coil or an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Coil;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PresenceAbsenceSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -37440,6 +37424,23 @@
     "extends": [
       "dtmi:com:willowinc:RefrigerationEquipment;1",
       "dtmi:com:willowinc:Tank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Coil"
+    },
+    "description": {
+      "en": "A reheat coil is a type of heating coil that is used to raise the temperature of air after it has been cooled, typically in air handling units or terminal units in HVAC systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Coil;1"
     ],
     "contents": [],
     "@context": [
