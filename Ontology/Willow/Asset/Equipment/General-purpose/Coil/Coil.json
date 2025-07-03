@@ -8,7 +8,8 @@
     "en": "A coil is a device that transfers heat between a fluid and air or another fluid, typically used in heating, ventilation, and air conditioning (HVAC) systems."
   },
   "extends" : [
-    "dtmi:com:willowinc:AssetComponent;1"
+    "dtmi:com:willowinc:AssetComponent;1",
+    "dtmi:com:willowinc:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
