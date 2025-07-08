@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Toilet with Tank"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Toilet;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "flushing type"
+        "en": "Flushing Type"
       },
       "name": "flushingType",
       "schema": {

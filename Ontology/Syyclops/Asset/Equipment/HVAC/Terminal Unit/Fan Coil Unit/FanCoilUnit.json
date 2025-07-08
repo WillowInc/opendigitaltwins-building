@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Fan Coil Unit"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:TerminalUnit;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,16 +33,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "refrigerant type"
+        "en": "Refrigerant Type"
       },
       "name": "refrigerantType",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity"
+        "en": "Nominal Cooling Capacity"
       },
       "name": "nominalCoolingCapacity",
       "schema": "double",
@@ -50,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity unit"
+        "en": "Nominal Cooling Capacity Unit"
       },
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
@@ -61,9 +68,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "net sensible cooling capacity"
+        "en": "Net Sensible Cooling Capacity"
       },
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
@@ -71,9 +81,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "net sensible cooling capacity unit"
+        "en": "Net Sensible Cooling Capacity Unit"
       },
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",
@@ -84,7 +98,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "mounting"
+        "en": "Mounting"
       },
       "name": "mounting",
       "schema": {
@@ -110,7 +124,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "filter type"
+        "en": "Filter Type"
       },
       "name": "filterType",
       "schema": "string",
@@ -135,7 +149,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "piping configuration"
+        "en": "Piping Configuration"
       },
       "name": "pipingConfiguration",
       "description": {

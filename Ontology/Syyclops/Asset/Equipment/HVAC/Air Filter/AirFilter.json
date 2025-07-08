@@ -55,7 +55,7 @@
       "@type": "Property",
       "name": "efficiencyAt03Microns",
       "displayName": {
-        "en": "Efficiency at 0.3 Microns"
+        "en": "Efficiency At 0.3 Microns"
       },
       "schema": "double",
       "writable": true

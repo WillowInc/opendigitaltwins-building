@@ -7,14 +7,17 @@
   "description": {
     "en": "A type of terminal unit that modulates primary damper position and the speed of a local fan to control airflow at setpoints that reset based on zone conditions and controls a reheat device to provide supplemental heating when appropriate"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:FanPoweredBox;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -22,9 +25,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",

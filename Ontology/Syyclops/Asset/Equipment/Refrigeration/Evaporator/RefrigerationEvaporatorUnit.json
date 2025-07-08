@@ -7,14 +7,14 @@
   "description": {
     "en": "An stand-alone evaporator consisting of a fan and coil typically used to cool walk-in coolers or freezers."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:RefrigerationEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "refrigerant type"
+        "en": "Refrigerant Type"
       },
       "name": "refrigerantType",
       "schema": "string",
@@ -29,9 +29,12 @@
       "schema": "dtmi:com:syyclops:Fan;1"
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity"
+        "en": "Nominal Cooling Capacity"
       },
       "name": "nominalCoolingCapacity",
       "schema": "double",
@@ -39,9 +42,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity unit"
+        "en": "Nominal Cooling Capacity Unit"
       },
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
@@ -50,9 +57,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "net sensible cooling capacity"
+        "en": "Net Sensible Cooling Capacity"
       },
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
@@ -60,9 +70,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "net sensible cooling capacity unit"
+        "en": "Net Sensible Cooling Capacity Unit"
       },
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",

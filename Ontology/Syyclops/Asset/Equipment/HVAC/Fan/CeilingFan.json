@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Ceiling Fan"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACFan;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "blade diameter"
+        "en": "Blade Diameter"
       },
       "name": "bladeDiameter",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "blade diameter unit"
+        "en": "Blade Diameter Unit"
       },
       "name": "bladeDiameterUnit",
       "annotates": "bladeDiameter",

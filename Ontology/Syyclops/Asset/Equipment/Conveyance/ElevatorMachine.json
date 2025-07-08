@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Elevator Machine"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ConveyanceEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Mass", "Property"],
+      "@type": [
+        "Mass",
+        "Property"
+      ],
       "displayName": {
-        "en": "weight capacity"
+        "en": "Weight Capacity"
       },
       "name": "weightCapacity",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "weight capacity unit"
+        "en": "Weight Capacity Unit"
       },
       "name": "weightCapacityUnit",
       "annotates": "weightCapacity",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "motor power"
+        "en": "Motor Power"
       },
       "name": "motorPower",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "motor power unit"
+        "en": "Motor Power Unit"
       },
       "name": "motorPowerUnit",
       "annotates": "motorPower",
@@ -51,9 +65,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "brake horsepower"
+        "en": "Brake Horsepower"
       },
       "name": "brakeHorsepower",
       "schema": "double",
@@ -61,9 +78,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "brake horsepower unit"
+        "en": "Brake Horsepower Unit"
       },
       "name": "brakeHorsepowerUnit",
       "annotates": "brakeHorsepower",

@@ -7,7 +7,7 @@
   "description": {
     "en": "A natural person (i.e., an individual human being)."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Agent;1"
   ],
   "contents": [
@@ -17,7 +17,7 @@
         "en": "A person's last name (if they have one; this varies across cultural contexts)."
       },
       "displayName": {
-        "en": "last name"
+        "en": "Last Name"
       },
       "name": "lastName",
       "schema": "string",
@@ -29,7 +29,7 @@
         "en": "URL link to an image that represents the person."
       },
       "displayName": {
-        "en": "image"
+        "en": "Image"
       },
       "name": "image",
       "schema": "string",
@@ -41,7 +41,7 @@
         "en": "A person's personal, individual name."
       },
       "displayName": {
-        "en": "given name"
+        "en": "Given Name"
       },
       "name": "givenName",
       "schema": "string",
@@ -53,7 +53,7 @@
         "en": "A gender designation for a Person."
       },
       "displayName": {
-        "en": "gender"
+        "en": "Gender"
       },
       "name": "gender",
       "schema": "string",
@@ -65,7 +65,7 @@
         "en": "A person's first name (if they have one; this varies across cultural contexts)."
       },
       "displayName": {
-        "en": "first name"
+        "en": "First Name"
       },
       "name": "firstName",
       "schema": "string",
@@ -77,7 +77,7 @@
         "en": "A person's family name."
       },
       "displayName": {
-        "en": "family name"
+        "en": "Family Name"
       },
       "name": "familyName",
       "schema": "string",

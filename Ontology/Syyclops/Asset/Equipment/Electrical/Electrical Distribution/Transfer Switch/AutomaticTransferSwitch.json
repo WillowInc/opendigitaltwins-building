@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Automatic Transfer Switch"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:TransferSwitch;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "transition type"
+        "en": "Transition Type"
       },
       "name": "transitionType",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "switching mechanism"
+        "en": "Switching Mechanism"
       },
       "name": "switchingMechanism",
       "schema": {

@@ -4,12 +4,15 @@
   "displayName": {
     "en": "Space Temperature"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "temperatureSensor",
       "displayName": {
         "en": "Temperature Sensor"
@@ -19,9 +22,13 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "temperature sensor unit"
+        "en": "Temperature Sensor Unit"
       },
       "name": "temperatureSensorUnit",
       "annotates": "temperatureSensor",
@@ -30,7 +37,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "temperatureSetpoint",
       "displayName": {
         "en": "Temperature Setpoint"
@@ -40,9 +50,13 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "temperature setpoint unit"
+        "en": "Temperature Setpoint Unit"
       },
       "name": "temperatureSetpointUnit",
       "annotates": "temperatureSetpoint",
@@ -51,7 +65,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "temperatureDelta",
       "displayName": {
         "en": "Temperature Delta"
@@ -61,9 +78,13 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "temperature delta unit"
+        "en": "Temperature Delta Unit"
       },
       "name": "temperatureDeltaUnit",
       "annotates": "temperatureDelta",

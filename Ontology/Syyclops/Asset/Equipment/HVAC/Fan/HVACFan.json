@@ -4,7 +4,7 @@
   "displayName": {
     "en": "HVAC Fan"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1",
     "dtmi:com:syyclops:Fan;1"
   ],
@@ -12,7 +12,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": "string",

@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Electric Duct Heater"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:DuctHeater;1"
   ],
   "contents": [
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "power input"
+        "en": "Power Input"
       },
       "name": "powerInput",
       "schema": "double",

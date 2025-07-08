@@ -7,14 +7,17 @@
   "description": {
     "en": "A device that rejects waste heat to the atmosphere through the cooling of a coolant stream, usually a water stream to a lower temperature."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity"
+        "en": "Nominal Cooling Capacity"
       },
       "name": "nominalCoolingCapacity",
       "schema": "double",
@@ -22,9 +25,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity unit"
+        "en": "Nominal Cooling Capacity Unit"
       },
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
@@ -33,9 +40,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "flow capacity"
+        "en": "Flow Capacity"
       },
       "name": "flowCapacity",
       "schema": "double",
@@ -43,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "flow capacity unit"
+        "en": "Flow Capacity Unit"
       },
       "name": "flowCapacityUnit",
       "annotates": "flowCapacity",
@@ -64,14 +78,17 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Number of Cells"
+        "en": "Number Of Cells"
       },
       "name": "numberOfCells",
       "schema": "integer",
       "writable": true
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringWaterTemperature",
       "displayName": {
         "en": "Design Entering Water Temperature"
@@ -80,7 +97,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Water Temperature Unit"
       },
@@ -90,7 +111,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingWaterTemperature",
       "displayName": {
         "en": "Design Leaving Water Temperature"
@@ -99,7 +123,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Water Temperature Unit"
       },
@@ -109,7 +137,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringWetBulbTemperature",
       "displayName": {
         "en": "Design Entering Wet Bulb Temperature"
@@ -118,7 +149,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Wet Bulb Temperature Unit"
       },
@@ -128,7 +163,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "approach",
       "displayName": {
         "en": "Approach"
@@ -140,7 +178,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Approach Unit"
       },
@@ -150,7 +192,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Minimum Flow"
       },
@@ -160,7 +205,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Minimum Flow Unit"
       },
@@ -171,7 +220,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Maximum Flow"
       },
@@ -181,7 +233,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Maximum Flow Unit"
       },

@@ -7,14 +7,14 @@
   "description": {
     "en": "A device which transfers heat between two fluids without the fluids coming in direct contact or mixing together."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "primary medium"
+        "en": "Primary Medium"
       },
       "name": "primaryMedium",
       "schema": {
@@ -48,7 +48,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "secondary medium"
+        "en": "Secondary Medium"
       },
       "name": "secondaryMedium",
       "schema": {
@@ -76,9 +76,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "displayName": {
-        "en": "secondary maximum temperature"
+        "en": "Secondary Maximum Temperature"
       },
       "name": "secondaryMaxTemperature",
       "schema": "double",
@@ -86,9 +89,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "secondary maximum temperature unit"
+        "en": "Secondary Maximum Temperature Unit"
       },
       "name": "secondaryMaxTemperatureUnit",
       "annotates": "secondaryMaxTemperature",
@@ -97,9 +104,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "secondary maximum pressure"
+        "en": "Secondary Maximum Pressure"
       },
       "name": "secondaryMaxPressure",
       "schema": "double",
@@ -107,9 +117,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "secondary maximum pressure unit"
+        "en": "Secondary Maximum Pressure Unit"
       },
       "name": "secondaryMaxPressureUnit",
       "annotates": "secondaryMaxPressure",
@@ -118,9 +132,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "secondary flow capacity"
+        "en": "Secondary Flow Capacity"
       },
       "name": "secondaryFlowCapacity",
       "schema": "double",
@@ -128,9 +145,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "secondary flow capacity unit"
+        "en": "Secondary Flow Capacity Unit"
       },
       "name": "secondaryFlowCapacityUnit",
       "annotates": "secondaryFlowCapacity",
@@ -139,9 +160,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "displayName": {
-        "en": "primary maximum temperature"
+        "en": "Primary Maximum Temperature"
       },
       "name": "primaryMaxTemperature",
       "schema": "double",
@@ -149,9 +173,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "primary maximum temperature unit"
+        "en": "Primary Maximum Temperature Unit"
       },
       "name": "primaryMaxTemperatureUnit",
       "annotates": "primaryMaxTemperature",
@@ -160,9 +188,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "primary maximum pressure"
+        "en": "Primary Maximum Pressure"
       },
       "name": "primaryMaxPressure",
       "schema": "double",
@@ -170,9 +201,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "primary maximum pressure unit"
+        "en": "Primary Maximum Pressure Unit"
       },
       "name": "primaryMaxPressureUnit",
       "annotates": "primaryMaxPressure",
@@ -181,9 +216,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "primary flow capacity"
+        "en": "Primary Flow Capacity"
       },
       "name": "primaryFlowCapacity",
       "schema": "double",
@@ -191,9 +229,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "primary flow capacity unit"
+        "en": "Primary Flow Capacity Unit"
       },
       "name": "primaryFlowCapacityUnit",
       "annotates": "primaryFlowCapacity",
@@ -202,7 +244,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Primary Design Flow"
       },
@@ -212,7 +257,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Primary Design Flow Unit"
       },
@@ -223,7 +272,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Secondary Design Flow"
       },
@@ -233,7 +285,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Secondary Design Flow Unit"
       },
@@ -244,7 +300,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "MassFlowRate"],
+      "@type": [
+        "Property",
+        "MassFlowRate"
+      ],
       "displayName": {
         "en": "Primary Design Mass Flow"
       },
@@ -254,7 +313,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Primary Design Mass Flow Unit"
       },
@@ -265,7 +328,10 @@
       "writable": true
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "primaryDesignEnteringWaterTemperature",
       "displayName": {
         "en": "Primary Design Entering Water Temperature"
@@ -274,7 +340,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Primary Design Entering Water Temperature Unit"
       },
@@ -284,7 +354,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "primaryDesignLeavingWaterTemperature",
       "displayName": {
         "en": "Primary Design Leaving Water Temperature"
@@ -293,7 +366,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Primary Design Leaving Water Temperature Unit"
       },
@@ -303,7 +380,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "primaryDesignDeltaWaterTemperature",
       "displayName": {
         "en": "Primary Design Delta Water Temperature"
@@ -312,7 +392,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Primary Design Delta Water Temperature Unit"
       },
@@ -322,7 +406,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "secondaryDesignEnteringWaterTemperature",
       "displayName": {
         "en": "Secondary Design Entering Water Temperature"
@@ -331,7 +418,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Secondary Design Entering Water Temperature Unit"
       },
@@ -341,7 +432,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "secondaryDesignLeavingWaterTemperature",
       "displayName": {
         "en": "Secondary Design Leaving Water Temperature"
@@ -350,7 +444,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Secondary Design Leaving Water Temperature Unit"
       },
@@ -360,7 +458,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "secondaryDesignDeltaWaterTemperature",
       "displayName": {
         "en": "Secondary Design Delta Water Temperature"
@@ -369,7 +470,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Secondary Design Delta Water Temperature Unit"
       },

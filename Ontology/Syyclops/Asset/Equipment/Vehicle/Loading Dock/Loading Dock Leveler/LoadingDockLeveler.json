@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Loading Dock Leveler"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:LoadingDockEquipment;1"
   ],
   "contents": [
@@ -25,26 +25,29 @@
               "en": "Mechanical"
             },
             "enumValue": "Mechanical"
-          },  
+          },
           {
-                "name": "Hydraulic",
-                "displayName": {
-                  "en": "Hydraulic"
-                },
-                "enumValue": "Hydraulic"
+            "name": "Hydraulic",
+            "displayName": {
+              "en": "Hydraulic"
             },
-            {
-              "name": "Pneumatic",
-              "displayName": {
-                "en": "Pneumatic"
-              },
-              "enumValue": "Pneumatic"
-            }
+            "enumValue": "Hydraulic"
+          },
+          {
+            "name": "Pneumatic",
+            "displayName": {
+              "en": "Pneumatic"
+            },
+            "enumValue": "Pneumatic"
+          }
         ]
       }
     },
     {
-      "@type": ["Mass", "Property"],
+      "@type": [
+        "Mass",
+        "Property"
+      ],
       "name": "loadCapacity",
       "displayName": {
         "en": "Load Capacity"
@@ -54,9 +57,13 @@
       "unit": "kilogram"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "load capacity unit"
+        "en": "Load Capacity Unit"
       },
       "name": "loadCapacityUnit",
       "annotates": "loadCapacity",

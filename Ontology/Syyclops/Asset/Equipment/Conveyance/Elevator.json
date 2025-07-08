@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Elevator"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ConveyanceEquipment;1"
   ],
   "contents": [
@@ -14,16 +14,19 @@
         "en": "The number of people who can fit in a Space."
       },
       "displayName": {
-        "en": "person capacity"
+        "en": "Person Capacity"
       },
       "name": "personCapacity",
       "schema": "integer",
       "writable": true
     },
     {
-      "@type": ["Mass", "Property"],
+      "@type": [
+        "Mass",
+        "Property"
+      ],
       "displayName": {
-        "en": "weight capacity"
+        "en": "Weight Capacity"
       },
       "name": "weightCapacity",
       "schema": "double",
@@ -31,9 +34,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "weight capacity unit"
+        "en": "Weight Capacity Unit"
       },
       "name": "weightCapacityUnit",
       "annotates": "weightCapacity",
@@ -42,9 +49,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Velocity"],
+      "@type": [
+        "Property",
+        "Velocity"
+      ],
       "displayName": {
-        "en": "maximum travel speed"
+        "en": "Maximum Travel Speed"
       },
       "name": "maxTravelSpeed",
       "schema": "double",
@@ -52,9 +62,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum travel speed unit"
+        "en": "Maximum Travel Speed Unit"
       },
       "name": "maxTravelSpeedUnit",
       "annotates": "maxTravelSpeed",
@@ -63,9 +77,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "maximum travel distance"
+        "en": "Maximum Travel Distance"
       },
       "name": "maxTravelDistance",
       "schema": "double",
@@ -73,9 +90,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum travel distance unit"
+        "en": "Maximum Travel Distance Unit"
       },
       "name": "maxTravelDistanceUnit",
       "annotates": "maxTravelDistance",
@@ -86,7 +107,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "maximum landings"
+        "en": "Maximum Landings"
       },
       "name": "maxLandings",
       "schema": "integer",
@@ -110,7 +131,7 @@
       "writable": true,
       "schema": {
         "@type": "Object",
-        "fields" : [
+        "fields": [
           {
             "name": "twoWayVoice",
             "displayName": {

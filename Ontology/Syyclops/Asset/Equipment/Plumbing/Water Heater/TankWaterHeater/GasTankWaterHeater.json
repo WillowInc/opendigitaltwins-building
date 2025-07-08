@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Gas Tank Water Heater"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:TankWaterHeater;1"
   ],
   "contents": [
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "power input"
+        "en": "Power Input"
       },
       "name": "powerInput",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "power input unit"
+        "en": "Power Input Unit"
       },
       "name": "powerInputUnit",
       "annotates": "powerInput",

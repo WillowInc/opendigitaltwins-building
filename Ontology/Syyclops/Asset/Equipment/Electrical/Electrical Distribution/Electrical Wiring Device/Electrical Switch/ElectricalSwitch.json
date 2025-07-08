@@ -4,22 +4,28 @@
   "displayName": {
     "en": "Electrical Switch"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalWiringDevice;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Voltage"],
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
       "name": "inputVoltage",
       "displayName": {
-        "en": "input voltage"
+        "en": "Input Voltage"
       },
       "writable": true,
       "schema": "double",
       "unit": "volt"
     },
     {
-      "@type": ["Property", "Current"],
+      "@type": [
+        "Property",
+        "Current"
+      ],
       "name": "currentRating",
       "displayName": {
         "en": "Current Rating"

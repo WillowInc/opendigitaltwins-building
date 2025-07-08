@@ -7,7 +7,7 @@
   "description": {
     "en": "A compressor which is used within a refrigeration system or circuit used in applications such food, beverage, pharmaceutical and chemical storage and ice storage and production."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:RefrigerationEquipment;1",
     "dtmi:com:syyclops:Compressor;1"
   ],
@@ -15,7 +15,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "nominal energy efficiency ratio (EER)"
+        "en": "Nominal Energy Efficiency Ratio (EER)"
       },
       "name": "nominalEnergyEfficiencyRatio",
       "schema": "double",
@@ -24,7 +24,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "design energy efficiency ratio (EER)"
+        "en": "Design Energy Efficiency Ratio (EER)"
       },
       "name": "designEnergyEfficiencyRatio",
       "schema": "double",
@@ -33,7 +33,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "nominal coefficient of performance (COP)"
+        "en": "Nominal Coefficient Of Performance (COP)"
       },
       "name": "nominalCoefficientOfPerformance",
       "schema": "double",
@@ -42,16 +42,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "design coefficient of performance (COP)"
+        "en": "Design Coefficient Of Performance (COP)"
       },
       "name": "designCoefficientOfPerformance",
       "schema": "double",
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity"
+        "en": "Nominal Cooling Capacity"
       },
       "name": "nominalCoolingCapacity",
       "schema": "double",
@@ -59,9 +62,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity unit"
+        "en": "Nominal Cooling Capacity Unit"
       },
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
@@ -70,9 +77,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "design cooling capacity"
+        "en": "Design Cooling Capacity"
       },
       "name": "designCoolingCapacity",
       "schema": "double",
@@ -80,9 +90,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "design cooling capacity unit"
+        "en": "Design Cooling Capacity Unit"
       },
       "name": "designCoolingCapacityUnit",
       "annotates": "designCoolingCapacity",

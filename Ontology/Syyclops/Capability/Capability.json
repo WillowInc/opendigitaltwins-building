@@ -7,8 +7,7 @@
   "description": {
     "en": "A Capability indicates the capacity of an entity, be it a Space, an Asset, or a Device, to produce or ingest data which can be trended as a time series. This is roughly equivalent to the established Brick Schema and generic BMS term \"point\". Specific subclasses specialize this behaviour: Sensor entities harvest data from the real world, Actuator entities accept commands from a digital twin platform, and Parameter entities configure some capability or system."
   },
-  "extends": [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -111,7 +110,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -242,7 +241,7 @@
         "en": "Time when a core:Capability's value was last updated (see core:lastValue)."
       },
       "displayName": {
-        "en": "last value time"
+        "en": "Last Value Time"
       },
       "name": "lastValueTime",
       "schema": "dateTime",
@@ -455,7 +454,10 @@
       }
     },
     {
-      "@type": ["Property", "TimeSpan"],
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
       "name": "trendInterval",
       "displayName": {
         "en": "Trend Interval"
@@ -497,7 +499,7 @@
       "@type": "Property",
       "name": "analyticsEnabled",
       "displayName": {
-        "en": "Is Enabled for Analytics"
+        "en": "Is Enabled For Analytics"
       },
       "writable": true,
       "schema": "boolean"

@@ -7,9 +7,7 @@
   "description": {
     "en": "A set of instructions, data, and programs used to operate a computer or device and execute specific tasks."
   },
-  "extends" : [
-
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -90,7 +88,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -242,7 +240,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation date"
+        "en": "Installation Date"
       },
       "name": "installationDate",
       "schema": "dateTime",

@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Tank Water Heater"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:WaterHeater;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "tank capacity"
+        "en": "Tank Capacity"
       },
       "name": "tankCapacity",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",

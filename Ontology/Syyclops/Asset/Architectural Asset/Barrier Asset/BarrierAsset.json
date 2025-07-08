@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Barrier Asset"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ArchitecturalAsset;1"
   ],
   "contents": [
@@ -25,9 +25,12 @@
       "target": "dtmi:com:syyclops:Space;1"
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "width"
+        "en": "Width"
       },
       "name": "width",
       "schema": "double",
@@ -35,9 +38,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "width unit"
+        "en": "Width Unit"
       },
       "name": "widthUnit",
       "annotates": "width",
@@ -46,9 +53,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "thickness"
+        "en": "Thickness"
       },
       "name": "thickness",
       "schema": "double",
@@ -56,9 +66,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "thickness unit"
+        "en": "Thickness Unit"
       },
       "name": "thicknessUnit",
       "annotates": "thickness",
@@ -69,7 +83,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "service"
+        "en": "Service"
       },
       "name": "service",
       "schema": {
@@ -91,16 +105,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "material"
+        "en": "Material"
       },
       "name": "material",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "height"
+        "en": "Height"
       },
       "name": "height",
       "schema": "double",
@@ -108,9 +125,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",
@@ -121,16 +142,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "frame material"
+        "en": "Frame Material"
       },
       "name": "frameMaterial",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["TimeSpan", "Property"],
+      "@type": [
+        "TimeSpan",
+        "Property"
+      ],
       "displayName": {
-        "en": "fire rating"
+        "en": "Fire Rating"
       },
       "name": "fireRating",
       "schema": "double",

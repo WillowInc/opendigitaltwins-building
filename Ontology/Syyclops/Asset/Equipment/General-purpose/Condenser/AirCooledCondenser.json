@@ -7,12 +7,15 @@
   "description": {
     "en": "A condenser which rejects heat from a working fluid (i.e. refrigerant) into the ambient air."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Condenser;1"
   ],
   "contents": [
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringAirTemperature",
       "displayName": {
         "en": "Design Entering Air Temperature"
@@ -21,7 +24,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Air Temperature Unit"
       },
@@ -31,7 +38,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingAirTemperature",
       "displayName": {
         "en": "Design Leaving Air Temperature"
@@ -40,7 +50,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Air Temperature Unit"
       },
@@ -50,7 +64,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designDeltaAirTemperature",
       "displayName": {
         "en": "Design Delta Air Temperature"
@@ -59,7 +76,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Delta Air Temperature Unit"
       },
@@ -69,7 +90,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Airflow"
       },
@@ -79,7 +103,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Airflow Unit"
       },
@@ -92,16 +120,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Number of Fans"
+        "en": "Number Of Fans"
       },
       "name": "numberOfFans",
       "schema": "integer",
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "total fan power"
+        "en": "Total Fan Power"
       },
       "name": "totalFanPower",
       "schema": "double",
@@ -109,9 +140,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "total fan power unit"
+        "en": "Total Fan Power Unit"
       },
       "name": "totalFanPowerUnit",
       "annotates": "totalFanPower",
@@ -120,9 +155,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "total fan brake horsepower"
+        "en": "Total Fan Brake Horsepower"
       },
       "name": "totalFanbrakeHorsepower",
       "schema": "double",
@@ -130,9 +168,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "total fan brake horsepower unit"
+        "en": "Total Fan Brake Horsepower Unit"
       },
       "name": "totalFanbrakeHorsepowerUnit",
       "annotates": "totalFanbrakeHorsepower",

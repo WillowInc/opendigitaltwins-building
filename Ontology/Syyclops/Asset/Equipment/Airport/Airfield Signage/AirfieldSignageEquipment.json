@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Airfield Signage Equipment"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:airport:AirportEquipment;1"
   ],
   "contents": [
@@ -19,7 +19,10 @@
       "comment": "A | 36-18"
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "messageHeight",
       "displayName": {
         "en": "Height"
@@ -29,9 +32,13 @@
       "unit": "millimetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "message height unit"
+        "en": "Message Height Unit"
       },
       "name": "messageHeightUnit",
       "annotates": "messageHeight",
@@ -40,7 +47,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "panelHeight",
       "displayName": {
         "en": "Panel Height"
@@ -50,9 +60,13 @@
       "unit": "millimetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "panel height unit"
+        "en": "Panel Height Unit"
       },
       "name": "panelHeightUnit",
       "annotates": "panelHeight",
@@ -61,7 +75,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "panelWidth",
       "displayName": {
         "en": "Panel Width"
@@ -71,9 +88,13 @@
       "unit": "millimetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "panel width unit"
+        "en": "Panel Width Unit"
       },
       "name": "panelWidthUnit",
       "annotates": "panelWidth",
@@ -82,7 +103,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "installedHeight",
       "displayName": {
         "en": "Installed Height"
@@ -92,9 +116,13 @@
       "unit": "millimetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "installed height unit"
+        "en": "Installed Height Unit"
       },
       "name": "installedHeightUnit",
       "annotates": "installedHeight",

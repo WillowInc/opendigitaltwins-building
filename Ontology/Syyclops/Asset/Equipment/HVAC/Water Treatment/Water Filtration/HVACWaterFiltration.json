@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Water Filtration (HVAC)"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACWaterTreatment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",
@@ -32,16 +39,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "tank capacity"
+        "en": "Tank Capacity"
       },
       "name": "tankCapacity",
       "schema": "double",
@@ -49,9 +59,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",
@@ -60,9 +74,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "flow capacity"
+        "en": "Flow Capacity"
       },
       "name": "flowCapacity",
       "schema": "double",
@@ -70,9 +87,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "flow capacity unit"
+        "en": "Flow Capacity Unit"
       },
       "name": "flowCapacityUnit",
       "annotates": "flowCapacity",
@@ -81,12 +102,15 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "description": {
         "en": "microns"
       },
       "displayName": {
-        "en": "filtration rating"
+        "en": "Filtration Rating"
       },
       "name": "filtrationRating",
       "unit": "micrometre",

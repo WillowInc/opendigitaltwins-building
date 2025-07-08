@@ -7,8 +7,7 @@
   "description": {
     "en": "An entity which is constructed."
   },
-  "extends" : [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -188,7 +187,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -358,7 +357,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "commission date"
+        "en": "Commission Date"
       },
       "name": "commissionDate",
       "schema": "date",
@@ -367,7 +366,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected end-of-life"
+        "en": "Expected End-of-life"
       },
       "name": "expectedEndOfLife",
       "schema": "date",
@@ -376,7 +375,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected life"
+        "en": "Expected Life"
       },
       "name": "expectedLife",
       "schema": "duration",
@@ -385,7 +384,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected replacement cost"
+        "en": "Expected Replacement Cost"
       },
       "name": "expectedReplacementCost",
       "schema": "string",
@@ -394,7 +393,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "initial cost"
+        "en": "Initial Cost"
       },
       "name": "initialCost",
       "schema": "string",
@@ -403,7 +402,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation date"
+        "en": "Installation Date"
       },
       "name": "installationDate",
       "schema": "date",
@@ -412,7 +411,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "maintenance interval"
+        "en": "Maintenance Interval"
       },
       "name": "maintenanceInterval",
       "schema": "duration",
@@ -421,7 +420,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "turnover date"
+        "en": "Turnover Date"
       },
       "name": "turnoverDate",
       "schema": "date",
@@ -430,7 +429,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "physical tag number"
+        "en": "Physical Tag Number"
       },
       "name": "physicalTagNumber",
       "schema": "string",

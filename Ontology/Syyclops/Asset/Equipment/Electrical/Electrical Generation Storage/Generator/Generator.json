@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Generator"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalGenerationStorageEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Voltage", "Property"],
+      "@type": [
+        "Voltage",
+        "Property"
+      ],
       "displayName": {
-        "en": "output voltage"
+        "en": "Output Voltage"
       },
       "name": "outputVoltage",
       "schema": "double",
@@ -21,7 +24,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "output phases"
+        "en": "Output Phases"
       },
       "name": "outputPhases",
       "schema": {
@@ -43,7 +46,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "mode of operation"
+        "en": "Mode Of Operation"
       },
       "name": "modeOfOperation",
       "schema": "string",
@@ -52,19 +55,22 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "fuel type"
+        "en": "Fuel Type"
       },
       "name": "fuelType",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "Frequency"],
+      "@type": [
+        "Property",
+        "Frequency"
+      ],
       "description": {
         "en": "Hz"
       },
       "displayName": {
-        "en": "frequency"
+        "en": "Frequency"
       },
       "name": "frequency",
       "schema": "integer",
@@ -72,9 +78,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "day tank capacity"
+        "en": "Day Tank Capacity"
       },
       "name": "dayTankCapacity",
       "schema": "double",
@@ -82,9 +91,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "day tank capacity unit"
+        "en": "Day Tank Capacity Unit"
       },
       "name": "dayTankCapacityUnit",
       "annotates": "dayTankCapacity",
@@ -93,9 +106,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "bulk storage capacity"
+        "en": "Bulk Storage Capacity"
       },
       "name": "bulkStorageCapacity",
       "schema": "double",
@@ -103,9 +119,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "bulk storage capacity unit"
+        "en": "Bulk Storage Capacity Unit"
       },
       "name": "bulkStorageCapacityUnit",
       "annotates": "bulkStorageCapacity",
@@ -114,9 +134,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ApparentPower"],
+      "@type": [
+        "Property",
+        "ApparentPower"
+      ],
       "displayName": {
-        "en": "standby power rating (KVA)"
+        "en": "Standby Power Rating (KVA)"
       },
       "name": "standbyPowerKVA",
       "schema": "double",
@@ -124,9 +147,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Power"],
+      "@type": [
+        "Property",
+        "Power"
+      ],
       "displayName": {
-        "en": "standby power rating"
+        "en": "Standby Power Rating"
       },
       "name": "standbyPower",
       "schema": "double",
@@ -134,9 +160,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ApparentPower"],
+      "@type": [
+        "Property",
+        "ApparentPower"
+      ],
       "displayName": {
-        "en": "prime power rating (KVA)"
+        "en": "Prime Power Rating (KVA)"
       },
       "name": "primePowerKVA",
       "schema": "double",
@@ -144,9 +173,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Power"],
+      "@type": [
+        "Property",
+        "Power"
+      ],
       "displayName": {
-        "en": "prime power rating"
+        "en": "Prime Power Rating"
       },
       "name": "primePower",
       "schema": "double",

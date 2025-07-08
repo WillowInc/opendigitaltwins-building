@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Transfer Switch"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalDistributionEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "poles"
+        "en": "Poles"
       },
       "name": "poles",
       "schema": {
@@ -31,9 +31,12 @@
       "writable": true
     },
     {
-      "@type": ["Current", "Property"],
+      "@type": [
+        "Current",
+        "Property"
+      ],
       "displayName": {
-        "en": "mains rating"
+        "en": "Mains Rating"
       },
       "name": "mainsRating",
       "schema": "double",

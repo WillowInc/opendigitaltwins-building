@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Wireless Access Point"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:DataNetworkEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -41,7 +41,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "mounting"
+        "en": "Mounting"
       },
       "name": "mounting",
       "schema": {

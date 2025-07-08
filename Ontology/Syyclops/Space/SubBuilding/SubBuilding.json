@@ -20,7 +20,10 @@
       "schema": "dtmi:com:syyclops:Address;1"
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "height",
       "displayName": {
         "en": "Height"
@@ -30,9 +33,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",

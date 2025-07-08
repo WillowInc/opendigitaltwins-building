@@ -4,14 +4,14 @@
   "displayName": {
     "en": "HVAC Damper"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "service"
+        "en": "Service"
       },
       "name": "service",
       "schema": {
@@ -37,7 +37,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "leakage class"
+        "en": "Leakage Class"
       },
       "name": "leakageClass",
       "schema": {
@@ -63,7 +63,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "blade type"
+        "en": "Blade Type"
       },
       "name": "bladeType",
       "schema": {

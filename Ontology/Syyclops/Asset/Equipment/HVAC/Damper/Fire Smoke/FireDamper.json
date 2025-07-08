@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Fire Damper"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACDamper;1"
   ],
   "contents": [
     {
-      "@type": ["TimeSpan", "Property"],
+      "@type": [
+        "TimeSpan",
+        "Property"
+      ],
       "displayName": {
-        "en": "fire rating"
+        "en": "Fire Rating"
       },
       "name": "fireRating",
       "schema": "double",

@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Valve"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "pressure capacity"
+        "en": "Pressure Capacity"
       },
       "name": "pressureCapacity",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "pressure capacity unit"
+        "en": "Pressure Capacity Unit"
       },
       "name": "pressureCapacityUnit",
       "annotates": "pressureCapacity",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "flow capacity"
+        "en": "Flow Capacity"
       },
       "name": "flowCapacity",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "flow capacity unit"
+        "en": "Flow Capacity Unit"
       },
       "name": "flowCapacityUnit",
       "annotates": "flowCapacity",

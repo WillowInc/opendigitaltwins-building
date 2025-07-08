@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Toilet"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PlumbingFixture;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "water per flush"
+        "en": "Water Per Flush"
       },
       "name": "waterPerFlush",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "water per flush unit"
+        "en": "Water Per Flush Unit"
       },
       "name": "waterPerFlushUnit",
       "annotates": "waterPerFlush",
@@ -32,7 +39,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation type"
+        "en": "Installation Type"
       },
       "name": "installationType",
       "schema": {

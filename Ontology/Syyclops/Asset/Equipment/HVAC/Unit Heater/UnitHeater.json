@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Unit Heater"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -31,9 +31,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -41,9 +44,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",

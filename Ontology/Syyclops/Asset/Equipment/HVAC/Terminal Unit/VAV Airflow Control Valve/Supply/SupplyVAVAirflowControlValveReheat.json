@@ -7,14 +7,17 @@
   "description": {
     "en": "A Supply VAV airflow control vavle which includes reheat to a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SupplyVAVAirflowControlValve;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -22,9 +25,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",
@@ -43,8 +50,8 @@
   ],
   "@context": [
     "dtmi:dtdl:context;3",
-   "dtmi:dtdl:extension:quantitativeTypes;1",
-   "dtmi:dtdl:extension:annotation;1",
-   "dtmi:dtdl:extension:overriding;1"
- ]
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
 }

@@ -21,10 +21,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "fixedRateUnit",
       "displayName": {
-        "en": "fixed rate unit"
+        "en": "Fixed Rate Unit"
       },
       "annotates": "fixedRate",
       "schema": "string",
@@ -39,58 +42,57 @@
       "schema": {
         "@type": "Array",
         "elementSchema": {
-            "@type": "Object",
-            "fields": [
-              {
-                "name": "startMonthDay",
-                "description": {
-                  "en": "The month and day of the date in the calendar at which the rate starts in MM-DD format, i.e. 05-01 is May 1st."
-                },
-                "schema": "string"
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "startMonthDay",
+              "description": {
+                "en": "The month and day of the date in the calendar at which the rate starts in MM-DD format, i.e. 05-01 is May 1st."
               },
-              {
-                "name": "endMonthDay",
-                "description": {
-                  "en": "The month and day of the date in the calendar at which the rate ends in MM-DD format, i.e. 09-30 is September 30th."
-                },
-                "schema": "string"
+              "schema": "string"
+            },
+            {
+              "name": "endMonthDay",
+              "description": {
+                "en": "The month and day of the date in the calendar at which the rate ends in MM-DD format, i.e. 09-30 is September 30th."
               },
-              {
-                "name": "startTime",
-                "description": {
-                  "en": "The time within a day at which the rate starts in ISO 8601 time format."
-                },
-                "schema": "time"
+              "schema": "string"
+            },
+            {
+              "name": "startTime",
+              "description": {
+                "en": "The time within a day at which the rate starts in ISO 8601 time format."
               },
-              {
-                "name": "endTime",
-                "description": {
-                  "en": "The time within a day at which the rate ends in ISO 8601 time format."
-                },
-                "schema": "time"
+              "schema": "time"
+            },
+            {
+              "name": "endTime",
+              "description": {
+                "en": "The time within a day at which the rate ends in ISO 8601 time format."
               },
-              {
-                "name": "rate",
-                "displayName": {
-                  "en": "Rate"
-                },
-                "description": {
-                  "en": "The rate which is charged for the consumption of the utility at the time-of-use."
-                },
-                "schema": "double"
+              "schema": "time"
+            },
+            {
+              "name": "rate",
+              "displayName": {
+                "en": "Rate"
               },
-              {
-                "name": "rateUnit",
-                "displayName": {
-                  "en": "rate unit"
-                },
-                "schema": "string"
-
-              }
-            ]
-          }
+              "description": {
+                "en": "The rate which is charged for the consumption of the utility at the time-of-use."
+              },
+              "schema": "double"
+            },
+            {
+              "name": "rateUnit",
+              "displayName": {
+                "en": "rate unit"
+              },
+              "schema": "string"
+            }
+          ]
         }
       }
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",

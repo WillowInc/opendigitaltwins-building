@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Shut-off Valve (HVAC)"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACValve;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {

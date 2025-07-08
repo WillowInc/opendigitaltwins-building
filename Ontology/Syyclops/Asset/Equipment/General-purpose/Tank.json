@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Tank"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "tank capacity"
+        "en": "Tank Capacity"
       },
       "name": "tankCapacity",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "system pressure"
+        "en": "System Pressure"
       },
       "name": "systemPressure",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "system pressure unit"
+        "en": "System Pressure Unit"
       },
       "name": "systemPressureUnit",
       "annotates": "systemPressure",

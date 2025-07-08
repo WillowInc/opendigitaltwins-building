@@ -7,7 +7,7 @@
   "description": {
     "en": "A structure which is below ground level serving as the foundation for one or more buildings on a land above and has uniquely defined name and levels."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -125,7 +125,10 @@
       }
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "depth",
       "displayName": {
         "en": "Depth (Below Sea Level)"
@@ -135,9 +138,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "depth unit"
+        "en": "Depth Unit"
       },
       "name": "depthUnit",
       "annotates": "depth",
@@ -146,7 +153,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "height",
       "displayName": {
         "en": "Height"
@@ -156,9 +166,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",

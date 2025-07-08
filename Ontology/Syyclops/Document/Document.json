@@ -7,8 +7,7 @@
   "description": {
     "en": "A written, printed, or electronic matter that provides information, e.g. contract, drawing, image, report, etc."
   },
-  "extends" : [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -64,7 +63,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "DataSize"],
+      "@type": [
+        "Property",
+        "DataSize"
+      ],
       "displayName": {
         "en": "File Size"
       },
@@ -74,9 +76,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "file size unit"
+        "en": "File Size Unit"
       },
       "name": "fileSizeUnit",
       "annotates": "fileSize",
@@ -137,7 +143,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",

@@ -7,8 +7,7 @@
   "description": {
     "en": "A spatiotemporally indexed entity with participants (e.g., something which occurs somewhere, and that has or takes some time). We do not on this top level define the particulars of how to model space or time; that is left to the implementing subclasses. Thus, in a sense, this is just a cognitive clustering for human consumers of the ontology, a root class from which all different types of events derive."
   },
-  "extends" : [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -141,7 +140,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",

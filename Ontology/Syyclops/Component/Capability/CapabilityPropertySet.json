@@ -8,7 +8,7 @@
         "en": "Operational mode for HVAC equipment (Project Haystack)."
       },
       "displayName": {
-        "en": "HVAC mode"
+        "en": "HVAC Mode"
       },
       "name": "HVACMode",
       "schema": {
@@ -65,7 +65,7 @@
         "en": "Notification of a condition which requires attention such as a threshold exceeded (Project Haystack). This differs from a Fault in that a Fault is used to identify a failure."
       },
       "displayName": {
-        "en": "alarm"
+        "en": "Alarm"
       },
       "name": "alarm",
       "schema": "boolean",
@@ -77,7 +77,7 @@
         "en": "The component that is part of an asset which the capability is associated with."
       },
       "displayName": {
-        "en": "asset component"
+        "en": "Asset Component"
       },
       "name": "assetComponent",
       "schema": {
@@ -142,7 +142,7 @@
         "en": "Rate required for a process. For a setpoint, this sets the required rate for a process such as cooling, heating, air flow, or water flow. For a sensor, this measures the rate of a process over a given interval such as electrical power demand or cooling energy demand."
       },
       "displayName": {
-        "en": "demand"
+        "en": "Demand"
       },
       "name": "demand",
       "schema": "boolean",
@@ -154,7 +154,7 @@
         "en": "Current control setpoint in effect taking into account other factors (Project Haystack)."
       },
       "displayName": {
-        "en": "effective"
+        "en": "Effective"
       },
       "name": "effective",
       "schema": "boolean",
@@ -166,7 +166,7 @@
         "en": "Phase measurement in a three-phase electrical system (Project Haystack)."
       },
       "displayName": {
-        "en": "electrical phase"
+        "en": "Electrical Phase"
       },
       "name": "electricalPhase",
       "schema": {
@@ -211,7 +211,7 @@
         "en": "Parameter that places and upper (maximum) or lower (minimum) bound on permitted values of another capability."
       },
       "displayName": {
-        "en": "limit"
+        "en": "Limit"
       },
       "name": "limit",
       "schema": {
@@ -236,7 +236,7 @@
         "en": "Mode which defines how to control a space based on occupancy status."
       },
       "displayName": {
-        "en": "occupancy mode"
+        "en": "Occupancy Mode"
       },
       "name": "occupancyMode",
       "schema": {
@@ -265,7 +265,7 @@
         "en": "The phenomenon that a capability measures or interacts with; e.g., a TemperatureSensor can measure air temperature or water temperature, a Flow Demand Setpoint can be configured to control steam demand or chilled water demand, etc."
       },
       "displayName": {
-        "en": "phenomenon"
+        "en": "Phenomenon"
       },
       "name": "phenomenon",
       "schema": {
@@ -510,7 +510,7 @@
         "en": "The capability position relative to the system or space that it interacts with. E.g., a water temperature sensor can be positioned on the supply or return flow, air humidity can be measured entering or leaving a system, etc."
       },
       "displayName": {
-        "en": "position"
+        "en": "Position"
       },
       "name": "position",
       "schema": {
@@ -627,7 +627,7 @@
         "en": "Stage number of a control loop for an equipment, equipment group, or system that is defined by the process controller. The first stage is 1, second stage 2, etc. (Project Haystack)."
       },
       "displayName": {
-        "en": "stage"
+        "en": "Stage"
       },
       "name": "stage",
       "schema": "integer",
@@ -639,7 +639,7 @@
         "en": "Index number of a fan, coil, etc as a part of an array, e.g. fan 2 of the discharge air fan array"
       },
       "displayName": {
-        "en": "arrayIndex"
+        "en": "ArrayIndex"
       },
       "name": "arrayIndex",
       "schema": "integer",
@@ -651,13 +651,12 @@
         "en": "A boolean property that, when set to 'true', indicates that an actuator closes either when energized or as percent position increases."
       },
       "displayName": {
-        "en": "reverseActingActuator"
+        "en": "ReverseActingActuator"
       },
       "name": "reverseActingActuator",
       "schema": "boolean",
       "writable": true
     }
-    
   ],
   "description": {
     "en": "Encapuslates a set of categorization properties that may be applicable to Capability instances."

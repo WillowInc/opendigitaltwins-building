@@ -7,14 +7,17 @@
   "description": {
     "en": "An integrated assembly of interconnected photovoltaic (PV) cells designed to deliver a selected level of working voltage and current at its output terminals packaged for protection against environment degradation and suited for incorporation in photovoltaic power systems. (Brick Schema)"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalGenerationStorageEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "length"
+        "en": "Length"
       },
       "name": "length",
       "schema": "double",
@@ -22,9 +25,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "length unit"
+        "en": "Length Unit"
       },
       "name": "lengthUnit",
       "annotates": "length",
@@ -33,9 +40,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "width"
+        "en": "Width"
       },
       "name": "width",
       "schema": "double",
@@ -43,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "width unit"
+        "en": "Width Unit"
       },
       "name": "widthUnit",
       "annotates": "width",
@@ -80,7 +94,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "cell material"
+        "en": "Cell Material"
       },
       "name": "cellMaterial",
       "schema": "string",
@@ -93,7 +107,10 @@
       "@type": "Object",
       "fields": [
         {
-          "@type": ["Field", "Power"],
+          "@type": [
+            "Field",
+            "Power"
+          ],
           "name": "maxPowerOutput",
           "displayName": {
             "en": "Maximum Power Output"
@@ -102,7 +119,10 @@
           "unit": "watt"
         },
         {
-          "@type": ["Field", "Voltage"],
+          "@type": [
+            "Field",
+            "Voltage"
+          ],
           "name": "MPPVoltage",
           "displayName": {
             "en": "Maximum Power Point Voltage"
@@ -111,7 +131,10 @@
           "unit": "volt"
         },
         {
-          "@type": ["Field", "Current"],
+          "@type": [
+            "Field",
+            "Current"
+          ],
           "name": "MPPCurrent",
           "displayName": {
             "en": "Maximum Power Point Current"
@@ -120,7 +143,10 @@
           "unit": "ampere"
         },
         {
-          "@type": ["Field", "Voltage"],
+          "@type": [
+            "Field",
+            "Voltage"
+          ],
           "name": "openCircuitVoltage",
           "displayName": {
             "en": "Open Circuit Voltage"
@@ -129,7 +155,10 @@
           "unit": "volt"
         },
         {
-          "@type": ["Field", "Current"],
+          "@type": [
+            "Field",
+            "Current"
+          ],
           "name": "shortCircuitCurrent",
           "displayName": {
             "en": "Short Circuit Current"

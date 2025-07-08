@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Moving Walkway"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ConveyanceEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "step width"
+        "en": "Step Width"
       },
       "name": "stepWidth",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "step width unit"
+        "en": "Step Width Unit"
       },
       "name": "stepWidthUnit",
       "annotates": "stepWidth",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Velocity"],
+      "@type": [
+        "Property",
+        "Velocity"
+      ],
       "displayName": {
-        "en": "maximum travel speed"
+        "en": "Maximum Travel Speed"
       },
       "name": "maxTravelSpeed",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum travel speed unit"
+        "en": "Maximum Travel Speed Unit"
       },
       "name": "maxTravelSpeedUnit",
       "annotates": "maxTravelSpeed",
@@ -51,9 +65,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "maximum length"
+        "en": "Maximum Length"
       },
       "name": "maxLength",
       "schema": "double",
@@ -61,9 +78,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum length unit"
+        "en": "Maximum Length Unit"
       },
       "name": "maxLengthUnit",
       "annotates": "maxLength",
@@ -72,9 +93,12 @@
       "writable": true
     },
     {
-      "@type": ["Angle", "Property"],
+      "@type": [
+        "Angle",
+        "Property"
+      ],
       "displayName": {
-        "en": "inclination"
+        "en": "Inclination"
       },
       "name": "inclination",
       "schema": "double",

@@ -4,23 +4,26 @@
   "displayName": {
     "en": "Switchgear"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalDistributionEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "short circuit rating"
+        "en": "Short Circuit Rating"
       },
       "name": "shortCircuitRating",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Voltage", "Property"],
+      "@type": [
+        "Voltage",
+        "Property"
+      ],
       "displayName": {
-        "en": "input voltage"
+        "en": "Input Voltage"
       },
       "name": "inputVoltage",
       "schema": "double",
@@ -30,7 +33,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "input phases"
+        "en": "Input Phases"
       },
       "name": "inputPhases",
       "schema": {

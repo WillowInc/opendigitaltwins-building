@@ -7,8 +7,7 @@
   "description": {
     "en": "A part that constitutes a piece of a building's structural or architectural makeup that is constructed onsite, e.g., Facade, Wall, Slab, RoofInner, etc."
   },
-  "extends" : [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -140,7 +139,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",

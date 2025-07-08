@@ -4,7 +4,7 @@
   "displayName": {
     "en": "ICT Hardware"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ICTEquipment;1"
   ],
   "contents": [
@@ -18,7 +18,7 @@
         {
           "@type": "Property",
           "displayName": {
-            "en": "rack top position (RU)"
+            "en": "Rack Top Position (RU)"
           },
           "name": "rackTopPosition",
           "schema": "integer",
@@ -27,7 +27,7 @@
         {
           "@type": "Property",
           "displayName": {
-            "en": "rack bottom position (RU)"
+            "en": "Rack Bottom Position (RU)"
           },
           "name": "rackBottomPosition",
           "schema": "integer",

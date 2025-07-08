@@ -4,17 +4,20 @@
   "displayName": {
     "en": "Heat Pump Chiller"
   },
-    "description": {
+  "description": {
     "en": "A heat pump chiller is a type of HVAC equipment that can provide both heating and cooling by transferring heat from one location to another, using a refrigerant cycle. It can operate in both cooling and heating modes, making it versatile for various applications."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Chiller;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -22,9 +25,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",
@@ -33,9 +40,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "net sensible heating capacity"
+        "en": "Net Sensible Heating Capacity"
       },
       "name": "netSensibleHeatingCapacity",
       "schema": "double",
@@ -43,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "net sensible heating capacity unit"
+        "en": "Net Sensible Heating Capacity Unit"
       },
       "name": "netSensibleHeatingCapacityUnit",
       "annotates": "netSensibleHeatingCapacity",
@@ -54,9 +68,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "design heating capacity"
+        "en": "Design Heating Capacity"
       },
       "name": "designHeatingCapacity",
       "schema": "double",
@@ -64,9 +81,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "design heating capacity unit"
+        "en": "Design Heating Capacity Unit"
       },
       "name": "designHeatingCapacityUnit",
       "annotates": "designHeatingCapacity",
@@ -77,7 +98,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "design heating coefficient of performance (COP)"
+        "en": "Design Heating Coefficient Of Performance (COP)"
       },
       "name": "designHeatingCoefficientOfPerformance",
       "schema": "double",
@@ -86,7 +107,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "nominal heating coefficient of performance (COP)"
+        "en": "Nominal Heating Coefficient Of Performance (COP)"
       },
       "name": "nominalHeatingCoefficientOfPerformance",
       "schema": "double",

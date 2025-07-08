@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Food Storage Equipment"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:FoodserviceEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "contents"
+        "en": "Contents"
       },
       "description": {
         "en": "The type of food that is stored within the food display case."
@@ -33,7 +33,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "contentsRetailValueUnit",
       "displayName": {
         "en": "Contents Retail Value Unit"
@@ -58,7 +61,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "contentsReplacementCostUnit",
       "displayName": {
         "en": "Contents Replacement Cost Unit"

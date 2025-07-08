@@ -3,79 +3,100 @@
     "@type": "Interface",
     "displayName": {
         "en": "Pipe connection"
-      },
+    },
     "extends": [
         "dtmi:com:syyclops:AssetComponent;1"
     ],
     "contents": [
-      {
-        "@type": ["Property", "Length"],
-        "displayName": {
-          "en": "outside diameter"
+        {
+            "@type": [
+                "Property",
+                "Length"
+            ],
+            "displayName": {
+                "en": "Outside Diameter"
+            },
+            "name": "outsideDiameter",
+            "schema": "double",
+            "unit": "millimetre",
+            "writable": true
         },
-        "name": "outsideDiameter",
-        "schema": "double",
-        "unit": "millimetre",
-        "writable": true
-      },
-      {
-        "@type": ["Property", "ValueAnnotation", "Override"],
-        "displayName": {
-          "en": "outside diameter unit"
+        {
+            "@type": [
+                "Property",
+                "ValueAnnotation",
+                "Override"
+            ],
+            "displayName": {
+                "en": "Outside Diameter Unit"
+            },
+            "name": "outsideDiameterUnit",
+            "annotates": "outsideDiameter",
+            "overrides": "unit",
+            "schema": "LengthUnit",
+            "writable": true
         },
-        "name": "outsideDiameterUnit",
-        "annotates": "outsideDiameter",
-        "overrides": "unit",
-        "schema": "LengthUnit",
-        "writable": true
-      },
-      {
-        "@type": ["Property", "Length"],
-        "displayName": {
-          "en": "nominal diameter"
+        {
+            "@type": [
+                "Property",
+                "Length"
+            ],
+            "displayName": {
+                "en": "Nominal Diameter"
+            },
+            "name": "nominalDiameter",
+            "schema": "double",
+            "unit": "millimetre",
+            "writable": true
         },
-        "name": "nominalDiameter",
-        "schema": "double",
-        "unit": "millimetre",
-        "writable": true
-      },
-      {
-        "@type": ["Property", "ValueAnnotation", "Override"],
-        "displayName": {
-          "en": "nominal diameter unit"
+        {
+            "@type": [
+                "Property",
+                "ValueAnnotation",
+                "Override"
+            ],
+            "displayName": {
+                "en": "Nominal Diameter Unit"
+            },
+            "name": "nominalDiameterUnit",
+            "annotates": "nominalDiameter",
+            "overrides": "unit",
+            "schema": "LengthUnit",
+            "writable": true
         },
-        "name": "nominalDiameterUnit",
-        "annotates": "nominalDiameter",
-        "overrides": "unit",
-        "schema": "LengthUnit",
-        "writable": true
-      },
-      {
-        "@type": ["Property", "Length"],
-        "displayName": {
-          "en": "inside diameter"
+        {
+            "@type": [
+                "Property",
+                "Length"
+            ],
+            "displayName": {
+                "en": "Inside Diameter"
+            },
+            "name": "insideDiameter",
+            "schema": "double",
+            "unit": "millimetre",
+            "writable": true
         },
-        "name": "insideDiameter",
-        "schema": "double",
-        "unit": "millimetre",
-        "writable": true
-      },
-      {
-        "@type": ["Property", "ValueAnnotation", "Override"],
-        "displayName": {
-          "en": "inside diameter unit"
-        },
-        "name": "insideDiameterUnit",
-        "annotates": "insideDiameter",
-        "overrides": "unit",
-        "schema": "LengthUnit",
-        "writable": true
-      }
+        {
+            "@type": [
+                "Property",
+                "ValueAnnotation",
+                "Override"
+            ],
+            "displayName": {
+                "en": "Inside Diameter Unit"
+            },
+            "name": "insideDiameterUnit",
+            "annotates": "insideDiameter",
+            "overrides": "unit",
+            "schema": "LengthUnit",
+            "writable": true
+        }
     ],
     "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
+        "dtmi:dtdl:context;3",
+        "dtmi:dtdl:extension:quantitativeTypes;1",
+        "dtmi:dtdl:extension:annotation;1",
+        "dtmi:dtdl:extension:overriding;1"
     ]
-  }
+}

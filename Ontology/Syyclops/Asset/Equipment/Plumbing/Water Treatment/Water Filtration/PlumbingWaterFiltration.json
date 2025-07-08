@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Water Filtration (Plumbing)"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PlumbingWaterTreatment;1"
   ],
   "contents": [
@@ -18,7 +18,10 @@
       "schema": "string"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "name": "flowCapacity",
       "displayName": {
         "en": "Flow Capacity"
@@ -28,9 +31,13 @@
       "unit": "litrePerSecond"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "flow capacity unit"
+        "en": "Flow Capacity Unit"
       },
       "name": "flowCapacityUnit",
       "annotates": "flowCapacity",
@@ -39,7 +46,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "name": "tankCapacity",
       "displayName": {
         "en": "Tank Capacity"
@@ -49,9 +59,13 @@
       "unit": "litre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",
@@ -60,12 +74,15 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "description": {
         "en": "microns"
       },
       "displayName": {
-        "en": "filtration rating"
+        "en": "Filtration Rating"
       },
       "name": "filtrationRating",
       "unit": "micrometre",
@@ -73,9 +90,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "integer",
@@ -83,9 +103,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",

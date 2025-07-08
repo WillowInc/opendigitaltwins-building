@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Luminaire"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:LightingEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "power input"
+        "en": "Power Input"
       },
       "name": "powerInput",
       "schema": "double",
@@ -21,7 +24,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "mounting"
+        "en": "Mounting"
       },
       "name": "mounting",
       "schema": {

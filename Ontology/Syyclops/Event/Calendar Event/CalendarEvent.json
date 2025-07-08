@@ -7,7 +7,7 @@
   "description": {
     "en": "An event that is scheduled on a calendar of a person, a space, or both. This data model closely adheres to an Event in the Microsoft Graph."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Event;1"
   ],
   "contents": [
@@ -61,12 +61,12 @@
       },
       "writable": true,
       "schema": "dtmi:com:syyclops:PatternedRecurrence;1"
-  },
+    },
     {
       "@type": "Property",
       "name": "iCalUID",
       "displayName": {
-        "en": "iCal UID"
+        "en": "ICal UID"
       },
       "writable": true,
       "schema": "string"

@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Duct Connection"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:AssetComponent;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "size"
+        "en": "Size"
       },
       "name": "size",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "size unit"
+        "en": "Size Unit"
       },
       "name": "sizeUnit",
       "annotates": "size",
@@ -32,7 +39,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "shape"
+        "en": "Shape"
       },
       "name": "shape",
       "schema": {
@@ -58,7 +65,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "configuration"
+        "en": "Configuration"
       },
       "name": "configuration",
       "schema": {

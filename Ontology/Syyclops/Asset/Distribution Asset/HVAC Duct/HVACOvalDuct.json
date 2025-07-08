@@ -7,9 +7,12 @@
   "extends": "dtmi:com:syyclops:HVACDuct;1",
   "contents": [
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "width"
+        "en": "Width"
       },
       "name": "width",
       "schema": "double",
@@ -17,9 +20,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "width unit"
+        "en": "Width Unit"
       },
       "name": "widthUnit",
       "annotates": "width",
@@ -28,9 +35,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "height"
+        "en": "Height"
       },
       "name": "height",
       "schema": "double",
@@ -38,9 +48,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",

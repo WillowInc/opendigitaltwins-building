@@ -14,7 +14,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "zone delivery"
+        "en": "Zone Delivery"
       },
       "name": "zoneDelivery",
       "schema": {
@@ -44,7 +44,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "ventilation strategy"
+        "en": "Ventilation Strategy"
       },
       "name": "ventilationStrategy",
       "schema": {
@@ -74,7 +74,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "ventilation configuration"
+        "en": "Ventilation Configuration"
       },
       "name": "ventilationConfiguration",
       "schema": {
@@ -100,16 +100,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "refrigerant type"
+        "en": "Refrigerant Type"
       },
       "name": "refrigerantType",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -117,9 +120,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",
@@ -128,9 +135,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity"
+        "en": "Nominal Cooling Capacity"
       },
       "name": "nominalCoolingCapacity",
       "schema": "double",
@@ -138,9 +148,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal cooling capacity unit"
+        "en": "Nominal Cooling Capacity Unit"
       },
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
@@ -149,9 +163,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "net sensible heating capacity"
+        "en": "Net Sensible Heating Capacity"
       },
       "name": "netSensibleHeatingCapacity",
       "schema": "double",
@@ -159,9 +176,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "net sensible heating capacity unit"
+        "en": "Net Sensible Heating Capacity Unit"
       },
       "name": "netSensibleHeatingCapacityUnit",
       "annotates": "netSensibleHeatingCapacity",
@@ -170,9 +191,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "net sensible cooling capacity"
+        "en": "Net Sensible Cooling Capacity"
       },
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
@@ -180,9 +204,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "net sensible cooling capacity unit"
+        "en": "Net Sensible Cooling Capacity Unit"
       },
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",
@@ -193,14 +221,17 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "nominal energy efficiency ratio (EER)"
+        "en": "Nominal Energy Efficiency Ratio (EER)"
       },
       "name": "nominalEnergyEfficiencyRatio",
       "schema": "double",
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Minimum Outside Airflow"
       },
@@ -210,7 +241,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Minimum Outside Airflow Unit"
       },
@@ -221,7 +256,10 @@
       "writable": true
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designMaxEnteringAirTemperature",
       "displayName": {
         "en": "Design Maximum Entering Air Temperature"
@@ -230,7 +268,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Maximum Entering Air Temperature Unit"
       },
@@ -242,7 +284,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "humidification method"
+        "en": "Humidification Method"
       },
       "name": "humidificationMethod",
       "schema": {
@@ -272,7 +314,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "filter type"
+        "en": "Filter Type"
       },
       "name": "filterType",
       "schema": "string",
@@ -281,7 +323,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "discharge ductwork configuration"
+        "en": "Discharge Ductwork Configuration"
       },
       "name": "dischargeDuctworkConfiguration",
       "schema": {
@@ -307,7 +349,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "dehumidification method"
+        "en": "Dehumidification Method"
       },
       "name": "dehumidificationMethod",
       "schema": {
@@ -349,7 +391,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "energy recovery method"
+        "en": "Energy Recovery Method"
       },
       "name": "energyRecoveryMethod",
       "schema": {
@@ -383,7 +425,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "airflow modulation"
+        "en": "Airflow Modulation"
       },
       "name": "airflowModulation",
       "schema": {
@@ -405,7 +447,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "excluded from comfort analytics"
+        "en": "Excluded From Comfort Analytics"
       },
       "name": "excludedFromComfortAnalytics",
       "description": {
@@ -433,7 +475,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "piping configuration"
+        "en": "Piping Configuration"
       },
       "name": "pipingConfiguration",
       "description": {
@@ -510,10 +552,9 @@
       },
       "name": "energyRecoveryDevice",
       "schema": "dtmi:com:syyclops:EnergyRecoveryDevice;1"
-    } 
+    }
   ],
-  "schemas": [
-  ],
+  "schemas": [],
   "@context": [
     "dtmi:dtdl:context;3",
     "dtmi:dtdl:extension:quantitativeTypes;1",

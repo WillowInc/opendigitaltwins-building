@@ -7,12 +7,15 @@
   "description": {
     "en": "A filter that removes contaminants from the compressed air line to delivery clean air to the equipment."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:CompressedAirEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "name": "flowRate",
       "displayName": {
         "en": "Flow Rate"
@@ -22,9 +25,13 @@
       "unit": "litrePerSecond"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "flow rate unit"
+        "en": "Flow Rate Unit"
       },
       "name": "flowRateUnit",
       "annotates": "flowRate",
@@ -33,9 +40,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "double",
@@ -43,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",

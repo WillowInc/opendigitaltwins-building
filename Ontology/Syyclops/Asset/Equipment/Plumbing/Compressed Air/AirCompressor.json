@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Air Compressor"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:CompressedAirEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "motor power"
+        "en": "Motor Power"
       },
       "name": "motorPower",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "motor power unit"
+        "en": "Motor Power Unit"
       },
       "name": "motorPowerUnit",
       "annotates": "motorPower",
@@ -51,9 +65,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "brake horsepower"
+        "en": "Brake Horsepower"
       },
       "name": "brakeHorsepower",
       "schema": "double",
@@ -61,9 +78,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "brake horsepower unit"
+        "en": "Brake Horsepower Unit"
       },
       "name": "brakeHorsepowerUnit",
       "annotates": "brakeHorsepower",
@@ -72,9 +93,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "free air delivery"
+        "en": "Free Air Delivery"
       },
       "name": "freeAirDelivery",
       "schema": "double",
@@ -82,9 +106,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "free air delivery unit"
+        "en": "Free Air Delivery Unit"
       },
       "name": "freeAirDeliveryUnit",
       "annotates": "freeAirDelivery",

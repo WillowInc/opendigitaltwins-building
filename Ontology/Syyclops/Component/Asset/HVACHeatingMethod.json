@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Heating Method"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:AssetComponent;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -39,9 +39,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "outside diameter"
+        "en": "Outside Diameter"
       },
       "name": "outsideDiameter",
       "schema": "double",
@@ -49,9 +52,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "outside diameter unit"
+        "en": "Outside Diameter Unit"
       },
       "name": "outsideDiameterUnit",
       "annotates": "outsideDiameter",
@@ -73,14 +80,17 @@
       "@type": "Property",
       "name": "finsPerInch",
       "displayName": {
-        "en": "Fins per Inch"
+        "en": "Fins Per Inch"
       },
       "writable": true,
       "schema": "double",
       "comment": "Fins per inch"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringWaterTemperature",
       "displayName": {
         "en": "Design Entering Water Temperature"
@@ -89,7 +99,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Water Temperature Unit"
       },
@@ -99,7 +113,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingWaterTemperature",
       "displayName": {
         "en": "Design Leaving Water Temperature"
@@ -108,7 +125,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Water Temperature Unit"
       },
@@ -118,7 +139,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designDeltaWaterTemperature",
       "displayName": {
         "en": "Design Delta Water Temperature"
@@ -127,7 +151,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Delta Water Temperature Unit"
       },
@@ -137,7 +165,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringAirTemperature",
       "displayName": {
         "en": "Design Entering Air Temperature"
@@ -146,7 +177,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Air Temperature Unit"
       },
@@ -156,7 +191,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingAirTemperature",
       "displayName": {
         "en": "Design Leaving Air Temperature"
@@ -165,7 +203,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Air Temperature Unit"
       },
@@ -175,7 +217,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Flow"
       },
@@ -185,7 +230,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Flow Unit"
       },
@@ -196,7 +245,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "MassFlowRate"],
+      "@type": [
+        "Property",
+        "MassFlowRate"
+      ],
       "displayName": {
         "en": "Design Mass Flow"
       },
@@ -206,7 +258,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Mass Flow Unit"
       },
@@ -217,7 +273,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
         "en": "Design Pressure Drop"
       },
@@ -227,7 +286,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Pressure Drop Unit"
       },

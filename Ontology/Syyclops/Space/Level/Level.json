@@ -7,7 +7,7 @@
   "description": {
     "en": "The level of a building or other structure, a.k.a. storey, floor, etc."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -17,14 +17,17 @@
         "en": "A number indicating the ordinal number of this level within the building. Note that the implementation of this numbering scheme and its starting point is implementation-specific; e.g., the fifth floor below ground may be 0 in some systems, and -5 in others."
       },
       "displayName": {
-        "en": "level number"
+        "en": "Level Number"
       },
       "name": "levelNumber",
       "schema": "integer",
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "elevation",
       "displayName": {
         "en": "Elevation (Sea Level)"
@@ -34,9 +37,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "elevation unit"
+        "en": "Elevation Unit"
       },
       "name": "elevationUnit",
       "annotates": "elevation",
@@ -45,7 +52,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "siteElevation",
       "displayName": {
         "en": "Elevation (Site)"
@@ -55,9 +65,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "site elevation unit"
+        "en": "Site Elevation Unit"
       },
       "name": "siteElevationUnit",
       "annotates": "siteElevation",

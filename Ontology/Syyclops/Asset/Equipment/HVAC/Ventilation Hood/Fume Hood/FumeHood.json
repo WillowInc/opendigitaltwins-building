@@ -7,23 +7,28 @@
   "description": {
     "en": "A type of local exhaust ventilation device designed to protect users from exposure to hazardous fumes, vapors, and dust. It is typically mounted over a workspace, table, or shelf to capture and conduct unwanted gases away from the enclosed area."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:VentilationHood;1"
   ],
   "contents": [
     {
-      "@type": ["Property"],
+      "@type": [
+        "Property"
+      ],
       "displayName": {
-        "en": "Design Face Velocity @ 18 in. Sash Height"
+        "en": "Design Face Velocity @ 18 In. Sash Height"
       },
       "name": "designFaceVelocity18inSashHeight",
       "schema": "double",
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "displayName": {
-        "en": "Design Face Velocity @ 18 in. Sash Height Unit"
+        "en": "Design Face Velocity @ 18 In. Sash Height Unit"
       },
       "name": "designFaceVelocity18inSashHeightUnit",
       "annotates": "designFaceVelocity18inSashHeight",

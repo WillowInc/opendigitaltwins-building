@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Ethernet Switch Port"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:DataNetworkEquipment;1"
   ],
   "contents": [
@@ -14,7 +14,7 @@
         "en": "10/100/1000MB, 10GB"
       },
       "displayName": {
-        "en": "port speed"
+        "en": "Port Speed"
       },
       "name": "portSpeed",
       "schema": "string",
@@ -26,7 +26,7 @@
         "en": "1,2,3,4"
       },
       "displayName": {
-        "en": "PoE type"
+        "en": "PoE Type"
       },
       "name": "poeType",
       "schema": "integer",

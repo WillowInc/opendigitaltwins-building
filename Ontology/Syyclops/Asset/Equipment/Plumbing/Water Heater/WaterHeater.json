@@ -4,12 +4,15 @@
   "displayName": {
     "en": "Water Heater"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PlumbingEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "name": "firstHourDelivery",
       "displayName": {
         "en": "First Hour Delivery"
@@ -19,9 +22,13 @@
       "unit": "litre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "first hour delivery unit"
+        "en": "First Hour Delivery Unit"
       },
       "name": "firstHourDeliveryUnit",
       "annotates": "firstHourDelivery",
@@ -30,7 +37,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "name": "recovery100FRise",
       "displayName": {
         "en": "Recovery @ 100F Rise"

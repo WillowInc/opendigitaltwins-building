@@ -4,14 +4,17 @@
   "displayName": {
     "en": "UPS"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalGenerationStorageEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["TimeSpan", "Property"],
+      "@type": [
+        "TimeSpan",
+        "Property"
+      ],
       "displayName": {
-        "en": "runtime"
+        "en": "Runtime"
       },
       "name": "runtime",
       "schema": "double",
@@ -19,9 +22,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ApparentPower"],
+      "@type": [
+        "Property",
+        "ApparentPower"
+      ],
       "displayName": {
-        "en": "power output (KVA)"
+        "en": "Power Output (KVA)"
       },
       "name": "powerOutputKVA",
       "schema": "double",
@@ -29,9 +35,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "power output"
+        "en": "Power Output"
       },
       "name": "powerOutput",
       "schema": "double",
@@ -39,9 +48,12 @@
       "writable": true
     },
     {
-      "@type": ["Voltage", "Property"],
+      "@type": [
+        "Voltage",
+        "Property"
+      ],
       "displayName": {
-        "en": "output voltage"
+        "en": "Output Voltage"
       },
       "name": "outputVoltage",
       "schema": "double",
@@ -51,7 +63,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "output phases"
+        "en": "Output Phases"
       },
       "name": "outputPhases",
       "schema": {
@@ -71,9 +83,12 @@
       "writable": true
     },
     {
-      "@type": ["Voltage", "Property"],
+      "@type": [
+        "Voltage",
+        "Property"
+      ],
       "displayName": {
-        "en": "input voltage"
+        "en": "Input Voltage"
       },
       "name": "inputVoltage",
       "schema": "double",
@@ -83,7 +98,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "input phases"
+        "en": "Input Phases"
       },
       "name": "inputPhases",
       "schema": {

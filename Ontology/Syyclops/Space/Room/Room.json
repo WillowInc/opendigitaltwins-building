@@ -7,7 +7,7 @@
   "description": {
     "en": "A portion of space within a building that's usually enclosed and has its own walls, floor, and ceiling."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -21,7 +21,10 @@
       "schema": "string"
     },
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "name": "volume",
       "displayName": {
         "en": "Volume"
@@ -31,9 +34,13 @@
       "unit": "cubicMetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "volume unit"
+        "en": "Volume Unit"
       },
       "name": "volumeUnit",
       "annotates": "volume",

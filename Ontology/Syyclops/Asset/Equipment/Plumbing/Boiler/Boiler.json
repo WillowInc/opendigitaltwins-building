@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Boiler"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PlumbingEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -31,9 +31,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Volume"],
+      "@type": [
+        "Property",
+        "Volume"
+      ],
       "displayName": {
-        "en": "tank capacity"
+        "en": "Tank Capacity"
       },
       "name": "tankCapacity",
       "schema": "double",
@@ -41,9 +44,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",
@@ -52,9 +59,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "power output"
+        "en": "Power Output"
       },
       "name": "powerOutput",
       "schema": "double",
@@ -62,9 +72,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "power output unit"
+        "en": "Power Output Unit"
       },
       "name": "powerOutputUnit",
       "annotates": "powerOutput",
@@ -73,9 +87,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "power input"
+        "en": "Power Input"
       },
       "name": "powerInput",
       "schema": "double",
@@ -83,9 +100,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "power input unit"
+        "en": "Power Input Unit"
       },
       "name": "powerInputUnit",
       "annotates": "powerInput",
@@ -96,7 +117,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "medium"
+        "en": "Medium"
       },
       "name": "medium",
       "schema": {
@@ -116,12 +137,15 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "description": {
         "en": "Imperial measure for the recovery rate of a boiler (gallons per hour)."
       },
       "displayName": {
-        "en": "recovery @ 100F rise"
+        "en": "Recovery @ 100F Rise"
       },
       "name": "recovery100FRise",
       "schema": "integer",
@@ -129,7 +153,10 @@
       "writable": true
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringWaterTemperature",
       "displayName": {
         "en": "Design Entering Water Temperature"
@@ -138,7 +165,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Water Temperature Unit"
       },
@@ -148,7 +179,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingWaterTemperature",
       "displayName": {
         "en": "Design Leaving Water Temperature"
@@ -157,7 +191,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Water Temperature Unit"
       },
@@ -167,7 +205,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designDeltaWaterTemperature",
       "displayName": {
         "en": "Design Delta Water Temperature"
@@ -176,7 +217,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Delta Water Temperature Unit"
       },

@@ -7,8 +7,7 @@
   "description": {
     "en": "A contiguous part of the physical world that has a 3D spatial extent and that contains or can contain sub-spaces. E.g., a Region can contain many pieces of Land, which in turn can contain many Buildings."
   },
-  "extends" : [
-  ],
+  "extends": [],
   "contents": [
     {
       "@type": "Relationship",
@@ -192,7 +191,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -201,7 +200,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "occupiable"
+        "en": "Occupiable"
       },
       "name": "occupiable",
       "description": {

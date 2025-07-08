@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Water Leak Event"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Event;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "leak rate"
+        "en": "Leak Rate"
       },
       "name": "leakeRate",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "leak rate unit"
+        "en": "Leak Rate Unit"
       },
       "name": "leakRateUnit",
       "annotates": "leakRate",

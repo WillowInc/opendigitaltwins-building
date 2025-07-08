@@ -7,7 +7,7 @@
   "description": {
     "en": "A confined structure, usually with a roof and walls, built for permanent use."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -149,7 +149,10 @@
       }
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "elevation",
       "displayName": {
         "en": "Elevation (Sea Level)"
@@ -159,9 +162,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "elevation unit"
+        "en": "Elevation Unit"
       },
       "name": "elevationUnit",
       "annotates": "elevation",
@@ -170,7 +177,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "name": "height",
       "displayName": {
         "en": "Height"
@@ -180,9 +190,13 @@
       "unit": "metre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",
@@ -405,7 +419,7 @@
         }
       ]
     },
-        {
+    {
       "@id": "dtmi:com:syyclops:BuildingIECCClimateZone;1",
       "@type": "Enum",
       "valueSchema": "string",

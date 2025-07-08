@@ -21,10 +21,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "co2Unit",
       "displayName": {
-        "en": "CO2 unit"
+        "en": "CO2 Unit"
       },
       "annotates": "co2",
       "schema": "string",
@@ -43,10 +46,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "co2eUnit",
       "displayName": {
-        "en": "CO2e unit"
+        "en": "CO2e Unit"
       },
       "annotates": "co2e",
       "schema": "string",
@@ -65,10 +71,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "n2oUnit",
       "displayName": {
-        "en": "N2O unit"
+        "en": "N2O Unit"
       },
       "annotates": "n2o",
       "schema": "string",
@@ -87,10 +96,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation"],
+      "@type": [
+        "Property",
+        "ValueAnnotation"
+      ],
       "name": "ch4Unit",
       "displayName": {
-        "en": "CH4 unit"
+        "en": "CH4 Unit"
       },
       "annotates": "ch4",
       "schema": "string",

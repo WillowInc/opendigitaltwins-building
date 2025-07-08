@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Ventilation Hood"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
@@ -37,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "maximum airflow rating"
+        "en": "Maximum Airflow Rating"
       },
       "name": "maxAirflowRating",
       "schema": "double",
@@ -47,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum airflow rating unit"
+        "en": "Maximum Airflow Rating Unit"
       },
       "name": "maxAirflowRatingUnit",
       "annotates": "maxAirflowRating",
@@ -58,7 +65,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Minimum Airflow"
       },
@@ -68,7 +78,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Minimum Airflow Unit"
       },
@@ -79,7 +93,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Maximum Airflow"
       },
@@ -89,7 +106,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Maximum Airflow Unit"
       },

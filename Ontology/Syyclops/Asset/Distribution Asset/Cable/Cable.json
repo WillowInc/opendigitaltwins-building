@@ -9,16 +9,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "material"
+        "en": "Material"
       },
       "name": "material",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "diameter"
+        "en": "Diameter"
       },
       "name": "diameter",
       "schema": "double",
@@ -26,9 +29,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "diameter unit"
+        "en": "Diameter Unit"
       },
       "name": "diameterUnit",
       "annotates": "diameter",

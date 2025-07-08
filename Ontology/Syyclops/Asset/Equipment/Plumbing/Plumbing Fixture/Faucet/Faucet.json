@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Faucet"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PlumbingFixture;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -31,9 +31,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "maximum flow rate"
+        "en": "Maximum Flow Rate"
       },
       "name": "maxFlowRate",
       "schema": "double",
@@ -41,9 +44,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum flow rate unit"
+        "en": "Maximum Flow Rate Unit"
       },
       "name": "maxFlowRateUnit",
       "annotates": "maxFlowRate",
@@ -54,7 +61,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "number of handles"
+        "en": "Number Of Handles"
       },
       "name": "numberOfHandles",
       "schema": "integer",

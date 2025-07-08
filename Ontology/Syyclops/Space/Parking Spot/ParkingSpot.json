@@ -7,7 +7,7 @@
   "description": {
     "en": "A location that is designated for parking a vehicle, a.k.a. parking space."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -21,9 +21,12 @@
       "schema": "string"
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "width"
+        "en": "Width"
       },
       "name": "width",
       "schema": "double",
@@ -31,9 +34,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "width unit"
+        "en": "Width Unit"
       },
       "name": "widthUnit",
       "annotates": "width",
@@ -42,9 +49,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "length"
+        "en": "Length"
       },
       "name": "length",
       "schema": "double",
@@ -52,9 +62,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "length unit"
+        "en": "Length Unit"
       },
       "name": "lengthUnit",
       "annotates": "length",

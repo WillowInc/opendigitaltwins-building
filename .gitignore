@@ -345,3 +345,5 @@ reports/
 documentation/_site/
 documentation/**/_site/
 Metadata/w3.jsonlb
+
+scripts/

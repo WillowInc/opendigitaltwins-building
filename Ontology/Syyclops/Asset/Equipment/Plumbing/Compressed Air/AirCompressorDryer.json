@@ -4,12 +4,15 @@
   "displayName": {
     "en": "Air Compressor Dryer"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:CompressedAirEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "name": "capacity",
       "displayName": {
         "en": "Capacity"
@@ -19,9 +22,13 @@
       "unit": "litrePerSecond"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "capacity unit"
+        "en": "Capacity Unit"
       },
       "name": "capacityUnit",
       "annotates": "capacity",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",

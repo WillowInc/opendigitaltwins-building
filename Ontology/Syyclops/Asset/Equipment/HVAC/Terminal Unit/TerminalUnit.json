@@ -7,14 +7,17 @@
   "description": {
     "en": "A device that modulates airflow and/or the temperature of the controlled medium"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "minimum airflow rating"
+        "en": "Minimum Airflow Rating"
       },
       "name": "minAirflowRating",
       "schema": "double",
@@ -22,9 +25,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "minimum airflow rating unit"
+        "en": "Minimum Airflow Rating Unit"
       },
       "name": "minAirflowRatingUnit",
       "annotates": "minAirflowRating",
@@ -33,9 +40,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "maximum airflow rating"
+        "en": "Maximum Airflow Rating"
       },
       "name": "maxAirflowRating",
       "schema": "double",
@@ -43,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum airflow rating unit"
+        "en": "Maximum Airflow Rating Unit"
       },
       "name": "maxAirflowRatingUnit",
       "annotates": "maxAirflowRating",
@@ -54,9 +68,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "displayName": {
-        "en": "design cooling zone air temperature"
+        "en": "Design Cooling Zone Air Temperature"
       },
       "name": "designCoolingZoneAirTemperature",
       "schema": "double",
@@ -64,9 +81,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "design cooling zone air temperature unit"
+        "en": "Design Cooling Zone Air Temperature Unit"
       },
       "name": "designCoolingZoneAirTemperatureUnit",
       "annotates": "designCoolingZoneAirTemperature",
@@ -75,9 +96,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Temperature"],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "displayName": {
-        "en": "design heating zone air temperature"
+        "en": "Design Heating Zone Air Temperature"
       },
       "name": "designHeatingZoneAirTemperature",
       "schema": "double",
@@ -85,9 +109,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "design heating zone air temperature unit"
+        "en": "Design Heating Zone Air Temperature Unit"
       },
       "name": "designHeatingZoneAirTemperatureUnit",
       "annotates": "designHeatingZoneAirTemperature",
@@ -96,7 +124,10 @@
       "writable": true
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringAirTemperature",
       "displayName": {
         "en": "Design Entering Air Temperature"
@@ -105,7 +136,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Air Temperature Unit"
       },
@@ -115,7 +150,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Occupied Minimum Airflow"
       },
@@ -125,7 +163,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Occupied Minimum Airflow Unit"
       },
@@ -136,7 +178,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Occupied Maximum Airflow"
       },
@@ -146,7 +191,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Occupied Maximum Airflow Unit"
       },
@@ -157,7 +206,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Unoccupied Minimum Airflow"
       },
@@ -167,7 +219,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Unoccupied Minimum Airflow Unit"
       },
@@ -178,7 +234,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Unoccupied Maximum Airflow"
       },
@@ -188,7 +247,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Unoccupied Maximum Airflow Unit"
       },
@@ -209,7 +272,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "excluded from comfort analytics"
+        "en": "Excluded From Comfort Analytics"
       },
       "name": "excludedFromComfortAnalytics",
       "description": {

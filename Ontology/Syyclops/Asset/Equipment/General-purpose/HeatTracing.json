@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Heat Tracing"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -36,7 +36,7 @@
         "en": "Watts/length unit"
       },
       "displayName": {
-        "en": "power density"
+        "en": "Power Density"
       },
       "name": "powerDensity",
       "schema": "double",

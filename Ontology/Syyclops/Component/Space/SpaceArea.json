@@ -4,24 +4,31 @@
   "displayName": {
     "en": "Space Area"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Area"],
+      "@type": [
+        "Property",
+        "Area"
+      ],
       "name": "grossArea",
       "displayName": {
-        "en": "gross area"
+        "en": "Gross Area"
       },
       "writable": true,
       "schema": "double",
       "unit": "squareMetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "gross area unit"
+        "en": "Gross Area Unit"
       },
       "name": "grossAreaUnit",
       "annotates": "grossArea",
@@ -30,19 +37,26 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Area"],
+      "@type": [
+        "Property",
+        "Area"
+      ],
       "name": "usableArea",
       "displayName": {
-        "en": "usable area"
+        "en": "Usable Area"
       },
       "writable": true,
       "schema": "double",
       "unit": "squareMetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "usable area unit"
+        "en": "Usable Area Unit"
       },
       "name": "usableAreaUnit",
       "annotates": "usableArea",
@@ -51,7 +65,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Area"],
+      "@type": [
+        "Property",
+        "Area"
+      ],
       "name": "rentableArea",
       "displayName": {
         "en": "Rentable Area"
@@ -61,9 +78,13 @@
       "unit": "squareMetre"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "rentable area unit"
+        "en": "Rentable Area Unit"
       },
       "name": "rentableAreaUnit",
       "annotates": "rentableArea",

@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Electrical Panelboard MCB"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalPanelboard;1"
   ],
   "contents": [
     {
-      "@type": ["Current", "Property"],
+      "@type": [
+        "Current",
+        "Property"
+      ],
       "displayName": {
-        "en": "main circuit breaker rating"
+        "en": "Main Circuit Breaker Rating"
       },
       "name": "MCBRating",
       "schema": "double",

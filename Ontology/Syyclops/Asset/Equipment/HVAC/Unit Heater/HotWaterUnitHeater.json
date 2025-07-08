@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Hot Water Unit Heater"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:UnitHeater;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
-        "en": "flow capacity"
+        "en": "Flow Capacity"
       },
       "name": "flowCapacity",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "flow capacity unit"
+        "en": "Flow Capacity Unit"
       },
       "name": "flowCapacityUnit",
       "annotates": "flowCapacity",

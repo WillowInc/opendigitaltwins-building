@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Patch Panel"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:StructuredCablingEquipment;1"
   ],
   "contents": [
@@ -18,7 +18,7 @@
         {
           "@type": "Property",
           "displayName": {
-            "en": "rack top position (RU)"
+            "en": "Rack Top Position (RU)"
           },
           "name": "rackTopPosition",
           "schema": "integer",
@@ -27,7 +27,7 @@
         {
           "@type": "Property",
           "displayName": {
-            "en": "rack bottom position (RU)"
+            "en": "Rack Bottom Position (RU)"
           },
           "name": "rackBottomPosition",
           "schema": "integer",
@@ -39,7 +39,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "number of ports"
+        "en": "Number Of Ports"
       },
       "name": "numberOfPorts",
       "schema": "integer",
@@ -48,7 +48,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "height (rack units)"
+        "en": "Height (rack Units)"
       },
       "name": "heightRUs",
       "schema": "integer",

@@ -7,7 +7,7 @@
   "description": {
     "en": "A device which converts a gaseous fluid into its liquid form by compressing it. In HVAC, it is commonly included in refrigeration equipment such as chillers and air conditioners."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:AssetComponent;1",
     "dtmi:com:syyclops:GeneralPurposeEquipment;1"
   ],
@@ -15,7 +15,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "refrigerant type"
+        "en": "Refrigerant Type"
       },
       "name": "refrigerantType",
       "schema": "string",
@@ -24,7 +24,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -56,7 +56,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "MassFlowRate"],
+      "@type": [
+        "Property",
+        "MassFlowRate"
+      ],
       "displayName": {
         "en": "Design Mass Flow"
       },
@@ -66,7 +69,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Mass Flow Unit"
       },
@@ -77,9 +84,12 @@
       "writable": true
     },
     {
-      "@type": ["Power", "Property"],
+      "@type": [
+        "Power",
+        "Property"
+      ],
       "displayName": {
-        "en": "motor power"
+        "en": "Motor Power"
       },
       "name": "motorPower",
       "schema": "double",
@@ -87,9 +97,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "motor power unit"
+        "en": "Motor Power Unit"
       },
       "name": "motorPowerUnit",
       "annotates": "motorPower",
@@ -98,9 +112,12 @@
       "writable": true
     },
     {
-      "@type": ["Current", "Property"],
+      "@type": [
+        "Current",
+        "Property"
+      ],
       "displayName": {
-        "en": "rated load current"
+        "en": "Rated Load Current"
       },
       "description": {
         "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
@@ -111,9 +128,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "rated load current unit"
+        "en": "Rated Load Current Unit"
       },
       "name": "ratedLoadCurrentUnit",
       "annotates": "ratedLoadCurrent",
@@ -122,9 +143,12 @@
       "writable": true
     },
     {
-      "@type": ["Current", "Property"],
+      "@type": [
+        "Current",
+        "Property"
+      ],
       "displayName": {
-        "en": "maximum continuous current"
+        "en": "Maximum Continuous Current"
       },
       "description": {
         "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
@@ -135,9 +159,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "maximum continuous current unit"
+        "en": "Maximum Continuous Current Unit"
       },
       "name": "maximumContinuousCurrentUnit",
       "annotates": "maximumContinuousCurrent",
@@ -146,9 +174,12 @@
       "writable": true
     },
     {
-      "@type": ["Current", "Property"],
+      "@type": [
+        "Current",
+        "Property"
+      ],
       "displayName": {
-        "en": "locked rotor current"
+        "en": "Locked Rotor Current"
       },
       "description": {
         "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
@@ -159,9 +190,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "locked rotor current unit"
+        "en": "Locked Rotor Current Unit"
       },
       "name": "lockedRotorCurrentUnit",
       "annotates": "lockedRotorCurrent",

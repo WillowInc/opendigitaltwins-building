@@ -7,7 +7,7 @@
   "description": {
     "en": "A nonphysical or logical transition between spaces that is defined by purely by function or virtually rather than a physical barrier."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceOpening;1"
   ],
   "contents": [
@@ -96,7 +96,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",

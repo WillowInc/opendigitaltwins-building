@@ -4,12 +4,15 @@
   "displayName": {
     "en": "Drinking Water Fixture"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PlumbingFixture;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "name": "chillingCapacity",
       "displayName": {
         "en": "Chilling Capacity"
@@ -19,9 +22,13 @@
       "unit": "litrePerHour"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "chilling capacity unit"
+        "en": "Chilling Capacity Unit"
       },
       "name": "chillingCapacityUnit",
       "annotates": "chillingCapacity",

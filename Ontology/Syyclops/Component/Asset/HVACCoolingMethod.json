@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Cooling Method"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:AssetComponent;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,16 +33,19 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "refrigerant type"
+        "en": "Refrigerant Type"
       },
       "name": "refrigerantType",
       "schema": "string",
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": [
+        "Property",
+        "Length"
+      ],
       "displayName": {
-        "en": "outside diameter"
+        "en": "Outside Diameter"
       },
       "name": "outsideDiameter",
       "schema": "double",
@@ -50,9 +53,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "outside diameter unit"
+        "en": "Outside Diameter Unit"
       },
       "name": "outsideDiameterUnit",
       "annotates": "outsideDiameter",
@@ -74,14 +81,17 @@
       "@type": "Property",
       "name": "finsPerInch",
       "displayName": {
-        "en": "Fins per Inch"
+        "en": "Fins Per Inch"
       },
       "writable": true,
       "schema": "double",
       "comment": "Fins per inch"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringWaterTemperature",
       "displayName": {
         "en": "Design Entering Water Temperature"
@@ -90,7 +100,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Water Temperature Unit"
       },
@@ -100,7 +114,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingWaterTemperature",
       "displayName": {
         "en": "Design Leaving Water Temperature"
@@ -109,7 +126,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Water Temperature Unit"
       },
@@ -119,7 +140,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designDeltaWaterTemperature",
       "displayName": {
         "en": "Design Delta Water Temperature"
@@ -128,7 +152,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Delta Water Temperature Unit"
       },
@@ -138,7 +166,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Flow"
       },
@@ -148,7 +179,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Flow Unit"
       },
@@ -159,7 +194,10 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
         "en": "Design Pressure Drop"
       },
@@ -169,7 +207,11 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Pressure Drop Unit"
       },
@@ -180,7 +222,10 @@
       "writable": true
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringAirDryBulbTemperature",
       "displayName": {
         "en": "Design Entering Air Dry Bulb Temperature"
@@ -189,7 +234,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Air Dry Bulb Temperature Unit"
       },
@@ -199,7 +248,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingAirDryBulbTemperature",
       "displayName": {
         "en": "Design Leaving Air Dry Bulb Temperature"
@@ -208,7 +260,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Air Dry Bulb Temperature Unit"
       },
@@ -218,7 +274,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringAirWetBulbTemperature",
       "displayName": {
         "en": "Design Entering Air Wet Bulb Temperature"
@@ -227,7 +286,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Air Wet Bulb Temperature Unit"
       },
@@ -237,7 +300,10 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingAirWetBulbTemperature",
       "displayName": {
         "en": "Design Leaving Air Wet Bulb Temperature"
@@ -246,7 +312,11 @@
       "unit": "degreeCelsius"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Air Wet Bulb Temperature Unit"
       },

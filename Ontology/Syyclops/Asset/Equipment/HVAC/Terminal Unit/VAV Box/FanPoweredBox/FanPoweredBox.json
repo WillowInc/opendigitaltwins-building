@@ -7,14 +7,14 @@
   "description": {
     "en": "A type of terminal unit that modulates primary damper position and the speed of a local fan to control airflow at setpoints that reset based on zone conditions"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:VAVBox;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "configuration"
+        "en": "Configuration"
       },
       "name": "configuration",
       "schema": {

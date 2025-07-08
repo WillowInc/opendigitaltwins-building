@@ -4,14 +4,17 @@
   "displayName": {
     "en": "Active Chilled Beam"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ChilledBeam;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -19,9 +22,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",
@@ -30,9 +37,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "primary sensible cooling capacity"
+        "en": "Primary Sensible Cooling Capacity"
       },
       "name": "primarySensibleCoolingCapacity",
       "schema": "double",
@@ -40,9 +50,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "primary sensible cooling capacity unit"
+        "en": "Primary Sensible Cooling Capacity Unit"
       },
       "name": "primarySensibleCoolingCapacityUnit",
       "annotates": "primarySensibleCoolingCapacity",
@@ -51,9 +65,12 @@
       "writable": true
     },
     {
-      "@type": ["Property", "EnergyRate"],
+      "@type": [
+        "Property",
+        "EnergyRate"
+      ],
       "displayName": {
-        "en": "secondary sensible cooling capacity"
+        "en": "Secondary Sensible Cooling Capacity"
       },
       "name": "secondarySensibleCoolingCapacity",
       "schema": "double",
@@ -61,9 +78,13 @@
       "writable": true
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
-        "en": "secondary sensible cooling capacity unit"
+        "en": "Secondary Sensible Cooling Capacity Unit"
       },
       "name": "secondarySensibleCoolingCapacityUnit",
       "annotates": "secondarySensibleCoolingCapacity",

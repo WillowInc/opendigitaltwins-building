@@ -4,14 +4,14 @@
   "displayName": {
     "en": "Ethernet Router"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:DataNetworkEquipment;1"
   ],
   "contents": [
     {
       "@type": "Property",
       "displayName": {
-        "en": "number of ports"
+        "en": "Number Of Ports"
       },
       "name": "numberOfPorts",
       "schema": "integer",
@@ -20,7 +20,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "height (rack units)"
+        "en": "Height (rack Units)"
       },
       "name": "heightRUs",
       "schema": "integer",
