@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:CondensingBoiler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condensing Boiler"
+  },
+  "description": {
+    "en": "A condensing boiler is a type of boiler that captures and utilizes the heat from exhaust gases, improving energy efficiency by condensing water vapor in the exhaust."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Boiler;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

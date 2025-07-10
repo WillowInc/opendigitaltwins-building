@@ -184,6 +184,140 @@
       "annotates": "designDeltaWaterTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit"
+    },
+    {
+      "@type": "Property",
+      "name": "thermalEfficiency",
+      "displayName": {
+        "en": "Thermal Efficiency"
+      },
+      "description": {
+        "en": "The ratio of useful heat output to the total energy input, expressed as a percentage."
+      },
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "turndownRatio",
+      "displayName": {
+        "en": "Turdown Ratio"
+      },
+      "description": {
+        "en": "The ratio of the maximum to minimum output power of the boiler."
+      },
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "maxLeavingWaterTemperature",
+      "displayName": {
+        "en": "Maximum Leaving Water Temperature"
+      },
+      "description": {
+        "en": "The maximum water temperature leaving the boiler used when the outdoor temperature is at or below a specified low limit."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Maximum Leaving Water Temperature Unit"
+      },
+      "name": "maxLeavingWaterTemperatureUnit",
+      "annotates": "maxLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+        {
+      "@type": [ "Property", "Temperature" ],
+      "name": "minLeavingWaterTemperature",
+      "displayName": {
+        "en": "Minimum Leaving Water Temperature"
+      },
+      "description": {
+        "en": "The minimum water temperature leaving the boiler used when the outdoor temperature is at a specified high limit."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Minimum Leaving Water Temperature Unit"
+      },
+      "name": "minLeavingWaterTemperatureUnit",
+      "annotates": "minLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "outdoorTemperatureLowLimit",
+      "displayName": {
+        "en": "Outdoor Temperature Low Limit"
+      },
+      "description": {
+        "en": "The outdoor temperature below which the maximum leaving water temperature is used."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Outdoor Temperature Low Limit Unit"
+      },
+      "name": "outdoorTemperatureLowLimitUnit",
+      "annotates": "outdoorTemperatureLowLimit",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "outdoorTemperatureHighLimit",
+      "displayName": {
+        "en": "Outdoor Temperature High Limit"
+      },
+      "description": {
+        "en": "The outdoor temperature at which the minimum leaving water temperature is used. Outdoor temperatures above this limit typically result in the boiler being off."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Outdoor Temperature High Limit Unit"
+      },
+      "name": "outdoorTemperatureHighLimitUnit",
+      "annotates": "outdoorTemperatureHighLimit",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+        {
+      "@type": [ "Property", "Temperature" ],
+      "name": "lockoutOutdoorTemperature",
+      "displayName": {
+        "en": "Lockout Outdoor Temperature"
+      },
+      "description": {
+        "en": "The outdoor temperature above which the boiler is locked out and does not operate preventing unneccesary heating."
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Lockout Outdoor Temperature Unit"
+      },
+      "name": "lockoutOutdoorTemperatureUnit",
+      "annotates": "lockoutOutdoorTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
     }
   ],
   "@context": [
