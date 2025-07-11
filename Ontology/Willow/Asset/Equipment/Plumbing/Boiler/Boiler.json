@@ -201,7 +201,7 @@
       "@type": "Property",
       "name": "turndownRatio",
       "displayName": {
-        "en": "Turdown Ratio"
+        "en": "Turndown Ratio"
       },
       "description": {
         "en": "The ratio of the maximum to minimum output power of the boiler."
