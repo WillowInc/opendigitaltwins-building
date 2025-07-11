@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:NonCondensingBoiler;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Non-Condensing Boiler"
+  },
+  "description": {
+    "en": "A non-condensing boiler is a type of boiler that does not capture and utilize the heat from exhaust gases, typically operating at lower efficiency compared to condensing boilers."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Boiler;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
