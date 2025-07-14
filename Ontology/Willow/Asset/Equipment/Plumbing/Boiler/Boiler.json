@@ -184,6 +184,30 @@
       "annotates": "designDeltaWaterTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit"
+    },
+    {
+      "@type": "Property",
+      "name": "thermalEfficiency",
+      "displayName": {
+        "en": "Thermal Efficiency"
+      },
+      "description": {
+        "en": "The ratio of useful heat output to the total energy input, expressed as a percentage."
+      },
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "turndownRatio",
+      "displayName": {
+        "en": "Turndown Ratio"
+      },
+      "description": {
+        "en": "The ratio of the maximum to minimum output power of the boiler."
+      },
+      "schema": "double",
+      "writable": true
     }
   ],
   "@context": [
