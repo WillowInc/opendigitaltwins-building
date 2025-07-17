@@ -8,7 +8,7 @@
     "en": "A preheat coil is a type of heating coil that is used to raise the temperature of air or water before it enters another component, such as a main heating coil or an air handling unit."
   },
   "extends" : [
-    "dtmi:com:willowinc:Coil;1"
+    "dtmi:com:willowinc:HeatingCoil;1"
   ],
   "contents": [
   ],

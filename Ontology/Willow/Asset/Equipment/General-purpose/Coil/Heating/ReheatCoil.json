@@ -8,7 +8,7 @@
     "en": "A reheat coil is a type of heating coil that is used to raise the temperature of air after it has been cooled, typically in air handling units or terminal units in HVAC systems."
   },
   "extends" : [
-    "dtmi:com:willowinc:Coil;1"
+    "dtmi:com:willowinc:HeatingCoil;1"
   ],
   "contents": [
   ],
