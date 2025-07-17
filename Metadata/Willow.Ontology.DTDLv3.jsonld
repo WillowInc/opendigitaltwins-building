@@ -37116,23 +37116,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreheatCoil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Preheat Coil"
-    },
-    "description": {
-      "en": "A preheat coil is a type of heating coil that is used to raise the temperature of air or water before it enters another component, such as a main heating coil or an air handling unit."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Coil;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PresenceAbsenceSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -37534,23 +37517,6 @@
     "extends": [
       "dtmi:com:willowinc:RefrigerationEquipment;1",
       "dtmi:com:willowinc:Tank;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReheatCoil;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheat Coil"
-    },
-    "description": {
-      "en": "A reheat coil is a type of heating coil that is used to raise the temperature of air after it has been cooled, typically in air handling units or terminal units in HVAC systems."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Coil;1"
     ],
     "contents": [],
     "@context": [
@@ -49160,6 +49126,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Coil"
+    },
+    "description": {
+      "en": "A preheat coil is a type of heating coil that is used to raise the temperature of air or water before it enters another component, such as a main heating coil or an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingCoil;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreheatCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49564,6 +49547,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Coil"
+    },
+    "description": {
+      "en": "A reheat coil is a type of heating coil that is used to raise the temperature of air after it has been cooled, typically in air handling units or terminal units in HVAC systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingCoil;1"
     ],
     "contents": [],
     "@context": [
