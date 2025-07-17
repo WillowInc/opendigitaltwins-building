@@ -18294,110 +18294,6 @@
         "overrides": "unit",
         "schema": "PressureUnit",
         "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringAirDryBulbTemperature",
-        "displayName": {
-          "en": "Design Entering Air Dry Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Air Dry Bulb Temperature Unit"
-        },
-        "name": "designEnteringAirDryBulbTemperatureUnit",
-        "annotates": "designEnteringAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingAirDryBulbTemperature",
-        "displayName": {
-          "en": "Design Leaving Air Dry Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Air Dry Bulb Temperature Unit"
-        },
-        "name": "designLeavingAirDryBulbTemperatureUnit",
-        "annotates": "designLeavingAirDryBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designEnteringAirWetBulbTemperature",
-        "displayName": {
-          "en": "Design Entering Air Wet Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Entering Air Wet Bulb Temperature Unit"
-        },
-        "name": "designEnteringAirWetBulbTemperatureUnit",
-        "annotates": "designEnteringAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
-      },
-      {
-        "@type": [
-          "Property",
-          "Temperature"
-        ],
-        "name": "designLeavingAirWetBulbTemperature",
-        "displayName": {
-          "en": "Design Leaving Air Wet Bulb Temperature"
-        },
-        "schema": "double",
-        "unit": "degreeCelsius"
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Design Leaving Air Wet Bulb Temperature Unit"
-        },
-        "name": "designLeavingAirWetBulbTemperatureUnit",
-        "annotates": "designLeavingAirWetBulbTemperature",
-        "overrides": "unit",
-        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
@@ -30373,6 +30269,110 @@
         "name": "refrigerantType",
         "schema": "string",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirDryBulbTemperatureUnit",
+        "annotates": "designEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirDryBulbTemperatureUnit",
+        "annotates": "designLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirWetBulbTemperatureUnit",
+        "annotates": "designEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirWetBulbTemperatureUnit",
+        "annotates": "designLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
@@ -33588,6 +33588,58 @@
           "valueSchema": "string"
         },
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirTemperature",
+        "displayName": {
+          "en": "Design Entering Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Temperature Unit"
+        },
+        "name": "designEnteringAirTemperatureUnit",
+        "annotates": "designEnteringAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Temperature Unit"
+        },
+        "name": "designLeavingAirTemperatureUnit",
+        "annotates": "designLeavingAirTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       },
       {
         "@type": [
