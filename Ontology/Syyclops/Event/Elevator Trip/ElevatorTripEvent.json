@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Elevator Trip Event"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Event;1"
   ],
   "contents": [
@@ -61,7 +61,10 @@
             },
             "enumValue": "Down"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Elevator Trip Direction"
+        }
       }
     }
   ],

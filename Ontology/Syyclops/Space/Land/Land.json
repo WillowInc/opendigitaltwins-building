@@ -101,7 +101,10 @@
             },
             "schema": "double"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Land Coordinates"
+        }
       }
     },
     {

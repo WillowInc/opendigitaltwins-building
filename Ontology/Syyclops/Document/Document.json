@@ -326,7 +326,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Document Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:DocumentMappedIdObject;1",
@@ -385,7 +388,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Document Mapped Id Object"
+      }
     }
   ],
   "@context": [

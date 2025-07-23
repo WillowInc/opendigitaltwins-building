@@ -78,7 +78,10 @@
             },
             "enumValue": "ChilledWater"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Plumbing Storage Tank Service"
+        }
       }
     }
   ],

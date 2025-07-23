@@ -7,7 +7,7 @@
   "description": {
     "en": "An event that occurs, typically monthly, when a utility company produces a bill for a utility account such as electric, gas, or water."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Event;1"
   ],
   "contents": [
@@ -215,7 +215,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Utility Bill Event Chargest"
+      }
     }
   ],
   "@context": [

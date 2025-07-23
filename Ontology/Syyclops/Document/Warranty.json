@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Warranty"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Document;1"
   ],
   "contents": [
@@ -26,22 +26,25 @@
               "en": "Product"
             },
             "enumValue": "Product"
-          },  
+          },
           {
-                "name": "Parts",
-                "displayName": {
-                  "en": "Parts"
-                },
-                "enumValue": "Parts"
+            "name": "Parts",
+            "displayName": {
+              "en": "Parts"
             },
-            {
-              "name": "Labor",
-              "displayName": {
-                "en": "Labor"
-              },
-              "enumValue": "Labor"
-            }
-        ]
+            "enumValue": "Parts"
+          },
+          {
+            "name": "Labor",
+            "displayName": {
+              "en": "Labor"
+            },
+            "enumValue": "Labor"
+          }
+        ],
+        "displayName": {
+          "en": "Warranty Type"
+        }
       }
     },
     {

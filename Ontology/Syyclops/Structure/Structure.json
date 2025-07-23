@@ -181,7 +181,10 @@
             },
             "schema": "double"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Structure Coordinates"
+        }
       }
     },
     {
@@ -455,7 +458,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Structure Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:StructureMappedIdObject;1",
@@ -514,7 +520,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Structure Mapped Id Object"
+      }
     }
   ],
   "@context": [

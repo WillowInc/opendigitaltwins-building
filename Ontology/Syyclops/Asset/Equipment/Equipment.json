@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Equipment"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Asset;1"
   ],
   "contents": [
@@ -217,7 +217,10 @@
           "enumValue": "ACElec",
           "name": "ACElec"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Equipment Is Fed By Substances"
+      }
     }
   ],
   "@context": [

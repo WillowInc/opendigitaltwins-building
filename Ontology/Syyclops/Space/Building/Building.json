@@ -145,7 +145,10 @@
             },
             "schema": "double"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Building Coordinates"
+        }
       }
     },
     {
@@ -314,7 +317,10 @@
           "enumValue": "Vacant",
           "name": "Vacant"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building CBECS Building Type"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:BuildingENERGYSTARPropertyType;1",
@@ -417,7 +423,10 @@
           "enumValue": "Worship Facility",
           "name": "WorshipFacility"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building ENERGYSTAR Property Type"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:BuildingIECCClimateZone;1",
@@ -504,7 +513,10 @@
           "displayName": "8 Subarctic/Arctic",
           "enumValue": "8"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building IECC Climate Zone"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:BuildingLifecyclePhase;1",
@@ -523,7 +535,10 @@
           "enumValue": "Operational",
           "name": "Operational"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building Lifecycle Phase"
+      }
     }
   ],
   "@context": [

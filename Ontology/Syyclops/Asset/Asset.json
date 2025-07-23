@@ -341,7 +341,10 @@
             },
             "schema": "double"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Asset Coordinates"
+        }
       }
     },
     {
@@ -710,7 +713,10 @@
           "schema": "string",
           "comment": "$model of the target twin"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Asset Relationship Ref Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
@@ -730,7 +736,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Asset Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:AssetMappedIdObject;1",
@@ -789,7 +798,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Asset Mapped Id Object"
+      }
     }
   ],
   "@context": [

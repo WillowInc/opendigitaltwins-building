@@ -195,7 +195,10 @@
                 },
                 "schema": "integer"
               }
-            ]
+            ],
+            "displayName": {
+              "en": "Recurrence Pattern"
+            }
           }
         },
         {
@@ -252,10 +255,16 @@
                 },
                 "schema": "integer"
               }
-            ]
+            ],
+            "displayName": {
+              "en": "Recurrence Range"
+            }
           }
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Patterned Recurrence"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:CalendarEventDayOfWeek;1",
@@ -290,7 +299,10 @@
           "name": "saturday"
         }
       ],
-      "valueSchema": "string"
+      "valueSchema": "string",
+      "displayName": {
+        "en": "Calendar Event Day Of Week"
+      }
     }
   ],
   "@context": [

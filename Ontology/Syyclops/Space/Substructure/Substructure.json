@@ -121,7 +121,10 @@
             },
             "schema": "double"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Substructure Coordinates"
+        }
       }
     },
     {
@@ -306,7 +309,10 @@
           "displayName": "8 Subarctic/Arctic",
           "enumValue": "8"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Substructure IECC Climate Zone"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:SubstructureLifecyclePhase;1",
@@ -325,7 +331,10 @@
           "enumValue": "Operational",
           "name": "Operational"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Substructure Lifecycle Phase"
+      }
     }
   ],
   "@context": [

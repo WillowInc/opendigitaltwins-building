@@ -311,7 +311,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Collection Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:CollectionMappedIdObject;1",
@@ -370,7 +373,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Collection Mapped Id Object"
+      }
     }
   ],
   "@context": [

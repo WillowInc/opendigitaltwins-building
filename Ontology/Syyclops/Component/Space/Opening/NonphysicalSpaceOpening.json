@@ -235,7 +235,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Nonphysical Space Opening Mapped Id Object"
+      }
     }
   ],
   "@context": [

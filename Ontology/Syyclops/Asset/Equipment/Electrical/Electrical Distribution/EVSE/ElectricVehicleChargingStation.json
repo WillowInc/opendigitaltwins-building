@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Electric Vehicle Charging Station"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalDistributionEquipment;1"
   ],
   "contents": [
@@ -26,7 +26,7 @@
               "en": "Level 1"
             },
             "enumValue": "Level 1"
-          },  
+          },
           {
             "name": "Level2",
             "displayName": {
@@ -41,7 +41,10 @@
             },
             "enumValue": "Level 3"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "EV Charging Station Level"
+        }
       }
     }
   ],

@@ -7,7 +7,7 @@
   "description": {
     "en": "An event at an airport gate related to a flight arriving (In-block) or departing (Off-block) at the gate."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Event;1"
   ],
   "contents": [
@@ -52,7 +52,10 @@
             },
             "schema": "string"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Block Event Flight"
+        }
       }
     },
     {
@@ -86,7 +89,10 @@
             },
             "schema": "string"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Block Event Aircraft"
+        }
       }
     },
     {

@@ -7,7 +7,7 @@
   "description": {
     "en": "An area on a land that is outside of a building."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -61,7 +61,10 @@
             },
             "schema": "double"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Outdoor Area Coordinates"
+        }
       }
     },
     {
@@ -122,7 +125,10 @@
           "enumValue": "Operational",
           "name": "Operational"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Outdoor Area Lifecycle Phase"
+      }
     }
   ],
   "@context": [

@@ -217,7 +217,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Agent Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:AgentMappedIdObject;1",
@@ -276,7 +279,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Agent Mapped Id Object"
+      }
     }
   ],
   "@context": [

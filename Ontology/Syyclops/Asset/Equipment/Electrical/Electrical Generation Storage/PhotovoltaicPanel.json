@@ -177,7 +177,10 @@
           },
           "schema": "double"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "PV Panel Electrical Properties"
+      }
     }
   ],
   "@context": [

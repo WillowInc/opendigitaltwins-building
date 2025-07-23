@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Person Access Event"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Event;1"
   ],
   "contents": [
@@ -43,7 +43,10 @@
             },
             "enumValue": "Denied"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Access Event Type"
+        }
       }
     }
   ],

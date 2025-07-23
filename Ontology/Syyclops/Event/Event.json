@@ -285,7 +285,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Event Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:EventMappedIdObject;1",
@@ -344,7 +347,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Event Mapped Id Object"
+      }
     }
   ],
   "@context": [

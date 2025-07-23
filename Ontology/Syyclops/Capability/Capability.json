@@ -335,7 +335,10 @@
             },
             "enumValue": "stepBackward"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Capability Interpolation"
+        }
       }
     },
     {
@@ -424,7 +427,10 @@
             },
             "enumValue": "sum"
           }
-        ]
+        ],
+        "displayName": {
+          "en": "Capability Type"
+        }
       }
     },
     {
@@ -524,7 +530,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Capability Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:CapabilityMappedIdObject;1",
@@ -583,7 +592,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Capability Mapped Id Object"
+      }
     }
   ],
   "@context": [

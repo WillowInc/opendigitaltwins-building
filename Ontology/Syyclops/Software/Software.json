@@ -284,7 +284,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Software Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:SoftwareMappedIdObject;1",
@@ -343,7 +346,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Software Mapped Id Object"
+      }
     }
   ],
   "@context": [

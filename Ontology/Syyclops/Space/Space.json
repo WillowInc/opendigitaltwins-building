@@ -445,7 +445,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Space Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:SpaceMappedIdObject;1",
@@ -504,7 +507,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Space Mapped Id Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:SpaceServedByConnectorOnboardingStatus;1",
@@ -532,7 +538,10 @@
             "en": "Retired"
           }
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Space Served By Connector Onboarding Status"
+      }
     }
   ],
   "@context": [

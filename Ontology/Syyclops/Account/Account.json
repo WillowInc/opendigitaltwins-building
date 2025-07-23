@@ -233,7 +233,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Account Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:AccountMappedIdObject;1",
@@ -292,7 +295,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Account Mapped Id Object"
+      }
     }
   ],
   "@context": [

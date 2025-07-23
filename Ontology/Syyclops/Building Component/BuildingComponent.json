@@ -441,7 +441,10 @@
           "enumValue": "Water",
           "name": "Water"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building Component Is Fed By Substances"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
@@ -461,7 +464,10 @@
           },
           "schema": "string"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building Component Alternate Classification Object"
+      }
     },
     {
       "@id": "dtmi:com:syyclops:BuildingComponentMappedIdObject;1",
@@ -520,7 +526,10 @@
           },
           "schema": "dateTime"
         }
-      ]
+      ],
+      "displayName": {
+        "en": "Building Component Mapped Id Object"
+      }
     }
   ],
   "@context": [
