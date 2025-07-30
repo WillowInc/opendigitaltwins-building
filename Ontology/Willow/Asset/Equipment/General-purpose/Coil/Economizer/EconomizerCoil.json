@@ -1,0 +1,97 @@
+{
+  "@id": "dtmi:com:willowinc:EconomizerCoil;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Economizer Coil"
+  },
+  "description": {
+    "en": "A coil that receives condenser water, typically from a cooling tower, to provide water-side economizing or free cooling."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Coil;1"
+  ],
+  "contents": [
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringAirDryBulbTemperature",
+      "displayName": {
+        "en": "Design Entering Air Dry Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Air Dry Bulb Temperature Unit"
+      },
+      "name": "designEnteringAirDryBulbTemperatureUnit",
+      "annotates": "designEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingAirDryBulbTemperature",
+      "displayName": {
+        "en": "Design Leaving Air Dry Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Dry Bulb Temperature Unit"
+      },
+      "name": "designLeavingAirDryBulbTemperatureUnit",
+      "annotates": "designLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringAirWetBulbTemperature",
+      "displayName": {
+        "en": "Design Entering Air Wet Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Air Wet Bulb Temperature Unit"
+      },
+      "name": "designEnteringAirWetBulbTemperatureUnit",
+      "annotates": "designEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingAirWetBulbTemperature",
+      "displayName": {
+        "en": "Design Leaving Air Wet Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Wet Bulb Temperature Unit"
+      },
+      "name": "designLeavingAirWetBulbTemperatureUnit",
+      "annotates": "designLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
