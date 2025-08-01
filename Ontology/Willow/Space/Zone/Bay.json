@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:Bay;1",
   "@type": "Interface",
   "displayName": {
-    "en": "bay"
+    "en": "Bay"
   },
   "description": {
     "en": "A rectangular area within a building that is defined by four adjacent columns which typically helps delineate space that is not separated by walls."
