@@ -5,10 +5,10 @@
     "en": "Bay"
   },
   "description": {
-    "en": "A rectangular area within a building that is defined by four adjacent columns which typically helps delineate space that is not separated by walls."
+    "en": "A area within a building typically defined by four adjacent columns. Bays are used when Rooms are too large to provide sufficient location context."
   },
   "extends" : [
-    "dtmi:com:willowinc:Zone;1"
+    "dtmi:com:willowinc:Space;1"
   ],
   "contents": [
 
