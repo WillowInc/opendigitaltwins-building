@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Bay;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Bay"
+  },
+  "description": {
+    "en": "A area within a building typically defined by four adjacent columns. Bays are used when Rooms are too large to provide sufficient location context."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
