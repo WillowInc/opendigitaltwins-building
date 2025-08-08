@@ -41029,6 +41029,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirflowPercentSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airflow Percent Setpoint"
+    },
+    "description": {
+      "en": "The desired airflow expressed as a percentage of the airflow high limit parameter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PercentSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
