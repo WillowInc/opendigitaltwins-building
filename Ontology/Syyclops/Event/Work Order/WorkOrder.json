@@ -1,0 +1,418 @@
+{
+  "@id": "dtmi:com:syyclops:WorkOrder;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Work Order"
+  },
+  "description": {
+    "en": "A formal request to perform maintenance, repair, or operational work on assets, spaces, or systems within a facility. Work orders track the lifecycle of maintenance activities from creation to completion."
+  },
+  "extends": ["dtmi:com:syyclops:Event;1"],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "assignedTo",
+      "displayName": {
+        "en": "assigned to"
+      },
+      "description": {
+        "en": "The agent (person, team, or company) responsible for executing the work order."
+      },
+      "target": "dtmi:com:syyclops:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "requestedBy",
+      "displayName": {
+        "en": "requested by"
+      },
+      "description": {
+        "en": "The agent who originally requested or created the work order."
+      },
+      "target": "dtmi:com:syyclops:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "relatedAsset",
+      "displayName": {
+        "en": "related asset"
+      },
+      "description": {
+        "en": "The primary asset that requires work to be performed."
+      },
+      "target": "dtmi:com:syyclops:Asset;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "relatedSpace",
+      "displayName": {
+        "en": "related space"
+      },
+      "description": {
+        "en": "The space where the work will be performed."
+      },
+      "target": "dtmi:com:syyclops:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "parentWorkOrder",
+      "displayName": {
+        "en": "parent work order"
+      },
+      "description": {
+        "en": "Links to a parent work order if this is a sub-task or child work order."
+      },
+      "target": "dtmi:com:syyclops:WorkOrder;1"
+    },
+    {
+      "@type": "Property",
+      "name": "workOrderNumber",
+      "displayName": {
+        "en": "Work Order Number"
+      },
+      "description": {
+        "en": "A unique identifier or reference number for the work order."
+      },
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "status",
+      "displayName": {
+        "en": "Status"
+      },
+      "description": {
+        "en": "The current status of the work order in its lifecycle."
+      },
+      "schema": "dtmi:com:syyclops:WorkOrderStatusEnum;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "priority",
+      "displayName": {
+        "en": "Priority"
+      },
+      "description": {
+        "en": "The priority level of the work order indicating urgency and importance."
+      },
+      "schema": "dtmi:com:syyclops:WorkOrderPriorityEnum;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "workType",
+      "displayName": {
+        "en": "Work Type"
+      },
+      "description": {
+        "en": "The category or type of work to be performed."
+      },
+      "schema": "dtmi:com:syyclops:WorkOrderTypeEnum;1",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "estimatedDuration",
+      "displayName": {
+        "en": "Estimated Duration"
+      },
+      "description": {
+        "en": "The estimated time required to complete the work order."
+      },
+      "schema": "duration",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "actualDuration",
+      "displayName": {
+        "en": "Actual Duration"
+      },
+      "description": {
+        "en": "The actual time taken to complete the work order."
+      },
+      "schema": "duration",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "estimatedCost",
+      "displayName": {
+        "en": "Estimated Cost"
+      },
+      "description": {
+        "en": "The estimated cost to complete the work order."
+      },
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "actualCost",
+      "displayName": {
+        "en": "Actual Cost"
+      },
+      "description": {
+        "en": "The actual cost incurred to complete the work order."
+      },
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "scheduledStartDateTime",
+      "displayName": {
+        "en": "Scheduled Start DateTime"
+      },
+      "description": {
+        "en": "The planned or scheduled start time for the work order."
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "scheduledEndDateTime",
+      "displayName": {
+        "en": "Scheduled End DateTime"
+      },
+      "description": {
+        "en": "The planned or scheduled completion time for the work order."
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "completedDateTime",
+      "displayName": {
+        "en": "Completed DateTime"
+      },
+      "description": {
+        "en": "The actual date and time when the work order was completed."
+      },
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "workInstructions",
+      "displayName": {
+        "en": "Work Instructions"
+      },
+      "description": {
+        "en": "Detailed instructions for performing the work described in the work order."
+      },
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "completionNotes",
+      "displayName": {
+        "en": "Completion Notes"
+      },
+      "description": {
+        "en": "Notes or comments added upon completion of the work order, describing work performed and any findings."
+      },
+      "schema": "string",
+      "writable": true
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:syyclops:WorkOrderStatusEnum;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Draft",
+          "displayName": {
+            "en": "Draft"
+          },
+          "enumValue": "Draft"
+        },
+        {
+          "name": "Open",
+          "displayName": {
+            "en": "Open"
+          },
+          "enumValue": "Open"
+        },
+        {
+          "name": "Assigned",
+          "displayName": {
+            "en": "Assigned"
+          },
+          "enumValue": "Assigned"
+        },
+        {
+          "name": "InProgress",
+          "displayName": {
+            "en": "In Progress"
+          },
+          "enumValue": "InProgress"
+        },
+        {
+          "name": "OnHold",
+          "displayName": {
+            "en": "On Hold"
+          },
+          "enumValue": "OnHold"
+        },
+        {
+          "name": "Completed",
+          "displayName": {
+            "en": "Completed"
+          },
+          "enumValue": "Completed"
+        },
+        {
+          "name": "Cancelled",
+          "displayName": {
+            "en": "Cancelled"
+          },
+          "enumValue": "Cancelled"
+        },
+        {
+          "name": "Closed",
+          "displayName": {
+            "en": "Closed"
+          },
+          "enumValue": "Closed"
+        }
+      ],
+      "displayName": {
+        "en": "Work Order Status Enum"
+      }
+    },
+    {
+      "@id": "dtmi:com:syyclops:WorkOrderPriorityEnum;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "Low",
+          "displayName": {
+            "en": "Low"
+          },
+          "enumValue": "Low"
+        },
+        {
+          "name": "Medium",
+          "displayName": {
+            "en": "Medium"
+          },
+          "enumValue": "Medium"
+        },
+        {
+          "name": "High",
+          "displayName": {
+            "en": "High"
+          },
+          "enumValue": "High"
+        },
+        {
+          "name": "Critical",
+          "displayName": {
+            "en": "Critical"
+          },
+          "enumValue": "Critical"
+        },
+        {
+          "name": "Emergency",
+          "displayName": {
+            "en": "Emergency"
+          },
+          "enumValue": "Emergency"
+        }
+      ],
+      "displayName": {
+        "en": "Work Order Priority Enum"
+      }
+    },
+    {
+      "@id": "dtmi:com:syyclops:WorkOrderTypeEnum;1",
+      "@type": "Enum",
+      "valueSchema": "string",
+      "enumValues": [
+        {
+          "name": "PreventiveMaintenance",
+          "displayName": {
+            "en": "Preventive Maintenance"
+          },
+          "enumValue": "PreventiveMaintenance"
+        },
+        {
+          "name": "CorrectiveMaintenance",
+          "displayName": {
+            "en": "Corrective Maintenance"
+          },
+          "enumValue": "CorrectiveMaintenance"
+        },
+        {
+          "name": "Inspection",
+          "displayName": {
+            "en": "Inspection"
+          },
+          "enumValue": "Inspection"
+        },
+        {
+          "name": "Repair",
+          "displayName": {
+            "en": "Repair"
+          },
+          "enumValue": "Repair"
+        },
+        {
+          "name": "Installation",
+          "displayName": {
+            "en": "Installation"
+          },
+          "enumValue": "Installation"
+        },
+        {
+          "name": "Replacement",
+          "displayName": {
+            "en": "Replacement"
+          },
+          "enumValue": "Replacement"
+        },
+        {
+          "name": "Calibration",
+          "displayName": {
+            "en": "Calibration"
+          },
+          "enumValue": "Calibration"
+        },
+        {
+          "name": "Cleaning",
+          "displayName": {
+            "en": "Cleaning"
+          },
+          "enumValue": "Cleaning"
+        },
+        {
+          "name": "Safety",
+          "displayName": {
+            "en": "Safety"
+          },
+          "enumValue": "Safety"
+        },
+        {
+          "name": "Emergency",
+          "displayName": {
+            "en": "Emergency"
+          },
+          "enumValue": "Emergency"
+        }
+      ],
+      "displayName": {
+        "en": "Work Order Type Enum"
+      }
+    }
+  ],
+  "@context": ["dtmi:dtdl:context;3"]
+}
