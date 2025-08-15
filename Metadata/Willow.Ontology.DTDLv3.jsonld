@@ -30185,6 +30185,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ConnectedDevicesCountSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Connected Devices Count Sensor"
+    },
+    "description": {
+      "en": "The count of devices connected to a network"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ContactState;1",
     "@type": "Interface",
     "displayName": {
