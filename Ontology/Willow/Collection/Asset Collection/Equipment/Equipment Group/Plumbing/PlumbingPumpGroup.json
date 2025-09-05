@@ -5,7 +5,8 @@
     "en": "Pump Group (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingEquipmentGroup;1"
+    "dtmi:com:willowinc:PlumbingEquipmentGroup;1",
+    "dtmi:com:willowinc:PumpGroup;1"
   ],
   "contents": [
   ],

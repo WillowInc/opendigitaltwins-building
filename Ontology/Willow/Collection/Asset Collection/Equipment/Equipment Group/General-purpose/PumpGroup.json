@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:PumpGroup;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pump Group"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:GeneralPurposeEquipmentGroup;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
