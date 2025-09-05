@@ -33411,6 +33411,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:GeneralPurposeEquipmentGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "General-purpose Equipment Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Generator;1",
     "@type": "Interface",
     "displayName": {
@@ -46721,20 +46735,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HVACPumpGroup;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump Group (HVAC)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipmentGroup;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HVACRefrigerantSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -48865,20 +48865,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PlumbingPumpGroup;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump Group (Plumbing)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipmentGroup;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PlumbingShutOffValve;1",
     "@type": "Interface",
     "displayName": {
@@ -49425,6 +49411,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:FailureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PumpGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:GeneralPurposeEquipmentGroup;1"
     ],
     "contents": [],
     "@context": [
@@ -50631,20 +50631,6 @@
     "extends": [
       "dtmi:com:willowinc:SprinklerEquipment;1",
       "dtmi:com:willowinc:HeatTracing;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SprinklerPumpGroup;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump Group (Sprinkler)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FireProtectionEquipmentGroup;1"
     ],
     "contents": [],
     "@context": [
@@ -57327,6 +57313,21 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACPumpGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump Group (HVAC)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipmentGroup;1",
+      "dtmi:com:willowinc:PumpGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACTransferAirSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -59453,6 +59454,21 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PlumbingPumpGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump Group (Plumbing)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipmentGroup;1",
+      "dtmi:com:willowinc:PumpGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreActionCabinet;1",
     "@type": "Interface",
     "displayName": {
@@ -60586,6 +60602,21 @@
     },
     "extends": [
       "dtmi:com:willowinc:SprinklerValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SprinklerPumpGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump Group (Sprinkler)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireProtectionEquipmentGroup;1",
+      "dtmi:com:willowinc:PumpGroup;1"
     ],
     "contents": [],
     "@context": [
