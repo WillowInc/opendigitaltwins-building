@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnVAVAirflowControlValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return VAV Airflow Control Valve"
+  },
+  "description": {
+    "en": "A VAV airflow control vavle which provides precise control of return airflow from a critical space such as a laboratory or healtchare isolation room (i.e. venturi valve)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VAVAirflowControlValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
