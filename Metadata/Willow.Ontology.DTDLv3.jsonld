@@ -26377,6 +26377,34 @@
       {
         "@type": [
           "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity"
+        },
+        "name": "nominalHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity unit"
+        },
+        "name": "nominalHeatingCapacityUnit",
+        "annotates": "nominalHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
           "Temperature"
         ],
         "displayName": {
@@ -40844,34 +40872,6 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
-        },
-        "name": "nominalHeatingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity unit"
-        },
-        "name": "nominalHeatingCapacityUnit",
-        "annotates": "nominalHeatingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
           "en": "primary sensible cooling capacity"
         },
         "name": "primarySensibleCoolingCapacity",
@@ -42734,34 +42734,6 @@
       "dtmi:com:willowinc:CAVBox;1"
     ],
     "contents": [
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity"
-        },
-        "name": "nominalHeatingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity unit"
-        },
-        "name": "nominalHeatingCapacityUnit",
-        "annotates": "nominalHeatingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
       {
         "@type": "Component",
         "displayName": {
@@ -45468,34 +45440,6 @@
       "dtmi:com:willowinc:FanCoilUnit;1"
     ],
     "contents": [
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity"
-        },
-        "name": "nominalHeatingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity unit"
-        },
-        "name": "nominalHeatingCapacityUnit",
-        "annotates": "nominalHeatingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
       {
         "@type": "Component",
         "displayName": {
@@ -51634,34 +51578,6 @@
     ],
     "contents": [
       {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity"
-        },
-        "name": "nominalHeatingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity unit"
-        },
-        "name": "nominalHeatingCapacityUnit",
-        "annotates": "nominalHeatingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
-      {
         "@type": "Component",
         "displayName": {
           "en": "re-heating method"
@@ -55958,34 +55874,6 @@
       "dtmi:com:willowinc:FanPoweredBox;1"
     ],
     "contents": [
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity"
-        },
-        "name": "nominalHeatingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity unit"
-        },
-        "name": "nominalHeatingCapacityUnit",
-        "annotates": "nominalHeatingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
       {
         "@type": "Component",
         "displayName": {
@@ -61079,34 +60967,6 @@
       "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1"
     ],
     "contents": [
-      {
-        "@type": [
-          "Property",
-          "EnergyRate"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity"
-        },
-        "name": "nominalHeatingCapacity",
-        "schema": "double",
-        "unit": "britishThermalUnitPerHour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "nominal heating capacity unit"
-        },
-        "name": "nominalHeatingCapacityUnit",
-        "annotates": "nominalHeatingCapacity",
-        "overrides": "unit",
-        "schema": "PowerUnit",
-        "writable": true
-      },
       {
         "@type": "Component",
         "displayName": {
