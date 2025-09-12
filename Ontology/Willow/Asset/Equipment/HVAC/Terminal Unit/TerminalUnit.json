@@ -53,6 +53,27 @@
       "schema": "VolumeFlowRateUnit",
       "writable": true
     },
+        {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "nominal heating capacity"
+      },
+      "name": "nominalHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "nominal heating capacity unit"
+      },
+      "name": "nominalHeatingCapacityUnit",
+      "annotates": "nominalHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
     {
       "@type": ["Property", "Temperature"],
       "displayName": {
