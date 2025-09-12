@@ -4,8 +4,10 @@
   "displayName": {
     "en": "Binary Sensor"
   },
-  "description": {"en": "The Boolean status from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The Boolean status from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:StateSensor;1"
   ],
   "contents": [
@@ -16,7 +18,8 @@
         "en": "Last Value"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:BinarySensor:lastValue;1"
     }
   ],
   "@context": [

@@ -18,7 +18,8 @@
         "en": "The rate which is charged for the consumption of the utility at all times of the day and each day of the year."
       },
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UtilityRate:fixedRate;1"
     },
     {
       "@type": [
@@ -31,7 +32,8 @@
       },
       "annotates": "fixedRate",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UtilityRate:fixedRateUnit;1"
     },
     {
       "@type": "Property",
@@ -89,9 +91,12 @@
               },
               "schema": "string"
             }
-          ]
-        }
-      }
+          ],
+          "@id": "dtmi:com:syyclops:UtilityRate:OS2;1"
+        },
+        "@id": "dtmi:com:syyclops:UtilityRate:AS1;1"
+      },
+      "@id": "dtmi:com:syyclops:UtilityRate:timeOfUseRates;1"
     }
   ],
   "@context": [

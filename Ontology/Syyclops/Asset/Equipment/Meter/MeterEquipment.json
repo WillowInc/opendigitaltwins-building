@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Meter Equipment"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Equipment;1"
   ],
   "contents": [
@@ -14,7 +14,8 @@
         "en": "is linked to"
       },
       "name": "isLinkedTo",
-      "target": "dtmi:com:syyclops:UtilityAccount;1"
+      "target": "dtmi:com:syyclops:UtilityAccount;1",
+      "@id": "dtmi:com:syyclops:MeterEquipment:isLinkedTo;1"
     }
   ],
   "@context": [

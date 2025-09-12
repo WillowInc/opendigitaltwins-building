@@ -28,7 +28,8 @@
           "schema": "dtmi:com:syyclops:HVACZoneIsFedBySubstances;1",
           "comment": "Terminal Unit, Diffuser"
         }
-      ]
+      ],
+      "@id": "dtmi:com:syyclops:HVACZone:isFedBy;1"
     }
   ],
   "schemas": [
@@ -42,49 +43,56 @@
           "displayName": {
             "en": "Air"
           },
-          "enumValue": "Air"
+          "enumValue": "Air",
+          "@id": "dtmi:com:syyclops:HVACZone:Air;1"
         },
         {
           "name": "OutsideAir",
           "displayName": {
             "en": "Outside Air"
           },
-          "enumValue": "OutsideAir"
+          "enumValue": "OutsideAir",
+          "@id": "dtmi:com:syyclops:HVACZone:OutsideAir;1"
         },
         {
           "name": "ReturnAir",
           "displayName": {
             "en": "Return Air"
           },
-          "enumValue": "ReturnAir"
+          "enumValue": "ReturnAir",
+          "@id": "dtmi:com:syyclops:HVACZone:ReturnAir;1"
         },
         {
           "name": "SupplyAir",
           "displayName": {
             "en": "Supply Air"
           },
-          "enumValue": "SupplyAir"
+          "enumValue": "SupplyAir",
+          "@id": "dtmi:com:syyclops:HVACZone:SupplyAir;1"
         },
         {
           "name": "ExhaustAir",
           "displayName": {
             "en": "Exhaust Air"
           },
-          "enumValue": "ExhaustAir"
+          "enumValue": "ExhaustAir",
+          "@id": "dtmi:com:syyclops:HVACZone:ExhaustAir;1"
         },
         {
           "name": "GreaseExhaustAir",
           "displayName": {
             "en": "Grease Exhaust Air"
           },
-          "enumValue": "GreaseExhaustAir"
+          "enumValue": "GreaseExhaustAir",
+          "@id": "dtmi:com:syyclops:HVACZone:GreaseExhaustAir;1"
         },
         {
           "name": "TransferAir",
           "displayName": {
             "en": "Transfer Air"
           },
-          "enumValue": "TransferAir"
+          "enumValue": "TransferAir",
+          "@id": "dtmi:com:syyclops:HVACZone:TransferAir;1"
         }
       ],
       "displayName": {

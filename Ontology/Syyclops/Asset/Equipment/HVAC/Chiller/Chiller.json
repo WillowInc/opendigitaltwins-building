@@ -14,7 +14,8 @@
         "en": "Evaporator"
       },
       "name": "evaporator",
-      "schema": "dtmi:com:syyclops:Evaporator;1"
+      "schema": "dtmi:com:syyclops:Evaporator;1",
+      "@id": "dtmi:com:syyclops:Chiller:evaporator;1"
     },
     {
       "@type": "Component",
@@ -22,7 +23,8 @@
         "en": "Compressor"
       },
       "name": "compressor",
-      "schema": "dtmi:com:syyclops:Compressor;1"
+      "schema": "dtmi:com:syyclops:Compressor;1",
+      "@id": "dtmi:com:syyclops:Chiller:compressor;1"
     },
     {
       "@type": "Property",
@@ -31,7 +33,8 @@
       },
       "name": "refrigerantType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:refrigerantType;1"
     },
     {
       "@type": [
@@ -44,7 +47,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -59,7 +63,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -72,7 +77,8 @@
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:netSensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -87,7 +93,8 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:netSensibleCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -100,7 +107,8 @@
       "name": "designCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:designCoolingCapacity;1"
     },
     {
       "@type": [
@@ -115,7 +123,8 @@
       "annotates": "designCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:designCoolingCapacityUnit;1"
     },
     {
       "@type": "Property",
@@ -124,7 +133,8 @@
       },
       "name": "designKWPerTon",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:designKWPerTon;1"
     },
     {
       "@type": "Property",
@@ -133,7 +143,8 @@
       },
       "name": "designCoefficientOfPerformance",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:designCoefficientOfPerformance;1"
     },
     {
       "@type": "Property",
@@ -142,7 +153,8 @@
       },
       "name": "designEnergyEfficiencyRatio",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:designEnergyEfficiencyRatio;1"
     },
     {
       "@type": "Property",
@@ -151,7 +163,8 @@
       },
       "name": "nominalKWPerTon",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:nominalKWPerTon;1"
     },
     {
       "@type": "Property",
@@ -160,7 +173,8 @@
       },
       "name": "nominalCoefficientOfPerformance",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:nominalCoefficientOfPerformance;1"
     },
     {
       "@type": "Property",
@@ -169,7 +183,8 @@
       },
       "name": "nominalEnergyEfficiencyRatio",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Chiller:nominalEnergyEfficiencyRatio;1"
     }
   ],
   "@context": [

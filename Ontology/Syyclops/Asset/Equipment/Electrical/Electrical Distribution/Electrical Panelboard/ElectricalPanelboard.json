@@ -15,7 +15,8 @@
       },
       "name": "shortCircuitRating",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalPanelboard:shortCircuitRating;1"
     },
     {
       "@type": "Property",
@@ -28,16 +29,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:ElectricalPanelboard:Three;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:ElectricalPanelboard:One;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ElectricalPanelboard:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalPanelboard:outputPhases;1"
     },
     {
       "@type": [
@@ -59,7 +64,8 @@
       },
       "name": "maxNumberOfPoles",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalPanelboard:maxNumberOfPoles;1"
     },
     {
       "@type": "Component",
@@ -67,7 +73,8 @@
         "en": "main bus"
       },
       "name": "mainBus",
-      "schema": "dtmi:com:syyclops:ElectricalBus;1"
+      "schema": "dtmi:com:syyclops:ElectricalBus;1",
+      "@id": "dtmi:com:syyclops:ElectricalPanelboard:mainBus;1"
     },
     {
       "@type": "Property",
@@ -83,15 +90,19 @@
           {
             "name": "One",
             "displayName": "1",
-            "enumValue": "1"
+            "enumValue": "1",
+            "@id": "dtmi:com:syyclops:ElectricalPanelboard:EE3;1"
           },
           {
             "name": "Three",
             "displayName": "3",
-            "enumValue": "3"
+            "enumValue": "3",
+            "@id": "dtmi:com:syyclops:ElectricalPanelboard:EE4;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalPanelboard:ES2;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalPanelboard:inputPhases;1"
     }
   ],
   "@context": [

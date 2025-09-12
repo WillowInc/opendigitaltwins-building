@@ -20,7 +20,8 @@
       "name": "nominalExternalStaticPressure",
       "schema": "double",
       "unit": "pascal",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:nominalExternalStaticPressure;1"
     },
     {
       "@type": [
@@ -35,7 +36,8 @@
       "annotates": "nominalExternalStaticPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:nominalExternalStaticPressureUnit;1"
     },
     {
       "@type": [
@@ -48,7 +50,8 @@
       "name": "nominalAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:nominalAirflow;1"
     },
     {
       "@type": [
@@ -63,7 +66,8 @@
       "annotates": "nominalAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:nominalAirflowUnit;1"
     },
     {
       "@type": [
@@ -91,7 +95,8 @@
       "annotates": "motorPower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:motorPowerUnit;1"
     },
     {
       "@type": [
@@ -117,7 +122,8 @@
       "name": "maxVFDFrequency",
       "schema": "double",
       "unit": "hertz",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:maxVFDFrequency;1"
     },
     {
       "@type": [
@@ -132,7 +138,8 @@
       "annotates": "maxVFDFrequency",
       "overrides": "unit",
       "schema": "FrequencyUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:maxVFDFrequencyUnit;1"
     },
     {
       "@type": [
@@ -160,7 +167,8 @@
       "annotates": "brakeHorsepower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:brakeHorsepowerUnit;1"
     },
     {
       "@type": [
@@ -188,7 +196,8 @@
       "annotates": "fullLoadCurrent",
       "overrides": "unit",
       "schema": "CurrentUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:fullLoadCurrentUnit;1"
     },
     {
       "@type": [
@@ -201,7 +210,8 @@
       "name": "minAirflowRating",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:minAirflowRating;1"
     },
     {
       "@type": [
@@ -216,7 +226,8 @@
       "annotates": "minAirflowRating",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:minAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -229,7 +240,8 @@
       "name": "maxAirflowRating",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:maxAirflowRating;1"
     },
     {
       "@type": [
@@ -244,7 +256,8 @@
       "annotates": "maxAirflowRating",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:maxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -257,7 +270,8 @@
       "name": "designAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designAirflow;1"
     },
     {
       "@type": [
@@ -272,7 +286,8 @@
       "annotates": "designAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designAirflowUnit;1"
     },
     {
       "@type": [
@@ -298,7 +313,8 @@
       "name": "designVFDFrequency",
       "schema": "double",
       "unit": "hertz",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designVFDFrequency;1"
     },
     {
       "@type": [
@@ -313,7 +329,8 @@
       "annotates": "designVFDFrequency",
       "overrides": "unit",
       "schema": "FrequencyUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designVFDFrequencyUnit;1"
     },
     {
       "@type": [
@@ -326,7 +343,8 @@
       "name": "designExternalStaticPressure",
       "schema": "double",
       "unit": "pascal",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designExternalStaticPressure;1"
     },
     {
       "@type": [
@@ -341,7 +359,8 @@
       "annotates": "designExternalStaticPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designExternalStaticPressureUnit;1"
     },
     {
       "@type": "Property",
@@ -354,16 +373,20 @@
         "enumValues": [
           {
             "enumValue": "Direct",
-            "name": "Direct"
+            "name": "Direct",
+            "@id": "dtmi:com:syyclops:Fan:Direct;1"
           },
           {
             "enumValue": "Belt",
-            "name": "Belt"
+            "name": "Belt",
+            "@id": "dtmi:com:syyclops:Fan:Belt;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Fan:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:driveType;1"
     },
     {
       "@type": "Property",
@@ -375,7 +398,8 @@
       },
       "name": "numberOfFans",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:numberOfFans;1"
     }
   ],
   "@context": [

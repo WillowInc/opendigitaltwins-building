@@ -27,7 +27,8 @@
           "writable": true,
           "schema": "dtmi:com:syyclops:EquipmentIsFedBySubstances;1"
         }
-      ]
+      ],
+      "@id": "dtmi:com:syyclops:Equipment:isFedBy;1"
     },
     {
       "@type": "Relationship",
@@ -48,7 +49,8 @@
           "writable": true,
           "schema": "dtmi:com:syyclops:EquipmentIsFedBySubstances;1"
         }
-      ]
+      ],
+      "@id": "dtmi:com:syyclops:Equipment:feeds;1"
     },
     {
       "@type": "Property",
@@ -60,7 +62,8 @@
         "en": "Indicates that a piece of equipment is designated as standby and will only operate in the event of a failure of duty equipment."
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Equipment:standbyEquipment;1"
     }
   ],
   "schemas": [
@@ -71,151 +74,188 @@
       "enumValues": [
         {
           "enumValue": "Water",
-          "name": "Water"
+          "name": "Water",
+          "@id": "dtmi:com:syyclops:Equipment:Water;1"
         },
         {
           "enumValue": "WasteVentDrainage",
-          "name": "WasteVentDrainage"
+          "name": "WasteVentDrainage",
+          "@id": "dtmi:com:syyclops:Equipment:WasteVentDrainage;1"
         },
         {
           "enumValue": "TransferAir",
-          "name": "TransferAir"
+          "name": "TransferAir",
+          "@id": "dtmi:com:syyclops:Equipment:TransferAir;1"
         },
         {
           "enumValue": "SupplyAir",
-          "name": "SupplyAir"
+          "name": "SupplyAir",
+          "@id": "dtmi:com:syyclops:Equipment:SupplyAir;1"
         },
         {
           "enumValue": "StormDrainage",
-          "name": "StormDrainage"
+          "name": "StormDrainage",
+          "@id": "dtmi:com:syyclops:Equipment:StormDrainage;1"
         },
         {
           "enumValue": "Steam",
-          "name": "Steam"
+          "name": "Steam",
+          "@id": "dtmi:com:syyclops:Equipment:Steam;1"
         },
         {
           "enumValue": "SprinklerWater",
-          "name": "SprinklerWater"
+          "name": "SprinklerWater",
+          "@id": "dtmi:com:syyclops:Equipment:SprinklerWater;1"
         },
         {
           "enumValue": "ReturnAir",
-          "name": "ReturnAir"
+          "name": "ReturnAir",
+          "@id": "dtmi:com:syyclops:Equipment:ReturnAir;1"
         },
         {
           "enumValue": "Refrig",
-          "name": "Refrig"
+          "name": "Refrig",
+          "@id": "dtmi:com:syyclops:Equipment:Refrig;1"
         },
         {
           "enumValue": "RecircHotDomesticWater",
-          "name": "RecircHotDomesticWater"
+          "name": "RecircHotDomesticWater",
+          "@id": "dtmi:com:syyclops:Equipment:RecircHotDomesticWater;1"
         },
         {
           "enumValue": "Propane",
-          "name": "Propane"
+          "name": "Propane",
+          "@id": "dtmi:com:syyclops:Equipment:Propane;1"
         },
         {
           "enumValue": "OutsideAir",
-          "name": "OutsideAir"
+          "name": "OutsideAir",
+          "@id": "dtmi:com:syyclops:Equipment:OutsideAir;1"
         },
         {
           "enumValue": "NonPotableDomesticWater",
-          "name": "NonPotableDomesticWater"
+          "name": "NonPotableDomesticWater",
+          "@id": "dtmi:com:syyclops:Equipment:NonPotableDomesticWater;1"
         },
         {
           "enumValue": "NaturalGas",
-          "name": "NaturalGas"
+          "name": "NaturalGas",
+          "@id": "dtmi:com:syyclops:Equipment:NaturalGas;1"
         },
         {
           "enumValue": "MakeupWater",
-          "name": "MakeupWater"
+          "name": "MakeupWater",
+          "@id": "dtmi:com:syyclops:Equipment:MakeupWater;1"
         },
         {
           "enumValue": "Light",
-          "name": "Light"
+          "name": "Light",
+          "@id": "dtmi:com:syyclops:Equipment:Light;1"
         },
         {
           "enumValue": "IrrigationWater",
-          "name": "IrrigationWater"
+          "name": "IrrigationWater",
+          "@id": "dtmi:com:syyclops:Equipment:IrrigationWater;1"
         },
         {
           "enumValue": "HotWater",
-          "name": "HotWater"
+          "name": "HotWater",
+          "@id": "dtmi:com:syyclops:Equipment:HotWater;1"
         },
         {
           "enumValue": "HotWaterGlycolMix",
-          "name": "HotWaterGlycolMix"
+          "name": "HotWaterGlycolMix",
+          "@id": "dtmi:com:syyclops:Equipment:HotWaterGlycolMix;1"
         },
         {
           "enumValue": "HotDomesticWater",
-          "name": "HotDomesticWater"
+          "name": "HotDomesticWater",
+          "@id": "dtmi:com:syyclops:Equipment:HotDomesticWater;1"
         },
         {
           "enumValue": "GreaseExhaustAir",
-          "name": "GreaseExhaustAir"
+          "name": "GreaseExhaustAir",
+          "@id": "dtmi:com:syyclops:Equipment:GreaseExhaustAir;1"
         },
         {
           "enumValue": "Gasoline",
-          "name": "Gasoline"
+          "name": "Gasoline",
+          "@id": "dtmi:com:syyclops:Equipment:Gasoline;1"
         },
         {
           "enumValue": "FuelOil",
-          "name": "FuelOil"
+          "name": "FuelOil",
+          "@id": "dtmi:com:syyclops:Equipment:FuelOil;1"
         },
         {
           "enumValue": "Freight",
-          "name": "Freight"
+          "name": "Freight",
+          "@id": "dtmi:com:syyclops:Equipment:Freight;1"
         },
         {
           "enumValue": "ExhaustAir",
-          "name": "ExhaustAir"
+          "name": "ExhaustAir",
+          "@id": "dtmi:com:syyclops:Equipment:ExhaustAir;1"
         },
         {
           "enumValue": "Ethernet",
-          "name": "Ethernet"
+          "name": "Ethernet",
+          "@id": "dtmi:com:syyclops:Equipment:Ethernet;1"
         },
         {
           "enumValue": "DriveElec",
-          "name": "DriveElec"
+          "name": "DriveElec",
+          "@id": "dtmi:com:syyclops:Equipment:DriveElec;1"
         },
         {
           "enumValue": "Diesel",
-          "name": "Diesel"
+          "name": "Diesel",
+          "@id": "dtmi:com:syyclops:Equipment:Diesel;1"
         },
         {
           "enumValue": "DCElec",
-          "name": "DCElec"
+          "name": "DCElec",
+          "@id": "dtmi:com:syyclops:Equipment:DCElec;1"
         },
         {
           "enumValue": "CondenserWater",
-          "name": "CondenserWater"
+          "name": "CondenserWater",
+          "@id": "dtmi:com:syyclops:Equipment:CondenserWater;1"
         },
         {
           "enumValue": "CondenserWaterGlycolMix",
-          "name": "CondenserWaterGlycolMix"
+          "name": "CondenserWaterGlycolMix",
+          "@id": "dtmi:com:syyclops:Equipment:CondenserWaterGlycolMix;1"
         },
         {
           "enumValue": "Condensate",
-          "name": "Condensate"
+          "name": "Condensate",
+          "@id": "dtmi:com:syyclops:Equipment:Condensate;1"
         },
         {
           "enumValue": "ColdDomesticWater",
-          "name": "ColdDomesticWater"
+          "name": "ColdDomesticWater",
+          "@id": "dtmi:com:syyclops:Equipment:ColdDomesticWater;1"
         },
         {
           "enumValue": "ChilledWater",
-          "name": "ChilledWater"
+          "name": "ChilledWater",
+          "@id": "dtmi:com:syyclops:Equipment:ChilledWater;1"
         },
         {
           "enumValue": "BlowdownWater",
-          "name": "BlowdownWater"
+          "name": "BlowdownWater",
+          "@id": "dtmi:com:syyclops:Equipment:BlowdownWater;1"
         },
         {
           "enumValue": "Air",
-          "name": "Air"
+          "name": "Air",
+          "@id": "dtmi:com:syyclops:Equipment:Air;1"
         },
         {
           "enumValue": "ACElec",
-          "name": "ACElec"
+          "name": "ACElec",
+          "@id": "dtmi:com:syyclops:Equipment:ACElec;1"
         }
       ],
       "displayName": {

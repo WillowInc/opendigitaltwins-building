@@ -4,8 +4,10 @@
   "displayName": {
     "en": "Percent Unity State"
   },
-  "description": {"en": "The percent state of the equipment"},
-  "extends" : [
+  "description": {
+    "en": "The percent state of the equipment"
+  },
+  "extends": [
     "dtmi:com:syyclops:State;1"
   ],
   "contents": [
@@ -17,7 +19,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "%"
+      "comment": "%",
+      "@id": "dtmi:com:syyclops:PercentState:lastValue;1"
     }
   ],
   "@context": [

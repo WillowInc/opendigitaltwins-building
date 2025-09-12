@@ -17,7 +17,8 @@
         "en": "address"
       },
       "name": "address",
-      "schema": "dtmi:com:syyclops:Address;1"
+      "schema": "dtmi:com:syyclops:Address;1",
+      "@id": "dtmi:com:syyclops:Substructure:address;1"
     },
     {
       "@type": "Property",
@@ -26,7 +27,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Substructure:type;1"
     },
     {
       "@type": "Component",
@@ -34,7 +36,8 @@
       "displayName": {
         "en": "Time Zone"
       },
-      "schema": "dtmi:com:syyclops:TimeZone;1"
+      "schema": "dtmi:com:syyclops:TimeZone;1",
+      "@id": "dtmi:com:syyclops:Substructure:timeZone;1"
     },
     {
       "@type": "Component",
@@ -42,7 +45,8 @@
         "en": "Electricity Price Rate"
       },
       "name": "electricityPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Substructure:electricityPriceRate;1"
     },
     {
       "@type": "Component",
@@ -50,7 +54,8 @@
         "en": "Electricity Emission Factor"
       },
       "name": "electricityEmissionFactor",
-      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1",
+      "@id": "dtmi:com:syyclops:Substructure:electricityEmissionFactor;1"
     },
     {
       "@type": "Component",
@@ -58,7 +63,8 @@
         "en": "Natural Gas Price Rate"
       },
       "name": "naturalGasPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Substructure:naturalGasPriceRate;1"
     },
     {
       "@type": "Component",
@@ -66,7 +72,8 @@
         "en": "Chilled Water Price Rate"
       },
       "name": "chilledWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Substructure:chilledWaterPriceRate;1"
     },
     {
       "@type": "Component",
@@ -74,7 +81,8 @@
         "en": "Steam Price Rate"
       },
       "name": "steamPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Substructure:steamPriceRate;1"
     },
     {
       "@type": "Component",
@@ -82,7 +90,8 @@
         "en": "Domestic Water Price Rate"
       },
       "name": "domesticWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Substructure:domesticWaterPriceRate;1"
     },
     {
       "@type": "Property",
@@ -94,7 +103,8 @@
         "en": "The Climate Zone as defined by IECC which is based on the location of the building."
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:SubstructureIECCClimateZone;1"
+      "schema": "dtmi:com:syyclops:SubstructureIECCClimateZone;1",
+      "@id": "dtmi:com:syyclops:Substructure:ieccClimateZone;1"
     },
     {
       "@type": "Property",
@@ -125,7 +135,8 @@
         "displayName": {
           "en": "Substructure Coordinates"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Substructure:coordinates;1"
     },
     {
       "@type": [
@@ -138,7 +149,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "metre"
+      "unit": "metre",
+      "@id": "dtmi:com:syyclops:Substructure:depth;1"
     },
     {
       "@type": [
@@ -153,7 +165,8 @@
       "annotates": "depth",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Substructure:depthUnit;1"
     },
     {
       "@type": [
@@ -166,7 +179,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "metre"
+      "unit": "metre",
+      "@id": "dtmi:com:syyclops:Substructure:height;1"
     },
     {
       "@type": [
@@ -181,7 +195,8 @@
       "annotates": "height",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Substructure:heightUnit;1"
     },
     {
       "@type": "Property",
@@ -190,7 +205,8 @@
         "en": "Construction Start Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Substructure:constructionStartDate;1"
     },
     {
       "@type": "Property",
@@ -199,7 +215,8 @@
         "en": "Construction Completion Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Substructure:constructionCompletionDate;1"
     },
     {
       "@type": "Property",
@@ -208,7 +225,8 @@
         "en": "Date Opened"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Substructure:dateOpened;1"
     },
     {
       "@type": "Property",
@@ -220,7 +238,8 @@
         "en": "The stage in the life of the building or structure such as design, construction, or operational."
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:SubstructureLifecyclePhase;1"
+      "schema": "dtmi:com:syyclops:SubstructureLifecyclePhase;1",
+      "@id": "dtmi:com:syyclops:Substructure:lifecyclePhase;1"
     }
   ],
   "schemas": [
@@ -232,82 +251,98 @@
         {
           "name": "oneA",
           "displayName": "1A - Very Hot Humid",
-          "enumValue": "1A"
+          "enumValue": "1A",
+          "@id": "dtmi:com:syyclops:Substructure:oneA;1"
         },
         {
           "name": "twoA",
           "displayName": "2A Hot Humid",
-          "enumValue": "2A"
+          "enumValue": "2A",
+          "@id": "dtmi:com:syyclops:Substructure:twoA;1"
         },
         {
           "name": "twoB",
           "displayName": "2B Hot Dry",
-          "enumValue": "2B"
+          "enumValue": "2B",
+          "@id": "dtmi:com:syyclops:Substructure:twoB;1"
         },
         {
           "name": "threeA",
           "displayName": "3A Warm Humid",
-          "enumValue": "3A"
+          "enumValue": "3A",
+          "@id": "dtmi:com:syyclops:Substructure:threeA;1"
         },
         {
           "name": "threeB",
           "displayName": "3B Warm Dry",
-          "enumValue": "3B"
+          "enumValue": "3B",
+          "@id": "dtmi:com:syyclops:Substructure:threeB;1"
         },
         {
           "name": "threeC",
           "displayName": "3C Warm Marine",
-          "enumValue": "3C"
+          "enumValue": "3C",
+          "@id": "dtmi:com:syyclops:Substructure:threeC;1"
         },
         {
           "name": "fourA",
           "displayName": "4A Mixed Humid",
-          "enumValue": "4A"
+          "enumValue": "4A",
+          "@id": "dtmi:com:syyclops:Substructure:fourA;1"
         },
         {
           "name": "fourB",
           "displayName": "4B Mixed Dry",
-          "enumValue": "4B"
+          "enumValue": "4B",
+          "@id": "dtmi:com:syyclops:Substructure:fourB;1"
         },
         {
           "name": "fourC",
           "displayName": "4C Mixed Marine",
-          "enumValue": "4C"
+          "enumValue": "4C",
+          "@id": "dtmi:com:syyclops:Substructure:fourC;1"
         },
         {
           "name": "fiveA",
           "displayName": "5A Cool Humid",
-          "enumValue": "5A"
+          "enumValue": "5A",
+          "@id": "dtmi:com:syyclops:Substructure:fiveA;1"
         },
         {
           "name": "fiveB",
           "displayName": "5B Cool Dry",
-          "enumValue": "5B"
+          "enumValue": "5B",
+          "@id": "dtmi:com:syyclops:Substructure:fiveB;1"
         },
         {
           "name": "fiveC",
           "displayName": "5C Cool Marine",
-          "enumValue": "5C"
+          "enumValue": "5C",
+          "@id": "dtmi:com:syyclops:Substructure:fiveC;1"
         },
         {
           "name": "sixA",
           "displayName": "6A Cold Humid",
-          "enumValue": "6A"
+          "enumValue": "6A",
+          "@id": "dtmi:com:syyclops:Substructure:sixA;1"
         },
         {
           "name": "sixB",
           "displayName": "6B Cold Dry",
-          "enumValue": "6B"
+          "enumValue": "6B",
+          "@id": "dtmi:com:syyclops:Substructure:sixB;1"
         },
         {
           "name": "seven",
           "displayName": "7 Very Cold",
-          "enumValue": "7"
+          "enumValue": "7",
+          "@id": "dtmi:com:syyclops:Substructure:seven;1"
         },
         {
           "name": "eight",
           "displayName": "8 Subarctic/Arctic",
-          "enumValue": "8"
+          "enumValue": "8",
+          "@id": "dtmi:com:syyclops:Substructure:eight;1"
         }
       ],
       "displayName": {
@@ -321,15 +356,18 @@
       "enumValues": [
         {
           "enumValue": "Design",
-          "name": "Design"
+          "name": "Design",
+          "@id": "dtmi:com:syyclops:Substructure:Design;1"
         },
         {
           "enumValue": "Construction",
-          "name": "Construction"
+          "name": "Construction",
+          "@id": "dtmi:com:syyclops:Substructure:Construction;1"
         },
         {
           "enumValue": "Operational",
-          "name": "Operational"
+          "name": "Operational",
+          "@id": "dtmi:com:syyclops:Substructure:Operational;1"
         }
       ],
       "displayName": {

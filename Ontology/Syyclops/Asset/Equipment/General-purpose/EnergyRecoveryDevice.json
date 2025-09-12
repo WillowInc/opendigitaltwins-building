@@ -19,7 +19,8 @@
       },
       "name": "nominalEnthalpyRecoveryRatio",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:nominalEnthalpyRecoveryRatio;1"
     },
     {
       "@type": "Property",
@@ -32,32 +33,40 @@
         "enumValues": [
           {
             "enumValue": "Sensible Energy Wheel",
-            "name": "SensibleEnergyWheel"
+            "name": "SensibleEnergyWheel",
+            "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:SensibleEnergyWheel;1"
           },
           {
             "enumValue": "Enthalpy Wheel",
-            "name": "EnthalpyWheel"
+            "name": "EnthalpyWheel",
+            "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:EnthalpyWheel;1"
           },
           {
             "enumValue": "DualWheel",
-            "name": "DualWheel"
+            "name": "DualWheel",
+            "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:DualWheel;1"
           },
           {
             "enumValue": "Sensible Energy Core",
-            "name": "SensibleEnergyCore"
+            "name": "SensibleEnergyCore",
+            "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:SensibleEnergyCore;1"
           },
           {
             "enumValue": "Enthalpy Core",
-            "name": "EnthalpyCore"
+            "name": "EnthalpyCore",
+            "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:EnthalpyCore;1"
           },
           {
             "enumValue": "DualCoils",
-            "name": "DualCoils"
+            "name": "DualCoils",
+            "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:DualCoils;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:energyRecoveryMethod;1"
     },
     {
       "@type": [
@@ -69,7 +78,8 @@
       },
       "name": "supplyCoolingAirPressureDrop",
       "schema": "double",
-      "unit": "inchesOfWater"
+      "unit": "inchesOfWater",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingAirPressureDrop;1"
     },
     {
       "@type": [
@@ -81,7 +91,8 @@
       },
       "name": "supplyCoolingMinAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingMinAirflowRating;1"
     },
     {
       "@type": [
@@ -93,7 +104,8 @@
       },
       "name": "supplyCoolingMaxAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingMaxAirflowRating;1"
     },
     {
       "@type": [
@@ -105,7 +117,8 @@
       },
       "name": "supplyCoolingDesignAirflow",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignAirflow;1"
     },
     {
       "@type": [
@@ -117,7 +130,8 @@
         "en": "Supply Cooling Design Entering Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignEnteringAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -129,7 +143,8 @@
         "en": "Supply Cooling Design Leaving Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignLeavingAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -141,7 +156,8 @@
         "en": "Supply Cooling Design Entering Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignEnteringAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -153,7 +169,8 @@
         "en": "Supply Cooling Design Leaving Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignLeavingAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -165,7 +182,8 @@
       },
       "name": "supplyHeatingAirPressureDrop",
       "schema": "double",
-      "unit": "inchesOfWater"
+      "unit": "inchesOfWater",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingAirPressureDrop;1"
     },
     {
       "@type": [
@@ -177,7 +195,8 @@
       },
       "name": "supplyHeatingMinAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingMinAirflowRating;1"
     },
     {
       "@type": [
@@ -189,7 +208,8 @@
       },
       "name": "supplyHeatingMaxAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingMaxAirflowRating;1"
     },
     {
       "@type": [
@@ -201,7 +221,8 @@
       },
       "name": "supplyHeatingDesignAirflow",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignAirflow;1"
     },
     {
       "@type": [
@@ -213,7 +234,8 @@
         "en": "Supply Heating Design Entering Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignEnteringAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -225,7 +247,8 @@
         "en": "Supply Heating Design Leaving Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignLeavingAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -237,7 +260,8 @@
         "en": "Supply Heating Design Entering Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignEnteringAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -249,7 +273,8 @@
         "en": "Supply Heating Design Leaving Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignLeavingAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -261,7 +286,8 @@
       },
       "name": "exhaustCoolingAirPressureDrop",
       "schema": "double",
-      "unit": "inchesOfWater"
+      "unit": "inchesOfWater",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingAirPressureDrop;1"
     },
     {
       "@type": [
@@ -273,7 +299,8 @@
       },
       "name": "exhaustCoolingMinAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingMinAirflowRating;1"
     },
     {
       "@type": [
@@ -285,7 +312,8 @@
       },
       "name": "exhaustCoolingMaxAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingMaxAirflowRating;1"
     },
     {
       "@type": [
@@ -297,7 +325,8 @@
       },
       "name": "exhaustCoolingDesignAirflow",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignAirflow;1"
     },
     {
       "@type": [
@@ -309,7 +338,8 @@
         "en": "Exhaust Cooling Design Entering Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignEnteringAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -321,7 +351,8 @@
         "en": "Exhaust Cooling Design Leaving Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignLeavingAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -333,7 +364,8 @@
         "en": "Exhaust Cooling Design Entering Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignEnteringAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -345,7 +377,8 @@
         "en": "Exhaust Cooling Design Leaving Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignLeavingAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -357,7 +390,8 @@
       },
       "name": "exhaustHeatingAirPressureDrop",
       "schema": "double",
-      "unit": "inchesOfWater"
+      "unit": "inchesOfWater",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingAirPressureDrop;1"
     },
     {
       "@type": [
@@ -369,7 +403,8 @@
       },
       "name": "exhaustHeatingMinAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingMinAirflowRating;1"
     },
     {
       "@type": [
@@ -381,7 +416,8 @@
       },
       "name": "exhaustHeatingMaxAirflowRating",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingMaxAirflowRating;1"
     },
     {
       "@type": [
@@ -393,7 +429,8 @@
       },
       "name": "exhaustHeatingDesignAirflow",
       "schema": "double",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignAirflow;1"
     },
     {
       "@type": [
@@ -405,7 +442,8 @@
         "en": "Exhaust Heating Design Entering Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignEnteringAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -417,7 +455,8 @@
         "en": "Exhaust Heating Design Leaving Air Dry Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignLeavingAirDryBulbTemperature;1"
     },
     {
       "@type": [
@@ -429,7 +468,8 @@
         "en": "Exhaust Heating Design Entering Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignEnteringAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -441,7 +481,8 @@
         "en": "Exhaust Heating Design Leaving Air Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignLeavingAirWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -455,7 +496,8 @@
       "name": "supplyCoolingAirPressureDropUnit",
       "annotates": "supplyCoolingAirPressureDrop",
       "overrides": "unit",
-      "schema": "PressureUnit"
+      "schema": "PressureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingAirPressureDropUnit;1"
     },
     {
       "@type": [
@@ -469,7 +511,8 @@
       "name": "supplyCoolingMinAirflowRatingUnit",
       "annotates": "supplyCoolingMinAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingMinAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -483,7 +526,8 @@
       "name": "supplyCoolingMaxAirflowRatingUnit",
       "annotates": "supplyCoolingMaxAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingMaxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -497,7 +541,8 @@
       "name": "supplyCoolingDesignAirflowUnit",
       "annotates": "supplyCoolingDesignAirflow",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignAirflowUnit;1"
     },
     {
       "@type": [
@@ -511,7 +556,8 @@
       "name": "supplyCoolingDesignEnteringAirDryBulbTemperatureUnit",
       "annotates": "supplyCoolingDesignEnteringAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignEnteringAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -525,7 +571,8 @@
       "name": "supplyCoolingDesignLeavingAirDryBulbTemperatureUnit",
       "annotates": "supplyCoolingDesignLeavingAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignLeavingAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -539,7 +586,8 @@
       "name": "supplyCoolingDesignEnteringAirWetBulbTemperatureUnit",
       "annotates": "supplyCoolingDesignEnteringAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignEnteringAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -553,7 +601,8 @@
       "name": "supplyCoolingDesignLeavingAirWetBulbTemperatureUnit",
       "annotates": "supplyCoolingDesignLeavingAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyCoolingDesignLeavingAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -567,7 +616,8 @@
       "name": "supplyHeatingAirPressureDropUnit",
       "annotates": "supplyHeatingAirPressureDrop",
       "overrides": "unit",
-      "schema": "PressureUnit"
+      "schema": "PressureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingAirPressureDropUnit;1"
     },
     {
       "@type": [
@@ -581,7 +631,8 @@
       "name": "supplyHeatingMinAirflowRatingUnit",
       "annotates": "supplyHeatingMinAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingMinAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -595,7 +646,8 @@
       "name": "supplyHeatingMaxAirflowRatingUnit",
       "annotates": "supplyHeatingMaxAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingMaxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -609,7 +661,8 @@
       "name": "supplyHeatingDesignAirflowUnit",
       "annotates": "supplyHeatingDesignAirflow",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignAirflowUnit;1"
     },
     {
       "@type": [
@@ -623,7 +676,8 @@
       "name": "supplyHeatingDesignEnteringAirDryBulbTemperatureUnit",
       "annotates": "supplyHeatingDesignEnteringAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignEnteringAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -637,7 +691,8 @@
       "name": "supplyHeatingDesignLeavingAirDryBulbTemperatureUnit",
       "annotates": "supplyHeatingDesignLeavingAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignLeavingAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -651,7 +706,8 @@
       "name": "supplyHeatingDesignEnteringAirWetBulbTemperatureUnit",
       "annotates": "supplyHeatingDesignEnteringAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignEnteringAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -665,7 +721,8 @@
       "name": "supplyHeatingDesignLeavingAirWetBulbTemperatureUnit",
       "annotates": "supplyHeatingDesignLeavingAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:supplyHeatingDesignLeavingAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -679,7 +736,8 @@
       "name": "exhaustCoolingAirPressureDropUnit",
       "annotates": "exhaustCoolingAirPressureDrop",
       "overrides": "unit",
-      "schema": "PressureUnit"
+      "schema": "PressureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingAirPressureDropUnit;1"
     },
     {
       "@type": [
@@ -693,7 +751,8 @@
       "name": "exhaustCoolingMinAirflowRatingUnit",
       "annotates": "exhaustCoolingMinAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingMinAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -707,7 +766,8 @@
       "name": "exhaustCoolingMaxAirflowRatingUnit",
       "annotates": "exhaustCoolingMaxAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingMaxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -721,7 +781,8 @@
       "name": "exhaustCoolingDesignAirflowUnit",
       "annotates": "exhaustCoolingDesignAirflow",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignAirflowUnit;1"
     },
     {
       "@type": [
@@ -735,7 +796,8 @@
       "name": "exhaustCoolingDesignEnteringAirDryBulbTemperatureUnit",
       "annotates": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignEnteringAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -749,7 +811,8 @@
       "name": "exhaustCoolingDesignLeavingAirDryBulbTemperatureUnit",
       "annotates": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignLeavingAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -763,7 +826,8 @@
       "name": "exhaustCoolingDesignEnteringAirWetBulbTemperatureUnit",
       "annotates": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignEnteringAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -777,7 +841,8 @@
       "name": "exhaustCoolingDesignLeavingAirWetBulbTemperatureUnit",
       "annotates": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustCoolingDesignLeavingAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -791,7 +856,8 @@
       "name": "exhaustHeatingAirPressureDropUnit",
       "annotates": "exhaustHeatingAirPressureDrop",
       "overrides": "unit",
-      "schema": "PressureUnit"
+      "schema": "PressureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingAirPressureDropUnit;1"
     },
     {
       "@type": [
@@ -805,7 +871,8 @@
       "name": "exhaustHeatingMinAirflowRatingUnit",
       "annotates": "exhaustHeatingMinAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingMinAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -819,7 +886,8 @@
       "name": "exhaustHeatingMaxAirflowRatingUnit",
       "annotates": "exhaustHeatingMaxAirflowRating",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingMaxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -833,7 +901,8 @@
       "name": "exhaustHeatingDesignAirflowUnit",
       "annotates": "exhaustHeatingDesignAirflow",
       "overrides": "unit",
-      "schema": "VolumeFlowRateUnit"
+      "schema": "VolumeFlowRateUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignAirflowUnit;1"
     },
     {
       "@type": [
@@ -847,7 +916,8 @@
       "name": "exhaustHeatingDesignEnteringAirDryBulbTemperatureUnit",
       "annotates": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignEnteringAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -861,7 +931,8 @@
       "name": "exhaustHeatingDesignLeavingAirDryBulbTemperatureUnit",
       "annotates": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignLeavingAirDryBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -875,7 +946,8 @@
       "name": "exhaustHeatingDesignEnteringAirWetBulbTemperatureUnit",
       "annotates": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignEnteringAirWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -889,7 +961,8 @@
       "name": "exhaustHeatingDesignLeavingAirWetBulbTemperatureUnit",
       "annotates": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:EnergyRecoveryDevice:exhaustHeatingDesignLeavingAirWetBulbTemperatureUnit;1"
     }
   ],
   "@context": [

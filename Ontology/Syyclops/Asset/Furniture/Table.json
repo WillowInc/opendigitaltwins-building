@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Table"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Furniture;1"
   ],
   "contents": [
@@ -16,7 +16,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "basic, sit/stand"
+      "comment": "basic, sit/stand",
+      "@id": "dtmi:com:syyclops:Table:type;1"
     }
   ],
   "@context": [

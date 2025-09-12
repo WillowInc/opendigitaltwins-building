@@ -7,7 +7,7 @@
   "description": {
     "en": "An application whose task is to connect to and communicate with other software applications."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Application;1"
   ],
   "contents": [
@@ -61,8 +61,10 @@
             },
             "schema": "string"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ConnectorApplication:OS1;1"
+      },
+      "@id": "dtmi:com:syyclops:ConnectorApplication:connectorType;1"
     }
   ],
   "@context": [

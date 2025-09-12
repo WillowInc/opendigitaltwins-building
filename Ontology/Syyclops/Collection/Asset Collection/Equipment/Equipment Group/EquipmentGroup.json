@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Equipment Group"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:EquipmentCollection;1"
   ],
   "contents": [
@@ -17,7 +17,8 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:syyclops:Asset;1"
+      "target": "dtmi:com:syyclops:Asset;1",
+      "@id": "dtmi:com:syyclops:EquipmentGroup:isPartOf;1"
     }
   ],
   "@context": [

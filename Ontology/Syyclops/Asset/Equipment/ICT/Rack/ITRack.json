@@ -19,20 +19,25 @@
         "enumValues": [
           {
             "enumValue": "TwoPost",
-            "name": "TwoPost"
+            "name": "TwoPost",
+            "@id": "dtmi:com:syyclops:ITRack:TwoPost;1"
           },
           {
             "enumValue": "FourPost",
-            "name": "FourPost"
+            "name": "FourPost",
+            "@id": "dtmi:com:syyclops:ITRack:FourPost;1"
           },
           {
             "enumValue": "Cabinet",
-            "name": "Cabinet"
+            "name": "Cabinet",
+            "@id": "dtmi:com:syyclops:ITRack:Cabinet;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ITRack:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ITRack:type;1"
     },
     {
       "@type": "Property",
@@ -45,16 +50,20 @@
         "enumValues": [
           {
             "enumValue": "Wall",
-            "name": "Wall"
+            "name": "Wall",
+            "@id": "dtmi:com:syyclops:ITRack:Wall;1"
           },
           {
             "enumValue": "Floor",
-            "name": "Floor"
+            "name": "Floor",
+            "@id": "dtmi:com:syyclops:ITRack:Floor;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ITRack:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ITRack:mounting;1"
     },
     {
       "@type": "Property",
@@ -63,7 +72,8 @@
       },
       "name": "heightRUs",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ITRack:heightRUs;1"
     }
   ],
   "@context": [

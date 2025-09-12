@@ -17,7 +17,8 @@
       "displayName": {
         "en": "is capabilty of"
       },
-      "name": "isCapabilityOf"
+      "name": "isCapabilityOf",
+      "@id": "dtmi:com:syyclops:Capability:isCapabilityOf;1"
     },
     {
       "@type": "Relationship",
@@ -28,7 +29,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:Capability:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -36,14 +38,16 @@
       "displayName": {
         "en": "hosted by"
       },
-      "comment": "Controller (i.e. BACnet Device)"
+      "comment": "Controller (i.e. BACnet Device)",
+      "@id": "dtmi:com:syyclops:Capability:hostedBy;1"
     },
     {
       "@type": "Relationship",
       "name": "isControlledBy",
       "displayName": {
         "en": "is controlled by"
-      }
+      },
+      "@id": "dtmi:com:syyclops:Capability:isControlledBy;1"
     },
     {
       "@type": "Property",
@@ -55,14 +59,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:tagName;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Capability:tagValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Capability:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Capability:customTags;1"
     },
     {
       "@type": "Property",
@@ -74,14 +82,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Capability:MS2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Capability:externalIds;1"
     },
     {
       "@type": "Property",
@@ -92,8 +104,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:CapabilityMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:CapabilityMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:Capability:AS3;1"
+      },
+      "@id": "dtmi:com:syyclops:Capability:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -105,7 +119,8 @@
         "en": "The connector ID as created by Mapped and stored as the $dtid of a Connector Application twin for the connector which has defined and trends this Capability."
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Capability:mappedConnectorId;1"
     },
     {
       "@type": "Property",
@@ -114,7 +129,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Capability:name;1"
     },
     {
       "@type": "Property",
@@ -123,7 +139,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Capability:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -132,7 +149,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Capability:externalID;1"
     },
     {
       "@type": "Property",
@@ -142,7 +160,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Time Series DB"
+      "comment": "Time Series DB",
+      "@id": "dtmi:com:syyclops:Capability:trendID;1"
     },
     {
       "@type": "Property",
@@ -151,7 +170,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Capability:siteID;1"
     },
     {
       "@type": "Property",
@@ -161,7 +181,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Willow Connector identifier which manages the Capabiltiy"
+      "comment": "Willow Connector identifier which manages the Capabiltiy",
+      "@id": "dtmi:com:syyclops:Capability:connectorID;1"
     },
     {
       "@type": "Component",
@@ -169,7 +190,8 @@
       "displayName": {
         "en": "Communication"
       },
-      "schema": "dtmi:com:syyclops:CapabilityCommunication;1"
+      "schema": "dtmi:com:syyclops:CapabilityCommunication;1",
+      "@id": "dtmi:com:syyclops:Capability:communication;1"
     },
     {
       "@type": "Property",
@@ -178,7 +200,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Capability:description;1"
     },
     {
       "@type": "Property",
@@ -204,8 +227,10 @@
             },
             "schema": "dtmi:com:syyclops:CapabilityAlternateClassificationObject;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Capability:OS4;1"
+      },
+      "@id": "dtmi:com:syyclops:Capability:alternateClassification;1"
     },
     {
       "@type": "Property",
@@ -217,7 +242,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -225,15 +251,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Capability:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Capability:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:Capability:MS6;1"
+          },
+          "@id": "dtmi:com:syyclops:Capability:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:Capability:MS5;1"
+      },
+      "@id": "dtmi:com:syyclops:Capability:customProperties;1"
     },
     {
       "@type": "Property",
@@ -245,7 +277,8 @@
       },
       "name": "lastValueTime",
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Capability:lastValueTime;1"
     },
     {
       "@type": "Property",
@@ -254,7 +287,8 @@
         "en": "Unit"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Capability:unit;1"
     },
     {
       "@type": "Property",
@@ -266,14 +300,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "valueMapKey",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:valueMapKey;1"
         },
         "mapValue": {
           "name": "valueMapValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:valueMapValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Capability:MS7;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Capability:valueMap;1"
     },
     {
       "@type": "Property",
@@ -299,8 +337,10 @@
             },
             "schema": "double"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Capability:OS8;1"
+      },
+      "@id": "dtmi:com:syyclops:Capability:validValues;1"
     },
     {
       "@type": "Property",
@@ -319,27 +359,31 @@
             "displayName": {
               "en": "linear"
             },
-            "enumValue": "linear"
+            "enumValue": "linear",
+            "@id": "dtmi:com:syyclops:Capability:linear;1"
           },
           {
             "name": "stepForward",
             "displayName": {
               "en": "Step Forward"
             },
-            "enumValue": "stepForward"
+            "enumValue": "stepForward",
+            "@id": "dtmi:com:syyclops:Capability:stepForward;1"
           },
           {
             "name": "stepBackward",
             "displayName": {
               "en": "Step Backward"
             },
-            "enumValue": "stepBackward"
+            "enumValue": "stepBackward",
+            "@id": "dtmi:com:syyclops:Capability:stepBackward;1"
           }
         ],
         "displayName": {
           "en": "Capability Interpolation"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Capability:interpolation;1"
     },
     {
       "@type": "Property",
@@ -348,7 +392,8 @@
         "en": "Totalized"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Capability:totalized;1"
     },
     {
       "@type": "Property",
@@ -358,7 +403,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "The trended values are derived by evaluating this expression"
+      "comment": "The trended values are derived by evaluating this expression",
+      "@id": "dtmi:com:syyclops:Capability:valueExpression;1"
     },
     {
       "@type": "Property",
@@ -368,7 +414,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "Raw values from the connected system are multiplied by this scale factor when being stored in the twin"
+      "comment": "Raw values from the connected system are multiplied by this scale factor when being stored in the twin",
+      "@id": "dtmi:com:syyclops:Capability:scaleFactor;1"
     },
     {
       "@type": "Property",
@@ -378,7 +425,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "This value is added to the raw values from the connected system, after scaling, when being stored in the twin"
+      "comment": "This value is added to the raw values from the connected system, after scaling, when being stored in the twin",
+      "@id": "dtmi:com:syyclops:Capability:offsetValue;1"
     },
     {
       "@type": "Property",
@@ -397,41 +445,47 @@
             "displayName": {
               "en": "undefined"
             },
-            "enumValue": "undefined"
+            "enumValue": "undefined",
+            "@id": "dtmi:com:syyclops:Capability:undefined;1"
           },
           {
             "name": "analog",
             "displayName": {
               "en": "analog"
             },
-            "enumValue": "analog"
+            "enumValue": "analog",
+            "@id": "dtmi:com:syyclops:Capability:analog;1"
           },
           {
             "name": "binary",
             "displayName": {
               "en": "binary"
             },
-            "enumValue": "binary"
+            "enumValue": "binary",
+            "@id": "dtmi:com:syyclops:Capability:binary;1"
           },
           {
             "name": "multiState",
             "displayName": {
               "en": "multiState"
             },
-            "enumValue": "multiState"
+            "enumValue": "multiState",
+            "@id": "dtmi:com:syyclops:Capability:multiState;1"
           },
           {
             "name": "sum",
             "displayName": {
               "en": "sum"
             },
-            "enumValue": "sum"
+            "enumValue": "sum",
+            "@id": "dtmi:com:syyclops:Capability:sum;1"
           }
         ],
         "displayName": {
           "en": "Capability Type"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Capability:type;1"
     },
     {
       "@type": "Component",
@@ -439,7 +493,8 @@
         "en": "categorization properties"
       },
       "name": "categorizationProperties",
-      "schema": "dtmi:com:syyclops:CapabilityPropertySet;1"
+      "schema": "dtmi:com:syyclops:CapabilityPropertySet;1",
+      "@id": "dtmi:com:syyclops:Capability:categorizationProperties;1"
     },
     {
       "@type": "Property",
@@ -451,13 +506,17 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Capability:MM10;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
-      }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Capability:MM11;1"
+        },
+        "@id": "dtmi:com:syyclops:Capability:MS9;1"
+      },
+      "@id": "dtmi:com:syyclops:Capability:tags;1"
     },
     {
       "@type": [
@@ -471,7 +530,8 @@
       "writable": true,
       "schema": "integer",
       "unit": "second",
-      "comment": "how often the capability value is read from the controller"
+      "comment": "how often the capability value is read from the controller",
+      "@id": "dtmi:com:syyclops:Capability:trendInterval;1"
     },
     {
       "@type": "Property",
@@ -481,7 +541,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "sort and filter priority to be leveraged by UI"
+      "comment": "sort and filter priority to be leveraged by UI",
+      "@id": "dtmi:com:syyclops:Capability:displayPriority;1"
     },
     {
       "@type": "Property",
@@ -490,7 +551,8 @@
         "en": "Is Enabled"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Capability:enabled;1"
     },
     {
       "@type": "Property",
@@ -499,7 +561,8 @@
         "en": "Is Detected"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Capability:detected;1"
     },
     {
       "@type": "Property",
@@ -508,7 +571,8 @@
         "en": "Is Enabled For Analytics"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Capability:analyticsEnabled;1"
     }
   ],
   "schemas": [

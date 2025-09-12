@@ -17,7 +17,8 @@
       "name": "width",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACRectangularDuct:width;1"
     },
     {
       "@type": [
@@ -32,7 +33,8 @@
       "annotates": "width",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACRectangularDuct:widthUnit;1"
     },
     {
       "@type": [
@@ -45,7 +47,8 @@
       "name": "height",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACRectangularDuct:height;1"
     },
     {
       "@type": [
@@ -60,7 +63,8 @@
       "annotates": "height",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACRectangularDuct:heightUnit;1"
     }
   ],
   "@context": [

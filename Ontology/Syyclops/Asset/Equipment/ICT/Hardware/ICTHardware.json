@@ -34,7 +34,8 @@
           "writable": true
         }
       ],
-      "target": "dtmi:com:syyclops:ITRack;1"
+      "target": "dtmi:com:syyclops:ITRack;1",
+      "@id": "dtmi:com:syyclops:ICTHardware:mountedInRack;1"
     }
   ],
   "@context": [

@@ -34,7 +34,8 @@
       "annotates": "powerInput",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricTankWaterHeater:powerInputUnit;1"
     }
   ],
   "@context": [

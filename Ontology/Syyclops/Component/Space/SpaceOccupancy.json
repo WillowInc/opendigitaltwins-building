@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Space Occupancy"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
@@ -15,7 +15,8 @@
         "en": "Is Occupied"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:isOccupied;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
         "en": "People Count"
       },
       "writable": true,
-      "schema": "double"
+      "schema": "double",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:peopleCount;1"
     },
     {
       "@type": "Property",
@@ -33,10 +35,14 @@
         "en": "Inferred Occupancy"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:hasInferredOccupancy;1"
     },
     {
-      "@type": ["Property", "TimeSpan"],
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
       "name": "dwellTimeAverage",
       "displayName": {
         "en": "Dwell Time Average"
@@ -44,10 +50,14 @@
       "writable": true,
       "schema": "double",
       "unit": "second",
-      "comment": "Average time spent in the space by all individuals in the space"
+      "comment": "Average time spent in the space by all individuals in the space",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:dwellTimeAverage;1"
     },
     {
-      "@type": ["Property", "TimeSpan"],
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
       "name": "entranceDwellTime",
       "displayName": {
         "en": "Entrance Dwell Time"
@@ -55,10 +65,14 @@
       "writable": true,
       "schema": "double",
       "unit": "second",
-      "comment": "Wait time to enter the space"
+      "comment": "Wait time to enter the space",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:entranceDwellTime;1"
     },
     {
-      "@type": ["Property", "TimeSpan"],
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
       "name": "exitDwellTime",
       "displayName": {
         "en": "Exit Dwell Time"
@@ -66,7 +80,8 @@
       "writable": true,
       "schema": "double",
       "unit": "second",
-      "comment": "Wait time to exit the space"
+      "comment": "Wait time to exit the space",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:exitDwellTime;1"
     },
     {
       "@type": "Property",
@@ -76,7 +91,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "e.g. people per second"
+      "comment": "e.g. people per second",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:entranceRate;1"
     },
     {
       "@type": "Property",
@@ -86,7 +102,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "e.g. people per second"
+      "comment": "e.g. people per second",
+      "@id": "dtmi:com:syyclops:SpaceOccupancy:exitRate;1"
     }
   ],
   "@context": [

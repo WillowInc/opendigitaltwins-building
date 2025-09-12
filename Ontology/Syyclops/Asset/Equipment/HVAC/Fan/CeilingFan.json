@@ -19,7 +19,8 @@
       "name": "bladeDiameter",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CeilingFan:bladeDiameter;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "bladeDiameter",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CeilingFan:bladeDiameterUnit;1"
     }
   ],
   "@context": [

@@ -20,7 +20,8 @@
       "description": {
         "en": "A person or organization which has been invited to or planning to attend a calendar event."
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:hasAttendee;1"
     },
     {
       "@type": "Relationship",
@@ -31,7 +32,8 @@
       "description": {
         "en": "A person or organization which has organized a calendar event."
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:hasOrganizer;1"
     },
     {
       "@type": "Relationship",
@@ -42,7 +44,8 @@
       "description": {
         "en": "A space where a calendar event is taking place."
       },
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:hasLocation;1"
     },
     {
       "@type": "Property",
@@ -51,7 +54,8 @@
       },
       "name": "isAllDay",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CalendarEvent:isAllDay;1"
     },
     {
       "@type": "Property",
@@ -60,7 +64,8 @@
         "en": "Recurrence"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:PatternedRecurrence;1"
+      "schema": "dtmi:com:syyclops:PatternedRecurrence;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:recurrence;1"
     },
     {
       "@type": "Property",
@@ -69,7 +74,8 @@
         "en": "ICal UID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:CalendarEvent:iCalUID;1"
     },
     {
       "@type": "Property",
@@ -82,20 +88,25 @@
         "enumValues": [
           {
             "enumValue": "low",
-            "name": "low"
+            "name": "low",
+            "@id": "dtmi:com:syyclops:CalendarEvent:low;1"
           },
           {
             "enumValue": "normal",
-            "name": "normal"
+            "name": "normal",
+            "@id": "dtmi:com:syyclops:CalendarEvent:normal;1"
           },
           {
             "enumValue": "high",
-            "name": "high"
+            "name": "high",
+            "@id": "dtmi:com:syyclops:CalendarEvent:high;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CalendarEvent:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CalendarEvent:importance;1"
     },
     {
       "@type": "Property",
@@ -104,7 +115,8 @@
       },
       "name": "estimatedAttendeeCount",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CalendarEvent:estimatedAttendeeCount;1"
     }
   ],
   "schemas": [
@@ -272,31 +284,38 @@
       "enumValues": [
         {
           "enumValue": "sunday",
-          "name": "sunday"
+          "name": "sunday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:sunday;1"
         },
         {
           "enumValue": "monday",
-          "name": "monday"
+          "name": "monday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:monday;1"
         },
         {
           "enumValue": "tuesday",
-          "name": "tuesday"
+          "name": "tuesday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:tuesday;1"
         },
         {
           "enumValue": "wednesday",
-          "name": "wednesday"
+          "name": "wednesday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:wednesday;1"
         },
         {
           "enumValue": "thursday",
-          "name": "thursday"
+          "name": "thursday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:thursday;1"
         },
         {
           "enumValue": "friday",
-          "name": "friday"
+          "name": "friday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:friday;1"
         },
         {
           "enumValue": "saturday",
-          "name": "saturday"
+          "name": "saturday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:saturday;1"
         }
       ],
       "valueSchema": "string",

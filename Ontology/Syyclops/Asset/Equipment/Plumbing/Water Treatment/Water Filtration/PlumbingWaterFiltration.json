@@ -15,7 +15,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:type;1"
     },
     {
       "@type": [
@@ -28,7 +29,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:flowCapacity;1"
     },
     {
       "@type": [
@@ -43,7 +45,8 @@
       "annotates": "flowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:flowCapacityUnit;1"
     },
     {
       "@type": [
@@ -56,7 +59,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "litre"
+      "unit": "litre",
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:tankCapacity;1"
     },
     {
       "@type": [
@@ -71,7 +75,8 @@
       "annotates": "tankCapacity",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:tankCapacityUnit;1"
     },
     {
       "@type": [
@@ -87,7 +92,8 @@
       "name": "filtrationRating",
       "unit": "micrometre",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:filtrationRating;1"
     },
     {
       "@type": [
@@ -100,7 +106,8 @@
       "name": "workingPressure",
       "schema": "integer",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:workingPressure;1"
     },
     {
       "@type": [
@@ -115,7 +122,8 @@
       "annotates": "workingPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingWaterFiltration:workingPressureUnit;1"
     }
   ],
   "@context": [

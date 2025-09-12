@@ -34,7 +34,8 @@
       "annotates": "weightCapacity",
       "overrides": "unit",
       "schema": "MassUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElevatorMachine:weightCapacityUnit;1"
     },
     {
       "@type": [
@@ -62,7 +63,8 @@
       "annotates": "motorPower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElevatorMachine:motorPowerUnit;1"
     },
     {
       "@type": [
@@ -90,7 +92,8 @@
       "annotates": "brakeHorsepower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElevatorMachine:brakeHorsepowerUnit;1"
     }
   ],
   "@context": [

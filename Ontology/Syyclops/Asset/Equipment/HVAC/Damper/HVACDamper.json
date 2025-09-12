@@ -19,20 +19,25 @@
         "enumValues": [
           {
             "enumValue": "Supply",
-            "name": "Supply"
+            "name": "Supply",
+            "@id": "dtmi:com:syyclops:HVACDamper:Supply;1"
           },
           {
             "enumValue": "Return",
-            "name": "Return"
+            "name": "Return",
+            "@id": "dtmi:com:syyclops:HVACDamper:Return;1"
           },
           {
             "enumValue": "Exhaust",
-            "name": "Exhaust"
+            "name": "Exhaust",
+            "@id": "dtmi:com:syyclops:HVACDamper:Exhaust;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HVACDamper:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACDamper:service;1"
     },
     {
       "@type": "Property",
@@ -45,20 +50,25 @@
         "enumValues": [
           {
             "enumValue": "III",
-            "name": "III"
+            "name": "III",
+            "@id": "dtmi:com:syyclops:HVACDamper:III;1"
           },
           {
             "enumValue": "II",
-            "name": "II"
+            "name": "II",
+            "@id": "dtmi:com:syyclops:HVACDamper:II;1"
           },
           {
             "enumValue": "I",
-            "name": "I"
+            "name": "I",
+            "@id": "dtmi:com:syyclops:HVACDamper:I;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HVACDamper:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACDamper:leakageClass;1"
     },
     {
       "@type": "Property",
@@ -71,20 +81,25 @@
         "enumValues": [
           {
             "enumValue": "Vee",
-            "name": "Vee"
+            "name": "Vee",
+            "@id": "dtmi:com:syyclops:HVACDamper:Vee;1"
           },
           {
             "enumValue": "Round",
-            "name": "Round"
+            "name": "Round",
+            "@id": "dtmi:com:syyclops:HVACDamper:Round;1"
           },
           {
             "enumValue": "Airfoil",
-            "name": "Airfoil"
+            "name": "Airfoil",
+            "@id": "dtmi:com:syyclops:HVACDamper:Airfoil;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HVACDamper:ES3;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACDamper:bladeType;1"
     },
     {
       "@type": "Component",
@@ -92,7 +107,8 @@
         "en": "duct inlet"
       },
       "name": "ductInlet",
-      "schema": "dtmi:com:syyclops:DuctConnection;1"
+      "schema": "dtmi:com:syyclops:DuctConnection;1",
+      "@id": "dtmi:com:syyclops:HVACDamper:ductInlet;1"
     }
   ],
   "@context": [

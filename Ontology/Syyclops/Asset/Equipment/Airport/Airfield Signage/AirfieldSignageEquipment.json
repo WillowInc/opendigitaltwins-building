@@ -16,7 +16,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "A | 36-18"
+      "comment": "A | 36-18",
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:message;1"
     },
     {
       "@type": [
@@ -29,7 +30,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "millimetre"
+      "unit": "millimetre",
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:messageHeight;1"
     },
     {
       "@type": [
@@ -44,7 +46,8 @@
       "annotates": "messageHeight",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:messageHeightUnit;1"
     },
     {
       "@type": [
@@ -57,7 +60,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "millimetre"
+      "unit": "millimetre",
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:panelHeight;1"
     },
     {
       "@type": [
@@ -72,7 +76,8 @@
       "annotates": "panelHeight",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:panelHeightUnit;1"
     },
     {
       "@type": [
@@ -85,7 +90,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "millimetre"
+      "unit": "millimetre",
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:panelWidth;1"
     },
     {
       "@type": [
@@ -100,7 +106,8 @@
       "annotates": "panelWidth",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:panelWidthUnit;1"
     },
     {
       "@type": [
@@ -113,7 +120,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "millimetre"
+      "unit": "millimetre",
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:installedHeight;1"
     },
     {
       "@type": [
@@ -128,7 +136,8 @@
       "annotates": "installedHeight",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:airport:AirfieldSignageEquipment:installedHeightUnit;1"
     }
   ],
   "@context": [

@@ -18,7 +18,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Room:type;1"
     },
     {
       "@type": [
@@ -31,7 +32,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "cubicMetre"
+      "unit": "cubicMetre",
+      "@id": "dtmi:com:syyclops:Room:volume;1"
     },
     {
       "@type": [
@@ -46,7 +48,8 @@
       "annotates": "volume",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Room:volumeUnit;1"
     }
   ],
   "@context": [

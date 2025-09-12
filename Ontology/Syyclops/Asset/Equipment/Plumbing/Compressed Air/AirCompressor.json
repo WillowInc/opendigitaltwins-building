@@ -19,7 +19,8 @@
       "name": "workingPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressor:workingPressure;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "workingPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressor:workingPressureUnit;1"
     },
     {
       "@type": [
@@ -62,7 +64,8 @@
       "annotates": "motorPower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressor:motorPowerUnit;1"
     },
     {
       "@type": [
@@ -90,7 +93,8 @@
       "annotates": "brakeHorsepower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressor:brakeHorsepowerUnit;1"
     },
     {
       "@type": [
@@ -103,7 +107,8 @@
       "name": "freeAirDelivery",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressor:freeAirDelivery;1"
     },
     {
       "@type": [
@@ -118,7 +123,8 @@
       "annotates": "freeAirDelivery",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressor:freeAirDeliveryUnit;1"
     }
   ],
   "@context": [

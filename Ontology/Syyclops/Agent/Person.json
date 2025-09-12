@@ -21,7 +21,8 @@
       },
       "name": "lastName",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Person:lastName;1"
     },
     {
       "@type": "Property",
@@ -33,7 +34,8 @@
       },
       "name": "image",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Person:image;1"
     },
     {
       "@type": "Property",
@@ -45,7 +47,8 @@
       },
       "name": "givenName",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Person:givenName;1"
     },
     {
       "@type": "Property",
@@ -57,7 +60,8 @@
       },
       "name": "gender",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Person:gender;1"
     },
     {
       "@type": "Property",
@@ -69,7 +73,8 @@
       },
       "name": "firstName",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Person:firstName;1"
     },
     {
       "@type": "Property",
@@ -81,7 +86,8 @@
       },
       "name": "familyName",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Person:familyName;1"
     },
     {
       "@type": "Relationship",
@@ -92,7 +98,8 @@
         "en": "is member of"
       },
       "name": "isMemberOf",
-      "target": "dtmi:com:syyclops:Organization;1"
+      "target": "dtmi:com:syyclops:Organization;1",
+      "@id": "dtmi:com:syyclops:Person:isMemberOf;1"
     },
     {
       "@type": "Property",
@@ -101,7 +108,8 @@
         "en": "Company Id"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Person:companyId;1"
     }
   ],
   "@context": [

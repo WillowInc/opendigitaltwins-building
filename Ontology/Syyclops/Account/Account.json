@@ -15,7 +15,8 @@
       "displayName": {
         "en": "is held by"
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Account:isHeldBy;1"
     },
     {
       "@type": "Relationship",
@@ -23,7 +24,8 @@
       "displayName": {
         "en": "is provided by"
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Account:isProvidedBy;1"
     },
     {
       "@type": "Relationship",
@@ -31,7 +33,8 @@
       "displayName": {
         "en": "has document"
       },
-      "target": "dtmi:com:syyclops:Document;1"
+      "target": "dtmi:com:syyclops:Document;1",
+      "@id": "dtmi:com:syyclops:Account:hasDocument;1"
     },
     {
       "@type": "Relationship",
@@ -42,7 +45,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:Account:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -52,7 +56,8 @@
       "displayName": {
         "en": "owns"
       },
-      "name": "owns"
+      "name": "owns",
+      "@id": "dtmi:com:syyclops:Account:owns;1"
     },
     {
       "@type": "Property",
@@ -64,14 +69,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:tagName;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Account:tagValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Account:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Account:customTags;1"
     },
     {
       "@type": "Property",
@@ -83,14 +92,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Account:MS2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Account:externalIds;1"
     },
     {
       "@type": "Property",
@@ -101,8 +114,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:AccountMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:AccountMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:Account:AS3;1"
+      },
+      "@id": "dtmi:com:syyclops:Account:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -111,7 +126,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Account:name;1"
     },
     {
       "@type": "Property",
@@ -120,7 +136,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Account:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -129,7 +146,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Account:externalID;1"
     },
     {
       "@type": "Property",
@@ -138,7 +156,8 @@
         "en": "Code"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Account:code;1"
     },
     {
       "@type": "Property",
@@ -147,7 +166,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Account:description;1"
     },
     {
       "@type": "Property",
@@ -156,7 +176,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Account:siteID;1"
     },
     {
       "@type": "Property",
@@ -182,8 +203,10 @@
             },
             "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Account:OS4;1"
+      },
+      "@id": "dtmi:com:syyclops:Account:alternateClassification;1"
     },
     {
       "@type": "Property",
@@ -195,7 +218,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -203,15 +227,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Account:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Account:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:Account:MS6;1"
+          },
+          "@id": "dtmi:com:syyclops:Account:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:Account:MS5;1"
+      },
+      "@id": "dtmi:com:syyclops:Account:customProperties;1"
     }
   ],
   "schemas": [

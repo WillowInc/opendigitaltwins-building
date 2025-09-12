@@ -7,80 +7,115 @@
   "description": {
     "en": "A device which converts a liquid substance into its gaseous form, vapor. In HVAC, it is commonly included in equipment such as chillers and air conditioners."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:AssetComponent;1",
     "dtmi:com:syyclops:GeneralPurposeEquipment;1"
   ],
   "contents": [
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designEnteringWaterTemperature",
       "displayName": {
         "en": "Design Entering Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:Evaporator:designEnteringWaterTemperature;1"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Entering Water Temperature Unit"
       },
       "name": "designEnteringWaterTemperatureUnit",
       "annotates": "designEnteringWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:Evaporator:designEnteringWaterTemperatureUnit;1"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designLeavingWaterTemperature",
       "displayName": {
         "en": "Design Leaving Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:Evaporator:designLeavingWaterTemperature;1"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Leaving Water Temperature Unit"
       },
       "name": "designLeavingWaterTemperatureUnit",
       "annotates": "designLeavingWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:Evaporator:designLeavingWaterTemperatureUnit;1"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
       "name": "designDeltaWaterTemperature",
       "displayName": {
         "en": "Design Delta Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:Evaporator:designDeltaWaterTemperature;1"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Delta Water Temperature Unit"
       },
       "name": "designDeltaWaterTemperatureUnit",
       "annotates": "designDeltaWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:Evaporator:designDeltaWaterTemperatureUnit;1"
     },
     {
-      "@type": ["Property", "VolumeFlowRate"],
+      "@type": [
+        "Property",
+        "VolumeFlowRate"
+      ],
       "displayName": {
         "en": "Design Flow"
       },
       "name": "designFlow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Evaporator:designFlow;1"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Flow Unit"
       },
@@ -88,20 +123,29 @@
       "annotates": "designFlow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Evaporator:designFlowUnit;1"
     },
     {
-      "@type": ["Property", "Pressure"],
+      "@type": [
+        "Property",
+        "Pressure"
+      ],
       "displayName": {
         "en": "Design Pressure Drop"
       },
       "name": "designPressureDrop",
       "schema": "double",
       "unit": "kilopascal",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Evaporator:designPressureDrop;1"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": [
+        "Property",
+        "ValueAnnotation",
+        "Override"
+      ],
       "displayName": {
         "en": "Design Pressure Drop Unit"
       },
@@ -109,7 +153,8 @@
       "annotates": "designPressureDrop",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Evaporator:designPressureDropUnit;1"
     }
   ],
   "@context": [

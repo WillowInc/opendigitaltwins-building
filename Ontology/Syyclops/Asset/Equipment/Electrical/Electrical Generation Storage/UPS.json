@@ -32,7 +32,8 @@
       "name": "powerOutputKVA",
       "schema": "double",
       "unit": "kilovoltAmpere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UPS:powerOutputKVA;1"
     },
     {
       "@type": [
@@ -71,16 +72,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:UPS:Three;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:UPS:One;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:UPS:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UPS:outputPhases;1"
     },
     {
       "@type": [
@@ -106,16 +111,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:UPS:EE3;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:UPS:EE4;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:UPS:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UPS:inputPhases;1"
     }
   ],
   "@context": [

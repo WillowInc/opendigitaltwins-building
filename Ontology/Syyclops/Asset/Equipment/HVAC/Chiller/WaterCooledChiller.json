@@ -17,7 +17,8 @@
         "en": "Condenser"
       },
       "name": "condenser",
-      "schema": "dtmi:com:syyclops:WaterCooledCondenser;1"
+      "schema": "dtmi:com:syyclops:WaterCooledCondenser;1",
+      "@id": "dtmi:com:syyclops:WaterCooledChiller:condenser;1"
     }
   ],
   "@context": [

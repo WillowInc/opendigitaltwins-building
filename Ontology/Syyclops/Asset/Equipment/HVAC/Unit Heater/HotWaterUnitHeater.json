@@ -19,7 +19,8 @@
       "name": "flowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HotWaterUnitHeater:flowCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "flowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HotWaterUnitHeater:flowCapacityUnit;1"
     }
   ],
   "@context": [

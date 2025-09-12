@@ -15,7 +15,8 @@
       },
       "name": "type",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ConveyanceEquipment:type;1"
     }
   ],
   "@context": [

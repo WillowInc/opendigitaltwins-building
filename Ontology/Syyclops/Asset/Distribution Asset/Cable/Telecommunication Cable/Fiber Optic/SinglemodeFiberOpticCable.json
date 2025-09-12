@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Singlemode Fiber Optic Cable"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:FiberOpticCable;1"
   ],
   "contents": [
@@ -22,19 +22,23 @@
             "displayName": {
               "en": "OS1"
             },
-            "enumValue": "OS1"
+            "enumValue": "OS1",
+            "@id": "dtmi:com:syyclops:SinglemodeFiberOpticCable:OS1;1"
           },
           {
             "name": "OS2",
             "displayName": {
               "en": "OS2"
             },
-            "enumValue": "OS2"
+            "enumValue": "OS2",
+            "@id": "dtmi:com:syyclops:SinglemodeFiberOpticCable:OS2;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:SinglemodeFiberOpticCable:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SinglemodeFiberOpticCable:performanceRating;1"
     }
   ],
   "@context": [

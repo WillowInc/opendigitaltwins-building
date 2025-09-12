@@ -19,7 +19,8 @@
       "name": "nominalCapacity",
       "schema": "double",
       "unit": "kilowattHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BatterySystem:nominalCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "nominalCapacity",
       "overrides": "unit",
       "schema": "EnergyUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BatterySystem:nominalCapacityUnit;1"
     }
   ],
   "@context": [

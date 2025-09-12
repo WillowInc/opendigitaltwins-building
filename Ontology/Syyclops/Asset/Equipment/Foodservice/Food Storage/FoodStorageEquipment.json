@@ -18,7 +18,8 @@
       },
       "name": "contents",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodStorageEquipment:contents;1"
     },
     {
       "@type": "Property",
@@ -30,7 +31,8 @@
       },
       "name": "contentsRetailValue",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodStorageEquipment:contentsRetailValue;1"
     },
     {
       "@type": [
@@ -46,7 +48,8 @@
       },
       "annotates": "contentsRetailValue",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodStorageEquipment:contentsRetailValueUnit;1"
     },
     {
       "@type": "Property",
@@ -58,7 +61,8 @@
       },
       "name": "contentsReplacementCost",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodStorageEquipment:contentsReplacementCost;1"
     },
     {
       "@type": [
@@ -74,7 +78,8 @@
       },
       "annotates": "contentsReplacementCost",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodStorageEquipment:contentsReplacementCostUnit;1"
     }
   ],
   "@context": [

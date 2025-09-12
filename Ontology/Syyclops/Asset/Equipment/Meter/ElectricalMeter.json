@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "DC",
-            "name": "DC"
+            "name": "DC",
+            "@id": "dtmi:com:syyclops:ElectricalMeter:DC;1"
           },
           {
             "enumValue": "AC",
-            "name": "AC"
+            "name": "AC",
+            "@id": "dtmi:com:syyclops:ElectricalMeter:AC;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ElectricalMeter:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:type;1"
     },
     {
       "@type": [
@@ -88,7 +92,8 @@
         "en": "sub-meter of"
       },
       "name": "subMeterOf",
-      "target": "dtmi:com:syyclops:ElectricalMeter;1"
+      "target": "dtmi:com:syyclops:ElectricalMeter;1",
+      "@id": "dtmi:com:syyclops:ElectricalMeter:subMeterOf;1"
     }
   ],
   "@context": [

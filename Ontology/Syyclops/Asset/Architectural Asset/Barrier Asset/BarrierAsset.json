@@ -14,7 +14,8 @@
         "en": "to space"
       },
       "name": "toSpace",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:BarrierAsset:toSpace;1"
     },
     {
       "@type": "Relationship",
@@ -22,7 +23,8 @@
         "en": "from space"
       },
       "name": "fromSpace",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:BarrierAsset:fromSpace;1"
     },
     {
       "@type": [
@@ -35,7 +37,8 @@
       "name": "width",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:width;1"
     },
     {
       "@type": [
@@ -50,7 +53,8 @@
       "annotates": "width",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:widthUnit;1"
     },
     {
       "@type": [
@@ -63,7 +67,8 @@
       "name": "thickness",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:thickness;1"
     },
     {
       "@type": [
@@ -78,7 +83,8 @@
       "annotates": "thickness",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:thicknessUnit;1"
     },
     {
       "@type": "Property",
@@ -91,16 +97,20 @@
         "enumValues": [
           {
             "enumValue": "Interior",
-            "name": "Interior"
+            "name": "Interior",
+            "@id": "dtmi:com:syyclops:BarrierAsset:Interior;1"
           },
           {
             "enumValue": "Exterior",
-            "name": "Exterior"
+            "name": "Exterior",
+            "@id": "dtmi:com:syyclops:BarrierAsset:Exterior;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:BarrierAsset:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:service;1"
     },
     {
       "@type": "Property",
@@ -109,7 +119,8 @@
       },
       "name": "material",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:material;1"
     },
     {
       "@type": [
@@ -122,7 +133,8 @@
       "name": "height",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:height;1"
     },
     {
       "@type": [
@@ -137,7 +149,8 @@
       "annotates": "height",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:heightUnit;1"
     },
     {
       "@type": "Property",
@@ -146,7 +159,8 @@
       },
       "name": "frameMaterial",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:frameMaterial;1"
     },
     {
       "@type": [

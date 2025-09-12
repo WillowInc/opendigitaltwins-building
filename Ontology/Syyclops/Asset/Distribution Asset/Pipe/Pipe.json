@@ -13,7 +13,8 @@
       },
       "name": "material",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pipe:material;1"
     },
     {
       "@type": [
@@ -26,7 +27,8 @@
       "name": "diameter",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pipe:diameter;1"
     },
     {
       "@type": [
@@ -41,7 +43,8 @@
       "annotates": "diameter",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pipe:diameterUnit;1"
     }
   ],
   "@context": [

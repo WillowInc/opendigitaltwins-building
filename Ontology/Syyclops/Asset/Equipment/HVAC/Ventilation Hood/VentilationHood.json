@@ -22,19 +22,23 @@
             "displayName": {
               "en": "Type I"
             },
-            "enumValue": "Type I"
+            "enumValue": "Type I",
+            "@id": "dtmi:com:syyclops:VentilationHood:typeI;1"
           },
           {
             "name": "typeII",
             "displayName": {
               "en": "Type II"
             },
-            "enumValue": "Type II"
+            "enumValue": "Type II",
+            "@id": "dtmi:com:syyclops:VentilationHood:typeII;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:VentilationHood:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:type;1"
     },
     {
       "@type": [
@@ -47,7 +51,8 @@
       "name": "maxAirflowRating",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:maxAirflowRating;1"
     },
     {
       "@type": [
@@ -62,7 +67,8 @@
       "annotates": "maxAirflowRating",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:maxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -75,7 +81,8 @@
       "name": "designMinAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:designMinAirflow;1"
     },
     {
       "@type": [
@@ -90,7 +97,8 @@
       "annotates": "designMinAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:designMinAirflowUnit;1"
     },
     {
       "@type": [
@@ -103,7 +111,8 @@
       "name": "designMaxAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:designMaxAirflow;1"
     },
     {
       "@type": [
@@ -118,7 +127,8 @@
       "annotates": "designMaxAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:VentilationHood:designMaxAirflowUnit;1"
     }
   ],
   "@context": [

@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "vertical",
-            "name": "vertical"
+            "name": "vertical",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:vertical;1"
           },
           {
             "enumValue": "horizontal",
-            "name": "horizontal"
+            "name": "horizontal",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:horizontal;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FanCoilUnit:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:type;1"
     },
     {
       "@type": "Property",
@@ -37,7 +41,8 @@
       },
       "name": "refrigerantType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:refrigerantType;1"
     },
     {
       "@type": [
@@ -50,7 +55,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -65,7 +71,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -78,7 +85,8 @@
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:netSensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -93,7 +101,8 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:netSensibleCoolingCapacityUnit;1"
     },
     {
       "@type": "Property",
@@ -106,20 +115,25 @@
         "enumValues": [
           {
             "enumValue": "wall",
-            "name": "wall"
+            "name": "wall",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:wall;1"
           },
           {
             "enumValue": "floor",
-            "name": "floor"
+            "name": "floor",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:floor;1"
           },
           {
             "enumValue": "ceiling",
-            "name": "ceiling"
+            "name": "ceiling",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:ceiling;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FanCoilUnit:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:mounting;1"
     },
     {
       "@type": "Property",
@@ -128,7 +142,8 @@
       },
       "name": "filterType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:filterType;1"
     },
     {
       "@type": "Component",
@@ -136,7 +151,8 @@
         "en": "secondary cooling method"
       },
       "name": "secondaryCoolingMethod",
-      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1",
+      "@id": "dtmi:com:syyclops:FanCoilUnit:secondaryCoolingMethod;1"
     },
     {
       "@type": "Component",
@@ -144,7 +160,8 @@
         "en": "primary cooling method"
       },
       "name": "primaryCoolingMethod",
-      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1",
+      "@id": "dtmi:com:syyclops:FanCoilUnit:primaryCoolingMethod;1"
     },
     {
       "@type": "Property",
@@ -160,16 +177,20 @@
         "enumValues": [
           {
             "enumValue": "TwoPipe",
-            "name": "TwoPipe"
+            "name": "TwoPipe",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:TwoPipe;1"
           },
           {
             "enumValue": "FourPipe",
-            "name": "FourPipe"
+            "name": "FourPipe",
+            "@id": "dtmi:com:syyclops:FanCoilUnit:FourPipe;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FanCoilUnit:ES3;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanCoilUnit:pipingConfiguration;1"
     },
     {
       "@type": "Component",
@@ -177,7 +198,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:FanCoilUnit:fan;1"
     }
   ],
   "@context": [

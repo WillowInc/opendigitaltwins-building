@@ -17,7 +17,8 @@
       "displayName": {
         "en": "serves"
       },
-      "name": "serves"
+      "name": "serves",
+      "@id": "dtmi:com:syyclops:Software:serves;1"
     },
     {
       "@type": "Relationship",
@@ -28,7 +29,8 @@
         "en": "The physical hardware or device that the software is installed on."
       },
       "name": "hardwareInstalledOn",
-      "target": "dtmi:com:syyclops:Asset;1"
+      "target": "dtmi:com:syyclops:Asset;1",
+      "@id": "dtmi:com:syyclops:Software:hardwareInstalledOn;1"
     },
     {
       "@type": "Relationship",
@@ -36,7 +38,8 @@
         "en": "installed by"
       },
       "name": "installedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Software:installedBy;1"
     },
     {
       "@type": "Relationship",
@@ -44,7 +47,8 @@
         "en": "serviced by"
       },
       "name": "servicedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Software:servicedBy;1"
     },
     {
       "@type": "Relationship",
@@ -52,7 +56,8 @@
       "displayName": {
         "en": "has document"
       },
-      "target": "dtmi:com:syyclops:Document;1"
+      "target": "dtmi:com:syyclops:Document;1",
+      "@id": "dtmi:com:syyclops:Software:hasDocument;1"
     },
     {
       "@type": "Relationship",
@@ -63,7 +68,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:Software:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -74,7 +80,8 @@
         "en": "owned by"
       },
       "name": "ownedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Software:ownedBy;1"
     },
     {
       "@type": "Property",
@@ -83,7 +90,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Software:siteID;1"
     },
     {
       "@type": "Property",
@@ -92,7 +100,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Software:name;1"
     },
     {
       "@type": "Property",
@@ -101,7 +110,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Software:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -110,7 +120,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Software:description;1"
     },
     {
       "@type": "Property",
@@ -122,13 +133,17 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Software:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
-      }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Software:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Software:MS1;1"
+      },
+      "@id": "dtmi:com:syyclops:Software:externalIds;1"
     },
     {
       "@type": "Property",
@@ -139,8 +154,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:SoftwareMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:SoftwareMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:Software:AS2;1"
+      },
+      "@id": "dtmi:com:syyclops:Software:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -152,7 +169,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Software:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -160,15 +178,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Software:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Software:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:Software:MS4;1"
+          },
+          "@id": "dtmi:com:syyclops:Software:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:Software:MS3;1"
+      },
+      "@id": "dtmi:com:syyclops:Software:customProperties;1"
     },
     {
       "@type": "Property",
@@ -222,8 +246,10 @@
             },
             "schema": "dtmi:com:syyclops:SoftwareAlternateClassificationObject;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Software:OS5;1"
+      },
+      "@id": "dtmi:com:syyclops:Software:alternateClassification;1"
     },
     {
       "@type": "Property",
@@ -235,7 +261,8 @@
         "en": "Indicates the version number of the software."
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Software:version;1"
     },
     {
       "@type": "Property",
@@ -244,7 +271,8 @@
       },
       "name": "installationDate",
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Software:installationDate;1"
     },
     {
       "@type": "Property",
@@ -253,7 +281,8 @@
         "en": "Last Updated Date"
       },
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Software:lastUpdatedDate;1"
     },
     {
       "@type": "Property",
@@ -262,7 +291,8 @@
         "en": "Is Enabled"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Software:enabled;1"
     }
   ],
   "schemas": [

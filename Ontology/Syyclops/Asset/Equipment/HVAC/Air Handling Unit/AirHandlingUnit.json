@@ -22,24 +22,30 @@
         "enumValues": [
           {
             "enumValue": "VAVZone",
-            "name": "VAVZone"
+            "name": "VAVZone",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:VAVZone;1"
           },
           {
             "enumValue": "MultiZone",
-            "name": "MultiZone"
+            "name": "MultiZone",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:MultiZone;1"
           },
           {
             "enumValue": "DirectZone",
-            "name": "DirectZone"
+            "name": "DirectZone",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:DirectZone;1"
           },
           {
             "enumValue": "ChilledBeamZone",
-            "name": "ChilledBeamZone"
+            "name": "ChilledBeamZone",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:ChilledBeamZone;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:zoneDelivery;1"
     },
     {
       "@type": "Property",
@@ -52,24 +58,30 @@
         "enumValues": [
           {
             "enumValue": "None",
-            "name": "None"
+            "name": "None",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:None;1"
           },
           {
             "enumValue": "Economizing",
-            "name": "Economizing"
+            "name": "Economizing",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:Economizing;1"
           },
           {
             "enumValue": "DemandEconomizing",
-            "name": "DemandEconomizing"
+            "name": "DemandEconomizing",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:DemandEconomizing;1"
           },
           {
             "enumValue": "Demand",
-            "name": "Demand"
+            "name": "Demand",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:Demand;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:ventilationStrategy;1"
     },
     {
       "@type": "Property",
@@ -82,20 +94,25 @@
         "enumValues": [
           {
             "enumValue": "OA",
-            "name": "OA"
+            "name": "OA",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:OA;1"
           },
           {
             "enumValue": "None",
-            "name": "None"
+            "name": "None",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EE4;1"
           },
           {
             "enumValue": "MixedAir",
-            "name": "MixedAir"
+            "name": "MixedAir",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:MixedAir;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES3;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:ventilationConfiguration;1"
     },
     {
       "@type": "Property",
@@ -104,7 +121,8 @@
       },
       "name": "refrigerantType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:refrigerantType;1"
     },
     {
       "@type": [
@@ -117,7 +135,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -132,7 +151,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -145,7 +165,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -160,7 +181,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -173,7 +195,8 @@
       "name": "netSensibleHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:netSensibleHeatingCapacity;1"
     },
     {
       "@type": [
@@ -188,7 +211,8 @@
       "annotates": "netSensibleHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:netSensibleHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -201,7 +225,8 @@
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:netSensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -216,7 +241,8 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:netSensibleCoolingCapacityUnit;1"
     },
     {
       "@type": "Property",
@@ -225,7 +251,8 @@
       },
       "name": "nominalEnergyEfficiencyRatio",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:nominalEnergyEfficiencyRatio;1"
     },
     {
       "@type": [
@@ -238,7 +265,8 @@
       "name": "designMinOutsideAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:designMinOutsideAirflow;1"
     },
     {
       "@type": [
@@ -253,7 +281,8 @@
       "annotates": "designMinOutsideAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:designMinOutsideAirflowUnit;1"
     },
     {
       "@type": [
@@ -265,7 +294,8 @@
         "en": "Design Maximum Entering Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:designMaxEnteringAirTemperature;1"
     },
     {
       "@type": [
@@ -279,7 +309,8 @@
       "name": "designMaxEnteringAirTemperatureUnit",
       "annotates": "designMaxEnteringAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:designMaxEnteringAirTemperatureUnit;1"
     },
     {
       "@type": "Property",
@@ -292,24 +323,30 @@
         "enumValues": [
           {
             "enumValue": "Ultrasonic",
-            "name": "Ultrasonic"
+            "name": "Ultrasonic",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:Ultrasonic;1"
           },
           {
             "enumValue": "Steam",
-            "name": "Steam"
+            "name": "Steam",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:Steam;1"
           },
           {
             "enumValue": "None",
-            "name": "None"
+            "name": "None",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EE6;1"
           },
           {
             "enumValue": "Adiabatic",
-            "name": "Adiabatic"
+            "name": "Adiabatic",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:Adiabatic;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES5;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:humidificationMethod;1"
     },
     {
       "@type": "Property",
@@ -318,7 +355,8 @@
       },
       "name": "filterType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:filterType;1"
     },
     {
       "@type": "Property",
@@ -331,20 +369,25 @@
         "enumValues": [
           {
             "enumValue": "TripleDuct",
-            "name": "TripleDuct"
+            "name": "TripleDuct",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:TripleDuct;1"
           },
           {
             "enumValue": "SingleDuct",
-            "name": "SingleDuct"
+            "name": "SingleDuct",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:SingleDuct;1"
           },
           {
             "enumValue": "DualDuct",
-            "name": "DualDuct"
+            "name": "DualDuct",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:DualDuct;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES7;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:dischargeDuctworkConfiguration;1"
     },
     {
       "@type": "Property",
@@ -357,36 +400,45 @@
         "enumValues": [
           {
             "enumValue": "WrapAroundCoil",
-            "name": "WrapAroundCoil"
+            "name": "WrapAroundCoil",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:WrapAroundCoil;1"
           },
           {
             "enumValue": "TieredCooling",
-            "name": "TieredCooling"
+            "name": "TieredCooling",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:TieredCooling;1"
           },
           {
             "enumValue": "None",
-            "name": "None"
+            "name": "None",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EE9;1"
           },
           {
             "enumValue": "EnthalpyWheel",
-            "name": "EnthalpyWheel"
+            "name": "EnthalpyWheel",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EnthalpyWheel;1"
           },
           {
             "enumValue": "DualWheel",
-            "name": "DualWheel"
+            "name": "DualWheel",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:DualWheel;1"
           },
           {
             "enumValue": "Desiccant",
-            "name": "Desiccant"
+            "name": "Desiccant",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:Desiccant;1"
           },
           {
             "enumValue": "CoolReheat",
-            "name": "CoolReheat"
+            "name": "CoolReheat",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:CoolReheat;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES8;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:dehumidificationMethod;1"
     },
     {
       "@type": "Property",
@@ -399,28 +451,35 @@
         "enumValues": [
           {
             "enumValue": "None",
-            "name": "None"
+            "name": "None",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EE11;1"
           },
           {
             "enumValue": "SensibleEnergyWheel",
-            "name": "SensibleEnergyWheel"
+            "name": "SensibleEnergyWheel",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:SensibleEnergyWheel;1"
           },
           {
             "enumValue": "EnthalpyWheel",
-            "name": "EnthalpyWheel"
+            "name": "EnthalpyWheel",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EE12;1"
           },
           {
             "enumValue": "DualWheel",
-            "name": "DualWheel"
+            "name": "DualWheel",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:EE13;1"
           },
           {
             "enumValue": "DualCoils",
-            "name": "DualCoils"
+            "name": "DualCoils",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:DualCoils;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES10;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:energyRecoveryMethod;1"
     },
     {
       "@type": "Property",
@@ -433,16 +492,20 @@
         "enumValues": [
           {
             "enumValue": "VariableVolume",
-            "name": "VariableVolume"
+            "name": "VariableVolume",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:VariableVolume;1"
           },
           {
             "enumValue": "ConstantVolume",
-            "name": "ConstantVolume"
+            "name": "ConstantVolume",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:ConstantVolume;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES14;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:airflowModulation;1"
     },
     {
       "@type": "Property",
@@ -454,7 +517,8 @@
         "en": "When true, the equipment will not be included in comfort KPIs or other comfort analytics."
       },
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:excludedFromComfortAnalytics;1"
     },
     {
       "@type": "Component",
@@ -462,7 +526,8 @@
         "en": "supply fan"
       },
       "name": "supplyFan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:supplyFan;1"
     },
     {
       "@type": "Component",
@@ -470,7 +535,8 @@
         "en": "secondary cooling method"
       },
       "name": "secondaryCoolingMethod",
-      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:secondaryCoolingMethod;1"
     },
     {
       "@type": "Property",
@@ -486,16 +552,20 @@
         "enumValues": [
           {
             "enumValue": "TwoPipe",
-            "name": "TwoPipe"
+            "name": "TwoPipe",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:TwoPipe;1"
           },
           {
             "enumValue": "FourPipe",
-            "name": "FourPipe"
+            "name": "FourPipe",
+            "@id": "dtmi:com:syyclops:AirHandlingUnit:FourPipe;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirHandlingUnit:ES15;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:pipingConfiguration;1"
     },
     {
       "@type": "Component",
@@ -503,7 +573,8 @@
         "en": "return fan"
       },
       "name": "returnFan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:returnFan;1"
     },
     {
       "@type": "Component",
@@ -511,7 +582,8 @@
         "en": "re-heating method"
       },
       "name": "reHeatingMethod",
-      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:reHeatingMethod;1"
     },
     {
       "@type": "Component",
@@ -519,7 +591,8 @@
         "en": "primary cooling method"
       },
       "name": "primaryCoolingMethod",
-      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:primaryCoolingMethod;1"
     },
     {
       "@type": "Component",
@@ -527,7 +600,8 @@
         "en": "pre-heating method"
       },
       "name": "preHeatingMethod",
-      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:preHeatingMethod;1"
     },
     {
       "@type": "Component",
@@ -535,7 +609,8 @@
         "en": "mixing box"
       },
       "name": "mixingBox",
-      "schema": "dtmi:com:syyclops:HVACMixingBox;1"
+      "schema": "dtmi:com:syyclops:HVACMixingBox;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:mixingBox;1"
     },
     {
       "@type": "Component",
@@ -543,7 +618,8 @@
         "en": "exhaust fan"
       },
       "name": "exhaustFan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:exhaustFan;1"
     },
     {
       "@type": "Component",
@@ -551,7 +627,8 @@
         "en": "energy recovery device"
       },
       "name": "energyRecoveryDevice",
-      "schema": "dtmi:com:syyclops:EnergyRecoveryDevice;1"
+      "schema": "dtmi:com:syyclops:EnergyRecoveryDevice;1",
+      "@id": "dtmi:com:syyclops:AirHandlingUnit:energyRecoveryDevice;1"
     }
   ],
   "schemas": [],

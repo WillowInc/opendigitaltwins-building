@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "vertical",
-            "name": "vertical"
+            "name": "vertical",
+            "@id": "dtmi:com:syyclops:Pump:vertical;1"
           },
           {
             "enumValue": "inline",
-            "name": "inline"
+            "name": "inline",
+            "@id": "dtmi:com:syyclops:Pump:inline;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Pump:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:type;1"
     },
     {
       "@type": "Property",
@@ -37,7 +41,8 @@
       },
       "name": "pumpingMedia",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:pumpingMedia;1"
     },
     {
       "@type": [
@@ -65,7 +70,8 @@
       "annotates": "motorPower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:motorPowerUnit;1"
     },
     {
       "@type": [
@@ -93,7 +99,8 @@
       "annotates": "brakeHorsepower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:brakeHorsepowerUnit;1"
     },
     {
       "@type": [
@@ -106,7 +113,8 @@
       "name": "pressureCapacity",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:pressureCapacity;1"
     },
     {
       "@type": [
@@ -121,7 +129,8 @@
       "annotates": "pressureCapacity",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:pressureCapacityUnit;1"
     },
     {
       "@type": [
@@ -137,7 +146,8 @@
       "name": "headCapacity",
       "schema": "double",
       "unit": "metre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:headCapacity;1"
     },
     {
       "@type": [
@@ -152,7 +162,8 @@
       "annotates": "headCapacity",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:headCapacityUnit;1"
     },
     {
       "@type": [
@@ -165,7 +176,8 @@
       "name": "flowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:flowCapacity;1"
     },
     {
       "@type": [
@@ -180,7 +192,8 @@
       "annotates": "flowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:flowCapacityUnit;1"
     },
     {
       "@type": [
@@ -193,7 +206,8 @@
       "name": "maxVFDFrequency",
       "schema": "double",
       "unit": "hertz",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:maxVFDFrequency;1"
     },
     {
       "@type": [
@@ -208,7 +222,8 @@
       "annotates": "maxVFDFrequency",
       "overrides": "unit",
       "schema": "FrequencyUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:maxVFDFrequencyUnit;1"
     },
     {
       "@type": [
@@ -221,7 +236,8 @@
       "name": "designVFDFrequency",
       "schema": "double",
       "unit": "hertz",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:designVFDFrequency;1"
     },
     {
       "@type": [
@@ -236,7 +252,8 @@
       "annotates": "designVFDFrequency",
       "overrides": "unit",
       "schema": "FrequencyUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Pump:designVFDFrequencyUnit;1"
     },
     {
       "@type": "Component",
@@ -244,7 +261,8 @@
         "en": "pipe outlet"
       },
       "name": "pipeOutlet",
-      "schema": "dtmi:com:syyclops:PipeConnection;1"
+      "schema": "dtmi:com:syyclops:PipeConnection;1",
+      "@id": "dtmi:com:syyclops:Pump:pipeOutlet;1"
     },
     {
       "@type": "Component",
@@ -252,7 +270,8 @@
         "en": "pipe inlet"
       },
       "name": "pipeInlet",
-      "schema": "dtmi:com:syyclops:PipeConnection;1"
+      "schema": "dtmi:com:syyclops:PipeConnection;1",
+      "@id": "dtmi:com:syyclops:Pump:pipeInlet;1"
     }
   ],
   "@context": [

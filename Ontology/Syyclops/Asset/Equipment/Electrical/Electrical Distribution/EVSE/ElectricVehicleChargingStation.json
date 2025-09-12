@@ -25,27 +25,31 @@
             "displayName": {
               "en": "Level 1"
             },
-            "enumValue": "Level 1"
+            "enumValue": "Level 1",
+            "@id": "dtmi:com:syyclops:ElectricVehicleChargingStation:Level1;1"
           },
           {
             "name": "Level2",
             "displayName": {
               "en": "Level 2"
             },
-            "enumValue": "Level 2"
+            "enumValue": "Level 2",
+            "@id": "dtmi:com:syyclops:ElectricVehicleChargingStation:Level2;1"
           },
           {
             "name": "Level3",
             "displayName": {
               "en": "Level 3"
             },
-            "enumValue": "Level 3"
+            "enumValue": "Level 3",
+            "@id": "dtmi:com:syyclops:ElectricVehicleChargingStation:Level3;1"
           }
         ],
         "displayName": {
           "en": "EV Charging Station Level"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:ElectricVehicleChargingStation:chargingLevel;1"
     }
   ],
   "@context": [

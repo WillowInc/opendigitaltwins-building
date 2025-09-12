@@ -18,7 +18,8 @@
       },
       "name": "refrigerantType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationEvaporatorUnit:refrigerantType;1"
     },
     {
       "@type": "Component",
@@ -26,7 +27,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:RefrigerationEvaporatorUnit:fan;1"
     },
     {
       "@type": [
@@ -39,7 +41,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationEvaporatorUnit:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -54,7 +57,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationEvaporatorUnit:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -67,7 +71,8 @@
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationEvaporatorUnit:netSensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -82,7 +87,8 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationEvaporatorUnit:netSensibleCoolingCapacityUnit;1"
     }
   ],
   "@context": [

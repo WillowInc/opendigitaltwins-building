@@ -19,20 +19,25 @@
         "enumValues": [
           {
             "enumValue": "Gate",
-            "name": "Gate"
+            "name": "Gate",
+            "@id": "dtmi:com:syyclops:HVACShutOffValve:Gate;1"
           },
           {
             "enumValue": "Butterfly",
-            "name": "Butterfly"
+            "name": "Butterfly",
+            "@id": "dtmi:com:syyclops:HVACShutOffValve:Butterfly;1"
           },
           {
             "enumValue": "Ball",
-            "name": "Ball"
+            "name": "Ball",
+            "@id": "dtmi:com:syyclops:HVACShutOffValve:Ball;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HVACShutOffValve:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACShutOffValve:type;1"
     }
   ],
   "@context": [

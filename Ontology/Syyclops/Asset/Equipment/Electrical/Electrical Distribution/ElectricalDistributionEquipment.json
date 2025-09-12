@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Electrical Distribution Equipment"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalEquipment;1"
   ],
   "contents": [
@@ -21,7 +21,8 @@
           "description": {
             "en": "A shortened DTDL Model Identifier (doesn't include the full path or version)  of an asset or group of assets that are connected to this electrical distribution equipment (i.e. HVACEquipment, AirHandlingUnit)."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:MM2;1"
         },
         "mapValue": {
           "name": "loadParameters",
@@ -49,10 +50,14 @@
                 },
                 "schema": "double"
               }
-            ]
-          }
-        }
-      }
+            ],
+            "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:OS3;1"
+          },
+          "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:loadParameters;1"
+        },
+        "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:MS1;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:loadClassification;1"
     }
   ],
   "@context": [

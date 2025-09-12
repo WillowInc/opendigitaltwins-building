@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "vertical",
-            "name": "vertical"
+            "name": "vertical",
+            "@id": "dtmi:com:syyclops:UnitHeater:vertical;1"
           },
           {
             "enumValue": "horizontal",
-            "name": "horizontal"
+            "name": "horizontal",
+            "@id": "dtmi:com:syyclops:UnitHeater:horizontal;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:UnitHeater:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UnitHeater:type;1"
     },
     {
       "@type": [
@@ -41,7 +45,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UnitHeater:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -56,7 +61,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UnitHeater:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -64,7 +70,8 @@
         "en": "heating method"
       },
       "name": "heatingMethod",
-      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1",
+      "@id": "dtmi:com:syyclops:UnitHeater:heatingMethod;1"
     },
     {
       "@type": "Component",
@@ -72,7 +79,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:UnitHeater:fan;1"
     }
   ],
   "@context": [

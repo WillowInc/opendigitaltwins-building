@@ -19,7 +19,8 @@
       "name": "waterPerFlush",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Toilet:waterPerFlush;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "waterPerFlush",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Toilet:waterPerFlushUnit;1"
     },
     {
       "@type": "Property",
@@ -47,16 +49,20 @@
         "enumValues": [
           {
             "enumValue": "WallMounted",
-            "name": "WallMounted"
+            "name": "WallMounted",
+            "@id": "dtmi:com:syyclops:Toilet:WallMounted;1"
           },
           {
             "enumValue": "FloorMounted",
-            "name": "FloorMounted"
+            "name": "FloorMounted",
+            "@id": "dtmi:com:syyclops:Toilet:FloorMounted;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Toilet:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Toilet:installationType;1"
     }
   ],
   "@context": [

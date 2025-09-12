@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Fiber Optic Cable"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:TelecommunicationCable;1"
   ],
   "contents": [
@@ -15,7 +15,8 @@
       },
       "name": "fiberStrandCount",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FiberOpticCable:fiberStrandCount;1"
     }
   ],
   "@context": [

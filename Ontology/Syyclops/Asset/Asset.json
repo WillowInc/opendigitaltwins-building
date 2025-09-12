@@ -17,7 +17,8 @@
       "displayName": {
         "en": "served by"
       },
-      "name": "servedBy"
+      "name": "servedBy",
+      "@id": "dtmi:com:syyclops:Asset:servedBy;1"
     },
     {
       "@type": "Relationship",
@@ -27,7 +28,8 @@
       "displayName": {
         "en": "serves"
       },
-      "name": "serves"
+      "name": "serves",
+      "@id": "dtmi:com:syyclops:Asset:serves;1"
     },
     {
       "@type": "Relationship",
@@ -38,7 +40,8 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:syyclops:Asset;1"
+      "target": "dtmi:com:syyclops:Asset;1",
+      "@id": "dtmi:com:syyclops:Asset:isPartOf;1"
     },
     {
       "@type": "Relationship",
@@ -49,7 +52,8 @@
         "en": "included in"
       },
       "name": "includedIn",
-      "target": "dtmi:com:syyclops:Collection;1"
+      "target": "dtmi:com:syyclops:Collection;1",
+      "@id": "dtmi:com:syyclops:Asset:includedIn;1"
     },
     {
       "@type": "Relationship",
@@ -57,7 +61,8 @@
         "en": "located in"
       },
       "name": "locatedIn",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:Asset:locatedIn;1"
     },
     {
       "@type": "Relationship",
@@ -65,7 +70,8 @@
         "en": "serviced by"
       },
       "name": "servicedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Asset:servicedBy;1"
     },
     {
       "@type": "Relationship",
@@ -73,7 +79,8 @@
         "en": "manufactured by"
       },
       "name": "manufacturedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Asset:manufacturedBy;1"
     },
     {
       "@type": "Relationship",
@@ -81,7 +88,8 @@
         "en": "installed by"
       },
       "name": "installedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Asset:installedBy;1"
     },
     {
       "@type": "Relationship",
@@ -89,7 +97,8 @@
         "en": "commissioned by"
       },
       "name": "commissionedBy",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Asset:commissionedBy;1"
     },
     {
       "@type": "Relationship",
@@ -97,7 +106,8 @@
       "displayName": {
         "en": "has document"
       },
-      "target": "dtmi:com:syyclops:Document;1"
+      "target": "dtmi:com:syyclops:Document;1",
+      "@id": "dtmi:com:syyclops:Asset:hasDocument;1"
     },
     {
       "@type": "Relationship",
@@ -108,7 +118,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:Asset:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -116,7 +127,8 @@
       "displayName": {
         "en": "Service Responsibilitly"
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Asset:serviceResponsibility;1"
     },
     {
       "@type": "Relationship",
@@ -124,7 +136,8 @@
       "displayName": {
         "en": "owned by"
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Asset:ownedBy;1"
     },
     {
       "@type": "Property",
@@ -133,7 +146,8 @@
         "en": "Manufacturer"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1"
+      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1",
+      "@id": "dtmi:com:syyclops:Asset:manufacturedByRef;1"
     },
     {
       "@type": "Property",
@@ -142,7 +156,8 @@
         "en": "Installer"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1"
+      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1",
+      "@id": "dtmi:com:syyclops:Asset:installedByRef;1"
     },
     {
       "@type": "Property",
@@ -151,7 +166,8 @@
         "en": "Commissioning Agent"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1"
+      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1",
+      "@id": "dtmi:com:syyclops:Asset:commissionedByRef;1"
     },
     {
       "@type": "Property",
@@ -160,7 +176,8 @@
         "en": "Owner"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1"
+      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1",
+      "@id": "dtmi:com:syyclops:Asset:ownedByRef;1"
     },
     {
       "@type": "Property",
@@ -170,7 +187,8 @@
       },
       "writable": true,
       "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1",
-      "comment": "This property lifts the REC ontology relationship servicedBy"
+      "comment": "This property lifts the REC ontology relationship servicedBy",
+      "@id": "dtmi:com:syyclops:Asset:serviceProviderRef;1"
     },
     {
       "@type": "Property",
@@ -179,7 +197,8 @@
         "en": "Service Responsibility"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1"
+      "schema": "dtmi:com:syyclops:AssetRelationshipRefObject;1",
+      "@id": "dtmi:com:syyclops:Asset:serviceResponsibilityRef;1"
     },
     {
       "@type": "Property",
@@ -189,7 +208,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)"
+      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)",
+      "@id": "dtmi:com:syyclops:Asset:geometryViewerID;1"
     },
     {
       "@type": "Property",
@@ -199,7 +219,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference for displaying in spatial context"
+      "comment": "Reference for displaying in spatial context",
+      "@id": "dtmi:com:syyclops:Asset:geometrySpatialReference;1"
     },
     {
       "@type": "Property",
@@ -209,7 +230,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference to geometry source (i.e. Revit GUID)"
+      "comment": "Reference to geometry source (i.e. Revit GUID)",
+      "@id": "dtmi:com:syyclops:Asset:geometryExternalID;1"
     },
     {
       "@type": "Property",
@@ -218,7 +240,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Asset:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -230,14 +253,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:tagName;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Asset:tagValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Asset:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:customTags;1"
     },
     {
       "@type": "Property",
@@ -249,14 +276,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Asset:MS2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:externalIds;1"
     },
     {
       "@type": "Property",
@@ -267,8 +298,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:AssetMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:AssetMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:Asset:AS3;1"
+      },
+      "@id": "dtmi:com:syyclops:Asset:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -277,7 +310,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:name;1"
     },
     {
       "@type": "Property",
@@ -286,7 +320,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Asset:externalID;1"
     },
     {
       "@type": "Property",
@@ -295,7 +330,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Asset:description;1"
     },
     {
       "@type": "Property",
@@ -304,7 +340,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Asset:siteID;1"
     },
     {
       "@type": "Property",
@@ -314,7 +351,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
+      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins.",
+      "@id": "dtmi:com:syyclops:Asset:landId;1"
     },
     {
       "@type": "Property",
@@ -345,7 +383,8 @@
         "displayName": {
           "en": "Asset Coordinates"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Asset:coordinates;1"
     },
     {
       "@type": [
@@ -361,7 +400,8 @@
       },
       "schema": "double",
       "unit": "degreeOfArc",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:geographicOrientation;1"
     },
     {
       "@type": [
@@ -376,7 +416,8 @@
       "annotates": "geographicOrientation",
       "overrides": "unit",
       "schema": "AngleUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:geographicOrientationUnit;1"
     },
     {
       "@type": "Property",
@@ -385,7 +426,8 @@
       },
       "name": "serialNumber",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:serialNumber;1"
     },
     {
       "@type": "Property",
@@ -394,7 +436,8 @@
       },
       "name": "physicalTagNumber",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:physicalTagNumber;1"
     },
     {
       "@type": "Property",
@@ -403,7 +446,8 @@
       },
       "name": "modelNumber",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:modelNumber;1"
     },
     {
       "@type": "Property",
@@ -412,7 +456,8 @@
       },
       "name": "MACAddress",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:MACAddress;1"
     },
     {
       "@type": "Property",
@@ -421,7 +466,8 @@
       },
       "name": "IPAddress",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:IPAddress;1"
     },
     {
       "@type": [
@@ -434,7 +480,8 @@
       "name": "weight",
       "schema": "double",
       "unit": "kilogram",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:weight;1"
     },
     {
       "@type": [
@@ -449,7 +496,8 @@
       "annotates": "weight",
       "overrides": "unit",
       "schema": "MassUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:weightUnit;1"
     },
     {
       "@type": "Property",
@@ -458,7 +506,8 @@
       },
       "name": "turnoverDate",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:turnoverDate;1"
     },
     {
       "@type": "Property",
@@ -467,7 +516,8 @@
       },
       "name": "maintenanceInterval",
       "schema": "duration",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:maintenanceInterval;1"
     },
     {
       "@type": "Property",
@@ -476,7 +526,8 @@
       },
       "name": "installationDate",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:installationDate;1"
     },
     {
       "@type": "Property",
@@ -485,7 +536,8 @@
       },
       "name": "initialCost",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:initialCost;1"
     },
     {
       "@type": [
@@ -501,7 +553,8 @@
       },
       "annotates": "initialCost",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:initialCostUnit;1"
     },
     {
       "@type": "Property",
@@ -510,7 +563,8 @@
       },
       "name": "expectedReplacementCost",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:expectedReplacementCost;1"
     },
     {
       "@type": [
@@ -526,7 +580,8 @@
       },
       "annotates": "expectedReplacementCost",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:expectedReplacementCostUnit;1"
     },
     {
       "@type": "Property",
@@ -535,7 +590,8 @@
       },
       "name": "expectedLife",
       "schema": "duration",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:expectedLife;1"
     },
     {
       "@type": "Property",
@@ -544,7 +600,8 @@
       },
       "name": "expectedEndOfLife",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:expectedEndOfLife;1"
     },
     {
       "@type": "Property",
@@ -553,7 +610,8 @@
       },
       "name": "commissionDate",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:commissionDate;1"
     },
     {
       "@type": "Property",
@@ -562,7 +620,8 @@
       },
       "name": "manufacturedDate",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Asset:manufacturedDate;1"
     },
     {
       "@type": "Property",
@@ -571,7 +630,8 @@
         "en": "Software"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Asset:software;1"
     },
     {
       "@type": "Property",
@@ -580,7 +640,8 @@
         "en": "Comments"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Asset:comments;1"
     },
     {
       "@type": "Property",
@@ -634,8 +695,10 @@
             },
             "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Asset:OS4;1"
+      },
+      "@id": "dtmi:com:syyclops:Asset:alternateClassification;1"
     },
     {
       "@type": "Property",
@@ -647,13 +710,17 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:MM6;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
-      }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Asset:MM7;1"
+        },
+        "@id": "dtmi:com:syyclops:Asset:MS5;1"
+      },
+      "@id": "dtmi:com:syyclops:Asset:tags;1"
     },
     {
       "@type": "Property",
@@ -665,7 +732,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -673,15 +741,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Asset:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Asset:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:Asset:MS9;1"
+          },
+          "@id": "dtmi:com:syyclops:Asset:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:Asset:MS8;1"
+      },
+      "@id": "dtmi:com:syyclops:Asset:customProperties;1"
     }
   ],
   "schemas": [

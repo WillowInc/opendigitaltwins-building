@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "Open",
-            "name": "Open"
+            "name": "Open",
+            "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:Open;1"
           },
           {
             "enumValue": "Closed",
-            "name": "Closed"
+            "name": "Closed",
+            "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:Closed;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:transitionType;1"
     },
     {
       "@type": "Property",
@@ -41,20 +45,25 @@
         "enumValues": [
           {
             "enumValue": "Contactor",
-            "name": "Contactor"
+            "name": "Contactor",
+            "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:Contactor;1"
           },
           {
             "enumValue": "CircuitBreakerPowerCase",
-            "name": "CircuitBreakerPowerCase"
+            "name": "CircuitBreakerPowerCase",
+            "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:CircuitBreakerPowerCase;1"
           },
           {
             "enumValue": "CircuitBreakerMoldedCase",
-            "name": "CircuitBreakerMoldedCase"
+            "name": "CircuitBreakerMoldedCase",
+            "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:CircuitBreakerMoldedCase;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AutomaticTransferSwitch:switchingMechanism;1"
     }
   ],
   "@context": [

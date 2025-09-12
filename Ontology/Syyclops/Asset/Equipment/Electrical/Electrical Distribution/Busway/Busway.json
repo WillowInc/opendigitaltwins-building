@@ -15,7 +15,8 @@
       },
       "name": "shortCircuitRating",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Busway:shortCircuitRating;1"
     },
     {
       "@type": [
@@ -41,16 +42,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:Busway:Three;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:Busway:One;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Busway:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Busway:inputPhases;1"
     },
     {
       "@type": "Component",
@@ -58,7 +63,8 @@
         "en": "main bus"
       },
       "name": "mainBus",
-      "schema": "dtmi:com:syyclops:ElectricalBus;1"
+      "schema": "dtmi:com:syyclops:ElectricalBus;1",
+      "@id": "dtmi:com:syyclops:Busway:mainBus;1"
     }
   ],
   "@context": [

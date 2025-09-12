@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Electrical Circuit 2-Pole"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalCircuit;1"
   ],
   "contents": [
@@ -15,27 +15,32 @@
         "en": "Phase 1"
       },
       "writable": true,
-      "schema":     {
+      "schema": {
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
           {
             "name": "A",
             "displayName": "A",
-            "enumValue": "A"
+            "enumValue": "A",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:A;1"
           },
           {
             "name": "B",
             "displayName": "B",
-            "enumValue": "B"
+            "enumValue": "B",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:B;1"
           },
           {
             "name": "C",
             "displayName": "C",
-            "enumValue": "C"
+            "enumValue": "C",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:C;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:Phase1;1"
     },
     {
       "@type": "Property",
@@ -44,27 +49,32 @@
         "en": "Phase 2"
       },
       "writable": true,
-      "schema":     {
+      "schema": {
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
           {
             "name": "A",
             "displayName": "A",
-            "enumValue": "A"
+            "enumValue": "A",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:EE3;1"
           },
           {
             "name": "B",
             "displayName": "B",
-            "enumValue": "B"
+            "enumValue": "B",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:EE4;1"
           },
           {
             "name": "C",
             "displayName": "C",
-            "enumValue": "C"
+            "enumValue": "C",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:EE5;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:ES2;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit2Pole:Phase2;1"
     }
   ],
   "@context": [

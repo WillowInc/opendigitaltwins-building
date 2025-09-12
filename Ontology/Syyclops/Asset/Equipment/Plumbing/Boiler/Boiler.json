@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "WaterTube",
-            "name": "WaterTube"
+            "name": "WaterTube",
+            "@id": "dtmi:com:syyclops:Boiler:WaterTube;1"
           },
           {
             "enumValue": "FireTube",
-            "name": "FireTube"
+            "name": "FireTube",
+            "@id": "dtmi:com:syyclops:Boiler:FireTube;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Boiler:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:type;1"
     },
     {
       "@type": [
@@ -41,7 +45,8 @@
       "name": "tankCapacity",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:tankCapacity;1"
     },
     {
       "@type": [
@@ -56,7 +61,8 @@
       "annotates": "tankCapacity",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:tankCapacityUnit;1"
     },
     {
       "@type": [
@@ -84,7 +90,8 @@
       "annotates": "powerOutput",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:powerOutputUnit;1"
     },
     {
       "@type": [
@@ -112,7 +119,8 @@
       "annotates": "powerInput",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:powerInputUnit;1"
     },
     {
       "@type": "Property",
@@ -125,16 +133,20 @@
         "enumValues": [
           {
             "enumValue": "Steam",
-            "name": "Steam"
+            "name": "Steam",
+            "@id": "dtmi:com:syyclops:Boiler:Steam;1"
           },
           {
             "enumValue": "HotWater",
-            "name": "HotWater"
+            "name": "HotWater",
+            "@id": "dtmi:com:syyclops:Boiler:HotWater;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Boiler:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:medium;1"
     },
     {
       "@type": [
@@ -150,7 +162,8 @@
       "name": "recovery100FRise",
       "schema": "integer",
       "unit": "gallonPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:recovery100FRise;1"
     },
     {
       "@type": [
@@ -162,7 +175,8 @@
         "en": "Design Entering Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:Boiler:designEnteringWaterTemperature;1"
     },
     {
       "@type": [
@@ -176,7 +190,8 @@
       "name": "designEnteringWaterTemperatureUnit",
       "annotates": "designEnteringWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:Boiler:designEnteringWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -188,7 +203,8 @@
         "en": "Design Leaving Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:Boiler:designLeavingWaterTemperature;1"
     },
     {
       "@type": [
@@ -202,7 +218,8 @@
       "name": "designLeavingWaterTemperatureUnit",
       "annotates": "designLeavingWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:Boiler:designLeavingWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -214,7 +231,8 @@
         "en": "Design Delta Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:Boiler:designDeltaWaterTemperature;1"
     },
     {
       "@type": [
@@ -228,7 +246,8 @@
       "name": "designDeltaWaterTemperatureUnit",
       "annotates": "designDeltaWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:Boiler:designDeltaWaterTemperatureUnit;1"
     }
   ],
   "@context": [

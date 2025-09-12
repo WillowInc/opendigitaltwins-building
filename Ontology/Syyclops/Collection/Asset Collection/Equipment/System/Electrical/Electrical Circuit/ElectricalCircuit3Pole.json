@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Electrical Circuit 3-Pole"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalCircuit;1"
   ],
   "contents": [
@@ -15,27 +15,32 @@
         "en": "Phase 1"
       },
       "writable": true,
-      "schema":     {
+      "schema": {
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
           {
             "name": "A",
             "displayName": "A",
-            "enumValue": "A"
+            "enumValue": "A",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:A;1"
           },
           {
             "name": "B",
             "displayName": "B",
-            "enumValue": "B"
+            "enumValue": "B",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:B;1"
           },
           {
             "name": "C",
             "displayName": "C",
-            "enumValue": "C"
+            "enumValue": "C",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:C;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:Phase1;1"
     },
     {
       "@type": "Property",
@@ -44,27 +49,32 @@
         "en": "Phase 2"
       },
       "writable": true,
-      "schema":     {
+      "schema": {
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
           {
             "name": "A",
             "displayName": "A",
-            "enumValue": "A"
+            "enumValue": "A",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:EE3;1"
           },
           {
             "name": "B",
             "displayName": "B",
-            "enumValue": "B"
+            "enumValue": "B",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:EE4;1"
           },
           {
             "name": "C",
             "displayName": "C",
-            "enumValue": "C"
+            "enumValue": "C",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:EE5;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:ES2;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:Phase2;1"
     },
     {
       "@type": "Property",
@@ -73,27 +83,32 @@
         "en": "Phase 3"
       },
       "writable": true,
-      "schema":     {
+      "schema": {
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
           {
             "name": "A",
             "displayName": "A",
-            "enumValue": "A"
+            "enumValue": "A",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:EE7;1"
           },
           {
             "name": "B",
             "displayName": "B",
-            "enumValue": "B"
+            "enumValue": "B",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:EE8;1"
           },
           {
             "name": "C",
             "displayName": "C",
-            "enumValue": "C"
+            "enumValue": "C",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:EE9;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:ES6;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit3Pole:Phase3;1"
     }
   ],
   "@context": [

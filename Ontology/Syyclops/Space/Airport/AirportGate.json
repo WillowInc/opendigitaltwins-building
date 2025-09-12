@@ -7,7 +7,7 @@
   "description": {
     "en": "An area in an airport terminal where passengers board the aircraft. Gates typically have a seated waiting area, counter, and doorway leading to the aircraft."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:airport:AirportSpace;1"
   ],
   "contents": [
@@ -35,8 +35,10 @@
             },
             "schema": "double"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:airport:AirportGate:OS1;1"
+      },
+      "@id": "dtmi:com:syyclops:airport:AirportGate:coordinates;1"
     }
   ],
   "@context": [

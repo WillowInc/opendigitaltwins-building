@@ -38,8 +38,10 @@
             },
             "schema": "dateTime"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:UtilityBillEvent:OS1;1"
+      },
+      "@id": "dtmi:com:syyclops:UtilityBillEvent:billingPeriod;1"
     },
     {
       "@type": "Property",
@@ -51,7 +53,8 @@
       },
       "name": "issuedDate",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UtilityBillEvent:issuedDate;1"
     },
     {
       "@type": "Property",
@@ -63,7 +66,8 @@
       },
       "name": "dueDate",
       "schema": "date",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UtilityBillEvent:dueDate;1"
     },
     {
       "@type": "Property",
@@ -75,7 +79,8 @@
       },
       "name": "totalCharge",
       "writable": true,
-      "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1"
+      "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1",
+      "@id": "dtmi:com:syyclops:UtilityBillEvent:totalCharge;1"
     },
     {
       "@type": "Property",
@@ -112,14 +117,17 @@
                 "enumValues": [
                   {
                     "enumValue": "TotalConsumption",
-                    "name": "TotalConsumption"
+                    "name": "TotalConsumption",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:TotalConsumption;1"
                   },
                   {
                     "enumValue": "PeakDemand",
-                    "name": "PeakDemand"
+                    "name": "PeakDemand",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:PeakDemand;1"
                   }
                 ],
-                "valueSchema": "string"
+                "valueSchema": "string",
+                "@id": "dtmi:com:syyclops:UtilityBillEvent:ES4;1"
               }
             },
             {
@@ -136,21 +144,26 @@
                 "enumValues": [
                   {
                     "enumValue": "Electricity",
-                    "name": "Electricity"
+                    "name": "Electricity",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:Electricity;1"
                   },
                   {
                     "enumValue": "PotableWater",
-                    "name": "PotableWater"
+                    "name": "PotableWater",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:PotableWater;1"
                   },
                   {
                     "enumValue": "ReclaimedWater",
-                    "name": "ReclaimedWater"
+                    "name": "ReclaimedWater",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:ReclaimedWater;1"
                   },
                   {
                     "enumValue": "NaturalGas",
-                    "name": "NaturalGas"
+                    "name": "NaturalGas",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:NaturalGas;1"
                   }
-                ]
+                ],
+                "@id": "dtmi:com:syyclops:UtilityBillEvent:ES5;1"
               }
             },
             {
@@ -178,7 +191,8 @@
                     },
                     "schema": "string"
                   }
-                ]
+                ],
+                "@id": "dtmi:com:syyclops:UtilityBillEvent:OS6;1"
               }
             },
             {
@@ -191,9 +205,12 @@
               },
               "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1"
             }
-          ]
-        }
-      }
+          ],
+          "@id": "dtmi:com:syyclops:UtilityBillEvent:OS3;1"
+        },
+        "@id": "dtmi:com:syyclops:UtilityBillEvent:AS2;1"
+      },
+      "@id": "dtmi:com:syyclops:UtilityBillEvent:meterData;1"
     }
   ],
   "schemas": [

@@ -22,7 +22,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -50,7 +52,8 @@
       "name": "netSensibleHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:netSensibleHeatingCapacity;1"
     },
     {
       "@type": [
@@ -65,7 +68,8 @@
       "annotates": "netSensibleHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:netSensibleHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -78,7 +82,8 @@
       "name": "designHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:designHeatingCapacity;1"
     },
     {
       "@type": [
@@ -93,7 +98,8 @@
       "annotates": "designHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:designHeatingCapacityUnit;1"
     },
     {
       "@type": "Property",
@@ -102,7 +108,8 @@
       },
       "name": "designHeatingCoefficientOfPerformance",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:designHeatingCoefficientOfPerformance;1"
     },
     {
       "@type": "Property",
@@ -111,7 +118,8 @@
       },
       "name": "nominalHeatingCoefficientOfPerformance",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatPumpChiller:nominalHeatingCoefficientOfPerformance;1"
     }
   ],
   "@context": [

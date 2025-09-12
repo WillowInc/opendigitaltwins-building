@@ -15,7 +15,8 @@
       "displayName": {
         "en": "has document"
       },
-      "target": "dtmi:com:syyclops:Document;1"
+      "target": "dtmi:com:syyclops:Document;1",
+      "@id": "dtmi:com:syyclops:Collection:hasDocument;1"
     },
     {
       "@type": "Relationship",
@@ -26,7 +27,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:Collection:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -34,7 +36,8 @@
       "displayName": {
         "en": "included in"
       },
-      "target": "dtmi:com:syyclops:Collection;1"
+      "target": "dtmi:com:syyclops:Collection;1",
+      "@id": "dtmi:com:syyclops:Collection:includedIn;1"
     },
     {
       "@type": "Relationship",
@@ -42,7 +45,8 @@
         "en": "located in"
       },
       "name": "locatedIn",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:Collection:locatedIn;1"
     },
     {
       "@type": "Relationship",
@@ -52,7 +56,8 @@
       "displayName": {
         "en": "served by"
       },
-      "name": "servedBy"
+      "name": "servedBy",
+      "@id": "dtmi:com:syyclops:Collection:servedBy;1"
     },
     {
       "@type": "Relationship",
@@ -62,7 +67,8 @@
       "displayName": {
         "en": "serves"
       },
-      "name": "serves"
+      "name": "serves",
+      "@id": "dtmi:com:syyclops:Collection:serves;1"
     },
     {
       "@type": "Property",
@@ -74,14 +80,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:tagName;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Collection:tagValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Collection:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Collection:customTags;1"
     },
     {
       "@type": "Property",
@@ -93,14 +103,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Collection:MS2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Collection:externalIds;1"
     },
     {
       "@type": "Property",
@@ -111,8 +125,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:CollectionMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:CollectionMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:Collection:AS3;1"
+      },
+      "@id": "dtmi:com:syyclops:Collection:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -121,7 +137,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Collection:name;1"
     },
     {
       "@type": "Property",
@@ -131,7 +148,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)"
+      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)",
+      "@id": "dtmi:com:syyclops:Collection:geometryViewerID;1"
     },
     {
       "@type": "Property",
@@ -141,7 +159,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference for displaying in spatial context"
+      "comment": "Reference for displaying in spatial context",
+      "@id": "dtmi:com:syyclops:Collection:geometrySpatialReference;1"
     },
     {
       "@type": "Property",
@@ -151,7 +170,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference to geometry source (i.e. Revit GUID)"
+      "comment": "Reference to geometry source (i.e. Revit GUID)",
+      "@id": "dtmi:com:syyclops:Collection:geometryExternalID;1"
     },
     {
       "@type": "Property",
@@ -160,7 +180,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Collection:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -169,7 +190,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Collection:externalID;1"
     },
     {
       "@type": "Property",
@@ -178,7 +200,8 @@
         "en": "Code"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Collection:code;1"
     },
     {
       "@type": "Property",
@@ -187,7 +210,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Collection:description;1"
     },
     {
       "@type": "Property",
@@ -196,7 +220,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Collection:siteID;1"
     },
     {
       "@type": "Property",
@@ -206,7 +231,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
+      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins.",
+      "@id": "dtmi:com:syyclops:Collection:landId;1"
     },
     {
       "@type": "Property",
@@ -218,7 +244,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -226,15 +253,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Collection:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Collection:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:Collection:MS5;1"
+          },
+          "@id": "dtmi:com:syyclops:Collection:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:Collection:MS4;1"
+      },
+      "@id": "dtmi:com:syyclops:Collection:customProperties;1"
     },
     {
       "@type": "Property",
@@ -288,8 +321,10 @@
             },
             "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Collection:OS6;1"
+      },
+      "@id": "dtmi:com:syyclops:Collection:alternateClassification;1"
     }
   ],
   "schemas": [

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Gateway"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:DataNetworkEquipment;1"
   ],
   "contents": [
@@ -15,7 +15,8 @@
         "en": "Registration ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Gateway:registrationID;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
         "en": "Registration Key"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Gateway:registrationKey;1"
     },
     {
       "@type": "Property",
@@ -33,7 +35,8 @@
         "en": "Connector ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Gateway:connectorID;1"
     },
     {
       "@type": "Property",
@@ -42,7 +45,8 @@
         "en": "Is Enabled"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Gateway:enabled;1"
     },
     {
       "@type": "Property",
@@ -51,7 +55,8 @@
         "en": "Is Detected"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Gateway:detected;1"
     }
   ],
   "@context": [

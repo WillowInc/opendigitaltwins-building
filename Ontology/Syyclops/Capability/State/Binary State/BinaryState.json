@@ -4,8 +4,10 @@
   "displayName": {
     "en": "Binary State"
   },
-  "description": {"en": "The Boolean state of the equipment"},
-  "extends" : [
+  "description": {
+    "en": "The Boolean state of the equipment"
+  },
+  "extends": [
     "dtmi:com:syyclops:State;1"
   ],
   "contents": [
@@ -16,7 +18,8 @@
         "en": "Last Value"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:BinaryState:lastValue;1"
     }
   ],
   "@context": [

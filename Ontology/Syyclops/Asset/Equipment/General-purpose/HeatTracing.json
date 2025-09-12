@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "SelfRegulating",
-            "name": "SelfRegulating"
+            "name": "SelfRegulating",
+            "@id": "dtmi:com:syyclops:HeatTracing:SelfRegulating;1"
           },
           {
             "enumValue": "ConstantWattage",
-            "name": "ConstantWattage"
+            "name": "ConstantWattage",
+            "@id": "dtmi:com:syyclops:HeatTracing:ConstantWattage;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HeatTracing:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatTracing:type;1"
     },
     {
       "@type": "Property",
@@ -40,7 +44,8 @@
       },
       "name": "powerDensity",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatTracing:powerDensity;1"
     }
   ],
   "@context": [

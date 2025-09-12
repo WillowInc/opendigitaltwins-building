@@ -22,7 +22,8 @@
       "name": "length",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:length;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "length",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:lengthUnit;1"
     },
     {
       "@type": [
@@ -50,7 +52,8 @@
       "name": "width",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:width;1"
     },
     {
       "@type": [
@@ -65,7 +68,8 @@
       "annotates": "width",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:widthUnit;1"
     },
     {
       "@type": "Property",
@@ -77,7 +81,8 @@
       },
       "name": "electricalPropertiesSTC",
       "schema": "dtmi:com:syyclops:PVPanelElectricalProperties;1",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:electricalPropertiesSTC;1"
     },
     {
       "@type": "Property",
@@ -89,7 +94,8 @@
       },
       "name": "electricalPropertiesNMOT",
       "schema": "dtmi:com:syyclops:PVPanelElectricalProperties;1",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:electricalPropertiesNMOT;1"
     },
     {
       "@type": "Property",
@@ -98,7 +104,8 @@
       },
       "name": "cellMaterial",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PhotovoltaicPanel:cellMaterial;1"
     }
   ],
   "schemas": [

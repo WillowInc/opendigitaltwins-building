@@ -16,7 +16,8 @@
       },
       "name": "type",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACFan:type;1"
     },
     {
       "@type": "Component",
@@ -24,7 +25,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:HVACFan:fan;1"
     },
     {
       "@type": "Component",
@@ -32,7 +34,8 @@
         "en": "duct inlet"
       },
       "name": "ductInlet",
-      "schema": "dtmi:com:syyclops:DuctConnection;1"
+      "schema": "dtmi:com:syyclops:DuctConnection;1",
+      "@id": "dtmi:com:syyclops:HVACFan:ductInlet;1"
     }
   ],
   "@context": [

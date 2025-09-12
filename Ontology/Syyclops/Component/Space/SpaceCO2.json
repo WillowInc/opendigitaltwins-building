@@ -4,39 +4,51 @@
   "displayName": {
     "en": "Space CO2"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "RelativeDensity"],
+      "@type": [
+        "Property",
+        "RelativeDensity"
+      ],
       "name": "CO2Sensor",
       "displayName": {
         "en": "CO2 Sensor"
       },
       "writable": true,
       "schema": "double",
-      "unit": "partsPerMillion"
+      "unit": "partsPerMillion",
+      "@id": "dtmi:com:syyclops:SpaceCO2:CO2Sensor;1"
     },
     {
-      "@type": ["Property", "RelativeDensity"],
+      "@type": [
+        "Property",
+        "RelativeDensity"
+      ],
       "name": "CO2Setpoint",
       "displayName": {
         "en": "CO2 Setpoint"
       },
       "writable": true,
       "schema": "double",
-      "unit": "partsPerMillion"
+      "unit": "partsPerMillion",
+      "@id": "dtmi:com:syyclops:SpaceCO2:CO2Setpoint;1"
     },
     {
-      "@type": ["Property", "RelativeDensity"],
+      "@type": [
+        "Property",
+        "RelativeDensity"
+      ],
       "name": "CO2Delta",
       "displayName": {
         "en": "CO2 Delta"
       },
       "writable": true,
       "schema": "double",
-      "unit": "partsPerMillion"
+      "unit": "partsPerMillion",
+      "@id": "dtmi:com:syyclops:SpaceCO2:CO2Delta;1"
     }
   ],
   "@context": [

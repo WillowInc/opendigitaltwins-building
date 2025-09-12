@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Fiber Optic Patch Cord"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:TelecommunicationPatchCord;1"
   ],
   "contents": [
@@ -15,7 +15,8 @@
       },
       "name": "fiberStrandCount",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FiberOpticPatchCord:fiberStrandCount;1"
     }
   ],
   "@context": [

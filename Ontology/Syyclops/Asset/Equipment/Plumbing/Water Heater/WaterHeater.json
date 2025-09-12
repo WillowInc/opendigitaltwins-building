@@ -19,7 +19,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "litre"
+      "unit": "litre",
+      "@id": "dtmi:com:syyclops:WaterHeater:firstHourDelivery;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "firstHourDelivery",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WaterHeater:firstHourDeliveryUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "gallonPerHour"
+      "unit": "gallonPerHour",
+      "@id": "dtmi:com:syyclops:WaterHeater:recovery100FRise;1"
     }
   ],
   "@context": [

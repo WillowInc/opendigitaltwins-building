@@ -19,7 +19,8 @@
       "name": "pressureCapacity",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Valve:pressureCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "pressureCapacity",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Valve:pressureCapacityUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       "name": "flowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Valve:flowCapacity;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "flowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Valve:flowCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -70,7 +74,8 @@
         "en": "pipe outlet"
       },
       "name": "pipeOutlet",
-      "schema": "dtmi:com:syyclops:PipeConnection;1"
+      "schema": "dtmi:com:syyclops:PipeConnection;1",
+      "@id": "dtmi:com:syyclops:Valve:pipeOutlet;1"
     },
     {
       "@type": "Component",
@@ -78,7 +83,8 @@
         "en": "pipe inlet"
       },
       "name": "pipeInlet",
-      "schema": "dtmi:com:syyclops:PipeConnection;1"
+      "schema": "dtmi:com:syyclops:PipeConnection;1",
+      "@id": "dtmi:com:syyclops:Valve:pipeInlet;1"
     }
   ],
   "@context": [

@@ -15,7 +15,8 @@
         "en": "Protocol"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:CapabilityCommunicationProtocol;1"
+      "schema": "dtmi:com:syyclops:CapabilityCommunicationProtocol;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:protocol;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
         "en": "API"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:APICapabilityProperties;1"
+      "schema": "dtmi:com:syyclops:APICapabilityProperties;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:API;1"
     },
     {
       "@type": "Property",
@@ -33,7 +35,8 @@
         "en": "BACnet"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:BACnetCapabilityProperties;1"
+      "schema": "dtmi:com:syyclops:BACnetCapabilityProperties;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:BACnet;1"
     },
     {
       "@type": "Property",
@@ -42,7 +45,8 @@
         "en": "Modbus"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:ModbusCapabilityProperties;1"
+      "schema": "dtmi:com:syyclops:ModbusCapabilityProperties;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:Modbus;1"
     },
     {
       "@type": "Property",
@@ -51,7 +55,8 @@
         "en": "OPC DA"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:OPCDACapabilityProperties;1"
+      "schema": "dtmi:com:syyclops:OPCDACapabilityProperties;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:OPCDA;1"
     },
     {
       "@type": "Property",
@@ -60,7 +65,8 @@
         "en": "OPC UA"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:OPCUACapabilityProperties;1"
+      "schema": "dtmi:com:syyclops:OPCUACapabilityProperties;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:OPCUA;1"
     },
     {
       "@type": "Property",
@@ -69,7 +75,8 @@
         "en": "IoT Hub"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:IoTHubCapabilityProperties;1"
+      "schema": "dtmi:com:syyclops:IoTHubCapabilityProperties;1",
+      "@id": "dtmi:com:syyclops:CapabilityCommunication:IoTHub;1"
     }
   ],
   "schemas": [
@@ -81,62 +88,74 @@
         {
           "name": "API",
           "displayName": "API",
-          "enumValue": "API"
+          "enumValue": "API",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SE1;1"
         },
         {
           "name": "BACnet",
           "displayName": "BACnet",
-          "enumValue": "BACnet"
+          "enumValue": "BACnet",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SE2;1"
         },
         {
           "name": "Modbus",
           "displayName": "Modbus",
-          "enumValue": "Modbus"
+          "enumValue": "Modbus",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SE3;1"
         },
         {
           "name": "OPCDA",
           "displayName": "OPC DA",
-          "enumValue": "OPC DA"
+          "enumValue": "OPC DA",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SE4;1"
         },
         {
           "name": "OPCUA",
           "displayName": "OPC UA",
-          "enumValue": "OPC UA"
+          "enumValue": "OPC UA",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SE5;1"
         },
         {
           "name": "KNX",
           "displayName": "KNX",
-          "enumValue": "KNX"
+          "enumValue": "KNX",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:KNX;1"
         },
         {
           "name": "LonWorks",
           "displayName": "LonWorks",
-          "enumValue": "LonWorks"
+          "enumValue": "LonWorks",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:LonWorks;1"
         },
         {
           "name": "DALI",
           "displayName": "DALI",
-          "enumValue": "DALI"
+          "enumValue": "DALI",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:DALI;1"
         },
         {
           "name": "MBus",
           "displayName": "M-Bus",
-          "enumValue": "M-Bus"
+          "enumValue": "M-Bus",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:MBus;1"
         },
         {
           "name": "SNMP",
           "displayName": "SNMP",
-          "enumValue": "SNMP"
+          "enumValue": "SNMP",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SNMP;1"
         },
         {
           "name": "MQTT",
           "displayName": "MQTT",
-          "enumValue": "MQTT"
+          "enumValue": "MQTT",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:MQTT;1"
         },
         {
           "name": "IoTHub",
           "displayName": "IoT Hub",
-          "enumValue": "IoT Hub"
+          "enumValue": "IoT Hub",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SE6;1"
         }
       ],
       "displayName": {

@@ -19,7 +19,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:AirCompressorDryer:capacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "capacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressorDryer:capacityUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       "name": "workingPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressorDryer:workingPressure;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "workingPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressorDryer:workingPressureUnit;1"
     }
   ],
   "@context": [

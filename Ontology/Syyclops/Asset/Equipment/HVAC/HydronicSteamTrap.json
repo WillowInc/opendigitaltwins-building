@@ -19,7 +19,8 @@
       "name": "workingPressure",
       "schema": "integer",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HydronicSteamTrap:workingPressure;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "workingPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HydronicSteamTrap:workingPressureUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "millimetre"
+      "unit": "millimetre",
+      "@id": "dtmi:com:syyclops:HydronicSteamTrap:pipeDiameter;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "pipeDiameter",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HydronicSteamTrap:pipeDiameterUnit;1"
     }
   ],
   "@context": [

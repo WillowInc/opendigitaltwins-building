@@ -16,48 +16,60 @@
         "enumValues": [
           {
             "enumValue": "Cooldown",
-            "name": "Cooldown"
+            "name": "Cooldown",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Cooldown;1"
           },
           {
             "enumValue": "Cooling",
-            "name": "Cooling"
+            "name": "Cooling",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Cooling;1"
           },
           {
             "enumValue": "Depressurize",
-            "name": "Depressurize"
+            "name": "Depressurize",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Depressurize;1"
           },
           {
             "enumValue": "Economizing",
-            "name": "Economizing"
+            "name": "Economizing",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Economizing;1"
           },
           {
             "enumValue": "Heating",
-            "name": "Heating"
+            "name": "Heating",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Heating;1"
           },
           {
             "enumValue": "Manual",
-            "name": "Manual"
+            "name": "Manual",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Manual;1"
           },
           {
             "enumValue": "Pressurize",
-            "name": "Pressurize"
+            "name": "Pressurize",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Pressurize;1"
           },
           {
             "enumValue": "Purge",
-            "name": "Purge"
+            "name": "Purge",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Purge;1"
           },
           {
             "enumValue": "Reheat",
-            "name": "Reheat"
+            "name": "Reheat",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Reheat;1"
           },
           {
             "enumValue": "Warmup",
-            "name": "Warmup"
+            "name": "Warmup",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Warmup;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:HVACMode;1"
     },
     {
       "@type": "Property",
@@ -69,7 +81,8 @@
       },
       "name": "alarm",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:alarm;1"
     },
     {
       "@type": "Property",
@@ -85,56 +98,70 @@
         "enumValues": [
           {
             "enumValue": "Battery",
-            "name": "Battery"
+            "name": "Battery",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Battery;1"
           },
           {
             "enumValue": "Coil",
-            "name": "Coil"
+            "name": "Coil",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Coil;1"
           },
           {
             "enumValue": "Compressor",
-            "name": "Compressor"
+            "name": "Compressor",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Compressor;1"
           },
           {
             "enumValue": "Condenser",
-            "name": "Condenser"
+            "name": "Condenser",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Condenser;1"
           },
           {
             "enumValue": "Damper",
-            "name": "Damper"
+            "name": "Damper",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Damper;1"
           },
           {
             "enumValue": "Evaporator",
-            "name": "Evaporator"
+            "name": "Evaporator",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Evaporator;1"
           },
           {
             "enumValue": "Fan",
-            "name": "Fan"
+            "name": "Fan",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Fan;1"
           },
           {
             "enumValue": "Filter",
-            "name": "Filter"
+            "name": "Filter",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Filter;1"
           },
           {
             "enumValue": "Motor",
-            "name": "Motor"
+            "name": "Motor",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Motor;1"
           },
           {
             "enumValue": "VFD",
-            "name": "VFD"
+            "name": "VFD",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:VFD;1"
           },
           {
             "enumValue": "coolingCoil",
-            "name": "coolingCoil"
+            "name": "coolingCoil",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:coolingCoil;1"
           },
           {
             "enumValue": "heatingCoil",
-            "name": "heatingCoil"
+            "name": "heatingCoil",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:heatingCoil;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:assetComponent;1"
     },
     {
       "@type": "Property",
@@ -146,7 +173,8 @@
       },
       "name": "demand",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:demand;1"
     },
     {
       "@type": "Property",
@@ -158,7 +186,8 @@
       },
       "name": "effective",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:effective;1"
     },
     {
       "@type": "Property",
@@ -174,36 +203,45 @@
         "enumValues": [
           {
             "enumValue": "A",
-            "name": "A"
+            "name": "A",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:A;1"
           },
           {
             "enumValue": "AB",
-            "name": "AB"
+            "name": "AB",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:AB;1"
           },
           {
             "enumValue": "B",
-            "name": "B"
+            "name": "B",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:B;1"
           },
           {
             "enumValue": "BC",
-            "name": "BC"
+            "name": "BC",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:BC;1"
           },
           {
             "enumValue": "C",
-            "name": "C"
+            "name": "C",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:C;1"
           },
           {
             "enumValue": "CA",
-            "name": "CA"
+            "name": "CA",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:CA;1"
           },
           {
             "enumValue": "N",
-            "name": "N"
+            "name": "N",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:N;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES3;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:electricalPhase;1"
     },
     {
       "@type": "Property",
@@ -219,16 +257,20 @@
         "enumValues": [
           {
             "enumValue": "Maximum",
-            "name": "Maximum"
+            "name": "Maximum",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Maximum;1"
           },
           {
             "enumValue": "Minimum",
-            "name": "Minimum"
+            "name": "Minimum",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Minimum;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES4;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:limit;1"
     },
     {
       "@type": "Property",
@@ -244,20 +286,25 @@
         "enumValues": [
           {
             "enumValue": "Occupied",
-            "name": "Occupied"
+            "name": "Occupied",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Occupied;1"
           },
           {
             "enumValue": "Standby",
-            "name": "Standby"
+            "name": "Standby",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Standby;1"
           },
           {
             "enumValue": "Unoccupied",
-            "name": "Unoccupied"
+            "name": "Unoccupied",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Unoccupied;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES5;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:occupancyMode;1"
     },
     {
       "@type": "Property",
@@ -273,236 +320,295 @@
         "enumValues": [
           {
             "enumValue": "ACElectricity",
-            "name": "ACElectricity"
+            "name": "ACElectricity",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:ACElectricity;1"
           },
           {
             "enumValue": "Air",
-            "name": "Air"
+            "name": "Air",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Air;1"
           },
           {
             "enumValue": "BlowdownWater",
-            "name": "BlowdownWater"
+            "name": "BlowdownWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:BlowdownWater;1"
           },
           {
             "enumValue": "ChilledWater",
-            "name": "ChilledWater"
+            "name": "ChilledWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:ChilledWater;1"
           },
           {
             "enumValue": "Cloudage",
-            "name": "Cloudage"
+            "name": "Cloudage",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Cloudage;1"
           },
           {
             "enumValue": "ColdDomesticWater",
-            "name": "ColdDomesticWater"
+            "name": "ColdDomesticWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:ColdDomesticWater;1"
           },
           {
             "enumValue": "CompressedAir",
-            "name": "CompressedAir"
+            "name": "CompressedAir",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:CompressedAir;1"
           },
           {
             "enumValue": "Condensate",
-            "name": "Condensate"
+            "name": "Condensate",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Condensate;1"
           },
           {
             "enumValue": "CondenserWater",
-            "name": "CondenserWater"
+            "name": "CondenserWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:CondenserWater;1"
           },
           {
             "enumValue": "DCElectricity",
-            "name": "DCElectricity"
+            "name": "DCElectricity",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:DCElectricity;1"
           },
           {
             "enumValue": "Data",
-            "name": "Data"
+            "name": "Data",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Data;1"
           },
           {
             "enumValue": "DeionizedWater",
-            "name": "DeionizedWater"
+            "name": "DeionizedWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:DeionizedWater;1"
           },
           {
             "enumValue": "DieselFuel",
-            "name": "DieselFuel"
+            "name": "DieselFuel",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:DieselFuel;1"
           },
           {
             "enumValue": "Drainage",
-            "name": "Drainage"
+            "name": "Drainage",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Drainage;1"
           },
           {
             "enumValue": "DriveElectricity",
-            "name": "DriveElectricity"
+            "name": "DriveElectricity",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:DriveElectricity;1"
           },
           {
             "enumValue": "Electricity",
-            "name": "Electricity"
+            "name": "Electricity",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Electricity;1"
           },
           {
             "enumValue": "EthernetData",
-            "name": "EthernetData"
+            "name": "EthernetData",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:EthernetData;1"
           },
           {
             "enumValue": "ExhaustGas",
-            "name": "ExhaustGas"
+            "name": "ExhaustGas",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:ExhaustGas;1"
           },
           {
             "enumValue": "Fire",
-            "name": "Fire"
+            "name": "Fire",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Fire;1"
           },
           {
             "enumValue": "FreezingRainPrecipitation",
-            "name": "FreezingRainPrecipitation"
+            "name": "FreezingRainPrecipitation",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:FreezingRainPrecipitation;1"
           },
           {
             "enumValue": "FrostIce",
-            "name": "FrostIce"
+            "name": "FrostIce",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:FrostIce;1"
           },
           {
             "enumValue": "Fuel",
-            "name": "Fuel"
+            "name": "Fuel",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Fuel;1"
           },
           {
             "enumValue": "FuelOilFuel",
-            "name": "FuelOilFuel"
+            "name": "FuelOilFuel",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:FuelOilFuel;1"
           },
           {
             "enumValue": "GasolineFuel",
-            "name": "GasolineFuel"
+            "name": "GasolineFuel",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:GasolineFuel;1"
           },
           {
             "enumValue": "HailPrecipitation",
-            "name": "HailPrecipitation"
+            "name": "HailPrecipitation",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:HailPrecipitation;1"
           },
           {
             "enumValue": "HighTemperatureHotWater",
-            "name": "HighTemperatureHotWater"
+            "name": "HighTemperatureHotWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:HighTemperatureHotWater;1"
           },
           {
             "enumValue": "HotDomesticWater",
-            "name": "HotDomesticWater"
+            "name": "HotDomesticWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:HotDomesticWater;1"
           },
           {
             "enumValue": "HotWater",
-            "name": "HotWater"
+            "name": "HotWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:HotWater;1"
           },
           {
             "enumValue": "Ice",
-            "name": "Ice"
+            "name": "Ice",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Ice;1"
           },
           {
             "enumValue": "InfraredLight",
-            "name": "InfraredLight"
+            "name": "InfraredLight",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:InfraredLight;1"
           },
           {
             "enumValue": "IrrigationWater",
-            "name": "IrrigationWater"
+            "name": "IrrigationWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:IrrigationWater;1"
           },
           {
             "enumValue": "Light",
-            "name": "Light"
+            "name": "Light",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Light;1"
           },
           {
             "enumValue": "LiquidPropaneFuel",
-            "name": "LiquidPropaneFuel"
+            "name": "LiquidPropaneFuel",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:LiquidPropaneFuel;1"
           },
           {
             "enumValue": "LowTemperatureHotWater",
-            "name": "LowTemperatureHotWater"
+            "name": "LowTemperatureHotWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:LowTemperatureHotWater;1"
           },
           {
             "enumValue": "MakeupWater",
-            "name": "MakeupWater"
+            "name": "MakeupWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:MakeupWater;1"
           },
           {
             "enumValue": "MediumTemperatureHotWater",
-            "name": "MediumTemperatureHotWater"
+            "name": "MediumTemperatureHotWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:MediumTemperatureHotWater;1"
           },
           {
             "enumValue": "NaturalGasFuel",
-            "name": "NaturalGasFuel"
+            "name": "NaturalGasFuel",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:NaturalGasFuel;1"
           },
           {
             "enumValue": "NonPotableDomesticWater",
-            "name": "NonPotableDomesticWater"
+            "name": "NonPotableDomesticWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:NonPotableDomesticWater;1"
           },
           {
             "enumValue": "Object",
-            "name": "Object"
+            "name": "Object",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Object;1"
           },
           {
             "enumValue": "People",
-            "name": "People"
+            "name": "People",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:People;1"
           },
           {
             "enumValue": "Precipitation",
-            "name": "Precipitation"
+            "name": "Precipitation",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Precipitation;1"
           },
           {
             "enumValue": "RainPrecipitation",
-            "name": "RainPrecipitation"
+            "name": "RainPrecipitation",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:RainPrecipitation;1"
           },
           {
             "enumValue": "Refrigerant",
-            "name": "Refrigerant"
+            "name": "Refrigerant",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Refrigerant;1"
           },
           {
             "enumValue": "SleetPrecipitation",
-            "name": "SleetPrecipitation"
+            "name": "SleetPrecipitation",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:SleetPrecipitation;1"
           },
           {
             "enumValue": "Smoke",
-            "name": "Smoke"
+            "name": "Smoke",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Smoke;1"
           },
           {
             "enumValue": "SnowPrecipitation",
-            "name": "SnowPrecipitation"
+            "name": "SnowPrecipitation",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:SnowPrecipitation;1"
           },
           {
             "enumValue": "Solar",
-            "name": "Solar"
+            "name": "Solar",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Solar;1"
           },
           {
             "enumValue": "Sound",
-            "name": "Sound"
+            "name": "Sound",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Sound;1"
           },
           {
             "enumValue": "SprinklerWater",
-            "name": "SprinklerWater"
+            "name": "SprinklerWater",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:SprinklerWater;1"
           },
           {
             "enumValue": "Steam",
-            "name": "Steam"
+            "name": "Steam",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Steam;1"
           },
           {
             "enumValue": "StormDrainage",
-            "name": "StormDrainage"
+            "name": "StormDrainage",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:StormDrainage;1"
           },
           {
             "enumValue": "UltravioletLight",
-            "name": "UltravioletLight"
+            "name": "UltravioletLight",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:UltravioletLight;1"
           },
           {
             "enumValue": "Urea",
-            "name": "Urea"
+            "name": "Urea",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Urea;1"
           },
           {
             "enumValue": "WasteVentDrainage",
-            "name": "WasteVentDrainage"
+            "name": "WasteVentDrainage",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:WasteVentDrainage;1"
           },
           {
             "enumValue": "Water",
-            "name": "Water"
+            "name": "Water",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Water;1"
           },
           {
             "enumValue": "WiFiData",
-            "name": "WiFiData"
+            "name": "WiFiData",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:WiFiData;1"
           },
           {
             "enumValue": "Wind",
-            "name": "Wind"
+            "name": "Wind",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Wind;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES6;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:phenomenon;1"
     },
     {
       "@type": "Property",
@@ -518,108 +624,135 @@
         "enumValues": [
           {
             "enumValue": "Azimuth",
-            "name": "Azimuth"
+            "name": "Azimuth",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Azimuth;1"
           },
           {
             "enumValue": "Bypass",
-            "name": "Bypass"
+            "name": "Bypass",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Bypass;1"
           },
           {
             "enumValue": "Circulating",
-            "name": "Circulating"
+            "name": "Circulating",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Circulating;1"
           },
           {
             "enumValue": "Delta",
-            "name": "Delta"
+            "name": "Delta",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Delta;1"
           },
           {
             "enumValue": "Discharge",
-            "name": "Discharge"
+            "name": "Discharge",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Discharge;1"
           },
           {
             "enumValue": "Download",
-            "name": "Download"
+            "name": "Download",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Download;1"
           },
           {
             "enumValue": "Economizer",
-            "name": "Economizer"
+            "name": "Economizer",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Economizer;1"
           },
           {
             "enumValue": "Entering",
-            "name": "Entering"
+            "name": "Entering",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Entering;1"
           },
           {
             "enumValue": "Exhaust",
-            "name": "Exhaust"
+            "name": "Exhaust",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Exhaust;1"
           },
           {
             "enumValue": "Export",
-            "name": "Export"
+            "name": "Export",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Export;1"
           },
           {
             "enumValue": "Header",
-            "name": "Header"
+            "name": "Header",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Header;1"
           },
           {
             "enumValue": "Import",
-            "name": "Import"
+            "name": "Import",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Import;1"
           },
           {
             "enumValue": "Input",
-            "name": "Input"
+            "name": "Input",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Input;1"
           },
           {
             "enumValue": "Inside",
-            "name": "Inside"
+            "name": "Inside",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Inside;1"
           },
           {
             "enumValue": "Leaving",
-            "name": "Leaving"
+            "name": "Leaving",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Leaving;1"
           },
           {
             "enumValue": "Mixed",
-            "name": "Mixed"
+            "name": "Mixed",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Mixed;1"
           },
           {
             "enumValue": "Net",
-            "name": "Net"
+            "name": "Net",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Net;1"
           },
           {
             "enumValue": "Output",
-            "name": "Output"
+            "name": "Output",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Output;1"
           },
           {
             "enumValue": "Outside",
-            "name": "Outside"
+            "name": "Outside",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Outside;1"
           },
           {
             "enumValue": "Return",
-            "name": "Return"
+            "name": "Return",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Return;1"
           },
           {
             "enumValue": "Supply",
-            "name": "Supply"
+            "name": "Supply",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Supply;1"
           },
           {
             "enumValue": "Underfloor",
-            "name": "Underfloor"
+            "name": "Underfloor",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Underfloor;1"
           },
           {
             "enumValue": "Upload",
-            "name": "Upload"
+            "name": "Upload",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Upload;1"
           },
           {
             "enumValue": "Zenith",
-            "name": "Zenith"
+            "name": "Zenith",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Zenith;1"
           },
           {
             "enumValue": "Zone",
-            "name": "Zone"
+            "name": "Zone",
+            "@id": "dtmi:com:syyclops:CapabilityPropertySet:Zone;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CapabilityPropertySet:ES7;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:position;1"
     },
     {
       "@type": "Property",
@@ -631,7 +764,8 @@
       },
       "name": "stage",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:stage;1"
     },
     {
       "@type": "Property",
@@ -643,7 +777,8 @@
       },
       "name": "arrayIndex",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:arrayIndex;1"
     },
     {
       "@type": "Property",
@@ -655,7 +790,8 @@
       },
       "name": "reverseActingActuator",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CapabilityPropertySet:reverseActingActuator;1"
     }
   ],
   "description": {

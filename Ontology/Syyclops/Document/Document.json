@@ -14,7 +14,8 @@
       "name": "isDocumentOf",
       "displayName": {
         "en": "is document of"
-      }
+      },
+      "@id": "dtmi:com:syyclops:Document:isDocumentOf;1"
     },
     {
       "@type": "Relationship",
@@ -25,7 +26,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:Document:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -33,7 +35,8 @@
       "displayName": {
         "en": "included in"
       },
-      "target": "dtmi:com:syyclops:Collection;1"
+      "target": "dtmi:com:syyclops:Collection;1",
+      "@id": "dtmi:com:syyclops:Document:includedIn;1"
     },
     {
       "@type": "Property",
@@ -42,7 +45,8 @@
       },
       "name": "url",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:url;1"
     },
     {
       "@type": "Property",
@@ -51,7 +55,8 @@
       },
       "name": "filename",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:filename;1"
     },
     {
       "@type": "Property",
@@ -60,7 +65,8 @@
       },
       "name": "hashMD5",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:hashMD5;1"
     },
     {
       "@type": [
@@ -73,7 +79,8 @@
       "name": "fileSize",
       "schema": "double",
       "unit": "byte",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:fileSize;1"
     },
     {
       "@type": [
@@ -88,7 +95,8 @@
       "annotates": "fileSize",
       "overrides": "unit",
       "schema": "DataSizeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:fileSizeUnit;1"
     },
     {
       "@type": "Property",
@@ -100,14 +108,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:tagName;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:Document:tagValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Document:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:customTags;1"
     },
     {
       "@type": "Property",
@@ -119,14 +131,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:Document:MS2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:externalIds;1"
     },
     {
       "@type": "Property",
@@ -137,8 +153,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:DocumentMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:DocumentMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:Document:AS3;1"
+      },
+      "@id": "dtmi:com:syyclops:Document:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -147,7 +165,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:name;1"
     },
     {
       "@type": "Property",
@@ -156,7 +175,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Document:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -165,7 +185,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Document:externalID;1"
     },
     {
       "@type": "Property",
@@ -174,7 +195,8 @@
         "en": "Code"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Document:code;1"
     },
     {
       "@type": "Property",
@@ -183,7 +205,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Document:description;1"
     },
     {
       "@type": "Property",
@@ -195,7 +218,8 @@
         "en": "An overview of the content written or described in a document which is intended to be one or several paragraphs in length. Use 'description' for a short format summary."
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Document:summary;1"
     },
     {
       "@type": "Property",
@@ -204,7 +228,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Document:siteID;1"
     },
     {
       "@type": "Property",
@@ -230,8 +255,10 @@
             },
             "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Document:OS4;1"
+      },
+      "@id": "dtmi:com:syyclops:Document:alternateClassification;1"
     },
     {
       "@type": "Property",
@@ -243,7 +270,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -251,15 +279,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Document:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:Document:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:Document:MS6;1"
+          },
+          "@id": "dtmi:com:syyclops:Document:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:Document:MS5;1"
+      },
+      "@id": "dtmi:com:syyclops:Document:customProperties;1"
     },
     {
       "@type": "Property",
@@ -268,7 +302,8 @@
         "en": "Created Date"
       },
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:createdDate;1"
     },
     {
       "@type": "Property",
@@ -277,7 +312,8 @@
         "en": "Last Updated Date"
       },
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Document:lastUpdatedDate;1"
     },
     {
       "@type": "Property",
@@ -303,8 +339,10 @@
             },
             "schema": "string"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Document:OS7;1"
+      },
+      "@id": "dtmi:com:syyclops:Document:createdBy;1"
     }
   ],
   "schemas": [

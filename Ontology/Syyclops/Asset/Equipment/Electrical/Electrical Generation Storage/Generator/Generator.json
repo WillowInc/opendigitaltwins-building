@@ -32,16 +32,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:Generator:Three;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:Generator:One;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Generator:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:outputPhases;1"
     },
     {
       "@type": "Property",
@@ -50,7 +54,8 @@
       },
       "name": "modeOfOperation",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:modeOfOperation;1"
     },
     {
       "@type": "Property",
@@ -59,7 +64,8 @@
       },
       "name": "fuelType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:fuelType;1"
     },
     {
       "@type": [
@@ -75,7 +81,8 @@
       "name": "frequency",
       "schema": "integer",
       "unit": "hertz",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:frequency;1"
     },
     {
       "@type": [
@@ -88,7 +95,8 @@
       "name": "dayTankCapacity",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:dayTankCapacity;1"
     },
     {
       "@type": [
@@ -103,7 +111,8 @@
       "annotates": "dayTankCapacity",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:dayTankCapacityUnit;1"
     },
     {
       "@type": [
@@ -116,7 +125,8 @@
       "name": "bulkStorageCapacity",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:bulkStorageCapacity;1"
     },
     {
       "@type": [
@@ -131,7 +141,8 @@
       "annotates": "bulkStorageCapacity",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:bulkStorageCapacityUnit;1"
     },
     {
       "@type": [
@@ -144,7 +155,8 @@
       "name": "standbyPowerKVA",
       "schema": "double",
       "unit": "kilovoltAmpere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:standbyPowerKVA;1"
     },
     {
       "@type": [
@@ -157,7 +169,8 @@
       "name": "standbyPower",
       "schema": "double",
       "unit": "kilowatt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:standbyPower;1"
     },
     {
       "@type": [
@@ -170,7 +183,8 @@
       "name": "primePowerKVA",
       "schema": "double",
       "unit": "kilovoltAmpere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:primePowerKVA;1"
     },
     {
       "@type": [
@@ -183,7 +197,8 @@
       "name": "primePower",
       "schema": "double",
       "unit": "kilowatt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Generator:primePower;1"
     }
   ],
   "@context": [

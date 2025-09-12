@@ -19,7 +19,8 @@
       "name": "stepWidth",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MovingWalkway:stepWidth;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "stepWidth",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MovingWalkway:stepWidthUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       "name": "maxTravelSpeed",
       "schema": "double",
       "unit": "metrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MovingWalkway:maxTravelSpeed;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "maxTravelSpeed",
       "overrides": "unit",
       "schema": "VelocityUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MovingWalkway:maxTravelSpeedUnit;1"
     },
     {
       "@type": [
@@ -75,7 +79,8 @@
       "name": "maxLength",
       "schema": "double",
       "unit": "metre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MovingWalkway:maxLength;1"
     },
     {
       "@type": [
@@ -90,7 +95,8 @@
       "annotates": "maxLength",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MovingWalkway:maxLengthUnit;1"
     },
     {
       "@type": [

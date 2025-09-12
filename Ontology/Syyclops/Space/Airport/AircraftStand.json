@@ -7,7 +7,7 @@
   "description": {
     "en": "A designated area intended for parking an aircraft."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:airport:AirportSpace;1"
   ],
   "contents": [
@@ -35,8 +35,10 @@
             },
             "schema": "double"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:airport:AircraftStand:OS1;1"
+      },
+      "@id": "dtmi:com:syyclops:airport:AircraftStand:coordinates;1"
     }
   ],
   "@context": [

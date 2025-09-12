@@ -22,7 +22,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "unit": "litrePerSecond"
+      "unit": "litrePerSecond",
+      "@id": "dtmi:com:syyclops:AirCompressorFilter:flowRate;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "flowRate",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressorFilter:flowRateUnit;1"
     },
     {
       "@type": [
@@ -50,7 +52,8 @@
       "name": "workingPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressorFilter:workingPressure;1"
     },
     {
       "@type": [
@@ -65,7 +68,8 @@
       "annotates": "workingPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCompressorFilter:workingPressureUnit;1"
     }
   ],
   "@context": [

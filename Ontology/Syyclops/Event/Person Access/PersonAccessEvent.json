@@ -15,7 +15,8 @@
         "en": "Access Reader Id"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:PersonAccessEvent:accessReaderId;1"
     },
     {
       "@type": "Property",
@@ -34,20 +35,23 @@
             "displayName": {
               "en": "Granted"
             },
-            "enumValue": "Granted"
+            "enumValue": "Granted",
+            "@id": "dtmi:com:syyclops:PersonAccessEvent:Granted;1"
           },
           {
             "name": "Denied",
             "displayName": {
               "en": "Denied"
             },
-            "enumValue": "Denied"
+            "enumValue": "Denied",
+            "@id": "dtmi:com:syyclops:PersonAccessEvent:Denied;1"
           }
         ],
         "displayName": {
           "en": "Access Event Type"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:PersonAccessEvent:accessEventType;1"
     }
   ],
   "@context": [

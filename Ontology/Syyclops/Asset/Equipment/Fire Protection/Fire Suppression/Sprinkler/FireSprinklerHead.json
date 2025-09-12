@@ -19,24 +19,30 @@
         "enumValues": [
           {
             "enumValue": "Upright",
-            "name": "Upright"
+            "name": "Upright",
+            "@id": "dtmi:com:syyclops:FireSprinklerHead:Upright;1"
           },
           {
             "enumValue": "SideWall",
-            "name": "SideWall"
+            "name": "SideWall",
+            "@id": "dtmi:com:syyclops:FireSprinklerHead:SideWall;1"
           },
           {
             "enumValue": "Pendant",
-            "name": "Pendant"
+            "name": "Pendant",
+            "@id": "dtmi:com:syyclops:FireSprinklerHead:Pendant;1"
           },
           {
             "enumValue": "ConcealedPendant",
-            "name": "ConcealedPendant"
+            "name": "ConcealedPendant",
+            "@id": "dtmi:com:syyclops:FireSprinklerHead:ConcealedPendant;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FireSprinklerHead:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FireSprinklerHead:type;1"
     },
     {
       "@type": "Property",
@@ -45,7 +51,8 @@
       },
       "name": "kFactorMetric",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FireSprinklerHead:kFactorMetric;1"
     },
     {
       "@type": "Property",
@@ -54,7 +61,8 @@
       },
       "name": "kFactorImperial",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FireSprinklerHead:kFactorImperial;1"
     }
   ],
   "@context": [

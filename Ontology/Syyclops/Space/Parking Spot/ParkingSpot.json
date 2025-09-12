@@ -18,7 +18,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:ParkingSpot:type;1"
     },
     {
       "@type": [
@@ -31,7 +32,8 @@
       "name": "width",
       "schema": "double",
       "unit": "metre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ParkingSpot:width;1"
     },
     {
       "@type": [
@@ -46,7 +48,8 @@
       "annotates": "width",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ParkingSpot:widthUnit;1"
     },
     {
       "@type": [
@@ -59,7 +62,8 @@
       "name": "length",
       "schema": "double",
       "unit": "metre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ParkingSpot:length;1"
     },
     {
       "@type": [
@@ -74,7 +78,8 @@
       "annotates": "length",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ParkingSpot:lengthUnit;1"
     }
   ],
   "@context": [

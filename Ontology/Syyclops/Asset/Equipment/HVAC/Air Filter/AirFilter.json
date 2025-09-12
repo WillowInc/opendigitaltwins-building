@@ -14,7 +14,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:AirFilter:fan;1"
     },
     {
       "@type": "Property",
@@ -27,20 +28,25 @@
         "enumValues": [
           {
             "enumValue": "MERV",
-            "name": "MERV"
+            "name": "MERV",
+            "@id": "dtmi:com:syyclops:AirFilter:MERV;1"
           },
           {
             "enumValue": "HEPA",
-            "name": "HEPA"
+            "name": "HEPA",
+            "@id": "dtmi:com:syyclops:AirFilter:HEPA;1"
           },
           {
             "enumValue": "ULPA",
-            "name": "ULPA"
+            "name": "ULPA",
+            "@id": "dtmi:com:syyclops:AirFilter:ULPA;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:AirFilter:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirFilter:efficiencyRatingType;1"
     },
     {
       "@type": "Property",
@@ -49,7 +55,8 @@
         "en": "MERV Rating"
       },
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirFilter:MERVRating;1"
     },
     {
       "@type": "Property",
@@ -58,7 +65,8 @@
         "en": "Efficiency At 0.3 Microns"
       },
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirFilter:efficiencyAt03Microns;1"
     }
   ],
   "@context": [

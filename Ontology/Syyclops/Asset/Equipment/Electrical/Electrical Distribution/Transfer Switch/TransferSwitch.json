@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:TransferSwitch:Three;1"
           },
           {
             "enumValue": "Four",
-            "name": "Four"
+            "name": "Four",
+            "@id": "dtmi:com:syyclops:TransferSwitch:Four;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:TransferSwitch:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TransferSwitch:poles;1"
     },
     {
       "@type": [
@@ -49,7 +53,8 @@
       "displayName": {
         "en": "Main Bus"
       },
-      "schema": "dtmi:com:syyclops:ElectricalBus;1"
+      "schema": "dtmi:com:syyclops:ElectricalBus;1",
+      "@id": "dtmi:com:syyclops:TransferSwitch:mainBus;1"
     }
   ],
   "@context": [

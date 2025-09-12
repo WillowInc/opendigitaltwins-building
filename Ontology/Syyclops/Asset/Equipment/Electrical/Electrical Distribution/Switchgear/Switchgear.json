@@ -15,7 +15,8 @@
       },
       "name": "shortCircuitRating",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Switchgear:shortCircuitRating;1"
     },
     {
       "@type": [
@@ -41,16 +42,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:Switchgear:Three;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:Switchgear:One;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Switchgear:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Switchgear:inputPhases;1"
     },
     {
       "@type": "Component",
@@ -58,7 +63,8 @@
         "en": "main bus"
       },
       "name": "mainBus",
-      "schema": "dtmi:com:syyclops:ElectricalBus;1"
+      "schema": "dtmi:com:syyclops:ElectricalBus;1",
+      "@id": "dtmi:com:syyclops:Switchgear:mainBus;1"
     }
   ],
   "@context": [

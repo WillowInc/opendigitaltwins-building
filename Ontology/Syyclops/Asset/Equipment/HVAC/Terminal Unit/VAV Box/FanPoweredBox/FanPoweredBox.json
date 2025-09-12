@@ -22,16 +22,20 @@
         "enumValues": [
           {
             "enumValue": "series",
-            "name": "series"
+            "name": "series",
+            "@id": "dtmi:com:syyclops:FanPoweredBox:series;1"
           },
           {
             "enumValue": "parallel",
-            "name": "parallel"
+            "name": "parallel",
+            "@id": "dtmi:com:syyclops:FanPoweredBox:parallel;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FanPoweredBox:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanPoweredBox:configuration;1"
     },
     {
       "@type": "Component",
@@ -39,7 +43,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:FanPoweredBox:fan;1"
     }
   ],
   "@context": [

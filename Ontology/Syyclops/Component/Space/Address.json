@@ -15,7 +15,8 @@
       },
       "name": "region",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Address:region;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
       },
       "name": "postalCode",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Address:postalCode;1"
     },
     {
       "@type": "Property",
@@ -33,7 +35,8 @@
       },
       "name": "country",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Address:country;1"
     },
     {
       "@type": "Property",
@@ -42,7 +45,8 @@
       },
       "name": "city",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Address:city;1"
     },
     {
       "@type": "Property",
@@ -51,7 +55,8 @@
       },
       "name": "addressLine2",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Address:addressLine2;1"
     },
     {
       "@type": "Property",
@@ -60,7 +65,8 @@
       },
       "name": "addressLine1",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Address:addressLine1;1"
     }
   ],
   "@context": [

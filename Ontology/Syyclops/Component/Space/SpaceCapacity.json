@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Space Capacity"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
@@ -16,7 +16,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "comment": "Building Code Occupancy"
+      "comment": "Building Code Occupancy",
+      "@id": "dtmi:com:syyclops:SpaceCapacity:maxOccupancy;1"
     },
     {
       "@type": "Property",
@@ -26,7 +27,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "comment": "Count of seats"
+      "comment": "Count of seats",
+      "@id": "dtmi:com:syyclops:SpaceCapacity:seatingCapacity;1"
     }
   ],
   "@context": [

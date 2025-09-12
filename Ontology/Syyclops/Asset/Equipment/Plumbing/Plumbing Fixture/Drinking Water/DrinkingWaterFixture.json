@@ -19,7 +19,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "litrePerHour"
+      "unit": "litrePerHour",
+      "@id": "dtmi:com:syyclops:DrinkingWaterFixture:chillingCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "chillingCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:DrinkingWaterFixture:chillingCapacityUnit;1"
     }
   ],
   "@context": [

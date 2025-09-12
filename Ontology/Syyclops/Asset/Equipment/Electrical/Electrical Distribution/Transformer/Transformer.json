@@ -41,7 +41,8 @@
       },
       "name": "type",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Transformer:type;1"
     },
     {
       "@type": [
@@ -54,7 +55,8 @@
       "name": "sizeKVA",
       "schema": "double",
       "unit": "kilovoltAmpere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Transformer:sizeKVA;1"
     },
     {
       "@type": "Property",
@@ -67,16 +69,20 @@
         "enumValues": [
           {
             "enumValue": "Three",
-            "name": "Three"
+            "name": "Three",
+            "@id": "dtmi:com:syyclops:Transformer:Three;1"
           },
           {
             "enumValue": "One",
-            "name": "One"
+            "name": "One",
+            "@id": "dtmi:com:syyclops:Transformer:One;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Transformer:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Transformer:phases;1"
     }
   ],
   "@context": [

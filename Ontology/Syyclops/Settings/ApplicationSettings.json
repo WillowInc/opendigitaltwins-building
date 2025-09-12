@@ -7,7 +7,7 @@
   "description": {
     "en": "Settings or properties used by an application for its functionality."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Settings;1"
   ],
   "contents": [
@@ -21,7 +21,8 @@
         "en": "The name of the application which is storing and retreiving the settings for its functionality. This is used to filter all the collection of all application settings."
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:ApplicationSettings:applicationName;1"
     },
     {
       "@type": "Property",
@@ -39,16 +40,20 @@
           "description": {
             "en": "The name of a user interface component for which properties are desired to be set (i.e. ArcGISWebMap, TimeSeriesViewer)."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:ApplicationSettings:uiComponentName;1"
         },
         "mapValue": {
           "name": "uiComponentSettings",
           "description": {
             "en": "The settings or properties stored as a JSON string for the user interface to deserialize (i.e. {\"zoom\": 90, \"center\": [10, 40]})."
           },
-          "schema": "string"
-        }
-      }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:ApplicationSettings:uiComponentSettings;1"
+        },
+        "@id": "dtmi:com:syyclops:ApplicationSettings:MS1;1"
+      },
+      "@id": "dtmi:com:syyclops:ApplicationSettings:uiSettings;1"
     }
   ],
   "@context": [
