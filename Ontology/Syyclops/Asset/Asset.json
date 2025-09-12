@@ -370,14 +370,16 @@
             "displayName": {
               "en": "Latitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:Asset:latitude;1"
           },
           {
             "name": "longitude",
             "displayName": {
               "en": "Longitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:Asset:longitude;1"
           }
         ],
         "displayName": {
@@ -658,42 +660,48 @@
             "displayName": {
               "en": "MasterFormat"
             },
-            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Asset:masterFormat;1"
           },
           {
             "name": "omniClass",
             "displayName": {
               "en": "OmniClass"
             },
-            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Asset:omniClass;1"
           },
           {
             "name": "uniFormat",
             "displayName": {
               "en": "UniFormat"
             },
-            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Asset:uniFormat;1"
           },
           {
             "name": "uniclass",
             "displayName": {
               "en": "Uniclass"
             },
-            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Asset:uniclass;1"
           },
           {
             "name": "projectHaystack",
             "displayName": {
               "en": "Project Haystack"
             },
-            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Asset:projectHaystack;1"
           },
           {
             "name": "brickSchema",
             "displayName": {
               "en": "Brick Schema"
             },
-            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AssetAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Asset:brickSchema;1"
           }
         ],
         "@id": "dtmi:com:syyclops:Asset:OS4;1"
@@ -769,7 +777,8 @@
             "en": "Target ID"
           },
           "schema": "string",
-          "comment": "$dtId of the target twin"
+          "comment": "$dtId of the target twin",
+          "@id": "dtmi:com:syyclops:Asset:targetId;1"
         },
         {
           "name": "name",
@@ -777,7 +786,8 @@
             "en": "Name"
           },
           "schema": "string",
-          "comment": "name of the target twin"
+          "comment": "name of the target twin",
+          "@id": "dtmi:com:syyclops:Asset:SF1;1"
         },
         {
           "name": "targetModelId",
@@ -785,7 +795,8 @@
             "en": "Target Model ID"
           },
           "schema": "string",
-          "comment": "$model of the target twin"
+          "comment": "$model of the target twin",
+          "@id": "dtmi:com:syyclops:Asset:targetModelId;1"
         }
       ],
       "displayName": {
@@ -801,14 +812,16 @@
           "displayName": {
             "en": "Version"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:version;1"
         },
         {
           "name": "code",
           "displayName": {
             "en": "Code"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:code;1"
         }
       ],
       "displayName": {
@@ -830,7 +843,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:exactType;1"
         },
         {
           "name": "scope",
@@ -840,7 +854,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:scope;1"
         },
         {
           "name": "scopeId",
@@ -850,7 +865,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:scopeId;1"
         },
         {
           "name": "value",
@@ -860,7 +876,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Asset:value;1"
         },
         {
           "name": "dateCreated",
@@ -870,7 +887,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:Asset:dateCreated;1"
         }
       ],
       "displayName": {

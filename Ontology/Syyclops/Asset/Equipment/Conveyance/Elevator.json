@@ -146,21 +146,24 @@
             "displayName": {
               "en": "Two-Way Voice"
             },
-            "schema": "boolean"
+            "schema": "boolean",
+            "@id": "dtmi:com:syyclops:Elevator:twoWayVoice;1"
           },
           {
             "name": "twoWayMessageDisplay",
             "displayName": {
               "en": "Two-Way Message Display"
             },
-            "schema": "boolean"
+            "schema": "boolean",
+            "@id": "dtmi:com:syyclops:Elevator:twoWayMessageDisplay;1"
           },
           {
             "name": "oneWayVideo",
             "displayName": {
               "en": "One-Way Video"
             },
-            "schema": "boolean"
+            "schema": "boolean",
+            "@id": "dtmi:com:syyclops:Elevator:oneWayVideo;1"
           }
         ],
         "@id": "dtmi:com:syyclops:Elevator:OS1;1"

@@ -26,14 +26,16 @@
             "displayName": {
               "en": "Latitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:airport:AirportGate:latitude;1"
           },
           {
             "name": "longitude",
             "displayName": {
               "en": "Longitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:airport:AirportGate:longitude;1"
           }
         ],
         "@id": "dtmi:com:syyclops:airport:AirportGate:OS1;1"

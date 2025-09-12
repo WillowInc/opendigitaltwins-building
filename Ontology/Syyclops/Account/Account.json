@@ -194,14 +194,16 @@
             "displayName": {
               "en": "Project Haystack"
             },
-            "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Account:projectHaystack;1"
           },
           {
             "name": "brickSchema",
             "displayName": {
               "en": "Brick Schema"
             },
-            "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:AccountAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Account:brickSchema;1"
           }
         ],
         "@id": "dtmi:com:syyclops:Account:OS4;1"
@@ -254,14 +256,16 @@
           "displayName": {
             "en": "Version"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:version;1"
         },
         {
           "name": "code",
           "displayName": {
             "en": "Code"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:SF1;1"
         }
       ],
       "displayName": {
@@ -283,7 +287,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:exactType;1"
         },
         {
           "name": "scope",
@@ -293,7 +298,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:scope;1"
         },
         {
           "name": "scopeId",
@@ -303,7 +309,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:scopeId;1"
         },
         {
           "name": "value",
@@ -313,7 +320,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Account:value;1"
         },
         {
           "name": "dateCreated",
@@ -323,7 +331,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:Account:dateCreated;1"
         }
       ],
       "displayName": {

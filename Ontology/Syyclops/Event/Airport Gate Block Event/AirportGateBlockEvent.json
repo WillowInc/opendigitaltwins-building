@@ -30,7 +30,8 @@
             "description": {
               "en": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration. (i.e. AAL1234)"
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:AirportGateBlockEvent:flightNumber;1"
           },
           {
             "name": "origin",
@@ -40,7 +41,8 @@
             "description": {
               "en": "The departure airport code."
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:AirportGateBlockEvent:origin;1"
           },
           {
             "name": "destination",
@@ -50,7 +52,8 @@
             "description": {
               "en": "The arrival airport code."
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:AirportGateBlockEvent:destination;1"
           }
         ],
         "displayName": {
@@ -78,7 +81,8 @@
             "description": {
               "en": "The tail number or registration of the aircraft (i.e. N7740A)"
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:AirportGateBlockEvent:registration;1"
           },
           {
             "name": "typeDesignator",
@@ -88,7 +92,8 @@
             "description": {
               "en": "The FAA or ICAO aircraft type designator which is a code for the manufacturer and model number (i.e. B3XM) "
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:AirportGateBlockEvent:typeDesignator;1"
           }
         ],
         "displayName": {

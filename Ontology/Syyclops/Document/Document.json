@@ -246,14 +246,16 @@
             "displayName": {
               "en": "Project Haystack"
             },
-            "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Document:projectHaystack;1"
           },
           {
             "name": "brickSchema",
             "displayName": {
               "en": "Brick Schema"
             },
-            "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:DocumentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Document:brickSchema;1"
           }
         ],
         "@id": "dtmi:com:syyclops:Document:OS4;1"
@@ -330,14 +332,16 @@
             "displayName": {
               "en": "Login"
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:Document:login;1"
           },
           {
             "name": "name",
             "displayName": {
               "en": "Name"
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:Document:OF1;1"
           }
         ],
         "@id": "dtmi:com:syyclops:Document:OS7;1"
@@ -355,14 +359,16 @@
           "displayName": {
             "en": "Version"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:version;1"
         },
         {
           "name": "code",
           "displayName": {
             "en": "Code"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:SF2;1"
         }
       ],
       "displayName": {
@@ -384,7 +390,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:exactType;1"
         },
         {
           "name": "scope",
@@ -394,7 +401,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:scope;1"
         },
         {
           "name": "scopeId",
@@ -404,7 +412,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:scopeId;1"
         },
         {
           "name": "value",
@@ -414,7 +423,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Document:value;1"
         },
         {
           "name": "dateCreated",
@@ -424,7 +434,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:Document:dateCreated;1"
         }
       ],
       "displayName": {

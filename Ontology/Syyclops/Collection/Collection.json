@@ -284,42 +284,48 @@
             "displayName": {
               "en": "MasterFormat"
             },
-            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Collection:masterFormat;1"
           },
           {
             "name": "omniClass",
             "displayName": {
               "en": "OmniClass"
             },
-            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Collection:omniClass;1"
           },
           {
             "name": "uniFormat",
             "displayName": {
               "en": "UniFormat"
             },
-            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Collection:uniFormat;1"
           },
           {
             "name": "uniclass",
             "displayName": {
               "en": "Uniclass"
             },
-            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Collection:uniclass;1"
           },
           {
             "name": "projectHaystack",
             "displayName": {
               "en": "Project Haystack"
             },
-            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Collection:projectHaystack;1"
           },
           {
             "name": "brickSchema",
             "displayName": {
               "en": "Brick Schema"
             },
-            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:CollectionAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:Collection:brickSchema;1"
           }
         ],
         "@id": "dtmi:com:syyclops:Collection:OS6;1"
@@ -337,14 +343,16 @@
           "displayName": {
             "en": "Version"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:version;1"
         },
         {
           "name": "code",
           "displayName": {
             "en": "Code"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:SF1;1"
         }
       ],
       "displayName": {
@@ -366,7 +374,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:exactType;1"
         },
         {
           "name": "scope",
@@ -376,7 +385,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:scope;1"
         },
         {
           "name": "scopeId",
@@ -386,7 +396,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:scopeId;1"
         },
         {
           "name": "value",
@@ -396,7 +407,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Collection:value;1"
         },
         {
           "name": "dateCreated",
@@ -406,7 +418,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:Collection:dateCreated;1"
         }
       ],
       "displayName": {

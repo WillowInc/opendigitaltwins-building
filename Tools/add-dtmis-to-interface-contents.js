@@ -156,8 +156,20 @@ class DTMIGenerator {
         // Process Object fields
         if (schemaTypeArray.includes('Object') && Array.isArray(schema.fields)) {
             schema.fields.forEach((field, index) => {
+                // Add DTMI to the field itself if it doesn't have one
+                if (field.name && !field['@id']) {
+                    const dtmi = this.generateContentDTMI(interfaceDTMI, field.name, 'Field', 'Object');
+                    
+                    if (this.trackDTMI(dtmi, filePath, field.name)) {
+                        field['@id'] = dtmi;
+                        console.log(`Added DTMI to Object field '${field.name}': ${dtmi}`);
+                        modified = true;
+                    }
+                }
+                
+                // Process nested schema within the field
                 if (field.schema) {
-                    if (this.processNestedSchema(field.schema, interfaceDTMI, parentName, 'Object', filePath)) {
+                    if (this.processNestedSchema(field.schema, interfaceDTMI, field.name || `field${index}`, 'Object', filePath)) {
                         modified = true;
                     }
                 }
@@ -258,9 +270,21 @@ class DTMIGenerator {
                 });
             }
             
-            // Process nested schemas within Object fields
+            // Process Object fields and nested schemas
             if (schemaTypeArray.includes('Object') && Array.isArray(schema.fields)) {
-                schema.fields.forEach(field => {
+                schema.fields.forEach((field, index) => {
+                    // Add DTMI to the field itself if it doesn't have one
+                    if (field.name && !field['@id']) {
+                        const dtmi = this.generateContentDTMI(interfaceDTMI, field.name, 'Field', 'Schema');
+                        
+                        if (this.trackDTMI(dtmi, filePath, field.name)) {
+                            field['@id'] = dtmi;
+                            console.log(`Added DTMI to Schema field '${field.name}': ${dtmi}`);
+                            modified = true;
+                        }
+                    }
+                    
+                    // Process nested schema within the field
                     if (field.schema && typeof field.schema === 'object') {
                         const schemaName = schema['@id'] ? schema['@id'].split(':').pop().split(';')[0] : 'Schema';
                         if (this.processNestedSchema(field.schema, interfaceDTMI, schemaName, field.name || 'Field', filePath)) {

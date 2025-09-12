@@ -76,7 +76,8 @@
                 }
               ],
               "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:ES3;1"
-            }
+            },
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:type;1"
           },
           {
             "name": "mounting",
@@ -107,7 +108,8 @@
                 }
               ],
               "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:ES4;1"
-            }
+            },
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:mounting;1"
           }
         ],
         "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:OS2;1"

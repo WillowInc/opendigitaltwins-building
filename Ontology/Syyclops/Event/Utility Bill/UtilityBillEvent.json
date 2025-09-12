@@ -29,14 +29,16 @@
             "displayName": {
               "en": "Start Date"
             },
-            "schema": "dateTime"
+            "schema": "dateTime",
+            "@id": "dtmi:com:syyclops:UtilityBillEvent:startDate;1"
           },
           {
             "name": "endDate",
             "displayName": {
               "en": "End Date"
             },
-            "schema": "dateTime"
+            "schema": "dateTime",
+            "@id": "dtmi:com:syyclops:UtilityBillEvent:endDate;1"
           }
         ],
         "@id": "dtmi:com:syyclops:UtilityBillEvent:OS1;1"
@@ -102,7 +104,8 @@
               "description": {
                 "en": "The meter Id as provided by the utility account provider."
               },
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:UtilityBillEvent:meterId;1"
             },
             {
               "name": "measurementType",
@@ -128,7 +131,8 @@
                 ],
                 "valueSchema": "string",
                 "@id": "dtmi:com:syyclops:UtilityBillEvent:ES4;1"
-              }
+              },
+              "@id": "dtmi:com:syyclops:UtilityBillEvent:measurementType;1"
             },
             {
               "name": "serviceType",
@@ -164,7 +168,8 @@
                   }
                 ],
                 "@id": "dtmi:com:syyclops:UtilityBillEvent:ES5;1"
-              }
+              },
+              "@id": "dtmi:com:syyclops:UtilityBillEvent:serviceType;1"
             },
             {
               "name": "charge",
@@ -182,18 +187,21 @@
                     "displayName": {
                       "en": "Amount"
                     },
-                    "schema": "double"
+                    "schema": "double",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:amount;1"
                   },
                   {
                     "name": "currency",
                     "displayName": {
                       "en": "Currency"
                     },
-                    "schema": "string"
+                    "schema": "string",
+                    "@id": "dtmi:com:syyclops:UtilityBillEvent:currency;1"
                   }
                 ],
                 "@id": "dtmi:com:syyclops:UtilityBillEvent:OS6;1"
-              }
+              },
+              "@id": "dtmi:com:syyclops:UtilityBillEvent:charge;1"
             },
             {
               "name": "usage",
@@ -203,7 +211,8 @@
               "description": {
                 "en": "The amount of usage as measured by the meter"
               },
-              "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1"
+              "schema": "dtmi:com:syyclops:UtilityBillEventChargest;1",
+              "@id": "dtmi:com:syyclops:UtilityBillEvent:usage;1"
             }
           ],
           "@id": "dtmi:com:syyclops:UtilityBillEvent:OS3;1"
@@ -223,14 +232,16 @@
           "displayName": {
             "en": "Amount"
           },
-          "schema": "double"
+          "schema": "double",
+          "@id": "dtmi:com:syyclops:UtilityBillEvent:SF1;1"
         },
         {
           "name": "currency",
           "displayName": {
             "en": "Currency"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:UtilityBillEvent:SF2;1"
         }
       ],
       "displayName": {

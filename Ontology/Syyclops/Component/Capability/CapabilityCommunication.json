@@ -171,7 +171,8 @@
           "displayName": {
             "en": "External ID"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:externalID;1"
         }
       ],
       "displayName": {
@@ -187,7 +188,8 @@
           "displayName": {
             "en": "Device ID"
           },
-          "schema": "integer"
+          "schema": "integer",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:deviceID;1"
         },
         {
           "name": "objectType",
@@ -279,14 +281,16 @@
             "displayName": {
               "en": "BA Cnet Capability Object Type"
             }
-          }
+          },
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:objectType;1"
         },
         {
           "name": "objectID",
           "displayName": {
             "en": "Object ID"
           },
-          "schema": "integer"
+          "schema": "integer",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:objectID;1"
         }
       ],
       "displayName": {
@@ -375,28 +379,32 @@
             "displayName": {
               "en": "Modbus Data Type"
             }
-          }
+          },
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:dataType;1"
         },
         {
           "name": "registerAddress",
           "displayName": {
             "en": "Register Address"
           },
-          "schema": "integer"
+          "schema": "integer",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:registerAddress;1"
         },
         {
           "name": "swap",
           "displayName": {
             "en": "Swap"
           },
-          "schema": "boolean"
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:swap;1"
         },
         {
           "name": "slaveID",
           "displayName": {
             "en": "Slave ID"
           },
-          "schema": "integer"
+          "schema": "integer",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:slaveID;1"
         },
         {
           "name": "endian",
@@ -428,7 +436,8 @@
             "displayName": {
               "en": "Modbus Endian Type"
             }
-          }
+          },
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:endian;1"
         },
         {
           "name": "registerType",
@@ -476,14 +485,16 @@
             "displayName": {
               "en": "Modbus Register Type"
             }
-          }
+          },
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:registerType;1"
         },
         {
           "name": "scale",
           "displayName": {
             "en": "Scale"
           },
-          "schema": "float"
+          "schema": "float",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:scale;1"
         }
       ],
       "displayName": {
@@ -499,7 +510,8 @@
           "displayName": {
             "en": "Node ID"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:nodeID;1"
         }
       ],
       "displayName": {
@@ -515,7 +527,8 @@
           "displayName": {
             "en": "Node ID"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SF1;1"
         }
       ],
       "displayName": {
@@ -531,7 +544,8 @@
           "displayName": {
             "en": "External ID"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:CapabilityCommunication:SF2;1"
         }
       ],
       "displayName": {

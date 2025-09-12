@@ -217,7 +217,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:exactType;1"
         },
         {
           "name": "scope",
@@ -227,7 +228,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:scope;1"
         },
         {
           "name": "scopeId",
@@ -237,7 +239,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:scopeId;1"
         },
         {
           "name": "value",
@@ -247,7 +250,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:value;1"
         },
         {
           "name": "dateCreated",
@@ -257,7 +261,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:dateCreated;1"
         }
       ],
       "displayName": {

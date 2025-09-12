@@ -123,7 +123,8 @@
             "en": "Maximum Power Output"
           },
           "schema": "double",
-          "unit": "watt"
+          "unit": "watt",
+          "@id": "dtmi:com:syyclops:PhotovoltaicPanel:maxPowerOutput;1"
         },
         {
           "@type": [
@@ -135,7 +136,8 @@
             "en": "Maximum Power Point Voltage"
           },
           "schema": "double",
-          "unit": "volt"
+          "unit": "volt",
+          "@id": "dtmi:com:syyclops:PhotovoltaicPanel:MPPVoltage;1"
         },
         {
           "@type": [
@@ -147,7 +149,8 @@
             "en": "Maximum Power Point Current"
           },
           "schema": "double",
-          "unit": "ampere"
+          "unit": "ampere",
+          "@id": "dtmi:com:syyclops:PhotovoltaicPanel:MPPCurrent;1"
         },
         {
           "@type": [
@@ -159,7 +162,8 @@
             "en": "Open Circuit Voltage"
           },
           "schema": "double",
-          "unit": "volt"
+          "unit": "volt",
+          "@id": "dtmi:com:syyclops:PhotovoltaicPanel:openCircuitVoltage;1"
         },
         {
           "@type": [
@@ -171,7 +175,8 @@
             "en": "Short Circuit Current"
           },
           "schema": "double",
-          "unit": "ampere"
+          "unit": "ampere",
+          "@id": "dtmi:com:syyclops:PhotovoltaicPanel:shortCircuitCurrent;1"
         },
         {
           "@type": "Field",
@@ -182,7 +187,8 @@
           "description": {
             "en": "The percentage of incident solar energy that is converted to electricity."
           },
-          "schema": "double"
+          "schema": "double",
+          "@id": "dtmi:com:syyclops:PhotovoltaicPanel:efficiency;1"
         }
       ],
       "displayName": {
