@@ -146,7 +146,8 @@
       "name": "totalFanPower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:totalFanPower;1"
     },
     {
       "@type": [
@@ -175,7 +176,8 @@
       "name": "totalFanbrakeHorsepower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:totalFanbrakeHorsepower;1"
     },
     {
       "@type": [

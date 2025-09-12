@@ -19,7 +19,8 @@
       "name": "weightCapacity",
       "schema": "double",
       "unit": "kilogram",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElevatorMachine:weightCapacity;1"
     },
     {
       "@type": [
@@ -48,7 +49,8 @@
       "name": "motorPower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElevatorMachine:motorPower;1"
     },
     {
       "@type": [
@@ -77,7 +79,8 @@
       "name": "brakeHorsepower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElevatorMachine:brakeHorsepower;1"
     },
     {
       "@type": [

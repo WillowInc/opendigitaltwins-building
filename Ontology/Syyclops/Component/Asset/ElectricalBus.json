@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Electrical Bus"
   },
-  "extends": [
-    "dtmi:com:syyclops:AssetComponent;1"
-  ],
+  "extends": ["dtmi:com:syyclops:AssetComponent;1"],
   "contents": [
     {
       "@type": "Property",
@@ -35,21 +33,16 @@
       "@id": "dtmi:com:syyclops:ElectricalBus:material;1"
     },
     {
-      "@type": [
-        "Current",
-        "Property"
-      ],
+      "@type": ["Current", "Property"],
       "displayName": {
         "en": "Current Rating"
       },
       "name": "currentRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalBus:currentRating;1"
     }
   ],
-  "@context": [
-    "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:quantitativeTypes;1"
-  ]
+  "@context": ["dtmi:dtdl:context;3", "dtmi:dtdl:extension:quantitativeTypes;1"]
 }

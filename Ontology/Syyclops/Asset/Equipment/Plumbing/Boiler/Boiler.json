@@ -75,7 +75,8 @@
       "name": "powerOutput",
       "schema": "double",
       "unit": "watt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:powerOutput;1"
     },
     {
       "@type": [
@@ -104,7 +105,8 @@
       "name": "powerInput",
       "schema": "double",
       "unit": "watt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Boiler:powerInput;1"
     },
     {
       "@type": [

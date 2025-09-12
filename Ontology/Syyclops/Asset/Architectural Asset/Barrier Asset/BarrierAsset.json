@@ -173,7 +173,8 @@
       "name": "fireRating",
       "schema": "double",
       "unit": "hour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BarrierAsset:fireRating;1"
     }
   ],
   "@context": [

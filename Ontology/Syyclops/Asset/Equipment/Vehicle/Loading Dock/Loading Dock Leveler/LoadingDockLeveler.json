@@ -59,7 +59,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "kilogram"
+      "unit": "kilogram",
+      "@id": "dtmi:com:syyclops:LoadingDockLeveler:loadCapacity;1"
     },
     {
       "@type": [

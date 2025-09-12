@@ -19,7 +19,8 @@
       "name": "voltageSecondary",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Transformer:voltageSecondary;1"
     },
     {
       "@type": [
@@ -32,7 +33,8 @@
       "name": "voltagePrimary",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Transformer:voltagePrimary;1"
     },
     {
       "@type": "Property",

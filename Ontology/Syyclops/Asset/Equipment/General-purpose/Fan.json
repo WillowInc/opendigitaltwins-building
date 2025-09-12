@@ -80,7 +80,8 @@
       "name": "motorPower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:motorPower;1"
     },
     {
       "@type": [
@@ -109,7 +110,8 @@
       "name": "maxRotationSpeed",
       "schema": "double",
       "unit": "revolutionPerMinute",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:maxRotationSpeed;1"
     },
     {
       "@type": [
@@ -152,7 +154,8 @@
       "name": "brakeHorsepower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:brakeHorsepower;1"
     },
     {
       "@type": [
@@ -181,7 +184,8 @@
       "name": "fullLoadCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:fullLoadCurrent;1"
     },
     {
       "@type": [
@@ -300,7 +304,8 @@
       "name": "designRotationSpeed",
       "schema": "double",
       "unit": "revolutionPerMinute",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Fan:designRotationSpeed;1"
     },
     {
       "@type": [

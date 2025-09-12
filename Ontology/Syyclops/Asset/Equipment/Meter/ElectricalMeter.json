@@ -45,7 +45,8 @@
       "name": "minVoltageRating",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:minVoltageRating;1"
     },
     {
       "@type": [
@@ -58,7 +59,8 @@
       "name": "minCurrentRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:minCurrentRating;1"
     },
     {
       "@type": [
@@ -71,7 +73,8 @@
       "name": "maxVoltageRating",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:maxVoltageRating;1"
     },
     {
       "@type": [
@@ -84,7 +87,8 @@
       "name": "maxCurrentRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:maxCurrentRating;1"
     },
     {
       "@type": "Relationship",

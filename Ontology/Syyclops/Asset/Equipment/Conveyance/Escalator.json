@@ -109,7 +109,8 @@
       "name": "inclination",
       "schema": "double",
       "unit": "degreeOfArc",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Escalator:inclination;1"
     }
   ],
   "@context": [

@@ -32,7 +32,8 @@
       "name": "weightCapacity",
       "schema": "double",
       "unit": "kilogram",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:weightCapacity;1"
     },
     {
       "@type": [

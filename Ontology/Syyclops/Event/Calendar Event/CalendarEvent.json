@@ -143,30 +143,37 @@
                   "enumValues": [
                     {
                       "enumValue": "daily",
-                      "name": "daily"
+                      "name": "daily",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:daily;1"
                     },
                     {
                       "enumValue": "weekly",
-                      "name": "weekly"
+                      "name": "weekly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:weekly;1"
                     },
                     {
                       "enumValue": "absoluteMonthly",
-                      "name": "absoluteMonthly"
+                      "name": "absoluteMonthly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:absoluteMonthly;1"
                     },
                     {
                       "enumValue": "relativeMonthly",
-                      "name": "relativeMonthly"
+                      "name": "relativeMonthly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:relativeMonthly;1"
                     },
                     {
                       "enumValue": "absoluteYearly",
-                      "name": "absoluteYearly"
+                      "name": "absoluteYearly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:absoluteYearly;1"
                     },
                     {
                       "enumValue": "relativeYearly",
-                      "name": "relativeYearly"
+                      "name": "relativeYearly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:relativeYearly;1"
                     }
                   ],
-                  "valueSchema": "string"
+                  "valueSchema": "string",
+                  "@id": "dtmi:com:syyclops:CalendarEvent:PatternedRecurrence;1"
                 }
               },
               {
@@ -190,7 +197,8 @@
                 },
                 "schema": {
                   "@type": "Array",
-                  "elementSchema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1"
+                  "elementSchema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1",
+                  "@id": "dtmi:com:syyclops:CalendarEvent:AS1;1"
                 }
               },
               {
@@ -232,18 +240,22 @@
                   "enumValues": [
                     {
                       "enumValue": "endDate",
-                      "name": "endDate"
+                      "name": "endDate",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:endDate;1"
                     },
                     {
                       "enumValue": "noEnd",
-                      "name": "noEnd"
+                      "name": "noEnd",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:noEnd;1"
                     },
                     {
                       "enumValue": "numbered",
-                      "name": "numbered"
+                      "name": "numbered",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:numbered;1"
                     }
                   ],
-                  "valueSchema": "string"
+                  "valueSchema": "string",
+                  "@id": "dtmi:com:syyclops:CalendarEvent:ES2;1"
                 }
               },
               {

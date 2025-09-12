@@ -29,7 +29,8 @@
       "name": "inputVoltage",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Switchboard:inputVoltage;1"
     },
     {
       "@type": "Property",

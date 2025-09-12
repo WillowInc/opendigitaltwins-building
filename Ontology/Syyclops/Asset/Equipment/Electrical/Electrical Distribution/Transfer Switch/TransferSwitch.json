@@ -45,7 +45,8 @@
       "name": "mainsRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TransferSwitch:mainsRating;1"
     },
     {
       "@type": "Component",

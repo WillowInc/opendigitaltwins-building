@@ -94,12 +94,17 @@ class DTMIGenerator {
         
         let modified = false;
         
-        // Process the schema itself if it has @type but no @id
-        if (schema['@type'] && !schema['@id']) {
-            const schemaType = Array.isArray(schema['@type']) ? schema['@type'][0] : schema['@type'];
+        // Track existing @id or generate new one if missing
+        if (schema['@id']) {
+            this.trackDTMI(schema['@id'], filePath, `${parentName}${schemaPath}`);
+        } else if (schema['@type']) {
+            const schemaTypes = Array.isArray(schema['@type']) ? schema['@type'] : [schema['@type']];
             const complexSchemaTypes = ['Map', 'Array', 'Object', 'Enum'];
             
-            if (complexSchemaTypes.includes(schemaType)) {
+            // Find the complex schema type in the array
+            const schemaType = schemaTypes.find(type => complexSchemaTypes.includes(type));
+            
+            if (schemaType) {
                 const dtmi = this.generateContentDTMI(interfaceDTMI, parentName, 'Schema', schemaType);
                 
                 if (this.trackDTMI(dtmi, filePath, `${parentName}${schemaPath}${schemaType}`)) {
@@ -111,7 +116,8 @@ class DTMIGenerator {
         }
         
         // Process Map-specific elements
-        if (schema['@type'] === 'Map') {
+        const schemaTypeArray = Array.isArray(schema['@type']) ? schema['@type'] : [schema['@type']];
+        if (schemaTypeArray.includes('Map')) {
             if (schema.mapKey && !schema.mapKey['@id'] && schema.mapKey.name) {
                 const dtmi = this.generateContentDTMI(interfaceDTMI, schema.mapKey.name, 'MapKey', 'Map');
                 
@@ -141,14 +147,14 @@ class DTMIGenerator {
         }
         
         // Process Array-specific elements
-        if (schema['@type'] === 'Array' && schema.elementSchema) {
+        if (schemaTypeArray.includes('Array') && schema.elementSchema) {
             if (this.processNestedSchema(schema.elementSchema, interfaceDTMI, parentName, 'Array', filePath)) {
                 modified = true;
             }
         }
         
         // Process Object fields
-        if (schema['@type'] === 'Object' && Array.isArray(schema.fields)) {
+        if (schemaTypeArray.includes('Object') && Array.isArray(schema.fields)) {
             schema.fields.forEach((field, index) => {
                 if (field.schema) {
                     if (this.processNestedSchema(field.schema, interfaceDTMI, parentName, 'Object', filePath)) {
@@ -159,7 +165,7 @@ class DTMIGenerator {
         }
         
         // Process Enum values
-        if (schema['@type'] === 'Enum' && Array.isArray(schema.enumValues)) {
+        if (schemaTypeArray.includes('Enum') && Array.isArray(schema.enumValues)) {
             schema.enumValues.forEach(enumValue => {
                 if (enumValue.name && !enumValue['@id']) {
                     const dtmi = this.generateContentDTMI(interfaceDTMI, enumValue.name, 'EnumValue', 'Enum');
@@ -192,11 +198,13 @@ class DTMIGenerator {
         } else {
             // Only process elements with @type and name
             if (element['@type'] && element.name) {
-                const elementType = Array.isArray(element['@type']) ? element['@type'][0] : element['@type'];
+                const elementTypes = Array.isArray(element['@type']) ? element['@type'] : [element['@type']];
                 
-                // Only process specific types
+                // Find the supported type in the array
                 const supportedTypes = ['Property', 'Relationship', 'Component', 'Command', 'Telemetry'];
-                if (supportedTypes.includes(elementType)) {
+                const elementType = elementTypes.find(type => supportedTypes.includes(type));
+                
+                if (elementType) {
                     const dtmi = this.generateContentDTMI(interfaceDTMI, element.name, elementType);
                     
                     if (this.trackDTMI(dtmi, filePath, element.name)) {
@@ -235,16 +243,27 @@ class DTMIGenerator {
             }
             
             // Process EnumValues in top-level schemas
-            if (schema['@type'] === 'Enum' && Array.isArray(schema.enumValues)) {
+            const schemaTypeArray = Array.isArray(schema['@type']) ? schema['@type'] : [schema['@type']];
+            if (schemaTypeArray.includes('Enum') && Array.isArray(schema.enumValues)) {
                 schema.enumValues.forEach(enumValue => {
                     if (enumValue.name && !enumValue['@id']) {
-                        // Extract schema name from DTMI for better naming
-                        const schemaName = schema['@id'] ? schema['@id'].split(':').pop().split(';')[0] : 'UnknownSchema';
                         const dtmi = this.generateContentDTMI(interfaceDTMI, enumValue.name, 'EnumValue', 'Schema');
                         
                         if (this.trackDTMI(dtmi, filePath, enumValue.name)) {
                             enumValue['@id'] = dtmi;
                             console.log(`Added DTMI to EnumValue '${enumValue.name}': ${dtmi}`);
+                            modified = true;
+                        }
+                    }
+                });
+            }
+            
+            // Process nested schemas within Object fields
+            if (schemaTypeArray.includes('Object') && Array.isArray(schema.fields)) {
+                schema.fields.forEach(field => {
+                    if (field.schema && typeof field.schema === 'object') {
+                        const schemaName = schema['@id'] ? schema['@id'].split(':').pop().split(';')[0] : 'Schema';
+                        if (this.processNestedSchema(field.schema, interfaceDTMI, schemaName, field.name || 'Field', filePath)) {
                             modified = true;
                         }
                     }

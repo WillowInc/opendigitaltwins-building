@@ -104,7 +104,8 @@
       "name": "motorPower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:motorPower;1"
     },
     {
       "@type": [
@@ -136,7 +137,8 @@
       "name": "ratedLoadCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:ratedLoadCurrent;1"
     },
     {
       "@type": [
@@ -168,7 +170,8 @@
       "name": "maximumContinuousCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:maximumContinuousCurrent;1"
     },
     {
       "@type": [
@@ -200,7 +203,8 @@
       "name": "lockedRotorCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:lockedRotorCurrent;1"
     },
     {
       "@type": [
