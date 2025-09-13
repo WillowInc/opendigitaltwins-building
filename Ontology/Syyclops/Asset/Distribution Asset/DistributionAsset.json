@@ -19,7 +19,8 @@
       "name": "length",
       "schema": "double",
       "unit": "metre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:DistributionAsset:length;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "length",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:DistributionAsset:lengthUnit;1"
     }
   ],
   "@context": [

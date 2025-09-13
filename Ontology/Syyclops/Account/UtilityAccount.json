@@ -7,7 +7,7 @@
   "description": {
     "en": "A customer account in which the service provided is the delivery of a utility such as electricity, natural gas, or water."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Account;1"
   ],
   "contents": [
@@ -17,7 +17,8 @@
         "en": "has utility bill"
       },
       "name": "hasUtilityBill",
-      "target": "dtmi:com:syyclops:UtilityBillEvent;1"
+      "target": "dtmi:com:syyclops:UtilityBillEvent;1",
+      "@id": "dtmi:com:syyclops:UtilityAccount:hasUtilityBill;1"
     },
     {
       "@type": "Component",
@@ -25,7 +26,8 @@
         "en": "Emission Factor"
       },
       "name": "emissionFactor",
-      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1",
+      "@id": "dtmi:com:syyclops:UtilityAccount:emissionFactor;1"
     }
   ],
   "@context": [

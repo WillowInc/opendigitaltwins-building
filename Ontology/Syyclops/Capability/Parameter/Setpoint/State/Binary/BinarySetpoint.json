@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Binary Setpoint"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:StateSetpoint;1"
   ],
   "contents": [
@@ -15,9 +15,9 @@
         "en": "Last Value"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:BinarySetpoint:lastValue;1"
     }
-
   ],
   "@context": [
     "dtmi:dtdl:context;3"

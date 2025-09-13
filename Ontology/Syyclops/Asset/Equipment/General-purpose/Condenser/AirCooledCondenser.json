@@ -21,7 +21,8 @@
         "en": "Design Entering Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designEnteringAirTemperature;1"
     },
     {
       "@type": [
@@ -35,7 +36,8 @@
       "name": "designEnteringAirTemperatureUnit",
       "annotates": "designEnteringAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designEnteringAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
         "en": "Design Leaving Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designLeavingAirTemperature;1"
     },
     {
       "@type": [
@@ -61,7 +64,8 @@
       "name": "designLeavingAirTemperatureUnit",
       "annotates": "designLeavingAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designLeavingAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -73,7 +77,8 @@
         "en": "Design Delta Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designDeltaAirTemperature;1"
     },
     {
       "@type": [
@@ -87,7 +92,8 @@
       "name": "designDeltaAirTemperatureUnit",
       "annotates": "designDeltaAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designDeltaAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -100,7 +106,8 @@
       "name": "designAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designAirflow;1"
     },
     {
       "@type": [
@@ -115,7 +122,8 @@
       "annotates": "designAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:designAirflowUnit;1"
     },
     {
       "@type": "Property",
@@ -124,7 +132,8 @@
       },
       "name": "numberOfFans",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:numberOfFans;1"
     },
     {
       "@type": [
@@ -137,7 +146,8 @@
       "name": "totalFanPower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:totalFanPower;1"
     },
     {
       "@type": [
@@ -152,7 +162,8 @@
       "annotates": "totalFanPower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:totalFanPowerUnit;1"
     },
     {
       "@type": [
@@ -165,7 +176,8 @@
       "name": "totalFanbrakeHorsepower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:totalFanbrakeHorsepower;1"
     },
     {
       "@type": [
@@ -180,7 +192,8 @@
       "annotates": "totalFanbrakeHorsepower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:AirCooledCondenser:totalFanbrakeHorsepowerUnit;1"
     }
   ],
   "@context": [

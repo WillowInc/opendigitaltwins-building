@@ -7,7 +7,9 @@
   "description": {
     "en": "A formal request to perform maintenance, repair, or operational work on assets, spaces, or systems within a facility. Work orders track the lifecycle of maintenance activities from creation to completion."
   },
-  "extends": ["dtmi:com:syyclops:Event;1"],
+  "extends": [
+    "dtmi:com:syyclops:Event;1"
+  ],
   "contents": [
     {
       "@type": "Relationship",
@@ -18,7 +20,8 @@
       "description": {
         "en": "The agent (person, team, or company) responsible for executing the work order."
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:WorkOrder:assignedTo;1"
     },
     {
       "@type": "Relationship",
@@ -29,7 +32,8 @@
       "description": {
         "en": "The agent who originally requested or created the work order."
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:WorkOrder:requestedBy;1"
     },
     {
       "@type": "Relationship",
@@ -40,7 +44,8 @@
       "description": {
         "en": "The primary asset that requires work to be performed."
       },
-      "target": "dtmi:com:syyclops:Asset;1"
+      "target": "dtmi:com:syyclops:Asset;1",
+      "@id": "dtmi:com:syyclops:WorkOrder:relatedAsset;1"
     },
     {
       "@type": "Relationship",
@@ -51,7 +56,8 @@
       "description": {
         "en": "The space where the work will be performed."
       },
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:WorkOrder:relatedSpace;1"
     },
     {
       "@type": "Relationship",
@@ -62,7 +68,8 @@
       "description": {
         "en": "Links to a parent work order if this is a sub-task or child work order."
       },
-      "target": "dtmi:com:syyclops:WorkOrder;1"
+      "target": "dtmi:com:syyclops:WorkOrder;1",
+      "@id": "dtmi:com:syyclops:WorkOrder:parentWorkOrder;1"
     },
     {
       "@type": "Property",
@@ -74,7 +81,8 @@
         "en": "A unique identifier or reference number for the work order."
       },
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:workOrderNumber;1"
     },
     {
       "@type": "Property",
@@ -86,7 +94,8 @@
         "en": "The current status of the work order in its lifecycle."
       },
       "schema": "dtmi:com:syyclops:WorkOrderStatusEnum;1",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:status;1"
     },
     {
       "@type": "Property",
@@ -98,7 +107,8 @@
         "en": "The priority level of the work order indicating urgency and importance."
       },
       "schema": "dtmi:com:syyclops:WorkOrderPriorityEnum;1",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:priority;1"
     },
     {
       "@type": "Property",
@@ -110,7 +120,8 @@
         "en": "The category or type of work to be performed."
       },
       "schema": "dtmi:com:syyclops:WorkOrderTypeEnum;1",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:workType;1"
     },
     {
       "@type": "Property",
@@ -122,7 +133,8 @@
         "en": "The estimated time required to complete the work order."
       },
       "schema": "duration",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:estimatedDuration;1"
     },
     {
       "@type": "Property",
@@ -134,7 +146,8 @@
         "en": "The actual time taken to complete the work order."
       },
       "schema": "duration",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:actualDuration;1"
     },
     {
       "@type": "Property",
@@ -146,7 +159,8 @@
         "en": "The estimated cost to complete the work order."
       },
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:estimatedCost;1"
     },
     {
       "@type": "Property",
@@ -158,7 +172,8 @@
         "en": "The actual cost incurred to complete the work order."
       },
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:actualCost;1"
     },
     {
       "@type": "Property",
@@ -170,7 +185,8 @@
         "en": "The planned or scheduled start time for the work order."
       },
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:scheduledStartDateTime;1"
     },
     {
       "@type": "Property",
@@ -182,7 +198,8 @@
         "en": "The planned or scheduled completion time for the work order."
       },
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:scheduledEndDateTime;1"
     },
     {
       "@type": "Property",
@@ -194,7 +211,8 @@
         "en": "The actual date and time when the work order was completed."
       },
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:completedDateTime;1"
     },
     {
       "@type": "Property",
@@ -206,7 +224,8 @@
         "en": "Detailed instructions for performing the work described in the work order."
       },
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:workInstructions;1"
     },
     {
       "@type": "Property",
@@ -218,7 +237,8 @@
         "en": "Notes or comments added upon completion of the work order, describing work performed and any findings."
       },
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WorkOrder:completionNotes;1"
     }
   ],
   "schemas": [
@@ -232,56 +252,64 @@
           "displayName": {
             "en": "Draft"
           },
-          "enumValue": "Draft"
+          "enumValue": "Draft",
+          "@id": "dtmi:com:syyclops:WorkOrder:Draft;1"
         },
         {
           "name": "Open",
           "displayName": {
             "en": "Open"
           },
-          "enumValue": "Open"
+          "enumValue": "Open",
+          "@id": "dtmi:com:syyclops:WorkOrder:Open;1"
         },
         {
           "name": "Assigned",
           "displayName": {
             "en": "Assigned"
           },
-          "enumValue": "Assigned"
+          "enumValue": "Assigned",
+          "@id": "dtmi:com:syyclops:WorkOrder:Assigned;1"
         },
         {
           "name": "InProgress",
           "displayName": {
             "en": "In Progress"
           },
-          "enumValue": "InProgress"
+          "enumValue": "InProgress",
+          "@id": "dtmi:com:syyclops:WorkOrder:InProgress;1"
         },
         {
           "name": "OnHold",
           "displayName": {
             "en": "On Hold"
           },
-          "enumValue": "OnHold"
+          "enumValue": "OnHold",
+          "@id": "dtmi:com:syyclops:WorkOrder:OnHold;1"
         },
         {
           "name": "Completed",
           "displayName": {
             "en": "Completed"
           },
-          "enumValue": "Completed"
+          "enumValue": "Completed",
+          "@id": "dtmi:com:syyclops:WorkOrder:Completed;1"
         },
         {
           "name": "Cancelled",
           "displayName": {
             "en": "Cancelled"
           },
-          "enumValue": "Cancelled"
+          "enumValue": "Cancelled",
+          "@id": "dtmi:com:syyclops:WorkOrder:Cancelled;1"
         },
         {
           "name": "Closed",
           "displayName": {
             "en": "Closed"
           },
-          "enumValue": "Closed"
+          "enumValue": "Closed",
+          "@id": "dtmi:com:syyclops:WorkOrder:Closed;1"
         }
       ],
       "displayName": {
@@ -298,35 +326,40 @@
           "displayName": {
             "en": "Low"
           },
-          "enumValue": "Low"
+          "enumValue": "Low",
+          "@id": "dtmi:com:syyclops:WorkOrder:Low;1"
         },
         {
           "name": "Medium",
           "displayName": {
             "en": "Medium"
           },
-          "enumValue": "Medium"
+          "enumValue": "Medium",
+          "@id": "dtmi:com:syyclops:WorkOrder:Medium;1"
         },
         {
           "name": "High",
           "displayName": {
             "en": "High"
           },
-          "enumValue": "High"
+          "enumValue": "High",
+          "@id": "dtmi:com:syyclops:WorkOrder:High;1"
         },
         {
           "name": "Critical",
           "displayName": {
             "en": "Critical"
           },
-          "enumValue": "Critical"
+          "enumValue": "Critical",
+          "@id": "dtmi:com:syyclops:WorkOrder:Critical;1"
         },
         {
           "name": "Emergency",
           "displayName": {
             "en": "Emergency"
           },
-          "enumValue": "Emergency"
+          "enumValue": "Emergency",
+          "@id": "dtmi:com:syyclops:WorkOrder:Emergency;1"
         }
       ],
       "displayName": {
@@ -343,70 +376,80 @@
           "displayName": {
             "en": "Preventive Maintenance"
           },
-          "enumValue": "PreventiveMaintenance"
+          "enumValue": "PreventiveMaintenance",
+          "@id": "dtmi:com:syyclops:WorkOrder:PreventiveMaintenance;1"
         },
         {
           "name": "CorrectiveMaintenance",
           "displayName": {
             "en": "Corrective Maintenance"
           },
-          "enumValue": "CorrectiveMaintenance"
+          "enumValue": "CorrectiveMaintenance",
+          "@id": "dtmi:com:syyclops:WorkOrder:CorrectiveMaintenance;1"
         },
         {
           "name": "Inspection",
           "displayName": {
             "en": "Inspection"
           },
-          "enumValue": "Inspection"
+          "enumValue": "Inspection",
+          "@id": "dtmi:com:syyclops:WorkOrder:Inspection;1"
         },
         {
           "name": "Repair",
           "displayName": {
             "en": "Repair"
           },
-          "enumValue": "Repair"
+          "enumValue": "Repair",
+          "@id": "dtmi:com:syyclops:WorkOrder:Repair;1"
         },
         {
           "name": "Installation",
           "displayName": {
             "en": "Installation"
           },
-          "enumValue": "Installation"
+          "enumValue": "Installation",
+          "@id": "dtmi:com:syyclops:WorkOrder:Installation;1"
         },
         {
           "name": "Replacement",
           "displayName": {
             "en": "Replacement"
           },
-          "enumValue": "Replacement"
+          "enumValue": "Replacement",
+          "@id": "dtmi:com:syyclops:WorkOrder:Replacement;1"
         },
         {
           "name": "Calibration",
           "displayName": {
             "en": "Calibration"
           },
-          "enumValue": "Calibration"
+          "enumValue": "Calibration",
+          "@id": "dtmi:com:syyclops:WorkOrder:Calibration;1"
         },
         {
           "name": "Cleaning",
           "displayName": {
             "en": "Cleaning"
           },
-          "enumValue": "Cleaning"
+          "enumValue": "Cleaning",
+          "@id": "dtmi:com:syyclops:WorkOrder:Cleaning;1"
         },
         {
           "name": "Safety",
           "displayName": {
             "en": "Safety"
           },
-          "enumValue": "Safety"
+          "enumValue": "Safety",
+          "@id": "dtmi:com:syyclops:WorkOrder:Safety;1"
         },
         {
           "name": "Emergency",
           "displayName": {
             "en": "Emergency"
           },
-          "enumValue": "Emergency"
+          "enumValue": "Emergency",
+          "@id": "dtmi:com:syyclops:WorkOrder:SE1;1"
         }
       ],
       "displayName": {
@@ -414,5 +457,7 @@
       }
     }
   ],
-  "@context": ["dtmi:dtdl:context;3"]
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }

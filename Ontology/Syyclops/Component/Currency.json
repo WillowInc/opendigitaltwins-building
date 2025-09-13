@@ -24,478 +24,559 @@
             "name": "AED",
             "displayName": "AED",
             "description": "United Arab Emirates dirham",
-            "enumValue": "AED"
+            "enumValue": "AED",
+            "@id": "dtmi:com:syyclops:Currency:AED;1"
           },
           {
             "name": "ARS",
             "displayName": "ARS",
             "description": "Argentine peso",
-            "enumValue": "ARS"
+            "enumValue": "ARS",
+            "@id": "dtmi:com:syyclops:Currency:ARS;1"
           },
           {
             "name": "AUD",
             "displayName": "AUD",
             "description": "Australian dollar",
-            "enumValue": "AUD"
+            "enumValue": "AUD",
+            "@id": "dtmi:com:syyclops:Currency:AUD;1"
           },
           {
             "name": "BOB",
             "displayName": "BOB",
             "description": "Boliviano",
-            "enumValue": "BOB"
+            "enumValue": "BOB",
+            "@id": "dtmi:com:syyclops:Currency:BOB;1"
           },
           {
             "name": "BRL",
             "displayName": "BRL",
             "description": "Brazilian real",
-            "enumValue": "BRL"
+            "enumValue": "BRL",
+            "@id": "dtmi:com:syyclops:Currency:BRL;1"
           },
           {
             "name": "BZD",
             "displayName": "BZD",
             "description": "Belize dollar",
-            "enumValue": "BZD"
+            "enumValue": "BZD",
+            "@id": "dtmi:com:syyclops:Currency:BZD;1"
           },
           {
             "name": "CAD",
             "displayName": "CAD",
             "description": "Canadian dollar",
-            "enumValue": "CAD"
+            "enumValue": "CAD",
+            "@id": "dtmi:com:syyclops:Currency:CAD;1"
           },
           {
             "name": "CHF",
             "displayName": "CHF",
             "description": "Swiss franc",
-            "enumValue": "CHF"
+            "enumValue": "CHF",
+            "@id": "dtmi:com:syyclops:Currency:CHF;1"
           },
           {
             "name": "CLP",
             "displayName": "CLP",
             "description": "Chilean peso",
-            "enumValue": "CLP"
+            "enumValue": "CLP",
+            "@id": "dtmi:com:syyclops:Currency:CLP;1"
           },
           {
             "name": "COP",
             "displayName": "COP",
             "description": "Colombian peso",
-            "enumValue": "COP"
+            "enumValue": "COP",
+            "@id": "dtmi:com:syyclops:Currency:COP;1"
           },
           {
             "name": "CRC",
             "displayName": "CRC",
             "description": "Costa Rican colon",
-            "enumValue": "CRC"
+            "enumValue": "CRC",
+            "@id": "dtmi:com:syyclops:Currency:CRC;1"
           },
           {
             "name": "CUP",
             "displayName": "CUP",
             "description": "Cuban peso",
-            "enumValue": "CUP"
+            "enumValue": "CUP",
+            "@id": "dtmi:com:syyclops:Currency:CUP;1"
           },
           {
             "name": "CZK",
             "displayName": "CZK",
             "description": "Czech koruna",
-            "enumValue": "CZK"
+            "enumValue": "CZK",
+            "@id": "dtmi:com:syyclops:Currency:CZK;1"
           },
           {
             "name": "DKK",
             "displayName": "DKK",
             "description": "Danish krone",
-            "enumValue": "DKK"
+            "enumValue": "DKK",
+            "@id": "dtmi:com:syyclops:Currency:DKK;1"
           },
           {
             "name": "DOP",
             "displayName": "DOP",
             "description": "Dominican peso",
-            "enumValue": "DOP"
+            "enumValue": "DOP",
+            "@id": "dtmi:com:syyclops:Currency:DOP;1"
           },
           {
             "name": "DZD",
             "displayName": "DZD",
             "description": "Algerian dinar",
-            "enumValue": "DZD"
+            "enumValue": "DZD",
+            "@id": "dtmi:com:syyclops:Currency:DZD;1"
           },
           {
             "name": "EGP",
             "displayName": "EGP",
             "description": "Egyptian pound",
-            "enumValue": "EGP"
+            "enumValue": "EGP",
+            "@id": "dtmi:com:syyclops:Currency:EGP;1"
           },
           {
             "name": "EUR",
             "displayName": "EUR",
             "description": "Euro",
-            "enumValue": "EUR"
+            "enumValue": "EUR",
+            "@id": "dtmi:com:syyclops:Currency:EUR;1"
           },
           {
             "name": "GBP",
             "displayName": "GBP",
             "description": "Pound sterling",
-            "enumValue": "GBP"
+            "enumValue": "GBP",
+            "@id": "dtmi:com:syyclops:Currency:GBP;1"
           },
           {
             "name": "GTQ",
             "displayName": "GTQ",
             "description": "Guatemalan quetzal",
-            "enumValue": "GTQ"
+            "enumValue": "GTQ",
+            "@id": "dtmi:com:syyclops:Currency:GTQ;1"
           },
           {
             "name": "HKD",
             "displayName": "HKD",
             "description": "Hong Kong dollar",
-            "enumValue": "HKD"
+            "enumValue": "HKD",
+            "@id": "dtmi:com:syyclops:Currency:HKD;1"
           },
           {
             "name": "HNL",
             "displayName": "HNL",
             "description": "Honduran lempira",
-            "enumValue": "HNL"
+            "enumValue": "HNL",
+            "@id": "dtmi:com:syyclops:Currency:HNL;1"
           },
           {
             "name": "HRK",
             "displayName": "HRK",
             "description": "Croatian kuna",
-            "enumValue": "HRK"
+            "enumValue": "HRK",
+            "@id": "dtmi:com:syyclops:Currency:HRK;1"
           },
           {
             "name": "HUF",
             "displayName": "HUF",
             "description": "Hungarian forint",
-            "enumValue": "HUF"
+            "enumValue": "HUF",
+            "@id": "dtmi:com:syyclops:Currency:HUF;1"
           },
           {
             "name": "IDR",
             "displayName": "IDR",
             "description": "Indonesian rupiah",
-            "enumValue": "IDR"
+            "enumValue": "IDR",
+            "@id": "dtmi:com:syyclops:Currency:IDR;1"
           },
           {
             "name": "ILS",
             "displayName": "ILS",
             "description": "Israeli new shekel",
-            "enumValue": "ILS"
+            "enumValue": "ILS",
+            "@id": "dtmi:com:syyclops:Currency:ILS;1"
           },
           {
             "name": "INR",
             "displayName": "INR",
             "description": "Indian rupee",
-            "enumValue": "INR"
+            "enumValue": "INR",
+            "@id": "dtmi:com:syyclops:Currency:INR;1"
           },
           {
             "name": "IQD",
             "displayName": "IQD",
             "description": "Iraqi dinar",
-            "enumValue": "IQD"
+            "enumValue": "IQD",
+            "@id": "dtmi:com:syyclops:Currency:IQD;1"
           },
           {
             "name": "IRR",
             "displayName": "IRR",
             "description": "Iranian rial",
-            "enumValue": "IRR"
+            "enumValue": "IRR",
+            "@id": "dtmi:com:syyclops:Currency:IRR;1"
           },
           {
             "name": "ISK",
             "displayName": "ISK",
             "description": "Icelandic króna (plural: krónur)",
-            "enumValue": "ISK"
+            "enumValue": "ISK",
+            "@id": "dtmi:com:syyclops:Currency:ISK;1"
           },
           {
             "name": "JPY",
             "displayName": "JPY",
             "description": "Japanese yen",
-            "enumValue": "JPY"
+            "enumValue": "JPY",
+            "@id": "dtmi:com:syyclops:Currency:JPY;1"
           },
           {
             "name": "KES",
             "displayName": "KES",
             "description": "Kenyan shilling",
-            "enumValue": "KES"
+            "enumValue": "KES",
+            "@id": "dtmi:com:syyclops:Currency:KES;1"
           },
           {
             "name": "KHR",
             "displayName": "KHR",
             "description": "Cambodian riel",
-            "enumValue": "KHR"
+            "enumValue": "KHR",
+            "@id": "dtmi:com:syyclops:Currency:KHR;1"
           },
           {
             "name": "KRW",
             "displayName": "KRW",
             "description": "South Korean won",
-            "enumValue": "KRW"
+            "enumValue": "KRW",
+            "@id": "dtmi:com:syyclops:Currency:KRW;1"
           },
           {
             "name": "KWD",
             "displayName": "KWD",
             "description": "Kuwaiti dinar",
-            "enumValue": "KWD"
+            "enumValue": "KWD",
+            "@id": "dtmi:com:syyclops:Currency:KWD;1"
           },
           {
             "name": "LBP",
             "displayName": "LBP",
             "description": "Lebanese pound",
-            "enumValue": "LBP"
+            "enumValue": "LBP",
+            "@id": "dtmi:com:syyclops:Currency:LBP;1"
           },
           {
             "name": "LKR",
             "displayName": "LKR",
             "description": "Sri Lankan rupee",
-            "enumValue": "LKR"
+            "enumValue": "LKR",
+            "@id": "dtmi:com:syyclops:Currency:LKR;1"
           },
           {
             "name": "LRD",
             "displayName": "LRD",
             "description": "Liberian dollar",
-            "enumValue": "LRD"
+            "enumValue": "LRD",
+            "@id": "dtmi:com:syyclops:Currency:LRD;1"
           },
           {
             "name": "LYD",
             "displayName": "LYD",
             "description": "Libyan dinar",
-            "enumValue": "LYD"
+            "enumValue": "LYD",
+            "@id": "dtmi:com:syyclops:Currency:LYD;1"
           },
           {
             "name": "MAD",
             "displayName": "MAD",
             "description": "Moroccan dirham",
-            "enumValue": "MAD"
+            "enumValue": "MAD",
+            "@id": "dtmi:com:syyclops:Currency:MAD;1"
           },
           {
             "name": "MMK",
             "displayName": "MMK",
             "description": "Myanmar kyat",
-            "enumValue": "MMK"
+            "enumValue": "MMK",
+            "@id": "dtmi:com:syyclops:Currency:MMK;1"
           },
           {
             "name": "MNT",
             "displayName": "MNT",
             "description": "Mongolian tögrög",
-            "enumValue": "MNT"
+            "enumValue": "MNT",
+            "@id": "dtmi:com:syyclops:Currency:MNT;1"
           },
           {
             "name": "MXN",
             "displayName": "MXN",
             "description": "Mexican peso",
-            "enumValue": "MXN"
+            "enumValue": "MXN",
+            "@id": "dtmi:com:syyclops:Currency:MXN;1"
           },
           {
             "name": "MYR",
             "displayName": "MYR",
             "description": "Malaysian ringgit",
-            "enumValue": "MYR"
+            "enumValue": "MYR",
+            "@id": "dtmi:com:syyclops:Currency:MYR;1"
           },
           {
             "name": "NGN",
             "displayName": "NGN",
             "description": "Nigerian naira",
-            "enumValue": "NGN"
+            "enumValue": "NGN",
+            "@id": "dtmi:com:syyclops:Currency:NGN;1"
           },
           {
             "name": "NIO",
             "displayName": "NIO",
             "description": "Nicaraguan córdoba",
-            "enumValue": "NIO"
+            "enumValue": "NIO",
+            "@id": "dtmi:com:syyclops:Currency:NIO;1"
           },
           {
             "name": "NOK",
             "displayName": "NOK",
             "description": "Norwegian krone",
-            "enumValue": "NOK"
+            "enumValue": "NOK",
+            "@id": "dtmi:com:syyclops:Currency:NOK;1"
           },
           {
             "name": "NPR",
             "displayName": "NPR",
             "description": "Nepalese rupee",
-            "enumValue": "NPR"
+            "enumValue": "NPR",
+            "@id": "dtmi:com:syyclops:Currency:NPR;1"
           },
           {
             "name": "NZD",
             "displayName": "NZD",
             "description": "New Zealand dollar",
-            "enumValue": "NZD"
+            "enumValue": "NZD",
+            "@id": "dtmi:com:syyclops:Currency:NZD;1"
           },
           {
             "name": "OMR",
             "displayName": "OMR",
             "description": "Omani rial",
-            "enumValue": "OMR"
+            "enumValue": "OMR",
+            "@id": "dtmi:com:syyclops:Currency:OMR;1"
           },
           {
             "name": "PAB",
             "displayName": "PAB",
             "description": "Panamanian balboa",
-            "enumValue": "PAB"
+            "enumValue": "PAB",
+            "@id": "dtmi:com:syyclops:Currency:PAB;1"
           },
           {
             "name": "PEN",
             "displayName": "PEN",
             "description": "Peruvian sol",
-            "enumValue": "PEN"
+            "enumValue": "PEN",
+            "@id": "dtmi:com:syyclops:Currency:PEN;1"
           },
           {
             "name": "PGK",
             "displayName": "PGK",
             "description": "Papua New Guinean kina",
-            "enumValue": "PGK"
+            "enumValue": "PGK",
+            "@id": "dtmi:com:syyclops:Currency:PGK;1"
           },
           {
             "name": "PHP",
             "displayName": "PHP",
             "description": "Philippine peso",
-            "enumValue": "PHP"
+            "enumValue": "PHP",
+            "@id": "dtmi:com:syyclops:Currency:PHP;1"
           },
           {
             "name": "PKR",
             "displayName": "PKR",
             "description": "Pakistani rupee",
-            "enumValue": "PKR"
+            "enumValue": "PKR",
+            "@id": "dtmi:com:syyclops:Currency:PKR;1"
           },
           {
             "name": "PLN",
             "displayName": "PLN",
             "description": "Polish złoty",
-            "enumValue": "PLN"
+            "enumValue": "PLN",
+            "@id": "dtmi:com:syyclops:Currency:PLN;1"
           },
           {
             "name": "PYG",
             "displayName": "PYG",
             "description": "Paraguayan guaraní",
-            "enumValue": "PYG"
+            "enumValue": "PYG",
+            "@id": "dtmi:com:syyclops:Currency:PYG;1"
           },
           {
             "name": "QAR",
             "displayName": "QAR",
             "description": "Qatari riyal",
-            "enumValue": "QAR"
+            "enumValue": "QAR",
+            "@id": "dtmi:com:syyclops:Currency:QAR;1"
           },
           {
             "name": "RON",
             "displayName": "RON",
             "description": "Romanian leu",
-            "enumValue": "RON"
+            "enumValue": "RON",
+            "@id": "dtmi:com:syyclops:Currency:RON;1"
           },
           {
             "name": "RSD",
             "displayName": "RSD",
             "description": "Serbian dinar",
-            "enumValue": "RSD"
+            "enumValue": "RSD",
+            "@id": "dtmi:com:syyclops:Currency:RSD;1"
           },
           {
             "name": "CNY",
             "displayName": "CNY",
             "description": "Renminbi",
-            "enumValue": "CNY"
+            "enumValue": "CNY",
+            "@id": "dtmi:com:syyclops:Currency:CNY;1"
           },
           {
             "name": "RUB",
             "displayName": "RUB",
             "description": "Russian ruble",
-            "enumValue": "RUB"
+            "enumValue": "RUB",
+            "@id": "dtmi:com:syyclops:Currency:RUB;1"
           },
           {
             "name": "SAR",
             "displayName": "SAR",
             "description": "Saudi riyal",
-            "enumValue": "SAR"
+            "enumValue": "SAR",
+            "@id": "dtmi:com:syyclops:Currency:SAR;1"
           },
           {
             "name": "SEK",
             "displayName": "SEK",
             "description": "Swedish krona (plural: kronor)",
-            "enumValue": "SEK"
+            "enumValue": "SEK",
+            "@id": "dtmi:com:syyclops:Currency:SEK;1"
           },
           {
             "name": "SGD",
             "displayName": "SGD",
             "description": "Singapore dollar",
-            "enumValue": "SGD"
+            "enumValue": "SGD",
+            "@id": "dtmi:com:syyclops:Currency:SGD;1"
           },
           {
             "name": "SVC",
             "displayName": "SVC",
             "description": "Salvadoran colón",
-            "enumValue": "SVC"
+            "enumValue": "SVC",
+            "@id": "dtmi:com:syyclops:Currency:SVC;1"
           },
           {
             "name": "SYP",
             "displayName": "SYP",
             "description": "Syrian pound",
-            "enumValue": "SYP"
+            "enumValue": "SYP",
+            "@id": "dtmi:com:syyclops:Currency:SYP;1"
           },
           {
             "name": "THB",
             "displayName": "THB",
             "description": "Thai baht",
-            "enumValue": "THB"
+            "enumValue": "THB",
+            "@id": "dtmi:com:syyclops:Currency:THB;1"
           },
           {
             "name": "TND",
             "displayName": "TND",
             "description": "Tunisian dinar",
-            "enumValue": "TND"
+            "enumValue": "TND",
+            "@id": "dtmi:com:syyclops:Currency:TND;1"
           },
           {
             "name": "TRY",
             "displayName": "TRY",
             "description": "Turkish lira",
-            "enumValue": "TRY"
+            "enumValue": "TRY",
+            "@id": "dtmi:com:syyclops:Currency:TRY;1"
           },
           {
             "name": "TWD",
             "displayName": "TWD",
             "description": "New Taiwan dollar",
-            "enumValue": "TWD"
+            "enumValue": "TWD",
+            "@id": "dtmi:com:syyclops:Currency:TWD;1"
           },
           {
             "name": "UAH",
             "displayName": "UAH",
             "description": "Ukrainian hryvnia",
-            "enumValue": "UAH"
+            "enumValue": "UAH",
+            "@id": "dtmi:com:syyclops:Currency:UAH;1"
           },
           {
             "name": "USD",
             "displayName": "USD",
             "description": "United States dollar",
-            "enumValue": "USD"
+            "enumValue": "USD",
+            "@id": "dtmi:com:syyclops:Currency:USD;1"
           },
           {
             "name": "UYU",
             "displayName": "UYU",
             "description": "Uruguayan peso",
-            "enumValue": "UYU"
+            "enumValue": "UYU",
+            "@id": "dtmi:com:syyclops:Currency:UYU;1"
           },
           {
             "name": "VES",
             "displayName": "VES",
             "description": "Venezuelan bolívar soberano",
-            "enumValue": "VES"
+            "enumValue": "VES",
+            "@id": "dtmi:com:syyclops:Currency:VES;1"
           },
           {
             "name": "VND",
             "displayName": "VND",
             "description": "Vietnamese đồng",
-            "enumValue": "VND"
+            "enumValue": "VND",
+            "@id": "dtmi:com:syyclops:Currency:VND;1"
           },
           {
             "name": "YER",
             "displayName": "YER",
             "description": "Yemeni rial",
-            "enumValue": "YER"
+            "enumValue": "YER",
+            "@id": "dtmi:com:syyclops:Currency:YER;1"
           },
           {
             "name": "ZAR",
             "displayName": "ZAR",
             "description": "South African rand",
-            "enumValue": "ZAR"
+            "enumValue": "ZAR",
+            "@id": "dtmi:com:syyclops:Currency:ZAR;1"
           },
           {
             "name": "ZWL",
             "displayName": "ZWL",
             "description": "Zimbabwean dollar",
-            "enumValue": "ZWL"
+            "enumValue": "ZWL",
+            "@id": "dtmi:com:syyclops:Currency:ZWL;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Currency:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:Currency:code;1"
     }
   ],
   "@context": [

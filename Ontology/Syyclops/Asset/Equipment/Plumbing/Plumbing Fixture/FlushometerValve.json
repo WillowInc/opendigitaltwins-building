@@ -19,7 +19,8 @@
       "name": "waterPerFlush",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FlushometerValve:waterPerFlush;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "waterPerFlush",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FlushometerValve:waterPerFlushUnit;1"
     },
     {
       "@type": "Property",
@@ -47,16 +49,20 @@
         "enumValues": [
           {
             "enumValue": "Touchless",
-            "name": "Touchless"
+            "name": "Touchless",
+            "@id": "dtmi:com:syyclops:FlushometerValve:Touchless;1"
           },
           {
             "enumValue": "ManualOnly",
-            "name": "ManualOnly"
+            "name": "ManualOnly",
+            "@id": "dtmi:com:syyclops:FlushometerValve:ManualOnly;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FlushometerValve:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FlushometerValve:type;1"
     },
     {
       "@type": "Property",
@@ -69,23 +75,28 @@
         "enumValues": [
           {
             "enumValue": "Piston",
-            "name": "Piston"
+            "name": "Piston",
+            "@id": "dtmi:com:syyclops:FlushometerValve:Piston;1"
           },
           {
             "enumValue": "Diaphragm",
-            "name": "Diaphragm"
+            "name": "Diaphragm",
+            "@id": "dtmi:com:syyclops:FlushometerValve:Diaphragm;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FlushometerValve:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FlushometerValve:technology;1"
     },
     {
       "@type": "Relationship",
       "displayName": {
         "en": "mounted on"
       },
-      "name": "mountedOn"
+      "name": "mountedOn",
+      "@id": "dtmi:com:syyclops:FlushometerValve:mountedOn;1"
     }
   ],
   "@context": [

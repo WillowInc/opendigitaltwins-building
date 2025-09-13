@@ -15,7 +15,8 @@
       },
       "name": "comment",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:System:comment;1"
     },
     {
       "@type": "Property",
@@ -28,28 +29,35 @@
         "enumValues": [
           {
             "enumValue": "Utility",
-            "name": "Utility"
+            "name": "Utility",
+            "@id": "dtmi:com:syyclops:System:Utility;1"
           },
           {
             "enumValue": "Tenant",
-            "name": "Tenant"
+            "name": "Tenant",
+            "@id": "dtmi:com:syyclops:System:Tenant;1"
           },
           {
             "enumValue": "Site",
-            "name": "Site"
+            "name": "Site",
+            "@id": "dtmi:com:syyclops:System:Site;1"
           },
           {
             "enumValue": "District",
-            "name": "District"
+            "name": "District",
+            "@id": "dtmi:com:syyclops:System:District;1"
           },
           {
             "enumValue": "Building",
-            "name": "Building"
+            "name": "Building",
+            "@id": "dtmi:com:syyclops:System:Building;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:System:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:System:service;1"
     },
     {
       "@type": "Relationship",
@@ -60,7 +68,8 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:syyclops:System;1"
+      "target": "dtmi:com:syyclops:System;1",
+      "@id": "dtmi:com:syyclops:System:isPartOf;1"
     }
   ],
   "@context": [

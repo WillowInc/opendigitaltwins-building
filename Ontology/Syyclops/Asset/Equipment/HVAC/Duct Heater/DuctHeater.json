@@ -19,7 +19,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:DuctHeater:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:DuctHeater:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -42,7 +44,8 @@
         "en": "heating method"
       },
       "name": "heatingMethod",
-      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1",
+      "@id": "dtmi:com:syyclops:DuctHeater:heatingMethod;1"
     }
   ],
   "@context": [

@@ -19,7 +19,8 @@
       "name": "stepWidth",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Stairway:stepWidth;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "stepWidth",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Stairway:stepWidthUnit;1"
     },
     {
       "@type": "Component",
@@ -42,7 +44,8 @@
       "displayName": {
         "en": "Capacity"
       },
-      "schema": "dtmi:com:syyclops:SpaceCapacity;1"
+      "schema": "dtmi:com:syyclops:SpaceCapacity;1",
+      "@id": "dtmi:com:syyclops:Stairway:capacity;1"
     },
     {
       "@type": "Component",
@@ -50,7 +53,8 @@
       "displayName": {
         "en": "Occupancy"
       },
-      "schema": "dtmi:com:syyclops:SpaceOccupancy;1"
+      "schema": "dtmi:com:syyclops:SpaceOccupancy;1",
+      "@id": "dtmi:com:syyclops:Stairway:occupancy;1"
     }
   ],
   "@context": [

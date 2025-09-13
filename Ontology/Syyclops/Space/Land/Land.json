@@ -17,7 +17,8 @@
         "en": "address"
       },
       "name": "address",
-      "schema": "dtmi:com:syyclops:Address;1"
+      "schema": "dtmi:com:syyclops:Address;1",
+      "@id": "dtmi:com:syyclops:Land:address;1"
     },
     {
       "@type": "Component",
@@ -25,7 +26,8 @@
         "en": "Electricity Price Rate"
       },
       "name": "electricityPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Land:electricityPriceRate;1"
     },
     {
       "@type": "Component",
@@ -33,7 +35,8 @@
         "en": "Electricity Emission Factor"
       },
       "name": "electricityEmissionFactor",
-      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1",
+      "@id": "dtmi:com:syyclops:Land:electricityEmissionFactor;1"
     },
     {
       "@type": "Component",
@@ -41,7 +44,8 @@
         "en": "Natural Gas Price Rate"
       },
       "name": "naturalGasPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Land:naturalGasPriceRate;1"
     },
     {
       "@type": "Component",
@@ -49,7 +53,8 @@
         "en": "Chilled Water Price Rate"
       },
       "name": "chilledWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Land:chilledWaterPriceRate;1"
     },
     {
       "@type": "Component",
@@ -57,7 +62,8 @@
         "en": "Steam Price Rate"
       },
       "name": "steamPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Land:steamPriceRate;1"
     },
     {
       "@type": "Component",
@@ -65,7 +71,8 @@
         "en": "Domestic Water Price Rate"
       },
       "name": "domesticWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Land:domesticWaterPriceRate;1"
     },
     {
       "@type": "Property",
@@ -74,7 +81,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Land:type;1"
     },
     {
       "@type": "Property",
@@ -92,20 +100,23 @@
             "displayName": {
               "en": "Latitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:Land:latitude;1"
           },
           {
             "name": "longitude",
             "displayName": {
               "en": "Longitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:Land:longitude;1"
           }
         ],
         "displayName": {
           "en": "Land Coordinates"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Land:coordinates;1"
     },
     {
       "@type": [
@@ -118,7 +129,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "metre"
+      "unit": "metre",
+      "@id": "dtmi:com:syyclops:Land:elevation;1"
     },
     {
       "@type": [
@@ -133,7 +145,8 @@
       "annotates": "elevation",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Land:elevationUnit;1"
     }
   ],
   "@context": [

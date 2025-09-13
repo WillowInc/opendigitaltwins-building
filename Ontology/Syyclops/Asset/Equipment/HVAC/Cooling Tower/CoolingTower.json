@@ -22,7 +22,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -50,7 +52,8 @@
       "name": "flowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:flowCapacity;1"
     },
     {
       "@type": [
@@ -65,7 +68,8 @@
       "annotates": "flowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:flowCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -73,7 +77,8 @@
         "en": "fan"
       },
       "name": "fan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:CoolingTower:fan;1"
     },
     {
       "@type": "Property",
@@ -82,7 +87,8 @@
       },
       "name": "numberOfCells",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:numberOfCells;1"
     },
     {
       "@type": [
@@ -94,7 +100,8 @@
         "en": "Design Entering Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:CoolingTower:designEnteringWaterTemperature;1"
     },
     {
       "@type": [
@@ -108,7 +115,8 @@
       "name": "designEnteringWaterTemperatureUnit",
       "annotates": "designEnteringWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:CoolingTower:designEnteringWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -120,7 +128,8 @@
         "en": "Design Leaving Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:CoolingTower:designLeavingWaterTemperature;1"
     },
     {
       "@type": [
@@ -134,7 +143,8 @@
       "name": "designLeavingWaterTemperatureUnit",
       "annotates": "designLeavingWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:CoolingTower:designLeavingWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -146,7 +156,8 @@
         "en": "Design Entering Wet Bulb Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:CoolingTower:designEnteringWetBulbTemperature;1"
     },
     {
       "@type": [
@@ -160,7 +171,8 @@
       "name": "designEnteringWetBulbTemperatureUnit",
       "annotates": "designEnteringWetBulbTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:CoolingTower:designEnteringWetBulbTemperatureUnit;1"
     },
     {
       "@type": [
@@ -175,7 +187,8 @@
         "en": "The cooling tower approach is the difference between leaving water temperature and ambient wet bulb temperature."
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:CoolingTower:approach;1"
     },
     {
       "@type": [
@@ -189,7 +202,8 @@
       "name": "approachUnit",
       "annotates": "approach",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:CoolingTower:approachUnit;1"
     },
     {
       "@type": [
@@ -202,7 +216,8 @@
       "name": "designMinFlow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:designMinFlow;1"
     },
     {
       "@type": [
@@ -217,7 +232,8 @@
       "annotates": "designMinFlow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:designMinFlowUnit;1"
     },
     {
       "@type": [
@@ -230,7 +246,8 @@
       "name": "designMaxFlow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:designMaxFlow;1"
     },
     {
       "@type": [
@@ -245,7 +262,8 @@
       "annotates": "designMaxFlow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CoolingTower:designMaxFlowUnit;1"
     }
   ],
   "@context": [

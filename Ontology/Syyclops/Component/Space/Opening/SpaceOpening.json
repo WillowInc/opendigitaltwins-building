@@ -7,7 +7,7 @@
   "description": {
     "en": "An entry or exit which enables people to pass between spaces. The opening may be physical, i.e. door or turnstile, or nonpysical such as an open transition between rooms."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
@@ -17,7 +17,8 @@
         "en": "is entry to"
       },
       "name": "isEntryTo",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:SpaceOpening:isEntryTo;1"
     },
     {
       "@type": "Relationship",
@@ -25,7 +26,8 @@
         "en": "is exit from"
       },
       "name": "isExitFrom",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:SpaceOpening:isExitFrom;1"
     }
   ],
   "@context": [

@@ -23,20 +23,25 @@
           {
             "name": "low",
             "displayName": "Low",
-            "enumValue": "Low"
+            "enumValue": "Low",
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:low;1"
           },
           {
             "name": "medium",
             "displayName": "Medium",
-            "enumValue": "Medium"
+            "enumValue": "Medium",
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:medium;1"
           },
           {
             "name": "high",
             "displayName": "High",
-            "enumValue": "High"
+            "enumValue": "High",
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:high;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:faaIntesityRating;1"
     },
     {
       "@type": "Property",
@@ -60,15 +65,19 @@
                 {
                   "name": "elevated",
                   "displayName": "Elevated",
-                  "enumValue": "Elevated"
+                  "enumValue": "Elevated",
+                  "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:elevated;1"
                 },
                 {
                   "name": "inset",
                   "displayName": "Inset",
-                  "enumValue": "Inset"
+                  "enumValue": "Inset",
+                  "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:inset;1"
                 }
-              ]
-            }
+              ],
+              "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:ES3;1"
+            },
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:type;1"
           },
           {
             "name": "mounting",
@@ -82,23 +91,30 @@
                 {
                   "name": "base",
                   "displayName": "Base",
-                  "enumValue": "Base"
+                  "enumValue": "Base",
+                  "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:base;1"
                 },
                 {
                   "name": "stake",
                   "displayName": "Stake",
-                  "enumValue": "Stake"
+                  "enumValue": "Stake",
+                  "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:stake;1"
                 },
                 {
                   "name": "direct",
                   "displayName": "Direct",
-                  "enumValue": "Direct"
+                  "enumValue": "Direct",
+                  "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:direct;1"
                 }
-              ]
-            }
+              ],
+              "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:ES4;1"
+            },
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:mounting;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:OS2;1"
+      },
+      "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:installation;1"
     },
     {
       "@type": "Property",
@@ -114,20 +130,25 @@
           {
             "name": "unidirectional",
             "displayName": "Unidirectional",
-            "enumValue": "Unidirectional"
+            "enumValue": "Unidirectional",
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:unidirectional;1"
           },
           {
             "name": "bidirectional",
             "displayName": "Bidirectional",
-            "enumValue": "Bidirectional"
+            "enumValue": "Bidirectional",
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:bidirectional;1"
           },
           {
             "name": "omnidirectional",
             "displayName": "Omnidirectional",
-            "enumValue": "Omnidirectional"
+            "enumValue": "Omnidirectional",
+            "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:omnidirectional;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:ES5;1"
+      },
+      "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:lightDirection;1"
     },
     {
       "@type": "Property",
@@ -137,7 +158,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "yellow, white-white, red-green"
+      "comment": "yellow, white-white, red-green",
+      "@id": "dtmi:com:syyclops:airport:AirfieldLightingEquipment:lightColors;1"
     }
   ],
   "@context": [

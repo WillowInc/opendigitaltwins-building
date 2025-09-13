@@ -19,7 +19,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "squareMetre"
+      "unit": "squareMetre",
+      "@id": "dtmi:com:syyclops:SpaceArea:grossArea;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "grossArea",
       "overrides": "unit",
       "schema": "AreaUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SpaceArea:grossAreaUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "squareMetre"
+      "unit": "squareMetre",
+      "@id": "dtmi:com:syyclops:SpaceArea:usableArea;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "usableArea",
       "overrides": "unit",
       "schema": "AreaUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SpaceArea:usableAreaUnit;1"
     },
     {
       "@type": [
@@ -75,7 +79,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "squareMetre"
+      "unit": "squareMetre",
+      "@id": "dtmi:com:syyclops:SpaceArea:rentableArea;1"
     },
     {
       "@type": [
@@ -90,7 +95,8 @@
       "annotates": "rentableArea",
       "overrides": "unit",
       "schema": "AreaUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SpaceArea:rentableAreaUnit;1"
     }
   ],
   "@context": [

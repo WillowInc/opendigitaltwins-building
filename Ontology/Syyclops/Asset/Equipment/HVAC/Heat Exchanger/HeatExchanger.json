@@ -22,28 +22,35 @@
         "enumValues": [
           {
             "enumValue": "Steam",
-            "name": "Steam"
+            "name": "Steam",
+            "@id": "dtmi:com:syyclops:HeatExchanger:Steam;1"
           },
           {
             "enumValue": "SteamCondensate",
-            "name": "SteamCondensate"
+            "name": "SteamCondensate",
+            "@id": "dtmi:com:syyclops:HeatExchanger:SteamCondensate;1"
           },
           {
             "enumValue": "HotWater",
-            "name": "HotWater"
+            "name": "HotWater",
+            "@id": "dtmi:com:syyclops:HeatExchanger:HotWater;1"
           },
           {
             "enumValue": "CondenserWater",
-            "name": "CondenserWater"
+            "name": "CondenserWater",
+            "@id": "dtmi:com:syyclops:HeatExchanger:CondenserWater;1"
           },
           {
             "enumValue": "ChilledWater",
-            "name": "ChilledWater"
+            "name": "ChilledWater",
+            "@id": "dtmi:com:syyclops:HeatExchanger:ChilledWater;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HeatExchanger:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryMedium;1"
     },
     {
       "@type": "Property",
@@ -56,24 +63,30 @@
         "enumValues": [
           {
             "enumValue": "HotWater",
-            "name": "HotWater"
+            "name": "HotWater",
+            "@id": "dtmi:com:syyclops:HeatExchanger:EE3;1"
           },
           {
             "enumValue": "SteamCondensate",
-            "name": "SteamCondensate"
+            "name": "SteamCondensate",
+            "@id": "dtmi:com:syyclops:HeatExchanger:EE4;1"
           },
           {
             "enumValue": "CondenserWater",
-            "name": "CondenserWater"
+            "name": "CondenserWater",
+            "@id": "dtmi:com:syyclops:HeatExchanger:EE5;1"
           },
           {
             "enumValue": "ChilledWater",
-            "name": "ChilledWater"
+            "name": "ChilledWater",
+            "@id": "dtmi:com:syyclops:HeatExchanger:EE6;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HeatExchanger:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryMedium;1"
     },
     {
       "@type": [
@@ -86,7 +99,8 @@
       "name": "secondaryMaxTemperature",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryMaxTemperature;1"
     },
     {
       "@type": [
@@ -101,7 +115,8 @@
       "annotates": "secondaryMaxTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryMaxTemperatureUnit;1"
     },
     {
       "@type": [
@@ -114,7 +129,8 @@
       "name": "secondaryMaxPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryMaxPressure;1"
     },
     {
       "@type": [
@@ -129,7 +145,8 @@
       "annotates": "secondaryMaxPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryMaxPressureUnit;1"
     },
     {
       "@type": [
@@ -142,7 +159,8 @@
       "name": "secondaryFlowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryFlowCapacity;1"
     },
     {
       "@type": [
@@ -157,7 +175,8 @@
       "annotates": "secondaryFlowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryFlowCapacityUnit;1"
     },
     {
       "@type": [
@@ -170,7 +189,8 @@
       "name": "primaryMaxTemperature",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryMaxTemperature;1"
     },
     {
       "@type": [
@@ -185,7 +205,8 @@
       "annotates": "primaryMaxTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryMaxTemperatureUnit;1"
     },
     {
       "@type": [
@@ -198,7 +219,8 @@
       "name": "primaryMaxPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryMaxPressure;1"
     },
     {
       "@type": [
@@ -213,7 +235,8 @@
       "annotates": "primaryMaxPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryMaxPressureUnit;1"
     },
     {
       "@type": [
@@ -226,7 +249,8 @@
       "name": "primaryFlowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryFlowCapacity;1"
     },
     {
       "@type": [
@@ -241,7 +265,8 @@
       "annotates": "primaryFlowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryFlowCapacityUnit;1"
     },
     {
       "@type": [
@@ -254,7 +279,8 @@
       "name": "primaryDesignFlow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignFlow;1"
     },
     {
       "@type": [
@@ -269,7 +295,8 @@
       "annotates": "primaryDesignFlow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignFlowUnit;1"
     },
     {
       "@type": [
@@ -282,7 +309,8 @@
       "name": "secondaryDesignFlow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignFlow;1"
     },
     {
       "@type": [
@@ -297,7 +325,8 @@
       "annotates": "secondaryDesignFlow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignFlowUnit;1"
     },
     {
       "@type": [
@@ -310,7 +339,8 @@
       "name": "primaryDesignMassFlow",
       "schema": "double",
       "unit": "massPoundPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignMassFlow;1"
     },
     {
       "@type": [
@@ -325,7 +355,8 @@
       "annotates": "primaryDesignMassFlow",
       "overrides": "unit",
       "schema": "MassFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaruyDesignMassFlowUnit;1"
     },
     {
       "@type": [
@@ -337,7 +368,8 @@
         "en": "Primary Design Entering Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignEnteringWaterTemperature;1"
     },
     {
       "@type": [
@@ -351,7 +383,8 @@
       "name": "primaryDesignEnteringWaterTemperatureUnit",
       "annotates": "primaryDesignEnteringWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignEnteringWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -363,7 +396,8 @@
         "en": "Primary Design Leaving Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignLeavingWaterTemperature;1"
     },
     {
       "@type": [
@@ -377,7 +411,8 @@
       "name": "primaryDesignLeavingWaterTemperatureUnit",
       "annotates": "primaryDesignLeavingWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignLeavingWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -389,7 +424,8 @@
         "en": "Primary Design Delta Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignDeltaWaterTemperature;1"
     },
     {
       "@type": [
@@ -403,7 +439,8 @@
       "name": "primaryDesignDeltaWaterTemperatureUnit",
       "annotates": "primaryDesignDeltaWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HeatExchanger:primaryDesignDeltaWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -415,7 +452,8 @@
         "en": "Secondary Design Entering Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignEnteringWaterTemperature;1"
     },
     {
       "@type": [
@@ -429,7 +467,8 @@
       "name": "secondaryDesignEnteringWaterTemperatureUnit",
       "annotates": "secondaryDesignEnteringWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignEnteringWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -441,7 +480,8 @@
         "en": "Secondary Design Leaving Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignLeavingWaterTemperature;1"
     },
     {
       "@type": [
@@ -455,7 +495,8 @@
       "name": "secondaryDesignLeavingWaterTemperatureUnit",
       "annotates": "secondaryDesignLeavingWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignLeavingWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -467,7 +508,8 @@
         "en": "Secondary Design Delta Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignDeltaWaterTemperature;1"
     },
     {
       "@type": [
@@ -481,7 +523,8 @@
       "name": "secondaryDesignDeltaWaterTemperatureUnit",
       "annotates": "secondaryDesignDeltaWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HeatExchanger:secondaryDesignDeltaWaterTemperatureUnit;1"
     }
   ],
   "@context": [

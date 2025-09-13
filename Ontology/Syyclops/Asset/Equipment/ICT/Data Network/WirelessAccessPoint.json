@@ -19,24 +19,30 @@
         "enumValues": [
           {
             "enumValue": "WiFi7",
-            "name": "WiFi7"
+            "name": "WiFi7",
+            "@id": "dtmi:com:syyclops:WirelessAccessPoint:WiFi7;1"
           },
           {
             "enumValue": "WiFi6",
-            "name": "WiFi6"
+            "name": "WiFi6",
+            "@id": "dtmi:com:syyclops:WirelessAccessPoint:WiFi6;1"
           },
           {
             "enumValue": "WiFi5",
-            "name": "WiFi5"
+            "name": "WiFi5",
+            "@id": "dtmi:com:syyclops:WirelessAccessPoint:WiFi5;1"
           },
           {
             "enumValue": "WiFi4",
-            "name": "WiFi4"
+            "name": "WiFi4",
+            "@id": "dtmi:com:syyclops:WirelessAccessPoint:WiFi4;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:WirelessAccessPoint:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WirelessAccessPoint:type;1"
     },
     {
       "@type": "Property",
@@ -49,16 +55,20 @@
         "enumValues": [
           {
             "enumValue": "Outdoor",
-            "name": "Outdoor"
+            "name": "Outdoor",
+            "@id": "dtmi:com:syyclops:WirelessAccessPoint:Outdoor;1"
           },
           {
             "enumValue": "Indoor",
-            "name": "Indoor"
+            "name": "Indoor",
+            "@id": "dtmi:com:syyclops:WirelessAccessPoint:Indoor;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:WirelessAccessPoint:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WirelessAccessPoint:mounting;1"
     }
   ],
   "@context": [

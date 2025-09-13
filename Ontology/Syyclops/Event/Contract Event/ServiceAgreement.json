@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Service Agreement"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ContractEvent;1"
   ],
   "contents": [
@@ -17,7 +17,8 @@
         "en": "regulated by"
       },
       "name": "regulatedBy",
-      "target": "dtmi:com:syyclops:ContractDocument;1"
+      "target": "dtmi:com:syyclops:ContractDocument;1",
+      "@id": "dtmi:com:syyclops:ServiceAgreement:regulatedBy;1"
     },
     {
       "@type": "Relationship",
@@ -28,7 +29,8 @@
         "en": "Service Provider"
       },
       "name": "serviceProvider",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:ServiceAgreement:serviceProvider;1"
     },
     {
       "@type": "Relationship",
@@ -39,7 +41,8 @@
         "en": "Client"
       },
       "name": "client",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:ServiceAgreement:client;1"
     }
   ],
   "@context": [

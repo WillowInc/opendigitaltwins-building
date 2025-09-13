@@ -15,7 +15,8 @@
       },
       "name": "type",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:type;1"
     },
     {
       "@type": [
@@ -28,7 +29,8 @@
       "name": "minTemperatureRating",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:minTemperatureRating;1"
     },
     {
       "@type": [
@@ -43,7 +45,8 @@
       "annotates": "minTemperatureRating",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:minTemperatureRatingUnit;1"
     },
     {
       "@type": [
@@ -56,7 +59,8 @@
       "name": "minMassFlowRating",
       "schema": "double",
       "unit": "kilogramPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:minMassFlowRating;1"
     },
     {
       "@type": [
@@ -71,7 +75,8 @@
       "annotates": "minMassFlowRating",
       "overrides": "unit",
       "schema": "MassFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:minMassFlowRatingUnit;1"
     },
     {
       "@type": [
@@ -84,7 +89,8 @@
       "name": "maxTemperatureRating",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:maxTemperatureRating;1"
     },
     {
       "@type": [
@@ -99,7 +105,8 @@
       "annotates": "maxTemperatureRating",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:maxTemperatureRatingUnit;1"
     },
     {
       "@type": [
@@ -112,7 +119,8 @@
       "name": "maxPressureRating",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:maxPressureRating;1"
     },
     {
       "@type": [
@@ -127,7 +135,8 @@
       "annotates": "maxPressureRating",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:maxPressureRatingUnit;1"
     },
     {
       "@type": [
@@ -140,7 +149,8 @@
       "name": "maxMassFlowRating",
       "schema": "double",
       "unit": "kilogramPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:maxMassFlowRating;1"
     },
     {
       "@type": [
@@ -155,7 +165,8 @@
       "annotates": "maxMassFlowRating",
       "overrides": "unit",
       "schema": "MassFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:GasMeter:maxMassFlowRatingUnit;1"
     },
     {
       "@type": "Relationship",
@@ -163,14 +174,16 @@
         "en": "sub-meter of"
       },
       "name": "subMeterOf",
-      "target": "dtmi:com:syyclops:GasMeter;1"
+      "target": "dtmi:com:syyclops:GasMeter;1",
+      "@id": "dtmi:com:syyclops:GasMeter:subMeterOf;1"
     },
     {
       "@type": "Relationship",
       "displayName": {
         "en": "measures"
       },
-      "name": "measures"
+      "name": "measures",
+      "@id": "dtmi:com:syyclops:GasMeter:measures;1"
     }
   ],
   "@context": [

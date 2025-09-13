@@ -24,7 +24,8 @@
           "writable": true,
           "schema": "dtmi:com:syyclops:AssetCollectionIsFedBySubstances;1"
         }
-      ]
+      ],
+      "@id": "dtmi:com:syyclops:AssetCollection:isFedBy;1"
     }
   ],
   "schemas": [
@@ -35,143 +36,178 @@
       "enumValues": [
         {
           "enumValue": "MakeupWater",
-          "name": "MakeupWater"
+          "name": "MakeupWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:MakeupWater;1"
         },
         {
           "enumValue": "Light",
-          "name": "Light"
+          "name": "Light",
+          "@id": "dtmi:com:syyclops:AssetCollection:Light;1"
         },
         {
           "enumValue": "IrrigationWater",
-          "name": "IrrigationWater"
+          "name": "IrrigationWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:IrrigationWater;1"
         },
         {
           "enumValue": "HotWater",
-          "name": "HotWater"
+          "name": "HotWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:HotWater;1"
         },
         {
           "enumValue": "HotDomesticWater",
-          "name": "HotDomesticWater"
+          "name": "HotDomesticWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:HotDomesticWater;1"
         },
         {
           "enumValue": "GreaseExhaustAir",
-          "name": "GreaseExhaustAir"
+          "name": "GreaseExhaustAir",
+          "@id": "dtmi:com:syyclops:AssetCollection:GreaseExhaustAir;1"
         },
         {
           "enumValue": "Gasoline",
-          "name": "Gasoline"
+          "name": "Gasoline",
+          "@id": "dtmi:com:syyclops:AssetCollection:Gasoline;1"
         },
         {
           "enumValue": "FuelOil",
-          "name": "FuelOil"
+          "name": "FuelOil",
+          "@id": "dtmi:com:syyclops:AssetCollection:FuelOil;1"
         },
         {
           "enumValue": "Freight",
-          "name": "Freight"
+          "name": "Freight",
+          "@id": "dtmi:com:syyclops:AssetCollection:Freight;1"
         },
         {
           "enumValue": "ExhaustAir",
-          "name": "ExhaustAir"
+          "name": "ExhaustAir",
+          "@id": "dtmi:com:syyclops:AssetCollection:ExhaustAir;1"
         },
         {
           "enumValue": "Ethernet",
-          "name": "Ethernet"
+          "name": "Ethernet",
+          "@id": "dtmi:com:syyclops:AssetCollection:Ethernet;1"
         },
         {
           "enumValue": "DriveElec",
-          "name": "DriveElec"
+          "name": "DriveElec",
+          "@id": "dtmi:com:syyclops:AssetCollection:DriveElec;1"
         },
         {
           "enumValue": "Diesel",
-          "name": "Diesel"
+          "name": "Diesel",
+          "@id": "dtmi:com:syyclops:AssetCollection:Diesel;1"
         },
         {
           "enumValue": "DCElec",
-          "name": "DCElec"
+          "name": "DCElec",
+          "@id": "dtmi:com:syyclops:AssetCollection:DCElec;1"
         },
         {
           "enumValue": "CondenserWater",
-          "name": "CondenserWater"
+          "name": "CondenserWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:CondenserWater;1"
         },
         {
           "enumValue": "Condensate",
-          "name": "Condensate"
+          "name": "Condensate",
+          "@id": "dtmi:com:syyclops:AssetCollection:Condensate;1"
         },
         {
           "enumValue": "ColdDomesticWater",
-          "name": "ColdDomesticWater"
+          "name": "ColdDomesticWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:ColdDomesticWater;1"
         },
         {
           "enumValue": "ChilledWater",
-          "name": "ChilledWater"
+          "name": "ChilledWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:ChilledWater;1"
         },
         {
           "enumValue": "BlowdownWater",
-          "name": "BlowdownWater"
+          "name": "BlowdownWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:BlowdownWater;1"
         },
         {
           "enumValue": "Air",
-          "name": "Air"
+          "name": "Air",
+          "@id": "dtmi:com:syyclops:AssetCollection:Air;1"
         },
         {
           "enumValue": "ACElec",
-          "name": "ACElec"
+          "name": "ACElec",
+          "@id": "dtmi:com:syyclops:AssetCollection:ACElec;1"
         },
         {
           "enumValue": "NaturalGas",
-          "name": "NaturalGas"
+          "name": "NaturalGas",
+          "@id": "dtmi:com:syyclops:AssetCollection:NaturalGas;1"
         },
         {
           "enumValue": "NonPotableDomesticWater",
-          "name": "NonPotableDomesticWater"
+          "name": "NonPotableDomesticWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:NonPotableDomesticWater;1"
         },
         {
           "enumValue": "OutsideAir",
-          "name": "OutsideAir"
+          "name": "OutsideAir",
+          "@id": "dtmi:com:syyclops:AssetCollection:OutsideAir;1"
         },
         {
           "enumValue": "People",
-          "name": "People"
+          "name": "People",
+          "@id": "dtmi:com:syyclops:AssetCollection:People;1"
         },
         {
           "enumValue": "RecircHotDomesticWater",
-          "name": "RecircHotDomesticWater"
+          "name": "RecircHotDomesticWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:RecircHotDomesticWater;1"
         },
         {
           "enumValue": "Refrig",
-          "name": "Refrig"
+          "name": "Refrig",
+          "@id": "dtmi:com:syyclops:AssetCollection:Refrig;1"
         },
         {
           "enumValue": "ReturnAir",
-          "name": "ReturnAir"
+          "name": "ReturnAir",
+          "@id": "dtmi:com:syyclops:AssetCollection:ReturnAir;1"
         },
         {
           "enumValue": "SprinklerWater",
-          "name": "SprinklerWater"
+          "name": "SprinklerWater",
+          "@id": "dtmi:com:syyclops:AssetCollection:SprinklerWater;1"
         },
         {
           "enumValue": "Steam",
-          "name": "Steam"
+          "name": "Steam",
+          "@id": "dtmi:com:syyclops:AssetCollection:Steam;1"
         },
         {
           "enumValue": "StormDrainage",
-          "name": "StormDrainage"
+          "name": "StormDrainage",
+          "@id": "dtmi:com:syyclops:AssetCollection:StormDrainage;1"
         },
         {
           "enumValue": "SupplyAir",
-          "name": "SupplyAir"
+          "name": "SupplyAir",
+          "@id": "dtmi:com:syyclops:AssetCollection:SupplyAir;1"
         },
         {
           "enumValue": "TransferAir",
-          "name": "TransferAir"
+          "name": "TransferAir",
+          "@id": "dtmi:com:syyclops:AssetCollection:TransferAir;1"
         },
         {
           "enumValue": "WasteVentDrainage",
-          "name": "WasteVentDrainage"
+          "name": "WasteVentDrainage",
+          "@id": "dtmi:com:syyclops:AssetCollection:WasteVentDrainage;1"
         },
         {
           "enumValue": "Water",
-          "name": "Water"
+          "name": "Water",
+          "@id": "dtmi:com:syyclops:AssetCollection:Water;1"
         }
       ],
       "displayName": {

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Portfolio"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Collection;1"
   ],
   "contents": [
@@ -14,7 +14,8 @@
       "displayName": {
         "en": "operated by"
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Portfolio:operatedBy;1"
     },
     {
       "@type": "Relationship",
@@ -22,7 +23,8 @@
       "displayName": {
         "en": "owned by"
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Portfolio:ownedBy;1"
     }
   ],
   "@context": [

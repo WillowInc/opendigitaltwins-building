@@ -7,7 +7,7 @@
   "description": {
     "en": "An area within a building which has a purpose and extents defined by a system or sensors, e.g., HVAC zone, lighting zone, occupancy zone, security zone, etc."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Space;1"
   ],
   "contents": [
@@ -18,7 +18,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Zone:type;1"
     }
   ],
   "@context": [

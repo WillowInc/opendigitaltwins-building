@@ -4,8 +4,10 @@
   "displayName": {
     "en": "Binary Actuator"
   },
-  "description": {"en": "The Boolean command which sets the state of the equipment"},
-  "extends" : [
+  "description": {
+    "en": "The Boolean command which sets the state of the equipment"
+  },
+  "extends": [
     "dtmi:com:syyclops:Actuator;1"
   ],
   "contents": [
@@ -16,9 +18,9 @@
         "en": "Last Value"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:BinaryActuator:lastValue;1"
     }
-
   ],
   "@context": [
     "dtmi:dtdl:context;3"

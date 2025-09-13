@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Furniture"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Asset;1"
   ],
   "contents": [
@@ -15,7 +15,8 @@
         "en": "Length"
       },
       "writable": true,
-      "schema": "float"
+      "schema": "float",
+      "@id": "dtmi:com:syyclops:Furniture:length;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
         "en": "Width"
       },
       "writable": true,
-      "schema": "float"
+      "schema": "float",
+      "@id": "dtmi:com:syyclops:Furniture:width;1"
     },
     {
       "@type": "Property",
@@ -33,7 +35,8 @@
         "en": "Height"
       },
       "writable": true,
-      "schema": "float"
+      "schema": "float",
+      "@id": "dtmi:com:syyclops:Furniture:height;1"
     }
   ],
   "@context": [

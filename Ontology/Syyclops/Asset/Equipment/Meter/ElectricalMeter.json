@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "DC",
-            "name": "DC"
+            "name": "DC",
+            "@id": "dtmi:com:syyclops:ElectricalMeter:DC;1"
           },
           {
             "enumValue": "AC",
-            "name": "AC"
+            "name": "AC",
+            "@id": "dtmi:com:syyclops:ElectricalMeter:AC;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ElectricalMeter:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:type;1"
     },
     {
       "@type": [
@@ -41,7 +45,8 @@
       "name": "minVoltageRating",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:minVoltageRating;1"
     },
     {
       "@type": [
@@ -54,7 +59,8 @@
       "name": "minCurrentRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:minCurrentRating;1"
     },
     {
       "@type": [
@@ -67,7 +73,8 @@
       "name": "maxVoltageRating",
       "schema": "double",
       "unit": "volt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:maxVoltageRating;1"
     },
     {
       "@type": [
@@ -80,7 +87,8 @@
       "name": "maxCurrentRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalMeter:maxCurrentRating;1"
     },
     {
       "@type": "Relationship",
@@ -88,7 +96,8 @@
         "en": "sub-meter of"
       },
       "name": "subMeterOf",
-      "target": "dtmi:com:syyclops:ElectricalMeter;1"
+      "target": "dtmi:com:syyclops:ElectricalMeter;1",
+      "@id": "dtmi:com:syyclops:ElectricalMeter:subMeterOf;1"
     }
   ],
   "@context": [

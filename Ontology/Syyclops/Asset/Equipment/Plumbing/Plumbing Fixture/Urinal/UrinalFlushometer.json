@@ -19,7 +19,8 @@
       "name": "waterPerFlush",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UrinalFlushometer:waterPerFlush;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "waterPerFlush",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UrinalFlushometer:waterPerFlushUnit;1"
     }
   ],
   "@context": [

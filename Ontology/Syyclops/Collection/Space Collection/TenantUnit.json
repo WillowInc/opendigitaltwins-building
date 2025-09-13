@@ -4,14 +4,15 @@
   "displayName": {
     "en": "Tenant Unit"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceCollection;1"
   ],
   "contents": [
     {
       "@type": "Relationship",
       "name": "hasLease",
-      "target": "dtmi:com:syyclops:Lease;1"
+      "target": "dtmi:com:syyclops:Lease;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:hasLease;1"
     },
     {
       "@type": "Component",
@@ -19,7 +20,8 @@
         "en": "address"
       },
       "name": "address",
-      "schema": "dtmi:com:syyclops:Address;1"
+      "schema": "dtmi:com:syyclops:Address;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:address;1"
     },
     {
       "@type": "Component",
@@ -27,7 +29,8 @@
         "en": "Electricity Price Rate"
       },
       "name": "electricityPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:electricityPriceRate;1"
     },
     {
       "@type": "Component",
@@ -35,7 +38,8 @@
         "en": "Electricity Emission Factor"
       },
       "name": "electricityEmissionFactor",
-      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:electricityEmissionFactor;1"
     },
     {
       "@type": "Component",
@@ -43,7 +47,8 @@
         "en": "Natural Gas Price Rate"
       },
       "name": "naturalGasPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:naturalGasPriceRate;1"
     },
     {
       "@type": "Component",
@@ -51,7 +56,8 @@
         "en": "Chilled Water Price Rate"
       },
       "name": "chilledWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:chilledWaterPriceRate;1"
     },
     {
       "@type": "Component",
@@ -59,7 +65,8 @@
         "en": "Steam Price Rate"
       },
       "name": "steamPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:steamPriceRate;1"
     },
     {
       "@type": "Component",
@@ -67,7 +74,8 @@
         "en": "Domestic Water Price Rate"
       },
       "name": "domesticWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:domesticWaterPriceRate;1"
     },
     {
       "@type": "Component",
@@ -75,7 +83,8 @@
       "displayName": {
         "en": "Area"
       },
-      "schema": "dtmi:com:syyclops:SpaceArea;1"
+      "schema": "dtmi:com:syyclops:SpaceArea;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:area;1"
     },
     {
       "@type": "Component",
@@ -83,7 +92,8 @@
       "displayName": {
         "en": "Capacity"
       },
-      "schema": "dtmi:com:syyclops:SpaceCapacity;1"
+      "schema": "dtmi:com:syyclops:SpaceCapacity;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:capacity;1"
     },
     {
       "@type": "Component",
@@ -91,7 +101,8 @@
       "displayName": {
         "en": "Temperature"
       },
-      "schema": "dtmi:com:syyclops:SpaceTemperature;1"
+      "schema": "dtmi:com:syyclops:SpaceTemperature;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:temperature;1"
     },
     {
       "@type": "Component",
@@ -99,7 +110,8 @@
       "displayName": {
         "en": "Humidity Average"
       },
-      "schema": "dtmi:com:syyclops:SpaceHumidity;1"
+      "schema": "dtmi:com:syyclops:SpaceHumidity;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:humidity;1"
     },
     {
       "@type": "Component",
@@ -107,7 +119,8 @@
       "displayName": {
         "en": "CO2"
       },
-      "schema": "dtmi:com:syyclops:SpaceCO2;1"
+      "schema": "dtmi:com:syyclops:SpaceCO2;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:CO2;1"
     },
     {
       "@type": "Component",
@@ -115,7 +128,8 @@
       "displayName": {
         "en": "Occupancy"
       },
-      "schema": "dtmi:com:syyclops:SpaceOccupancy;1"
+      "schema": "dtmi:com:syyclops:SpaceOccupancy;1",
+      "@id": "dtmi:com:syyclops:TenantUnit:occupancy;1"
     }
   ],
   "@context": [

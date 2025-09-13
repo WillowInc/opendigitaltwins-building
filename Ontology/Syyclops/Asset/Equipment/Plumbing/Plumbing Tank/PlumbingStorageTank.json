@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "HotWater",
-            "name": "HotWater"
+            "name": "HotWater",
+            "@id": "dtmi:com:syyclops:PlumbingStorageTank:HotWater;1"
           },
           {
             "enumValue": "ChilledWater",
-            "name": "ChilledWater"
+            "name": "ChilledWater",
+            "@id": "dtmi:com:syyclops:PlumbingStorageTank:ChilledWater;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:PlumbingStorageTank:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingStorageTank:type;1"
     },
     {
       "@type": "Property",
@@ -41,16 +45,20 @@
         "enumValues": [
           {
             "enumValue": "Vertical",
-            "name": "Vertical"
+            "name": "Vertical",
+            "@id": "dtmi:com:syyclops:PlumbingStorageTank:Vertical;1"
           },
           {
             "enumValue": "Horizontal",
-            "name": "Horizontal"
+            "name": "Horizontal",
+            "@id": "dtmi:com:syyclops:PlumbingStorageTank:Horizontal;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:PlumbingStorageTank:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:PlumbingStorageTank:arrangement;1"
     },
     {
       "@type": "Property",
@@ -69,20 +77,23 @@
             "displayName": {
               "en": "Hot Water"
             },
-            "enumValue": "HotWater"
+            "enumValue": "HotWater",
+            "@id": "dtmi:com:syyclops:PlumbingStorageTank:EE3;1"
           },
           {
             "name": "ChilledWater",
             "displayName": {
               "en": "Chilled Water"
             },
-            "enumValue": "ChilledWater"
+            "enumValue": "ChilledWater",
+            "@id": "dtmi:com:syyclops:PlumbingStorageTank:EE4;1"
           }
         ],
         "displayName": {
           "en": "Plumbing Storage Tank Service"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:PlumbingStorageTank:service;1"
     }
   ],
   "@context": [

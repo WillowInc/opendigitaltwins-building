@@ -7,7 +7,7 @@
   "description": {
     "en": "An application whose task is to connect to and communicate with other software applications."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Application;1"
   ],
   "contents": [
@@ -32,7 +32,8 @@
             "description": {
               "en": "The unique identier for the connector type"
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:ConnectorApplication:id;1"
           },
           {
             "name": "name",
@@ -42,7 +43,8 @@
             "description": {
               "en": "The display name for the connector type."
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:ConnectorApplication:name;1"
           },
           {
             "name": "direction",
@@ -52,17 +54,21 @@
             "description": {
               "en": "Indicates whether the connector type is Source or Destination. Source indicates data flowing from an external system to the org. Destination indicates data flowing from the org to an external system."
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:ConnectorApplication:direction;1"
           },
           {
             "name": "version",
             "displayName": {
               "en": "Version"
             },
-            "schema": "string"
+            "schema": "string",
+            "@id": "dtmi:com:syyclops:ConnectorApplication:version;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ConnectorApplication:OS1;1"
+      },
+      "@id": "dtmi:com:syyclops:ConnectorApplication:connectorType;1"
     }
   ],
   "@context": [

@@ -4,9 +4,7 @@
   "displayName": {
     "en": "Electrical Bus"
   },
-  "extends": [
-    "dtmi:com:syyclops:AssetComponent;1"
-  ],
+  "extends": ["dtmi:com:syyclops:AssetComponent;1"],
   "contents": [
     {
       "@type": "Property",
@@ -19,33 +17,32 @@
         "enumValues": [
           {
             "enumValue": "Copper",
-            "name": "Copper"
+            "name": "Copper",
+            "@id": "dtmi:com:syyclops:ElectricalBus:Copper;1"
           },
           {
             "enumValue": "Aluminium",
-            "name": "Aluminium"
+            "name": "Aluminium",
+            "@id": "dtmi:com:syyclops:ElectricalBus:Aluminium;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ElectricalBus:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalBus:material;1"
     },
     {
-      "@type": [
-        "Current",
-        "Property"
-      ],
+      "@type": ["Current", "Property"],
       "displayName": {
         "en": "Current Rating"
       },
       "name": "currentRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalBus:currentRating;1"
     }
   ],
-  "@context": [
-    "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:quantitativeTypes;1"
-  ]
+  "@context": ["dtmi:dtdl:context;3", "dtmi:dtdl:extension:quantitativeTypes;1"]
 }

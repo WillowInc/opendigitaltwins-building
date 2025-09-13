@@ -19,7 +19,8 @@
       "name": "powerInput",
       "schema": "double",
       "unit": "watt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricTankWaterHeater:powerInput;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "powerInput",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricTankWaterHeater:powerInputUnit;1"
     }
   ],
   "@context": [

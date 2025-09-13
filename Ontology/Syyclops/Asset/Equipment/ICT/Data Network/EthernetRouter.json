@@ -15,7 +15,8 @@
       },
       "name": "numberOfPorts",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:EthernetRouter:numberOfPorts;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
       },
       "name": "heightRUs",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:EthernetRouter:heightRUs;1"
     }
   ],
   "@context": [

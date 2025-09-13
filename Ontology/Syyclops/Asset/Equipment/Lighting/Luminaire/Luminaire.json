@@ -19,7 +19,8 @@
       "name": "powerInput",
       "schema": "double",
       "unit": "watt",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Luminaire:powerInput;1"
     },
     {
       "@type": "Property",
@@ -32,28 +33,35 @@
         "enumValues": [
           {
             "enumValue": "WallMount",
-            "name": "WallMount"
+            "name": "WallMount",
+            "@id": "dtmi:com:syyclops:Luminaire:WallMount;1"
           },
           {
             "enumValue": "Recessed",
-            "name": "Recessed"
+            "name": "Recessed",
+            "@id": "dtmi:com:syyclops:Luminaire:Recessed;1"
           },
           {
             "enumValue": "Pendant",
-            "name": "Pendant"
+            "name": "Pendant",
+            "@id": "dtmi:com:syyclops:Luminaire:Pendant;1"
           },
           {
             "enumValue": "Track",
-            "name": "Track"
+            "name": "Track",
+            "@id": "dtmi:com:syyclops:Luminaire:Track;1"
           },
           {
             "enumValue": "Ground",
-            "name": "Ground"
+            "name": "Ground",
+            "@id": "dtmi:com:syyclops:Luminaire:Ground;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Luminaire:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Luminaire:mounting;1"
     }
   ],
   "@context": [

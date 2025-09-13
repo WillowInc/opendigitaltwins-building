@@ -22,7 +22,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanPoweredBoxReheat:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FanPoweredBoxReheat:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -45,7 +47,8 @@
         "en": "re-heating method"
       },
       "name": "reHeatingMethod",
-      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1",
+      "@id": "dtmi:com:syyclops:FanPoweredBoxReheat:reHeatingMethod;1"
     }
   ],
   "@context": [

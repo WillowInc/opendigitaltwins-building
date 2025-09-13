@@ -7,7 +7,7 @@
   "description": {
     "en": "A food display case used for foods required to be refrigerated to either low- or medium-temperatures."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:FoodDisplayCase;1",
     "dtmi:com:syyclops:DefrostEquipment;1"
   ],
@@ -18,7 +18,8 @@
         "en": "Evaporator Fan"
       },
       "name": "evaporatorFan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:RefrigeratedFoodDisplayCase:evaporatorFan;1"
     }
   ],
   "@context": [

@@ -13,7 +13,8 @@
       },
       "name": "material",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACDuct:material;1"
     }
   ],
   "@context": [

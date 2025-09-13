@@ -15,7 +15,8 @@
       },
       "name": "economizer",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACMixingBox:economizer;1"
     }
   ],
   "@context": [

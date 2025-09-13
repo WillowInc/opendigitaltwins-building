@@ -13,7 +13,8 @@
       },
       "name": "material",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CableTray:material;1"
     },
     {
       "@type": [
@@ -26,7 +27,8 @@
       "name": "width",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CableTray:width;1"
     },
     {
       "@type": [
@@ -41,7 +43,8 @@
       "annotates": "width",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CableTray:widthUnit;1"
     },
     {
       "@type": [
@@ -54,7 +57,8 @@
       "name": "height",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CableTray:height;1"
     },
     {
       "@type": [
@@ -69,7 +73,8 @@
       "annotates": "height",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CableTray:heightUnit;1"
     }
   ],
   "@context": [

@@ -21,7 +21,8 @@
       },
       "name": "logo",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Organization:logo;1"
     },
     {
       "@type": "Relationship",
@@ -32,7 +33,8 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:syyclops:Organization;1"
+      "target": "dtmi:com:syyclops:Organization;1",
+      "@id": "dtmi:com:syyclops:Organization:isPartOf;1"
     }
   ],
   "@context": [

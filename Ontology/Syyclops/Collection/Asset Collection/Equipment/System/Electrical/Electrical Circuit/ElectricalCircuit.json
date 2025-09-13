@@ -4,19 +4,23 @@
   "displayName": {
     "en": "Electrical Circuit"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalSystem;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "Voltage"],
+      "@type": [
+        "Property",
+        "Voltage"
+      ],
       "name": "voltage",
       "displayName": {
         "en": "Voltage"
       },
       "writable": true,
       "schema": "integer",
-      "unit": "volt"
+      "unit": "volt",
+      "@id": "dtmi:com:syyclops:ElectricalCircuit:voltage;1"
     },
     {
       "@type": "Property",
@@ -32,30 +36,39 @@
           {
             "name": "One",
             "displayName": "1",
-            "enumValue": "1"
+            "enumValue": "1",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit:One;1"
           },
           {
             "name": "Two",
             "displayName": "2",
-            "enumValue": "2"
+            "enumValue": "2",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit:Two;1"
           },
           {
             "name": "Three",
             "displayName": "3",
-            "enumValue": "3"
+            "enumValue": "3",
+            "@id": "dtmi:com:syyclops:ElectricalCircuit:Three;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:ElectricalCircuit:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit:poles;1"
     },
     {
-      "@type": ["Property", "Current"],
+      "@type": [
+        "Property",
+        "Current"
+      ],
       "name": "CBRating",
       "displayName": {
         "en": "Circuit Breaker Rating"
       },
       "writable": true,
       "schema": "integer",
-      "unit": "ampere"
+      "unit": "ampere",
+      "@id": "dtmi:com:syyclops:ElectricalCircuit:CBRating;1"
     },
     {
       "@type": "Property",
@@ -65,7 +78,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Qty-Size Phase, Qty-Size Neutral, Qty-Size Ground"
+      "comment": "Qty-Size Phase, Qty-Size Neutral, Qty-Size Ground",
+      "@id": "dtmi:com:syyclops:ElectricalCircuit:wireSize;1"
     },
     {
       "@type": "Property",
@@ -74,7 +88,8 @@
         "en": "Wire Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:ElectricalCircuit:wireType;1"
     },
     {
       "@type": "Property",
@@ -89,7 +104,8 @@
           "description": {
             "en": "A shortened DTDL Model Identifier (doesn't include the full path or version)  of an asset or group of assets that are connected to this circuit (i.e. HVACEquipment, AirHandlingUnit)."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:ElectricalCircuit:MM3;1"
         },
         "mapValue": {
           "name": "loadParameters",
@@ -117,10 +133,14 @@
                 },
                 "schema": "double"
               }
-            ]
-          }
-        }
-      }
+            ],
+            "@id": "dtmi:com:syyclops:ElectricalCircuit:OS4;1"
+          },
+          "@id": "dtmi:com:syyclops:ElectricalCircuit:loadParameters;1"
+        },
+        "@id": "dtmi:com:syyclops:ElectricalCircuit:MS2;1"
+      },
+      "@id": "dtmi:com:syyclops:ElectricalCircuit:loadClassification;1"
     }
   ],
   "@context": [

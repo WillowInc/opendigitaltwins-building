@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "Touchless",
-            "name": "Touchless"
+            "name": "Touchless",
+            "@id": "dtmi:com:syyclops:Faucet:Touchless;1"
           },
           {
             "enumValue": "ManualOnly",
-            "name": "ManualOnly"
+            "name": "ManualOnly",
+            "@id": "dtmi:com:syyclops:Faucet:ManualOnly;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Faucet:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Faucet:type;1"
     },
     {
       "@type": [
@@ -41,7 +45,8 @@
       "name": "maxFlowRate",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Faucet:maxFlowRate;1"
     },
     {
       "@type": [
@@ -56,7 +61,8 @@
       "annotates": "maxFlowRate",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Faucet:maxFlowRateUnit;1"
     },
     {
       "@type": "Property",
@@ -65,14 +71,16 @@
       },
       "name": "numberOfHandles",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Faucet:numberOfHandles;1"
     },
     {
       "@type": "Relationship",
       "displayName": {
         "en": "mounted on"
       },
-      "name": "mountedOn"
+      "name": "mountedOn",
+      "@id": "dtmi:com:syyclops:Faucet:mountedOn;1"
     }
   ],
   "@context": [

@@ -19,7 +19,8 @@
       "name": "tankCapacity",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Tank:tankCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "tankCapacity",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Tank:tankCapacityUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       "name": "systemPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Tank:systemPressure;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "systemPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Tank:systemPressureUnit;1"
     }
   ],
   "@context": [

@@ -24,598 +24,699 @@
             "name": "AfricaCairo",
             "displayName": "Africa/Cairo",
             "description": "",
-            "enumValue": "Africa/Cairo"
+            "enumValue": "Africa/Cairo",
+            "@id": "dtmi:com:syyclops:TimeZone:AfricaCairo;1"
           },
           {
             "name": "AfricaCasablanca",
             "displayName": "Africa/Casablanca",
             "description": "",
-            "enumValue": "Africa/Casablanca"
+            "enumValue": "Africa/Casablanca",
+            "@id": "dtmi:com:syyclops:TimeZone:AfricaCasablanca;1"
           },
           {
             "name": "AfricaJohannesburg",
             "displayName": "Africa/Johannesburg",
             "description": "",
-            "enumValue": "Africa/Johannesburg"
+            "enumValue": "Africa/Johannesburg",
+            "@id": "dtmi:com:syyclops:TimeZone:AfricaJohannesburg;1"
           },
           {
             "name": "AfricaLagos",
             "displayName": "Africa/Lagos",
             "description": "West Africa Time",
-            "enumValue": "Africa/Lagos"
+            "enumValue": "Africa/Lagos",
+            "@id": "dtmi:com:syyclops:TimeZone:AfricaLagos;1"
           },
           {
             "name": "AfricaMaputo",
             "displayName": "Africa/Maputo",
             "description": "Central Africa Time",
-            "enumValue": "Africa/Maputo"
+            "enumValue": "Africa/Maputo",
+            "@id": "dtmi:com:syyclops:TimeZone:AfricaMaputo;1"
           },
           {
             "name": "AfricaNairobi",
             "displayName": "Africa/Nairobi",
             "description": "",
-            "enumValue": "Africa/Nairobi"
+            "enumValue": "Africa/Nairobi",
+            "@id": "dtmi:com:syyclops:TimeZone:AfricaNairobi;1"
           },
           {
             "name": "AmericaAnchorage",
             "displayName": "America/Anchorage",
             "description": "Alaska (most areas)",
-            "enumValue": "America/Anchorage"
+            "enumValue": "America/Anchorage",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaAnchorage;1"
           },
           {
             "name": "AmericaArgentinaBuenos_Aires",
             "displayName": "America/Argentina/Buenos_Aires",
             "description": "Buenos Aires (BA, CF)",
-            "enumValue": "America/Argentina/Buenos_Aires"
+            "enumValue": "America/Argentina/Buenos_Aires",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaArgentinaBuenos_Aires;1"
           },
           {
             "name": "AmericaBogota",
             "displayName": "America/Bogota",
             "description": "",
-            "enumValue": "America/Bogota"
+            "enumValue": "America/Bogota",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaBogota;1"
           },
           {
             "name": "AmericaCaracas",
             "displayName": "America/Caracas",
             "description": "",
-            "enumValue": "America/Caracas"
+            "enumValue": "America/Caracas",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaCaracas;1"
           },
           {
             "name": "AmericaChicago",
             "displayName": "America/Chicago",
             "description": "Central (most areas)",
-            "enumValue": "America/Chicago"
+            "enumValue": "America/Chicago",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaChicago;1"
           },
           {
             "name": "AmericaCosta_Rica",
             "displayName": "America/Costa_Rica",
             "description": "",
-            "enumValue": "America/Costa_Rica"
+            "enumValue": "America/Costa_Rica",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaCosta_Rica;1"
           },
           {
             "name": "AmericaDenver",
             "displayName": "America/Denver",
             "description": "Mountain (most areas)",
-            "enumValue": "America/Denver"
+            "enumValue": "America/Denver",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaDenver;1"
           },
           {
             "name": "AmericaEdmonton",
             "displayName": "America/Edmonton",
             "description": "Mountain - AB; BC (E); SK (W)",
-            "enumValue": "America/Edmonton"
+            "enumValue": "America/Edmonton",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaEdmonton;1"
           },
           {
             "name": "AmericaHalifax",
             "displayName": "America/Halifax",
             "description": "Atlantic - NS (most areas); PE",
-            "enumValue": "America/Halifax"
+            "enumValue": "America/Halifax",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaHalifax;1"
           },
           {
             "name": "AmericaIndianaIndianapolis",
             "displayName": "America/Indiana/Indianapolis",
             "description": "Eastern - IN (most areas)",
-            "enumValue": "America/Indiana/Indianapolis"
+            "enumValue": "America/Indiana/Indianapolis",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaIndianaIndianapolis;1"
           },
           {
             "name": "AmericaLima",
             "displayName": "America/Lima",
             "description": "",
-            "enumValue": "America/Lima"
+            "enumValue": "America/Lima",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaLima;1"
           },
           {
             "name": "AmericaLos_Angeles",
             "displayName": "America/Los_Angeles",
             "description": "Pacific",
-            "enumValue": "America/Los_Angeles"
+            "enumValue": "America/Los_Angeles",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaLos_Angeles;1"
           },
           {
             "name": "AmericaMexico_City",
             "displayName": "America/Mexico_City",
             "description": "Central Time",
-            "enumValue": "America/Mexico_City"
+            "enumValue": "America/Mexico_City",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaMexico_City;1"
           },
           {
             "name": "AmericaNew_York",
             "displayName": "America/New_York",
             "description": "Eastern (most areas)",
-            "enumValue": "America/New_York"
+            "enumValue": "America/New_York",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaNew_York;1"
           },
           {
             "name": "AmericaPhoenix",
             "displayName": "America/Phoenix",
             "description": "MST - Arizona (except Navajo), Creston BC",
-            "enumValue": "America/Phoenix"
+            "enumValue": "America/Phoenix",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaPhoenix;1"
           },
           {
             "name": "AmericaSantiago",
             "displayName": "America/Santiago",
             "description": "Chile (most areas)",
-            "enumValue": "America/Santiago"
+            "enumValue": "America/Santiago",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaSantiago;1"
           },
           {
             "name": "AmericaSao_Paulo",
             "displayName": "America/Sao_Paulo",
             "description": "Brazil (southeast: GO, DF, MG, ES, RJ, SP, PR, SC, RS)",
-            "enumValue": "America/Sao_Paulo"
+            "enumValue": "America/Sao_Paulo",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaSao_Paulo;1"
           },
           {
             "name": "AmericaWhitehorse",
             "displayName": "America/Whitehorse",
             "description": "MST - Yukon (east)",
-            "enumValue": "America/Whitehorse"
+            "enumValue": "America/Whitehorse",
+            "@id": "dtmi:com:syyclops:TimeZone:AmericaWhitehorse;1"
           },
           {
             "name": "AsiaBaghdad",
             "displayName": "Asia/Baghdad",
             "description": "",
-            "enumValue": "Asia/Baghdad"
+            "enumValue": "Asia/Baghdad",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaBaghdad;1"
           },
           {
             "name": "AsiaBangkok",
             "displayName": "Asia/Bangkok",
             "description": "Indochina (most areas)",
-            "enumValue": "Asia/Bangkok"
+            "enumValue": "Asia/Bangkok",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaBangkok;1"
           },
           {
             "name": "AsiaDubai",
             "displayName": "Asia/Dubai",
             "description": "",
-            "enumValue": "Asia/Dubai"
+            "enumValue": "Asia/Dubai",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaDubai;1"
           },
           {
             "name": "AsiaHong_Kong",
             "displayName": "Asia/Hong_Kong",
             "description": "",
-            "enumValue": "Asia/Hong_Kong"
+            "enumValue": "Asia/Hong_Kong",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaHong_Kong;1"
           },
           {
             "name": "AsiaJakarta",
             "displayName": "Asia/Jakarta",
             "description": "Java, Sumatra",
-            "enumValue": "Asia/Jakarta"
+            "enumValue": "Asia/Jakarta",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaJakarta;1"
           },
           {
             "name": "AsiaKabul",
             "displayName": "Asia/Kabul",
             "description": "",
-            "enumValue": "Asia/Kabul"
+            "enumValue": "Asia/Kabul",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaKabul;1"
           },
           {
             "name": "AsiaKarachi",
             "displayName": "Asia/Karachi",
             "description": "",
-            "enumValue": "Asia/Karachi"
+            "enumValue": "Asia/Karachi",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaKarachi;1"
           },
           {
             "name": "AsiaKathmandu",
             "displayName": "Asia/Kathmandu",
             "description": "",
-            "enumValue": "Asia/Kathmandu"
+            "enumValue": "Asia/Kathmandu",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaKathmandu;1"
           },
           {
             "name": "AsiaKolkata",
             "displayName": "Asia/Kolkata",
             "description": "",
-            "enumValue": "Asia/Kolkata"
+            "enumValue": "Asia/Kolkata",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaKolkata;1"
           },
           {
             "name": "AsiaKuala_Lumpur",
             "displayName": "Asia/Kuala_Lumpur",
             "description": "Malaysia (peninsula)",
-            "enumValue": "Asia/Kuala_Lumpur"
+            "enumValue": "Asia/Kuala_Lumpur",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaKuala_Lumpur;1"
           },
           {
             "name": "AsiaPyongyang",
             "displayName": "Asia/Pyongyang",
             "description": "",
-            "enumValue": "Asia/Pyongyang"
+            "enumValue": "Asia/Pyongyang",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaPyongyang;1"
           },
           {
             "name": "AsiaRiyadh",
             "displayName": "Asia/Riyadh",
             "description": "Arabia, Syowa",
-            "enumValue": "Asia/Riyadh"
+            "enumValue": "Asia/Riyadh",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaRiyadh;1"
           },
           {
             "name": "AsiaSeoul",
             "displayName": "Asia/Seoul",
             "description": "",
-            "enumValue": "Asia/Seoul"
+            "enumValue": "Asia/Seoul",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaSeoul;1"
           },
           {
             "name": "AsiaShanghai",
             "displayName": "Asia/Shanghai",
             "description": "Beijing Time",
-            "enumValue": "Asia/Shanghai"
+            "enumValue": "Asia/Shanghai",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaShanghai;1"
           },
           {
             "name": "AsiaSingapore",
             "displayName": "Asia/Singapore",
             "description": "Singapore, peninsular Malaysia",
-            "enumValue": "Asia/Singapore"
+            "enumValue": "Asia/Singapore",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaSingapore;1"
           },
           {
             "name": "AsiaTaipei",
             "displayName": "Asia/Taipei",
             "description": "",
-            "enumValue": "Asia/Taipei"
+            "enumValue": "Asia/Taipei",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaTaipei;1"
           },
           {
             "name": "AsiaTokyo",
             "displayName": "Asia/Tokyo",
             "description": "",
-            "enumValue": "Asia/Tokyo"
+            "enumValue": "Asia/Tokyo",
+            "@id": "dtmi:com:syyclops:TimeZone:AsiaTokyo;1"
           },
           {
             "name": "AtlanticReykjavik",
             "displayName": "Atlantic/Reykjavik",
             "description": "",
-            "enumValue": "Atlantic/Reykjavik"
+            "enumValue": "Atlantic/Reykjavik",
+            "@id": "dtmi:com:syyclops:TimeZone:AtlanticReykjavik;1"
           },
           {
             "name": "AustraliaAdelaide",
             "displayName": "Australia/Adelaide",
             "description": "South Australia",
-            "enumValue": "Australia/Adelaide"
+            "enumValue": "Australia/Adelaide",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaAdelaide;1"
           },
           {
             "name": "AustraliaBrisbane",
             "displayName": "Australia/Brisbane",
             "description": "Queensland (most areas)",
-            "enumValue": "Australia/Brisbane"
+            "enumValue": "Australia/Brisbane",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaBrisbane;1"
           },
           {
             "name": "AustraliaDarwin",
             "displayName": "Australia/Darwin",
             "description": "Northern Territory",
-            "enumValue": "Australia/Darwin"
+            "enumValue": "Australia/Darwin",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaDarwin;1"
           },
           {
             "name": "AustraliaHobart",
             "displayName": "Australia/Hobart",
             "description": "Tasmania",
-            "enumValue": "Australia/Hobart"
+            "enumValue": "Australia/Hobart",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaHobart;1"
           },
           {
             "name": "AustraliaMelbourne",
             "displayName": "Australia/Melbourne",
             "description": "Victoria",
-            "enumValue": "Australia/Melbourne"
+            "enumValue": "Australia/Melbourne",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaMelbourne;1"
           },
           {
             "name": "AustraliaPerth",
             "displayName": "Australia/Perth",
             "description": "Western Australia (most areas)",
-            "enumValue": "Australia/Perth"
+            "enumValue": "Australia/Perth",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaPerth;1"
           },
           {
             "name": "AustraliaSydney",
             "displayName": "Australia/Sydney",
             "description": "New South Wales (most areas)",
-            "enumValue": "Australia/Sydney"
+            "enumValue": "Australia/Sydney",
+            "@id": "dtmi:com:syyclops:TimeZone:AustraliaSydney;1"
           },
           {
             "name": "EtcGMT",
             "displayName": "Etc/GMT",
             "description": "",
-            "enumValue": "Etc/GMT"
+            "enumValue": "Etc/GMT",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT;1"
           },
           {
             "name": "EtcGMT_1",
             "displayName": "Etc/GMT+1",
             "description": "",
-            "enumValue": "Etc/GMT+1"
+            "enumValue": "Etc/GMT+1",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_1;1"
           },
           {
             "name": "EtcGMT_10",
             "displayName": "Etc/GMT+10",
             "description": "",
-            "enumValue": "Etc/GMT+10"
+            "enumValue": "Etc/GMT+10",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_10;1"
           },
           {
             "name": "EtcGMT_11",
             "displayName": "Etc/GMT+11",
             "description": "",
-            "enumValue": "Etc/GMT+11"
+            "enumValue": "Etc/GMT+11",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_11;1"
           },
           {
             "name": "EtcGMT_12",
             "displayName": "Etc/GMT+12",
             "description": "",
-            "enumValue": "Etc/GMT+12"
+            "enumValue": "Etc/GMT+12",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_12;1"
           },
           {
             "name": "EtcGMT_2",
             "displayName": "Etc/GMT+2",
             "description": "",
-            "enumValue": "Etc/GMT+2"
+            "enumValue": "Etc/GMT+2",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_2;1"
           },
           {
             "name": "EtcGMT_3",
             "displayName": "Etc/GMT+3",
             "description": "",
-            "enumValue": "Etc/GMT+3"
+            "enumValue": "Etc/GMT+3",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_3;1"
           },
           {
             "name": "EtcGMT_4",
             "displayName": "Etc/GMT+4",
             "description": "",
-            "enumValue": "Etc/GMT+4"
+            "enumValue": "Etc/GMT+4",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_4;1"
           },
           {
             "name": "EtcGMT_5",
             "displayName": "Etc/GMT+5",
             "description": "",
-            "enumValue": "Etc/GMT+5"
+            "enumValue": "Etc/GMT+5",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_5;1"
           },
           {
             "name": "EtcGMT_6",
             "displayName": "Etc/GMT+6",
             "description": "",
-            "enumValue": "Etc/GMT+6"
+            "enumValue": "Etc/GMT+6",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_6;1"
           },
           {
             "name": "EtcGMT_7",
             "displayName": "Etc/GMT+7",
             "description": "",
-            "enumValue": "Etc/GMT+7"
+            "enumValue": "Etc/GMT+7",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_7;1"
           },
           {
             "name": "EtcGMT_8",
             "displayName": "Etc/GMT+8",
             "description": "",
-            "enumValue": "Etc/GMT+8"
+            "enumValue": "Etc/GMT+8",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_8;1"
           },
           {
             "name": "EtcGMT_9",
             "displayName": "Etc/GMT+9",
             "description": "",
-            "enumValue": "Etc/GMT+9"
+            "enumValue": "Etc/GMT+9",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT_9;1"
           },
           {
             "name": "EtcGMT1",
             "displayName": "Etc/GMT-1",
             "description": "",
-            "enumValue": "Etc/GMT-1"
+            "enumValue": "Etc/GMT-1",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT1;1"
           },
           {
             "name": "EtcGMT10",
             "displayName": "Etc/GMT-10",
             "description": "",
-            "enumValue": "Etc/GMT-10"
+            "enumValue": "Etc/GMT-10",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT10;1"
           },
           {
             "name": "EtcGMT11",
             "displayName": "Etc/GMT-11",
             "description": "",
-            "enumValue": "Etc/GMT-11"
+            "enumValue": "Etc/GMT-11",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT11;1"
           },
           {
             "name": "EtcGMT12",
             "displayName": "Etc/GMT-12",
             "description": "",
-            "enumValue": "Etc/GMT-12"
+            "enumValue": "Etc/GMT-12",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT12;1"
           },
           {
             "name": "EtcGMT13",
             "displayName": "Etc/GMT-13",
             "description": "",
-            "enumValue": "Etc/GMT-13"
+            "enumValue": "Etc/GMT-13",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT13;1"
           },
           {
             "name": "EtcGMT14",
             "displayName": "Etc/GMT-14",
             "description": "",
-            "enumValue": "Etc/GMT-14"
+            "enumValue": "Etc/GMT-14",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT14;1"
           },
           {
             "name": "EtcGMT2",
             "displayName": "Etc/GMT-2",
             "description": "",
-            "enumValue": "Etc/GMT-2"
+            "enumValue": "Etc/GMT-2",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT2;1"
           },
           {
             "name": "EtcGMT3",
             "displayName": "Etc/GMT-3",
             "description": "",
-            "enumValue": "Etc/GMT-3"
+            "enumValue": "Etc/GMT-3",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT3;1"
           },
           {
             "name": "EtcGMT4",
             "displayName": "Etc/GMT-4",
             "description": "",
-            "enumValue": "Etc/GMT-4"
+            "enumValue": "Etc/GMT-4",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT4;1"
           },
           {
             "name": "EtcGMT5",
             "displayName": "Etc/GMT-5",
             "description": "",
-            "enumValue": "Etc/GMT-5"
+            "enumValue": "Etc/GMT-5",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT5;1"
           },
           {
             "name": "EtcGMT6",
             "displayName": "Etc/GMT-6",
             "description": "",
-            "enumValue": "Etc/GMT-6"
+            "enumValue": "Etc/GMT-6",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT6;1"
           },
           {
             "name": "EtcGMT7",
             "displayName": "Etc/GMT-7",
             "description": "",
-            "enumValue": "Etc/GMT-7"
+            "enumValue": "Etc/GMT-7",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT7;1"
           },
           {
             "name": "EtcGMT8",
             "displayName": "Etc/GMT-8",
             "description": "",
-            "enumValue": "Etc/GMT-8"
+            "enumValue": "Etc/GMT-8",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT8;1"
           },
           {
             "name": "EtcGMT9",
             "displayName": "Etc/GMT-9",
             "description": "",
-            "enumValue": "Etc/GMT-9"
+            "enumValue": "Etc/GMT-9",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcGMT9;1"
           },
           {
             "name": "EtcUTC",
             "displayName": "Etc/UTC",
             "description": "",
-            "enumValue": "Etc/UTC"
+            "enumValue": "Etc/UTC",
+            "@id": "dtmi:com:syyclops:TimeZone:EtcUTC;1"
           },
           {
             "name": "EuropeAmsterdam",
             "displayName": "Europe/Amsterdam",
             "description": "",
-            "enumValue": "Europe/Amsterdam"
+            "enumValue": "Europe/Amsterdam",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeAmsterdam;1"
           },
           {
             "name": "EuropeAthens",
             "displayName": "Europe/Athens",
             "description": "",
-            "enumValue": "Europe/Athens"
+            "enumValue": "Europe/Athens",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeAthens;1"
           },
           {
             "name": "EuropeBerlin",
             "displayName": "Europe/Berlin",
             "description": "Germany (most areas)",
-            "enumValue": "Europe/Berlin"
+            "enumValue": "Europe/Berlin",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeBerlin;1"
           },
           {
             "name": "EuropeBrussels",
             "displayName": "Europe/Brussels",
             "description": "",
-            "enumValue": "Europe/Brussels"
+            "enumValue": "Europe/Brussels",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeBrussels;1"
           },
           {
             "name": "EuropeBudapest",
             "displayName": "Europe/Budapest",
             "description": "",
-            "enumValue": "Europe/Budapest"
+            "enumValue": "Europe/Budapest",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeBudapest;1"
           },
           {
             "name": "EuropeCopenhagen",
             "displayName": "Europe/Copenhagen",
             "description": "",
-            "enumValue": "Europe/Copenhagen"
+            "enumValue": "Europe/Copenhagen",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeCopenhagen;1"
           },
           {
             "name": "EuropeDublin",
             "displayName": "Europe/Dublin",
             "description": "",
-            "enumValue": "Europe/Dublin"
+            "enumValue": "Europe/Dublin",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeDublin;1"
           },
           {
             "name": "EuropeHelsinki",
             "displayName": "Europe/Helsinki",
             "description": "",
-            "enumValue": "Europe/Helsinki"
+            "enumValue": "Europe/Helsinki",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeHelsinki;1"
           },
           {
             "name": "EuropeIstanbul",
             "displayName": "Europe/Istanbul",
             "description": "",
-            "enumValue": "Europe/Istanbul"
+            "enumValue": "Europe/Istanbul",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeIstanbul;1"
           },
           {
             "name": "EuropeLisbon",
             "displayName": "Europe/Lisbon",
             "description": "Portugal (mainland)",
-            "enumValue": "Europe/Lisbon"
+            "enumValue": "Europe/Lisbon",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeLisbon;1"
           },
           {
             "name": "EuropeLondon",
             "displayName": "Europe/London",
             "description": "",
-            "enumValue": "Europe/London"
+            "enumValue": "Europe/London",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeLondon;1"
           },
           {
             "name": "EuropeMadrid",
             "displayName": "Europe/Madrid",
             "description": "Spain (mainland)",
-            "enumValue": "Europe/Madrid"
+            "enumValue": "Europe/Madrid",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeMadrid;1"
           },
           {
             "name": "EuropeMinsk",
             "displayName": "Europe/Minsk",
             "description": "",
-            "enumValue": "Europe/Minsk"
+            "enumValue": "Europe/Minsk",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeMinsk;1"
           },
           {
             "name": "EuropeMoscow",
             "displayName": "Europe/Moscow",
             "description": "MSK+00 - Moscow area",
-            "enumValue": "Europe/Moscow"
+            "enumValue": "Europe/Moscow",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeMoscow;1"
           },
           {
             "name": "EuropeParis",
             "displayName": "Europe/Paris",
             "description": "",
-            "enumValue": "Europe/Paris"
+            "enumValue": "Europe/Paris",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeParis;1"
           },
           {
             "name": "EuropePrague",
             "displayName": "Europe/Prague",
             "description": "",
-            "enumValue": "Europe/Prague"
+            "enumValue": "Europe/Prague",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropePrague;1"
           },
           {
             "name": "EuropeRome",
             "displayName": "Europe/Rome",
             "description": "",
-            "enumValue": "Europe/Rome"
+            "enumValue": "Europe/Rome",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeRome;1"
           },
           {
             "name": "EuropeStockholm",
             "displayName": "Europe/Stockholm",
             "description": "",
-            "enumValue": "Europe/Stockholm"
+            "enumValue": "Europe/Stockholm",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeStockholm;1"
           },
           {
             "name": "EuropeVienna",
             "displayName": "Europe/Vienna",
             "description": "",
-            "enumValue": "Europe/Vienna"
+            "enumValue": "Europe/Vienna",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeVienna;1"
           },
           {
             "name": "EuropeZurich",
             "displayName": "Europe/Zurich",
             "description": "Swiss time",
-            "enumValue": "Europe/Zurich"
+            "enumValue": "Europe/Zurich",
+            "@id": "dtmi:com:syyclops:TimeZone:EuropeZurich;1"
           },
           {
             "name": "PacificAuckland",
             "displayName": "Pacific/Auckland",
             "description": "New Zealand time",
-            "enumValue": "Pacific/Auckland"
+            "enumValue": "Pacific/Auckland",
+            "@id": "dtmi:com:syyclops:TimeZone:PacificAuckland;1"
           },
           {
             "name": "PacificHonolulu",
             "displayName": "Pacific/Honolulu",
             "description": "Hawaii",
-            "enumValue": "Pacific/Honolulu"
+            "enumValue": "Pacific/Honolulu",
+            "@id": "dtmi:com:syyclops:TimeZone:PacificHonolulu;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:TimeZone:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:TimeZone:name;1"
     }
   ],
   "@context": [

@@ -19,24 +19,30 @@
         "enumValues": [
           {
             "enumValue": "Steam",
-            "name": "Steam"
+            "name": "Steam",
+            "@id": "dtmi:com:syyclops:HVACHeatingMethod:Steam;1"
           },
           {
             "enumValue": "HotWater",
-            "name": "HotWater"
+            "name": "HotWater",
+            "@id": "dtmi:com:syyclops:HVACHeatingMethod:HotWater;1"
           },
           {
             "enumValue": "Gas",
-            "name": "Gas"
+            "name": "Gas",
+            "@id": "dtmi:com:syyclops:HVACHeatingMethod:Gas;1"
           },
           {
             "enumValue": "Electric",
-            "name": "Electric"
+            "name": "Electric",
+            "@id": "dtmi:com:syyclops:HVACHeatingMethod:Electric;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:HVACHeatingMethod:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:type;1"
     },
     {
       "@type": [
@@ -49,7 +55,8 @@
       "name": "outsideDiameter",
       "schema": "double",
       "unit": "millimetre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:outsideDiameter;1"
     },
     {
       "@type": [
@@ -64,7 +71,8 @@
       "annotates": "outsideDiameter",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:outsideDiameterUnit;1"
     },
     {
       "@type": "Property",
@@ -74,7 +82,8 @@
       },
       "writable": true,
       "schema": "integer",
-      "comment": "Coil row configuration"
+      "comment": "Coil row configuration",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:rows;1"
     },
     {
       "@type": "Property",
@@ -84,7 +93,8 @@
       },
       "writable": true,
       "schema": "double",
-      "comment": "Fins per inch"
+      "comment": "Fins per inch",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:finsPerInch;1"
     },
     {
       "@type": [
@@ -96,7 +106,8 @@
         "en": "Design Entering Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designEnteringWaterTemperature;1"
     },
     {
       "@type": [
@@ -110,7 +121,8 @@
       "name": "designEnteringWaterTemperatureUnit",
       "annotates": "designEnteringWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designEnteringWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -122,7 +134,8 @@
         "en": "Design Leaving Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designLeavingWaterTemperature;1"
     },
     {
       "@type": [
@@ -136,7 +149,8 @@
       "name": "designLeavingWaterTemperatureUnit",
       "annotates": "designLeavingWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designLeavingWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -148,7 +162,8 @@
         "en": "Design Delta Water Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designDeltaWaterTemperature;1"
     },
     {
       "@type": [
@@ -162,7 +177,8 @@
       "name": "designDeltaWaterTemperatureUnit",
       "annotates": "designDeltaWaterTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designDeltaWaterTemperatureUnit;1"
     },
     {
       "@type": [
@@ -174,7 +190,8 @@
         "en": "Design Entering Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designEnteringAirTemperature;1"
     },
     {
       "@type": [
@@ -188,7 +205,8 @@
       "name": "designEnteringAirTemperatureUnit",
       "annotates": "designEnteringAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designEnteringAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -200,7 +218,8 @@
         "en": "Design Leaving Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designLeavingAirTemperature;1"
     },
     {
       "@type": [
@@ -214,7 +233,8 @@
       "name": "designLeavingAirTemperatureUnit",
       "annotates": "designLeavingAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designLeavingAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -227,7 +247,8 @@
       "name": "designFlow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designFlow;1"
     },
     {
       "@type": [
@@ -242,7 +263,8 @@
       "annotates": "designFlow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designFlowUnit;1"
     },
     {
       "@type": [
@@ -255,7 +277,8 @@
       "name": "designMassFlow",
       "schema": "double",
       "unit": "massPoundPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designMassFlow;1"
     },
     {
       "@type": [
@@ -270,7 +293,8 @@
       "annotates": "designMassFlow",
       "overrides": "unit",
       "schema": "MassFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designMassFlowUnit;1"
     },
     {
       "@type": [
@@ -283,7 +307,8 @@
       "name": "designPressureDrop",
       "schema": "double",
       "unit": "kilopascal",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designPressureDrop;1"
     },
     {
       "@type": [
@@ -298,7 +323,8 @@
       "annotates": "designPressureDrop",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:HVACHeatingMethod:designPressureDropUnit;1"
     }
   ],
   "@context": [

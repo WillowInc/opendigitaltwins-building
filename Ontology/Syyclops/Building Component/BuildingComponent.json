@@ -19,7 +19,8 @@
       },
       "maxMultiplicity": 1,
       "name": "isPartOf",
-      "target": "dtmi:com:syyclops:BuildingComponent;1"
+      "target": "dtmi:com:syyclops:BuildingComponent;1",
+      "@id": "dtmi:com:syyclops:BuildingComponent:isPartOf;1"
     },
     {
       "@type": "Relationship",
@@ -31,7 +32,8 @@
       },
       "maxMultiplicity": 1,
       "name": "componentOfBuilding",
-      "target": "dtmi:com:syyclops:Building;1"
+      "target": "dtmi:com:syyclops:Building;1",
+      "@id": "dtmi:com:syyclops:BuildingComponent:componentOfBuilding;1"
     },
     {
       "@type": "Relationship",
@@ -39,7 +41,8 @@
       "displayName": {
         "en": "has document"
       },
-      "target": "dtmi:com:syyclops:Document;1"
+      "target": "dtmi:com:syyclops:Document;1",
+      "@id": "dtmi:com:syyclops:BuildingComponent:hasDocument;1"
     },
     {
       "@type": "Relationship",
@@ -50,7 +53,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:BuildingComponent:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -58,7 +62,8 @@
       "displayName": {
         "en": "included in"
       },
-      "target": "dtmi:com:syyclops:Collection;1"
+      "target": "dtmi:com:syyclops:Collection;1",
+      "@id": "dtmi:com:syyclops:BuildingComponent:includedIn;1"
     },
     {
       "@type": "Relationship",
@@ -66,7 +71,8 @@
         "en": "located in"
       },
       "name": "locatedIn",
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:BuildingComponent:locatedIn;1"
     },
     {
       "@type": "Relationship",
@@ -84,7 +90,8 @@
           "writable": true,
           "schema": "dtmi:com:syyclops:BuildingComponentIsFedBySubstances;1"
         }
-      ]
+      ],
+      "@id": "dtmi:com:syyclops:BuildingComponent:isFedBy;1"
     },
     {
       "@type": "Property",
@@ -96,14 +103,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "tagName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:tagName;1"
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
-        }
+          "schema": "boolean",
+          "@id": "dtmi:com:syyclops:BuildingComponent:tagValue;1"
+        },
+        "@id": "dtmi:com:syyclops:BuildingComponent:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BuildingComponent:customTags;1"
     },
     {
       "@type": "Property",
@@ -115,14 +126,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:BuildingComponent:MS2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BuildingComponent:externalIds;1"
     },
     {
       "@type": "Property",
@@ -133,8 +148,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:BuildingComponentMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:BuildingComponentMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:BuildingComponent:AS3;1"
+      },
+      "@id": "dtmi:com:syyclops:BuildingComponent:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -143,7 +160,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:BuildingComponent:name;1"
     },
     {
       "@type": "Property",
@@ -153,7 +171,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)"
+      "comment": "Reference for geometry rendering (i.e. ForgeViewerID)",
+      "@id": "dtmi:com:syyclops:BuildingComponent:geometryViewerID;1"
     },
     {
       "@type": "Property",
@@ -163,7 +182,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference for displaying in spatial context"
+      "comment": "Reference for displaying in spatial context",
+      "@id": "dtmi:com:syyclops:BuildingComponent:geometrySpatialReference;1"
     },
     {
       "@type": "Property",
@@ -173,7 +193,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference to geometry source (i.e. Revit GUID)"
+      "comment": "Reference to geometry source (i.e. Revit GUID)",
+      "@id": "dtmi:com:syyclops:BuildingComponent:geometryExternalID;1"
     },
     {
       "@type": "Property",
@@ -182,7 +203,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:BuildingComponent:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -191,7 +213,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:BuildingComponent:externalID;1"
     },
     {
       "@type": "Property",
@@ -200,7 +223,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:BuildingComponent:description;1"
     },
     {
       "@type": "Property",
@@ -209,7 +233,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:BuildingComponent:siteID;1"
     },
     {
       "@type": "Property",
@@ -226,45 +251,53 @@
             "displayName": {
               "en": "MasterFormat"
             },
-            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:BuildingComponent:masterFormat;1"
           },
           {
             "name": "omniClass",
             "displayName": {
               "en": "OmniClass"
             },
-            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:BuildingComponent:omniClass;1"
           },
           {
             "name": "uniFormat",
             "displayName": {
               "en": "UniFormat"
             },
-            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:BuildingComponent:uniFormat;1"
           },
           {
             "name": "uniclass",
             "displayName": {
               "en": "Uniclass"
             },
-            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:BuildingComponent:uniclass;1"
           },
           {
             "name": "projectHaystack",
             "displayName": {
               "en": "Project Haystack"
             },
-            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:BuildingComponent:projectHaystack;1"
           },
           {
             "name": "brickSchema",
             "displayName": {
               "en": "Brick Schema"
             },
-            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1"
+            "schema": "dtmi:com:syyclops:BuildingComponentAlternateClassificationObject;1",
+            "@id": "dtmi:com:syyclops:BuildingComponent:brickSchema;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:BuildingComponent:OS4;1"
+      },
+      "@id": "dtmi:com:syyclops:BuildingComponent:alternateClassification;1"
     },
     {
       "@type": "Property",
@@ -276,7 +309,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -284,15 +318,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:BuildingComponent:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:BuildingComponent:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:BuildingComponent:MS6;1"
+          },
+          "@id": "dtmi:com:syyclops:BuildingComponent:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:BuildingComponent:MS5;1"
+      },
+      "@id": "dtmi:com:syyclops:BuildingComponent:customProperties;1"
     }
   ],
   "schemas": [
@@ -303,143 +343,178 @@
       "enumValues": [
         {
           "enumValue": "MakeupWater",
-          "name": "MakeupWater"
+          "name": "MakeupWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:MakeupWater;1"
         },
         {
           "enumValue": "Light",
-          "name": "Light"
+          "name": "Light",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Light;1"
         },
         {
           "enumValue": "IrrigationWater",
-          "name": "IrrigationWater"
+          "name": "IrrigationWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:IrrigationWater;1"
         },
         {
           "enumValue": "HotWater",
-          "name": "HotWater"
+          "name": "HotWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:HotWater;1"
         },
         {
           "enumValue": "HotDomesticWater",
-          "name": "HotDomesticWater"
+          "name": "HotDomesticWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:HotDomesticWater;1"
         },
         {
           "enumValue": "GreaseExhaustAir",
-          "name": "GreaseExhaustAir"
+          "name": "GreaseExhaustAir",
+          "@id": "dtmi:com:syyclops:BuildingComponent:GreaseExhaustAir;1"
         },
         {
           "enumValue": "Gasoline",
-          "name": "Gasoline"
+          "name": "Gasoline",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Gasoline;1"
         },
         {
           "enumValue": "FuelOil",
-          "name": "FuelOil"
+          "name": "FuelOil",
+          "@id": "dtmi:com:syyclops:BuildingComponent:FuelOil;1"
         },
         {
           "enumValue": "Freight",
-          "name": "Freight"
+          "name": "Freight",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Freight;1"
         },
         {
           "enumValue": "ExhaustAir",
-          "name": "ExhaustAir"
+          "name": "ExhaustAir",
+          "@id": "dtmi:com:syyclops:BuildingComponent:ExhaustAir;1"
         },
         {
           "enumValue": "Ethernet",
-          "name": "Ethernet"
+          "name": "Ethernet",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Ethernet;1"
         },
         {
           "enumValue": "DriveElec",
-          "name": "DriveElec"
+          "name": "DriveElec",
+          "@id": "dtmi:com:syyclops:BuildingComponent:DriveElec;1"
         },
         {
           "enumValue": "Diesel",
-          "name": "Diesel"
+          "name": "Diesel",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Diesel;1"
         },
         {
           "enumValue": "DCElec",
-          "name": "DCElec"
+          "name": "DCElec",
+          "@id": "dtmi:com:syyclops:BuildingComponent:DCElec;1"
         },
         {
           "enumValue": "CondenserWater",
-          "name": "CondenserWater"
+          "name": "CondenserWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:CondenserWater;1"
         },
         {
           "enumValue": "Condensate",
-          "name": "Condensate"
+          "name": "Condensate",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Condensate;1"
         },
         {
           "enumValue": "ColdDomesticWater",
-          "name": "ColdDomesticWater"
+          "name": "ColdDomesticWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:ColdDomesticWater;1"
         },
         {
           "enumValue": "ChilledWater",
-          "name": "ChilledWater"
+          "name": "ChilledWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:ChilledWater;1"
         },
         {
           "enumValue": "BlowdownWater",
-          "name": "BlowdownWater"
+          "name": "BlowdownWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:BlowdownWater;1"
         },
         {
           "enumValue": "Air",
-          "name": "Air"
+          "name": "Air",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Air;1"
         },
         {
           "enumValue": "ACElec",
-          "name": "ACElec"
+          "name": "ACElec",
+          "@id": "dtmi:com:syyclops:BuildingComponent:ACElec;1"
         },
         {
           "enumValue": "NaturalGas",
-          "name": "NaturalGas"
+          "name": "NaturalGas",
+          "@id": "dtmi:com:syyclops:BuildingComponent:NaturalGas;1"
         },
         {
           "enumValue": "NonPotableDomesticWater",
-          "name": "NonPotableDomesticWater"
+          "name": "NonPotableDomesticWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:NonPotableDomesticWater;1"
         },
         {
           "enumValue": "OutsideAir",
-          "name": "OutsideAir"
+          "name": "OutsideAir",
+          "@id": "dtmi:com:syyclops:BuildingComponent:OutsideAir;1"
         },
         {
           "enumValue": "Propane",
-          "name": "Propane"
+          "name": "Propane",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Propane;1"
         },
         {
           "enumValue": "RecircHotDomesticWater",
-          "name": "RecircHotDomesticWater"
+          "name": "RecircHotDomesticWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:RecircHotDomesticWater;1"
         },
         {
           "enumValue": "Refrig",
-          "name": "Refrig"
+          "name": "Refrig",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Refrig;1"
         },
         {
           "enumValue": "ReturnAir",
-          "name": "ReturnAir"
+          "name": "ReturnAir",
+          "@id": "dtmi:com:syyclops:BuildingComponent:ReturnAir;1"
         },
         {
           "enumValue": "SprinklerWater",
-          "name": "SprinklerWater"
+          "name": "SprinklerWater",
+          "@id": "dtmi:com:syyclops:BuildingComponent:SprinklerWater;1"
         },
         {
           "enumValue": "Steam",
-          "name": "Steam"
+          "name": "Steam",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Steam;1"
         },
         {
           "enumValue": "StormDrainage",
-          "name": "StormDrainage"
+          "name": "StormDrainage",
+          "@id": "dtmi:com:syyclops:BuildingComponent:StormDrainage;1"
         },
         {
           "enumValue": "SupplyAir",
-          "name": "SupplyAir"
+          "name": "SupplyAir",
+          "@id": "dtmi:com:syyclops:BuildingComponent:SupplyAir;1"
         },
         {
           "enumValue": "TransferAir",
-          "name": "TransferAir"
+          "name": "TransferAir",
+          "@id": "dtmi:com:syyclops:BuildingComponent:TransferAir;1"
         },
         {
           "enumValue": "WasteVentDrainage",
-          "name": "WasteVentDrainage"
+          "name": "WasteVentDrainage",
+          "@id": "dtmi:com:syyclops:BuildingComponent:WasteVentDrainage;1"
         },
         {
           "enumValue": "Water",
-          "name": "Water"
+          "name": "Water",
+          "@id": "dtmi:com:syyclops:BuildingComponent:Water;1"
         }
       ],
       "displayName": {
@@ -455,14 +530,16 @@
           "displayName": {
             "en": "Version"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:version;1"
         },
         {
           "name": "code",
           "displayName": {
             "en": "Code"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:code;1"
         }
       ],
       "displayName": {
@@ -484,7 +561,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:exactType;1"
         },
         {
           "name": "scope",
@@ -494,7 +572,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:scope;1"
         },
         {
           "name": "scopeId",
@@ -504,7 +583,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:scopeId;1"
         },
         {
           "name": "value",
@@ -514,7 +594,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:BuildingComponent:value;1"
         },
         {
           "name": "dateCreated",
@@ -524,7 +605,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:BuildingComponent:dateCreated;1"
         }
       ],
       "displayName": {

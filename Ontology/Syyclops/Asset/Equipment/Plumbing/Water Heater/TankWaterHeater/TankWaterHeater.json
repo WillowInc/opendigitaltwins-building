@@ -19,7 +19,8 @@
       "name": "tankCapacity",
       "schema": "double",
       "unit": "litre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TankWaterHeater:tankCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "tankCapacity",
       "overrides": "unit",
       "schema": "VolumeUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TankWaterHeater:tankCapacityUnit;1"
     }
   ],
   "@context": [

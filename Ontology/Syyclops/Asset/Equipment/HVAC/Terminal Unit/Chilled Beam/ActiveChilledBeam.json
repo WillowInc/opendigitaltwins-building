@@ -19,7 +19,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       "name": "primarySensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:primarySensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "primarySensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:primarySensibleCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -75,7 +79,8 @@
       "name": "secondarySensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:secondarySensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -90,7 +95,8 @@
       "annotates": "secondarySensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:secondarySensibleCoolingCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -98,7 +104,8 @@
         "en": "heating method"
       },
       "name": "heatingMethod",
-      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACHeatingMethod;1",
+      "@id": "dtmi:com:syyclops:ActiveChilledBeam:heatingMethod;1"
     }
   ],
   "@context": [

@@ -19,7 +19,8 @@
       },
       "name": "refrigerantType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:refrigerantType;1"
     },
     {
       "@type": "Property",
@@ -32,28 +33,35 @@
         "enumValues": [
           {
             "enumValue": "Scroll",
-            "name": "Scroll"
+            "name": "Scroll",
+            "@id": "dtmi:com:syyclops:Compressor:Scroll;1"
           },
           {
             "enumValue": "Screw",
-            "name": "Screw"
+            "name": "Screw",
+            "@id": "dtmi:com:syyclops:Compressor:Screw;1"
           },
           {
             "enumValue": "Reciprocol",
-            "name": "Reciprocol"
+            "name": "Reciprocol",
+            "@id": "dtmi:com:syyclops:Compressor:Reciprocol;1"
           },
           {
             "enumValue": "Centrifugal",
-            "name": "Centrifugal"
+            "name": "Centrifugal",
+            "@id": "dtmi:com:syyclops:Compressor:Centrifugal;1"
           },
           {
             "enumValue": "Absorption",
-            "name": "Absorption"
+            "name": "Absorption",
+            "@id": "dtmi:com:syyclops:Compressor:Absorption;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:Compressor:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:type;1"
     },
     {
       "@type": [
@@ -66,7 +74,8 @@
       "name": "designMassFlow",
       "schema": "double",
       "unit": "kilogramPerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:designMassFlow;1"
     },
     {
       "@type": [
@@ -81,7 +90,8 @@
       "annotates": "designMassFlow",
       "overrides": "unit",
       "schema": "MassFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:designMassFlowUnit;1"
     },
     {
       "@type": [
@@ -94,7 +104,8 @@
       "name": "motorPower",
       "schema": "double",
       "unit": "horsepower",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:motorPower;1"
     },
     {
       "@type": [
@@ -109,7 +120,8 @@
       "annotates": "motorPower",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:motorPowerUnit;1"
     },
     {
       "@type": [
@@ -125,7 +137,8 @@
       "name": "ratedLoadCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:ratedLoadCurrent;1"
     },
     {
       "@type": [
@@ -140,7 +153,8 @@
       "annotates": "ratedLoadCurrent",
       "overrides": "unit",
       "schema": "CurrentUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:ratedLoadCurrentUnit;1"
     },
     {
       "@type": [
@@ -156,7 +170,8 @@
       "name": "maximumContinuousCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:maximumContinuousCurrent;1"
     },
     {
       "@type": [
@@ -171,7 +186,8 @@
       "annotates": "maximumContinuousCurrent",
       "overrides": "unit",
       "schema": "CurrentUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:maximumContinuousCurrentUnit;1"
     },
     {
       "@type": [
@@ -187,7 +203,8 @@
       "name": "lockedRotorCurrent",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:lockedRotorCurrent;1"
     },
     {
       "@type": [
@@ -202,7 +219,8 @@
       "annotates": "lockedRotorCurrent",
       "overrides": "unit",
       "schema": "CurrentUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Compressor:lockedRotorCurrentUnit;1"
     }
   ],
   "@context": [

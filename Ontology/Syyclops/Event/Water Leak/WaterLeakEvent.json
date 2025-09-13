@@ -19,7 +19,8 @@
       "name": "leakeRate",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WaterLeakEvent:leakeRate;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "leakRate",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:WaterLeakEvent:leakRateUnit;1"
     }
   ],
   "@context": [

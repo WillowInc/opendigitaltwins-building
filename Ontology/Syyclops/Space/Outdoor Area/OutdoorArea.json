@@ -17,7 +17,8 @@
         "en": "address"
       },
       "name": "address",
-      "schema": "dtmi:com:syyclops:Address;1"
+      "schema": "dtmi:com:syyclops:Address;1",
+      "@id": "dtmi:com:syyclops:OutdoorArea:address;1"
     },
     {
       "@type": "Property",
@@ -26,7 +27,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:OutdoorArea:type;1"
     },
     {
       "@type": "Component",
@@ -34,7 +36,8 @@
       "displayName": {
         "en": "Time Zone"
       },
-      "schema": "dtmi:com:syyclops:TimeZone;1"
+      "schema": "dtmi:com:syyclops:TimeZone;1",
+      "@id": "dtmi:com:syyclops:OutdoorArea:timeZone;1"
     },
     {
       "@type": "Property",
@@ -52,20 +55,23 @@
             "displayName": {
               "en": "Latitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:OutdoorArea:latitude;1"
           },
           {
             "name": "longitude",
             "displayName": {
               "en": "Longitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:OutdoorArea:longitude;1"
           }
         ],
         "displayName": {
           "en": "Outdoor Area Coordinates"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:OutdoorArea:coordinates;1"
     },
     {
       "@type": "Property",
@@ -74,7 +80,8 @@
         "en": "Construction Start Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:OutdoorArea:constructionStartDate;1"
     },
     {
       "@type": "Property",
@@ -83,7 +90,8 @@
         "en": "Construction Completion Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:OutdoorArea:constructionCompletionDate;1"
     },
     {
       "@type": "Property",
@@ -92,7 +100,8 @@
         "en": "Date Opened"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:OutdoorArea:dateOpened;1"
     },
     {
       "@type": "Property",
@@ -104,7 +113,8 @@
         "en": "The stage in the life of the building or structure such as design, construction, or operational."
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:OutdoorAreaLifecyclePhase;1"
+      "schema": "dtmi:com:syyclops:OutdoorAreaLifecyclePhase;1",
+      "@id": "dtmi:com:syyclops:OutdoorArea:lifecyclePhase;1"
     }
   ],
   "schemas": [
@@ -115,15 +125,18 @@
       "enumValues": [
         {
           "enumValue": "Design",
-          "name": "Design"
+          "name": "Design",
+          "@id": "dtmi:com:syyclops:OutdoorArea:Design;1"
         },
         {
           "enumValue": "Construction",
-          "name": "Construction"
+          "name": "Construction",
+          "@id": "dtmi:com:syyclops:OutdoorArea:Construction;1"
         },
         {
           "enumValue": "Operational",
-          "name": "Operational"
+          "name": "Operational",
+          "@id": "dtmi:com:syyclops:OutdoorArea:Operational;1"
         }
       ],
       "displayName": {

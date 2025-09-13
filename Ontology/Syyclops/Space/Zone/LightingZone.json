@@ -28,7 +28,8 @@
           "schema": "dtmi:com:syyclops:LightingZoneIsFedBySubstances;1",
           "comment": "Luminaire"
         }
-      ]
+      ],
+      "@id": "dtmi:com:syyclops:LightingZone:isFedBy;1"
     }
   ],
   "schemas": [
@@ -42,7 +43,8 @@
           "displayName": {
             "en": "Light"
           },
-          "enumValue": "Light"
+          "enumValue": "Light",
+          "@id": "dtmi:com:syyclops:LightingZone:Light;1"
         }
       ],
       "displayName": {

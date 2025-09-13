@@ -17,7 +17,8 @@
         "en": "address"
       },
       "name": "address",
-      "schema": "dtmi:com:syyclops:Address;1"
+      "schema": "dtmi:com:syyclops:Address;1",
+      "@id": "dtmi:com:syyclops:Building:address;1"
     },
     {
       "@type": "Component",
@@ -25,7 +26,8 @@
         "en": "Electricity Price Rate"
       },
       "name": "electricityPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Building:electricityPriceRate;1"
     },
     {
       "@type": "Component",
@@ -33,7 +35,8 @@
         "en": "Electricity Emission Factor"
       },
       "name": "electricityEmissionFactor",
-      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1"
+      "schema": "dtmi:com:syyclops:UtilityEmissionFactor;1",
+      "@id": "dtmi:com:syyclops:Building:electricityEmissionFactor;1"
     },
     {
       "@type": "Component",
@@ -41,7 +44,8 @@
         "en": "Natural Gas Price Rate"
       },
       "name": "naturalGasPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Building:naturalGasPriceRate;1"
     },
     {
       "@type": "Component",
@@ -49,7 +53,8 @@
         "en": "Chilled Water Price Rate"
       },
       "name": "chilledWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Building:chilledWaterPriceRate;1"
     },
     {
       "@type": "Component",
@@ -57,7 +62,8 @@
         "en": "Steam Price Rate"
       },
       "name": "steamPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Building:steamPriceRate;1"
     },
     {
       "@type": "Component",
@@ -65,7 +71,8 @@
         "en": "Domestic Water Price Rate"
       },
       "name": "domesticWaterPriceRate",
-      "schema": "dtmi:com:syyclops:UtilityRate;1"
+      "schema": "dtmi:com:syyclops:UtilityRate;1",
+      "@id": "dtmi:com:syyclops:Building:domesticWaterPriceRate;1"
     },
     {
       "@type": "Property",
@@ -74,7 +81,8 @@
         "en": "Type"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Building:type;1"
     },
     {
       "@type": "Property",
@@ -86,7 +94,8 @@
         "en": "The Building Type as defined in the Commercial Buildings Energy Consumption Survey (CBECS) which aligns with the principal building activity"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:BuildingCBECSBuildingType;1"
+      "schema": "dtmi:com:syyclops:BuildingCBECSBuildingType;1",
+      "@id": "dtmi:com:syyclops:Building:cbecsBuildingType;1"
     },
     {
       "@type": "Property",
@@ -98,7 +107,8 @@
         "en": "The Property Type as defined by ENERGY STAR Portfolio Manager"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:BuildingENERGYSTARPropertyType;1"
+      "schema": "dtmi:com:syyclops:BuildingENERGYSTARPropertyType;1",
+      "@id": "dtmi:com:syyclops:Building:energyStarPropertyType;1"
     },
     {
       "@type": "Component",
@@ -106,7 +116,8 @@
       "displayName": {
         "en": "Time Zone"
       },
-      "schema": "dtmi:com:syyclops:TimeZone;1"
+      "schema": "dtmi:com:syyclops:TimeZone;1",
+      "@id": "dtmi:com:syyclops:Building:timeZone;1"
     },
     {
       "@type": "Property",
@@ -118,7 +129,8 @@
         "en": "The Climate Zone as defined by IECC which is based on the location of the building."
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:BuildingIECCClimateZone;1"
+      "schema": "dtmi:com:syyclops:BuildingIECCClimateZone;1",
+      "@id": "dtmi:com:syyclops:Building:ieccClimateZone;1"
     },
     {
       "@type": "Property",
@@ -136,20 +148,23 @@
             "displayName": {
               "en": "Latitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:Building:latitude;1"
           },
           {
             "name": "longitude",
             "displayName": {
               "en": "Longitude"
             },
-            "schema": "double"
+            "schema": "double",
+            "@id": "dtmi:com:syyclops:Building:longitude;1"
           }
         ],
         "displayName": {
           "en": "Building Coordinates"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Building:coordinates;1"
     },
     {
       "@type": [
@@ -162,7 +177,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "metre"
+      "unit": "metre",
+      "@id": "dtmi:com:syyclops:Building:elevation;1"
     },
     {
       "@type": [
@@ -177,7 +193,8 @@
       "annotates": "elevation",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Building:elevationUnit;1"
     },
     {
       "@type": [
@@ -190,7 +207,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "metre"
+      "unit": "metre",
+      "@id": "dtmi:com:syyclops:Building:height;1"
     },
     {
       "@type": [
@@ -205,7 +223,8 @@
       "annotates": "height",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Building:heightUnit;1"
     },
     {
       "@type": "Property",
@@ -214,7 +233,8 @@
         "en": "Construction Start Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Building:constructionStartDate;1"
     },
     {
       "@type": "Property",
@@ -223,7 +243,8 @@
         "en": "Construction Completion Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Building:constructionCompletionDate;1"
     },
     {
       "@type": "Property",
@@ -232,7 +253,8 @@
         "en": "Date Opened"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Building:dateOpened;1"
     },
     {
       "@type": "Property",
@@ -244,7 +266,8 @@
         "en": "The stage in the life of the building or structure such as design, construction, or operational."
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:BuildingLifecyclePhase;1"
+      "schema": "dtmi:com:syyclops:BuildingLifecyclePhase;1",
+      "@id": "dtmi:com:syyclops:Building:lifecyclePhase;1"
     }
   ],
   "schemas": [
@@ -255,67 +278,83 @@
       "enumValues": [
         {
           "enumValue": "Education",
-          "name": "Education"
+          "name": "Education",
+          "@id": "dtmi:com:syyclops:Building:Education;1"
         },
         {
           "enumValue": "Food Sales",
-          "name": "FoodSales"
+          "name": "FoodSales",
+          "@id": "dtmi:com:syyclops:Building:FoodSales;1"
         },
         {
           "enumValue": "Food Service",
-          "name": "FoodService"
+          "name": "FoodService",
+          "@id": "dtmi:com:syyclops:Building:FoodService;1"
         },
         {
           "enumValue": "Healthcare - Inpatient",
-          "name": "HealthcareInpatient"
+          "name": "HealthcareInpatient",
+          "@id": "dtmi:com:syyclops:Building:HealthcareInpatient;1"
         },
         {
           "enumValue": "Healthcare - Outpatient",
-          "name": "HealthcareOutpatient"
+          "name": "HealthcareOutpatient",
+          "@id": "dtmi:com:syyclops:Building:HealthcareOutpatient;1"
         },
         {
           "enumValue": "Lodging",
-          "name": "Lodging"
+          "name": "Lodging",
+          "@id": "dtmi:com:syyclops:Building:Lodging;1"
         },
         {
           "enumValue": "Mercantile - Retail other than mall",
-          "name": "MercantileRetailOtherThanMall"
+          "name": "MercantileRetailOtherThanMall",
+          "@id": "dtmi:com:syyclops:Building:MercantileRetailOtherThanMall;1"
         },
         {
           "enumValue": "Mercantile - Enclosed and strip malls",
-          "name": "MercantileEnclosed"
+          "name": "MercantileEnclosed",
+          "@id": "dtmi:com:syyclops:Building:MercantileEnclosed;1"
         },
         {
           "enumValue": "Office",
-          "name": "Office"
+          "name": "Office",
+          "@id": "dtmi:com:syyclops:Building:Office;1"
         },
         {
           "enumValue": "Public Assembly",
-          "name": "PublicAssembly"
+          "name": "PublicAssembly",
+          "@id": "dtmi:com:syyclops:Building:PublicAssembly;1"
         },
         {
           "enumValue": "Public Order and Safety",
-          "name": "PublicOrderAndSafety"
+          "name": "PublicOrderAndSafety",
+          "@id": "dtmi:com:syyclops:Building:PublicOrderAndSafety;1"
         },
         {
           "enumValue": "Religious Worship",
-          "name": "ReligiousWorship"
+          "name": "ReligiousWorship",
+          "@id": "dtmi:com:syyclops:Building:ReligiousWorship;1"
         },
         {
           "enumValue": "Service",
-          "name": "Service"
+          "name": "Service",
+          "@id": "dtmi:com:syyclops:Building:Service;1"
         },
         {
           "enumValue": "Warehouse and Storage",
-          "name": "WarehouseAndStorage"
+          "name": "WarehouseAndStorage",
+          "@id": "dtmi:com:syyclops:Building:WarehouseAndStorage;1"
         },
         {
           "enumValue": "Other",
-          "name": "Other"
+          "name": "Other",
+          "@id": "dtmi:com:syyclops:Building:Other;1"
         },
         {
           "enumValue": "Vacant",
-          "name": "Vacant"
+          "name": "Vacant",
+          "@id": "dtmi:com:syyclops:Building:Vacant;1"
         }
       ],
       "displayName": {
@@ -329,99 +368,123 @@
       "enumValues": [
         {
           "enumValue": "Bank Branch",
-          "name": "BankBranch"
+          "name": "BankBranch",
+          "@id": "dtmi:com:syyclops:Building:BankBranch;1"
         },
         {
           "enumValue": "Barracks",
-          "name": "Barracks"
+          "name": "Barracks",
+          "@id": "dtmi:com:syyclops:Building:Barracks;1"
         },
         {
           "enumValue": "Convenience Store",
-          "name": "ConvenienceStore"
+          "name": "ConvenienceStore",
+          "@id": "dtmi:com:syyclops:Building:ConvenienceStore;1"
         },
         {
           "enumValue": "Courthouse",
-          "name": "Courthouse"
+          "name": "Courthouse",
+          "@id": "dtmi:com:syyclops:Building:Courthouse;1"
         },
         {
           "enumValue": "Data Center",
-          "name": "DataCenter"
+          "name": "DataCenter",
+          "@id": "dtmi:com:syyclops:Building:DataCenter;1"
         },
         {
           "enumValue": "Distribution Center",
-          "name": "DistributionCenter"
+          "name": "DistributionCenter",
+          "@id": "dtmi:com:syyclops:Building:DistributionCenter;1"
         },
         {
           "enumValue": "Financial Office",
-          "name": "FinancialOffice"
+          "name": "FinancialOffice",
+          "@id": "dtmi:com:syyclops:Building:FinancialOffice;1"
         },
         {
           "enumValue": "Hospital (General Medical & Surgical)",
-          "name": "Hospital"
+          "name": "Hospital",
+          "@id": "dtmi:com:syyclops:Building:Hospital;1"
         },
         {
           "enumValue": "Hotel",
-          "name": "Hotel"
+          "name": "Hotel",
+          "@id": "dtmi:com:syyclops:Building:Hotel;1"
         },
         {
           "enumValue": "K-12 School",
-          "name": "K12Schoold"
+          "name": "K12Schoold",
+          "@id": "dtmi:com:syyclops:Building:K12Schoold;1"
         },
         {
           "enumValue": "Medical Office",
-          "name": "MedicalOffice"
+          "name": "MedicalOffice",
+          "@id": "dtmi:com:syyclops:Building:MedicalOffice;1"
         },
         {
           "enumValue": "Multifamily Housing",
-          "name": "MultifamilyHousing"
+          "name": "MultifamilyHousing",
+          "@id": "dtmi:com:syyclops:Building:MultifamilyHousing;1"
         },
         {
           "enumValue": "Non-refrigerated Warehouse",
-          "name": "NonRefrigeratedWarehouse"
+          "name": "NonRefrigeratedWarehouse",
+          "@id": "dtmi:com:syyclops:Building:NonRefrigeratedWarehouse;1"
         },
         {
           "enumValue": "Office",
-          "name": "Office"
+          "name": "Office",
+          "@id": "dtmi:com:syyclops:Building:SE1;1"
         },
         {
           "enumValue": "Refrigerated Warehouse",
-          "name": "RefrigeratedWarehouse"
+          "name": "RefrigeratedWarehouse",
+          "@id": "dtmi:com:syyclops:Building:RefrigeratedWarehouse;1"
         },
         {
           "enumValue": "Residence Hall/Dormitory",
-          "name": "ResidenceHallDormitory"
+          "name": "ResidenceHallDormitory",
+          "@id": "dtmi:com:syyclops:Building:ResidenceHallDormitory;1"
         },
         {
           "enumValue": "Retail Store",
-          "name": "RetailStore"
+          "name": "RetailStore",
+          "@id": "dtmi:com:syyclops:Building:RetailStore;1"
         },
         {
           "enumValue": "Single Family Home",
-          "name": "SingleFamilyHome"
+          "name": "SingleFamilyHome",
+          "@id": "dtmi:com:syyclops:Building:SingleFamilyHome;1"
         },
         {
           "enumValue": "Senior Living Community",
-          "name": "SeniorLivingCommunity"
+          "name": "SeniorLivingCommunity",
+          "@id": "dtmi:com:syyclops:Building:SeniorLivingCommunity;1"
         },
         {
           "enumValue": "Supermarket/Grocery Store",
-          "name": "SupermarketGroceryStore"
+          "name": "SupermarketGroceryStore",
+          "@id": "dtmi:com:syyclops:Building:SupermarketGroceryStore;1"
         },
         {
           "enumValue": "Vehicle Dealership",
-          "name": "VehicleDealership"
+          "name": "VehicleDealership",
+          "@id": "dtmi:com:syyclops:Building:VehicleDealership;1"
         },
         {
           "enumValue": "Wastewater Treatment Plant",
-          "name": "WastewaterTreatmentPlant"
+          "name": "WastewaterTreatmentPlant",
+          "@id": "dtmi:com:syyclops:Building:WastewaterTreatmentPlant;1"
         },
         {
           "enumValue": "Wholesale Club/Supercenter",
-          "name": "WholesaleClubSupercenter"
+          "name": "WholesaleClubSupercenter",
+          "@id": "dtmi:com:syyclops:Building:WholesaleClubSupercenter;1"
         },
         {
           "enumValue": "Worship Facility",
-          "name": "WorshipFacility"
+          "name": "WorshipFacility",
+          "@id": "dtmi:com:syyclops:Building:WorshipFacility;1"
         }
       ],
       "displayName": {
@@ -436,82 +499,98 @@
         {
           "name": "oneA",
           "displayName": "1A - Very Hot Humid",
-          "enumValue": "1A"
+          "enumValue": "1A",
+          "@id": "dtmi:com:syyclops:Building:oneA;1"
         },
         {
           "name": "twoA",
           "displayName": "2A Hot Humid",
-          "enumValue": "2A"
+          "enumValue": "2A",
+          "@id": "dtmi:com:syyclops:Building:twoA;1"
         },
         {
           "name": "twoB",
           "displayName": "2B Hot Dry",
-          "enumValue": "2B"
+          "enumValue": "2B",
+          "@id": "dtmi:com:syyclops:Building:twoB;1"
         },
         {
           "name": "threeA",
           "displayName": "3A Warm Humid",
-          "enumValue": "3A"
+          "enumValue": "3A",
+          "@id": "dtmi:com:syyclops:Building:threeA;1"
         },
         {
           "name": "threeB",
           "displayName": "3B Warm Dry",
-          "enumValue": "3B"
+          "enumValue": "3B",
+          "@id": "dtmi:com:syyclops:Building:threeB;1"
         },
         {
           "name": "threeC",
           "displayName": "3C Warm Marine",
-          "enumValue": "3C"
+          "enumValue": "3C",
+          "@id": "dtmi:com:syyclops:Building:threeC;1"
         },
         {
           "name": "fourA",
           "displayName": "4A Mixed Humid",
-          "enumValue": "4A"
+          "enumValue": "4A",
+          "@id": "dtmi:com:syyclops:Building:fourA;1"
         },
         {
           "name": "fourB",
           "displayName": "4B Mixed Dry",
-          "enumValue": "4B"
+          "enumValue": "4B",
+          "@id": "dtmi:com:syyclops:Building:fourB;1"
         },
         {
           "name": "fourC",
           "displayName": "4C Mixed Marine",
-          "enumValue": "4C"
+          "enumValue": "4C",
+          "@id": "dtmi:com:syyclops:Building:fourC;1"
         },
         {
           "name": "fiveA",
           "displayName": "5A Cool Humid",
-          "enumValue": "5A"
+          "enumValue": "5A",
+          "@id": "dtmi:com:syyclops:Building:fiveA;1"
         },
         {
           "name": "fiveB",
           "displayName": "5B Cool Dry",
-          "enumValue": "5B"
+          "enumValue": "5B",
+          "@id": "dtmi:com:syyclops:Building:fiveB;1"
         },
         {
           "name": "fiveC",
           "displayName": "5C Cool Marine",
-          "enumValue": "5C"
+          "enumValue": "5C",
+          "@id": "dtmi:com:syyclops:Building:fiveC;1"
         },
         {
           "name": "sixA",
           "displayName": "6A Cold Humid",
-          "enumValue": "6A"
+          "enumValue": "6A",
+          "@id": "dtmi:com:syyclops:Building:sixA;1"
         },
         {
           "name": "sixB",
           "displayName": "6B Cold Dry",
-          "enumValue": "6B"
+          "enumValue": "6B",
+          "@id": "dtmi:com:syyclops:Building:sixB;1"
         },
         {
           "name": "seven",
           "displayName": "7 Very Cold",
-          "enumValue": "7"
+          "enumValue": "7",
+          "@id": "dtmi:com:syyclops:Building:seven;1"
         },
         {
           "name": "eight",
           "displayName": "8 Subarctic/Arctic",
-          "enumValue": "8"
+          "enumValue": "8",
+          "@id": "dtmi:com:syyclops:Building:eight;1"
         }
       ],
       "displayName": {
@@ -525,15 +604,18 @@
       "enumValues": [
         {
           "enumValue": "Design",
-          "name": "Design"
+          "name": "Design",
+          "@id": "dtmi:com:syyclops:Building:Design;1"
         },
         {
           "enumValue": "Construction",
-          "name": "Construction"
+          "name": "Construction",
+          "@id": "dtmi:com:syyclops:Building:Construction;1"
         },
         {
           "enumValue": "Operational",
-          "name": "Operational"
+          "name": "Operational",
+          "@id": "dtmi:com:syyclops:Building:Operational;1"
         }
       ],
       "displayName": {

@@ -18,7 +18,8 @@
       },
       "name": "leaseStart",
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Lease:leaseStart;1"
     },
     {
       "@type": "Property",
@@ -30,7 +31,8 @@
       },
       "name": "leaseEnd",
       "schema": "dateTime",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Lease:leaseEnd;1"
     },
     {
       "@type": "Relationship",
@@ -41,7 +43,8 @@
         "en": "regulated by"
       },
       "name": "regulatedBy",
-      "target": "dtmi:com:syyclops:LeaseContract;1"
+      "target": "dtmi:com:syyclops:LeaseContract;1",
+      "@id": "dtmi:com:syyclops:Lease:regulatedBy;1"
     },
     {
       "@type": "Relationship",
@@ -52,7 +55,8 @@
         "en": "leasor"
       },
       "name": "leasor",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Lease:leasor;1"
     },
     {
       "@type": "Relationship",
@@ -63,7 +67,8 @@
         "en": "leasee"
       },
       "name": "leasee",
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:Lease:leasee;1"
     },
     {
       "@type": "Relationship",
@@ -73,7 +78,8 @@
       "displayName": {
         "en": "lease of"
       },
-      "name": "leaseOf"
+      "name": "leaseOf",
+      "@id": "dtmi:com:syyclops:Lease:leaseOf;1"
     }
   ],
   "@context": [

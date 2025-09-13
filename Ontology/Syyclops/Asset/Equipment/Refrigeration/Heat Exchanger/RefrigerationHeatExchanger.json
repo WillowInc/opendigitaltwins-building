@@ -22,7 +22,8 @@
       "name": "secondaryMaxTemperature",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:secondaryMaxTemperature;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "secondaryMaxTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:secondaryMaxTemperatureUnit;1"
     },
     {
       "@type": [
@@ -50,7 +52,8 @@
       "name": "secondaryMaxPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:secondaryMaxPressure;1"
     },
     {
       "@type": [
@@ -65,7 +68,8 @@
       "annotates": "secondaryMaxPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:secondaryMaxPressureUnit;1"
     },
     {
       "@type": [
@@ -78,7 +82,8 @@
       "name": "secondaryFlowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:secondaryFlowCapacity;1"
     },
     {
       "@type": [
@@ -93,7 +98,8 @@
       "annotates": "secondaryFlowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:secondaryFlowCapacityUnit;1"
     },
     {
       "@type": [
@@ -106,7 +112,8 @@
       "name": "primaryMaxTemperature",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:primaryMaxTemperature;1"
     },
     {
       "@type": [
@@ -121,7 +128,8 @@
       "annotates": "primaryMaxTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:primaryMaxTemperatureUnit;1"
     },
     {
       "@type": [
@@ -134,7 +142,8 @@
       "name": "primaryMaxPressure",
       "schema": "double",
       "unit": "bar",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:primaryMaxPressure;1"
     },
     {
       "@type": [
@@ -149,7 +158,8 @@
       "annotates": "primaryMaxPressure",
       "overrides": "unit",
       "schema": "PressureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:primaryMaxPressureUnit;1"
     },
     {
       "@type": [
@@ -162,7 +172,8 @@
       "name": "primaryFlowCapacity",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:primaryFlowCapacity;1"
     },
     {
       "@type": [
@@ -177,7 +188,8 @@
       "annotates": "primaryFlowCapacity",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:RefrigerationHeatExchanger:primaryFlowCapacityUnit;1"
     }
   ],
   "@context": [

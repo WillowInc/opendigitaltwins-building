@@ -18,7 +18,8 @@
       },
       "name": "personCapacity",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:personCapacity;1"
     },
     {
       "@type": [
@@ -31,7 +32,8 @@
       "name": "weightCapacity",
       "schema": "double",
       "unit": "kilogram",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:weightCapacity;1"
     },
     {
       "@type": [
@@ -46,7 +48,8 @@
       "annotates": "weightCapacity",
       "overrides": "unit",
       "schema": "MassUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:weightCapacityUnit;1"
     },
     {
       "@type": [
@@ -59,7 +62,8 @@
       "name": "maxTravelSpeed",
       "schema": "double",
       "unit": "metrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:maxTravelSpeed;1"
     },
     {
       "@type": [
@@ -74,7 +78,8 @@
       "annotates": "maxTravelSpeed",
       "overrides": "unit",
       "schema": "VelocityUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:maxTravelSpeedUnit;1"
     },
     {
       "@type": [
@@ -87,7 +92,8 @@
       "name": "maxTravelDistance",
       "schema": "double",
       "unit": "metre",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:maxTravelDistance;1"
     },
     {
       "@type": [
@@ -102,7 +108,8 @@
       "annotates": "maxTravelDistance",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:maxTravelDistanceUnit;1"
     },
     {
       "@type": "Property",
@@ -111,7 +118,8 @@
       },
       "name": "maxLandings",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Elevator:maxLandings;1"
     },
     {
       "@type": "Property",
@@ -120,7 +128,8 @@
         "en": "Fire Service Access Elevator"
       },
       "writable": true,
-      "schema": "boolean"
+      "schema": "boolean",
+      "@id": "dtmi:com:syyclops:Elevator:fireServiceAccessElevator;1"
     },
     {
       "@type": "Property",
@@ -137,24 +146,29 @@
             "displayName": {
               "en": "Two-Way Voice"
             },
-            "schema": "boolean"
+            "schema": "boolean",
+            "@id": "dtmi:com:syyclops:Elevator:twoWayVoice;1"
           },
           {
             "name": "twoWayMessageDisplay",
             "displayName": {
               "en": "Two-Way Message Display"
             },
-            "schema": "boolean"
+            "schema": "boolean",
+            "@id": "dtmi:com:syyclops:Elevator:twoWayMessageDisplay;1"
           },
           {
             "name": "oneWayVideo",
             "displayName": {
               "en": "One-Way Video"
             },
-            "schema": "boolean"
+            "schema": "boolean",
+            "@id": "dtmi:com:syyclops:Elevator:oneWayVideo;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:Elevator:OS1;1"
+      },
+      "@id": "dtmi:com:syyclops:Elevator:emergencyCommunication;1"
     }
   ],
   "@context": [

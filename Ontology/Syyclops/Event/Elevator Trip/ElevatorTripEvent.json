@@ -15,7 +15,8 @@
         "en": "Start Level Id"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:ElevatorTripEvent:startLevelId;1"
     },
     {
       "@type": "Property",
@@ -24,7 +25,8 @@
         "en": "End Level Id"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:ElevatorTripEvent:endLevelId;1"
     },
     {
       "@type": "Property",
@@ -33,7 +35,8 @@
         "en": "Current Level Id"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:ElevatorTripEvent:currentLevelId;1"
     },
     {
       "@type": "Property",
@@ -52,20 +55,23 @@
             "displayName": {
               "en": "Up"
             },
-            "enumValue": "Up"
+            "enumValue": "Up",
+            "@id": "dtmi:com:syyclops:ElevatorTripEvent:Up;1"
           },
           {
             "name": "Down",
             "displayName": {
               "en": "Down"
             },
-            "enumValue": "Down"
+            "enumValue": "Down",
+            "@id": "dtmi:com:syyclops:ElevatorTripEvent:Down;1"
           }
         ],
         "displayName": {
           "en": "Elevator Trip Direction"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:ElevatorTripEvent:currentTripDirection;1"
     }
   ],
   "@context": [

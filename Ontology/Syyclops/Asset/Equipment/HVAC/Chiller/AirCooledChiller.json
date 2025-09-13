@@ -7,7 +7,7 @@
   "description": {
     "en": "An air-cooled chiller is a type of HVAC equipment that uses air as the heat exchange medium to provide cooling. It operates by transferring heat from the refrigerant to the air, which is then expelled outside. This type of chiller is typically used in smaller applications or where water is not available."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Chiller;1"
   ],
   "contents": [
@@ -17,7 +17,8 @@
         "en": "Condenser"
       },
       "name": "condenser",
-      "schema": "dtmi:com:syyclops:AirCooledCondenser;1"
+      "schema": "dtmi:com:syyclops:AirCooledCondenser;1",
+      "@id": "dtmi:com:syyclops:AirCooledChiller:condenser;1"
     }
   ],
   "@context": [

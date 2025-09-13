@@ -19,7 +19,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:SpaceTemperature:temperatureSensor;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "temperatureSensor",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SpaceTemperature:temperatureSensorUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:SpaceTemperature:temperatureSetpoint;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "temperatureSetpoint",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SpaceTemperature:temperatureSetpointUnit;1"
     },
     {
       "@type": [
@@ -75,7 +79,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:SpaceTemperature:temperatureDelta;1"
     },
     {
       "@type": [
@@ -90,7 +95,8 @@
       "annotates": "temperatureDelta",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SpaceTemperature:temperatureDeltaUnit;1"
     }
   ],
   "@context": [

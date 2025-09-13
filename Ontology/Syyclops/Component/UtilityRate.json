@@ -18,7 +18,8 @@
         "en": "The rate which is charged for the consumption of the utility at all times of the day and each day of the year."
       },
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UtilityRate:fixedRate;1"
     },
     {
       "@type": [
@@ -31,7 +32,8 @@
       },
       "annotates": "fixedRate",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:UtilityRate:fixedRateUnit;1"
     },
     {
       "@type": "Property",
@@ -49,28 +51,32 @@
               "description": {
                 "en": "The month and day of the date in the calendar at which the rate starts in MM-DD format, i.e. 05-01 is May 1st."
               },
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:UtilityRate:startMonthDay;1"
             },
             {
               "name": "endMonthDay",
               "description": {
                 "en": "The month and day of the date in the calendar at which the rate ends in MM-DD format, i.e. 09-30 is September 30th."
               },
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:UtilityRate:endMonthDay;1"
             },
             {
               "name": "startTime",
               "description": {
                 "en": "The time within a day at which the rate starts in ISO 8601 time format."
               },
-              "schema": "time"
+              "schema": "time",
+              "@id": "dtmi:com:syyclops:UtilityRate:startTime;1"
             },
             {
               "name": "endTime",
               "description": {
                 "en": "The time within a day at which the rate ends in ISO 8601 time format."
               },
-              "schema": "time"
+              "schema": "time",
+              "@id": "dtmi:com:syyclops:UtilityRate:endTime;1"
             },
             {
               "name": "rate",
@@ -80,18 +86,23 @@
               "description": {
                 "en": "The rate which is charged for the consumption of the utility at the time-of-use."
               },
-              "schema": "double"
+              "schema": "double",
+              "@id": "dtmi:com:syyclops:UtilityRate:rate;1"
             },
             {
               "name": "rateUnit",
               "displayName": {
                 "en": "rate unit"
               },
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:UtilityRate:rateUnit;1"
             }
-          ]
-        }
-      }
+          ],
+          "@id": "dtmi:com:syyclops:UtilityRate:OS2;1"
+        },
+        "@id": "dtmi:com:syyclops:UtilityRate:AS1;1"
+      },
+      "@id": "dtmi:com:syyclops:UtilityRate:timeOfUseRates;1"
     }
   ],
   "@context": [

@@ -19,7 +19,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ChilledBeam:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -34,7 +35,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ChilledBeam:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -47,7 +49,8 @@
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ChilledBeam:netSensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -62,7 +65,8 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ChilledBeam:netSensibleCoolingCapacityUnit;1"
     },
     {
       "@type": "Component",
@@ -70,7 +74,8 @@
         "en": "cooling method"
       },
       "name": "coolingMethod",
-      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1"
+      "schema": "dtmi:com:syyclops:HVACCoolingMethod;1",
+      "@id": "dtmi:com:syyclops:ChilledBeam:coolingMethod;1"
     },
     {
       "@type": "Property",
@@ -86,16 +91,20 @@
         "enumValues": [
           {
             "enumValue": "TwoPipe",
-            "name": "TwoPipe"
+            "name": "TwoPipe",
+            "@id": "dtmi:com:syyclops:ChilledBeam:TwoPipe;1"
           },
           {
             "enumValue": "FourPipe",
-            "name": "FourPipe"
+            "name": "FourPipe",
+            "@id": "dtmi:com:syyclops:ChilledBeam:FourPipe;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ChilledBeam:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ChilledBeam:pipingConfiguration;1"
     }
   ],
   "@context": [

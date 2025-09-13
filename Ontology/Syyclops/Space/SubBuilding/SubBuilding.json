@@ -17,7 +17,8 @@
         "en": "address"
       },
       "name": "address",
-      "schema": "dtmi:com:syyclops:Address;1"
+      "schema": "dtmi:com:syyclops:Address;1",
+      "@id": "dtmi:com:syyclops:SubBuilding:address;1"
     },
     {
       "@type": [
@@ -30,7 +31,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "metre"
+      "unit": "metre",
+      "@id": "dtmi:com:syyclops:SubBuilding:height;1"
     },
     {
       "@type": [
@@ -45,7 +47,8 @@
       "annotates": "height",
       "overrides": "unit",
       "schema": "LengthUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SubBuilding:heightUnit;1"
     }
   ],
   "@context": [

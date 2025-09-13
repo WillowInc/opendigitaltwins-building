@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Multimode Fiber Optic Cable"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:FiberOpticCable;1"
   ],
   "contents": [
@@ -22,40 +22,47 @@
             "displayName": {
               "en": "OM1"
             },
-            "enumValue": "OM1"
+            "enumValue": "OM1",
+            "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:OM1;1"
           },
           {
             "name": "OM2",
             "displayName": {
               "en": "OM2"
             },
-            "enumValue": "OM2"
+            "enumValue": "OM2",
+            "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:OM2;1"
           },
           {
             "name": "OM3",
             "displayName": {
               "en": "OM3"
             },
-            "enumValue": "OM3"
+            "enumValue": "OM3",
+            "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:OM3;1"
           },
           {
             "name": "OM4",
             "displayName": {
               "en": "OM4"
             },
-            "enumValue": "OM4"
+            "enumValue": "OM4",
+            "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:OM4;1"
           },
           {
             "name": "OM5",
             "displayName": {
               "en": "OM5"
             },
-            "enumValue": "OM5"
+            "enumValue": "OM5",
+            "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:OM5;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:MultimodeFiberOpticCable:performanceRating;1"
     }
   ],
   "@context": [

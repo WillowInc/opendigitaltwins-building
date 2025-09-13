@@ -7,7 +7,7 @@
   "description": {
     "en": "An area within a building designated as having a distinct maintainance and operations function or designated services."
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceCollection;1"
   ],
   "contents": [
@@ -17,7 +17,8 @@
       "displayName": {
         "en": "Area"
       },
-      "schema": "dtmi:com:syyclops:SpaceArea;1"
+      "schema": "dtmi:com:syyclops:SpaceArea;1",
+      "@id": "dtmi:com:syyclops:BuildingOperationsArea:area;1"
     },
     {
       "@type": "Component",
@@ -25,7 +26,8 @@
       "displayName": {
         "en": "Capacity"
       },
-      "schema": "dtmi:com:syyclops:SpaceCapacity;1"
+      "schema": "dtmi:com:syyclops:SpaceCapacity;1",
+      "@id": "dtmi:com:syyclops:BuildingOperationsArea:capacity;1"
     },
     {
       "@type": "Component",
@@ -33,7 +35,8 @@
       "displayName": {
         "en": "Temperature"
       },
-      "schema": "dtmi:com:syyclops:SpaceTemperature;1"
+      "schema": "dtmi:com:syyclops:SpaceTemperature;1",
+      "@id": "dtmi:com:syyclops:BuildingOperationsArea:temperature;1"
     },
     {
       "@type": "Component",
@@ -41,7 +44,8 @@
       "displayName": {
         "en": "Humidity Average"
       },
-      "schema": "dtmi:com:syyclops:SpaceHumidity;1"
+      "schema": "dtmi:com:syyclops:SpaceHumidity;1",
+      "@id": "dtmi:com:syyclops:BuildingOperationsArea:humidity;1"
     },
     {
       "@type": "Component",
@@ -49,7 +53,8 @@
       "displayName": {
         "en": "CO2"
       },
-      "schema": "dtmi:com:syyclops:SpaceCO2;1"
+      "schema": "dtmi:com:syyclops:SpaceCO2;1",
+      "@id": "dtmi:com:syyclops:BuildingOperationsArea:CO2;1"
     },
     {
       "@type": "Component",
@@ -57,7 +62,8 @@
       "displayName": {
         "en": "Occupancy"
       },
-      "schema": "dtmi:com:syyclops:SpaceOccupancy;1"
+      "schema": "dtmi:com:syyclops:SpaceOccupancy;1",
+      "@id": "dtmi:com:syyclops:BuildingOperationsArea:occupancy;1"
     }
   ],
   "@context": [

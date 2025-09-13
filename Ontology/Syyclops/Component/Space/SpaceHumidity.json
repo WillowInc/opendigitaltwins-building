@@ -4,39 +4,51 @@
   "displayName": {
     "en": "Space Humidity"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:SpaceComponent;1"
   ],
   "contents": [
     {
-      "@type": ["Property", "RelativeHumidity"],
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
       "name": "humiditySensor",
       "displayName": {
         "en": "Humidity Sensor"
       },
       "writable": true,
       "schema": "double",
-      "unit": "percent"
+      "unit": "percent",
+      "@id": "dtmi:com:syyclops:SpaceHumidity:humiditySensor;1"
     },
     {
-      "@type": ["Property", "RelativeHumidity"],
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
       "name": "humiditySetpoint",
       "displayName": {
         "en": "Humidity Setpoint"
       },
       "writable": true,
       "schema": "double",
-      "unit": "percent"
+      "unit": "percent",
+      "@id": "dtmi:com:syyclops:SpaceHumidity:humiditySetpoint;1"
     },
     {
-      "@type": ["Property", "RelativeHumidity"],
+      "@type": [
+        "Property",
+        "RelativeHumidity"
+      ],
       "name": "humidityDelta",
       "displayName": {
         "en": "Humidity Delta"
       },
       "writable": true,
       "schema": "double",
-      "unit": "percent"
+      "unit": "percent",
+      "@id": "dtmi:com:syyclops:SpaceHumidity:humidityDelta;1"
     }
   ],
   "@context": [

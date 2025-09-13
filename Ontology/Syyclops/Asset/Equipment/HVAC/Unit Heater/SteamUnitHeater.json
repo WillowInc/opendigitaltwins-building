@@ -15,7 +15,8 @@
       },
       "name": "condensate",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:SteamUnitHeater:condensate;1"
     }
   ],
   "@context": [

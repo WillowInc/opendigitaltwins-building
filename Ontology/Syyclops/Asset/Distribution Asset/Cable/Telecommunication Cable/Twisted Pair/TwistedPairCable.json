@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Twisted Pair Cable"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:TelecommunicationCable;1"
   ],
   "contents": [
@@ -22,47 +22,55 @@
             "displayName": {
               "en": "Category 3"
             },
-            "enumValue": "Category 3"
+            "enumValue": "Category 3",
+            "@id": "dtmi:com:syyclops:TwistedPairCable:category3;1"
           },
           {
             "name": "category5e",
             "displayName": {
               "en": "Category 5e"
             },
-            "enumValue": "Category 5e"
+            "enumValue": "Category 5e",
+            "@id": "dtmi:com:syyclops:TwistedPairCable:category5e;1"
           },
           {
             "name": "category6",
             "displayName": {
               "en": "Category 6"
             },
-            "enumValue": "Category 6"
+            "enumValue": "Category 6",
+            "@id": "dtmi:com:syyclops:TwistedPairCable:category6;1"
           },
           {
             "name": "category6A",
             "displayName": {
               "en": "Category 6A"
             },
-            "enumValue": "Category 6A"
+            "enumValue": "Category 6A",
+            "@id": "dtmi:com:syyclops:TwistedPairCable:category6A;1"
           },
           {
             "name": "category7",
             "displayName": {
               "en": "Category 7"
             },
-            "enumValue": "Category 7"
+            "enumValue": "Category 7",
+            "@id": "dtmi:com:syyclops:TwistedPairCable:category7;1"
           },
           {
             "name": "category8",
             "displayName": {
               "en": "Category 8"
             },
-            "enumValue": "Category 8"
+            "enumValue": "Category 8",
+            "@id": "dtmi:com:syyclops:TwistedPairCable:category8;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:TwistedPairCable:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TwistedPairCable:categoryRating;1"
     }
   ],
   "@context": [

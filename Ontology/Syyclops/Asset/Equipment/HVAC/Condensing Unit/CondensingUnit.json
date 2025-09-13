@@ -22,16 +22,20 @@
         "enumValues": [
           {
             "enumValue": "WaterCooled",
-            "name": "WaterCooled"
+            "name": "WaterCooled",
+            "@id": "dtmi:com:syyclops:CondensingUnit:WaterCooled;1"
           },
           {
             "enumValue": "AirCooled",
-            "name": "AirCooled"
+            "name": "AirCooled",
+            "@id": "dtmi:com:syyclops:CondensingUnit:AirCooled;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CondensingUnit:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:type;1"
     },
     {
       "@type": "Property",
@@ -40,7 +44,8 @@
       },
       "name": "refrigerantType",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:refrigerantType;1"
     },
     {
       "@type": [
@@ -53,7 +58,8 @@
       "name": "nominalHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:nominalHeatingCapacity;1"
     },
     {
       "@type": [
@@ -68,7 +74,8 @@
       "annotates": "nominalHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:nominalHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -81,7 +88,8 @@
       "name": "nominalCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:nominalCoolingCapacity;1"
     },
     {
       "@type": [
@@ -96,7 +104,8 @@
       "annotates": "nominalCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:nominalCoolingCapacityUnit;1"
     },
     {
       "@type": [
@@ -109,7 +118,8 @@
       "name": "netSensibleHeatingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:netSensibleHeatingCapacity;1"
     },
     {
       "@type": [
@@ -124,7 +134,8 @@
       "annotates": "netSensibleHeatingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:netSensibleHeatingCapacityUnit;1"
     },
     {
       "@type": [
@@ -137,7 +148,8 @@
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
       "unit": "britishThermalUnitPerHour",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:netSensibleCoolingCapacity;1"
     },
     {
       "@type": [
@@ -152,7 +164,8 @@
       "annotates": "netSensibleCoolingCapacity",
       "overrides": "unit",
       "schema": "PowerUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:netSensibleCoolingCapacityUnit;1"
     },
     {
       "@type": "Property",
@@ -161,7 +174,8 @@
       },
       "name": "eer",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CondensingUnit:eer;1"
     }
   ],
   "@context": [

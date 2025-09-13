@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Duct Silencer"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:HVACEquipment;1"
   ],
   "contents": [
@@ -14,7 +14,8 @@
       "displayName": {
         "en": "Duct Inlet"
       },
-      "schema": "dtmi:com:syyclops:DuctConnection;1"
+      "schema": "dtmi:com:syyclops:DuctConnection;1",
+      "@id": "dtmi:com:syyclops:DuctSilencer:ductInlet;1"
     }
   ],
   "@context": [

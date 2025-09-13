@@ -19,16 +19,20 @@
         "enumValues": [
           {
             "enumValue": "PressureAssisted",
-            "name": "PressureAssisted"
+            "name": "PressureAssisted",
+            "@id": "dtmi:com:syyclops:ToiletTank:PressureAssisted;1"
           },
           {
             "enumValue": "Gravity",
-            "name": "Gravity"
+            "name": "Gravity",
+            "@id": "dtmi:com:syyclops:ToiletTank:Gravity;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:ToiletTank:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ToiletTank:flushingType;1"
     }
   ],
   "@context": [

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Disconnect Switch"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:ElectricalDistributionEquipment;1"
   ],
   "contents": [
@@ -14,7 +14,8 @@
       "displayName": {
         "en": "Main Bus"
       },
-      "schema": "dtmi:com:syyclops:ElectricalBus;1"
+      "schema": "dtmi:com:syyclops:ElectricalBus;1",
+      "@id": "dtmi:com:syyclops:DisconnectSwitch:mainBus;1"
     }
   ],
   "@context": [

@@ -24,24 +24,29 @@
             "displayName": {
               "en": "Mechanical"
             },
-            "enumValue": "Mechanical"
+            "enumValue": "Mechanical",
+            "@id": "dtmi:com:syyclops:LoadingDockLeveler:Mechanical;1"
           },
           {
             "name": "Hydraulic",
             "displayName": {
               "en": "Hydraulic"
             },
-            "enumValue": "Hydraulic"
+            "enumValue": "Hydraulic",
+            "@id": "dtmi:com:syyclops:LoadingDockLeveler:Hydraulic;1"
           },
           {
             "name": "Pneumatic",
             "displayName": {
               "en": "Pneumatic"
             },
-            "enumValue": "Pneumatic"
+            "enumValue": "Pneumatic",
+            "@id": "dtmi:com:syyclops:LoadingDockLeveler:Pneumatic;1"
           }
-        ]
-      }
+        ],
+        "@id": "dtmi:com:syyclops:LoadingDockLeveler:ES1;1"
+      },
+      "@id": "dtmi:com:syyclops:LoadingDockLeveler:liftType;1"
     },
     {
       "@type": [
@@ -54,7 +59,8 @@
       },
       "writable": true,
       "schema": "double",
-      "unit": "kilogram"
+      "unit": "kilogram",
+      "@id": "dtmi:com:syyclops:LoadingDockLeveler:loadCapacity;1"
     },
     {
       "@type": [
@@ -69,7 +75,8 @@
       "annotates": "loadCapacity",
       "overrides": "unit",
       "schema": "MassUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:LoadingDockLeveler:loadCapacityUnit;1"
     }
   ],
   "@context": [

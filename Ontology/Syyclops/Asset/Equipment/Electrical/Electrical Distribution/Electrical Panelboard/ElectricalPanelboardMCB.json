@@ -19,7 +19,8 @@
       "name": "MCBRating",
       "schema": "double",
       "unit": "ampere",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:ElectricalPanelboardMCB:MCBRating;1"
     }
   ],
   "@context": [

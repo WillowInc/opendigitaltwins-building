@@ -19,7 +19,8 @@
       "displayName": {
         "en": "served by"
       },
-      "name": "servedBy"
+      "name": "servedBy",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:servedBy;1"
     },
     {
       "@type": "Relationship",
@@ -30,7 +31,8 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:syyclops:SpaceOpening;1"
+      "target": "dtmi:com:syyclops:SpaceOpening;1",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:isPartOf;1"
     },
     {
       "@type": "Relationship",
@@ -41,7 +43,8 @@
         "en": "included in"
       },
       "name": "includedIn",
-      "target": "dtmi:com:syyclops:Collection;1"
+      "target": "dtmi:com:syyclops:Collection;1",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:includedIn;1"
     },
     {
       "@type": "Relationship",
@@ -52,7 +55,8 @@
       "description": {
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
-      "target": "dtmi:com:syyclops:Settings;1"
+      "target": "dtmi:com:syyclops:Settings;1",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:hasSettings;1"
     },
     {
       "@type": "Relationship",
@@ -60,7 +64,8 @@
       "displayName": {
         "en": "has document"
       },
-      "target": "dtmi:com:syyclops:Document;1"
+      "target": "dtmi:com:syyclops:Document;1",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:hasDocument;1"
     },
     {
       "@type": "Property",
@@ -72,14 +77,18 @@
         "@type": "Map",
         "mapKey": {
           "name": "externalIdName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:externalIdName;1"
         },
         "mapValue": {
           "name": "externalIdValue",
-          "schema": "string"
-        }
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:externalIdValue;1"
+        },
+        "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:MS1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:externalIds;1"
     },
     {
       "@type": "Property",
@@ -90,8 +99,10 @@
       "writable": true,
       "schema": {
         "@type": "Array",
-        "elementSchema": "dtmi:com:syyclops:NonphysicalSpaceOpeningMappedIdObject;1"
-      }
+        "elementSchema": "dtmi:com:syyclops:NonphysicalSpaceOpeningMappedIdObject;1",
+        "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:AS2;1"
+      },
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:mappedIds;1"
     },
     {
       "@type": "Property",
@@ -100,7 +111,8 @@
       },
       "name": "name",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:name;1"
     },
     {
       "@type": "Property",
@@ -109,7 +121,8 @@
         "en": "Globally Unique ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:uniqueID;1"
     },
     {
       "@type": "Property",
@@ -118,7 +131,8 @@
         "en": "External ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:externalID;1"
     },
     {
       "@type": "Property",
@@ -127,7 +141,8 @@
         "en": "Description"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:description;1"
     },
     {
       "@type": "Property",
@@ -136,7 +151,8 @@
         "en": "Site ID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:siteID;1"
     },
     {
       "@type": "Property",
@@ -146,7 +162,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
+      "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins.",
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:landId;1"
     },
     {
       "@type": "Property",
@@ -158,7 +175,8 @@
         "@type": "Map",
         "mapKey": {
           "name": "sourceName",
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:sourceName;1"
         },
         "mapValue": {
           "name": "sourceProperties",
@@ -166,15 +184,21 @@
             "@type": "Map",
             "mapKey": {
               "name": "propertyName",
-              "schema": "string"
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:propertyName;1"
             },
             "mapValue": {
               "name": "propertyValue",
-              "schema": "string"
-            }
-          }
-        }
-      }
+              "schema": "string",
+              "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:propertyValue;1"
+            },
+            "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:MS4;1"
+          },
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:sourceProperties;1"
+        },
+        "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:MS3;1"
+      },
+      "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:customProperties;1"
     }
   ],
   "schemas": [
@@ -193,7 +217,8 @@
           "description": {
             "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:exactType;1"
         },
         {
           "name": "scope",
@@ -203,7 +228,8 @@
           "description": {
             "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:scope;1"
         },
         {
           "name": "scopeId",
@@ -213,7 +239,8 @@
           "description": {
             "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:scopeId;1"
         },
         {
           "name": "value",
@@ -223,7 +250,8 @@
           "description": {
             "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
           },
-          "schema": "string"
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:value;1"
         },
         {
           "name": "dateCreated",
@@ -233,7 +261,8 @@
           "description": {
             "en": "The date the identity was created in Mapped."
           },
-          "schema": "dateTime"
+          "schema": "dateTime",
+          "@id": "dtmi:com:syyclops:NonphysicalSpaceOpening:dateCreated;1"
         }
       ],
       "displayName": {

@@ -22,7 +22,8 @@
       "name": "minAirflowRating",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:minAirflowRating;1"
     },
     {
       "@type": [
@@ -37,7 +38,8 @@
       "annotates": "minAirflowRating",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:minAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -50,7 +52,8 @@
       "name": "maxAirflowRating",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:maxAirflowRating;1"
     },
     {
       "@type": [
@@ -65,7 +68,8 @@
       "annotates": "maxAirflowRating",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:maxAirflowRatingUnit;1"
     },
     {
       "@type": [
@@ -78,7 +82,8 @@
       "name": "designCoolingZoneAirTemperature",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designCoolingZoneAirTemperature;1"
     },
     {
       "@type": [
@@ -93,7 +98,8 @@
       "annotates": "designCoolingZoneAirTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designCoolingZoneAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -106,7 +112,8 @@
       "name": "designHeatingZoneAirTemperature",
       "schema": "double",
       "unit": "degreeCelsius",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designHeatingZoneAirTemperature;1"
     },
     {
       "@type": [
@@ -121,7 +128,8 @@
       "annotates": "designHeatingZoneAirTemperature",
       "overrides": "unit",
       "schema": "TemperatureUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designHeatingZoneAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -133,7 +141,8 @@
         "en": "Design Entering Air Temperature"
       },
       "schema": "double",
-      "unit": "degreeCelsius"
+      "unit": "degreeCelsius",
+      "@id": "dtmi:com:syyclops:TerminalUnit:designEnteringAirTemperature;1"
     },
     {
       "@type": [
@@ -147,7 +156,8 @@
       "name": "designEnteringAirTemperatureUnit",
       "annotates": "designEnteringAirTemperature",
       "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": "TemperatureUnit",
+      "@id": "dtmi:com:syyclops:TerminalUnit:designEnteringAirTemperatureUnit;1"
     },
     {
       "@type": [
@@ -160,7 +170,8 @@
       "name": "designOccupiedMinAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designOccupiedMinAirflow;1"
     },
     {
       "@type": [
@@ -175,7 +186,8 @@
       "annotates": "designOccupiedMinAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designOccupiedMinAirflowUnit;1"
     },
     {
       "@type": [
@@ -188,7 +200,8 @@
       "name": "designOccupiedMaxAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designOccupiedMaxAirflow;1"
     },
     {
       "@type": [
@@ -203,7 +216,8 @@
       "annotates": "designOccupiedMaxAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designOccupiedMaxAirflowUnit;1"
     },
     {
       "@type": [
@@ -216,7 +230,8 @@
       "name": "designUnoccupiedMinAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designUnoccupiedMinAirflow;1"
     },
     {
       "@type": [
@@ -231,7 +246,8 @@
       "annotates": "designUnoccupiedMinAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designUnoccupiedMinAirflowUnit;1"
     },
     {
       "@type": [
@@ -244,7 +260,8 @@
       "name": "designUnoccupiedMaxAirflow",
       "schema": "double",
       "unit": "litrePerSecond",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designUnoccupiedMaxAirflow;1"
     },
     {
       "@type": [
@@ -259,7 +276,8 @@
       "annotates": "designUnoccupiedMaxAirflow",
       "overrides": "unit",
       "schema": "VolumeFlowRateUnit",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:designUnoccupiedMaxAirflowUnit;1"
     },
     {
       "@type": "Component",
@@ -267,7 +285,8 @@
         "en": "duct inlet"
       },
       "name": "ductInlet",
-      "schema": "dtmi:com:syyclops:DuctConnection;1"
+      "schema": "dtmi:com:syyclops:DuctConnection;1",
+      "@id": "dtmi:com:syyclops:TerminalUnit:ductInlet;1"
     },
     {
       "@type": "Property",
@@ -279,7 +298,8 @@
         "en": "When true, the equipment will not be included in comfort KPIs or other comfort analytics."
       },
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:TerminalUnit:excludedFromComfortAnalytics;1"
     }
   ],
   "@context": [

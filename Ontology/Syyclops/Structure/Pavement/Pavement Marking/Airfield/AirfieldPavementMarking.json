@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Airfield Pavement Marking"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:PavementMarking;1"
   ],
   "contents": [
@@ -16,7 +16,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "A | 36-18"
+      "comment": "A | 36-18",
+      "@id": "dtmi:com:syyclops:airport:AirfieldPavementMarking:message;1"
     }
   ],
   "@context": [

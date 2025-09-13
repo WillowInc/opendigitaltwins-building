@@ -25,27 +25,31 @@
             "displayName": {
               "en": "Product"
             },
-            "enumValue": "Product"
+            "enumValue": "Product",
+            "@id": "dtmi:com:syyclops:Warranty:Product;1"
           },
           {
             "name": "Parts",
             "displayName": {
               "en": "Parts"
             },
-            "enumValue": "Parts"
+            "enumValue": "Parts",
+            "@id": "dtmi:com:syyclops:Warranty:Parts;1"
           },
           {
             "name": "Labor",
             "displayName": {
               "en": "Labor"
             },
-            "enumValue": "Labor"
+            "enumValue": "Labor",
+            "@id": "dtmi:com:syyclops:Warranty:Labor;1"
           }
         ],
         "displayName": {
           "en": "Warranty Type"
         }
-      }
+      },
+      "@id": "dtmi:com:syyclops:Warranty:type;1"
     },
     {
       "@type": "Property",
@@ -54,7 +58,8 @@
         "en": "Guarantor"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:Warranty:guarantor;1"
     },
     {
       "@type": "Property",
@@ -63,7 +68,8 @@
         "en": "Duration"
       },
       "writable": true,
-      "schema": "duration"
+      "schema": "duration",
+      "@id": "dtmi:com:syyclops:Warranty:duration;1"
     },
     {
       "@type": "Property",
@@ -72,7 +78,8 @@
         "en": "Start Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Warranty:startDate;1"
     },
     {
       "@type": "Property",
@@ -81,7 +88,8 @@
         "en": "End Date"
       },
       "writable": true,
-      "schema": "date"
+      "schema": "date",
+      "@id": "dtmi:com:syyclops:Warranty:endDate;1"
     }
   ],
   "@context": [

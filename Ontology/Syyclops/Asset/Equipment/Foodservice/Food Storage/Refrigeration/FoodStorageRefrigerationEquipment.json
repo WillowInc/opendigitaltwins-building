@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Food Storage Refrigeration Equipment"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:FoodStorageEquipment;1",
     "dtmi:com:syyclops:DefrostEquipment;1"
   ],
@@ -15,7 +15,8 @@
         "en": "Evaporator Fan"
       },
       "name": "evaporatorFan",
-      "schema": "dtmi:com:syyclops:Fan;1"
+      "schema": "dtmi:com:syyclops:Fan;1",
+      "@id": "dtmi:com:syyclops:FoodStorageRefrigerationEquipment:evaporatorFan;1"
     }
   ],
   "@context": [

@@ -21,7 +21,8 @@
       },
       "name": "contents",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodDisplayCase:contents;1"
     },
     {
       "@type": "Property",
@@ -33,7 +34,8 @@
       },
       "name": "contentsRetailValue",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodDisplayCase:contentsRetailValue;1"
     },
     {
       "@type": [
@@ -49,7 +51,8 @@
       },
       "annotates": "contentsRetailValue",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodDisplayCase:contentsRetailValueUnit;1"
     },
     {
       "@type": "Property",
@@ -61,7 +64,8 @@
       },
       "name": "contentsReplacementCost",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodDisplayCase:contentsReplacementCost;1"
     },
     {
       "@type": [
@@ -77,7 +81,8 @@
       },
       "annotates": "contentsReplacementCost",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FoodDisplayCase:contentsReplacementCostUnit;1"
     }
   ],
   "@context": [

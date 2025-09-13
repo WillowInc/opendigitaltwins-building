@@ -20,7 +20,8 @@
       },
       "name": "designFaceVelocity18inSashHeight",
       "schema": "double",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FumeHood:designFaceVelocity18inSashHeight;1"
     },
     {
       "@type": [
@@ -33,7 +34,8 @@
       "name": "designFaceVelocity18inSashHeightUnit",
       "annotates": "designFaceVelocity18inSashHeight",
       "schema": "string",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FumeHood:designFaceVelocity18inSashHeightUnit;1"
     },
     {
       "@type": "Property",
@@ -46,20 +48,25 @@
         "enumValues": [
           {
             "enumValue": "Horizontal",
-            "name": "Horizontal"
+            "name": "Horizontal",
+            "@id": "dtmi:com:syyclops:FumeHood:Horizontal;1"
           },
           {
             "enumValue": "Vertical",
-            "name": "Vertical"
+            "name": "Vertical",
+            "@id": "dtmi:com:syyclops:FumeHood:Vertical;1"
           },
           {
             "enumValue": "Combination",
-            "name": "Combination"
+            "name": "Combination",
+            "@id": "dtmi:com:syyclops:FumeHood:Combination;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FumeHood:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FumeHood:sashType;1"
     },
     {
       "@type": "Property",
@@ -72,16 +79,20 @@
         "enumValues": [
           {
             "enumValue": "Open",
-            "name": "Open"
+            "name": "Open",
+            "@id": "dtmi:com:syyclops:FumeHood:Open;1"
           },
           {
             "enumValue": "Restricted",
-            "name": "Restricted"
+            "name": "Restricted",
+            "@id": "dtmi:com:syyclops:FumeHood:Restricted;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:FumeHood:ES2;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:FumeHood:bypassType;1"
     }
   ],
   "@context": [

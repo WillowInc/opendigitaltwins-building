@@ -20,7 +20,8 @@
       "description": {
         "en": "A person or organization which has been invited to or planning to attend a calendar event."
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:hasAttendee;1"
     },
     {
       "@type": "Relationship",
@@ -31,7 +32,8 @@
       "description": {
         "en": "A person or organization which has organized a calendar event."
       },
-      "target": "dtmi:com:syyclops:Agent;1"
+      "target": "dtmi:com:syyclops:Agent;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:hasOrganizer;1"
     },
     {
       "@type": "Relationship",
@@ -42,7 +44,8 @@
       "description": {
         "en": "A space where a calendar event is taking place."
       },
-      "target": "dtmi:com:syyclops:Space;1"
+      "target": "dtmi:com:syyclops:Space;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:hasLocation;1"
     },
     {
       "@type": "Property",
@@ -51,7 +54,8 @@
       },
       "name": "isAllDay",
       "schema": "boolean",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CalendarEvent:isAllDay;1"
     },
     {
       "@type": "Property",
@@ -60,7 +64,8 @@
         "en": "Recurrence"
       },
       "writable": true,
-      "schema": "dtmi:com:syyclops:PatternedRecurrence;1"
+      "schema": "dtmi:com:syyclops:PatternedRecurrence;1",
+      "@id": "dtmi:com:syyclops:CalendarEvent:recurrence;1"
     },
     {
       "@type": "Property",
@@ -69,7 +74,8 @@
         "en": "ICal UID"
       },
       "writable": true,
-      "schema": "string"
+      "schema": "string",
+      "@id": "dtmi:com:syyclops:CalendarEvent:iCalUID;1"
     },
     {
       "@type": "Property",
@@ -82,20 +88,25 @@
         "enumValues": [
           {
             "enumValue": "low",
-            "name": "low"
+            "name": "low",
+            "@id": "dtmi:com:syyclops:CalendarEvent:low;1"
           },
           {
             "enumValue": "normal",
-            "name": "normal"
+            "name": "normal",
+            "@id": "dtmi:com:syyclops:CalendarEvent:normal;1"
           },
           {
             "enumValue": "high",
-            "name": "high"
+            "name": "high",
+            "@id": "dtmi:com:syyclops:CalendarEvent:high;1"
           }
         ],
-        "valueSchema": "string"
+        "valueSchema": "string",
+        "@id": "dtmi:com:syyclops:CalendarEvent:ES1;1"
       },
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CalendarEvent:importance;1"
     },
     {
       "@type": "Property",
@@ -104,7 +115,8 @@
       },
       "name": "estimatedAttendeeCount",
       "schema": "integer",
-      "writable": true
+      "writable": true,
+      "@id": "dtmi:com:syyclops:CalendarEvent:estimatedAttendeeCount;1"
     }
   ],
   "schemas": [
@@ -131,45 +143,55 @@
                   "enumValues": [
                     {
                       "enumValue": "daily",
-                      "name": "daily"
+                      "name": "daily",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:daily;1"
                     },
                     {
                       "enumValue": "weekly",
-                      "name": "weekly"
+                      "name": "weekly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:weekly;1"
                     },
                     {
                       "enumValue": "absoluteMonthly",
-                      "name": "absoluteMonthly"
+                      "name": "absoluteMonthly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:absoluteMonthly;1"
                     },
                     {
                       "enumValue": "relativeMonthly",
-                      "name": "relativeMonthly"
+                      "name": "relativeMonthly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:relativeMonthly;1"
                     },
                     {
                       "enumValue": "absoluteYearly",
-                      "name": "absoluteYearly"
+                      "name": "absoluteYearly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:absoluteYearly;1"
                     },
                     {
                       "enumValue": "relativeYearly",
-                      "name": "relativeYearly"
+                      "name": "relativeYearly",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:relativeYearly;1"
                     }
                   ],
-                  "valueSchema": "string"
-                }
+                  "valueSchema": "string",
+                  "@id": "dtmi:com:syyclops:CalendarEvent:PatternedRecurrence;1"
+                },
+                "@id": "dtmi:com:syyclops:CalendarEvent:type;1"
               },
               {
                 "name": "dayOfMonth",
                 "displayName": {
                   "en": "Day of Month"
                 },
-                "schema": "integer"
+                "schema": "integer",
+                "@id": "dtmi:com:syyclops:CalendarEvent:dayOfMonth;1"
               },
               {
                 "name": "monthOfYear",
                 "displayName": {
                   "en": "Month of Year"
                 },
-                "schema": "integer"
+                "schema": "integer",
+                "@id": "dtmi:com:syyclops:CalendarEvent:monthOfYear;1"
               },
               {
                 "name": "daysOfWeek",
@@ -178,28 +200,33 @@
                 },
                 "schema": {
                   "@type": "Array",
-                  "elementSchema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1"
-                }
+                  "elementSchema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1",
+                  "@id": "dtmi:com:syyclops:CalendarEvent:AS1;1"
+                },
+                "@id": "dtmi:com:syyclops:CalendarEvent:daysOfWeek;1"
               },
               {
                 "name": "firstDayOfWeek",
                 "displayName": {
                   "en": "First Day of Week"
                 },
-                "schema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1"
+                "schema": "dtmi:com:syyclops:CalendarEventDayOfWeek;1",
+                "@id": "dtmi:com:syyclops:CalendarEvent:firstDayOfWeek;1"
               },
               {
                 "name": "interval",
                 "displayName": {
                   "en": "Interval"
                 },
-                "schema": "integer"
+                "schema": "integer",
+                "@id": "dtmi:com:syyclops:CalendarEvent:interval;1"
               }
             ],
             "displayName": {
               "en": "Recurrence Pattern"
             }
-          }
+          },
+          "@id": "dtmi:com:syyclops:CalendarEvent:pattern;1"
         },
         {
           "name": "range",
@@ -220,46 +247,55 @@
                   "enumValues": [
                     {
                       "enumValue": "endDate",
-                      "name": "endDate"
+                      "name": "endDate",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:endDate;1"
                     },
                     {
                       "enumValue": "noEnd",
-                      "name": "noEnd"
+                      "name": "noEnd",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:noEnd;1"
                     },
                     {
                       "enumValue": "numbered",
-                      "name": "numbered"
+                      "name": "numbered",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:numbered;1"
                     }
                   ],
-                  "valueSchema": "string"
-                }
+                  "valueSchema": "string",
+                  "@id": "dtmi:com:syyclops:CalendarEvent:ES2;1"
+                },
+                "@id": "dtmi:com:syyclops:CalendarEvent:OF1;1"
               },
               {
                 "name": "startDate",
                 "displayName": {
                   "en": "Start Date"
                 },
-                "schema": "date"
+                "schema": "date",
+                "@id": "dtmi:com:syyclops:CalendarEvent:startDate;1"
               },
               {
                 "name": "endDate",
                 "displayName": {
                   "en": "End Date"
                 },
-                "schema": "date"
+                "schema": "date",
+                "@id": "dtmi:com:syyclops:CalendarEvent:endDate;1"
               },
               {
                 "name": "numberOfOccurrences",
                 "displayName": {
                   "en": "Number of Occurrences"
                 },
-                "schema": "integer"
+                "schema": "integer",
+                "@id": "dtmi:com:syyclops:CalendarEvent:numberOfOccurrences;1"
               }
             ],
             "displayName": {
               "en": "Recurrence Range"
             }
-          }
+          },
+          "@id": "dtmi:com:syyclops:CalendarEvent:range;1"
         }
       ],
       "displayName": {
@@ -272,31 +308,38 @@
       "enumValues": [
         {
           "enumValue": "sunday",
-          "name": "sunday"
+          "name": "sunday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:sunday;1"
         },
         {
           "enumValue": "monday",
-          "name": "monday"
+          "name": "monday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:monday;1"
         },
         {
           "enumValue": "tuesday",
-          "name": "tuesday"
+          "name": "tuesday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:tuesday;1"
         },
         {
           "enumValue": "wednesday",
-          "name": "wednesday"
+          "name": "wednesday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:wednesday;1"
         },
         {
           "enumValue": "thursday",
-          "name": "thursday"
+          "name": "thursday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:thursday;1"
         },
         {
           "enumValue": "friday",
-          "name": "friday"
+          "name": "friday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:friday;1"
         },
         {
           "enumValue": "saturday",
-          "name": "saturday"
+          "name": "saturday",
+          "@id": "dtmi:com:syyclops:CalendarEvent:saturday;1"
         }
       ],
       "valueSchema": "string",

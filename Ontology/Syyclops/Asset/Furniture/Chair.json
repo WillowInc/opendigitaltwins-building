@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Chair"
   },
-  "extends" : [
+  "extends": [
     "dtmi:com:syyclops:Furniture;1"
   ],
   "contents": [
@@ -16,7 +16,8 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "basic, adjustable-height"
+      "comment": "basic, adjustable-height",
+      "@id": "dtmi:com:syyclops:Chair:type;1"
     }
   ],
   "@context": [

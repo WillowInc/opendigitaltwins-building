@@ -4,8 +4,10 @@
   "displayName": {
     "en": "Parameter"
   },
-  "description": {"en": "A configuration setting"},
-  "extends" : [
+  "description": {
+    "en": "A configuration setting"
+  },
+  "extends": [
     "dtmi:com:syyclops:Capability;1"
   ],
   "contents": [
@@ -18,7 +20,8 @@
         "en": "is parameter of"
       },
       "name": "isParameterOf",
-      "target": "dtmi:com:syyclops:Capability;1"
+      "target": "dtmi:com:syyclops:Capability;1",
+      "@id": "dtmi:com:syyclops:Parameter:isParameterOf;1"
     }
   ],
   "@context": [
