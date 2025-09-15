@@ -8,8 +8,7 @@
     "en": "A standalone asset that transfers energy between two different streams of air, one of which is ventilation air."
   },
   "extends" : [
-    "dtmi:com:willowinc:HVACEquipment;1",
-    "dtmi:com:willowinc:EnergyRecoveryDevice;1"
+    "dtmi:com:willowinc:DedicatedOutdoorAirSystem;1"
   ],
   "contents": [
     
