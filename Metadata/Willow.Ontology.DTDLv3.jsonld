@@ -31912,24 +31912,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryVentilator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "EnergyRecoveryVentilator"
-    },
-    "description": {
-      "en": "A standalone asset that transfers energy between two different streams of air, one of which is ventilation air."
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACEquipment;1",
-      "dtmi:com:willowinc:EnergyRecoveryDevice;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnergySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -45138,6 +45120,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryVentilator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "EnergyRecoveryVentilator"
+    },
+    "description": {
+      "en": "A standalone asset that transfers energy between two different streams of air, one of which is ventilation air."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DedicatedOutdoorAirSystem;1"
     ],
     "contents": [],
     "@context": [
