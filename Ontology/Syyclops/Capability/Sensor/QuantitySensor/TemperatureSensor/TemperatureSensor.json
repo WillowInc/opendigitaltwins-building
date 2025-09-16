@@ -4,14 +4,42 @@
   "displayName": {
     "en": "Temperature Sensor"
   },
-  "description": {"en": "The temperature feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The temperature feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:QuantitySensor;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Telemetry", "Temperature"],
+      "@id": "dtmi:com:syyclops:TemperatureSensor:temperature;1",
+      "name": "temperature",
+      "displayName": {
+        "en": "Temperature"
+      },
+      "description": {
+        "en": "Measured temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@id": "dtmi:com:syyclops:TemperatureSensor:temperatureUnit;1",
+      "name": "temperatureUnit",
+      "displayName": {
+        "en": "Temperature Unit"
+      },
+      "schema": "TemperatureUnit",
+      "writable": true,
+      "annotates": "temperature",
+      "overrides": "unit"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2",
+    "dtmi:dtdl:extension:overriding;2"
   ]
 }

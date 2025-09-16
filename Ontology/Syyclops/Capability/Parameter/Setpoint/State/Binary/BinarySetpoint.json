@@ -17,9 +17,21 @@
       "writable": true,
       "schema": "boolean",
       "@id": "dtmi:com:syyclops:BinarySetpoint:lastValue;1"
+    },
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:BinarySetpoint:binaryState;1",
+      "name": "binaryState",
+      "displayName": {
+        "en": "Binary State"
+      },
+      "description": {
+        "en": "Current binary state of the setpoint (true or false)"
+      },
+      "schema": "boolean"
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }

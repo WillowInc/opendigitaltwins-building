@@ -4,14 +4,42 @@
   "displayName": {
     "en": "Total Volatile Organic Compound (TVOC) Air Quality Sensor"
   },
-  "description": {"en": "The total volatile organic compound (TVOC) air quality feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The total volatile organic compound (TVOC) air quality feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:AirQualitySensor;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Telemetry", "Concentration"],
+      "@id": "dtmi:com:syyclops:TVOCAirQualitySensor:tvoc;1",
+      "name": "tvoc",
+      "displayName": {
+        "en": "TVOC"
+      },
+      "description": {
+        "en": "Total volatile organic compound concentration"
+      },
+      "schema": "double",
+      "unit": "partsPerBillion"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@id": "dtmi:com:syyclops:TVOCAirQualitySensor:tvocUnit;1",
+      "name": "tvocUnit",
+      "displayName": {
+        "en": "TVOC Unit"
+      },
+      "schema": "Unitless",
+      "writable": true,
+      "annotates": "tvoc",
+      "overrides": "unit"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2",
+    "dtmi:dtdl:extension:overriding;2"
   ]
 }

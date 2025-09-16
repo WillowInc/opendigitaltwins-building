@@ -4,14 +4,27 @@
   "displayName": {
     "en": "Multi-State Actuator"
   },
-  "description": {"en": "A multi-state command which sets the state of the equipment"},
-  "extends" : [
+  "description": {
+    "en": "A multi-state command which sets the state of the equipment"
+  },
+  "extends": [
     "dtmi:com:syyclops:Actuator;1"
   ],
   "contents": [
-
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:MultiStateActuator:multiStateValue;1",
+      "name": "multiStateValue",
+      "displayName": {
+        "en": "Multi-State Value"
+      },
+      "description": {
+        "en": "The integer value representing the commanded state"
+      },
+      "schema": "integer"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }

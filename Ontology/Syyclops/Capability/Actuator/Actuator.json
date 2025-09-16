@@ -22,9 +22,21 @@
       "name": "observedBy",
       "target": "dtmi:com:syyclops:Sensor;1",
       "@id": "dtmi:com:syyclops:Actuator:observedBy;1"
+    },
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:Actuator:value;1",
+      "name": "value",
+      "displayName": {
+        "en": "Actuator Value"
+      },
+      "description": {
+        "en": "The current value of the actuator (e.g. position, speed, etc.)"
+      },
+      "schema": "double"
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }

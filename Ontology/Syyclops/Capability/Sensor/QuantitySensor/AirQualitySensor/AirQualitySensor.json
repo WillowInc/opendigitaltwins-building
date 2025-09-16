@@ -4,14 +4,42 @@
   "displayName": {
     "en": "Air Quality Sensor"
   },
-  "description": {"en": "The air quality feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The air quality feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:QuantitySensor;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Telemetry", "Density"],
+      "@id": "dtmi:com:syyclops:AirQualitySensor:pm;1",
+      "name": "pm",
+      "displayName": {
+        "en": "Particulate Matter"
+      },
+      "description": {
+        "en": "Measured concentration of particulate matter (e.g., PM2.5, PM10)"
+      },
+      "schema": "double",
+      "unit": "microgramPerCubicMetre"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@id": "dtmi:com:syyclops:AirQualitySensor:pmUnit;1",
+      "name": "pmUnit",
+      "displayName": {
+        "en": "Particulate Matter Unit"
+      },
+      "schema": "DensityUnit",
+      "writable": true,
+      "annotates": "pm",
+      "overrides": "unit"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2",
+    "dtmi:dtdl:extension:overriding;2"
   ]
 }

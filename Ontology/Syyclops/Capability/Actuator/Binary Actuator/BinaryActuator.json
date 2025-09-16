@@ -13,16 +13,28 @@
   "contents": [
     {
       "@type": "Property",
+      "@id": "dtmi:com:syyclops:BinaryActuator:lastValue;1",
       "name": "lastValue",
       "displayName": {
         "en": "Last Value"
       },
       "writable": true,
-      "schema": "boolean",
-      "@id": "dtmi:com:syyclops:BinaryActuator:lastValue;1"
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:BinaryActuator:state;1",
+      "name": "state",
+      "displayName": {
+        "en": "State"
+      },
+      "description": {
+        "en": "The current binary state of the actuator"
+      },
+      "schema": "boolean"
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }
