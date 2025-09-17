@@ -4,13 +4,27 @@
   "displayName": {
     "en": "State"
   },
-  "description": {"en": "The state of the equipment"},
-  "extends" : [
+  "description": {
+    "en": "The state of the equipment"
+  },
+  "extends": [
     "dtmi:com:syyclops:Capability;1"
   ],
   "contents": [
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:State:state;1",
+      "name": "state",
+      "displayName": {
+        "en": "State"
+      },
+      "description": {
+        "en": "Generic state value"
+      },
+      "schema": "double"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }

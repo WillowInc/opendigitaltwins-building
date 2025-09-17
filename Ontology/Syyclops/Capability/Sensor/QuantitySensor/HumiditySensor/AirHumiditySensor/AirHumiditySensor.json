@@ -4,14 +4,42 @@
   "displayName": {
     "en": "Air Humidity Sensor"
   },
-  "description": {"en": "The humidity feedback from a sensor associated with air"},
-  "extends" : [
+  "description": {
+    "en": "The humidity feedback from a sensor associated with air"
+  },
+  "extends": [
     "dtmi:com:syyclops:HumiditySensor;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Telemetry", "RelativeHumidity"],
+      "@id": "dtmi:com:syyclops:AirHumiditySensor:relativeHumidity;1",
+      "name": "relativeHumidity",
+      "displayName": {
+        "en": "Relative Humidity"
+      },
+      "description": {
+        "en": "Measured relative humidity"
+      },
+      "schema": "double",
+      "unit": "percent"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@id": "dtmi:com:syyclops:AirHumiditySensor:relativeHumidityUnit;1",
+      "name": "relativeHumidityUnit",
+      "displayName": {
+        "en": "Relative Humidity Unit"
+      },
+      "schema": "Unitless",
+      "writable": true,
+      "annotates": "relativeHumidity",
+      "overrides": "unit"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2",
+    "dtmi:dtdl:extension:overriding;2"
   ]
 }

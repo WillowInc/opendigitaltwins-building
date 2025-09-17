@@ -4,14 +4,27 @@
   "displayName": {
     "en": "Quantity Sensor"
   },
-  "description": {"en": "The feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:Sensor;1"
   ],
   "contents": [
-
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:QuantitySensor:quantity;1",
+      "name": "quantity",
+      "displayName": {
+        "en": "Quantity"
+      },
+      "description": {
+        "en": "Unspecified sensor measurement"
+      },
+      "schema": "double"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }

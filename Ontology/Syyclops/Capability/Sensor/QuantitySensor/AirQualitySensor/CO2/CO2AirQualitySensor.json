@@ -4,14 +4,42 @@
   "displayName": {
     "en": "Carbon Dioxide (CO2) Air Quality Sensor"
   },
-  "description": {"en": "The air quality (CO2) feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The air quality (CO2) feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:AirQualitySensor;1"
   ],
   "contents": [
-
+    {
+      "@type": ["Telemetry", "Concentration"],
+      "@id": "dtmi:com:syyclops:CO2AirQualitySensor:co2;1",
+      "name": "co2",
+      "displayName": {
+        "en": "CO2"
+      },
+      "description": {
+        "en": "Carbon dioxide concentration"
+      },
+      "schema": "double",
+      "unit": "partsPerMillion"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@id": "dtmi:com:syyclops:CO2AirQualitySensor:co2Unit;1",
+      "name": "co2Unit",
+      "displayName": {
+        "en": "CO2 Unit"
+      },
+      "schema": "Unitless",
+      "writable": true,
+      "annotates": "co2",
+      "overrides": "unit"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2",
+    "dtmi:dtdl:extension:overriding;2"
   ]
 }

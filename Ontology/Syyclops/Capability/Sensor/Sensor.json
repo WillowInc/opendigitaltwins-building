@@ -4,13 +4,51 @@
   "displayName": {
     "en": "Sensor"
   },
-  "description": {"en": "A status or feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "A status or feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:Capability;1"
   ],
   "contents": [
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:Sensor:valueText;1",
+      "name": "valueText",
+      "displayName": {
+        "en": "Text Value"
+      },
+      "description": {
+        "en": "Symbolic sensor output (e.g. 'alarm', 'ok', etc.)"
+      },
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:Sensor:valueNumeric;1",
+      "name": "valueNumeric",
+      "displayName": {
+        "en": "Numeric Value"
+      },
+      "description": {
+        "en": "Numeric state value from sensor"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:Sensor:valueBoolean;1",
+      "name": "valueBoolean",
+      "displayName": {
+        "en": "Boolean Value"
+      },
+      "description": {
+        "en": "Binary sensor status (true/false)"
+      },
+      "schema": "boolean"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }

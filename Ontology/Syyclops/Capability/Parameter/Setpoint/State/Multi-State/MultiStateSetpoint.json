@@ -4,14 +4,27 @@
   "displayName": {
     "en": "Multi-State Setpoint"
   },
-  "description": {"en": "A multi-state configuration setting that functions as the desired value for control of equipment"},
-  "extends" : [
+  "description": {
+    "en": "A multi-state configuration setting that functions as the desired value for control of equipment"
+  },
+  "extends": [
     "dtmi:com:syyclops:StateSetpoint;1"
   ],
   "contents": [
-
+    {
+      "@type": "Telemetry",
+      "@id": "dtmi:com:syyclops:MultiStateSetpoint:multiStateSetpoint;1",
+      "name": "multiStateSetpoint",
+      "displayName": {
+        "en": "Multi-State Setpoint"
+      },
+      "description": {
+        "en": "Current multi-state setpoint value"
+      },
+      "schema": "integer"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4"
   ]
 }
