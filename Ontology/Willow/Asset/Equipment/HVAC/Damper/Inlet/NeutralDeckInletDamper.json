@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:NeutralDeckInletDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Neutral Deck Inlet Damper"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:InletDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
