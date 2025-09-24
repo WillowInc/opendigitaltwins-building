@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:NeutralDeckAirHandlingUnitDischargeSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Neutral Deck Air Handling Unit Discharge Section"
+  },
+  "description": {
+    "en": "A neutral deck discharge section of an air handling unit."
+  },
+  "extends": [
+    "dtmi:com:willowinc:AirHandlingUnitDischargeSection;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
