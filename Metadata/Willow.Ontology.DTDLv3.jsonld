@@ -47914,6 +47914,37 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NeutralDeckAirHandlingUnitDischargeSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Neutral Deck Air Handling Unit Discharge Section"
+    },
+    "description": {
+      "en": "A neutral deck discharge section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitDischargeSection;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:NeutralDeckInletDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Neutral Deck Inlet Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:InletDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:NO2AirQualitySensor;1",
     "@type": "Interface",
     "displayName": {
