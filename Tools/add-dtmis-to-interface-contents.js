@@ -168,7 +168,7 @@ class DTMIGenerator {
                 }
                 
                 // Process nested schema within the field
-                if (field.schema) {
+                if (field.schema && typeof field.schema === 'object') {
                     if (this.processNestedSchema(field.schema, interfaceDTMI, field.name || `field${index}`, 'Object', filePath)) {
                         modified = true;
                     }

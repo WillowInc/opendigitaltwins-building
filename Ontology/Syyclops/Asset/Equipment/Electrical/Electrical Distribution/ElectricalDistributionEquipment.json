@@ -34,21 +34,24 @@
                 "description": {
                   "en": "The percent of the total energy consumed by this electrical distribution equipment that this load classification accounts for."
                 },
-                "schema": "double"
+                "schema": "double",
+                "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:consumptionPercent;1"
               },
               {
                 "name": "connectedLoad",
                 "description": {
                   "en": "The total apparent power in VA connected to this electrical distribution equipment that this load classification accounts for."
                 },
-                "schema": "double"
+                "schema": "double",
+                "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:connectedLoad;1"
               },
               {
                 "name": "demandFactor",
                 "description": {
                   "en": "The percent of the connected load that is consuming energy at any given time. This can be used to calculate the demand load as a percentage of the connected load."
                 },
-                "schema": "double"
+                "schema": "double",
+                "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:demandFactor;1"
               }
             ],
             "@id": "dtmi:com:syyclops:ElectricalDistributionEquipment:OS3;1"
