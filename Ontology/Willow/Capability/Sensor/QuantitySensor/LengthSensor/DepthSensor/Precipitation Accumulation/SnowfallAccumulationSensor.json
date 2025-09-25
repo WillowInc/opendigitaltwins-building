@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SnowfallAccumulationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Snowfall Accumulation Sensor"
+  },
+  "description": {"en": "The accumulation feedback from a sensor associated with snowfall"},
+  "extends" : [
+    "dtmi:com:willowinc:PrecipitationAccumulationSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
