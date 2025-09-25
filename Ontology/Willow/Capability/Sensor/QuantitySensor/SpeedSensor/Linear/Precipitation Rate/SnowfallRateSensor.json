@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SnowfallRateSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Snowfall Rate Sensor"
+  },
+  "description": {"en": "The rate feedback from a sensor associated with snowfall"},
+  "extends" : [
+    "dtmi:com:willowinc:PrecipitationRateSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
