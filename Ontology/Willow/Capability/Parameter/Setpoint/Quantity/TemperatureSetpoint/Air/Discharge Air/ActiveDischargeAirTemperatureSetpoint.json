@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ActiveDischargeAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Active Discharge Air Temperature Setpoint"
+  },
+  "description": {"en": "The current value to which the discharge (supply) air temperature is currently being controlled, based on operating modes and conditions. It will reflect the value of the mode-specific setpoint, threshold, or boundary in which the device is currently operating."},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

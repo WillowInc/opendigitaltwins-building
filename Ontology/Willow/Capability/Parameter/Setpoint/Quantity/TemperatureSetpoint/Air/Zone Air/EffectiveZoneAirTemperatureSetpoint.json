@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Effective Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated with effective zone air temperature"},
+  "description": {"en": "The current value to which the zone temperature is being controlled based on the current occupancy mode (i.e. occupied, unoccupied, or standby)."},
   "extends" : [
     "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
   ],

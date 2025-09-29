@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingDischargeAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Discharge Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air temperature during heating mode."},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
