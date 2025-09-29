@@ -62018,6 +62018,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ActiveDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Active Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The current value to which the discharge (supply) air temperature is currently being controlled, based on operating modes and conditions. It will reflect the value of the mode-specific setpoint, threshold, or boundary in which the device is currently operating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ActiveZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -63003,6 +63020,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air temperature during cooling mode."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -63808,7 +63842,7 @@
       "en": "Effective Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated with effective zone air temperature"
+      "en": "The current value to which the zone temperature is being controlled based on the current occupancy mode (i.e. occupied, unoccupied, or standby)."
     },
     "extends": [
       "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
@@ -64953,6 +64987,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingDischargeAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Discharge Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air temperature during heating mode."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -72887,7 +72938,7 @@
       "en": "Effective Cooling Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated with effective cooling zone air temperature"
+      "en": "The current value to which the zone temperature is being controlled based on the current occupancy mode (i.e. occupied, unoccupied, or standby). This setpoint applies when the system is in cooling mode."
     },
     "extends": [
       "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
@@ -72922,7 +72973,7 @@
       "en": "Effective Heating Zone Air Temperature Setpoint"
     },
     "description": {
-      "en": "The desired value associated with effective heating zone air temperature"
+      "en": "The current value to which the zone temperature is being controlled based on the current occupancy mode (i.e. occupied, unoccupied, or standby). This setpoint applies when the system is in heating mode."
     },
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
