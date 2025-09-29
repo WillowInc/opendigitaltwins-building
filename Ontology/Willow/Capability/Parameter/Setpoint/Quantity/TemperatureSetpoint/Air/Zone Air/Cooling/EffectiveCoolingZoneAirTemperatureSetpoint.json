@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Effective Cooling Zone Air Temperature Setpoint"
   },
-  "description": {"en": "The desired value associated with effective cooling zone air temperature"},
+  "description": {"en": "The current value to which the zone temperature is being controlled based on the current occupancy mode (i.e. occupied, unoccupied, or standby). This setpoint applies when the system is in cooling mode."},
   "extends" : [
     "dtmi:com:willowinc:CoolingZoneAirTemperatureSetpoint;1",
     "dtmi:com:willowinc:EffectiveZoneAirTemperatureSetpoint;1"
