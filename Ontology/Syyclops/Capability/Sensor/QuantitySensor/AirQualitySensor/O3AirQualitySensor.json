@@ -4,14 +4,42 @@
   "displayName": {
     "en": "Ozone (O3) Air Quality Sensor"
   },
-  "description": {"en": "The ozone (O3) air quality feedback from a sensor"},
-  "extends" : [
+  "description": {
+    "en": "The ozone (O3) air quality feedback from a sensor"
+  },
+  "extends": [
     "dtmi:com:syyclops:AirQualitySensor;1"
   ],
   "contents": [
-
+    {
+      "@id": "dtmi:com:syyclops:O3AirQualitySensor:o3;1",
+      "@type": ["Telemetry", "Concentration"],
+      "name": "o3",
+      "displayName": {
+        "en": "Ozone (O3)"
+      },
+      "description": {
+        "en": "Ozone concentration in air"
+      },
+      "schema": "double",
+      "unit": "partsPerBillion"
+    },
+    {
+      "@id": "dtmi:com:syyclops:O3AirQualitySensor:o3Unit;1",
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "name": "o3Unit",
+      "displayName": {
+        "en": "O3 Unit"
+      },
+      "schema": "Unitless",
+      "writable": true,
+      "annotates": "o3",
+      "overrides": "unit"
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;4",
+    "dtmi:dtdl:extension:quantitativeTypes;2",
+    "dtmi:dtdl:extension:overriding;2"
   ]
 }
