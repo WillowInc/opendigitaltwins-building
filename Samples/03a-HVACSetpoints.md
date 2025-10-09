@@ -8,8 +8,8 @@ Zone temperature setpoints define the temperatures in the space (a.k.a. HVAC Zon
 
 1. Zone temperature heating and cooling setpoints define the temperatures that a terminal unit will use as the lower and upper bounds for maintaing a space's temperature. When the space temperature drops below the heating setpoint, the unit will heat the space. When the space temperature rises above the cooling setpoint, the unit will cool the space.
 
-> Note: 
-Some equipment are programmed to only be able to heat or cool based on a predefined mode - heating mode or cooling mode - and cannot dynamically change the mode. This can be recognized when a space temperature is allowed to exceed one of the heating or cooling setpoints.
+> [! NOTE] 
+> Some equipment are programmed to only be able to heat or cool based on a predefined mode - heating mode or cooling mode - and cannot dynamically change the mode. This can be recognized when a space temperature is allowed to exceed one of the heating or cooling setpoints.
 
 2. Most zones also have occupancy modes which adjust the heating and cooling setpoints based on whether people are expected to be in the space. These are required by ASHRAE 90.1 for energy savings when spaces are unoccupied. Typically a weekly schedule is setup to define which times in a given day of the week the zone will be in occupied or unoccupied modes. The point which defines the current mode should be classified as `Occupied State`.
 
@@ -31,10 +31,10 @@ Because there are effective setpoints for both heating and cooling, we have two 
 * `Effective Cooling Zone Air Temperature Setpoint`
 * `Effective Heating Zone Air Temperature Setpoint`
 
-> Note: 
-Some equipment will only expose these two effective setpoints rather than each of the four individual occupied/unoccupied, heating/cooling setpoints listed above. This can be recognized by the time series oscillating between two temperatures.
+> [! NOTE] 
+> Some equipment will only expose these two effective setpoints rather than each of the four individual occupied/unoccupied, heating/cooling setpoints listed above. This can be recognized by the time series oscillating between two temperatures.
 
-> Important: 
+> [! IMPORTANT] 
 The model `Effective Zone Air Temperature Setpoint` should NOT be used as the exact model for a point. This is an abstract model that the above Effective Cooling/Heating extend from. See below section on `Active` setpoints if there is a single setpoint which reflects the currently used setpoint at all times.
 
 ![HVAC-Example1](Images/ZoneTempEffectiveSetpoints.jpg)
