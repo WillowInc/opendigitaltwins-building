@@ -52,3 +52,5 @@ Sometimes there is a zone temperature setpoint which does not change over the co
 * `Target Zone Air Temperature Setpoint`
 
 This point is also recognizable when the space temp does not seek this temperature like it does the other setpoints. For exmaple, a target temperature may be 72F with an Occupied Cooling Setpoint of 74F and an Unoccupied Cooling Setpoint of 78F. During the summer time while in cooling season, the space temperature will likely never approach 72F but rather consistently be between 74F and 78F based on which occupancy mode.
+
+![HVAC-Example1](Images/ZoneTempTargetSetpoint.jpg)
