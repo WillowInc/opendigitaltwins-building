@@ -895,16 +895,6 @@
       },
       {
         "@type": "Property",
-        "name": "landId",
-        "displayName": {
-          "en": "Land ID"
-        },
-        "writable": true,
-        "schema": "string",
-        "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
-      },
-      {
-        "@type": "Property",
         "name": "coordinates",
         "displayName": {
           "en": "Coordinates"
@@ -2707,16 +2697,6 @@
         },
         "writable": true,
         "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "landId",
-        "displayName": {
-          "en": "Land ID"
-        },
-        "writable": true,
-        "schema": "string",
-        "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
       },
       {
         "@type": "Property",
@@ -4551,16 +4531,6 @@
       },
       {
         "@type": "Property",
-        "name": "landId",
-        "displayName": {
-          "en": "Land ID"
-        },
-        "writable": true,
-        "schema": "string",
-        "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
-      },
-      {
-        "@type": "Property",
         "name": "alternateClassification",
         "displayName": {
           "en": "Alternate Classification"
@@ -4903,16 +4873,6 @@
         },
         "writable": true,
         "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "landId",
-        "displayName": {
-          "en": "Land ID"
-        },
-        "writable": true,
-        "schema": "string",
-        "comment": "Reference of the land (i.e. campus, site, airport) to which the twin belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding construction twins."
       },
       {
         "@type": "Property",
@@ -24408,16 +24368,6 @@
         },
         "writable": true,
         "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "landId",
-        "displayName": {
-          "en": "Land ID"
-        },
-        "writable": true,
-        "schema": "string",
-        "comment": "Reference of the land (i.e. campus, site, airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
       },
       {
         "@type": "Property",
