@@ -149,16 +149,6 @@
     },
     {
       "@type": "Property",
-      "name": "landId",
-      "displayName": {
-        "en": "Land ID"
-      },
-      "writable": true,
-      "schema": "string",
-      "comment": "Reference of the land (i.e. campus, site, airport) to which the twin belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding construction twins."
-    },
-    {
-      "@type": "Property",
       "name": "coordinates",
       "displayName": {
         "en": "Coordinates"
