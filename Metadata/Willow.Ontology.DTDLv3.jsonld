@@ -7599,6 +7599,9 @@
     "displayName": {
       "en": "Furniture"
     },
+    "description": {
+      "en": "An asset that includes movable objects intended to support various human activities such as seating, eating, and sleeping."
+    },
     "extends": [
       "dtmi:com:willowinc:Asset;1"
     ],
@@ -8502,7 +8505,7 @@
       "en": "Sensor"
     },
     "description": {
-      "en": "A status or feedback from a sensor"
+      "en": "A capability that represents a measurement or observation in the physical world."
     },
     "extends": [
       "dtmi:com:willowinc:Capability;1"
@@ -8574,7 +8577,7 @@
       "en": "State"
     },
     "description": {
-      "en": "The state of the equipment"
+      "en": "A capability that represents a status or feedback from a device, system, or component."
     },
     "extends": [
       "dtmi:com:willowinc:Capability;1"
@@ -10969,6 +10972,9 @@
     "displayName": {
       "en": "Bed"
     },
+    "description": {
+      "en": "A piece of furniture used for sleeping or resting."
+    },
     "extends": [
       "dtmi:com:willowinc:Furniture;1"
     ],
@@ -12382,6 +12388,9 @@
     "displayName": {
       "en": "Chair"
     },
+    "description": {
+      "en": "A piece of furniture designed for a single person to sit on."
+    },
     "extends": [
       "dtmi:com:willowinc:Furniture;1"
     ],
@@ -12539,6 +12548,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Conveyance Equipment"
+    },
+    "description": {
+      "en": "Equipment used for the transportation of people or goods within a building or structure."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -12807,6 +12819,9 @@
     "displayName": {
       "en": "Electrical Equipment"
     },
+    "description": {
+      "en": "Equipment involved in the distribution, generation, or storage of electrical energy."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -12879,6 +12894,9 @@
     "displayName": {
       "en": "Fire Protection Equipment"
     },
+    "description": {
+      "en": "Equipment designed to detect, suppress, or control fires within a building or structure."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -12892,6 +12910,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Fitness Equipment"
+    },
+    "description": {
+      "en": "Equipment designed for physical exercise and fitness training."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -12919,6 +12940,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Foodservice Equipment"
+    },
+    "description": {
+      "en": "Equipment used in the preparation, cooking, serving, and storage of food and beverage."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -13387,6 +13411,9 @@
     "displayName": {
       "en": "HVAC Equipment"
     },
+    "description": {
+      "en": "Equipment used for heating, ventilation, and air conditioning within a building or structure."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -13830,6 +13857,9 @@
     "displayName": {
       "en": "ICT Equipment"
     },
+    "description": {
+      "en": "Information and communications technology equipment such as networking devices, computers, audio-visual systems, and telecommunication devices."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -14022,6 +14052,9 @@
     "displayName": {
       "en": "Lighting Equipment"
     },
+    "description": {
+      "en": "Equipment used for illumination within a building or structure."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -14140,6 +14173,9 @@
     "displayName": {
       "en": "Material Handling Equipment"
     },
+    "description": {
+      "en": "Equipment used for the movement, storage, control, and protection of materials and products throughout the process of manufacturing, distribution, consumption, and disposal."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -14153,6 +14189,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Meter Equipment"
+    },
+    "description": {
+      "en": "Equipment used to measure and record the consumption of utilities such as water, gas, or electricity."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -14369,6 +14408,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Parking Spot Collection"
+    },
+    "description": {
+      "en": "A grouping of parking spots which are operationally managed as a single entity."
     },
     "extends": [
       "dtmi:com:willowinc:SpaceCollection;1"
@@ -14640,6 +14682,9 @@
     "displayName": {
       "en": "Plumbing Equipment"
     },
+    "description": {
+      "en": "Equipment used for water supply, water treatment, drainage, and sewage systems within a building or structure."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -14723,7 +14768,7 @@
       "en": "Refrigeration Equipment"
     },
     "description": {
-      "en": "An asset that is designed to contain and use refrigerant gas to establish or maintain colder than ambient temperatures in a confined space."
+      "en": "Equipment that is designed to contain and use refrigerant gas to establish or maintain colder than ambient temperatures in a confined space."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -14755,6 +14800,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Retail Equipment"
+    },
+    "description": {
+      "en": "Equipment used in retail environments for sales, display, and storage of products."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -14851,6 +14899,9 @@
     "displayName": {
       "en": "Safety Equipment"
     },
+    "description": {
+      "en": "Equipment used to ensure the safety and protection of individuals in various environments."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -14881,6 +14932,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Security Equipment"
+    },
+    "description": {
+      "en": "Equipment used to monitor, control, and protect assets and individuals from unauthorized access or threats."
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -15675,6 +15729,9 @@
     "displayName": {
       "en": "Swimming Pool Equipment"
     },
+    "description": {
+      "en": "Equipment used in the operation and maintenance of swimming pools."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -15688,6 +15745,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Table"
+    },
+    "description": {
+      "en": "A piece of furniture with a flat top and one or more legs, used for placing items, working, or dining."
     },
     "extends": [
       "dtmi:com:willowinc:Furniture;1"
@@ -15713,6 +15773,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Tenant Unit"
+    },
+    "description": {
+      "en": "A leased space within a building that is occupied by a tenant or organization."
     },
     "extends": [
       "dtmi:com:willowinc:SpaceCollection;1"
@@ -15899,6 +15962,9 @@
     "displayName": {
       "en": "Waste Handling Equipment"
     },
+    "description": {
+      "en": "Equipment used for the collection, transportation, processing, recycling, or disposal of waste materials."
+    },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
     ],
@@ -15912,6 +15978,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Workstation"
+    },
+    "description": {
+      "en": "A piece of furniture designed for use as a desk or work area, often equipped with features to support productivity and ergonomics."
     },
     "extends": [
       "dtmi:com:willowinc:Furniture;1"
@@ -16746,6 +16815,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Aircraft"
+    },
+    "description": {
+      "en": "A vehicle designed for air travel that has wings and one or more engines."
     },
     "extends": [
       "dtmi:com:willowinc:airport:AirportVehicle;1"
@@ -19728,6 +19800,9 @@
     "displayName": {
       "en": "Elevating Platform Lift"
     },
+    "description": {
+      "en": "A type of conveyance equipment designed to lift people or goods vertically using a platform, often to reach elevated work areas or stages."
+    },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1"
     ],
@@ -19741,6 +19816,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Elevator"
+    },
+    "description": {
+      "en": "A type of conveyance equipment used to transport people or goods vertically between floors in a building."
     },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1"
@@ -19907,6 +19985,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Elevator Machine"
+    },
+    "description": {
+      "en": "The machinery and components that operate an elevator, including the motor, brake system, and control mechanisms."
     },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1"
@@ -21007,6 +21088,9 @@
     "displayName": {
       "en": "Equipment Group"
     },
+    "description": {
+      "en": "A group of like equipment that operates together as a single entity and are often connected in parallel."
+    },
     "extends": [
       "dtmi:com:willowinc:EquipmentCollection;1"
     ],
@@ -21032,6 +21116,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Escalator"
+    },
+    "description": {
+      "en": "A type of conveyance equipment that consists of a moving staircase used to transport people between floors in a building."
     },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1"
@@ -21755,6 +21842,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Fire Alarm Equipment"
+    },
+    "description": {
+      "en": "Equipment designed to detect and alert occupants of fire or smoke within a building or structure."
     },
     "extends": [
       "dtmi:com:willowinc:FireProtectionEquipment;1"
@@ -24103,6 +24193,9 @@
     "displayName": {
       "en": "Moving Walkway"
     },
+    "description": {
+      "en": "A type of conveyance equipment that consists of a flat or inclined moving platform used to transport people horizontally or on a slight incline within a building."
+    },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1"
     ],
@@ -26044,6 +26137,9 @@
     "displayName": {
       "en": "System"
     },
+    "description": {
+      "en": "A group of equipment that work together to provide a specific function within a building or facility."
+    },
     "extends": [
       "dtmi:com:willowinc:EquipmentCollection;1"
     ],
@@ -27161,6 +27257,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Vehicle Service Lift"
+    },
+    "description": {
+      "en": "A type of conveyance equipment designed to lift vehicles for servicing or maintenance purposes."
     },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1",
@@ -37906,6 +38005,9 @@
     "displayName": {
       "en": "Scissor Lift"
     },
+    "description": {
+      "en": "A type of elevating platform lift that uses a scissor-like mechanism to raise and lower the platform vertically."
+    },
     "extends": [
       "dtmi:com:willowinc:ElevatingPlatformLift;1"
     ],
@@ -38728,6 +38830,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Telescoping Platform Lift"
+    },
+    "description": {
+      "en": "A type of elevating platform lift that uses a telescoping mechanism to extend and retract the platform vertically."
     },
     "extends": [
       "dtmi:com:willowinc:ElevatingPlatformLift;1"
