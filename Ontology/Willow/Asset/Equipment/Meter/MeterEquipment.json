@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Meter Equipment"
   },
+  "description": {
+    "en": "Equipment used to measure and record the consumption of utilities such as water, gas, or electricity."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Fire Protection Equipment"
   },
+  "description": {
+    "en": "Equipment designed to detect, suppress, or control fires within a building or structure."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

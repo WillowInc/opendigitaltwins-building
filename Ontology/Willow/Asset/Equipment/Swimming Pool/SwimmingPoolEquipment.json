@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Swimming Pool Equipment"
   },
+  "description": {
+    "en": "Equipment used in the operation and maintenance of swimming pools."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

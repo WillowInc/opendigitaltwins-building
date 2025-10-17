@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Fitness Equipment"
   },
+  "description": {
+    "en": "Equipment designed for physical exercise and fitness training."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

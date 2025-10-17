@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Equipment Group"
   },
+  "description": {
+    "en": "A group of like equipment that operates together as a single entity and are often connected in parallel."
+  },
   "extends" : [
     "dtmi:com:willowinc:EquipmentCollection;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Chair"
   },
+  "description": {
+    "en": "A piece of furniture designed for a single person to sit on."
+  },
   "extends" : [
     "dtmi:com:willowinc:Furniture;1"
   ],

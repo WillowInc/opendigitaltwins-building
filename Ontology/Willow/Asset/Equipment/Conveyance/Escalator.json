@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Escalator"
   },
+  "description": {
+    "en": "A type of conveyance equipment that consists of a moving staircase used to transport people between floors in a building."
+  },
   "extends" : [
     "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],

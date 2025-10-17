@@ -4,6 +4,9 @@
   "displayName": {
     "en": "ICT Equipment"
   },
+  "description": {
+    "en": "Information and communications technology equipment such as networking devices, computers, audio-visual systems, and telecommunication devices."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

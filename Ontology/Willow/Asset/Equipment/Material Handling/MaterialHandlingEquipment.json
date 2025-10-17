@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Material Handling Equipment"
   },
+  "description": {
+    "en": "Equipment used for the movement, storage, control, and protection of materials and products throughout the process of manufacturing, distribution, consumption, and disposal."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

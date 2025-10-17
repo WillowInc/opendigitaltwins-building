@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Elevator"
   },
+  "description": {
+    "en": "A type of conveyance equipment used to transport people or goods vertically between floors in a building."
+  },
   "extends" : [
     "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],

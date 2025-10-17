@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Foodservice Equipment"
   },
+  "description": {
+    "en": "Equipment used in the preparation, cooking, serving, and storage of food and beverage."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

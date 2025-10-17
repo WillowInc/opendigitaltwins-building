@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Parking Spot Collection"
   },
+  "description": {
+    "en": "A grouping of parking spots which are operationally managed as a single entity."
+  },
   "extends" : [
     "dtmi:com:willowinc:SpaceCollection;1"
   ],

@@ -4,7 +4,9 @@
   "displayName": {
     "en": "State"
   },
-  "description": {"en": "The state of the equipment"},
+  "description": {
+    "en": "A capability that represents a status or feedback from a device, system, or component."
+  },
   "extends" : [
     "dtmi:com:willowinc:Capability;1"
   ],

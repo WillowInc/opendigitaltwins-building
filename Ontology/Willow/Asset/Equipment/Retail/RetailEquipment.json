@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Retail Equipment"
   },
+  "description": {
+    "en": "Equipment used in retail environments for sales, display, and storage of products."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

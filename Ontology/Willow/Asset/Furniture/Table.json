@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Table"
   },
+  "description": {
+    "en": "A piece of furniture with a flat top and one or more legs, used for placing items, working, or dining."
+  },
   "extends" : [
     "dtmi:com:willowinc:Furniture;1"
   ],

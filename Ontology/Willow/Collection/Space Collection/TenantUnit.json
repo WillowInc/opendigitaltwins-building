@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Tenant Unit"
   },
+  "description": {
+    "en": "A leased space within a building that is occupied by a tenant or organization."
+  },
   "extends" : [
     "dtmi:com:willowinc:SpaceCollection;1"
   ],

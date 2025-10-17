@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Safety Equipment"
   },
+  "description": {
+    "en": "Equipment used to ensure the safety and protection of individuals in various environments."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

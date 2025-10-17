@@ -4,6 +4,9 @@
   "displayName": {
     "en": "System"
   },
+  "description": {
+    "en": "A group of equipment that work together to provide a specific function within a building or facility."
+  },
   "extends" : [
     "dtmi:com:willowinc:EquipmentCollection;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Elevating Platform Lift"
   },
+  "description": {
+    "en": "A type of conveyance equipment designed to lift people or goods vertically using a platform, often to reach elevated work areas or stages."
+  },
   "extends" : [
     "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],

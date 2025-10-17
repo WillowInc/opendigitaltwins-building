@@ -4,7 +4,9 @@
   "displayName": {
     "en": "Sensor"
   },
-  "description": {"en": "A status or feedback from a sensor"},
+  "description": {
+    "en": "A capability that represents a measurement or observation in the physical world."
+  },
   "extends" : [
     "dtmi:com:willowinc:Capability;1"
   ],

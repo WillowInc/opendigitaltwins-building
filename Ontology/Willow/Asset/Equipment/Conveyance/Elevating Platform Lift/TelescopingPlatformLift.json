@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Telescoping Platform Lift"
   },
+  "description": {
+    "en": "A type of elevating platform lift that uses a telescoping mechanism to extend and retract the platform vertically."
+  },
   "extends" : [
     "dtmi:com:willowinc:ElevatingPlatformLift;1"
   ],
