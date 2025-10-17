@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Electrical Equipment"
   },
+  "description": {
+    "en": "Equipment involved in the distribution, generation, or storage of electrical energy."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

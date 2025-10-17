@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Aircraft"
   },
+  "description": {
+    "en": "A vehicle designed for air travel that has wings and one or more engines."
+  },
   "extends" : [
     "dtmi:com:willowinc:airport:AirportVehicle;1"
   ],

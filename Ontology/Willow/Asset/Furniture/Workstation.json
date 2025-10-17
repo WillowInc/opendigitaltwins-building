@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Workstation"
   },
+  "description": {
+    "en": "A piece of furniture designed for use as a desk or work area, often equipped with features to support productivity and ergonomics."
+  },
   "extends" : [
     "dtmi:com:willowinc:Furniture;1"
   ],

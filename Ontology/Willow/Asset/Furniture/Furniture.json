@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Furniture"
   },
+  "description": {
+    "en": "An asset that includes movable objects intended to support various human activities such as seating, eating, and sleeping."
+  },
   "extends" : [
     "dtmi:com:willowinc:Asset;1"
   ],

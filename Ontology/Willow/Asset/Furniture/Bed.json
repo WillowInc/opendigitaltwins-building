@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Bed"
   },
+  "description": {
+    "en": "A piece of furniture used for sleeping or resting."
+  },
   "extends" : [
     "dtmi:com:willowinc:Furniture;1"
   ],

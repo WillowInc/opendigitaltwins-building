@@ -4,6 +4,9 @@
   "displayName": {
     "en": "HVAC Equipment"
   },
+  "description": {
+    "en": "Equipment used for heating, ventilation, and air conditioning within a building or structure."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

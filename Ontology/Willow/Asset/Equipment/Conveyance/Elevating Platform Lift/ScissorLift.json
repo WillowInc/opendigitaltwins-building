@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Scissor Lift"
   },
+  "description": {
+    "en": "A type of elevating platform lift that uses a scissor-like mechanism to raise and lower the platform vertically."
+  },
   "extends" : [
     "dtmi:com:willowinc:ElevatingPlatformLift;1"
   ],

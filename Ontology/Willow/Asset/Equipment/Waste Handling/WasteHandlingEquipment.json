@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Waste Handling Equipment"
   },
+  "description": {
+    "en": "Equipment used for the collection, transportation, processing, recycling, or disposal of waste materials."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],

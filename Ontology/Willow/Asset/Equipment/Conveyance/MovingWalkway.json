@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Moving Walkway"
   },
+  "description": {
+    "en": "A type of conveyance equipment that consists of a flat or inclined moving platform used to transport people horizontally or on a slight incline within a building."
+  },
   "extends" : [
     "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],

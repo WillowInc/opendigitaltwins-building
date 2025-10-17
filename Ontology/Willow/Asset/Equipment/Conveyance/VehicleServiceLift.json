@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Vehicle Service Lift"
   },
+  "description": {
+    "en": "A type of conveyance equipment designed to lift vehicles for servicing or maintenance purposes."
+  },
   "extends" : [
     "dtmi:com:willowinc:ConveyanceEquipment;1",
     "dtmi:com:willowinc:VehicleEquipment;1"

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Elevator Machine"
   },
+  "description": {
+    "en": "The machinery and components that operate an elevator, including the motor, brake system, and control mechanisms."
+  },
   "extends" : [
     "dtmi:com:willowinc:ConveyanceEquipment;1"
   ],

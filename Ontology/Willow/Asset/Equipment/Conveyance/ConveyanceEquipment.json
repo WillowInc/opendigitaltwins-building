@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Conveyance Equipment"
   },
+  "description": {
+    "en": "Equipment used for the transportation of people or goods within a building or structure."
+  },
   "extends" : [
     "dtmi:com:willowinc:Equipment;1"
   ],
