@@ -239,6 +239,31 @@
       "schema": "string",
       "writable": true,
       "@id": "dtmi:com:syyclops:WorkOrder:completionNotes;1"
+    },
+    {
+      "@id": "dtmi:com:syyclops:WorkOrderCommand:Create;1",
+      "@type": "Command",
+      "name": "createWorkOrder",
+      "displayName": {
+        "en": "Create Work Order"
+      },
+      "description": {
+        "en": "A generic command to create a new Work Order in an integrated provider system (e.g., CMMS) and register the resulting Syyclops twin."
+      },
+      "request": {
+        "name": "requestPayload",
+        "displayName": {
+          "en": "Generic Creation Request"
+        },
+        "schema": "dtmi:com:syyclops:WorkOrderRequestSchema;1"
+      },
+      "response": {
+        "name": "responsePayload",
+        "displayName": {
+          "en": "Creation Response"
+        },
+        "schema": "dtmi:com:syyclops:WorkOrderResponseSchema;1"
+      }
     }
   ],
   "schemas": [
@@ -455,6 +480,117 @@
       "displayName": {
         "en": "Work Order Type Enum"
       }
+    },
+    {
+      "@id": "dtmi:com:syyclops:WorkOrderRequestSchema;1",
+      "@type": "Object",
+      "displayName": {
+        "en": "Generic Work Order Creation Request Schema"
+      },
+      "description": {
+        "en": "The generic data required to create a Work Order, to be mapped by an integration agent to a specific provider's API."
+      },
+      "fields": [
+        {
+          "name": "name",
+          "displayName": {
+            "en": "Title/Name"
+          },
+          "description": {
+            "en": "A brief title or summary for the work order."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "description",
+          "displayName": {
+            "en": "Description"
+          },
+          "description": {
+            "en": "A detailed description of the work order."
+          },
+          "schema": "string"
+        },
+        {
+          "name": "priority",
+          "displayName": {
+            "en": "Priority Level"
+          },
+          "description": {
+            "en": "The desired priority level for the work order."
+          },
+          "schema": "dtmi:com:syyclops:WorkOrderPriorityEnum;1"
+        },
+        {
+          "name": "workType",
+          "displayName": {
+            "en": "Work Type"
+          },
+          "description": {
+            "en": "The category of work to be performed (e.g., Preventive Maintenance)."
+          },
+          "schema": "dtmi:com:syyclops:WorkOrderTypeEnum;1"
+        },
+        {
+          "name": "status",
+          "displayName": {
+            "en": "Status"
+          },
+          "description": {
+            "en": "The current status of the work order."
+          },
+          "schema": "dtmi:com:syyclops:WorkOrderStatusEnum;1"
+        },
+        {
+          "name": "scheduledEndDateTime",
+          "displayName": {
+            "en": "Scheduled End Date Time"
+          },
+          "description": {
+            "en": "The date and time the work order is scheduled to end."
+          },
+          "schema": "dtmi:com:syyclops:WorkOrder:scheduledEndDateTime;1"
+        },
+        {
+          "name": "scheduledStartDateTime",
+          "displayName": {
+            "en": "Scheduled Start Date Time"
+          },
+          "description": {
+            "en": "The date and time the work order is scheduled to start."
+          },
+          "schema": "dtmi:com:syyclops:WorkOrder:scheduledStartDateTime;1"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:syyclops:WorkOrderResponseSchema;1",
+      "@type": "Object",
+      "displayName": {
+        "en": "Work Order Creation Response Schema"
+      },
+      "fields": [
+        {
+          "name": "success",
+          "displayName": {
+            "en": "Success"
+          },
+          "schema": "boolean",
+          "description": {
+            "en": "Indicates whether the work order creation was successful."
+          }
+        },
+        {
+          "name": "message",
+          "displayName": {
+            "en": "Message"
+          },
+          "schema": "string",
+          "description": {
+            "en": "A message indicating the success or failure of the work order creation."
+          }
+        }
+      ]
     }
   ],
   "@context": [
