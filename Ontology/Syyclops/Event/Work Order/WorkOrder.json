@@ -251,6 +251,7 @@
         "en": "A generic command to create a new Work Order in an integrated provider system (e.g., CMMS) and register the resulting Syyclops twin."
       },
       "request": {
+        "@id": "dtmi:com:syyclops:WorkOrderCommand:Create:request;1",
         "name": "requestPayload",
         "displayName": {
           "en": "Generic Creation Request"
@@ -258,6 +259,7 @@
         "schema": "dtmi:com:syyclops:WorkOrderRequestSchema;1"
       },
       "response": {
+        "@id": "dtmi:com:syyclops:WorkOrderCommand:Create:response;1",
         "name": "responsePayload",
         "displayName": {
           "en": "Creation Response"
@@ -492,6 +494,7 @@
       },
       "fields": [
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:name;1",
           "name": "name",
           "displayName": {
             "en": "Title/Name"
@@ -502,6 +505,7 @@
           "schema": "string"
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:description;1",
           "name": "description",
           "displayName": {
             "en": "Description"
@@ -512,6 +516,7 @@
           "schema": "string"
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:priority;1",
           "name": "priority",
           "displayName": {
             "en": "Priority Level"
@@ -522,6 +527,7 @@
           "schema": "dtmi:com:syyclops:WorkOrderPriorityEnum;1"
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:workType;1",
           "name": "workType",
           "displayName": {
             "en": "Work Type"
@@ -532,6 +538,7 @@
           "schema": "dtmi:com:syyclops:WorkOrderTypeEnum;1"
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:status;1",
           "name": "status",
           "displayName": {
             "en": "Status"
@@ -542,6 +549,7 @@
           "schema": "dtmi:com:syyclops:WorkOrderStatusEnum;1"
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:scheduledEndDateTime;1",
           "name": "scheduledEndDateTime",
           "displayName": {
             "en": "Scheduled End Date Time"
@@ -549,9 +557,10 @@
           "description": {
             "en": "The date and time the work order is scheduled to end."
           },
-          "schema": "dtmi:com:syyclops:WorkOrder:scheduledEndDateTime;1"
+          "schema": "dateTime"
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderRequestSchema:scheduledStartDateTime;1",
           "name": "scheduledStartDateTime",
           "displayName": {
             "en": "Scheduled Start Date Time"
@@ -559,7 +568,7 @@
           "description": {
             "en": "The date and time the work order is scheduled to start."
           },
-          "schema": "dtmi:com:syyclops:WorkOrder:scheduledStartDateTime;1"
+          "schema": "dateTime"
         }
       ]
     },
@@ -571,6 +580,7 @@
       },
       "fields": [
         {
+          "@id": "dtmi:com:syyclops:WorkOrderResponseSchema:success;1",
           "name": "success",
           "displayName": {
             "en": "Success"
@@ -581,6 +591,7 @@
           }
         },
         {
+          "@id": "dtmi:com:syyclops:WorkOrderResponseSchema:message;1",
           "name": "message",
           "displayName": {
             "en": "Message"
