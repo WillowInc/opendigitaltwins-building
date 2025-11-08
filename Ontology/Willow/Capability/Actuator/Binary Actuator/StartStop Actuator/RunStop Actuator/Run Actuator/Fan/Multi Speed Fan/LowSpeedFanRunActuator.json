@@ -6,7 +6,8 @@
   },
   "description": {"en": "The Boolean command which sets the state of the low speed fan command to 'run' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:FanRunActuator;1"
+    "dtmi:com:willowinc:FanRunActuator;1",
+    "dtmi:com:willowinc:LowSpeedRunActuator;1"
   ],
   "contents": [
 
