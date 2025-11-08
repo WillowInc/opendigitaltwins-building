@@ -37983,6 +37983,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SashPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sash Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the sash of a fume hood"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SashPositionState;1",
     "@type": "Interface",
     "displayName": {
@@ -42970,6 +42987,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of chilled water to and from a cooling coil or another part of a chilled water loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChillerGroup;1",
     "@type": "Interface",
     "displayName": {
@@ -43416,6 +43450,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of condenser water to and from a condenser or another part of a condenser water loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
     ],
     "contents": [],
     "@context": [
@@ -46207,6 +46258,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PackagedHeatPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingHotWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Hot Water Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of heating hot water to and from a heating coil or another part of a heating hot water loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
     ],
     "contents": [],
     "@context": [
@@ -50977,6 +51045,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ThermalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of steam to and from a heating coil or another part of a steam loop."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
     ],
     "contents": [],
     "@context": [
@@ -59670,6 +59755,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatHotWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Hot Water Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of heat hot water to and from a preheat coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingHotWaterValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreheatLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -59975,6 +60077,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatHotWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Hot Water Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of heat hot water to and from a reheat coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingHotWaterValve;1"
     ],
     "contents": [],
     "@context": [
@@ -62328,7 +62447,7 @@
     "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuator;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Chilled Water Valve Bypass Position Actuator"
+      "en": "Bypass Chilled Water Valve Position Actuator"
     },
     "description": {
       "en": "The percent command which sets the position of the chilled water bypass valve"
