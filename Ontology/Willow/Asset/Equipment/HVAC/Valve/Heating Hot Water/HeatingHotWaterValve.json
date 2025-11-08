@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingHotWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating Hot Water Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of heating hot water to and from a heating coil or another part of a heating hot water loop."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:CondenserWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Condenser Water Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of condenser water to and from a condenser or another part of a condenser water loop."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

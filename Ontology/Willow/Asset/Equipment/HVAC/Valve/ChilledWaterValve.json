@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ChilledWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chilled Water Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of chilled water to and from a cooling coil or another part of a chilled water loop."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

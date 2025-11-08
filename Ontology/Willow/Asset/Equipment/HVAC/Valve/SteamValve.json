@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SteamValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Steam Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of steam to and from a heating coil or another part of a steam loop."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
