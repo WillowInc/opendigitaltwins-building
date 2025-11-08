@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LowSpeedRunActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Speed Run Actuator"
+  },
+  "description": {"en": "The Boolean command which sets the state of the equipment run at 'low speed' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:RunActuator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
