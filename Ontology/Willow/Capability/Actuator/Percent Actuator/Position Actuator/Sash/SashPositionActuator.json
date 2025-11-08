@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SashPositionActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sash Position Actuator"
+  },
+  "description": {"en": "The percent command which sets the position of the sash of a fume hood"},
+  "extends" : [
+    "dtmi:com:willowinc:PositionActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

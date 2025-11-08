@@ -2,7 +2,7 @@
   "@id": "dtmi:com:willowinc:BypassChilledWaterValvePositionActuator;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Chilled Water Valve Bypass Position Actuator"
+    "en": "Bypass Chilled Water Valve Position Actuator"
   },
   "description": {"en": "The percent command which sets the position of the chilled water bypass valve"},
   "extends" : [

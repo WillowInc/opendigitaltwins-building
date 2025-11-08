@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PreheatHotWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Preheat Hot Water Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of heat hot water to and from a preheat coil."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingHotWaterValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

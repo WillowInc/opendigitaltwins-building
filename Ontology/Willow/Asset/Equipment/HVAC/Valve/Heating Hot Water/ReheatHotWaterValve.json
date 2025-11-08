@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ReheatHotWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reheat Hot Water Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of heat hot water to and from a reheat coil."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatingHotWaterValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
