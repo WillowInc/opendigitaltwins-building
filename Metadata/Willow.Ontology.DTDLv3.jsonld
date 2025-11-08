@@ -56655,6 +56655,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighSpeedRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Speed Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the equipment run at \u0027high speed\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighSteamFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -58348,6 +58365,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowSpeedRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Speed Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the equipment run at \u0027low speed\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowSteamFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -58477,6 +58511,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ElectricityConsumptionGreenhouseGasEmissionsFactor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MediumSpeedRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medium Speed Run Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which sets the state of the equipment run at \u0027medium speed\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -65925,7 +65976,8 @@
       "en": "The Boolean command which sets the state of the high speed fan command to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
+      "dtmi:com:willowinc:FanRunActuator;1",
+      "dtmi:com:willowinc:HighSpeedRunActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -67498,7 +67550,8 @@
       "en": "The Boolean command which sets the state of the low speed fan command to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
+      "dtmi:com:willowinc:FanRunActuator;1",
+      "dtmi:com:willowinc:LowSpeedRunActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -67600,7 +67653,8 @@
       "en": "The Boolean command which sets the state of the medium speed fan command to \u0027run\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
+      "dtmi:com:willowinc:FanRunActuator;1",
+      "dtmi:com:willowinc:MediumSpeedRunActuator;1"
     ],
     "contents": [],
     "@context": [
