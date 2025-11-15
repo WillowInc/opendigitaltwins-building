@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnAirFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Air Filter"
+  },
+  "description": {
+    "en": "A filter that is used to filter return air in an HVAC system, removing dust, allergens, and other particulates to improve indoor air quality."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirFilter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:MixedAirFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Mixed Air Filter"
+  },
+  "description": {
+    "en": "A filter that is used to filter the mixture of return and outside air in an HVAC system, removing contaminants and particulates to improve indoor air quality."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirFilter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
