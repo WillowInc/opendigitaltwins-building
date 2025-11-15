@@ -35530,6 +35530,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MixedAirFilter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Filter"
+    },
+    "description": {
+      "en": "A filter that is used to filter the mixture of return and outside air in an HVAC system, removing contaminants and particulates to improve indoor air quality."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFilter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MixedDamper;1",
     "@type": "Interface",
     "displayName": {
@@ -36164,6 +36181,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirFilter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Filter"
+    },
+    "description": {
+      "en": "A filter that is used to filter outside air before it enters an HVAC system, removing contaminants and particulates to improve indoor air quality."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFilter;1"
     ],
     "contents": [],
     "@context": [
@@ -37865,6 +37899,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirFilter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Filter"
+    },
+    "description": {
+      "en": "A filter that is used to filter return air in an HVAC system, removing dust, allergens, and other particulates to improve indoor air quality."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFilter;1"
     ],
     "contents": [],
     "@context": [
