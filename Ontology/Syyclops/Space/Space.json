@@ -199,6 +199,29 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "External URLs"
+      },
+      "name": "externalUrls",
+      "schema": {
+        "@type": "Map",
+        "mapKey": {
+          "name": "label",
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Space:label;1"
+        },
+        "mapValue": {
+          "name": "url",
+          "schema": "string",
+          "@id": "dtmi:com:syyclops:Space:url;1"
+        },
+        "@id": "dtmi:com:syyclops:Space:MS3;1"
+      },
+      "writable": true,
+      "@id": "dtmi:com:syyclops:Space:externalUrls;1"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "Mapped IDs"
       },
       "name": "mappedIds",
@@ -608,7 +631,5 @@
       }
     }
   ],
-  "@context": [
-    "dtmi:dtdl:context;3"
-  ]
+  "@context": ["dtmi:dtdl:context;3"]
 }
