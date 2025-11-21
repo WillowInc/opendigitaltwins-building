@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:HeatPumpChiller;1",
+  "@id": "dtmi:com:willowinc:HeatRecoveryChiller;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Heat Pump Chiller"
+    "en": "Heat Recovery Chiller"
   },
     "description": {
-    "en": "A heat pump chiller is a type of HVAC equipment that can provide both heating and cooling by transferring heat from one location to another, using a refrigerant cycle. It can operate in either a cooling or heating mode, making it versatile for various applications."
+    "en": "A heat recovery chiller is a type of HVAC equipment that simultaneously provides cooling and recovers waste heat for heating purposes. It operates by transferring heat from the chilled water loop to a separate hot water loop, allowing the recovered heat to be used for space heating, domestic hot water, or other applications, thereby improving overall energy efficiency."
   },
   "extends" : [
     "dtmi:com:willowinc:Chiller;1"

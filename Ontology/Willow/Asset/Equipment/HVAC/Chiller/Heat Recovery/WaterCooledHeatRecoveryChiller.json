@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:WaterCooledHeatRecoveryChiller;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water-Cooled Heat Recovery Chiller"
+  },
+    "description": {
+    "en": "A water-cooled heat recovery chiller is a type of HVAC equipment that combines the functions of a water-cooled chiller and a heat recovery system. It is designed to provide cooling while simultaneously recovering waste heat from the cooling process, which can be utilized for heating applications such as space heating or domestic hot water, thereby enhancing overall energy efficiency."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatRecoveryChiller;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
