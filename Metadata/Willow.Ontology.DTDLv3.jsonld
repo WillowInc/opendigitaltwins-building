@@ -34018,7 +34018,7 @@
       "en": "Heat Pump Chiller"
     },
     "description": {
-      "en": "A heat pump chiller is a type of HVAC equipment that can provide both heating and cooling by transferring heat from one location to another, using a refrigerant cycle. It can operate in both cooling and heating modes, making it versatile for various applications."
+      "en": "A heat pump chiller is a type of HVAC equipment that can provide both heating and cooling by transferring heat from one location to another, using a refrigerant cycle. It can operate in either a cooling or heating mode, making it versatile for various applications."
     },
     "extends": [
       "dtmi:com:willowinc:Chiller;1"
@@ -34149,6 +34149,129 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatRecoveryChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Recovery Chiller"
+    },
+    "description": {
+      "en": "A heat recovery chiller is a type of HVAC equipment that simultaneously provides cooling and recovers waste heat for heating purposes. It operates by transferring heat from the chilled water loop to a separate hot water loop, allowing the recovered heat to be used for space heating, domestic hot water, or other applications, thereby improving overall energy efficiency."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Chiller;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity"
+        },
+        "name": "nominalHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal heating capacity unit"
+        },
+        "name": "nominalHeatingCapacityUnit",
+        "annotates": "nominalHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "net sensible heating capacity"
+        },
+        "name": "netSensibleHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "net sensible heating capacity unit"
+        },
+        "name": "netSensibleHeatingCapacityUnit",
+        "annotates": "netSensibleHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "design heating capacity"
+        },
+        "name": "designHeatingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design heating capacity unit"
+        },
+        "name": "designHeatingCapacityUnit",
+        "annotates": "designHeatingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design heating coefficient of performance (COP)"
+        },
+        "name": "designHeatingCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal heating coefficient of performance (COP)"
+        },
+        "name": "nominalHeatingCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -41084,10 +41207,27 @@
       "en": "Air-Cooled Heat Pump Chiller"
     },
     "description": {
-      "en": "An air-cooled heat pump chiller is a type of HVAC equipment that uses air as the heat exchange medium to provide both heating and cooling. It operates by transferring heat from the air to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
+      "en": "An air-cooled heat pump chiller is a type of HVAC equipment that uses air as the heat exchange medium to provide either heating or cooling. It operates by transferring heat from the air to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
     },
     "extends": [
       "dtmi:com:willowinc:HeatPumpChiller;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirCooledHeatRecoveryChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air-Cooled Heat Recovery Chiller"
+    },
+    "description": {
+      "en": "An air-cooled heat recovery chiller is a type of HVAC equipment that combines the functions of an air-cooled chiller and a heat recovery system. It is designed to provide cooling while simultaneously recovering waste heat from the cooling process, which can be utilized for heating applications such as space heating or domestic hot water, thereby enhancing overall energy efficiency."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatRecoveryChiller;1"
     ],
     "contents": [],
     "@context": [
@@ -52202,10 +52342,27 @@
       "en": "Water-Cooled Heat Pump Chiller"
     },
     "description": {
-      "en": "A water-cooled heat pump chiller is a type of HVAC equipment that uses water as the heat exchange medium to provide both heating and cooling. It operates by transferring heat from the water to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
+      "en": "A water-cooled heat pump chiller is a type of HVAC equipment that uses water as the heat exchange medium to provide either heating or cooling. It operates by transferring heat from the water to a refrigerant, which can then be used to either cool or heat a building, depending on the mode of operation."
     },
     "extends": [
       "dtmi:com:willowinc:HeatPumpChiller;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterCooledHeatRecoveryChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water-Cooled Heat Recovery Chiller"
+    },
+    "description": {
+      "en": "A water-cooled heat recovery chiller is a type of HVAC equipment that combines the functions of a water-cooled chiller and a heat recovery system. It is designed to provide cooling while simultaneously recovering waste heat from the cooling process, which can be utilized for heating applications such as space heating or domestic hot water, thereby enhancing overall energy efficiency."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatRecoveryChiller;1"
     ],
     "contents": [],
     "@context": [
