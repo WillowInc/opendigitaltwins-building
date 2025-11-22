@@ -50,23 +50,34 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": "Property",
       "name": "designDeltaWaterTemperature",
       "displayName": {
         "en": "Design Delta Water Temperature"
       },
-      "schema": "double",
-      "unit": "degreeCelsius"
+      "schema": "double"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": ["Property", "ValueAnnotation"],
       "displayName": {
         "en": "Design Delta Water Temperature Unit"
       },
       "name": "designDeltaWaterTemperatureUnit",
       "annotates": "designDeltaWaterTemperature",
-      "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "deltaDegreeCelsius",
+            "enumValue": "delta-degreeCelsius"
+          },
+          {
+            "name": "deltaDegreeFahrenheit",
+            "enumValue": "delta-degreeFahrenheit"
+          }
+        ],
+        "valueSchema": "string"
+      }
     },
     {
       "@type": ["Property", "VolumeFlowRate"],
