@@ -303,23 +303,34 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": "Property",
       "name": "primaryDesignDeltaWaterTemperature",
       "displayName": {
         "en": "Primary Design Delta Water Temperature"
       },
-      "schema": "double",
-      "unit": "degreeCelsius"
+      "schema": "double"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": ["Property", "ValueAnnotation"],
       "displayName": {
         "en": "Primary Design Delta Water Temperature Unit"
       },
       "name": "primaryDesignDeltaWaterTemperatureUnit",
       "annotates": "primaryDesignDeltaWaterTemperature",
-      "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "deltaDegreeCelsius",
+            "enumValue": "delta-degreeCelsius"
+          },
+          {
+            "name": "deltaDegreeFahrenheit",
+            "enumValue": "delta-degreeFahrenheit"
+          }
+        ],
+        "valueSchema": "string"
+      }
     },
     {
       "@type": [ "Property", "Temperature" ],
@@ -360,23 +371,34 @@
       "schema": "TemperatureUnit"
     },
     {
-      "@type": [ "Property", "Temperature" ],
+      "@type": "Property",
       "name": "secondaryDesignDeltaWaterTemperature",
       "displayName": {
         "en": "Secondary Design Delta Water Temperature"
       },
-      "schema": "double",
-      "unit": "degreeCelsius"
+      "schema": "double"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": ["Property", "ValueAnnotation"],
       "displayName": {
         "en": "Secondary Design Delta Water Temperature Unit"
       },
       "name": "secondaryDesignDeltaWaterTemperatureUnit",
       "annotates": "secondaryDesignDeltaWaterTemperature",
-      "overrides": "unit",
-      "schema": "TemperatureUnit"
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "deltaDegreeCelsius",
+            "enumValue": "delta-degreeCelsius"
+          },
+          {
+            "name": "deltaDegreeFahrenheit",
+            "enumValue": "delta-degreeFahrenheit"
+          }
+        ],
+        "valueSchema": "string"
+      }
     }
   ],
   "@context": [
