@@ -28002,6 +28002,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ActiveHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Active High Limit"
+    },
+    "description": {
+      "en": "The upper limit on the equipment based on operating modes and conditions. It will reflect the value of the mode-specific limit (i.e. cooling or heating), threshold, or boundary in which the device is currently operating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ActiveLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Active Low Limit"
+    },
+    "description": {
+      "en": "The lower limit on the equipment based on operating modes and conditions. It will reflect the value of the mode-specific limit (i.e. cooling or heating), threshold, or boundary in which the device is currently operating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AdiabaticCooler;1",
     "@type": "Interface",
     "displayName": {
