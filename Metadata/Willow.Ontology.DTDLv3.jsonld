@@ -9613,6 +9613,12 @@
               "enumValue": "Europe/Rome"
             },
             {
+              "name": "EuropeSofia",
+              "displayName": "Europe/Sofia",
+              "description": "",
+              "enumValue": "Europe/Sofia"
+            },
+            {
               "name": "EuropeStockholm",
               "displayName": "Europe/Stockholm",
               "description": "",
