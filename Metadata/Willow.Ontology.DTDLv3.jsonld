@@ -43782,23 +43782,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cooling Coil Leaving Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the cooling coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CoolingLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -45537,6 +45520,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DedicatedOutdoorAirSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with air entering a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -47500,6 +47500,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinarySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with air leaving a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -49696,23 +49713,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreheatCoilLeavingAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Preheat Coil Leaving Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the preheat coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PreheatStageCountSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50131,23 +50131,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HeatingCoil;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReheatCoilLeavingAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheat Coil Leaving Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the reheat coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -53887,23 +53870,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Coil Leaving Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the chilled water coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -54384,23 +54350,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Coil Leaving Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the condenser water coil"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondenserWaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -54613,16 +54562,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1",
+    "@id": "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Cooling Coil Leaving Air Temperature Setpoint"
+      "en": "Cooling Coil Leaving Air Temperature Sensor"
     },
     "description": {
-      "en": "The desired value associated with the temperature of air leaving the cooling coil"
+      "en": "The temperature feedback from a sensor associated with air leaving the cooling coil"
     },
     "extends": [
-      "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+      "dtmi:com:willowinc:LeavingAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -55822,6 +55771,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air entering a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -58228,6 +58194,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air leaving a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60100,16 +60083,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreheatCoilLeavingAirTemperatureSetpoint;1",
+    "@id": "dtmi:com:willowinc:PreheatCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Preheat Coil Leaving Air Temperature Setpoint"
+      "en": "Preheat Coil Leaving Air Temperature Sensor"
     },
     "description": {
-      "en": "The desired value associated with the temperature of air leaving the preheat coil"
+      "en": "The temperature feedback from a sensor associated with air leaving the preheat coil"
     },
     "extends": [
-      "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+      "dtmi:com:willowinc:LeavingAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -60429,16 +60412,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReheatCoilLeavingAirTemperatureSetpoint;1",
+    "@id": "dtmi:com:willowinc:ReheatCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Reheat Coil Leaving Air Temperature Setpoint"
+      "en": "Reheat Coil Leaving Air Temperature Sensor"
     },
     "description": {
-      "en": "The desired value associated with the temperature of air leaving the reheat coil"
+      "en": "The temperature feedback from a sensor associated with air leaving the reheat coil"
     },
     "extends": [
-      "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+      "dtmi:com:willowinc:LeavingAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -63078,16 +63061,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSetpoint;1",
+    "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Chilled Water Coil Leaving Air Temperature Setpoint"
+      "en": "Chilled Water Coil Leaving Air Temperature Sensor"
     },
     "description": {
-      "en": "The desired value associated with the temperature of air leaving the chilled water coil"
+      "en": "The temperature feedback from a sensor associated with air leaving the chilled water coil"
     },
     "extends": [
-      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
+      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -63368,16 +63351,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingAirTemperatureSetpoint;1",
+    "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Condenser Water Coil Leaving Air Temperature Setpoint"
+      "en": "Condenser Water Coil Leaving Air Temperature Sensor"
     },
     "description": {
-      "en": "The desired value associated with the temperature of air leaving the condenser water coil"
+      "en": "The temperature feedback from a sensor associated with air leaving the condenser water coil"
     },
     "extends": [
-      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
+      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -63549,6 +63532,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Coil Leaving Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air leaving the cooling coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -69837,6 +69837,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatCoilLeavingAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheat Coil Leaving Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air leaving the preheat coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreheatCoilLeavingWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -70239,6 +70256,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoilEnteringWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReheatCoilLeavingAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reheat Coil Leaving Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air leaving the reheat coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -73015,6 +73049,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Coil Leaving Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air leaving the chilled water coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterDeltaPressureDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -73176,6 +73227,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterCoilLeavingAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Coil Leaving Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the temperature of air leaving the condenser water coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingCoilLeavingAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
