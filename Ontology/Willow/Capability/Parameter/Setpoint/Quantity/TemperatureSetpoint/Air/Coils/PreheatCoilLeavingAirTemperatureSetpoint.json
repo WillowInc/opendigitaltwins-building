@@ -6,7 +6,7 @@
   },
   "description": {"en": "The desired value associated with the temperature of air leaving the preheat coil"},
   "extends" : [
-    "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    "dtmi:com:willowinc:LeavingAirTemperatureSetpoint;1"
   ],
   "contents": [
   ],

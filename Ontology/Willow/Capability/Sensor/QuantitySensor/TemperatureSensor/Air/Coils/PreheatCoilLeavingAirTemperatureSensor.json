@@ -6,7 +6,7 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with air leaving the preheat coil"},
   "extends" : [
-    "dtmi:com:willowinc:AirTemperatureSensor;1"
+    "dtmi:com:willowinc:LeavingAirTemperatureSensor;1"
   ],
   "contents": [
   ],
