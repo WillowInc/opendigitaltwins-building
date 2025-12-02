@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Air Temperature Setpoint"
+  },
+  "description": {"en": "The desired value associated with the temperature of air entering a component such as a coil."},
+  "extends" : [
+    "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
