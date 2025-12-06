@@ -5,7 +5,8 @@
     "en": "Shut-Off Valve (Plumbing)"
   },
   "extends" : [
-    "dtmi:com:willowinc:PlumbingValve;1"
+    "dtmi:com:willowinc:PlumbingValve;1",
+    "dtmi:com:willowinc:IsolationValve;1"
   ],
   "contents": [
     {
