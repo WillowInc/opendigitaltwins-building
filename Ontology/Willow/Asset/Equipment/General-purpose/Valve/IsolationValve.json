@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:IsolationValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Isolation Valve"
+  },
+  "description": {
+    "en": "A valve which isolates an equipment or system from a water loop, generally to perform maintenance or in an emergency. (a.k.a. shut-off valve)"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Valve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
