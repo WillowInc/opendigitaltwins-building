@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:RefrigerantValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerant Valve"
+  },
+  "description": {
+    "en": "A valve which controls the flow of refrigerant in a refrigeration or air conditioning system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ThermalExpansionValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Expansion Valve"
+  },
+  "description": {
+    "en": "A refrigerant metering device which meters the refrigerant flow based on the thermal expansion of the refrigerant. This device is typically used in refrigeration and air conditioning systems."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantMeteringDevice;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

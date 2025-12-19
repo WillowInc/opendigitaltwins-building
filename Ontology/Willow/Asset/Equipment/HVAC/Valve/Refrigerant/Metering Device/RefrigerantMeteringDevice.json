@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:RefrigerantMeteringDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Refrigerant Metering Device"
+  },
+  "description": {
+    "en": "A refrigerant valve responsible for controlling the flow of refrigerant in a system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
