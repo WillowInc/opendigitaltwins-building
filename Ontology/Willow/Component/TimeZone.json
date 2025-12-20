@@ -147,6 +147,12 @@
             "enumValue": "America/Phoenix"
           },
           {
+            "name": "AmericaPuertoRico",
+            "displayName": "America/Puerto_Rico",
+            "description": "AST - QC (Lower North Shore)",
+            "enumValue": "America/Puerto_Rico"
+          },
+          {
             "name": "AmericaSantiago",
             "displayName": "America/Santiago",
             "description": "Chile (most areas)",
@@ -159,10 +165,28 @@
             "enumValue": "America/Sao_Paulo"
           },
           {
+            "name": "AmericaToronto",
+            "displayName": "America/Toronto",
+            "description": "Eastern - ON & QC (most areas)",
+            "enumValue": "America/Toronto"
+          },
+          {
             "name": "AmericaWhitehorse",
             "displayName": "America/Whitehorse",
             "description": "MST - Yukon (east)",
             "enumValue": "America/Whitehorse"
+          },
+          {
+            "name": "AsiaAmman",
+            "displayName": "Asia/Amman",
+            "description": "",
+            "enumValue": "Asia/Amman"
+          },
+          {
+            "name": "AsiaAshgabat",
+            "displayName": "Asia/Ashgabat",
+            "description": "",
+            "enumValue": "Asia/Ashgabat"
           },
           {
             "name": "AsiaBaghdad",
@@ -177,10 +201,28 @@
             "enumValue": "Asia/Bangkok"
           },
           {
+            "name": "AsiaBeirut",
+            "displayName": "Asia/Beirut",
+            "description": "",
+            "enumValue": "Asia/Beirut"
+          },
+          {
+            "name": "AsiaDhaka",
+            "displayName": "Asia/Dhaka",
+            "description": "",
+            "enumValue": "Asia/Dhaka"
+          },
+          {
             "name": "AsiaDubai",
             "displayName": "Asia/Dubai",
             "description": "",
             "enumValue": "Asia/Dubai"
+          },
+          {
+            "name": "AsiaHo_Chi_Minh",
+            "displayName": "Asia/Ho_Chi_Minh",
+            "description": "south Vietnam",
+            "enumValue": "Asia/Ho_Chi_Minh"
           },
           {
             "name": "AsiaHong_Kong",
@@ -193,6 +235,12 @@
             "displayName": "Asia/Jakarta",
             "description": "Java, Sumatra",
             "enumValue": "Asia/Jakarta"
+          },
+          {
+            "name": "AsiaJerusalem",
+            "displayName": "Asia/Jerusalem",
+            "description": "",
+            "enumValue": "Asia/Jerusalem"
           },
           {
             "name": "AsiaKabul",
@@ -223,6 +271,18 @@
             "displayName": "Asia/Kuala_Lumpur",
             "description": "Malaysia (peninsula)",
             "enumValue": "Asia/Kuala_Lumpur"
+          },
+          {
+            "name": "AsiaMacau",
+            "displayName": "Asia/Macau",
+            "description": "",
+            "enumValue": "Asia/Macau"
+          },
+          {
+            "name": "AsiaManila",
+            "displayName": "Asia/Manila",
+            "description": "",
+            "enumValue": "Asia/Manila"
           },
           {
             "name": "AsiaPyongyang",
@@ -261,10 +321,40 @@
             "enumValue": "Asia/Taipei"
           },
           {
+            "name": "AsiaTblisi",
+            "displayName": "Asia/Tblisi",
+            "description": "",
+            "enumValue": "Asia/Tblisi"
+          },
+          {
+            "name": "AsiaTehran",
+            "displayName": "Asia/Tehran",
+            "description": "",
+            "enumValue": "Asia/Tehran"
+          },
+          {
             "name": "AsiaTokyo",
             "displayName": "Asia/Tokyo",
             "description": "",
             "enumValue": "Asia/Tokyo"
+          },
+          {
+            "name": "AsiaUlaanbaatar",
+            "displayName": "Asia/Ulaanbaatar",
+            "description": "",
+            "enumValue": "Asia/Ulaanbaatar"
+          },
+          {
+            "name": "AsiaVladivostok",
+            "displayName": "Asia/Vladivostok",
+            "description": "",
+            "enumValue": "Asia/Vladivostok"
+          },
+          {
+            "name": "AtlanticAzores",
+            "displayName": "Atlantic/Azores",
+            "description": "",
+            "enumValue": "Atlantic/Azores"
           },
           {
             "name": "AtlanticReykjavik",
@@ -489,10 +579,22 @@
             "enumValue": "Europe/Amsterdam"
           },
           {
+            "name": "EuropeAndorra",
+            "displayName": "Europe/Andorra",
+            "description": "",
+            "enumValue": "Europe/Andorra"
+          },
+          {
             "name": "EuropeAthens",
             "displayName": "Europe/Athens",
             "description": "",
             "enumValue": "Europe/Athens"
+          },
+          {
+            "name": "EuropeBelgrade",
+            "displayName": "Europe/Belgrade",
+            "description": "",
+            "enumValue": "Europe/Belgrade"
           },
           {
             "name": "EuropeBerlin",
@@ -507,10 +609,22 @@
             "enumValue": "Europe/Brussels"
           },
           {
+            "name": "EuropeBucharest",
+            "displayName": "Europe/Bucharest",
+            "description": "",
+            "enumValue": "Europe/Bucharest"
+          },
+          {
             "name": "EuropeBudapest",
             "displayName": "Europe/Budapest",
             "description": "",
             "enumValue": "Europe/Budapest"
+          },
+          {
+            "name": "EuropeChisinau",
+            "displayName": "Europe/Chisinau",
+            "description": "",
+            "enumValue": "Europe/Chisinau"
           },
           {
             "name": "EuropeCopenhagen",
@@ -555,6 +669,12 @@
             "enumValue": "Europe/Madrid"
           },
           {
+            "name": "EuropeMalta",
+            "displayName": "Europe/Malta",
+            "description": "",
+            "enumValue": "Europe/Malta"
+          },
+          {
             "name": "EuropeMinsk",
             "displayName": "Europe/Minsk",
             "description": "",
@@ -567,6 +687,12 @@
             "enumValue": "Europe/Moscow"
           },
           {
+            "name": "EuropeOslo",
+            "displayName": "Europe/Oslo",
+            "description": "",
+            "enumValue": "Europe/Oslo"
+          },
+          {
             "name": "EuropeParis",
             "displayName": "Europe/Paris",
             "description": "",
@@ -577,6 +703,12 @@
             "displayName": "Europe/Prague",
             "description": "",
             "enumValue": "Europe/Prague"
+          },
+          {
+            "name": "EuropeRiga",
+            "displayName": "Europe/Riga",
+            "description": "",
+            "enumValue": "Europe/Riga"
           },
           {
             "name": "EuropeRome",
@@ -597,10 +729,34 @@
             "enumValue": "Europe/Stockholm"
           },
           {
+            "name": "EuropeTallinn",
+            "displayName": "Europe/Tallinn",
+            "description": "",
+            "enumValue": "Europe/Tallinn"
+          },
+          {
+            "name": "EuropeTirane",
+            "displayName": "Europe/Tirane",
+            "description": "",
+            "enumValue": "Europe/Tirane"
+          },
+          {
             "name": "EuropeVienna",
             "displayName": "Europe/Vienna",
             "description": "",
             "enumValue": "Europe/Vienna"
+          },
+          {
+            "name": "EuropeVilnius",
+            "displayName": "Europe/Vilnius",
+            "description": "",
+            "enumValue": "Europe/Vilnius"
+          },
+          {
+            "name": "EuropeWarsaw",
+            "displayName": "Europe/Warsaw",
+            "description": "",
+            "enumValue": "Europe/Warsaw"
           },
           {
             "name": "EuropeZurich",
