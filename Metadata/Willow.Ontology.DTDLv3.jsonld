@@ -50027,6 +50027,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerantValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Valve"
+    },
+    "description": {
+      "en": "A valve which controls the flow of refrigerant in a refrigeration or air conditioning system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1",
     "@type": "Interface",
     "displayName": {
@@ -60396,6 +60413,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerantMeteringDevice;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Metering Device"
+    },
+    "description": {
+      "en": "A refrigerant valve responsible for controlling the flow of refrigerant in a system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61098,6 +61132,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:MotorStarter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReversingValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reversing Valve"
+    },
+    "description": {
+      "en": "A refrigerant valve which can be reversed to allow refrigerant flow in both directions such as in a heat pump system which allows cooling or heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantValve;1"
     ],
     "contents": [],
     "@context": [
@@ -64401,6 +64452,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ZoneAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElectronicExpansionValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electronic Expansion Valve"
+    },
+    "description": {
+      "en": "A digitally controlled refrigerant metering device which regulates the flow rate of refrigerant through the system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantMeteringDevice;1"
     ],
     "contents": [],
     "@context": [
@@ -71947,6 +72015,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ThermalExpansionValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Thermal Expansion Valve"
+    },
+    "description": {
+      "en": "A refrigerant metering device which meters the refrigerant flow based on the thermal expansion of the refrigerant. This device is typically used in refrigeration and air conditioning systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantMeteringDevice;1"
     ],
     "contents": [],
     "@context": [
