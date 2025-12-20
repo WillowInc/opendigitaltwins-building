@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ElectronicExpansionValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electronic Expansion Valve"
+  },
+  "description": {
+    "en": "A digitally controlled refrigerant metering device which regulates the flow rate of refrigerant through the system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantMeteringDevice;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

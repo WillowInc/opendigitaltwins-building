@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ReversingValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reversing Valve"
+  },
+  "description": {
+    "en": "A refrigerant valve which can be reversed to allow refrigerant flow in both directions such as in a heat pump system which allows cooling or heating."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
