@@ -43213,6 +43213,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledBeamGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Beam Group"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterConsumptionGreenhouseGasEmissionsFactor;1",
     "@type": "Interface",
     "displayName": {
