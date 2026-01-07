@@ -45742,6 +45742,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringAirHumiditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Air Humidity Sensor"
+    },
+    "description": {
+      "en": "The humidity feedback from a sensor associated with air entering a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47716,6 +47733,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinarySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingAirHumiditySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Air Humidity Sensor"
+    },
+    "description": {
+      "en": "The humidity feedback from a sensor associated with air leaving a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -56012,6 +56046,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringAirHumiditySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Air Humidity Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the humidity of air entering a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -58421,6 +58472,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingAirHumiditySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Air Humidity Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with the humidity of air leaving a component such as a coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumiditySetpoint;1"
     ],
     "contents": [],
     "@context": [
