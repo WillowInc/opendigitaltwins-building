@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device Return Air Bypass Damper"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BypassDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
