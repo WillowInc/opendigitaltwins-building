@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingAirHumiditySensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Air Humidity Sensor"
+  },
+  "description": {"en": "The humidity feedback from a sensor associated with air leaving a component such as a coil."},
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

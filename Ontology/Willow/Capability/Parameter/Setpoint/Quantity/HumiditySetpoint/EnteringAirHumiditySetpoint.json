@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringAirHumiditySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Air Humidity Setpoint"
+  },
+  "description": {"en": "The desired value associated with the humidity of air entering a component such as a coil."},
+  "extends" : [
+    "dtmi:com:willowinc:AirHumiditySetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
