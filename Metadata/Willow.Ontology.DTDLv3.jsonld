@@ -45493,6 +45493,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Discharge Air Bypass Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BypassDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperPositionActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -45588,6 +45602,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Return Air Bypass Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BypassDamper;1"
     ],
     "contents": [],
     "@context": [
