@@ -103,7 +103,7 @@
       "writable": true
     },
     {
-      "@type": ["Property", "Length"],
+      "@type": "Property",
       "description": {
         "en": "rated head"
       },
@@ -111,20 +111,33 @@
         "en": "head capacity"
       },
       "name": "headCapacity",
-      "schema": "double",
-      "unit": "metre",
-      "writable": true
+      "schema": "double"
     },
     {
-      "@type": ["Property", "ValueAnnotation", "Override"],
+      "@type": ["Property", "ValueAnnotation"],
       "displayName": {
         "en": "head capacity unit"
       },
       "name": "headCapacityUnit",
       "annotates": "headCapacity",
-      "overrides": "unit",
-      "schema": "LengthUnit",
-      "writable": true
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "IN_H2O",
+            "enumValue": "IN_H2O"
+          },
+          {
+            "name": "FT_H2O",
+            "enumValue": "FT_H2O"
+          },
+          {
+            "name": "M_H2O",
+            "enumValue": "M_H2O"
+          }
+        ],
+        "valueSchema": "string"
+      }
     },
     {
       "@type": ["Property", "VolumeFlowRate"],
