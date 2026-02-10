@@ -29535,6 +29535,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Valve"
+    },
+    "description": {
+      "en": "A valve which allows water to bypass an equipment or system, generally to maintain water flow when the equipment or system is offline for maintenance or in an emergency."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Valve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CableFaultAlarmState;1",
     "@type": "Interface",
     "displayName": {
