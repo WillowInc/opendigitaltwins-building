@@ -25146,7 +25146,7 @@
       "en": "The desired offset value associated with a quantity"
     },
     "extends": [
-      "dtmi:com:willowinc:SetpointOffset;1"
+      "dtmi:com:willowinc:Offset;1"
     ],
     "contents": [],
     "@context": [
@@ -38993,6 +38993,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above or below a target temperature setpoint, indicating where the Cooling or Heating Temperature Setpoint is located relative to the target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantitySetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ThermalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -43574,6 +43591,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint, indicating where the Cooling Air Temperature Setpoint is located relative to the target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -46389,6 +46423,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PackagedHeatPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset below a target temperature setpoint, indicating where the Heating Air Temperature Setpoint is located relative to the target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -59135,6 +59186,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupiedCoolingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Cooling Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint during occupied mode, indicating where the Occupied Cooling Air Temperature Setpoint is located relative to the occupied target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupiedCoolingSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -59145,6 +59213,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OccupiedHeatingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Heating Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint during occupied mode, indicating where the Occupied Heating Air Temperature Setpoint is located relative to the occupied target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingAirTemperatureSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -61285,6 +61370,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:StandbyCoolingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Standby Cooling Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint during standby mode, indicating where the Standby Cooling Air Temperature Setpoint is located relative to the standby target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:StandbyCoolingSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -61295,6 +61397,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StandbyHeatingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Standby Heating Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint during standby mode, indicating where the Standby Heating Air Temperature Setpoint is located relative to the standby target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingAirTemperatureSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -61929,6 +62048,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UnoccupiedCoolingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Cooling Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint during Unoccupied mode, indicating where the Unoccupied Cooling Air Temperature Setpoint is located relative to the unoccupied target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UnoccupiedCoolingSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -61939,6 +62075,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UnoccupiedHeatingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Heating Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "An offset above a target temperature setpoint during Unoccupied mode, indicating where the Unoccupied Heating Air Temperature Setpoint is located relative to the unoccupied target setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingAirTemperatureSetpointOffset;1"
     ],
     "contents": [],
     "@context": [
@@ -76967,6 +77120,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupiedTargetZoneAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Target Zone Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The central setpoint from which the other occupied mode-specific setpoints, thresholds, and boundaries are derived."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TargetZoneAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OutsideAirCO2AlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -78901,6 +79071,23 @@
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
       "dtmi:com:willowinc:UnoccupiedHeatingSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UnoccupiedTargetZoneAirTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Target Zone Air Temperature Setpoint"
+    },
+    "description": {
+      "en": "The central setpoint from which the other unoccupied mode-specific setpoints, thresholds, and boundaries are derived."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TargetZoneAirTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
