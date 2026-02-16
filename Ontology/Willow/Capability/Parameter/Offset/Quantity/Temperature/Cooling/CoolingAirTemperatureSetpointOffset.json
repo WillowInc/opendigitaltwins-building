@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cooling Air Temperature Setpoint Offset"
+  },
+  "description": {"en": "An offset above a target temperature setpoint, indicating where the Cooling Air Temperature Setpoint is located relative to the target setpoint."},
+  "extends" : [
+    "dtmi:com:willowinc:TemperatureSetpointOffset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

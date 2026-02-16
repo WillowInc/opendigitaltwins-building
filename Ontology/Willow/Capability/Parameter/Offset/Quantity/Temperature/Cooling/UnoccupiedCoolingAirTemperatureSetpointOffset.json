@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:UnoccupiedCoolingAirTemperatureSetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Cooling Air Temperature Setpoint Offset"
+  },
+  "description": {"en": "An offset above a target temperature setpoint during Unoccupied mode, indicating where the Unoccupied Cooling Air Temperature Setpoint is located relative to the unoccupied target setpoint."},
+  "extends" : [
+    "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

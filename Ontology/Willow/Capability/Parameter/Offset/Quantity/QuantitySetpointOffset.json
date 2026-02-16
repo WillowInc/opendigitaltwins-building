@@ -6,7 +6,7 @@
   },
   "description": {"en": "The desired offset value associated with a quantity"},
   "extends" : [
-    "dtmi:com:willowinc:SetpointOffset;1"
+    "dtmi:com:willowinc:Offset;1"
   ],
   "contents": [
 
