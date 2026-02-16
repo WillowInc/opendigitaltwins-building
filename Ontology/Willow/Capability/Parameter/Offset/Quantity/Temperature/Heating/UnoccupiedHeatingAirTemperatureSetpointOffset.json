@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:UnoccupiedHeatingAirTemperatureSetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Unoccupied Heating Air Temperature Setpoint Offset"
+  },
+  "description": {"en": "An offset above a target temperature setpoint during Unoccupied mode, indicating where the Unoccupied Heating Air Temperature Setpoint is located relative to the unoccupied target setpoint."},
+  "extends" : [
+    "dtmi:com:willowinc:HeatingAirTemperatureSetpointOffset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

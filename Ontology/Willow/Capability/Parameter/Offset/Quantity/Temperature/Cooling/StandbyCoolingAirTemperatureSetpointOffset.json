@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:StandbyCoolingAirTemperatureSetpointOffset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Standby Cooling Air Temperature Setpoint Offset"
+  },
+  "description": {"en": "An offset above a target temperature setpoint during standby mode, indicating where the Standby Cooling Air Temperature Setpoint is located relative to the standby target setpoint."},
+  "extends" : [
+    "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

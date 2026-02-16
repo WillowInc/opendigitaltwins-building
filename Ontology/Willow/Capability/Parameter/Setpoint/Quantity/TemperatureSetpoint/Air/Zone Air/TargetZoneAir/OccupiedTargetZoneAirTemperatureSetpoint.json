@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OccupiedTargetZoneAirTemperatureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Target Zone Air Temperature Setpoint"
+  },
+  "description": {"en": "The central setpoint from which the other occupied mode-specific setpoints, thresholds, and boundaries are derived."},
+  "extends" : [
+    "dtmi:com:willowinc:TargetZoneAirTemperatureSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
