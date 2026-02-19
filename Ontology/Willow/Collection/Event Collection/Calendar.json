@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:Calendar;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Calendar"
+  },
+  "description": {
+    "en": "A calendar is a collection of calendar events. Examples include work schedules, class schedules, and meeting schedules."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EventCollection;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
