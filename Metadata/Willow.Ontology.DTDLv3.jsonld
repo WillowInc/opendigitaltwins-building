@@ -45364,6 +45364,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoverySystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery System"
+    },
+    "description": {
+      "en": "An energy recovery system is a system that captures and reuses energy that would otherwise be wasted. Examples include runaround coils, heat pipes, and enthalpy wheels."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryVentilator;1",
     "@type": "Interface",
     "displayName": {
