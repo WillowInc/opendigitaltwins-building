@@ -140,6 +140,17 @@
       "target": "dtmi:com:willowinc:Document;1"
     },
     {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates a calendar associated with the space, which could include events such as meetings, classes, or maintenance schedules."
+      },
+      "displayName": {
+        "en": "has calendar"
+      },
+      "name": "hasCalendar",
+      "target": "dtmi:com:willowinc:Calendar;1"
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
