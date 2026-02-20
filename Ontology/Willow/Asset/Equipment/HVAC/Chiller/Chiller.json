@@ -149,6 +149,33 @@
       "name": "nominalEnergyEfficiencyRatio",
       "schema": "double",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "KW/Ton at 75 % Load and AHRI Conditions"
+      },
+      "name": "kwPerTonSeventyFivePercLoad",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "KW/Ton at 50 % Load and AHRI Conditions"
+      },
+      "name": "kwPerTonFiftyPercLoad",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "KW/Ton at 25 % Load and AHRI Conditions"
+      },
+      "name": "kwPerTonTwentyFivePercLoad",
+      "schema": "double",
+      "writable": true
     }
   ],
   "@context": [
