@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:EventCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Event Collection"
+  },
+  "description": {
+    "en": "A collection of Event twins, used to group and organize events such as work orders for management and tracking purposes."
+  },
+  "extends": [
+    "dtmi:com:syyclops:Collection;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

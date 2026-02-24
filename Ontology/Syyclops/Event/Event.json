@@ -33,6 +33,18 @@
       "@id": "dtmi:com:syyclops:Event:producedBy;1"
     },
     {
+      "@type": "Relationship",
+      "name": "includedIn",
+      "displayName": {
+        "en": "included in"
+      },
+      "description": {
+        "en": "Indicates that the event is included in or belongs to a collection."
+      },
+      "target": "dtmi:com:syyclops:Collection;1",
+      "@id": "dtmi:com:syyclops:Event:includedIn;1"
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "Created DateTime"
