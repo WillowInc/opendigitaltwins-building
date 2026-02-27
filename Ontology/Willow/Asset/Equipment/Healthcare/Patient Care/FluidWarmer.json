@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:FluidWarmer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fluid Warmer"
+  },
+  "description": {
+    "en": "A fluid warmer is a medical device used to heat intravenous fluids, blood products, or other liquids before they are administered to a patient. It helps maintain the temperature of the fluids, preventing hypothermia and ensuring patient comfort during medical procedures."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PatientCareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
