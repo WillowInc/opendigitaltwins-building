@@ -466,6 +466,19 @@
       "comment": "how often the capability value is read from the controller"
     },
     {
+      "@type": ["Property", "TimeSpan"],
+      "name": "maxExpectedLatency",
+      "displayName": {
+        "en": "Max Expected Latency"
+      },
+      "description": {
+        "en": "The maximum expected latency between when a value is provided by the controller/source and when it is stored in the twin. This is the maximum expected difference between the EnqueuedTimestamp and the SourceTimestamp of a telemetry message for this capability."
+      },
+      "writable": true,
+      "schema": "integer",
+      "unit": "second"
+    },
+    {
       "@type": "Property",
       "name": "displayPriority",
       "displayName": {
