@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatExchangerSecondarySide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Exchanger Secondary Side"
+  },
+  "description": {
+    "en": "The secondary side of a heat exchanger is the side where the fluid is circulating to the load (e.g. heating or cooling coil)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatExchangerSide;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
