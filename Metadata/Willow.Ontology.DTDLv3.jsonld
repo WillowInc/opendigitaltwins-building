@@ -13205,6 +13205,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatExchangerSide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Exchanger Side"
+    },
+    "description": {
+      "en": "A heat exchanger side represents one side of a heat exchanger, which can be either the primary side or the secondary side."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1"
+    ],
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe outlet"
+        },
+        "name": "pipeOutlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe inlet"
+        },
+        "name": "pipeInlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACCoolingMethod;1",
     "@type": "Interface",
     "displayName": {
@@ -22768,6 +22802,40 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatExchangerPrimarySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Exchanger Primary Side"
+    },
+    "description": {
+      "en": "The primary side of a heat exchanger is the side where the fluid is circulating from the primary source (e.g. boiler, chiller)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatExchangerSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatExchangerSecondarySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Exchanger Secondary Side"
+    },
+    "description": {
+      "en": "The secondary side of a heat exchanger is the side where the fluid is circulating to the load (e.g. heating or cooling coil)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatExchangerSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
