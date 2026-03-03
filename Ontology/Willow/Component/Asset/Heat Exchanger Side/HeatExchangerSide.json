@@ -1,0 +1,34 @@
+{
+  "@id": "dtmi:com:willowinc:HeatExchangerSide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Exchanger Side"
+  },
+  "description": {
+    "en": "A heat exchanger side represents one side of a heat exchanger, which can be either the primary side or the secondary side."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "pipe outlet"
+      },
+      "name": "pipeOutlet",
+      "schema": "dtmi:com:willowinc:PipeConnection;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "pipe inlet"
+      },
+      "name": "pipeInlet",
+      "schema": "dtmi:com:willowinc:PipeConnection;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
