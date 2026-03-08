@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:FireSprinklerTamperSwitch;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Sprinkler Tamper Switch"
+  },
+  "description": {
+    "en": "A fire sprinkler tamper switch is a device used in fire sprinkler systems to detect unauthorized access or tampering with a sprinkler system valve."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SprinklerEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

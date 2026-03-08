@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:CanOpener;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Can Opener"
+  },
+  "description": {
+    "en": "A device used in foodservice settings to open canned goods."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

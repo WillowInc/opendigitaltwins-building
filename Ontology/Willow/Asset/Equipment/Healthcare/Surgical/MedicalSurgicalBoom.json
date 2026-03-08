@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:MedicalSurgicalBoom;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medical Surgical Boom"
+  },
+  "description": {
+    "en": "A medical surgical boom is a mobile support structure that holds surgical equipment and supplies in a medical setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SurgicalEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

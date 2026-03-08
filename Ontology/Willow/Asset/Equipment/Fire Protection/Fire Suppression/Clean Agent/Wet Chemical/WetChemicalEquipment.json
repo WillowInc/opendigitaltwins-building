@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:WetChemicalEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wet Chemical Equipment"
+  },
+  "description": {
+    "en": "Wet chemical fire suppression equipment is a type of fire suppression system that uses wet chemical agents to extinguish fires, commonly used in kitchen environments."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireSuppressionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

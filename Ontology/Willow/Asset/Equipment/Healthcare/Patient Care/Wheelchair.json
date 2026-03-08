@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Wheelchair;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wheelchair"
+  },
+  "description": {
+    "en": "A wheelchair is a mobility device designed to assist individuals who have difficulty walking or are unable to walk. It typically consists of a seat, backrest, armrests, footrests, and wheels. Wheelchairs can be manually propelled by the user or pushed by a caregiver, and they may also be powered by batteries for enhanced mobility."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PatientCareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

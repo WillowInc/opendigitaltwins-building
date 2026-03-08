@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FloorSweeper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Floor Sweeper"
+  },
+  "description": {
+    "en": "A machine used to clean floors by collecting visible debris with rotating brushes or brooms."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CleaningEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

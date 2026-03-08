@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:LinenCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Linen Cart"
+  },
+  "description": {
+    "en": "A cart used in healthcare settings to transport linens and other supplies."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1",
+    "dtmi:com:willowinc:Cart;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

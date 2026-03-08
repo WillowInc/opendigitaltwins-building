@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:DryChemicalSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dry Chemical System"
+  },
+  "description": {
+    "en": "A dry chemical fire suppression system is a type of fire suppression system that uses dry chemical agents, such as monoammonium phosphate or sodium bicarbonate, to extinguish fires by interrupting the chemical reaction of the fire."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireSuppressionSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

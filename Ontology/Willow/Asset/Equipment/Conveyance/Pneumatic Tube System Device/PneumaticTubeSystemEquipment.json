@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube System Equipment"
+  },
+  "description": {
+    "en": "A pneumatic tube system equipment is a type of conveyance equipment that is part of a pneumatic tube system which uses compressed air to transport small items through a network of tubes. It is commonly used in hospitals, banks, and other facilities to quickly and efficiently move documents, medications, or other small objects between different locations."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ConveyanceEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

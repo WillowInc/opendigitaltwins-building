@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:WasteAnestheticGasDisposalInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Waste Anesthetic Gas Disposal Inlet"
+  },
+  "description": {
+    "en": "A waste anesthetic gas disposal inlet is a connection point in a waste anesthetic gas disposal system where waste anesthetic gases are drawn from a space or medical procedure. It is typically part of a larger waste anesthetic gas disposal system and is used to connect waste anesthetic gas disposal equipment such as scavenging systems."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WasteAnestheticGasDisposalEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

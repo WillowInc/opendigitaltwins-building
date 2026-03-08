@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:StairStepper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stair Stepper"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CardioFitnessEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Audio Amplifier"
   },
+  "description": {
+    "en": "An audio amplifier is an electronic device that increases the amplitude of audio signals. It is used to drive speakers and enhance the sound quality in audio systems."
+  },
   "extends" : [
     "dtmi:com:willowinc:AudioVisualEquipment;1"
   ],

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medical Sterilizing and Disinfecting Equipment"
+  },
+  "description": {
+    "en": "Devices used in healthcare settings for sterilizing and disinfecting medical instruments and surfaces."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

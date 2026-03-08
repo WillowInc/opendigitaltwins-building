@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:Griddle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Griddle"
+  },
+  "description": {
+    "en": "A flat cooking surface used in foodservice settings to directly cook food on the surface."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CookingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

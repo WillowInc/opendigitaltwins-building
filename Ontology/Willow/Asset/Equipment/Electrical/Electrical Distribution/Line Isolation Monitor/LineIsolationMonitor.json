@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:LineIsolationMonitor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Line Isolation Monitor"
+  },
+  "description": {
+    "en": "A line isolation monitor is a device used in electrical distribution systems to detect and monitor the insulation resistance of the system for NFPA 99 compliance. It helps to identify potential faults or issues in the electrical distribution system, ensuring safety and reliability."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}

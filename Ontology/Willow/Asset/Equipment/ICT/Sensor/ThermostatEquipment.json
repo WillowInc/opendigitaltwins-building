@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Thermostat"
   },
+  "description": {
+    "en": "An equipment that measures and reports temperature values and can also control the heating, ventilation, and air conditioning (HVAC) system to maintain a desired temperature setpoint."
+  },
   "extends" : [
     "dtmi:com:willowinc:SensorEquipment;1"
   ],

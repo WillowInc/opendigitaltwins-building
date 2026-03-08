@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Automatic Door Opener"
   },
+  "description": {
+    "en": "A device that automatically opens and closes a door, typically using sensors or remote control, to provide hands-free access."
+  },
   "extends" : [
     "dtmi:com:willowinc:DoorHardware;1"
   ],

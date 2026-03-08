@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Blender"
   },
+  "description": {
+    "en": "A device used in foodservice settings to blend or puree ingredients."
+  },
   "extends" : [
     "dtmi:com:willowinc:FoodPreparationEquipment;1"
   ],

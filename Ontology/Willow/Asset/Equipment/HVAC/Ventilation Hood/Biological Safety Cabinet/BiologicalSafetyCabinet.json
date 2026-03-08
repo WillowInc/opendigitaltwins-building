@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:BiologicalSafetyCabinet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Biological Safety Cabinet"
+  },
+  "description": {
+    "en": "A biological safety cabinet (BSC) is a specialized ventilation enclosure designed to provide a controlled environment for handling and working with biological materials, such as pathogens, microorganisms, and hazardous substances."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VentilationHood;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

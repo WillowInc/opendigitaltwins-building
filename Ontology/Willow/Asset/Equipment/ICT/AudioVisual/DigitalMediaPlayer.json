@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:DigitalMediaPlayer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Digital Media Player"
+  },
+  "description": {
+    "en": "A digital media player is an electronic device that can store and play digital media files, such as music, videos, and photos. It typically connects to a television or audio system to provide entertainment."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

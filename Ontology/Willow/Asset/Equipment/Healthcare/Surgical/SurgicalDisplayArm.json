@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:SurgicalDisplayArm;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Surgical Display Arm"
+  },
+  "description": {
+    "en": "A specialized display mount used in operating rooms to hold and position monitors or displays that provide visual information to surgeons and medical staff during surgical procedures."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SurgicalEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

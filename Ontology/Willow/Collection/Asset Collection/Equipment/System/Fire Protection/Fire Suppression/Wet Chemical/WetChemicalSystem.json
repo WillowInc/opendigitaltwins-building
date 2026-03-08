@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:WetChemicalSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Wet Chemical System"
+  },
+  "description": {
+    "en": "A wet chemical fire suppression system is a type of fire suppression system that uses wet chemical agents, such as aqueous film-forming foam (AFFF) or polar solvent-resistant foam (AR-500), to extinguish fires by cooling the fuel and forming a barrier between the fuel and the oxygen."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireSuppressionSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

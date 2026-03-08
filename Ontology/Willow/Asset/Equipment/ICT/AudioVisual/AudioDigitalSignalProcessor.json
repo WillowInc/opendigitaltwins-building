@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Audio Digital Signal Processor (DSP)"
   },
+  "description": {
+    "en": "An audio digital signal processor (DSP) is a specialized electronic device that processes audio signals in the digital domain. It is used to manipulate and enhance audio signals, such as equalization, compression, and effects processing."
+  },
   "extends" : [
     "dtmi:com:willowinc:AudioVisualEquipment;1"
   ],

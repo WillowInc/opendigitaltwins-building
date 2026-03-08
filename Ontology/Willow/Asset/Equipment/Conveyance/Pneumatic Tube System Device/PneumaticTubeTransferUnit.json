@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PneumaticTubeTransferUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube System Transfer Unit"
+  },
+  "description": {
+    "en": "A pneumatic tube system transfer unit is a device that facilitates the movement of items between different locations within a pneumatic tube system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

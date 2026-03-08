@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:MedicalGasValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medical Gas Valve"
+  },
+  "description": {
+    "en": "A medical gas valve is a device that controls the flow of medical gas within a medical setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1",
+    "dtmi:com:willowinc:PlumbingValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

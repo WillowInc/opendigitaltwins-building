@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Clean Agent Equipment"
   },
+  "description": {
+    "en": "Clean agent fire suppression equipment is a type of fire suppression system that uses clean agents, such as halocarbon or inert gases, to extinguish fires without leaving residue."
+  },
   "extends" : [
     "dtmi:com:willowinc:FireSuppressionEquipment;1"
   ],

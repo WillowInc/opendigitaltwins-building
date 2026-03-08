@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PneumaticTubeCarrierStorageUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube Carrier Storage Unit"
+  },
+  "description": {
+    "en": "A device that provides temporary storage for carriers within a pneumatic tube system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

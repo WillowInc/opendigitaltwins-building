@@ -8,7 +8,8 @@
     "en": "A tank that receives air from the air compressor and holds it under pressure for future use"
   },
   "extends" : [
-    "dtmi:com:willowinc:CompressedAirEquipment;1"
+    "dtmi:com:willowinc:CompressedAirEquipment;1",
+    "dtmi:com:willowinc:PlumbingTank;1"
   ],
   "contents": [
 

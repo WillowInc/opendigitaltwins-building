@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:MedicalCart;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medical Cart"
+  },
+  "description": {
+    "en": "A cart used in healthcare settings to transport medical supplies and equipment, including computers and monitors."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PatientExaminationTreatmentEquipment;1",
+    "dtmi:com:willowinc:Cart;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

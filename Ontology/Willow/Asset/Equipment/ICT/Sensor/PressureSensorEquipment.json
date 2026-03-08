@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PressureSensorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pressure Sensor Equipment"
+  },
+  "description": {
+    "en": "An equipment that measures and reports pressure values."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

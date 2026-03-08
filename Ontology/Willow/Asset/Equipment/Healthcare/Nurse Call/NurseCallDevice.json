@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:NurseCallDevice;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Nurse Call Device"
+  },
+  "description": {
+    "en": "A device used in a nurse call system in healthcare facilities to allow patients to alert nursing staff when they require assistance. It typically consists of a button or cord that patients can activate to send a signal to the nursing station, indicating that they need help."
+  },
+    "extends" : [
+    "dtmi:com:willowinc:HealthcareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

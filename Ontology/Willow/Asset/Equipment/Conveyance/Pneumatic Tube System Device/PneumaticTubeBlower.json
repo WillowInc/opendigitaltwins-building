@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PneumaticTubeBlower;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube System Blower"
+  },
+  "description": {
+    "en": "A pneumatic tube system blower is a device that generates compressed air for use in a pneumatic tube system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:WasteAnestheticGasDisposalEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Waste Anesthetic Gas Disposal Equipment"
+  },
+  "description": {
+    "en": "Devices that are used to remove waste anesthetic gases from the environment in healthcare settings, ensuring the safety of patients and staff by preventing exposure to harmful gases. This can include scavenging systems, exhaust fans, and other related equipment designed to capture and safely dispose of anesthetic gases."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

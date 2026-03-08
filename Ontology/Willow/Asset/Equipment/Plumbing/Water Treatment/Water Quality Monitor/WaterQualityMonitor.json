@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:WaterQualityMonitor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Quality Monitor"
+  },
+  "description": {
+    "en": "A water quality monitor is a device used to measure and analyze the quality of water in treatment systems, ensuring it meets safety and performance standards."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingWaterTreatment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

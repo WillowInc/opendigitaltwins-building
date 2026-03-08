@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Sterilizer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sterilizer"
+  },
+  "description": {
+    "en": "A device used to eliminate or kill all forms of microbial life, including bacteria, viruses, fungi, and spores, from medical instruments, equipment, and surfaces, including autoclaves (steam sterilizers), dry heat sterilizers, chemical sterilizers, and gas sterilizers."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

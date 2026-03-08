@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalRelay;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Relay"
+  },
+  "description": {
+    "en": "An electrically operated switch that uses an electromagnet to mechanically operate a switching mechanism, allowing for the control of a high-power circuit with a low-power signal, commonly used in various applications such as automation, control systems, and safety devices."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalSwitch;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

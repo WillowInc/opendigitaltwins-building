@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Television;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Television"
+  },
+  "description": {
+    "en": "A television is an electronic device that displays moving images and sound. It is commonly used for entertainment and information purposes."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

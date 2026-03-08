@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:InstrumentDryer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Instrument Dryer"
+  },
+  "description": {
+    "en": "A device used to dry medical instruments, equipment, and surfaces after cleaning and disinfection."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

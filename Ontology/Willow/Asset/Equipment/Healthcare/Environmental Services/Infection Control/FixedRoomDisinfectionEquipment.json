@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:FixedRoomDisinfectionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fixed Room Disinfection Equipment"
+  },
+  "description": {
+    "en": "A fixed device used in healthcare settings to disinfect a patient room or other areas to prevent the spread of infectious diseases and maintain a safe environment for patients and staff."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:InfectionControlEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

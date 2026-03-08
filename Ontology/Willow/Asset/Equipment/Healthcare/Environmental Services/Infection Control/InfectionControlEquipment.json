@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:InfectionControlEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Infection Control Equipment"
+  },
+  "description": {
+    "en": "Devices used in healthcare settings to prevent the spread of infectious diseases and maintain a safe environment for patients and staff."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

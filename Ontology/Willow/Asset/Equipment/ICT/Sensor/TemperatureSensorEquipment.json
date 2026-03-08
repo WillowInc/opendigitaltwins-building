@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:TemperatureSensorEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Temperature Sensor Equipment"
+  },
+  "description": {
+    "en": "An equipment that measures and reports temperature values."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SensorEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

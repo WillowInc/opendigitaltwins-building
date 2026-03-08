@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ConvectionOven;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Convection Oven"
+  },
+  "description": {
+    "en": "An oven appliance that uses a fan to circulate hot air around the food, resulting in faster and more even cooking."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Oven;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

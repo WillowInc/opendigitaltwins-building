@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PneumaticWindGate;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube System Wind Gate"
+  },
+  "description": {
+    "en": "A pneumatic tube system wind gate is a device that enables the reversal of air flow in a pneumatic tube system, allowing for the redirection of items being transported through the tubes."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

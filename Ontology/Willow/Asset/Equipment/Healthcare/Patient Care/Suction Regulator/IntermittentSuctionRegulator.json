@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:IntermittentSuctionRegulator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Intermittent Suction Regulator"
+  },
+  "description": {
+    "en": "An intermittent suction regulator is a medical device used to provide intermittent suction during medical procedures."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SuctionRegulator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

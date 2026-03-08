@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:WaterTreatmentController;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Water Treatment Controller"
+  },
+  "description": {
+    "en": "A water treatment controller is a device that manages and controls the operation of water treatment systems, such as filtration, disinfection, and chemical dosing, to ensure the quality and safety of water."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingWaterTreatment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

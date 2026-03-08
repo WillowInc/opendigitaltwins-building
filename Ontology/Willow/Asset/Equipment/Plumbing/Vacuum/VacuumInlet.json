@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:VacuumInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vacuum Inlet"
+  },
+  "description": {
+    "en": "A vacuum inlet is a connection point in a vacuum system where vacuum is drawn from a space or medical procedure. It is typically part of a larger vacuum system and is used to connect vacuum equipment such as suction devices."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VacuumEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

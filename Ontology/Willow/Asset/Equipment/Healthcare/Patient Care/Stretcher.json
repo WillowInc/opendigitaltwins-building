@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Stretcher;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Stretcher"
+  },
+  "description": {
+    "en": "A stretcher is a medical device used for transporting patients who are unable to walk or require assistance. It typically consists of a flat surface with wheels and handles, allowing healthcare professionals to safely move patients from one location to another, such as from an ambulance to a hospital bed."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PatientCareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
