@@ -13205,6 +13205,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HealthcareEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Healthcare Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatExchangerSide;1",
     "@type": "Interface",
     "displayName": {
@@ -17225,6 +17239,9 @@
     "displayName": {
       "en": "Audio Visual Equipment"
     },
+    "description": {
+      "en": "Audio visual equipment refers to devices and systems that are used for the production, display, and transmission of audio and visual content. This can include items such as projectors, speakers, microphones, video conferencing systems, and other related equipment."
+    },
     "extends": [
       "dtmi:com:willowinc:ICTEquipment;1"
     ],
@@ -19451,6 +19468,120 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Dumbwaiter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dumbwaiter"
+    },
+    "description": {
+      "en": "A type of conveyance equipment used to transport food, dishes, or other small items vertically between floors in a building."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ConveyanceEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Mass",
+          "Property"
+        ],
+        "displayName": {
+          "en": "weight capacity"
+        },
+        "name": "weightCapacity",
+        "schema": "double",
+        "unit": "kilogram",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "weight capacity unit"
+        },
+        "name": "weightCapacityUnit",
+        "annotates": "weightCapacity",
+        "overrides": "unit",
+        "schema": "MassUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Velocity"
+        ],
+        "displayName": {
+          "en": "maximum travel speed"
+        },
+        "name": "maxTravelSpeed",
+        "schema": "double",
+        "unit": "metrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum travel speed unit"
+        },
+        "name": "maxTravelSpeedUnit",
+        "annotates": "maxTravelSpeed",
+        "overrides": "unit",
+        "schema": "VelocityUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Length"
+        ],
+        "displayName": {
+          "en": "maximum travel distance"
+        },
+        "name": "maxTravelDistance",
+        "schema": "double",
+        "unit": "metre",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum travel distance unit"
+        },
+        "name": "maxTravelDistanceUnit",
+        "annotates": "maxTravelDistance",
+        "overrides": "unit",
+        "schema": "LengthUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "maximum landings"
+        },
+        "name": "maxLandings",
+        "schema": "integer",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricalCable;1",
     "@type": "Interface",
     "displayName": {
@@ -19636,6 +19767,23 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElectricalProtectionEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electrical Protection Equipment"
+    },
+    "description": {
+      "en": "Electrical protection equipment is designed to safeguard electrical systems and components from damage caused by electrical faults, overloads, short circuits, and other abnormal conditions. This category includes devices such as circuit breakers, fuses, ground fault circuit interrupters (GFCIs), surge protectors, and protective relays, which work to detect and interrupt electrical faults, ensuring the safety of both the electrical system and its users."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -21723,6 +21871,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FireCurtain;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire Curtain"
+    },
+    "description": {
+      "en": "A fire curtain is a type of barrier asset that is designed to prevent the passage of fire and smoke in the event of a fire. It is typically installed around doors, windows, elevators and other openings in a building to create a tight seal that can help to contain fire and prevent it from spreading to other areas."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BarrierAsset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FireSuppressionEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -21788,6 +21953,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FloorDryer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Floor Dryer"
+    },
+    "description": {
+      "en": "A machine used to dry floors after cleaning."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CleaningEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FloorScrubber;1",
     "@type": "Interface",
     "displayName": {
@@ -21795,6 +21977,23 @@
     },
     "description": {
       "en": "A machine used to clean floors by injecting liquid to remove dirt, grime, and stains."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CleaningEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FloorSweeper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Floor Sweeper"
+    },
+    "description": {
+      "en": "A machine used to clean floors by collecting visible debris with rotating brushes or brooms."
     },
     "extends": [
       "dtmi:com:willowinc:CleaningEquipment;1"
@@ -22292,6 +22491,23 @@
       "en": "Handhole"
     },
     "extends": "dtmi:com:willowinc:DistributionConnector;1",
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Healthcare Environmental Services Equipment"
+    },
+    "description": {
+      "en": "Devices used in healthcare settings to maintain a clean and safe environment for patients and staff."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEquipment;1"
+    ],
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
@@ -23763,6 +23979,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LightningProtectionEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Lightning Protection Equipment"
+    },
+    "description": {
+      "en": "Lightning protection equipment is designed to safeguard structures and electrical systems from damage caused by lightning strikes. This category includes devices such as lightning rods, surge protectors, and grounding systems, which work to safely conduct and dissipate the energy from lightning strikes, ensuring the safety of the structure and its occupants."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LoadingDockEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -24046,6 +24279,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:Limit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical/Laboratory Gas Equipment"
+    },
+    "description": {
+      "en": "Devices that are used to supply, monitor, or control gases used in medical or laboratory settings."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Sterilizing and Disinfecting Equipment"
+    },
+    "description": {
+      "en": "Devices used in healthcare settings for sterilizing and disinfecting medical instruments and surfaces."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -24510,6 +24777,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NurseCallDevice;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Nurse Call Device"
+    },
+    "description": {
+      "en": "A device used in a nurse call system in healthcare facilities to allow patients to alert nursing staff when they require assistance. It typically consists of a button or cord that patients can activate to send a signal to the nursing station, indicating that they need help."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OnOffActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -24711,6 +24995,37 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PatientCareEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Patient Care Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PatientExaminationTreatmentEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Patient Examination and Treatment Equipment"
+    },
+    "description": {
+      "en": "Devices used in healthcare settings for patient examination and treatment, including diagnostic and therapeutic equipment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PaymentEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -24819,6 +25134,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PlumbingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System Equipment"
+    },
+    "description": {
+      "en": "A pneumatic tube system equipment is a type of conveyance equipment that is part of a pneumatic tube system which uses compressed air to transport small items through a network of tubes. It is commonly used in hospitals, banks, and other facilities to quickly and efficiently move documents, medications, or other small objects between different locations."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ConveyanceEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -25287,6 +25619,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RealTimeLocationSystemEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Real-Time Location System Equipment"
+    },
+    "description": {
+      "en": "Real-time location system (RTLS) equipment is a type of technology used to track and manage the location of assets, people, or other entities in real time within a defined area."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ICTEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -25852,6 +26201,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SmokeCurtain;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Smoke Curtain"
+    },
+    "description": {
+      "en": "A smoke curtain is a type of barrier asset that is designed to prevent the passage of smoke and gases in the event of a fire. It is typically installed around doors, windows, elevators and other openings in a building to create a tight seal that can help to contain smoke and prevent it from spreading to other areas."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BarrierAsset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SoundPressureLevelSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -26050,6 +26416,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ICTEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SurgicalEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Surgical Equipment"
+    },
+    "description": {
+      "en": "Devices used in surgical procedures to assist in the operation and care of patients."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -27074,6 +27457,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VacuumEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vacuum Equipment"
+    },
+    "description": {
+      "en": "Devices that are used to remove air or other gases from a space or medical procedure, generally for laboratory, medical, or industrial applications. This can include vacuum pumps, suction devices, and other related equipment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Valve;1",
     "@type": "Interface",
     "displayName": {
@@ -27415,6 +27815,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WasteAnestheticGasDisposalEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Waste Anesthetic Gas Disposal Equipment"
+    },
+    "description": {
+      "en": "Devices that are used to remove waste anesthetic gases from the environment in healthcare settings, ensuring the safety of patients and staff by preventing exposure to harmful gases. This can include scavenging systems, exhaust fans, and other related equipment designed to capture and safely dispose of anesthetic gases."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -29186,23 +29603,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AirReceiverTank;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air Receiver Tank"
-    },
-    "description": {
-      "en": "A tank that receives air from the air compressor and holds it under pressure for future use"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CompressedAirEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:AirRegister;1",
     "@type": "Interface",
     "displayName": {
@@ -29227,6 +29627,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AlternatingPressurePump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Alternating Pressure Pump"
+    },
+    "description": {
+      "en": "A medical device used in patient care to provide alternating pressure to a specialized mattress or cushion, helping to prevent pressure ulcers and improve patient comfort by reducing pressure on the skin and promoting better circulation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -29324,6 +29741,9 @@
     "displayName": {
       "en": "Audio Amplifier"
     },
+    "description": {
+      "en": "An audio amplifier is an electronic device that increases the amplitude of audio signals. It is used to drive speakers and enhance the sound quality in audio systems."
+    },
     "extends": [
       "dtmi:com:willowinc:AudioVisualEquipment;1"
     ],
@@ -29337,6 +29757,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Audio Digital Signal Processor (DSP)"
+    },
+    "description": {
+      "en": "An audio digital signal processor (DSP) is a specialized electronic device that processes audio signals in the digital domain. It is used to manipulate and enhance audio signals, such as equalization, compression, and effects processing."
     },
     "extends": [
       "dtmi:com:willowinc:AudioVisualEquipment;1"
@@ -29368,6 +29791,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Automatic Door Opener"
+    },
+    "description": {
+      "en": "A device that automatically opens and closes a door, typically using sensors or remote control, to provide hands-free access."
     },
     "extends": [
       "dtmi:com:willowinc:DoorHardware;1"
@@ -29537,10 +29963,30 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BiologicalSafetyCabinet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Biological Safety Cabinet"
+    },
+    "description": {
+      "en": "A biological safety cabinet (BSC) is a specialized ventilation enclosure designed to provide a controlled environment for handling and working with biological materials, such as pathogens, microorganisms, and hazardous substances."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VentilationHood;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Blender;1",
     "@type": "Interface",
     "displayName": {
       "en": "Blender"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to blend or puree ingredients."
     },
     "extends": [
       "dtmi:com:willowinc:FoodPreparationEquipment;1"
@@ -29555,6 +30001,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Bread Slicer"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to slice bread."
     },
     "extends": [
       "dtmi:com:willowinc:FoodPreparationEquipment;1"
@@ -29695,6 +30144,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CanOpener;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Can Opener"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to open canned goods."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodPreparationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CapacitanceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -29765,6 +30231,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirQualitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChemicalMeteringPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chemical Metering Pump"
+    },
+    "description": {
+      "en": "A chemical metering pump is a device used to dispense precise amounts of chemicals into water treatment systems for the purpose of filtration, disinfection, and other treatment processes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingWaterTreatment;1",
+      "dtmi:com:willowinc:Pump;1"
     ],
     "contents": [],
     "@context": [
@@ -29909,6 +30393,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Clean Agent Equipment"
+    },
+    "description": {
+      "en": "Clean agent fire suppression equipment is a type of fire suppression system that uses clean agents, such as halocarbon or inert gases, to extinguish fires without leaving residue."
     },
     "extends": [
       "dtmi:com:willowinc:FireSuppressionEquipment;1"
@@ -30060,6 +30547,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TelecommunicationCableConnector;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoffeeMachine;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Coffee Machine"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to brew coffee."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BeverageEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -30311,6 +30815,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Cooktop"
+    },
+    "description": {
+      "en": "A cooking appliance with a flat surface and built-in heating elements, used for cooking food in pots and pans."
     },
     "extends": [
       "dtmi:com:willowinc:CookingEquipment;1"
@@ -31027,6 +31534,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DewPointAnalyzer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dew Point Analyzer"
+    },
+    "description": {
+      "en": "A dew point analyzer is a device used to measure the dew point temperature of medical gases, ensuring they meet safety and performance standards."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DewPointTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -31037,6 +31561,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DigitalAudioBridge;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Digital Audio Bridge"
+    },
+    "description": {
+      "en": "A digital audio bridge is a device that connects and enables communication between different digital audio systems. It typically facilitates the transmission of audio signals between devices in a network."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DigitalClock;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Digital Clock"
+    },
+    "description": {
+      "en": "A digital clock is an electronic device that displays the time in digital format. It typically features a display screen that shows hours, minutes, and seconds in numerical form."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ICTHardware;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DigitalMediaPlayer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Digital Media Player"
+    },
+    "description": {
+      "en": "A digital media player is an electronic device that can store and play digital media files, such as music, videos, and photos. It typically connects to a television or audio system to provide entertainment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -31306,6 +31881,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DryChemicalEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dry Chemical Equipment"
+    },
+    "description": {
+      "en": "Dry chemical fire suppression equipment is a type of fire suppression system that uses dry chemical agents to extinguish fires, commonly used in industrial settings."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireSuppressionEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -31846,6 +32438,23 @@
         }
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElectromagneticDoorHolder;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electromagnetic Door Holder"
+    },
+    "description": {
+      "en": "An electromagnetic door holder is a device that holds a door open using an electromagnet, which can be released to allow the door to close, often used in fire safety applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DoorHardware;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -32639,6 +33248,9 @@
     "displayName": {
       "en": "Fire Alarm Control Panel"
     },
+    "description": {
+      "en": "A fire alarm control panel is a device that serves as the central hub for a fire alarm system, receiving signals from detectors and initiating appropriate responses such as sounding alarms and notifying emergency services."
+    },
     "extends": [
       "dtmi:com:willowinc:FireAlarmEquipment;1"
     ],
@@ -32666,6 +33278,23 @@
     "@type": "Interface",
     "displayName": {
       "en": "Fire Alarm Notification Appliance"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireAlarmEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FireAlarmPowerSupply;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire Alarm Power Supply"
+    },
+    "description": {
+      "en": "A fire alarm power supply is a device that provides electrical power to fire alarm systems, ensuring they function correctly during emergencies and loss of power."
     },
     "extends": [
       "dtmi:com:willowinc:FireAlarmEquipment;1"
@@ -32906,6 +33535,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FluidWarmer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fluid Warmer"
+    },
+    "description": {
+      "en": "A fluid warmer is a medical device used to heat intravenous fluids, blood products, or other liquids before they are administered to a patient. It helps maintain the temperature of the fluids, preventing hypothermia and ensuring patient comfort during medical procedures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FlushometerValve;1",
     "@type": "Interface",
     "displayName": {
@@ -33124,6 +33770,26 @@
     "@type": "Interface",
     "displayName": {
       "en": "Food Processor"
+    },
+    "description": {
+      "en": "A kitchen appliance used to facilitate repetitive tasks in the preparation of food, such as chopping, slicing, shredding, grinding, and pureeing."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodPreparationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FoodScale;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Food Scale"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to measure the weight of food items."
     },
     "extends": [
       "dtmi:com:willowinc:FoodPreparationEquipment;1"
@@ -33702,6 +34368,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Griddle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Griddle"
+    },
+    "description": {
+      "en": "A flat cooking surface used in foodservice settings to directly cook food on the surface."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CookingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:GroundSourceCondensingUnit;1",
     "@type": "Interface",
     "displayName": {
@@ -33743,6 +34426,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TransportEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HazardousPharmaceuticalWasteContainer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hazardous Pharmaceutical Waste Container"
+    },
+    "description": {
+      "en": "A container used in healthcare settings to store hazardous pharmaceutical waste."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -34302,6 +35002,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterDispenser;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Dispenser"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to dispense hot water."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BeverageEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -34961,6 +35678,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InfectionControlEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Infection Control Equipment"
+    },
+    "description": {
+      "en": "Devices used in healthcare settings to prevent the spread of infectious diseases and maintain a safe environment for patients and staff."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletDamper;1",
     "@type": "Interface",
     "displayName": {
@@ -34968,6 +35702,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InstrumentDryer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Instrument Dryer"
+    },
+    "description": {
+      "en": "A device used to dry medical instruments, equipment, and surfaces after cleaning and disinfection."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -35249,6 +36000,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LineIsolationMonitor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Line Isolation Monitor"
+    },
+    "description": {
+      "en": "A line isolation monitor is a device used in electrical distribution systems to detect and monitor the insulation resistance of the system for NFPA 99 compliance. It helps to identify potential faults or issues in the electrical distribution system, ensuring safety and reliability."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalDistributionEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LoadingDockLeveler;1",
     "@type": "Interface",
     "displayName": {
@@ -35357,6 +36126,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowAirLossPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Air Loss Pump"
+    },
+    "description": {
+      "en": "A medical device used in patient care to provide continuous airflow to a specialized mattress or cushion, helping to prevent pressure ulcers and improve patient comfort by reducing pressure on the skin and promoting better circulation."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -35578,6 +36364,92 @@
     },
     "extends": [
       "dtmi:com:willowinc:FoodPreparationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalGasOutlet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Gas Outlet"
+    },
+    "description": {
+      "en": "A medical gas outlet is a device that provides access to a medical gas supply within a medical setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "gasService",
+        "displayName": {
+          "en": "Gas Service"
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "carbonDioxide",
+              "enumValue": "Carbon Dioxide"
+            },
+            {
+              "name": "oxygen",
+              "enumValue": "Oxygen"
+            },
+            {
+              "name": "nitrogen",
+              "enumValue": "Nitrogen"
+            },
+            {
+              "name": "nitrousOxide",
+              "enumValue": "Nitrous Oxide"
+            },
+            {
+              "name": "medicalAir",
+              "enumValue": "Medical Air"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalGasZoneValveBox;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Gas Zone Valve Box"
+    },
+    "description": {
+      "en": "A medical gas zone valve box is a device that contains valves for specific zones in a medical gas system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalSurgicalBoom;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Surgical Boom"
+    },
+    "description": {
+      "en": "A medical surgical boom is a mobile support structure that holds surgical equipment and supplies in a medical setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SurgicalEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -35818,6 +36690,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:VolumeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:NetworkAudioAdapter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Network Audio Adapter"
+    },
+    "description": {
+      "en": "A network audio adapter is a device that enables audio signals to be transmitted over a network. It typically connects to a local area network (LAN) and allows audio data to be sent and received between devices."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -36621,6 +37510,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PatientLift;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Patient Lift"
+    },
+    "description": {
+      "en": "A medical device used to assist in lifting and transferring patients with limited mobility, providing support and safety during patient handling and care."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PaymentTerminal;1",
     "@type": "Interface",
     "displayName": {
@@ -37406,6 +38312,108 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PneumaticSlideGate;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System Slide Gate"
+    },
+    "description": {
+      "en": "A pneumatic tube system slide gate is a device that acts as a barrier within a pneumatic tube system, allowing for the control of item flow by opening or closing the gate to permit or restrict passage through the tubes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticTubeBlower;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System Blower"
+    },
+    "description": {
+      "en": "A pneumatic tube system blower is a device that generates compressed air for use in a pneumatic tube system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticTubeCarrierStorageUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube Carrier Storage Unit"
+    },
+    "description": {
+      "en": "A device that provides temporary storage for carriers within a pneumatic tube system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticTubeStation;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System Station"
+    },
+    "description": {
+      "en": "A pneumatic tube system station is a location within a pneumatic tube system where items can be inserted or retrieved."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticTubeTransferUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System Transfer Unit"
+    },
+    "description": {
+      "en": "A pneumatic tube system transfer unit is a device that facilitates the movement of items between different locations within a pneumatic tube system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PneumaticWindGate;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pneumatic Tube System Wind Gate"
+    },
+    "description": {
+      "en": "A pneumatic tube system wind gate is a device that enables the reversal of air flow in a pneumatic tube system, allowing for the redirection of items being transported through the tubes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PointOfSaleRegister;1",
     "@type": "Interface",
     "displayName": {
@@ -37573,6 +38581,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PressureSensorEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Sensor Equipment"
+    },
+    "description": {
+      "en": "An equipment that measures and reports pressure values."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SensorEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -37617,6 +38642,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ProjectionScreen;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Projection Screen"
+    },
+    "description": {
+      "en": "A projection screen is a surface that is used to display projected images or videos. It is typically made of a special material that reflects light evenly and provides good image quality."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Projector;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Projector"
+    },
+    "description": {
+      "en": "A projector is a device that displays an image or video onto a screen or wall. It typically uses light to project an image and is commonly used in presentations, entertainment, and educational settings."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -38550,6 +39609,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:StairStepper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Stair Stepper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CardioFitnessEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:StandbyModeState;1",
     "@type": "Interface",
     "displayName": {
@@ -38790,6 +39863,58 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Sterilizer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sterilizer"
+    },
+    "description": {
+      "en": "A device used to eliminate or kill all forms of microbial life, including bacteria, viruses, fungi, and spores, from medical instruments, equipment, and surfaces, including autoclaves (steam sterilizers), dry heat sterilizers, chemical sterilizers, and gas sterilizers."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Stretcher;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Stretcher"
+    },
+    "description": {
+      "en": "A stretcher is a medical device used for transporting patients who are unable to walk or require assistance. It typically consists of a flat surface with wheels and handles, allowing healthcare professionals to safely move patients from one location to another, such as from an ambulance to a hospital bed."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SuctionRegulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Suction Regulator"
+    },
+    "description": {
+      "en": "A suction regulator is a medical device used to control the level of suction applied during medical procedures. It is typically connected to a vacuum source and allows healthcare professionals to adjust the suction pressure to safely and effectively remove fluids, secretions, or debris from a patient\u0027s body."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1",
+      "dtmi:com:willowinc:VacuumEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SurfaceTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38800,6 +39925,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SurgicalDisplayArm;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Surgical Display Arm"
+    },
+    "description": {
+      "en": "A specialized display mount used in operating rooms to hold and position monitors or displays that provide visual information to surgeons and medical staff during surgical procedures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SurgicalEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -39034,6 +40176,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Television;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Television"
+    },
+    "description": {
+      "en": "A television is an electronic device that displays moving images and sound. It is commonly used for entertainment and information purposes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AudioVisualEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -39044,6 +40203,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TemperatureSensorEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature Sensor Equipment"
+    },
+    "description": {
+      "en": "An equipment that measures and reports temperature values."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SensorEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -39175,6 +40351,9 @@
     "displayName": {
       "en": "Thermostat"
     },
+    "description": {
+      "en": "An equipment that measures and reports temperature values and can also control the heating, ventilation, and air conditioning (HVAC) system to maintain a desired temperature setpoint."
+    },
     "extends": [
       "dtmi:com:willowinc:SensorEquipment;1"
     ],
@@ -39245,6 +40424,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Toaster;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Toaster"
+    },
+    "description": {
+      "en": "A device used in foodservice settings to toast bread or other foods."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CookingEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -39789,6 +40985,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UltrasonicCleaner;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ultrasonic Cleaner"
+    },
+    "description": {
+      "en": "A device that uses ultrasonic waves to clean medical instruments, equipment, and surfaces by removing dirt, organic matter, and microorganisms."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UnoccupiedHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -39972,6 +41185,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PlumbingFixture;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VacuumInlet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vacuum Inlet"
+    },
+    "description": {
+      "en": "A vacuum inlet is a connection point in a vacuum system where vacuum is drawn from a space or medical procedure. It is typically part of a larger vacuum system and is used to connect vacuum equipment such as suction devices."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VacuumEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -40383,6 +41613,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WasherDisinfector;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Washer Disinfector"
+    },
+    "description": {
+      "en": "A device used to clean and disinfect medical instruments, equipment, and surfaces, removing dirt, organic matter, and microorganisms."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WasteAnestheticGasDisposalInlet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Waste Anesthetic Gas Disposal Inlet"
+    },
+    "description": {
+      "en": "A waste anesthetic gas disposal inlet is a connection point in a waste anesthetic gas disposal system where waste anesthetic gases are drawn from a space or medical procedure. It is typically part of a larger waste anesthetic gas disposal system and is used to connect waste anesthetic gas disposal equipment such as scavenging systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WasteAnestheticGasDisposalEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WasteMassSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40625,6 +41889,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterQualityMonitor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Quality Monitor"
+    },
+    "description": {
+      "en": "A water quality monitor is a device used to measure and analyze the quality of water in treatment systems, ensuring it meets safety and performance standards."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingWaterTreatment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterQualitySensorEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -40801,6 +42082,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WaterTreatmentController;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Treatment Controller"
+    },
+    "description": {
+      "en": "A water treatment controller is a device that manages and controls the operation of water treatment systems, such as filtration, disinfection, and chemical dosing, to ensure the quality and safety of water."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PlumbingWaterTreatment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterVolumeSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40859,6 +42157,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WetChemicalEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Wet Chemical Equipment"
+    },
+    "description": {
+      "en": "Wet chemical fire suppression equipment is a type of fire suppression system that uses wet chemical agents to extinguish fires, commonly used in kitchen environments."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireSuppressionEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Wheelchair;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Wheelchair"
+    },
+    "description": {
+      "en": "A wheelchair is a mobility device designed to assist individuals who have difficulty walking or are unable to walk. It typically consists of a seat, backrest, armrests, footrests, and wheels. Wheelchairs can be manually propelled by the user or pushed by a caregiver, and they may also be powered by batteries for enhanced mobility."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientCareEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -42121,6 +43453,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirReceiverTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Receiver Tank"
+    },
+    "description": {
+      "en": "A tank that receives air from the air compressor and holds it under pressure for future use"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CompressedAirEquipment;1",
+      "dtmi:com:willowinc:PlumbingTank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirSourcePackagedHeatPump;1",
     "@type": "Interface",
     "displayName": {
@@ -43247,6 +44597,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChlorineAnalyzer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chlorine Analyzer"
+    },
+    "description": {
+      "en": "A chlorine analyzer is a device used to measure the concentration of chlorine in water treatment systems, ensuring it meets safety and performance standards."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterQualityMonitor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CleanAgentCabinet;1",
     "@type": "Interface",
     "displayName": {
@@ -43703,6 +45070,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ContinuousSuctionRegulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Continuous Suction Regulator"
+    },
+    "description": {
+      "en": "A suction regulator which provides continuous suction is a medical device used to maintain a constant level of suction pressure during medical procedures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SuctionRegulator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ControlsSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -43710,6 +45094,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ICTSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ConvectionOven;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Convection Oven"
+    },
+    "description": {
+      "en": "An oven appliance that uses a fan to circulate hot air around the food, resulting in faster and more even cooking."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Oven;1"
     ],
     "contents": [],
     "@context": [
@@ -46312,6 +47713,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FireSprinklerTamperSwitch;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire Sprinkler Tamper Switch"
+    },
+    "description": {
+      "en": "A fire sprinkler tamper switch is a device used in fire sprinkler systems to detect unauthorized access or tampering with a sprinkler system valve."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SprinklerEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FireSuppressionSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -46319,6 +47737,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FireProtectionSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FixedRoomDisinfectionEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fixed Room Disinfection Equipment"
+    },
+    "description": {
+      "en": "A fixed device used in healthcare settings to disinfect a patient room or other areas to prevent the spread of infectious diseases and maintain a safe environment for patients and staff."
+    },
+    "extends": [
+      "dtmi:com:willowinc:InfectionControlEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -47482,6 +48917,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:IntermittentSuctionRegulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Intermittent Suction Regulator"
+    },
+    "description": {
+      "en": "An intermittent suction regulator is a medical device used to provide intermittent suction during medical procedures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SuctionRegulator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:IntrusionDetectionSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -47808,6 +49260,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LinenCart;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Linen Cart"
+    },
+    "description": {
+      "en": "A cart used in healthcare settings to transport linens and other supplies."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1",
+      "dtmi:com:willowinc:Cart;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LineNGVoltageMagnitudeSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47968,6 +49438,42 @@
     },
     "extends": [
       "dtmi:com:willowinc:FlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalCart;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Cart"
+    },
+    "description": {
+      "en": "A cart used in healthcare settings to transport medical supplies and equipment, including computers and monitors."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PatientExaminationTreatmentEquipment;1",
+      "dtmi:com:willowinc:Cart;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalGasValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Gas Valve"
+    },
+    "description": {
+      "en": "A medical gas valve is a device that controls the flow of medical gas within a medical setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1",
+      "dtmi:com:willowinc:PlumbingValve;1"
     ],
     "contents": [],
     "@context": [
@@ -48172,6 +49678,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MobileRoomDisinfectionEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mobile Room Disinfection Equipment"
+    },
+    "description": {
+      "en": "A mobile device used in healthcare settings to disinfect patient rooms and other areas to prevent the spread of infectious diseases and maintain a safe environment for patients and staff."
+    },
+    "extends": [
+      "dtmi:com:willowinc:InfectionControlEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -52004,6 +53527,42 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VacuumPump;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vacuum Pump"
+    },
+    "description": {
+      "en": "A vacuum pump is a device that removes gas molecules from a sealed volume to create a vacuum. It is commonly used in laboratory, medical, and industrial applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VacuumEquipment;1",
+      "dtmi:com:willowinc:PlumbingPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VacuumReceiverTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vacuum Receiver Tank"
+    },
+    "description": {
+      "en": "A vacuum receiver tank is a vessel that collects and stores vacuum gas or vapor in a vacuum system. It is typically used in conjunction with vacuum pumps to maintain a consistent vacuum level."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VacuumEquipment;1",
+      "dtmi:com:willowinc:PlumbingTank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ValveCloseActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -55328,6 +56887,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DryChemicalSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dry Chemical System"
+    },
+    "description": {
+      "en": "A dry chemical fire suppression system is a type of fire suppression system that uses dry chemical agents, such as monoammonium phosphate or sodium bicarbonate, to extinguish fires by interrupting the chemical reaction of the fire."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireSuppressionSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -55581,6 +57157,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElectricalContactor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electrical Contactor"
+    },
+    "description": {
+      "en": "An electrically operated switch that uses an electromagnet to control the flow of electricity in a circuit, commonly used for switching electrical loads such as motors, lighting, and heating equipment, providing a safe and efficient means of controlling high-power circuits with low-power signals."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalSwitch;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricalPowerAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -55591,6 +57184,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElectricalRelay;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electrical Relay"
+    },
+    "description": {
+      "en": "An electrically operated switch that uses an electromagnet to mechanically operate a switching mechanism, allowing for the control of a high-power circuit with a low-power signal, commonly used in various applications such as automation, control systems, and safety devices."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalSwitch;1"
     ],
     "contents": [],
     "@context": [
@@ -58261,6 +59871,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:IsolatedPowerPanelboard;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Isolated Power Panelboard"
+    },
+    "description": {
+      "en": "A specialized panelboard designed to provide ungrounded power to specific equipment or areas as defined by NFPA 99, often used in healthcare facilities to ensure continuous power supply and reduce the risk of electrical shock."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalPanelboardMCB;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeakAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -58906,6 +60533,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:ElectricityConsumptionGreenhouseGasEmissionsFactor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MedicalGasRegulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Medical Gas Regulator"
+    },
+    "description": {
+      "en": "A medical gas regulator is a device that controls and regulates the pressure of medical gas within a medical setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1",
+      "dtmi:com:willowinc:PlumbingPressureReducingValve;1"
     ],
     "contents": [],
     "@context": [
@@ -62546,6 +64191,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WetChemicalSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Wet Chemical System"
+    },
+    "description": {
+      "en": "A wet chemical fire suppression system is a type of fire suppression system that uses wet chemical agents, such as aqueous film-forming foam (AFFF) or polar solvent-resistant foam (AR-500), to extinguish fires by cooling the fuel and forming a barrier between the fuel and the oxygen."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireSuppressionSystem;1"
     ],
     "contents": [],
     "@context": [
