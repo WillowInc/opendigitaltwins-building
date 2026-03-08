@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Audio Visual Equipment"
   },
+  "description": {
+    "en": "Audio visual equipment refers to devices and systems that are used for the production, display, and transmission of audio and visual content. This can include items such as projectors, speakers, microphones, video conferencing systems, and other related equipment."
+  },
   "extends" : [
     "dtmi:com:willowinc:ICTEquipment;1"
   ],

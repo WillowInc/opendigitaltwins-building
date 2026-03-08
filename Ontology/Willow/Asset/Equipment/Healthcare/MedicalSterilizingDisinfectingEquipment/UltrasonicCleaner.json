@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:UltrasonicCleaner;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Ultrasonic Cleaner"
+  },
+  "description": {
+    "en": "A device that uses ultrasonic waves to clean medical instruments, equipment, and surfaces by removing dirt, organic matter, and microorganisms."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

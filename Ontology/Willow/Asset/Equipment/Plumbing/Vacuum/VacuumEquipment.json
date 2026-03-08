@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:VacuumEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vacuum Equipment"
+  },
+  "description": {
+    "en": "Devices that are used to remove air or other gases from a space or medical procedure, generally for laboratory, medical, or industrial applications. This can include vacuum pumps, suction devices, and other related equipment."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medical/Laboratory Gas Equipment"
+  },
+  "description": {
+    "en": "Devices that are used to supply, monitor, or control gases used in medical or laboratory settings."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Projector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Projector"
+  },
+  "description": {
+    "en": "A projector is a device that displays an image or video onto a screen or wall. It typically uses light to project an image and is commonly used in presentations, entertainment, and educational settings."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

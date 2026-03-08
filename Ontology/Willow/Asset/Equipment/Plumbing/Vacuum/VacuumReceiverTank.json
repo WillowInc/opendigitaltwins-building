@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:VacuumReceiverTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vacuum Receiver Tank"
+  },
+  "description": {
+    "en": "A vacuum receiver tank is a vessel that collects and stores vacuum gas or vapor in a vacuum system. It is typically used in conjunction with vacuum pumps to maintain a consistent vacuum level."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VacuumEquipment;1",
+    "dtmi:com:willowinc:PlumbingTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

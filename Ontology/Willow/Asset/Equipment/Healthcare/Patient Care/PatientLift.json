@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PatientLift;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Patient Lift"
+  },
+  "description": {
+    "en": "A medical device used to assist in lifting and transferring patients with limited mobility, providing support and safety during patient handling and care."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PatientCareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

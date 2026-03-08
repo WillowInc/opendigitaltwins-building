@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:CoffeeMachine;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Coffee Machine"
+  },
+  "description": {
+    "en": "A device used in foodservice settings to brew coffee."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BeverageEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ContinuousSuctionRegulator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Continuous Suction Regulator"
+  },
+  "description": {
+    "en": "A suction regulator which provides continuous suction is a medical device used to maintain a constant level of suction pressure during medical procedures."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SuctionRegulator;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

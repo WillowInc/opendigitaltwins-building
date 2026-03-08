@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Healthcare Environmental Services Equipment"
+  },
+  "description": {
+    "en": "Devices used in healthcare settings to maintain a clean and safe environment for patients and staff."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

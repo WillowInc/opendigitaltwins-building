@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ChlorineAnalyzer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chlorine Analyzer"
+  },
+  "description": {
+    "en": "A chlorine analyzer is a device used to measure the concentration of chlorine in water treatment systems, ensuring it meets safety and performance standards."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WaterQualityMonitor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

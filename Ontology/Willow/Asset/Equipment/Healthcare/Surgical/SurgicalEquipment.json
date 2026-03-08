@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:SurgicalEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Surgical Equipment"
+  },
+  "description": {
+    "en": "Devices used in surgical procedures to assist in the operation and care of patients."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

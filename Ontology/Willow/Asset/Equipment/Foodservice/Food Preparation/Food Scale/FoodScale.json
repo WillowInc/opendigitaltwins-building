@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FoodScale;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Food Scale"
+  },
+  "description": {
+    "en": "A device used in foodservice settings to measure the weight of food items."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FoodPreparationEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

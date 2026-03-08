@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PatientExaminationTreatmentEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Patient Examination and Treatment Equipment"
+  },
+  "description": {
+    "en": "Devices used in healthcare settings for patient examination and treatment, including diagnostic and therapeutic equipment."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

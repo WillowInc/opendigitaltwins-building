@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:RealTimeLocationSystemEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Real-Time Location System Equipment"
+  },
+  "description": {
+    "en": "Real-time location system (RTLS) equipment is a type of technology used to track and manage the location of assets, people, or other entities in real time within a defined area."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

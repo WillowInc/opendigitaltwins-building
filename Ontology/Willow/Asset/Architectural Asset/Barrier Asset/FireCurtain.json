@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FireCurtain;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Curtain"
+  },
+  "description": {
+    "en": "A fire curtain is a type of barrier asset that is designed to prevent the passage of fire and smoke in the event of a fire. It is typically installed around doors, windows, elevators and other openings in a building to create a tight seal that can help to contain fire and prevent it from spreading to other areas."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BarrierAsset;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

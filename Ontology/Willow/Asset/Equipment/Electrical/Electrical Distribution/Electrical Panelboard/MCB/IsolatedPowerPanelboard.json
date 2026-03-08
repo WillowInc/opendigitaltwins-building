@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:IsolatedPowerPanelboard;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Isolated Power Panelboard"
+  },
+  "description": {
+    "en": "A specialized panelboard designed to provide ungrounded power to specific equipment or areas as defined by NFPA 99, often used in healthcare facilities to ensure continuous power supply and reduce the risk of electrical shock."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalPanelboardMCB;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

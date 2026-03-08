@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:NetworkAudioAdapter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Network Audio Adapter"
+  },
+  "description": {
+    "en": "A network audio adapter is a device that enables audio signals to be transmitted over a network. It typically connects to a local area network (LAN) and allows audio data to be sent and received between devices."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

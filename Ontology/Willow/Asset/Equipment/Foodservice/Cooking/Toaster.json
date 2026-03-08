@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:Toaster;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Toaster"
+  },
+  "description": {
+    "en": "A device used in foodservice settings to toast bread or other foods."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CookingEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

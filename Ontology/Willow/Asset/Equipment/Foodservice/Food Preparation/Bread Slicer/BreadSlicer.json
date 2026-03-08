@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Bread Slicer"
   },
+  "description": {
+    "en": "A device used in foodservice settings to slice bread."
+  },
   "extends" : [
     "dtmi:com:willowinc:FoodPreparationEquipment;1"
   ],

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PneumaticSlideGate;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pneumatic Tube System Slide Gate"
+  },
+  "description": {
+    "en": "A pneumatic tube system slide gate is a device that acts as a barrier within a pneumatic tube system, allowing for the control of item flow by opening or closing the gate to permit or restrict passage through the tubes."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PneumaticTubeSystemEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

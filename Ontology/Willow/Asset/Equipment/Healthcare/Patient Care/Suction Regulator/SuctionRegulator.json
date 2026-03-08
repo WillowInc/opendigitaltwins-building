@@ -8,7 +8,8 @@
     "en": "A suction regulator is a medical device used to control the level of suction applied during medical procedures. It is typically connected to a vacuum source and allows healthcare professionals to adjust the suction pressure to safely and effectively remove fluids, secretions, or debris from a patient's body."
   },
   "extends" : [
-    "dtmi:com:willowinc:PatientCareEquipment;1"
+    "dtmi:com:willowinc:PatientCareEquipment;1",
+    "dtmi:com:willowinc:VacuumEquipment;1"
   ],
   "contents": [
 

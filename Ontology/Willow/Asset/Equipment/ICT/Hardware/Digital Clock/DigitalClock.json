@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:DigitalClock;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Digital Clock"
+  },
+  "description": {
+    "en": "A digital clock is an electronic device that displays the time in digital format. It typically features a display screen that shows hours, minutes, and seconds in numerical form."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ICTHardware;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

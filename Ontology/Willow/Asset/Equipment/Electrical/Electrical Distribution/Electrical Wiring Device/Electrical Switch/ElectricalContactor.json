@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalContactor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Contactor"
+  },
+  "description": {
+    "en": "An electrically operated switch that uses an electromagnet to control the flow of electricity in a circuit, commonly used for switching electrical loads such as motors, lighting, and heating equipment, providing a safe and efficient means of controlling high-power circuits with low-power signals."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalSwitch;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HotWaterDispenser;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hot Water Dispenser"
+  },
+  "description": {
+    "en": "A device used in foodservice settings to dispense hot water."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BeverageEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

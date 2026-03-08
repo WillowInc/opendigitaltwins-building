@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Fire Alarm Control Panel"
   },
+  "description": {
+    "en": "A fire alarm control panel is a device that serves as the central hub for a fire alarm system, receiving signals from detectors and initiating appropriate responses such as sounding alarms and notifying emergency services."
+  },
   "extends" : [
     "dtmi:com:willowinc:FireAlarmEquipment;1"
   ],

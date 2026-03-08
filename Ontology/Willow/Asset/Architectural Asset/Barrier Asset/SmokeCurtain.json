@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SmokeCurtain;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Smoke Curtain"
+  },
+  "description": {
+    "en": "A smoke curtain is a type of barrier asset that is designed to prevent the passage of smoke and gases in the event of a fire. It is typically installed around doors, windows, elevators and other openings in a building to create a tight seal that can help to contain smoke and prevent it from spreading to other areas."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:BarrierAsset;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

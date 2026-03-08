@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FloorDryer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Floor Dryer"
+  },
+  "description": {
+    "en": "A machine used to dry floors after cleaning."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CleaningEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

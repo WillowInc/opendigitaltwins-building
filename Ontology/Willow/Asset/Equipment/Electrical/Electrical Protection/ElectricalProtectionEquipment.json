@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalProtectionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Protection Equipment"
+  },
+  "description": {
+    "en": "Electrical protection equipment is designed to safeguard electrical systems and components from damage caused by electrical faults, overloads, short circuits, and other abnormal conditions. This category includes devices such as circuit breakers, fuses, ground fault circuit interrupters (GFCIs), surge protectors, and protective relays, which work to detect and interrupt electrical faults, ensuring the safety of both the electrical system and its users."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

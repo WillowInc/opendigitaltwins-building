@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:VacuumPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vacuum Pump"
+  },
+  "description": {
+    "en": "A vacuum pump is a device that removes gas molecules from a sealed volume to create a vacuum. It is commonly used in laboratory, medical, and industrial applications."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VacuumEquipment;1",
+    "dtmi:com:willowinc:PlumbingPump;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:LightningProtectionEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Lightning Protection Equipment"
+  },
+  "description": {
+    "en": "Lightning protection equipment is designed to safeguard structures and electrical systems from damage caused by lightning strikes. This category includes devices such as lightning rods, surge protectors, and grounding systems, which work to safely conduct and dissipate the energy from lightning strikes, ensuring the safety of the structure and its occupants."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ElectricalEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

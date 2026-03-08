@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:WasherDisinfector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Washer Disinfector"
+  },
+  "description": {
+    "en": "A device used to clean and disinfect medical instruments, equipment, and surfaces, removing dirt, organic matter, and microorganisms."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalSterilizingDisinfectingEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

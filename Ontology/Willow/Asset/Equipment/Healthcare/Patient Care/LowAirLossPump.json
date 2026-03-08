@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:LowAirLossPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Air Loss Pump"
+  },
+  "description": {
+    "en": "A medical device used in patient care to provide continuous airflow to a specialized mattress or cushion, helping to prevent pressure ulcers and improve patient comfort by reducing pressure on the skin and promoting better circulation."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PatientCareEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

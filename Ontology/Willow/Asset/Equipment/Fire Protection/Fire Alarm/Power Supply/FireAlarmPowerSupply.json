@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FireAlarmPowerSupply;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fire Alarm Power Supply"
+  },
+  "description": {
+    "en": "A fire alarm power supply is a device that provides electrical power to fire alarm systems, ensuring they function correctly during emergencies and loss of power."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireAlarmEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

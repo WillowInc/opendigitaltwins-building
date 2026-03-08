@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Food Processor"
   },
+  "description": {
+    "en": "A kitchen appliance used to facilitate repetitive tasks in the preparation of food, such as chopping, slicing, shredding, grinding, and pureeing."
+  },
   "extends" : [
     "dtmi:com:willowinc:FoodPreparationEquipment;1"
   ],

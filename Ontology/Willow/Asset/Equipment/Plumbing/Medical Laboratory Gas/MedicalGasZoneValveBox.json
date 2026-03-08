@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:MedicalGasZoneValveBox;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Medical Gas Zone Valve Box"
+  },
+  "description": {
+    "en": "A medical gas zone valve box is a device that contains valves for specific zones in a medical gas system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

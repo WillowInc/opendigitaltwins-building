@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:DigitalAudioBridge;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Digital Audio Bridge"
+  },
+  "description": {
+    "en": "A digital audio bridge is a device that connects and enables communication between different digital audio systems. It typically facilitates the transmission of audio signals between devices in a network."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:DryChemicalEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dry Chemical Equipment"
+  },
+  "description": {
+    "en": "Dry chemical fire suppression equipment is a type of fire suppression system that uses dry chemical agents to extinguish fires, commonly used in industrial settings."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FireSuppressionEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

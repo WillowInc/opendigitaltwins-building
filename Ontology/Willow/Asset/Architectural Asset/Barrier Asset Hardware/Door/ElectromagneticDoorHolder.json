@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ElectromagneticDoorHolder;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electromagnetic Door Holder"
+  },
+  "description": {
+    "en": "An electromagnetic door holder is a device that holds a door open using an electromagnet, which can be released to allow the door to close, often used in fire safety applications."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DoorHardware;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

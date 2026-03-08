@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HazardousPharmaceuticalWasteContainer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hazardous Pharmaceutical Waste Container"
+  },
+  "description": {
+    "en": "A container used in healthcare settings to store hazardous pharmaceutical waste."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HealthcareEnvironmentalServicesEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

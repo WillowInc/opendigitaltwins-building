@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ProjectionScreen;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Projection Screen"
+  },
+  "description": {
+    "en": "A projection screen is a surface that is used to display projected images or videos. It is typically made of a special material that reflects light evenly and provides good image quality."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AudioVisualEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

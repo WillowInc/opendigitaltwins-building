@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Cooktop"
   },
+  "description": {
+    "en": "A cooking appliance with a flat surface and built-in heating elements, used for cooking food in pots and pans."
+  },
   "extends" : [
     "dtmi:com:willowinc:CookingEquipment;1"
   ],

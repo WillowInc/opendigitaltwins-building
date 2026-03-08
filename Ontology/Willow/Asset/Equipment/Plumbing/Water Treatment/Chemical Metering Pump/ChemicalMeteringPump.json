@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ChemicalMeteringPump;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Chemical Metering Pump"
+  },
+  "description": {
+    "en": "A chemical metering pump is a device used to dispense precise amounts of chemicals into water treatment systems for the purpose of filtration, disinfection, and other treatment processes."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PlumbingWaterTreatment;1",
+    "dtmi:com:willowinc:Pump;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:DewPointAnalyzer;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Dew Point Analyzer"
+  },
+  "description": {
+    "en": "A dew point analyzer is a device used to measure the dew point temperature of medical gases, ensuring they meet safety and performance standards."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
