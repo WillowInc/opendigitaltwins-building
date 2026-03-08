@@ -39,14 +39,6 @@
           {
             "name": "medicalAir",
             "enumValue": "Medical Air"
-          },
-          {
-            "name": "vacuum",
-            "enumValue": "Vacuum"
-          },
-          {
-            "name": "wasteAnestheticGasDisposal",
-            "enumValue": "Waste Anesthetic Gas Disposal"
           }
         ],
         "valueSchema": "string"
