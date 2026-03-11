@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:IntermediateFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Intermediate Filter"
+  },
+  "description": {
+    "en": "A filter that is the second stage of filtration in an air handling system, designed to capture medium-sized particles and extend the life of the final filters."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirFilter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
