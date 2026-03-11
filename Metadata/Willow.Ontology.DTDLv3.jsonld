@@ -31443,6 +31443,9 @@
     "displayName": {
       "en": "Dehumidifier"
     },
+    "description": {
+      "en": "A dehumidifier is a device that removes moisture from the air to decrease humidity levels."
+    },
     "extends": [
       "dtmi:com:willowinc:HVACAirTreatment;1"
     ],
@@ -35136,6 +35139,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Humidifier"
+    },
+    "description": {
+      "en": "A humidifier is a device that adds moisture to the air to increase humidity levels."
     },
     "extends": [
       "dtmi:com:willowinc:HVACAirTreatment;1"
@@ -41002,6 +41008,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UltravioletEmitter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ultraviolet Emitter"
+    },
+    "description": {
+      "en": "An ultraviolet emitter is a device that emits ultraviolet (UV) light, which can be used for anti-microbial applications such as disinfection and sterilization."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACAirTreatment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UnoccupiedHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -45573,6 +45596,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Desiccant Dehumidifier"
+    },
+    "description": {
+      "en": "A dehumidifier that uses a desiccant material to absorb moisture from the air, making it effective in low-temperature environments."
     },
     "extends": [
       "dtmi:com:willowinc:Dehumidifier;1"
