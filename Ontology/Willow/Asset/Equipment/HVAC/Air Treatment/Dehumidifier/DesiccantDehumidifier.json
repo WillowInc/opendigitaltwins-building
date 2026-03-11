@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Desiccant Dehumidifier"
   },
+  "description": {
+    "en": "A dehumidifier that uses a desiccant material to absorb moisture from the air, making it effective in low-temperature environments."
+  },
   "extends" : [
     "dtmi:com:willowinc:Dehumidifier;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Dehumidifier"
   },
+  "description": {
+    "en": "A dehumidifier is a device that removes moisture from the air to decrease humidity levels."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACAirTreatment;1"
   ],

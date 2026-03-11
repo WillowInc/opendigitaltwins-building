@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Humidifier"
   },
+  "description": {
+    "en": "A humidifier is a device that adds moisture to the air to increase humidity levels."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACAirTreatment;1"
   ],
