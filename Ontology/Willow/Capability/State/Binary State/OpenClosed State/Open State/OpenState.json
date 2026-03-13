@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the equipment which is 'open' when 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:OpenCloseState;1"
+    "dtmi:com:willowinc:OpenClosedState;1"
   ],
   "contents": [
   ],

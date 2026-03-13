@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean status from a state where 'contact' is 'true'"},
   "extends" : [
-    "dtmi:com:willowinc:OpenCloseState;1"
+    "dtmi:com:willowinc:OpenClosedState;1"
   ],
   "contents": [
   ],
