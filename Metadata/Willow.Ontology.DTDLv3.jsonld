@@ -24862,23 +24862,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OpenCloseState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Open/Close State"
-    },
-    "description": {
-      "en": "The Boolean state of the equipment which is \u0027open\u0027 when \u0027true\u0027 and \u0027close\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinaryState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OperationalNonoperationalState;1",
     "@type": "Interface",
     "displayName": {
@@ -30432,7 +30415,7 @@
       "en": "The Boolean state of the equipment which is \u0027closed\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:OpenCloseState;1"
+      "dtmi:com:willowinc:OpenClosedState;1"
     ],
     "contents": [],
     "@context": [
@@ -30450,23 +30433,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:PositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CloseState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Close State"
-    },
-    "description": {
-      "en": "The Boolean state of the equipment which is \u0027close\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OpenCloseState;1"
     ],
     "contents": [],
     "@context": [
@@ -30775,7 +30741,7 @@
       "en": "The Boolean status from a state where \u0027contact\u0027 is \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:OpenCloseState;1"
+      "dtmi:com:willowinc:OpenClosedState;1"
     ],
     "contents": [],
     "@context": [
@@ -37150,7 +37116,7 @@
       "en": "The Boolean state of the equipment which is \u0027open\u0027 when \u0027true\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:OpenCloseState;1"
+      "dtmi:com:willowinc:OpenClosedState;1"
     ],
     "contents": [],
     "@context": [
@@ -45728,40 +45694,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the discharge (supply) air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the discharge (supply) air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DischargeAirDewPointTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -46007,40 +45939,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:TimeSpanSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the economizer damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the economizer damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -46716,40 +46614,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Bypass Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the energy recovery device discharge (supply) air bypass damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Bypass Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the energy recovery device discharge (supply) air bypass damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirEnteringHumiditySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -46825,40 +46689,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:BypassDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Bypass Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the energy recovery device return air bypass damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Bypass Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the energy recovery device return air bypass damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -47104,40 +46934,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the exhaust air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the exhaust air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustAirDewPointTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47230,40 +47026,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:VAVAirflowControlValve;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Face and Bypass Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the face and bypass dampers"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Face and Bypass Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the face and bypass dampers"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -48824,40 +48586,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:InletAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the inlet air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the inlet air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:InletAirDewPointTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49575,40 +49303,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the minimum outside air damper, to modulate ventilation air flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the minimum outside air damper, as confirmation of a position for allowing or disallowing ventilation air flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MixedAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49619,40 +49313,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the mixed air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the mixed air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -50252,40 +49912,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the outside air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the outside air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -51822,40 +51448,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the relief air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the relief air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefAirDewPointTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -51969,40 +51561,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReplaceFinalFilterState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Replace Final Filter State"
-    },
-    "description": {
-      "en": "The Boolean state of the final filter which is \u0027replace\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReplaceFilterState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReplacePreFilterState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Replace Pre Filter State"
-    },
-    "description": {
-      "en": "The Boolean state of the pre filter which is \u0027replace\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReplaceFilterState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ResetActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -52030,40 +51588,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the return air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Position State"
-    },
-    "description": {
-      "en": "The percent position state of the return air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -55787,74 +55311,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Discharge Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with discharge air to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckInletAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Inlet Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the inlet air damper to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirDamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckInletAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Inlet Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The percent position state of the inlet air damper to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirDamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckInletAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Inlet Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with inlet air to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ColdDeckSupplyFan;1",
     "@type": "Interface",
     "displayName": {
@@ -56622,40 +56078,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the discharge air damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the discharge air damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DischargeAirDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -56826,23 +56248,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DischargeFanVFDFrequencySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan VFD Frequency Sensor"
-    },
-    "description": {
-      "en": "The frequency feedback from a sensor associated with discharge (supply) air fan VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDFrequencySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DishCleanupCart;1",
     "@type": "Interface",
     "displayName": {
@@ -56940,40 +56345,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FireSuppressionSystem;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the economizer damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EconomizerDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Economizer Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the economizer damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -57321,74 +56692,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnOffSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Bypass Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the energy recovery device discharge air bypass damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirBypassDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Bypass Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the energy recovery device discharge air bypass damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Bypass Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the energy recovery device return air bypass damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Bypass Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the energy recovery device return air bypass damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -57810,40 +57113,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the exhaust air damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the exhaust air damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustAirDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -57987,23 +57256,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACFanGroup;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanVFDFrequencySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan VFD Frequency Sensor"
-    },
-    "description": {
-      "en": "The frequency feedback from a sensor associated with exhaust air fan VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDFrequencySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -58795,74 +58047,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HorizontalFanCoilUnit;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckDischargeAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Discharge Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with discharge air to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckInletAirDamperPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Inlet Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the inlet air damper to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirDamperPositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckInletAirDamperPositionState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Inlet Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The percent position state of the inlet air damper to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirDamperPositionState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckInletAirTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Inlet Air Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with inlet air to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -59689,40 +58873,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CO2AirQualitySetpointLowLimit;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the inlet air damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the inlet air damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -60635,40 +59785,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Min Outside Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the minimum outside air damper to \u0027open\u0027 when \u0027true\u0027, to allow or disallow ventilation air flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Min Outside Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the minimum outside air damper which is \u0027open\u0027 when \u0027true\u0027, as confirmation of a position to allow ventilation air flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MinOutsideAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60866,23 +59982,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanVFDFrequencySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan VFD Frequency Sensor"
-    },
-    "description": {
-      "en": "The frequency feedback from a sensor associated with mixed air fan VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDFrequencySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -61257,40 +60356,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the outside air damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the outside air damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OutsideAirDewPointTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -61403,23 +60468,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVelocityPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanVFDFrequencySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan VFD Frequency Sensor"
-    },
-    "description": {
-      "en": "The frequency feedback from a sensor associated with outside air fan VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDFrequencySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -62405,40 +61453,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the relief air damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the relief air damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefAirDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -62541,23 +61555,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefFanVFDFrequencySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan VFD Frequency Sensor"
-    },
-    "description": {
-      "en": "The frequency feedback from a sensor associated with relief air fan VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDFrequencySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -62568,40 +61565,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:RuntimeSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Replace Final Filter Runtime Sensor"
-    },
-    "description": {
-      "en": "Measures how many hours since the last time the final filter was replaced"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Replace Pre-Filter Runtime Sensor"
-    },
-    "description": {
-      "en": "Measures how many hours since the last time the pre-filter was replaced"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReplaceFilterRuntimeSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -62670,40 +61633,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CO2AirQualitySetpointLowLimit;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperOpenActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Open Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the return air damper to \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperOpenState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Open State"
-    },
-    "description": {
-      "en": "The Boolean state of the return air damper which is \u0027open\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -62888,23 +61817,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACFanGroup;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanVFDFrequencySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan VFD Frequency Sensor"
-    },
-    "description": {
-      "en": "The frequency feedback from a sensor associated with return air fan VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDFrequencySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -65191,57 +64103,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirFlowSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Discharge Air Flow Sensor"
-    },
-    "description": {
-      "en": "The flow feedback from a sensor associated with discharge air to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirTemperatureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Discharge Air Temperature Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with discharge (supply) air temperature from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckInletAirFlowSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Inlet Air Flow Sensor"
-    },
-    "description": {
-      "en": "The flow feedback from a sensor associated with inlet air to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantStaticPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -65870,40 +64731,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the discharge (supply) air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the discharge (supply) air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DischargeAirDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -65914,40 +64741,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirFanActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Fan Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with the discharge air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirFanActiveElectricalPowerSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Fan Active Electrical Power Sensor"
-    },
-    "description": {
-      "en": "The active electrical power feedback from a sensor associated with the discharge air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -66135,40 +64928,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the discharge (supply) air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the discharge (supply) air fan which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunState;1"
     ],
     "contents": [],
     "@context": [
@@ -66655,40 +65414,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the exhaust air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the exhaust air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustAirDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66699,40 +65424,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirFanActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Fan Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with the exhaust air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirFanActiveElectricalPowerSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Fan Active Electrical Power Sensor"
-    },
-    "description": {
-      "en": "The active electrical power feedback from a sensor associated with the exhaust air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -66876,74 +65567,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustFanRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the exhaust air fan to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the exhaust air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the exhaust air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the exhaust air fan which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustFanVFDFrequencyHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -67047,23 +65670,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:FilterAirDeltaPressureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Filter Air Delta Pressure Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with filter air delta pressure"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:FilterWaterDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -67074,40 +65680,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FinalFilterAirDeltaPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Final Filter Air Delta Pressure Sensor"
-    },
-    "description": {
-      "en": "The delta pressure feedback from a sensor associated with air final filter"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FinalFilterDirtyFilterAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Final Filter Dirty Filter Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the dirty filter alarm of the final filter is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DirtyFilterAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -68357,57 +66929,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotDeckDischargeAirFlowSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Discharge Air Flow Sensor"
-    },
-    "description": {
-      "en": "The flow feedback from a sensor associated with discharge air to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckDischargeAirTemperatureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Discharge Air Temperature Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with discharge (supply) air temperature from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckInletAirFlowSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Inlet Air Flow Sensor"
-    },
-    "description": {
-      "en": "The flow feedback from a sensor associated with inlet air to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -68662,40 +67183,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:OccupancySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the inlet air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the inlet air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -69966,40 +68453,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the minimum outside air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the minimum outside air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MinOutsideAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -70044,57 +68497,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowAirFlowAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the mixed air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirFanActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air Fan Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with the mixed air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirFanActiveElectricalPowerSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air Fan Active Electrical Power Sensor"
-    },
-    "description": {
-      "en": "The active electrical power feedback from a sensor associated with the mixed air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -70221,74 +68623,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MixedFanRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the mixed air fan to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the mixed air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the mixed air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the mixed air fan which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MixedFanVFDFrequencyHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -70381,74 +68715,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:PresenceSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the outside air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the outside air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirFanActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Fan Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with the outside air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirFanActiveElectricalPowerSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Fan Active Electrical Power Sensor"
-    },
-    "description": {
-      "en": "The active electrical power feedback from a sensor associated with the outside air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -70585,74 +68851,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the outsie air fan to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the outside air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the outside air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the outside air fan which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunState;1"
     ],
     "contents": [],
     "@context": [
@@ -71745,40 +69943,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreFilterAirDeltaPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pre Filter Air Delta Pressure Sensor"
-    },
-    "description": {
-      "en": "The delta pressure feedback from a sensor associated with air pre filter"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PreFilterDirtyFilterAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pre-Filter Dirty Filter Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the dirty filter alarm for the pre filter is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DirtyFilterAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PreheatCoilEnteringWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -72273,40 +70437,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the relief air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the relief air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefAirDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -72317,40 +70447,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirFanActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Fan ActiveElectrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with the relief air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirFanActiveElectricalPowerSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Fan Active Electrical Power Sensor"
-    },
-    "description": {
-      "en": "The active electrical power feedback from a sensor associated with the relief air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -72494,74 +70590,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefFanRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the relief air fan to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the relief air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the relief air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the relief air fan which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefFanVFDFrequencyHighLimit;1",
     "@type": "Interface",
     "displayName": {
@@ -72613,40 +70641,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReplaceFinalFilterRuntimeSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Replace Final Filter Runtime Setpoint"
-    },
-    "description": {
-      "en": "Time limit for the accumulated duration for which a final filter was in an active or \u201Con\u201D state"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReplacePreFilterRuntimeSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Replace Pre-Filter Runtime Setpoint"
-    },
-    "description": {
-      "en": "Time limit for the accumulated duration for which a pre-filter was in an active or \u201Con\u201D state"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ReplaceFilterRuntimeSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ResetSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -72654,40 +70648,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperPositionActuatorCommandFeedbackMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Position Actuator Command Feedback Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and feedback when commanding the position of the return air damper, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionActuatorCommandFeedbackMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperPositionSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Position Setpoint"
-    },
-    "description": {
-      "en": "The desired position percentage for control of the return air damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -72705,40 +70665,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirFanActiveElectricalEnergySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Fan Active Electrical Energy Sensor"
-    },
-    "description": {
-      "en": "The active electrical energy feedback from a sensor associated with the return air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalEnergySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirFanActiveElectricalPowerSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Fan Active Electrical Power Sensor"
-    },
-    "description": {
-      "en": "The active electrical power feedback from a sensor associated with the return air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -72909,40 +70835,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the return air fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the return air fan which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunState;1"
     ],
     "contents": [],
     "@context": [
@@ -75162,40 +73054,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ColdDeckDischargeAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Discharge Air Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with discharge (supply) air flow to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ColdDeckInletAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cold Deck Inlet Air Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with inlet (supply) air flow to a terminal unit from the cold deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CompressorRunSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75398,23 +73256,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the discharge air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DischargeAirSmokeAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75425,75 +73266,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanHighSupplyStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan High Supply Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the discharge fan high supply static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanLowSuctionStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan Low Suction Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the discharge fan low suction static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanRunActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan Run Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the discharge (supply) air fan to \u0027run\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the discharge (supply) air fan vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:DischargeFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -75922,23 +73694,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the exhaust air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustAirSmokeAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75949,75 +73704,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanHighSupplyStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan High Supply Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the exhaust fan high supply static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanLowSuctionStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Low Suction Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the exhaust fan low suction static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanRunActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Run Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the exhaust air fan to \u0027run\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustFanVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the exhaust air fan vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ExhaustFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -76063,23 +73749,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:ResetSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FinalFilterAirDeltaPressureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Final Filter Air Delta Pressure Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with final filter air delta pressure"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FilterAirDeltaPressureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -77310,40 +74979,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotDeckDischargeAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Discharge Air Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with discharge (supply) air flow to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotDeckInletAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Deck Inlet Air Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with inlet (supply) air flow to a terminal unit from the hot deck of an air handling unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:InletAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterDeltaPressureDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -77488,23 +75123,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the inlet air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -78778,23 +76396,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Min Outside Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the minimum outside air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MixedAirCO2AlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -78822,75 +76423,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanHighSupplyStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan High Supply Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the mixed fan high supply static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanLowSuctionStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Low Suction Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the mixed fan low suction static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanRunActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Run Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the mixed air fan to \u0027run\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the mixed air fan vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:MixedFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -79002,23 +76534,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the outside air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OutsideAirSmokeAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -79087,75 +76602,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideFanHighSupplyStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan High Supply Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the outside fan high supply static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanLowSuctionStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Low Suction Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the outside fan low suction static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanRunActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Run Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the outsie air fan to \u0027run\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the outside air fan vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:OutsideFanRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PeopleInferredOccupancySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -79181,23 +76627,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:OccupancySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PreFilterAirDeltaPressureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pre Filter Air Delta Pressure Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with pre filter air delta pressure"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FilterAirDeltaPressureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -79644,23 +77073,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the relief air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefAirSmokeAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -79671,75 +77083,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanHighSupplyStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan High Supply Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the relief fan high supply static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanLowSuctionStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Low Suction Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the relief fan low suction static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanRunActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Run Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the relief air fan to \u0027run\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefFanVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the relief air fan vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ReliefFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -79900,23 +77243,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Open Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the return air damper to \u0027open\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReturnAirSmokeAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -79927,75 +77253,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanHighSupplyStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan High Supply Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the return fan high supply static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanLowSuctionStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan Low Suction Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the return fan low suction static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanRunActuatorCommandStatusMismatchAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan Run Actuator Command Status Mismatch Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm for the mismatch between command and status when commanding the return air fan to \u0027run\u0027, which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the return air fan vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ReturnFanRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
