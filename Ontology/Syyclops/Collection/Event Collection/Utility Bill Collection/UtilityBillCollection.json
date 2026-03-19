@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:syyclops:UtilityBillCollection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Utility Bill Collection"
+  },
+  "description": {
+    "en": "A collection of utility bill events grouped for tracking and analysis."
+  },
+  "extends": [
+    "dtmi:com:syyclops:EventCollection;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
