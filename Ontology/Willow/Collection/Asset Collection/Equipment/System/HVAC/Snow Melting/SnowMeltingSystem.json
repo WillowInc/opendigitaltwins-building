@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SnowMeltingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Snow Melting System"
+  },
+  "description": {
+    "en": "A system that is designed to melt snow and ice from surfaces such as driveways, walkways, and roofs."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

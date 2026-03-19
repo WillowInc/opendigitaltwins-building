@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HydronicSnowMeltingSystem;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Hydronic Snow Melting System"
+  },
+  "description": {
+    "en": "A snow melting system that uses heated fluid, typically a mixture of water and glycol, to generate heat and melt snow and ice from surfaces such as driveways, walkways, and roofs."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SnowMeltingSystem;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
