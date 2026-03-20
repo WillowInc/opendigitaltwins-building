@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirTemperatureResetHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Temperature Reset High Limit"
+  },
+  "description": {
+    "en": "A high limit parameter that is used to reset another setpoint based on the outside air temperature. When the outside air temperature exceeds this high limit setpoint, the reset function will adjust the controlled setpoint to prevent overheating or excessive energy use."
+  },
+  "extends": [
+    "dtmi:com:willowinc:ResetHighLimit;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

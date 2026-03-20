@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ResetLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reset Low Limit"
+  },
+  "description": {
+    "en": "A low limit parameter that is used to reset another setpoint."
+  },
+  "extends": [
+    "dtmi:com:willowinc:LowLimit;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

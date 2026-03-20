@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OutsideAirTemperatureResetLowLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Outside Air Temperature Reset Low Limit"
+  },
+  "description": {
+    "en": "A low limit parameter that is used to reset another setpoint based on the outside air temperature. When the outside air temperature falls below this low limit setpoint, the reset function will adjust the controlled setpoint to prevent overcooling or excessive energy use."
+  },
+  "extends": [
+    "dtmi:com:willowinc:ResetLowLimit;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
