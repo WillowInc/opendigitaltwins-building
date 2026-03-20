@@ -15259,23 +15259,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SetpointOffset;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Setpoint Offset"
-    },
-    "description": {
-      "en": "The desired offset value"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Parameter;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ShopDrawing;1",
     "@type": "Interface",
     "displayName": {
@@ -39060,6 +39043,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ResetHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reset High Limit"
+    },
+    "description": {
+      "en": "A high limit parameter that is used to reset another setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ResetLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Reset Low Limit"
+    },
+    "description": {
+      "en": "A low limit parameter that is used to reset another setpoint."
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ResistanceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -44333,20 +44350,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BreakGlassSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Break Glass Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CAVBoxReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -47408,20 +47411,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:FireSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fire Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:FireSmokeDamper;1",
     "@type": "Interface",
     "displayName": {
@@ -48748,20 +48737,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeakSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leak Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingAirHumiditySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49977,6 +49952,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirTemperatureResetHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Temperature Reset High Limit"
+    },
+    "description": {
+      "en": "A high limit parameter that is used to reset another setpoint based on the outside air temperature. When the outside air temperature exceeds this high limit setpoint, the reset function will adjust the controlled setpoint to prevent overheating or excessive energy use."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ResetHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirTemperatureResetLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Temperature Reset Low Limit"
+    },
+    "description": {
+      "en": "A low limit parameter that is used to reset another setpoint based on the outside air temperature. When the outside air temperature falls below this low limit setpoint, the reset function will adjust the controlled setpoint to prevent overcooling or excessive energy use."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ResetLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -52055,20 +52064,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SmokeSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Smoke Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SnorkelExhaustFumeHood;1",
     "@type": "Interface",
     "displayName": {
@@ -52096,6 +52091,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PrecipitationAccumulationSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SnowMeltingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Snow Melting System"
+    },
+    "description": {
+      "en": "A system that is designed to melt snow and ice from surfaces such as driveways, walkways, and roofs."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACSystem;1"
     ],
     "contents": [],
     "@context": [
@@ -56622,6 +56634,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElectricSnowMeltingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electric Snow Melting System"
+    },
+    "description": {
+      "en": "A snow melting system that uses electric heating elements to generate heat and melt snow and ice from surfaces such as driveways, walkways, and roofs."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SnowMeltingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElevatorPressurizationFan;1",
     "@type": "Interface",
     "displayName": {
@@ -58805,6 +58834,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HydronicPump;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HydronicSnowMeltingSystem;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hydronic Snow Melting System"
+    },
+    "description": {
+      "en": "A snow melting system that uses heated fluid, typically a mixture of water and glycol, to generate heat and melt snow and ice from surfaces such as driveways, walkways, and roofs."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SnowMeltingSystem;1"
     ],
     "contents": [],
     "@context": [
