@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ResetHighLimit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Reset High Limit"
+  },
+  "description": {
+    "en": "A high limit parameter that is used to reset another setpoint."
+  },
+  "extends": [
+    "dtmi:com:willowinc:HighLimit;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
