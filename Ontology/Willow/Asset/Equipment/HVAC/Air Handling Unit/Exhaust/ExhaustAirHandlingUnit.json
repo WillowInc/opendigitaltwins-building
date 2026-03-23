@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustAirHandlingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Handling Unit"
+  },
+  "description": {
+    "en": "An air handling unit dedicated to exhausting air from a space. In an energy recovery application, the exhaust air handling unit may be used to transfer energy from the exhaust air stream to the supply air stream."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirHandlingUnit;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

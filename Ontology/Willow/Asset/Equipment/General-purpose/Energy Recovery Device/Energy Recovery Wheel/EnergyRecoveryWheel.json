@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryWheel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Wheel"
+  },
+  "description": {
+    "en": "A rotary heat exchanger used as an energy recovery device to transfer energy between the supply and exhaust air streams."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergyRecoveryDevice;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

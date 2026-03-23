@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnthalpyWheel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Enthalpy Wheel"
+  },
+  "description": {
+    "en": "An energy recovery wheel that transfers both sensible and latent energy between the supply and exhaust air streams. Also known as an enthalpy recovery wheel or total energy wheel."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergyRecoveryWheel;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

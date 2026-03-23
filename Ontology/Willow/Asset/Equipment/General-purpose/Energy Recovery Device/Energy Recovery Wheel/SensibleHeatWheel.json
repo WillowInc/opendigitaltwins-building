@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SensibleHeatWheel;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Sensible Heat Wheel"
+  },
+  "description": {
+    "en": "An energy recovery wheel that transfers only sensible energy between the supply and exhaust air streams. Also simply known as a heat wheel."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergyRecoveryWheel;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
