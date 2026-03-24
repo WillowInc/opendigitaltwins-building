@@ -20225,7 +20225,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply cooling design eirflow"
+          "en": "supply cooling design airflow"
         },
         "name": "supplyCoolingDesignAirflow",
         "schema": "double",
@@ -20321,7 +20321,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply heating design eirflow"
+          "en": "supply heating design airflow"
         },
         "name": "supplyHeatingDesignAirflow",
         "schema": "double",
@@ -20417,7 +20417,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust cooling design eirflow"
+          "en": "exhaust cooling design airflow"
         },
         "name": "exhaustCoolingDesignAirflow",
         "schema": "double",
@@ -20513,7 +20513,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust heating design eirflow"
+          "en": "exhaust heating design airflow"
         },
         "name": "exhaustHeatingDesignAirflow",
         "schema": "double",
@@ -32505,6 +32505,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryWheel;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Wheel"
+    },
+    "description": {
+      "en": "A rotary heat exchanger used as an energy recovery device to transfer energy between the supply and exhaust air streams."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyRecoveryDevice;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -32705,6 +32722,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ExcludeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirHandlingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Handling Unit"
+    },
+    "description": {
+      "en": "An air handling unit dedicated to exhausting air from a space. In an energy recovery application, the exhaust air handling unit may be used to transfer energy from the exhaust air stream to the supply air stream."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnit;1"
     ],
     "contents": [],
     "@context": [
@@ -34907,6 +34941,24 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatRecoveryCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Recovery Coil"
+    },
+    "description": {
+      "en": "A coil used as an energy recovery device to transfer energy between the supply and exhaust air streams."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyRecoveryDevice;1",
+      "dtmi:com:willowinc:Coil;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -46886,6 +46938,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnthalpyWheel;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Enthalpy Wheel"
+    },
+    "description": {
+      "en": "An energy recovery wheel that transfers both sensible and latent energy between the supply and exhaust air streams. Also known as an enthalpy recovery wheel or total energy wheel."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyRecoveryWheel;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EquipmentFailureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -51881,6 +51950,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:TimeSpanSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SensibleHeatWheel;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sensible Heat Wheel"
+    },
+    "description": {
+      "en": "An energy recovery wheel that transfers only sensible energy between the supply and exhaust air streams. Also simply known as a heat wheel."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyRecoveryWheel;1"
     ],
     "contents": [],
     "@context": [
