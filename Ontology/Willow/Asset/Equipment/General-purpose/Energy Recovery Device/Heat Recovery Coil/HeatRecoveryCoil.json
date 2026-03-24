@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:HeatRecoveryCoil;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Recovery Coil"
+  },
+  "description": {
+    "en": "A coil used as an energy recovery device to transfer energy between the supply and exhaust air streams."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergyRecoveryDevice;1",
+    "dtmi:com:willowinc:Coil;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

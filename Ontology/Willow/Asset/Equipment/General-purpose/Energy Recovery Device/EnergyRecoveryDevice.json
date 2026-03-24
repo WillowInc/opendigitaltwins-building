@@ -89,7 +89,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "supply cooling design eirflow"
+        "en": "supply cooling design airflow"
       },
       "name": "supplyCoolingDesignAirflow",
       "schema": "double",
@@ -161,7 +161,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "supply heating design eirflow"
+        "en": "supply heating design airflow"
       },
       "name": "supplyHeatingDesignAirflow",
       "schema": "double",
@@ -233,7 +233,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "exhaust cooling design eirflow"
+        "en": "exhaust cooling design airflow"
       },
       "name": "exhaustCoolingDesignAirflow",
       "schema": "double",
@@ -305,7 +305,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "exhaust heating design eirflow"
+        "en": "exhaust heating design airflow"
       },
       "name": "exhaustHeatingDesignAirflow",
       "schema": "double",
