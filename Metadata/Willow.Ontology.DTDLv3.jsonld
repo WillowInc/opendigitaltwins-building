@@ -5727,6 +5727,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:Baseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Baseline"
+    },
+    "description": {
+      "en": "A series of values predicted from a model which represents the expected behavior of a system based on its historical data. A baseline is used to compare against actual values to determine if a system is performing as expected or if there are anomalies."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Capability;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BasisOfDesign;1",
     "@type": "Interface",
     "displayName": {
@@ -14912,6 +14929,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:QuantityBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Quantity Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are a quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Baseline;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:QuantityPerformanceIndicator;1",
     "@type": "Interface",
     "displayName": {
@@ -20106,6 +20140,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are an energy quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantityBaseline;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergyEfficiencyRatio;1",
     "@type": "Interface",
     "displayName": {
@@ -25165,6 +25216,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PercentState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PowerBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Power Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are a power quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:QuantityBaseline;1"
     ],
     "contents": [],
     "@context": [
@@ -32061,6 +32129,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElectricalEnergyBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electrical Energy Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are an electrical energy quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyBaseline;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -32203,6 +32288,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ElectricalPowerBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electrical Power Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are an electrical power quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PowerBaseline;1"
     ],
     "contents": [],
     "@context": [
@@ -36670,6 +36772,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NaturalGasEnergyBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Natural Gas Energy Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are a natural gas energy quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyBaseline;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:NaturalGasEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40370,6 +40489,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ThermalEnergyBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Thermal Energy Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are a thermal energy quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyBaseline;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ThermalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40380,6 +40516,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ThermalPowerBaseline;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Thermal Power Baseline"
+    },
+    "description": {
+      "en": "A baseline which has values that are a thermal power quantity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PowerBaseline;1"
     ],
     "contents": [],
     "@context": [
