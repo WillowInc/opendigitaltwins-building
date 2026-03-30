@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PowerBaseline;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Power Baseline"
+  },
+  "description": {
+    "en": "A baseline which has values that are a power quantity."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantityBaseline;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

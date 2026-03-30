@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ThermalPowerBaseline;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Power Baseline"
+  },
+  "description": {
+    "en": "A baseline which has values that are a thermal power quantity."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PowerBaseline;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

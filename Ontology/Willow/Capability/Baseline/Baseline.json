@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Baseline;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Baseline"
+  },
+  "description": {
+    "en": "A series of values predicted from a model which represents the expected behavior of a system based on its historical data. A baseline is used to compare against actual values to determine if a system is performing as expected or if there are anomalies."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Capability;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
