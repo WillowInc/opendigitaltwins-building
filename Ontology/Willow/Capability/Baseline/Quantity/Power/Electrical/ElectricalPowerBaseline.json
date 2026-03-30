@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ElectricalPowerBaseline;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Electrical Power Baseline"
+  },
+  "description": {
+    "en": "A baseline which has values that are an electrical power quantity."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:PowerBaseline;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyBaseline;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Baseline"
+  },
+  "description": {
+    "en": "A baseline which has values that are an energy quantity."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:QuantityBaseline;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

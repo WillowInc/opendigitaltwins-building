@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:QuantityBaseline;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Quantity Baseline"
+  },
+  "description": {
+    "en": "A baseline which has values that are a quantity."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Baseline;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
