@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Commissioning Final Report"
   },
+  "description": {
+    "en": "A document that summarizes the results and findings of the commissioning process for a building or system. It typically includes information on the performance, functionality, and compliance of the commissioned assets, as well as any recommendations for improvements or corrective actions."
+  },
   "extends" : [
     "dtmi:com:willowinc:CommissioningDocument;1"
   ],

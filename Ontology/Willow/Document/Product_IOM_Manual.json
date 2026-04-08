@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Product IOM Manual"
   },
+  "description": {
+    "en": "A document that provides instructions for the installation, operation, and maintenance (IOM) of a product. It typically includes detailed information on how to set up, use, and care for the product to ensure its optimal performance and longevity. (a.k.a. O&M Manual)"
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

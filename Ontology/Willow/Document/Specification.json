@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Specification"
   },
+  "description": {
+    "en": "A document that outlines the specific requirements, criteria, and standards for a construction project or system. It serves as a detailed reference for designers, engineers, manufacturers, and other stakeholders to ensure that the final outcome meets the intended purpose and quality standards."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

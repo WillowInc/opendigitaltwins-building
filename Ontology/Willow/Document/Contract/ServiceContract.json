@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Service Contract"
   },
+  "description": {
+    "en": "A contract document that outlines the terms and conditions of a service agreement between a service provider and client for the provision of services."
+  },
   "extends" : [
     "dtmi:com:willowinc:ContractDocument;1"
   ],

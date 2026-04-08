@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Commissioning Checklist"
   },
+  "description": {
+    "en": "A document that outlines a list of tasks, activities, or items to be completed during the commissioning process of a building or system. It serves as a guide to ensure that all necessary steps are taken and that the commissioning process is thorough and comprehensive."
+  },
   "extends" : [
     "dtmi:com:willowinc:CommissioningDocument;1"
   ],

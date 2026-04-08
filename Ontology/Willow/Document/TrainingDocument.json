@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Training Document"
   },
+  "description": {
+    "en": "A document that provides information and instructions for training purposes. It may include materials such as manuals, guides, presentations, or other resources designed to educate and inform individuals on specific topics or skills."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

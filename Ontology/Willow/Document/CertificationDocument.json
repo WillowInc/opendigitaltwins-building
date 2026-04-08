@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Certification Document"
   },
+  "description": {
+    "en": "A document that provides evidence of compliance with specific standards, regulations, or requirements. It is typically issued by a recognized authority or organization and serves as proof that a product, service, or system meets the necessary criteria for safety, quality, or performance."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Lease Contract"
   },
+  "description": {
+    "en": "A contract document that outlines the terms and conditions of a lease agreement between a landlord and tenant for a property or asset."
+  },
   "extends" : [
     "dtmi:com:willowinc:ContractDocument;1"
   ],

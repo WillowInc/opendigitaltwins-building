@@ -4,6 +4,9 @@
   "displayName": {
     "en": "System Verification Checklist"
   },
+  "description": {
+    "en": "A document that outlines a list of tasks, activities, or items to be completed during the system verification process of a building or system."
+  },
   "extends" : [
     "dtmi:com:willowinc:CommissioningChecklist;1"
   ],

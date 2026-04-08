@@ -4,6 +4,9 @@
   "displayName": {
     "en": "As-Built Drawing"
   },
+  "description": {
+    "en": "A type of drawing that represents the final, as-built conditions of a building or system after construction is completed. It typically includes any changes or modifications made during construction and serves as a record of the actual built environment."
+  },
   "extends" : [
     "dtmi:com:willowinc:Drawing;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Start-up Report"
   },
+  "description": {
+    "en": "A document that summarizes the results and findings of the start-up process for a building or system."
+  },
   "extends" : [
     "dtmi:com:willowinc:CommissioningDocument;1"
   ],

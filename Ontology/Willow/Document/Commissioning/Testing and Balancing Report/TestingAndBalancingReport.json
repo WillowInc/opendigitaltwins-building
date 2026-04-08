@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Testing and Balancing Report"
   },
+  "description": {
+    "en": "A document that summarizes the results of testing and balancing activities conducted on a building's HVAC system. It typically includes information on airflow measurements, temperature readings, and other relevant data to assess the performance and efficiency of the system."
+  },
   "extends" : [
     "dtmi:com:willowinc:CommissioningDocument;1"
   ],

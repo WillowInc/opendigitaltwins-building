@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Commissioning Document"
   },
+  "description": {
+    "en": "A document related to the commissioning process of a building or system such as a commissioning plan, report, or checklist."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

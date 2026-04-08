@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Warranty"
   },
+  "description": {
+    "en": "A document that outlines the terms and conditions of a warranty agreement, including the type of warranty, the guarantor, the duration of coverage, and any specific terms or limitations. It serves as a reference for both the provider and the recipient of the warranty to understand their rights and responsibilities in relation to the covered product or service."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Design Drawing"
   },
+  "description": {
+    "en": "A type of drawing that represents the design intent and specifications of a building or system. It typically includes detailed information on dimensions, materials, and construction methods to guide the construction process."
+  },
   "extends" : [
     "dtmi:com:willowinc:Drawing;1"
   ],
