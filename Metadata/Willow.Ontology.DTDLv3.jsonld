@@ -5749,6 +5749,9 @@
     "displayName": {
       "en": "Basis of Design"
     },
+    "description": {
+      "en": "A document defining the design criteria, assumptions, and decisions that guide the development of a project. It serves as a reference for architects, engineers, and other stakeholders throughout the design and construction process."
+    },
     "extends": [
       "dtmi:com:willowinc:Document;1"
     ],
@@ -6663,6 +6666,9 @@
     "displayName": {
       "en": "Certification Document"
     },
+    "description": {
+      "en": "A document that provides evidence of compliance with specific standards, regulations, or requirements. It is typically issued by a recognized authority or organization and serves as proof that a product, service, or system meets the necessary criteria for safety, quality, or performance."
+    },
     "extends": [
       "dtmi:com:willowinc:Document;1"
     ],
@@ -6677,6 +6683,9 @@
     "displayName": {
       "en": "Commissioning Document"
     },
+    "description": {
+      "en": "A document related to the commissioning process of a building or system such as a commissioning plan, report, or checklist."
+    },
     "extends": [
       "dtmi:com:willowinc:Document;1"
     ],
@@ -6690,6 +6699,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Contract Document"
+    },
+    "description": {
+      "en": "A document that outlines the terms, conditions, and agreements between parties involved in a contract. It typically includes details such as the scope of work, deliverables, timelines, payment terms, and any other relevant information pertaining to the contractual relationship."
     },
     "extends": [
       "dtmi:com:willowinc:Document;1"
@@ -7282,6 +7294,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Drawing"
+    },
+    "description": {
+      "en": "A document that visually represents the design, layout, or specifications of a building, system, or component. It can include floor plans, elevations, riser diagrams, equipment schedules, or any other type of visual representation used in the construction and design process."
     },
     "extends": [
       "dtmi:com:willowinc:Document;1"
@@ -8427,6 +8442,9 @@
     "displayName": {
       "en": "Product IOM Manual"
     },
+    "description": {
+      "en": "A document that provides instructions for the installation, operation, and maintenance (IOM) of a product. It typically includes detailed information on how to set up, use, and care for the product to ensure its optimal performance and longevity. (a.k.a. O\u0026M Manual)"
+    },
     "extends": [
       "dtmi:com:willowinc:Document;1"
     ],
@@ -8440,6 +8458,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Product Data"
+    },
+    "description": {
+      "en": "A document that contains detailed information about a product, including its specifications, features, performance data, and other relevant details. It serves as a comprehensive reference for understanding the characteristics and capabilities of the product."
     },
     "extends": [
       "dtmi:com:willowinc:Document;1"
@@ -8587,6 +8608,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Specification"
+    },
+    "description": {
+      "en": "A document that outlines the specific requirements, criteria, and standards for a construction project or system. It serves as a detailed reference for designers, engineers, manufacturers, and other stakeholders to ensure that the final outcome meets the intended purpose and quality standards."
     },
     "extends": [
       "dtmi:com:willowinc:Document;1"
@@ -9043,6 +9067,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Test Report"
+    },
+    "description": {
+      "en": "A document that summarizes the results of testing activities conducted on an asset, system, or component."
     },
     "extends": [
       "dtmi:com:willowinc:Document;1"
@@ -9844,6 +9871,9 @@
     "displayName": {
       "en": "Training Document"
     },
+    "description": {
+      "en": "A document that provides information and instructions for training purposes. It may include materials such as manuals, guides, presentations, or other resources designed to educate and inform individuals on specific topics or skills."
+    },
     "extends": [
       "dtmi:com:willowinc:Document;1"
     ],
@@ -10373,6 +10403,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Warranty"
+    },
+    "description": {
+      "en": "A document that outlines the terms and conditions of a warranty agreement, including the type of warranty, the guarantor, the duration of coverage, and any specific terms or limitations. It serves as a reference for both the provider and the recipient of the warranty to understand their rights and responsibilities in relation to the covered product or service."
     },
     "extends": [
       "dtmi:com:willowinc:Document;1"
@@ -10909,6 +10942,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "As-Built Drawing"
+    },
+    "description": {
+      "en": "A type of drawing that represents the final, as-built conditions of a building or system after construction is completed. It typically includes any changes or modifications made during construction and serves as a record of the actual built environment."
     },
     "extends": [
       "dtmi:com:willowinc:Drawing;1"
@@ -12606,6 +12642,9 @@
     "displayName": {
       "en": "Commissioning Checklist"
     },
+    "description": {
+      "en": "A document that outlines a list of tasks, activities, or items to be completed during the commissioning process of a building or system. It serves as a guide to ensure that all necessary steps are taken and that the commissioning process is thorough and comprehensive."
+    },
     "extends": [
       "dtmi:com:willowinc:CommissioningDocument;1"
     ],
@@ -12619,6 +12658,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Commissioning Final Report"
+    },
+    "description": {
+      "en": "A document that summarizes the results and findings of the commissioning process for a building or system. It typically includes information on the performance, functionality, and compliance of the commissioned assets, as well as any recommendations for improvements or corrective actions."
     },
     "extends": [
       "dtmi:com:willowinc:CommissioningDocument;1"
@@ -12782,6 +12824,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Design Drawing"
+    },
+    "description": {
+      "en": "A type of drawing that represents the design intent and specifications of a building or system. It typically includes detailed information on dimensions, materials, and construction methods to guide the construction process."
     },
     "extends": [
       "dtmi:com:willowinc:Drawing;1"
@@ -13130,6 +13175,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Functional Performance Test Report"
+    },
+    "description": {
+      "en": "A document that summarizes the results of functional performance testing activities conducted on a building or system."
     },
     "extends": [
       "dtmi:com:willowinc:CommissioningDocument;1"
@@ -14259,6 +14307,9 @@
     "displayName": {
       "en": "Lease Contract"
     },
+    "description": {
+      "en": "A contract document that outlines the terms and conditions of a lease agreement between a landlord and tenant for a property or asset."
+    },
     "extends": [
       "dtmi:com:willowinc:ContractDocument;1"
     ],
@@ -15267,6 +15318,9 @@
     "displayName": {
       "en": "Service Contract"
     },
+    "description": {
+      "en": "A contract document that outlines the terms and conditions of a service agreement between a service provider and client for the provision of services."
+    },
     "extends": [
       "dtmi:com:willowinc:ContractDocument;1"
     ],
@@ -15297,6 +15351,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Shop Drawing"
+    },
+    "description": {
+      "en": "A type of drawing that provides detailed information and specifications for the fabrication and installation of specific components or systems within a building. Shop drawings are typically created by contractors or suppliers and submitted for review and approval."
     },
     "extends": [
       "dtmi:com:willowinc:Drawing;1"
@@ -15554,6 +15611,9 @@
     "displayName": {
       "en": "Start-up Report"
     },
+    "description": {
+      "en": "A document that summarizes the results and findings of the start-up process for a building or system."
+    },
     "extends": [
       "dtmi:com:willowinc:CommissioningDocument;1"
     ],
@@ -15778,6 +15838,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Testing and Balancing Report"
+    },
+    "description": {
+      "en": "A document that summarizes the results of testing and balancing activities conducted on a building\u0027s HVAC system. It typically includes information on airflow measurements, temperature readings, and other relevant data to assess the performance and efficiency of the system."
     },
     "extends": [
       "dtmi:com:willowinc:CommissioningDocument;1"
@@ -17176,6 +17239,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Air Testing and Balancing Report"
+    },
+    "description": {
+      "en": "A testing and balancing report document that summarizes the results of air testing and balancing activities conducted on a building\u0027s HVAC air distribution system."
     },
     "extends": [
       "dtmi:com:willowinc:TestingAndBalancingReport;1"
@@ -26551,6 +26617,9 @@
     "displayName": {
       "en": "System Verification Checklist"
     },
+    "description": {
+      "en": "A document that outlines a list of tasks, activities, or items to be completed during the system verification process of a building or system."
+    },
     "extends": [
       "dtmi:com:willowinc:CommissioningChecklist;1"
     ],
@@ -28158,6 +28227,9 @@
     "@type": "Interface",
     "displayName": {
       "en": "Water Testing and Balancing Report"
+    },
+    "description": {
+      "en": "A testing and balancing report document that summarizes the results of water testing and balancing activities conducted on a building\u0027s HVAC water distribution system."
     },
     "extends": [
       "dtmi:com:willowinc:TestingAndBalancingReport;1"
