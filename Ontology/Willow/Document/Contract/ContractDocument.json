@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Contract Document"
   },
+  "description": {
+    "en": "A document that outlines the terms, conditions, and agreements between parties involved in a contract. It typically includes details such as the scope of work, deliverables, timelines, payment terms, and any other relevant information pertaining to the contractual relationship."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

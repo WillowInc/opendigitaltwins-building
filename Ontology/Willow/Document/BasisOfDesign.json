@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Basis of Design"
   },
+  "description": {
+    "en": "A document defining the design criteria, assumptions, and decisions that guide the development of a project. It serves as a reference for architects, engineers, and other stakeholders throughout the design and construction process."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

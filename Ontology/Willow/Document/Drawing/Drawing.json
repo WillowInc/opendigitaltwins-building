@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Drawing"
   },
+  "description": {
+    "en": "A document that visually represents the design, layout, or specifications of a building, system, or component. It can include floor plans, elevations, riser diagrams, equipment schedules, or any other type of visual representation used in the construction and design process."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

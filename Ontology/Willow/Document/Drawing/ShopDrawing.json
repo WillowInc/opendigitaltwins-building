@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Shop Drawing"
   },
+  "description": {
+    "en": "A type of drawing that provides detailed information and specifications for the fabrication and installation of specific components or systems within a building. Shop drawings are typically created by contractors or suppliers and submitted for review and approval."
+  },
   "extends" : [
     "dtmi:com:willowinc:Drawing;1"
   ],

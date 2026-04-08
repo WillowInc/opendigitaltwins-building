@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Functional Performance Test Report"
   },
+  "description": {
+    "en": "A document that summarizes the results of functional performance testing activities conducted on a building or system."
+  },
   "extends" : [
     "dtmi:com:willowinc:CommissioningDocument;1"
   ],

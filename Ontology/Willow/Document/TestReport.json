@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Test Report"
   },
+  "description": {
+    "en": "A document that summarizes the results of testing activities conducted on an asset, system, or component."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

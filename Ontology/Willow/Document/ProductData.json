@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Product Data"
   },
+  "description": {
+    "en": "A document that contains detailed information about a product, including its specifications, features, performance data, and other relevant details. It serves as a comprehensive reference for understanding the characteristics and capabilities of the product."
+  },
   "extends" : [
     "dtmi:com:willowinc:Document;1"
   ],

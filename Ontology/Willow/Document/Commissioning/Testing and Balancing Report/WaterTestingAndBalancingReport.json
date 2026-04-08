@@ -4,6 +4,9 @@
   "displayName": {
     "en": "Water Testing and Balancing Report"
   },
+  "description": {
+    "en": "A testing and balancing report document that summarizes the results of water testing and balancing activities conducted on a building's HVAC water distribution system."
+  },
   "extends" : [
     "dtmi:com:willowinc:TestingAndBalancingReport;1"
   ],
