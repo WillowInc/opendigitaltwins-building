@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OccupiedFaceVelocitySetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupied Face Velocity Setpoint"
+  },
+  "description": {"en": "The face velocity setpoint during occupied mode."},
+  "extends" : [
+    "dtmi:com:willowinc:FaceVelocitySetpoint;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
