@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PollutionControlUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Pollution Control Unit"
+  },
+  "description": {
+    "en": "A specialized filtration equipment used to remove smoke, grease, and odors from the exhaust air from commercial kitchens before it is released into the environment, (a.k.a. PCU)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
