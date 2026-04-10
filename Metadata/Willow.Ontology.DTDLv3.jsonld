@@ -69113,6 +69113,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupiedFaceVelocitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupied Face Velocity Setpoint"
+    },
+    "description": {
+      "en": "The face velocity setpoint during occupied mode."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FaceVelocitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OutsideAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -72653,6 +72670,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UnoccupiedFaceVelocitySetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Unoccupied Face Velocity Setpoint"
+    },
+    "description": {
+      "en": "The face velocity setpoint during unoccupied mode."
+    },
+    "extends": [
+      "dtmi:com:willowinc:FaceVelocitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ValveCloseActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -73699,7 +73733,7 @@
     "@id": "dtmi:com:willowinc:EffectiveDeltaAirFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Occupied Delta Air Flow Setpoint"
+      "en": "Effective Delta Air Flow Setpoint"
     },
     "description": {
       "en": "The current value to which the differential airflow is being controlled based on current operating mode (i.e. occupied vs unoccupied)"
