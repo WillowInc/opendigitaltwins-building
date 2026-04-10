@@ -8621,6 +8621,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:StandardOperatingProcedure;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Standard Operating Procedure"
+    },
+    "description": {
+      "en": "A document that outlines a set of step-by-step instructions or guidelines for performing a specific task or process. It provides a standardized approach to ensure consistency, efficiency, and quality in the execution of the task, and may include details such as safety precautions, required materials, and expected outcomes."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Document;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:State;1",
     "@type": "Interface",
     "displayName": {
@@ -25234,6 +25251,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:ConveyanceEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PollutionControlUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pollution Control Unit"
+    },
+    "description": {
+      "en": "A specialized filtration equipment used to remove smoke, grease, and odors from the exhaust air from commercial kitchens before it is released into the environment, (a.k.a. PCU)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1"
     ],
     "contents": [],
     "@context": [
