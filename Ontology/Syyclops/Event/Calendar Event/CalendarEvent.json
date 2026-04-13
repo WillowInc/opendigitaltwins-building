@@ -185,6 +185,11 @@
                       "enumValue": "relativeYearly",
                       "name": "relativeYearly",
                       "@id": "dtmi:com:syyclops:CalendarEvent:relativeYearly;1"
+                    },
+                    {
+                      "enumValue": "custom",
+                      "name": "custom",
+                      "@id": "dtmi:com:syyclops:CalendarEvent:custom;1"
                     }
                   ],
                   "valueSchema": "string",
