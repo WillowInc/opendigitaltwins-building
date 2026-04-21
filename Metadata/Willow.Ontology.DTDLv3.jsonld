@@ -36399,6 +36399,162 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowTemperatureCoolingCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low-temperature Cooling Coil"
+    },
+    "description": {
+      "en": "A cooling coil which cools air or water by passing it over a coil containing a low-temperature refrigerant or chilled water typically used in applications requiring high latent load dehumidification."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Coil;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "type"
+        },
+        "name": "type",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "DX",
+              "name": "DX"
+            },
+            {
+              "enumValue": "ChilledWater",
+              "name": "ChilledWater"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "refrigerant type"
+        },
+        "name": "refrigerantType",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirDryBulbTemperatureUnit",
+        "annotates": "designEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirDryBulbTemperatureUnit",
+        "annotates": "designLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirWetBulbTemperatureUnit",
+        "annotates": "designEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirWetBulbTemperatureUnit",
+        "annotates": "designLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowTemperatureRefrigerationCompressorRack;1",
     "@type": "Interface",
     "displayName": {
