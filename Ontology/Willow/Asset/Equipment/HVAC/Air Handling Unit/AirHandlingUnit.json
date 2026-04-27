@@ -220,6 +220,27 @@
       "schema": "VolumeFlowRateUnit",
       "writable": true
     },
+        {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Maximum Outside Airflow"
+      },
+      "name": "designMaxOutsideAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Maximum Outside Airflow Unit"
+      },
+      "name": "designMaxOutsideAirflowUnit",
+      "annotates": "designMaxOutsideAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
     {
       "@type": [ "Property", "Temperature" ],
       "name": "designMaxEnteringAirTemperature",
