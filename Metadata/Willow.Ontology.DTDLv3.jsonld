@@ -39267,6 +39267,34 @@
     ],
     "contents": [
       {
+        "@type": "Relationship",
+        "displayName": {
+          "en": "mounted in rack"
+        },
+        "name": "mountedInRack",
+        "properties": [
+          {
+            "@type": "Property",
+            "displayName": {
+              "en": "rack top position (RU)"
+            },
+            "name": "rackTopPosition",
+            "schema": "integer",
+            "writable": true
+          },
+          {
+            "@type": "Property",
+            "displayName": {
+              "en": "rack bottom position (RU)"
+            },
+            "name": "rackBottomPosition",
+            "schema": "integer",
+            "writable": true
+          }
+        ],
+        "target": "dtmi:com:willowinc:ITRack;1"
+      },
+      {
         "@type": "Property",
         "displayName": {
           "en": "output phases"
