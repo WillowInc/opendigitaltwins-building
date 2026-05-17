@@ -45785,23 +45785,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CompressorLeavingPressureLoadLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor Leaving Pressure Load Level State"
-    },
-    "description": {
-      "en": "The load level state associated with compressor leaving (head or discharge) pressure"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LoadLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49671,6 +49654,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PeopleCountSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingPressureLoadLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Pressure Load Level State"
+    },
+    "description": {
+      "en": "The load level state associated with leaving (head or discharge) pressure"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LoadLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -56258,33 +56258,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CompressorEnteringRefrigerantStaticPressureSensor;1",
+    "@id": "dtmi:com:willowinc:CompressorLeavingPressureLoadLevelState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Compressor Entering Refrigerant Static Pressure Sensor"
+      "en": "Compressor Leaving Pressure Load Level State"
     },
     "description": {
-      "en": "The static pressure feedback from a sensor associated with refrigerant entering the compressor (suction)"
+      "en": "The load level state associated with compressor leaving (head or discharge) pressure"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantStaticPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor Leaving Refrigerant Static Pressure Sensor"
-    },
-    "description": {
-      "en": "The static pressure feedback from a sensor associated with refrigerant leaving the compressor (discharge)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+      "dtmi:com:willowinc:LeavingPressureLoadLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -56353,23 +56336,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantStaticPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Leaving Refrigerant Static Pressure Sensor"
-    },
-    "description": {
-      "en": "The static pressure feedback from a sensor associated with refrigerant leaving the condenser"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -57896,6 +57862,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringRefrigerantStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Refrigerant Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor associated with entering refrigerant. When entering a compressor, this is the suction pressure."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringSteamFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -57957,23 +57940,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EvaporatorEnteringRefrigerantStaticPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Evaporator Entering Refrigerant Static Pressure Sensor"
-    },
-    "description": {
-      "en": "The static pressure feedback from a sensor associated with refrigerant entering the evaporator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -60203,6 +60169,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PeopleCountSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Refrigerant Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor associated with leaving refrigerant. When leaving a compressor, this is the discharge pressure."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -65056,16 +65039,33 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantStaticPressureSetpoint;1",
+    "@id": "dtmi:com:willowinc:CompressorEnteringRefrigerantStaticPressureSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Compressor Leaving Refrigerant Static Pressure Setpoint"
+      "en": "Compressor Entering Refrigerant Static Pressure Sensor"
     },
     "description": {
-      "en": "The desired value for static pressure associated with refrigerant leaving the compressor (discharge)"
+      "en": "The static pressure feedback from a sensor associated with refrigerant entering the compressor (suction)"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
+      "dtmi:com:willowinc:EnteringRefrigerantStaticPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Leaving Refrigerant Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor associated with refrigerant leaving the compressor (discharge)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -65083,6 +65083,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Leaving Refrigerant Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor associated with refrigerant leaving the condenser"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -66367,6 +66384,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EvaporatorEnteringRefrigerantStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Evaporator Entering Refrigerant Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor associated with refrigerant entering the evaporator"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringRefrigerantStaticPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExhaustAirDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -67116,50 +67150,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HighCompressorEnteringRefrigerantTemperatureAlarmState;1",
+    "@id": "dtmi:com:willowinc:HighCoilLeavingAirTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "High Compressor Entering Refrigerant Temperature Alarm State"
+      "en": "High Coil Leaving Air Temperature Alarm State"
     },
     "description": {
-      "en": "The Boolean state of the alarm associated with high refrigerant entering the compressor (suction) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+      "en": "The Boolean state of the alarm associated with high leaving air temperature from a coil which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighCompressorLeavingRefrigerantStaticPressureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Compressor Leaving Refrigerant Static Pressure Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the high compressor leaving refrigerant static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighCompressorLeavingRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Compressor Leaving Refrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high refrigerant leaving the compressor (discharge) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
+      "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -67177,23 +67177,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighWaterLevelAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighCondenserLeavingRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Condenser Leaving Refrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high refrigerant leaving the condenser temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -67228,23 +67211,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighWaterTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Cooling Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high air leaving the cooling coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -67320,6 +67286,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighEnteringRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Entering Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high entering refrigerant temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67330,23 +67313,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighWaterTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighEvaporatorEnteringRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High EvaporatorEnteringRefrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high refrigerant entering the evaporator temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -67466,6 +67432,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingRefrigerantStaticPressureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Refrigerant Static Pressure Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the high leaving refrigerant static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high leaving refrigerant temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -67650,40 +67650,6 @@
     },
     "description": {
       "en": "The Boolean state of the alarm associated with high outside air temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighPreheatCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Preheat Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high air leaving the preheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HighReheatCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Reheat Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high air leaving the reheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:HighAirTemperatureAlarmState;1"
@@ -68537,6 +68503,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Refrigerant Static Pressure Setpoint"
+    },
+    "description": {
+      "en": "The desired value for static pressure associated with leaving (discharge) refrigerant"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingSteamFlowSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -68622,67 +68605,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LowCompressorEnteringRefrigerantStaticPressureAlarmState;1",
+    "@id": "dtmi:com:willowinc:LowCoilLeavingAirTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Low Compressor Entering Refrigerant Static Pressure Alarm State"
+      "en": "Low Coil Leaving Air Temperature Alarm State"
     },
     "description": {
-      "en": "The Boolean state of the low compressor entering refrigerant static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+      "en": "The Boolean state of the alarm associated with low leaving air temperature from a coil which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowCompressorEnteringRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Compressor Entering Refrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low refrigerant entering the compressor (suction) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowCompressorLeavingRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Compressor Leaving Refrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low refrigerant leaving the compressor (discharge) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowCondenserLeavingRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Condenser Leaving Refrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low refrigerant leaving the condenser temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
+      "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -68717,23 +68649,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowWaterTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Cooling Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low air leaving the cooling coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -68809,6 +68724,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowEnteringRefrigerantStaticPressureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Refrigerant Static Pressure Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the low entering refrigerant static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEnteringRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low entering refrigerant temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -68819,23 +68768,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowWaterTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowEvaporatorEnteringRefrigerantTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low EvaporatorEnteringRefrigerant Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low refrigerant entering the evaporator temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -68955,6 +68887,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLeavingRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Leaving Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low leaving refrigerant temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -69139,40 +69088,6 @@
     },
     "description": {
       "en": "The Boolean state of the alarm associated with low outside air temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowPreheatCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Preheat Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low air leaving the preheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LowReheatCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Reheat Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low air leaving the reheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
       "dtmi:com:willowinc:LowAirTemperatureAlarmState;1"
@@ -74041,6 +73956,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantStaticPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Leaving Refrigerant Static Pressure Setpoint"
+    },
+    "description": {
+      "en": "The desired value for static pressure associated with refrigerant leaving the compressor (discharge)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressorRunSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -75216,23 +75148,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HighChilledWaterCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "High Chilled Water Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with high air leaving the chilled water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HighCoilEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -75269,16 +75184,84 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HighCondenserWaterCoilLeavingAirTemperatureAlarmState;1",
+    "@id": "dtmi:com:willowinc:HighCompressorEnteringRefrigerantTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "High Condenser Water Coil Leaving Air Temperature Alarm State"
+      "en": "High Compressor Entering Refrigerant Temperature Alarm State"
     },
     "description": {
-      "en": "The Boolean state of the alarm associated with high air leaving the condenser water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+      "en": "The Boolean state of the alarm associated with high refrigerant entering the compressor (suction) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmState;1"
+      "dtmi:com:willowinc:HighEnteringRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCompressorLeavingRefrigerantStaticPressureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Compressor Leaving Refrigerant Static Pressure Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the high compressor leaving refrigerant static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLeavingRefrigerantStaticPressureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCompressorLeavingRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Compressor Leaving Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high refrigerant leaving the compressor (discharge) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLeavingRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserLeavingRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Leaving Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high refrigerant leaving the condenser temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLeavingRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Cooling Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high air leaving the cooling coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoilLeavingAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -75466,6 +75449,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighSteamTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEvaporatorEnteringRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High EvaporatorEnteringRefrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high refrigerant entering the evaporator temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighEnteringRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -75677,6 +75677,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighPreheatCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Preheat Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high air leaving the preheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoilLeavingAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighPrimaryLoopChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -75738,6 +75755,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReheatCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Reheat Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high air leaving the reheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoilLeavingAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -76590,23 +76624,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LowChilledWaterCoilLeavingAirTemperatureAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Chilled Water Coil Leaving Air Temperature Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the alarm associated with low air leaving the chilled water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LowCoilEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -76643,16 +76660,84 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LowCondenserWaterCoilLeavingAirTemperatureAlarmState;1",
+    "@id": "dtmi:com:willowinc:LowCompressorEnteringRefrigerantStaticPressureAlarmState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Low Condenser Water Coil Leaving Air Temperature Alarm State"
+      "en": "Low Compressor Entering Refrigerant Static Pressure Alarm State"
     },
     "description": {
-      "en": "The Boolean state of the alarm associated with low air leaving the condenser water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+      "en": "The Boolean state of the low compressor entering refrigerant static pressure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
     },
     "extends": [
-      "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1"
+      "dtmi:com:willowinc:LowEnteringRefrigerantStaticPressureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCompressorEnteringRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Compressor Entering Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low refrigerant entering the compressor (suction) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowEnteringRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCompressorLeavingRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Compressor Leaving Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low refrigerant leaving the compressor (discharge) temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLeavingRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserLeavingRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Leaving Refrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low refrigerant leaving the condenser temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLeavingRefrigerantTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Cooling Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low air leaving the cooling coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoilLeavingAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -76846,6 +76931,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowSteamTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEvaporatorEnteringRefrigerantTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low EvaporatorEnteringRefrigerant Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low refrigerant entering the evaporator temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowEnteringRefrigerantTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -77077,6 +77179,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowPreheatCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Preheat Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low air leaving the preheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoilLeavingAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowPrimaryLoopChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -77138,6 +77257,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReheatCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Reheat Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low air leaving the reheat coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoilLeavingAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -80474,6 +80610,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighChilledWaterCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Chilled Water Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high air leaving the chilled water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighChilledWaterCoilLeavingWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -80654,6 +80807,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighCoilEnteringWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserWaterCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Water Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with high air leaving the condenser water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
@@ -82080,6 +82250,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowChilledWaterCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Chilled Water Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low air leaving the chilled water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowChilledWaterCoilLeavingWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -82243,6 +82430,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowCoilEnteringWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserWaterCoilLeavingAirTemperatureAlarmState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Water Coil Leaving Air Temperature Alarm State"
+    },
+    "description": {
+      "en": "The Boolean state of the alarm associated with low air leaving the condenser water coil temperature which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmState;1"
     ],
     "contents": [],
     "@context": [
