@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringRefrigerantStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Refrigerant Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor associated with entering refrigerant. When entering a compressor, this is the suction pressure."},
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

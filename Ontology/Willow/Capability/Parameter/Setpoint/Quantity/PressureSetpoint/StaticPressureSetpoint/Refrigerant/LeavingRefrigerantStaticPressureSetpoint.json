@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Refrigerant Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value for static pressure associated with leaving (discharge) refrigerant"},
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

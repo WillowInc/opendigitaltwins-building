@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the high compressor leaving refrigerant static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [
-    "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1"
+    "dtmi:com:willowinc:HighLeavingRefrigerantStaticPressureAlarmState;1"
   ],
   "contents": [
 

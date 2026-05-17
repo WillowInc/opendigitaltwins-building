@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Leaving Refrigerant Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor associated with leaving refrigerant. When leaving a compressor, this is the discharge pressure."},
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
