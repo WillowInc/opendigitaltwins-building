@@ -6,7 +6,7 @@
   },
   "description": {"en": "The static pressure feedback from a sensor associated with refrigerant leaving the compressor (discharge)"},
   "extends" : [
-    "dtmi:com:willowinc:RefrigerantStaticPressureSensor;1"
+    "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSensor;1"
   ],
   "contents": [
     

@@ -6,7 +6,7 @@
   },
   "description": {"en": "The desired value for static pressure associated with refrigerant leaving the compressor (discharge)"},
   "extends" : [
-    "dtmi:com:willowinc:RefrigerantStaticPressureSetpoint;1"
+    "dtmi:com:willowinc:LeavingRefrigerantStaticPressureSetpoint;1"
   ],
   "contents": [
     

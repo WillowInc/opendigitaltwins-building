@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the alarm associated with low refrigerant entering the evaporator temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [
-    "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmState;1"
+    "dtmi:com:willowinc:LowEnteringRefrigerantTemperatureAlarmState;1"
   ],
   "contents": [
   ],

@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the alarm associated with high refrigerant entering the compressor (suction) temperature which is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [
-    "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmState;1"
+    "dtmi:com:willowinc:HighEnteringRefrigerantTemperatureAlarmState;1"
   ],
   "contents": [
   ],

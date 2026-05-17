@@ -6,7 +6,7 @@
   },
   "description": {"en": "The load level state associated with compressor leaving (head or discharge) pressure"},
   "extends" : [
-    "dtmi:com:willowinc:LoadLevelState;1"
+    "dtmi:com:willowinc:LeavingPressureLoadLevelState;1"
   ],
   "contents": [
   ],

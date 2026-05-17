@@ -6,7 +6,7 @@
   },
   "description": {"en": "The Boolean state of the low compressor entering refrigerant static pressure alarm is 'alarm' when 'true' and 'normal' when 'false'"},
   "extends" : [
-    "dtmi:com:willowinc:RefrigerantStaticPressureAlarmState;1"
+    "dtmi:com:willowinc:LowEnteringRefrigerantStaticPressureAlarmState;1"
   ],
   "contents": [
 
