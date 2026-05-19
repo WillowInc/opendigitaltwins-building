@@ -45751,23 +45751,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CompressorEnteringRefrigerantTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor Entering Refrigerant Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with refrigerant entering the compressor (suction)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CompressorFailureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -45778,23 +45761,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FailureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor Leaving Refrigerant Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with refrigerant leaving the compressor (discharge)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -45826,23 +45792,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACPump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Leaving Refrigerant Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with refrigerant leaving the condenser"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -47708,6 +47657,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Refrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with entering refrigerant. When entering a compressor, this is the suction pressure."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47769,23 +47735,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FailureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EvaporatorEnteringRefrigerantTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "EvaporatorEnteringRefrigerant Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with refrigerant entering the evaporator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -49671,6 +49620,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LoadLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Refrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with leaving refrigerant. When leaving a compressor, this is the discharge pressure."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -56258,6 +56224,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CompressorEnteringRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Entering Refrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with refrigerant entering the compressor (suction)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringRefrigerantTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressorLeavingPressureLoadLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -56268,6 +56251,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingPressureLoadLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CompressorLeavingRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Leaving Refrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with refrigerant leaving the compressor (discharge)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingRefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -56336,6 +56336,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Leaving Refrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with refrigerant leaving the condenser"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeavingRefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -57940,6 +57957,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EvaporatorEnteringRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "EvaporatorEnteringRefrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The temperature feedback from a sensor associated with refrigerant entering the evaporator"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnteringRefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -65898,6 +65932,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeFanRunLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Fan Run Level State"
+    },
+    "description": {
+      "en": "The percent run level state of the discharge fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeFanRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Fan Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the discharge fan which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanRunState;1"
     ],
     "contents": [],
     "@context": [
