@@ -6,7 +6,7 @@
   },
   "description": {"en": "The temperature feedback from a sensor associated with refrigerant entering the evaporator"},
   "extends" : [
-    "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
+    "dtmi:com:willowinc:EnteringRefrigerantTemperatureSensor;1"
   ],
   "contents": [
   ],
