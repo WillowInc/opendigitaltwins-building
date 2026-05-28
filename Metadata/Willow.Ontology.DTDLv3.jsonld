@@ -57014,6 +57014,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EffectiveCoolingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Effective Cooling Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "The current value of the offset above a target temperature setpoint based on the current occupancy mode (i.e. occupied, unoccupied, or standby)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CoolingAirTemperatureSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EffectiveHeatingAirTemperatureSetpointOffset;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Effective Heating Air Temperature Setpoint Offset"
+    },
+    "description": {
+      "en": "The current value of the offset below a target temperature setpoint based on the current occupancy mode (i.e. occupied, unoccupied, or standby)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingAirTemperatureSetpointOffset;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ElectricalCircuit1Pole;1",
     "@type": "Interface",
     "displayName": {
