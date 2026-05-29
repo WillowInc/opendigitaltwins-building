@@ -58,7 +58,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
+        "en": "Property that defines the legal owner(s) of a given entity."
       },
       "displayName": {
         "en": "owned by"
@@ -77,7 +77,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc)."
       },
       "displayName": {
         "en": "is part of"
@@ -96,7 +96,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment. Inverse of: includes"
+        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment."
       },
       "displayName": {
         "en": "included in"

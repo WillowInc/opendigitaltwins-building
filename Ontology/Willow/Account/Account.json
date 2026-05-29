@@ -45,16 +45,6 @@
       "target": "dtmi:com:willowinc:Settings;1"
     },
     {
-      "@type": "Relationship",
-      "description": {
-        "en": "Indicates that an agent is the legal owner of a given entity, e.g., a Company owns some Real Estate. Inverse of: ownedBy"
-      },
-      "displayName": {
-        "en": "owns"
-      },
-      "name": "owns"
-    },
-    {
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"

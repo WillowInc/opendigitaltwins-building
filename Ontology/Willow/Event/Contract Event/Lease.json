@@ -64,16 +64,6 @@
       },
       "name": "leasee",
       "target": "dtmi:com:willowinc:Agent;1"
-    },
-    {
-      "@type": "Relationship",
-      "description": {
-        "en": "The object (e.g., property, equipment, etc) that this a lease of."
-      },
-      "displayName": {
-        "en": "lease of"
-      },
-      "name": "leaseOf"
     }
   ],
   "@context": [

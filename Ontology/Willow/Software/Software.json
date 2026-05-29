@@ -70,7 +70,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
+        "en": "Property that defines the legal owner(s) of a given entity."
       },
       "displayName": {
         "en": "owned by"

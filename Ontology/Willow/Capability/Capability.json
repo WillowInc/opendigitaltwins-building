@@ -13,7 +13,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability. Inverse of: hasCapability"
+        "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability."
       },
       "displayName": {
         "en": "is capabilty of"

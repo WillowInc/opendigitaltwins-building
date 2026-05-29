@@ -14,7 +14,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Generic property indicating which sensors that are configured or designed to observe some feature, system, phenomenon, etc. Inverse of: observes"
+        "en": "Generic property indicating which sensors that are configured or designed to observe some feature, system, phenomenon, etc."
       },
       "displayName": {
         "en": "observed by"
