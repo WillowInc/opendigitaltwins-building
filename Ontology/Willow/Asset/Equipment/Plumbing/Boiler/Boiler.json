@@ -219,6 +219,31 @@
       },
       "schema": "double",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "fuelType",
+      "displayName": {
+        "en": "fuel type"
+      },
+      "description": {
+        "en": "The fuel the boiler consumes to produce heat. Used by downstream systems to apply the appropriate utility rate (electricity vs natural gas) for heating-energy cost calculations."
+      },
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Electric",
+            "name": "Electric"
+          },
+          {
+            "enumValue": "NaturalGas",
+            "name": "NaturalGas"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
     }
   ],
   "@context": [
