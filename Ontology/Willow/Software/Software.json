@@ -13,16 +13,6 @@
   "contents": [
     {
       "@type": "Relationship",
-      "description": {
-        "en": "The coverage or impact area of a Software. For example: a connector application may serve several Buildings or an entire Land depending on the coverage of the system its communicating with. Inverse of: servedBy"
-      },
-      "displayName": {
-        "en": "serves"
-      },
-      "name": "serves"
-    },
-    {
-      "@type": "Relationship",
       "displayName": {
         "en": "hardware installed on"
       },
@@ -70,7 +60,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
+        "en": "Property that defines the legal owner(s) of a given entity."
       },
       "displayName": {
         "en": "owned by"

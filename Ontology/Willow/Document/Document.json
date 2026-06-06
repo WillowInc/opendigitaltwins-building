@@ -12,13 +12,6 @@
   "contents": [
     {
       "@type": "Relationship",
-      "name": "isDocumentOf",
-      "displayName": {
-        "en": "is document of"
-      }
-    },
-    {
-      "@type": "Relationship",
       "name": "hasSettings",
       "displayName": {
         "en": "has settings"
