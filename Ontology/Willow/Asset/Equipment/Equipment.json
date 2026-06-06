@@ -15,28 +15,7 @@
         "en": "is fed by"
       },
       "description": {
-        "en": "Indicates that a substance is being received from the target entity. Inverse of: feeds"
-      },
-      "properties": [
-        {
-          "@type": "Property",
-          "name": "substance",
-          "displayName": {
-            "en": "Substance"
-          },
-          "writable": true,
-          "schema": "dtmi:com:willowinc:EquipmentIsFedBySubstances;1"
-        }
-      ]
-    },
-    {
-      "@type": "Relationship",
-      "name": "feeds",
-      "displayName": {
-        "en": "feeds"
-      },
-      "description": {
-        "en": "Indicates that a substance is sent to the target entity. Inverse of: isFedBy"
+        "en": "Indicates that a substance is being received from the target entity."
       },
       "properties": [
         {
