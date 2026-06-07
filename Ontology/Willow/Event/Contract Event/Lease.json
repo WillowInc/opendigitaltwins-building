@@ -43,10 +43,32 @@
       "name": "regulatedBy",
       "target": "dtmi:com:willowinc:LeaseContract;1"
     },
-    {
+        {
       "@type": "Relationship",
       "description": {
         "en": "The agent leasing out some leasable object, i.e., the owner of the asset."
+      },
+      "displayName": {
+        "en": "lessor"
+      },
+      "name": "lessor",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The agent leasing some leasable object, i.e., the user of the asset."
+      },
+      "displayName": {
+        "en": "lessee"
+      },
+      "name": "lessee",
+      "target": "dtmi:com:willowinc:Agent;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Typo. To be deleted in favor of 'lessor'."
       },
       "displayName": {
         "en": "leasor"
@@ -57,7 +79,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "The agent leasing some leasable object, i.e., the user of the asset."
+        "en": "Typo. To be deleted in favor of 'lessee'."
       },
       "displayName": {
         "en": "leasee"
