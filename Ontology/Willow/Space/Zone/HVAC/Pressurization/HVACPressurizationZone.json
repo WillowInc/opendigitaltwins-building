@@ -30,8 +30,8 @@
             "name": "ExhaustOnly"
           },
           {
-            "enumValue": "Balanced",
-            "name": "Balanced"
+            "enumValue": "SupplyAndExhaust",
+            "name": "SupplyAndExhaust"
           }
         ]
       },
