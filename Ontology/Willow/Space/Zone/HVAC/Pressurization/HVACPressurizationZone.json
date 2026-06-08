@@ -36,7 +36,7 @@
         ]
       },
       "writable": true,
-      "comment": "Designates the intended airflow composition for this pressurization zone. SupplyOnly: zone has only supply valves (no exhaust path expected). ExhaustOnly: zone has only exhaust valves or fume hoods (no supply path expected). Balanced: zone has both supply and exhaust valves. Used by Static validation to determine which relationships are required vs. unintentionally missing."
+      "comment": "Designates the intended airflow composition for this pressurization zone. SupplyOnly: zone has only supply valves (no exhaust path expected). ExhaustOnly: zone has only exhaust valves or fume hoods (no supply path expected). SupplyAndExhaust: zone has both supply and exhaust valves. Used by Static validation to determine which relationships are required vs. unintentionally missing."
     }
   ],
   "@context": [
