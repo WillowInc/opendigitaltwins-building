@@ -14175,7 +14175,7 @@
       {
         "@type": "Relationship",
         "description": {
-          "en": "A lease is regulated by some contract entered into by the leasor and leasees."
+          "en": "A lease is regulated by some contract entered into by the lessor and lessee."
         },
         "displayName": {
           "en": "regulated by"
@@ -14203,28 +14203,6 @@
           "en": "lessee"
         },
         "name": "lessee",
-        "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Relationship",
-        "description": {
-          "en": "Typo. To be deleted in favor of \u0027lessor\u0027."
-        },
-        "displayName": {
-          "en": "leasor"
-        },
-        "name": "leasor",
-        "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Relationship",
-        "description": {
-          "en": "Typo. To be deleted in favor of \u0027lessee\u0027."
-        },
-        "displayName": {
-          "en": "leasee"
-        },
-        "name": "leasee",
         "target": "dtmi:com:willowinc:Agent;1"
       }
     ],
