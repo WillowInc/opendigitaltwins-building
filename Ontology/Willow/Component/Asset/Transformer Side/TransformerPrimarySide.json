@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:TransformerPrimarySide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Transformer Primary Side"
+  },
+  "description": {
+    "en": "The primary side of a transformer is the side where the electrical power is entering the transformer at a higher voltage."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:TransformerSide;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

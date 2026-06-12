@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:com:willowinc:TransformerSide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Transformer Side"
+  },
+  "description": {
+    "en": "A transformer side represents one side of a transformer, which can be either the primary side or the secondary side."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Voltage", "Property"],
+      "displayName": {
+        "en": "Voltage"
+      },
+      "name": "voltage",
+      "schema": "double",
+      "unit": "volt",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "phases"
+      },
+      "name": "phases",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Three",
+            "name": "Three"
+          },
+          {
+            "enumValue": "One",
+            "name": "One"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1"
+  ]
+}
