@@ -20,6 +20,28 @@
       "schema": "double",
       "unit": "volt",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "phases"
+      },
+      "name": "phases",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Three",
+            "name": "Three"
+          },
+          {
+            "enumValue": "One",
+            "name": "One"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
     }
   ],
   "@context": [
