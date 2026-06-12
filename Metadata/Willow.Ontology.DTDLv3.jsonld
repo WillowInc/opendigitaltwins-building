@@ -15777,6 +15777,60 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TransformerSide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Transformer Side"
+    },
+    "description": {
+      "en": "A transformer side represents one side of a transformer, which can be either the primary side or the secondary side."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Voltage",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Voltage"
+        },
+        "name": "voltage",
+        "schema": "double",
+        "unit": "volt",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "phases"
+        },
+        "name": "phases",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Three",
+              "name": "Three"
+            },
+            {
+              "enumValue": "One",
+              "name": "One"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VehicleEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -27388,6 +27442,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:VehicleEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TransformerPrimarySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Transformer Primary Side"
+    },
+    "description": {
+      "en": "The primary side of a transformer is the side where the electrical power is entering the transformer at a higher voltage."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TransformerSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TransformerSecondarySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Transformer Secondary Side"
+    },
+    "description": {
+      "en": "The secondary side of a transformer is the side where the electrical power is leaving the transformer at a lower voltage."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TransformerSide;1"
     ],
     "contents": [],
     "@context": [
