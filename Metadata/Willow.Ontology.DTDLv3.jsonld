@@ -33201,6 +33201,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExhaustAirFilter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Filter"
+    },
+    "description": {
+      "en": "A filter that is used to filter exhaust air in an HVAC system, removing dust and other particulates to protect upstream fans or energy recovery devices."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFilter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExhaustAirHandlingUnit;1",
     "@type": "Interface",
     "displayName": {
@@ -37063,6 +37080,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MakeupAirDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Makeup Air Damper"
+    },
+    "description": {
+      "en": "A damper which controls the amount of makeup air that is introduced into a building to replace exhaust air."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
     ],
     "contents": [],
     "@context": [
