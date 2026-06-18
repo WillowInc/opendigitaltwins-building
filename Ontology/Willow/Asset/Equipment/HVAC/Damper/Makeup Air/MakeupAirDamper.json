@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:MakeupAirDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Makeup Air Damper"
+  },
+  "description": {
+    "en": "A damper which controls the amount of makeup air that is introduced into a building to replace exhaust air."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
