@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustAirFilter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Air Filter"
+  },
+  "description": {
+    "en": "A filter that is used to filter exhaust air in an HVAC system, removing dust and other particulates to protect upstream fans or energy recovery devices."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AirFilter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
