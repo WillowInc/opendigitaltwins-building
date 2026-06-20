@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:ThermalEnergyStorageTank;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Thermal Energy Storage Tank"
+  },
+  "description": {
+    "en": "A tank used for storing thermal energy, typically for use in heating or cooling systems."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACTank;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
