@@ -26543,6 +26543,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SolarEnergyHeatingEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Energy Heating Equipment"
+    },
+    "description": {
+      "en": "Equipment used for collecting solar energy and converting it into heat for domestic hot water or hydronic heating systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SoundPressureLevelSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40551,6 +40568,52 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SolarThermalCollector;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Thermal Collector"
+    },
+    "description": {
+      "en": "A device that collects solar energy and converts it into heat for domestic hot water or hydronic heating systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SolarEnergyHeatingEquipment;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "type",
+        "displayName": {
+          "en": "Type"
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "flatPlate",
+              "displayName": {
+                "en": "Flat Plate"
+              },
+              "enumValue": "FlatPlate"
+            },
+            {
+              "name": "evacuatedTube",
+              "displayName": {
+                "en": "Evacuated Tube"
+              },
+              "enumValue": "EvacuatedTube"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SolarZenithAngleSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -53750,6 +53813,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnergySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ThermalEnergyStorageTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Thermal Energy Storage Tank"
+    },
+    "description": {
+      "en": "A tank used for storing thermal energy, typically for use in heating or cooling systems."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACTank;1"
     ],
     "contents": [],
     "@context": [
