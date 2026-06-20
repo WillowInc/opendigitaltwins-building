@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:SolarEnergyHeatingEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Energy Heating Equipment"
+  },
+  "description": {
+    "en": "Equipment used for collecting solar energy and converting it into heat for domestic hot water or hydronic heating systems."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

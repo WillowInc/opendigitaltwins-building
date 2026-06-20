@@ -1,0 +1,46 @@
+{
+  "@id": "dtmi:com:willowinc:SolarThermalCollector;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Solar Thermal Collector"
+  },
+  "description": {
+    "en": "A device that collects solar energy and converts it into heat for domestic hot water or hydronic heating systems."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SolarEnergyHeatingEquipment;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "type",
+      "displayName": {
+        "en": "Type"
+      },
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "flatPlate",
+            "displayName": {
+              "en": "Flat Plate"
+            },
+            "enumValue": "FlatPlate"
+          },
+          {
+            "name": "evacuatedTube",
+            "displayName": {
+              "en": "Evacuated Tube"
+            },
+            "enumValue": "EvacuatedTube"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
