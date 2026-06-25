@@ -105,7 +105,7 @@
       "@type": "Relationship",
       "name": "serviceResponsibility",
       "displayName": {
-        "en": "Service Responsibilitly"
+        "en": "Service Responsibility"
       },
       "target": "dtmi:com:willowinc:Agent;1"
     },

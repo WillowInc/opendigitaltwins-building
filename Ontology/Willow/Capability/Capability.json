@@ -16,7 +16,7 @@
         "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability."
       },
       "displayName": {
-        "en": "is capabilty of"
+        "en": "is capability of"
       },
       "name": "isCapabilityOf"
     },
