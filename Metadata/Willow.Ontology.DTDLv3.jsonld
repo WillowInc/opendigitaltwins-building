@@ -98,7 +98,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -373,7 +373,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -671,7 +671,7 @@
         "@type": "Relationship",
         "name": "serviceResponsibility",
         "displayName": {
-          "en": "Service Responsibilitly"
+          "en": "Service Responsibility"
         },
         "target": "dtmi:com:willowinc:Agent;1"
       },
@@ -830,7 +830,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -898,7 +898,7 @@
         ],
         "name": "geographicOrientation",
         "displayName": {
-          "en": "geographic orientation"
+          "en": "Geographic Orientation"
         },
         "description": {
           "en": "The horizontal direction the front of the asset is oriented with geographic north as 0 degrees and increasing clockwise (a.ka. azimuth)."
@@ -914,7 +914,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "geographic orientation unit"
+          "en": "Geographic Orientation Unit"
         },
         "name": "geographicOrientationUnit",
         "annotates": "geographicOrientation",
@@ -925,7 +925,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "serial number"
+          "en": "Serial Number"
         },
         "name": "serialNumber",
         "schema": "string",
@@ -934,7 +934,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "physical tag number"
+          "en": "Physical Tag Number"
         },
         "name": "physicalTagNumber",
         "schema": "string",
@@ -943,7 +943,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "model number"
+          "en": "Model Number"
         },
         "name": "modelNumber",
         "schema": "string",
@@ -952,7 +952,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "MAC address"
+          "en": "MAC Address"
         },
         "name": "MACAddress",
         "schema": "string",
@@ -961,7 +961,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "IP address"
+          "en": "IP Address"
         },
         "name": "IPAddress",
         "schema": "string",
@@ -973,7 +973,7 @@
           "Mass"
         ],
         "displayName": {
-          "en": "weight"
+          "en": "Weight"
         },
         "name": "weight",
         "schema": "double",
@@ -987,7 +987,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "weight unit"
+          "en": "Weight Unit"
         },
         "name": "weightUnit",
         "annotates": "weight",
@@ -998,7 +998,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "turnover date"
+          "en": "Turnover Date"
         },
         "name": "turnoverDate",
         "schema": "date",
@@ -1007,7 +1007,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "maintenance interval"
+          "en": "Maintenance Interval"
         },
         "name": "maintenanceInterval",
         "schema": "duration",
@@ -1016,7 +1016,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "installation date"
+          "en": "Installation Date"
         },
         "name": "installationDate",
         "schema": "date",
@@ -1025,7 +1025,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "initial cost"
+          "en": "Initial Cost"
         },
         "name": "initialCost",
         "schema": "double",
@@ -1050,7 +1050,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "expected replacement cost"
+          "en": "Expected Replacement Cost"
         },
         "name": "expectedReplacementCost",
         "schema": "double",
@@ -1075,7 +1075,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "expected life"
+          "en": "Expected Life"
         },
         "name": "expectedLife",
         "schema": "duration",
@@ -1084,7 +1084,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "expected end-of-life"
+          "en": "Expected End-of-Life"
         },
         "name": "expectedEndOfLife",
         "schema": "date",
@@ -1093,7 +1093,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "commission date"
+          "en": "Commission Date"
         },
         "name": "commissionDate",
         "schema": "date",
@@ -1102,7 +1102,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "manufactured date"
+          "en": "Manufactured Date"
         },
         "name": "manufacturedDate",
         "schema": "date",
@@ -1487,7 +1487,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -1892,7 +1892,7 @@
           "en": "The entity (Asset, Space, LogicalDevice, etc.) that has this Capability."
         },
         "displayName": {
-          "en": "is capabilty of"
+          "en": "is capability of"
         },
         "name": "isCapabilityOf"
       },
@@ -1987,7 +1987,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -2118,7 +2118,7 @@
           "en": "Time when a core:Capability\u0027s value was last updated (see core:lastValue)."
         },
         "displayName": {
-          "en": "last value time"
+          "en": "Last Value Time"
         },
         "name": "lastValueTime",
         "schema": "dateTime",
@@ -2593,7 +2593,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -3130,7 +3130,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "file size unit"
+          "en": "File Size Unit"
         },
         "name": "fileSizeUnit",
         "annotates": "fileSize",
@@ -3191,7 +3191,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -3585,7 +3585,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -3892,7 +3892,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -4044,7 +4044,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "installation date"
+          "en": "Installation Date"
         },
         "name": "installationDate",
         "schema": "dateTime",
@@ -4348,7 +4348,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -4357,7 +4357,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "occupiable"
+          "en": "Occupiable"
         },
         "name": "occupiable",
         "description": {
@@ -4712,7 +4712,7 @@
         "@type": "Relationship",
         "name": "serviceResponsibility",
         "displayName": {
-          "en": "Service Responsibilitly"
+          "en": "Service Responsibility"
         },
         "target": "dtmi:com:willowinc:Agent;1"
       },
@@ -4823,7 +4823,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -4993,7 +4993,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "commission date"
+          "en": "Commission Date"
         },
         "name": "commissionDate",
         "schema": "date",
@@ -5002,7 +5002,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "expected end-of-life"
+          "en": "Expected End-of-Life"
         },
         "name": "expectedEndOfLife",
         "schema": "date",
@@ -5011,7 +5011,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "expected life"
+          "en": "Expected Life"
         },
         "name": "expectedLife",
         "schema": "duration",
@@ -5020,7 +5020,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "expected replacement cost"
+          "en": "Expected Replacement Cost"
         },
         "name": "expectedReplacementCost",
         "schema": "string",
@@ -5029,7 +5029,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "initial cost"
+          "en": "Initial Cost"
         },
         "name": "initialCost",
         "schema": "string",
@@ -5038,7 +5038,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "installation date"
+          "en": "Installation Date"
         },
         "name": "installationDate",
         "schema": "date",
@@ -5047,7 +5047,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "maintenance interval"
+          "en": "Maintenance Interval"
         },
         "name": "maintenanceInterval",
         "schema": "duration",
@@ -5056,7 +5056,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "turnover date"
+          "en": "Turnover Date"
         },
         "name": "turnoverDate",
         "schema": "date",
@@ -5065,7 +5065,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "physical tag number"
+          "en": "Physical Tag Number"
         },
         "name": "physicalTagNumber",
         "schema": "string",
@@ -6085,7 +6085,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "elevation unit"
+          "en": "Elevation Unit"
         },
         "name": "elevationUnit",
         "annotates": "elevation",
@@ -6113,7 +6113,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -7366,7 +7366,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "length"
+          "en": "Length"
         },
         "name": "length",
         "schema": "double",
@@ -7380,7 +7380,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "length unit"
+          "en": "Length Unit"
         },
         "name": "lengthUnit",
         "annotates": "length",
@@ -7919,7 +7919,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "elevation unit"
+          "en": "Elevation Unit"
         },
         "name": "elevationUnit",
         "annotates": "elevation",
@@ -7954,7 +7954,7 @@
           "en": "A number indicating the ordinal number of this level within the building. Note that the implementation of this numbering scheme and its starting point is implementation-specific; e.g., the fifth floor below ground may be 0 in some systems, and -5 in others."
         },
         "displayName": {
-          "en": "level number"
+          "en": "Level Number"
         },
         "name": "levelNumber",
         "schema": "integer",
@@ -7980,7 +7980,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "elevation unit"
+          "en": "Elevation Unit"
         },
         "name": "elevationUnit",
         "annotates": "elevation",
@@ -8008,7 +8008,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "site elevation unit"
+          "en": "Site Elevation Unit"
         },
         "name": "siteElevationUnit",
         "annotates": "siteElevation",
@@ -8043,7 +8043,7 @@
           "en": "URL link to an image/logo that represents the organization."
         },
         "displayName": {
-          "en": "logo"
+          "en": "Logo"
         },
         "name": "logo",
         "schema": "string",
@@ -8253,7 +8253,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -8267,7 +8267,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -8281,7 +8281,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "length"
+          "en": "Length"
         },
         "name": "length",
         "schema": "double",
@@ -8295,7 +8295,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "length unit"
+          "en": "Length Unit"
         },
         "name": "lengthUnit",
         "annotates": "length",
@@ -8361,7 +8361,7 @@
           "en": "A person\u0027s last name (if they have one; this varies across cultural contexts)."
         },
         "displayName": {
-          "en": "last name"
+          "en": "Last Name"
         },
         "name": "lastName",
         "schema": "string",
@@ -8373,7 +8373,7 @@
           "en": "URL link to an image that represents the person."
         },
         "displayName": {
-          "en": "image"
+          "en": "Image"
         },
         "name": "image",
         "schema": "string",
@@ -8385,7 +8385,7 @@
           "en": "A person\u0027s personal, individual name."
         },
         "displayName": {
-          "en": "given name"
+          "en": "Given Name"
         },
         "name": "givenName",
         "schema": "string",
@@ -8397,7 +8397,7 @@
           "en": "A gender designation for a Person."
         },
         "displayName": {
-          "en": "gender"
+          "en": "Gender"
         },
         "name": "gender",
         "schema": "string",
@@ -8409,7 +8409,7 @@
           "en": "A person\u0027s first name (if they have one; this varies across cultural contexts)."
         },
         "displayName": {
-          "en": "first name"
+          "en": "First Name"
         },
         "name": "firstName",
         "schema": "string",
@@ -8421,7 +8421,7 @@
           "en": "A person\u0027s family name."
         },
         "displayName": {
-          "en": "family name"
+          "en": "Family Name"
         },
         "name": "familyName",
         "schema": "string",
@@ -8629,7 +8629,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "volume unit"
+          "en": "Volume Unit"
         },
         "name": "volumeUnit",
         "annotates": "volume",
@@ -8675,7 +8675,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "occupiable"
+          "en": "Occupiable"
         },
         "name": "occupiable",
         "description": {
@@ -8809,7 +8809,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -8971,7 +8971,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "depth unit"
+          "en": "Depth Unit"
         },
         "name": "depthUnit",
         "annotates": "depth",
@@ -8999,7 +8999,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -10306,7 +10306,7 @@
         ],
         "name": "co2Unit",
         "displayName": {
-          "en": "CO2 unit"
+          "en": "CO2 Unit"
         },
         "annotates": "co2",
         "schema": "string",
@@ -10331,7 +10331,7 @@
         ],
         "name": "co2eUnit",
         "displayName": {
-          "en": "CO2e unit"
+          "en": "CO2e Unit"
         },
         "annotates": "co2e",
         "schema": "string",
@@ -10356,7 +10356,7 @@
         ],
         "name": "n2oUnit",
         "displayName": {
-          "en": "N2O unit"
+          "en": "N2O Unit"
         },
         "annotates": "n2o",
         "schema": "string",
@@ -10381,7 +10381,7 @@
         ],
         "name": "ch4Unit",
         "displayName": {
-          "en": "CH4 unit"
+          "en": "CH4 Unit"
         },
         "annotates": "ch4",
         "schema": "string",
@@ -10424,7 +10424,7 @@
         ],
         "name": "fixedRateUnit",
         "displayName": {
-          "en": "fixed rate unit"
+          "en": "Fixed Rate Unit"
         },
         "annotates": "fixedRate",
         "schema": "string",
@@ -10621,7 +10621,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "leak rate"
+          "en": "Leak Rate"
         },
         "name": "leakeRate",
         "schema": "double",
@@ -10635,7 +10635,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "leak rate unit"
+          "en": "Leak Rate Unit"
         },
         "name": "leakRateUnit",
         "annotates": "leakRate",
@@ -10708,7 +10708,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "region (state/province)"
+          "en": "Region (State/Province)"
         },
         "name": "region",
         "schema": "string",
@@ -10717,7 +10717,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "postal code"
+          "en": "Postal Code"
         },
         "name": "postalCode",
         "schema": "string",
@@ -10726,7 +10726,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "country"
+          "en": "Country"
         },
         "name": "country",
         "schema": "string",
@@ -10735,7 +10735,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "city"
+          "en": "City"
         },
         "name": "city",
         "schema": "string",
@@ -10744,7 +10744,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "address line 2"
+          "en": "Address Line 2"
         },
         "name": "addressLine2",
         "schema": "string",
@@ -10753,7 +10753,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "address line 1"
+          "en": "Address Line 1"
         },
         "name": "addressLine1",
         "schema": "string",
@@ -11120,7 +11120,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -11134,7 +11134,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -11148,7 +11148,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "thickness"
+          "en": "Thickness"
         },
         "name": "thickness",
         "schema": "double",
@@ -11162,7 +11162,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "thickness unit"
+          "en": "Thickness Unit"
         },
         "name": "thicknessUnit",
         "annotates": "thickness",
@@ -11173,7 +11173,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "service"
+          "en": "Service"
         },
         "name": "service",
         "schema": {
@@ -11195,7 +11195,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -11207,7 +11207,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "height"
+          "en": "Height"
         },
         "name": "height",
         "schema": "double",
@@ -11221,7 +11221,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -11232,7 +11232,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "frame material"
+          "en": "Frame Material"
         },
         "name": "frameMaterial",
         "schema": "string",
@@ -11244,7 +11244,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "fire rating"
+          "en": "Fire Rating"
         },
         "name": "fireRating",
         "schema": "double",
@@ -11502,7 +11502,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -11514,7 +11514,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "diameter"
+          "en": "Diameter"
         },
         "name": "diameter",
         "schema": "double",
@@ -11528,7 +11528,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "diameter unit"
+          "en": "Diameter Unit"
         },
         "name": "diameterUnit",
         "annotates": "diameter",
@@ -12034,7 +12034,7 @@
           "en": "Operational mode for HVAC equipment (Project Haystack)."
         },
         "displayName": {
-          "en": "HVAC mode"
+          "en": "HVAC Mode"
         },
         "name": "HVACMode",
         "schema": {
@@ -12091,7 +12091,7 @@
           "en": "Notification of a condition which requires attention such as a threshold exceeded (Project Haystack). This differs from a Fault in that a Fault is used to identify a failure."
         },
         "displayName": {
-          "en": "alarm"
+          "en": "Alarm"
         },
         "name": "alarm",
         "schema": "boolean",
@@ -12103,7 +12103,7 @@
           "en": "The component that is part of an asset which the capability is associated with."
         },
         "displayName": {
-          "en": "asset component"
+          "en": "Asset Component"
         },
         "name": "assetComponent",
         "schema": {
@@ -12168,7 +12168,7 @@
           "en": "Rate required for a process. For a setpoint, this sets the required rate for a process such as cooling, heating, air flow, or water flow. For a sensor, this measures the rate of a process over a given interval such as electrical power demand or cooling energy demand."
         },
         "displayName": {
-          "en": "demand"
+          "en": "Demand"
         },
         "name": "demand",
         "schema": "boolean",
@@ -12180,7 +12180,7 @@
           "en": "Current control setpoint in effect taking into account other factors (Project Haystack)."
         },
         "displayName": {
-          "en": "effective"
+          "en": "Effective"
         },
         "name": "effective",
         "schema": "boolean",
@@ -12192,7 +12192,7 @@
           "en": "Phase measurement in a three-phase electrical system (Project Haystack)."
         },
         "displayName": {
-          "en": "electrical phase"
+          "en": "Electrical Phase"
         },
         "name": "electricalPhase",
         "schema": {
@@ -12237,7 +12237,7 @@
           "en": "Parameter that places and upper (maximum) or lower (minimum) bound on permitted values of another capability."
         },
         "displayName": {
-          "en": "limit"
+          "en": "Limit"
         },
         "name": "limit",
         "schema": {
@@ -12262,7 +12262,7 @@
           "en": "Mode which defines how to control a space based on occupancy status."
         },
         "displayName": {
-          "en": "occupancy mode"
+          "en": "Occupancy Mode"
         },
         "name": "occupancyMode",
         "schema": {
@@ -12291,7 +12291,7 @@
           "en": "The phenomenon that a capability measures or interacts with; e.g., a TemperatureSensor can measure air temperature or water temperature, a Flow Demand Setpoint can be configured to control steam demand or chilled water demand, etc."
         },
         "displayName": {
-          "en": "phenomenon"
+          "en": "Phenomenon"
         },
         "name": "phenomenon",
         "schema": {
@@ -12536,7 +12536,7 @@
           "en": "The capability position relative to the system or space that it interacts with. E.g., a water temperature sensor can be positioned on the supply or return flow, air humidity can be measured entering or leaving a system, etc."
         },
         "displayName": {
-          "en": "position"
+          "en": "Position"
         },
         "name": "position",
         "schema": {
@@ -12653,7 +12653,7 @@
           "en": "Stage number of a control loop for an equipment, equipment group, or system that is defined by the process controller. The first stage is 1, second stage 2, etc. (Project Haystack)."
         },
         "displayName": {
-          "en": "stage"
+          "en": "Stage"
         },
         "name": "stage",
         "schema": "integer",
@@ -12891,7 +12891,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -13019,7 +13019,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "size"
+          "en": "Size"
         },
         "name": "size",
         "schema": "double",
@@ -13033,7 +13033,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "size unit"
+          "en": "Size Unit"
         },
         "name": "sizeUnit",
         "annotates": "size",
@@ -13044,7 +13044,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "shape"
+          "en": "Shape"
         },
         "name": "shape",
         "schema": {
@@ -13070,7 +13070,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "configuration"
+          "en": "Configuration"
         },
         "name": "configuration",
         "schema": {
@@ -13110,7 +13110,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": {
@@ -13135,7 +13135,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "current rating"
+          "en": "Current Rating"
         },
         "name": "currentRating",
         "schema": "double",
@@ -13447,7 +13447,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -13469,7 +13469,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -13481,7 +13481,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "outside diameter"
+          "en": "Outside Diameter"
         },
         "name": "outsideDiameter",
         "schema": "double",
@@ -13495,7 +13495,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "outside diameter unit"
+          "en": "Outside Diameter Unit"
         },
         "name": "outsideDiameterUnit",
         "annotates": "outsideDiameter",
@@ -13787,7 +13787,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -13828,7 +13828,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -13861,7 +13861,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "outside diameter"
+          "en": "Outside Diameter"
         },
         "name": "outsideDiameter",
         "schema": "double",
@@ -13875,7 +13875,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "outside diameter unit"
+          "en": "Outside Diameter Unit"
         },
         "name": "outsideDiameterUnit",
         "annotates": "outsideDiameter",
@@ -14145,7 +14145,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "economizer"
+          "en": "Economizer"
         },
         "name": "economizer",
         "schema": "boolean",
@@ -14352,7 +14352,7 @@
           "en": "Time at which a lease arrangement begins."
         },
         "displayName": {
-          "en": "lease start"
+          "en": "Lease Start"
         },
         "name": "leaseStart",
         "schema": "dateTime",
@@ -14364,7 +14364,7 @@
           "en": "Time at which a lease arrangement ends."
         },
         "displayName": {
-          "en": "lease end"
+          "en": "Lease End"
         },
         "name": "leaseEnd",
         "schema": "dateTime",
@@ -14636,7 +14636,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -14650,7 +14650,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -14664,7 +14664,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "height"
+          "en": "Height"
         },
         "name": "height",
         "schema": "double",
@@ -14678,7 +14678,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -14925,7 +14925,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -14937,7 +14937,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "diameter"
+          "en": "Diameter"
         },
         "name": "diameter",
         "schema": "double",
@@ -14951,7 +14951,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "diameter unit"
+          "en": "Diameter Unit"
         },
         "name": "diameterUnit",
         "annotates": "diameter",
@@ -14983,7 +14983,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "outside diameter"
+          "en": "Outside Diameter"
         },
         "name": "outsideDiameter",
         "schema": "double",
@@ -14997,7 +14997,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "outside diameter unit"
+          "en": "Outside Diameter Unit"
         },
         "name": "outsideDiameterUnit",
         "annotates": "outsideDiameter",
@@ -15011,7 +15011,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "nominal diameter"
+          "en": "Nominal Diameter"
         },
         "name": "nominalDiameter",
         "schema": "double",
@@ -15025,7 +15025,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal diameter unit"
+          "en": "Nominal Diameter Unit"
         },
         "name": "nominalDiameterUnit",
         "annotates": "nominalDiameter",
@@ -15039,7 +15039,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "inside diameter"
+          "en": "Inside Diameter"
         },
         "name": "insideDiameter",
         "schema": "double",
@@ -15053,7 +15053,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "inside diameter unit"
+          "en": "Inside Diameter Unit"
         },
         "name": "insideDiameterUnit",
         "annotates": "insideDiameter",
@@ -15501,7 +15501,7 @@
         ],
         "name": "grossArea",
         "displayName": {
-          "en": "gross area"
+          "en": "Gross Area"
         },
         "writable": true,
         "schema": "double",
@@ -15514,7 +15514,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "gross area unit"
+          "en": "Gross Area Unit"
         },
         "name": "grossAreaUnit",
         "annotates": "grossArea",
@@ -15529,7 +15529,7 @@
         ],
         "name": "usableArea",
         "displayName": {
-          "en": "usable area"
+          "en": "Usable Area"
         },
         "writable": true,
         "schema": "double",
@@ -15542,7 +15542,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "usable area unit"
+          "en": "Usable Area Unit"
         },
         "name": "usableAreaUnit",
         "annotates": "usableArea",
@@ -15570,7 +15570,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "rentable area unit"
+          "en": "Rentable Area Unit"
         },
         "name": "rentableAreaUnit",
         "annotates": "rentableArea",
@@ -15674,7 +15674,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "step width"
+          "en": "Step Width"
         },
         "name": "stepWidth",
         "schema": "double",
@@ -15688,7 +15688,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "step width unit"
+          "en": "Step Width Unit"
         },
         "name": "stepWidthUnit",
         "annotates": "stepWidth",
@@ -16003,7 +16003,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "phases"
+          "en": "Phases"
         },
         "name": "phases",
         "schema": {
@@ -16316,7 +16316,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "zone delivery"
+          "en": "Zone Delivery"
         },
         "name": "zoneDelivery",
         "schema": {
@@ -16346,7 +16346,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "ventilation strategy"
+          "en": "Ventilation Strategy"
         },
         "name": "ventilationStrategy",
         "schema": {
@@ -16376,7 +16376,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "ventilation configuration"
+          "en": "Ventilation Configuration"
         },
         "name": "ventilationConfiguration",
         "schema": {
@@ -16402,7 +16402,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -16414,7 +16414,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -16428,7 +16428,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -16442,7 +16442,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -16456,7 +16456,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -16470,7 +16470,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible heating capacity"
+          "en": "Net Sensible Heating Capacity"
         },
         "name": "netSensibleHeatingCapacity",
         "schema": "double",
@@ -16484,7 +16484,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible heating capacity unit"
+          "en": "Net Sensible Heating Capacity Unit"
         },
         "name": "netSensibleHeatingCapacityUnit",
         "annotates": "netSensibleHeatingCapacity",
@@ -16498,7 +16498,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -16512,7 +16512,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -16523,7 +16523,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal energy efficiency ratio (EER)"
+          "en": "Nominal Energy Efficiency Ratio (EER)"
         },
         "name": "nominalEnergyEfficiencyRatio",
         "schema": "double",
@@ -16614,7 +16614,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "humidification method"
+          "en": "Humidification Method"
         },
         "name": "humidificationMethod",
         "schema": {
@@ -16644,7 +16644,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "filter type"
+          "en": "Filter Type"
         },
         "name": "filterType",
         "schema": "string",
@@ -16653,7 +16653,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "discharge ductwork configuration"
+          "en": "Discharge Ductwork Configuration"
         },
         "name": "dischargeDuctworkConfiguration",
         "schema": {
@@ -16679,7 +16679,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "dehumidification method"
+          "en": "Dehumidification Method"
         },
         "name": "dehumidificationMethod",
         "schema": {
@@ -16721,7 +16721,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "energy recovery method"
+          "en": "Energy Recovery Method"
         },
         "name": "energyRecoveryMethod",
         "schema": {
@@ -16755,7 +16755,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "airflow modulation"
+          "en": "Airflow Modulation"
         },
         "name": "airflowModulation",
         "schema": {
@@ -16777,7 +16777,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "excluded from comfort analytics"
+          "en": "Excluded from Comfort Analytics"
         },
         "name": "excludedFromComfortAnalytics",
         "description": {
@@ -16805,7 +16805,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "piping configuration"
+          "en": "Piping Configuration"
         },
         "name": "pipingConfiguration",
         "description": {
@@ -17229,7 +17229,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "message height unit"
+          "en": "Message Height Unit"
         },
         "name": "messageHeightUnit",
         "annotates": "messageHeight",
@@ -17257,7 +17257,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "panel height unit"
+          "en": "Panel Height Unit"
         },
         "name": "panelHeightUnit",
         "annotates": "panelHeight",
@@ -17285,7 +17285,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "panel width unit"
+          "en": "Panel Width Unit"
         },
         "name": "panelWidthUnit",
         "annotates": "panelWidth",
@@ -17313,7 +17313,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "installed height unit"
+          "en": "Installed Height Unit"
         },
         "name": "installedHeightUnit",
         "annotates": "installedHeight",
@@ -17627,7 +17627,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -17652,7 +17652,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "tank capacity"
+          "en": "Tank Capacity"
         },
         "name": "tankCapacity",
         "schema": "double",
@@ -17666,7 +17666,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "tank capacity unit"
+          "en": "Tank Capacity Unit"
         },
         "name": "tankCapacityUnit",
         "annotates": "tankCapacity",
@@ -17680,7 +17680,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power output"
+          "en": "Power Output"
         },
         "name": "powerOutput",
         "schema": "double",
@@ -17694,7 +17694,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power output unit"
+          "en": "Power Output Unit"
         },
         "name": "powerOutputUnit",
         "annotates": "powerOutput",
@@ -17708,7 +17708,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -17722,7 +17722,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power input unit"
+          "en": "Power Input Unit"
         },
         "name": "powerInputUnit",
         "annotates": "powerInput",
@@ -17733,7 +17733,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "medium"
+          "en": "Medium"
         },
         "name": "medium",
         "schema": {
@@ -17761,7 +17761,7 @@
           "en": "Imperial measure for the recovery rate of a boiler (gallons per hour)."
         },
         "displayName": {
-          "en": "recovery @ 100F rise"
+          "en": "Recovery @ 100F Rise"
         },
         "name": "recovery100FRise",
         "schema": "integer",
@@ -17881,7 +17881,7 @@
         "@type": "Property",
         "name": "fuelType",
         "displayName": {
-          "en": "fuel type"
+          "en": "Fuel Type"
         },
         "description": {
           "en": "The fuel the boiler consumes to produce heat. Used by downstream systems to apply the appropriate utility rate (electricity vs natural gas) for heating-energy cost calculations."
@@ -17938,7 +17938,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -17950,7 +17950,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -17964,7 +17964,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -17978,7 +17978,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "height"
+          "en": "Height"
         },
         "name": "height",
         "schema": "double",
@@ -17992,7 +17992,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -18113,7 +18113,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -18125,7 +18125,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -18139,7 +18139,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -18153,7 +18153,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -18167,7 +18167,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -18181,7 +18181,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "design cooling capacity"
+          "en": "Design Cooling Capacity"
         },
         "name": "designCoolingCapacity",
         "schema": "double",
@@ -18195,7 +18195,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design cooling capacity unit"
+          "en": "Design Cooling Capacity Unit"
         },
         "name": "designCoolingCapacityUnit",
         "annotates": "designCoolingCapacity",
@@ -18206,7 +18206,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design KW/Ton"
+          "en": "Design KW/Ton"
         },
         "name": "designKWPerTon",
         "schema": "double",
@@ -18215,7 +18215,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design coefficient of performance (COP)"
+          "en": "Design Coefficient of Performance (COP)"
         },
         "name": "designCoefficientOfPerformance",
         "schema": "double",
@@ -18224,7 +18224,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design energy efficiency ratio (EER)"
+          "en": "Design Energy Efficiency Ratio (EER)"
         },
         "name": "designEnergyEfficiencyRatio",
         "schema": "double",
@@ -18233,7 +18233,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal KW/Ton"
+          "en": "Nominal KW/Ton"
         },
         "name": "nominalKWPerTon",
         "schema": "double",
@@ -18242,7 +18242,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal coefficient of performance (COP)"
+          "en": "Nominal Coefficient of Performance (COP)"
         },
         "name": "nominalCoefficientOfPerformance",
         "schema": "double",
@@ -18251,7 +18251,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal energy efficiency ratio (EER)"
+          "en": "Nominal Energy Efficiency Ratio (EER)"
         },
         "name": "nominalEnergyEfficiencyRatio",
         "schema": "double",
@@ -18335,7 +18335,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "outside diameter"
+          "en": "Outside Diameter"
         },
         "name": "outsideDiameter",
         "schema": "double",
@@ -18349,7 +18349,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "outside diameter unit"
+          "en": "Outside Diameter Unit"
         },
         "name": "outsideDiameterUnit",
         "annotates": "outsideDiameter",
@@ -18556,7 +18556,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -18565,7 +18565,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -18630,7 +18630,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "motor power"
+          "en": "Motor Power"
         },
         "name": "motorPower",
         "schema": "double",
@@ -18644,7 +18644,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "motor power unit"
+          "en": "Motor Power Unit"
         },
         "name": "motorPowerUnit",
         "annotates": "motorPower",
@@ -18658,7 +18658,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "rated load current"
+          "en": "Rated Load Current"
         },
         "description": {
           "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
@@ -18675,7 +18675,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "rated load current unit"
+          "en": "Rated Load Current Unit"
         },
         "name": "ratedLoadCurrentUnit",
         "annotates": "ratedLoadCurrent",
@@ -18689,7 +18689,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "maximum continuous current"
+          "en": "Maximum Continuous Current"
         },
         "description": {
           "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
@@ -18706,7 +18706,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum continuous current unit"
+          "en": "Maximum Continuous Current Unit"
         },
         "name": "maximumContinuousCurrentUnit",
         "annotates": "maximumContinuousCurrent",
@@ -18720,7 +18720,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "locked rotor current"
+          "en": "Locked Rotor Current"
         },
         "description": {
           "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
@@ -18737,7 +18737,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "locked rotor current unit"
+          "en": "Locked Rotor Current Unit"
         },
         "name": "lockedRotorCurrentUnit",
         "annotates": "lockedRotorCurrent",
@@ -18789,7 +18789,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -18811,7 +18811,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -18823,7 +18823,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -18837,7 +18837,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -18851,7 +18851,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -18865,7 +18865,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -18879,7 +18879,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible heating capacity"
+          "en": "Net Sensible Heating Capacity"
         },
         "name": "netSensibleHeatingCapacity",
         "schema": "double",
@@ -18893,7 +18893,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible heating capacity unit"
+          "en": "Net Sensible Heating Capacity Unit"
         },
         "name": "netSensibleHeatingCapacityUnit",
         "annotates": "netSensibleHeatingCapacity",
@@ -18907,7 +18907,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -18921,7 +18921,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -18932,7 +18932,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "energy efficiency ratio"
+          "en": "Energy Efficiency Ratio"
         },
         "name": "eer",
         "schema": "double",
@@ -19008,7 +19008,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -19020,7 +19020,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "diameter"
+          "en": "Diameter"
         },
         "name": "diameter",
         "schema": "double",
@@ -19034,7 +19034,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "diameter unit"
+          "en": "Diameter Unit"
         },
         "name": "diameterUnit",
         "annotates": "diameter",
@@ -19143,7 +19143,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -19157,7 +19157,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -19171,7 +19171,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "flow capacity"
+          "en": "Flow Capacity"
         },
         "name": "flowCapacity",
         "schema": "double",
@@ -19185,7 +19185,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -19700,7 +19700,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -19714,7 +19714,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -19780,7 +19780,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "weight capacity"
+          "en": "Weight Capacity"
         },
         "name": "weightCapacity",
         "schema": "double",
@@ -19794,7 +19794,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "weight capacity unit"
+          "en": "Weight Capacity Unit"
         },
         "name": "weightCapacityUnit",
         "annotates": "weightCapacity",
@@ -19808,7 +19808,7 @@
           "Velocity"
         ],
         "displayName": {
-          "en": "maximum travel speed"
+          "en": "Maximum Travel Speed"
         },
         "name": "maxTravelSpeed",
         "schema": "double",
@@ -19822,7 +19822,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum travel speed unit"
+          "en": "Maximum Travel Speed Unit"
         },
         "name": "maxTravelSpeedUnit",
         "annotates": "maxTravelSpeed",
@@ -19836,7 +19836,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "maximum travel distance"
+          "en": "Maximum Travel Distance"
         },
         "name": "maxTravelDistance",
         "schema": "double",
@@ -19850,7 +19850,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum travel distance unit"
+          "en": "Maximum Travel Distance Unit"
         },
         "name": "maxTravelDistanceUnit",
         "annotates": "maxTravelDistance",
@@ -19861,7 +19861,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "maximum landings"
+          "en": "Maximum Landings"
         },
         "name": "maxLandings",
         "schema": "integer",
@@ -19978,7 +19978,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -20003,7 +20003,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "maximum voltage rating"
+          "en": "Maximum Voltage Rating"
         },
         "name": "minVoltageRating",
         "schema": "double",
@@ -20016,7 +20016,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "minimum current rating"
+          "en": "Minimum Current Rating"
         },
         "name": "minCurrentRating",
         "schema": "double",
@@ -20029,7 +20029,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "maximum voltage rating"
+          "en": "Maximum Voltage Rating"
         },
         "name": "maxVoltageRating",
         "schema": "double",
@@ -20042,7 +20042,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "maximum current rating"
+          "en": "Maximum Current Rating"
         },
         "name": "maxCurrentRating",
         "schema": "double",
@@ -20133,7 +20133,7 @@
           "en": "The number of people who can fit in a Space."
         },
         "displayName": {
-          "en": "person capacity"
+          "en": "Person Capacity"
         },
         "name": "personCapacity",
         "schema": "integer",
@@ -20145,7 +20145,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "weight capacity"
+          "en": "Weight Capacity"
         },
         "name": "weightCapacity",
         "schema": "double",
@@ -20159,7 +20159,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "weight capacity unit"
+          "en": "Weight Capacity Unit"
         },
         "name": "weightCapacityUnit",
         "annotates": "weightCapacity",
@@ -20173,7 +20173,7 @@
           "Velocity"
         ],
         "displayName": {
-          "en": "maximum travel speed"
+          "en": "Maximum Travel Speed"
         },
         "name": "maxTravelSpeed",
         "schema": "double",
@@ -20187,7 +20187,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum travel speed unit"
+          "en": "Maximum Travel Speed Unit"
         },
         "name": "maxTravelSpeedUnit",
         "annotates": "maxTravelSpeed",
@@ -20201,7 +20201,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "maximum travel distance"
+          "en": "Maximum Travel Distance"
         },
         "name": "maxTravelDistance",
         "schema": "double",
@@ -20215,7 +20215,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum travel distance unit"
+          "en": "Maximum Travel Distance Unit"
         },
         "name": "maxTravelDistanceUnit",
         "annotates": "maxTravelDistance",
@@ -20226,7 +20226,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "maximum landings"
+          "en": "Maximum Landings"
         },
         "name": "maxLandings",
         "schema": "integer",
@@ -20302,7 +20302,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "weight capacity"
+          "en": "Weight Capacity"
         },
         "name": "weightCapacity",
         "schema": "double",
@@ -20316,7 +20316,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "weight capacity unit"
+          "en": "Weight Capacity Unit"
         },
         "name": "weightCapacityUnit",
         "annotates": "weightCapacity",
@@ -20330,7 +20330,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "motor power"
+          "en": "Motor Power"
         },
         "name": "motorPower",
         "schema": "double",
@@ -20344,7 +20344,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "motor power unit"
+          "en": "Motor Power Unit"
         },
         "name": "motorPowerUnit",
         "annotates": "motorPower",
@@ -20358,7 +20358,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "brake horsepower"
+          "en": "Brake Horsepower"
         },
         "name": "brakeHorsepower",
         "schema": "double",
@@ -20372,7 +20372,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "brake horsepower unit"
+          "en": "Brake Horsepower Unit"
         },
         "name": "brakeHorsepowerUnit",
         "annotates": "brakeHorsepower",
@@ -20466,7 +20466,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal enthalpy recovery ratio (ERR)"
+          "en": "Nominal Enthalpy Recovery Ratio (ERR)"
         },
         "name": "nominalEnthalpyRecoveryRatio",
         "schema": "double",
@@ -20475,7 +20475,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "energy recovery method"
+          "en": "Energy Recovery Method"
         },
         "name": "energyRecoveryMethod",
         "schema": {
@@ -20516,7 +20516,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "supply cooling air pressure drop"
+          "en": "Supply Cooling Air Pressure Drop"
         },
         "name": "supplyCoolingAirPressureDrop",
         "schema": "double",
@@ -20528,7 +20528,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply cooling minimum airflow rating"
+          "en": "Supply Cooling Minimum Airflow Rating"
         },
         "name": "supplyCoolingMinAirflowRating",
         "schema": "double",
@@ -20540,7 +20540,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply cooling maximum airflow rating"
+          "en": "Supply Cooling Maximum Airflow Rating"
         },
         "name": "supplyCoolingMaxAirflowRating",
         "schema": "double",
@@ -20552,7 +20552,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply cooling design airflow"
+          "en": "Supply Cooling Design Airflow"
         },
         "name": "supplyCoolingDesignAirflow",
         "schema": "double",
@@ -20565,7 +20565,7 @@
         ],
         "name": "supplyCoolingDesignEnteringAirDryBulbTemperature",
         "displayName": {
-          "en": "supply cooling design entering air dry bulb temperature"
+          "en": "Supply Cooling Design Entering Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20577,7 +20577,7 @@
         ],
         "name": "supplyCoolingDesignLeavingAirDryBulbTemperature",
         "displayName": {
-          "en": "supply cooling design leaving air dry bulb temperature"
+          "en": "Supply Cooling Design Leaving Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20589,7 +20589,7 @@
         ],
         "name": "supplyCoolingDesignEnteringAirWetBulbTemperature",
         "displayName": {
-          "en": "supply cooling design entering air wet bulb temperature"
+          "en": "Supply Cooling Design Entering Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20601,7 +20601,7 @@
         ],
         "name": "supplyCoolingDesignLeavingAirWetBulbTemperature",
         "displayName": {
-          "en": "supply cooling design leaving air wet bulb temperature"
+          "en": "Supply Cooling Design Leaving Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20612,7 +20612,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "supply heating air pressure drop"
+          "en": "Supply Heating Air Pressure Drop"
         },
         "name": "supplyHeatingAirPressureDrop",
         "schema": "double",
@@ -20624,7 +20624,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply heating minimum airflow rating"
+          "en": "Supply Heating Minimum Airflow Rating"
         },
         "name": "supplyHeatingMinAirflowRating",
         "schema": "double",
@@ -20636,7 +20636,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply heating maximum airflow rating"
+          "en": "Supply Heating Maximum Airflow Rating"
         },
         "name": "supplyHeatingMaxAirflowRating",
         "schema": "double",
@@ -20648,7 +20648,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "supply heating design airflow"
+          "en": "Supply Heating Design Airflow"
         },
         "name": "supplyHeatingDesignAirflow",
         "schema": "double",
@@ -20661,7 +20661,7 @@
         ],
         "name": "supplyHeatingDesignEnteringAirDryBulbTemperature",
         "displayName": {
-          "en": "supply heating design entering air dry bulb temperature"
+          "en": "Supply Heating Design Entering Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20673,7 +20673,7 @@
         ],
         "name": "supplyHeatingDesignLeavingAirDryBulbTemperature",
         "displayName": {
-          "en": "supply heating design leaving air dry bulb temperature"
+          "en": "Supply Heating Design Leaving Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20685,7 +20685,7 @@
         ],
         "name": "supplyHeatingDesignEnteringAirWetBulbTemperature",
         "displayName": {
-          "en": "supply heating design entering air wet bulb temperature"
+          "en": "Supply Heating Design Entering Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20697,7 +20697,7 @@
         ],
         "name": "supplyHeatingDesignLeavingAirWetBulbTemperature",
         "displayName": {
-          "en": "supply heating design leaving air wet bulb temperature"
+          "en": "Supply Heating Design Leaving Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20708,7 +20708,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "exhaust cooling air pressure drop"
+          "en": "Exhaust Cooling Air Pressure Drop"
         },
         "name": "exhaustCoolingAirPressureDrop",
         "schema": "double",
@@ -20720,7 +20720,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust cooling minimum airflow rating"
+          "en": "Exhaust Cooling Minimum Airflow Rating"
         },
         "name": "exhaustCoolingMinAirflowRating",
         "schema": "double",
@@ -20732,7 +20732,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust cooling maximum airflow rating"
+          "en": "Exhaust Cooling Maximum Airflow Rating"
         },
         "name": "exhaustCoolingMaxAirflowRating",
         "schema": "double",
@@ -20744,7 +20744,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust cooling design airflow"
+          "en": "Exhaust Cooling Design Airflow"
         },
         "name": "exhaustCoolingDesignAirflow",
         "schema": "double",
@@ -20757,7 +20757,7 @@
         ],
         "name": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
         "displayName": {
-          "en": "exhaust cooling design entering air dry bulb temperature"
+          "en": "Exhaust Cooling Design Entering Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20769,7 +20769,7 @@
         ],
         "name": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
         "displayName": {
-          "en": "exhaust cooling design leaving air dry bulb temperature"
+          "en": "Exhaust Cooling Design Leaving Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20781,7 +20781,7 @@
         ],
         "name": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
         "displayName": {
-          "en": "exhaust cooling design entering air wet bulb temperature"
+          "en": "Exhaust Cooling Design Entering Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20793,7 +20793,7 @@
         ],
         "name": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
         "displayName": {
-          "en": "exhaust cooling design leaving air wet bulb temperature"
+          "en": "Exhaust Cooling Design Leaving Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20804,7 +20804,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "exhaust heating air pressure drop"
+          "en": "Exhaust Heating Air Pressure Drop"
         },
         "name": "exhaustHeatingAirPressureDrop",
         "schema": "double",
@@ -20816,7 +20816,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust heating minimum airflow rating"
+          "en": "Exhaust Heating Minimum Airflow Rating"
         },
         "name": "exhaustHeatingMinAirflowRating",
         "schema": "double",
@@ -20828,7 +20828,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust heating maximum airflow rating"
+          "en": "Exhaust Heating Maximum Airflow Rating"
         },
         "name": "exhaustHeatingMaxAirflowRating",
         "schema": "double",
@@ -20840,7 +20840,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "exhaust heating design airflow"
+          "en": "Exhaust Heating Design Airflow"
         },
         "name": "exhaustHeatingDesignAirflow",
         "schema": "double",
@@ -20853,7 +20853,7 @@
         ],
         "name": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
         "displayName": {
-          "en": "exhaust heating design entering air dry bulb temperature"
+          "en": "Exhaust Heating Design Entering Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20865,7 +20865,7 @@
         ],
         "name": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
         "displayName": {
-          "en": "exhaust heating design leaving air dry bulb temperature"
+          "en": "Exhaust Heating Design Leaving Air Dry Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20877,7 +20877,7 @@
         ],
         "name": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
         "displayName": {
-          "en": "exhaust heating design entering air wet bulb temperature"
+          "en": "Exhaust Heating Design Entering Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20889,7 +20889,7 @@
         ],
         "name": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
         "displayName": {
-          "en": "exhaust heating design leaving air wet bulb temperature"
+          "en": "Exhaust Heating Design Leaving Air Wet Bulb Temperature"
         },
         "schema": "double",
         "unit": "degreeCelsius"
@@ -20901,7 +20901,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling air pressure drop unit"
+          "en": "Supply Cooling Air Pressure Drop Unit"
         },
         "name": "supplyCoolingAirPressureDropUnit",
         "annotates": "supplyCoolingAirPressureDrop",
@@ -20915,7 +20915,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling minimum airflow rating unit"
+          "en": "Supply Cooling Minimum Airflow Rating Unit"
         },
         "name": "supplyCoolingMinAirflowRatingUnit",
         "annotates": "supplyCoolingMinAirflowRating",
@@ -20929,7 +20929,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling maximum airflow rating unit"
+          "en": "Supply Cooling Maximum Airflow Rating Unit"
         },
         "name": "supplyCoolingMaxAirflowRatingUnit",
         "annotates": "supplyCoolingMaxAirflowRating",
@@ -20943,7 +20943,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling design airflow unit"
+          "en": "Supply Cooling Design Airflow Unit"
         },
         "name": "supplyCoolingDesignAirflowUnit",
         "annotates": "supplyCoolingDesignAirflow",
@@ -20957,7 +20957,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling design entering air dry bulb temperature unit"
+          "en": "Supply Cooling Design Entering Air Dry Bulb Temperature Unit"
         },
         "name": "supplyCoolingDesignEnteringAirDryBulbTemperatureUnit",
         "annotates": "supplyCoolingDesignEnteringAirDryBulbTemperature",
@@ -20971,7 +20971,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling design leaving air dry bulb temperature unit"
+          "en": "Supply Cooling Design Leaving Air Dry Bulb Temperature Unit"
         },
         "name": "supplyCoolingDesignLeavingAirDryBulbTemperatureUnit",
         "annotates": "supplyCoolingDesignLeavingAirDryBulbTemperature",
@@ -20985,7 +20985,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply coolign design entering air wet bulb temperature unit"
+          "en": "Supply Cooling Design Entering Air Wet Bulb Temperature Unit"
         },
         "name": "supplyCoolingDesignEnteringAirWetBulbTemperatureUnit",
         "annotates": "supplyCoolingDesignEnteringAirWetBulbTemperature",
@@ -20999,7 +20999,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply cooling design leaving air wet bulb temperature unit"
+          "en": "Supply Cooling Design Leaving Air Wet Bulb Temperature Unit"
         },
         "name": "supplyCoolingDesignLeavingAirWetBulbTemperatureUnit",
         "annotates": "supplyCoolingDesignLeavingAirWetBulbTemperature",
@@ -21013,7 +21013,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating air pressure drop unit"
+          "en": "Supply Heating Air Pressure Drop Unit"
         },
         "name": "supplyHeatingAirPressureDropUnit",
         "annotates": "supplyHeatingAirPressureDrop",
@@ -21027,7 +21027,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating minimum airflow rating unit"
+          "en": "Supply Heating Minimum Airflow Rating Unit"
         },
         "name": "supplyHeatingMinAirflowRatingUnit",
         "annotates": "supplyHeatingMinAirflowRating",
@@ -21041,7 +21041,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating maximum airflow rating unit"
+          "en": "Supply Heating Maximum Airflow Rating Unit"
         },
         "name": "supplyHeatingMaxAirflowRatingUnit",
         "annotates": "supplyHeatingMaxAirflowRating",
@@ -21055,7 +21055,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating design airflow unit"
+          "en": "Supply Heating Design Airflow Unit"
         },
         "name": "supplyHeatingDesignAirflowUnit",
         "annotates": "supplyHeatingDesignAirflow",
@@ -21069,7 +21069,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating design entering air dry bulb temperature unit"
+          "en": "Supply Heating Design Entering Air Dry Bulb Temperature Unit"
         },
         "name": "supplyHeatingDesignEnteringAirDryBulbTemperatureUnit",
         "annotates": "supplyHeatingDesignEnteringAirDryBulbTemperature",
@@ -21083,7 +21083,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating design leaving air dry bulb temperature unit"
+          "en": "Supply Heating Design Leaving Air Dry Bulb Temperature Unit"
         },
         "name": "supplyHeatingDesignLeavingAirDryBulbTemperatureUnit",
         "annotates": "supplyHeatingDesignLeavingAirDryBulbTemperature",
@@ -21097,7 +21097,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply coolign design entering air wet bulb temperature unit"
+          "en": "Supply Heating Design Entering Air Wet Bulb Temperature Unit"
         },
         "name": "supplyHeatingDesignEnteringAirWetBulbTemperatureUnit",
         "annotates": "supplyHeatingDesignEnteringAirWetBulbTemperature",
@@ -21111,7 +21111,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "supply heating design leaving air wet bulb temperature unit"
+          "en": "Supply Heating Design Leaving Air Wet Bulb Temperature Unit"
         },
         "name": "supplyHeatingDesignLeavingAirWetBulbTemperatureUnit",
         "annotates": "supplyHeatingDesignLeavingAirWetBulbTemperature",
@@ -21125,7 +21125,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling air pressure drop unit"
+          "en": "Exhaust Cooling Air Pressure Drop Unit"
         },
         "name": "exhaustCoolingAirPressureDropUnit",
         "annotates": "exhaustCoolingAirPressureDrop",
@@ -21139,7 +21139,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling minimum airflow rating unit"
+          "en": "Exhaust Cooling Minimum Airflow Rating Unit"
         },
         "name": "exhaustCoolingMinAirflowRatingUnit",
         "annotates": "exhaustCoolingMinAirflowRating",
@@ -21153,7 +21153,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling maximum airflow rating unit"
+          "en": "Exhaust Cooling Maximum Airflow Rating Unit"
         },
         "name": "exhaustCoolingMaxAirflowRatingUnit",
         "annotates": "exhaustCoolingMaxAirflowRating",
@@ -21167,7 +21167,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling design airflow unit"
+          "en": "Exhaust Cooling Design Airflow Unit"
         },
         "name": "exhaustCoolingDesignAirflowUnit",
         "annotates": "exhaustCoolingDesignAirflow",
@@ -21181,7 +21181,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling design entering air dry bulb temperature unit"
+          "en": "Exhaust Cooling Design Entering Air Dry Bulb Temperature Unit"
         },
         "name": "exhaustCoolingDesignEnteringAirDryBulbTemperatureUnit",
         "annotates": "exhaustCoolingDesignEnteringAirDryBulbTemperature",
@@ -21195,7 +21195,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling design leaving air dry bulb temperature unit"
+          "en": "Exhaust Cooling Design Leaving Air Dry Bulb Temperature Unit"
         },
         "name": "exhaustCoolingDesignLeavingAirDryBulbTemperatureUnit",
         "annotates": "exhaustCoolingDesignLeavingAirDryBulbTemperature",
@@ -21209,7 +21209,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust coolign design entering air wet bulb temperature unit"
+          "en": "Exhaust Cooling Design Entering Air Wet Bulb Temperature Unit"
         },
         "name": "exhaustCoolingDesignEnteringAirWetBulbTemperatureUnit",
         "annotates": "exhaustCoolingDesignEnteringAirWetBulbTemperature",
@@ -21223,7 +21223,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust cooling design leaving air wet bulb temperature unit"
+          "en": "Exhaust Cooling Design Leaving Air Wet Bulb Temperature Unit"
         },
         "name": "exhaustCoolingDesignLeavingAirWetBulbTemperatureUnit",
         "annotates": "exhaustCoolingDesignLeavingAirWetBulbTemperature",
@@ -21237,7 +21237,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating air pressure drop unit"
+          "en": "Exhaust Heating Air Pressure Drop Unit"
         },
         "name": "exhaustHeatingAirPressureDropUnit",
         "annotates": "exhaustHeatingAirPressureDrop",
@@ -21251,7 +21251,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating minimum airflow rating unit"
+          "en": "Exhaust Heating Minimum Airflow Rating Unit"
         },
         "name": "exhaustHeatingMinAirflowRatingUnit",
         "annotates": "exhaustHeatingMinAirflowRating",
@@ -21265,7 +21265,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating maximum airflow rating unit"
+          "en": "Exhaust Heating Maximum Airflow Rating Unit"
         },
         "name": "exhaustHeatingMaxAirflowRatingUnit",
         "annotates": "exhaustHeatingMaxAirflowRating",
@@ -21279,7 +21279,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating design airflow unit"
+          "en": "Exhaust Heating Design Airflow Unit"
         },
         "name": "exhaustHeatingDesignAirflowUnit",
         "annotates": "exhaustHeatingDesignAirflow",
@@ -21293,7 +21293,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating design entering air dry bulb temperature unit"
+          "en": "Exhaust Heating Design Entering Air Dry Bulb Temperature Unit"
         },
         "name": "exhaustHeatingDesignEnteringAirDryBulbTemperatureUnit",
         "annotates": "exhaustHeatingDesignEnteringAirDryBulbTemperature",
@@ -21307,7 +21307,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating design leaving air dry bulb temperature unit"
+          "en": "Exhaust Heating Design Leaving Air Dry Bulb Temperature Unit"
         },
         "name": "exhaustHeatingDesignLeavingAirDryBulbTemperatureUnit",
         "annotates": "exhaustHeatingDesignLeavingAirDryBulbTemperature",
@@ -21321,7 +21321,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust coolign design entering air wet bulb temperature unit"
+          "en": "Exhaust Heating Design Entering Air Wet Bulb Temperature Unit"
         },
         "name": "exhaustHeatingDesignEnteringAirWetBulbTemperatureUnit",
         "annotates": "exhaustHeatingDesignEnteringAirWetBulbTemperature",
@@ -21335,7 +21335,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "exhaust heating design leaving air wet bulb temperature unit"
+          "en": "Exhaust Heating Design Leaving Air Wet Bulb Temperature Unit"
         },
         "name": "exhaustHeatingDesignLeavingAirWetBulbTemperatureUnit",
         "annotates": "exhaustHeatingDesignLeavingAirWetBulbTemperature",
@@ -21449,7 +21449,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "step width"
+          "en": "Step Width"
         },
         "name": "stepWidth",
         "schema": "double",
@@ -21463,7 +21463,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "step width unit"
+          "en": "Step Width Unit"
         },
         "name": "stepWidthUnit",
         "annotates": "stepWidth",
@@ -21477,7 +21477,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "maximum vertical rise"
+          "en": "Maximum Vertical Rise"
         },
         "name": "maxVerticalRise",
         "schema": "double",
@@ -21491,7 +21491,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum vertical rise unit"
+          "en": "Maximum Vertical Rise Unit"
         },
         "name": "maxVerticalRiseUnit",
         "annotates": "maxVerticalRise",
@@ -21505,7 +21505,7 @@
           "Velocity"
         ],
         "displayName": {
-          "en": "maximum travel speed"
+          "en": "Maximum Travel Speed"
         },
         "name": "maxTravelSpeed",
         "schema": "double",
@@ -21519,7 +21519,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum travel speed unit"
+          "en": "Maximum Travel Speed Unit"
         },
         "name": "maxTravelSpeedUnit",
         "annotates": "maxTravelSpeed",
@@ -21533,7 +21533,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "inclination"
+          "en": "Inclination"
         },
         "name": "inclination",
         "schema": "double",
@@ -21743,7 +21743,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "nominal external static pressure"
+          "en": "Nominal External Static Pressure"
         },
         "name": "nominalExternalStaticPressure",
         "schema": "double",
@@ -21757,7 +21757,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal external static pressure unit"
+          "en": "Nominal External Static Pressure Unit"
         },
         "name": "nominalExternalStaticPressureUnit",
         "annotates": "nominalExternalStaticPressure",
@@ -21771,7 +21771,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "nominal airflow"
+          "en": "Nominal Airflow"
         },
         "name": "nominalAirflow",
         "schema": "double",
@@ -21785,7 +21785,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal airflow unit"
+          "en": "Nominal Airflow Unit"
         },
         "name": "nominalAirflowUnit",
         "annotates": "nominalAirflow",
@@ -21799,7 +21799,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "motor power"
+          "en": "Motor Power"
         },
         "name": "motorPower",
         "schema": "double",
@@ -21813,7 +21813,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "motor power unit"
+          "en": "Motor Power Unit"
         },
         "name": "motorPowerUnit",
         "annotates": "motorPower",
@@ -21827,7 +21827,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "maximum rotation speed"
+          "en": "Maximum Rotation Speed"
         },
         "name": "maxRotationSpeed",
         "schema": "double",
@@ -21840,7 +21840,7 @@
           "Frequency"
         ],
         "displayName": {
-          "en": "maximum VFD frequency"
+          "en": "Maximum VFD Frequency"
         },
         "name": "maxVFDFrequency",
         "schema": "double",
@@ -21854,7 +21854,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum VFD frequency unit"
+          "en": "Maximum VFD Frequency Unit"
         },
         "name": "maxVFDFrequencyUnit",
         "annotates": "maxVFDFrequency",
@@ -21868,7 +21868,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "brake horsepower"
+          "en": "Brake Horsepower"
         },
         "name": "brakeHorsepower",
         "schema": "double",
@@ -21882,7 +21882,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "brake horsepower unit"
+          "en": "Brake Horsepower Unit"
         },
         "name": "brakeHorsepowerUnit",
         "annotates": "brakeHorsepower",
@@ -21896,7 +21896,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "full load current"
+          "en": "Full Load Current"
         },
         "name": "fullLoadCurrent",
         "schema": "double",
@@ -21910,7 +21910,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "full load current unit"
+          "en": "Full Load Current Unit"
         },
         "name": "fullLoadCurrentUnit",
         "annotates": "fullLoadCurrent",
@@ -21924,7 +21924,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "minimum airflow rating"
+          "en": "Minimum Airflow Rating"
         },
         "name": "minAirflowRating",
         "schema": "double",
@@ -21938,7 +21938,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum airflow rating unit"
+          "en": "Minimum Airflow Rating Unit"
         },
         "name": "minAirflowRatingUnit",
         "annotates": "minAirflowRating",
@@ -21952,7 +21952,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "maximum airflow rating"
+          "en": "Maximum Airflow Rating"
         },
         "name": "maxAirflowRating",
         "schema": "double",
@@ -21966,7 +21966,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum airflow rating unit"
+          "en": "Maximum Airflow Rating Unit"
         },
         "name": "maxAirflowRatingUnit",
         "annotates": "maxAirflowRating",
@@ -22008,7 +22008,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "design rotation speed"
+          "en": "Design Rotation Speed"
         },
         "name": "designRotationSpeed",
         "schema": "double",
@@ -22021,7 +22021,7 @@
           "Frequency"
         ],
         "displayName": {
-          "en": "design VFD frequency"
+          "en": "Design VFD Frequency"
         },
         "name": "designVFDFrequency",
         "schema": "double",
@@ -22035,7 +22035,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design VFD frequency unit"
+          "en": "Design VFD Frequency Unit"
         },
         "name": "designVFDFrequencyUnit",
         "annotates": "designVFDFrequency",
@@ -22049,7 +22049,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "design external static pressure"
+          "en": "Design External Static Pressure"
         },
         "name": "designExternalStaticPressure",
         "schema": "double",
@@ -22063,7 +22063,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design external static pressure unit"
+          "en": "Design External Static Pressure Unit"
         },
         "name": "designExternalStaticPressureUnit",
         "annotates": "designExternalStaticPressure",
@@ -22074,7 +22074,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "drive type"
+          "en": "Drive Type"
         },
         "name": "driveType",
         "schema": {
@@ -22386,7 +22386,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "contents"
+          "en": "Contents"
         },
         "description": {
           "en": "The type of food that is stored within the food display case."
@@ -22555,7 +22555,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -22567,7 +22567,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "minimum temperature rating"
+          "en": "Minimum Temperature Rating"
         },
         "name": "minTemperatureRating",
         "schema": "double",
@@ -22581,7 +22581,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum temperature rating unit"
+          "en": "Minimum Temperature Rating Unit"
         },
         "name": "minTemperatureRatingUnit",
         "annotates": "minTemperatureRating",
@@ -22595,7 +22595,7 @@
           "MassFlowRate"
         ],
         "displayName": {
-          "en": "minimum mass flow rating"
+          "en": "Minimum Mass Flow Rating"
         },
         "name": "minMassFlowRating",
         "schema": "double",
@@ -22609,7 +22609,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum mass flow rating unit"
+          "en": "Minimum Mass Flow Rating Unit"
         },
         "name": "minMassFlowRatingUnit",
         "annotates": "minMassFlowRating",
@@ -22623,7 +22623,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "maximum temperature rating"
+          "en": "Maximum Temperature Rating"
         },
         "name": "maxTemperatureRating",
         "schema": "double",
@@ -22637,7 +22637,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum temperature rating unit"
+          "en": "Maximum Temperature Rating Unit"
         },
         "name": "maxTemperatureRatingUnit",
         "annotates": "maxTemperatureRating",
@@ -22651,7 +22651,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "maximum pressure rating"
+          "en": "Maximum Pressure Rating"
         },
         "name": "maxPressureRating",
         "schema": "double",
@@ -22665,7 +22665,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum pressure rating unit"
+          "en": "Maximum Pressure Rating Unit"
         },
         "name": "maxPressureRatingUnit",
         "annotates": "maxPressureRating",
@@ -22679,7 +22679,7 @@
           "MassFlowRate"
         ],
         "displayName": {
-          "en": "maximum mass flow rating"
+          "en": "Maximum Mass Flow Rating"
         },
         "name": "maxMassFlowRating",
         "schema": "double",
@@ -22693,7 +22693,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum mass flow rating unit"
+          "en": "Maximum Mass Flow Rating Unit"
         },
         "name": "maxMassFlowRatingUnit",
         "annotates": "maxMassFlowRating",
@@ -22837,7 +22837,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "primary medium"
+          "en": "Primary Medium"
         },
         "name": "primaryMedium",
         "schema": {
@@ -22871,7 +22871,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "secondary medium"
+          "en": "Secondary Medium"
         },
         "name": "secondaryMedium",
         "schema": {
@@ -22904,7 +22904,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "secondary maximum temperature"
+          "en": "Secondary Maximum Temperature"
         },
         "name": "secondaryMaxTemperature",
         "schema": "double",
@@ -22918,7 +22918,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary maximum temperature unit"
+          "en": "Secondary Maximum Temperature Unit"
         },
         "name": "secondaryMaxTemperatureUnit",
         "annotates": "secondaryMaxTemperature",
@@ -22932,7 +22932,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "secondary maximum pressure"
+          "en": "Secondary Maximum Pressure"
         },
         "name": "secondaryMaxPressure",
         "schema": "double",
@@ -22946,7 +22946,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary maximum pressure unit"
+          "en": "Secondary Maximum Pressure Unit"
         },
         "name": "secondaryMaxPressureUnit",
         "annotates": "secondaryMaxPressure",
@@ -22960,7 +22960,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "secondary flow capacity"
+          "en": "Secondary Flow Capacity"
         },
         "name": "secondaryFlowCapacity",
         "schema": "double",
@@ -22974,7 +22974,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary flow capacity unit"
+          "en": "Secondary Flow Capacity Unit"
         },
         "name": "secondaryFlowCapacityUnit",
         "annotates": "secondaryFlowCapacity",
@@ -22988,7 +22988,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "primary maximum temperature"
+          "en": "Primary Maximum Temperature"
         },
         "name": "primaryMaxTemperature",
         "schema": "double",
@@ -23002,7 +23002,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary maximum temperature unit"
+          "en": "Primary Maximum Temperature Unit"
         },
         "name": "primaryMaxTemperatureUnit",
         "annotates": "primaryMaxTemperature",
@@ -23016,7 +23016,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "primary maximum pressure"
+          "en": "Primary Maximum Pressure"
         },
         "name": "primaryMaxPressure",
         "schema": "double",
@@ -23030,7 +23030,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary maximum pressure unit"
+          "en": "Primary Maximum Pressure Unit"
         },
         "name": "primaryMaxPressureUnit",
         "annotates": "primaryMaxPressure",
@@ -23044,7 +23044,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "primary flow capacity"
+          "en": "Primary Flow Capacity"
         },
         "name": "primaryFlowCapacity",
         "schema": "double",
@@ -23058,7 +23058,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary flow capacity unit"
+          "en": "Primary Flow Capacity Unit"
         },
         "name": "primaryFlowCapacityUnit",
         "annotates": "primaryFlowCapacity",
@@ -23375,7 +23375,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -23400,7 +23400,7 @@
           "en": "Watts/length unit"
         },
         "displayName": {
-          "en": "power density"
+          "en": "Power Density"
         },
         "name": "powerDensity",
         "schema": "double",
@@ -23490,7 +23490,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "service"
+          "en": "Service"
         },
         "name": "service",
         "schema": {
@@ -23516,7 +23516,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "leakage class"
+          "en": "Leakage Class"
         },
         "name": "leakageClass",
         "schema": {
@@ -23542,7 +23542,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "blade type"
+          "en": "Blade Type"
         },
         "name": "bladeType",
         "schema": {
@@ -23589,7 +23589,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -23614,7 +23614,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -23628,7 +23628,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -23642,7 +23642,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "height"
+          "en": "Height"
         },
         "name": "height",
         "schema": "double",
@@ -23656,7 +23656,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -23724,7 +23724,7 @@
           "Power"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -23738,7 +23738,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power input unit"
+          "en": "Power Input Unit"
         },
         "name": "powerInputUnit",
         "annotates": "powerInput",
@@ -23768,7 +23768,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -23782,7 +23782,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -23796,7 +23796,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "height"
+          "en": "Height"
         },
         "name": "height",
         "schema": "double",
@@ -23810,7 +23810,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "height unit"
+          "en": "Height Unit"
         },
         "name": "heightUnit",
         "annotates": "height",
@@ -23840,7 +23840,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "diameter"
+          "en": "Diameter"
         },
         "name": "diameter",
         "schema": "double",
@@ -23854,7 +23854,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "diameter unit"
+          "en": "Diameter Unit"
         },
         "name": "diameterUnit",
         "annotates": "diameter",
@@ -23900,7 +23900,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "integer",
@@ -23914,7 +23914,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -23942,7 +23942,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "pipe diameter unit"
+          "en": "Pipe Diameter Unit"
         },
         "name": "pipeDiameterUnit",
         "annotates": "pipeDiameter",
@@ -23974,7 +23974,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "integer",
@@ -23988,7 +23988,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -24016,7 +24016,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "pipe diameter unit"
+          "en": "Pipe Diameter Unit"
         },
         "name": "pipeDiameterUnit",
         "annotates": "pipeDiameter",
@@ -24153,7 +24153,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -24179,7 +24179,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "mounting"
+          "en": "Mounting"
         },
         "name": "mounting",
         "schema": {
@@ -24201,7 +24201,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "height (rack units)"
+          "en": "Height (Rack Units)"
         },
         "name": "heightRUs",
         "schema": "integer",
@@ -24369,7 +24369,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -24379,7 +24379,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "mounting"
+          "en": "Mounting"
         },
         "name": "mounting",
         "schema": {
@@ -24716,7 +24716,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "step width"
+          "en": "Step Width"
         },
         "name": "stepWidth",
         "schema": "double",
@@ -24730,7 +24730,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "step width unit"
+          "en": "Step Width Unit"
         },
         "name": "stepWidthUnit",
         "annotates": "stepWidth",
@@ -24744,7 +24744,7 @@
           "Velocity"
         ],
         "displayName": {
-          "en": "maximum travel speed"
+          "en": "Maximum Travel Speed"
         },
         "name": "maxTravelSpeed",
         "schema": "double",
@@ -24758,7 +24758,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum travel speed unit"
+          "en": "Maximum Travel Speed Unit"
         },
         "name": "maxTravelSpeedUnit",
         "annotates": "maxTravelSpeed",
@@ -24772,7 +24772,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "maximum length"
+          "en": "Maximum Length"
         },
         "name": "maxLength",
         "schema": "double",
@@ -24786,7 +24786,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum length unit"
+          "en": "Maximum Length Unit"
         },
         "name": "maxLengthUnit",
         "annotates": "maxLength",
@@ -24800,7 +24800,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "inclination"
+          "en": "Inclination"
         },
         "name": "inclination",
         "schema": "double",
@@ -24930,7 +24930,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "name"
+          "en": "Name"
         },
         "name": "name",
         "schema": "string",
@@ -25380,7 +25380,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "material"
+          "en": "Material"
         },
         "name": "material",
         "schema": "string",
@@ -25392,7 +25392,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "diameter"
+          "en": "Diameter"
         },
         "name": "diameter",
         "schema": "double",
@@ -25406,7 +25406,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "diameter unit"
+          "en": "Diameter Unit"
         },
         "name": "diameterUnit",
         "annotates": "diameter",
@@ -25647,7 +25647,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -25669,7 +25669,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "pumping media"
+          "en": "Pumping Media"
         },
         "name": "pumpingMedia",
         "schema": "string",
@@ -25681,7 +25681,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "motor power"
+          "en": "Motor Power"
         },
         "name": "motorPower",
         "schema": "double",
@@ -25695,7 +25695,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "motor power unit"
+          "en": "Motor Power Unit"
         },
         "name": "motorPowerUnit",
         "annotates": "motorPower",
@@ -25709,7 +25709,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "brake horsepower"
+          "en": "Brake Horsepower"
         },
         "name": "brakeHorsepower",
         "schema": "double",
@@ -25723,7 +25723,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "brake horsepower unit"
+          "en": "Brake Horsepower Unit"
         },
         "name": "brakeHorsepowerUnit",
         "annotates": "brakeHorsepower",
@@ -25737,7 +25737,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "pressure capacity"
+          "en": "Pressure Capacity"
         },
         "name": "pressureCapacity",
         "schema": "double",
@@ -25751,7 +25751,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "pressure capacity unit"
+          "en": "Pressure Capacity Unit"
         },
         "name": "pressureCapacityUnit",
         "annotates": "pressureCapacity",
@@ -25765,7 +25765,7 @@
           "en": "rated head"
         },
         "displayName": {
-          "en": "head capacity"
+          "en": "Head Capacity"
         },
         "name": "headCapacity",
         "schema": "double"
@@ -25776,7 +25776,7 @@
           "ValueAnnotation"
         ],
         "displayName": {
-          "en": "head capacity unit"
+          "en": "Head Capacity Unit"
         },
         "name": "headCapacityUnit",
         "annotates": "headCapacity",
@@ -25805,7 +25805,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "flow capacity"
+          "en": "Flow Capacity"
         },
         "name": "flowCapacity",
         "schema": "double",
@@ -25819,7 +25819,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -25833,7 +25833,7 @@
           "Frequency"
         ],
         "displayName": {
-          "en": "maximum VFD frequency"
+          "en": "Maximum VFD Frequency"
         },
         "name": "maxVFDFrequency",
         "schema": "double",
@@ -25847,7 +25847,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum VFD frequency unit"
+          "en": "Maximum VFD Frequency Unit"
         },
         "name": "maxVFDFrequencyUnit",
         "annotates": "maxVFDFrequency",
@@ -25861,7 +25861,7 @@
           "Frequency"
         ],
         "displayName": {
-          "en": "design VFD frequency"
+          "en": "Design VFD Frequency"
         },
         "name": "designVFDFrequency",
         "schema": "double",
@@ -25875,7 +25875,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design VFD frequency unit"
+          "en": "Design VFD Frequency Unit"
         },
         "name": "designVFDFrequencyUnit",
         "annotates": "designVFDFrequency",
@@ -26022,7 +26022,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -26042,7 +26042,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -26056,7 +26056,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -26070,7 +26070,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -26084,7 +26084,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -26119,7 +26119,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "secondary maximum temperature"
+          "en": "Secondary Maximum Temperature"
         },
         "name": "secondaryMaxTemperature",
         "schema": "double",
@@ -26133,7 +26133,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary maximum temperature unit"
+          "en": "Secondary Maximum Temperature Unit"
         },
         "name": "secondaryMaxTemperatureUnit",
         "annotates": "secondaryMaxTemperature",
@@ -26147,7 +26147,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "secondary maximum pressure"
+          "en": "Secondary Maximum Pressure"
         },
         "name": "secondaryMaxPressure",
         "schema": "double",
@@ -26161,7 +26161,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary maximum pressure unit"
+          "en": "Secondary Maximum Pressure Unit"
         },
         "name": "secondaryMaxPressureUnit",
         "annotates": "secondaryMaxPressure",
@@ -26175,7 +26175,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "secondary flow capacity"
+          "en": "Secondary Flow Capacity"
         },
         "name": "secondaryFlowCapacity",
         "schema": "double",
@@ -26189,7 +26189,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary flow capacity unit"
+          "en": "Secondary Flow Capacity Unit"
         },
         "name": "secondaryFlowCapacityUnit",
         "annotates": "secondaryFlowCapacity",
@@ -26203,7 +26203,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "primary maximum temperature"
+          "en": "Primary Maximum Temperature"
         },
         "name": "primaryMaxTemperature",
         "schema": "double",
@@ -26217,7 +26217,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary maximum temperature unit"
+          "en": "Primary Maximum Temperature Unit"
         },
         "name": "primaryMaxTemperatureUnit",
         "annotates": "primaryMaxTemperature",
@@ -26231,7 +26231,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "primary maximum pressure"
+          "en": "Primary Maximum Pressure"
         },
         "name": "primaryMaxPressure",
         "schema": "double",
@@ -26245,7 +26245,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary maximum pressure unit"
+          "en": "Primary Maximum Pressure Unit"
         },
         "name": "primaryMaxPressureUnit",
         "annotates": "primaryMaxPressure",
@@ -26259,7 +26259,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "primary flow capacity"
+          "en": "Primary Flow Capacity"
         },
         "name": "primaryFlowCapacity",
         "schema": "double",
@@ -26273,7 +26273,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary flow capacity unit"
+          "en": "Primary Flow Capacity Unit"
         },
         "name": "primaryFlowCapacityUnit",
         "annotates": "primaryFlowCapacity",
@@ -26453,7 +26453,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "Wi-Fi signal strength"
+          "en": "Wi-Fi Signal Strength"
         },
         "name": "wifiSignalStrength",
         "schema": "double",
@@ -26462,7 +26462,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "battery percentage"
+          "en": "Battery Percentage"
         },
         "name": "batteryPercentage",
         "schema": "double",
@@ -26816,7 +26816,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "comment"
+          "en": "Comment"
         },
         "name": "comment",
         "schema": "string",
@@ -26825,7 +26825,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "service"
+          "en": "Service"
         },
         "name": "service",
         "schema": {
@@ -26905,7 +26905,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "tank capacity"
+          "en": "Tank Capacity"
         },
         "name": "tankCapacity",
         "schema": "double",
@@ -26919,7 +26919,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "tank capacity unit"
+          "en": "Tank Capacity Unit"
         },
         "name": "tankCapacityUnit",
         "annotates": "tankCapacity",
@@ -26933,7 +26933,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "system pressure"
+          "en": "System Pressure"
         },
         "name": "systemPressure",
         "schema": "double",
@@ -26947,7 +26947,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "system pressure unit"
+          "en": "System Pressure Unit"
         },
         "name": "systemPressureUnit",
         "annotates": "systemPressure",
@@ -27042,7 +27042,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "minimum airflow rating"
+          "en": "Minimum Airflow Rating"
         },
         "name": "minAirflowRating",
         "schema": "double",
@@ -27056,7 +27056,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum airflow rating unit"
+          "en": "Minimum Airflow Rating Unit"
         },
         "name": "minAirflowRatingUnit",
         "annotates": "minAirflowRating",
@@ -27070,7 +27070,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "maximum airflow rating"
+          "en": "Maximum Airflow Rating"
         },
         "name": "maxAirflowRating",
         "schema": "double",
@@ -27084,7 +27084,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum airflow rating unit"
+          "en": "Maximum Airflow Rating Unit"
         },
         "name": "maxAirflowRatingUnit",
         "annotates": "maxAirflowRating",
@@ -27098,7 +27098,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -27112,7 +27112,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -27126,7 +27126,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "design cooling zone air temperature"
+          "en": "Design Cooling Zone Air Temperature"
         },
         "name": "designCoolingZoneAirTemperature",
         "schema": "double",
@@ -27140,7 +27140,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design cooling zone air temperature unit"
+          "en": "Design Cooling Zone Air Temperature Unit"
         },
         "name": "designCoolingZoneAirTemperatureUnit",
         "annotates": "designCoolingZoneAirTemperature",
@@ -27154,7 +27154,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "design heating zone air temperature"
+          "en": "Design Heating Zone Air Temperature"
         },
         "name": "designHeatingZoneAirTemperature",
         "schema": "double",
@@ -27168,7 +27168,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design heating zone air temperature unit"
+          "en": "Design Heating Zone Air Temperature Unit"
         },
         "name": "designHeatingZoneAirTemperatureUnit",
         "annotates": "designHeatingZoneAirTemperature",
@@ -27325,7 +27325,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "excluded from comfort analytics"
+          "en": "Excluded from Comfort Analytics"
         },
         "name": "excludedFromComfortAnalytics",
         "description": {
@@ -27355,7 +27355,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -27367,7 +27367,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "minimum volume flow rating"
+          "en": "Minimum Volume Flow Rating"
         },
         "name": "minVolumeFlowRating",
         "schema": "double",
@@ -27381,7 +27381,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum volume flow rating unit"
+          "en": "Minimum Volume Flow Rating Unit"
         },
         "name": "minVolumeFlowRatingUnit",
         "annotates": "minVolumeFlowRating",
@@ -27395,7 +27395,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "minimum temperature rating"
+          "en": "Minimum Temperature Rating"
         },
         "name": "minTemperatureRating",
         "schema": "double",
@@ -27409,7 +27409,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum temperature rating unit"
+          "en": "Minimum Temperature Rating Unit"
         },
         "name": "minTemperatureRatingUnit",
         "annotates": "minTemperatureRating",
@@ -27423,7 +27423,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "maximum volume flow rating"
+          "en": "Maximum Volume Flow Rating"
         },
         "name": "maxVolumeFlowRating",
         "schema": "double",
@@ -27437,7 +27437,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum volume flow rating unit"
+          "en": "Maximum Volume Flow Rating Unit"
         },
         "name": "maxVolumeFlowRatingUnit",
         "annotates": "maxVolumeFlowRating",
@@ -27451,7 +27451,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "maximum temperature rating"
+          "en": "Maximum Temperature Rating"
         },
         "name": "maxTemperatureRating",
         "schema": "double",
@@ -27465,7 +27465,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum temperature rating unit"
+          "en": "Maximum Temperature Rating Unit"
         },
         "name": "maxTemperatureRatingUnit",
         "annotates": "maxTemperatureRating",
@@ -27479,7 +27479,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "maximum pressure rating"
+          "en": "Maximum Pressure Rating"
         },
         "name": "maxPressureRating",
         "schema": "double",
@@ -27493,7 +27493,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum pressure rating unit"
+          "en": "Maximum Pressure Rating Unit"
         },
         "name": "maxPressureRatingUnit",
         "annotates": "maxPressureRating",
@@ -27737,7 +27737,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -27762,7 +27762,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -27776,7 +27776,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -27887,7 +27887,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "pressure capacity"
+          "en": "Pressure Capacity"
         },
         "name": "pressureCapacity",
         "schema": "double",
@@ -27901,7 +27901,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "pressure capacity unit"
+          "en": "Pressure Capacity Unit"
         },
         "name": "pressureCapacityUnit",
         "annotates": "pressureCapacity",
@@ -27915,7 +27915,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "flow capacity"
+          "en": "Flow Capacity"
         },
         "name": "flowCapacity",
         "schema": "double",
@@ -27929,7 +27929,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -28054,7 +28054,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "maximum airflow rating"
+          "en": "Maximum Airflow Rating"
         },
         "name": "maxAirflowRating",
         "schema": "double",
@@ -28068,7 +28068,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum airflow rating unit"
+          "en": "Maximum Airflow Rating Unit"
         },
         "name": "maxAirflowRatingUnit",
         "annotates": "maxAirflowRating",
@@ -28294,7 +28294,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "first hour delivery unit"
+          "en": "First Hour Delivery Unit"
         },
         "name": "firstHourDeliveryUnit",
         "annotates": "firstHourDelivery",
@@ -28336,7 +28336,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -28348,7 +28348,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "minimum volume flow rating"
+          "en": "Minimum Volume Flow Rating"
         },
         "name": "minVolumeFlowRating",
         "schema": "double",
@@ -28362,7 +28362,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum volume flow rating unit"
+          "en": "Minimum Volume Flow Rating Unit"
         },
         "name": "minVolumeFlowRatingUnit",
         "annotates": "minVolumeFlowRating",
@@ -28376,7 +28376,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "minimum temperature rating"
+          "en": "Minimum Temperature Rating"
         },
         "name": "minTemperatureRating",
         "schema": "double",
@@ -28390,7 +28390,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "minimum temperature rating unit"
+          "en": "Minimum Temperature Rating Unit"
         },
         "name": "minTemperatureRatingUnit",
         "annotates": "minTemperatureRating",
@@ -28404,7 +28404,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "maximum volume flow rating"
+          "en": "Maximum Volume Flow Rating"
         },
         "name": "maxVolumeFlowRating",
         "schema": "double",
@@ -28418,7 +28418,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum volume flow rating unit"
+          "en": "Maximum Volume Flow Rating Unit"
         },
         "name": "maxVolumeFlowRatingUnit",
         "annotates": "maxVolumeFlowRating",
@@ -28432,7 +28432,7 @@
           "Temperature"
         ],
         "displayName": {
-          "en": "maximum temperature rating"
+          "en": "Maximum Temperature Rating"
         },
         "name": "maxTemperatureRating",
         "schema": "double",
@@ -28446,7 +28446,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum temperature rating unit"
+          "en": "Maximum Temperature Rating Unit"
         },
         "name": "maxTemperatureRatingUnit",
         "annotates": "maxTemperatureRating",
@@ -28460,7 +28460,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "maximum pressure rating"
+          "en": "Maximum Pressure Rating"
         },
         "name": "maxPressureRating",
         "schema": "double",
@@ -28474,7 +28474,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum pressure rating unit"
+          "en": "Maximum Pressure Rating Unit"
         },
         "name": "maxPressureRatingUnit",
         "annotates": "maxPressureRating",
@@ -28773,7 +28773,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "double",
@@ -28787,7 +28787,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -28801,7 +28801,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "motor power"
+          "en": "Motor Power"
         },
         "name": "motorPower",
         "schema": "double",
@@ -28815,7 +28815,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "motor power unit"
+          "en": "Motor Power Unit"
         },
         "name": "motorPowerUnit",
         "annotates": "motorPower",
@@ -28829,7 +28829,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "brake horsepower"
+          "en": "Brake Horsepower"
         },
         "name": "brakeHorsepower",
         "schema": "double",
@@ -28843,7 +28843,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "brake horsepower unit"
+          "en": "Brake Horsepower Unit"
         },
         "name": "brakeHorsepowerUnit",
         "annotates": "brakeHorsepower",
@@ -28857,7 +28857,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "free air delivery"
+          "en": "Free Air Delivery"
         },
         "name": "freeAirDelivery",
         "schema": "double",
@@ -28871,7 +28871,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "free air delivery unit"
+          "en": "Free Air Delivery Unit"
         },
         "name": "freeAirDeliveryUnit",
         "annotates": "freeAirDelivery",
@@ -28917,7 +28917,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "capacity unit"
+          "en": "Capacity Unit"
         },
         "name": "capacityUnit",
         "annotates": "capacity",
@@ -28931,7 +28931,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "double",
@@ -28945,7 +28945,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -28994,7 +28994,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow rate unit"
+          "en": "Flow Rate Unit"
         },
         "name": "flowRateUnit",
         "annotates": "flowRate",
@@ -29008,7 +29008,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "double",
@@ -29022,7 +29022,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -29208,7 +29208,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "total fan power"
+          "en": "Total Fan Power"
         },
         "name": "totalFanPower",
         "schema": "double",
@@ -29222,7 +29222,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "total fan power unit"
+          "en": "Total Fan Power Unit"
         },
         "name": "totalFanPowerUnit",
         "annotates": "totalFanPower",
@@ -29236,7 +29236,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "total fan brake horsepower"
+          "en": "Total Fan Brake Horsepower"
         },
         "name": "totalFanbrakeHorsepower",
         "schema": "double",
@@ -29250,7 +29250,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "total fan brake horsepower unit"
+          "en": "Total Fan Brake Horsepower Unit"
         },
         "name": "totalFanbrakeHorsepowerUnit",
         "annotates": "totalFanbrakeHorsepower",
@@ -30441,7 +30441,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "short circuit rating"
+          "en": "Short Circuit Rating"
         },
         "name": "shortCircuitRating",
         "schema": "string",
@@ -30453,7 +30453,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -30463,7 +30463,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "input phases"
+          "en": "Input Phases"
         },
         "name": "inputPhases",
         "schema": {
@@ -30672,7 +30672,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -30686,7 +30686,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -30700,7 +30700,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -30714,7 +30714,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -30733,7 +30733,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "piping configuration"
+          "en": "Piping Configuration"
         },
         "name": "pipingConfiguration",
         "description": {
@@ -31210,7 +31210,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -31232,7 +31232,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -31244,7 +31244,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -31258,7 +31258,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -31272,7 +31272,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -31286,7 +31286,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -32256,7 +32256,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "chilling capacity unit"
+          "en": "Chilling Capacity Unit"
         },
         "name": "chillingCapacityUnit",
         "annotates": "chillingCapacity",
@@ -32595,7 +32595,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "short circuit rating"
+          "en": "Short Circuit Rating"
         },
         "name": "shortCircuitRating",
         "schema": "string",
@@ -32604,7 +32604,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "output phases"
+          "en": "Output Phases"
         },
         "name": "outputPhases",
         "schema": {
@@ -32629,7 +32629,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -32639,7 +32639,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "max number of poles"
+          "en": "Max Number of Poles"
         },
         "name": "maxNumberOfPoles",
         "schema": "integer",
@@ -32795,7 +32795,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -32838,7 +32838,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -33110,7 +33110,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "number of ports"
+          "en": "Number of Ports"
         },
         "name": "numberOfPorts",
         "schema": "integer",
@@ -33119,7 +33119,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "height (rack units)"
+          "en": "Height (Rack Units)"
         },
         "name": "heightRUs",
         "schema": "integer",
@@ -33143,7 +33143,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "number of ports"
+          "en": "Number of Ports"
         },
         "name": "numberOfPorts",
         "schema": "integer",
@@ -33152,7 +33152,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "height (rack units)"
+          "en": "Height (Rack Units)"
         },
         "name": "heightRUs",
         "schema": "integer",
@@ -33179,7 +33179,7 @@
           "en": "10/100/1000MB, 10GB"
         },
         "displayName": {
-          "en": "port speed"
+          "en": "Port Speed"
         },
         "name": "portSpeed",
         "schema": "string",
@@ -33191,7 +33191,7 @@
           "en": "1,2,3,4"
         },
         "displayName": {
-          "en": "PoE type"
+          "en": "PoE Type"
         },
         "name": "poeType",
         "schema": "integer",
@@ -33342,7 +33342,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -33364,7 +33364,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -33376,7 +33376,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -33390,7 +33390,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -33404,7 +33404,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -33418,7 +33418,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -33429,7 +33429,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "mounting"
+          "en": "Mounting"
         },
         "name": "mounting",
         "schema": {
@@ -33455,7 +33455,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "filter type"
+          "en": "Filter Type"
         },
         "name": "filterType",
         "schema": "string",
@@ -33480,7 +33480,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "piping configuration"
+          "en": "Piping Configuration"
         },
         "name": "pipingConfiguration",
         "description": {
@@ -33548,7 +33548,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -33573,7 +33573,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "maximum flow rate"
+          "en": "Maximum Flow Rate"
         },
         "name": "maxFlowRate",
         "schema": "double",
@@ -33587,7 +33587,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "maximum flow rate unit"
+          "en": "Maximum Flow Rate Unit"
         },
         "name": "maxFlowRateUnit",
         "annotates": "maxFlowRate",
@@ -33598,7 +33598,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "number of handles"
+          "en": "Number of Handles"
         },
         "name": "numberOfHandles",
         "schema": "integer",
@@ -33831,7 +33831,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "fire rating"
+          "en": "Fire Rating"
         },
         "name": "fireRating",
         "schema": "double",
@@ -34078,7 +34078,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "water per flush"
+          "en": "Water per Flush"
         },
         "name": "waterPerFlush",
         "schema": "double",
@@ -34092,7 +34092,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "water per flush unit"
+          "en": "Water per Flush Unit"
         },
         "name": "waterPerFlushUnit",
         "annotates": "waterPerFlush",
@@ -34103,7 +34103,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -34125,7 +34125,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "technology"
+          "en": "Technology"
         },
         "name": "technology",
         "schema": {
@@ -34175,7 +34175,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "contents"
+          "en": "Contents"
         },
         "description": {
           "en": "The type of food that is stored within the food display case."
@@ -34659,7 +34659,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "output voltage"
+          "en": "Output Voltage"
         },
         "name": "outputVoltage",
         "schema": "double",
@@ -34669,7 +34669,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "output phases"
+          "en": "Output Phases"
         },
         "name": "outputPhases",
         "schema": {
@@ -34691,7 +34691,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "mode of operation"
+          "en": "Mode of Operation"
         },
         "name": "modeOfOperation",
         "schema": "string",
@@ -34700,7 +34700,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "fuel type"
+          "en": "Fuel Type"
         },
         "name": "fuelType",
         "schema": "string",
@@ -34715,7 +34715,7 @@
           "en": "Hz"
         },
         "displayName": {
-          "en": "frequency"
+          "en": "Frequency"
         },
         "name": "frequency",
         "schema": "integer",
@@ -34728,7 +34728,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "day tank capacity"
+          "en": "Day Tank Capacity"
         },
         "name": "dayTankCapacity",
         "schema": "double",
@@ -34742,7 +34742,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "day tank capacity unit"
+          "en": "Day Tank Capacity Unit"
         },
         "name": "dayTankCapacityUnit",
         "annotates": "dayTankCapacity",
@@ -34756,7 +34756,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "bulk storage capacity"
+          "en": "Bulk Storage Capacity"
         },
         "name": "bulkStorageCapacity",
         "schema": "double",
@@ -34770,7 +34770,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "bulk storage capacity unit"
+          "en": "Bulk Storage Capacity Unit"
         },
         "name": "bulkStorageCapacityUnit",
         "annotates": "bulkStorageCapacity",
@@ -34784,7 +34784,7 @@
           "ApparentPower"
         ],
         "displayName": {
-          "en": "standby power rating (KVA)"
+          "en": "Standby Power Rating (KVA)"
         },
         "name": "standbyPowerKVA",
         "schema": "double",
@@ -34797,7 +34797,7 @@
           "Power"
         ],
         "displayName": {
-          "en": "standby power rating"
+          "en": "Standby Power Rating"
         },
         "name": "standbyPower",
         "schema": "double",
@@ -34810,7 +34810,7 @@
           "ApparentPower"
         ],
         "displayName": {
-          "en": "prime power rating (KVA)"
+          "en": "Prime Power Rating (KVA)"
         },
         "name": "primePowerKVA",
         "schema": "double",
@@ -34823,7 +34823,7 @@
           "Power"
         ],
         "displayName": {
-          "en": "prime power rating"
+          "en": "Prime Power Rating"
         },
         "name": "primePower",
         "schema": "double",
@@ -34988,7 +34988,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -35021,7 +35021,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -35035,7 +35035,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -35049,7 +35049,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible heating capacity"
+          "en": "Net Sensible Heating Capacity"
         },
         "name": "netSensibleHeatingCapacity",
         "schema": "double",
@@ -35063,7 +35063,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible heating capacity unit"
+          "en": "Net Sensible Heating Capacity Unit"
         },
         "name": "netSensibleHeatingCapacityUnit",
         "annotates": "netSensibleHeatingCapacity",
@@ -35280,7 +35280,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -35294,7 +35294,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -35308,7 +35308,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible heating capacity"
+          "en": "Net Sensible Heating Capacity"
         },
         "name": "netSensibleHeatingCapacity",
         "schema": "double",
@@ -35322,7 +35322,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible heating capacity unit"
+          "en": "Net Sensible Heating Capacity Unit"
         },
         "name": "netSensibleHeatingCapacityUnit",
         "annotates": "netSensibleHeatingCapacity",
@@ -35336,7 +35336,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "design heating capacity"
+          "en": "Design Heating Capacity"
         },
         "name": "designHeatingCapacity",
         "schema": "double",
@@ -35350,7 +35350,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design heating capacity unit"
+          "en": "Design Heating Capacity Unit"
         },
         "name": "designHeatingCapacityUnit",
         "annotates": "designHeatingCapacity",
@@ -35361,7 +35361,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design heating coefficient of performance (COP)"
+          "en": "Design Heating Coefficient of Performance (COP)"
         },
         "name": "designHeatingCoefficientOfPerformance",
         "schema": "double",
@@ -35370,7 +35370,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal heating coefficient of performance (COP)"
+          "en": "Nominal Heating Coefficient of Performance (COP)"
         },
         "name": "nominalHeatingCoefficientOfPerformance",
         "schema": "double",
@@ -35420,7 +35420,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal heating capacity"
+          "en": "Nominal Heating Capacity"
         },
         "name": "nominalHeatingCapacity",
         "schema": "double",
@@ -35434,7 +35434,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal heating capacity unit"
+          "en": "Nominal Heating Capacity Unit"
         },
         "name": "nominalHeatingCapacityUnit",
         "annotates": "nominalHeatingCapacity",
@@ -35448,7 +35448,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible heating capacity"
+          "en": "Net Sensible Heating Capacity"
         },
         "name": "netSensibleHeatingCapacity",
         "schema": "double",
@@ -35462,7 +35462,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible heating capacity unit"
+          "en": "Net Sensible Heating Capacity Unit"
         },
         "name": "netSensibleHeatingCapacityUnit",
         "annotates": "netSensibleHeatingCapacity",
@@ -35476,7 +35476,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "design heating capacity"
+          "en": "Design Heating Capacity"
         },
         "name": "designHeatingCapacity",
         "schema": "double",
@@ -35490,7 +35490,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design heating capacity unit"
+          "en": "Design Heating Capacity Unit"
         },
         "name": "designHeatingCapacityUnit",
         "annotates": "designHeatingCapacity",
@@ -35501,7 +35501,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design heating coefficient of performance (COP)"
+          "en": "Design Heating Coefficient of Performance (COP)"
         },
         "name": "designHeatingCoefficientOfPerformance",
         "schema": "double",
@@ -35510,7 +35510,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal heating coefficient of performance (COP)"
+          "en": "Nominal Heating Coefficient of Performance (COP)"
         },
         "name": "nominalHeatingCoefficientOfPerformance",
         "schema": "double",
@@ -35626,7 +35626,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "flow capacity"
+          "en": "Flow Capacity"
         },
         "name": "flowCapacity",
         "schema": "double",
@@ -35640,7 +35640,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -35686,7 +35686,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "flow capacity"
+          "en": "Flow Capacity"
         },
         "name": "flowCapacity",
         "schema": "double",
@@ -35700,7 +35700,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -35833,7 +35833,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -35999,7 +35999,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "double",
@@ -36013,7 +36013,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -36024,7 +36024,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -36036,7 +36036,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "tank capacity"
+          "en": "Tank Capacity"
         },
         "name": "tankCapacity",
         "schema": "double",
@@ -36050,7 +36050,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "tank capacity unit"
+          "en": "Tank Capacity Unit"
         },
         "name": "tankCapacityUnit",
         "annotates": "tankCapacity",
@@ -36064,7 +36064,7 @@
           "VolumeFlowRate"
         ],
         "displayName": {
-          "en": "flow capacity"
+          "en": "Flow Capacity"
         },
         "name": "flowCapacity",
         "schema": "double",
@@ -36078,7 +36078,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -36095,7 +36095,7 @@
           "en": "microns"
         },
         "displayName": {
-          "en": "filtration rating"
+          "en": "Filtration Rating"
         },
         "name": "filtrationRating",
         "unit": "micrometre",
@@ -36687,7 +36687,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "load capacity unit"
+          "en": "Load Capacity Unit"
         },
         "name": "loadCapacityUnit",
         "annotates": "loadCapacity",
@@ -36787,7 +36787,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -36809,7 +36809,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "refrigerant type"
+          "en": "Refrigerant Type"
         },
         "name": "refrigerantType",
         "schema": "string",
@@ -36821,7 +36821,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -36835,7 +36835,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -36849,7 +36849,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity"
+          "en": "Net Sensible Cooling Capacity"
         },
         "name": "netSensibleCoolingCapacity",
         "schema": "double",
@@ -36863,7 +36863,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "net sensible cooling capacity unit"
+          "en": "Net Sensible Cooling Capacity Unit"
         },
         "name": "netSensibleCoolingCapacityUnit",
         "annotates": "netSensibleCoolingCapacity",
@@ -37577,7 +37577,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "number of ports"
+          "en": "Number of Ports"
         },
         "name": "numberOfPorts",
         "schema": "integer",
@@ -37586,7 +37586,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "height (rack units)"
+          "en": "Height (Rack Units)"
         },
         "name": "heightRUs",
         "schema": "integer",
@@ -38340,7 +38340,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "number of ports"
+          "en": "Number of Ports"
         },
         "name": "numberOfPorts",
         "schema": "integer",
@@ -38349,7 +38349,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "height (rack units)"
+          "en": "Height (Rack Units)"
         },
         "name": "heightRUs",
         "schema": "integer",
@@ -38554,7 +38554,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "length"
+          "en": "Length"
         },
         "name": "length",
         "schema": "double",
@@ -38568,7 +38568,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "length unit"
+          "en": "Length Unit"
         },
         "name": "lengthUnit",
         "annotates": "length",
@@ -38582,7 +38582,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "width"
+          "en": "Width"
         },
         "name": "width",
         "schema": "double",
@@ -38596,7 +38596,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "width unit"
+          "en": "Width Unit"
         },
         "name": "widthUnit",
         "annotates": "width",
@@ -38631,7 +38631,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "cell material"
+          "en": "Cell Material"
         },
         "name": "cellMaterial",
         "schema": "string",
@@ -39006,7 +39006,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -39034,7 +39034,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "tank capacity unit"
+          "en": "Tank Capacity Unit"
         },
         "name": "tankCapacityUnit",
         "annotates": "tankCapacity",
@@ -39051,7 +39051,7 @@
           "en": "microns"
         },
         "displayName": {
-          "en": "filtration rating"
+          "en": "Filtration Rating"
         },
         "name": "filtrationRating",
         "unit": "micrometre",
@@ -39064,7 +39064,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "integer",
@@ -39078,7 +39078,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -39311,7 +39311,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "short circuit rating"
+          "en": "Short Circuit Rating"
         },
         "name": "shortCircuitRating",
         "schema": "string",
@@ -39320,7 +39320,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "output phases"
+          "en": "Output Phases"
         },
         "name": "outputPhases",
         "schema": {
@@ -39345,7 +39345,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -39355,7 +39355,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "max number of poles"
+          "en": "Max Number of Poles"
         },
         "name": "maxNumberOfPoles",
         "schema": "integer",
@@ -39715,7 +39715,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "output phases"
+          "en": "Output Phases"
         },
         "name": "outputPhases",
         "schema": {
@@ -39740,7 +39740,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -39845,7 +39845,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal energy efficiency ratio (EER)"
+          "en": "Nominal Energy Efficiency Ratio (EER)"
         },
         "name": "nominalEnergyEfficiencyRatio",
         "schema": "double",
@@ -39854,7 +39854,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design energy efficiency ratio (EER)"
+          "en": "Design Energy Efficiency Ratio (EER)"
         },
         "name": "designEnergyEfficiencyRatio",
         "schema": "double",
@@ -39863,7 +39863,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "nominal coefficient of performance (COP)"
+          "en": "Nominal Coefficient of Performance (COP)"
         },
         "name": "nominalCoefficientOfPerformance",
         "schema": "double",
@@ -39872,7 +39872,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "design coefficient of performance (COP)"
+          "en": "Design Coefficient of Performance (COP)"
         },
         "name": "designCoefficientOfPerformance",
         "schema": "double",
@@ -39884,7 +39884,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "nominal cooling capacity"
+          "en": "Nominal Cooling Capacity"
         },
         "name": "nominalCoolingCapacity",
         "schema": "double",
@@ -39898,7 +39898,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal cooling capacity unit"
+          "en": "Nominal Cooling Capacity Unit"
         },
         "name": "nominalCoolingCapacityUnit",
         "annotates": "nominalCoolingCapacity",
@@ -39912,7 +39912,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "design cooling capacity"
+          "en": "Design Cooling Capacity"
         },
         "name": "designCoolingCapacity",
         "schema": "double",
@@ -39926,7 +39926,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "design cooling capacity unit"
+          "en": "Design Cooling Capacity Unit"
         },
         "name": "designCoolingCapacityUnit",
         "annotates": "designCoolingCapacity",
@@ -40402,7 +40402,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "number of ports"
+          "en": "Number of Ports"
         },
         "name": "numberOfPorts",
         "schema": "integer",
@@ -40411,7 +40411,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "height (rack units)"
+          "en": "Height (Rack Units)"
         },
         "name": "heightRUs",
         "schema": "integer",
@@ -40906,7 +40906,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "condensate"
+          "en": "Condensate"
         },
         "name": "condensate",
         "schema": "integer",
@@ -40992,7 +40992,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "condensate"
+          "en": "Condensate"
         },
         "name": "condensate",
         "schema": "integer",
@@ -41102,7 +41102,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "short circuit rating"
+          "en": "Short Circuit Rating"
         },
         "name": "shortCircuitRating",
         "schema": "string",
@@ -41114,7 +41114,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -41124,7 +41124,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "input phases"
+          "en": "Input Phases"
         },
         "name": "inputPhases",
         "schema": {
@@ -41170,7 +41170,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "short circuit rating"
+          "en": "Short Circuit Rating"
         },
         "name": "shortCircuitRating",
         "schema": "string",
@@ -41182,7 +41182,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -41192,7 +41192,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "input phases"
+          "en": "Input Phases"
         },
         "name": "inputPhases",
         "schema": {
@@ -41255,7 +41255,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "tank capacity"
+          "en": "Tank Capacity"
         },
         "name": "tankCapacity",
         "schema": "double",
@@ -41269,7 +41269,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "tank capacity unit"
+          "en": "Tank Capacity Unit"
         },
         "name": "tankCapacityUnit",
         "annotates": "tankCapacity",
@@ -41638,7 +41638,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "water per flush"
+          "en": "Water per Flush"
         },
         "name": "waterPerFlush",
         "schema": "double",
@@ -41652,7 +41652,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "water per flush unit"
+          "en": "Water per Flush Unit"
         },
         "name": "waterPerFlushUnit",
         "annotates": "waterPerFlush",
@@ -41663,7 +41663,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "installation type"
+          "en": "Installation Type"
         },
         "name": "installationType",
         "schema": {
@@ -41839,7 +41839,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "poles"
+          "en": "Poles"
         },
         "name": "poles",
         "schema": {
@@ -41864,7 +41864,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "mains rating"
+          "en": "Mains Rating"
         },
         "name": "mainsRating",
         "schema": "double",
@@ -41901,7 +41901,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "secondary voltage"
+          "en": "Secondary Voltage"
         },
         "name": "voltageSecondary",
         "schema": "double",
@@ -41914,7 +41914,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "primary voltage"
+          "en": "Primary Voltage"
         },
         "name": "voltagePrimary",
         "schema": "double",
@@ -41924,7 +41924,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": "string",
@@ -41936,7 +41936,7 @@
           "ApparentPower"
         ],
         "displayName": {
-          "en": "size (KVA)"
+          "en": "Size (KVA)"
         },
         "name": "sizeKVA",
         "schema": "double",
@@ -41946,7 +41946,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "phases"
+          "en": "Phases"
         },
         "name": "phases",
         "schema": {
@@ -42260,7 +42260,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "runtime"
+          "en": "Runtime"
         },
         "name": "runtime",
         "schema": "double",
@@ -42273,7 +42273,7 @@
           "ApparentPower"
         ],
         "displayName": {
-          "en": "power output (KVA)"
+          "en": "Power Output (KVA)"
         },
         "name": "powerOutputKVA",
         "schema": "double",
@@ -42286,7 +42286,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power output"
+          "en": "Power Output"
         },
         "name": "powerOutput",
         "schema": "double",
@@ -42299,7 +42299,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "output voltage"
+          "en": "Output Voltage"
         },
         "name": "outputVoltage",
         "schema": "double",
@@ -42309,7 +42309,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "output phases"
+          "en": "Output Phases"
         },
         "name": "outputPhases",
         "schema": {
@@ -42334,7 +42334,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "name": "inputVoltage",
         "schema": "double",
@@ -42344,7 +42344,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "input phases"
+          "en": "Input Phases"
         },
         "name": "inputPhases",
         "schema": {
@@ -43150,7 +43150,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "flow capacity unit"
+          "en": "Flow Capacity Unit"
         },
         "name": "flowCapacityUnit",
         "annotates": "flowCapacity",
@@ -43178,7 +43178,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "tank capacity unit"
+          "en": "Tank Capacity Unit"
         },
         "name": "tankCapacityUnit",
         "annotates": "tankCapacity",
@@ -43192,7 +43192,7 @@
           "Pressure"
         ],
         "displayName": {
-          "en": "working pressure"
+          "en": "Working Pressure"
         },
         "name": "workingPressure",
         "schema": "integer",
@@ -43206,7 +43206,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "working pressure unit"
+          "en": "Working Pressure Unit"
         },
         "name": "workingPressureUnit",
         "annotates": "workingPressure",
@@ -43487,7 +43487,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -43517,7 +43517,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "mounting"
+          "en": "Mounting"
         },
         "name": "mounting",
         "schema": {
@@ -43648,7 +43648,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "primary sensible cooling capacity"
+          "en": "Primary Sensible Cooling Capacity"
         },
         "name": "primarySensibleCoolingCapacity",
         "schema": "double",
@@ -43662,7 +43662,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "primary sensible cooling capacity unit"
+          "en": "Primary Sensible Cooling Capacity Unit"
         },
         "name": "primarySensibleCoolingCapacityUnit",
         "annotates": "primarySensibleCoolingCapacity",
@@ -43676,7 +43676,7 @@
           "EnergyRate"
         ],
         "displayName": {
-          "en": "secondary sensible cooling capacity"
+          "en": "Secondary Sensible Cooling Capacity"
         },
         "name": "secondarySensibleCoolingCapacity",
         "schema": "double",
@@ -43690,7 +43690,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "secondary sensible cooling capacity unit"
+          "en": "Secondary Sensible Cooling Capacity Unit"
         },
         "name": "secondarySensibleCoolingCapacityUnit",
         "annotates": "secondarySensibleCoolingCapacity",
@@ -44896,7 +44896,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "transition type"
+          "en": "Transition Type"
         },
         "name": "transitionType",
         "schema": {
@@ -44918,7 +44918,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "switching mechanism"
+          "en": "Switching Mechanism"
         },
         "name": "switchingMechanism",
         "schema": {
@@ -45086,7 +45086,7 @@
           "Energy"
         ],
         "displayName": {
-          "en": "nominal capacity"
+          "en": "Nominal Capacity"
         },
         "name": "nominalCapacity",
         "schema": "double",
@@ -45100,7 +45100,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "nominal capacity unit"
+          "en": "Nominal Capacity Unit"
         },
         "name": "nominalCapacityUnit",
         "annotates": "nominalCapacity",
@@ -45563,7 +45563,7 @@
           "Length"
         ],
         "displayName": {
-          "en": "blade diameter"
+          "en": "Blade Diameter"
         },
         "name": "bladeDiameter",
         "schema": "double",
@@ -45577,7 +45577,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "blade diameter unit"
+          "en": "Blade Diameter Unit"
         },
         "name": "bladeDiameterUnit",
         "annotates": "bladeDiameter",
@@ -47212,7 +47212,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "main circuit breaker rating"
+          "en": "Main Circuit Breaker Rating"
         },
         "name": "MCBRating",
         "schema": "double",
@@ -47290,7 +47290,7 @@
         ],
         "name": "inputVoltage",
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "writable": true,
         "schema": "double",
@@ -47370,7 +47370,7 @@
         ],
         "name": "inputVoltage",
         "displayName": {
-          "en": "input voltage"
+          "en": "Input Voltage"
         },
         "writable": true,
         "schema": "double",
@@ -47495,7 +47495,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -47509,7 +47509,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power input unit"
+          "en": "Power Input Unit"
         },
         "name": "powerInputUnit",
         "annotates": "powerInput",
@@ -47541,7 +47541,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -47555,7 +47555,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power input unit"
+          "en": "Power Input Unit"
         },
         "name": "powerInputUnit",
         "annotates": "powerInput",
@@ -48195,7 +48195,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "configuration"
+          "en": "Configuration"
         },
         "name": "configuration",
         "schema": {
@@ -48505,7 +48505,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -48535,7 +48535,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "K-factor (metric)"
+          "en": "K-factor (Metric)"
         },
         "name": "kFactorMetric",
         "schema": "double",
@@ -48544,7 +48544,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "K-factor (imperial)"
+          "en": "K-factor (Imperial)"
         },
         "name": "kFactorImperial",
         "schema": "double",
@@ -48757,7 +48757,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -48771,7 +48771,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power input unit"
+          "en": "Power Input Unit"
         },
         "name": "powerInputUnit",
         "annotates": "powerInput",
@@ -48803,7 +48803,7 @@
           "Property"
         ],
         "displayName": {
-          "en": "power input"
+          "en": "Power Input"
         },
         "name": "powerInput",
         "schema": "double",
@@ -48817,7 +48817,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "power input unit"
+          "en": "Power Input Unit"
         },
         "name": "powerInputUnit",
         "annotates": "powerInput",
@@ -49449,7 +49449,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -51553,7 +51553,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -51637,7 +51637,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -51692,7 +51692,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -51714,7 +51714,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "arrangement"
+          "en": "Arrangement"
         },
         "name": "arrangement",
         "schema": {
@@ -53009,7 +53009,7 @@
     "@id": "dtmi:com:willowinc:SensorFailureAlarmState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Sensir Failure Alarm State"
+      "en": "Sensor Failure Alarm State"
     },
     "description": {
       "en": "The Boolean state of the sensor failure alarm is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
@@ -53916,7 +53916,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "flushing type"
+          "en": "Flushing Type"
         },
         "name": "flushingType",
         "schema": {
@@ -54196,7 +54196,7 @@
           "Volume"
         ],
         "displayName": {
-          "en": "water per flush"
+          "en": "Water per Flush"
         },
         "name": "waterPerFlush",
         "schema": "double",
@@ -54210,7 +54210,7 @@
           "Override"
         ],
         "displayName": {
-          "en": "water per flush unit"
+          "en": "Water per Flush Unit"
         },
         "name": "waterPerFlushUnit",
         "annotates": "waterPerFlush",
@@ -54340,7 +54340,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
@@ -57762,7 +57762,7 @@
     "@id": "dtmi:com:willowinc:EnergyRecoveryValvePositionState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Energy Reocovery Valve Position State"
+      "en": "Energy Recovery Valve Position State"
     },
     "description": {
       "en": "The percent position state of the hot energy recovery valve"
@@ -63085,7 +63085,7 @@
       {
         "@type": "Property",
         "displayName": {
-          "en": "type"
+          "en": "Type"
         },
         "name": "type",
         "schema": {
