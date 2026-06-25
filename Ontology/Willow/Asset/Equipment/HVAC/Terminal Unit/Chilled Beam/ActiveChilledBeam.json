@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
-        "en": "primary sensible cooling capacity"
+        "en": "Primary Sensible Cooling Capacity"
       },
       "name": "primarySensibleCoolingCapacity",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "primary sensible cooling capacity unit"
+        "en": "Primary Sensible Cooling Capacity Unit"
       },
       "name": "primarySensibleCoolingCapacityUnit",
       "annotates": "primarySensibleCoolingCapacity",
@@ -32,7 +32,7 @@
     {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
-        "en": "secondary sensible cooling capacity"
+        "en": "Secondary Sensible Cooling Capacity"
       },
       "name": "secondarySensibleCoolingCapacity",
       "schema": "double",
@@ -42,7 +42,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "secondary sensible cooling capacity unit"
+        "en": "Secondary Sensible Cooling Capacity Unit"
       },
       "name": "secondarySensibleCoolingCapacityUnit",
       "annotates": "secondarySensibleCoolingCapacity",

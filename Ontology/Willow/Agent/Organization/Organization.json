@@ -17,7 +17,7 @@
         "en": "URL link to an image/logo that represents the organization."
       },
       "displayName": {
-        "en": "logo"
+        "en": "Logo"
       },
       "name": "logo",
       "schema": "string",

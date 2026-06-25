@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "maximum voltage rating"
+        "en": "Maximum Voltage Rating"
       },
       "name": "minVoltageRating",
       "schema": "double",
@@ -43,7 +43,7 @@
     {
       "@type": ["Current", "Property"],
       "displayName": {
-        "en": "minimum current rating"
+        "en": "Minimum Current Rating"
       },
       "name": "minCurrentRating",
       "schema": "double",
@@ -53,7 +53,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "maximum voltage rating"
+        "en": "Maximum Voltage Rating"
       },
       "name": "maxVoltageRating",
       "schema": "double",
@@ -63,7 +63,7 @@
     {
       "@type": ["Current", "Property"],
       "displayName": {
-        "en": "maximum current rating"
+        "en": "Maximum Current Rating"
       },
       "name": "maxCurrentRating",
       "schema": "double",

@@ -111,7 +111,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -242,7 +242,7 @@
         "en": "Time when a core:Capability's value was last updated (see core:lastValue)."
       },
       "displayName": {
-        "en": "last value time"
+        "en": "Last Value Time"
       },
       "name": "lastValueTime",
       "schema": "dateTime",

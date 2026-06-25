@@ -14,7 +14,7 @@
     {
       "@type": ["Property", "Length"],
       "displayName": {
-        "en": "outside diameter"
+        "en": "Outside Diameter"
       },
       "name": "outsideDiameter",
       "schema": "double",
@@ -24,7 +24,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "outside diameter unit"
+        "en": "Outside Diameter Unit"
       },
       "name": "outsideDiameterUnit",
       "annotates": "outsideDiameter",

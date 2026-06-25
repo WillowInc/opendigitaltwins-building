@@ -12,7 +12,7 @@
       "@type": ["Property", "Area"],
       "name": "grossArea",
       "displayName": {
-        "en": "gross area"
+        "en": "Gross Area"
       },
       "writable": true,
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "gross area unit"
+        "en": "Gross Area Unit"
       },
       "name": "grossAreaUnit",
       "annotates": "grossArea",
@@ -33,7 +33,7 @@
       "@type": ["Property", "Area"],
       "name": "usableArea",
       "displayName": {
-        "en": "usable area"
+        "en": "Usable Area"
       },
       "writable": true,
       "schema": "double",
@@ -42,7 +42,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "usable area unit"
+        "en": "Usable Area Unit"
       },
       "name": "usableAreaUnit",
       "annotates": "usableArea",
@@ -63,7 +63,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "rentable area unit"
+        "en": "Rentable Area Unit"
       },
       "name": "rentableAreaUnit",
       "annotates": "rentableArea",

@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "nominal external static pressure"
+        "en": "Nominal External Static Pressure"
       },
       "name": "nominalExternalStaticPressure",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "nominal external static pressure unit"
+        "en": "Nominal External Static Pressure Unit"
       },
       "name": "nominalExternalStaticPressureUnit",
       "annotates": "nominalExternalStaticPressure",
@@ -32,7 +32,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "nominal airflow"
+        "en": "Nominal Airflow"
       },
       "name": "nominalAirflow",
       "schema": "double",
@@ -42,7 +42,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "nominal airflow unit"
+        "en": "Nominal Airflow Unit"
       },
       "name": "nominalAirflowUnit",
       "annotates": "nominalAirflow",
@@ -53,7 +53,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "motor power"
+        "en": "Motor Power"
       },
       "name": "motorPower",
       "schema": "double",
@@ -63,7 +63,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "motor power unit"
+        "en": "Motor Power Unit"
       },
       "name": "motorPowerUnit",
       "annotates": "motorPower",
@@ -74,7 +74,7 @@
     {
       "@type": ["AngularVelocity", "Property"],
       "displayName": {
-        "en": "maximum rotation speed"
+        "en": "Maximum Rotation Speed"
       },
       "name": "maxRotationSpeed",
       "schema": "double",
@@ -84,7 +84,7 @@
     {
       "@type": ["Property", "Frequency"],
       "displayName": {
-        "en": "maximum VFD frequency"
+        "en": "Maximum VFD Frequency"
       },
       "name": "maxVFDFrequency",
       "schema": "double",
@@ -94,7 +94,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum VFD frequency unit"
+        "en": "Maximum VFD Frequency Unit"
       },
       "name": "maxVFDFrequencyUnit",
       "annotates": "maxVFDFrequency",
@@ -105,7 +105,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "brake horsepower"
+        "en": "Brake Horsepower"
       },
       "name": "brakeHorsepower",
       "schema": "double",
@@ -115,7 +115,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "brake horsepower unit"
+        "en": "Brake Horsepower Unit"
       },
       "name": "brakeHorsepowerUnit",
       "annotates": "brakeHorsepower",
@@ -126,7 +126,7 @@
     {
       "@type": ["Current", "Property"],
       "displayName": {
-        "en": "full load current"
+        "en": "Full Load Current"
       },
       "name": "fullLoadCurrent",
       "schema": "double",
@@ -136,7 +136,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "full load current unit"
+        "en": "Full Load Current Unit"
       },
       "name": "fullLoadCurrentUnit",
       "annotates": "fullLoadCurrent",
@@ -147,7 +147,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "minimum airflow rating"
+        "en": "Minimum Airflow Rating"
       },
       "name": "minAirflowRating",
       "schema": "double",
@@ -157,7 +157,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "minimum airflow rating unit"
+        "en": "Minimum Airflow Rating Unit"
       },
       "name": "minAirflowRatingUnit",
       "annotates": "minAirflowRating",
@@ -168,7 +168,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "maximum airflow rating"
+        "en": "Maximum Airflow Rating"
       },
       "name": "maxAirflowRating",
       "schema": "double",
@@ -178,7 +178,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum airflow rating unit"
+        "en": "Maximum Airflow Rating Unit"
       },
       "name": "maxAirflowRatingUnit",
       "annotates": "maxAirflowRating",
@@ -210,7 +210,7 @@
     {
       "@type": ["AngularVelocity", "Property"],
       "displayName": {
-        "en": "design rotation speed"
+        "en": "Design Rotation Speed"
       },
       "name": "designRotationSpeed",
       "schema": "double",
@@ -220,7 +220,7 @@
     {
       "@type": ["Property", "Frequency"],
       "displayName": {
-        "en": "design VFD frequency"
+        "en": "Design VFD Frequency"
       },
       "name": "designVFDFrequency",
       "schema": "double",
@@ -230,7 +230,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "design VFD frequency unit"
+        "en": "Design VFD Frequency Unit"
       },
       "name": "designVFDFrequencyUnit",
       "annotates": "designVFDFrequency",
@@ -241,7 +241,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "design external static pressure"
+        "en": "Design External Static Pressure"
       },
       "name": "designExternalStaticPressure",
       "schema": "double",
@@ -251,7 +251,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "design external static pressure unit"
+        "en": "Design External Static Pressure Unit"
       },
       "name": "designExternalStaticPressureUnit",
       "annotates": "designExternalStaticPressure",
@@ -262,7 +262,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "drive type"
+        "en": "Drive Type"
       },
       "name": "driveType",
       "schema": {

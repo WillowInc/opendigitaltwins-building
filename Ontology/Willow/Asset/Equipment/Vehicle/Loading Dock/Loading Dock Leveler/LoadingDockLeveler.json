@@ -56,7 +56,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "load capacity unit"
+        "en": "Load Capacity Unit"
       },
       "name": "loadCapacityUnit",
       "annotates": "loadCapacity",

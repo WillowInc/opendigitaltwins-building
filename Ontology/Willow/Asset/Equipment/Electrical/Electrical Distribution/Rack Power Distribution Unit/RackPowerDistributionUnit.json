@@ -42,7 +42,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "output phases"
+        "en": "Output Phases"
       },
       "name": "outputPhases",
       "schema": {
@@ -64,7 +64,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "input voltage"
+        "en": "Input Voltage"
       },
       "name": "inputVoltage",
       "schema": "double",

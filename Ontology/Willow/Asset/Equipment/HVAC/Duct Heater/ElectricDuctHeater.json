@@ -11,7 +11,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "power input"
+        "en": "Power Input"
       },
       "name": "powerInput",
       "schema": "double",

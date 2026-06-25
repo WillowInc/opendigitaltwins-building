@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "arrangement"
+        "en": "Arrangement"
       },
       "name": "arrangement",
       "schema": {

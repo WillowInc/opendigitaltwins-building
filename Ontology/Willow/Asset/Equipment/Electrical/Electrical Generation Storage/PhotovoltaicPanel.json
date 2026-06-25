@@ -14,7 +14,7 @@
     {
       "@type": ["Property", "Length"],
       "displayName": {
-        "en": "length"
+        "en": "Length"
       },
       "name": "length",
       "schema": "double",
@@ -24,7 +24,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "length unit"
+        "en": "Length Unit"
       },
       "name": "lengthUnit",
       "annotates": "length",
@@ -35,7 +35,7 @@
     {
       "@type": ["Property", "Length"],
       "displayName": {
-        "en": "width"
+        "en": "Width"
       },
       "name": "width",
       "schema": "double",
@@ -45,7 +45,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "width unit"
+        "en": "Width Unit"
       },
       "name": "widthUnit",
       "annotates": "width",
@@ -80,7 +80,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "cell material"
+        "en": "Cell Material"
       },
       "name": "cellMaterial",
       "schema": "string",
