@@ -31,7 +31,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "message height unit"
+        "en": "Message Height Unit"
       },
       "name": "messageHeightUnit",
       "annotates": "messageHeight",
@@ -52,7 +52,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "panel height unit"
+        "en": "Panel Height Unit"
       },
       "name": "panelHeightUnit",
       "annotates": "panelHeight",
@@ -73,7 +73,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "panel width unit"
+        "en": "Panel Width Unit"
       },
       "name": "panelWidthUnit",
       "annotates": "panelWidth",
@@ -94,7 +94,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "installed height unit"
+        "en": "Installed Height Unit"
       },
       "name": "installedHeightUnit",
       "annotates": "installedHeight",

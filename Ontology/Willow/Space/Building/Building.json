@@ -161,7 +161,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "elevation unit"
+        "en": "Elevation Unit"
       },
       "name": "elevationUnit",
       "annotates": "elevation",
@@ -182,7 +182,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",

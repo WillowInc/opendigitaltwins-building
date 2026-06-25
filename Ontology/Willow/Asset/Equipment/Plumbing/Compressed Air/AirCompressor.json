@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",
@@ -32,7 +32,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "motor power"
+        "en": "Motor Power"
       },
       "name": "motorPower",
       "schema": "double",
@@ -42,7 +42,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "motor power unit"
+        "en": "Motor Power Unit"
       },
       "name": "motorPowerUnit",
       "annotates": "motorPower",
@@ -53,7 +53,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "brake horsepower"
+        "en": "Brake Horsepower"
       },
       "name": "brakeHorsepower",
       "schema": "double",
@@ -63,7 +63,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "brake horsepower unit"
+        "en": "Brake Horsepower Unit"
       },
       "name": "brakeHorsepowerUnit",
       "annotates": "brakeHorsepower",
@@ -74,7 +74,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "free air delivery"
+        "en": "Free Air Delivery"
       },
       "name": "freeAirDelivery",
       "schema": "double",
@@ -84,7 +84,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "free air delivery unit"
+        "en": "Free Air Delivery Unit"
       },
       "name": "freeAirDeliveryUnit",
       "annotates": "freeAirDelivery",

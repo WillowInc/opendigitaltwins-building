@@ -193,7 +193,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -202,7 +202,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "occupiable"
+        "en": "Occupiable"
       },
       "name": "occupiable",
       "description": {

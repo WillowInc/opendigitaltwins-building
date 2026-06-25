@@ -105,7 +105,7 @@
       "@type": "Relationship",
       "name": "serviceResponsibility",
       "displayName": {
-        "en": "Service Responsibilitly"
+        "en": "Service Responsibility"
       },
       "target": "dtmi:com:willowinc:Agent;1"
     },
@@ -264,7 +264,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -329,7 +329,7 @@
       "@type": ["Property", "Angle"],
       "name": "geographicOrientation",
       "displayName": {
-        "en": "geographic orientation"
+        "en": "Geographic Orientation"
       },
       "description": {
         "en": "The horizontal direction the front of the asset is oriented with geographic north as 0 degrees and increasing clockwise (a.ka. azimuth)."
@@ -341,7 +341,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "geographic orientation unit"
+        "en": "Geographic Orientation Unit"
       },
       "name": "geographicOrientationUnit",
       "annotates": "geographicOrientation",
@@ -352,7 +352,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "serial number"
+        "en": "Serial Number"
       },
       "name": "serialNumber",
       "schema": "string",
@@ -361,7 +361,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "physical tag number"
+        "en": "Physical Tag Number"
       },
       "name": "physicalTagNumber",
       "schema": "string",
@@ -370,7 +370,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "model number"
+        "en": "Model Number"
       },
       "name": "modelNumber",
       "schema": "string",
@@ -379,7 +379,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "MAC address"
+        "en": "MAC Address"
       },
       "name": "MACAddress",
       "schema": "string",
@@ -388,7 +388,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "IP address"
+        "en": "IP Address"
       },
       "name": "IPAddress",
       "schema": "string",
@@ -397,7 +397,7 @@
     {
       "@type": ["Property", "Mass"],
       "displayName": {
-        "en": "weight"
+        "en": "Weight"
       },
       "name": "weight",
       "schema": "double",
@@ -407,7 +407,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "weight unit"
+        "en": "Weight Unit"
       },
       "name": "weightUnit",
       "annotates": "weight",
@@ -418,7 +418,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "turnover date"
+        "en": "Turnover Date"
       },
       "name": "turnoverDate",
       "schema": "date",
@@ -427,7 +427,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "maintenance interval"
+        "en": "Maintenance Interval"
       },
       "name": "maintenanceInterval",
       "schema": "duration",
@@ -436,7 +436,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation date"
+        "en": "Installation Date"
       },
       "name": "installationDate",
       "schema": "date",
@@ -445,7 +445,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "initial cost"
+        "en": "Initial Cost"
       },
       "name": "initialCost",
       "schema": "double",
@@ -467,7 +467,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected replacement cost"
+        "en": "Expected Replacement Cost"
       },
       "name": "expectedReplacementCost",
       "schema": "double",
@@ -489,7 +489,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected life"
+        "en": "Expected Life"
       },
       "name": "expectedLife",
       "schema": "duration",
@@ -498,7 +498,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected end-of-life"
+        "en": "Expected End-of-Life"
       },
       "name": "expectedEndOfLife",
       "schema": "date",
@@ -507,7 +507,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "commission date"
+        "en": "Commission Date"
       },
       "name": "commissionDate",
       "schema": "date",
@@ -516,7 +516,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "manufactured date"
+        "en": "Manufactured Date"
       },
       "name": "manufacturedDate",
       "schema": "date",

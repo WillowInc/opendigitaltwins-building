@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Volume"],
       "displayName": {
-        "en": "water per flush"
+        "en": "Water per Flush"
       },
       "name": "waterPerFlush",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "water per flush unit"
+        "en": "Water per Flush Unit"
       },
       "name": "waterPerFlushUnit",
       "annotates": "waterPerFlush",

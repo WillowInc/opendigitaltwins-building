@@ -11,7 +11,7 @@
     {
       "@type": ["TimeSpan", "Property"],
       "displayName": {
-        "en": "fire rating"
+        "en": "Fire Rating"
       },
       "name": "fireRating",
       "schema": "double",

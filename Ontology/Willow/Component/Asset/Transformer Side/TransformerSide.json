@@ -24,7 +24,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "phases"
+        "en": "Phases"
       },
       "name": "phases",
       "schema": {

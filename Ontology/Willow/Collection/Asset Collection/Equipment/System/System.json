@@ -14,7 +14,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "comment"
+        "en": "Comment"
       },
       "name": "comment",
       "schema": "string",
@@ -23,7 +23,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "service"
+        "en": "Service"
       },
       "name": "service",
       "schema": {

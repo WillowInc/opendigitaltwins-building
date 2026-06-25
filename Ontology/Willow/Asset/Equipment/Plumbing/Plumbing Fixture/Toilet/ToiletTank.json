@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "flushing type"
+        "en": "Flushing Type"
       },
       "name": "flushingType",
       "schema": {

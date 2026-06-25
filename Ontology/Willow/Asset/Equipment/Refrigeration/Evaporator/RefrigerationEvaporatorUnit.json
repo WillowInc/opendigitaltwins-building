@@ -14,7 +14,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "refrigerant type"
+        "en": "Refrigerant Type"
       },
       "name": "refrigerantType",
       "schema": "string",
@@ -31,7 +31,7 @@
     {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
-        "en": "nominal cooling capacity"
+        "en": "Nominal Cooling Capacity"
       },
       "name": "nominalCoolingCapacity",
       "schema": "double",
@@ -41,7 +41,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "nominal cooling capacity unit"
+        "en": "Nominal Cooling Capacity Unit"
       },
       "name": "nominalCoolingCapacityUnit",
       "annotates": "nominalCoolingCapacity",
@@ -52,7 +52,7 @@
     {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
-        "en": "net sensible cooling capacity"
+        "en": "Net Sensible Cooling Capacity"
       },
       "name": "netSensibleCoolingCapacity",
       "schema": "double",
@@ -62,7 +62,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "net sensible cooling capacity unit"
+        "en": "Net Sensible Cooling Capacity Unit"
       },
       "name": "netSensibleCoolingCapacityUnit",
       "annotates": "netSensibleCoolingCapacity",

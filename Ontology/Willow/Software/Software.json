@@ -80,7 +80,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -232,7 +232,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation date"
+        "en": "Installation Date"
       },
       "name": "installationDate",
       "schema": "dateTime",

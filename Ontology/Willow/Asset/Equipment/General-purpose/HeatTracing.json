@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -36,7 +36,7 @@
         "en": "Watts/length unit"
       },
       "displayName": {
-        "en": "power density"
+        "en": "Power Density"
       },
       "name": "powerDensity",
       "schema": "double",

@@ -69,7 +69,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "file size unit"
+        "en": "File Size Unit"
       },
       "name": "fileSizeUnit",
       "annotates": "fileSize",
@@ -130,7 +130,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",

@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Volume"],
       "displayName": {
-        "en": "tank capacity"
+        "en": "Tank Capacity"
       },
       "name": "tankCapacity",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",
