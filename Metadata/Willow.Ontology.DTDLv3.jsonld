@@ -5684,6 +5684,15 @@
             "schema": "dtmi:com:willowinc:AssetComponentIsFedBySubstances;1"
           }
         ]
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Name"
+        },
+        "name": "name",
+        "schema": "string",
+        "writable": true
       }
     ],
     "schemas": [
