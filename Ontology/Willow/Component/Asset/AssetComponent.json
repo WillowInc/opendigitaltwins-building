@@ -30,7 +30,7 @@
       "name": "locatedIn",
       "target": "dtmi:com:willowinc:Space;1"
     },
-        {
+    {
       "@type": "Relationship",
       "name": "isFedBy",
       "displayName": {
@@ -50,6 +50,15 @@
           "schema": "dtmi:com:willowinc:AssetComponentIsFedBySubstances;1"
         }
       ]
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Name"
+      },
+      "name": "name",
+      "schema": "string",
+      "writable": true
     }
   ],
   "schemas": [
