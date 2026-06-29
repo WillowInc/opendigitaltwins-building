@@ -12,6 +12,16 @@
   ],
   "contents": [
     {
+      "@type": ["Property", "ApparentPower"],
+      "displayName": {
+        "en": "kVA Rating"
+      },
+      "name": "kVARating",
+      "schema": "double",
+      "unit": "kilovoltAmpere",
+      "writable": true
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "Short Circuit Rating"
