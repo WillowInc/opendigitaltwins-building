@@ -94,6 +94,26 @@
           }
         ]
       }
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "Input Current"
+      },
+      "name": "inputCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "Max Continuous Input Current"
+      },
+      "name": "maxContinuousInputCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
     }
   ],
   "@context": [
