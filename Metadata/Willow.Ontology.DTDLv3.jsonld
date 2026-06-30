@@ -16085,6 +16085,68 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WindowTreatment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Window Treatment"
+    },
+    "description": {
+      "en": "A covering applied to or around a window, typically for the control of sunlight, glare, heat gain, privacy, or for decorative purposes. Window treatments such as blinds, curtains, and shades may be operated manually or by a motor."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ArchitecturalAsset;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mounting Type"
+        },
+        "name": "mountingType",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Interior",
+              "name": "Interior"
+            },
+            {
+              "enumValue": "Exterior",
+              "name": "Exterior"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Operation Type"
+        },
+        "name": "operationType",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Manual",
+              "name": "Manual"
+            },
+            {
+              "enumValue": "Motorized",
+              "name": "Motorized"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Workstation;1",
     "@type": "Interface",
     "displayName": {
@@ -17619,6 +17681,23 @@
         "schema": "boolean"
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Blind;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Blind"
+    },
+    "description": {
+      "en": "A window treatment made of slats, vanes, or solid material that can be tilted, raised, or lowered to control the amount of light and visibility through a window."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WindowTreatment;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -19435,6 +19514,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Curtain;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Curtain"
+    },
+    "description": {
+      "en": "A window treatment made of fabric panels that hang over a window, drawn open or closed to control light, visibility, and privacy."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WindowTreatment;1"
     ],
     "contents": [],
     "@context": [
@@ -26481,6 +26577,23 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Shade;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Shade"
+    },
+    "description": {
+      "en": "A window treatment made of a continuous piece of material that is raised or lowered over a window to control sunlight, glare, and heat gain. Examples include roller shades, roman shades, and cellular shades."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WindowTreatment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
