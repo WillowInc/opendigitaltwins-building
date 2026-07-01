@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SupervisoryControlActive;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supervisory Control Active"
+  },
+  "description": {
+    "en": "A binary parameter that represents whether another point is being actively controlled by a supervisory control system. A controller may have internal logic to switch a program when the supervisory control signal is not received for a certain amount of time."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Parameter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
