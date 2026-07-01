@@ -16072,6 +16072,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SupervisoryControlActive;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supervisory Control Active"
+    },
+    "description": {
+      "en": "A binary parameter that represents whether another point is being actively controlled by a supervisory control system. A controller may have internal logic to switch a program when the supervisory control signal is not received for a certain amount of time."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Parameter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SwimmingPoolEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -17785,7 +17802,19 @@
     "extends": [
       "dtmi:com:willowinc:BinaryState;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Relationship",
+        "description": {
+          "en": "The Capability that is above or below an alarm threshold and causing the alarm."
+        },
+        "displayName": {
+          "en": "is alarm of"
+        },
+        "name": "isAlarmOf",
+        "target": "dtmi:com:willowinc:Capability;1"
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -24721,6 +24750,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlActive;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Limit Supervisory Control Active"
+    },
+    "description": {
+      "en": "A binary parameter that represents whether the low limit parameter is being actively controlled by a supervisory control system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlActive;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Luminaire;1",
     "@type": "Interface",
     "displayName": {
@@ -25481,6 +25527,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HealthcareEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OffsetSupervisoryControlActive;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Offset Supervisory Control Active"
+    },
+    "description": {
+      "en": "A binary parameter that represents whether the offset parameter is being actively controlled by a supervisory control system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlActive;1"
     ],
     "contents": [],
     "@context": [
