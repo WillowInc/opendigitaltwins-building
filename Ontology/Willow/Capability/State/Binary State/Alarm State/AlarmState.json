@@ -9,7 +9,17 @@
     "dtmi:com:willowinc:BinaryState;1"
   ],
   "contents": [
-
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The Capability that is above or below an alarm threshold and causing the alarm."
+      },
+      "displayName": {
+        "en": "is alarm of"
+      },
+      "name": "isAlarmOf",
+      "target": "dtmi:com:willowinc:Capability;1"
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"
