@@ -25111,6 +25111,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MotionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Motion State"
+    },
+    "description": {
+      "en": "The multi-state motion state of the equipment or device which could include states such as \u0027opening\u0027 or \u0027closing\u0027 when the device is in motion, and \u0027stopped\u0027 or \u0027idle\u0027 when the device is not in motion. Other states may include \u0027paused\u0027, \u0027reversing\u0027, etc."
+    },
+    "extends": [
+      "dtmi:com:willowinc:MultiState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:MovingWalkway;1",
     "@type": "Interface",
     "displayName": {
@@ -49372,6 +49389,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatingCoolingModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating/Cooling Mode State"
+    },
+    "description": {
+      "en": "The multi-state operating mode of the equipment which is \u0027heating\u0027 when the mode is set to heating and \u0027cooling\u0027 when the mode is set to cooling. Other states may include \u0027off\u0027, \u0027deadband\u0027, \u0027auto\u0027, etc."
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatingHotWaterValve;1",
     "@type": "Interface",
     "displayName": {
@@ -51359,6 +51393,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OccupancyModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupancy Mode State"
+    },
+    "description": {
+      "en": "The multi-state operating mode of the equipment which is \u0027occupied\u0027 when the mode is set to occupied and \u0027unoccupied\u0027 when the mode is set to unoccupied. Other states may include \u0027standby\u0027, \u0027maintenance\u0027, etc."
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeState;1"
     ],
     "contents": [],
     "@context": [
