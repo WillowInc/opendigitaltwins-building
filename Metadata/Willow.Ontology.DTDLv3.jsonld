@@ -53425,6 +53425,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RoomPressureMonitor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Room Pressure Monitor"
+    },
+    "description": {
+      "en": "A device installed at a room that measures and reports the differential (delta) air pressure between the room and an adjacent reference space, typically providing a local display and alarm. Commonly used to verify pressurization of critical environments such as hospital isolation rooms, operating rooms, pharmacy cleanrooms, and laboratories."
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressureSensorEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RotisserieOven;1",
     "@type": "Interface",
     "displayName": {
