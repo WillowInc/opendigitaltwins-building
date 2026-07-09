@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:InRowCoolingUnit;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "In-Row Cooling Unit"
+  },
+  "description": {
+    "en": "A type of fan coil unit which is designed to be installed in a row of server racks to provide cooling for the IT equipment."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:FanCoilUnit;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
