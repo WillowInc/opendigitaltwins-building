@@ -28,14 +28,6 @@
       },
       {
         "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
-      },
-      {
-        "@type": "Relationship",
         "name": "hasSettings",
         "displayName": {
           "en": "has settings"
@@ -301,14 +293,6 @@
     },
     "extends": [],
     "contents": [
-      {
-        "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
-      },
       {
         "@type": "Relationship",
         "name": "hasSettings",
@@ -647,14 +631,6 @@
         },
         "name": "commissionedBy",
         "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
       },
       {
         "@type": "Relationship",
@@ -1380,14 +1356,6 @@
         "maxMultiplicity": 1,
         "name": "componentOfBuilding",
         "target": "dtmi:com:willowinc:Building;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
       },
       {
         "@type": "Relationship",
@@ -2497,14 +2465,6 @@
     "contents": [
       {
         "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
-      },
-      {
-        "@type": "Relationship",
         "name": "hasSettings",
         "displayName": {
           "en": "has settings"
@@ -3054,396 +3014,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Document;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Document"
-    },
-    "description": {
-      "en": "A written, printed, or electronic matter that provides information, e.g. contract, drawing, image, report, etc."
-    },
-    "extends": [],
-    "contents": [
-      {
-        "@type": "Relationship",
-        "name": "hasSettings",
-        "displayName": {
-          "en": "has settings"
-        },
-        "description": {
-          "en": "Used to extend a twin\u0027s base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
-        },
-        "target": "dtmi:com:willowinc:Settings;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "includedIn",
-        "displayName": {
-          "en": "included in"
-        },
-        "target": "dtmi:com:willowinc:Collection;1"
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "URL"
-        },
-        "name": "url",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Filename"
-        },
-        "name": "filename",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Hash MD5"
-        },
-        "name": "hashMD5",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "DataSize"
-        ],
-        "displayName": {
-          "en": "File Size"
-        },
-        "name": "fileSize",
-        "schema": "double",
-        "unit": "byte",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "File Size Unit"
-        },
-        "name": "fileSizeUnit",
-        "annotates": "fileSize",
-        "overrides": "unit",
-        "schema": "DataSizeUnit",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Custom Tags"
-        },
-        "name": "customTags",
-        "schema": {
-          "@type": "Map",
-          "mapKey": {
-            "name": "tagName",
-            "schema": "string"
-          },
-          "mapValue": {
-            "name": "tagValue",
-            "schema": "boolean"
-          }
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "External IDs"
-        },
-        "name": "externalIds",
-        "schema": {
-          "@type": "Map",
-          "mapKey": {
-            "name": "externalIdName",
-            "schema": "string"
-          },
-          "mapValue": {
-            "name": "externalIdValue",
-            "schema": "string"
-          }
-        },
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Mapped IDs"
-        },
-        "name": "mappedIds",
-        "writable": true,
-        "schema": {
-          "@type": "Array",
-          "elementSchema": "dtmi:com:willowinc:DocumentMappedIdObject;1"
-        }
-      },
-      {
-        "@type": "Property",
-        "displayName": {
-          "en": "Name"
-        },
-        "name": "name",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "name": "uniqueID",
-        "displayName": {
-          "en": "Globally Unique ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "externalID",
-        "displayName": {
-          "en": "External ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "code",
-        "displayName": {
-          "en": "Code"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "description",
-        "displayName": {
-          "en": "Description"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "summary",
-        "displayName": {
-          "en": "Summary"
-        },
-        "description": {
-          "en": "An overview of the content written or described in a document which is intended to be one or several paragraphs in length. Use \u0027description\u0027 for a short format summary."
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "alternateClassification",
-        "displayName": {
-          "en": "Alternate Classification"
-        },
-        "writable": true,
-        "schema": {
-          "@type": "Object",
-          "fields": [
-            {
-              "name": "projectHaystack",
-              "displayName": {
-                "en": "Project Haystack"
-              },
-              "schema": "dtmi:com:willowinc:DocumentAlternateClassificationObject;1"
-            },
-            {
-              "name": "brickSchema",
-              "displayName": {
-                "en": "Brick Schema"
-              },
-              "schema": "dtmi:com:willowinc:DocumentAlternateClassificationObject;1"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "Property",
-        "name": "customProperties",
-        "displayName": {
-          "en": "Custom Properties"
-        },
-        "schema": {
-          "@type": "Map",
-          "mapKey": {
-            "name": "sourceName",
-            "schema": "string"
-          },
-          "mapValue": {
-            "name": "sourceProperties",
-            "schema": {
-              "@type": "Map",
-              "mapKey": {
-                "name": "propertyName",
-                "schema": "string"
-              },
-              "mapValue": {
-                "name": "propertyValue",
-                "schema": "string"
-              }
-            }
-          }
-        }
-      },
-      {
-        "@type": "Property",
-        "name": "createdDate",
-        "displayName": {
-          "en": "Created Date"
-        },
-        "schema": "dateTime",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "name": "lastUpdatedDate",
-        "displayName": {
-          "en": "Last Updated Date"
-        },
-        "schema": "dateTime",
-        "writable": true
-      },
-      {
-        "@type": "Property",
-        "name": "createdBy",
-        "displayName": {
-          "en": "Created By"
-        },
-        "writable": true,
-        "schema": {
-          "@type": "Object",
-          "fields": [
-            {
-              "name": "login",
-              "displayName": {
-                "en": "Login"
-              },
-              "schema": "string"
-            },
-            {
-              "name": "name",
-              "displayName": {
-                "en": "Name"
-              },
-              "schema": "string"
-            }
-          ]
-        }
-      }
-    ],
-    "schemas": [
-      {
-        "@id": "dtmi:com:willowinc:DocumentAlternateClassificationObject;1",
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "version",
-            "displayName": {
-              "en": "Version"
-            },
-            "schema": "string"
-          },
-          {
-            "name": "code",
-            "displayName": {
-              "en": "Code"
-            },
-            "schema": "string"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:DocumentMappedIdObject;1",
-        "@type": "Object",
-        "description": {
-          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
-        },
-        "fields": [
-          {
-            "name": "exactType",
-            "displayName": {
-              "en": "Exact Type"
-            },
-            "description": {
-              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
-            },
-            "schema": "string"
-          },
-          {
-            "name": "scope",
-            "displayName": {
-              "en": "Scope"
-            },
-            "description": {
-              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
-            },
-            "schema": "string"
-          },
-          {
-            "name": "scopeId",
-            "displayName": {
-              "en": "Scope ID"
-            },
-            "description": {
-              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
-            },
-            "schema": "string"
-          },
-          {
-            "name": "value",
-            "displayName": {
-              "en": "Value"
-            },
-            "description": {
-              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
-            },
-            "schema": "string"
-          },
-          {
-            "name": "dateCreated",
-            "displayName": {
-              "en": "Date Created"
-            },
-            "description": {
-              "en": "The date the identity was created in Mapped."
-            },
-            "schema": "dateTime"
-          }
-        ]
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Event;1",
     "@type": "Interface",
     "displayName": {
@@ -3849,14 +3419,6 @@
         },
         "name": "servicedBy",
         "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
       },
       {
         "@type": "Relationship",
@@ -4278,14 +3840,6 @@
       },
       {
         "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
-      },
-      {
-        "@type": "Relationship",
         "description": {
           "en": "Indicates a calendar associated with the space, which could include events such as meetings, classes, or maintenance schedules."
         },
@@ -4688,14 +4242,6 @@
         },
         "name": "servicedBy",
         "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
       },
       {
         "@type": "Relationship",
@@ -5874,23 +5420,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BasisOfDesign;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Basis of Design"
-    },
-    "description": {
-      "en": "A document defining the design criteria, assumptions, and decisions that guide the development of a project. It serves as a reference for architects, engineers, and other stakeholders throughout the design and construction process."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Bay;1",
     "@type": "Interface",
     "displayName": {
@@ -6791,57 +6320,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CertificationDocument;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Certification Document"
-    },
-    "description": {
-      "en": "A document that provides evidence of compliance with specific standards, regulations, or requirements. It is typically issued by a recognized authority or organization and serves as proof that a product, service, or system meets the necessary criteria for safety, quality, or performance."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CommissioningDocument;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Commissioning Document"
-    },
-    "description": {
-      "en": "A document related to the commissioning process of a building or system such as a commissioning plan, report, or checklist."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ContractDocument;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Contract Document"
-    },
-    "description": {
-      "en": "A document that outlines the terms, conditions, and agreements between parties involved in a contract. It typically includes details such as the scope of work, deliverables, timelines, payment terms, and any other relevant information pertaining to the contractual relationship."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ContractEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -7420,23 +6898,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Drawing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Drawing"
-    },
-    "description": {
-      "en": "A document that visually represents the design, layout, or specifications of a building, system, or component. It can include floor plans, elevations, riser diagrams, equipment schedules, or any other type of visual representation used in the construction and design process."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ElevatorTripEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -7784,20 +7245,6 @@
         "schema": "float"
       }
     ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Image;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Image"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -8546,40 +7993,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Product_IOM_Manual;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Product IOM Manual"
-    },
-    "description": {
-      "en": "A document that provides instructions for the installation, operation, and maintenance (IOM) of a product. It typically includes detailed information on how to set up, use, and care for the product to ensure its optimal performance and longevity. (a.k.a. O\u0026M Manual)"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ProductData;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Product Data"
-    },
-    "description": {
-      "en": "A document that contains detailed information about a product, including its specifications, features, performance data, and other relevant details. It serves as a comprehensive reference for understanding the characteristics and capabilities of the product."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Region;1",
     "@type": "Interface",
     "displayName": {
@@ -8706,40 +8119,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Component;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:Specification;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Specification"
-    },
-    "description": {
-      "en": "A document that outlines the specific requirements, criteria, and standards for a construction project or system. It serves as a detailed reference for designers, engineers, manufacturers, and other stakeholders to ensure that the final outcome meets the intended purpose and quality standards."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:StandardOperatingProcedure;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Standard Operating Procedure"
-    },
-    "description": {
-      "en": "A document that outlines a set of step-by-step instructions or guidelines for performing a specific task or process. It provides a standardized approach to ensure consistency, efficiency, and quality in the execution of the task, and may include details such as safety precautions, required materials, and expected outcomes."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
     ],
     "contents": [],
     "@context": [
@@ -9182,23 +8561,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Software;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TestReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Test Report"
-    },
-    "description": {
-      "en": "A document that summarizes the results of testing activities conducted on an asset, system, or component."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
     ],
     "contents": [],
     "@context": [
@@ -9992,23 +9354,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TrainingDocument;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Training Document"
-    },
-    "description": {
-      "en": "A document that provides information and instructions for training purposes. It may include materials such as manuals, guides, presentations, or other resources designed to educate and inform individuals on specific topics or skills."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Tunnel;1",
     "@type": "Interface",
     "description": {
@@ -10525,96 +9870,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:Warranty;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Warranty"
-    },
-    "description": {
-      "en": "A document that outlines the terms and conditions of a warranty agreement, including the type of warranty, the guarantor, the duration of coverage, and any specific terms or limitations. It serves as a reference for both the provider and the recipient of the warranty to understand their rights and responsibilities in relation to the covered product or service."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Document;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "type",
-        "displayName": {
-          "en": "Type"
-        },
-        "writable": true,
-        "schema": {
-          "@id": "dtmi:com:willowinc:WarrantyType;1",
-          "@type": "Enum",
-          "valueSchema": "string",
-          "enumValues": [
-            {
-              "name": "Product",
-              "displayName": {
-                "en": "Product"
-              },
-              "enumValue": "Product"
-            },
-            {
-              "name": "Parts",
-              "displayName": {
-                "en": "Parts"
-              },
-              "enumValue": "Parts"
-            },
-            {
-              "name": "Labor",
-              "displayName": {
-                "en": "Labor"
-              },
-              "enumValue": "Labor"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "Property",
-        "name": "guarantor",
-        "displayName": {
-          "en": "Guarantor"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "duration",
-        "displayName": {
-          "en": "Duration"
-        },
-        "writable": true,
-        "schema": "duration"
-      },
-      {
-        "@type": "Property",
-        "name": "startDate",
-        "displayName": {
-          "en": "Start Date"
-        },
-        "writable": true,
-        "schema": "date"
-      },
-      {
-        "@type": "Property",
-        "name": "endDate",
-        "displayName": {
-          "en": "End Date"
-        },
-        "writable": true,
-        "schema": "date"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:WaterLeakEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -11057,23 +10312,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AssetCollection;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AsBuiltDrawing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "As-Built Drawing"
-    },
-    "description": {
-      "en": "A type of drawing that represents the final, as-built conditions of a building or system after construction is completed. It typically includes any changes or modifications made during construction and serves as a record of the actual built environment."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Drawing;1"
     ],
     "contents": [],
     "@context": [
@@ -12763,40 +12001,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CommissioningChecklist;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Commissioning Checklist"
-    },
-    "description": {
-      "en": "A document that outlines a list of tasks, activities, or items to be completed during the commissioning process of a building or system. It serves as a guide to ensure that all necessary steps are taken and that the commissioning process is thorough and comprehensive."
-    },
-    "extends": [
-      "dtmi:com:willowinc:CommissioningDocument;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CommissioningFinalReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Commissioning Final Report"
-    },
-    "description": {
-      "en": "A document that summarizes the results and findings of the commissioning process for a building or system. It typically includes information on the performance, functionality, and compliance of the commissioned assets, as well as any recommendations for improvements or corrective actions."
-    },
-    "extends": [
-      "dtmi:com:willowinc:CommissioningDocument;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Company;1",
     "@type": "Interface",
     "displayName": {
@@ -12939,23 +12143,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Organization;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DesignDrawing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Design Drawing"
-    },
-    "description": {
-      "en": "A type of drawing that represents the design intent and specifications of a building or system. It typically includes detailed information on dimensions, materials, and construction methods to guide the construction process."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Drawing;1"
     ],
     "contents": [],
     "@context": [
@@ -13290,23 +12477,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FunctionalPerformanceTestReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Functional Performance Test Report"
-    },
-    "description": {
-      "en": "A document that summarizes the results of functional performance testing activities conducted on a building or system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:CommissioningDocument;1"
     ],
     "contents": [],
     "@context": [
@@ -14680,23 +13850,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeaseContract;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Lease Contract"
-    },
-    "description": {
-      "en": "A contract document that outlines the terms and conditions of a lease agreement between a landlord and tenant for a property or asset."
-    },
-    "extends": [
-      "dtmi:com:willowinc:ContractDocument;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingPersonAccessEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -15661,7 +14814,7 @@
           "en": "regulated by"
         },
         "name": "regulatedBy",
-        "target": "dtmi:com:willowinc:ContractDocument;1"
+        "comment": "To-do: determine proper way to link to a document."
       },
       {
         "@type": "Relationship",
@@ -15691,23 +14844,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ServiceContract;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Service Contract"
-    },
-    "description": {
-      "en": "A contract document that outlines the terms and conditions of a service agreement between a service provider and client for the provision of services."
-    },
-    "extends": [
-      "dtmi:com:willowinc:ContractDocument;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Setpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -15718,23 +14854,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Parameter;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ShopDrawing;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Shop Drawing"
-    },
-    "description": {
-      "en": "A type of drawing that provides detailed information and specifications for the fabrication and installation of specific components or systems within a building. Shop drawings are typically created by contractors or suppliers and submitted for review and approval."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Drawing;1"
     ],
     "contents": [],
     "@context": [
@@ -15984,23 +15103,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:StartupReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Start-up Report"
-    },
-    "description": {
-      "en": "A document that summarizes the results and findings of the start-up process for a building or system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:CommissioningDocument;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:StateSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -16224,23 +15326,6 @@
         "schema": "dtmi:com:willowinc:SpaceCapacity;1"
       }
     ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:TestingAndBalancingReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Testing and Balancing Report"
-    },
-    "description": {
-      "en": "A document that summarizes the results of testing and balancing activities conducted on a building\u0027s HVAC system. It typically includes information on airflow measurements, temperature readings, and other relevant data to assess the performance and efficiency of the system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:CommissioningDocument;1"
-    ],
-    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -17767,23 +16852,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AirTestingAndBalancingReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air Testing and Balancing Report"
-    },
-    "description": {
-      "en": "A testing and balancing report document that summarizes the results of air testing and balancing activities conducted on a building\u0027s HVAC air distribution system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:TestingAndBalancingReport;1"
     ],
     "contents": [],
     "@context": [
@@ -25319,14 +24387,6 @@
         "target": "dtmi:com:willowinc:Settings;1"
       },
       {
-        "@type": "Relationship",
-        "name": "hasDocument",
-        "displayName": {
-          "en": "has document"
-        },
-        "target": "dtmi:com:willowinc:Document;1"
-      },
-      {
         "@type": "Property",
         "displayName": {
           "en": "External IDs"
@@ -27337,23 +26397,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SystemVerificationChecklist;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "System Verification Checklist"
-    },
-    "description": {
-      "en": "A document that outlines a list of tasks, activities, or items to be completed during the system verification process of a building or system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:CommissioningChecklist;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Tank;1",
     "@type": "Interface",
     "displayName": {
@@ -28976,23 +28019,6 @@
       "en": "Water Storage Basin"
     },
     "extends": "dtmi:com:willowinc:DistributionStorage;1",
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterTestingAndBalancingReport;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water Testing and Balancing Report"
-    },
-    "description": {
-      "en": "A testing and balancing report document that summarizes the results of water testing and balancing activities conducted on a building\u0027s HVAC water distribution system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:TestingAndBalancingReport;1"
-    ],
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
