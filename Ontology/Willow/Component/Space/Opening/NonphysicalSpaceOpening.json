@@ -55,14 +55,6 @@
       "target": "dtmi:com:willowinc:Settings;1"
     },
     {
-      "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
-    },
-    {
       "@type": "Property",
       "displayName": {
         "en": "External IDs"

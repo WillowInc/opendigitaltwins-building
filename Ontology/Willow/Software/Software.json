@@ -40,14 +40,6 @@
     },
     {
       "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
-    },
-    {
-      "@type": "Relationship",
       "name": "hasSettings",
       "displayName": {
         "en": "has settings"
