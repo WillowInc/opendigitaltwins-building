@@ -123,14 +123,6 @@
     },
     {
       "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
-    },
-    {
-      "@type": "Relationship",
       "description": {
         "en": "Indicates a calendar associated with the space, which could include events such as meetings, classes, or maintenance schedules."
       },
