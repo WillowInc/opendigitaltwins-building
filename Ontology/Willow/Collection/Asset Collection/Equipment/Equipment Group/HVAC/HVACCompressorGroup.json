@@ -5,7 +5,7 @@
     "en": "HVAC Compressor Group"
   },
   "description": {
-    "en": "A group of compressors forming one refrigerant circuit of an HVAC refrigeration machine (e.g. a chiller), piped in parallel on a shared suction/discharge manifold and refrigerant/oil charge, operating together as a single staged entity. One group per refrigerant circuit. The HVAC-domain analog of RefrigerationCompressorRack / RefrigerationCompressorGroup. Hosts the per-circuit refrigerant points (suction/discharge pressure and saturated temperature); individual compressors are members via the includes/includedIn relationship."
+    "en": "A group of compressors forming one refrigerant circuit of an HVAC refrigeration machine (e.g. a chiller), piped in parallel on a shared suction/discharge manifold and refrigerant/oil charge, operating together as a single staged entity. One group per refrigerant circuit. The HVAC-domain analog of RefrigerationCompressorRack / RefrigerationCompressorGroup. Hosts the per-circuit refrigerant points (suction/discharge pressure and saturated temperature); individual compressors are members via the includedIn relationship."
   },
   "extends": [
     "dtmi:com:willowinc:HVACEquipmentGroup;1"
