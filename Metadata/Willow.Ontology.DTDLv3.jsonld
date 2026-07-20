@@ -18897,6 +18897,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DataCenterAisle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Data Center Aisle"
+    },
+    "description": {
+      "en": "An aisle in a data center that separates rows of server racks or other equipment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Aisle;1",
+      "dtmi:com:willowinc:HVACZone;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DataNetworkEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -30445,6 +30463,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ColdAisle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cold Aisle"
+    },
+    "description": {
+      "en": "A data center aisle that is designed to contain the cold air supply to the server racks, typically with a physical barrier or containment system to separate it from the hot aisle."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DataCenterAisle;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CombinationCleanerVacuum;1",
     "@type": "Interface",
     "displayName": {
@@ -35077,6 +35112,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotAisle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Aisle"
+    },
+    "description": {
+      "en": "A data center aisle that is designed to contain the hot air exhaust from the server racks, typically with a physical barrier or containment system to separate it from the cold aisle."
+    },
+    "extends": [
+      "dtmi:com:willowinc:DataCenterAisle;1"
     ],
     "contents": [],
     "@context": [
