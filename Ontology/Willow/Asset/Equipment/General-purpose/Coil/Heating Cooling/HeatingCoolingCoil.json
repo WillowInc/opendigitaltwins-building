@@ -1,0 +1,151 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingCoolingCoil;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating/Cooling Coil"
+  },
+  "description": {
+    "en": "A single coil that can provide either heating or cooling to air. This includes reversible direct expansion (DX) coils found in heat pump equipment, where a reversing valve switches the coil between evaporator (cooling) and condenser (heating) duty, as well as hydronic two-pipe changeover coils supplied seasonally with chilled or hot water."
+  },
+  "extends": [
+    "dtmi:com:willowinc:Coil;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Type"
+      },
+      "name": "type",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "DX",
+            "name": "DX"
+          },
+          {
+            "enumValue": "ChilledWaterHotWater",
+            "name": "ChilledWaterHotWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Refrigerant Type"
+      },
+      "name": "refrigerantType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "Nominal Cooling Capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Nominal Cooling Capacity Unit"
+      },
+      "name": "nominalCoolingCapacityUnit",
+      "annotates": "nominalCoolingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "EnergyRate"],
+      "displayName": {
+        "en": "Nominal Heating Capacity"
+      },
+      "name": "nominalHeatingCapacity",
+      "schema": "double",
+      "unit": "britishThermalUnitPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Nominal Heating Capacity Unit"
+      },
+      "name": "nominalHeatingCapacityUnit",
+      "annotates": "nominalHeatingCapacity",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "designEnteringAirDryBulbTemperature",
+      "displayName": {
+        "en": "Design Entering Air Dry Bulb Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Air Dry Bulb Temperature Unit"
+      },
+      "name": "designEnteringAirDryBulbTemperatureUnit",
+      "annotates": "designEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "designLeavingAirDryBulbTemperatureCooling",
+      "displayName": {
+        "en": "Design Leaving Air Dry Bulb Temperature (Cooling)"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Dry Bulb Temperature (Cooling) Unit"
+      },
+      "name": "designLeavingAirDryBulbTemperatureCoolingUnit",
+      "annotates": "designLeavingAirDryBulbTemperatureCooling",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "name": "designLeavingAirDryBulbTemperatureHeating",
+      "displayName": {
+        "en": "Design Leaving Air Dry Bulb Temperature (Heating)"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Air Dry Bulb Temperature (Heating) Unit"
+      },
+      "name": "designLeavingAirDryBulbTemperatureHeatingUnit",
+      "annotates": "designLeavingAirDryBulbTemperatureHeating",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}
