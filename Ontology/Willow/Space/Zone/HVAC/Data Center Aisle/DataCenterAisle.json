@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:DataCenterAisle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Data Center Aisle"
+  },
+  "description": {
+    "en": "An aisle in a data center that separates rows of server racks or other equipment."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Aisle;1",
+    "dtmi:com:willowinc:HVACZone;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
