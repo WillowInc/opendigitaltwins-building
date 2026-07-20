@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ColdAisle;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Cold Aisle"
+  },
+  "description": {
+    "en": "A data center aisle that is designed to contain the cold air supply to the server racks, typically with a physical barrier or containment system to separate it from the hot aisle."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:DataCenterAisle;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
