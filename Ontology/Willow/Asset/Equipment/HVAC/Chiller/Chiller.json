@@ -22,9 +22,6 @@
         "en": "Compressor"
       },
       "name": "compressor",
-      "description": {
-        "en": "Singular embedded compressor for simple single-compressor chillers. Multi-compressor and multi-circuit chillers instead model each compressor as a standalone Compressor twin via includedIn an HVACCompressorGroup (one group per refrigerant circuit)."
-      },
       "schema": "dtmi:com:willowinc:Compressor;1"
     },
     {
