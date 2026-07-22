@@ -49105,6 +49105,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HVACCompressorGroup;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "HVAC Compressor Group"
+    },
+    "description": {
+      "en": "A group of compressors forming one refrigerant circuit, typically within an HVAC equipment (e.g. a chiller), piped in parallel on a shared suction/discharge manifold and refrigerant/oil charge, operating together as a single staged entity."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACCoolingTowerGroup;1",
     "@type": "Interface",
     "displayName": {
