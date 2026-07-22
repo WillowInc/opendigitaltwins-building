@@ -15662,14 +15662,6 @@
     ],
     "contents": [
       {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
         "@type": "Property",
         "name": "efficiencyRatingType",
         "displayName": {
@@ -16222,22 +16214,6 @@
         "writable": true
       },
       {
-        "@type": "Component",
-        "displayName": {
-          "en": "supply fan"
-        },
-        "name": "supplyFan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "secondary cooling method"
-        },
-        "name": "secondaryCoolingMethod",
-        "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
-      },
-      {
         "@type": "Property",
         "displayName": {
           "en": "Piping Configuration"
@@ -16265,50 +16241,10 @@
       {
         "@type": "Component",
         "displayName": {
-          "en": "return fan"
-        },
-        "name": "returnFan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "re-heating method"
-        },
-        "name": "reHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "primary cooling method"
-        },
-        "name": "primaryCoolingMethod",
-        "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "pre-heating method"
-        },
-        "name": "preHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
           "en": "mixing box"
         },
         "name": "mixingBox",
         "schema": "dtmi:com:willowinc:HVACMixingBox;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "exhaust fan"
-        },
-        "name": "exhaustFan",
-        "schema": "dtmi:com:willowinc:Fan;1"
       },
       {
         "@type": "Component",
@@ -17542,22 +17478,6 @@
     ],
     "contents": [
       {
-        "@type": "Component",
-        "displayName": {
-          "en": "Evaporator"
-        },
-        "name": "evaporator",
-        "schema": "dtmi:com:willowinc:Evaporator;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "Compressor"
-        },
-        "name": "compressor",
-        "schema": "dtmi:com:willowinc:Compressor;1"
-      },
-      {
         "@type": "Property",
         "displayName": {
           "en": "Refrigerant Type"
@@ -18641,14 +18561,6 @@
         "writable": true
       },
       {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
         "@type": "Property",
         "displayName": {
           "en": "Number of Cells"
@@ -19203,14 +19115,6 @@
         "overrides": "unit",
         "schema": "PowerUnit",
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "heating method"
-        },
-        "name": "heatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
       }
     ],
     "@context": [
@@ -25554,14 +25458,6 @@
         "writable": true
       },
       {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      },
-      {
         "@type": [
           "Property",
           "EnergyRate"
@@ -27308,22 +27204,6 @@
         "overrides": "unit",
         "schema": "PowerUnit",
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "heating method"
-        },
-        "name": "heatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
       }
     ],
     "@context": [
@@ -28558,16 +28438,7 @@
     "extends": [
       "dtmi:com:willowinc:Chiller;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "Condenser"
-        },
-        "name": "condenser",
-        "schema": "dtmi:com:willowinc:AirCooledCondenser;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -30229,14 +30100,6 @@
         "overrides": "unit",
         "schema": "PowerUnit",
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "cooling method"
-        },
-        "name": "coolingMethod",
-        "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
       },
       {
         "@type": "Property",
@@ -32987,22 +32850,6 @@
         "writable": true
       },
       {
-        "@type": "Component",
-        "displayName": {
-          "en": "secondary cooling method"
-        },
-        "name": "secondaryCoolingMethod",
-        "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "primary cooling method"
-        },
-        "name": "primaryCoolingMethod",
-        "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
-      },
-      {
         "@type": "Property",
         "displayName": {
           "en": "Piping Configuration"
@@ -33026,14 +32873,6 @@
           "valueSchema": "string"
         },
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
       }
     ],
     "@context": [
@@ -33859,16 +33698,7 @@
       "dtmi:com:willowinc:FoodStorageEquipment;1",
       "dtmi:com:willowinc:DefrostEquipment;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "Evaporator Fan"
-        },
-        "name": "evaporatorFan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -42634,16 +42464,7 @@
     "extends": [
       "dtmi:com:willowinc:Chiller;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "Condenser"
-        },
-        "name": "condenser",
-        "schema": "dtmi:com:willowinc:WaterCooledCondenser;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -43464,14 +43285,6 @@
         "overrides": "unit",
         "schema": "PowerUnit",
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "heating method"
-        },
-        "name": "heatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
       }
     ],
     "@context": [
@@ -45297,16 +45110,7 @@
     "extends": [
       "dtmi:com:willowinc:CAVBox;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "re-heating method"
-        },
-        "name": "reHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -47895,16 +47699,7 @@
     "extends": [
       "dtmi:com:willowinc:FanCoilUnit;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "re-heating method"
-        },
-        "name": "reHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -47980,14 +47775,6 @@
           "valueSchema": "string"
         },
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
       }
     ],
     "@context": [
@@ -52224,16 +52011,7 @@
       "dtmi:com:willowinc:FoodDisplayCase;1",
       "dtmi:com:willowinc:DefrostEquipment;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "Evaporator Fan"
-        },
-        "name": "evaporatorFan",
-        "schema": "dtmi:com:willowinc:Fan;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -54232,16 +54010,7 @@
     "extends": [
       "dtmi:com:willowinc:VAVBox;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "re-heating method"
-        },
-        "name": "reHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -58221,16 +57990,7 @@
     "extends": [
       "dtmi:com:willowinc:FanPoweredBox;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "re-heating method"
-        },
-        "name": "reHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -63396,16 +63156,7 @@
     "extends": [
       "dtmi:com:willowinc:SupplyVAVAirflowControlValve;1"
     ],
-    "contents": [
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "re-heating method"
-        },
-        "name": "reHeatingMethod",
-        "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
