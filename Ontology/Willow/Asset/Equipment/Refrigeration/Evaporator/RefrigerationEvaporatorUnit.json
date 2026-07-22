@@ -21,14 +21,6 @@
       "writable": true
     },
     {
-      "@type": "Component",
-      "displayName": {
-        "en": "fan"
-      },
-      "name": "fan",
-      "schema": "dtmi:com:willowinc:Fan;1"
-    },
-    {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
         "en": "Nominal Cooling Capacity"
