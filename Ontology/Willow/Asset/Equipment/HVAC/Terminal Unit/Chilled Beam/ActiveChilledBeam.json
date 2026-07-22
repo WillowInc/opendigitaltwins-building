@@ -49,14 +49,6 @@
       "overrides": "unit",
       "schema": "PowerUnit",
       "writable": true
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "heating method"
-      },
-      "name": "heatingMethod",
-      "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
     }
   ],
   "@context": [

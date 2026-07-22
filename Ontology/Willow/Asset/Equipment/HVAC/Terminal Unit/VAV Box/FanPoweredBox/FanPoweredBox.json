@@ -32,14 +32,6 @@
         "valueSchema": "string"
       },
       "writable": true
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "fan"
-      },
-      "name": "fan",
-      "schema": "dtmi:com:willowinc:Fan;1"
     }
   ],
   "@context": [

@@ -51,14 +51,6 @@
       "writable": true
     },
     {
-      "@type": "Component",
-      "displayName": {
-        "en": "cooling method"
-      },
-      "name": "coolingMethod",
-      "schema": "dtmi:com:willowinc:HVACCoolingMethod;1"
-    },
-    {
       "@type": "Property",
       "displayName": {
         "en": "Piping Configuration"
