@@ -1609,6 +1609,92 @@
             }
           }
         }
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Installation Date"
+        },
+        "name": "installationDate",
+        "schema": "date",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Initial Cost"
+        },
+        "name": "initialCost",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "initialCostUnit",
+        "displayName": {
+          "en": "Initial Cost Unit"
+        },
+        "description": {
+          "en": "The currency associated with the initial cost."
+        },
+        "annotates": "initialCost",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Expected Replacement Cost"
+        },
+        "name": "expectedReplacementCost",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "expectedReplacementCostUnit",
+        "displayName": {
+          "en": "Expected Replacement Cost Unit"
+        },
+        "description": {
+          "en": "The currency associated with the initial cost."
+        },
+        "annotates": "expectedReplacementCost",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Expected Life"
+        },
+        "name": "expectedLife",
+        "schema": "duration",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Expected End-of-Life"
+        },
+        "name": "expectedEndOfLife",
+        "schema": "date",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Commission Date"
+        },
+        "name": "commissionDate",
+        "schema": "date",
+        "writable": true
       }
     ],
     "schemas": [
@@ -1840,7 +1926,10 @@
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -4991,9 +5080,25 @@
     "extends": [
       "dtmi:com:willowinc:BuildingComponent;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Sound Transmission Class"
+        },
+        "description": {
+          "en": "The sound transmission class (STC) is a numerical rating of how well a building partition attenuates airborne sound. The higher the STC rating, the better the partition is at reducing sound transmission."
+        },
+        "name": "soundTransmissionClass",
+        "schema": "integer",
+        "writable": true
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -10497,6 +10602,21 @@
         "schema": "double",
         "unit": "hour",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Fire Rating Unit"
+        },
+        "name": "fireRatingUnit",
+        "annotates": "fireRating",
+        "overrides": "unit",
+        "schema": "TimeUnit",
+        "writable": true
       }
     ],
     "@context": [
@@ -15427,8 +15547,41 @@
     "extends": [
       "dtmi:com:willowinc:ArchitecturalBuildingComponent;1"
     ],
+    "contents": [
+      {
+        "@type": [
+          "TimeSpan",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Fire Rating"
+        },
+        "name": "fireRating",
+        "schema": "double",
+        "unit": "hour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Fire Rating Unit"
+        },
+        "name": "fireRatingUnit",
+        "annotates": "fireRating",
+        "overrides": "unit",
+        "schema": "TimeUnit",
+        "writable": true
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -33201,11 +33354,28 @@
         "schema": "double",
         "unit": "hour",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Fire Rating Unit"
+        },
+        "name": "fireRatingUnit",
+        "annotates": "fireRating",
+        "overrides": "unit",
+        "schema": "TimeUnit",
+        "writable": true
       }
     ],
     "@context": [
       "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1"
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
