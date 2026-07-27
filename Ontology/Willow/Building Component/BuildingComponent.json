@@ -286,6 +286,86 @@
           }
         }
       }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Installation Date"
+      },
+      "name": "installationDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Initial Cost"
+      },
+      "name": "initialCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "initialCostUnit",
+      "displayName": {
+        "en": "Initial Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the initial cost."
+      },
+      "annotates": "initialCost",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Expected Replacement Cost"
+      },
+      "name": "expectedReplacementCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "expectedReplacementCostUnit",
+      "displayName": {
+        "en": "Expected Replacement Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the initial cost."
+      },
+      "annotates": "expectedReplacementCost",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Expected Life"
+      },
+      "name": "expectedLife",
+      "schema": "duration",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Expected End-of-Life"
+      },
+      "name": "expectedEndOfLife",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Commission Date"
+      },
+      "name": "commissionDate",
+      "schema": "date",
+      "writable": true
     }
   ],
   "schemas": [
@@ -517,6 +597,9 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

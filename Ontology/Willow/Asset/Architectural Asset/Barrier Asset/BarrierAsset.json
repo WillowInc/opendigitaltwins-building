@@ -136,6 +136,17 @@
       "schema": "double",
       "unit": "hour",
       "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Fire Rating Unit"
+      },
+      "name": "fireRatingUnit",
+      "annotates": "fireRating",
+      "overrides": "unit",
+      "schema": "TimeUnit",
+      "writable": true
     }
   ],
   "@context": [

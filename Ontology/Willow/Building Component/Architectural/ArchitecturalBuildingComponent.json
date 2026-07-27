@@ -8,9 +8,23 @@
     "dtmi:com:willowinc:BuildingComponent;1"
   ],
   "contents": [
-    
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Sound Transmission Class"
+      },
+      "description": {
+        "en": "The sound transmission class (STC) is a numerical rating of how well a building partition attenuates airborne sound. The higher the STC rating, the better the partition is at reducing sound transmission."
+      },
+      "name": "soundTransmissionClass",
+      "schema": "integer",
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

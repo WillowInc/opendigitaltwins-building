@@ -17,10 +17,23 @@
       "schema": "double",
       "unit": "hour",
       "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Fire Rating Unit"
+      },
+      "name": "fireRatingUnit",
+      "annotates": "fireRating",
+      "overrides": "unit",
+      "schema": "TimeUnit",
+      "writable": true
     }
   ],
   "@context": [
     "dtmi:dtdl:context;3",
-    "dtmi:dtdl:extension:quantitativeTypes;1"
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }
