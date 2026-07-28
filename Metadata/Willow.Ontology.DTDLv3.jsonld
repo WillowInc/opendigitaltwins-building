@@ -16390,22 +16390,6 @@
           "valueSchema": "string"
         },
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "mixing box"
-        },
-        "name": "mixingBox",
-        "schema": "dtmi:com:willowinc:HVACMixingBox;1"
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "energy recovery device"
-        },
-        "name": "energyRecoveryDevice",
-        "schema": "dtmi:com:willowinc:EnergyRecoveryDevice;1"
       }
     ],
     "schemas": [],
@@ -35566,14 +35550,6 @@
         "name": "type",
         "schema": "string",
         "writable": true
-      },
-      {
-        "@type": "Component",
-        "displayName": {
-          "en": "fan"
-        },
-        "name": "fan",
-        "schema": "dtmi:com:willowinc:Fan;1"
       },
       {
         "@type": "Component",
