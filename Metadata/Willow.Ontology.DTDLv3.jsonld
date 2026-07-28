@@ -48714,7 +48714,8 @@
       "en": "A rooftop unit which uses a heat pump to provide cooling and heating."
     },
     "extends": [
-      "dtmi:com:willowinc:RooftopUnit;1"
+      "dtmi:com:willowinc:RooftopUnit;1",
+      "dtmi:com:willowinc:PackagedHeatPump;1"
     ],
     "contents": [],
     "@context": [
