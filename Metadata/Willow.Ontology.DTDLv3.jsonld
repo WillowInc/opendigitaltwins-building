@@ -49360,6 +49360,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:IndoorHeatingCoolingCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Indoor Heating/Cooling Coil"
+    },
+    "description": {
+      "en": "The indoor (load side) reversible coil of heat pump equipment, which exchanges heat with the conditioned airstream delivered to the space. It acts as an evaporator when the equipment is cooling and as a condenser when the equipment is heating."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingCoolingCoil;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -50740,6 +50757,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinarySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutdoorHeatingCoolingCoil;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outdoor Heating/Cooling Coil"
+    },
+    "description": {
+      "en": "The outdoor (source side) reversible coil of heat pump equipment, which exchanges heat with the ambient outdoor airstream. It acts as a condenser when the equipment is cooling and as an evaporator when the equipment is heating. Used in place of an air cooled condenser for reversible (heat pump) equipment; a non-reversible, cooling-only outdoor heat exchanger should be modeled as an AirCooledCondenser."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingCoolingCoil;1"
     ],
     "contents": [],
     "@context": [
