@@ -21,14 +21,6 @@
     {
       "@type": "Component",
       "displayName": {
-        "en": "fan"
-      },
-      "name": "fan",
-      "schema": "dtmi:com:willowinc:Fan;1"
-    },
-    {
-      "@type": "Component",
-      "displayName": {
         "en": "duct inlet"
       },
       "name": "ductInlet",
