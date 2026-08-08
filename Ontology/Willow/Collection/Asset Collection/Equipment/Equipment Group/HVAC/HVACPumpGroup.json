@@ -9,6 +9,26 @@
     "dtmi:com:willowinc:PumpGroup;1"
   ],
   "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "max dp setpoint"
+      },
+      "name": "maxdpsetpoint",
+      "schema": "double",
+      "unit": "psi",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "min dp setpoint"
+      },
+      "name": "mindpsetpoint",
+      "schema": "double",
+      "unit": "psi",
+      "writable": true
+    }
   ],
   "@context": [
     "dtmi:dtdl:context;3"
