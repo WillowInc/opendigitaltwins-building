@@ -24755,6 +24755,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OperatingModeActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Operating Mode Actuator"
+    },
+    "description": {
+      "en": "The multi-state command which sets the operating mode of the equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ModeActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OperationalNonoperationalState;1",
     "@type": "Interface",
     "displayName": {
@@ -34855,6 +34872,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatingCoolingModeActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating/Cooling Mode Actuator"
+    },
+    "description": {
+      "en": "The multi-state command which sets the operating mode of the equipment to \u0027heating\u0027 or \u0027cooling\u0027. Other states may include \u0027off\u0027, \u0027deadband\u0027, \u0027auto\u0027, etc."
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatingDegreeDays;1",
     "@type": "Interface",
     "displayName": {
@@ -37431,6 +37465,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FlowSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OccupancyModeActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupancy Mode Actuator"
+    },
+    "description": {
+      "en": "The multi-state command which sets the operating mode to \u0027occupied\u0027 or \u0027unoccupied\u0027. Other states may include \u0027standby\u0027, \u0027maintenance\u0027, etc."
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeActuator;1"
     ],
     "contents": [],
     "@context": [
