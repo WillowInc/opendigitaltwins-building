@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SupervisoryControlEnableRequest;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supervisory Control Enable Request"
+  },
+  "description": {"en": "A binary parameter written by a supervisory control system to request that the local controller hand over control of the parent entity, and set 'false' to hand control back. The request is not authoritative on its own. The local controller honours it only while its data quality test on the accompanying Supervisory Control Heartbeat is passing, and disregards it otherwise. Whether an individual point is presently being driven as a result is represented separately by Supervisory Control Active."},
+  "extends" : [
+    "dtmi:com:willowinc:BinaryParameter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
