@@ -10730,6 +10730,33 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BinaryParameter;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Binary Parameter"
+    },
+    "description": {
+      "en": "A configuration setting whose values are the Boolean \u0027true\u0027 or \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Parameter;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "lastValue",
+        "displayName": {
+          "en": "Last Value"
+        },
+        "writable": true,
+        "schema": "boolean"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BinaryState;1",
     "@type": "Interface",
     "displayName": {
@@ -15287,23 +15314,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:StructuralBuildingComponent;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SupervisoryControlActive;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Supervisory Control Active"
-    },
-    "description": {
-      "en": "A binary parameter that represents whether another point is being actively controlled by a supervisory control system. A controller may have internal logic to switch a program when the supervisory control signal is not received for a certain amount of time."
-    },
-    "extends": [
-      "dtmi:com:willowinc:Parameter;1"
     ],
     "contents": [],
     "@context": [
@@ -23877,23 +23887,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlActive;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Low Limit Supervisory Control Active"
-    },
-    "description": {
-      "en": "A binary parameter that represents whether the low limit parameter is being actively controlled by a supervisory control system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:SupervisoryControlActive;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Luminaire;1",
     "@type": "Interface",
     "displayName": {
@@ -24663,23 +24656,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HealthcareEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OffsetSupervisoryControlActive;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Offset Supervisory Control Active"
-    },
-    "description": {
-      "en": "A binary parameter that represents whether the offset parameter is being actively controlled by a supervisory control system."
-    },
-    "extends": [
-      "dtmi:com:willowinc:SupervisoryControlActive;1"
     ],
     "contents": [],
     "@context": [
@@ -26369,6 +26345,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:ICTEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SupervisoryControlActive;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supervisory Control Active"
+    },
+    "description": {
+      "en": "A binary parameter that represents whether another point is being actively controlled by a supervisory control system. A controller may have internal logic to switch a program when the supervisory control signal is not received for a certain amount of time."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryParameter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SupervisoryControlEnableRequest;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supervisory Control Enable Request"
+    },
+    "description": {
+      "en": "A binary parameter written by a supervisory control system to request that the local controller hand over control of the parent entity, and set \u0027false\u0027 to hand control back. The request is not authoritative on its own. The local controller honours it only while its data quality test on the accompanying Supervisory Control Heartbeat is passing, and disregards it otherwise. Whether an individual point is presently being driven as a result is represented separately by Supervisory Control Active."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryParameter;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SupervisoryControlHeartbeat;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supervisory Control Heartbeat"
+    },
+    "description": {
+      "en": "A binary parameter written by a supervisory control system to demonstrate to the local controller that its connection is live and its data is flowing. The supervisory system sets this \u0027true\u0027, or toggles it, on a regular interval. The local controller applies its own data quality test to this parameter and, when that test fails, disregards the supervisory system\u0027s Supervisory Control Enable Request and reverts to its own logic."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryParameter;1"
     ],
     "contents": [],
     "@context": [
@@ -36510,6 +36537,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlActive;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Limit Supervisory Control Active"
+    },
+    "description": {
+      "en": "A binary parameter that represents whether the low limit parameter is being actively controlled by a supervisory control system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlActive;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlEnableRequest;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Limit Supervisory Control Enable Request"
+    },
+    "description": {
+      "en": "A binary parameter written by a supervisory control system to request control of the low limit parameter, and set \u0027false\u0027 to hand control back. The request is not authoritative on its own: the local controller honours it only while its data quality test on the accompanying Low Limit Supervisory Control Heartbeat is passing. Whether the low limit parameter is presently being driven is represented separately by Low Limit Supervisory Control Active."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlEnableRequest;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlHeartbeat;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Limit Supervisory Control Heartbeat"
+    },
+    "description": {
+      "en": "A binary parameter written by a supervisory control system to demonstrate that its connection is live and its data is flowing for the low limit parameter it is controlling. The local controller applies its own data quality test to this parameter and, when that test fails, disregards the accompanying Low Limit Supervisory Control Enable Request and reverts to its own logic."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlHeartbeat;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowTemperatureCoolingCoil;1",
     "@type": "Interface",
     "displayName": {
@@ -37581,6 +37659,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnOffActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OffsetSupervisoryControlActive;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Offset Supervisory Control Active"
+    },
+    "description": {
+      "en": "A binary parameter that represents whether the offset parameter is being actively controlled by a supervisory control system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlActive;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OffsetSupervisoryControlEnableRequest;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Offset Supervisory Control Enable Request"
+    },
+    "description": {
+      "en": "A binary parameter written by a supervisory control system to request control of the offset parameter, and set \u0027false\u0027 to hand control back. The request is not authoritative on its own: the local controller honours it only while its data quality test on the accompanying Offset Supervisory Control Heartbeat is passing. Whether the offset parameter is presently being driven is represented separately by Offset Supervisory Control Active."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlEnableRequest;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OffsetSupervisoryControlHeartbeat;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Offset Supervisory Control Heartbeat"
+    },
+    "description": {
+      "en": "A binary parameter written by a supervisory control system to demonstrate that its connection is live and its data is flowing for the offset parameter it is controlling. The local controller applies its own data quality test to this parameter and, when that test fails, disregards the accompanying Offset Supervisory Control Enable Request and reverts to its own logic."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SupervisoryControlHeartbeat;1"
     ],
     "contents": [],
     "@context": [
@@ -45193,6 +45322,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterVolumeSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BinaryModeSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Binary Mode Setpoint"
+    },
+    "description": {
+      "en": "The Boolean configuration setting for the desired mode of equipment, which is \u0027on\u0027 when \u0027true\u0027 and \u0027off\u0027 when \u0027false\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinarySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -63078,6 +63224,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StandbyModeSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Standby Mode Setpoint"
+    },
+    "description": {
+      "en": "When \u0027true\u0027, requests that equipment operate in a standby mode. The mode the equipment reports as a result is represented separately by Standby Mode State."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinaryModeSetpoint;1"
     ],
     "contents": [],
     "@context": [
