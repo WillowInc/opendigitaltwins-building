@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SupervisoryControlHeartbeat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supervisory Control Heartbeat"
+  },
+  "description": {"en": "A binary parameter written by a supervisory control system to demonstrate to the local controller that its connection is live and its data is flowing. The supervisory system sets this 'true', or toggles it, on a regular interval. The local controller applies its own data quality test to this parameter and, when that test fails, disregards the supervisory system's Supervisory Control Enable Request and reverts to its own logic."},
+  "extends" : [
+    "dtmi:com:willowinc:BinaryParameter;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
