@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Offset Supervisory Control Enable Request"
   },
-  "description": {"en": "A binary parameter written by a supervisory control system to request that the local controller hand over control of the offset parameter, and set 'false' to hand control back. The request is not authoritative on its own. The local controller honours it only while its data quality test on the accompanying Offset Supervisory Control Heartbeat is passing, and disregards it otherwise. Whether the offset parameter is presently being driven as a result is represented separately by Offset Supervisory Control Active."},
+  "description": {"en": "A binary parameter written by a supervisory control system to request control of the offset parameter, and set 'false' to hand control back. The request is not authoritative on its own: the local controller honours it only while its data quality test on the accompanying Offset Supervisory Control Heartbeat is passing. Whether the offset parameter is presently being driven is represented separately by Offset Supervisory Control Active."},
   "extends" : [
     "dtmi:com:willowinc:SupervisoryControlEnableRequest;1"
   ],
