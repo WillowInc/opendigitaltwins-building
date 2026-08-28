@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:CompressedAirValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressed Air Valve"
+  },
+  "description": {
+    "en": "A compressed air valve is a device that controls the flow of compressed air, generally within a medical or laboratory setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CompressedAirEquipment;1",
+    "dtmi:com:willowinc:PlumbingValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
