@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Open Override Actuator"
   },
-  "description": {"en": "The Boolean command which overrides the state of the equipment to 'open' when 'true'"},
+  "description": {"en": "The Boolean command which overrides the 'open' command of the equipment when 'true'"},
   "extends" : [
     "dtmi:com:willowinc:OverrideActuator;1"
   ],
