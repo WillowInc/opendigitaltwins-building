@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:PlantGrowthChamber;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plant Growth Chamber"
+  },
+  "description": {
+    "en": "A modular cabinet used to control environmental conditions for the growth of plants, generally within a scientific or laboratory setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ScientificEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
