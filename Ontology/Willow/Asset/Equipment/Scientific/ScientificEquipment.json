@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:ScientificEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Scientific Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Equipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
