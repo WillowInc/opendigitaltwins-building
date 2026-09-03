@@ -41,7 +41,7 @@ jobs:
           exit 1
         fi
     - name: Upload merged ontology
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: Willow.Ontology.DTDLv3
         path: ${{ runner.temp }}/Willow.Ontology.DTDLv3.jsonld
