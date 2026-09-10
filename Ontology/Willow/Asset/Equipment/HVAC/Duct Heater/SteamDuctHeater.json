@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "condensate"
+        "en": "Condensate"
       },
       "name": "condensate",
       "schema": "integer",

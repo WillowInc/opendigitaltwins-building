@@ -11,7 +11,7 @@
       {
         "@type": ["Property", "Length"],
         "displayName": {
-          "en": "outside diameter"
+          "en": "Outside Diameter"
         },
         "name": "outsideDiameter",
         "schema": "double",
@@ -21,7 +21,7 @@
       {
         "@type": ["Property", "ValueAnnotation", "Override"],
         "displayName": {
-          "en": "outside diameter unit"
+          "en": "Outside Diameter Unit"
         },
         "name": "outsideDiameterUnit",
         "annotates": "outsideDiameter",
@@ -32,7 +32,7 @@
       {
         "@type": ["Property", "Length"],
         "displayName": {
-          "en": "nominal diameter"
+          "en": "Nominal Diameter"
         },
         "name": "nominalDiameter",
         "schema": "double",
@@ -42,7 +42,7 @@
       {
         "@type": ["Property", "ValueAnnotation", "Override"],
         "displayName": {
-          "en": "nominal diameter unit"
+          "en": "Nominal Diameter Unit"
         },
         "name": "nominalDiameterUnit",
         "annotates": "nominalDiameter",
@@ -53,7 +53,7 @@
       {
         "@type": ["Property", "Length"],
         "displayName": {
-          "en": "inside diameter"
+          "en": "Inside Diameter"
         },
         "name": "insideDiameter",
         "schema": "double",
@@ -63,7 +63,7 @@
       {
         "@type": ["Property", "ValueAnnotation", "Override"],
         "displayName": {
-          "en": "inside diameter unit"
+          "en": "Inside Diameter Unit"
         },
         "name": "insideDiameterUnit",
         "annotates": "insideDiameter",

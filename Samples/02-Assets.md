@@ -48,8 +48,17 @@ Systems are another means of giving identity to a collection of assets which are
 
 Asset components are parts of an asset that have their own identity. This is a flexible way to model assets that can have a variety of configurations and quantities of types of components.
 
+### Air Handling Units
+
 ![AssetComponent-Example1](Images/AssetComponents-Example1.png)
 
 1. The `isPartOf` relationship is used between two assets to define the Asset-Component hierarchy. In this example, there is a Supply Fan and Exhaust Fan that are part of (components of) the Air Handling Unit. The ontology does not put any constraints on which types of assets can be components of an asset. In other words, the defintion of "asset component" is defined purely by the isPartOf relationship.
 
 2. When capabilities are associated with a component, they are directly related to the component twin.
+
+### Heat Exchangers
+
+![AssetComponent-Example1](Images/AssetComponents-Example2.png)
+
+1. Heat Exchangers and Transformers have Primary and Secondary Sides as shown in this image. While these aren't often considered servicable components like other assets, we define them using the same `isPartOf` relationship.
+2. This allows the corresponding capabilities for the 4 connection points of entering/leaving to be defined as shown in the diagram for EnteringWaterTemperatureSensor and LeavingWaterTemperatureSensor for each side.

@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "pumping media"
+        "en": "Pumping Media"
       },
       "name": "pumpingMedia",
       "schema": "string",
@@ -42,7 +42,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "motor power"
+        "en": "Motor Power"
       },
       "name": "motorPower",
       "schema": "double",
@@ -52,7 +52,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "motor power unit"
+        "en": "Motor Power Unit"
       },
       "name": "motorPowerUnit",
       "annotates": "motorPower",
@@ -63,7 +63,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "brake horsepower"
+        "en": "Brake Horsepower"
       },
       "name": "brakeHorsepower",
       "schema": "double",
@@ -73,7 +73,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "brake horsepower unit"
+        "en": "Brake Horsepower Unit"
       },
       "name": "brakeHorsepowerUnit",
       "annotates": "brakeHorsepower",
@@ -84,7 +84,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "pressure capacity"
+        "en": "Pressure Capacity"
       },
       "name": "pressureCapacity",
       "schema": "double",
@@ -94,7 +94,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "pressure capacity unit"
+        "en": "Pressure Capacity Unit"
       },
       "name": "pressureCapacityUnit",
       "annotates": "pressureCapacity",
@@ -108,7 +108,7 @@
         "en": "rated head"
       },
       "displayName": {
-        "en": "head capacity"
+        "en": "Head Capacity"
       },
       "name": "headCapacity",
       "schema": "double"
@@ -116,7 +116,7 @@
     {
       "@type": ["Property", "ValueAnnotation"],
       "displayName": {
-        "en": "head capacity unit"
+        "en": "Head Capacity Unit"
       },
       "name": "headCapacityUnit",
       "annotates": "headCapacity",
@@ -142,7 +142,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "flow capacity"
+        "en": "Flow Capacity"
       },
       "name": "flowCapacity",
       "schema": "double",
@@ -152,7 +152,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "flow capacity unit"
+        "en": "Flow Capacity Unit"
       },
       "name": "flowCapacityUnit",
       "annotates": "flowCapacity",
@@ -163,7 +163,7 @@
     {
       "@type": ["Property", "Frequency"],
       "displayName": {
-        "en": "maximum VFD frequency"
+        "en": "Maximum VFD Frequency"
       },
       "name": "maxVFDFrequency",
       "schema": "double",
@@ -173,7 +173,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum VFD frequency unit"
+        "en": "Maximum VFD Frequency Unit"
       },
       "name": "maxVFDFrequencyUnit",
       "annotates": "maxVFDFrequency",
@@ -184,7 +184,7 @@
     {
       "@type": ["Property", "Frequency"],
       "displayName": {
-        "en": "design VFD frequency"
+        "en": "Design VFD Frequency"
       },
       "name": "designVFDFrequency",
       "schema": "double",
@@ -194,7 +194,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "design VFD frequency unit"
+        "en": "Design VFD Frequency Unit"
       },
       "name": "designVFDFrequencyUnit",
       "annotates": "designVFDFrequency",

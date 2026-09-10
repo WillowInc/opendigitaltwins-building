@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": ["Property", "Volume"],
       "displayName": {
-        "en": "tank capacity"
+        "en": "Tank Capacity"
       },
       "name": "tankCapacity",
       "schema": "double",
@@ -43,7 +43,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "tank capacity unit"
+        "en": "Tank Capacity Unit"
       },
       "name": "tankCapacityUnit",
       "annotates": "tankCapacity",
@@ -54,7 +54,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "power output"
+        "en": "Power Output"
       },
       "name": "powerOutput",
       "schema": "double",
@@ -64,7 +64,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "power output unit"
+        "en": "Power Output Unit"
       },
       "name": "powerOutputUnit",
       "annotates": "powerOutput",
@@ -75,7 +75,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "power input"
+        "en": "Power Input"
       },
       "name": "powerInput",
       "schema": "double",
@@ -85,7 +85,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "power input unit"
+        "en": "Power Input Unit"
       },
       "name": "powerInputUnit",
       "annotates": "powerInput",
@@ -96,7 +96,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "medium"
+        "en": "Medium"
       },
       "name": "medium",
       "schema": {
@@ -121,7 +121,7 @@
         "en": "Imperial measure for the recovery rate of a boiler (gallons per hour)."
       },
       "displayName": {
-        "en": "recovery @ 100F rise"
+        "en": "Recovery @ 100F Rise"
       },
       "name": "recovery100FRise",
       "schema": "integer",
@@ -224,7 +224,7 @@
       "@type": "Property",
       "name": "fuelType",
       "displayName": {
-        "en": "fuel type"
+        "en": "Fuel Type"
       },
       "description": {
         "en": "The fuel the boiler consumes to produce heat. Used by downstream systems to apply the appropriate utility rate (electricity vs natural gas) for heating-energy cost calculations."

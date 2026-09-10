@@ -9,14 +9,6 @@
     "dtmi:com:willowinc:DefrostEquipment;1"
   ],
   "contents": [
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "Evaporator Fan"
-      },
-      "name": "evaporatorFan",
-      "schema": "dtmi:com:willowinc:Fan;1"
-    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",

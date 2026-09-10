@@ -1,0 +1,25 @@
+{
+  "@id": "dtmi:com:willowinc:BinaryParameter;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Binary Parameter"
+  },
+  "description": {"en": "A configuration setting whose values are the Boolean 'true' or 'false'"},
+  "extends" : [
+    "dtmi:com:willowinc:Parameter;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "lastValue",
+      "displayName": {
+        "en": "Last Value"
+      },
+      "writable": true,
+      "schema": "boolean"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

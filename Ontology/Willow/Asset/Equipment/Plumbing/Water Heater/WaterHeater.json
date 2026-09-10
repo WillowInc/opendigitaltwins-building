@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "first hour delivery unit"
+        "en": "First Hour Delivery Unit"
       },
       "name": "firstHourDeliveryUnit",
       "annotates": "firstHourDelivery",

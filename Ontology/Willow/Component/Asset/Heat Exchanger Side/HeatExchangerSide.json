@@ -12,6 +12,213 @@
   ],
   "contents": [
     {
+      "@type": "Property",
+      "displayName": {
+        "en": "Medium"
+      },
+      "name": "medium",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Steam",
+            "name": "Steam"
+          },
+          {
+            "enumValue": "SteamCondensate",
+            "name": "SteamCondensate"
+          },
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          },
+          {
+            "enumValue": "CondenserWater",
+            "name": "CondenserWater"
+          },
+          {
+            "enumValue": "ChilledWater",
+            "name": "ChilledWater"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Maximum Temperature"
+      },
+      "name": "maxTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Maximum Temperature Unit"
+      },
+      "name": "maxTemperatureUnit",
+      "annotates": "maxTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "Maximum Pressure"
+      },
+      "name": "maxPressure",
+      "schema": "double",
+      "unit": "bar",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Maximum Pressure Unit"
+      },
+      "name": "maxPressureUnit",
+      "annotates": "maxPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Flow Capacity"
+      },
+      "name": "flowCapacity",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Flow Capacity Unit"
+      },
+      "name": "flowCapacityUnit",
+      "annotates": "flowCapacity",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Flow"
+      },
+      "name": "designFlow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Flow Unit"
+      },
+      "name": "designFlowUnit",
+      "annotates": "designFlow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "MassFlowRate"],
+      "displayName": {
+        "en": "Design Mass Flow"
+      },
+      "name": "designMassFlow",
+      "schema": "double",
+      "unit": "massPoundPerHour",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Mass Flow Unit"
+      },
+      "name": "designMassFlowUnit",
+      "annotates": "designMassFlow",
+      "overrides": "unit",
+      "schema": "MassFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designEnteringWaterTemperature",
+      "displayName": {
+        "en": "Design Entering Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Entering Water Temperature Unit"
+      },
+      "name": "designEnteringWaterTemperatureUnit",
+      "annotates": "designEnteringWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": [ "Property", "Temperature" ],
+      "name": "designLeavingWaterTemperature",
+      "displayName": {
+        "en": "Design Leaving Water Temperature"
+      },
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Leaving Water Temperature Unit"
+      },
+      "name": "designLeavingWaterTemperatureUnit",
+      "annotates": "designLeavingWaterTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": "Property",
+      "name": "designDeltaWaterTemperature",
+      "displayName": {
+        "en": "Design Delta Water Temperature"
+      },
+      "schema": "double"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "displayName": {
+        "en": "Design Delta Water Temperature Unit"
+      },
+      "name": "designDeltaWaterTemperatureUnit",
+      "annotates": "designDeltaWaterTemperature",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "name": "deltaDegreeCelsius",
+            "enumValue": "delta-degreeCelsius"
+          },
+          {
+            "name": "deltaDegreeFahrenheit",
+            "enumValue": "delta-degreeFahrenheit"
+          }
+        ],
+        "valueSchema": "string"
+      }
+    },
+    {
       "@type": "Component",
       "displayName": {
         "en": "pipe outlet"
@@ -29,6 +236,9 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "economizer"
+        "en": "Economizer"
       },
       "name": "economizer",
       "schema": "boolean",

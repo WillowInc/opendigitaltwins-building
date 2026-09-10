@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Wi-Fi signal strength"
+        "en": "Wi-Fi Signal Strength"
       },
       "name": "wifiSignalStrength",
       "schema": "double",
@@ -20,7 +20,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "battery percentage"
+        "en": "Battery Percentage"
       },
       "name": "batteryPercentage",
       "schema": "double",

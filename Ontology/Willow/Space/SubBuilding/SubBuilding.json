@@ -32,7 +32,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "height unit"
+        "en": "Height Unit"
       },
       "name": "heightUnit",
       "annotates": "height",

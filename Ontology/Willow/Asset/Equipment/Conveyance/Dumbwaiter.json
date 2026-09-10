@@ -14,7 +14,7 @@
     {
       "@type": ["Mass", "Property"],
       "displayName": {
-        "en": "weight capacity"
+        "en": "Weight Capacity"
       },
       "name": "weightCapacity",
       "schema": "double",
@@ -24,7 +24,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "weight capacity unit"
+        "en": "Weight Capacity Unit"
       },
       "name": "weightCapacityUnit",
       "annotates": "weightCapacity",
@@ -35,7 +35,7 @@
     {
       "@type": ["Property", "Velocity"],
       "displayName": {
-        "en": "maximum travel speed"
+        "en": "Maximum Travel Speed"
       },
       "name": "maxTravelSpeed",
       "schema": "double",
@@ -45,7 +45,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum travel speed unit"
+        "en": "Maximum Travel Speed Unit"
       },
       "name": "maxTravelSpeedUnit",
       "annotates": "maxTravelSpeed",
@@ -56,7 +56,7 @@
     {
       "@type": ["Property", "Length"],
       "displayName": {
-        "en": "maximum travel distance"
+        "en": "Maximum Travel Distance"
       },
       "name": "maxTravelDistance",
       "schema": "double",
@@ -66,7 +66,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum travel distance unit"
+        "en": "Maximum Travel Distance Unit"
       },
       "name": "maxTravelDistanceUnit",
       "annotates": "maxTravelDistance",
@@ -77,7 +77,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "maximum landings"
+        "en": "Maximum Landings"
       },
       "name": "maxLandings",
       "schema": "integer",

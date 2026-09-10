@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:Curtain;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Curtain"
+  },
+  "description": {
+    "en": "A window treatment made of fabric panels that hang over a window, drawn open or closed to control light, visibility, and privacy."
+  },
+  "extends": [
+    "dtmi:com:willowinc:WindowTreatment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

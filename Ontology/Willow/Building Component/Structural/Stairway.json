@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Length"],
       "displayName": {
-        "en": "step width"
+        "en": "Step Width"
       },
       "name": "stepWidth",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "step width unit"
+        "en": "Step Width Unit"
       },
       "name": "stepWidthUnit",
       "annotates": "stepWidth",

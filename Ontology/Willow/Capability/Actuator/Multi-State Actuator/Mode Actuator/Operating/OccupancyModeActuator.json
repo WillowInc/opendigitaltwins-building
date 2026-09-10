@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:OccupancyModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupancy Mode Actuator"
+  },
+  "description": {
+    "en": "The multi-state command which sets the operating mode to 'occupied' or 'unoccupied'. Other states may include 'standby', 'maintenance', etc."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

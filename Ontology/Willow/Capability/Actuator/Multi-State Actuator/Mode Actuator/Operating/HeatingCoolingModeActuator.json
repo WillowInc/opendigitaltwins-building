@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingCoolingModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating/Cooling Mode Actuator"
+  },
+  "description": {
+    "en": "The multi-state command which sets the operating mode of the equipment to 'heating' or 'cooling'. Other states may include 'off', 'deadband', 'auto', etc."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

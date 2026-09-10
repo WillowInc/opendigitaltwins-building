@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "maximum flow rate"
+        "en": "Maximum Flow Rate"
       },
       "name": "maxFlowRate",
       "schema": "double",
@@ -43,7 +43,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum flow rate unit"
+        "en": "Maximum Flow Rate Unit"
       },
       "name": "maxFlowRateUnit",
       "annotates": "maxFlowRate",
@@ -54,7 +54,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "number of handles"
+        "en": "Number of Handles"
       },
       "name": "numberOfHandles",
       "schema": "integer",

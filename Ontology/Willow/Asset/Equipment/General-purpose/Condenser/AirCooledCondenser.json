@@ -112,7 +112,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "total fan power"
+        "en": "Total Fan Power"
       },
       "name": "totalFanPower",
       "schema": "double",
@@ -122,7 +122,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "total fan power unit"
+        "en": "Total Fan Power Unit"
       },
       "name": "totalFanPowerUnit",
       "annotates": "totalFanPower",
@@ -133,7 +133,7 @@
     {
       "@type": ["Power", "Property"],
       "displayName": {
-        "en": "total fan brake horsepower"
+        "en": "Total Fan Brake Horsepower"
       },
       "name": "totalFanbrakeHorsepower",
       "schema": "double",
@@ -143,7 +143,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "total fan brake horsepower unit"
+        "en": "Total Fan Brake Horsepower Unit"
       },
       "name": "totalFanbrakeHorsepowerUnit",
       "annotates": "totalFanbrakeHorsepower",

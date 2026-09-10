@@ -1,0 +1,62 @@
+{
+  "@id": "dtmi:com:willowinc:WindowTreatment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Window Treatment"
+  },
+  "description": {
+    "en": "A covering applied to or around a window, typically for the control of sunlight, glare, heat gain, privacy, or for decorative purposes. Window treatments such as blinds, curtains, and shades may be operated manually or by a motor."
+  },
+  "extends": [
+    "dtmi:com:willowinc:ArchitecturalAsset;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Mounting Type"
+      },
+      "name": "mountingType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Interior",
+            "name": "Interior"
+          },
+          {
+            "enumValue": "Exterior",
+            "name": "Exterior"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Operation Type"
+      },
+      "name": "operationType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Manual",
+            "name": "Manual"
+          },
+          {
+            "enumValue": "Motorized",
+            "name": "Motorized"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

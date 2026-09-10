@@ -36,14 +36,6 @@
     },
     {
       "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
-    },
-    {
-      "@type": "Relationship",
       "name": "hasSettings",
       "displayName": {
         "en": "has settings"
@@ -57,7 +49,7 @@
       "@type": "Relationship",
       "name": "serviceResponsibility",
       "displayName": {
-        "en": "Service Responsibilitly"
+        "en": "Service Responsibility"
       },
       "target": "dtmi:com:willowinc:Agent;1"
     },
@@ -72,7 +64,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Track is included in a Network. Inverse of: includes"
+        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Track is included in a Network."
       },
       "displayName": {
         "en": "included in"
@@ -99,7 +91,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc)."
       },
       "displayName": {
         "en": "is part of"
@@ -120,17 +112,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "The coverage or impact area of a given Asset or Sensor/Actuator. For example: an air-treatment unit might serve several Rooms or a full Building. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: servedBy"
-      },
-      "displayName": {
-        "en": "serves"
-      },
-      "name": "serves"
-    },
-    {
-      "@type": "Relationship",
-      "description": {
-        "en": "Property that defines the legal owner(s) of a given entity. Inverse of: owns"
+        "en": "Property that defines the legal owner(s) of a given entity."
       },
       "displayName": {
         "en": "owned by"
@@ -178,7 +160,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -348,7 +330,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "commission date"
+        "en": "Commission Date"
       },
       "name": "commissionDate",
       "schema": "date",
@@ -357,7 +339,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected end-of-life"
+        "en": "Expected End-of-Life"
       },
       "name": "expectedEndOfLife",
       "schema": "date",
@@ -366,7 +348,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected life"
+        "en": "Expected Life"
       },
       "name": "expectedLife",
       "schema": "duration",
@@ -375,7 +357,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected replacement cost"
+        "en": "Expected Replacement Cost"
       },
       "name": "expectedReplacementCost",
       "schema": "string",
@@ -384,7 +366,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "initial cost"
+        "en": "Initial Cost"
       },
       "name": "initialCost",
       "schema": "string",
@@ -393,7 +375,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation date"
+        "en": "Installation Date"
       },
       "name": "installationDate",
       "schema": "date",
@@ -402,7 +384,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "maintenance interval"
+        "en": "Maintenance Interval"
       },
       "name": "maintenanceInterval",
       "schema": "duration",
@@ -411,7 +393,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "turnover date"
+        "en": "Turnover Date"
       },
       "name": "turnoverDate",
       "schema": "date",
@@ -420,7 +402,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "physical tag number"
+        "en": "Physical Tag Number"
       },
       "name": "physicalTagNumber",
       "schema": "string",

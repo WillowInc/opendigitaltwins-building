@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:MotionState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Motion State"
+  },
+  "description": {
+    "en": "The multi-state motion state of the equipment or device which could include states such as 'opening' or 'closing' when the device is in motion, and 'stopped' or 'idle' when the device is not in motion. Other states may include 'paused', 'reversing', etc."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:MultiState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

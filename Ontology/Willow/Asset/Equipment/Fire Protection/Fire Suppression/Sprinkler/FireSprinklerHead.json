@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -41,7 +41,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "K-factor (metric)"
+        "en": "K-factor (Metric)"
       },
       "name": "kFactorMetric",
       "schema": "double",
@@ -50,7 +50,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "K-factor (imperial)"
+        "en": "K-factor (Imperial)"
       },
       "name": "kFactorImperial",
       "schema": "double",

@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "capacity unit"
+        "en": "Capacity Unit"
       },
       "name": "capacityUnit",
       "annotates": "capacity",
@@ -32,7 +32,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "double",
@@ -42,7 +42,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",

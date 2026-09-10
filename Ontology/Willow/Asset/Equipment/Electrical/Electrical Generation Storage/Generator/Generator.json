@@ -11,7 +11,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "output voltage"
+        "en": "Output Voltage"
       },
       "name": "outputVoltage",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "output phases"
+        "en": "Output Phases"
       },
       "name": "outputPhases",
       "schema": {
@@ -43,7 +43,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "mode of operation"
+        "en": "Mode of Operation"
       },
       "name": "modeOfOperation",
       "schema": "string",
@@ -52,7 +52,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "fuel type"
+        "en": "Fuel Type"
       },
       "name": "fuelType",
       "schema": "string",
@@ -64,7 +64,7 @@
         "en": "Hz"
       },
       "displayName": {
-        "en": "frequency"
+        "en": "Frequency"
       },
       "name": "frequency",
       "schema": "integer",
@@ -74,7 +74,7 @@
     {
       "@type": ["Property", "Volume"],
       "displayName": {
-        "en": "day tank capacity"
+        "en": "Day Tank Capacity"
       },
       "name": "dayTankCapacity",
       "schema": "double",
@@ -84,7 +84,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "day tank capacity unit"
+        "en": "Day Tank Capacity Unit"
       },
       "name": "dayTankCapacityUnit",
       "annotates": "dayTankCapacity",
@@ -95,7 +95,7 @@
     {
       "@type": ["Property", "Volume"],
       "displayName": {
-        "en": "bulk storage capacity"
+        "en": "Bulk Storage Capacity"
       },
       "name": "bulkStorageCapacity",
       "schema": "double",
@@ -105,7 +105,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "bulk storage capacity unit"
+        "en": "Bulk Storage Capacity Unit"
       },
       "name": "bulkStorageCapacityUnit",
       "annotates": "bulkStorageCapacity",
@@ -116,7 +116,7 @@
     {
       "@type": ["Property", "ApparentPower"],
       "displayName": {
-        "en": "standby power rating (KVA)"
+        "en": "Standby Power Rating (KVA)"
       },
       "name": "standbyPowerKVA",
       "schema": "double",
@@ -126,7 +126,7 @@
     {
       "@type": ["Property", "Power"],
       "displayName": {
-        "en": "standby power rating"
+        "en": "Standby Power Rating"
       },
       "name": "standbyPower",
       "schema": "double",
@@ -136,7 +136,7 @@
     {
       "@type": ["Property", "ApparentPower"],
       "displayName": {
-        "en": "prime power rating (KVA)"
+        "en": "Prime Power Rating (KVA)"
       },
       "name": "primePowerKVA",
       "schema": "double",
@@ -146,7 +146,7 @@
     {
       "@type": ["Property", "Power"],
       "displayName": {
-        "en": "prime power rating"
+        "en": "Prime Power Rating"
       },
       "name": "primePower",
       "schema": "double",

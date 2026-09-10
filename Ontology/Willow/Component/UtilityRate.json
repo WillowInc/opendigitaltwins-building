@@ -24,7 +24,7 @@
       "@type": ["Property", "ValueAnnotation"],
       "name": "fixedRateUnit",
       "displayName": {
-        "en": "fixed rate unit"
+        "en": "Fixed Rate Unit"
       },
       "annotates": "fixedRate",
       "schema": "string",

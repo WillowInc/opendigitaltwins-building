@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "poles"
+        "en": "Poles"
       },
       "name": "poles",
       "schema": {
@@ -33,7 +33,7 @@
     {
       "@type": ["Current", "Property"],
       "displayName": {
-        "en": "mains rating"
+        "en": "Mains Rating"
       },
       "name": "mainsRating",
       "schema": "double",

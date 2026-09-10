@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Energy"],
       "displayName": {
-        "en": "nominal capacity"
+        "en": "Nominal Capacity"
       },
       "name": "nominalCapacity",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "nominal capacity unit"
+        "en": "Nominal Capacity Unit"
       },
       "name": "nominalCapacityUnit",
       "annotates": "nominalCapacity",

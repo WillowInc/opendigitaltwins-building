@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:CompressedAirOutlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Compressed Air Outlet"
+  },
+  "description": {
+    "en": "A compressed air outlet is a device that provides access to a compressed air supply, generally within a medical or laboratory setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:CompressedAirEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

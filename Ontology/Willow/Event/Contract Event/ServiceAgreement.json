@@ -17,7 +17,7 @@
         "en": "regulated by"
       },
       "name": "regulatedBy",
-      "target": "dtmi:com:willowinc:ContractDocument;1"
+      "comment": "To-do: determine proper way to link to a document."
     },
     {
       "@type": "Relationship",

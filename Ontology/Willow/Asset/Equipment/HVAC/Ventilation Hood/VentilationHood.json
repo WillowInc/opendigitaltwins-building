@@ -39,7 +39,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "maximum airflow rating"
+        "en": "Maximum Airflow Rating"
       },
       "name": "maxAirflowRating",
       "schema": "double",
@@ -49,7 +49,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum airflow rating unit"
+        "en": "Maximum Airflow Rating Unit"
       },
       "name": "maxAirflowRatingUnit",
       "annotates": "maxAirflowRating",

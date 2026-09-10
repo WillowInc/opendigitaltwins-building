@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OpenOverrideActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Open Override Actuator"
+  },
+  "description": {"en": "The Boolean command which overrides the 'open' command of the equipment when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OverrideActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

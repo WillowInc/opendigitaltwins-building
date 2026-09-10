@@ -13,7 +13,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc)."
       },
       "displayName": {
         "en": "is part of"
@@ -25,7 +25,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates which Building a certain Building Component is part of. Inverse of: hasBuildingComponent"
+        "en": "Indicates which Building a certain Building Component is part of."
       },
       "displayName": {
         "en": "component of building"
@@ -33,14 +33,6 @@
       "maxMultiplicity": 1,
       "name": "componentOfBuilding",
       "target": "dtmi:com:willowinc:Building;1"
-    },
-    {
-      "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
     },
     {
       "@type": "Relationship",
@@ -140,7 +132,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -294,6 +286,86 @@
           }
         }
       }
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Installation Date"
+      },
+      "name": "installationDate",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Initial Cost"
+      },
+      "name": "initialCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "initialCostUnit",
+      "displayName": {
+        "en": "Initial Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the initial cost."
+      },
+      "annotates": "initialCost",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Expected Replacement Cost"
+      },
+      "name": "expectedReplacementCost",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "expectedReplacementCostUnit",
+      "displayName": {
+        "en": "Expected Replacement Cost Unit"
+      },
+      "description": {
+        "en": "The currency associated with the initial cost."
+      },
+      "annotates": "expectedReplacementCost",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Expected Life"
+      },
+      "name": "expectedLife",
+      "schema": "duration",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Expected End-of-Life"
+      },
+      "name": "expectedEndOfLife",
+      "schema": "date",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Commission Date"
+      },
+      "name": "commissionDate",
+      "schema": "date",
+      "writable": true
     }
   ],
   "schemas": [
@@ -525,6 +597,9 @@
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }

@@ -27,14 +27,6 @@
     },
     {
       "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
-    },
-    {
-      "@type": "Relationship",
       "name": "hasSettings",
       "displayName": {
         "en": "has settings"
@@ -43,16 +35,6 @@
         "en": "Used to extend a twin's base properties with settings that can be used by applications or people to create functionality and experiences in the context of the twin."
       },
       "target": "dtmi:com:willowinc:Settings;1"
-    },
-    {
-      "@type": "Relationship",
-      "description": {
-        "en": "Indicates that an agent is the legal owner of a given entity, e.g., a Company owns some Real Estate. Inverse of: ownedBy"
-      },
-      "displayName": {
-        "en": "owns"
-      },
-      "name": "owns"
     },
     {
       "@type": "Property",
@@ -107,7 +89,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",

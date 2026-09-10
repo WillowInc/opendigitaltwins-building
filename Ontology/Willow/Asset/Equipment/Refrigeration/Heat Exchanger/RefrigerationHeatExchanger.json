@@ -14,7 +14,7 @@
     {
       "@type": ["Property", "Temperature"],
       "displayName": {
-        "en": "secondary maximum temperature"
+        "en": "Secondary Maximum Temperature"
       },
       "name": "secondaryMaxTemperature",
       "schema": "double",
@@ -24,7 +24,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "secondary maximum temperature unit"
+        "en": "Secondary Maximum Temperature Unit"
       },
       "name": "secondaryMaxTemperatureUnit",
       "annotates": "secondaryMaxTemperature",
@@ -35,7 +35,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "secondary maximum pressure"
+        "en": "Secondary Maximum Pressure"
       },
       "name": "secondaryMaxPressure",
       "schema": "double",
@@ -45,7 +45,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "secondary maximum pressure unit"
+        "en": "Secondary Maximum Pressure Unit"
       },
       "name": "secondaryMaxPressureUnit",
       "annotates": "secondaryMaxPressure",
@@ -56,7 +56,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "secondary flow capacity"
+        "en": "Secondary Flow Capacity"
       },
       "name": "secondaryFlowCapacity",
       "schema": "double",
@@ -66,7 +66,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "secondary flow capacity unit"
+        "en": "Secondary Flow Capacity Unit"
       },
       "name": "secondaryFlowCapacityUnit",
       "annotates": "secondaryFlowCapacity",
@@ -77,7 +77,7 @@
     {
       "@type": ["Property", "Temperature"],
       "displayName": {
-        "en": "primary maximum temperature"
+        "en": "Primary Maximum Temperature"
       },
       "name": "primaryMaxTemperature",
       "schema": "double",
@@ -87,7 +87,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "primary maximum temperature unit"
+        "en": "Primary Maximum Temperature Unit"
       },
       "name": "primaryMaxTemperatureUnit",
       "annotates": "primaryMaxTemperature",
@@ -98,7 +98,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "primary maximum pressure"
+        "en": "Primary Maximum Pressure"
       },
       "name": "primaryMaxPressure",
       "schema": "double",
@@ -108,7 +108,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "primary maximum pressure unit"
+        "en": "Primary Maximum Pressure Unit"
       },
       "name": "primaryMaxPressureUnit",
       "annotates": "primaryMaxPressure",
@@ -119,7 +119,7 @@
     {
       "@type": ["Property", "VolumeFlowRate"],
       "displayName": {
-        "en": "primary flow capacity"
+        "en": "Primary Flow Capacity"
       },
       "name": "primaryFlowCapacity",
       "schema": "double",
@@ -129,7 +129,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "primary flow capacity unit"
+        "en": "Primary Flow Capacity Unit"
       },
       "name": "primaryFlowCapacityUnit",
       "annotates": "primaryFlowCapacity",

@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "short circuit rating"
+        "en": "Short Circuit Rating"
       },
       "name": "shortCircuitRating",
       "schema": "string",
@@ -20,7 +20,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "output phases"
+        "en": "Output Phases"
       },
       "name": "outputPhases",
       "schema": {
@@ -42,7 +42,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "input voltage"
+        "en": "Input Voltage"
       },
       "name": "inputVoltage",
       "schema": "double",
@@ -52,7 +52,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "max number of poles"
+        "en": "Max Number of Poles"
       },
       "name": "maxNumberOfPoles",
       "schema": "integer",

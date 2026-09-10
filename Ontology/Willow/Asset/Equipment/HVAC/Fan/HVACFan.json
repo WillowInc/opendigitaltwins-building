@@ -12,19 +12,11 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": "string",
       "writable": true
-    },
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "fan"
-      },
-      "name": "fan",
-      "schema": "dtmi:com:willowinc:Fan;1"
     },
     {
       "@type": "Component",

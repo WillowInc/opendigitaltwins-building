@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:Shade;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Shade"
+  },
+  "description": {
+    "en": "A window treatment made of a continuous piece of material that is raised or lowered over a window to control sunlight, glare, and heat gain. Examples include roller shades, roman shades, and cellular shades."
+  },
+  "extends": [
+    "dtmi:com:willowinc:WindowTreatment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

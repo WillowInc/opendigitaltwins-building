@@ -117,7 +117,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "elevation unit"
+        "en": "Elevation Unit"
       },
       "name": "elevationUnit",
       "annotates": "elevation",

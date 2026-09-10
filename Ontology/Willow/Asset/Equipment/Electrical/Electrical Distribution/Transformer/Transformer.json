@@ -11,7 +11,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "secondary voltage"
+        "en": "Secondary Voltage"
       },
       "name": "voltageSecondary",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Voltage", "Property"],
       "displayName": {
-        "en": "primary voltage"
+        "en": "Primary Voltage"
       },
       "name": "voltagePrimary",
       "schema": "double",
@@ -31,7 +31,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": "string",
@@ -40,7 +40,7 @@
     {
       "@type": ["Property", "ApparentPower"],
       "displayName": {
-        "en": "size (KVA)"
+        "en": "Size (KVA)"
       },
       "name": "sizeKVA",
       "schema": "double",
@@ -50,7 +50,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "phases"
+        "en": "Phases"
       },
       "name": "phases",
       "schema": {

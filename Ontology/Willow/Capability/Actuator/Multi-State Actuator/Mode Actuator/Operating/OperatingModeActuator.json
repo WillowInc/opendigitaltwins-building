@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OperatingModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Operating Mode Actuator"
+  },
+  "description": {"en": "The multi-state command which sets the operating mode of the equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:ModeActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

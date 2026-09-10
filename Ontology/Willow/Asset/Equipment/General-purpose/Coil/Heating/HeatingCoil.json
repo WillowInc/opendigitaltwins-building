@@ -14,7 +14,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": {
@@ -44,7 +44,7 @@
     {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
-        "en": "nominal heating capacity"
+        "en": "Nominal Heating Capacity"
       },
       "name": "nominalHeatingCapacity",
       "schema": "double",
@@ -54,7 +54,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "nominal heating capacity unit"
+        "en": "Nominal Heating Capacity Unit"
       },
       "name": "nominalHeatingCapacityUnit",
       "annotates": "nominalHeatingCapacity",
@@ -65,7 +65,7 @@
     {
       "@type": ["Property", "EnergyRate"],
       "displayName": {
-        "en": "net sensible heating capacity"
+        "en": "Net Sensible Heating Capacity"
       },
       "name": "netSensibleHeatingCapacity",
       "schema": "double",
@@ -75,7 +75,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "net sensible heating capacity unit"
+        "en": "Net Sensible Heating Capacity Unit"
       },
       "name": "netSensibleHeatingCapacityUnit",
       "annotates": "netSensibleHeatingCapacity",

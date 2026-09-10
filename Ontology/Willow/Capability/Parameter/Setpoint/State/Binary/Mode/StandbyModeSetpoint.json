@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:StandbyModeSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Standby Mode Setpoint"
+  },
+  "description": {"en": "When 'true', requests that equipment operate in a standby mode. The mode the equipment reports as a result is represented separately by Standby Mode State."},
+  "extends" : [
+    "dtmi:com:willowinc:BinaryModeSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

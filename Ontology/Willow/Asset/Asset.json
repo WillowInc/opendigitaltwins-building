@@ -13,7 +13,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates that a Space or Asset is served by some Sensor/Actuator or other Asset. For example: an entrance room might be served by (e.g., covered by) some camera equipment, or a conference room served by a CO2 sensor. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: serves"
+        "en": "Indicates that a Space or Asset is served by some Sensor/Actuator or other Asset. For example: an entrance room might be served by (e.g., covered by) some camera equipment, or a conference room served by a CO2 sensor. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset."
       },
       "displayName": {
         "en": "served by"
@@ -23,17 +23,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "The coverage or impact area of a given Asset or Sensor/Actuator. For example: an air-treatment unit might serve several Rooms or a full Building. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: servedBy"
-      },
-      "displayName": {
-        "en": "serves"
-      },
-      "name": "serves"
-    },
-    {
-      "@type": "Relationship",
-      "description": {
-        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc). Inverse of: hasPart"
+        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc)."
       },
       "displayName": {
         "en": "is part of"
@@ -44,7 +34,7 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment. Inverse of: includes"
+        "en": "Indicates that an entity is included in some Collection, e.g., a Building is included in a RealEstate, or a Room is included in an Apartment."
       },
       "displayName": {
         "en": "included in"
@@ -94,14 +84,6 @@
     },
     {
       "@type": "Relationship",
-      "name": "hasDocument",
-      "displayName": {
-        "en": "has document"
-      },
-      "target": "dtmi:com:willowinc:Document;1"
-    },
-    {
-      "@type": "Relationship",
       "name": "hasSettings",
       "displayName": {
         "en": "has settings"
@@ -115,7 +97,7 @@
       "@type": "Relationship",
       "name": "serviceResponsibility",
       "displayName": {
-        "en": "Service Responsibilitly"
+        "en": "Service Responsibility"
       },
       "target": "dtmi:com:willowinc:Agent;1"
     },
@@ -274,7 +256,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "name"
+        "en": "Name"
       },
       "name": "name",
       "schema": "string",
@@ -339,7 +321,7 @@
       "@type": ["Property", "Angle"],
       "name": "geographicOrientation",
       "displayName": {
-        "en": "geographic orientation"
+        "en": "Geographic Orientation"
       },
       "description": {
         "en": "The horizontal direction the front of the asset is oriented with geographic north as 0 degrees and increasing clockwise (a.ka. azimuth)."
@@ -351,7 +333,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "geographic orientation unit"
+        "en": "Geographic Orientation Unit"
       },
       "name": "geographicOrientationUnit",
       "annotates": "geographicOrientation",
@@ -362,7 +344,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "serial number"
+        "en": "Serial Number"
       },
       "name": "serialNumber",
       "schema": "string",
@@ -371,7 +353,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "physical tag number"
+        "en": "Physical Tag Number"
       },
       "name": "physicalTagNumber",
       "schema": "string",
@@ -380,7 +362,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "model number"
+        "en": "Model Number"
       },
       "name": "modelNumber",
       "schema": "string",
@@ -389,7 +371,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "MAC address"
+        "en": "MAC Address"
       },
       "name": "MACAddress",
       "schema": "string",
@@ -398,7 +380,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "IP address"
+        "en": "IP Address"
       },
       "name": "IPAddress",
       "schema": "string",
@@ -407,7 +389,7 @@
     {
       "@type": ["Property", "Mass"],
       "displayName": {
-        "en": "weight"
+        "en": "Weight"
       },
       "name": "weight",
       "schema": "double",
@@ -417,7 +399,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "weight unit"
+        "en": "Weight Unit"
       },
       "name": "weightUnit",
       "annotates": "weight",
@@ -428,7 +410,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "turnover date"
+        "en": "Turnover Date"
       },
       "name": "turnoverDate",
       "schema": "date",
@@ -437,7 +419,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "maintenance interval"
+        "en": "Maintenance Interval"
       },
       "name": "maintenanceInterval",
       "schema": "duration",
@@ -446,7 +428,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "installation date"
+        "en": "Installation Date"
       },
       "name": "installationDate",
       "schema": "date",
@@ -455,7 +437,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "initial cost"
+        "en": "Initial Cost"
       },
       "name": "initialCost",
       "schema": "double",
@@ -477,7 +459,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected replacement cost"
+        "en": "Expected Replacement Cost"
       },
       "name": "expectedReplacementCost",
       "schema": "double",
@@ -499,7 +481,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected life"
+        "en": "Expected Life"
       },
       "name": "expectedLife",
       "schema": "duration",
@@ -508,7 +490,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "expected end-of-life"
+        "en": "Expected End-of-Life"
       },
       "name": "expectedEndOfLife",
       "schema": "date",
@@ -517,7 +499,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "commission date"
+        "en": "Commission Date"
       },
       "name": "commissionDate",
       "schema": "date",
@@ -526,7 +508,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "manufactured date"
+        "en": "Manufactured Date"
       },
       "name": "manufacturedDate",
       "schema": "date",

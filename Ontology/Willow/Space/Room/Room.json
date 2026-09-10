@@ -33,7 +33,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "volume unit"
+        "en": "Volume Unit"
       },
       "name": "volumeUnit",
       "annotates": "volume",

@@ -1,0 +1,48 @@
+name: Validate DTDL
+
+# Runs on every PR targeting main so a broken ontology can't be merged.
+# Deliberately has no `paths:` filter: a required status check that is skipped
+# by a path filter never reports back, which leaves PRs stuck on
+# "Expected - waiting for status to be reported".
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - "main"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-dtdl-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate DTDL
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Build DTDL Merger
+      run: dotnet build Tools/DTDLMerger/DTDLMerger.csproj
+    - name: Run DTDL Merger on Willow Ontology DTDLv3
+      run: dotnet run --project Tools/DTDLMerger/DTDLMerger.csproj Ontology/Willow/ > "${RUNNER_TEMP}/Willow.Ontology.DTDLv3.jsonld"
+    - name: Verify merged ontology is valid JSON
+      run: |
+        interfaces=$(jq 'if type == "array" then length else error("output is not a JSON array") end' "${RUNNER_TEMP}/Willow.Ontology.DTDLv3.jsonld")
+        echo "Merged ontology contains $interfaces interfaces."
+        if [ "$interfaces" -eq 0 ]; then
+          echo "::error::Merged ontology is empty."
+          exit 1
+        fi
+    - name: Upload merged ontology
+      uses: actions/upload-artifact@v4
+      with:
+        name: Willow.Ontology.DTDLv3
+        path: ${{ runner.temp }}/Willow.Ontology.DTDLv3.jsonld
+        if-no-files-found: error

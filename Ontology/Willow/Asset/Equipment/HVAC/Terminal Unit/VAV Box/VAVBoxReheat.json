@@ -11,14 +11,6 @@
     "dtmi:com:willowinc:VAVBox;1"
   ],
   "contents": [
-    {
-      "@type": "Component",
-      "displayName": {
-        "en": "re-heating method"
-      },
-      "name": "reHeatingMethod",
-      "schema": "dtmi:com:willowinc:HVACHeatingMethod;1"
-    }
   ],
   "@context": [
     "dtmi:dtdl:context;3",

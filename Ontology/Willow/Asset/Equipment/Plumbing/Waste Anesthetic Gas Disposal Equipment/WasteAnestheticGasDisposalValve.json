@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:WasteAnestheticGasDisposalValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Waste Anesthetic Gas Disposal Valve"
+  },
+  "description": {
+    "en": "A waste anesthetic gas disposal valve is a device that controls the flow of waste anesthetic gas within a medical setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:WasteAnestheticGasDisposalEquipment;1",
+    "dtmi:com:willowinc:PlumbingValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

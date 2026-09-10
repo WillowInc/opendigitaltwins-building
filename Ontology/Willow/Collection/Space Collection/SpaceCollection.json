@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "occupiable"
+        "en": "Occupiable"
       },
       "name": "occupiable",
       "description": {

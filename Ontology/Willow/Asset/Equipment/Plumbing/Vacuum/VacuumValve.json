@@ -1,0 +1,20 @@
+{
+  "@id": "dtmi:com:willowinc:VacuumValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vacuum Valve"
+  },
+  "description": {
+    "en": "A vacuum valve is a device that controls the flow of vacuum, generally within a medical or laboratory setting."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:VacuumEquipment;1",
+    "dtmi:com:willowinc:PlumbingValve;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

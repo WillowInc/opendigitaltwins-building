@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:IndoorHeatingCoolingCoil;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Indoor Heating/Cooling Coil"
+  },
+  "description": {
+    "en": "The indoor (load side) reversible coil of heat pump equipment, which exchanges heat with the conditioned airstream delivered to the space. It acts as an evaporator when the equipment is cooling and as a condenser when the equipment is heating."
+  },
+  "extends": [
+    "dtmi:com:willowinc:HeatingCoolingCoil;1"
+  ],
+  "contents": [],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

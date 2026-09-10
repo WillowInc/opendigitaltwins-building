@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlHeartbeat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Limit Supervisory Control Heartbeat"
+  },
+  "description": {"en": "A binary parameter written by a supervisory control system to demonstrate that its connection is live and its data is flowing for the low limit parameter it is controlling. The local controller applies its own data quality test to this parameter and, when that test fails, disregards the accompanying Low Limit Supervisory Control Enable Request and reverts to its own logic."},
+  "extends" : [
+    "dtmi:com:willowinc:SupervisoryControlHeartbeat;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

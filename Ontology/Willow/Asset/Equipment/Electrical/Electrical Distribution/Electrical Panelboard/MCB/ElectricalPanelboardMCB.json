@@ -11,7 +11,7 @@
     {
       "@type": ["Current", "Property"],
       "displayName": {
-        "en": "main circuit breaker rating"
+        "en": "Main Circuit Breaker Rating"
       },
       "name": "MCBRating",
       "schema": "double",

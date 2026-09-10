@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "contents"
+        "en": "Contents"
       },
       "description": {
         "en": "The type of food that is stored within the food display case."

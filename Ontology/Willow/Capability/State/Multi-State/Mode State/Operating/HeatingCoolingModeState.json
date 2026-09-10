@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatingCoolingModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heating/Cooling Mode State"
+  },
+  "description": {
+    "en": "The multi-state operating mode of the equipment which is 'heating' when the mode is set to heating and 'cooling' when the mode is set to cooling. Other states may include 'off', 'deadband', 'auto', etc."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:LowLimitSupervisoryControlActive;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Low Limit Supervisory Control Active"
+  },
+  "description": {
+    "en": "A binary parameter that represents whether the low limit parameter is being actively controlled by a supervisory control system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SupervisoryControlActive;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

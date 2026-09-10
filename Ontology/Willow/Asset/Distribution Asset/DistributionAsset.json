@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Length"],
       "displayName": {
-        "en": "length"
+        "en": "Length"
       },
       "name": "length",
       "schema": "double",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "length unit"
+        "en": "Length Unit"
       },
       "name": "lengthUnit",
       "annotates": "length",

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:Blind;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Blind"
+  },
+  "description": {
+    "en": "A window treatment made of slats, vanes, or solid material that can be tilted, raised, or lowered to control the amount of light and visibility through a window."
+  },
+  "extends": [
+    "dtmi:com:willowinc:WindowTreatment;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

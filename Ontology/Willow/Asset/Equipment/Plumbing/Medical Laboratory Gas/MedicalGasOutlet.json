@@ -11,40 +11,7 @@
     "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
   ],
   "contents": [
-    {
-      "@type": "Property",
-      "name": "gasService",
-      "displayName": {
-        "en": "Gas Service"
-      },
-      "schema": {
-        "@type": "Enum",
-        "enumValues": [
-          {
-            "name": "carbonDioxide",
-            "enumValue": "Carbon Dioxide"
-          },
-          {
-            "name": "oxygen",
-            "enumValue": "Oxygen"
-          },
-          {
-            "name": "nitrogen",
-            "enumValue": "Nitrogen"
-          },
-          {
-            "name": "nitrousOxide",
-            "enumValue": "Nitrous Oxide"
-          },
-          {
-            "name": "medicalAir",
-            "enumValue": "Medical Air"
-          }
-        ],
-        "valueSchema": "string"
-      },
-      "writable": true
-    }
+
   ],
   "@context": [
     "dtmi:dtdl:context;3"

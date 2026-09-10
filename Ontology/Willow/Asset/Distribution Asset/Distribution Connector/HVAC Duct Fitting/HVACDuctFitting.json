@@ -9,7 +9,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "material"
+        "en": "Material"
       },
       "name": "material",
       "schema": "string",

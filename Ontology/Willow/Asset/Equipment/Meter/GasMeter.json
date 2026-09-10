@@ -11,7 +11,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "type"
+        "en": "Type"
       },
       "name": "type",
       "schema": "string",
@@ -20,7 +20,7 @@
     {
       "@type": ["Property", "Temperature"],
       "displayName": {
-        "en": "minimum temperature rating"
+        "en": "Minimum Temperature Rating"
       },
       "name": "minTemperatureRating",
       "schema": "double",
@@ -30,7 +30,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "minimum temperature rating unit"
+        "en": "Minimum Temperature Rating Unit"
       },
       "name": "minTemperatureRatingUnit",
       "annotates": "minTemperatureRating",
@@ -41,7 +41,7 @@
     {
       "@type": ["Property", "MassFlowRate"],
       "displayName": {
-        "en": "minimum mass flow rating"
+        "en": "Minimum Mass Flow Rating"
       },
       "name": "minMassFlowRating",
       "schema": "double",
@@ -51,7 +51,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "minimum mass flow rating unit"
+        "en": "Minimum Mass Flow Rating Unit"
       },
       "name": "minMassFlowRatingUnit",
       "annotates": "minMassFlowRating",
@@ -62,7 +62,7 @@
     {
       "@type": ["Property", "Temperature"],
       "displayName": {
-        "en": "maximum temperature rating"
+        "en": "Maximum Temperature Rating"
       },
       "name": "maxTemperatureRating",
       "schema": "double",
@@ -72,7 +72,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum temperature rating unit"
+        "en": "Maximum Temperature Rating Unit"
       },
       "name": "maxTemperatureRatingUnit",
       "annotates": "maxTemperatureRating",
@@ -83,7 +83,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "maximum pressure rating"
+        "en": "Maximum Pressure Rating"
       },
       "name": "maxPressureRating",
       "schema": "double",
@@ -93,7 +93,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum pressure rating unit"
+        "en": "Maximum Pressure Rating Unit"
       },
       "name": "maxPressureRatingUnit",
       "annotates": "maxPressureRating",
@@ -104,7 +104,7 @@
     {
       "@type": ["Property", "MassFlowRate"],
       "displayName": {
-        "en": "maximum mass flow rating"
+        "en": "Maximum Mass Flow Rating"
       },
       "name": "maxMassFlowRating",
       "schema": "double",
@@ -114,7 +114,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "maximum mass flow rating unit"
+        "en": "Maximum Mass Flow Rating Unit"
       },
       "name": "maxMassFlowRatingUnit",
       "annotates": "maxMassFlowRating",

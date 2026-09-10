@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:OccupancyModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupancy Mode State"
+  },
+  "description": {
+    "en": "The multi-state operating mode of the equipment which is 'occupied' when the mode is set to occupied and 'unoccupied' when the mode is set to unoccupied. Other states may include 'standby', 'maintenance', etc."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "chilling capacity unit"
+        "en": "Chilling Capacity Unit"
       },
       "name": "chillingCapacityUnit",
       "annotates": "chillingCapacity",

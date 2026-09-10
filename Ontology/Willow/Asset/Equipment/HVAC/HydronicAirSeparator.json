@@ -11,7 +11,7 @@
     {
       "@type": ["Property", "Pressure"],
       "displayName": {
-        "en": "working pressure"
+        "en": "Working Pressure"
       },
       "name": "workingPressure",
       "schema": "integer",
@@ -21,7 +21,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "working pressure unit"
+        "en": "Working Pressure Unit"
       },
       "name": "workingPressureUnit",
       "annotates": "workingPressure",
@@ -42,7 +42,7 @@
     {
       "@type": ["Property", "ValueAnnotation", "Override"],
       "displayName": {
-        "en": "pipe diameter unit"
+        "en": "Pipe Diameter Unit"
       },
       "name": "pipeDiameterUnit",
       "annotates": "pipeDiameter",
