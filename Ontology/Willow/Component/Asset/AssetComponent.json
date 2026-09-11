@@ -14,13 +14,12 @@
     {
       "@type": "Relationship",
       "description": {
-        "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc)."
+        "en": "Indicates the Asset or Asset Collection (e.g. an equipment group such as an HVACHeatExchangerGroup) that this component is a constituent part of. Untyped because a component's composing entity can be either an Asset or a Collection, and DTDL relationship targets cannot express a union of both."
       },
       "displayName": {
         "en": "is part of"
       },
-      "name": "isPartOf",
-      "target": "dtmi:com:willowinc:Asset;1"
+      "name": "isPartOf"
     },
     {
       "@type": "Relationship",
