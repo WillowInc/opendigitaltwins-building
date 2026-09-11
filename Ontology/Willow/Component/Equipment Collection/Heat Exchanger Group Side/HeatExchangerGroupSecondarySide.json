@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatExchangerGroupSecondarySide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Exchanger Group Secondary Side"
+  },
+  "description": {
+    "en": "The secondary side of a heat exchanger group is the side where the fluid is circulating to the load (e.g. heating or cooling coil) from a group of heat exchangers."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatExchangerGroupSide;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
