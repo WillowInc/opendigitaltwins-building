@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:HeatExchangerGroupPrimarySide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heat Exchanger Primary Side"
+  },
+  "description": {
+    "en": "The primary side of a heat exchanger group is the side where the fluid is circulating from the primary source (e.g. boiler, chiller) to a group of heat exchangers."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HeatExchangerGroupSide;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
