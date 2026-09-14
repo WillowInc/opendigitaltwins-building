@@ -86,6 +86,8 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 ## AHU Fan Arrays
 
+### Single Fan Group
+
 ![HVACAHUFanArray-Example1](Images/HVACAHUFanArray-Example1.png)
 
 1. In this example, we show how to configure an Air Handling Unit which has multiple fans in the same section. This may be two fans as indicated here or a fan array with more individual fans. The Supply Fan Group has an isPartof relationship to the parent AHU.
@@ -95,6 +97,34 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 3. Each Supply Fan has their own capabilities such as their Fan Run State.
 
 4. Often the fans in the group will have common control points such as a single run level command. Here we show that the Supply Fan Group has a Fan Run Level Actuator and a Fan VFD Frequency Sensor.
+
+### Independently Enabled Fan Groups
+
+![HVACAHUFanArray-Example2](Images/HVACAHUFanArray-Example2.png)
+
+1. Some large fan arrays are divided into subsets of fans which can be enabled independently of each other, while the array as a whole is still driven by a single master enable and a single master speed command. Those master points command the entire array rather than any one fan or subset, so they are capabilities of the Air Handling Unit itself and use the Discharge Fan models - here a Discharge Fan Run Actuator and a Discharge Fan Run Level Actuator. The Discharge designation is what distinguishes them from the return, relief and exhaust fan commands which may also be capabilities of the same AHU.
+
+2. Each independently enabled subset of the array is modeled as its own Supply Fan Group, and each Supply Fan Group has an isPartOf relationship to the AHU. In this example the first three fans can be enabled separately from the last three, so two Supply Fan Groups are shown.
+
+3. The run and speed points which belong to a subset are capabilities of that Supply Fan Group and use the plain Fan models - Fan Run State, Fan VFD Frequency Sensor and Fan Run Level Actuator. The Discharge designation is not used here, because these points belong to a component rather than to the AHU.
+
+4. Each Supply Fan is includedIn its Supply Fan Group, in the same way as the single fan group example above.
+
+5. Each individual Supply Fan carries its own Fan Run State.
+
+### Where Fan Run and Speed Points Belong
+
+Both examples above follow the same rule for the placement of fan run and speed points. The rule matters because it is what allows a rules engine to resolve whether an air handling unit is running.
+
+1. Plain fan run and speed points belong on a fan, never on the AHU. Fan Run State, Fan Run Actuator, Fan Run Level Actuator, Fan Run Level State and Fan VFD Frequency Sensor should be a capability of a fan such as a Supply Fan, or of a fan group such as a Supply Fan Group. They should not be a direct capability of the Air Handling Unit.
+
+2. Where the whole array is enabled together, which is the common case, use a single fan group. Model one Supply Fan Group holding the run and speed points for the array, with every fan includedIn that group, as in the first example. The plain Fan models are used on the group and the Discharge designation is neither needed nor wanted.
+
+3. The Discharge Fan models are the narrow exception. Discharge Fan Run State, Discharge Fan Run Actuator, Discharge Fan Run Level Actuator and Discharge Fan Run Level State are the only fan run models which belong as direct capabilities of an AHU, and only in the case shown in the second example - a fan array whose subsets are enabled independently of each other, with a single master enable or speed command for the whole array. Those master points have no single fan or fan group to belong to, which is why they sit on the AHU.
+
+4. A Discharge Fan point attached to a fan or a fan group is incorrect. If a run or speed point is a capability of a component, it should use the plain Fan model. A Discharge Fan Run State attached to a Supply Fan, for example, should be a Fan Run State.
+
+A plain fan point attached directly to the AHU is not merely unconventional, it is inert. A rules engine resolving the run status of an air handling unit looks first for a Discharge Fan Run State on the AHU, then for run points on the AHU's fan groups, then on the fans within those groups, and finally on fans attached directly to the AHU. No step in that sequence reads a plain Fan Run State from the AHU twin itself, so a point parented to the AHU by mistake binds to nothing and contributes nothing to whether the unit is considered enabled.
 
 ## Chilled Beam
 
