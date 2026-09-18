@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:OneThirdSteamValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "One Third Steam Valve"
+  },
+  "description": {
+    "en": "The smaller valve of a pair of parallel steam control valves, sized for roughly one third of design flow. It is sequenced first so that a steam heat exchanger, converter or coil can modulate stably at low load, with the two third steam valve staging on as load rises."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
