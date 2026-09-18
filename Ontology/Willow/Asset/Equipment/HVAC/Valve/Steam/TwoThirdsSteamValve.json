@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:TwoThirdsSteamValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "2/3 Steam Valve"
+  },
+  "description": {
+    "en": "The larger valve of a pair of parallel steam control valves, sized for roughly two-thirds of design flow. It stages on after the one-third steam valve to carry the upper range of load on a steam heat exchanger, converter or coil."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SteamValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
