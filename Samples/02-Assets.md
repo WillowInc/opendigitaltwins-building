@@ -56,6 +56,8 @@ Asset components are parts of an asset that have their own identity. This is a f
 
 2. When capabilities are associated with a component, they are directly related to the component twin.
 
+3. When there are hydronic coils that are components of an equipment, they will often have an associated valve to control flow to the coil. The position command and feedback points for the valve will typically be hosted on the same controller as the equipment. Regardless of the actual real-world location of the valve, in this scenario we use the `isFedBy` relationship, rather than an `isPartOf`, to indicate that the valve feeds the coil.
+
 ### Heat Exchangers
 
 ![AssetComponent-Example1](Images/AssetComponents-Example2.png)
