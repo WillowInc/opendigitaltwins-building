@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceSupplySide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device Supply Side"
+  },
+  "description": {
+    "en": "The supply side of an energy recovery device is the side through which outdoor air enters and supply air leaves. It is also referred to as the supply airstream or conditioned air side."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergyRecoveryDeviceSide;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

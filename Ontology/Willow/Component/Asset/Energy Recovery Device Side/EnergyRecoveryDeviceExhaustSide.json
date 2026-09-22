@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceExhaustSide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device Exhaust Side"
+  },
+  "description": {
+    "en": "The exhaust side of an energy recovery device is the side through which the return air being removed from the space enters and exhaust air leaves. It is also referred to as the exhaust airstream or return air side."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:EnergyRecoveryDeviceSide;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
