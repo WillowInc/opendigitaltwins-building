@@ -1,0 +1,325 @@
+{
+  "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceSide;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Energy Recovery Device Side"
+  },
+  "description": {
+    "en": "An energy recovery device side represents one side of an energy recovery device, which can be either the supply side or the exhaust side."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:AssetComponent;1"
+  ],
+  "contents": [
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "Cooling Air Pressure Drop"
+      },
+      "name": "coolingAirPressureDrop",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Air Pressure Drop Unit"
+      },
+      "name": "coolingAirPressureDropUnit",
+      "annotates": "coolingAirPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Cooling Minimum Airflow Rating"
+      },
+      "name": "coolingMinAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Minimum Airflow Rating Unit"
+      },
+      "name": "coolingMinAirflowRatingUnit",
+      "annotates": "coolingMinAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Cooling Maximum Airflow Rating"
+      },
+      "name": "coolingMaxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Maximum Airflow Rating Unit"
+      },
+      "name": "coolingMaxAirflowRatingUnit",
+      "annotates": "coolingMaxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Cooling Design Airflow"
+      },
+      "name": "coolingDesignAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Design Airflow Unit"
+      },
+      "name": "coolingDesignAirflowUnit",
+      "annotates": "coolingDesignAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Cooling Design Entering Air Dry Bulb Temperature"
+      },
+      "name": "coolingDesignEnteringAirDryBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Design Entering Air Dry Bulb Temperature Unit"
+      },
+      "name": "coolingDesignEnteringAirDryBulbTemperatureUnit",
+      "annotates": "coolingDesignEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Cooling Design Leaving Air Dry Bulb Temperature"
+      },
+      "name": "coolingDesignLeavingAirDryBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Design Leaving Air Dry Bulb Temperature Unit"
+      },
+      "name": "coolingDesignLeavingAirDryBulbTemperatureUnit",
+      "annotates": "coolingDesignLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Cooling Design Entering Air Wet Bulb Temperature"
+      },
+      "name": "coolingDesignEnteringAirWetBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Design Entering Air Wet Bulb Temperature Unit"
+      },
+      "name": "coolingDesignEnteringAirWetBulbTemperatureUnit",
+      "annotates": "coolingDesignEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Cooling Design Leaving Air Wet Bulb Temperature"
+      },
+      "name": "coolingDesignLeavingAirWetBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Cooling Design Leaving Air Wet Bulb Temperature Unit"
+      },
+      "name": "coolingDesignLeavingAirWetBulbTemperatureUnit",
+      "annotates": "coolingDesignLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "Heating Air Pressure Drop"
+      },
+      "name": "heatingAirPressureDrop",
+      "schema": "double",
+      "unit": "inchesOfWater"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Air Pressure Drop Unit"
+      },
+      "name": "heatingAirPressureDropUnit",
+      "annotates": "heatingAirPressureDrop",
+      "overrides": "unit",
+      "schema": "PressureUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Heating Minimum Airflow Rating"
+      },
+      "name": "heatingMinAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Minimum Airflow Rating Unit"
+      },
+      "name": "heatingMinAirflowRatingUnit",
+      "annotates": "heatingMinAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Heating Maximum Airflow Rating"
+      },
+      "name": "heatingMaxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Maximum Airflow Rating Unit"
+      },
+      "name": "heatingMaxAirflowRatingUnit",
+      "annotates": "heatingMaxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Heating Design Airflow"
+      },
+      "name": "heatingDesignAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Design Airflow Unit"
+      },
+      "name": "heatingDesignAirflowUnit",
+      "annotates": "heatingDesignAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Heating Design Entering Air Dry Bulb Temperature"
+      },
+      "name": "heatingDesignEnteringAirDryBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Design Entering Air Dry Bulb Temperature Unit"
+      },
+      "name": "heatingDesignEnteringAirDryBulbTemperatureUnit",
+      "annotates": "heatingDesignEnteringAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Heating Design Leaving Air Dry Bulb Temperature"
+      },
+      "name": "heatingDesignLeavingAirDryBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Design Leaving Air Dry Bulb Temperature Unit"
+      },
+      "name": "heatingDesignLeavingAirDryBulbTemperatureUnit",
+      "annotates": "heatingDesignLeavingAirDryBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Heating Design Entering Air Wet Bulb Temperature"
+      },
+      "name": "heatingDesignEnteringAirWetBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Design Entering Air Wet Bulb Temperature Unit"
+      },
+      "name": "heatingDesignEnteringAirWetBulbTemperatureUnit",
+      "annotates": "heatingDesignEnteringAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    },
+    {
+      "@type": ["Property", "Temperature"],
+      "displayName": {
+        "en": "Heating Design Leaving Air Wet Bulb Temperature"
+      },
+      "name": "heatingDesignLeavingAirWetBulbTemperature",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Heating Design Leaving Air Wet Bulb Temperature Unit"
+      },
+      "name": "heatingDesignLeavingAirWetBulbTemperatureUnit",
+      "annotates": "heatingDesignLeavingAirWetBulbTemperature",
+      "overrides": "unit",
+      "schema": "TemperatureUnit"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
+  ]
+}

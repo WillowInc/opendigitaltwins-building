@@ -64,3 +64,4 @@ Asset components are parts of an asset that have their own identity. This is a f
 
 1. Heat Exchangers and Transformers have Primary and Secondary Sides as shown in this image. While these aren't often considered servicable components like other assets, we define them using the same `isPartOf` relationship.
 2. This allows the corresponding capabilities for the 4 connection points of entering/leaving to be defined as shown in the diagram for EnteringWaterTemperatureSensor and LeavingWaterTemperatureSensor for each side.
+3. Energy Recovery Devices follow the same pattern, but because both of their streams are air rather than water, the two sides are named for the airstreams they carry: an `EnergyRecoveryDeviceSupplySide` and an `EnergyRecoveryDeviceExhaustSide`, each related to the device with `isPartOf`. The entering/leaving capabilities for each side are hosted on the side twin in the same way.
