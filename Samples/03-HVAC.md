@@ -56,6 +56,20 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 6. Similarly, each of the assets and asset groups shown in this example have capabilities associated with them. For simplicity on a few of these capabilities are shown such as the Face Velocity Setpoint on the Fume Hood or the Damper Position Actuator on the Supply VAV Airflow Control Valve.
 
+### Exhaust Fan with a Room Bypass Damper
+
+![HVACExhaustBypassDamper-Example1](Images/HVACExhaustBypassDamper-Example1.png)
+
+1. Some laboratory exhaust fans serve a single point of capture, such as a ventilated table or a snorkel, and hold a constant duct static pressure. A Bypass Damper, sometimes called a bleed-in damper, modulates to draw room air into the duct as the flow through the point of capture changes.
+
+2. The isFedBy relationships indicate the direction of the airflow, as in the HVAC Pressurization Zone example. The Exhaust Fan isFedBy both the Bypass Damper and the Ventilation Hood.
+
+3. The Bypass Damper isFedBy the Room it draws air from rather than the HVAC Zone, because a zone may contain several Rooms. The zone can still be found from the Room through its isPartOf relationship.
+
+4. The Bypass Damper also has a locatedIn relationship to the Space where it is installed, which may be different from the Room it draws air from.
+
+5. The Damper Position Actuator and Damper Position State are capabilities of the Bypass Damper. The Exhaust Air Static Pressure Sensor and Exhaust Air Static Pressure Setpoint are capabilities of the Exhaust Fan.
+
 ## Dual Duct System
 
 ### Single Supply Fan AHU
