@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SaturatedRefrigerantTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Saturated Refrigerant Temperature Sensor"
+  },
+  "description": {"en": "The saturation temperature of the refrigerant in a vessel, corresponding to the refrigerant pressure in that vessel. Distinct from an entering or leaving refrigerant temperature, which measure the fluid at a point in the circuit and may be superheated or subcooled rather than saturated. Usually derived by the chiller controller from a measured pressure and the refrigerant's pressure-temperature relationship."},
+  "extends" : [
+    "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
