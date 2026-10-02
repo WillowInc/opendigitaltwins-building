@@ -287,15 +287,6 @@
     },
     {
       "@type": "Property",
-      "name": "siteID",
-      "displayName": {
-        "en": "Site ID"
-      },
-      "writable": true,
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
       "name": "alternateClassification",
       "displayName": {
         "en": "Alternate Classification"

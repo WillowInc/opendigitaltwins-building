@@ -147,15 +147,6 @@
     },
     {
       "@type": "Property",
-      "name": "siteID",
-      "displayName": {
-        "en": "Site ID"
-      },
-      "writable": true,
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
       "name": "connectorID",
       "displayName": {
         "en": "Connector ID"
