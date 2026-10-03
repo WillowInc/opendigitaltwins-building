@@ -8098,6 +8098,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RackRow;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Rack Row"
+    },
+    "description": {
+      "en": "A contiguous row of racks in a data center. Rack rows provide a structured and organized way to manage and access the equipment in a rack."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Region;1",
     "@type": "Interface",
     "displayName": {
