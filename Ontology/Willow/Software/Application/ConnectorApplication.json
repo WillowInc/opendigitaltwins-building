@@ -63,9 +63,68 @@
           }
         ]
       }
+    },
+    {
+      "@type": "Property",
+      "name": "dataCollectionMethod",
+      "displayName": {
+        "en": "Data Collection Method"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "polling",
+            "displayName": {
+              "en": "Polling"
+            },
+            "enumValue": "Polling"
+          },  
+          {
+            "name": "changeofValue",
+            "displayName": {
+              "en": "Change-of-Value"
+            },
+            "enumValue": "Change-of-Value"
+          },
+          {
+            "name": "changeOfValueWithHeartbeat",
+            "displayName": {
+              "en": "Change-of-Value with Heartbeat"
+            },
+            "enumValue": "Change-of-Value with Heartbeat"
+          }
+        ]
+      }
+    },
+    {
+      "@type": ["Property", "TimeSpan"],
+      "name": "pollingInterval",
+      "displayName": {
+        "en": "Polling Interval"
+      },
+      "writable": true,
+      "schema": "integer",
+      "unit": "second",
+      "comment": "how often the connector reads values from the controller(s)"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Polling Interval Unit"
+      },
+      "name": "pollingIntervalUnit",
+      "annotates": "pollingInterval",
+      "overrides": "unit",
+      "schema": "TimeUnit"
     }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }
