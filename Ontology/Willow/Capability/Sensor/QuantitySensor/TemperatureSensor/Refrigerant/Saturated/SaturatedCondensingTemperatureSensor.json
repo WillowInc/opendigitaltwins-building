@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SaturatedCondensingTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Saturated Condensing Temperature Sensor"
+  },
+  "description": {"en": "The saturation temperature of the refrigerant in the condenser, corresponding to condenser (head) pressure. Commonly abbreviated SCT. This is the reference for condenser approach, the difference between saturated condensing temperature and leaving condenser water temperature, which is the standard indicator of condenser tube fouling. It is not the same as the refrigerant leaving the condenser, which may be subcooled and therefore read lower."},
+  "extends" : [
+    "dtmi:com:willowinc:SaturatedRefrigerantTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
