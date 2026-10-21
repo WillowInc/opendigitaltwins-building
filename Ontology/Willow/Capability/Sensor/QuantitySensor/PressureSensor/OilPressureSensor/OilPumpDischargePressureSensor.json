@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OilPumpDischargePressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Oil Pump Discharge Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with oil at the discharge of an oil pump, upstream of any oil cooler or filter. The difference from the supply oil pressure is the pressure drop across the cooler and filter"},
+  "extends" : [
+    "dtmi:com:willowinc:OilPressureSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

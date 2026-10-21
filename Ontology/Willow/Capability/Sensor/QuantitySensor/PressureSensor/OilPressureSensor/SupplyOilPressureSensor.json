@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:SupplyOilPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supply Oil Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with supply (feed) oil delivered to bearings or other lubricated components, downstream of the oil pump, cooler and filter"},
+  "extends" : [
+    "dtmi:com:willowinc:OilPressureSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
