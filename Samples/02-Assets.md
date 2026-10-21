@@ -65,3 +65,11 @@ Asset components are parts of an asset that have their own identity. This is a f
 1. Heat Exchangers and Transformers have Primary and Secondary Sides as shown in this image. While these aren't often considered servicable components like other assets, we define them using the same `isPartOf` relationship.
 2. This allows the corresponding capabilities for the 4 connection points of entering/leaving to be defined as shown in the diagram for EnteringWaterTemperatureSensor and LeavingWaterTemperatureSensor for each side.
 3. Energy Recovery Devices follow the same pattern, but because both of their streams are air rather than water, the two sides are named for the airstreams they carry: an `EnergyRecoveryDeviceSupplySide` and an `EnergyRecoveryDeviceExhaustSide`, each related to the device with `isPartOf`. The entering/leaving capabilities for each side are hosted on the side twin in the same way.
+
+![AssetComponent-Example3](Images/AssetComponents-Example3.png)
+
+1. The Primary and Secondary Sides are part of the Heat Exchanger, as described above.
+2. When a heat exchanger side has a control valve, the valve feeds the side, so we use the `isFedBy` relationship (Heat Exchanger Primary Side isFedBy Heating Hot Water Valve) rather than an `isPartOf`. This mirrors the coil and valve pattern shown for Air Handling Units. The valve is never modeled as part of the side. Steam valves such as the `OneThirdSteamValve` and `TwoThirdsSteamValve` follow the same pattern, with each valve feeding the side.
+3. The valve position command and feedback points, such as the ValvePositionActuator and ValvePositionState, are capabilities of the valve twin.
+4. The entering/leaving temperature sensors remain capabilities of the side twin, so the side carries the thermal performance and the valve carries the control.
+5. The same pattern applies to an HVAC Heat Exchanger Group. The `HeatExchangerGroupPrimarySide` and `HeatExchangerGroupSecondarySide` are part of the group, and a control valve feeding the group side is modeled as Heat Exchanger Group Primary Side isFedBy Valve.
