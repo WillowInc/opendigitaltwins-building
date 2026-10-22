@@ -6,7 +6,7 @@
   },
   "description": {"en": "The vibration feedback from a sensor associated with the non-drive end (blind end) bearing of a motor, measured in the vertical direction. The non-drive end is the end opposite the driven equipment"},
   "extends" : [
-    "dtmi:com:willowinc:VibrationSensor;1"
+    "dtmi:com:willowinc:VerticalVibrationSensor;1"
   ],
   "contents": [
 

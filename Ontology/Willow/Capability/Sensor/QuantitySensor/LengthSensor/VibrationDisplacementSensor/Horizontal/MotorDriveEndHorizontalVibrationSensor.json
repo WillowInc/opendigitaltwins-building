@@ -6,7 +6,7 @@
   },
   "description": {"en": "The vibration feedback from a sensor associated with the drive end (shaft end) bearing of a motor, measured in the horizontal direction. The drive end is the end coupled to the driven equipment"},
   "extends" : [
-    "dtmi:com:willowinc:VibrationSensor;1"
+    "dtmi:com:willowinc:HorizontalVibrationSensor;1"
   ],
   "contents": [
 

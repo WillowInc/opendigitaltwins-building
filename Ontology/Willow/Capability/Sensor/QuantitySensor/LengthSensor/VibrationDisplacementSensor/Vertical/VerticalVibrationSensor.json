@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:VerticalVibrationSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vertical Vibration Sensor"
+  },
+  "description": {"en": "The vibration displacement feedback from a sensor measuring in the vertical direction at a bearing"},
+  "extends" : [
+    "dtmi:com:willowinc:VibrationDisplacementSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
