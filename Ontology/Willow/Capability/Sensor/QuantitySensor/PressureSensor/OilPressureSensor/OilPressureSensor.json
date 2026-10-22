@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:OilPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Oil Pressure Sensor"
+  },
+  "description": {"en": "The pressure feedback from a sensor associated with oil, such as the lubricating oil of a compressor, engine, gearbox or bearing, or hydraulic oil"},
+  "extends" : [
+    "dtmi:com:willowinc:PressureSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
