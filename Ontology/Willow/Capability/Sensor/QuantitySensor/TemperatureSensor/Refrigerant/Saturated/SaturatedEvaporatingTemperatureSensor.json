@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:SaturatedEvaporatingTemperatureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Saturated Evaporating Temperature Sensor"
+  },
+  "description": {"en": "The saturation temperature of the refrigerant in the evaporator, corresponding to evaporator (suction) pressure. Commonly abbreviated SET, or SST where it is taken at the compressor suction. This is the reference for evaporator approach, the difference between leaving chilled water temperature and saturated evaporating temperature, which is the standard indicator of evaporator tube fouling or low refrigerant charge."},
+  "extends" : [
+    "dtmi:com:willowinc:SaturatedRefrigerantTemperatureSensor;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
