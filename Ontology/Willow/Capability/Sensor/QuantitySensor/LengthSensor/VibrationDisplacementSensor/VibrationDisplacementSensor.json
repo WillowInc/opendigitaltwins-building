@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Vibration Displacement Sensor"
   },
-  "description": {"en": "The vibration feedback from a proximity probe on rotating equipment such as a motor, compressor, gearbox, pump or fan, measured as peak-to-peak shaft displacement relative to the bearing housing, typically in mils (thou) or micrometres"},
+  "description": {"en": "The vibration feedback from a sensor on rotating equipment, measured as the displacement of a shaft or housing relative to its reference position"},
   "extends" : [
     "dtmi:com:willowinc:LengthSensor;1"
   ],

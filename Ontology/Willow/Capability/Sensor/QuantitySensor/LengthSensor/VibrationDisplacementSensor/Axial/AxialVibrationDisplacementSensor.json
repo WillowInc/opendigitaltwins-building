@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:AxialVibrationDisplacementSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Axial Vibration Displacement Sensor"
+  },
+  "description": {"en": "The vibration displacement feedback from a sensor measuring along the axis of the shaft, such as a thrust position probe"},
+  "extends" : [
+    "dtmi:com:willowinc:VibrationDisplacementSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
