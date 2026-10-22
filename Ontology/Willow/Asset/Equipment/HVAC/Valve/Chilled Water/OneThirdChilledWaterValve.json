@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:OneThirdChilledWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "1/3 Chilled Water Valve"
+  },
+  "description": {
+    "en": "The smaller valve of a pair of parallel chilled water control valves, sized for roughly one-third of design flow. It is sequenced first so that a cooling coil, heat exchanger or other chilled water load can modulate stably at low load, with the two-thirds chilled water valve staging on as load rises."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

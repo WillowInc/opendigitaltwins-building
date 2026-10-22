@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:TwoThirdsChilledWaterValve;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "2/3 Chilled Water Valve"
+  },
+  "description": {
+    "en": "The larger valve of a pair of parallel chilled water control valves, sized for roughly two-thirds of design flow. It stages on after the one-third chilled water valve to carry the upper range of load on a cooling coil, heat exchanger or other chilled water load."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ChilledWaterValve;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
