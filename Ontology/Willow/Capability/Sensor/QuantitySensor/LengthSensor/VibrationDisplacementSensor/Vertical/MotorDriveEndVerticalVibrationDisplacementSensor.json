@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Motor Drive End Vertical Vibration Displacement Sensor"
   },
-  "description": {"en": "The vibration displacement feedback from a sensor associated with the drive end (shaft end) bearing of a motor, measured in the vertical direction. The drive end is the end coupled to the driven equipment"},
+  "description": {"en": "The vertical vibration displacement feedback from a sensor associated with the drive end bearing of a motor"},
   "extends" : [
     "dtmi:com:willowinc:VerticalVibrationDisplacementSensor;1"
   ],

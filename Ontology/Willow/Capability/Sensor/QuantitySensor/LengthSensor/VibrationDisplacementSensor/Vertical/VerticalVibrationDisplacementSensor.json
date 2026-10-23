@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Vertical Vibration Displacement Sensor"
   },
-  "description": {"en": "The vibration displacement feedback from a sensor measuring in the vertical direction, perpendicular to the shaft"},
+  "description": {"en": "The vibration displacement feedback from a sensor measuring in the vertical direction"},
   "extends" : [
     "dtmi:com:willowinc:VibrationDisplacementSensor;1"
   ],

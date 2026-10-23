@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Motor Non-Drive End Horizontal Vibration Displacement Sensor"
   },
-  "description": {"en": "The vibration displacement feedback from a sensor associated with the non-drive end (blind end) bearing of a motor, measured in the horizontal direction. The non-drive end is the end opposite the driven equipment"},
+  "description": {"en": "The horizontal vibration displacement feedback from a sensor associated with the non-drive end bearing of a motor"},
   "extends" : [
     "dtmi:com:willowinc:HorizontalVibrationDisplacementSensor;1"
   ],

@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Axial Vibration Displacement Sensor"
   },
-  "description": {"en": "The vibration displacement feedback from a sensor measuring along the axis of the shaft, such as a thrust position probe"},
+  "description": {"en": "The vibration displacement feedback from a sensor measuring in the axial direction"},
   "extends" : [
     "dtmi:com:willowinc:VibrationDisplacementSensor;1"
   ],

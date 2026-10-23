@@ -4,7 +4,7 @@
   "displayName": {
     "en": "Vibration Displacement Sensor"
   },
-  "description": {"en": "The vibration feedback from a sensor on rotating equipment, measured as the displacement of a shaft or housing relative to its reference position"},
+  "description": {"en": "The vibration displacement feedback from a sensor associated with rotating equipment"},
   "extends" : [
     "dtmi:com:willowinc:LengthSensor;1"
   ],
