@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:HorizontalVibrationDisplacementSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Horizontal Vibration Displacement Sensor"
+  },
+  "description": {"en": "The vibration displacement feedback from a sensor measuring in the horizontal direction"},
+  "extends" : [
+    "dtmi:com:willowinc:VibrationDisplacementSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

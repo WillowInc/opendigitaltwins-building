@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:VibrationDisplacementSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Vibration Displacement Sensor"
+  },
+  "description": {"en": "The vibration displacement feedback from a sensor associated with rotating equipment"},
+  "extends" : [
+    "dtmi:com:willowinc:LengthSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

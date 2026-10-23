@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:MotorNonDriveEndHorizontalVibrationDisplacementSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Motor Non-Drive End Horizontal Vibration Displacement Sensor"
+  },
+  "description": {"en": "The horizontal vibration displacement feedback from a sensor associated with the non-drive end bearing of a motor"},
+  "extends" : [
+    "dtmi:com:willowinc:HorizontalVibrationDisplacementSensor;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
