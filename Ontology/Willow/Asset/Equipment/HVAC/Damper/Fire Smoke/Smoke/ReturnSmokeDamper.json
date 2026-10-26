@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnSmokeDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Smoke Damper"
+  },
+  "description": {
+    "en": "A smoke damper at the return side of an HVAC system used to prevent the spread of smoke."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SmokeDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

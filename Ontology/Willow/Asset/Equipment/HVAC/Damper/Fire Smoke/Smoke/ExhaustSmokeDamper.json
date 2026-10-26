@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:ExhaustSmokeDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Exhaust Smoke Damper"
+  },
+  "description": {
+    "en": "A smoke damper at the exhaust side of an HVAC system used to prevent the spread of smoke or exhaust smoke out of the system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SmokeDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
