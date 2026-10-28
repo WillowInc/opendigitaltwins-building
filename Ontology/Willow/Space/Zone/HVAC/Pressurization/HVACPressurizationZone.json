@@ -41,6 +41,15 @@
     {
       "@type": "Property",
       "displayName": {
+        "en": "Design Minimum Occupied Air Changes Per Hour"
+      },
+      "name": "designMinOccupiedAirChangesPerHour",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
         "en": "Design Minimum Unoccupied Air Changes Per Hour"
       },
       "name": "designMinUnoccupiedAirChangesPerHour",
