@@ -1,8 +1,8 @@
 """Renders Samples/Images/HVACChilledBeam-Example2.png.
 
 Active chilled beams and the HVAC Zone: the zone isFedBy each beam, each beam
-isFedBy the CAV Box, and the box has no relationship to the zone. One beam owns
-the zone temperature loop; the HVAC Zone carries one copy of each zone point.
+isFedBy the CAV Box, and the box has no relationship to the zone. The zone air
+points are capabilities of the HVAC Zone; the beams carry only their valve points.
 
     python Samples/Images/Source/HVACChilledBeam-Example2.py
 
@@ -14,7 +14,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 S = 2  # supersampling factor; drawn at 2x, downscaled at the end
-W, H = 2460, 1000
+W, H = 2460, 940
 
 SPACE = (123, 0, 255)
 ASSET = (16, 210, 150)
@@ -116,7 +116,7 @@ def capabilities_of(target, caps, side, num=None):
             callout(target["r"] + 32, target["t"] + 8, num)
 
 
-def fed_by_up(sources, target, bus_y, text, num=None, label_dx=-10):
+def fed_by_up(sources, target, bus_y, text, num=None):
     """sources (below) isFedBy target (above): verticals up to a bus, one arrow into target."""
     for c in sources:
         line(c["cx"], c["t"], c["cx"], bus_y)
@@ -124,9 +124,9 @@ def fed_by_up(sources, target, bus_y, text, num=None, label_dx=-10):
         line(sources[0]["cx"], bus_y, sources[-1]["cx"], bus_y)
     arrow(target["cx"], bus_y, target["cx"], target["b"] + 2)
     my = (bus_y + target["b"]) / 2
-    label(target["cx"] + label_dx, my, text, anchor="rm" if label_dx < 0 else "lm")
+    label(target["cx"] - 16, my, text, anchor="rm")
     if num:
-        callout(target["cx"] - label_dx + 18 if label_dx < 0 else target["cx"] - 28, my, num)
+        callout(target["cx"] + 28, my, num)
 
 
 # --- air path: AHU <- CAV Box <- beams ---------------------------------------
@@ -137,15 +137,10 @@ label((cav["l"] + ahu["r"]) / 2, ahu["cy"] - 14, "isFedBy")
 
 beam1 = box(700, 440, "Active Chilled Beam", ASSET, w=220)
 beam2 = box(1180, 440, "Active Chilled Beam", ASSET, w=220)
-fed_by_up([beam1, beam2], cav, 300, "isFedBy\n(substance: SupplyAir)", num=2, label_dx=-16)
+fed_by_up([beam1, beam2], cav, 300, "isFedBy\n(substance: SupplyAir)", num=2)
 
-# --- capabilities ---------------------------------------------------------------
-beam1_caps = [
-    box(280, 320, "Zone Air\nTemperature Sensor", CAPABILITY),
-    box(280, 440, "Active Zone Air\nTemperature Setpoint", CAPABILITY),
-    box(280, 560, "Chilled Water Valve\nPosition Actuator", CAPABILITY),
-]
-capabilities_of(beam1, beam1_caps, "left", 3)
+beam1_caps = [box(280, 440, "Chilled Water Valve\nPosition Actuator", CAPABILITY)]
+capabilities_of(beam1, beam1_caps, "left")
 beam2_caps = [box(1600, 440, "Chilled Water Valve\nPosition Actuator", CAPABILITY)]
 capabilities_of(beam2, beam2_caps, "right")
 
@@ -155,7 +150,6 @@ for b in (beam1, beam2):
     line(b["cx"], b["b"], b["cx"], 660)
 line(beam1["cx"], 660, beam2["cx"], 660)
 line(zone["cx"], 660, zone["cx"], zone["t"] - 2)
-# arrowheads point from the zone up into each beam
 for b in (beam1, beam2):
     arrow(b["cx"], 670, b["cx"], b["b"] + 2)
 label(zone["cx"] - 14, (660 + zone["t"]) / 2, "isFedBy", anchor="rm")
@@ -165,11 +159,10 @@ zone_caps = [
     box(1600, 740, "Zone Air\nTemperature Sensor", CAPABILITY),
     box(1600, 860, "Zone Air\nTemperature Setpoint", CAPABILITY),
 ]
-capabilities_of(zone, zone_caps, "right", 4)
+capabilities_of(zone, zone_caps, "right", 3)
 
-# --- callout 5: the box has no relationship to the zone --------------------------
-callout(cav["r"] + 32, cav["cy"], 5)
-H = 940  # content ends above the canvas bottom; crop on output
+# --- callout 4: the box has no relationship to the zone --------------------------
+callout(cav["r"] + 32, cav["cy"], 4)
 
 # --- legend -------------------------------------------------------------------
 lx0, ly0, lx1, ly1 = 2140, 40, 2440, 520
@@ -186,6 +179,6 @@ for name, color in LEGEND:
                                                    anchor="la", spacing=10 * S)
     y += 52
 
-out = img.crop((0, 0, W * S, H * S)).resize((W, H), Image.LANCZOS)
+out = img.resize((W, H), Image.LANCZOS)
 out.save(os.path.abspath(OUT), optimize=True)
 print("wrote", os.path.abspath(OUT))

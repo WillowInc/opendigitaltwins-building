@@ -2,8 +2,8 @@
 
 Passive chilled beam and the HVAC Zone: the beam is fed by chilled water only and
 is not in the air path, so the zone isFedBy both the beam and the ventilating VAV
-Box. The VAV Box owns the zone temperature loop; the HVAC Zone carries one copy
-of each zone point; the beam carries only its valve points.
+Box. The zone air points are capabilities of the HVAC Zone; the VAV Box carries
+its discharge air points and the beam carries only its valve points.
 
     python Samples/Images/Source/HVACChilledBeam-Example3.py
 
@@ -15,7 +15,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 S = 2  # supersampling factor; drawn at 2x, downscaled at the end
-W, H = 2460, 1000
+W, H = 2460, 940
 
 SPACE = (123, 0, 255)
 ASSET = (16, 210, 150)
@@ -123,11 +123,10 @@ vav = box(940, 110, "VAV Box", ASSET)
 arrow(vav["l"], vav["cy"], ahu["r"] + 2, ahu["cy"])
 label((vav["l"] + ahu["r"]) / 2, ahu["cy"] - 14, "isFedBy")
 vav_caps = [
-    box(1600, 70, "Zone Air\nTemperature Sensor", CAPABILITY),
-    box(1600, 190, "Zone Air\nTemperature Setpoint", CAPABILITY),
-    box(1600, 310, "Discharge Airflow\nSensor", CAPABILITY),
+    box(1600, 70, "Discharge Air\nTemperature Sensor", CAPABILITY),
+    box(1600, 190, "Discharge Airflow\nSensor", CAPABILITY),
 ]
-capabilities_of(vav, vav_caps, "right", 3)
+capabilities_of(vav, vav_caps, "right")
 
 # --- water path: Chiller <- Chilled Water Pump <- Passive Chilled Beam ----------------
 chiller = box(200, 800, "Chiller", ASSET)
@@ -159,7 +158,7 @@ zone_caps = [
     box(1600, 740, "Zone Air\nTemperature Sensor", CAPABILITY),
     box(1600, 860, "Zone Air\nTemperature Setpoint", CAPABILITY),
 ]
-capabilities_of(zone, zone_caps, "right")
+capabilities_of(zone, zone_caps, "right", 3)
 
 # --- legend -------------------------------------------------------------------
 lx0, ly0, lx1, ly1 = 2140, 40, 2440, 520
@@ -176,7 +175,6 @@ for name, color in LEGEND:
                                                    anchor="la", spacing=10 * S)
     y += 52
 
-H = 940  # content ends above the canvas bottom; crop on output
-out = img.crop((0, 0, W * S, H * S)).resize((W, H), Image.LANCZOS)
+out = img.resize((W, H), Image.LANCZOS)
 out.save(os.path.abspath(OUT), optimize=True)
 print("wrote", os.path.abspath(OUT))
