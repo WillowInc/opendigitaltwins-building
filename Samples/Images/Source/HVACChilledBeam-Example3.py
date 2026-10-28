@@ -157,7 +157,7 @@ label(zone["cx"] + 54, 470, "isFedBy\n(substance: SupplyAir)", anchor="lm")
 # and actuator, then up into the beam's side
 line(zone["cx"] - 40, zone["t"], zone["cx"] - 40, 650, 790, 650, 790, beam["cy"])
 arrow(790, beam["cy"], beam["r"] + 2, beam["cy"])
-label(804, (beam["cy"] + 650) / 2, "isFedBy\n(substance: ChilledWater)", anchor="lm")
+label(804, (beam["cy"] + 650) / 2, "isFedBy", anchor="lm")
 callout(zone["l"] - 32, zone["t"] + 8, 2)
 
 zone_caps = [

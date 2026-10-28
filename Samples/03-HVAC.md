@@ -44,8 +44,6 @@ Every example in this document follows the same rule for zone air sensors and se
 
 5. A unit upstream of the one which feeds the zone, for example an Air Handling Unit above a VAV Box or a CAV Box above an Active Chilled Beam, has no relationship to the zone and carries no zone air points. Its zone is reached through the units it feeds.
 
-Twins modeled before this rule, with zone air points as capabilities of the serving unit, are being migrated so that the points sit on the HVAC Zone.
-
 ## HVAC Basic Relationships with Level
 
 ![HVAC-Example3](Images/HVAC-Example3.png)
@@ -176,6 +174,6 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 
 1. A Passive Chilled Beam has no primary air supply, so it is not in the supply air path at all. It conditions the zone directly by convection from its Cooling Coil, which is fed by Chilled Water only through the beam's Chilled Water Valve (Cooling Coil isPartOf Passive Chilled Beam, Cooling Coil isFedBy Chilled Water Valve, Chilled Water Valve isFedBy Chilled Water Pump).
 
-2. The HVAC Zone therefore has two feeders: it isFedBy the Passive Chilled Beam (substance ChilledWater) and isFedBy the VAV Box or CAV Box which ventilates the zone (substance SupplyAir). Both relationships are correct, and the zone having two feeders is the expected shape for this system.
+2. The HVAC Zone therefore has two feeders: it isFedBy the Passive Chilled Beam and isFedBy the VAV Box or CAV Box which ventilates the zone (substance SupplyAir). The zone-to-beam relationship carries no substance, because an HVAC Zone's isFedBy substance is an air substance and the beam delivers conditioning by convection rather than by feeding the zone a substance. Both relationships are correct, and the zone having two feeders is the expected shape for this system.
 
 3. The zone air points are capabilities of the HVAC Zone. The VAV Box carries its own discharge air points; the Passive Chilled Beam carries no points of its own, and its valve position points are capabilities of the Chilled Water Valve.
