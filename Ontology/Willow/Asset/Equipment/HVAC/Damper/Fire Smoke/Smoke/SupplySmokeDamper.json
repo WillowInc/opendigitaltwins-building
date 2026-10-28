@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:SupplySmokeDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Supply Smoke Damper"
+  },
+  "description": {
+    "en": "A smoke damper at the supply side of an HVAC system used to prevent the spread of smoke."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:SmokeDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
