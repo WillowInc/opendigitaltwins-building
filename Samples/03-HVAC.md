@@ -138,4 +138,36 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 
 2. Each chilled beam has a chilled water valve so points associated with the individual chilled beam's valve are directly associated with the chilled beam.
 
-3. Points that are associated with the room/zone or the primary supply air control are associated with the upstream unit which is controlling the airflow such as the CAV Box.
+3. Points that are associated with the room/zone or the primary supply air control are associated with the upstream unit which is controlling the airflow such as the CAV Box. Where the chilled beam's own controller runs the zone temperature loop instead, those points belong on the chilled beam - see Where Zone Air Points Belong below. In either case there is one owner, never both.
+
+### Active Chilled Beam and the HVAC Zone
+
+![HVACChilledBeam-Example2](Images/HVACChilledBeam-Example2.png)
+
+1. An Active Chilled Beam is the last device in the supply air path, so it is the unit which feeds the HVAC Zone. The HVAC Zone isFedBy the Active Chilled Beam, and the Active Chilled Beam isFedBy the CAV Box or VAV Box which supplies its primary air. The box does not feed the HVAC Zone directly, in the same way that an Air Handling Unit upstream of a VAV Box does not feed the zone directly.
+
+2. Several Active Chilled Beams may serve one HVAC Zone. Each beam has its own isFedBy relationship from the HVAC Zone and its own isFedBy relationship to the box. Where the beams are commissioned as a set, they may also be includedIn a Chilled Beam Group, and the HVAC Zone may be fed by the group rather than by each beam.
+
+3. The HVAC Zone carries one Zone Air Temperature Sensor and one of each Zone Air Temperature Setpoint, regardless of how many beams serve it. These are the points the zone is controlled to. Where more than one beam carries its own zone sensor, the zone's sensor is the aggregate, as described in HVAC Multi-Zone Room above.
+
+4. A VAV Box or CAV Box which only feeds Active Chilled Beams has no relationship to the HVAC Zone. Its zone is reached through the beams it feeds. Do not add a second isFedBy from the HVAC Zone to the box to shortcut this: a zone fed by both the box and the beams it supplies double-counts every unit on that zone, and every zone air point those units carry.
+
+### Passive Chilled Beam and the HVAC Zone
+
+![HVACChilledBeam-Example3](Images/HVACChilledBeam-Example3.png)
+
+1. A Passive Chilled Beam has no primary air supply, so it is not in the supply air path at all. It conditions the zone directly by convection from its chilled water coil, and it is fed by Chilled Water only.
+
+2. The HVAC Zone therefore has two feeders: it isFedBy the Passive Chilled Beam (substance ChilledWater) and isFedBy the VAV Box or CAV Box which ventilates the zone (substance SupplyAir). Both relationships are correct, and the zone having two feeders is the expected shape for this system.
+
+3. The zone air points belong on the ventilating box, which runs the zone temperature loop, and on the HVAC Zone. The Passive Chilled Beam carries its chilled water valve points and nothing else.
+
+### Where Zone Air Points Belong
+
+Both chilled beam examples follow the same rule for zone air sensors and setpoints. The rule matters because a rules engine reading a zone point through the HVAC Zone expects to find exactly one.
+
+1. The HVAC Zone carries one copy of each zone air point: Zone Air Temperature Sensor, Zone Air Humidity Sensor, and each Zone Air Temperature Setpoint in use (Occupied, Unoccupied, Standby, Effective, Active, Target). This is the copy that zone-level and space-level consumers read.
+
+2. Exactly one unit on the zone owns the zone temperature loop and carries the same points as its own capabilities. For an active chilled beam system that is the Active Chilled Beam where its controller holds the room sensor and setpoints, or the CAV Box or VAV Box where the box holds them and the beam only modulates its valve. For a passive chilled beam system it is always the ventilating box.
+
+3. No other unit on the zone carries zone air points. A box and a beam on the same zone each carrying a Zone Air Temperature Sensor, or two beams each carrying an Active Zone Air Temperature Setpoint, is incorrect, even where the controller exposes a copy of the same value on each device. Where a device genuinely has its own sensor input, for example an active chilled beam whose controller averages a sensor local to the beam, that sensor remains a capability of the beam, and the HVAC Zone's sensor is the aggregate.
