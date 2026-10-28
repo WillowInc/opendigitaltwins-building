@@ -3,8 +3,8 @@
 Passive chilled beam and the HVAC Zone: the beam is fed by chilled water only and
 is not in the air path, so the zone isFedBy both the beam and the ventilating VAV
 Box. The zone air points are capabilities of the HVAC Zone; the VAV Box carries
-its discharge air points and the beam has only its cooling coil and chilled water
-valve components, with the valve points on the valve twin.
+its discharge air points and the beam isFedBy its own Chilled Water Valve, with the
+valve points on the valve twin. The beam is the coil, so there is no coil component.
 
     python Samples/Images/Source/HVACChilledBeam-Example3.py
 
@@ -129,24 +129,19 @@ vav_caps = [
 ]
 capabilities_of(vav, vav_caps, "right")
 
-# --- Passive Chilled Beam with its Cooling Coil and Chilled Water Valve ---------------
+# --- Passive Chilled Beam isFedBy the pump (chilled water) and its own valve ----------
 beam = box(620, 480, "Passive Chilled Beam", ASSET, w=230)
-coil = box(620, 650, "Cooling Coil", ASSET)
-arrow(coil["cx"], coil["t"], beam["cx"], beam["b"] + 2)
-label(coil["cx"] - 12, (coil["t"] + beam["b"]) / 2, "isPartOf", anchor="rm")
+pump = box(200, 480, "Chilled Water Pump", ASSET, w=220)
+arrow(beam["l"], beam["cy"], pump["r"] + 2, pump["cy"])
+label((beam["l"] + pump["r"]) / 2, pump["cy"] - 26, "isFedBy\n(substance: ChilledWater)")
+callout((beam["l"] + pump["r"]) / 2, pump["cy"] + 28, 1)
+chiller = box(200, 820, "Chiller", ASSET)
+arrow(pump["cx"], pump["b"], chiller["cx"], chiller["t"] - 2)
+label(pump["cx"] - 12, (pump["b"] + chiller["t"]) / 2, "isFedBy", anchor="rm")
 valve = box(620, 820, "Chilled Water Valve", ASSET, w=220)
-arrow(coil["cx"], coil["b"], valve["cx"], valve["t"] - 2)
-label(valve["cx"] - 12, (coil["b"] + valve["t"]) / 2, "isFedBy", anchor="rm")
+arrow(beam["cx"], beam["b"], valve["cx"], valve["t"] - 2)
+label(valve["cx"] - 12, (beam["b"] + valve["t"]) / 2, "isFedBy", anchor="rm")
 capabilities_of(valve, [box(980, 820, "Valve Position\nActuator", CAPABILITY)], "right")
-
-# --- water path: Chiller <- Chilled Water Pump <- valve -------------------------------
-pump = box(200, 820, "Chilled Water Pump", ASSET, w=220)
-arrow(valve["l"], valve["cy"], pump["r"] + 2, pump["cy"])
-label((valve["l"] + pump["r"]) / 2, pump["cy"] - 26, "isFedBy\n(substance: ChilledWater)")
-callout((valve["l"] + pump["r"]) / 2, pump["cy"] + 28, 1)
-chiller = box(200, 480, "Chiller", ASSET)
-arrow(pump["cx"], pump["t"], chiller["cx"], chiller["b"] + 2)
-label(pump["cx"] - 12, (pump["t"] + chiller["b"]) / 2, "isFedBy", anchor="rm")
 
 # --- HVAC Zone (space): two feeders ---------------------------------------------------
 zone = box(1260, 820, "HVAC Zone", SPACE)
@@ -157,7 +152,7 @@ label(zone["cx"] + 54, 470, "isFedBy\n(substance: SupplyAir)", anchor="lm")
 # and actuator, then up into the beam's side
 line(zone["cx"] - 40, zone["t"], zone["cx"] - 40, 650, 790, 650, 790, beam["cy"])
 arrow(790, beam["cy"], beam["r"] + 2, beam["cy"])
-label(804, (beam["cy"] + 650) / 2, "isFedBy\n(substance: ChilledWater)", anchor="lm")
+label(804, (beam["cy"] + 650) / 2 - 10, "isFedBy\n(substance: ChilledWater)", anchor="lm")
 callout(zone["l"] - 32, zone["t"] + 8, 2)
 
 zone_caps = [

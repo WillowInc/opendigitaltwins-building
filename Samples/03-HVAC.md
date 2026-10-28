@@ -38,7 +38,7 @@ Every example in this document follows the same rule for zone air sensors and se
 
 2. The HVAC Zone carries one of each. One zone, one loop, one Zone Air Temperature Sensor and one of each setpoint. Where several units serve the zone, they share those points through the zone; none of them carries a copy.
 
-3. The unit keeps the points which describe the unit: discharge air temperature, discharge airflow and airflow setpoints, damper position, fan run state, reheat state. These stay capabilities of the unit, hosted by its controller as usual. Valve position points are capabilities of the valve component which feeds the unit's coil, as shown in Asset Components.
+3. The unit keeps the points which describe the unit: discharge air temperature, discharge airflow and airflow setpoints, damper position, fan run state, reheat state. These stay capabilities of the unit, hosted by its controller as usual. Valve position points are capabilities of the valve twin, which feeds the unit's coil as shown in Asset Components, or feeds the unit itself where the unit is the coil, as with a chilled beam.
 
 4. Where a controller has several physical zone temperature inputs, the zone's single sensor is the value the controller controls to, or a calculated aggregate of the inputs where the controller does not emit one. The raw inputs may still be modeled as Zone Air Temperature Sensors, as capabilities of the asset which physically hosts them, so that each reading is kept; they are not capabilities of the HVAC Zone. HVAC Multi-Zone Room above shows this.
 
@@ -152,7 +152,7 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 
 1. Each Active Chilled Beam is fed by Supply Air from an upstream unit. In this example, we show that being a Constant Air Volume Box (CAV Box).
 
-2. Each chilled beam has a Cooling Coil component (Cooling Coil isPartOf Active Chilled Beam) and a Chilled Water Valve which controls flow to that coil (Cooling Coil isFedBy Chilled Water Valve), following the coil and valve pattern in Asset Components. The valve relates to the beam only through its coil, and chilled water reaches the beam through the valve: the valves are fed by the chilled water plant (Chilled Water Valve isFedBy Chilled Water Pump).
+2. A chilled beam is itself the cooling coil, so it has no Cooling Coil component. Its Chilled Water Valve relates to the beam directly (Active Chilled Beam isFedBy Chilled Water Valve). This is the one terminal unit where a valve feeds the unit rather than a coil component of it; for boxes and fan coil units the valve feeds the coil, as shown in Asset Components. The beams are also fed by Chilled Water from the plant (Active Chilled Beam isFedBy Chilled Water Pump), which is the physical loop connection.
 
 3. Points that are associated with the primary supply air control, such as the Discharge Air Temperature Sensor and the Discharge Airflow Sensor, are associated with the upstream unit which is controlling the airflow such as the CAV Box. Zone air points are not: they belong to the HVAC Zone, as the next example shows.
 
@@ -166,7 +166,7 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 
 2. Each Active Chilled Beam isFedBy the CAV Box or VAV Box which supplies its primary air. The box does not feed the HVAC Zone directly, in the same way that an Air Handling Unit upstream of a VAV Box does not feed the zone directly.
 
-3. The HVAC Zone carries one Zone Air Temperature Sensor and one of each Zone Air Temperature Setpoint, regardless of how many beams serve it, following Where Zone Air Points Belong above. The beams carry no zone air points, however the beam controllers are configured: whether one beam controller runs the zone loop, the box runs it, or each beam modulates its valve against the shared zone sensor, the zone points are the same and sit on the zone. Each beam's Cooling Coil and Chilled Water Valve components are modeled as in the Active Chilled Beam example above, with the valve points on the valve.
+3. The HVAC Zone carries one Zone Air Temperature Sensor and one of each Zone Air Temperature Setpoint, regardless of how many beams serve it, following Where Zone Air Points Belong above. The beams carry no zone air points, however the beam controllers are configured: whether one beam controller runs the zone loop, the box runs it, or each beam modulates its valve against the shared zone sensor, the zone points are the same and sit on the zone. Each beam isFedBy its own Chilled Water Valve as in the Active Chilled Beam example above, with the valve points on the valve.
 
 4. A VAV Box or CAV Box which only feeds Active Chilled Beams has no relationship to the HVAC Zone. Its zone is reached through the beams it feeds. Do not add a second isFedBy from the HVAC Zone to the box to shortcut this: a zone fed by both the box and the beams it supplies double-counts every unit on that zone.
 
@@ -174,7 +174,7 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 
 ![HVACChilledBeam-Example3](Images/HVACChilledBeam-Example3.png)
 
-1. A Passive Chilled Beam has no primary air supply, so it is not in the supply air path at all. It conditions the zone directly by convection from its Cooling Coil, which is fed by Chilled Water only through the beam's Chilled Water Valve (Cooling Coil isPartOf Passive Chilled Beam, Cooling Coil isFedBy Chilled Water Valve, Chilled Water Valve isFedBy Chilled Water Pump).
+1. A Passive Chilled Beam has no primary air supply, so it is not in the supply air path at all. It conditions the zone directly by convection and is fed by Chilled Water only (Passive Chilled Beam isFedBy Chilled Water Pump). Like the active beam, it is itself the coil: its Chilled Water Valve feeds the beam directly (Passive Chilled Beam isFedBy Chilled Water Valve) and there is no Cooling Coil component.
 
 2. The HVAC Zone therefore has two feeders: it isFedBy the Passive Chilled Beam (substance ChilledWater) and isFedBy the VAV Box or CAV Box which ventilates the zone (substance SupplyAir). Both relationships are correct, and the zone having two feeders is the expected shape for this system.
 

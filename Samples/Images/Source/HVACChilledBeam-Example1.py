@@ -1,9 +1,9 @@
 """Renders Samples/Images/HVACChilledBeam-Example1.png.
 
-Active chilled beams: each beam isFedBy the CAV Box (supply air) and has a Cooling
-Coil component fed by a Chilled Water Valve, which the chilled water pump feeds.
-Valve position points sit on the valve twin; primary air control points on the
-CAV Box. Zone air points are not shown here, they belong to the HVAC Zone (see
+Active chilled beams: each beam isFedBy the CAV Box (supply air), the chilled
+water pump (chilled water) and its own Chilled Water Valve. The beam is the coil,
+so there is no coil component. Valve position points sit on the valve twin;
+primary air control points on the CAV Box. Zone air points are not shown here, they belong to the HVAC Zone (see
 Example2).
 
     python Samples/Images/Source/HVACChilledBeam-Example1.py
@@ -16,7 +16,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 S = 2  # supersampling factor; drawn at 2x, downscaled at the end
-W, H = 2460, 1000
+W, H = 2460, 800
 
 SPACE = (123, 0, 255)
 ASSET = (16, 210, 150)
@@ -155,34 +155,25 @@ cav_caps = [
 ]
 capabilities_of(cav, cav_caps, "right", 3)
 
-beam1 = box(700, 360, "Active Chilled Beam", ASSET, w=220)
-beam2 = box(1180, 360, "Active Chilled Beam", ASSET, w=220)
+beam1 = box(740, 360, "Active Chilled Beam", ASSET, w=220)
+beam2 = box(1140, 360, "Active Chilled Beam", ASSET, w=220)
 fed_by_up([beam1, beam2], cav, 250, "isFedBy\n(substance: SupplyAir)", num=1)
 
-# --- each beam: Cooling Coil isPartOf beam, coil isFedBy Chilled Water Valve ---------
-coils, valves = [], []
-for i, b in enumerate((beam1, beam2)):
-    coil = box(b["cx"], 540, "Cooling Coil", ASSET)
-    arrow(coil["cx"], coil["t"], b["cx"], b["b"] + 2)
-    label(coil["cx"] + 12, (coil["t"] + b["b"]) / 2, "isPartOf", anchor="lm")
-    valve = box(b["cx"], 740, "Chilled Water Valve", ASSET, w=220)
-    arrow(coil["cx"], coil["b"], valve["cx"], valve["t"] - 2)
-    label(valve["cx"] + 12, (coil["b"] + valve["t"]) / 2, "isFedBy", anchor="lm")
-    coils.append(coil)
-    valves.append(valve)
-callout(coils[0]["cx"] - 28, (coils[0]["t"] + beam1["b"]) / 2, 2)
+# --- each beam isFedBy its Chilled Water Valve; the beam is the coil -------------------
+valve1 = box(460, 360, "Chilled Water\nValve", ASSET)
+arrow(beam1["l"], beam1["cy"], valve1["r"] + 2, valve1["cy"])
+label((beam1["l"] + valve1["r"]) / 2, beam1["cy"] - 14, "isFedBy")
+callout((beam1["l"] + valve1["r"]) / 2, beam1["cy"] + 22, 2)
+capabilities_of(valve1, [box(160, 360, "Valve Position\nActuator", CAPABILITY)], "left", 4)
+valve2 = box(1420, 360, "Chilled Water\nValve", ASSET)
+arrow(beam2["r"], beam2["cy"], valve2["l"] - 2, valve2["cy"])
+label((beam2["r"] + valve2["l"]) / 2, beam2["cy"] - 14, "isFedBy")
+capabilities_of(valve2, [box(1720, 360, "Valve Position\nActuator", CAPABILITY)], "right")
 
-capabilities_of(valves[0], [box(280, 740, "Valve Position\nActuator", CAPABILITY)], "left", 4)
-capabilities_of(valves[1], [box(1600, 740, "Valve Position\nActuator", CAPABILITY)], "right")
-
-# --- water path: Chiller <- Chilled Water Pump <- valves -----------------------------
-pump = box(940, 920, "Chilled Water Pump", ASSET, w=220)
-for v in valves:
-    line(v["cx"], v["b"], v["cx"], 850)
-line(valves[0]["cx"], 850, valves[1]["cx"], 850)
-arrow(pump["cx"], 850, pump["cx"], pump["t"] - 2)
-label((valves[0]["cx"] + pump["cx"]) / 2, 850 - 16, "isFedBy (substance: ChilledWater)")
-chiller = box(200, 920, "Chiller", ASSET)
+# --- water path: Chiller <- Chilled Water Pump <- beams ------------------------------
+pump = box(940, 700, "Chilled Water Pump", ASSET, w=220)
+fed_by_down([beam1, beam2], pump, 560, "isFedBy\n(substance: ChilledWater)")
+chiller = box(200, 700, "Chiller", ASSET)
 arrow(pump["l"], pump["cy"], chiller["r"] + 2, chiller["cy"])
 label((pump["l"] + chiller["r"]) / 2, chiller["cy"] - 14, "isFedBy")
 
