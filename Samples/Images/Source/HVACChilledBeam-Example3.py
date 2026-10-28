@@ -138,20 +138,20 @@ beam = box(620, 480, "Passive Chilled Beam", ASSET, w=230)
 arrow(beam["l"], beam["cy"], pump["r"] + 2, pump["cy"])
 label((beam["l"] + pump["r"]) / 2, pump["cy"] - 26, "isFedBy\n(substance: ChilledWater)")
 callout((beam["l"] + pump["r"]) / 2, pump["cy"] + 28, 1)
-beam_caps = [box(620, 760, "Chilled Water Valve\nPosition Actuator", CAPABILITY)]
-line(beam_caps[0]["cx"], beam_caps[0]["t"], beam["cx"], beam["b"] + 2)
-arrow(beam_caps[0]["cx"], beam_caps[0]["t"], beam["cx"], beam["b"] + 2)
-label(beam["cx"] + 12, (beam["b"] + beam_caps[0]["t"]) / 2, "isCapabilityOf", anchor="lm")
+# the beam's valve point sits above the beam, leaving the space below it for the zone's feeder line
+beam_caps = [box(620, 240, "Chilled Water Valve\nPosition Actuator", CAPABILITY)]
+arrow(beam_caps[0]["cx"], beam_caps[0]["b"], beam["cx"], beam["t"] - 2)
+label(beam["cx"] + 12, (beam_caps[0]["b"] + beam["t"]) / 2, "isCapabilityOf", anchor="lm")
 
 # --- HVAC Zone (space): two feeders ---------------------------------------------------
-zone = box(1180, 800, "HVAC Zone", SPACE)
-# zone isFedBy VAV Box (supply air): straight up
-arrow(zone["cx"] - 60, zone["t"], zone["cx"] - 60, vav["b"] + 2)
-label(zone["cx"] - 74, 300, "isFedBy\n(substance: SupplyAir)", anchor="rm")
-# zone isFedBy Passive Chilled Beam (chilled water): up to the beam's row, then left into it
-line(zone["cx"] + 60, zone["t"], zone["cx"] + 60, beam["cy"])
-arrow(zone["cx"] + 60, beam["cy"], beam["r"] + 2, beam["cy"])
-label((beam["r"] + zone["cx"] - 60) / 2, beam["cy"] - 26, "isFedBy\n(substance: ChilledWater)")
+zone = box(940, 800, "HVAC Zone", SPACE)
+# zone isFedBy VAV Box (supply air): straight up, directly under the box
+arrow(zone["cx"], zone["t"], zone["cx"], vav["b"] + 2)
+label(zone["cx"] - 14, 470, "isFedBy\n(substance: SupplyAir)", anchor="rm")
+# zone isFedBy Passive Chilled Beam (chilled water): left from the zone, then up into the beam
+line(zone["l"], zone["cy"], beam["cx"], zone["cy"])
+arrow(beam["cx"], zone["cy"], beam["cx"], beam["b"] + 2)
+label(beam["cx"] + 14, (beam["b"] + zone["cy"]) / 2, "isFedBy\n(substance: ChilledWater)", anchor="lm")
 callout(zone["l"] - 32, zone["t"] + 8, 2)
 
 zone_caps = [
