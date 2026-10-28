@@ -2,7 +2,8 @@
 
 Active chilled beams and the HVAC Zone: the zone isFedBy each beam, each beam
 isFedBy the CAV Box, and the box has no relationship to the zone. The zone air
-points are capabilities of the HVAC Zone; the beams carry only their valve points.
+points are capabilities of the HVAC Zone; each beam has only its cooling coil and
+chilled water valve components, with the valve points on the valve twin.
 
     python Samples/Images/Source/HVACChilledBeam-Example2.py
 
@@ -139,10 +140,19 @@ beam1 = box(700, 440, "Active Chilled Beam", ASSET, w=220)
 beam2 = box(1180, 440, "Active Chilled Beam", ASSET, w=220)
 fed_by_up([beam1, beam2], cav, 300, "isFedBy\n(substance: SupplyAir)", num=2)
 
-beam1_caps = [box(280, 440, "Chilled Water Valve\nPosition Actuator", CAPABILITY)]
-capabilities_of(beam1, beam1_caps, "left")
-beam2_caps = [box(1600, 440, "Chilled Water Valve\nPosition Actuator", CAPABILITY)]
-capabilities_of(beam2, beam2_caps, "right")
+# --- each beam: Cooling Coil isPartOf beam, coil isFedBy Chilled Water Valve ---------
+for b, side, cx, ax in ((beam1, "left", 420, 140), (beam2, "right", 1460, 1740)):
+    coil = box(cx, 440, "Cooling Coil", ASSET)
+    if side == "left":
+        arrow(coil["r"], coil["cy"], b["l"] - 2, b["cy"])
+        label((coil["r"] + b["l"]) / 2, b["cy"] - 14, "isPartOf")
+    else:
+        arrow(coil["l"], coil["cy"], b["r"] + 2, b["cy"])
+        label((coil["l"] + b["r"]) / 2, b["cy"] - 14, "isPartOf")
+    valve = box(cx, 620, "Chilled Water Valve", ASSET, w=220)
+    arrow(coil["cx"], coil["b"], valve["cx"], valve["t"] - 2)
+    label(valve["cx"] + 12, (coil["b"] + valve["t"]) / 2, "isFedBy", anchor="lm")
+    capabilities_of(valve, [box(ax, 620, "Valve Position\nActuator", CAPABILITY)], side)
 
 # --- HVAC Zone (space) fed by each beam ------------------------------------------
 zone = box(940, 800, "HVAC Zone", SPACE)
