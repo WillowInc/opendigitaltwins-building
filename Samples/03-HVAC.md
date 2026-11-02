@@ -14,9 +14,9 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 3. In this example, there are multiple Rooms within a single HVAC Zone. Because both Zones and Rooms are Spaces, we use the relationship isPartof to define the Rooms which are contained within the HVAC Zone.
 
-4. In HVAC Systems, there is often a control network such as BACnet and controllers which host the control logic for the HVAC equipment. In this example, there is a single BACnet Controller which hosts the Capabilities that are associated with the Fan Powered Boxes. We use the hostedBy relationship to define which Capabilities the Controller manages.
+4. In HVAC Systems, there is often a control network such as BACnet and controllers which host the control logic for the HVAC equipment. In this example, there is a single BACnet Controller which hosts both the HVAC Zone's Zone Air Temperature Sensor and the Fan Powered Box's Discharge Air Temperature Sensor. We use the hostedBy relationship to define which Capabilities the Controller manages.
 
-5. Each Capability has a primary relationship to one or more Assets, Spaces, or Equipment Collections. In this example, the Zone Air Temperature Sensors each relate to a Fan Powered Box. We use the isCapabilityOf relationship to define which twin a Capability belongs to. By leveraging both the hostedby and isCapabilityOf relationships, this provides the flexibility to accommodate scenarios where an Asset’s Capabilities are hosted by separate Controllers as well as a Capability belonging to multiple entities.
+5. Each Capability has a primary relationship to one or more Assets, Spaces, or Equipment Collections. We use the isCapabilityOf relationship to define which twin a Capability belongs to. The Zone Air Temperature Sensor describes the zone, so it is a capability of the HVAC Zone; the Discharge Air Temperature Sensor describes the box, so it is a capability of the Fan Powered Box. Zone air points are never capabilities of the unit which serves the zone - see Where Zone Air Points Belong below. By leveraging both the hostedBy and isCapabilityOf relationships, this provides the flexibility to accommodate scenarios where an Asset's Capabilities are hosted by separate Controllers as well as a Capability belonging to multiple entities.
 
 ## HVAC Multi-Zone Room
 
@@ -24,11 +24,25 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 1. In this example, we show the flexibility in a zone where there are multiple Zones within one Room. Because both Zones and Rooms are Spaces, we use the relationship isPartof.
 
-2. The HVAC Zone has a Zone Air Temperature Sensor Capability which directly corresponds to the Fan Powered Box capability because there is only a single Zone Temperature Sensor.
+2. The left HVAC Zone has a single Zone Air Temperature Sensor, which is a capability of the HVAC Zone. The Fan Powered Box which feeds it carries no zone air points of its own.
 
-3. In some scenarios, an equipment such as a Fan Powered Box may have several Zone Air Temperature Sensors in which there is logic in the controller which averages or takes the minimum of maximum of the multiple sensor readers to determine its control sequence.
+3. In some scenarios the controller of an equipment such as a Fan Powered Box has several zone temperature inputs, and logic in the controller averages them, or takes the minimum or maximum, to determine its control sequence. Those raw inputs may be modeled as Zone Air Temperature Sensors which are capabilities of the asset that physically hosts them, here the right Fan Powered Box.
 
-4. When there are multiple Zone Air Temperature Sensors (#3) serving a single HVAC Zone and the connection solution doesn’t calculate and emit the aggregate for the Zone, the Zone’s Temperature Sensor Capability (#4) will need to be calculated by the WillowTwin by performing an average function.
+4. The right HVAC Zone still carries exactly one Zone Air Temperature Sensor: the value the controller controls the zone to. When the connection solution does not calculate and emit that aggregate, the zone's sensor is calculated by the WillowTwin by performing an average function over the raw inputs (#3). A consumer reading the zone's temperature always finds one sensor on the zone, never the raw inputs.
+
+## Where Zone Air Points Belong
+
+Every example in this document follows the same rule for zone air sensors and setpoints, whatever equipment serves the zone. The rule matters because an HVAC Zone has one temperature control loop, and a rules engine reading a zone point through the HVAC Zone expects to find exactly one.
+
+1. Zone air points are capabilities of the HVAC Zone, never of the terminal unit, chilled beam, fan coil or box which serves it. This covers the Zone Air Temperature Sensor, the Zone Air Humidity Sensor, and every Zone Air Temperature Setpoint in use (Occupied, Unoccupied, Standby, Effective, Active, Target), and the equivalent zone humidity and CO2 points.
+
+2. The HVAC Zone carries one of each. One zone, one loop, one Zone Air Temperature Sensor and one of each setpoint. Where several units serve the zone, they share those points through the zone; none of them carries a copy.
+
+3. The unit keeps the points which describe the unit: discharge air temperature, discharge airflow and airflow setpoints, damper position, fan run state, reheat state. These stay capabilities of the unit, hosted by its controller as usual. Valve position points are capabilities of the valve component which feeds the unit's coil, as shown in Asset Components.
+
+4. Where a controller has several physical zone temperature inputs, the zone's single sensor is the value the controller controls to, or a calculated aggregate of the inputs where the controller does not emit one. The raw inputs may still be modeled as Zone Air Temperature Sensors, as capabilities of the asset which physically hosts them, so that each reading is kept; they are not capabilities of the HVAC Zone. HVAC Multi-Zone Room above shows this.
+
+5. A unit upstream of the one which feeds the zone, for example an Air Handling Unit above a VAV Box or a CAV Box above an Active Chilled Beam, has no relationship to the zone and carries no zone air points. Its zone is reached through the units it feeds.
 
 ## HVAC Basic Relationships with Level
 
@@ -136,6 +150,30 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 
 1. Each Active Chilled Beam is fed by Supply Air from an upstream unit. In this example, we show that being a Constant Air Volume Box (CAV Box).
 
-2. Each chilled beam has a chilled water valve so points associated with the individual chilled beam's valve are directly associated with the chilled beam.
+2. Each chilled beam has a Cooling Coil component (Cooling Coil isPartOf Active Chilled Beam) and a Chilled Water Valve which controls flow to that coil (Cooling Coil isFedBy Chilled Water Valve), following the coil and valve pattern in Asset Components. The valve relates to the beam only through its coil, and chilled water reaches the beam through the valve: the valves are fed by the chilled water plant (Chilled Water Valve isFedBy Chilled Water Pump).
 
-3. Points that are associated with the room/zone or the primary supply air control are associated with the upstream unit which is controlling the airflow such as the CAV Box.
+3. Points that are associated with the primary supply air control, such as the Discharge Air Temperature Sensor and the Discharge Airflow Sensor, are associated with the upstream unit which is controlling the airflow such as the CAV Box. Zone air points are not: they belong to the HVAC Zone, as the next example shows.
+
+4. The valve position command and feedback points, such as the Valve Position Actuator, are capabilities of the valve twin. They are never capabilities of the chilled beam itself.
+
+### Active Chilled Beam and the HVAC Zone
+
+![HVACChilledBeam-Example2](Images/HVACChilledBeam-Example2.png)
+
+1. An Active Chilled Beam is the last device in the supply air path, so it is the unit which feeds the HVAC Zone. The HVAC Zone isFedBy each Active Chilled Beam which serves it. Several beams per zone is common, and each has its own isFedBy relationship from the zone. Where the beams are commissioned as a set, they may also be includedIn a Chilled Beam Group, and the HVAC Zone may be fed by the group rather than by each beam.
+
+2. Each Active Chilled Beam isFedBy the CAV Box or VAV Box which supplies its primary air. The box does not feed the HVAC Zone directly, in the same way that an Air Handling Unit upstream of a VAV Box does not feed the zone directly.
+
+3. The HVAC Zone carries one Zone Air Temperature Sensor and one of each Zone Air Temperature Setpoint, regardless of how many beams serve it, following Where Zone Air Points Belong above. The beams carry no zone air points, however the beam controllers are configured: whether one beam controller runs the zone loop, the box runs it, or each beam modulates its valve against the shared zone sensor, the zone points are the same and sit on the zone. Each beam's Cooling Coil and Chilled Water Valve components are modeled as in the Active Chilled Beam example above, with the valve points on the valve.
+
+4. A VAV Box or CAV Box which only feeds Active Chilled Beams has no relationship to the HVAC Zone. Its zone is reached through the beams it feeds. Do not add a second isFedBy from the HVAC Zone to the box to shortcut this: a zone fed by both the box and the beams it supplies double-counts every unit on that zone.
+
+### Passive Chilled Beam and the HVAC Zone
+
+![HVACChilledBeam-Example3](Images/HVACChilledBeam-Example3.png)
+
+1. A Passive Chilled Beam has no primary air supply, so it is not in the supply air path at all. It conditions the zone directly by convection from its Cooling Coil, which is fed by Chilled Water only through the beam's Chilled Water Valve (Cooling Coil isPartOf Passive Chilled Beam, Cooling Coil isFedBy Chilled Water Valve, Chilled Water Valve isFedBy Chilled Water Pump).
+
+2. The HVAC Zone therefore has two feeders: it isFedBy the Passive Chilled Beam and isFedBy the VAV Box or CAV Box which ventilates the zone (substance SupplyAir). The zone-to-beam relationship carries no substance, because an HVAC Zone's isFedBy substance is an air substance and the beam delivers conditioning by convection rather than by feeding the zone a substance. Both relationships are correct, and the zone having two feeders is the expected shape for this system.
+
+3. The zone air points are capabilities of the HVAC Zone. The VAV Box carries its own discharge air points; the Passive Chilled Beam carries no points of its own, and its valve position points are capabilities of the Chilled Water Valve.
