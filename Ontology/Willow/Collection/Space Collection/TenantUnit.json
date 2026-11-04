@@ -59,6 +59,14 @@
     {
       "@type": "Component",
       "displayName": {
+        "en": "Heating Hot Water Price Rate"
+      },
+      "name": "heatingHotWaterPriceRate",
+      "schema": "dtmi:com:willowinc:UtilityRate;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
         "en": "Steam Price Rate"
       },
       "name": "steamPriceRate",
