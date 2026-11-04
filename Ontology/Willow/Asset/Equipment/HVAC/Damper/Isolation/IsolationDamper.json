@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:IsolationDamper;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Isolation Damper"
+  },
+  "description": {
+    "en": "A damper which seals off a section of ductwork to isolate it from the rest of the system."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:HVACDamper;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
