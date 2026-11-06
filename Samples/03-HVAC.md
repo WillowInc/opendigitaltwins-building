@@ -34,7 +34,7 @@ At a fundamental level, HVAC systems exchange energy and move air and water to c
 
 Every example in this document follows the same rule for zone air sensors and setpoints, whatever equipment serves the zone. The rule matters because an HVAC Zone has one temperature control loop, and a rules engine reading a zone point through the HVAC Zone expects to find exactly one.
 
-1. Zone air points are capabilities of the HVAC Zone, never of the terminal unit, chilled beam, fan coil or box which serves it. This covers the Zone Air Temperature Sensor, the Zone Air Humidity Sensor, and every Zone Air Temperature Setpoint in use (Occupied, Unoccupied, Standby, Effective, Active, Target), and the equivalent zone humidity and CO2 points.
+1. Zone air points are capabilities of the HVAC Zone, never of the terminal unit, chilled beam, fan coil, box or duct heater which serves it. This covers the Zone Air Temperature Sensor, the Zone Air Humidity Sensor, and every Zone Air Temperature Setpoint in use (Occupied, Unoccupied, Standby, Effective, Active, Target), and the equivalent zone humidity and CO2 points.
 
 2. The HVAC Zone carries one of each. One zone, one loop, one Zone Air Temperature Sensor and one of each setpoint. Where several units serve the zone, they share those points through the zone; none of them carries a copy.
 
@@ -42,7 +42,7 @@ Every example in this document follows the same rule for zone air sensors and se
 
 4. Where a controller has several physical zone temperature inputs, the zone's single sensor is the value the controller controls to, or a calculated aggregate of the inputs where the controller does not emit one. The raw inputs may still be modeled as Zone Air Temperature Sensors, as capabilities of the asset which physically hosts them, so that each reading is kept; they are not capabilities of the HVAC Zone. HVAC Multi-Zone Room above shows this.
 
-5. A unit upstream of the one which feeds the zone, for example an Air Handling Unit above a VAV Box or a CAV Box above an Active Chilled Beam, has no relationship to the zone and carries no zone air points. Its zone is reached through the units it feeds.
+5. A unit upstream of the one which feeds the zone, for example an Air Handling Unit above a VAV Box, a CAV Box above an Active Chilled Beam or a VAV Box above a Duct Heater, has no relationship to the zone and carries no zone air points. Its zone is reached through the units it feeds.
 
 ## HVAC Basic Relationships with Level
 
@@ -197,3 +197,35 @@ Chilled Beams are a type of terminal unit located in a ceiling that receive chil
 2. The HVAC Zone therefore has two feeders: it isFedBy the Passive Chilled Beam and isFedBy the VAV Box or CAV Box which ventilates the zone (substance SupplyAir). The zone-to-beam relationship carries no substance, because an HVAC Zone's isFedBy substance is an air substance and the beam delivers conditioning by convection rather than by feeding the zone a substance. Both relationships are correct, and the zone having two feeders is the expected shape for this system.
 
 3. The zone air points are capabilities of the HVAC Zone. The VAV Box carries its own discharge air points; the Passive Chilled Beam carries no points of its own, and its valve position points are capabilities of the Chilled Water Valve.
+
+## Duct Heater
+
+A Duct Heater is a heating section installed in the supply ductwork, outside the casing of the unit which supplies its air. It is electric (Electric Duct Heater), hot water (Hot Water Duct Heater) or steam (Steam Duct Heater). Most often it is the reheat for a single VAV Box or CAV Box; on some single-zone systems it is the heating stage downstream of an Air Handling Unit, controlled by the unit's sequence but mounted in the duct. In both cases the heater sits in the supply air path between the upstream unit and the HVAC Zone, so it is modeled as the last device in that path, in the same way as an Active Chilled Beam.
+
+### Duct Heater Downstream of a Terminal Unit
+
+![HVACDuctHeater-Example1](Images/HVACDuctHeater-Example1.png)
+
+1. The Duct Heater is the last device in the supply air path, so it is the unit which feeds the HVAC Zone. The HVAC Zone isFedBy the Duct Heater (substance SupplyAir).
+
+2. The Duct Heater isFedBy the VAV Box or CAV Box which supplies its air, and the box isFedBy the Air Handling Unit as usual. The full path is HVAC Zone isFedBy Duct Heater isFedBy VAV Box isFedBy Air Handling Unit.
+
+3. The Duct Heater has a Heating Coil component (Heating Coil isPartOf Duct Heater). For a hot water or steam heater, the valve which controls flow to the coil feeds the coil (Heating Coil isFedBy the valve), and the valve position points are capabilities of the valve, following the coil and valve pattern in Asset Components. Points which describe the heater itself, such as its Discharge Air Temperature Sensor and its High Temperature Alarm State (the high-limit cutout), are capabilities of the Duct Heater.
+
+4. The zone air points are capabilities of the HVAC Zone, following Where Zone Air Points Belong above. Neither the heater nor the box carries them, even where the box controller runs the zone loop and commands the heater.
+
+5. The VAV Box keeps its own airflow and damper points, but has no relationship to the HVAC Zone. Its zone is reached through the heater it feeds. Do not add a second isFedBy from the HVAC Zone to the box to shortcut this: a zone fed by both the box and the heater the box supplies double-counts the box on that zone.
+
+### Duct Heater with No Terminal Unit
+
+![HVACDuctHeater-Example2](Images/HVACDuctHeater-Example2.png)
+
+1. Where there is no terminal unit in the path, for example a single-zone Air Handling Unit with a duct-mounted heating stage downstream of its supply fan, the Duct Heater isFedBy the Air Handling Unit (or the AHU group which supplies it) directly.
+
+2. The HVAC Zone isFedBy the Duct Heater. The full path is HVAC Zone isFedBy Duct Heater isFedBy Air Handling Unit.
+
+3. The zone air points are capabilities of the HVAC Zone. The Air Handling Unit keeps its own discharge air temperature, measured upstream of the heater; the Duct Heater carries the discharge air temperature measured downstream of it, which is the air delivered to the zone.
+
+4. The Air Handling Unit has no relationship to the HVAC Zone, and the HVAC Zone has no isFedBy to the Air Handling Unit. Its zone is reached through the heater, as in the example above.
+
+5. Where the heater is built into the Air Handling Unit's casing rather than mounted in the duct, it is not a Duct Heater: model it as a Heating Coil component of the Air Handling Unit, and relate the HVAC Zone to the Air Handling Unit directly.
