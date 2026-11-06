@@ -23,7 +23,7 @@ jobs:
           files: "Metadata/*.nuspec"
           version: ${{ github.event.inputs.version }}
       - name: 'Commit new .nuspec version'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}
           branch: auto/${{ steps.set-version.outputs.newVersion }}
