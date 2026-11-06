@@ -86,7 +86,15 @@ Every example in this document follows the same rule for zone air sensors and se
 
 ![HVACDualDuctAHU-Example2](Images/HVACDualDuctAHU-Example2.png)
 
-1. In this example, we show how to configure a Dual Duct Air Handling Unit which has two Supply Fans, one for each discharge section. In this case, we have a Cold Deck Supply Fan and a Hot Deck Supply Fan in addition to the Hot and Cold Deck AHU Discharge Sections.
+1. In this example, we show how to configure a Dual Duct Air Handling Unit which has a separate supply fan for each deck. The Hot and Cold Deck AHU Discharge Sections each have an isPartOf relationship to the AHU, as in the single fan example above.
+
+2. Each deck's fan is a component of its discharge section rather than of the AHU. The Hot Deck fan is a Supply Fan with an isPartOf relationship to the Hot Deck AHU Discharge Section, and carries its own capabilities such as the Fan Run Level Actuator and Fan VFD Frequency Sensor. The fan uses the plain Supply Fan model: the deck it serves is given by the section it is part of, so the Hot Deck Supply Fan and Cold Deck Supply Fan models are not used.
+
+3. Where a deck has more than one fan, the fans are modeled as a Supply Fan Group with an isPartOf relationship to that deck's discharge section, following AHU Fan Arrays below. Here the Cold Deck has two fans, and the Supply Fan Group holds their common Fan Run Level Actuator and Fan VFD Frequency Sensor.
+
+4. Each Supply Fan in the array is includedIn the Supply Fan Group and carries its own Fan Run State.
+
+5. A Dual Duct AHU with a single Supply Fan serving both decks keeps that fan on the AHU, as in the single fan example above. The fan belongs to a section only when it serves that section alone.
 
 ### Dual Duct VAV Box
 
