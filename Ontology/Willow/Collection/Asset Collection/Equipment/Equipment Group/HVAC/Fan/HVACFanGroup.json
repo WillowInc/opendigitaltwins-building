@@ -4,12 +4,291 @@
   "displayName": {
     "en": "Fan Group (HVAC)"
   },
+  "description": {
+    "en": "A group of fans being controlled together as a unit. (a.k.a. Fan Array or Fan Wall)."
+  },
   "extends" : [
     "dtmi:com:willowinc:HVACEquipmentGroup;1"
   ],
   "contents": [
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "Nominal External Static Pressure"
+      },
+      "name": "nominalExternalStaticPressure",
+      "schema": "double",
+      "unit": "pascal",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Nominal External Static Pressure Unit"
+      },
+      "name": "nominalExternalStaticPressureUnit",
+      "annotates": "nominalExternalStaticPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Nominal Airflow"
+      },
+      "name": "nominalAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Nominal Airflow Unit"
+      },
+      "name": "nominalAirflowUnit",
+      "annotates": "nominalAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "Motor Power"
+      },
+      "name": "motorPower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Motor Power Unit"
+      },
+      "name": "motorPowerUnit",
+      "annotates": "motorPower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["AngularVelocity", "Property"],
+      "displayName": {
+        "en": "Maximum Rotation Speed"
+      },
+      "name": "maxRotationSpeed",
+      "schema": "double",
+      "unit": "revolutionPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Frequency"],
+      "displayName": {
+        "en": "Maximum VFD Frequency"
+      },
+      "name": "maxVFDFrequency",
+      "schema": "double",
+      "unit": "hertz",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Maximum VFD Frequency Unit"
+      },
+      "name": "maxVFDFrequencyUnit",
+      "annotates": "maxVFDFrequency",
+      "overrides": "unit",
+      "schema": "FrequencyUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Power", "Property"],
+      "displayName": {
+        "en": "Brake Horsepower"
+      },
+      "name": "brakeHorsepower",
+      "schema": "double",
+      "unit": "horsepower",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Brake Horsepower Unit"
+      },
+      "name": "brakeHorsepowerUnit",
+      "annotates": "brakeHorsepower",
+      "overrides": "unit",
+      "schema": "PowerUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Current", "Property"],
+      "displayName": {
+        "en": "Full Load Current"
+      },
+      "name": "fullLoadCurrent",
+      "schema": "double",
+      "unit": "ampere",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Full Load Current Unit"
+      },
+      "name": "fullLoadCurrentUnit",
+      "annotates": "fullLoadCurrent",
+      "overrides": "unit",
+      "schema": "CurrentUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Minimum Airflow Rating"
+      },
+      "name": "minAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Minimum Airflow Rating Unit"
+      },
+      "name": "minAirflowRatingUnit",
+      "annotates": "minAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Maximum Airflow Rating"
+      },
+      "name": "maxAirflowRating",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Maximum Airflow Rating Unit"
+      },
+      "name": "maxAirflowRatingUnit",
+      "annotates": "maxAirflowRating",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "VolumeFlowRate"],
+      "displayName": {
+        "en": "Design Airflow"
+      },
+      "name": "designAirflow",
+      "schema": "double",
+      "unit": "litrePerSecond",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design Airflow Unit"
+      },
+      "name": "designAirflowUnit",
+      "annotates": "designAirflow",
+      "overrides": "unit",
+      "schema": "VolumeFlowRateUnit",
+      "writable": true
+    },
+    {
+      "@type": ["AngularVelocity", "Property"],
+      "displayName": {
+        "en": "Design Rotation Speed"
+      },
+      "name": "designRotationSpeed",
+      "schema": "double",
+      "unit": "revolutionPerMinute",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Frequency"],
+      "displayName": {
+        "en": "Design VFD Frequency"
+      },
+      "name": "designVFDFrequency",
+      "schema": "double",
+      "unit": "hertz",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design VFD Frequency Unit"
+      },
+      "name": "designVFDFrequencyUnit",
+      "annotates": "designVFDFrequency",
+      "overrides": "unit",
+      "schema": "FrequencyUnit",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "Pressure"],
+      "displayName": {
+        "en": "Design External Static Pressure"
+      },
+      "name": "designExternalStaticPressure",
+      "schema": "double",
+      "unit": "pascal",
+      "writable": true
+    },
+    {
+      "@type": ["Property", "ValueAnnotation", "Override"],
+      "displayName": {
+        "en": "Design External Static Pressure Unit"
+      },
+      "name": "designExternalStaticPressureUnit",
+      "annotates": "designExternalStaticPressure",
+      "overrides": "unit",
+      "schema": "PressureUnit",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Drive Type"
+      },
+      "name": "driveType",
+      "schema": {
+        "@type": "Enum",
+        "enumValues": [
+          {
+            "enumValue": "Direct",
+            "name": "Direct"
+          },
+          {
+            "enumValue": "Belt",
+            "name": "Belt"
+          }
+        ],
+        "valueSchema": "string"
+      },
+      "writable": true
+    }
   ],
   "@context": [
-    "dtmi:dtdl:context;3"
+    "dtmi:dtdl:context;3",
+    "dtmi:dtdl:extension:quantitativeTypes;1",
+    "dtmi:dtdl:extension:annotation;1",
+    "dtmi:dtdl:extension:overriding;1"
   ]
 }
