@@ -148,6 +148,18 @@ Both examples above follow the same rule for the placement of fan run and speed 
 
 A plain fan point attached directly to the AHU is not merely unconventional, it is inert. A rules engine resolving the run status of an air handling unit looks first for a Discharge Fan Run State on the AHU, then for run points on the AHU's fan groups, then on the fans within those groups, and finally on fans attached directly to the AHU. No step in that sequence reads a plain Fan Run State from the AHU twin itself, so a point parented to the AHU by mistake binds to nothing and contributes nothing to whether the unit is considered enabled.
 
+### Fan Isolation Dampers
+
+In a fan array, each fan often has its own damper which closes when that fan is off, so that air from the running fans does not flow backwards through the idle one. These dampers are modeled as follows.
+
+1. Each fan's damper is an Isolation Damper with an isPartOf relationship to the Supply Fan it sits on. It is a component of that fan, not of the Supply Fan Group or the Air Handling Unit. This adds a level of nesting (AHU, then Supply Fan Group, then Supply Fan, then Isolation Damper), and that is intended: the damper belongs to one fan and opens and closes with it.
+
+2. Use the Isolation Damper model rather than Smoke Damper. These dampers isolate an idle fan rather than stop the spread of smoke. Smoke Damper extends Isolation Damper and should be kept for dampers whose purpose is smoke control, such as the Supply, Return, Outside Air and Exhaust Smoke Dampers on the AHU itself.
+
+3. Each Isolation Damper carries its own capabilities, typically a Damper Open State and Damper Open Actuator, or a Damper Closed State where only a closed end switch is available. A modulating damper uses the Damper Position Actuator and Damper Position State instead.
+
+4. The same pattern applies to fans in a Return Fan Group or Exhaust Fan Group, and to a single fan with its own isolation damper.
+
 ## Chilled Beam
 
 Chilled Beams are a type of terminal unit located in a ceiling that receive chilled water to cool a space. Passive chilled beams use natural convection to provide conditioning to the space whereas active chilled beams have a primary air supply which forces the air into the space. Active chilled beams may also receive hot water to enable heating a space.
