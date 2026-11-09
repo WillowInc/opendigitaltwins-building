@@ -54,6 +54,8 @@ Every example in this document follows the same rule for zone air sensors and se
 
 3. Rooftop Units commonly condition spaces that are not on the same level in which they are located. The Rooftop Unit here is located on the Roof but conditions the 1st Floor.
 
+4. Each HVAC Zone carries its own Zone Air Temperature Sensor and Zone Air Temperature Setpoint as capabilities of the HVAC Zone. Neither the Fan Powered Box nor the Rooftop Unit carries zone air points, whichever level it is located on - see Where Zone Air Points Belong above.
+
 ## HVAC Pressurization Zone
 
 ![HVACPressurizationZone-Example1](Images/HVACPressurizationZone-Example1.png)
