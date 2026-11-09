@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:com:willowinc:Heartbeat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Heartbeat"
+  },
+  "description": {
+    "en": "A regular signal sent by a device or system to indicate that it is functioning properly. A heartbeat can be used to monitor the health of a system and detect any issues or failures in real-time."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Capability;1"
+  ],
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "upstreamHeartbeat",
+      "displayName": {
+        "en": "upstream heartbeat"
+      },
+      "description": {
+        "en": "Represents the upstream heartbeat signal for monitoring and diagnostics."
+      },
+      "target": "dtmi:com:willowinc:Heartbeat;1"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

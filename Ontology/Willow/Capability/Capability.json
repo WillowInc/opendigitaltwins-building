@@ -47,6 +47,17 @@
       }
     },
     {
+      "@type": "Relationship",
+      "name": "hasHeartbeat",
+      "displayName": {
+        "en": "has heartbeat"
+      },
+      "description": {
+        "en": "Represents the heartbeat relationship to a Heartbeat for monitoring and diagnostics."
+      },
+      "target": "dtmi:com:willowinc:Heartbeat;1"
+    },
+    {
       "@type": "Property",
       "displayName": {
         "en": "Custom Tags"
