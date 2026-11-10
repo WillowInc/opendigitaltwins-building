@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnDuctAirStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Duct Air Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor located in the return air duct upstream of the unit, typically used for return fan speed control"},
+  "extends" : [
+    "dtmi:com:willowinc:ReturnAirStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

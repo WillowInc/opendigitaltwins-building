@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeSectionAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Section Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The limit value associated with discharge (supply) air static pressure measured inside the unit's discharge section or plenum, typically used as a high static pressure safety trip point"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
