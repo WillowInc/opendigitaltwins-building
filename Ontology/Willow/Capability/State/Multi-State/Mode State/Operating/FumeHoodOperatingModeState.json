@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FumeHoodOperatingModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fume Hood Operating Mode State"
+  },
+  "description": {
+    "en": "The multi-state operating mode of a fume hood, such as 'normal', 'standby', 'emergency' or 'off'"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
