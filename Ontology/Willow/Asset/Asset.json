@@ -516,6 +516,15 @@
     },
     {
       "@type": "Property",
+      "name": "firmwareVersion",
+      "displayName": {
+        "en": "Firmware Version"
+      },
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
       "name": "comments",
       "displayName": {
         "en": "Comments"
