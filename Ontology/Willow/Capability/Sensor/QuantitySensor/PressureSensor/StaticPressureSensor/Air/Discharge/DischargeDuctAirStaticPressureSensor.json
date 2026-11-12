@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeDuctAirStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Duct Air Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor located in the discharge (supply) air duct downstream of the unit, typically about two-thirds of the way down the longest duct run, used for fan speed control"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeDuctAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Duct Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The desired value associated with discharge (supply) air static pressure measured in the duct downstream of the unit, typically about two-thirds of the way down the longest duct run, used for fan speed control"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

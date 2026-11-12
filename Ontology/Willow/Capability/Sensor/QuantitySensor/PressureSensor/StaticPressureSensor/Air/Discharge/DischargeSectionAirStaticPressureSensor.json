@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:DischargeSectionAirStaticPressureSensor;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Discharge Section Air Static Pressure Sensor"
+  },
+  "description": {"en": "The static pressure feedback from a sensor located inside the unit's discharge (supply) air section or plenum, typically used for high static pressure safety protection of the unit and ductwork"},
+  "extends" : [
+    "dtmi:com:willowinc:DischargeAirStaticPressureSensor;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

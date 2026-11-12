@@ -1,0 +1,17 @@
+{
+  "@id": "dtmi:com:willowinc:ReturnSectionAirStaticPressureSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Return Section Air Static Pressure Setpoint"
+  },
+  "description": {"en": "The limit value associated with return air static pressure measured inside the unit's return air section or plenum, typically used as a low (excessive negative) static pressure safety trip point"},
+  "extends" : [
+    "dtmi:com:willowinc:ReturnAirStaticPressureSetpoint;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
