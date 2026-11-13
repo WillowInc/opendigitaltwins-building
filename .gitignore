@@ -345,3 +345,6 @@ reports/
 documentation/_site/
 documentation/**/_site/
 Metadata/w3.jsonlb
+
+# Claude Code per-user settings: "don't ask again" stores approved commands verbatim, secrets included
+**/.claude/settings.local.json
