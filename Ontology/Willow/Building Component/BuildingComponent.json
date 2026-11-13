@@ -357,6 +357,31 @@
       "name": "commissionDate",
       "schema": "date",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "isDeleted",
+      "displayName": {
+        "en": "Is Deleted"
+      },
+      "description": {
+        "en": "Indicates whether a twin is soft deleted"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "deletedDateTime",
+      "displayName": {
+        "en": "Deleted Date Time"
+      },
+      "description": {
+        "en": "The date and time when the twin was soft deleted"
+      },
+      "annotates": "isDeleted",
+      "writable": true,
+      "schema": "dateTime"
     }
   ],
   "schemas": [
