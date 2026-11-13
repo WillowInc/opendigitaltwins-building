@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:PlantOperatingModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Plant Operating Mode State"
+  },
+  "description": {
+    "en": "The multi-state operating mode of the central plant or air handling system serving the equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

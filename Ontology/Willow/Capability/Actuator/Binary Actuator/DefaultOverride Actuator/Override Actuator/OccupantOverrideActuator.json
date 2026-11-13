@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:OccupantOverrideActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Occupant Override Actuator"
+  },
+  "description": {"en": "The Boolean command from an occupant which sets the state of the equipment to 'override' when 'true'"},
+  "extends" : [
+    "dtmi:com:willowinc:OverrideActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

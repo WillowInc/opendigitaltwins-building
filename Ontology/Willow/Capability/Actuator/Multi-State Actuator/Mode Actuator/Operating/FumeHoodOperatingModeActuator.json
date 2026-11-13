@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FumeHoodOperatingModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fume Hood Operating Mode Actuator"
+  },
+  "description": {
+    "en": "The multi-state command which sets the operating mode of a fume hood, such as 'normal', 'standby', 'emergency' or 'off'"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
