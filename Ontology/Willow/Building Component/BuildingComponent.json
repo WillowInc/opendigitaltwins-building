@@ -357,6 +357,43 @@
       "name": "commissionDate",
       "schema": "date",
       "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "isDeleted",
+      "displayName": {
+        "en": "Is Deleted"
+      },
+      "description": {
+        "en": "Indicates whether a twin is soft deleted"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "deletedDateTime",
+      "displayName": {
+        "en": "Deleted Date Time"
+      },
+      "description": {
+        "en": "The date and time when the twin was soft deleted"
+      },
+      "annotates": "isDeleted",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "twinLifecycleEvents",
+      "displayName": {
+        "en": "Twin Lifecycle Events"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:willowinc:BuildingComponentTwinLifecycleEventObject;1"
+      }
     }
   ],
   "schemas": [
@@ -583,6 +620,58 @@
             "en": "The date the identity was created in Mapped."
           },
           "schema": "dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:BuildingComponentTwinLifecycleEventObject;1",
+      "@type": "Object",
+      "description": {
+        "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+      },
+      "fields": [
+        {
+          "name": "eventType",
+          "displayName": {
+            "en": "Event Type"
+          },
+          "description": {
+            "en": "The type of twin lifecycle event such as Created or Deleted"
+          },
+          "schema": {
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "enumValue": "Created",
+                "name": "Created"
+              },
+              {
+                "enumValue": "Deleted",
+                "name": "Deleted"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        },
+        {
+          "name": "eventDateTime",
+          "displayName": {
+            "en": "Event Date Time"
+          },
+          "description": {
+            "en": "The date and time the twin lifecycle event occurred."
+          },
+          "schema": "dateTime"
+        },
+        {
+          "name": "reason",
+          "displayName": {
+            "en": "Reason"
+          },
+          "description": {
+            "en": "The reason for the twin lifecycle event such as 'Contract change', 'Moved to/from another organization', or 'Connected source change'."
+          },
+          "schema": "string"
         }
       ]
     }
