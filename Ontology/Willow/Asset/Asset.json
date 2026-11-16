@@ -507,15 +507,6 @@
     },
     {
       "@type": "Property",
-      "name": "software",
-      "displayName": {
-        "en": "Software"
-      },
-      "writable": true,
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
       "name": "firmwareVersion",
       "displayName": {
         "en": "Firmware Version"
@@ -632,6 +623,43 @@
           }
         }
       }
+    },
+    {
+      "@type": "Property",
+      "name": "isDeleted",
+      "displayName": {
+        "en": "Is Deleted"
+      },
+      "description": {
+        "en": "Indicates whether a twin is soft deleted"
+      },
+      "writable": true,
+      "schema": "boolean"
+    },
+    {
+      "@type": ["Property", "ValueAnnotation"],
+      "name": "deletedDateTime",
+      "displayName": {
+        "en": "Deleted Date Time"
+      },
+      "description": {
+        "en": "The date and time when the twin was soft deleted"
+      },
+      "annotates": "isDeleted",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "twinLifecycleEvents",
+      "displayName": {
+        "en": "Twin Lifecycle Events"
+      },
+      "writable": true,
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:willowinc:AssetTwinLifecycleEventObject;1"
+      }
     }
   ],
   "schemas": [
@@ -739,6 +767,84 @@
           },
           "description": {
             "en": "The date the identity was created in Mapped."
+          },
+          "schema": "dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:com:willowinc:AssetTwinLifecycleEventObject;1",
+      "@type": "Object",
+      "description": {
+        "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+      },
+      "fields": [
+        {
+          "name": "eventType",
+          "displayName": {
+            "en": "Event Type"
+          },
+          "description": {
+            "en": "The type of twin lifecycle event such as Created or Deleted"
+          },
+          "schema": {
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "enumValue": "Created",
+                "name": "Created"
+              },
+              {
+                "enumValue": "Deleted",
+                "name": "Deleted"
+              }
+            ],
+            "valueSchema": "string"
+          }
+        },
+        {
+          "name": "eventTrigger",
+          "displayName": {
+            "en": "Event Trigger"
+          },
+          "description": {
+            "en": "What triggered the twin lifecycle event."
+          },
+          "schema": {
+            "@type": "Enum",
+            "enumValues": [
+              {
+                "enumValue": "Organization Change",
+                "name": "OrganizationChange",
+                "description": {
+                  "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                }
+              },
+              {
+                "enumValue": "Contract Change",
+                "name": "ContractChange",
+                "description": {
+                  "en": "The organization's contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                }
+              },
+              {
+                "enumValue": "Connector Change",
+                "name": "ConnectorChange",
+                "description": {
+                  "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                }
+              }
+            ],
+            "valueSchema": "string"
+          }
+        },
+        {
+          "name": "eventDateTime",
+          "displayName": {
+            "en": "Event Date Time"
+          },
+          "description": {
+            "en": "The date and time the twin lifecycle event occurred."
           },
           "schema": "dateTime"
         }
