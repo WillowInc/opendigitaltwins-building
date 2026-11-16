@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FanSpeedModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Speed Mode State"
+  },
+  "description": {
+    "en": "The multi-state speed setting of a fan, such as 'low', 'medium' or 'high'"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

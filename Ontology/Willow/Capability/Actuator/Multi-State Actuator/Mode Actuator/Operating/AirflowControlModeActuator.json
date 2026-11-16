@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:AirflowControlModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airflow Control Mode Actuator"
+  },
+  "description": {
+    "en": "The multi-state command which sets the operating mode of an airflow controller, such as 'off', 'control', 'open', 'emergency' or 'fire'"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

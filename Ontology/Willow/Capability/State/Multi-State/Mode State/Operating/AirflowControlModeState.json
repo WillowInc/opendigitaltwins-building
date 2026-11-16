@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:AirflowControlModeState;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airflow Control Mode State"
+  },
+  "description": {
+    "en": "The multi-state operating mode of an airflow controller, such as 'off', 'control', 'open', 'emergency' or 'fire'"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:OperatingModeState;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "dtmi:com:willowinc:FanSpeedModeActuator;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Fan Speed Mode Actuator"
+  },
+  "description": {
+    "en": "The multi-state command which sets the speed of a fan, such as 'low', 'medium' or 'high'"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:ModeActuator;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
