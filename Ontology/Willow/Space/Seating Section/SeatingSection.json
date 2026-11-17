@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:com:willowinc:SeatingSection;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Seating Section"
+  },
+  "description": {
+    "en": "A designated block of spectator seating within a level of a stadium, arena, or theater, typically bounded by seating aisles and identified by a section number (e.g. Section 112)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "tier",
+      "displayName": {
+        "en": "Tier"
+      },
+      "description": {
+        "en": "The seating tier or bowl that the section belongs to (e.g. Lower, Club, Upper)."
+      },
+      "writable": true,
+      "schema": "string"
+    }
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

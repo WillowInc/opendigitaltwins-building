@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:SeatingRow;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Seating Row"
+  },
+  "description": {
+    "en": "A single row of seats within a seating section of a stadium, arena, or theater, typically identified by a row letter or number (e.g. Row K)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}

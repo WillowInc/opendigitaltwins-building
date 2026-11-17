@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:Seat;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Seat"
+  },
+  "description": {
+    "en": "An individual spectator seat location within a seating row of a stadium, arena, or theater, typically identified by its section, row, and seat number (e.g. 112-K-14)."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Space;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
