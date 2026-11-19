@@ -32,13 +32,33 @@ jobs:
       with:
         files: "Metadata/*.nuspec"
         version: bump-revision
-    - name: 'Commit new .nuspec version'
+    - name: Commit regenerated artifact and open/update publish PR
       run: |
-        git config --global user.email "admin@willowinc.com"
-        git config --global user.name "Auto Generated"
-        git checkout -b auto/${{ steps.set-version.outputs.newVersion }}
-        git add .
+        git config user.email "admin@willowinc.com"
+        git config user.name "Auto Generated"
+        # Stable branch name, force-pushed each run. A version-derived branch
+        # name collides with its own stranded PR when main's version has not
+        # advanced, which wedged this pipeline for ~3 months (the push was
+        # rejected with 'fetch first'). A stable force-pushed branch cannot
+        # deadlock.
+        BRANCH="auto/ontology-republish"
+        git checkout -B "$BRANCH"
+        git add Metadata/Willow.Ontology.DTDLv3.jsonld Metadata/Willow.Ontology.DTDLv3.nuspec
+        if git diff --cached --quiet; then
+          echo "No artifact changes to publish."
+          exit 0
+        fi
         git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
-        git push --set-upstream origin auto/${{ steps.set-version.outputs.newVersion }}
-        gh pr create --title "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}" --fill
-        gh pr merge --merge --delete-branch
+        git push --force --set-upstream origin "$BRANCH"
+        PR=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+        if [ -z "$PR" ]; then
+          PR=$(gh pr create --head "$BRANCH" --base main \
+            --title "Publish ontology artifact ${{ steps.set-version.outputs.newVersion }}" \
+            --body "Automated regeneration of the merged DTDLv3 ontology artifact from Ontology/Willow source." \
+            | grep -oE '[0-9]+$')
+        fi
+        # Best-effort auto-merge. Never fail the run if the merge cannot
+        # complete, so a blocked merge leaves a mergeable PR open instead of
+        # deadlocking every subsequent run.
+        gh pr merge "$PR" --merge --delete-branch \
+          || echo "::warning::Auto-merge of PR #$PR did not complete; left open for manual merge."
