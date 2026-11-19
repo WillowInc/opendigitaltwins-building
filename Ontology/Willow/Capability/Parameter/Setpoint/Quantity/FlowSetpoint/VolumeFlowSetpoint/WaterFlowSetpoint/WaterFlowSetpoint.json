@@ -6,7 +6,7 @@
   },
   "description": {"en": "The desired value associated with water flow"},
   "extends" : [
-    "dtmi:com:willowinc:FlowSetpoint;1"
+    "dtmi:com:willowinc:VolumeFlowSetpoint;1"
   ],
   "contents": [
   ],

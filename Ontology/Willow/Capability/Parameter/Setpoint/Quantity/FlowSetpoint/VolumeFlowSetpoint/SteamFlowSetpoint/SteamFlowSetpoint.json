@@ -4,9 +4,9 @@
   "displayName": {
     "en": "Steam Flow Setpoint"
   },
-  "description": {"en": "The desired value associated with steam flow"},
+  "description": {"en": "The desired volume flow value associated with steam"},
   "extends" : [
-    "dtmi:com:willowinc:WaterFlowSetpoint;1"
+    "dtmi:com:willowinc:VolumeFlowSetpoint;1"
   ],
   "contents": [
   ],
