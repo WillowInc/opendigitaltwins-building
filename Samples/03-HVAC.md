@@ -64,7 +64,7 @@ Every example in this document follows the same rule for zone air sensors and se
 
 2. The isFedBy relationships indicated the direction of the airflow. The Supply VAV Airflow Control Valves bring fresh air into the space while the General/Fume Exhaust VAV Airflow Control Valves exhaust air out of the space.
 
-3. Fume Hoods may also be location in the space in which case the zone first feeds the Fume Hoods which then feed the Fume Exhaust VAV Airflow Control Valves.
+3. Ventilation Hoods, such as Fume Hoods or Biological Safety Cabinets, may also be located in the space, in which case the zone first feeds the hood, which then feeds its Fume Exhaust VAV Airflow Control Valve. A Biological Safety Cabinet is a sibling of the Fume Hood under Ventilation Hood, not a type of Fume Hood, and takes the same position in the exhaust path.
 
 4. The Exhaust VAV Control Valves across many zones often feed a common exhaust fan manifold which is shown as the Fan Group (HVAC). This equipment group consists of several Exhaust Fans that are staged and typically provide redundancy to the critical system.
 
@@ -76,7 +76,7 @@ Every example in this document follows the same rule for zone air sensors and se
 
 ![HVACExhaustBypassDamper-Example1](Images/HVACExhaustBypassDamper-Example1.png)
 
-1. Some laboratory exhaust fans serve a single point of capture, such as a ventilated table or a snorkel, and hold a constant duct static pressure. A Bypass Damper, sometimes called a bleed-in damper, modulates to draw room air into the duct as the flow through the point of capture changes.
+1. Some laboratory exhaust fans serve a single point of capture, such as a ventilated table or a snorkel, and hold a constant duct static pressure. A Bypass Damper, sometimes called a bleed-in damper, modulates to draw room air into the duct as the flow through the point of capture changes. A snorkel is modeled as a Snorkel Exhaust Fume Hood. Only a snorkel tied directly into the exhaust fan, as shown here, has no exhaust valve. A snorkel with its own exhaust valve follows the HVAC Pressurization Zone example above instead: the zone feeds the snorkel, which feeds a Fume Exhaust VAV Airflow Control Valve.
 
 2. The isFedBy relationships indicate the direction of the airflow, as in the HVAC Pressurization Zone example. The Exhaust Fan isFedBy both the Bypass Damper and the Ventilation Hood.
 
