@@ -134,15 +134,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "alternateClassification",
         "displayName": {
           "en": "Alternate Classification"
@@ -194,6 +185,46 @@
               }
             }
           }
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:AccountTwinLifecycleEventObject;1"
         }
       }
     ],
@@ -276,10 +307,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:AccountTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1"
     ]
   },
   {
@@ -401,15 +511,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "alternateClassification",
         "displayName": {
           "en": "Alternate Classification"
@@ -461,6 +562,46 @@
               }
             }
           }
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:AgentTwinLifecycleEventObject;1"
         }
       }
     ],
@@ -543,10 +684,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:AgentTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1"
     ]
   },
   {
@@ -832,15 +1052,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "coordinates",
         "displayName": {
           "en": "Coordinates"
@@ -1086,9 +1297,9 @@
       },
       {
         "@type": "Property",
-        "name": "software",
+        "name": "firmwareVersion",
         "displayName": {
-          "en": "Software"
+          "en": "Firmware Version"
         },
         "writable": true,
         "schema": "string"
@@ -1202,6 +1413,46 @@
             }
           }
         }
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:AssetTwinLifecycleEventObject;1"
+        }
       }
     ],
     "schemas": [
@@ -1309,6 +1560,84 @@
             },
             "description": {
               "en": "The date the identity was created in Mapped."
+            },
+            "schema": "dateTime"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:AssetTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
             },
             "schema": "dateTime"
           }
@@ -1520,15 +1849,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "alternateClassification",
         "displayName": {
           "en": "Alternate Classification"
@@ -1695,6 +2015,46 @@
         "name": "commissionDate",
         "schema": "date",
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:BuildingComponentTwinLifecycleEventObject;1"
+        }
       }
     ],
     "schemas": [
@@ -1923,6 +2283,84 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:BuildingComponentTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
@@ -2077,15 +2515,6 @@
         "writable": true,
         "schema": "string",
         "comment": "Time Series DB"
-      },
-      {
-        "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
       },
       {
         "@type": "Property",
@@ -2453,6 +2882,46 @@
         },
         "writable": true,
         "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:CapabilityTwinLifecycleEventObject;1"
+        }
       }
     ],
     "schemas": [
@@ -2534,10 +3003,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:CapabilityTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
       "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
   },
@@ -2716,15 +3264,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "customProperties",
         "displayName": {
           "en": "Custom Properties"
@@ -2804,6 +3343,46 @@
               "schema": "dtmi:com:willowinc:CollectionAlternateClassificationObject;1"
             }
           ]
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:CollectionTwinLifecycleEventObject;1"
         }
       }
     ],
@@ -2886,10 +3465,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:CollectionTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1"
     ]
   },
   {
@@ -3288,15 +3946,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "connectorID",
         "displayName": {
           "en": "Connector ID"
@@ -3368,6 +4017,46 @@
         },
         "writable": true,
         "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:EventTwinLifecycleEventObject;1"
+        }
       }
     ],
     "schemas": [
@@ -3449,10 +4138,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:EventTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
       "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:quantitativeTypes;1"
     ]
   },
@@ -3530,15 +4298,6 @@
         },
         "name": "ownedBy",
         "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
       },
       {
         "@type": "Property",
@@ -3718,6 +4477,46 @@
         },
         "writable": true,
         "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:SoftwareTwinLifecycleEventObject;1"
+        }
       }
     ],
     "schemas": [
@@ -3799,10 +4598,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:SoftwareTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1"
     ]
   },
   {
@@ -4093,15 +4971,6 @@
       },
       {
         "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
         "name": "alternateClassification",
         "displayName": {
           "en": "Alternate Classification"
@@ -4181,6 +5050,46 @@
               }
             }
           }
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:SpaceTwinLifecycleEventObject;1"
         }
       }
     ],
@@ -4291,10 +5200,89 @@
             }
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:SpaceTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1"
     ]
   },
   {
@@ -4417,15 +5405,6 @@
         },
         "name": "ownedBy",
         "target": "dtmi:com:willowinc:Agent;1"
-      },
-      {
-        "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
-        },
-        "writable": true,
-        "schema": "string"
       },
       {
         "@type": "Property",
@@ -4705,6 +5684,46 @@
         "name": "physicalTagNumber",
         "schema": "string",
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "name": "isDeleted",
+        "displayName": {
+          "en": "Is Deleted"
+        },
+        "description": {
+          "en": "Indicates whether a twin is soft deleted"
+        },
+        "writable": true,
+        "schema": "boolean"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "name": "deletedDateTime",
+        "displayName": {
+          "en": "Deleted Date Time"
+        },
+        "description": {
+          "en": "The date and time when the twin was soft deleted"
+        },
+        "annotates": "isDeleted",
+        "writable": true,
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "twinLifecycleEvents",
+        "displayName": {
+          "en": "Twin Lifecycle Events"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:StructureTwinLifecycleEventObject;1"
+        }
       }
     ],
     "schemas": [
@@ -4786,10 +5805,89 @@
             "schema": "dateTime"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:StructureTwinLifecycleEventObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents a twin lifecycle event in Willow such as created or deleted."
+        },
+        "fields": [
+          {
+            "name": "eventType",
+            "displayName": {
+              "en": "Event Type"
+            },
+            "description": {
+              "en": "The type of twin lifecycle event such as Created or Deleted"
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Created",
+                  "name": "Created"
+                },
+                {
+                  "enumValue": "Deleted",
+                  "name": "Deleted"
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventTrigger",
+            "displayName": {
+              "en": "Event Trigger"
+            },
+            "description": {
+              "en": "What triggered the twin lifecycle event."
+            },
+            "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                {
+                  "enumValue": "Organization Change",
+                  "name": "OrganizationChange",
+                  "description": {
+                    "en": "The twin was moved from one Willow organization to another, e.g. a building was moved between organizations."
+                  }
+                },
+                {
+                  "enumValue": "Contract Change",
+                  "name": "ContractChange",
+                  "description": {
+                    "en": "The organization\u0027s contract with Willow changed, e.g. the organization reduced its contracted buildings."
+                  }
+                },
+                {
+                  "enumValue": "Connector Change",
+                  "name": "ConnectorChange",
+                  "description": {
+                    "en": "One or more connectors removed or made inactive the entity, such as a space or asset."
+                  }
+                }
+              ],
+              "valueSchema": "string"
+            }
+          },
+          {
+            "name": "eventDateTime",
+            "displayName": {
+              "en": "Event Date Time"
+            },
+            "description": {
+              "en": "The date and time the twin lifecycle event occurred."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:annotation;1"
     ]
   },
   {
@@ -5339,11 +6437,106 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "External IDs"
+        },
+        "name": "externalIds",
+        "schema": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "externalIdName",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "externalIdValue",
+            "schema": "string"
+          }
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "Name"
         },
         "name": "name",
         "schema": "string",
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:ComponentMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "uniqueID",
+        "displayName": {
+          "en": "Globally Unique ID"
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "alternateClassification",
+        "displayName": {
+          "en": "Alternate Classification"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "masterFormat",
+              "displayName": {
+                "en": "MasterFormat"
+              },
+              "schema": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "omniClass",
+              "displayName": {
+                "en": "OmniClass"
+              },
+              "schema": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "uniFormat",
+              "displayName": {
+                "en": "UniFormat"
+              },
+              "schema": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "uniclass",
+              "displayName": {
+                "en": "Uniclass"
+              },
+              "schema": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "projectHaystack",
+              "displayName": {
+                "en": "Project Haystack"
+              },
+              "schema": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "brickSchema",
+              "displayName": {
+                "en": "Brick Schema"
+              },
+              "schema": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1"
+            }
+          ]
+        }
       }
     ],
     "schemas": [
@@ -5501,6 +6694,85 @@
             "name": "ACElec"
           }
         ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:ComponentAlternateClassificationObject;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "version",
+            "displayName": {
+              "en": "Version"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "code",
+            "displayName": {
+              "en": "Code"
+            },
+            "schema": "string"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:ComponentMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "dateCreated",
+            "displayName": {
+              "en": "Date Created"
+            },
+            "description": {
+              "en": "The date the identity was created in Mapped."
+            },
+            "schema": "dateTime"
+          }
+        ]
       }
     ],
     "@context": [
@@ -5609,6 +6881,14 @@
           "en": "Chilled Water Price Rate"
         },
         "name": "chilledWaterPriceRate",
+        "schema": "dtmi:com:willowinc:UtilityRate;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Heating Hot Water Price Rate"
+        },
+        "name": "heatingHotWaterPriceRate",
         "schema": "dtmi:com:willowinc:UtilityRate;1"
       },
       {
@@ -7279,6 +8559,404 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EquipmentCollectionComponent;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Equipment Collection Component"
+    },
+    "description": {
+      "en": "A component part of an equipment collection as viewed in the context of the collection, i.e. heat exchanger group primary side. Not used for equipment within a group."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Component;1"
+    ],
+    "contents": [
+      {
+        "@type": "Relationship",
+        "description": {
+          "en": "Indicates a super-entity of the same base type (i.e., Spaces only have Spaces as parents, Organizations only have Organizations, etc)."
+        },
+        "displayName": {
+          "en": "is part of"
+        },
+        "name": "isPartOf",
+        "target": "dtmi:com:willowinc:EquipmentCollection;1"
+      },
+      {
+        "@type": "Relationship",
+        "displayName": {
+          "en": "located in"
+        },
+        "name": "locatedIn",
+        "target": "dtmi:com:willowinc:Space;1"
+      },
+      {
+        "@type": "Relationship",
+        "name": "isFedBy",
+        "displayName": {
+          "en": "is fed by"
+        },
+        "description": {
+          "en": "Indicates that a substance is being received from the target entity."
+        },
+        "properties": [
+          {
+            "@type": "Property",
+            "name": "substance",
+            "displayName": {
+              "en": "Substance"
+            },
+            "writable": true,
+            "schema": "dtmi:com:willowinc:EquipmentCollectionComponentIsFedBySubstances;1"
+          }
+        ]
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "External IDs"
+        },
+        "name": "externalIds",
+        "schema": {
+          "@type": "Map",
+          "mapKey": {
+            "name": "externalIdName",
+            "schema": "string"
+          },
+          "mapValue": {
+            "name": "externalIdValue",
+            "schema": "string"
+          }
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Name"
+        },
+        "name": "name",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Mapped IDs"
+        },
+        "name": "mappedIds",
+        "writable": true,
+        "schema": {
+          "@type": "Array",
+          "elementSchema": "dtmi:com:willowinc:EquipmentCollectionComponentMappedIdObject;1"
+        }
+      },
+      {
+        "@type": "Property",
+        "name": "uniqueID",
+        "displayName": {
+          "en": "Globally Unique ID"
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "alternateClassification",
+        "displayName": {
+          "en": "Alternate Classification"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "masterFormat",
+              "displayName": {
+                "en": "MasterFormat"
+              },
+              "schema": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "omniClass",
+              "displayName": {
+                "en": "OmniClass"
+              },
+              "schema": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "uniFormat",
+              "displayName": {
+                "en": "UniFormat"
+              },
+              "schema": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "uniclass",
+              "displayName": {
+                "en": "Uniclass"
+              },
+              "schema": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "projectHaystack",
+              "displayName": {
+                "en": "Project Haystack"
+              },
+              "schema": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1"
+            },
+            {
+              "name": "brickSchema",
+              "displayName": {
+                "en": "Brick Schema"
+              },
+              "schema": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1"
+            }
+          ]
+        }
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:EquipmentCollectionComponentIsFedBySubstances;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "enumValue": "Water",
+            "name": "Water"
+          },
+          {
+            "enumValue": "WasteVentDrainage",
+            "name": "WasteVentDrainage"
+          },
+          {
+            "enumValue": "TransferAir",
+            "name": "TransferAir"
+          },
+          {
+            "enumValue": "SupplyAir",
+            "name": "SupplyAir"
+          },
+          {
+            "enumValue": "StormDrainage",
+            "name": "StormDrainage"
+          },
+          {
+            "enumValue": "Steam",
+            "name": "Steam"
+          },
+          {
+            "enumValue": "SprinklerWater",
+            "name": "SprinklerWater"
+          },
+          {
+            "enumValue": "ReturnAir",
+            "name": "ReturnAir"
+          },
+          {
+            "enumValue": "Refrig",
+            "name": "Refrig"
+          },
+          {
+            "enumValue": "RecircHotDomesticWater",
+            "name": "RecircHotDomesticWater"
+          },
+          {
+            "enumValue": "Propane",
+            "name": "Propane"
+          },
+          {
+            "enumValue": "OutsideAir",
+            "name": "OutsideAir"
+          },
+          {
+            "enumValue": "NonPotableDomesticWater",
+            "name": "NonPotableDomesticWater"
+          },
+          {
+            "enumValue": "NaturalGas",
+            "name": "NaturalGas"
+          },
+          {
+            "enumValue": "MakeupWater",
+            "name": "MakeupWater"
+          },
+          {
+            "enumValue": "Light",
+            "name": "Light"
+          },
+          {
+            "enumValue": "IrrigationWater",
+            "name": "IrrigationWater"
+          },
+          {
+            "enumValue": "HotWater",
+            "name": "HotWater"
+          },
+          {
+            "enumValue": "HotWaterGlycolMix",
+            "name": "HotWaterGlycolMix"
+          },
+          {
+            "enumValue": "HotDomesticWater",
+            "name": "HotDomesticWater"
+          },
+          {
+            "enumValue": "GreaseExhaustAir",
+            "name": "GreaseExhaustAir"
+          },
+          {
+            "enumValue": "Gasoline",
+            "name": "Gasoline"
+          },
+          {
+            "enumValue": "FuelOil",
+            "name": "FuelOil"
+          },
+          {
+            "enumValue": "Freight",
+            "name": "Freight"
+          },
+          {
+            "enumValue": "ExhaustAir",
+            "name": "ExhaustAir"
+          },
+          {
+            "enumValue": "Ethernet",
+            "name": "Ethernet"
+          },
+          {
+            "enumValue": "DriveElec",
+            "name": "DriveElec"
+          },
+          {
+            "enumValue": "Diesel",
+            "name": "Diesel"
+          },
+          {
+            "enumValue": "DCElec",
+            "name": "DCElec"
+          },
+          {
+            "enumValue": "CondenserWater",
+            "name": "CondenserWater"
+          },
+          {
+            "enumValue": "CondenserWaterGlycolMix",
+            "name": "CondenserWaterGlycolMix"
+          },
+          {
+            "enumValue": "Condensate",
+            "name": "Condensate"
+          },
+          {
+            "enumValue": "ColdDomesticWater",
+            "name": "ColdDomesticWater"
+          },
+          {
+            "enumValue": "ChilledWater",
+            "name": "ChilledWater"
+          },
+          {
+            "enumValue": "BlowdownWater",
+            "name": "BlowdownWater"
+          },
+          {
+            "enumValue": "Air",
+            "name": "Air"
+          },
+          {
+            "enumValue": "ACElec",
+            "name": "ACElec"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:EquipmentCollectionComponentAlternateClassificationObject;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "version",
+            "displayName": {
+              "en": "Version"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "code",
+            "displayName": {
+              "en": "Code"
+            },
+            "schema": "string"
+          }
+        ]
+      },
+      {
+        "@id": "dtmi:com:willowinc:EquipmentCollectionComponentMappedIdObject;1",
+        "@type": "Object",
+        "description": {
+          "en": "An object which represents an identity in Mapped, typically sourced from a connector. The composite of all fields is unique for a given twin."
+        },
+        "fields": [
+          {
+            "name": "exactType",
+            "displayName": {
+              "en": "Exact Type"
+            },
+            "description": {
+              "en": "The type of Mapped identity such as ExternalIdentity, SpaceCode, or NameIdentity"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scope",
+            "displayName": {
+              "en": "Scope"
+            },
+            "description": {
+              "en": "The scope of a Mapped identity such as BUILDING, CONNECTOR, or ORG."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "scopeId",
+            "displayName": {
+              "en": "Scope ID"
+            },
+            "description": {
+              "en": "The ID of the scope in Mapped. For a CONNECTOR, this is the ID of the source or destination connector."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "value",
+            "displayName": {
+              "en": "Value"
+            },
+            "description": {
+              "en": "The value of the identity as defined in the scope (i.e. Connector) and stored in Mapped."
+            },
+            "schema": "string"
+          },
+          {
+            "name": "dateCreated",
+            "displayName": {
+              "en": "Date Created"
+            },
+            "description": {
+              "en": "The date the identity was created in Mapped."
+            },
+            "schema": "dateTime"
+          }
+        ]
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EventCollection;1",
     "@type": "Interface",
     "displayName": {
@@ -7405,6 +9083,14 @@
           "en": "Chilled Water Price Rate"
         },
         "name": "chilledWaterPriceRate",
+        "schema": "dtmi:com:willowinc:UtilityRate;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Heating Hot Water Price Rate"
+        },
+        "name": "heatingHotWaterPriceRate",
         "schema": "dtmi:com:willowinc:UtilityRate;1"
       },
       {
@@ -8098,6 +9784,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RackRow;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Rack Row"
+    },
+    "description": {
+      "en": "A contiguous row of racks in a data center. Rack rows provide a structured and organized way to manage and access the equipment in a rack."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Region;1",
     "@type": "Interface",
     "displayName": {
@@ -8170,6 +9873,70 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Seat;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Seat"
+    },
+    "description": {
+      "en": "An individual spectator seat location within a seating row of a stadium, arena, or theater, typically identified by its section, row, and seat number (e.g. 112-K-14)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SeatingRow;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Seating Row"
+    },
+    "description": {
+      "en": "A single row of seats within a seating section of a stadium, arena, or theater, typically identified by a row letter or number (e.g. Row K)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SeatingSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Seating Section"
+    },
+    "description": {
+      "en": "A designated block of spectator seating within a level of a stadium, arena, or theater, typically bounded by seating aisles and identified by a section number (e.g. Section 112)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:Space;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "tier",
+        "displayName": {
+          "en": "Tier"
+        },
+        "description": {
+          "en": "The seating tier or bowl that the section belongs to (e.g. Lower, Club, Upper)."
+        },
+        "writable": true,
+        "schema": "string"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -8386,6 +10153,14 @@
           "en": "Chilled Water Price Rate"
         },
         "name": "chilledWaterPriceRate",
+        "schema": "dtmi:com:willowinc:UtilityRate;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Heating Hot Water Price Rate"
+        },
+        "name": "heatingHotWaterPriceRate",
         "schema": "dtmi:com:willowinc:UtilityRate;1"
       },
       {
@@ -12526,6 +14301,443 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceSide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Side"
+    },
+    "description": {
+      "en": "An energy recovery device side represents one side of an energy recovery device, which can be either the supply side or the exhaust side."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AssetComponent;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Cooling Air Pressure Drop"
+        },
+        "name": "coolingAirPressureDrop",
+        "schema": "double",
+        "unit": "inchesOfWater"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Air Pressure Drop Unit"
+        },
+        "name": "coolingAirPressureDropUnit",
+        "annotates": "coolingAirPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Cooling Minimum Airflow Rating"
+        },
+        "name": "coolingMinAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Minimum Airflow Rating Unit"
+        },
+        "name": "coolingMinAirflowRatingUnit",
+        "annotates": "coolingMinAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Cooling Maximum Airflow Rating"
+        },
+        "name": "coolingMaxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Maximum Airflow Rating Unit"
+        },
+        "name": "coolingMaxAirflowRatingUnit",
+        "annotates": "coolingMaxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Cooling Design Airflow"
+        },
+        "name": "coolingDesignAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Design Airflow Unit"
+        },
+        "name": "coolingDesignAirflowUnit",
+        "annotates": "coolingDesignAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Cooling Design Entering Air Dry Bulb Temperature"
+        },
+        "name": "coolingDesignEnteringAirDryBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "coolingDesignEnteringAirDryBulbTemperatureUnit",
+        "annotates": "coolingDesignEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Cooling Design Leaving Air Dry Bulb Temperature"
+        },
+        "name": "coolingDesignLeavingAirDryBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "coolingDesignLeavingAirDryBulbTemperatureUnit",
+        "annotates": "coolingDesignLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Cooling Design Entering Air Wet Bulb Temperature"
+        },
+        "name": "coolingDesignEnteringAirWetBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "coolingDesignEnteringAirWetBulbTemperatureUnit",
+        "annotates": "coolingDesignEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Cooling Design Leaving Air Wet Bulb Temperature"
+        },
+        "name": "coolingDesignLeavingAirWetBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Cooling Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "coolingDesignLeavingAirWetBulbTemperatureUnit",
+        "annotates": "coolingDesignLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Heating Air Pressure Drop"
+        },
+        "name": "heatingAirPressureDrop",
+        "schema": "double",
+        "unit": "inchesOfWater"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Air Pressure Drop Unit"
+        },
+        "name": "heatingAirPressureDropUnit",
+        "annotates": "heatingAirPressureDrop",
+        "overrides": "unit",
+        "schema": "PressureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Heating Minimum Airflow Rating"
+        },
+        "name": "heatingMinAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Minimum Airflow Rating Unit"
+        },
+        "name": "heatingMinAirflowRatingUnit",
+        "annotates": "heatingMinAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Heating Maximum Airflow Rating"
+        },
+        "name": "heatingMaxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Maximum Airflow Rating Unit"
+        },
+        "name": "heatingMaxAirflowRatingUnit",
+        "annotates": "heatingMaxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Heating Design Airflow"
+        },
+        "name": "heatingDesignAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Design Airflow Unit"
+        },
+        "name": "heatingDesignAirflowUnit",
+        "annotates": "heatingDesignAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Heating Design Entering Air Dry Bulb Temperature"
+        },
+        "name": "heatingDesignEnteringAirDryBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "heatingDesignEnteringAirDryBulbTemperatureUnit",
+        "annotates": "heatingDesignEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Heating Design Leaving Air Dry Bulb Temperature"
+        },
+        "name": "heatingDesignLeavingAirDryBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "heatingDesignLeavingAirDryBulbTemperatureUnit",
+        "annotates": "heatingDesignLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Heating Design Entering Air Wet Bulb Temperature"
+        },
+        "name": "heatingDesignEnteringAirWetBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "heatingDesignEnteringAirWetBulbTemperatureUnit",
+        "annotates": "heatingDesignEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Heating Design Leaving Air Wet Bulb Temperature"
+        },
+        "name": "heatingDesignLeavingAirWetBulbTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Heating Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "heatingDesignLeavingAirWetBulbTemperatureUnit",
+        "annotates": "heatingDesignLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringPersonAccessEvent;1",
     "@type": "Interface",
     "displayName": {
@@ -12724,6 +14936,302 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatExchangerGroupSide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Exchanger Group Side"
+    },
+    "description": {
+      "en": "A heat exchanger group side represents one side of a heat exchanger group, which can be either the primary side or the secondary side."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EquipmentCollectionComponent;1"
+    ],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Medium"
+        },
+        "name": "medium",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Steam",
+              "name": "Steam"
+            },
+            {
+              "enumValue": "SteamCondensate",
+              "name": "SteamCondensate"
+            },
+            {
+              "enumValue": "HotWater",
+              "name": "HotWater"
+            },
+            {
+              "enumValue": "CondenserWater",
+              "name": "CondenserWater"
+            },
+            {
+              "enumValue": "ChilledWater",
+              "name": "ChilledWater"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "displayName": {
+          "en": "Maximum Temperature"
+        },
+        "name": "maxTemperature",
+        "schema": "double",
+        "unit": "degreeCelsius",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Maximum Temperature Unit"
+        },
+        "name": "maxTemperatureUnit",
+        "annotates": "maxTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Maximum Pressure"
+        },
+        "name": "maxPressure",
+        "schema": "double",
+        "unit": "bar",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Maximum Pressure Unit"
+        },
+        "name": "maxPressureUnit",
+        "annotates": "maxPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Flow Capacity"
+        },
+        "name": "flowCapacity",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Flow Capacity Unit"
+        },
+        "name": "flowCapacityUnit",
+        "annotates": "flowCapacity",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Flow"
+        },
+        "name": "designFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Flow Unit"
+        },
+        "name": "designFlowUnit",
+        "annotates": "designFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "MassFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Mass Flow"
+        },
+        "name": "designMassFlow",
+        "schema": "double",
+        "unit": "massPoundPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Mass Flow Unit"
+        },
+        "name": "designMassFlowUnit",
+        "annotates": "designMassFlow",
+        "overrides": "unit",
+        "schema": "MassFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": "Property",
+        "name": "designDeltaWaterTemperature",
+        "displayName": {
+          "en": "Design Delta Water Temperature"
+        },
+        "schema": "double"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation"
+        ],
+        "displayName": {
+          "en": "Design Delta Water Temperature Unit"
+        },
+        "name": "designDeltaWaterTemperatureUnit",
+        "annotates": "designDeltaWaterTemperature",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "deltaDegreeCelsius",
+              "enumValue": "delta-degreeCelsius"
+            },
+            {
+              "name": "deltaDegreeFahrenheit",
+              "enumValue": "delta-degreeFahrenheit"
+            }
+          ],
+          "valueSchema": "string"
+        }
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe outlet"
+        },
+        "name": "pipeOutlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "pipe inlet"
+        },
+        "name": "pipeInlet",
+        "schema": "dtmi:com:willowinc:PipeConnection;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -14892,6 +17400,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ScientificEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Scientific Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SeatingAisle;1",
     "@type": "Interface",
     "displayName": {
@@ -15421,6 +17943,14 @@
           "en": "Chilled Water Price Rate"
         },
         "name": "chilledWaterPriceRate",
+        "schema": "dtmi:com:willowinc:UtilityRate;1"
+      },
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Heating Hot Water Price Rate"
+        },
+        "name": "heatingHotWaterPriceRate",
         "schema": "dtmi:com:willowinc:UtilityRate;1"
       },
       {
@@ -20884,6 +23414,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceExhaustSide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Exhaust Side"
+    },
+    "description": {
+      "en": "The exhaust side of an energy recovery device is the side through which the return air being removed from the space enters and exhaust air leaves. It is also referred to as the exhaust airstream or return air side."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyRecoveryDeviceSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceSupplySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Energy Recovery Device Supply Side"
+    },
+    "description": {
+      "en": "The supply side of an energy recovery device is the side through which outdoor air enters and supply air leaves. It is also referred to as the supply airstream or conditioned air side."
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergyRecoveryDeviceSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnergySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -21674,6 +24238,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PercentPerformanceIndicator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FanSpeedModeActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Speed Mode Actuator"
+    },
+    "description": {
+      "en": "The multi-state command which sets the speed of a fan, such as \u0027low\u0027, \u0027medium\u0027 or \u0027high\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ModeActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -22862,6 +25443,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatExchangerGroupPrimarySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Exchanger Primary Side"
+    },
+    "description": {
+      "en": "The primary side of a heat exchanger group is the side where the fluid is circulating from the primary source (e.g. boiler, chiller) to a group of heat exchangers."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatExchangerGroupSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatExchangerGroupSecondarySide;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heat Exchanger Group Secondary Side"
+    },
+    "description": {
+      "en": "The secondary side of a heat exchanger group is the side where the fluid is circulating to the load (e.g. heating or cooling coil) from a group of heat exchangers."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatExchangerGroupSide;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatExchangerPrimarySide;1",
     "@type": "Interface",
     "displayName": {
@@ -23218,6 +25833,33 @@
       "dtmi:com:willowinc:HVACZone;1"
     ],
     "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "ventilation type"
+        },
+        "name": "ventilationType",
+        "schema": {
+          "@type": "Enum",
+          "valueSchema": "string",
+          "enumValues": [
+            {
+              "enumValue": "SupplyOnly",
+              "name": "SupplyOnly"
+            },
+            {
+              "enumValue": "ExhaustOnly",
+              "name": "ExhaustOnly"
+            },
+            {
+              "enumValue": "SupplyAndExhaust",
+              "name": "SupplyAndExhaust"
+            }
+          ]
+        },
+        "writable": true,
+        "comment": "Designates the intended airflow composition for this pressurization zone. SupplyOnly: zone has only supply valves (no exhaust path expected). ExhaustOnly: zone has only exhaust valves or fume hoods (no supply path expected). SupplyAndExhaust: zone has both supply and exhaust valves. Used by Static validation to determine which relationships are required vs. unintentionally missing."
+      },
       {
         "@type": "Property",
         "displayName": {
@@ -24157,7 +26799,42 @@
     "extends": [
       "dtmi:com:willowinc:PlumbingEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "gasService",
+        "displayName": {
+          "en": "Gas Service"
+        },
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "name": "carbonDioxide",
+              "enumValue": "Carbon Dioxide"
+            },
+            {
+              "name": "oxygen",
+              "enumValue": "Oxygen"
+            },
+            {
+              "name": "nitrogen",
+              "enumValue": "Nitrogen"
+            },
+            {
+              "name": "nitrousOxide",
+              "enumValue": "Nitrous Oxide"
+            },
+            {
+              "name": "medicalAir",
+              "enumValue": "Medical Air"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -24501,15 +27178,6 @@
         "name": "description",
         "displayName": {
           "en": "Description"
-        },
-        "writable": true,
-        "schema": "string"
-      },
-      {
-        "@type": "Property",
-        "name": "siteID",
-        "displayName": {
-          "en": "Site ID"
         },
         "writable": true,
         "schema": "string"
@@ -24979,6 +27647,23 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlantGrowthChamber;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Plant Growth Chamber"
+    },
+    "description": {
+      "en": "A modular cabinet used to control environmental conditions for the growth of plants, generally within a scientific or laboratory setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ScientificEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -28285,7 +30970,7 @@
       "en": "The lower limit on the equipment based on operating modes and conditions. It will reflect the value of the mode-specific limit (i.e. cooling or heating), threshold, or boundary in which the device is currently operating."
     },
     "extends": [
-      "dtmi:com:willowinc:HighLimit;1"
+      "dtmi:com:willowinc:LowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -28851,6 +31536,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:EnthalpySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirflowControlModeActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airflow Control Mode Actuator"
+    },
+    "description": {
+      "en": "The multi-state command which sets the operating mode of an airflow controller, such as \u0027off\u0027, \u0027control\u0027, \u0027open\u0027, \u0027emergency\u0027 or \u0027fire\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -30585,6 +33287,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CompressedAirOutlet;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressed Air Outlet"
+    },
+    "description": {
+      "en": "A compressed air outlet is a device that provides access to a compressed air supply, generally within a medical or laboratory setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CompressedAirEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -33081,6 +35800,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FanSpeedModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Speed Mode State"
+    },
+    "description": {
+      "en": "The multi-state speed setting of a fan, such as \u0027low\u0027, \u0027medium\u0027 or \u0027high\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ModeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Faucet;1",
     "@type": "Interface",
     "displayName": {
@@ -33358,52 +36094,6 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FireDamper;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fire Damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACDamper;1"
-    ],
-    "contents": [
-      {
-        "@type": [
-          "TimeSpan",
-          "Property"
-        ],
-        "displayName": {
-          "en": "Fire Rating"
-        },
-        "name": "fireRating",
-        "schema": "double",
-        "unit": "hour",
-        "writable": true
-      },
-      {
-        "@type": [
-          "Property",
-          "ValueAnnotation",
-          "Override"
-        ],
-        "displayName": {
-          "en": "Fire Rating Unit"
-        },
-        "name": "fireRatingUnit",
-        "annotates": "fireRating",
-        "overrides": "unit",
-        "schema": "TimeUnit",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3",
-      "dtmi:dtdl:extension:quantitativeTypes;1",
-      "dtmi:dtdl:extension:annotation;1",
-      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -36144,6 +38834,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:IsolationDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Isolation Damper"
+    },
+    "description": {
+      "en": "A damper which seals off a section of ductwork to isolate it from the rest of the system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:IsolationValve;1",
     "@type": "Interface",
     "displayName": {
@@ -37032,42 +39739,7 @@
     "extends": [
       "dtmi:com:willowinc:MedicalLaboratoryGasEquipment;1"
     ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "gasService",
-        "displayName": {
-          "en": "Gas Service"
-        },
-        "schema": {
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "name": "carbonDioxide",
-              "enumValue": "Carbon Dioxide"
-            },
-            {
-              "name": "oxygen",
-              "enumValue": "Oxygen"
-            },
-            {
-              "name": "nitrogen",
-              "enumValue": "Nitrogen"
-            },
-            {
-              "name": "nitrousOxide",
-              "enumValue": "Nitrous Oxide"
-            },
-            {
-              "name": "medicalAir",
-              "enumValue": "Medical Air"
-            }
-          ],
-          "valueSchema": "string"
-        },
-        "writable": true
-      }
-    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -37727,6 +40399,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnOffState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OilPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Oil Pressure Sensor"
+    },
+    "description": {
+      "en": "The pressure feedback from a sensor associated with oil, such as the lubricating oil of a compressor, engine, gearbox or bearing, or hydraulic oil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40445,20 +43134,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SmokeDamper;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Smoke Damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HVACDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SO2AirQualitySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42519,6 +45194,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The vibration displacement feedback from a sensor associated with rotating equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LengthSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VibrationSensorEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -43759,6 +46451,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirflowControlModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Airflow Control Mode State"
+    },
+    "description": {
+      "en": "The multi-state operating mode of an airflow controller, such as \u0027off\u0027, \u0027control\u0027, \u0027open\u0027, \u0027emergency\u0027 or \u0027fire\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirflowPercentSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -44935,6 +47644,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AxialVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Axial Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The vibration displacement feedback from a sensor measuring in the axial direction"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VibrationDisplacementSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BatteryCabinet;1",
     "@type": "Interface",
     "displayName": {
@@ -45734,6 +48460,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CloseOverrideActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Close Override Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which overrides the \u0027close\u0027 command of the equipment when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OverrideActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CO2AirQualityAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -45937,6 +48680,24 @@
     },
     "extends": [
       "dtmi:com:willowinc:Oven;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CompressedAirValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressed Air Valve"
+    },
+    "description": {
+      "en": "A compressed air valve is a device that controls the flow of compressed air, generally within a medical or laboratory setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CompressedAirEquipment;1",
+      "dtmi:com:willowinc:PlumbingValve;1"
     ],
     "contents": [],
     "@context": [
@@ -47598,74 +50359,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirEnteringHumiditySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Entering Humidity Sensor"
-    },
-    "description": {
-      "en": "The humidity feedback from a sensor associated with air entering the discharge air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirEnteringTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Entering Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air entering the discharge air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirLeavingHumiditySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Leaving Humidity Sensor"
-    },
-    "description": {
-      "en": "The humidity feedback from a sensor associated with air leaving the discharge air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceDischargeAirLeavingTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Discharge Air Leaving Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the discharge air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirBypassDamper;1",
     "@type": "Interface",
     "displayName": {
@@ -47673,74 +50366,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:BypassDamper;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirEnteringHumiditySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Entering Humidity Sensor"
-    },
-    "description": {
-      "en": "The humidity feedback from a sensor associated with air entering the return air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirEnteringTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Entering Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air entering the return air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirLeavingHumiditySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Leaving Humidity Sensor"
-    },
-    "description": {
-      "en": "The humidity feedback from a sensor associated with air leaving the return air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryDeviceReturnAirLeavingTemperatureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Device Return Air Leaving Temperature Sensor"
-    },
-    "description": {
-      "en": "The temperature feedback from a sensor associated with air leaving the return air side of the energy recovery device"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -48366,6 +50991,52 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FireDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:IsolationDamper;1"
+    ],
+    "contents": [
+      {
+        "@type": [
+          "TimeSpan",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Fire Rating"
+        },
+        "name": "fireRating",
+        "schema": "double",
+        "unit": "hour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Fire Rating Unit"
+        },
+        "name": "fireRatingUnit",
+        "annotates": "fireRating",
+        "overrides": "unit",
+        "schema": "TimeUnit",
+        "writable": true
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FireDetector;1",
     "@type": "Interface",
     "displayName": {
@@ -48385,21 +51056,6 @@
     "extends": [
       "dtmi:com:willowinc:SprinklerEquipment;1",
       "dtmi:com:willowinc:Pump;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FireSmokeDamper;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fire/Smoke Damper"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FireDamper;1",
-      "dtmi:com:willowinc:SmokeDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -48985,6 +51641,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HorizontalVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Horizontal Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The vibration displacement feedback from a sensor measuring in the horizontal direction"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VibrationDisplacementSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HoseBibb;1",
     "@type": "Interface",
     "displayName": {
@@ -49289,12 +51962,375 @@
     "displayName": {
       "en": "Fan Group (HVAC)"
     },
+    "description": {
+      "en": "A group of fans being controlled together as a unit. (a.k.a. Fan Array or Fan Wall)."
+    },
     "extends": [
       "dtmi:com:willowinc:HVACEquipmentGroup;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Nominal External Static Pressure"
+        },
+        "name": "nominalExternalStaticPressure",
+        "schema": "double",
+        "unit": "pascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Nominal External Static Pressure Unit"
+        },
+        "name": "nominalExternalStaticPressureUnit",
+        "annotates": "nominalExternalStaticPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Nominal Airflow"
+        },
+        "name": "nominalAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Nominal Airflow Unit"
+        },
+        "name": "nominalAirflowUnit",
+        "annotates": "nominalAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Motor Power"
+        },
+        "name": "motorPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Motor Power Unit"
+        },
+        "name": "motorPowerUnit",
+        "annotates": "motorPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "AngularVelocity",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Maximum Rotation Speed"
+        },
+        "name": "maxRotationSpeed",
+        "schema": "double",
+        "unit": "revolutionPerMinute",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Frequency"
+        ],
+        "displayName": {
+          "en": "Maximum VFD Frequency"
+        },
+        "name": "maxVFDFrequency",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Maximum VFD Frequency Unit"
+        },
+        "name": "maxVFDFrequencyUnit",
+        "annotates": "maxVFDFrequency",
+        "overrides": "unit",
+        "schema": "FrequencyUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Brake Horsepower"
+        },
+        "name": "brakeHorsepower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Brake Horsepower Unit"
+        },
+        "name": "brakeHorsepowerUnit",
+        "annotates": "brakeHorsepower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Full Load Current"
+        },
+        "name": "fullLoadCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Full Load Current Unit"
+        },
+        "name": "fullLoadCurrentUnit",
+        "annotates": "fullLoadCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Minimum Airflow Rating"
+        },
+        "name": "minAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Minimum Airflow Rating Unit"
+        },
+        "name": "minAirflowRatingUnit",
+        "annotates": "minAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Maximum Airflow Rating"
+        },
+        "name": "maxAirflowRating",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Maximum Airflow Rating Unit"
+        },
+        "name": "maxAirflowRatingUnit",
+        "annotates": "maxAirflowRating",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Airflow"
+        },
+        "name": "designAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Airflow Unit"
+        },
+        "name": "designAirflowUnit",
+        "annotates": "designAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "AngularVelocity",
+          "Property"
+        ],
+        "displayName": {
+          "en": "Design Rotation Speed"
+        },
+        "name": "designRotationSpeed",
+        "schema": "double",
+        "unit": "revolutionPerMinute",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Frequency"
+        ],
+        "displayName": {
+          "en": "Design VFD Frequency"
+        },
+        "name": "designVFDFrequency",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design VFD Frequency Unit"
+        },
+        "name": "designVFDFrequencyUnit",
+        "annotates": "designVFDFrequency",
+        "overrides": "unit",
+        "schema": "FrequencyUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "Design External Static Pressure"
+        },
+        "name": "designExternalStaticPressure",
+        "schema": "double",
+        "unit": "pascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design External Static Pressure Unit"
+        },
+        "name": "designExternalStaticPressureUnit",
+        "annotates": "designExternalStaticPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Drive Type"
+        },
+        "name": "driveType",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Direct",
+              "name": "Direct"
+            },
+            {
+              "enumValue": "Belt",
+              "name": "Belt"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -50880,6 +53916,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OccupantOverrideActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Occupant Override Actuator"
+    },
+    "description": {
+      "en": "The Boolean command from an occupant which sets the state of the equipment to \u0027override\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OverrideActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupiedActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -50933,6 +53986,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OilPumpDischargePressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Oil Pump Discharge Pressure Sensor"
+    },
+    "description": {
+      "en": "The pressure feedback from a sensor associated with oil at the discharge of an oil pump, upstream of any oil cooler or filter. The difference from the supply oil pressure is the pressure drop across the cooler and filter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OilPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OnOffSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -50971,6 +54041,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinarySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OpenOverrideActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Open Override Actuator"
+    },
+    "description": {
+      "en": "The Boolean command which overrides the \u0027open\u0027 command of the equipment when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OverrideActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -51489,6 +54576,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LoadingDockLeveler;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PlantOperatingModeState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Plant Operating Mode State"
+    },
+    "description": {
+      "en": "The multi-state operating mode of the central plant or air handling system serving the equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OperatingModeState;1"
     ],
     "contents": [],
     "@context": [
@@ -53014,6 +56118,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SaturatedRefrigerantTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Saturated Refrigerant Temperature Sensor"
+    },
+    "description": {
+      "en": "The saturation temperature of the refrigerant in a vessel, corresponding to the refrigerant pressure in that vessel. Distinct from an entering or leaving refrigerant temperature, which measure the fluid at a point in the circuit and may be superheated or subcooled rather than saturated. Usually derived by the chiller controller from a measured pressure and the refrigerant\u0027s pressure-temperature relationship."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SensibleHeatWheel;1",
     "@type": "Interface",
     "displayName": {
@@ -53200,6 +56321,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:EmergencyAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SmokeDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Smoke Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:IsolationDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -53742,6 +56877,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SumpOilPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sump Oil Pressure Sensor"
+    },
+    "description": {
+      "en": "The pressure feedback from a sensor associated with oil in the sump, tank or reservoir of a lubrication or hydraulic system, upstream of the oil pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OilPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SumpPump;1",
     "@type": "Interface",
     "displayName": {
@@ -53805,6 +56957,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACFan;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SupplyOilPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supply Oil Pressure Sensor"
+    },
+    "description": {
+      "en": "The pressure feedback from a sensor associated with supply (feed) oil delivered to bearings or other lubricated components, downstream of the oil pump, cooler and filter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OilPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -54302,6 +57471,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VacuumValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vacuum Valve"
+    },
+    "description": {
+      "en": "A vacuum valve is a device that controls the flow of vacuum, generally within a medical or laboratory setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:VacuumEquipment;1",
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ValveCloseActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -54452,6 +57639,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LoadingDockLeveler;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:VerticalVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Vertical Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The vibration displacement feedback from a sensor measuring in the vertical direction"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VibrationDisplacementSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -54778,6 +57982,24 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WasteAnestheticGasDisposalValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Waste Anesthetic Gas Disposal Valve"
+    },
+    "description": {
+      "en": "A waste anesthetic gas disposal valve is a device that controls the flow of waste anesthetic gas within a medical setting."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WasteAnestheticGasDisposalEquipment;1",
+      "dtmi:com:willowinc:PlumbingValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterCooledHeatPumpChiller;1",
     "@type": "Interface",
     "displayName": {
@@ -54878,23 +58100,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:VolumeFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -56277,23 +59482,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with chilled water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterPump;1",
     "@type": "Interface",
     "displayName": {
@@ -56544,23 +59732,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with condenser water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -57792,74 +60963,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the energy recovery wheel to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the energy recovery wheel"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the energy recovery wheel"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnergyRecoveryWheelRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Energy Recovery Wheel Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the energy recovery wheel which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringAirHumiditySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -58322,6 +61425,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExhaustSmokeDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Smoke Damper"
+    },
+    "description": {
+      "en": "A smoke damper at the exhaust side of an HVAC system used to prevent the spread of smoke or exhaust smoke out of the system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FaceVelocitySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -58599,6 +61719,21 @@
     "extends": [
       "dtmi:com:willowinc:FireAlarmSpeaker;1",
       "dtmi:com:willowinc:FireAlarmStrobe;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FireSmokeDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire/Smoke Damper"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FireDamper;1",
+      "dtmi:com:willowinc:SmokeDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -59162,23 +62297,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with hot water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -61087,6 +64205,74 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:MotorDriveEndHorizontalVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Motor Drive End Horizontal Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The horizontal vibration displacement feedback from a sensor associated with the drive end bearing of a motor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HorizontalVibrationDisplacementSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MotorDriveEndVerticalVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Motor Drive End Vertical Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The vertical vibration displacement feedback from a sensor associated with the drive end bearing of a motor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VerticalVibrationDisplacementSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MotorNonDriveEndHorizontalVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Motor Non-Drive End Horizontal Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The horizontal vibration displacement feedback from a sensor associated with the non-drive end bearing of a motor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HorizontalVibrationDisplacementSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MotorNonDriveEndVerticalVibrationDisplacementSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Motor Non-Drive End Vertical Vibration Displacement Sensor"
+    },
+    "description": {
+      "en": "The vertical vibration displacement feedback from a sensor associated with the non-drive end bearing of a motor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VerticalVibrationDisplacementSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:NaturalGasSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -61275,6 +64461,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnOffSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OneThirdChilledWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "1/3 Chilled Water Valve"
+    },
+    "description": {
+      "en": "The smaller valve of a pair of parallel chilled water control valves, sized for roughly one-third of design flow. It is sequenced first so that a cooling coil, heat exchanger or other chilled water load can modulate stably at low load, with the two-thirds chilled water valve staging on as load rises."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OneThirdSteamValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "1/3 Steam Valve"
+    },
+    "description": {
+      "en": "The smaller valve of a pair of parallel steam control valves, sized for roughly one-third of design flow. It is sequenced first so that a steam heat exchanger, converter or coil can modulate stably at low load, with the two-thirds steam valve staging on as load rises."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValve;1"
     ],
     "contents": [],
     "@context": [
@@ -61501,6 +64721,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirSmokeDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Smoke Damper"
+    },
+    "description": {
+      "en": "A smoke damper at the outside air intake side of an HVAC system used to prevent the intake of smoke."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeDamper;1"
     ],
     "contents": [],
     "@context": [
@@ -62874,6 +66111,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReturnSmokeDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Smoke Damper"
+    },
+    "description": {
+      "en": "A smoke damper at the return side of an HVAC system used to prevent the spread of smoke."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReversingMotorStarter;1",
     "@type": "Interface",
     "displayName": {
@@ -62929,6 +66183,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:StartStopSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SaturatedCondensingTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Saturated Condensing Temperature Sensor"
+    },
+    "description": {
+      "en": "The saturation temperature of the refrigerant in the condenser, corresponding to condenser (head) pressure. Commonly abbreviated SCT. This is the reference for condenser approach, the difference between saturated condensing temperature and leaving condenser water temperature, which is the standard indicator of condenser tube fouling."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SaturatedRefrigerantTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SaturatedEvaporatingTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Saturated Evaporating Temperature Sensor"
+    },
+    "description": {
+      "en": "The saturation temperature of the refrigerant in the evaporator, corresponding to evaporator (suction) pressure. Commonly abbreviated SET, or SST where it is taken at the compressor suction. This is the reference for evaporator approach, the difference between leaving chilled water temperature and saturated evaporating temperature, which is the standard indicator of evaporator tube fouling or low refrigerant charge."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SaturatedRefrigerantTemperatureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -63317,10 +66605,27 @@
       "en": "Steam Flow Setpoint"
     },
     "description": {
-      "en": "The desired value associated with steam flow"
+      "en": "The desired volume flow value associated with steam"
     },
     "extends": [
-      "dtmi:com:willowinc:WaterFlowSetpoint;1"
+      "dtmi:com:willowinc:VolumeFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamMassFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Mass Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired mass flow value associated with steam"
+    },
+    "extends": [
+      "dtmi:com:willowinc:MassFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -63557,6 +66862,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SupplySmokeDamper;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Supply Smoke Damper"
+    },
+    "description": {
+      "en": "A smoke damper at the supply side of an HVAC system used to prevent the spread of smoke."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeDamper;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SupplyVAVAirflowControlValveReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -63723,6 +67045,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:ReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TwoThirdsChilledWaterValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "2/3 Chilled Water Valve"
+    },
+    "description": {
+      "en": "The larger valve of a pair of parallel chilled water control valves, sized for roughly two-thirds of design flow. It stages on after the one-third chilled water valve to carry the upper range of load on a cooling coil, heat exchanger or other chilled water load."
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterValve;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TwoThirdsSteamValve;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "2/3 Steam Valve"
+    },
+    "description": {
+      "en": "The larger valve of a pair of parallel steam control valves, sized for roughly two-thirds of design flow. It stages on after the one-third steam valve to carry the upper range of load on a steam heat exchanger, converter or coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamValve;1"
     ],
     "contents": [],
     "@context": [
@@ -64170,6 +67526,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PlumbingWaterSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VolumeFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -64667,23 +68040,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassChilledWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Chilled Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with chilled water bypass flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -64745,23 +68101,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BypassCondenserWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Condenser Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with condenser water bypass flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -64837,23 +68176,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:BypassHotWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Bypass Hot Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with hot water bypass flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:BypassHotWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -64922,6 +68244,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassSteamMassFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Steam Mass Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired mass flow value associated with steam bypass"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamMassFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassSteamTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -64966,6 +68305,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with chilled water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -65137,6 +68493,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with condenser water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -65448,23 +68821,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DeltaChilledWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Chilled Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with chilled water delta flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DeltaChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -65500,23 +68856,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DeltaCondenserWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Condenser Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with condenser water delta flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DeltaCondenserWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -65545,23 +68884,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DeltaHotWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Hot Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with hot water delta flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -65614,6 +68936,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaSteamMassFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Steam Mass Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired mass flow value associated with steam delta"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamMassFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -65823,6 +69162,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeDuctAirStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Duct Air Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor located in the discharge (supply) air duct downstream of the unit, typically about two-thirds of the way down the longest duct run, used for fan speed control"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirStaticPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeFanRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -65935,6 +69291,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeSectionAirStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Section Air Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor located inside the unit\u0027s discharge (supply) air section or plenum, typically used for high static pressure safety protection of the unit and ductwork"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -66095,23 +69468,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringChilledWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Chilled Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with entering chilled water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66174,23 +69530,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:EnteringCondenserWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Condenser Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with entering condenser water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66267,23 +69606,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnteringHotWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Entering Hot Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with entering hot water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringHotWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66346,6 +69668,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringSteamMassFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Steam Mass Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired mass flow value associated with steam entering"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamMassFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66711,23 +70050,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderChilledWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Chilled Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with chilled water header flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66789,23 +70111,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeaderCondenserWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Condenser Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with condenser water header flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66881,23 +70186,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeaderHotWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Header Hot Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with hot water header flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HeaderHotWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -66959,6 +70247,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderSteamMassFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Steam Mass Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired mass flow value associated with steam header"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamMassFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -67817,6 +71122,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HotWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with hot water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterPlant;1",
     "@type": "Interface",
     "displayName": {
@@ -68214,23 +71536,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingChilledWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Chilled Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with leaving chilled water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -68300,23 +71605,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeavingCondenserWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Condenser Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with leaving condenser water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LeavingCondenserWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -68379,23 +71667,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterFlowSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LeavingHotWaterFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leaving Hot Water Flow Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with leaving hot water flow"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -68482,6 +71753,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingSteamMassFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Steam Mass Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired mass flow value associated with steam leaving"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamMassFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -71526,6 +74814,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReturnDuctAirStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Duct Air Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor located in the return air duct upstream of the unit, typically used for return fan speed control"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReturnAirStaticPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReturnFanRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -71604,6 +74909,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnSectionAirStaticPressureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Section Air Static Pressure Sensor"
+    },
+    "description": {
+      "en": "The static pressure feedback from a sensor located inside the unit\u0027s return air section or plenum, typically used for low (excessive negative) static pressure safety protection of the unit and ductwork"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReturnAirStaticPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -73434,6 +76756,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassChilledWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Chilled Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with chilled water bypass flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -73485,6 +76824,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BypassCondenserWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Condenser Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with condenser water bypass flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassCondenserWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -73529,6 +76885,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BypassHotWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Bypass Hot Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with hot water bypass flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -73909,6 +77282,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DeltaChilledWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Chilled Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with chilled water delta flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaCondenserWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Condenser Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with condenser water delta flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaHotWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Hot Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with hot water delta flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -73953,6 +77377,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeDuctAirStaticPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Duct Air Static Pressure Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with discharge (supply) air static pressure measured in the duct downstream of the unit, typically about two-thirds of the way down the longest duct run, used for fan speed control"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeSectionAirStaticPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Section Air Static Pressure Setpoint"
+    },
+    "description": {
+      "en": "The limit value associated with discharge (supply) air static pressure measured inside the unit\u0027s discharge section or plenum, typically used as a high static pressure safety trip point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DischargeAirStaticPressureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -74112,6 +77570,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringChilledWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Chilled Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with entering chilled water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -74163,6 +77638,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:EnteringCondenserWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Condenser Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with entering condenser water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringCondenserWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -74207,6 +77699,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EnteringHotWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Entering Hot Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with entering hot water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -74511,6 +78020,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderChilledWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Chilled Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with chilled water header flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -74562,6 +78088,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeaderCondenserWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Condenser Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with condenser water header flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderCondenserWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -74606,6 +78149,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeaderHotWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Header Hot Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with hot water header flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -75781,6 +79341,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingChilledWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Chilled Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with leaving chilled water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -75832,6 +79409,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeavingCondenserWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Condenser Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with leaving condenser water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingCondenserWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -75876,6 +79470,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LeavingHotWaterFlowSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leaving Hot Water Flow Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with leaving hot water flow"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -77834,6 +81445,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnDuctAirStaticPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Duct Air Static Pressure Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with return air static pressure measured in the return air duct upstream of the unit, typically used for return fan speed control"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReturnAirStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnSectionAirStaticPressureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Section Air Static Pressure Setpoint"
+    },
+    "description": {
+      "en": "The limit value associated with return air static pressure measured inside the unit\u0027s return air section or plenum, typically used as a low (excessive negative) static pressure safety trip point"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ReturnAirStaticPressureSetpoint;1"
     ],
     "contents": [],
     "@context": [
