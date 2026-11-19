@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:EnteringSteamMassFlowSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Entering Steam Mass Flow Setpoint"
+  },
+  "description": {"en": "The desired mass flow value associated with steam entering"},
+  "extends" : [
+    "dtmi:com:willowinc:SteamMassFlowSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
