@@ -8,6 +8,13 @@ on:
     paths:
       - "Ontology/Willow/**"
 
+# Only one publish run at a time; a newer ontology push cancels an in-flight
+# older run so a stale regeneration can't force-push over a newer one on the
+# shared publish branch.
+concurrency:
+  group: merge-dtdl-publish
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,18 +43,23 @@ jobs:
       run: |
         git config user.email "admin@willowinc.com"
         git config user.name "Auto Generated"
+        # Publish only when the GENERATED ontology actually changed. The nuspec
+        # version bump (previous step) happens on every run, so check the jsonld
+        # independently -- otherwise a manual rerun or a comment-only source edit
+        # would open a version-only publish PR.
+        if git diff --quiet HEAD -- Metadata/Willow.Ontology.DTDLv3.jsonld; then
+          echo "No ontology changes to publish."
+          exit 0
+        fi
         # Stable branch name, force-pushed each run. A version-derived branch
         # name collides with its own stranded PR when main's version has not
         # advanced, which wedged this pipeline for ~3 months (the push was
         # rejected with 'fetch first'). A stable force-pushed branch cannot
-        # deadlock.
+        # deadlock; workflow concurrency (above) keeps overlapping runs from
+        # racing on it.
         BRANCH="auto/ontology-republish"
         git checkout -B "$BRANCH"
         git add Metadata/Willow.Ontology.DTDLv3.jsonld Metadata/Willow.Ontology.DTDLv3.nuspec
-        if git diff --cached --quiet; then
-          echo "No artifact changes to publish."
-          exit 0
-        fi
         git commit -m "Set .nuspec version to ${{ steps.set-version.outputs.newVersion }}"
         git push --force --set-upstream origin "$BRANCH"
         PR=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
