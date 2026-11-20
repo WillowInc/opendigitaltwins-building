@@ -1,11 +1,12 @@
-"""Renders Samples/Images/Metering-CoolingTowerWater-Example1.png.
+"""Renders Samples/Images/Metering-MakeupWater-Example1.png.
 
-Cooling tower makeup and blowdown water metering: the Cooling Tower Group is
-servedBy the makeup Water Meter, the blowdown Water Meter is servedBy the group,
-each meter's Water Volume Sensor isCapabilityOf the meter, and the makeup meter
-is a subMeterOf the domestic Water Meter which serves the Building.
+Meters on the makeup and blowdown water lines of a condenser water loop: the
+Cooling Tower Group is servedBy the Water Meter on the makeup water line, the
+Water Meter on the blowdown line is servedBy the group, each meter's Water
+Volume Sensor isCapabilityOf the meter, and the makeup water meter is a
+subMeterOf the domestic Water Meter which serves the Building.
 
-    python Samples/Images/Source/Metering-CoolingTowerWater-Example1.py
+    python Samples/Images/Source/Metering-MakeupWater-Example1.py
 
 Requires Pillow. Uses Segoe UI when available, otherwise DejaVu Sans.
 """
@@ -35,7 +36,7 @@ LEGEND = [
 ]
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "..", "Metering-CoolingTowerWater-Example1.png")
+OUT = os.path.join(HERE, "..", "Metering-MakeupWater-Example1.png")
 
 
 def font(size, bold=False):

@@ -52,21 +52,21 @@ In this example, we depitct how domestic water metering measurements get assigne
 
 5. In other scenarios, the Building’s total water consumption may be ingested directly into the WillowTwin. The same isCapabilityOf relationship is used in #5 as the calculated Water Volume Sensor in #4 which allows the WillowTwin to treat them the same regardless of how the calculation was performed by the underlying metering topology.
 
-### Cooling Tower Makeup and Blowdown Water
+### Condenser Water Makeup and Blowdown
 
-In this example, we depict how the water meters on a cooling tower are related to the tower. It follows the domestic water example above, with the Cooling Tower taking the place of the Building.
+In this example, we depict how a Water Meter on the makeup water line of a condenser water loop is related to the Cooling Towers which the line replenishes, and how a meter on the blowdown line is related.
 
-![Metering-CoolingTowerWater-Example1](Images/Metering-CoolingTowerWater-Example1.png)
+![Metering-MakeupWater-Example1](Images/Metering-MakeupWater-Example1.png)
 
-1. An evaporative cooling tower loses water to evaporation, drift and blowdown, and a makeup valve refills the basin. Where the makeup line is metered, the Water Meter is an equipment twin and its Water Volume Sensor (and Water Flow Sensor, if present) isCapabilityOf the meter, as for domestic water.
+1. An open condenser water loop loses water at its Cooling Towers to evaporation, drift and blowdown, and a makeup water line replenishes the loop at the tower basins. Where the makeup water line is metered, the Water Meter is an equipment twin on that line and its Water Volume Sensor (and Water Flow Sensor, if present) isCapabilityOf the meter, as for domestic water. The meter is not a part or a capability of the Cooling Tower.
 
-2. We use the servedBy relationship to the makeup Water Meter, in the same way the Building is servedBy its service-entrance Water Meter. The meter is the makeup water service for the towers. A Cooling Tower which is not included in a Cooling Tower Group is servedBy the meter directly.
+2. We use the servedBy relationship from the Cooling Tower to the makeup Water Meter, in the same way the Building is servedBy its service-entrance Water Meter. The metered makeup water line is the water service which replenishes the towers. A Cooling Tower which is not included in a Cooling Tower Group is servedBy the meter directly.
 
-3. When the towers are included in a Cooling Tower Group and one meter measures the makeup water for all of them, the Cooling Tower Group is servedBy the meter instead of each tower. Do not relate both the group and its towers to the same meter.
+3. When the towers are included in a Cooling Tower Group and one metered makeup water line replenishes all of them, the Cooling Tower Group is servedBy the meter instead of each tower. Do not relate both the group and its towers to the same meter.
 
-4. Where the blowdown (bleed) line is metered, the relationship runs the other way: the blowdown Water Meter is servedBy the Cooling Tower or Cooling Tower Group, because the tower is the source of the water the meter measures. The direction of servedBy is what distinguishes a makeup meter from a blowdown meter.
+4. Where the blowdown (bleed) line is metered, the relationship runs the other way: the Water Meter on the blowdown line is servedBy the Cooling Tower or Cooling Tower Group, because the towers are the source of the water the meter measures. The direction of servedBy is what distinguishes a makeup water meter from a blowdown water meter.
 
-5. A makeup meter is usually a sub-meter downstream of the building's domestic water service. In that case it is related to the domestic meter with subMeterOf, and the Building is not servedBy it. If the Building were servedBy both meters, the building's water consumption would count the makeup water twice. Only when the makeup meter is its own utility service, or a sewer-deduct meter billed separately, is the Building also servedBy it.
+5. A makeup water meter is usually a sub-meter downstream of the building's domestic water service. In that case it is related to the domestic meter with subMeterOf, and the Building is not servedBy it. If the Building were servedBy both meters, the building's water consumption would count the makeup water twice. Only when the makeup water line is its own utility service, or its meter is a sewer-deduct meter billed separately, is the Building also servedBy it.
 
 ### Natural Gas
 
