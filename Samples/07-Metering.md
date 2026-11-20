@@ -68,6 +68,20 @@ In this example, we depict how a Water Meter on the makeup water line of a conde
 
 5. A makeup water meter is usually a sub-meter downstream of the building's domestic water service. In that case it is related to the domestic meter with subMeterOf, and the Building is not servedBy it. If the Building were servedBy both meters, the building's water consumption would count the makeup water twice. Only when the makeup water line is its own utility service, or its meter is a sewer-deduct meter billed separately, is the Building also servedBy it.
 
+### Irrigation and Reclaimed Water
+
+In this example, we depict how a Water Meter on an irrigation water service is related to the Irrigation System it supplies, so that irrigation water is kept apart from the Building's domestic water consumption.
+
+![Metering-IrrigationWater-Example1](Images/Metering-IrrigationWater-Example1.png)
+
+1. Where the water service which supplies landscape irrigation is metered on its own, the Water Meter is an equipment twin on that service and its Water Volume Sensor (and Water Flow Sensor, if present) isCapabilityOf the meter, as for domestic water.
+
+2. We use the servedBy relationship from the Irrigation System to the irrigation Water Meter, in the same way the Cooling Tower Group is servedBy its makeup Water Meter. There is one Irrigation System for each metered irrigation service. The Irrigation System is modeled even when none of its equipment is: it may have nothing includedIn it. Where Irrigation Pumps are modeled, they are includedIn the Irrigation System.
+
+3. The Building is not servedBy the irrigation Water Meter, even when the meter is located in the Building. The Building is servedBy its domestic service-entrance Water Meters only, so the Building's water consumption does not include irrigation water. A meter which the Building is servedBy is treated as a service entrance of that Building and its volume is summed into the Building's total.
+
+4. An irrigation service supplied with reclaimed (reuse) water is modeled the same way. Its meter's volume capability is a Reclaimed Water Volume Sensor in place of a Water Volume Sensor, which is what distinguishes a reclaimed water service from a potable one.
+
 ### Natural Gas
 
 In this example, we depitct how natural gas metering measurements get assigned to a space such as a Building. This is similar to the domestic water metering sample but uses a different type of meter and capability which are applicable for natural gas distribution.
