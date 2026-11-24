@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:AirflowRangePercentSetpoint;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airflow Range Percent Setpoint"
+  },
+  "description": {"en": "The desired airflow expressed as a percentage of the range between the airflow low limit and high limit parameters"},
+  "extends" : [
+    "dtmi:com:willowinc:PercentSetpoint;1"
+  ],
+  "contents": [
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
